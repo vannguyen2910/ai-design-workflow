@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1810 1190" font-family="Helvetica, Arial, sans-serif"><title>User-voice synthesis with AI assist</title><desc>Swimlane flowchart in black, white and purple: eight steps and three review gates for synthesising real user quotes (public reviews, forum posts or short interviews) with AI. Every step writes into one working file, user-voice-synthesis.md; the result feeds the Evidence page of the hub.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6B3FEE"/></marker></defs>
+<rect width="1810" height="1190" fill="#FFFFFF"/>
+<text x="40" y="52" font-size="30" font-weight="700" fill="#111111">User-voice synthesis with AI assist</text>
+<text x="40" y="82" font-size="15" fill="#111111" fill-opacity=".62">Activity flow inside Discover. The AI works only from real quotes you collected, and every theme must trace back to them.</text>
+<line x1="40" y1="110" x2="1770" y2="110" stroke="#111111" stroke-opacity=".12"/>
+<text x="40" y="138" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">YOU</text>
+<line x1="40" y1="270" x2="1770" y2="270" stroke="#111111" stroke-opacity=".12"/>
+<text x="40" y="298" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">AI</text>
+<line x1="40" y1="430" x2="1770" y2="430" stroke="#111111" stroke-opacity=".12"/>
+<text x="40" y="458" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">ONE WORKING FILE</text>
+<line x1="40" y1="646" x2="1770" y2="646" stroke="#111111" stroke-opacity=".12"/>
+<text x="40" y="674" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">SHARE</text>
+<line x1="40" y1="788" x2="1770" y2="788" stroke="#111111" stroke-opacity=".12"/>
+<rect x="1430" y="40" width="16" height="16" rx="4" fill="#6B3FEE"/><text x="1454" y="53" font-size="12" fill="#111111">You</text>
+<rect x="1510" y="40" width="16" height="16" rx="4" fill="#111111"/><text x="1534" y="53" font-size="12" fill="#111111">AI</text>
+<rect x="1580" y="40" width="16" height="16" rx="4" fill="#6B3FEE" fill-opacity=".12"/><text x="1604" y="53" font-size="12" fill="#111111">File</text>
+<path d="M190 253 V470" fill="none" stroke="#6B3FEE" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/>
+<path d="M400 413 V470" fill="none" stroke="#6B3FEE" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/>
+<path d="M610 253 V470" fill="none" stroke="#6B3FEE" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/>
+<path d="M820 253 V470" fill="none" stroke="#6B3FEE" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/>
+<path d="M1030 413 V470" fill="none" stroke="#6B3FEE" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/>
+<path d="M1240 253 V470" fill="none" stroke="#6B3FEE" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/>
+<path d="M1450 413 V470" fill="none" stroke="#6B3FEE" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/>
+<path d="M1660 253 V470" fill="none" stroke="#6B3FEE" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/>
+<path d="M284 190 H295 V350 H307" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#a)"/>
+<path d="M494 350 H505 V190 H517" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#a)"/>
+<path d="M704 190 H727" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#a)"/>
+<path d="M914 190 H925 V350 H937" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#a)"/>
+<path d="M1124 350 H1135 V190 H1147" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#a)"/>
+<path d="M1334 190 H1345 V350 H1357" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#a)"/>
+<path d="M1544 350 H1555 V190 H1567" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#a)"/>
+<rect x="100" y="131" width="180" height="118" rx="14" fill="#6B3FEE"/>
+<text x="118" y="163" font-size="14" font-weight="700" fill="#FFFFFF">1  Frame the question</text>
+<text x="118" y="189" font-size="12" fill="#FFFFFF" fill-opacity=".82">Who must we hear from, and</text>
+<text x="118" y="207" font-size="12" fill="#FFFFFF" fill-opacity=".82">about what? What do you</text>
+<text x="118" y="225" font-size="12" fill="#FFFFFF" fill-opacity=".82">already believe?</text>
+<rect x="310" y="291" width="180" height="118" rx="14" fill="#111111"/>
+<text x="328" y="323" font-size="14" font-weight="700" fill="#FFFFFF">2  Suggest</text>
+<text x="328" y="349" font-size="12" fill="#FFFFFF" fill-opacity=".82">Where real users talk, and</text>
+<text x="328" y="367" font-size="12" fill="#FFFFFF" fill-opacity=".82">interview questions about</text>
+<text x="328" y="385" font-size="12" fill="#FFFFFF" fill-opacity=".82">past behaviour</text>
+<rect x="520" y="131" width="180" height="118" rx="14" fill="#6B3FEE"/>
+<text x="538" y="163" font-size="14" font-weight="700" fill="#FFFFFF">3  Review the voices</text>
+<text x="538" y="189" font-size="12" fill="#FFFFFF" fill-opacity=".82">Cut and add. Check for skew:</text>
+<text x="538" y="207" font-size="12" fill="#FFFFFF" fill-opacity=".82">only angry reviews, only</text>
+<text x="538" y="225" font-size="12" fill="#FFFFFF" fill-opacity=".82">friends, only one segment?</text>
+<circle cx="694" cy="137" r="15" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="694" y="142" font-size="14" font-weight="700" fill="#111111" text-anchor="middle">A</text>
+<rect x="730" y="131" width="180" height="118" rx="14" fill="#6B3FEE"/>
+<text x="748" y="163" font-size="14" font-weight="700" fill="#FFFFFF">4  Collect + anonymise</text>
+<text x="748" y="189" font-size="12" fill="#FFFFFF" fill-opacity=".82">Export reviews, run 3 to 5</text>
+<text x="748" y="207" font-size="12" fill="#FFFFFF" fill-opacity=".82">interviews. Remove names.</text>
+<text x="748" y="225" font-size="12" fill="#FFFFFF" fill-opacity=".82">Give every quote an ID</text>
+<rect x="940" y="291" width="180" height="118" rx="14" fill="#111111"/>
+<text x="958" y="323" font-size="14" font-weight="700" fill="#FFFFFF">5  Code</text>
+<text x="958" y="349" font-size="12" fill="#FFFFFF" fill-opacity=".82">Group quotes into themes,</text>
+<text x="958" y="367" font-size="12" fill="#FFFFFF" fill-opacity=".82">word for word, with IDs.</text>
+<text x="958" y="385" font-size="12" fill="#FFFFFF" fill-opacity=".82">'Unclassified' is allowed</text>
+<rect x="1150" y="131" width="180" height="118" rx="14" fill="#6B3FEE"/>
+<text x="1168" y="163" font-size="14" font-weight="700" fill="#FFFFFF">6  Verify</text>
+<text x="1168" y="189" font-size="12" fill="#FFFFFF" fill-opacity=".82">Check every top-theme quote</text>
+<text x="1168" y="207" font-size="12" fill="#FFFFFF" fill-opacity=".82">is word for word. Read a sample</text>
+<text x="1168" y="225" font-size="12" fill="#FFFFFF" fill-opacity=".82">of what was left out</text>
+<circle cx="1324" cy="137" r="15" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="1324" y="142" font-size="14" font-weight="700" fill="#111111" text-anchor="middle">B</text>
+<rect x="1360" y="291" width="180" height="118" rx="14" fill="#111111"/>
+<text x="1378" y="323" font-size="14" font-weight="700" fill="#FFFFFF">7  Synthesise + test</text>
+<text x="1378" y="349" font-size="12" fill="#FFFFFF" fill-opacity=".82">Needs and pains, counted by</text>
+<text x="1378" y="367" font-size="12" fill="#FFFFFF" fill-opacity=".82">quotes and people. Then:</text>
+<text x="1378" y="385" font-size="12" fill="#FFFFFF" fill-opacity=".82">what would make this wrong?</text>
+<rect x="1570" y="131" width="180" height="118" rx="14" fill="#6B3FEE"/>
+<text x="1588" y="163" font-size="14" font-weight="700" fill="#FFFFFF">8  Interpret + decide</text>
+<text x="1588" y="189" font-size="12" fill="#FFFFFF" fill-opacity=".82">Weigh by severity, not count.</text>
+<text x="1588" y="207" font-size="12" fill="#FFFFFF" fill-opacity=".82">Write opportunities with</text>
+<text x="1588" y="225" font-size="12" fill="#FFFFFF" fill-opacity=".82">quote IDs. State the limits</text>
+<circle cx="1744" cy="137" r="15" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="1744" y="142" font-size="14" font-weight="700" fill="#111111" text-anchor="middle">C</text>
+<rect x="100" y="474" width="1665" height="140" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="118" y="504" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">user-voice-synthesis.md</text>
+<text x="340" y="504" font-size="12.5" fill="#111111" fill-opacity=".65">one file, filled section by section. Raw evidence is saved in the sources/ folder beside it.</text>
+<line x1="118" y1="520" x2="1747" y2="520" stroke="#6B3FEE" stroke-opacity=".3"/>
+<text x="118" y="562" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">## Scope</text>
+<text x="118" y="586" font-size="12" fill="#111111" fill-opacity=".68">question, who, beliefs</text>
+<line x1="295" y1="536" x2="295" y2="596" stroke="#6B3FEE" stroke-opacity=".3"/>
+<text x="328" y="562" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">## Sources and guide</text>
+<text x="328" y="586" font-size="12" fill="#111111" fill-opacity=".68">AI suggestions added</text>
+<line x1="505" y1="536" x2="505" y2="596" stroke="#6B3FEE" stroke-opacity=".3"/>
+<text x="538" y="562" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">## Sources and guide</text>
+<text x="538" y="586" font-size="12" fill="#111111" fill-opacity=".68">your final voices + guide</text>
+<line x1="715" y1="536" x2="715" y2="596" stroke="#6B3FEE" stroke-opacity=".3"/>
+<text x="748" y="562" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111" fill-opacity=".6">sources/</text>
+<text x="748" y="586" font-size="12" fill="#111111" fill-opacity=".68">quotes, anonymised, IDs</text>
+<line x1="925" y1="536" x2="925" y2="596" stroke="#6B3FEE" stroke-opacity=".3"/>
+<text x="958" y="562" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">## Coding</text>
+<text x="958" y="586" font-size="12" fill="#111111" fill-opacity=".68">AI draft, never edited</text>
+<line x1="1135" y1="536" x2="1135" y2="596" stroke="#6B3FEE" stroke-opacity=".3"/>
+<text x="1168" y="562" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">## Coding</text>
+<text x="1168" y="586" font-size="12" fill="#111111" fill-opacity=".68">your verified copy</text>
+<line x1="1345" y1="536" x2="1345" y2="596" stroke="#6B3FEE" stroke-opacity=".3"/>
+<text x="1378" y="562" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">## Themes</text>
+<text x="1378" y="586" font-size="12" fill="#111111" fill-opacity=".68">+ counts, counter-quotes</text>
+<line x1="1555" y1="536" x2="1555" y2="596" stroke="#6B3FEE" stroke-opacity=".3"/>
+<text x="1588" y="562" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">## Opportunities</text>
+<text x="1588" y="586" font-size="12" fill="#111111" fill-opacity=".68">+ limits of the sample</text>
+<path d="M1660 618 V680" fill="none" stroke="#6B3FEE" stroke-width="2" marker-end="url(#a)"/>
+<rect x="1400" y="684" width="350" height="88" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="1418" y="716" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace" fill="#111111">Evidence page (hub)</text>
+<text x="1418" y="738" font-size="12" fill="#111111" fill-opacity=".68">A page in your Experience Hub, built</text>
+<text x="1418" y="756" font-size="12" fill="#111111" fill-opacity=".68">by you from the template. Feeds Define.</text>
+<text x="40" y="818" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">THE THREE REVIEW GATES  ·  IF THE ANSWER IS NO, GO BACK</text>
+<circle cx="56" cy="858" r="15" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="56" y="864" font-size="15" font-weight="700" fill="#111111" text-anchor="middle">A</text>
+<text x="84" y="854" font-size="14" font-weight="700" fill="#111111">Right voices?</text>
+<text x="84" y="876" font-size="12" fill="#111111" fill-opacity=".68">Who is missing? Is the sample skewed</text>
+<text x="84" y="894" font-size="12" fill="#111111" fill-opacity=".68">(only angry reviews, only friends)?</text>
+<text x="84" y="918" font-size="12" font-weight="700" fill="#6B3FEE">No: back to step 2 and widen the sources</text>
+<circle cx="656" cy="858" r="15" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="656" y="864" font-size="15" font-weight="700" fill="#111111" text-anchor="middle">B</text>
+<text x="684" y="854" font-size="14" font-weight="700" fill="#111111">Word for word and traceable?</text>
+<text x="684" y="876" font-size="12" fill="#111111" fill-opacity=".68">Is every quote word for word, with an ID?</text>
+<text x="684" y="894" font-size="12" fill="#111111" fill-opacity=".68">Do the themes survive a sample you read yourself?</text>
+<text x="684" y="918" font-size="12" font-weight="700" fill="#6B3FEE">No (many errors): rerun step 5 with a tighter instruction</text>
+<circle cx="1256" cy="858" r="15" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="1256" y="864" font-size="15" font-weight="700" fill="#111111" text-anchor="middle">C</text>
+<text x="1284" y="854" font-size="14" font-weight="700" fill="#111111">Weighed, not counted?</text>
+<text x="1284" y="876" font-size="12" fill="#111111" fill-opacity=".68">Does each opportunity rest on severity and context,</text>
+<text x="1284" y="894" font-size="12" fill="#111111" fill-opacity=".68">not only on how many people mentioned it?</text>
+<text x="1284" y="918" font-size="12" font-weight="700" fill="#6B3FEE">No: back to step 7 and redo the synthesis</text>
+<rect x="40" y="950" width="1730" height="86" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="64" y="978" font-size="13" font-weight="700" fill="#111111">TWO RULES THAT KEEP ONE FILE SAFE</text>
+<text x="64" y="1000" font-size="13" fill="#111111" fill-opacity=".8">1. The AI returns only its own section; you paste it in, so it cannot rewrite what you already settled.</text>
+<text x="64" y="1020" font-size="13" fill="#111111" fill-opacity=".8">2. Keep the AI draft and your verified version as separate sections: the gap between them is your error rate.</text>
+<rect x="40" y="1060" width="1730" height="86" rx="14" fill="#111111"/>
+<text x="64" y="1088" font-size="13" font-weight="700" fill="#FFFFFF">WHAT THIS CANNOT TELL YOU</text>
+<text x="64" y="1110" font-size="13" fill="#FFFFFF" fill-opacity=".85">Reviews and interviews show what people say, not what they do. Samples are small and skewed (reviews lean to extremes, friends are polite).</text>
+<text x="64" y="1130" font-size="13" fill="#FFFFFF" fill-opacity=".85">Treat the themes as hypotheses to test with real users later in the series.</text>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1190" font-family="Helvetica, Arial, sans-serif"><title>AI design workflow across the Double Diamond</title><desc>Stage map in black, white and purple. Design acts as a strategic partner: it starts from the business question, not from a finished PRD, and co-defines the requirement with product and business. Four stages, each with an input, AI-assisted work with what the human keeps, an output and a gate. A partner move sits at each stage and an alignment check runs at every gate. A foundation layer sits underneath.</desc>
+<defs><marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6B3FEE"/></marker></defs>
+<rect width="1440" height="1190" fill="#FFFFFF"/>
+<text x="40" y="52" font-size="30" font-weight="700" fill="#111111">AI design workflow across the Double Diamond</text>
+<text x="40" y="82" font-size="15" fill="#111111" fill-opacity=".62">Stage map. Design starts from the business question and co-defines the requirement, instead of waiting for a PRD to arrive.</text>
+<rect x="1060" y="40" width="16" height="16" rx="4" fill="#6B3FEE"/><text x="1084" y="53" font-size="12" fill="#111111">Output</text>
+<rect x="1160" y="40" width="16" height="16" rx="4" fill="#6B3FEE" fill-opacity=".12"/><text x="1184" y="53" font-size="12" fill="#111111">Input / work</text>
+<rect x="1300" y="40" width="16" height="16" rx="4" fill="#111111"/><text x="1324" y="53" font-size="12" fill="#111111">Gate</text>
+<path d="M40 110h298l22 26-22 26H40z" fill="#6B3FEE"/><text x="60" y="142" font-size="17" font-weight="700" fill="#FFFFFF">1  DISCOVER</text>
+<text x="44" y="184" font-size="12" fill="#111111" fill-opacity=".6">Diverge: understand</text>
+<path d="M390 110h298l22 26-22 26H390z" fill="#6B3FEE"/><text x="410" y="142" font-size="17" font-weight="700" fill="#FFFFFF">2  DEFINE</text>
+<text x="394" y="184" font-size="12" fill="#111111" fill-opacity=".6">Converge: frame</text>
+<path d="M740 110h298l22 26-22 26H740z" fill="#6B3FEE"/><text x="760" y="142" font-size="17" font-weight="700" fill="#FFFFFF">3  DEVELOP</text>
+<text x="744" y="184" font-size="12" fill="#111111" fill-opacity=".6">Diverge: explore options</text>
+<path d="M1090 110h298l22 26-22 26H1090z" fill="#6B3FEE"/><text x="1110" y="142" font-size="17" font-weight="700" fill="#FFFFFF">4  DELIVER</text>
+<text x="1094" y="184" font-size="12" fill="#111111" fill-opacity=".6">Converge: prove and ship</text>
+<text x="40" y="214" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">INPUT</text>
+<rect x="40" y="224" width="320" height="92" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="58" y="254" font-size="14" font-weight="700" fill="#111111">Business question</text>
+<text x="58" y="278" font-size="12" fill="#111111" fill-opacity=".7">A goal, idea or problem from the business,</text>
+<text x="58" y="296" font-size="12" fill="#111111" fill-opacity=".7">with or without a PRD</text>
+<rect x="390" y="224" width="320" height="92" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="408" y="254" font-size="14" font-weight="700" fill="#111111">Evidence pack</text>
+<text x="408" y="278" font-size="12" fill="#111111" fill-opacity=".7">Insights traceable to raw sources,</text>
+<text x="408" y="296" font-size="12" fill="#111111" fill-opacity=".7">with counterexamples</text>
+<rect x="740" y="224" width="320" height="92" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="758" y="254" font-size="14" font-weight="700" fill="#111111">Shared problem brief</text>
+<text x="758" y="278" font-size="12" fill="#111111" fill-opacity=".7">Outcome, opportunities, hypotheses</text>
+<text x="758" y="296" font-size="12" fill="#111111" fill-opacity=".7">and the principles to check against</text>
+<rect x="1090" y="224" width="320" height="92" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="1108" y="254" font-size="14" font-weight="700" fill="#111111">Working prototype + alignment table</text>
+<text x="1108" y="278" font-size="12" fill="#111111" fill-opacity=".7">Built on your design system,</text>
+<text x="1108" y="296" font-size="12" fill="#111111" fill-opacity=".7">each decision traced to the brief</text>
+<text x="40" y="344" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">AI-ASSISTED WORK  /  YOU KEEP</text>
+<rect x="40" y="354" width="320" height="122" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="58" y="382" font-size="12" font-weight="700" fill="#111111">AI</text>
+<text x="58" y="400" font-size="12" fill="#111111" fill-opacity=".75">challenges the question, clusters data,</text><text x="58" y="416" font-size="12" fill="#111111" fill-opacity=".75">drafts questions for the business</text>
+<text x="58" y="442" font-size="12" font-weight="700" fill="#6B3FEE">YOU KEEP</text>
+<text x="58" y="460" font-size="12" fill="#111111" fill-opacity=".75">what matters, outliers, empathy</text>
+<rect x="390" y="354" width="320" height="122" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="408" y="382" font-size="12" font-weight="700" fill="#111111">AI</text>
+<text x="408" y="400" font-size="12" fill="#111111" fill-opacity=".75">drafts problem statements and</text><text x="408" y="416" font-size="12" fill="#111111" fill-opacity=".75">hypotheses, argues against them</text>
+<text x="408" y="442" font-size="12" font-weight="700" fill="#6B3FEE">YOU KEEP</text>
+<text x="408" y="460" font-size="12" fill="#111111" fill-opacity=".75">the choice of the right problem</text>
+<rect x="740" y="354" width="320" height="122" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="758" y="382" font-size="12" font-weight="700" fill="#111111">AI</text>
+<text x="758" y="400" font-size="12" fill="#111111" fill-opacity=".75">generates flows, options and a</text><text x="758" y="416" font-size="12" fill="#111111" fill-opacity=".75">prototype from your constraints</text>
+<text x="758" y="442" font-size="12" font-weight="700" fill="#6B3FEE">YOU KEEP</text>
+<text x="758" y="460" font-size="12" fill="#111111" fill-opacity=".75">taste, content, final decisions</text>
+<rect x="1090" y="354" width="320" height="122" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="1108" y="382" font-size="12" font-weight="700" fill="#111111">AI</text>
+<text x="1108" y="400" font-size="12" fill="#111111" fill-opacity=".75">prepares tests, drafts the handoff,</text><text x="1108" y="416" font-size="12" fill="#111111" fill-opacity=".75">critiques your design</text>
+<text x="1108" y="442" font-size="12" font-weight="700" fill="#6B3FEE">YOU KEEP</text>
+<text x="1108" y="460" font-size="12" fill="#111111" fill-opacity=".75">real users as the evidence</text>
+<text x="40" y="504" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">OUTPUT</text>
+<rect x="40" y="514" width="320" height="142" rx="14" fill="#6B3FEE"/>
+<text x="58" y="544" font-size="14" font-weight="700" fill="#FFFFFF">Evidence pack</text>
+<text x="58" y="568" font-size="12" fill="#FFFFFF" fill-opacity="0.88">Sourced insights and open</text>
+<text x="58" y="586" font-size="12" fill="#FFFFFF" fill-opacity="0.88">questions about the question</text>
+<rect x="390" y="514" width="320" height="142" rx="14" fill="#6B3FEE"/>
+<text x="408" y="544" font-size="14" font-weight="700" fill="#FFFFFF">Shared problem brief</text>
+<text x="408" y="568" font-size="12" fill="#FFFFFF" fill-opacity="0.88">Outcome + success metrics</text>
+<text x="408" y="586" font-size="12" fill="#FFFFFF" fill-opacity="0.88">Ranked opportunities</text>
+<text x="408" y="604" font-size="12" fill="#FFFFFF" fill-opacity="0.88">Hypotheses to test</text>
+<text x="408" y="622" font-size="12" fill="#FFFFFF" fill-opacity="0.88">Principles to check against</text>
+<text x="408" y="640" font-size="12" font-weight="700" fill="#FFFFFF" fill-opacity="1">Co-signed with product and business</text>
+<rect x="740" y="514" width="320" height="142" rx="14" fill="#6B3FEE"/>
+<text x="758" y="544" font-size="14" font-weight="700" fill="#FFFFFF">Working prototype + alignment table</text>
+<text x="758" y="568" font-size="12" fill="#FFFFFF" fill-opacity="0.88">Every decision traced to an</text>
+<text x="758" y="586" font-size="12" fill="#FFFFFF" fill-opacity="0.88">opportunity, hypothesis and principle</text>
+<rect x="1090" y="514" width="320" height="142" rx="14" fill="#6B3FEE"/>
+<text x="1108" y="544" font-size="14" font-weight="700" fill="#FFFFFF">Validated prototype + handoff</text>
+<text x="1108" y="568" font-size="12" fill="#FFFFFF" fill-opacity="0.88">Findings, decision log, measurement</text>
+<text x="1108" y="586" font-size="12" fill="#FFFFFF" fill-opacity="0.88">plan, a pack a developer can build from</text>
+<path d="M363 585 H375 V270 H387" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#m)"/>
+<path d="M713 585 H725 V270 H737" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#m)"/>
+<path d="M1063 585 H1075 V270 H1087" fill="none" stroke="#6B3FEE" stroke-width="2" stroke-linejoin="round" marker-end="url(#m)"/>
+<text x="40" y="686" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">GATE</text>
+<rect x="40" y="696" width="320" height="68" rx="34" fill="#111111"/>
+<text x="200" y="724" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Question + evidence</text>
+<text x="200" y="742" font-size="11" fill="#FFFFFF" fill-opacity=".8" text-anchor="middle">Checks 1a to 1c: question agreed, every</text>
+<text x="200" y="756" font-size="11" fill="#FFFFFF" fill-opacity=".8" text-anchor="middle">insight sourced, nothing guessed</text>
+<rect x="390" y="696" width="320" height="68" rx="34" fill="#111111"/>
+<text x="550" y="724" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Evidence + agreement</text>
+<text x="550" y="742" font-size="11" fill="#FFFFFF" fill-opacity=".8" text-anchor="middle">Checks 2a to 2d: opportunities evidenced,</text>
+<text x="550" y="756" font-size="11" fill="#FFFFFF" fill-opacity=".8" text-anchor="middle">brief co-signed, hypotheses testable</text>
+<rect x="740" y="696" width="320" height="68" rx="34" fill="#111111"/>
+<text x="900" y="724" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Alignment</text>
+<text x="900" y="742" font-size="11" fill="#FFFFFF" fill-opacity=".8" text-anchor="middle">Checks 3a to 3d: options, traceability,</text>
+<text x="900" y="756" font-size="11" fill="#FFFFFF" fill-opacity=".8" text-anchor="middle">principles, design system</text>
+<rect x="1090" y="696" width="320" height="68" rx="34" fill="#111111"/>
+<text x="1250" y="724" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Real users + buildability</text>
+<text x="1250" y="742" font-size="11" fill="#FFFFFF" fill-opacity=".8" text-anchor="middle">Checks 4a to 4d: tested with people,</text>
+<text x="1250" y="756" font-size="11" fill="#FFFFFF" fill-opacity=".8" text-anchor="middle">buildable, measurement handed over</text>
+<text x="40" y="796" font-size="11" font-weight="700" fill="#111111" fill-opacity=".5" letter-spacing="1.4">PARTNER MOVES  ·  WITH THE PO AND THE BUSINESS</text>
+<rect x="40" y="806" width="320" height="74" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="58" y="832" font-size="12" font-weight="700" fill="#6B3FEE">DISCOVER</text>
+<text x="58" y="852" font-size="12" fill="#111111" fill-opacity=".8">agree the question and the outcome with the</text>
+<text x="58" y="868" font-size="12" fill="#111111" fill-opacity=".8">business</text>
+<rect x="390" y="806" width="320" height="74" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="408" y="832" font-size="12" font-weight="700" fill="#6B3FEE">DEFINE</text>
+<text x="408" y="852" font-size="12" fill="#111111" fill-opacity=".8">co-sign the brief with product and business:</text>
+<text x="408" y="868" font-size="12" fill="#111111" fill-opacity=".8">it becomes the requirement</text>
+<rect x="740" y="806" width="320" height="74" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="758" y="832" font-size="12" font-weight="700" fill="#6B3FEE">DEVELOP</text>
+<text x="758" y="852" font-size="12" fill="#111111" fill-opacity=".8">show options early and often, not in one big</text>
+<text x="758" y="868" font-size="12" fill="#111111" fill-opacity=".8">reveal</text>
+<rect x="1090" y="806" width="320" height="74" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="1108" y="832" font-size="12" font-weight="700" fill="#6B3FEE">DELIVER</text>
+<text x="1108" y="852" font-size="12" fill="#111111" fill-opacity=".8">agree the measurement plan with the PO</text>
+<rect x="40" y="900" width="1360" height="72" rx="14" fill="#6B3FEE" fill-opacity=".12"/>
+<text x="64" y="928" font-size="13" font-weight="700" fill="#111111">ALIGNMENT CHECK AT EVERY GATE</text>
+<text x="64" y="950" font-size="13" fill="#111111" fill-opacity=".8">Check the output against the shared problem brief: does it serve the outcome and an evidenced opportunity, test a hypothesis, and pass the principles? No: go back one step.</text>
+<rect x="40" y="992" width="1360" height="96" rx="14" fill="#111111"/>
+<text x="64" y="1020" font-size="13" font-weight="700" fill="#FFFFFF">FOUNDATION (set once, reused every stage)</text>
+<text x="64" y="1042" font-size="13" fill="#FFFFFF" fill-opacity=".88">UX principles: Nielsen's 10 heuristics as the baseline, plus your organisation's own UX, business and service principles when they exist</text>
+<text x="64" y="1063" font-size="13" fill="#FFFFFF" fill-opacity=".88">Design system and tokens  ·  project context pack  ·  accessibility requirements</text>
+<rect x="40" y="1104" width="1360" height="64" rx="14" fill="#6B3FEE"/>
+<text x="64" y="1130" font-size="13" font-weight="700" fill="#FFFFFF">EXPERIENCE HUB (the final report, built page by page)</text>
+<text x="64" y="1152" font-size="13" fill="#FFFFFF" fill-opacity=".9">One place that stores every output and cross-links them: opportunity, hypothesis, decision, principle, test, metric</text>
+</svg>

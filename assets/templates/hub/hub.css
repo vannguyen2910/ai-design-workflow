@@ -1,0 +1,55 @@
+/* Experience Hub: black, white and purple only. Do not add colours. */
+:root { --ink:#111; --bg:#fff; --muted:rgba(17,17,17,.62); --line:rgba(17,17,17,.12); --purple:#6B3FEE; --link:#6B3FEE; --tint:rgba(107,63,238,.12); --on-purple:#fff; }
+@media (prefers-color-scheme: dark) { :root { --ink:#f5f4fa; --bg:#111; --muted:rgba(245,244,250,.66); --line:rgba(245,244,250,.16); --tint:rgba(107,63,238,.28); --link:#B7A2FF; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 Helvetica, Arial, sans-serif; display:grid; grid-template-columns:260px 1fr; grid-template-rows:auto 1fr; min-height:100vh; }
+#top { grid-column:1 / -1; display:flex; gap:16px; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--line); }
+#top .case { font-weight:700; }
+.badge { display:inline-block; padding:2px 12px; border-radius:999px; font-size:.8rem; font-weight:700; background:var(--tint); }
+.badge.agreed { background:var(--purple); color:var(--on-purple); }
+#nav { padding:20px 16px 40px 24px; border-right:1px solid var(--line); font-size:.92rem; }
+#nav h4 { margin:20px 0 6px; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+#nav a { display:block; padding:6px 10px; border-radius:8px; color:var(--ink); text-decoration:none; }
+#nav a:hover { background:var(--tint); }
+#nav a.current { background:var(--purple); color:var(--on-purple); font-weight:700; }
+main { padding:32px 40px 80px; max-width:980px; }
+h1 { font-size:1.9rem; margin:0 0 4px; }
+h2 { font-size:1.15rem; margin:40px 0 10px; padding-top:18px; border-top:1px solid var(--line); }
+h3 { font-size:1rem; margin:0 0 6px; }
+.lede { color:var(--muted); margin:0 0 24px; }
+.how { background:var(--tint); border-radius:14px; padding:14px 18px; margin:0 0 28px; font-size:.92rem; }
+.how b { color:var(--link); }
+.example { font-weight:700; color:var(--link); }
+.item { background:var(--tint); border-radius:14px; padding:14px 18px; margin:10px 0; }
+.id-tag { display:inline-block; min-width:2.2em; text-align:center; padding:1px 8px; margin-right:8px; border-radius:8px; background:var(--ink); color:var(--bg); font:700 .8rem Menlo, Consolas, monospace; }
+.connections { margin-top:8px; font-size:.85rem; color:var(--muted); }
+a.idlink { color:var(--link); font-weight:700; text-decoration:none; font-family:Menlo, Consolas, monospace; font-size:.9em; }
+a.idlink:hover { text-decoration:underline; }
+a.idlink.strains::after { content:" ⚠"; }
+.table-wrap { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; min-width:640px; font-size:.9rem; }
+th, td { text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+th { background:var(--tint); }
+td.missing { font-weight:700; color:var(--link); background:var(--tint); }
+.flags { list-style:none; margin:0; padding:0; }
+.flags li { padding:10px 14px; margin:8px 0; border-radius:12px; background:var(--tint); border-left:4px solid var(--purple); }
+.flags li.ok { border-left-color:var(--ink); }
+.gates { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:10px; }
+.gate { background:var(--ink); color:var(--bg); border-radius:14px; padding:12px 16px; }
+.gate small { opacity:.78; display:block; }
+.gate .st { margin-top:6px; font-weight:700; }
+.decision { background:var(--purple); color:var(--on-purple); border-radius:14px; padding:18px 22px; margin:20px 0; }
+.placeholder { color:var(--muted); font-style:italic; }
+footer { margin-top:56px; color:var(--muted); font-size:.85rem; }
+@media (max-width:780px) { body { grid-template-columns:1fr; } #nav { border-right:0; border-bottom:1px solid var(--line); } main { padding:24px 16px 60px; } }
+
+/* setup problems shown by hub.js */
+.hub-error { background:var(--tint); border-left:4px solid var(--purple); border-radius:12px; padding:14px 18px; margin:0 0 24px; font-size:.92rem; }
+.hub-error ul { margin:8px 0 0; padding-left:20px; }
+.hub-error li { margin:4px 0; }
+.hub-error code { font-family:Menlo, Consolas, monospace; font-size:.9em; }
+noscript p { background:var(--tint); border-left:4px solid var(--purple); border-radius:12px; padding:14px 18px; }
+
+.gate ul { list-style:none; margin:10px 0 0; padding:0; font-size:.8rem; }
+.gate li { margin:6px 0; padding-left:0; }
+.gate .ck { display:inline-block; width:1.2em; font-weight:700; }

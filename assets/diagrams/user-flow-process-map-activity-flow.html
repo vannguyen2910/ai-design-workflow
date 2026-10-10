@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Workflow Activity Flow</title>
+<style>
+:root{--purple:#6B3FEE;--ink:#111;--paper:#fff;--tint:#EFE9FD;--hair:#d9d9e0;}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#fff;overflow:hidden}
+body{font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+.stage{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;background:var(--paper)}
+.stage>*{position:absolute}
+.kicker{left:80px;top:46px;font-size:22px;letter-spacing:.14em;font-weight:700;color:var(--purple)}
+.title{left:80px;top:78px;font-size:56px;font-weight:800;line-height:1.05;letter-spacing:-.01em}
+.legend{right:80px;top:56px;display:flex;gap:26px;font-size:20px;align-items:center}
+.legend span{display:flex;gap:10px;align-items:center}
+.sw{width:22px;height:22px;display:inline-block;border-radius:4px}
+.sw.you{background:var(--purple)}.sw.ai{background:var(--ink)}.sw.file{background:var(--tint);border:2px solid var(--purple)}
+.sw.gt{border-radius:50%;background:#fff;border:3px solid var(--ink)}
+.lane{left:80px;width:1760px;border-top:2px solid var(--ink)}
+.lane .lb{position:absolute;left:0;top:0;width:110px;height:100%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;letter-spacing:.12em;writing-mode:vertical-rl;transform:rotate(180deg);border-right:2px solid var(--hair)}
+.branch{left:210px;top:178px;display:flex;gap:18px;font-size:21px}
+.branch div{border:2px solid var(--ink);border-radius:40px;padding:8px 22px}
+.branch b{color:var(--purple)}
+.node{border-radius:14px;color:#fff;padding:16px 14px 12px;display:flex;flex-direction:column;gap:6px}
+.node.you{background:var(--purple)}.node.ai{background:var(--ink)}
+.node b{font-size:24px;line-height:1.1}
+.node .d{font-size:16.5px;line-height:1.3;opacity:.92}
+.node .num{font-size:15px;font-weight:700;letter-spacing:.1em;opacity:.8}
+.ln{background:var(--ink)}
+.ah{width:0;height:0;border-left:14px solid var(--ink);border-top:9px solid transparent;border-bottom:9px solid transparent}
+.gate{width:52px;height:52px;border-radius:50%;background:#fff;border:4px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px}
+.chip{background:var(--tint);border:2px solid var(--purple);border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:17px;font-weight:600;line-height:1.25;color:var(--ink)}
+.rowlabel{left:96px;font-size:17px;font-weight:700;letter-spacing:.1em;width:100px;line-height:1.3}
+.gcard{top:858px;width:497px;height:132px;border:2px solid var(--ink);border-radius:14px;padding:16px 18px;display:flex;gap:16px;align-items:flex-start;position:absolute}
+.gate.small{position:static;flex:none;width:46px;height:46px;font-size:21px;border-width:3px}
+.gcard .gw{font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--purple)}
+.gcard p{font-size:19px;line-height:1.3;margin:4px 0}
+.gcard em{font-size:17px;font-style:normal;font-weight:700}
+.foot{left:80px;top:1022px;font-size:22px;font-weight:600}
+.foot span{color:var(--purple)}
+</style></head><body>
+<div class="stage" id="stage">
+<div class="kicker">AI DESIGN WORKFLOW · INFORMATION ARCHITECTURE</div>
+<div class="title">From raw notes to a map you can trust</div>
+<div class="legend"><span><i class="sw you"></i>You</span><span><i class="sw ai"></i>AI</span><span><i class="sw file"></i>Working file</span><span><i class="sw gt"></i>Checkpoint</span></div>
+<div class="branch"><div><b>A · User Flow</b> — runs first</div><div><b>B · Process Map</b> — runs second, reuses the verified table</div></div>
+<div class="lane" style="top:250px;height:225px"><div class="lb">YOU</div></div>
+<div class="lane" style="top:475px;height:225px;border-bottom:2px solid var(--ink)"><div class="lb">AI</div></div>
+<div class="node you" style="left:210px;top:275px;width:152px;height:170px;"><span class="num">1</span><b>Frame</b><span class="d">Task · job · constraints · your belief</span></div>
+<div class="node you" style="left:410px;top:275px;width:152px;height:170px;"><span class="num">2</span><b>Capture the facts</b><span class="d">Walk the product. One note per step</span></div>
+<div class="node ai" style="left:610px;top:505px;width:152px;height:170px;"><span class="num">3</span><b>Structure</b><span class="d">Notes → table. Mark inferred · unknown</span></div>
+<div class="node you" style="left:810px;top:275px;width:152px;height:170px;"><span class="num">4</span><b>Verify</b><span class="d">Walk it again. Fix a copy of the table</span></div>
+<div class="node ai" style="left:1010px;top:505px;width:152px;height:170px;"><span class="num">5</span><b>Analyse</b><span class="d">Friction · 3 options · argues back</span></div>
+<div class="node you" style="left:1210px;top:275px;width:152px;height:170px;"><span class="num">6</span><b>Decide the fix</b><span class="d">One structural change + a test</span></div>
+<div class="node ai" style="left:1410px;top:505px;width:152px;height:170px;"><span class="num">7</span><b>Diagram code</b><span class="d">Verified table → Mermaid. Nothing added</span></div>
+<div class="node you" style="left:1610px;top:275px;width:152px;height:170px;"><span class="num">8</span><b>Draw and state limits</b><span class="d">Render · compare · state the limits</span></div>
+<i class="ln" style="left:362px;top:358px;width:38px;height:4px"></i>
+<i class="ah" style="left:396px;top:351px"></i>
+<i class="ln" style="left:562px;top:358px;width:26px;height:4px"></i>
+<i class="ln" style="left:584px;top:360px;width:4px;height:230px"></i>
+<i class="ln" style="left:586px;top:588px;width:14px;height:4px"></i>
+<i class="ah" style="left:596px;top:581px"></i>
+<i class="ln" style="left:762px;top:588px;width:26px;height:4px"></i>
+<i class="ln" style="left:784px;top:360px;width:4px;height:230px"></i>
+<i class="ln" style="left:786px;top:358px;width:14px;height:4px"></i>
+<i class="ah" style="left:796px;top:351px"></i>
+<i class="ln" style="left:962px;top:358px;width:26px;height:4px"></i>
+<i class="ln" style="left:984px;top:360px;width:4px;height:230px"></i>
+<i class="ln" style="left:986px;top:588px;width:14px;height:4px"></i>
+<i class="ah" style="left:996px;top:581px"></i>
+<i class="ln" style="left:1162px;top:588px;width:26px;height:4px"></i>
+<i class="ln" style="left:1184px;top:360px;width:4px;height:230px"></i>
+<i class="ln" style="left:1186px;top:358px;width:14px;height:4px"></i>
+<i class="ah" style="left:1196px;top:351px"></i>
+<i class="ln" style="left:1362px;top:358px;width:26px;height:4px"></i>
+<i class="ln" style="left:1384px;top:360px;width:4px;height:230px"></i>
+<i class="ln" style="left:1386px;top:588px;width:14px;height:4px"></i>
+<i class="ah" style="left:1396px;top:581px"></i>
+<i class="ln" style="left:1562px;top:588px;width:26px;height:4px"></i>
+<i class="ln" style="left:1584px;top:360px;width:4px;height:230px"></i>
+<i class="ln" style="left:1586px;top:358px;width:14px;height:4px"></i>
+<i class="ah" style="left:1596px;top:351px"></i>
+<i class="ln" style="left:1762px;top:358px;width:26px;height:4px"></i>
+<div class="gate" style="left:960px;top:449px">A</div>
+<div class="gate" style="left:1360px;top:449px">B</div>
+<div class="gate" style="left:1788px;top:334px">C</div>
+<div class="chip" style="left:210px;top:735px;width:152px;height:74px;">Frame</div>
+<div class="chip" style="left:410px;top:735px;width:152px;height:74px;">Notes<br>(sources/)</div>
+<div class="chip" style="left:610px;top:735px;width:152px;height:74px;">Table<br>(AI draft)</div>
+<div class="chip" style="left:810px;top:735px;width:152px;height:74px;">Table<br>(verified)</div>
+<div class="chip" style="left:1010px;top:735px;width:152px;height:74px;">Analysis<br>(AI)</div>
+<div class="chip" style="left:1210px;top:735px;width:152px;height:74px;">Fix +<br>decision</div>
+<div class="chip" style="left:1410px;top:735px;width:152px;height:74px;">Diagram<br>code (AI)</div>
+<div class="chip" style="left:1610px;top:735px;width:152px;height:74px;">Final diagram<br>+ limits</div>
+<div class="rowlabel" style="top:742px">WORKING FILE</div>
+<div class="rowlabel" style="top:900px">CHECK-POINTS</div>
+<div class="gcard" style="left:210px"><div class="gate small">A</div><div><span class="gw">Checkpoint A · after step 4</span><p>Does the table match the real product? Is every inferred row confirmed or removed?</p><em>No → back to step 2</em></div></div><div class="gcard" style="left:737px"><div class="gate small">B</div><div><span class="gw">Checkpoint B · after step 6</span><p>Were 3 different options considered? Does the fix trace to the job and the evidence?</p><em>No → back to step 5</em></div></div><div class="gcard" style="left:1264px"><div class="gate small">C</div><div><span class="gw">Checkpoint C · after step 8</span><p>Does the diagram hold exactly the verified steps? Is every unknown still visible?</p><em>No → back to step 7 (or 4)</em></div></div>
+<div class="foot"><span>The table is the source of truth.</span> The diagram is only a view of it. AI works from facts you collected, and every AI output passes through you.</div>
+</div>
+<script>
+function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080),st=document.getElementById('stage');
+st.style.transform='scale('+s+')';st.style.left=((innerWidth-1920*s)/2)+'px';st.style.top=((innerHeight-1080*s)/2)+'px'}
+addEventListener('resize',fit);fit();
+</script></body></html>

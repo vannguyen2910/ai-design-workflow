@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Competitor Analysis Report</title>
+<!--
+  TEMPLATE for students. How to use:
+  1. Keep this structure and the styles. Replace every [PLACEHOLDER] with content from your competitor-analysis.md.
+  2. Where each part comes from:
+       Decision banner ........ ## Scope
+       Our answer ............. ## Insights + open questions (the decision)
+       Who we compared ........ ## Competitors (final list + reasons)
+       Comparison ............. ## Evidence (verified)   <- never the AI draft
+       Beliefs we tested ...... ## Scope (beliefs) + ## Patterns (belief check)
+       Insights ............... ## Insights + open questions
+       Open questions ......... ## Insights + open questions
+       Appendix ............... files in sources/
+  3. Ask your AI coding tool to fill it from your file, but YOU decide the insights and the answer (Gate C).
+  4. Every insight must link to evidence in the appendix.
+  5. This page is one page of your Experience Hub. Give opportunities, hypotheses and insights short IDs (O1, H1, ...) so other pages can link to them.
+  Delete this comment before sharing.
+-->
+<style>
+  :root { --ink:#1F1B2E; --muted:#5B5670; --line:#E6E2EE; --bg:#FBFAF7; --purple:#6B3FEE; --tint:#E9E2FD; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#F4F2FA; --muted:#B7B1CC; --line:#322D45; --bg:#16131F; --tint:#2A2346; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 Helvetica, Arial, sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:48px 0 12px; padding-top:20px; border-top:1px solid var(--line); }
+  .meta { color:var(--muted); font-size:.9rem; }
+  .decision { background:var(--purple); color:#fff; border-radius:14px; padding:20px 24px; margin:24px 0; }
+  .decision small { opacity:.8; text-transform:uppercase; letter-spacing:.08em; font-size:.7rem; display:block; margin-bottom:4px; }
+  .table-wrap { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; min-width:640px; font-size:.9rem; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:var(--tint); font-weight:700; }
+  .insight { background:var(--tint); border-radius:14px; padding:16px 20px; margin:12px 0; }
+  .insight h3 { margin:0 0 4px; font-size:1rem; }
+  .insight .evidence { color:var(--muted); font-size:.85rem; }
+  .open { background:var(--tint); border-radius:14px; padding:16px 20px; }
+  .status-inferred { color:var(--purple); font-weight:700; }
+  .status-unknown { color:var(--muted); font-style:italic; }
+  footer { color:var(--muted); font-size:.85rem; margin-top:48px; }
+  a { color:var(--purple); }
+</style>
+</head>
+<body>
+<main>
+  <p class="meta">Competitor analysis · [DATE] · [YOUR NAME]</p>
+  <h1>[PRODUCT / AREA]: competitor analysis</h1>
+
+  <div class="decision">
+    <small>Decision this informs</small>
+    [ONE SENTENCE FROM YOUR SCOPE SECTION]
+  </div>
+
+  <h2>Our answer</h2>
+  <p>[ONE SENTENCE: "We should / should not X, because Y", or "Not enough evidence yet: we still need Z"]</p>
+
+  <h2>Who we compared, and why</h2>
+  <p>[ONE LINE: how competitors were chosen and checked with sales/support].</p>
+  <ul>
+    <li><strong>[COMPETITOR]</strong>: [direct / indirect / substitute]. [Why included]</li>
+    <li><strong>Excluded: [NAME]</strong>: [reason]</li>
+  </ul>
+
+  <h2>Comparison</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Criterion</th><th>[COMPETITOR 1]</th><th>[COMPETITOR 2]</th><th>[COMPETITOR 3]</th></tr></thead>
+      <tbody>
+        <tr><td>[CRITERION 1]</td><td>[Finding] <a href="#src-1">[1]</a></td><td>[Finding] <a href="#src-2">[2]</a></td><td class="status-unknown">unknown</td></tr>
+        <tr><td>[CRITERION 2]</td><td>[Finding] <a href="#src-3">[3]</a></td><td><span class="status-inferred">inferred:</span> [Finding]</td><td>[Finding] <a href="#src-4">[4]</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Beliefs we tested</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>What we believed before</th><th>Verdict</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr><td>[BELIEF 1]</td><td>[Supported / Contradicted / Not addressed]</td><td>[Rows or sources]</td></tr>
+        <tr><td>[BELIEF 2]</td><td>[Verdict]</td><td>[Rows or sources]</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Insights (3 to 5)</h2>
+  <div class="insight">
+    <h3>[INSIGHT IN ONE SENTENCE]</h3>
+    <div>[WHY IT MATTERS FOR OUR USERS AND WHICH PRINCIPLE IT TOUCHES]</div>
+    <div class="evidence">Evidence: [rows / sources]. Strongest counter-argument: [ONE LINE FROM YOUR PATTERNS SECTION].</div>
+  </div>
+  <div class="insight">
+    <h3>[INSIGHT 2]</h3>
+    <div>[SO WHAT]</div>
+    <div class="evidence">Evidence: [..]. Counter-argument: [..]</div>
+  </div>
+
+  <h2>What this cannot tell us (needs real users)</h2>
+  <div class="open">
+    <ul>
+      <li>[WHAT COMPETITOR DATA CANNOT TELL US]</li>
+      <li>[QUESTION FOR DISCOVER INTERVIEWS]</li>
+    </ul>
+  </div>
+
+  <h2>Appendix: sources and method</h2>
+  <ol>
+    <li id="src-1">[Source name, URL or file, date collected]</li>
+    <li id="src-2">[Source]</li>
+  </ol>
+  <p class="meta">Method: AI extracted the table only from the sources listed above. I checked every cell on [TOP CRITERIA] and about [N]% of the rest; error rate [X]%, all corrected. Cells marked "inferred" were not stated in a source; "unknown" means the sources did not say.</p>
+
+  <footer>Status: [DRAFT / REVIEWED]. Next: feed into the problem brief (Define).</footer>
+</main>
+</body>
+</html>
