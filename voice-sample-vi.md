@@ -1,6 +1,6 @@
 # Mẫu giọng tiếng Việt (đã được Winnie duyệt 2026-10-06, dùng làm chuẩn)
 
-> **File chuẩn:** các quy tắc dưới đây đã được chuyển vào `_system/rules/VI_VOICE.md`, áp dụng cho mọi nội dung tiếng Việt. File này giữ lại làm ví dụ áp dụng cho lesson AI Design Workflow. Khi thêm quy tắc mới, cập nhật `VI_VOICE.md` trước.
+> **File chuẩn:** các quy tắc dưới đây đã được chuyển vào `_system/rules/vi-voice.md`, áp dụng cho mọi nội dung tiếng Việt. File này giữ lại làm ví dụ áp dụng cho lesson AI Design Workflow. Khi thêm quy tắc mới, cập nhật `vi-voice.md` trước.
 
 Bản thử viết lại theo giọng của Winnie, học từ transcript các buổi mentoring, rồi chỉnh lại cho đúng văn phong tài liệu chính thức. Đã áp dụng vào lesson, outline và method card.
 
