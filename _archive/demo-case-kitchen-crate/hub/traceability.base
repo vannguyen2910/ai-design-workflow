@@ -1,0 +1,58 @@
+filters:
+  and:
+    - file.inFolder("hub")
+views:
+  - type: table
+    name: "Opportunities"
+    filters:
+      and:
+        - file.inFolder("hub/opportunities")
+    order:
+      - file.name
+      - title
+      - rank
+      - evidence
+  - type: table
+    name: "Hypotheses"
+    filters:
+      and:
+        - file.inFolder("hub/hypotheses")
+    order:
+      - file.name
+      - title
+      - serves
+      - metric
+  - type: table
+    name: "Decisions"
+    filters:
+      and:
+        - file.inFolder("hub/decisions")
+    order:
+      - file.name
+      - title
+      - tests
+      - follows
+      - pulls_against
+  - type: table
+    name: "Tests"
+    filters:
+      and:
+        - file.inFolder("hub/tests")
+    order:
+      - file.name
+      - title
+      - tests
+      - measures
+      - participants
+      - result
+  - type: table
+    name: "Metrics"
+    filters:
+      and:
+        - file.inFolder("hub/metrics")
+    order:
+      - file.name
+      - title
+      - status
+      - baseline
+      - measured_by

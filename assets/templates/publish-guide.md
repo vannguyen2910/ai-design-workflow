@@ -9,7 +9,7 @@
 - **GitHub Pages** turns a repository that contains a website into a live site at a web address.
 
 ## Before you start: what goes online
-- **Only the contents of your `hub/` folder go online.** Your `00-context` files, notes, sources and working files stay on your computer.
+- **Only the contents of your `hub/` folder go online.** Your `learnings/` files, notes, sources and working files stay on your computer.
 - A free GitHub Pages site is **public to anyone who has the link**. Choose a case you are free to share. Leave out confidential company figures, unreleased details and users' personal data.
 - Your GitHub username will appear in the address. If you prefer not to use your real name, pick a username you are comfortable showing.
 - **You host this hub and you are responsible for it:** the link, what is on it, and what you choose to make public. The instructor does not host or upload hubs for you.

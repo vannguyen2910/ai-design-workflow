@@ -47,8 +47,8 @@ Four checks, which map to "found a problem" signals:
 
 Principle checking is **heuristic evaluation**, where a product is reviewed against a checklist of principles to give an objective picture of quality and an action list ([uxdesign.cc — measuring design quality with heuristics](https://uxdesign.cc/measuring-design-quality-with-heuristics-44857efa514), [LUMA — heuristic review](https://www.luma-institute.com/heuristic-review/)). The checklist is the **baseline heuristics plus any organisation principles**. Each principle is turned into yes/no questions for the product at hand (the AI may draft these; you approve them), with the reason and anti-patterns (practice from design-principle guidance; secondary source). Large companies often have their own UX, business and service principles for their products; students in those companies use them as the first layer and Nielsen's 10 as the fallback.
 
-### The Experience Hub: where the chain becomes clickable
-**The final report of the series is one experience hub** that stores every output of the case and lets the designer cross-reference them. (Defined by Winnie, 2026-10-05.)
+### The Knowledge Hub: where the chain becomes clickable
+**The final report of the series is one knowledge hub** that stores every output of the case and lets the designer cross-reference them. (Defined by Winnie, 2026-10-05.)
 
 **What it holds (one page each, built as the series goes):** Scope · Competitor analysis and other evidence · Problem brief (outcome, opportunities, hypotheses, principle checks) · Options and flows · Prototype link · Alignment table and principle audit · Usability findings · Handoff pack and measurement plan · Case log (decisions).
 **What makes it a hub, not a folder of reports:** cross-links.

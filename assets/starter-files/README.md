@@ -5,15 +5,15 @@ Every lesson has a starting point, so nobody is blocked if homework was skipped.
 | Lesson # | Lesson | Starter file | Where it is |
 |---|---|---|---|
 | 1 | Your design process, with AI | Case folder template, empty hub | `case-folder-template/` and `../templates/hub/` |
-| 2 | Discover the problem | `scope.md`; the stand-in PO case pack if you have no PO access | `case-folder-template/01-discover/scope.md`, `course-case/po-case-pack.md` |
-| 3 | Research you can trust | A prepared set of 24 quotes, plus the working file | `course-case/quotes.md`, `case-folder-template/01-discover/user-voice-synthesis.md` |
+| 2 | Discover the problem | `scope.md`; the stand-in PO case pack if you have no PO access | `case-folder-template/learnings/discover-scope.md`, `course-case/po-case-pack.md` |
+| 3 | Research you can trust | A prepared set of 24 quotes, plus the working file | `course-case/quotes.md`, `case-folder-template/learnings/discover-user-voice-synthesis.md` |
 | 3 (demo) | Competitor analysis | Three fictional competitor pages | `course-case/competitors/` |
-| 4 | Frame the problem | Problem brief | `case-folder-template/02-define/problem-brief.md` |
-| 5 | Explore ideas | Options and decisions | `case-folder-template/03-develop/options.md` |
+| 4 | Frame the problem | Problem brief | `case-folder-template/learnings/define-problem-brief.md` |
+| 5 | Explore ideas | Options and decisions | `case-folder-template/learnings/develop-options.md` |
 | 6 | First prototype | Starter design system, rules file, empty page | `prototype-starter/` |
 | 7 | Refine and check | A working three-screen prototype to refine | `checkpoint-prototype/` |
-| 8 | Test with users | Test plan and findings | `case-folder-template/04-deliver/test-plan.md`, `findings.md` |
-| 9 | Hand off and measure | Handoff pack and measurement plan | `case-folder-template/04-deliver/handoff.md`, `measurement-plan.md` |
+| 8 | Test with users | Test plan and findings | `case-folder-template/learnings/deliver-test-plan.md`, `deliver-findings.md` |
+| 9 | Hand off and measure | Handoff pack and measurement plan | `case-folder-template/learnings/deliver-handoff.md`, `deliver-measurement-plan.md` |
 | 10 | Capstone | None | |
 
 ## Two kinds of file

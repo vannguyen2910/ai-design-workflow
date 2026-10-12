@@ -50,7 +50,7 @@ Each activity has one folder:
 - **Give each AI step only the sections it needs.**
 - **Markdown inside** (plain text is what AI reads and writes reliably); **HTML outside** for stakeholders.
 - Version history in the cloud drive is the safety net. *(⚠️ my recommendation, untested.)*
-- **Each activity's HTML page is one page of the Experience Hub** (`hub/` in the case folder), not a standalone report. Items that other activities refer to (opportunities, hypotheses, decisions, principle checks, tests, metrics) get short IDs so the hub can link them; see `03-quality-and-measurement.md` Part 1.
+- **Each activity's HTML page is one page of the Knowledge Hub** (`hub/` in the case folder), not a standalone report. Items that other activities refer to (opportunities, hypotheses, decisions, principle checks, tests, metrics) get short IDs so the hub can link them; see `03-quality-and-measurement.md` Part 1.
 
 ### 4. Two patterns (starting skeletons)
 Most activities fit one of two spines. Pick one, then adapt.
@@ -110,7 +110,7 @@ Use generic labels ("AI chat tool", "AI coding tool") per CLAUDE.md.
 2. Draw the activity flow in the standard style (copy the competitor-analysis SVG as a base).
 3. Define the working file's sections: one per step that produces content.
 4. Write one card per step using the format below.
-5. Build the page template (HTML) for this activity's page in the Experience Hub.
+5. Build the page template (HTML) for this activity's page in the Knowledge Hub.
 6. Run it once on a real case, time each step, and fill in "To test".
 
 ### Page header for each activity's card file

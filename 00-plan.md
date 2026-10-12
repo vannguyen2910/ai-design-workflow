@@ -27,21 +27,21 @@ Do these in order. Nothing else needs your attention yet.
 
 ## 2. The course at a glance
 
-**Who:** mid and senior UI/UX and product designers. PO, PM and BA are welcome and follow the same workflow.
-**What they get:** a repeatable AI-assisted workflow, from the business question to a tested, handoff-ready prototype. Every step's output is the next step's input, and one **Experience Hub** collects them all.
+**Who:** mid and senior UI/UX and product designers.
+**What they get:** a repeatable AI-assisted workflow, from the business question to a tested, handoff-ready prototype. Every step's output is the next step's input, and one **Knowledge Hub** collects them all.
 **Format:** 7 weeks, 2 sessions a week, 90 minutes each, 7 to 8 students. **Session A teaches, with questions and short pair talk but no new output; session B (about 3 days later) is practice on the student's own case and holds every output.** Session A of week 1 ends with 15 minutes of open questions (students note questions in the chat during the session). Homework only continues class work.
 
 | Week | Module | Session A: teach | Session B: practise | Main output |
 |---|---|---|---|---|
 | 1 | **Your design process, with AI** | Where design careers are heading and three paths to choose from, four-stage refresher, terms, data safety, hub, 15 minutes of questions | Write `my-direction.md` and data rules; build the case folder and context pack | Case folder, data rules, empty hub, `my-direction.md` |
-| 2 | **Discover the problem** | Business question, written stakeholder questions, evidence you can trust | Peer user interviews, then user-voice synthesis | Scope and evidence pack |
+| 2 | **Discover the problem** | Business question, written stakeholder questions, desk research, heuristic evaluation of the current experience, assumption map, evidence you can trust | Peer user interviews, then user-voice synthesis | Scope and evidence pack |
 | 3 | **Frame the problem** | Opportunities, hypotheses, success metrics, principle checks | Write the problem brief | Shared problem brief |
 | 4 | **Explore ideas** | Three directions, choose one | Choose direction, flows, content | Chosen direction and flows |
 | 5 | **Build your first prototype** | Design-system notes, rules file, first screen | Build the main flow | First prototype |
 | 6 | **Refine and test** | Refine, system and accessibility check, alignment check, test plan | Peer usability test, fix the findings | Refined prototype, findings |
 | 7 | **Hand off and present** | Handoff pack, measurement plan | Final project presentations | Finished hub, handoff |
 
-**Heaviest weeks:** 2 and 6 (two lessons each). If they overrun: cut desk research and the competitor demo in week 2; run the alignment check on the top three decisions only in week 6.
+**Heaviest weeks:** 2 and 6 (two lessons each). If they overrun: cut the competitor demo first in week 2, then trim desk research to a short scan; run the alignment check on the top three decisions only in week 6.
 **Content lessons 1 to 9** fold into these modules (week 2 = lessons 2 + 3, week 6 = lessons 7 + 8, week 7 = lesson 9 + final project). Detail for each is in `lesson-details.md`.
 
 ---
@@ -57,14 +57,14 @@ Do these in order. Nothing else needs your attention yet.
 | Career orientation | Session 1 spends 18 minutes on where UI/UX and product design are heading and three paths (strategic designer, design builder, AI product designer). Every figure is shown with source, year and sample; evidence is in `04-future-of-design-careers.md`. The course does not teach designing AI products, and says so. Students talk about their direction in session 1 and write `my-direction.md` in session 2; revisited in week 7. |
 | Case | The **student's own case** by default; the course case card is the fallback. Confidential material is anonymised first. |
 | Quality gates | Four stage gates with 16 lettered checks (1a to 4d), defined once in `02-method.md` Part 3. |
-| Discover | Two real methods, no role-play: a **written stakeholder check** and **peer user interviews**. AI never plays the PO or a user. |
+| Discover | Two real methods, no role-play: a **written stakeholder check** and **peer user interviews**. AI never plays the PO or a user. Added 2026-10-11: a heuristic evaluation of the current experience and an assumption map, both AI-drafted and student-verified (principles first, then AI). |
 | Access to product | Three levels (full, limited, none). Unconfirmed outcomes are recorded as **assumed**. |
 | Data safety | Taught in week 1: three kinds of material (safe, ask first, never in a public tool), four habits, student writes their own data rules. |
 | Tools | An **AI chat tool from session 1**, an **AI coding tool by session 9**. Lessons and slides stay generic; named examples live only in `assets/templates/tools-to-bring.md`. |
 | Hub | **Private by default**, kept in the student's case folder. Publishing on GitHub is optional and the student hosts it. |
 | Measurement | Pre-launch usability metrics are the core (Goals, Signals, Metrics). Business metrics: ask product, record as assumed. |
 | Principles | Nielsen's 10 are the baseline; add the organisation's own where they exist. |
-| Prototype | No code written by the student; the AI coding tool does it. PO, PM and BA use a ready-made design system. |
+| Prototype | No code written by the student; the AI coding tool does it. |
 | Naming | One name per idea, defined in the vocabulary table in `lesson-details.md`. No AI tool brand names in lesson text. |
 
 ---
@@ -91,7 +91,8 @@ Do these in order. Nothing else needs your attention yet.
 | `02-method.md` | Activity flow standard, step cards, stage methods and the 16 gate checks |
 | `03-quality-and-measurement.md` | Traceability, alignment check, measuring success |
 | `examples/` | Two worked examples: competitor analysis, user-voice synthesis |
-| `assets/` | Diagrams, templates (Experience Hub in `templates/hub/`), starter files, method cards, reference images |
+| `workspace/` | Repo mẫu cho học viên: `my-case` (trống), `demo-case` (Kitchen Crate), `guides/` cho người chưa dùng GitHub |
+| `assets/` | Diagrams, templates (Knowledge Hub in `templates/hub/`), starter files, method cards, reference images |
 | `_archive/00-plan-full-2026-10-07.md` | The full earlier plan with every dated decision, kept for reference |
 | `README.md` | Thứ tự lesson, trạng thái, cách thêm lesson. Các lesson nằm ở `library/lessons/ai-design-workflow/` |
 | `05-pitch-deck-outline.md` | Outline pitch deck 15 slide để đưa vào deck |

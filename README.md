@@ -1,6 +1,6 @@
 # AI Design Workflow (program)
 
-Chương trình 14 session (7 module hằng tuần, mỗi module gồm một buổi dạy và một buổi thực hành; mỗi tuần hai session 90 phút, trong 7 tuần) dành cho designer mid và senior: một case, một workflow AI lặp lại được, một Experience Hub dựng dần theo từng trang. Ưu tiên designer; PO, PM và BA học cùng workflow Double Diamond (xem quyết định "Mixed audience" trong `00-plan.md`). Đọc `00-plan.md` trước.
+Chương trình 14 session (7 module hằng tuần, mỗi module gồm một buổi dạy và một buổi thực hành; mỗi tuần hai session 90 phút, trong 7 tuần) dành cho designer mid và senior: một case, một workflow AI lặp lại được, một Knowledge Hub dựng dần theo từng trang. Đọc `00-plan.md` trước.
 
 **Program và lesson nằm ở hai chỗ** (từ 2026-10-07):
 - **Program** (thư mục này): kế hoạch, research, method, pitch deck, tài nguyên dùng chung.
@@ -18,6 +18,7 @@ programs/ai-design-workflow/                  (thư mục này)
   voice-sample-vi.md        bản thử giọng tiếng Việt
   assets/                   starter-files, hub và doc template, diagram, ảnh tham khảo
     method-cards/           card tham khảo cho từng design method, theo stage
+  workspace/                repo mẫu cho học viên: my-case (trống), demo-case (Kitchen Crate), guides/ (xem mục Workspace)
   examples/                 ví dụ làm sẵn (step card)
   _archive/                 bản nháp đã thay thế
 
@@ -60,6 +61,25 @@ Slug của tuần 2 đến 7 lấy từ `00-plan.md`; chi tiết từng lesson n
 Lesson 1 thay cho bản nháp "Set up your AI workspace" trước đó. Module ngắn dành cho các program có sẵn nằm ở `library/lessons/00-foundation/ai-workflow-introduction/`; giữ phần dùng chung (thuật ngữ, data safety, folder) đồng bộ với module đó, hoặc coi lesson 1 là nguồn duy nhất.
 
 Bài tập về nhà của mentee không lưu ở đây: `mentees/<tên>/homework/<slug>/`.
+
+## Workspace cho học viên
+
+`workspace/` là một folder độc lập, dùng làm repo mẫu: học viên tải ZIP hoặc bấm Use this template, không cần biết Git. Phần lớn được copy từ `assets/`; riêng hub được viết trực tiếp ở đây (xem bảng).
+
+| Trong `workspace/` | Nguồn trong `assets/` |
+|---|---|
+| `my-case/` (trừ `hub/` và `learnings/prototype/`) | `starter-files/case-folder-template/` |
+| `my-case/hub/` (và `demo-case/hub/`) | **viết trực tiếp ở `workspace/`, dạng markdown** (README.md, gates.md, trang theo tuần, item theo folder). `templates/hub/` là bản HTML cũ, không còn đồng bộ |
+| `my-case/learnings/prototype/` | `starter-files/prototype-starter/` |
+| `demo-case/` | **Travel Buddy** (dự án thật của giảng viên, từ `05_Learning/SRH/.../Travel Buddy`), viết trực tiếp ở `workspace/`. Bản Kitchen Crate cũ nằm ở `_archive/demo-case-kitchen-crate/` |
+| `AGENTS.md`, `tools/step-*.md` | `assets/starter-files/case-folder-template/` (bản gốc) và `examples/*/step-cards.md` (nguồn của card, đã chuyển sang tiếng Việt và đổi đường dẫn) |
+| `README.md`, `guides/`, README của `my-case/`, `demo-case/` | viết trực tiếp ở `workspace/` (tiếng Việt) |
+
+Đưa lên GitHub: tạo repo riêng chỉ chứa nội dung `workspace/` (copy hoặc `git subtree split`), bật **Settings, Template repository** để học viên có nút Use this template, và để repo Public. Học viên tạo bản Private của họ từ template.
+
+**Bản đã đăng lên GitHub** nằm ở `workspace-template/` (repo `vannguyen2910/ai-design-workspace-template`). Folder này là một repo Git riêng: phần `.git` của nó nằm ngoài Google Drive, ở `~/.git-workspace-template` (cùng cách với repo Mentorship), và repo Mentorship bỏ qua nó qua `.git/info/exclude`. `workspace/` vẫn là nơi soạn nội dung; muốn cập nhật bản đã đăng, copy nội dung đã sửa sang `workspace-template/`, rồi commit và push ở đó. Đừng sửa trực tiếp trong `workspace-template/` để tránh hai bản lệch nhau.
+
+Trong `workspace/` còn có `site/` (website Astro + Starlight dựng từ hub) và `.github/workflows/publish-hub.yml` (đăng site lên GitHub Pages, mặc định tắt, bật bằng repo variable `PUBLISH_HUB=true`). `astro-prototype/` là bản thử nghiệm gốc của `site/`; khi sửa một bên, đồng bộ bên kia.
 
 ## Trang program trên site
 

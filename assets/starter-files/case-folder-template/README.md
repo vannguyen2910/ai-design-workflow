@@ -1,33 +1,53 @@
-# Case folder template
+# Project: [tên dự án]
 
-Copy this whole folder. Rename it after your case (lowercase, hyphens), for example `onboarding-redesign`. Keep it a plain folder on your own computer while an AI tool is writing files.
+File này là trang đầu của dự án. Điền **Project card** trước, và cập nhật nó mỗi khi dự án đổi giai đoạn.
 
-```
-[your-case]/
-├── 00-context/      the context pack: paste into AI steps first
-├── 01-discover/     one working file per activity (+ a sources/ folder)
-├── 02-define/       the problem brief
-├── 03-develop/      options, alignment check, prototype/
-├── 04-deliver/      test plan, findings, handoff, measurement plan
-├── hub/             copy the contents of assets/templates/hub/ here (see hub/README.md)
-└── case-log.md      one line per decision, and why
-```
+## Project card
 
-## Which file, which week
-| Week | Fill in |
+| | |
 |---|---|
-| 1 | `00-context/product-and-users.md`, `accessibility-rules.md`, `data-rules.md` (and `glossary.md` if useful), then `open-questions.md` from the in-class instruction |
-| 2 | `01-discover/scope.md` |
-| 3 | `01-discover/user-voice-synthesis.md` (and `competitor-analysis.md` if you have time) |
-| 4 | `00-context/principle-checks.md`, `02-define/problem-brief.md` |
-| 5 | `03-develop/options.md` |
-| 6 and 7 | `00-context/design-system-notes.md`, `03-develop/prototype/`, `03-develop/alignment.md` |
-| 8 | `04-deliver/test-plan.md`, `findings.md` |
-| 9 | `04-deliver/handoff.md`, `measurement-plan.md` |
-| every week | `case-log.md`, and the matching hub page |
+| Tên dự án | |
+| Câu hỏi của business (một câu) | |
+| Giai đoạn hiện tại | Setup / Discover / Define / Develop / Deliver |
+| Chủ dự án | |
+| Người liên quan (product, business, engineering) | |
+| Bắt đầu | |
+| Cập nhật lần cuối | |
+| Công cụ AI được phép dùng cho dự án này | |
+| Quy tắc dữ liệu | Xem `learnings/context-data-rules.md` |
+
+## Where to start
+
+1. Bấm đúp `index.html` để xem hub trong trình duyệt. Khi làm việc, mở **cả folder này** bằng công cụ bạn quen (AI coding tool, VS Code hoặc Obsidian).
+2. **Dọn dữ liệu mẫu:** hub đang chứa các item `[EXAMPLE]` để bạn thấy nó chạy ra sao. Xoá chúng và thay bằng item của dự án khi bạn có item đầu tiên.
+3. Mở `learnings/context-product-and-users.md` và điền file đầu tiên.
+4. Viết `learnings/context-data-rules.md` trước khi đưa bất kỳ tài liệu thật nào cho AI.
+
+## Folders
+
+```
+├── index.html       trang chủ của hub: bấm đúp để xem bằng trình duyệt
+├── AGENTS.md        luật cho AI tool (tool tự đọc file này)
+├── case-log.md      mỗi decision một dòng, kèm lý do
+├── learnings/       mọi file làm việc, để phẳng; tên file bắt đầu bằng giai đoạn
+│   │                context-* (thông tin nền: đưa vào AI tool trước tiên), discover-*, define-*, develop-*, deliver-*
+│   ├── sources/     dữ liệu nghiên cứu: anonymised/ (đã ẩn danh) và _raw-private/ (gốc, không đưa vào AI tool)
+│   └── prototype/   code prototype
+├── hub/             Knowledge Hub: trang giai đoạn, item (O1, H1, D1...), artifacts/ (mở README.md)
+├── tools/           script tạo index.html và các step card của quy trình AI-assisted
+└── _personal/       ghi chú riêng, không đưa vào AI tool
+```
 
 ## Rules
-1. Anonymise before you paste anything into an AI tool.
-2. The AI returns only its own section; you paste it in.
-3. Keep the AI draft and your checked version as separate sections. The gap is your error rate.
-4. Mark any number you could not confirm as **assumed**.
+
+1. **Ẩn danh trước khi dán vào AI tool.** Dữ liệu gốc để ở `learnings/sources/_raw-private/`.
+2. **AI chỉ trả về một phần mỗi lần, và bạn tự dán vào.**
+3. **Bản nháp của AI và bản bạn đã kiểm tra nằm ở hai chỗ riêng.** Chênh lệch giữa hai bản là tỷ lệ lỗi của AI.
+4. **Con số chưa xác nhận được thì ghi `assumed`.**
+
+## Keep it current
+
+- **Decision mới:** một dòng vào `case-log.md`.
+- **Thông tin mới:** sửa file item hoặc working file, nhờ AI tool chạy `tools/step-refresh-hub.md`, rồi chạy `python3 tools/export-hub.py` để tạo lại `index.html`.
+- **Trước thay đổi lớn:** lưu một mốc (commit) hoặc copy folder thành bản `-backup`.
+- **Gửi cho người khác:** copy `index.html` ra ngoài và đổi tên (ví dụ `onboarding-redesign-report.html`).

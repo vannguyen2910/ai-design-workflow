@@ -1,6 +1,6 @@
 # Case log
 
-*One line per decision, with the reason. Include cuts and accepted trade-offs. Say where AI was used.*
+*Mỗi decision một dòng, kèm lý do. Ghi cả những thứ đã cắt và các trade-off đã chấp nhận. Ghi rõ chỗ nào AI được dùng.*
 
 | Date | Decision | Reason | Items (IDs) |
 |---|---|---|---|

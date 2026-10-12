@@ -1,0 +1,14 @@
+---
+import { graph } from '../lib/graph.mjs';
+import { withBase } from '../lib/hubindex.mjs';
+const { id } = Astro.props;
+const g = graph();
+const it = g.byId[id];
+const art = g.idx.artifacts.find((a) => a.id === id);
+const isP = /^P\d+$/.test(id);
+const href = it ? withBase(`/items/${id}/`) : art ? withBase(`/docs/${id}/`) : isP ? withBase('/pages/principles/') : null;
+const letter = it ? it.letter : art ? 'A' : isP ? 'P' : '';
+const title = it ? it.title : art ? art.title : isP ? g.idx.principles[id]?.name : '';
+const label = art ? (art.title.length > 26 ? art.title.slice(0, 24) + '…' : art.title) : id;
+---
+{href ? <a class={`chip t-${letter}`} href={href} title={title}>{label}</a> : <span class="chip">{id}</span>}

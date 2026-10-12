@@ -116,6 +116,6 @@
 <text x="64" y="1042" font-size="13" fill="#FFFFFF" fill-opacity=".88">UX principles: Nielsen's 10 heuristics as the baseline, plus your organisation's own UX, business and service principles when they exist</text>
 <text x="64" y="1063" font-size="13" fill="#FFFFFF" fill-opacity=".88">Design system and tokens  ·  project context pack  ·  accessibility requirements</text>
 <rect x="40" y="1104" width="1360" height="64" rx="14" fill="#6B3FEE"/>
-<text x="64" y="1130" font-size="13" font-weight="700" fill="#FFFFFF">EXPERIENCE HUB (the final report, built page by page)</text>
+<text x="64" y="1130" font-size="13" font-weight="700" fill="#FFFFFF">KNOWLEDGE HUB (the final report, built page by page)</text>
 <text x="64" y="1152" font-size="13" fill="#FFFFFF" fill-opacity=".9">One place that stores every output and cross-links them: opportunity, hypothesis, decision, principle, test, metric</text>
 </svg>

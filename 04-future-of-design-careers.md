@@ -155,7 +155,7 @@ Dữ liệu riêng cho design gần như không có. Những gì mình tìm đư
 
 1. **Lập trường của series được ủng hộ về tinh thần.** Bằng chứng mạnh nhất cho thấy giá trị đang chuyển từ làm ra screen sang framing vấn đề, làm việc với stakeholder và judgment [S3], và entry-level execution là lớp chịu tác động nhiều nhất [S3][S7]. Điều này khớp với "bắt đầu từ business question, cùng định nghĩa requirement".
 2. **Không nguồn nào đo trực tiếp** nhận định "designer chỉ nhận PRD rồi biến thành screen là nhóm dễ bị ảnh hưởng nhất". Hãy nói đó là suy luận ("phần việc AI nén nhanh nhất là từ brief sang screen"), không nói như một phát hiện.
-3. **Đối tượng học viên quan trọng.** Khoá nhắm tới designer mid và senior. Dữ liệu cho thấy lớp senior là lớp ổn định [S3][S7], nên thông điệp không phải là "AI sẽ lấy việc của bạn" mà là "công việc quanh bạn đang đổi; đây là cách dẫn dắt nó". Cách nói này cũng nhẹ nhàng hơn với một lớp có cả PO, PM và BA.
+3. **Đối tượng học viên quan trọng.** Khoá nhắm tới designer mid và senior. Dữ liệu cho thấy lớp senior là lớp ổn định [S3][S7], nên thông điệp không phải là "AI sẽ lấy việc của bạn" mà là "công việc quanh bạn đang đổi; đây là cách dẫn dắt nó".
 4. **Dùng số liệu làm bối cảnh, không làm nỗi sợ.** Phát hiện "AI fatigue" của NN/g [S3] là đối trọng hữu ích với sự cường điệu khi mở đầu Module 1.
 5. **Khi dạy, nêu năm và cỡ mẫu.** Trích mỗi con số kèm nguồn, năm và mẫu ("trong khảo sát 906 designer năm 2026"), như mục 9 khuyến nghị.
 

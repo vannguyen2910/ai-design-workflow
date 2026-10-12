@@ -9,7 +9,7 @@
 competitor-analysis-[product]/
 ├── competitor-analysis.md      ← the one working file; each step fills one section
 ├── sources/                    ← raw evidence: screenshots, saved pages, review exports
-└── analysis.html               ← this activity's page in the Experience Hub, built by you from the template (also exported to PDF)
+└── analysis.html               ← this activity's page in the Knowledge Hub, built by you from the template (also exported to PDF)
 ```
 Sections inside `competitor-analysis.md`, in order:
 

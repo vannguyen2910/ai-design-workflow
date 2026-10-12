@@ -1,5 +1,5 @@
 /* Checkpoint prototype: Kitchen Crate first-box flow (fictional). Three screens. Built on the starter design system.
-   Known gaps are listed in README.md; they are for week 7. */
+   Known gaps are listed in README.md; they are for week 6. */
 (function () {
   var app = document.getElementById("app");
   var state = { day: "", home: true, confirmed: false };

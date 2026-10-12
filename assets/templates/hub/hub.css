@@ -1,4 +1,4 @@
-/* Experience Hub: black, white and purple only. Do not add colours. */
+/* Knowledge Hub: black, white and purple only. Do not add colours. */
 :root { --ink:#111; --bg:#fff; --muted:rgba(17,17,17,.62); --line:rgba(17,17,17,.12); --purple:#6B3FEE; --link:#6B3FEE; --tint:rgba(107,63,238,.12); --on-purple:#fff; }
 @media (prefers-color-scheme: dark) { :root { --ink:#f5f4fa; --bg:#111; --muted:rgba(245,244,250,.66); --line:rgba(245,244,250,.16); --tint:rgba(107,63,238,.28); --link:#B7A2FF; } }
 * { box-sizing:border-box; }

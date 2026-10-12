@@ -1,4 +1,4 @@
-# Prototype starter (week 6)
+# Prototype starter (week 5)
 
 A small design system, a rules file and an empty page, so you can build your first version without setting anything up. **If you have your own design system, use it instead:** write your own `design-system-notes.md` and rules file, and use this starter only as a pattern.
 

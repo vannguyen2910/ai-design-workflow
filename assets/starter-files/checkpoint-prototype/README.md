@@ -1,13 +1,13 @@
-# Checkpoint prototype (week 7)
+# Checkpoint prototype (week 6)
 
-A working three-screen first-box flow for the fictional Kitchen Crate case, built on the starter design system. Use it if you missed week 6, or if you want a known starting point for the refine and alignment-check practice. Open `index.html` in a browser.
+A working three-screen first-box flow for the fictional Kitchen Crate case, built on the starter design system. Use it if you missed week 5, or if you want a known starting point for the refine and alignment-check practice. Open `index.html` in a browser.
 
 **Flow:** Start, Choose your delivery day, Check your first box (then "You are set").
 
 ## What is already right
 Real headings and labels, keyboard operation, visible focus, a step indicator, an inline error with a live announcement, and content that answers the user-voice findings: the delivery day is shown as changeable until a stated cut-off, and the skip route is shown on the confirm screen.
 
-## Known gaps to refine in week 7 (on purpose)
+## Known gaps to refine in week 6 (on purpose)
 1. **States:** no loading state, no "no delivery days available" state, no error if the booking fails.
 2. **Real content:** the days are placeholders. Dates, cut-off times and delivery windows need real values.
 3. **Responsive:** only checked at phone width; check a wide screen.

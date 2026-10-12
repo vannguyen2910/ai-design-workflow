@@ -18,8 +18,8 @@ Use **one name per idea**, and nothing else, in anything a student reads. Define
 |---|---|---|
 | **case**, **case folder** | The project the student works through, and its folder | case file, project file |
 | **working file** | The one Markdown file an activity fills, section by section | living file |
-| **context pack** | The `00-context` folder pasted into AI steps first | constraint layer |
-| **hub** (Experience Hub on first use) | The connected website that holds every output | final report (only for the finished hub) |
+| **context pack** | The `context-*` files in `learnings/`, pasted into AI steps first | constraint layer |
+| **hub** (Knowledge Hub on first use) | The connected website that holds every output | final report (only for the finished hub) |
 | **output** | A file or page a step produces | artifact, deliverable |
 | **gate** and **check** | A gate is a short checklist before moving on; a check is one yes/no question (1a, 3b …) | — |
 | **stage map**, **activity flow**, **step card** | The three views: the whole series, one activity, one step | Level 1, Level 2, Level 3 |
@@ -45,7 +45,7 @@ Plain wording for hub warnings and reviews: a **decision with no user need behin
 5. Decide what is safe to give an AI tool: sort material into safe, ask first and never in a public tool; anonymise before pasting; write their own data rules.
 6. Explain how to share their hub with a stakeholder: private by default (a PDF or zipped folder), published on GitHub only when the case is free to share.
 **Key activity:** an instructor demo of one task done twice (vague vs structured instruction on a case card), then build the case folder and run one instruction against a saved file. **Homework (up to 60 minutes):** Assignment 1 (case folder, required, about 35 minutes) and Assignment 2 (share your hub, optional, about 25 minutes: PDF export, or publish if the case is free to share).
-**Output:** case folder with `00-context/` started (product and users, accessibility rules, data rules, optional glossary) for the student's own case, and an empty hub (private).
+**Output:** case folder with the `context-*` files in `learnings/` started (product and users, accessibility rules, data rules, optional glossary) for the student's own case, and an empty hub (private).
 
 **Rebalance (2026-10-05, for the earlier 120-minute version)** — fixes from the content review (overloaded, no early value):
 | Before | After |
@@ -74,20 +74,24 @@ In passing, not on the cards: model, prompt, in-tool AI features, tokens. Markdo
 #### The case folder students build (replaces Options A/B/C as the series default)
 ```
 [case-name]/                         one plain local folder per project
-├── 00-context/                      the context pack, pasted into AI steps first
-│   ├── product-and-users.md
-│   ├── principle-checks.md          (written in Lesson 4)
-│   ├── design-system-notes.md       (added in Lesson 6)
-│   ├── accessibility-rules.md
-│   └── data-rules.md
-├── 01-discover/                     one living .md file per activity, plus sources/
-├── 02-define/                       problem-brief.md
-├── 03-develop/                      options.md, alignment.md, prototype/
-├── 04-deliver/                      test-plan.md, findings.md, handoff.md
-├── hub/                             the Experience Hub: one HTML page per activity, plus index.html (started in Lesson 1 from a template, grown every lesson)
+├── learnings/                       every working file, flat; file names start with the stage
+│   ├── context-product-and-users.md      the context pack, pasted into AI steps first
+│   ├── context-principle-checks.md       (written in Lesson 4)
+│   ├── context-design-system-notes.md    (added in Lesson 6)
+│   ├── context-accessibility-rules.md
+│   ├── context-data-rules.md
+│   ├── discover-*.md                one living .md file per activity
+│   ├── define-problem-brief.md
+│   ├── develop-options.md, develop-alignment.md
+│   ├── deliver-test-plan.md, deliver-findings.md, deliver-handoff.md
+│   ├── sources/                     anonymised/ and _raw-private/
+│   └── prototype/
+├── hub/                             the Knowledge Hub: stage pages, one file per item (O1, H1, D1...), artifacts/
+├── tools/                           export-hub.py and the step cards
+├── _personal/                       private notes, never given to AI
 └── case-log.md                      the decision log: one line per decision and why
 ```
-**Why this suits AI work:** numbered stage folders keep order; one file per activity gives each AI step a named input; `00-context` is the first thing pasted into every step; short plain-text files are easy to give the AI selectively; and an AI coding tool can open the whole folder as its project. Keep it a plain local folder while an AI tool is writing files; copy to cloud storage afterwards (as the existing lesson already teaches).
+**Why this suits AI work:** few folders, with stage prefixes in file names to keep order; one file per activity gives each AI step a named input; the `context-*` files are the first thing pasted into every step; short plain-text files are easy to give the AI selectively; and an AI coding tool can open the whole folder as its project. Keep it a plain local folder while an AI tool is writing files; copy to cloud storage afterwards (as the existing lesson already teaches).
 The existing lesson's three options (by stage, by file type, by deliverable) become *alternatives students may know about*; the series uses the stage layout because later lessons point to it.
 
 #### Mapping the existing lesson to the new scope
@@ -122,11 +126,12 @@ The existing lesson's three options (by stage, by file type, by deliverable) bec
 3. Ask the PO and the business for the outcome, the success metric and its baseline, and record any metric they could not confirm as "assumed".
 4. Bring evidence to the table (even a small piece) to earn a say, and write a shared scope that the PO agrees to.
 5. Write down what they already believe so it can be tested later.
-**Key activity:** Discover-the-problem flow (Investigate pattern, adapted): you gather what exists → AI prepares business questions and assumptions → you verify → you send the written questions to the business or product (a human-only step; the written route works at every access level) → you run peer user interviews in class (see Lesson 3) → AI drafts the scope from your notes → you verify against the notes → you share back and record the agreement status *(to draw)*.
+6. Evaluate the current experience against usability heuristics: AI drafts a finding for each heuristic with evidence, the student confirms each one and rates its severity. *(Added 2026-10-11 from the Discover lesson `library/lessons/01-discover/evaluate-current-experience`: principles first, so the student can tell when the AI is wrong.)*
+7. Build an assumption map: AI drafts assumptions by type (user, problem, solution, business), the student ranks them by importance against evidence to decide what to test first. *(Added 2026-10-11 from `library/lessons/01-discover/desk-research` and `customer-understanding`.)*
+**Key activity:** Discover-the-problem flow (Investigate pattern, adapted): you gather what exists (desk research) and evaluate the current experience against heuristics, with an AI first pass and your own severity rating → AI prepares business questions and an assumption map → you verify and rank → you send the written questions to the business or product (a human-only step; the written route works at every access level) → you run peer user interviews in class (see Lesson 3) → AI drafts the scope from your notes → you verify against the notes → you share back and record the agreement status *(to draw)*.
 **In class (session 3):** draft the business questions and the assumptions list with AI, check each one against what you actually know, and write the message you will send. **Between sessions:** send it to a real stakeholder (or the nearest person who talks to the business) with a reply date, and record the agreement status in the scope. No role-play: AI never plays the PO and nobody rehearses a PO answer.
 **Output:** `## Scope`: business question, outcome, metrics (confirmed or assumed), beliefs, and an **agreement status** (agreed / pending / not available).
 **Partner moves taught:** ask early, bring a small piece of evidence, write things down and share them back, and treat the draft as shared property.
-**If you are a PO, PM or BA (mixed class, 2026-10-06; reworded 2026-10-07):** you are the person the written questions are written for, so answer them as you would answer a designer: what a useful question looks like, what evidence changes your mind, what a brief must contain for you to sign it. In the peer interviews you interview and are interviewed like everyone else, about your own work. Your own output is the same scope page, from the other side of the table.
 
 #### ⚠️ Access risk: some students cannot reach the PO or the business
 Some students truly have no access to the PO or the business. **The default case is now the student's own, so the three access levels below apply to everyone.** The written stakeholder check is the main route for everyone, and a meeting is a bonus. Teach the levels so students know what to do when no reply or meeting is available, and make the workflow work in all three:
@@ -152,7 +157,7 @@ Some students truly have no access to the PO or the business. **The default case
 3. Verify it: trace each top theme to its quotes, confirm they are word for word, read a sample of what the AI left out, count the errors, and decide whether to rerun a step.
 4. Weigh themes by severity, context and reach, not by count alone, write opportunity candidates with quote IDs, and state what the sample cannot tell them.
 5. Run a competitor analysis as a second activity, and combine both into one evidence pack.
-**Key activities:** **User-voice synthesis** is the main in-class activity ✅ (`examples/user-voice-synthesis/`, flow and step cards). **Competitor analysis** is the second ✅ (`examples/competitor-analysis/`): a 20-minute live demo, with the full analysis as optional homework. Interview synthesis, desk research and support tickets are variations of the same flow (swap the source in step 4). *(Assumed split for 90 minutes: user voice about 50, competitor demo about 20, combining the evidence pack and wrap-up about 10, buffer 10. Students use the evidence they already have, anonymised, or a prepared set of quotes. Untested.)*
+**Key activities:** **User-voice synthesis** is the main in-class activity ✅ (`examples/user-voice-synthesis/`, flow and step cards). **Competitor analysis** is the second ✅ (`examples/competitor-analysis/`): a 20-minute live demo, the first thing to cut if week 2 overruns, with the full analysis as optional homework. Interview synthesis, desk research and support tickets are variations of the same flow (swap the source in step 4). *(Assumed split for 90 minutes: user voice about 50, competitor demo about 20, combining the evidence pack and wrap-up about 10, buffer 10. Students use the evidence they already have, anonymised, or a prepared set of quotes. Untested.)*
 **Evidence menu (pick by question):**
 | Evidence | Tells you | Source type | Watch out for |
 |---|---|---|---|
@@ -162,13 +167,13 @@ Some students truly have no access to the PO or the business. **The default case
 | Short interviews (3 to 5) | Why, and past behaviour | Primary | Small sample; polite friends; personal data and consent |
 | Support tickets, analytics | Real problems, real behaviour | Internal | Data safety; access; anonymise |
 **Data safety applies here:** anonymise before the AI sees any quote (find and replace on your own computer), and keep real-work data private (Lesson 1).
-**Output:** `## Evidence` (AI draft and verified) plus `## Themes` / `## Patterns`; the Evidence page in the hub; the evidence pack that feeds the problem brief. Gate checks 1b, 1c (and 2a when the evidence supports an opportunity).
+**Output:** `## Evidence` (AI draft and verified, including the heuristic evaluation findings with severity and the ranked assumption map) plus `## Themes` / `## Patterns`; the Evidence page in the hub; the evidence pack that feeds the problem brief. Gate checks 1b, 1c (and 2a when the evidence supports an opportunity).
 
 ### Lesson 4 — Frame the problem worth solving
 *Slug:* `frame-the-problem`
 **By the end, students can:**
 1. Turn an evidence pack into a ranked list of opportunities (user needs, not features), each linked to its evidence.
-2. Turn Nielsen's 10 heuristics (plus any organisation principles) into yes/no principle checks for this product, saved in `00-context/principle-checks.md`.
+2. Turn Nielsen's 10 heuristics (plus any organisation principles) into yes/no principle checks for this product, saved in `learnings/context-principle-checks.md`.
 3. Write testable hypotheses for the solution direction ("we believe X for Y will change Z, and we will know because M") and set the right level for each.
 4. Define success using Goals → Signals → Metrics, choosing metrics they can measure before launch.
 **Key activity:** Problem brief flow *(to draw)*.
@@ -188,16 +193,16 @@ Some students truly have no access to the PO or the business. **The default case
 ### Lesson 6 — Build your first prototype
 *Slug:* `build-your-first-prototype`
 **Why (split 2026-10-05):** prototyping on a design system takes more than one lesson. This one gets a first working version, built the right way.
+**Principle (2026-10-11, from `library/lessons/03-develop/ai-prototype-development`):** pattern-first. The student brings the design pattern (tokens, component inventory and template, designed in Figma or ready-made) and fits them into the AI as the input. The AI does not design the system; it generates the prototype from it, the way the student intends. The system is the input to everything that gets built, not the output.
 **By the end, students can:**
-1. Write `00-context/design-system-notes.md` (tokens, components, patterns, do and don't, accessibility rules) in a form an AI coding tool can read, and put the standing rules in a rules file.
+1. Write `learnings/context-design-system-notes.md` (tokens, components, patterns, do and don't, accessibility rules) in a form an AI coding tool can read (from their own design pattern in Figma, or a ready-made one), and put the standing rules in a rules file.
 2. Set up the prototype project in the case folder: rules file, flow and content model from the previous lesson, and a clear view of what the tool can see and change (agent, connector).
 3. Compare a vague instruction with a constrained one on the same screen, and explain the difference. (Detailed specifications, linked design files and stated accessibility requirements improve results; vague instructions give generic layouts.)
 4. Build the first version of the main flow, one screen at a time, by checking the files the agent changed, not only its reply, and saving each working state.
 5. Judge fidelity, and know the prototype is a reference, not production code.
 **Key activity:** Prototype build flow (Generate pattern) *(to draw)*.
-**Output:** a first working prototype in `03-develop/prototype/`, design system notes, a rules file, and the first design decisions (D items) in the hub. Gate check 3d (design system used) begins here.
+**Output:** a first working prototype in `learnings/prototype/`, design system notes, a rules file, and the first design decisions (D items) in the hub. Gate check 3d (design system used) begins here.
 **No design system?** Use a starter system supplied by the instructor or an open design system, with a short note on what was borrowed.
-**If you are a PO, PM or BA (2026-10-06):** do not build a design system. Use a ready-made one, point the AI coding tool at it, and ask it to generate templates (screens, patterns) for your flow. You are checking that the prototype matches the requirement and the principle checks, not judging visual craft. Designers in the class do the full design-system notes and rules file. Building a design system from scratch needs high design skill, so it is never asked of non-designers.
 
 ### Lesson 7 — Refine and check your design
 *Slug:* `refine-and-check`
@@ -227,7 +232,6 @@ Some students truly have no access to the PO or the business. **The default case
 2. Write a measurement plan for after launch (what to track, where, when to review) and hand it to the PO, even if they cannot access the data themselves.
 3. Describe their own AI workflow results (time per step, error rate, rework) with counts, not impressions.
 **Key activity:** Handoff flow *(to draw)*.
-**If you are a PO, PM or BA (2026-10-06):** your handoff is the requirement, not the screens. From the hub, write the PRD or user stories with acceptance criteria that point back to the opportunities and decisions, and check them against the problem brief. Keep it as a short variation inside the same lesson, not a second lesson.
 **Output:** handoff pack and measurement plan.
 
 ### Practice sessions (session B of every module) — practice, no new lesson
@@ -248,8 +252,8 @@ Some students truly have no access to the PO or the business. **The default case
 1. Run the full chain on a real case, each step's output feeding the next, with every gate recorded in the hub.
 2. Present the case showing evidence, decisions and trade-offs, so an employer or PO sees the judgement, not just the speed.
 3. State which parts of the workflow they would keep, tune, or skip, with reasons from their own measured results.
-4. Finish the **Experience Hub**: every output from the case on one connected site, with the cross-links working, so a reader can start from any decision and reach its opportunity, hypothesis, principle, test and metric.
-**Output:** the finished Experience Hub (the final report), the complete case folder, and a portfolio piece.
+4. Finish the **Knowledge Hub**: every output from the case on one connected site, with the cross-links working, so a reader can start from any decision and reach its opportunity, hypothesis, principle, test and metric.
+**Output:** the finished Knowledge Hub (the final report), the complete case folder, and a portfolio piece.
 
 ---
 

@@ -1,4 +1,4 @@
-# Experience Hub template
+# Knowledge Hub template
 
 One hub per case: a folder of linked pages that stores every output of the project and lets you cross-check them. This is the series' final report.
 

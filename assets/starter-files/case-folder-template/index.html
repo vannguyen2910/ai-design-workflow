@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="vi" data-theme="minimal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>my-case · Báo cáo case</title>
+<style>
+:root{--ink:#14121c;--bg:#fff;--surface:#faf9ff;--muted:rgba(20,18,28,.66);--line:rgba(20,18,28,.13);--purple:#6B3FEE;--link:#5530d4;--tint:rgba(107,63,238,.10);--tint2:rgba(107,63,238,.18);--on-purple:#fff;--r:12px;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--purple);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--purple);color:var(--on-purple);padding:8px 14px;z-index:30}
+.skip:focus{left:8px;top:8px}
+header.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top-in{max-width:1280px;margin:0 auto;padding:10px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:-.01em;margin-right:auto}
+.brand small{display:block;font-weight:500;color:var(--muted);font-size:.74rem;letter-spacing:0}
+.tabs{display:flex;gap:4px;overflow-x:auto}
+.tabs a{padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.92rem;white-space:nowrap}
+.tabs a:hover{background:var(--tint)}
+.tabs a[aria-current=page]{background:var(--purple);color:var(--on-purple)}
+.themepick{font-size:.8rem;color:var(--muted);display:flex;gap:6px;align-items:center}
+.themepick select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.gsearch{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:.9rem;width:220px}
+.view{display:none}
+.view.on{display:block}
+.wrap{max-width:1280px;margin:0 auto;padding:28px 24px 80px}
+h1{font-size:1.8rem;line-height:1.25;margin:0 0 8px;letter-spacing:-.015em}
+h2{font-size:1.1rem;margin:34px 0 12px;letter-spacing:-.005em}
+h3{font-size:1rem;margin:22px 0 6px}
+.lede{color:var(--muted);margin:0 0 22px}
+.banner{background:var(--ink);color:var(--bg);border-radius:var(--r);padding:12px 16px;margin:0 0 22px;font-size:.92rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:8px 0 8px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.card .num{font-size:1.9rem;font-weight:800;line-height:1.1;letter-spacing:-.02em}
+.card .lbl{color:var(--muted);font-size:.85rem}
+.card.warnc .num::after{content:" ⚠";font-size:1rem}
+.gatecards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.gate{border-radius:var(--r);padding:14px 16px;background:var(--ink);color:var(--bg)}
+.gate small{display:block;opacity:.8}
+.gate .st{margin-top:8px;font-weight:700}
+.gate .bar{height:6px;border-radius:99px;background:rgba(255,255,255,.25);margin-top:8px;overflow:hidden}
+.gate .bar i{display:block;height:100%;background:#fff}
+.table-wrap{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--tint);font-weight:700}
+table.props th{background:none;color:var(--muted);font-weight:600;width:11em}
+.missing{font-weight:700;color:var(--muted);font-style:italic}
+.card .lbl small{display:block;font-size:.74rem;opacity:.85}
+details.help{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 18px;margin:0 0 22px}
+details.help summary{cursor:pointer;font-weight:700}
+details.help ul,details.help dl{margin:10px 0 4px}
+details.help dt{font-weight:700;margin-top:10px}
+details.help dd{margin:2px 0 0;color:var(--muted)}
+.chip,.idc,.idtag{display:inline-block;font-weight:800;font-size:.8rem;line-height:1;padding:4px 8px;border-radius:7px;text-decoration:none;letter-spacing:.03em;vertical-align:middle;border:2px solid transparent;white-space:nowrap}
+.t-O{background:var(--purple);color:var(--on-purple)}
+.t-H{border-color:var(--purple);color:var(--link)}
+.t-D{background:var(--ink);color:var(--bg)}
+.t-T{border-color:var(--ink);color:var(--ink)}
+.t-M{background:var(--tint2);color:var(--ink)}
+.t-P{border:2px dashed var(--muted);color:var(--ink)}
+a.chip:hover{filter:brightness(1.1)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.warnlist{list-style:none;margin:0;padding:0}
+.warnlist li{padding:10px 14px;margin:8px 0;border-radius:var(--r);background:var(--tint);border-left:4px solid var(--purple)}
+.ok{padding:10px 14px;border-radius:var(--r);background:var(--tint)}
+/* journey */
+.jcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.jcard{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;text-decoration:none;color:var(--ink)}
+.jcard:hover{border-color:var(--purple);box-shadow:0 2px 0 var(--purple)}
+.jcard .wk{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--link)}
+.jcard h3{margin:4px 0 6px;font-size:1.05rem}
+.jcard p{margin:0;color:var(--muted);font-size:.9rem}
+.has-doc .jlist{display:none}
+.journey .doc,.reference .doc{display:none}
+.journey .doc.on,.reference .doc.on{display:block}
+.reading{max-width:76ch}
+.pn{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:16px;border-top:1px solid var(--line);flex-wrap:wrap}
+.back{display:inline-block;margin:0 0 16px;font-size:.9rem}
+.subtabs{display:flex;gap:6px;margin:0 0 18px;flex-wrap:wrap}
+.subtabs a{padding:6px 12px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:.9rem;font-weight:600}
+.subtabs a[aria-current=page]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* trace */
+.trace{display:grid;grid-template-columns:minmax(300px,380px) minmax(0,1fr);gap:28px;align-items:start}
+.pane-tree{position:sticky;top:76px;max-height:calc(100vh - 96px);overflow:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:12px}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.filters button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:5px 11px;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--purple);border-color:var(--purple);color:var(--on-purple)}
+.tsearch{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;padding:8px 12px;font:inherit;font-size:.9rem;margin:0 0 10px}
+.tcount{font-size:.8rem;color:var(--muted);margin:0 0 8px}
+.tree,.tree ul{list-style:none;margin:0;padding:0}
+.tree ul{margin-left:14px;padding-left:10px;border-left:1px solid var(--line)}
+.tree li[hidden]{display:none}
+.tree summary{cursor:pointer;display:flex;align-items:flex-start;gap:6px;padding:3px 0;list-style:none}
+.tree summary::-webkit-details-marker{display:none}
+.tree summary::before{content:"▸";color:var(--muted);width:1em;flex:none;font-size:.8rem;margin-top:5px}
+.tree details[open]>summary::before{content:"▾"}
+.tree li.leaf{padding-left:1.35em}
+.tree a.node{display:flex;gap:8px;align-items:flex-start;text-decoration:none;color:var(--ink);padding:4px 6px;border-radius:8px;flex:1;min-width:0;font-size:.9rem}
+.tree a.node:hover{background:var(--tint)}
+.tree a.node.sel{background:var(--tint2);font-weight:700}
+.tree .idc{font-size:.72rem;padding:3px 6px;flex:none;margin-top:2px}
+.tree .nt{overflow-wrap:anywhere}
+.tree .wb{margin-left:auto;flex:none}
+.tree .cnt{display:block;color:var(--muted);font-size:.75rem;font-weight:500}
+.tree .gh{font-size:.8rem;font-weight:800;color:var(--muted);padding:8px 0 2px}
+.pane-detail .doc{display:none}
+.pane-detail .doc.on{display:block}
+.empty{color:var(--muted);border:1px dashed var(--line);border-radius:var(--r);padding:28px;text-align:center}
+.pane-detail .doc.on~.empty{display:none}
+.ihead{display:flex;gap:14px;align-items:flex-start;margin:0 0 14px}
+.ihead .idtag{font-size:1rem;padding:7px 12px;flex:none;margin-top:2px}
+.ihead .kind{margin:0;color:var(--muted);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ihead h1{margin:2px 0 0;font-size:1.5rem}
+.warnbox{margin:0 0 14px;padding:10px 14px;border-radius:var(--r);background:var(--tint);border-left:4px solid var(--purple);font-size:.92rem}
+.path{font-size:.88rem;color:var(--muted);margin:0 0 14px}
+.path .chain{margin:6px 0 0;align-items:center}
+.path .more{display:block;margin-top:6px}
+.backlinks{margin-top:30px;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.backlinks h2{margin:0 0 8px;font-size:.95rem}
+.backlinks .row{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin:6px 0}
+.backlinks .lbl{font-size:.8rem;color:var(--muted);min-width:7em}
+.back-tree{display:none}
+.acards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:6px}
+.acard{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:0 0 14px;text-decoration:none;color:var(--ink);overflow:hidden}
+.acard[hidden]{display:none}
+.acard:hover{border-color:var(--purple);box-shadow:0 2px 0 var(--purple)}
+.acard .thumb{width:100%;height:150px;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:var(--tint)}
+.acard>*:not(.thumb){margin-left:16px;margin-right:16px}
+.acard:not(:has(.thumb))>.atype{margin-top:14px}
+.atype{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--link)}
+.acard h3{margin:0;font-size:1.02rem}
+.acard p{margin:0;color:var(--muted);font-size:.88rem}
+.ameta{font-size:.78rem;color:var(--muted)}
+.st{display:inline-block;padding:1px 8px;border-radius:999px;font-weight:700;font-size:.72rem;background:var(--tint2);color:var(--ink)}
+.st-simulated,.st-planned,.st-draft{background:var(--ink);color:var(--bg)}
+.ahead .sum{font-size:1.05rem;color:var(--muted);margin:6px 0 10px}
+.ahead .kind{margin:0;color:var(--muted);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.supports{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:6px 0 14px}
+.supports .lbl{font-size:.8rem;color:var(--muted)}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;margin:8px 0}
+.fig{margin:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.fig img{display:block;width:100%;height:auto}
+.fig figcaption,.mcard .cap{font-size:.8rem;color:var(--muted);padding:6px 12px}
+.mcard{border:1px solid var(--line);border-radius:var(--r);margin:12px 0;overflow:hidden;background:var(--surface)}
+.mhead{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 14px}
+.mtag{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.btn{margin-left:auto;padding:5px 12px;border-radius:999px;background:var(--purple);color:var(--on-purple);text-decoration:none;font-size:.82rem;font-weight:700}
+.mcard iframe{display:block;width:100%;height:560px;border:0;border-top:1px solid var(--line);background:#fff}
+.mcard video{display:block;width:100%}
+.achip{display:inline-flex;gap:8px;align-items:baseline;padding:6px 12px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink);background:var(--surface);font-size:.9rem}
+.achip:hover{border-color:var(--purple)}
+.achip .atype{font-size:.66rem}
+.sgroup{margin:10px 0}
+.sgroup h3{margin:0 0 6px;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.t-A{background:var(--tint2);color:var(--ink);border-color:transparent}
+details.draft{margin:14px 0;border:1px dashed var(--muted);border-radius:var(--r);padding:10px 14px;background:var(--surface)}
+details.draft>summary{cursor:pointer;font-weight:700;color:var(--muted)}
+.srcnote{margin-top:24px;font-size:.82rem;color:var(--muted)}
+.docs .doc{display:none}
+.docs .doc.on{display:block}
+.has-doc .jlist{display:none}
+blockquote{margin:16px 0;padding:10px 16px;background:var(--tint);border-left:4px solid var(--purple);border-radius:0 10px 10px 0}
+blockquote p{margin:6px 0}
+code{font:.88em ui-monospace,Menlo,Consolas,monospace;background:var(--tint);padding:1px 5px;border-radius:5px}
+pre{background:var(--tint);padding:12px 14px;border-radius:10px;overflow-x:auto}
+pre code{background:none;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+ul,ol{padding-left:1.4em}
+li{margin:4px 0}
+.box{font-family:ui-monospace,Menlo,Consolas,monospace}
+.ext{color:var(--muted);border-bottom:1px dotted var(--muted);cursor:help}
+.broken{color:#9b1c1c;text-decoration:underline wavy}
+img{max-width:100%}
+footer.foot{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:900px){
+  .trace{grid-template-columns:1fr}
+  .pane-tree{position:static;max-height:none}
+  .has-item .pane-tree{display:none}
+  .has-item .back-tree{display:inline-block}
+  .gsearch{width:100%;order:3}
+  .wrap{padding:20px 16px 60px}
+}
+@media print{
+  header.top,.skip,.pane-tree,.back,.pn,.subtabs,.back-tree,.themepick,.filters,.tsearch{display:none!important}
+  .view,.journey .doc,.reference .doc,.docs .doc,.pane-detail .doc{display:block!important}
+  .jlist{display:none}
+  .doc{break-before:page}
+  .wrap{padding:0;max-width:none}
+  .trace{display:block}
+  a{color:inherit;text-decoration:none}
+  table{font-size:.8rem}
+  .banner{border:1px solid #000;background:none;color:#000}
+}
+
+/* sidebar layout (mirrors the website structure: one page per document, nested menu on the left) */
+.shell{display:grid;grid-template-columns:300px minmax(0,1fr);max-width:1480px;margin:0 auto;align-items:start}
+.side{position:sticky;top:61px;height:calc(100vh - 61px);overflow:auto;border-right:1px solid var(--line);padding:16px 12px 48px;font-size:.9rem;background:var(--bg)}
+.side nav{display:block}
+.side a{display:block;text-decoration:none;color:var(--ink);padding:5px 10px;border-radius:8px;overflow-wrap:anywhere}
+.side a:hover{background:var(--tint)}
+.side a[aria-current=page]{background:var(--purple);color:var(--on-purple);font-weight:700}
+.side .s-top{font-weight:700}
+.side details{margin:0}
+.side summary{cursor:pointer;list-style:none;font-weight:800;padding:7px 10px;border-radius:8px;display:flex;gap:6px;align-items:baseline}
+.side summary::-webkit-details-marker{display:none}
+.side summary::before{content:"▸";color:var(--muted);font-size:.75rem;width:.9em;flex:none}
+.side details[open]>summary::before{content:"▾"}
+.side summary:hover{background:var(--tint)}
+.side .grp{margin-top:6px}
+.side .grp>.sub{margin-left:12px;border-left:1px solid var(--line);padding-left:6px}
+.side .sub summary{font-weight:700;color:var(--ink);font-size:.88rem}
+.side .sub .cnt{margin-left:auto;font-weight:500;color:var(--muted);font-size:.78rem}
+.side .sub a{font-size:.85rem;color:var(--ink)}
+.side .sub a .idc{font-size:.66rem;padding:2px 5px;margin-right:6px}
+.side .sub a[aria-current=page] .idc{border-color:var(--on-purple);background:transparent;color:var(--on-purple)}
+.side .menu>summary{display:none}
+.shell .wrap{max-width:1000px;padding:28px 40px 80px}
+/* one page at a time: the trace tree is its own page, items are pages of their own */
+.trace{display:block}
+.pane-tree{position:static;max-height:none;overflow:visible;border:0;background:none;padding:0}
+#v-trace.has-item .pane-tree{display:none}
+#v-trace:not(.has-item) .pane-detail{display:none}
+#v-trace .back-tree{display:inline-block}
+#v-reference .wrap>h1,#v-reference .wrap>.lede,#v-reference .subtabs{display:none}
+@media (max-width:900px){
+  .shell{display:block}
+  .side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:8px 12px;max-height:none}
+  .side .menu>summary{display:block;cursor:pointer;font-weight:800;padding:8px 10px;list-style:none}
+  .side .menu[open]>summary{border-bottom:1px solid var(--line);margin-bottom:6px}
+  .shell .wrap{padding:20px 16px 60px}
+}
+@media print{.side{display:none!important}.shell{display:block}.shell .wrap{max-width:none;padding:0}}
+
+/* minimalist layer: fewer boxes, more air, one accent */
+body{font-size:15.5px;line-height:1.7}
+header.top{border-bottom:1px solid var(--line)}
+.top-in{padding:12px 24px}
+.brand{font-weight:700}
+.brand small{display:none}
+h1{font-size:1.75rem;font-weight:700}
+h2{font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:44px 0 12px}
+.lede{margin:0 0 26px}
+.stats{display:flex;flex-wrap:wrap;gap:6px 28px;margin:6px 0 4px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats span{color:var(--muted);font-size:.92rem}
+.stats b{display:inline-block;margin-right:6px;font-size:1.35rem;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.stats .w b::after{content:" ⚠";font-size:.9rem}
+.glist{margin:0;border-top:1px solid var(--line)}
+.grow{display:grid;grid-template-columns:minmax(0,1.4fr) 110px minmax(80px,1fr) 70px;gap:16px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}
+.grow .gn small{display:block;color:var(--muted);font-size:.78rem}
+.grow .gn strong{font-weight:600}
+.grow .gs{font-size:.85rem;font-weight:600}
+.grow .gs.ok{color:#1a7f4b}
+.grow .gs.no{color:#a33}
+.grow .gb{height:4px;border-radius:99px;background:var(--line);overflow:hidden}
+.grow .gb i{display:block;height:100%;background:var(--purple)}
+.grow .gc{font-size:.82rem;color:var(--muted);text-align:right}
+.warnlist li{background:none;border-left:0;border-top:1px solid var(--line);border-radius:0;padding:10px 0;margin:0}
+.warnlist li:last-child{border-bottom:1px solid var(--line)}
+.warnlist strong{font-weight:500}
+.ok{background:none;padding:0;color:var(--muted)}
+table{font-size:.9rem}
+th{background:none;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--ink)}
+td{border-bottom:1px solid var(--line)}
+.chip,.idc,.idtag{font-weight:700;font-size:.74rem;padding:3px 7px}
+details.help{background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:14px 0;margin:44px 0 0}
+details.help summary{font-weight:600;color:var(--muted)}
+.banner{background:var(--tint);color:var(--ink);font-size:.88rem;border-radius:var(--r);padding:10px 14px}
+.side{font-size:.88rem}
+.jcard,.acard{background:none}
+.reading{max-width:70ch}
+footer.foot{margin-top:48px}
+@media (max-width:640px){.grow{grid-template-columns:1fr 1fr;gap:6px 12px}.grow .gb{grid-column:1/-1}}
+/* sidebar: five sections; each opens a page of cards */
+.side{padding:14px 12px}
+.nav2 a{display:flex;align-items:center;gap:8px;padding:9px 12px;font-weight:600;font-size:.95rem}
+.nav2 a .nm{margin-left:auto;font-weight:500;font-size:.78rem;color:var(--muted)}
+.nav2 a[aria-current=page] .nm{color:var(--on-purple);opacity:.85}
+/* item page */
+.ihead{display:block;margin:0 0 6px}
+.ihead .idtag{display:inline-block;font-size:.78rem;padding:3px 8px;margin:0 0 10px}
+.ihead .kind{display:inline-block;margin:0 0 0 8px;font-size:.74rem;font-weight:600;letter-spacing:.06em;color:var(--muted);vertical-align:middle}
+.ihead h1{font-size:1.6rem;margin:0;line-height:1.3}
+.ihead>div{display:inline}
+.path{margin:14px 0 18px;font-size:.84rem}
+.path>span:first-child{display:block;margin-bottom:4px}
+.warnbox{background:none;border:0;border-left:2px solid var(--purple);border-radius:0;padding:2px 0 2px 12px;margin:0 0 10px;font-size:.88rem}
+table.props{margin:0 0 8px}
+table.props th{width:11em;padding:7px 12px 7px 0;font-size:.82rem;text-transform:none;letter-spacing:0;font-weight:500;color:var(--muted);border-bottom:1px solid var(--line)}
+table.props td{padding:7px 0}
+.backlinks{background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:14px 0 0;margin-top:36px}
+.backlinks h2{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.backlinks .lbl{font-weight:500}
+.reading h2{margin-top:30px}
+/* trace tree */
+.pane-tree{margin-top:0}
+.tsearch{background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:8px 0;font-size:.95rem}
+.filters{margin:2px 0 14px;gap:4px}
+.filters button{border:0;background:none;color:var(--muted);padding:4px 10px;font-weight:600}
+.filters button:hover{background:var(--tint)}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.tree ul{margin-left:11px;padding-left:12px;border-left:1px solid var(--line)}
+.tree a.node{padding:4px 6px;font-size:.92rem}
+.tree a.node:hover{background:var(--tint)}
+.tree a.node.sel{background:var(--tint);font-weight:600}
+.tree .cnt{display:inline;margin-left:8px;font-size:.76rem;color:var(--muted)}
+.tree .idc{font-size:.68rem;padding:2px 5px;border-width:1px}
+.tree summary{padding:2px 0}
+.tree .gh{font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+/* cards: documents, journey pages, insights */
+.acards,.jcards,.icards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:6px;border:0}
+.acard,.jcard,.icard{display:flex;flex-direction:column;gap:4px;padding:16px;border:1px solid var(--line);border-radius:var(--r);background:none;text-decoration:none;color:var(--ink);overflow:hidden;min-height:112px}
+.acard:hover,.jcard:hover,.icard:hover{border-color:var(--ink);box-shadow:none;background:none}
+.acard[hidden],.icard[hidden]{display:none}
+.acard>*:not(.thumb),.icard>*{margin:0}
+.acard:not(:has(.thumb))>.atype{margin:0}
+.acard .thumb{display:block;align-self:stretch;width:auto;max-width:none;margin:-16px -16px 10px;height:110px;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:var(--tint)}
+.acard .atype,.jcard .wk,.icard .itype{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.acard h3,.jcard h3,.icard h3{margin:2px 0 0;font-size:1rem;line-height:1.35}
+.acard p,.jcard p,.icard p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.5}
+.acard .ameta{font-size:.76rem;color:var(--muted);margin-top:auto;padding-top:8px}
+.icard .top{display:flex;align-items:center;gap:8px}
+.icard .top .w{margin-left:auto}
+.st{background:none;border:1px solid var(--line);color:var(--muted);font-weight:600;padding:0 7px}
+.st-simulated,.st-planned,.st-draft{background:none;border:1px solid var(--ink);color:var(--ink)}
+.ahead .kind{font-size:.74rem;letter-spacing:.09em}
+.ahead h1{margin:4px 0 6px}
+.ahead .sum{font-size:1rem;margin:0 0 12px}
+.ahead p:has(.st){margin:0 0 10px}
+.supports{margin:10px 0 0}
+.mcard{background:none;margin:14px 0}
+.mhead{padding:10px 14px}
+.btn{background:none;color:var(--link);padding:0;font-weight:600;border-radius:0}
+.btn:hover{text-decoration:underline}
+.mcard iframe{height:520px}
+.fig{border-radius:var(--r)}
+.srcnote{margin-top:32px;font-size:.8rem}
+.vmode{display:inline-flex;gap:2px;margin:0 0 14px;border:1px solid var(--line);border-radius:var(--r);padding:2px}
+.vmode button{border:0;background:none;font:inherit;font-size:.82rem;font-weight:600;color:var(--muted);padding:4px 12px;border-radius:calc(var(--r) - 2px);cursor:pointer}
+.vmode button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+#v-trace .tree{display:none}
+.tabs2{display:flex;gap:2px;border-bottom:1px solid var(--line);margin:0 0 14px;overflow-x:auto}
+.tabs2 button{border:0;background:none;font:inherit;font-weight:600;font-size:.9rem;color:var(--muted);padding:10px 14px;margin-bottom:-1px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap}
+.tabs2 button:hover{color:var(--ink)}
+.tabs2 button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--purple)}
+.tabs2 .n{margin-left:7px;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:99px;background:rgba(145,158,171,.16);color:var(--muted)}
+.tabs2 button[aria-selected=true] .n{background:var(--tint2);color:var(--link)}
+#v-trace.mode-tree .tree{display:block}
+#v-trace.mode-tree .icards{display:none}
+/* reference and journey pages */
+html[data-theme] th{background:none}
+.reference .reading,.journey .reading{max-width:none}
+.reference .reading>p,.journey .reading>p,.journey .reading>ul,.journey .reading>ol{max-width:72ch}
+.reference .reading>p>em:only-child,.journey .reading>p>em:only-child{font-style:normal;color:var(--muted)}
+.reference .reading h2,.journey .reading h2{margin-top:36px}
+.reference table,.journey table{margin:8px 0 0}
+.journey td a{text-decoration:none;font-weight:600}
+.journey td a:hover{text-decoration:underline}
+.journey .reading>blockquote{max-width:72ch}
+.back{display:inline-block;margin:0 0 18px;font-size:.8125rem;font-weight:600;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--ink)}
+.journey .reading>p>em:only-child{font-size:.875rem}
+.journey .reading>p:first-child{font-size:1rem}
+.journey .doc>.reading>h1:first-child{margin-bottom:6px}
+.journey .reading code{font-size:.84em}
+.pn{border-top:1px solid var(--line);margin-top:32px;padding-top:14px}
+.pn a{text-decoration:none;font-weight:600}
+.pn a:hover{text-decoration:underline}
+.reference td:first-child{white-space:nowrap;color:var(--muted);font-weight:600;width:1%}
+.gst{font-size:.82rem;font-weight:600;white-space:nowrap}
+.gst::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;background:var(--muted);vertical-align:middle}
+.gst-passed::before{background:#1a7f4b}
+.gst-failed{color:#a33}
+.gst-failed::before{background:#a33}
+.dash{color:var(--muted)}
+
+[data-theme=minimal]{--ink:#1c252e;--bg:#fff;--surface:#f4f6f8;--muted:#637381;--line:rgba(145,158,171,.28);--purple:#00a76f;--link:#007867;--tint:rgba(0,167,111,.08);--tint2:rgba(0,167,111,.16);--on-purple:#fff;--r:8px}
+[data-theme=minimal] body{font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+[data-theme=minimal] h1{font-weight:800;letter-spacing:-.01em}
+[data-theme=minimal] h2{font-weight:700;color:#637381}
+[data-theme=minimal] header.top{background:rgba(255,255,255,.86);backdrop-filter:blur(6px);border-bottom:1px dashed var(--line)}
+[data-theme=minimal] .brand{font-weight:800;letter-spacing:-.01em}
+[data-theme=minimal] .brand::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;background:#00a76f;margin-right:10px}
+[data-theme=minimal] .gsearch,[data-theme=minimal] .tsearch{background:#fff;border:1px solid rgba(145,158,171,.32);border-radius:8px;padding:9px 14px;color:var(--ink)}
+[data-theme=minimal] .gsearch:focus,[data-theme=minimal] .tsearch:focus{outline:0;border-color:#1c252e;box-shadow:0 0 0 1px #1c252e}
+[data-theme=minimal] .side{border-right:1px dashed var(--line)}
+[data-theme=minimal] .nav2 a{border-radius:8px;min-height:44px;font-weight:500;font-size:.9rem;color:#637381}
+[data-theme=minimal] .nav2 a:hover{background:rgba(145,158,171,.08)}
+[data-theme=minimal] .nav2 a[aria-current=page]{background:rgba(0,167,111,.08);color:#007867;font-weight:700}
+[data-theme=minimal] .nav2 a[aria-current=page] .nm{color:#007867;opacity:1}
+[data-theme=minimal] .acard,[data-theme=minimal] .jcard,[data-theme=minimal] .icard{border:0;border-radius:16px;background:#fff;box-shadow:0 0 2px 0 rgba(145,158,171,.2),0 12px 24px -4px rgba(145,158,171,.12);transition:box-shadow .2s,transform .2s}
+[data-theme=minimal] .acard:hover,[data-theme=minimal] .jcard:hover,[data-theme=minimal] .icard:hover{border:0;box-shadow:0 0 2px 0 rgba(145,158,171,.24),0 20px 40px -4px rgba(145,158,171,.24);transform:translateY(-2px)}
+[data-theme=minimal] .acard .thumb{border-radius:0}
+[data-theme=minimal] .acard .atype,[data-theme=minimal] .jcard .wk,[data-theme=minimal] .icard .itype{color:#919eab}
+[data-theme=minimal] .acard h3,[data-theme=minimal] .jcard h3,[data-theme=minimal] .icard h3{font-weight:700}
+[data-theme=minimal] .stats{border:0;background:#f4f6f8;border-radius:16px;padding:18px 24px}
+[data-theme=minimal] .stats b{font-weight:800;color:#1c252e}
+[data-theme=minimal] .glist{border-top:0}
+[data-theme=minimal] .grow{border-bottom:1px dashed var(--line)}
+[data-theme=minimal] .grow .gb{height:6px;background:rgba(0,167,111,.16)}
+[data-theme=minimal] .grow .gb i{background:#00a76f;border-radius:99px}
+[data-theme=minimal] .grow .gs,[data-theme=minimal] .gst{display:inline-block;justify-self:start;font-size:.75rem;font-weight:700;line-height:24px;padding:0 8px;border-radius:6px;background:rgba(255,171,0,.16);color:#b76e00}
+[data-theme=minimal] .grow .gs.ok,[data-theme=minimal] .gst-passed{background:rgba(34,197,94,.16);color:#118d57}
+[data-theme=minimal] .grow .gs.no,[data-theme=minimal] .gst-failed{background:rgba(255,86,48,.16);color:#b71d18}
+[data-theme=minimal] .gst::before{display:none}
+[data-theme=minimal] table th{background:#f4f6f8;color:#637381;font-weight:600;font-size:.8125rem;text-transform:none;letter-spacing:0;border-bottom:0}
+[data-theme=minimal] table th:first-child{border-radius:8px 0 0 8px}
+[data-theme=minimal] table th:last-child{border-radius:0 8px 8px 0}
+[data-theme=minimal] table td{border-bottom:1px dashed var(--line)}
+[data-theme=minimal] table.props th{background:none;color:#637381;font-weight:500;border-radius:0;border-bottom:1px dashed var(--line)}
+[data-theme=minimal] .chip,[data-theme=minimal] .idc,[data-theme=minimal] .idtag{border-radius:6px;font-weight:700;font-size:.75rem;border:1px solid transparent}
+[data-theme=minimal] .t-O{background:#00a76f;color:#fff}
+[data-theme=minimal] .t-H{background:transparent;border-color:rgba(0,167,111,.5);color:#007867}
+[data-theme=minimal] .t-D{background:#1c252e;color:#fff}
+[data-theme=minimal] .t-T{background:transparent;border-color:rgba(28,37,46,.35);color:#1c252e}
+[data-theme=minimal] .t-M{background:rgba(145,158,171,.16);color:#454f5b}
+[data-theme=minimal] .t-P{background:transparent;border:1px dashed rgba(145,158,171,.8);color:#637381}
+[data-theme=minimal] .t-A{background:rgba(0,184,217,.16);color:#006c9c}
+[data-theme=minimal] .filters button{border:1px solid rgba(145,158,171,.32);border-radius:8px;background:#fff;color:#454f5b;font-weight:600;padding:5px 12px}
+[data-theme=minimal] .filters button:hover{background:rgba(145,158,171,.08)}
+[data-theme=minimal] .filters button[aria-pressed=true]{background:#1c252e;border-color:#1c252e;color:#fff}
+[data-theme=minimal] .tabs2 button[aria-selected=true]{color:#007867;border-bottom-color:#00a76f}
+[data-theme=minimal] .vmode{border:1px solid rgba(145,158,171,.32);border-radius:8px;padding:3px}
+[data-theme=minimal] .vmode button{border-radius:6px;font-weight:700}
+[data-theme=minimal] .vmode button[aria-pressed=true]{background:#1c252e;color:#fff}
+[data-theme=minimal] .btn{background:#1c252e;color:#fff;border-radius:8px;padding:6px 14px;font-weight:700;font-size:.8125rem}
+[data-theme=minimal] .btn:hover{text-decoration:none;background:#454f5b}
+[data-theme=minimal] .banner,[data-theme=minimal] .warnbox{background:rgba(255,171,0,.12);color:#7a4100;border:0;border-radius:8px;padding:12px 16px}
+[data-theme=minimal] .warnlist li{border-top:0;border-bottom:1px dashed var(--line)}
+[data-theme=minimal] details.help{border:1px dashed var(--line);border-radius:16px;padding:14px 20px}
+[data-theme=minimal] .backlinks{border-top:1px dashed var(--line)}
+[data-theme=minimal] .mcard{border:0;border-radius:16px;box-shadow:0 0 2px 0 rgba(145,158,171,.2),0 12px 24px -4px rgba(145,158,171,.12);background:#fff;overflow:hidden}
+[data-theme=minimal] .fig{border:0;border-radius:16px;box-shadow:0 0 2px 0 rgba(145,158,171,.2),0 12px 24px -4px rgba(145,158,171,.12)}
+[data-theme=minimal] .st{border:0;border-radius:6px;background:rgba(145,158,171,.16);color:#454f5b;font-weight:700;line-height:22px}
+[data-theme=minimal] .st-verified{background:rgba(34,197,94,.16);color:#118d57}
+[data-theme=minimal] .st-draft{background:rgba(255,171,0,.16);color:#b76e00;border:0}
+[data-theme=minimal] .st-simulated,[data-theme=minimal] .st-planned{background:rgba(0,184,217,.16);color:#006c9c;border:0}
+[data-theme=minimal] .pn{border-top:1px dashed var(--line)}
+[data-theme=minimal] code{background:rgba(145,158,171,.16);border-radius:6px}
+[data-theme=minimal] footer.foot{border-top:1px dashed var(--line)}
+[data-theme=minimal] .tree ul{border-left:1px dashed var(--line)}
+</style>
+</head>
+<body data-case="my-case">
+<a class="skip" href="#main">Bỏ qua menu</a>
+<header class="top"><div class="top-in">
+<div class="brand">my-case</div>
+<input id="gsearch" class="gsearch" type="search" placeholder="Tìm theo mã hoặc từ khoá (ví dụ D2)" aria-label="Tìm trong báo cáo">
+
+</div></header>
+<div class="shell">
+<aside class="side"><details class="menu" open><summary>Menu</summary><nav class="nav2" aria-label="Các phần của báo cáo"><a href="#/overview" data-nav="overview">Overview</a><a href="#/journey" data-nav="journey">Journey<span class="nm">7</span></a><a href="#/docs" data-nav="docs">Documents<span class="nm">0</span></a><a href="#/trace" data-nav="trace">Insights<span class="nm">9</span></a><a href="#/reference" data-nav="reference">Reference<span class="nm">3</span></a></nav></details></aside>
+<main id="main">
+<section class="view" id="v-overview"><div class="wrap"><div class="banner" role="note"><strong>Báo cáo này còn nội dung mẫu hoặc chỗ chưa điền</strong> (khoảng 35 chỗ, kể cả các mục có nhãn [EXAMPLE]). Hãy điền hoặc xoá trước khi gửi cho người khác.</div><h1>my-case</h1><p class="lede">Agreement với product và business: <strong>Pending</strong></p><div class="stats"><span><b>2</b>opportunities</span><span><b>2</b>hypotheses</span><span><b>1</b>metrics</span><span><b>3</b>decisions</span><span><b>1</b>tests</span><span class="w"><b>6</b>warnings</span></div><h2>Gates</h2><div class="glist"><div class="grow"><div class="gn"><small>Discover</small><strong>Question + evidence</strong></div><div class="gs ">Open</div><div class="gb"><i style="width:0%"></i></div><div class="gc">0/3 checks</div></div><div class="grow"><div class="gn"><small>Define</small><strong>Evidence + agreement</strong></div><div class="gs ">Open</div><div class="gb"><i style="width:0%"></i></div><div class="gc">0/4 checks</div></div><div class="grow"><div class="gn"><small>Develop</small><strong>Alignment</strong></div><div class="gs ">Open</div><div class="gb"><i style="width:0%"></i></div><div class="gc">0/4 checks</div></div><div class="grow"><div class="gn"><small>Deliver</small><strong>Real users + buildability</strong></div><div class="gs ">Open</div><div class="gb"><i style="width:0%"></i></div><div class="gc">0/4 checks</div></div></div><h2>Warnings</h2><ul class="warnlist"><li>⚠ <span class="chips" style="display:inline-flex;vertical-align:middle"><a class="chip t-D" href="#/D3" title="[EXAMPLE] Thêm mascot có animation">D3</a></span> <strong>Decision này chưa nối được về opportunity nào</strong></li><li>⚠ <span class="chips" style="display:inline-flex;vertical-align:middle"><a class="chip t-D" href="#/D2" title="[EXAMPLE] Thêm progress bar vào checklist">D2</a></span> <strong>Decision này đi ngược principle P8: cân nhắc sửa, hoặc ghi lại vì sao chấp nhận</strong></li><li>⚠ <span class="chips" style="display:inline-flex;vertical-align:middle"><a class="chip t-O" href="#/O2" title="[EXAMPLE] Người dùng không tin giá trước khi đăng ký">O2</a></span> <strong>Opportunity này chưa có decision nào phục vụ</strong></li><li>⚠ <span class="chips" style="display:inline-flex;vertical-align:middle"><a class="chip t-H" href="#/H2" title="[EXAMPLE] Hiện giá sớm tăng số đăng ký">H2</a></span> <strong>Hypothesis này chưa có test</strong></li><li>⚠ <span class="chips" style="display:inline-flex;vertical-align:middle"><a class="chip t-H" href="#/H2" title="[EXAMPLE] Hiện giá sớm tăng số đăng ký">H2</a></span> <strong>Hypothesis này chưa có metric để biết đúng hay sai</strong></li><li>⚠ <span class="chips" style="display:inline-flex;vertical-align:middle"><a class="chip t-P" href="#/principles" title="Visibility of system status">P1</a><a class="chip t-P" href="#/principles" title="Match between system and the real world">P2</a><a class="chip t-P" href="#/principles" title="User control and freedom">P3</a><a class="chip t-P" href="#/principles" title="Consistency and standards">P4</a><a class="chip t-P" href="#/principles" title="Error prevention">P5</a><a class="chip t-P" href="#/principles" title="Recognition rather than recall">P6</a><a class="chip t-P" href="#/principles" title="Flexibility and efficiency of use">P7</a><a class="chip t-P" href="#/principles" title="Aesthetic and minimalist design">P8</a><a class="chip t-P" href="#/principles" title="Help users recognise, diagnose and recover from errors">P9</a><a class="chip t-P" href="#/principles" title="Help and documentation">P10</a></span> <strong>Principle chưa có câu hỏi có/không để kiểm tra</strong></li></ul><h2>Alignment</h2><div class="table-wrap"><table><thead><tr><th>Decision</th><th>Hypothesis</th><th>Opportunity</th><th>Test</th><th>Follows</th><th>Pulls against</th></tr></thead><tbody><tr><td><a class="chip t-D" href="#/D1" title="[EXAMPLE] Thay dashboard trống bằng checklist 3 bước">D1</a> [EXAMPLE] Thay dashboard trống bằng checklist 3 bước</td><td><span class="chips"><a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a></span></td><td><span class="chips"><a class="chip t-O" href="#/O1" title="[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên">O1</a></span></td><td><span class="chips"><a class="chip t-T" href="#/T1" title="[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp">T1</a></span></td><td><span class="chips"><a class="chip t-P" href="#/principles" title="Visibility of system status">P1</a><a class="chip t-P" href="#/principles" title="Recognition rather than recall">P6</a></span></td><td>—</td></tr><tr><td><a class="chip t-D" href="#/D2" title="[EXAMPLE] Thêm progress bar vào checklist">D2</a> [EXAMPLE] Thêm progress bar vào checklist</td><td><span class="chips"><a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a></span></td><td><span class="chips"><a class="chip t-O" href="#/O1" title="[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên">O1</a></span></td><td><span class="chips"><a class="chip t-T" href="#/T1" title="[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp">T1</a></span></td><td><span class="chips"><a class="chip t-P" href="#/principles" title="Visibility of system status">P1</a></span></td><td><span class="chips"><a class="chip t-P" href="#/principles" title="Aesthetic and minimalist design">P8</a></span></td></tr><tr><td><a class="chip t-D" href="#/D3" title="[EXAMPLE] Thêm mascot có animation">D3</a> [EXAMPLE] Thêm mascot có animation</td><td><span class="missing">chưa có</span></td><td><span class="missing">chưa có</span></td><td><span class="missing">chưa có</span></td><td>—</td><td>—</td></tr></tbody></table></div><details class="help"><summary>Cách đọc báo cáo và các từ khoá</summary><p>Điểm chính: <strong>mỗi decision đều lần ngược được về user need đứng sau nó.</strong> Dùng menu bên trái để đi tới từng trang. Mở các mục có dấu ⚠ trong Insights để thấy chỗ cần xem lại.</p><dl><dt>Opportunity</dt><dd>Điều người dùng cần hoặc đang gặp khó, có evidence. Không phải một feature.</dd><dt>Hypothesis</dt><dd>Điều nhóm tin là đúng, kèm cách sẽ biết nó đúng hay sai.</dd><dt>Decision</dt><dd>Một lựa chọn thiết kế cụ thể, kèm lý do.</dd><dt>Test</dt><dd>Cách kiểm chứng một hypothesis với người dùng thật.</dd><dt>Metric</dt><dd>Con số cho biết hypothesis đúng hay sai. Nhãn <em>assumed</em> nghĩa là chưa được người phụ trách sản phẩm xác nhận.</dd><dt>Principle</dt><dd>Quy tắc thiết kế mà mọi decision cần đạt, ví dụ 10 usability heuristics của Nielsen (P1 đến P10).</dd><dt>Gate</dt><dd>Bước kiểm tra trước khi sang giai đoạn sau.</dd><dt>Alignment</dt><dd>Mức độ mỗi decision nối được về opportunity và đạt các principle.</dd></dl></details></div></section>
+<section class="view journey" id="v-journey"><div class="wrap"><div class="jlist"><h1>Journey</h1><p class="lede">Các trang theo giai đoạn, mỗi trang kể lại một phần của dự án.</p><div class="jcards"><a class="jcard" href="#/01-scope"><span class="wk">01 · Discover</span><h3>Scope</h3><p>Business question, outcome, agreement</p></a><a class="jcard" href="#/02-evidence"><span class="wk">02 · Discover</span><h3>Evidence</h3><p>Điều đã học từ nguồn, mỗi claim một nguồn</p></a><a class="jcard" href="#/03-problem-brief"><span class="wk">03 · Define</span><h3>Problem brief</h3><p>Opportunity, hypothesis, metric, principle</p></a><a class="jcard" href="#/04-develop"><span class="wk">04 · Develop</span><h3>Options, flows and prototype</h3><p>Các hướng đã khám phá, decision</p></a><a class="jcard" href="#/05-alignment"><span class="wk">05 · Develop</span><h3>Alignment check</h3><p>Principle audit, verdict</p></a><a class="jcard" href="#/06-findings"><span class="wk">06 · Deliver</span><h3>Findings</h3><p>Kết quả test với người dùng</p></a><a class="jcard" href="#/07-handoff"><span class="wk">07 · Deliver</span><h3>Handoff and measurement</h3><p>Handoff pack, measurement plan</p></a></div></div><section class="doc" id="01-scope" data-title="Scope"><a class="back" href="#/journey">← Journey</a><div class="reading"><h1>Scope</h1>
+<p><em>Business question, outcome mà nó cần thúc đẩy, và agreement với business.</em></p>
+<h2>Business question</h2>
+<p>[MỘT CÂU: mục tiêu, ý tưởng hoặc vấn đề, bằng lời của business]</p>
+<h2>Outcome and success</h2>
+<p>[Outcome mà việc này cần thúc đẩy, ai đã đồng ý, và metric kèm baseline. Ghi "assumed" cạnh mọi thứ chưa xác nhận.]</p>
+<h2>Users and constraints</h2>
+<p>[Người dùng là ai và job chính của họ. Constraints: thời gian, ngân sách, nền tảng.]</p>
+<h2>What we believed before we started</h2>
+<ul><li>[BELIEF 1]</li><li>[BELIEF 2]</li><li>[BELIEF 3]</li></ul>
+<h2>Agreement</h2>
+<p>Status: agreed / pending / not available</p>
+<p>[Ai đã được hỏi, khi nào, và họ nói gì. Nếu không có quyền tiếp cận: ghi rõ, và liệt kê scope được dựng bằng cách nào.]</p></div><nav class="pn" aria-label="Trang trước và sau"><span></span><a href="#/02-evidence">Evidence →</a></nav></section><section class="doc" id="02-evidence" data-title="Evidence"><a class="back" href="#/journey">← Journey</a><div class="reading"><h1>Evidence</h1>
+<p><em>Điều đã học từ các nguồn, mỗi claim có một nguồn. Competitor analysis là ví dụ đầu tiên.</em></p>
+<h2>Decision this informs</h2>
+<p>[MỘT CÂU lấy từ trang Scope]</p>
+<h2>Our answer</h2>
+<p>[MỘT CÂU: "Chúng ta nên / không nên X, vì Y", hoặc "Chưa đủ evidence: còn cần Z"]</p>
+<h2>What users said</h2>
+<p><em>Từ user-voice synthesis của bạn. Quote ID nối mỗi theme với lời nói đứng sau nó.</em></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Theme</th><th scope="col">Quotes</th><th scope="col">Sources or people</th><th scope="col">Example quote ID</th><th scope="col">Counter-quote</th></tr></thead><tbody><tr><td>[THEME 1]</td><td>[N]</td><td>[N]</td><td>[R01]</td><td>[R14 hoặc none]</td></tr><tr><td>[THEME 2]</td><td>[N]</td><td>[N]</td><td>[I02-03]</td><td>[none]</td></tr></tbody></table></div>
+<p>[Giới hạn của mẫu: thiếu ai, review và bạn bè làm lệch về hướng nào, tổng số quote và số người.]</p>
+<h2>Who we compared, and why</h2>
+<p>[Cách chọn đối thủ; ai bị loại và vì sao.]</p>
+<h2>Comparison (verified)</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Criterion</th><th scope="col">[COMPETITOR 1]</th><th scope="col">[COMPETITOR 2]</th><th scope="col">[COMPETITOR 3]</th></tr></thead><tbody><tr><td>[CRITERION 1]</td><td>[Finding] [1]</td><td>[Finding] [2]</td><td><em>unknown</em></td></tr><tr><td>[CRITERION 2]</td><td>[Finding] [3]</td><td><strong>inferred:</strong> [Finding]</td><td>[Finding] [4]</td></tr></tbody></table></div>
+<h2>Beliefs we tested</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">What we believed</th><th scope="col">Verdict</th><th scope="col">Evidence</th></tr></thead><tbody><tr><td>[BELIEF 1]</td><td>[Supported / Contradicted / Not addressed]</td><td>[Dòng hoặc nguồn]</td></tr></tbody></table></div>
+<h2>Insights</h2>
+<h3>Insight 1: [MỘT CÂU]</h3>
+<p><a href="#/O1">Vì sao nó quan trọng. Hỗ trợ opportunity [O1</a>.] Phản biện mạnh nhất: [MỘT DÒNG].</p>
+<h2>What this cannot tell us</h2>
+<p>[Điều dữ liệu đối thủ không cho thấy; câu hỏi dành cho người dùng thật.]</p>
+<h2>Sources and method</h2>
+<ol><li>[Nguồn, URL hoặc file, ngày thu thập]</li></ol>
+<p>[Phương pháp: AI chỉ trích xuất từ các nguồn trên. Tôi đã kiểm tra mọi ô của các tiêu chí hàng đầu và khoảng N% phần còn lại; tỷ lệ lỗi X%. "Inferred" nghĩa là nguồn không nói thẳng.]</p></div><nav class="pn" aria-label="Trang trước và sau"><a href="#/01-scope">← Scope</a><a href="#/03-problem-brief">Problem brief →</a></nav></section><section class="doc" id="03-problem-brief" data-title="Problem brief"><a class="back" href="#/journey">← Journey</a><div class="reading"><h1>Problem brief</h1>
+<p><em>Yêu cầu chung: outcome, các opportunity đã xếp hạng, hypothesis, success metric và các principle để kiểm tra.</em></p>
+<h2>Outcome and success</h2>
+<p>[Outcome mà công việc này cần thúc đẩy, trong một câu. Đồng ký bởi: [tên / pending].]</p>
+<h2>Opportunities (ranked)</h2>
+<p><em>Nhu cầu người dùng có evidence, không phải feature. Xếp hạng chúng.</em></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Rank</th><th scope="col">ID</th><th scope="col">Opportunity</th></tr></thead><tbody><tr><td>1</td><td><a href="#/O1">O1</a></td><td>[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên</td></tr><tr><td>2</td><td><a href="#/O2">O2</a></td><td>[EXAMPLE] Người dùng không tin giá trước khi đăng ký</td></tr></tbody></table></div>
+<h2>Hypotheses</h2>
+<p><em>Chúng tôi tin rằng [decision] dành cho [users] sẽ [thay đổi gì], và chúng tôi sẽ biết nhờ [test và metric].</em></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">ID</th><th scope="col">Hypothesis</th><th scope="col">Serves</th><th scope="col">Test</th></tr></thead><tbody><tr><td><a href="#/H1">H1</a></td><td>[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup</td><td>O1</td><td>T1</td></tr><tr><td><a href="#/H2">H2</a></td><td>[EXAMPLE] Hiện giá sớm tăng số đăng ký</td><td>O2</td><td>chưa có</td></tr></tbody></table></div>
+<h2>Success metrics</h2>
+<p><em>Goal, rồi signal, rồi metric. Ghi <strong>assumed</strong> cho mọi thứ PO chưa xác nhận.</em></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">ID</th><th scope="col">Metric</th><th scope="col">Baseline</th><th scope="col">Status</th></tr></thead><tbody><tr><td><a href="#/M1">M1</a></td><td>[EXAMPLE] Ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp</td><td>[số hoặc unknown]</td><td>assumed</td></tr></tbody></table></div>
+<h2>Principle checks</h2>
+<p>Các principle P1 đến P10 (10 heuristics của Nielsen) và principle riêng của tổ chức nằm ở <a href="#/principles"><code>learnings/context-principle-checks.md</code></a>. Mỗi principle là một câu hỏi có/không cho sản phẩm này.</p>
+<h2>Agreement</h2>
+<p>Status: agreed / pending / not available. [Ai, khi nào, và họ nói gì.]</p></div><nav class="pn" aria-label="Trang trước và sau"><a href="#/02-evidence">← Evidence</a><a href="#/04-develop">Options, flows and prototype →</a></nav></section><section class="doc" id="04-develop" data-title="Options, flows and prototype"><a class="back" href="#/journey">← Journey</a><div class="reading"><h1>Options, flows and prototype</h1>
+<p><em>Điều đã khám phá, điều đã chọn, và mỗi design decision kèm lý do.</em></p>
+<h2>Directions explored</h2>
+<p><span class="ext" title="Nằm ngoài báo cáo: learnings/develop-options.md">Ít nhất ba hướng thực sự khác nhau, và vì sao các hướng còn lại được gác lại. Copy từ [<code>learnings/develop-options.md</code></span>.]</p>
+<h2>Flows and content</h2>
+<p>[Link hoặc nhúng flow. Ghi phần AI đã soạn nháp và phần bạn viết lại.]</p>
+<h2>Prototype</h2>
+<p><span class="ext" title="Nằm ngoài báo cáo: learnings/prototype/">Link tới [<code>learnings/prototype/</code></span>. Đây là tài liệu tham chiếu cho developer, không phải production code.]</p>
+<h2>Design decisions</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">ID</th><th scope="col">Decision</th><th scope="col">Tests</th><th scope="col">Follows</th><th scope="col">Pulls against</th></tr></thead><tbody><tr><td><a href="#/D1">D1</a></td><td>[EXAMPLE] Thay dashboard trống bằng checklist 3 bước</td><td>H1</td><td>P1, P6</td><td></td></tr><tr><td><a href="#/D2">D2</a></td><td>[EXAMPLE] Thêm progress bar vào checklist</td><td>H1</td><td>P1</td><td>P8</td></tr><tr><td><a href="#/D3">D3</a></td><td>[EXAMPLE] Thêm mascot có animation</td><td></td><td></td><td></td></tr></tbody></table></div></div><nav class="pn" aria-label="Trang trước và sau"><a href="#/03-problem-brief">← Problem brief</a><a href="#/05-alignment">Alignment check →</a></nav></section><section class="doc" id="05-alignment" data-title="Alignment check"><a class="back" href="#/journey">← Journey</a><div class="reading"><h1>Alignment check</h1>
+<p><em>Mỗi decision có lần ngược được về brief và đạt các principle không? Sửa, chấp nhận như một trade-off đã ghi lại, hoặc cắt.</em></p>
+<h2>Principle audit</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Decision</th><th scope="col">Principle</th><th scope="col">Passes? (yes / no)</th><th scope="col">Evidence or reason</th></tr></thead><tbody><tr><td>D2</td><td>P8</td><td>No</td><td>[Cái gì vỡ, và ở đâu.]</td></tr></tbody></table></div>
+<h2>Verdict on each warning</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Warning</th><th scope="col">Verdict</th><th scope="col">Reason</th></tr></thead><tbody><tr><td>D3 không có user need</td><td>Cut</td><td>[Không có user need phía sau.]</td></tr><tr><td>D2 kéo ngược P8</td><td>Accept as trade-off</td><td>[Vì sao progress bar đáng đổi lấy sự rối mắt.]</td></tr></tbody></table></div>
+<h2>Gate</h2>
+<p>Bạn có bảo vệ được mọi decision bằng cách chỉ vào brief không? [Có / không, và bạn đã đổi gì.]</p></div><nav class="pn" aria-label="Trang trước và sau"><a href="#/04-develop">← Options, flows and prototype</a><a href="#/06-findings">Findings →</a></nav></section><section class="doc" id="06-findings" data-title="Findings"><a class="back" href="#/journey">← Journey</a><div class="reading"><h1>Findings</h1>
+<p><em>Người dùng thật đã làm gì: task success, thời gian, lỗi và mức hài lòng, đặt cạnh baseline.</em></p>
+<h2>Tests</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">ID</th><th scope="col">Test</th><th scope="col">Tests</th><th scope="col">Measures</th></tr></thead><tbody><tr><td><a href="#/T1">T1</a></td><td>[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp</td><td>H1</td><td>M1</td></tr></tbody></table></div>
+<h2>Results against the baseline</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Metric</th><th scope="col">Baseline</th><th scope="col">Result</th><th scope="col">Met?</th></tr></thead><tbody><tr><td>M1</td><td>[baseline]</td><td>[result]</td><td>[yes / no]</td></tr></tbody></table></div>
+<h2>Findings, weighted by importance</h2>
+<p>[Xếp theo mức độ quan trọng, không theo số lần được nhắc. Dẫn mỗi finding về một bản ghi hoặc ghi chú.]</p>
+<h2>What changed because of this</h2>
+<p><a href="#/case-log">Thay đổi thiết kế và các decision đã cập nhật. Thêm chúng vào [case log</a>.]</p></div><nav class="pn" aria-label="Trang trước và sau"><a href="#/05-alignment">← Alignment check</a><a href="#/07-handoff">Handoff and measurement →</a></nav></section><section class="doc" id="07-handoff" data-title="Handoff and measurement"><a class="back" href="#/journey">← Journey</a><div class="reading"><h1>Handoff and measurement</h1>
+<p><em>Những gì developer cần để dựng mà không phải hỏi lại, và những gì cần theo dõi sau khi launch.</em></p>
+<h2>Handoff pack</h2>
+<ul><li>Prototype: [link tới <code>learnings/prototype/</code>]</li><li>Decisions and reasons: <a href="#/case-log">Case log</a></li><li>Acceptance notes: [điều gì phải đúng khi dựng xong]</li><li>Open questions: [danh sách]</li></ul>
+<h2>Measurement plan (after launch)</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Metric</th><th scope="col">Where to track it</th><th scope="col">Who owns it</th><th scope="col">Review date</th></tr></thead><tbody><tr><td>M1</td><td>[analytics / survey]</td><td>[PO / team]</td><td>[date]</td></tr></tbody></table></div>
+<h2>How the AI-assisted workflow performed</h2>
+<p>[Thời gian mỗi step, tỷ lệ lỗi bắt được ở các gate, số lần làm lại. Dùng số đếm, không dùng cảm nhận.]</p></div><nav class="pn" aria-label="Trang trước và sau"><a href="#/06-findings">← Findings</a><span></span></nav></section></div></section>
+<section class="view docs" id="v-docs"><div class="wrap"><div class="jlist"><h1>Documents</h1><p class="lede">Các output làm ra trong dự án: phân tích, persona, survey, flow, prototype. Mỗi document nối với các decision mà nó hỗ trợ.</p><input id="dsearch" class="tsearch" type="search" placeholder="Tìm tài liệu" aria-label="Tìm tài liệu"><div class="tabs2" role="tablist" aria-label="Lọc theo giai đoạn"><button type="button" role="tab" aria-selected="true" data-fstage="">All<span class="n">0</span></button></div><p class="tcount" id="dcount" aria-live="polite"></p><div class="empty"><p><strong>Chưa có tài liệu nào.</strong></p><p>Thêm một file vào <code>hub/artifacts/</code> (xem <code>hub/artifacts/README.md</code>).</p></div></div></div></section>
+<section class="view" id="v-trace"><div class="wrap"><div class="trace"><div class="pane-tree"><h1>Insights</h1><p class="lede">Opportunity, hypothesis, decision, test và metric, nối với nhau. Lọc theo loại, hoặc xem dạng cây để thấy chuỗi lý do.</p><input id="tsearch" class="tsearch" type="search" placeholder="Tìm theo mã hoặc tên" aria-label="Tìm insight"><div class="tabs2" role="tablist" aria-label="Lọc theo loại"><button type="button" role="tab" aria-selected="true" data-type="">All<span class="n">9</span></button><button type="button" role="tab" aria-selected="false" data-type="O">Opportunities<span class="n">2</span></button><button type="button" role="tab" aria-selected="false" data-type="H">Hypotheses<span class="n">2</span></button><button type="button" role="tab" aria-selected="false" data-type="M">Metrics<span class="n">1</span></button><button type="button" role="tab" aria-selected="false" data-type="D">Decisions<span class="n">3</span></button><button type="button" role="tab" aria-selected="false" data-type="T">Tests<span class="n">1</span></button></div><div class="vmode" role="group" aria-label="Cách xem"><button type="button" data-vmode="cards" aria-pressed="true">Cards</button><button type="button" data-vmode="tree" aria-pressed="false">Tree</button></div><p class="tcount" id="tcount" aria-live="polite"></p><div class="icards"><a class="icard" href="#/O1" data-type="O" data-warn="0" data-text="o1 [example] người dùng mới không biết nên làm gì trước tiên"><span class="top"><span class="idc t-O">O1</span><span class="itype">Opportunity</span></span><h3>[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên</h3><p>1 hypothesis</p></a><a class="icard" href="#/O2" data-type="O" data-warn="1" data-text="o2 [example] người dùng không tin giá trước khi đăng ký"><span class="top"><span class="idc t-O">O2</span><span class="itype">Opportunity</span><span class="w" title="có warning">⚠</span></span><h3>[EXAMPLE] Người dùng không tin giá trước khi đăng ký</h3><p>Opportunity này chưa có decision nào phục vụ</p></a><a class="icard" href="#/H1" data-type="H" data-warn="0" data-text="h1 [example] một first task có hướng dẫn tăng tỷ lệ hoàn tất setup"><span class="top"><span class="idc t-H">H1</span><span class="itype">Hypothesis</span></span><h3>[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup</h3><p>2 decisions · 1 test · 1 metric</p></a><a class="icard" href="#/H2" data-type="H" data-warn="1" data-text="h2 [example] hiện giá sớm tăng số đăng ký"><span class="top"><span class="idc t-H">H2</span><span class="itype">Hypothesis</span><span class="w" title="có warning">⚠</span></span><h3>[EXAMPLE] Hiện giá sớm tăng số đăng ký</h3><p>Hypothesis này chưa có test</p></a><a class="icard" href="#/M1" data-type="M" data-warn="0" data-text="m1 [example] ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp"><span class="top"><span class="idc t-M">M1</span><span class="itype">Metric</span></span><h3>[EXAMPLE] Ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp</h3><p></p></a><a class="icard" href="#/D1" data-type="D" data-warn="0" data-text="d1 [example] thay dashboard trống bằng checklist 3 bước"><span class="top"><span class="idc t-D">D1</span><span class="itype">Decision</span></span><h3>[EXAMPLE] Thay dashboard trống bằng checklist 3 bước</h3><p>Tests: H1</p></a><a class="icard" href="#/D2" data-type="D" data-warn="1" data-text="d2 [example] thêm progress bar vào checklist"><span class="top"><span class="idc t-D">D2</span><span class="itype">Decision</span><span class="w" title="có warning">⚠</span></span><h3>[EXAMPLE] Thêm progress bar vào checklist</h3><p>Decision này đi ngược principle P8: cân nhắc sửa, hoặc ghi lại vì sao chấp nhận</p></a><a class="icard" href="#/D3" data-type="D" data-warn="1" data-text="d3 [example] thêm mascot có animation"><span class="top"><span class="idc t-D">D3</span><span class="itype">Decision</span><span class="w" title="có warning">⚠</span></span><h3>[EXAMPLE] Thêm mascot có animation</h3><p>Decision này chưa nối được về opportunity nào</p></a><a class="icard" href="#/T1" data-type="T" data-warn="0" data-text="t1 [example] test task với 5 người: hoàn tất setup không cần trợ giúp"><span class="top"><span class="idc t-T">T1</span><span class="itype">Test</span></span><h3>[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp</h3><p>Tests: H1</p></a></div><ul class="tree" id="tree"><li class="n" data-type="O" data-warn="0" data-text="o1 [example] người dùng mới không biết nên làm gì trước tiên"><details open><summary><a class="node" href="#/O1" data-id="O1"><span class="idc t-O">O1</span><span class="nt">[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên<span class="cnt">1 hypothesis</span></span></a></summary><ul><li class="n" data-type="H" data-warn="0" data-text="h1 [example] một first task có hướng dẫn tăng tỷ lệ hoàn tất setup"><details><summary><a class="node" href="#/H1" data-id="H1"><span class="idc t-H">H1</span><span class="nt">[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup<span class="cnt">2 decisions · 1 test · 1 metric</span></span></a></summary><ul><li class="n leaf" data-type="D" data-warn="0" data-text="d1 [example] thay dashboard trống bằng checklist 3 bước"><a class="node" href="#/D1" data-id="D1"><span class="idc t-D">D1</span><span class="nt">[EXAMPLE] Thay dashboard trống bằng checklist 3 bước</span></a></li><li class="n leaf" data-type="D" data-warn="1" data-text="d2 [example] thêm progress bar vào checklist"><a class="node" href="#/D2" data-id="D2"><span class="idc t-D">D2</span><span class="nt">[EXAMPLE] Thêm progress bar vào checklist</span><span class="wb" title="Decision này đi ngược principle P8: cân nhắc sửa, hoặc ghi lại vì sao chấp nhận" aria-label="có warning">⚠</span></a></li><li class="n leaf" data-type="T" data-warn="0" data-text="t1 [example] test task với 5 người: hoàn tất setup không cần trợ giúp"><a class="node" href="#/T1" data-id="T1"><span class="idc t-T">T1</span><span class="nt">[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp</span></a></li><li class="n leaf" data-type="M" data-warn="0" data-text="m1 [example] ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp"><a class="node" href="#/M1" data-id="M1"><span class="idc t-M">M1</span><span class="nt">[EXAMPLE] Ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp</span></a></li></ul></details></li></ul></details></li><li class="n" data-type="O" data-warn="1" data-text="o2 [example] người dùng không tin giá trước khi đăng ký"><details><summary><a class="node" href="#/O2" data-id="O2"><span class="idc t-O">O2</span><span class="nt">[EXAMPLE] Người dùng không tin giá trước khi đăng ký<span class="cnt">1 hypothesis</span></span><span class="wb" title="Opportunity này chưa có decision nào phục vụ" aria-label="có warning">⚠</span></a></summary><ul><li class="n leaf" data-type="H" data-warn="1" data-text="h2 [example] hiện giá sớm tăng số đăng ký"><a class="node" href="#/H2" data-id="H2"><span class="idc t-H">H2</span><span class="nt">[EXAMPLE] Hiện giá sớm tăng số đăng ký<span class="cnt">chưa có decision hay test</span></span><span class="wb" title="Hypothesis này chưa có test; Hypothesis này chưa có metric để biết đúng hay sai" aria-label="có warning">⚠</span></a></li></ul></details></li><li class="n" data-type="" data-warn="0" data-text=""><details open><summary><span class="gh">Chưa nối vào opportunity nào (1)</span></summary><ul><li class="n leaf" data-type="D" data-warn="1" data-text="d3 [example] thêm mascot có animation"><a class="node" href="#/D3" data-id="D3"><span class="idc t-D">D3</span><span class="nt">[EXAMPLE] Thêm mascot có animation</span><span class="wb" title="Decision này chưa nối được về opportunity nào" aria-label="có warning">⚠</span></a></li></ul></details></li></ul></div><div class="pane-detail"><section class="doc" id="D1" data-title="D1 [EXAMPLE] Thay dashboard trống bằng checklist 3 bước"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-D">D1</span><div><p class="kind">Decision</p><h1>[EXAMPLE] Thay dashboard trống bằng checklist 3 bước</h1></div></header><div class="path"><span>From opportunity:</span><span class="chips chain"><a class="chip t-O" href="#/O1" title="[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên">O1</a> › <a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a> › <a class="chip t-D" href="#/D1" title="[EXAMPLE] Thay dashboard trống bằng checklist 3 bước">D1</a></span></div><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Tests</th><td><a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a></td></tr><tr><th scope="row">Follows</th><td><a class="chip t-P" href="#/principles" title="Visibility of system status">P1</a> <a class="chip t-P" href="#/principles" title="Recognition rather than recall">P6</a></td></tr><tr><th scope="row">Pulls against</th><td>—</td></tr></tbody></table></div><h2>Why</h2>
+<p>[Lý do thiết kế, và nó trả lời nhu cầu nào.]</p></div></section><section class="doc" id="D2" data-title="D2 [EXAMPLE] Thêm progress bar vào checklist"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-D">D2</span><div><p class="kind">Decision</p><h1>[EXAMPLE] Thêm progress bar vào checklist</h1></div></header><p class="warnbox">⚠ Decision này đi ngược principle P8: cân nhắc sửa, hoặc ghi lại vì sao chấp nhận</p><div class="path"><span>From opportunity:</span><span class="chips chain"><a class="chip t-O" href="#/O1" title="[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên">O1</a> › <a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a> › <a class="chip t-D" href="#/D2" title="[EXAMPLE] Thêm progress bar vào checklist">D2</a></span></div><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Tests</th><td><a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a></td></tr><tr><th scope="row">Follows</th><td><a class="chip t-P" href="#/principles" title="Visibility of system status">P1</a></td></tr><tr><th scope="row">Pulls against</th><td><a class="chip t-P" href="#/principles" title="Aesthetic and minimalist design">P8</a></td></tr></tbody></table></div><h2>Trade-off</h2>
+<p>[Chấp nhận / sửa, và vì sao progress bar đáng đổi lấy sự rối mắt.]</p></div></section><section class="doc" id="D3" data-title="D3 [EXAMPLE] Thêm mascot có animation"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-D">D3</span><div><p class="kind">Decision</p><h1>[EXAMPLE] Thêm mascot có animation</h1></div></header><p class="warnbox">⚠ Decision này chưa nối được về opportunity nào</p><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Tests</th><td>—</td></tr><tr><th scope="row">Follows</th><td>—</td></tr><tr><th scope="row">Pulls against</th><td>—</td></tr></tbody></table></div><h2>Note</h2>
+<p>Không có hypothesis hay principle nào đứng sau decision này.</p></div></section><section class="doc" id="H1" data-title="H1 [EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-H">H1</span><div><p class="kind">Hypothesis</p><h1>[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup</h1></div></header><div class="path"><span>From opportunity:</span><span class="chips chain"><a class="chip t-O" href="#/O1" title="[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên">O1</a> › <a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a></span></div><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Serves</th><td><a class="chip t-O" href="#/O1" title="[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên">O1</a></td></tr><tr><th scope="row">Metric</th><td><a class="chip t-M" href="#/M1" title="[EXAMPLE] Ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp">M1</a></td></tr></tbody></table></div><h2>Statement</h2>
+<p>Chúng tôi tin rằng một first task có hướng dẫn cho người dùng mới sẽ tăng tỷ lệ hoàn tất setup, và chúng tôi sẽ biết nhờ một test cho thấy M1 đạt.</p></div><aside class="backlinks"><h2>Linked from</h2><div class="row"><span class="lbl">Tested by</span><span class="chips"><a class="chip t-D" href="#/D1" title="[EXAMPLE] Thay dashboard trống bằng checklist 3 bước">D1</a><a class="chip t-D" href="#/D2" title="[EXAMPLE] Thêm progress bar vào checklist">D2</a><a class="chip t-T" href="#/T1" title="[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp">T1</a></span></div></aside></section><section class="doc" id="H2" data-title="H2 [EXAMPLE] Hiện giá sớm tăng số đăng ký"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-H">H2</span><div><p class="kind">Hypothesis</p><h1>[EXAMPLE] Hiện giá sớm tăng số đăng ký</h1></div></header><p class="warnbox">⚠ Hypothesis này chưa có test</p><p class="warnbox">⚠ Hypothesis này chưa có metric để biết đúng hay sai</p><div class="path"><span>From opportunity:</span><span class="chips chain"><a class="chip t-O" href="#/O2" title="[EXAMPLE] Người dùng không tin giá trước khi đăng ký">O2</a> › <a class="chip t-H" href="#/H2" title="[EXAMPLE] Hiện giá sớm tăng số đăng ký">H2</a></span></div><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Serves</th><td><a class="chip t-O" href="#/O2" title="[EXAMPLE] Người dùng không tin giá trước khi đăng ký">O2</a></td></tr><tr><th scope="row">Metric</th><td>—</td></tr></tbody></table></div><h2>Statement</h2>
+<p>Chúng tôi tin rằng hiện giá sớm sẽ tăng số đăng ký.</p></div></section><section class="doc" id="M1" data-title="M1 [EXAMPLE] Ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-M">M1</span><div><p class="kind">Metric</p><h1>[EXAMPLE] Ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp</h1></div></header><div class="path"><span>From opportunity:</span><span class="chips chain"><a class="chip t-O" href="#/O1" title="[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên">O1</a> › <a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a> › <a class="chip t-M" href="#/M1" title="[EXAMPLE] Ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp">M1</a></span></div><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Status</th><td>assumed</td></tr><tr><th scope="row">Baseline</th><td>số hoặc unknown</td></tr><tr><th scope="row">Measured by</th><td>usability test / analytics</td></tr></tbody></table></div><p>Mục tiêu này chưa được PO xác nhận.</p></div><aside class="backlinks"><h2>Linked from</h2><div class="row"><span class="lbl">Used as metric by</span><span class="chips"><a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a></span></div><div class="row"><span class="lbl">Measured by</span><span class="chips"><a class="chip t-T" href="#/T1" title="[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp">T1</a></span></div></aside></section><section class="doc" id="O1" data-title="O1 [EXAMPLE] Người dùng mới không biết nên làm gì trước tiên"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-O">O1</span><div><p class="kind">Opportunity</p><h1>[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên</h1></div></header><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Rank</th><td>1</td></tr><tr><th scope="row">Evidence</th><td>quote ID hoặc nguồn (xem trang Evidence)</td></tr></tbody></table></div><h2>Why it ranks first</h2>
+<p>[Vì sao nó đứng đầu, và ai bị ảnh hưởng.]</p></div><aside class="backlinks"><h2>Linked from</h2><div class="row"><span class="lbl">Served by</span><span class="chips"><a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a></span></div></aside></section><section class="doc" id="O2" data-title="O2 [EXAMPLE] Người dùng không tin giá trước khi đăng ký"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-O">O2</span><div><p class="kind">Opportunity</p><h1>[EXAMPLE] Người dùng không tin giá trước khi đăng ký</h1></div></header><p class="warnbox">⚠ Opportunity này chưa có decision nào phục vụ</p><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Rank</th><td>2</td></tr><tr><th scope="row">Evidence</th><td>quote ID hoặc nguồn</td></tr></tbody></table></div><h2>Why it ranks here</h2>
+<p>[Evidence và thứ hạng.]</p></div><aside class="backlinks"><h2>Linked from</h2><div class="row"><span class="lbl">Served by</span><span class="chips"><a class="chip t-H" href="#/H2" title="[EXAMPLE] Hiện giá sớm tăng số đăng ký">H2</a></span></div></aside></section><section class="doc" id="T1" data-title="T1 [EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp"><a class="back back-tree" href="#/trace">← Insights</a><header class="ihead"><span class="idtag t-T">T1</span><div><p class="kind">Test</p><h1>[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp</h1></div></header><div class="path"><span>From opportunity:</span><span class="chips chain"><a class="chip t-O" href="#/O1" title="[EXAMPLE] Người dùng mới không biết nên làm gì trước tiên">O1</a> › <a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a> › <a class="chip t-T" href="#/T1" title="[EXAMPLE] Test task với 5 người: hoàn tất setup không cần trợ giúp">T1</a></span></div><div class="reading"><div class="table-wrap"><table class="props"><tbody><tr><th scope="row">Tests</th><td><a class="chip t-H" href="#/H1" title="[EXAMPLE] Một first task có hướng dẫn tăng tỷ lệ hoàn tất setup">H1</a></td></tr><tr><th scope="row">Measures</th><td><a class="chip t-M" href="#/M1" title="[EXAMPLE] Ít nhất 4 trên 5 người tham gia test hoàn tất setup không cần trợ giúp">M1</a></td></tr><tr><th scope="row">Participants</th><td>5</td></tr><tr><th scope="row">Result</th><td>x trên 5 hoàn tất; thời gian trung vị t; lỗi n; SUS điểm</td></tr></tbody></table></div></div></section></div></div></div></section>
+<section class="view reference" id="v-reference"><div class="wrap"><div class="jlist"><h1>Reference</h1><p class="lede">Các tài liệu để tra cứu: gates, design principles và case log.</p><div class="jcards"><a class="jcard" href="#/gates"><span class="wk">Reference</span><h3>Gates</h3><p>Bốn gate và các check của từng gate</p></a><a class="jcard" href="#/principles"><span class="wk">Reference</span><h3>Principle checks</h3><p>Design principle mà mọi decision cần đạt</p></a><a class="jcard" href="#/case-log"><span class="wk">Reference</span><h3>Case log</h3><p>Mỗi decision một dòng, kèm lý do</p></a></div></div><section class="doc" id="gates" data-title="Gates"><a class="back" href="#/reference">← Reference</a><div class="reading"><h1>Gates</h1>
+<p>Bốn gate và các check của chúng. Với mỗi check, đặt status là <code>open</code>, <code>passed</code> hoặc <code>failed</code>. <strong>Không đổi tên check, chỉ đổi status.</strong> Gate <code>passed</code> khi mọi check của nó <code>passed</code>.</p>
+<h2>Gate 1: Discover (Question + evidence)</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Check</th><th scope="col">Nội dung</th><th scope="col">Status</th></tr></thead><tbody><tr><td>1a</td><td>Business question và outcome đã được thống nhất với PO, hoặc ghi <strong>assumed</strong> kèm agreement status</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>1b</td><td>Mọi insight lần ngược được về một nguồn gốc bạn mở ra được</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>1c</td><td>Không có gì được đoán: unknown và counterexample được ghi lại; bản nháp của AI để cạnh bản đã kiểm tra, kèm tỷ lệ lỗi</td><td><span class="gst gst-open">Open</span></td></tr></tbody></table></div>
+<h2>Gate 2: Define (Evidence + agreement)</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Check</th><th scope="col">Nội dung</th><th scope="col">Status</th></tr></thead><tbody><tr><td>2a</td><td>Mỗi opportunity dẫn evidence phía sau nó</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>2b</td><td>Problem brief được product và business đồng ký, hoặc ghi lại agreement status</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>2c</td><td>Mỗi hypothesis có một test và một metric (metric chưa xác nhận thì ghi <strong>assumed</strong>)</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>2d</td><td>Principle checks được viết thành câu hỏi có/không</td><td><span class="gst gst-open">Open</span></td></tr></tbody></table></div>
+<h2>Gate 3: Develop (Alignment)</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Check</th><th scope="col">Nội dung</th><th scope="col">Status</th></tr></thead><tbody><tr><td>3a</td><td>Đã khám phá ít nhất ba hướng khác nhau; lựa chọn và lý do được ghi lại</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>3b</td><td>Mỗi decision lần ngược về một opportunity có evidence và một hypothesis (không decision nào thiếu user need, không opportunity nào bị bỏ sót)</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>3c</td><td>Mỗi decision đạt principle checks, hoặc xung đột được ghi lại thành trade-off</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>3d</td><td>Prototype dùng design system và các accessibility rules đã được kiểm tra</td><td><span class="gst gst-open">Open</span></td></tr></tbody></table></div>
+<h2>Gate 4: Deliver (Real users + buildability)</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Check</th><th scope="col">Nội dung</th><th scope="col">Status</th></tr></thead><tbody><tr><td>4a</td><td>Người dùng thật đã test các hypothesis; kết quả được đặt cạnh baseline</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>4b</td><td>Các finding lần ngược về ghi chú hoặc bản ghi gốc và được xếp theo mức độ quan trọng</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>4c</td><td>Developer có thể dựng mà không phải hỏi lại (handoff pack và decision log đầy đủ)</td><td><span class="gst gst-open">Open</span></td></tr><tr><td>4d</td><td>Measurement plan đã được đưa cho PO</td><td><span class="gst gst-open">Open</span></td></tr></tbody></table></div>
+<p>Sau khi đổi status ở đây, cập nhật bảng Gates ở <a href="#/overview"><code>README.md</code></a>.</p></div></section><section class="doc" id="principles" data-title="Principle checks"><a class="back" href="#/reference">← Reference</a><div class="reading"><h1>Principle checks</h1>
+<p><em>Viết khi bắt đầu giai đoạn Define. 10 usability heuristics của Nielsen là mức nền. Biến mỗi principle thành một câu hỏi có/không cho sản phẩm của bạn. Thêm principle riêng của tổ chức ở dưới, đánh số từ P11.</em></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">ID</th><th scope="col">Principle</th><th scope="col">Yes/no check for my product</th></tr></thead><tbody><tr><td>P1</td><td>Visibility of system status</td><td class="dash">—</td></tr><tr><td>P2</td><td>Match between system and the real world</td><td class="dash">—</td></tr><tr><td>P3</td><td>User control and freedom</td><td class="dash">—</td></tr><tr><td>P4</td><td>Consistency and standards</td><td class="dash">—</td></tr><tr><td>P5</td><td>Error prevention</td><td class="dash">—</td></tr><tr><td>P6</td><td>Recognition rather than recall</td><td class="dash">—</td></tr><tr><td>P7</td><td>Flexibility and efficiency of use</td><td class="dash">—</td></tr><tr><td>P8</td><td>Aesthetic and minimalist design</td><td class="dash">—</td></tr><tr><td>P9</td><td>Help users recognise, diagnose and recover from errors</td><td class="dash">—</td></tr><tr><td>P10</td><td>Help and documentation</td><td class="dash">—</td></tr><tr><td>P11</td><td>(principle của tổ chức, nếu có)</td><td class="dash">—</td></tr></tbody></table></div></div></section><section class="doc" id="case-log" data-title="Case log"><a class="back" href="#/reference">← Reference</a><div class="reading"><h1>Case log</h1>
+<p><em>Mỗi decision một dòng, kèm lý do. Ghi cả những thứ đã cắt và các trade-off đã chấp nhận. Ghi rõ chỗ nào AI được dùng.</em></p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Date</th><th scope="col">Decision</th><th scope="col">Reason</th><th scope="col">Items (IDs)</th></tr></thead><tbody><tr><td class="dash">—</td><td class="dash">—</td><td class="dash">—</td><td class="dash">—</td></tr></tbody></table></div></div></section></div></section>
+<div class="wrap" style="padding-top:0"><footer class="foot">Tạo tự động từ các file Markdown của case, ngày 11/10/2026 17:54. Muốn đổi nội dung, sửa file gốc rồi chạy lại <code>python3 tools/export-hub.py</code>.</footer></div>
+</main>
+</div>
+<script>
+(function(){
+  var root=document.documentElement; root.classList.add('js');
+  var VIEWS=['overview','journey','docs','trace','reference'];
+  function $(s,c){return (c||document).querySelector(s)}
+  function $$(s,c){return [].slice.call((c||document).querySelectorAll(s))}
+  var docs={}; $$('.doc').forEach(function(d){docs[d.id]=d});
+  $$('.nback').forEach(function(b){b.addEventListener('click',function(){showPanel('root')})});
+  var caseName=document.body.getAttribute('data-case');
+  function route(){
+    var id=decodeURIComponent((location.hash||'').replace(/^#\/?/,''))||'overview';
+    var doc=null, view='overview';
+    if(VIEWS.indexOf(id)>-1){view=id}
+    else if(docs[id]){doc=docs[id]; var v=doc.closest('.view'); view=v?v.id.slice(2):'overview'}
+    $$('.view').forEach(function(v){v.classList.toggle('on',v.id==='v-'+view)});
+    $$('.side a[data-nav]').forEach(function(a){
+      if(a.getAttribute('data-nav')===view){a.setAttribute('aria-current','page')}else{a.removeAttribute('aria-current')}
+    });
+    var mn=$('.side details.menu'); if(mn&&window.innerWidth<=900){mn.open=false}
+    $$('.doc').forEach(function(d){d.classList.remove('on')});
+    if(doc){doc.classList.add('on')}
+    var j=$('#v-journey'); if(j){j.classList.toggle('has-doc',view==='journey'&&!!doc)}
+    var t=$('#v-trace'); if(t){t.classList.toggle('has-item',view==='trace'&&!!doc)}
+    var rv=$('#v-reference'); if(rv){rv.classList.toggle('has-doc',view==='reference'&&!!doc)}
+    var dv=$('#v-docs'); if(dv){dv.classList.toggle('has-doc',view==='docs'&&!!doc)}
+    $$('.subtabs a').forEach(function(a){
+      if(doc&&a.getAttribute('href')==='#/'+doc.id){a.setAttribute('aria-current','page')}else{a.removeAttribute('aria-current')}
+    });
+    $$('.tree a.node').forEach(function(a){
+      var on=view==='trace'&&doc&&a.getAttribute('data-id')===doc.id;
+      a.classList.toggle('sel',!!on);
+    });
+    var sel=$('.tree a.node.sel');
+    if(sel){var p=sel.parentElement; while(p&&p.id!=='tree'){if(p.tagName==='DETAILS'){p.open=true} p=p.parentElement}}
+    document.title=(doc?doc.getAttribute('data-title')+' · ':'')+caseName;
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',route);
+  // tree filtering
+  var tree=$('#tree'), q=$('#tsearch'), gs=$('#gsearch'), types={}, warnOnly=false;
+  function applyCards(){
+    var s=(q&&q.value||'').trim().toLowerCase(), any=!!s||warnOnly||Object.keys(types).length>0, n=0;
+    $$('.icard').forEach(function(c){
+      var ok=(!s||c.getAttribute('data-text').indexOf(s)>-1)&&(Object.keys(types).length===0||types[c.getAttribute('data-type')])&&(!warnOnly||c.getAttribute('data-warn')==='1');
+      c.hidden=!ok; if(ok){n++}
+    });
+    var t=$('#tcount'); if(t){t.textContent=any?(n+' mục khớp'):''}
+  }
+  $$('.vmode button').forEach(function(b){b.addEventListener('click',function(){
+    var tv=$('#v-trace'); tv.classList.toggle('mode-tree',b.getAttribute('data-vmode')==='tree');
+    $$('.vmode button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+  })});
+  function apply(){
+    applyCards();
+    if(!tree) return;
+    var s=(q.value||'').trim().toLowerCase(), any=!!s||warnOnly||Object.keys(types).length>0, shown=0;
+    function walk(ul){
+      var vis=false;
+      [].slice.call(ul.children).forEach(function(li){
+        var own=(!s||(li.getAttribute('data-text')||'').indexOf(s)>-1)
+          &&(Object.keys(types).length===0||types[li.getAttribute('data-type')])
+          &&(!warnOnly||li.getAttribute('data-warn')==='1');
+        var sub=li.querySelector(':scope > details > ul')||li.querySelector(':scope > ul');
+        var cv=sub?walk(sub):false;
+        var isItem=!!li.getAttribute('data-type');
+        if(own&&isItem&&any){shown++}
+        var show=(own&&(!sub||!any||true))||cv;
+        if(any&&!own&&!cv){show=false}
+        li.hidden=!show;
+        if(any&&cv){var d=li.querySelector(':scope > details'); if(d){d.open=true}}
+        vis=vis||show;
+      });
+      return vis;
+    }
+    walk(tree);
+    var c=$('#tcount'); if(c&&$('#v-trace').classList.contains('mode-tree')){c.textContent=any?(shown+' mục khớp'):''}
+  }
+  if(q){q.addEventListener('input',function(){if(gs){gs.value=q.value} apply()})}
+  if(gs){gs.addEventListener('input',function(){
+    if(q){q.value=gs.value}
+    if(!/^#\/(trace|[OHMDT]\d+)$/.test(location.hash)){location.hash='#/trace'}
+    apply();
+  })}
+  $$('#v-trace .filters button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var on=b.getAttribute('aria-pressed')!=='true';
+      b.setAttribute('aria-pressed',on?'true':'false');
+      if(b.getAttribute('data-warn')){warnOnly=on}
+      else{var k=b.getAttribute('data-type'); if(on){types[k]=true}else{delete types[k]}}
+      apply();
+    });
+  });
+  var cards=$$('#acards .acard'), fs={}, ft={};
+  function applyDocs(){
+    var q=(($('#dsearch')||{}).value||'').trim().toLowerCase(), n=0;
+    cards.forEach(function(c){
+      var ok=(!q||c.getAttribute('data-text').indexOf(q)>-1)&&(!Object.keys(ft).length||ft[c.getAttribute('data-type')])&&(!Object.keys(fs).length||fs[c.getAttribute('data-stage')]);
+      c.hidden=!ok; if(ok){n++}
+    });
+    var c=$('#dcount'); if(c){c.textContent=(q||Object.keys(ft).length||Object.keys(fs).length)?(n+' tài liệu khớp'):''}
+  }
+  var ds=$('#dsearch'); if(ds){ds.addEventListener('input',applyDocs)}
+  $$('#v-docs .filters button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var on=b.getAttribute('aria-pressed')!=='true'; b.setAttribute('aria-pressed',on?'true':'false');
+      var k=b.getAttribute('data-ftype');
+      if(k){if(on){ft[k]=true}else{delete ft[k]}}
+      applyDocs();
+    });
+  });
+  function tabGroup(sel,onPick){
+    $$(sel+' button').forEach(function(b){
+      b.addEventListener('click',function(){
+        $$(sel+' button').forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false')});
+        onPick(b);
+      });
+    });
+  }
+  tabGroup('#v-docs .tabs2',function(b){fs={}; var s=b.getAttribute('data-fstage'); if(s){fs[s]=true} applyDocs()});
+  tabGroup('#v-trace .tabs2',function(b){types={}; var t=b.getAttribute('data-type'); if(t){types[t]=true} apply()});
+  var sel=$('#themeselect');
+  if(sel){
+    try{var saved=localStorage.getItem('hub-theme'); if(saved){sel.value=saved; root.setAttribute('data-theme',saved)}}catch(e){}
+    sel.addEventListener('change',function(){
+      root.setAttribute('data-theme',sel.value);
+      try{localStorage.setItem('hub-theme',sel.value)}catch(e){}
+    });
+  }
+  route();
+})();
+</script>
+</body>
+</html>

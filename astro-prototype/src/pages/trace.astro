@@ -1,0 +1,34 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import Chip from '../components/Chip.astro';
+import { graph } from '../lib/graph.mjs';
+const g = graph();
+const placed = new Set();
+const mark = (...ids) => ids.flat().forEach((i) => placed.add(i));
+const loose = () => [...g.O, ...g.H, ...g.D, ...g.T, ...g.M].filter((i) => !placed.has(i));
+g.O.forEach((o) => { mark(o); g.hypsOf(o).forEach((h) => { mark(h, g.decisionsOf(h), g.testsOf(h), g.metric[h]); }); });
+---
+<StarlightPage frontmatter={{ title: 'Cây truy vết', description: 'Từ nhu cầu đến hypothesis, decision, test và metric', tableOfContents: false }}>
+  <p class="muted">Đọc từ trên xuống: nhu cầu, rồi hypothesis, rồi decision, test và metric.</p>
+  <div class="tree">
+    <ul>
+      {g.O.map((o) => (
+        <li><Chip id={o} /> {g.byId[o].title}
+          {g.hypsOf(o).length === 0 && <span class="muted"> (chưa có hypothesis)</span>}
+          <ul>
+            {g.hypsOf(o).map((h) => (
+              <li><Chip id={h} /> {g.byId[h].title}
+                <ul>
+                  {g.decisionsOf(h).map((d) => <li><Chip id={d} /> {g.byId[d].title} {g.warn[d] && '⚠'}</li>)}
+                  {g.testsOf(h).map((t) => <li><Chip id={t} /> {g.byId[t].title} {g.warn[t] && '⚠'}</li>)}
+                  {g.metric[h].map((m) => <li><Chip id={m} /> {g.byId[m].title}</li>)}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ul>
+  </div>
+  {loose().length > 0 && (<><h2>Chưa nối vào nhu cầu nào</h2><p>{loose().map((i) => <Chip id={i} />)}</p></>)}
+</StarlightPage>
