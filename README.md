@@ -1,6 +1,6 @@
 # AI Design Workflow (program)
 
-Chương trình 14 session (7 module hằng tuần, mỗi module gồm một buổi dạy và một buổi thực hành; mỗi tuần hai session 90 phút, trong 7 tuần) dành cho designer mid và senior: một case, một workflow AI lặp lại được, một Knowledge Hub dựng dần theo từng trang. Đọc `00-plan.md` trước.
+Chương trình 14 session (7 module hằng tuần, mỗi module gồm một buổi dạy và một buổi thực hành; mỗi tuần hai session 90 phút, trong 7 tuần) dành cho designer mid và senior: một case, một workflow AI lặp lại được, một Knowledge Hub dựng dần theo từng trang. Đọc `plan.md` trước.
 
 **Program và lesson nằm ở hai chỗ** (từ 2026-10-07):
 - **Program** (thư mục này): kế hoạch, research, method, pitch deck, tài nguyên dùng chung.
@@ -11,14 +11,16 @@ Chương trình 14 session (7 module hằng tuần, mỗi module gồm một bu�
 ```
 programs/ai-design-workflow/                  (thư mục này)
   README.md                 file này: thứ tự lesson, trạng thái, cách thêm lesson
-  00-plan.md                kế hoạch một trang: trọng tâm, lịch, quyết định chính (đọc trước)
-  01-research.md  02-method.md  03-quality-and-measurement.md  04-future-of-design-careers.md
-  05-pitch-deck-plan.md  05-pitch-deck-outline.md   kế hoạch và outline pitch deck
-  lesson-details.md         learning objective, activity và output của từng lesson
+  plan.md                kế hoạch một trang: trọng tâm, lịch, quyết định chính (đọc trước)
+  research.md  method.md  quality-and-measurement.md
+  pitch-deck-plan.md                             kế hoạch pitch deck
+  lesson-details.md         learning objective, activity và output của từng lesson (có mục workflow lab tuỳ chọn)
+  workflow-design-log.md quyết định thiết kế và các sự cố của workspace phía sau khoá, cho giảng viên và pitch
   voice-sample-vi.md        bản thử giọng tiếng Việt
   assets/                   starter-files, hub và doc template, diagram, ảnh tham khảo
     method-cards/           card tham khảo cho từng design method, theo stage
-  workspace/                repo mẫu cho học viên: my-case (trống), demo-case (Kitchen Crate), guides/ (xem mục Workspace)
+    templates/workflow-kit/ bộ mẫu cho buổi tuỳ chọn "Build your own AI workflow" (step card, luật cho AI tool, propose first…)
+  workspace-template/       repo mẫu cho học viên (GitHub: ai-product-workflow): my-case (trống), demo-case (Travel Buddy), toolkit/
   examples/                 ví dụ làm sẵn (step card)
   _archive/                 bản nháp đã thay thế
 
@@ -33,7 +35,7 @@ library/lessons/ai-design-workflow/           (các lesson)
 
 Quy ước:
 - **File chỉ dùng cho một lesson** để trong `assets/` của lesson. **File dùng cho từ hai lesson trở lên** (starter file, hub template, diagram) để trong `assets/` của program.
-- **Thư mục lesson là slug không đánh số** (URL của site là slug). Thứ tự nằm ở bảng dưới và trong `00-plan.md`, nên đổi thứ tự không cần đổi tên thư mục.
+- **Thư mục lesson là slug không đánh số** (URL của site là slug). Thứ tự nằm ở bảng dưới và trong `plan.md`, nên đổi thứ tự không cần đổi tên thư mục.
 - File chính phải là `<slug>-lesson.md`. Lesson và slide outline luôn sync với nhau (xem `CLAUDE.md` ở thư mục gốc).
 - Các đường dẫn tới lesson trong file của program (ví dụ `design-process-with-ai/materials/`) tính từ `library/lessons/ai-design-workflow/`.
 
@@ -49,7 +51,7 @@ Quy ước:
 | 6 | `refine-and-test` | Refine your design and test with users | ⬜ Planned |
 | 7 | `hand-off-and-present` | Hand off, measure and present (final project ở session 14) | ⬜ Planned |
 
-Slug của tuần 2 đến 7 lấy từ `00-plan.md`; chi tiết từng lesson nằm trong `lesson-details.md`. Thư mục chỉ được tạo khi bắt đầu lesson, không tạo trước: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
+Slug của tuần 2 đến 7 lấy từ `plan.md`; chi tiết từng lesson nằm trong `lesson-details.md`. Thư mục chỉ được tạo khi bắt đầu lesson, không tạo trước: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
 
 ## Thêm một lesson
 
@@ -73,7 +75,7 @@ Bài tập về nhà của mentee không lưu ở đây: `mentees/<tên>/homewor
 | `my-case/learnings/prototype/` | `starter-files/prototype-starter/` |
 | `demo-case/` | **Travel Buddy** (dự án thật của giảng viên, từ `05_Learning/SRH/.../Travel Buddy`), viết trực tiếp ở `workspace/`. Bản Kitchen Crate cũ nằm ở `_archive/demo-case-kitchen-crate/` |
 | `AGENTS.md`, `tools/step-*.md` | `assets/starter-files/case-folder-template/` (bản gốc) và `examples/*/step-cards.md` (nguồn của card, đã chuyển sang tiếng Việt và đổi đường dẫn) |
-| `README.md`, `guides/`, README của `my-case/`, `demo-case/` | viết trực tiếp ở `workspace/` (tiếng Việt) |
+| `README.md`, `toolkit/`, README của `my-case/`, `demo-case/` | viết trực tiếp ở `workspace/` (tiếng Việt) |
 
 Đưa lên GitHub: tạo repo riêng chỉ chứa nội dung `workspace/` (copy hoặc `git subtree split`), bật **Settings, Template repository** để học viên có nút Use this template, và để repo Public. Học viên tạo bản Private của họ từ template.
 

@@ -1,6 +1,6 @@
 # Step Cards — User-Voice Synthesis
 
-**Created:** 2026-10-05 · **Status: draft, untested.** Second worked example of the standard in `../../02-method.md` Part 1, using the card format in `../../02-method.md` Part 2. Pattern: A Investigate. Diagram: `../../assets/diagrams/user-voice-synthesis-activity-flow.svg`. The AI instructions are my design and have not been run in a class. Uses generic labels per CLAUDE.md.
+**Created:** 2026-10-05 · **Status: draft, untested.** Second worked example of the standard in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Pattern: A Investigate. Diagram: `../../assets/diagrams/user-voice-synthesis-activity-flow.svg`. The AI instructions are my design and have not been run in a class. Uses generic labels per CLAUDE.md.
 
 **Why this is the main Discover example.** Competitor analysis shows what rivals do. It cannot show why users behave as they do. User voice (what real people say in reviews, forums and interviews) is the evidence designers most need and most often synthesise badly. This flow keeps the AI on real quotes and makes every theme traceable.
 
@@ -42,7 +42,7 @@ Same two safety rules as every flow: the AI returns only its own section, and th
 | B: word for word and traceable? | 6 | 1b, 1c | Rerun step 5 with a tighter instruction (many errors), then verify again |
 | C: weighed, not counted? | 8 | 1b, and 2a when the opportunity feeds the brief | Go back to step 7 and redo the synthesis |
 
-Stage checks are in `../../02-method.md` Part 3, §2.
+Stage checks are in `../../learning/method.md` Part 3, §2.
 
 ---
 

@@ -18,12 +18,16 @@ window.HUB = {
     { file: "handoff.html",       label: "Handoff and measurement",   group: "Deliver" },
     { file: "case-log.html",      label: "Case log",                  group: "Record" }
   ],
-  gates: [                      // the single gate list: 4 gates, each with lettered checks (see 02-method.md Part 3)
+  gates: [                      // the single gate list: 4 gates, each with lettered checks (see method.md Part 3)
     // A check's status: open | passed | failed. A gate's status is worked out from its checks.
     { stage: "Discover", name: "Question + evidence", checks: [
       { id: "1a", text: "The business question and outcome are agreed with the PO, or marked assumed with the agreement status recorded", status: "open" },
-      { id: "1b", text: "Every insight traces to a raw source you can open", status: "passed" },
-      { id: "1c", text: "Nothing was guessed: unknowns and counterexamples recorded; AI draft kept beside the verified version, with the error rate", status: "passed" } ] },
+      { id: "1b", text: "Every insight traces to a raw source you can open (quote, participant ID, timestamp). Hard stop", status: "passed" },
+      { id: "1c", text: "Nothing was guessed: unknowns and counterexamples recorded; AI draft kept beside the verified version, with the error rate and a list of what the AI left out. Hard stop", status: "passed" },
+      { id: "1d", text: "Evidence from at least two kinds of source, sample size stated, and what the sample cannot tell you written down", status: "open" },
+      { id: "1e", text: "At least one counterexample sought and recorded; the synthesis prompt does not state your own hypothesis", status: "open" },
+      { id: "1f", text: "Participants consented; transcript anonymised before pasting; raw data kept outside what the AI reads. Hard stop", status: "open" },
+      { id: "1g", text: "Tool, version, key prompts and your changes to the AI output are logged", status: "open" } ] },
     { stage: "Define", name: "Evidence + agreement", checks: [
       { id: "2a", text: "Each opportunity cites the evidence behind it", status: "open" },
       { id: "2b", text: "The problem brief is co-signed by product and business, or its agreement status is recorded", status: "open" },

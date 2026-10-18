@@ -12,10 +12,11 @@
 | `05-telos-vn-ui-ux-salary-2026-cover.jpg` | academy.telos.vn/wp-content/uploads/2025/06/muc-luong-26.jpg | [TELOS Academy — Báo cáo mức lương UI/UX](https://academy.telos.vn/bao-cao-muc-luong-uiux-product-designer-tai-vn/) | TELOS Academy | No open licence stated | Reference only |
 | `06-designerfund-ai-in-design-2026-cover.png` | framerusercontent.com/images/kPSSpIf7yeyYVVviTXxKpEBhg.png | [Designer Fund — AI in Design 2026](https://designerfund.com/blog/ai-in-design-2026) | Designer Fund | No open licence stated | Reference only |
 | `07-foundationcapital-ai-reshaping-design-cover.png` | framerusercontent.com/images/iwQAK0VPOUp2SjIcRUULqhsZY.png | [Foundation Capital — How AI is reshaping design in tech](https://foundationcapital.com/ideas/how-ai-is-reshaping-design-in-tech) | Foundation Capital (© 2025, all rights reserved) | All rights reserved (stated on page) | Reference only |
+| `08-ai-harnesses-infographic.jpg` | Not recorded (screenshot of a social post shared by Winnie, 2026-10-15) | Original author and URL unknown: ask Winnie to add the post link | Unknown | Unknown | Reference only. Redraw the idea before any slide use. Text notes: `08-ai-harnesses-infographic.md` |
 
 ## Not yet collected
 - In-article charts and diagrams (the pages load them with JavaScript; needs a browser pass).
 - arXiv 2503.03924 figures: the abstract page links a CC BY 4.0 licence, but whether it covers the figures is **unverified**. Check the PDF before reuse.
 
 ## Our own diagrams (`diagrams/`)
-Original work for this series, drawn by Claude for Winnie. Inspired by the patterns documented in `../01-research.md` Part 1 and `../02-method.md` Part 3; no third-party artwork copied. Credit the underlying sources in the notes of any slide that uses them.
+Original work for this series, drawn by Claude for Winnie. Inspired by the patterns documented in `../learning/research.md` Part 1 and `../learning/method.md` Part 3; no third-party artwork copied. Credit the underlying sources in the notes of any slide that uses them.

@@ -1,6 +1,6 @@
 # Example: Competitor Analysis
 
-First worked example of the activity flow standard (`../../02-method.md` Part 1).
+First worked example of the activity flow standard (`../../learning/method.md` Part 1).
 
 | Part | Where |
 |---|---|

@@ -1,6 +1,6 @@
 # Example: User Flow and Process Map with AI
 
-Third worked example of the activity flow standard (`../../02-method.md` Part 1). Used as the AI workflow for Section 4 (User Flows) and Section 5 (Process Map) of the Information Architecture lesson (`library/lessons/03-develop/information-architecture/`).
+Third worked example of the activity flow standard (`../../learning/method.md` Part 1). Used as the AI workflow for Section 4 (User Flows) and Section 5 (Process Map) of the Information Architecture lesson (`library/lessons/03-develop/information-architecture/`).
 
 | Part | Where |
 |---|---|

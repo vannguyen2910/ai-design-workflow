@@ -21,7 +21,7 @@ Scope (shape the brief) → Evidence (discover) → Problem brief (define) → O
 
 
 ## Gates
-The four gates and their lettered checks (1a to 4d) are the series' single gate list (`../../02-method.md` Part 3, §2). They are written in `hub-data.js` under `gates`. Set each check's `status` to `open`, `passed` or `failed`; the gate's status is worked out for you (all checks passed means passed; any failed means failed; otherwise open). Do not rename the checks; change only the status.
+The four gates and their lettered checks (1a to 4d) are the series' single gate list (`../../../learning/method.md` Part 3, §2). They are written in `hub-data.js` under `gates`. Set each check's `status` to `open`, `passed` or `failed`; the gate's status is worked out for you (all checks passed means passed; any failed means failed; otherwise open). Do not rename the checks; change only the status.
 
 ## If the hub shows a setup problem
 The hub checks `hub-data.js` and each page, and lists problems in a box at the top of the page. It no longer goes blank.

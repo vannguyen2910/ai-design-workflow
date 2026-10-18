@@ -1,6 +1,6 @@
 # Example: User-Voice Synthesis
 
-Second worked example of the activity flow standard (`../../02-method.md` Part 1). Main in-class activity of the Discover lesson.
+Second worked example of the activity flow standard (`../../learning/method.md` Part 1). Main in-class activity of the Discover lesson.
 
 | Part | Where |
 |---|---|

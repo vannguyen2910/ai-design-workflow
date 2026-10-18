@@ -1,14 +1,18 @@
 # Gates
 
-Bốn gate và các check của chúng. Với mỗi check, đặt status là `open`, `passed` hoặc `failed`. **Không đổi tên check, chỉ đổi status.** Gate `passed` khi mọi check của nó `passed`.
+Bốn gate và các check của chúng. Với mỗi check, đặt status là `open`, `passed` hoặc `failed`. **Không đổi tên check, chỉ đổi status.** Gate `passed` khi mọi check của nó `passed`. Check ghi **hard stop** không được qua bằng lý do: phải thật sự đạt.
 
 ## Gate 1: Discover (Question + evidence)
 
 | Check | Nội dung | Status |
 |---|---|---|
 | 1a | Business question và outcome đã được thống nhất với PO, hoặc ghi **assumed** kèm agreement status | open |
-| 1b | Mọi insight lần ngược được về một nguồn gốc bạn mở ra được | open |
-| 1c | Không có gì được đoán: unknown và counterexample được ghi lại; bản nháp của AI để cạnh bản đã kiểm tra, kèm tỷ lệ lỗi | open |
+| 1b | Mọi insight lần ngược được về một nguồn gốc bạn mở ra được (quote, mã người tham gia, mốc thời gian). **Hard stop** | open |
+| 1c | Không có gì được đoán: unknown và counterexample được ghi lại; bản nháp của AI để cạnh bản đã kiểm tra, kèm tỷ lệ lỗi, kèm danh sách điều AI đã bỏ qua. **Hard stop** | open |
+| 1d | Evidence đến từ ít nhất hai loại nguồn, cỡ mẫu được ghi rõ, và ghi rõ mẫu đó chưa cho biết điều gì | open |
+| 1e | Đã tìm và ghi ít nhất một counterexample (ghi "đã tìm, không có" cũng được), và prompt tổng hợp không nêu giả thuyết của bạn | open |
+| 1f | Người tham gia đã đồng ý; transcript đã ẩn danh trước khi dán; dữ liệu gốc để ngoài vùng AI đọc. **Hard stop** | open |
+| 1g | Đã ghi công cụ, phiên bản, các prompt chính và những gì bạn đã sửa trong đầu ra của AI | open |
 
 ## Gate 2: Define (Evidence + agreement)
 

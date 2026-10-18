@@ -1,6 +1,6 @@
 # Step Cards — User Flow and Process Map
 
-**Created:** 2026-10-09 · **Status: draft, untested.** Third worked example of the standard in `../../02-method.md` Part 1, using the card format in `../../02-method.md` Part 2. Uses generic labels per CLAUDE.md. The AI instructions are my design and have not been run in a class.
+**Created:** 2026-10-09 · **Status: draft, untested.** Third worked example of the standard in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Uses generic labels per CLAUDE.md. The AI instructions are my design and have not been run in a class.
 
 **Decision this activity informs:** which single structural change would remove the most friction from one core task, and is that friction in the user's path (User Flow) or behind the screen (Process Map)?
 
@@ -44,7 +44,7 @@ Same two safety rules as every flow: the AI returns only its own section, and th
 | B: is the fix defensible? | 6 | 3a, 3b, 3c | Go back to step 5 and ask for alternatives again; check unknowns with the team first |
 | C: does the diagram match the table? | 8 | 3b, and 3d when it goes to handoff | Go back to step 7 (code differs from the table) or step 4 (table was wrong) |
 
-Stage checks are in `../../02-method.md` Part 3, §2.
+Stage checks are in `../../learning/method.md` Part 3, §2.
 
 ---
 
