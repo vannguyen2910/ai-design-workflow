@@ -1,17 +1,17 @@
 # Lesson Details
 
-Tài liệu tham chiếu để dựng từng lesson. **Đọc `plan.md` trước.** File này giữ phần chi tiết mà plan không có: bộ từ vựng của series, rồi mục tiêu, activity và output của từng lesson (Lesson 1 đến 9), các practice session và final project.
+Tài liệu tham chiếu để dựng từng lesson. **Đọc `plan.md` trước.** File này giữ phần chi tiết mà plan không có: bộ từ vựng của series, rồi mục tiêu, activity và output của từng lesson (Lesson 1 đến 9) và ba Check point.
 
-Lesson là các khối nội dung, được gom vào 7 module theo tuần (lịch ở `plan.md`). Một số chi tiết viết cho kế hoạch 10 lesson trước đây, nên khi file nhắc "tuần" hoặc "session", cần đối chiếu timing hiện tại ở `plan.md`.
+Cập nhật 2026-10-22: lộ trình đi theo Notion, 12 buổi trong 6 tuần. Mỗi lesson là một buổi nội dung (buổi 1, 2, 3, 4, 6, 7, 8, 9, 11); ba buổi còn lại (5, 10, 12) là Check point, không có lesson hay deck riêng. Bảng buổi và tuần ở `plan.md`. Mô hình 7 module với session A/B của bản 14 session đã bỏ; một số chi tiết bên dưới còn viết cho mô hình cũ và được đánh dấu **cần chia lại**. Khi file nhắc "module", "tuần" hay "session", đối chiếu với `plan.md`.
 
 **Trong file này**
 
 - Series Vocabulary
 - Lesson 1 đến 9
-- Practice Sessions và Final Project
+- Ba Check point (buổi 5, 10, 12)
 - Optional: Build Your Own AI Workflow (workflow lab)
 
-Bản tiếng Anh trước khi dọn (có bảng cân đối timing, bảng mapping lesson cũ và danh sách lỗi đã sửa) nằm ở `_archive/lesson-details-2026-10-15-en.md`.
+Bản 14 session trước khi đồng bộ với Notion nằm ở `_archive/lesson-details-2026-10-22-14-session.md`. Bản tiếng Anh trước khi dọn (có bảng cân đối timing, bảng mapping lesson cũ và danh sách lỗi đã sửa) nằm ở `_archive/lesson-details-2026-10-15-en.md`.
 
 ---
 
@@ -60,7 +60,7 @@ Khoá `rel: "strains"` trong file dữ liệu của hub được giữ nguyên; 
 
 ## Lesson 1: Your Design Process, with AI
 
-*Slug:* `design-process-with-ai` (folder cũ: `ai-workflow-for-ux-designers`). Là **module 1 (tuần 1)**: hai buổi 90 phút, buổi 1 dạy và buổi 2 thực hành. File nguồn: `library/lessons/ai-design-workflow/design-process-with-ai/materials/design-process-with-ai-lesson.md`. Khi nội dung ở đây lệch với lesson file, lesson file thắng.
+*Slug:* `design-process-with-ai` (folder cũ: `ai-workflow-for-ux-designers`). Là **buổi 1 (tuần 1)** theo Notion, một buổi 90 phút. Đã gộp từ hai buổi (dạy và thực hành) thành một buổi, 2026-10-22. File nguồn: `library/lessons/ai-design-workflow/design-process-with-ai/materials/design-process-with-ai-lesson.md`. Khi nội dung ở đây lệch với lesson file, lesson file thắng.
 
 > **Xem thêm:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md), mục 5, cho vị trí của thông điệp "đừng automate bad workflow" và checklist trước khi automate trong từng lesson.
 
@@ -70,11 +70,11 @@ Khoá `rel: "strains"` trong file dữ liệu của hub được giữ nguyên; 
 
 ### Mục tiêu
 
-Sau hai buổi, học viên có thể:
+Sau buổi 1 và bài tập về nhà, học viên có thể:
 
 1. **Mô tả** ba hướng đi nghề nghiệp, bằng chứng của từng hướng và giới hạn của bằng chứng đó, rồi chọn hướng mình nghiêng về.
 2. **Kể tên** các method chính trong bốn stage, và nêu AI hỗ trợ ở đâu, phần nào designer vẫn phải tự thực hiện.
-3. **Giải thích** mười thuật ngữ AI cốt lõi bằng lời của mình (bảng bên dưới).
+3. **Giải thích** bốn khái niệm AI cốt lõi bằng lời của mình (context, grounding, hallucination, AI-assisted so với AI-generated), và nhận ra sáu thuật ngữ tham khảo khi gặp ở các buổi sau (bảng bên dưới).
 4. **Quyết định** dữ liệu nào an toàn để đưa cho AI tool: phân loại thành safe, ask first và never in a public tool; ẩn danh trước khi dán; viết data rules của riêng mình.
 5. **Cài đặt** case folder của chương trình cho case của chính mình, gồm layout chuẩn, `AGENTS.md`, context pack đã bắt đầu và một hub Markdown mẫu.
 6. **Dùng lại** một file đã lưu làm context thay vì mô tả lại project, và yêu cầu AI chỉ rõ nguồn cho từng ý, kèm câu trả lời "unknown" khi không có thông tin.
@@ -84,51 +84,50 @@ Sau hai buổi, học viên có thể:
 
 ### Cấu trúc buổi
 
-**Buổi 1 (dạy, 90 phút).** Chỉ có câu hỏi và trao đổi theo cặp, không có output mới.
+Một buổi 90 phút (gộp từ hai buổi, 2026-10-22). Trên lớp chỉ có ice breaker và một activity (Activity 2, viết data rules); ở nhà chỉ có một bài tập (dựng case folder).
 
 | Phase | Nội dung | Thời gian |
 |---|---|---|
-| 1 | Tương lai của nghề, ba hướng đi, trao đổi về hướng của mình, lập trường partner | 20 phút |
-| 2 | Quy trình thiết kế cùng AI: mỗi stage gồm gì và AI hỗ trợ ở đâu (không đi vào từng method); AI làm tốt và còn yếu ở đâu; ba câu hỏi trước khi automate | 16 phút |
-| 3 | Một task làm hai lần; thuật ngữ trong thực tế; Activity 1 | 19 phút |
-| 4 | Data safety: trình bày và bài phân loại | 12 phút |
-| 5 | Tiếp theo là gì, hub, kết thúc phần trình bày (6 phút); hỏi đáp (15 phút) | 21 phút |
-| | **Tổng nội dung** | **88 phút** |
-| | Buffer, gồm phần nhắc chuẩn bị cho buổi 2 | 2 phút |
+| 1 | Ice breaker: giới thiệu và một lần AI làm bạn bất ngờ hoặc bực | 7 phút |
+| 2 | Tương lai của nghề, ba hướng đi, lập trường partner | 14 phút |
+| 3 | Quy trình thiết kế cùng AI; AI làm tốt và còn yếu ở đâu; ba câu hỏi trước khi automate | 14 phút |
+| 4 | Một task làm hai lần; bốn khái niệm gắn vào demo | 11 phút |
+| 5 | Data safety | 8 phút |
+| 6 | Activity 2: viết data rules | 8 phút |
+| 7 | Case folder, working file, hub và cách chia sẻ; giao bài tập về nhà | 12 phút |
+| 8 | Hỏi đáp | 8 phút |
+| | **Tổng nội dung** | **82 phút** |
+| | Kết thúc và buffer | 8 phút |
 
-**Buổi 2 (thực hành, 90 phút, khoảng ba ngày sau).** Không có nội dung mới. Học viên làm trên case của mình trong breakout room 3 đến 4 người, có coaching.
-
-| Phase | Nội dung | Thời gian |
-|---|---|---|
-| 6 | Check-in; viết hướng của mình; Activity 2 (data rules) | 14 phút |
-| 7 | File, folder và case folder | 9 phút |
-| 8 | Activity 3: dựng case folder | 40 phút |
-| 9 | Activity 4: đọc chéo với bạn cặp; xem một case folder trực tiếp | 16 phút |
-| 10 | Kết thúc buổi và việc tiếp theo của dự án | 6 phút |
-| | **Tổng nội dung** | **85 phút** |
-| | Buffer | 5 phút |
-
-Timing chưa được thử với lớp thật, và đây vẫn là lesson nặng nhất của series. Buffer buổi 1 chỉ còn 2 phút, nên Phase 2 là chỗ rủi ro nhất. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** slide ba câu hỏi trước khi automate, rồi slide "trông đúng chưa chắc đúng", rồi phần mô tả hub ở Phase 5. Data safety không bao giờ bị cắt.
+Timing chưa được thử với lớp thật. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** slide ba câu hỏi trước khi automate, rồi slide "trông đúng chưa chắc đúng", rồi phần chia sẻ hub, rồi rút hỏi đáp còn 4 phút, rồi rút ice breaker còn 5 phút. Data safety và Activity 2 không bao giờ bị cắt.
 
 ### Activity, homework và output
 
-- **Key activity:** demo của giảng viên về một task làm hai lần (instruction mơ hồ so với instruction có cấu trúc, trên một case card); ở buổi 2, học viên dựng case folder và chạy một instruction với một file đã lưu.
-- **Homework (tối đa 45 phút, nối tiếp phần đã bắt đầu trên lớp):** Việc 1, hoàn thiện nền của dự án (cần có, khoảng 25 phút); Việc 2, chia sẻ hub (tuỳ chọn, khoảng 20 phút): xuất PDF, hoặc công khai nếu case được phép chia sẻ.
+- **Key activity:** demo của giảng viên về một task làm hai lần (instruction mơ hồ so với instruction có cấu trúc, trên một case card); trên lớp, học viên viết data rules (Activity 2); ở nhà, học viên dựng case folder và chạy một instruction với một file đã lưu.
+- **Homework (một bài tập, khoảng 45 phút):** dựng case folder theo năm bước, bước cuối là viết `_personal/my-direction.md`.
 - **Handout gửi riêng:** `assets/templates/before-you-automate.md` (thông điệp, checklist tám câu, cách đọc kết quả).
-- **Output:** case folder với các file `context-*` trong `learnings/` đã bắt đầu (sản phẩm và người dùng, accessibility rules, data rules, glossary tuỳ chọn) cho case của học viên, cùng một hub mẫu (private). Học viên cũng viết `_personal/my-direction.md` ở buổi 2.
+- **Output:** case folder với các file `context-*` trong `learnings/` đã bắt đầu (sản phẩm và người dùng, data rules, accessibility rules tuỳ chọn, glossary tuỳ chọn) cho case của học viên, cùng một hub mẫu (private) và `_personal/my-direction.md`.
 
 ### Terminology List
 
-Mười thuật ngữ. Mỗi thuật ngữ gồm một câu đơn giản và một ví dụ cho designer.
+*Cập nhật 2026-10-22: rút từ mười thuật ngữ còn bốn khái niệm dạy trên lớp; sáu thuật ngữ còn lại nằm trong pre-read và dạy khi cần.* Mỗi mục gồm một câu đơn giản và một ví dụ cho designer.
 
-| Nhóm | Thuật ngữ |
+**Dạy trên lớp (4 khái niệm, gắn vào demo "một task làm hai lần"):**
+
+| Nhóm | Khái niệm |
 |---|---|
-| Các tool | AI chat tool, AI coding tool |
-| Nói chuyện với AI | context, context window, grounding |
+| Nói chuyện với AI | context, grounding |
 | Khi nó làm sai | hallucination (vì sao "unknown" là câu trả lời được phép) |
-| Cách một số tool hành động | agent, connector (MCP) |
-| Mang theo chuẩn của mình | reusable instructions: skills, rules file, project memory |
 | Lập trường (nói ở phần mindset) | AI-assisted so với AI-generated |
+
+**Pre-read, dạy lại đúng buổi cần (6 thuật ngữ tham khảo):**
+
+| Thuật ngữ | Dạy sâu ở |
+|---|---|
+| AI chat tool | Dùng từ buổi 1 |
+| AI coding tool, agent, reusable instructions (skills, rules file, project memory) | Buổi 7 |
+| Context window | Nhắc trong phần context |
+| Connector (MCP) | Buổi 7; nhắc một dòng ở data safety |
 
 Nói lướt, không có thẻ riêng: model, prompt, in-tool AI features, token. Markdown, HTML và local folder được dạy như các loại file, ở phần folder. Cơ sở: Figma mô tả MCP là giao diện cho phép AI tool đọc thiết kế, và skills là các instruction Markdown dùng lại được ([Figma, design systems, AI and MCP](https://www.figma.com/blog/design-systems-ai-mcp/)); các thuật ngữ còn lại là cách dùng chuẩn.
 
@@ -153,7 +152,7 @@ Layout dưới đây theo lesson file (mục 6.2). Đây là layout mặc địn
 │   └── prototype/       code prototype
 ├── hub/                 Knowledge Hub: folder Markdown, mỗi item (O, H, D, T, M) một file
 ├── tools/               export-hub.py và các step card
-└── _personal/           my-direction.md (viết ở buổi 2, xem lại ở tuần 7); không đưa cho AI tool
+└── _personal/           my-direction.md (viết sau buổi 1, xem lại ở buổi 12); không đưa cho AI tool
 ```
 
 **Vì sao layout này phù hợp với làm việc với AI:** ít folder, tiền tố giai đoạn giữ đúng thứ tự; mỗi activity một file nên mỗi bước AI có một input có tên; các file `context-*` được dán trước tiên vào mọi bước; file văn bản ngắn dễ đưa cho AI có chọn lọc; và một AI coding tool mở được cả folder như một project.
@@ -162,14 +161,14 @@ Layout dưới đây theo lesson file (mục 6.2). Đây là layout mặc địn
 
 ### Tình trạng
 
-- Lesson file và slide outline đã đồng bộ (73 slide, gồm 27 slide Appendix). **Deck HTML chưa được dựng lại.**
+- Lesson file và slide outline đã đồng bộ và đã gộp thành một buổi (69 slide: 39 slide luồng dạy, 3 slide Homework reference, 27 slide Appendix). **Deck HTML chưa được dựng lại.** Bản hai buổi cũ lưu ở `_archive/` của lesson.
 - Bản deck cũ nằm ở `slides/_archive/`, nên không hiện như một link deck.
 
 ---
 
 ## Lesson 2: Discover the Problem
 
-*Slug:* `discover-the-problem`. Cùng Lesson 3 tạo thành **module 2 (tuần 2)**, dùng chung một slug. Buổi role-play với PO đã bị bỏ (2026-10-07) và thay bằng stakeholder check bằng văn bản cùng phỏng vấn user theo cặp. Tên activity nội bộ "Shape the brief" trong `method.md` và hub được giữ nguyên.
+*Slug:* `discover-the-problem`. Là **buổi 2 (tuần 1)** theo Notion. Trước đây gộp với Lesson 3 thành module 2 và dùng chung một slug; nay mỗi lesson một buổi. Buổi role-play với PO đã bị bỏ (2026-10-07) và thay bằng stakeholder check bằng văn bản cùng phỏng vấn user theo cặp. Tên activity nội bộ "Shape the brief" trong `method.md` và hub được giữ nguyên.
 
 **Dự kiến bổ sung (2026-10-15, chưa có trong lesson file):** hai quy trình từ `ai-in-discover.md`: chuẩn bị phỏng vấn (brainstorm research plan, facilitation script, facilitator page ở mức giới thiệu) và từ session đến learning (ẩn danh trước khi dán, tóm tắt, liệt kê điều bị bỏ sót, xếp vào file có sẵn bằng propose first). Cần một HTML template; xem to-do trong `plan.md`.
 
@@ -191,19 +190,21 @@ Layout dưới đây theo lesson file (mục 6.2). Đây là layout mặc địn
 2. AI chuẩn bị business question và assumption map.
 3. Học viên kiểm tra và xếp hạng.
 4. Học viên gửi câu hỏi bằng văn bản cho business hoặc product (bước chỉ người làm; đường văn bản dùng được ở mọi mức access).
-5. Phỏng vấn user theo cặp trên lớp (xem Lesson 3).
+5. Phỏng vấn user theo cặp (xem Lesson 3). *Notion không có buổi riêng cho phần này; mặc định tạm là bài tập về nhà giữa buổi 2 và 3, chờ xác nhận ở `plan.md` mục 4.*
 6. AI soạn nháp scope từ ghi chú.
 7. Học viên đối chiếu với ghi chú, chia sẻ lại và ghi agreement status.
 
-**Trên lớp (session 3):** soạn nháp business question và danh sách assumption cùng AI, đối chiếu từng cái với điều mình thật sự biết, và viết tin sẽ gửi. **Giữa hai buổi:** gửi cho một stakeholder thật (hoặc người gần nhất làm việc với business) kèm ngày cần trả lời, và ghi agreement status vào scope. Không role-play: AI không bao giờ đóng vai PO và không ai tập trả lời thay PO.
+**Trên lớp (buổi 2):** soạn nháp business question và danh sách assumption cùng AI, đối chiếu từng cái với điều mình thật sự biết, và viết tin sẽ gửi. **Giữa hai buổi:** gửi cho một stakeholder thật (hoặc người gần nhất làm việc với business) kèm ngày cần trả lời, và ghi agreement status vào scope. Không role-play: AI không bao giờ đóng vai PO và không ai tập trả lời thay PO.
 
 **Output:** `## Scope` gồm business question, outcome, metric (confirmed hoặc assumed), các điều đang tin, và **agreement status** (agreed, pending, not available).
 
 **Partner move được dạy:** hỏi sớm, mang một mẩu evidence nhỏ, viết ra và chia sẻ lại, và xem bản nháp là tài sản chung.
 
-### Phân bổ thời gian module 2 (đề xuất 2026-10-15, chưa thử)
+### Phân bổ thời gian Lesson 2 và 3 (đề xuất 2026-10-15, chưa thử, **cần chia lại**)
 
-Module 2 gồm Lesson 2 và Lesson 3 trong hai buổi 90 phút: **session A (dạy)** và **session B (thực hành, khoảng ba ngày sau)**. Homework tối đa khoảng 45 phút, chỉ nối tiếp phần đã bắt đầu trên lớp.
+> **Cần chia lại (2026-10-22).** Bảng dưới viết cho mô hình cũ: Lesson 2 và 3 gộp trong hai buổi 90 phút (session A dạy, session B thực hành). Theo Notion, Lesson 2 là buổi 2 và Lesson 3 là buổi 3, không có buổi thực hành riêng; phỏng vấn theo cặp và phần B4 trở đi phải chuyển sang bài tập về nhà hoặc rút gọn. Tổng nhu cầu vẫn khoảng 210 phút so với 180 phút của hai buổi, nên mức thiếu khoảng 46 phút không đổi.
+
+Trong mô hình cũ, module gồm Lesson 2 và Lesson 3 trong hai buổi 90 phút: **session A (dạy)** và **session B (thực hành, khoảng ba ngày sau)**. Homework tối đa khoảng 45 phút, chỉ nối tiếp phần đã bắt đầu trên lớp.
 
 **Nhu cầu so với sức chứa.** Ước lượng của người soạn, chưa đo:
 
@@ -285,7 +286,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 3: Turn Research into Insights You Can Trust
 
-*Slug:* `research-you-can-trust`. Cùng Lesson 2 là module 2. Phỏng vấn user theo cặp chạy ở session 4 và nuôi phần user-voice synthesis bên dưới; AI soạn nháp interview guide, học viên kiểm tra, và ghi chú được ẩn danh trước khi AI nhìn thấy.
+*Slug:* `research-you-can-trust`. Là **buổi 3 (tuần 2)** theo Notion. Phỏng vấn user theo cặp (mặc định tạm: bài tập về nhà giữa buổi 2 và 3, xem `plan.md` mục 4) nuôi phần user-voice synthesis bên dưới; AI soạn nháp interview guide, học viên kiểm tra, và ghi chú được ẩn danh trước khi AI nhìn thấy.
 
 **Why:** competitor analysis cho thấy đối thủ làm gì. Nó không cho thấy vì sao user hành xử như vậy, nên một Discover chỉ dựa trên nó là evidence yếu nhất. Lesson ghép hai loại evidence và giữ AI trung thực ở cả hai.
 
@@ -297,7 +298,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 4. Xếp theme theo severity, context và reach, không chỉ theo số lần; viết opportunity candidate kèm quote ID; và nêu rõ mẫu không cho họ biết điều gì.
 5. Chạy competitor analysis như activity thứ hai, và gộp cả hai thành một evidence pack.
 
-**Key activity:** **User-voice synthesis** là activity chính trên lớp (`examples/user-voice-synthesis/`, flow và step card đã có). **Competitor analysis** là activity thứ hai (`examples/competitor-analysis/`): demo trực tiếp 20 phút, là thứ đầu tiên bị cắt nếu tuần 2 quá giờ, phần phân tích đầy đủ là homework tuỳ chọn. Interview synthesis, desk research và support ticket là biến thể của cùng một flow (đổi nguồn ở bước 4).
+**Key activity:** **User-voice synthesis** là activity chính trên lớp (`examples/user-voice-synthesis/`, flow và step card đã có). **Competitor analysis** là activity thứ hai (`examples/competitor-analysis/`): demo trực tiếp 20 phút, là thứ đầu tiên bị cắt nếu buổi 3 quá giờ, phần phân tích đầy đủ là homework tuỳ chọn. Interview synthesis, desk research và support ticket là biến thể của cùng một flow (đổi nguồn ở bước 4).
 
 *Chia giờ giả định cho 90 phút: user voice khoảng 50, competitor demo khoảng 20, gộp evidence pack và kết thúc khoảng 10, buffer 10. Học viên dùng evidence họ đã có (đã ẩn danh) hoặc bộ quote chuẩn bị sẵn. Chưa thử.*
 
@@ -319,7 +320,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 4: Frame the Problem Worth Solving
 
-*Slug:* `frame-the-problem`
+*Slug:* `frame-the-problem`. Là **buổi 4 (tuần 2)**. Output của buổi này, cùng bài tập buổi 1 đến 3, là đầu vào của **Check point 1 (buổi 5)**.
 
 **Sau lesson, học viên có thể:**
 
@@ -340,7 +341,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 5: Explore Ideas and Pick a Direction
 
-*Slug:* `explore-ideas`
+*Slug:* `explore-ideas`. Là **buổi 6 (tuần 3)**, sau Check point 1.
 
 **Sau lesson, học viên có thể:**
 
@@ -356,7 +357,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 6: Build Your First Prototype
 
-*Slug:* `build-your-first-prototype`
+*Slug:* `build-your-first-prototype`. Là **buổi 7 (tuần 4)**.
 
 **Why (tách ra 2026-10-05):** dựng prototype trên một design system cần hơn một lesson. Lesson này tạo ra phiên bản chạy được đầu tiên, theo đúng cách.
 
@@ -380,7 +381,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 7: Refine and Check Your Design
 
-*Slug:* `refine-and-check`
+*Slug:* `refine-and-check`. Là **buổi 8 (tuần 4)**.
 
 **Why:** phiên bản đầu không bao giờ là phiên bản đem đi test. Lesson mở rộng nó, kiểm tra nó với hệ thống và accessibility, và đóng stage Develop bằng alignment check (lesson critique-loop cũ được gộp vào đây).
 
@@ -402,7 +403,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 8: Test with Real Users
 
-*Slug:* `test-with-real-users`
+*Slug:* `test-with-real-users`. Là **buổi 9 (tuần 5)**; **Check point 2 (buổi 10)** dùng kết quả test để refine và sửa finding.
 
 **Sau lesson, học viên có thể:**
 
@@ -410,7 +411,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 2. Chạy một usability test và đo task success, time on task, errors và SUS so với baseline.
 3. Kiểm tra phần phân tích finding do AI hỗ trợ với bản ghi hình hoặc ghi chú gốc, và xếp finding theo mức quan trọng chứ không theo tần suất.
 
-**Key activity:** Plan-and-read-the-measurement flow (Investigate pattern), phạm vi trước launch, chưa vẽ. **Trong một buổi 90 phút:** lập plan và script cho test, rồi peer usability test theo cặp (học viên test prototype của nhau theo ground rule về bảo mật; sanitise nếu cần). Test với người ngoài là homework tuỳ chọn.
+**Key activity:** Plan-and-read-the-measurement flow (Investigate pattern), phạm vi trước launch, chưa vẽ. **Trong buổi 9 (90 phút):** lập plan và script cho test, rồi peer usability test theo cặp (học viên test prototype của nhau theo ground rule về bảo mật; sanitise nếu cần). Test với người ngoài là homework tuỳ chọn. Phần sửa finding và refine nằm ở Check point 2 (buổi 10).
 
 **Output:** finding, decision log đã cập nhật, prototype đã cập nhật.
 
@@ -418,7 +419,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 9: Hand Off and Measure Success
 
-*Slug:* `hand-off-and-measure`
+*Slug:* `hand-off-and-measure`. Là **buổi 11 (tuần 6)**, ngay trước Check point 3.
 
 **Sau lesson, học viên có thể:**
 
@@ -434,7 +435,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Optional: Build Your Own AI Workflow (Workflow Lab)
 
-*Thêm 2026-10-12 từ những gì học được khi dựng workspace phía sau khoá này. Vị trí do giảng viên quyết định: một phần mở rộng của module, một buổi tuỳ chọn, hoặc một bài đọc kèm bài tập tại nhà. Chưa xếp lịch.*
+*Thêm 2026-10-12 từ những gì học được khi dựng workspace phía sau khoá này. Vị trí do giảng viên quyết định: một phần mở rộng của buổi nội dung, hoặc một bài đọc kèm bài tập tại nhà (12 buổi không còn chỗ cho buổi riêng). Chưa xếp lịch.*
 
 **Sau lesson, học viên có thể:**
 
@@ -451,45 +452,43 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 **Thời gian:** khoảng 90 phút nếu chạy trực tiếp; khoảng hai giờ nếu là bài tập tại nhà.
 
-**Mỗi ý đã nằm ở đâu trong các module** (để dạy lồng thay vì một khối riêng):
+**Mỗi ý đã nằm ở đâu trong các buổi** (để dạy lồng thay vì một khối riêng):
 
 | Ý | Chỗ phù hợp nhất | Xuất hiện như thế nào |
 |---|---|---|
-| Source of truth, built view | Module 1 (từ vựng), Module 3 | Các trang của hub được dựng từ file của case; không có gì sao chép tay |
-| Propose first | Module 2 | Ghi chú phỏng vấn theo cặp đi vào; AI đề xuất insight; học viên duyệt trước khi item được tạo |
-| Rules file cho AI tool | Module 1 | Data rules và bản đồ case folder được viết một lần |
-| Traceability và outcome loop | Module 3, 6, 7 | Mỗi decision truy được về một need; metric có target, kết quả và verdict |
-| Signal so với noise trong check | Module 6 | Cảnh báo của alignment check được chia mức; case mới bắt đầu sạch |
-| Fail loudly, test trên dữ liệu mới | Module 6 | Peer test và finding; một check không nói gì thì không phải là pass |
-| Chọn tool theo ràng buộc của nó | Module 5 | AI coding tool hay diagram tool đều có giới hạn; quyết định điều chỉnh, tự dựng hay đổi, và dữ liệu nào rời khỏi máy |
+| Source of truth, built view | Buổi 1 (từ vựng), buổi 4 | Các trang của hub được dựng từ file của case; không có gì sao chép tay |
+| Propose first | Buổi 3 | Ghi chú phỏng vấn theo cặp đi vào; AI đề xuất insight; học viên duyệt trước khi item được tạo |
+| Rules file cho AI tool | Buổi 1 | Data rules và bản đồ case folder được viết một lần |
+| Traceability và outcome loop | Buổi 4, 8, 11 | Mỗi decision truy được về một need; metric có target, kết quả và verdict |
+| Signal so với noise trong check | Buổi 8 | Cảnh báo của alignment check được chia mức; case mới bắt đầu sạch |
+| Fail loudly, test trên dữ liệu mới | Buổi 9, 10 | Peer test và finding; một check không nói gì thì không phải là pass |
+| Chọn tool theo ràng buộc của nó | Buổi 7 | AI coding tool hay diagram tool đều có giới hạn; quyết định điều chỉnh, tự dựng hay đổi, và dữ liệu nào rời khỏi máy |
 
 ---
 
-## Practice Sessions
+## Check point (buổi 5, 10, 12)
 
-Session B của mỗi module là buổi thực hành, không có lesson mới. *Thay cho các buổi "studio" riêng của bản nháp 12 session, 2026-10-07.* Không có slug và không có deck: mỗi session B là một buổi làm việc có coaching trên case của học viên, kèm phần bắt kịp cho người đang chậm. Mỗi module sẽ có một hướng dẫn facilitation một trang (chưa viết) liệt kê exit test của tuần đó:
+Ba buổi không có lesson mới, không có slug và không có deck. *Thay cho practice session B của bản 14 session (2026-10-22).* Mỗi Check point là một buổi làm việc có coaching theo nhóm nhỏ trên case của học viên, kèm phần bắt kịp cho người đang chậm, và là chỗ **SHOW** của KNOW / DO / SHOW (trình bày và review chéo, có mentor coaching). Mỗi Check point sẽ có một hướng dẫn facilitation một trang (chưa viết) liệt kê exit test:
 
-| Module | Session | Exit test |
-|---|---|---|
-| 1 | 2 | Case folder, context pack và data rules đã có |
-| 2 | 4 | Phỏng vấn theo cặp xong, theme đã kiểm tra, opportunity candidate đã bắt đầu (check 1a đến 1g) |
-| 3 | 6 | Problem brief đã viết (check 2a đến 2d) |
-| 4 | 8 | Đã chọn một hướng và nháp flow (check 3a) |
-| 5 | 10 | Prototype đầu tiên của main flow đã dựng (check 3d) |
-| 6 | 12 | Prototype đã tinh chỉnh, peer test đã chạy, finding đã sửa (check 3b, 3c, 4a, 4b) |
-| 7 | 14 | Final project (bên dưới) |
+| Check point | Buổi | Vị trí | Exit test |
+|---|---|---|---|
+| 1 | 5 | Sau buổi 1 đến 4 (Discover, Define) | Problem brief đã viết (check 2a đến 2d), trên nền evidence pack đã qua Gate 1 (check 1a đến 1g) |
+| 2 | 10 | Sau buổi 6 đến 9 (Develop) | Prototype đã dựng và refine, peer test đã chạy, finding đã sửa (check 3b, 3c, 4a, 4b). Hướng đã chọn (3a) và design system dùng được (3d) phải đã đạt từ buổi 6 và 7 |
+| 3 | 12 | Sau buổi 11 (Deliver) | Final project (bên dưới) |
 
-**Format:** check-in 10 phút (đang vướng ở đâu), khoảng 60 phút làm việc riêng trong breakout room 3 đến 4 người có coaching, 20 phút review trực tiếp hai hub. Homework chỉ nối tiếp phần việc này.
+**Format (đề xuất, chưa thử):** check-in 10 phút (đang vướng ở đâu), khoảng 60 phút làm việc riêng trong breakout room 3 đến 4 người có coaching, 20 phút review trực tiếp hai hub. Homework chỉ nối tiếp phần việc này.
 
-**Còn phải làm:** viết các hướng dẫn facilitation, và quyết định mỗi session B có cần một starter checkpoint folder không (bảng trên đã nêu tên chúng).
+**Còn phải làm:** viết các hướng dẫn facilitation, và quyết định mỗi Check point có cần một starter checkpoint folder không (bảng trên đã nêu tên chúng).
+
+**Chưa có trong Notion:** các exit test và số check ở bảng trên là do bản 14 session chuyển sang, Notion chỉ nêu output (problem brief, prototype đã test, Knowledge Hub). Cần đối chiếu lại với 20 check trong `method.md` khi viết hướng dẫn facilitation.
 
 ---
 
-## Session 14: Final Project, Present Your Case
+## Check point 3 (buổi 12): Final Project, Present Your Case
 
-*Trước 2026-10-07 gọi là "Lesson 10: Capstone"; nay là practice session của module 7 (tuần 7), không có slug riêng.*
+*Trước 2026-10-07 gọi là "Lesson 10: Capstone"; từ 2026-10-22 là Check point 3, buổi 12 (tuần 6), không có slug riêng.*
 
-**Sau session, học viên có thể:**
+**Sau buổi này, học viên có thể:**
 
 1. Chạy trọn chuỗi trên một case thật, output của mỗi bước nuôi bước sau, và mọi gate được ghi trong hub.
 2. Trình bày case cùng evidence, decision và trade-off, để nhà tuyển dụng hay PO thấy phán đoán chứ không chỉ tốc độ.

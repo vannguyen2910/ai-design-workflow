@@ -1,48 +1,57 @@
 # AI Design Workflow: Plan
 
-*Updated 2026-10-07. This is the one-page plan. Detail lives in the files linked at the bottom; the full earlier version is in `_archive/00-plan-full-2026-10-07.md`.*
+*Cập nhật 2026-10-22: lộ trình đi theo trang Notion "AI Design Workflow cho Product Designer" (12 buổi, 6 tuần). Bản 14 session (A/B) nằm ở `_archive/plan-2026-10-22-14-session.md`; bản đầy đủ cũ hơn ở `_archive/00-plan-full-2026-10-07.md`.*
 
-**In this file**
+**Trong file này**
 1. [Focus now](#1-focus-now)
 2. [The course at a glance](#2-the-course-at-a-glance)
 3. [Key decisions](#3-key-decisions)
 4. [Still open](#4-still-open)
 5. [Where things are](#5-where-things-are)
 
+> **Nguồn lộ trình:** Notion là nguồn chuẩn cho số buổi, thứ tự buổi và vị trí Check point. Khi file trong thư mục này lệch Notion, Notion thắng, trừ khi có ghi chú khác ở mục 4.
+
 ---
 
 ## 1. Focus now
 
-Do these in order. Nothing else needs your attention yet.
+Làm theo thứ tự. Chưa việc nào khác cần chú ý.
 
-| # | Next step | Status |
+| # | Bước tiếp theo | Trạng thái |
 |---|---|---|
-| 1 | **Module 1** (`design-process-with-ai`): read the lesson and slide outline once; they now cover two sessions and the career-path section. Confirm the Figma 36/35/29 figure in the full report before teaching | Files updated 2026-10-07; deck not built |
-| 2 | **Module 2** (`discover-the-problem`): write the lesson and slide outline (written stakeholder check, peer user interviews, user-voice synthesis) | Not started |
-| 3 | Write a one-page facilitation guide for the 7 practice sessions (session B of each week) | Not started |
-| 4 | Modules 3 to 7, one at a time, in order | Not started |
-| 5 | Pilot: check the 3.5 to 4 hours a week, and whether modules 2 and 6 (two lessons each) overrun | After the first class |
+| 1 | Đồng bộ `lesson-details.md` với 12 buổi (Check point 1, 2, 3; bỏ Session A/B; Session 14 thành buổi 12) | Xong 2026-10-22. Còn hai chỗ đánh dấu "cần chia lại": Lesson 1 (gộp 1 buổi) và phân bổ giờ Lesson 2 + 3 |
+| 2 | **Buổi 1** (`design-process-with-ai`): đã gộp lesson và slide outline thành 1 buổi (2026-10-22). Còn lại: xác nhận số liệu Figma 36/35/29 trong báo cáo đầy đủ trước khi dạy, và dựng lại deck | Files xong; deck chưa dựng lại |
+| 3 | **Buổi 2 và 3** (`discover-the-problem`, `research-you-can-trust`): viết lesson và slide outline | Chưa bắt đầu |
+| 4 | Viết hướng dẫn facilitation một trang cho 3 Check point (buổi 5, 10, 12) | Chưa bắt đầu |
+| 5 | Buổi 4, 6, 7, 8, 9, 11, từng buổi theo thứ tự | Chưa bắt đầu |
+| 6 | Lớp chạy thử: kiểm tra 3,5 đến 4 giờ mỗi tuần, và hai cặp buổi dạy liên tiếp (buổi 3 và 4, 7 và 8) có quá tải không | Sau lớp đầu |
 
 ---
 
 ## 2. The course at a glance
 
-**Who:** mid and senior UI/UX and product designers.
-**What they get:** a repeatable AI-assisted workflow, from the business question to a tested, handoff-ready prototype. Every step's output is the next step's input, and one **Knowledge Hub** collects them all.
-**Format:** 7 weeks, 2 sessions a week, 90 minutes each, 7 to 8 students. **Session A teaches, with questions and short pair talk but no new output; session B (about 3 days later) is practice on the student's own case and holds every output.** Session A of week 1 ends with 15 minutes of open questions (students note questions in the chat during the session). Homework only continues class work.
+**Who:** UI/UX và product designer mức mid và senior.
+**What they get:** một workflow thiết kế có AI lặp lại được, từ business question đến prototype đã test và sẵn sàng handoff. Output của mỗi bước là input của bước sau, và một **Knowledge Hub** gom tất cả.
+**Format:** 6 tuần, 2 buổi mỗi tuần, 90 phút mỗi buổi, lớp 7 đến 8 người. 12 buổi gồm **9 buổi học nội dung** và **3 buổi Check point** (buổi 5, 10, 12). Buổi học nội dung dạy khái niệm và activity ngắn; Check point là buổi làm việc trên case của từng người, có coaching theo nhóm nhỏ và review chéo. Bài tập về nhà chỉ nối tiếp phần đã làm trên lớp.
+**Theo dõi tiến bộ:** KNOW (giải thích khái niệm bằng lời của mình, trao đổi theo cặp, 9 buổi nội dung), DO (một file trong case folder, bài tập về nhà sau mỗi buổi), SHOW (trình bày và review chéo, 3 Check point).
 
-| Week | Module | Session A: teach | Session B: practise | Main output |
-|---|---|---|---|---|
-| 1 | **Your design process, with AI** | Where design careers are heading and three paths to choose from, four-stage refresher, terms, data safety, hub, 15 minutes of questions | Write `my-direction.md` and data rules; build the case folder and context pack | Case folder, data rules, empty hub, `my-direction.md` |
-| 2 | **Discover the problem** | Business question, written stakeholder questions, desk research, heuristic evaluation of the current experience, assumption map, evidence you can trust | Peer user interviews, then user-voice synthesis | Scope and evidence pack |
-| 3 | **Frame the problem** | Opportunities, hypotheses, success metrics, principle checks | Write the problem brief | Shared problem brief |
-| 4 | **Explore ideas** | Three directions, choose one | Choose direction, flows, content | Chosen direction and flows |
-| 5 | **Build your first prototype** | Design-system notes, rules file, first screen | Build the main flow | First prototype |
-| 6 | **Refine and test** | Refine, system and accessibility check, alignment check, test plan | Peer usability test, fix the findings | Refined prototype, findings |
-| 7 | **Hand off and present** | Handoff pack, measurement plan | Final project presentations | Finished hub, handoff |
+| Tuần | Buổi | Giai đoạn | Loại | Nội dung chính | Output |
+|---|---|---|---|---|---|
+| 1 | 1 | Nền tảng | Nội dung | Tương lai của nghề và ba hướng đi, AI hỗ trợ từng stage của Double Diamond, bốn khái niệm AI cốt lõi, data safety, dựng case folder | Quy trình thiết kế cùng AI, case folder, Knowledge Hub đầu tiên |
+| 1 | 2 | Discover | Nội dung | Business question, chuẩn bị trao đổi với PO và business, success metric và baseline, scope chung, đánh giá trải nghiệm hiện tại theo usability heuristic | Kế hoạch nghiên cứu, scope chung |
+| 2 | 3 | Discover | Nội dung | Ghép điều người khác làm (đối thủ, desk research) với điều user nói và làm, user-voice synthesis trên quote đã ẩn danh, kiểm từng theme về quote gốc | Insight có bằng chứng, evidence pack |
+| 2 | 4 | Define | Nội dung | Opportunity xếp theo user need, principle check từ 10 heuristic của Nielsen, hypothesis kiểm chứng được, Goals, Signals, Metrics | Opportunity, principle check, hypothesis |
+| 3 | 5 | Define | **Check point 1** | Chạy từ Discover đến Define trên case của từng người, dùng bài tập buổi 1 đến 4 làm đầu vào | Problem brief đã viết |
+| 3 | 6 | Develop | Nội dung | Ba hướng thật sự khác nhau từ problem brief, chọn hướng bằng principle check và opportunity, user flow và nội dung | Hướng đã chọn, flow, nội dung |
+| 4 | 7 | Develop | Nội dung | Design system notes ở dạng AI coding tool đọc được, rules file, prototype đầu tiên theo pattern-first | Prototype đầu tiên |
+| 4 | 8 | Develop | Nội dung | State và edge case, responsive, nội dung thật, kiểm tra đầu tiên bằng AI với design system và accessibility rules | Prototype đã mở rộng, finding đã xác nhận |
+| 5 | 9 | Develop | Nội dung | Test plan và script từ hypothesis, vì sao user do AI mô phỏng không thay user thật, usability test, task success, time on task, errors, SUS so với baseline | Kết quả test |
+| 5 | 10 | Develop | **Check point 2** | Dựng main flow, refine, peer test, sửa finding | Prototype đã test, finding đã sửa |
+| 6 | 11 | Deliver | Nội dung | Handoff pack (prototype làm bản tham chiếu, decision log), measurement plan sau launch, mô tả kết quả workflow AI bằng số đếm | Handoff pack, measurement plan |
+| 6 | 12 | Deliver | **Check point 3** | Trình bày case cùng evidence, decision, trade-off; nêu phần workflow giữ, chỉnh hay bỏ; hoàn thiện Knowledge Hub | Knowledge Hub, case folder đầy đủ, một sản phẩm cho portfolio |
 
-**Heaviest weeks:** 2 and 6 (two lessons each). If they overrun: cut the competitor demo first in week 2, then trim desk research to a short scan; run the alignment check on the top three decisions only in week 6.
-**Content lessons 1 to 9** fold into these modules (week 2 = lessons 2 + 3, week 6 = lessons 7 + 8, week 7 = lesson 9 + final project). Detail for each is in `lesson-details.md`.
+**Tuần nặng nhất:** tuần 2 (buổi 3 và 4) và tuần 4 (buổi 7 và 8): hai buổi dạy liên tiếp, không có Check point xen giữa. Nếu quá giờ ở buổi 3: cắt demo competitor trước, rồi rút desk research thành một lượt quét ngắn. Nếu quá giờ ở buổi 8: chạy alignment check trên ba decision quan trọng nhất.
+**Lesson và buổi:** mỗi buổi nội dung là một lesson (buổi 1 đến 4, 6 đến 9, 11); 3 Check point không có lesson hay deck riêng. Chi tiết từng lesson ở `lesson-details.md`.
 
 ---
 
@@ -51,16 +60,17 @@ Do these in order. Nothing else needs your attention yet.
 | Topic | Decision |
 |---|---|
 | Positioning | Design is a **partner** that defines the requirement with product and business, starting from the business question. A brief from product is a good starting point, not something to fix. |
-| Session A rule | Session A has questions and short pair talk only, no new output. Every output is made in session B. Added 2026-10-07. |
+| Lesson format | Mỗi lesson có **ice breaker** (5 đến 7 phút), theory, **một activity ngắn trên lớp** và hỏi đáp. Phần luyện tập dài nằm ở **bài tập về nhà** (một bài, khoảng 45 phút) và **Check point**. Lệch có chủ ý khỏi Rule LP-3 (practice tối thiểu 30 phút liên tục) cho chương trình này. Quyết định 2026-10-22. |
+| Check point rule | Check point (buổi 5, 10, 12) không có nội dung mới. Học viên làm việc trên case của mình, có coaching theo nhóm nhỏ và review chéo. Thay cho quy tắc Session A/B của bản 14 session, 2026-10-22. |
 | Language | Never cast PO, PM or BA as an obstacle or the side that "hands down" requirements. Say "product and business". Having little access to product is a situation, not a fault. |
 | Main outcome | Run a repeatable AI workflow. Not prompt tips, not tools. |
-| Career orientation | Session 1 spends 18 minutes on where UI/UX and product design are heading and three paths (strategic designer, design builder, AI product designer). Every figure is shown with source, year and sample; evidence is in `research.md` Part 5. The course does not teach designing AI products, and says so. Students talk about their direction in session 1 and write `my-direction.md` in session 2; revisited in week 7. |
+| Career orientation | Buổi 1 dành 18 phút on where UI/UX and product design are heading and three paths (strategic designer, design builder, AI product designer). Every figure is shown with source, year and sample; evidence is in `research.md` Part 5. The course does not teach designing AI products, and says so. Học viên trao đổi về hướng của mình ở buổi 1 và viết `my-direction.md` (vị trí cuối cùng: xem mục 4); xem lại ở buổi 12. |
 | Case | The **student's own case** by default; the course case card is the fallback. Confidential material is anonymised first. |
 | Quality gates | Four stage gates with 20 lettered checks (1a to 4d), defined once in `method.md` Part 3. |
 | Discover | Two real methods, no role-play: a **written stakeholder check** and **peer user interviews**. AI never plays the PO or a user. Added 2026-10-11: a heuristic evaluation of the current experience and an assumption map, both AI-drafted and student-verified (principles first, then AI). |
 | Access to product | Three levels (full, limited, none). Unconfirmed outcomes are recorded as **assumed**. |
-| Data safety | Taught in week 1: three kinds of material (safe, ask first, never in a public tool), four habits, student writes their own data rules. |
-| Tools | An **AI chat tool from session 1**, an **AI coding tool by session 9**. Lessons and slides stay generic; named examples live only in `assets/templates/tools-to-bring.md`. |
+| Data safety | Dạy ở buổi 1: three kinds of material (safe, ask first, never in a public tool), four habits, student writes their own data rules. |
+| Tools | Một **AI chat tool từ buổi 1**, một **AI coding tool từ buổi 7**. Lessons and slides stay generic; named examples live only in `assets/templates/tools-to-bring.md`. |
 | Hub | **Private by default**, kept in the student's case folder. Publishing on GitHub is optional and the student hosts it. |
 | Measurement | Pre-launch usability metrics are the core (Goals, Signals, Metrics). Business metrics: ask product, record as assumed. |
 | Principles | Nielsen's 10 are the baseline; add the organisation's own where they exist. |
@@ -71,11 +81,13 @@ Do these in order. Nothing else needs your attention yet.
 
 ## 4. Still open
 
-1. **Lesson 2 content:** objectives still say "agree the scope"; rewrite for "discover the problem" when module 2 is drafted.
+1. **Buổi 2 content:** objectives còn ghi "agree the scope"; viết lại cho "discover the problem" khi soạn buổi 2.
+   - **Phỏng vấn peer (mới, 2026-10-22):** Notion không có buổi nào dành cho phỏng vấn user theo cặp (bản cũ để ở session 4). Mặc định tạm: làm như bài tập về nhà giữa buổi 2 và 3, để quote nuôi user-voice synthesis ở buổi 3. Cần Winnie xác nhận.
+   - **Buổi 1 gộp (2026-10-22):** đã gộp theo mặc định: giữ Activity 1 và 2 trên lớp, dựng case folder và `my-direction.md` thành bài tập về nhà, giữ Appendix. Winnie xem lại và điều chỉnh nếu muốn khác.
 2. **Capstone format:** individual case presentations (assumed) or a shared case.
 3. **Vietnam validation:** interview 5 to 8 local designers or hiring managers (see `research.md` Part 3).
 4. **Retired files to tidy:** `assets/templates/po-case-pack-template.md` and `assets/starter-files/course-case/po-case-pack.md` are no longer used in class. Archive or delete.
-5. **Workflow lab (optional):** decide where it goes (module 6 extension, own session, or take-home). Material is ready in `assets/templates/workflow-kit/`; the facilitation note is not written.
+5. **Workflow lab (optional):** decide where it goes (mở rộng buổi 8, buổi riêng, hoặc take-home; 12 buổi không còn chỗ trống). Material is ready in `assets/templates/workflow-kit/`; the facilitation note is not written.
 6. **Flows still to draw:** shape the brief, problem brief, ideation and flow, prototype build, alignment check, measurement, handoff (competitor analysis and user-voice synthesis are done).
 7. **Facilitator page template (Lesson 2):** làm một HTML template cho trang hỗ trợ phỏng vấn (câu hỏi, nhánh follow-up, ghi chú, timer) và một prompt mẫu, rồi quyết định cách publish file HTML trên hub. Làm khi chuẩn bị Lesson 2. Chi tiết: `ai-in-discover.md`, mục Decisions and To-do.
 
@@ -83,18 +95,39 @@ Do these in order. Nothing else needs your attention yet.
 
 ## 5. Where things are
 
-| File or folder | What it holds |
+Thư mục `learning/` (riêng tư, không lên site trừ các file có trong `SUMMARY.md`) giữ kế hoạch, research và method. Cập nhật 2026-10-22: đã dọn trùng lặp và chuyển file ngoài khoá ra khỏi thư mục này.
+
+**Kế hoạch và nền của khoá**
+
+| File | Nội dung |
 |---|---|
-| `plan.md` | This page |
-| `lesson-details.md` | Vocabulary, and objectives, activity and output for each lesson and for the practice sessions |
-| `research.md` | Market research, risks, Vietnam market, teaching notes, career outlook and data-safety sources (Part 5 và 6, tiếng Việt) |
-| `pitch-deck-plan.md` | Coaching plan outline cho pitch deck ở mức ý tưởng dành cho partner lớn, không có giá hay điều khoản (tiếng Việt) |
-| `method.md` | Activity flow standard, step cards, stage methods and the 20 gate checks |
-| `quality-and-measurement.md` | Traceability, alignment check, measuring success |
-| `examples/` | Two worked examples: competitor analysis, user-voice synthesis |
-| `workspace-template/` | Repo mẫu cho học viên (GitHub: `ai-product-workflow`): `my-case` (trống), `demo-case` (Travel Buddy), `toolkit/` (guides, templates, skills, tools) dùng chung cho mọi case |
+| `plan.md` | Trang này |
+| `lesson-details.md` | Vocabulary, objectives, activity và output của từng lesson và 3 Check point (theo 12 buổi) |
+| `method.md` | Activity flow standard, step card, stage method và 20 gate check |
+| `quality-and-measurement.md` | Traceability, alignment check, đo thành công |
 | `workflow-design-log.md` | Quyết định thiết kế và sự cố của workspace phía sau khoá (cho giảng viên và pitch) |
-| `assets/templates/workflow-kit/` | Bộ mẫu cho học viên: step card, luật cho AI tool, propose first, prompt vocabulary, checklist, failure cases |
-| `assets/` | Diagrams, templates (Knowledge Hub in `templates/hub/`), starter files, method cards, reference images |
-| `_archive/00-plan-full-2026-10-07.md` | The full earlier plan with every dated decision, kept for reference |
+| `voice-sample-vi.md` | Mẫu giọng tiếng Việt; quy tắc chính nằm ở `_system/rules/vi-voice.md` |
+
+**Research bằng chứng**
+
+| File | Nội dung |
+|---|---|
+| `research.md` | Thị trường, failure case và rủi ro, thị trường Việt Nam, dạy designer đi làm, tương lai nghề và data safety (Part 5, 6, tiếng Việt) |
+| `ai-strengths-and-limits.md` | AI làm tốt và còn yếu ở đâu, không automate workflow xấu, checklist trước khi automate, danh mục 100 task |
+| `ai-in-discover.md` | Bằng chứng và cách làm cho stage Discover (phỏng vấn, desk research, competitor, consent, tiếng Việt) |
+| `desk-research-competitor-practice.md` | Cách làm, template và prompt cho desk research và competitor analysis (tách từ `ai-in-discover.md` mục 4) |
+| `ai-mental-model-desk-research.md` | Report AI mental model: người dùng hình dung AI thế nào |
+| `ai-mental-model-harness.md` | Bổ sung cho report trên: harness và agent ở góc mental model và thiết kế quyền hạn |
+| `agentic-ai-concepts.md` | Khái niệm kỹ thuật: agent, tool use, MCP, skills, harness, workflow pattern (KNOW / DO / SHOW) |
+
+**Ở nơi khác**
+
+| Vị trí | Nội dung |
+|---|---|
+| `assets/templates/handout-ai-design-workflow-buoc-1.md` | Giáo án một buổi thực hành (workflow audit, role card, baseline run). Chưa dùng trong 12 buổi; role card hợp với buổi 7 |
+| `assets/references/claude-code-16-lessons-nhat-anh.md` | Ghi chú từ một video về cách dùng AI coding tool; tài liệu tham khảo, không thuộc khoá |
+| `assets/templates/workflow-kit/` | Bộ mẫu cho học viên: step card, luật cho AI tool, propose first, prompt vocabulary, checklist, failure case |
+| `workspace-template/` | Repo mẫu cho học viên (GitHub: `ai-product-workflow`) |
+| `examples/` | Hai ví dụ làm sẵn: competitor analysis, user-voice synthesis |
 | `README.md` | Thứ tự lesson, trạng thái, cách thêm lesson. Các lesson nằm ở `library/lessons/ai-design-workflow/` |
+| `_archive/` | Bản thay thế và bản trước khi dọn (có hậu tố ngày) |

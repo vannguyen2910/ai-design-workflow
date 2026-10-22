@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Mental Model: Desk Research</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1a;--muted:#6e6d68;--line:#e3e2dc;--edge:#b9b7ad;--accent:#2a6fd6;--tint:rgba(42,111,214,.1);--bar:#cfcdc3}
+@media (prefers-color-scheme:dark){:root{--bg:#171716;--fg:#ececea;--muted:#9c9a93;--line:#34332f;--edge:#6a6860;--accent:#6ea8ff;--tint:rgba(110,168,255,.14);--bar:#4a4944}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:56px 20px 96px}
+h1{font-size:28px;line-height:1.25;font-weight:600;margin:0 0 6px}
+h2{font-size:20px;font-weight:600;margin:56px 0 14px}
+.date{color:var(--muted);font-size:14px;margin:0 0 8px}
+p{margin:0 0 14px}
+a{color:var(--accent);text-underline-offset:2px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+figure{margin:28px 0 20px}
+figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+svg{display:block;width:100%;height:auto}
+svg text{fill:var(--fg);font-family:inherit;font-size:13px}
+svg .m{fill:var(--muted);font-size:11.5px}
+svg .b{font-weight:600}
+svg .h{font-size:15px;font-weight:600}
+svg .box{fill:none;stroke:var(--edge);stroke-width:1.25}
+svg .acc{fill:var(--tint);stroke:var(--accent);stroke-width:2}
+svg .ln{fill:none;stroke:var(--edge);stroke-width:1.25}
+svg .rule{stroke:var(--line);stroke-width:1}
+svg .mk{fill:var(--edge)}
+svg .dot{fill:var(--accent)}
+svg .hol{fill:none;stroke:var(--accent);stroke-width:2}
+h3{font-size:17px;font-weight:600;margin:40px 0 12px}
+svg .bar{fill:var(--bar)}
+svg .barf{fill:var(--accent)}
+.scroll{overflow-x:auto;margin:18px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.55}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);font-size:12.5px;white-space:nowrap}
+td:first-child{white-space:nowrap}
+.note{color:var(--muted);font-size:14px}
+.src li{font-size:14px}
+</style>
+</head>
+<body>
+<main>
+
+<h1>AI Mental Model: Desk Research</h1>
+<p class="date">18/10/2026</p>
+
+<h2>1. AI mental model là gì</h2>
+<p>AI mental model là biểu diễn nhận thức mà một người dùng để giải thích và dự đoán một hệ thống AI: nó làm được gì, vì sao ra kết quả đó, khi nào nó sai. Định nghĩa gốc của "mental model" không riêng cho AI: đó là cấu trúc người ta dùng để hiểu và dự đoán hệ thống phức tạp (<a href="https://arxiv.org/html/2408.14154v1">Vanderlyn et al., 2024</a>, dẫn Johnson-Laird, Norman).</p>
+<p><strong>Gốc khái niệm.</strong> Craik (1943) cho rằng tâm trí xây các mô hình thu nhỏ của thực tại để suy luận. Norman đưa vào thiết kế và tách ba thứ hay bị lẫn: system model (hệ thống thật vận hành ra sao), conceptual model của designer (cách designer muốn người dùng hiểu, thể hiện qua giao diện), và mental model của người dùng (điều họ thực sự tin). Nguồn thứ cấp: <a href="https://ballparkhq.com/research-glossary/mental-model">Ballpark, Research Glossary</a>.</p>
+
+<figure>
+<svg viewBox="0 0 760 238" role="img" aria-label="AI problems appear in the gap between interface and belief">
+<defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="mk" d="M0 0L10 5L0 10z"/></marker></defs>
+<text class="h" x="24" y="34">AI problems appear in the gap between interface and belief</text>
+<path class="ln" d="M224 100H278" marker-end="url(#a1)"/>
+<path class="ln" d="M480 100H534" marker-end="url(#a1)"/>
+<path class="ln" d="M380 130V170" stroke-dasharray="4 4"/>
+<path class="ln" d="M636 130V170" stroke-dasharray="4 4"/>
+<rect class="box" x="24" y="70" width="200" height="60" rx="8"/>
+<text class="b" x="124" y="94" text-anchor="middle">System model</text>
+<text class="m" x="124" y="110" text-anchor="middle">How the AI really behaves</text>
+<rect class="box" x="280" y="70" width="200" height="60" rx="8"/>
+<text class="b" x="380" y="94" text-anchor="middle">Conceptual model</text>
+<text class="m" x="380" y="110" text-anchor="middle">What the interface conveys</text>
+<rect class="box" x="536" y="70" width="200" height="60" rx="8"/>
+<text class="b" x="636" y="94" text-anchor="middle">Mental model</text>
+<text class="m" x="636" y="110" text-anchor="middle">What the user believes</text>
+<rect class="acc" x="280" y="170" width="456" height="44" rx="8"/>
+<text class="b" x="508" y="197" text-anchor="middle">Gap: where over-trust and under-trust start</text>
+</svg>
+<figcaption>Hai mô hình đầu là phía hệ thống và designer; mô hình thứ ba nằm trong đầu người dùng, và vấn đề của AI xuất hiện ở khoảng cách giữa hai mô hình sau.</figcaption>
+</figure>
+
+<p><strong>Ba đặc tính quan trọng với AI.</strong></p>
+<ul>
+<li>Hình thành nhanh và vô thức, khó sửa sau khi đã định hình. Nghiên cứu về agent AI khuyên làm giàu mô hình sẵn có thay vì ép thay thế (<a href="https://www.ijcai.org/proceedings/2021/0648.pdf">IJCAI 2021, mental models of AI agents</a>).</li>
+<li>Không quan sát trực tiếp được; chỉ suy ra qua elicitation. Một workshop năm nay còn cảnh báo khái niệm này bị dùng lỏng và lẫn với folk theories, sensemaking, nên kết quả nghiên cứu khó so sánh với nhau (<a href="https://www.emergentmind.com/papers/2609.17206">MM/AI workshop</a>).</li>
+<li>Nhiều mô hình mâu thuẫn cùng tồn tại. Với dialog agent, người dùng giữ nhiều mô hình xung đột, và độ đúng của mô hình ảnh hưởng trực tiếp đến thành công của tương tác (<a href="https://arxiv.org/abs/2408.14154">Vanderlyn et al., 2024</a>).</li>
+</ul>
+
+<p><strong>Các mô hình thường gặp, và lệch ở đâu.</strong></p>
+<ul>
+<li>AI như công cụ tìm kiếm: kỳ vọng một đáp án đúng duy nhất. Người dùng tìm kiếm hội thoại có mô hình quá trừu tượng, không đủ để giải thích từng lượt trả lời (<a href="https://arxiv.org/html/2506.03807v1">arXiv 2506.03807</a>).</li>
+<li>AI như người: gán trạng thái tâm thần và độ tin cậy giống người. Giọng nói và đại từ "tôi" làm tăng mức anthropomorphism và điểm đánh giá độ chính xác trong thí nghiệm n=2.165 (<a href="https://research.google/pubs/believing-anthropomorphism-examining-the-role-of-anthropomorphic-cues-on-user-trust-in-large-language-models/">Cohn et al., CHI 2024</a>). Điểm tinh tế: gán "ý thức" cho LLM không dự đoán việc nghe theo lời khuyên của nó, còn gán "trí thông minh" thì có (<a href="https://researchonline.lse.ac.uk/id/eprint/128172">Colombatto et al., 2025</a>).</li>
+<li>AI như hệ thống xác định: người dùng sao chép mô hình từ cách hỏi trợ giúp phần mềm truyền thống rồi gặp lỗi và quá tin (overtrust) (<a href="https://arxiv.org/pdf/2402.08030">arXiv 2402.08030</a>).</li>
+</ul>
+
+<h2>2. Khác gì so với phần mềm truyền thống</h2>
+<p>Khác biệt lõi: người dùng mang vào AI những mô hình hình thành từ công nghệ xác định và từ làm việc nhóm với người, trong khi AI sinh văn bản mang tính xác suất, khó nhìn thấu và đổi nhanh (<a href="https://www.qeios.com/read/GAG6KD/pdf">Saßmannshausen &amp; Wagener, Triadic Framework</a>, bản preprint đang được peer review). Amershi et al. (Microsoft) cũng nêu lý do tương tự: nhiều thành phần AI có hành vi xác suất theo từng nhiệm vụ và bối cảnh, nên có thể hành động trái mục tiêu và kỳ vọng của người dùng (<a href="https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/">CHI 2019</a>).</p>
+
+<figure>
+<svg viewBox="0 0 760 264" role="img" aria-label="One input gives one output in software, a spread in AI">
+<defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="mk" d="M0 0L10 5L0 10z"/></marker></defs>
+<text class="h" x="24" y="34">One input gives one output in software, a spread in AI</text>
+<line class="rule" x1="380" y1="58" x2="380" y2="250"/>
+<text class="b" x="40" y="76">Traditional software</text>
+<text class="b" x="410" y="76">Generative AI</text>
+<path class="ln" d="M112 146H134" marker-end="url(#a2)"/>
+<path class="ln" d="M220 146H242" marker-end="url(#a2)"/>
+<path class="ln" d="M482 146H504" marker-end="url(#a2)"/>
+<path class="ln" d="M590 146L612 102" marker-end="url(#a2)"/>
+<path class="ln" d="M590 146H612" marker-end="url(#a2)"/>
+<path class="ln" d="M590 146L612 190" marker-end="url(#a2)"/>
+<rect class="box" x="40" y="128" width="72" height="36" rx="8"/><text x="76" y="151" text-anchor="middle">Input</text>
+<rect class="box" x="136" y="128" width="84" height="36" rx="8"/><text x="178" y="151" text-anchor="middle">Software</text>
+<rect class="box" x="244" y="128" width="106" height="36" rx="8"/><text x="297" y="151" text-anchor="middle">Output A</text>
+<rect class="box" x="410" y="128" width="72" height="36" rx="8"/><text x="446" y="151" text-anchor="middle">Input</text>
+<rect class="box" x="506" y="128" width="84" height="36" rx="8"/><text x="548" y="151" text-anchor="middle">Model</text>
+<rect class="acc" x="614" y="84" width="106" height="36" rx="8"/><text x="667" y="107" text-anchor="middle">Output A</text>
+<rect class="box" x="614" y="128" width="106" height="36" rx="8"/><text x="667" y="151" text-anchor="middle">Output B</text>
+<rect class="box" x="614" y="172" width="106" height="36" rx="8"/><text x="667" y="195" text-anchor="middle">Output C</text>
+<text class="m" x="40" y="240">Same input, same output every time</text>
+<text class="m" x="410" y="240">A chat shows only one of the possible answers</text>
+</svg>
+<figcaption>Phần mềm truyền thống trả một kết quả cho mỗi input; AI có thể trả nhiều kết quả hợp lý, mà giao diện chat thường chỉ hiển thị một.</figcaption>
+</figure>
+
+<div class="scroll">
+<table>
+<thead><tr><th>Chiều so sánh</th><th>Phần mềm truyền thống</th><th>Hệ thống AI</th><th>Bằng chứng</th></tr></thead>
+<tbody>
+<tr><td>Hành vi với cùng input</td><td>Ổn định, tái hiện được</td><td>Có thể đổi giữa các lần; một câu trả lời đơn lẻ trông chắc chắn khiến người dùng ngộ nhận có một đáp án đúng duy nhất</td><td><a href="https://arxiv.org/html/2503.16114v1">Stochasticity study, 2025</a></td></tr>
+<tr><td>Ranh giới năng lực</td><td>Rõ, do danh sách tính năng</td><td>Không đều ("jagged"): giỏi và dở xen kẽ, khó đoán trước</td><td><a href="https://www.qeios.com/read/GAG6KD/pdf">Triadic Framework</a></td></tr>
+<tr><td>Quan hệ nhân quả</td><td>Hành động A dẫn tới kết quả B, học được qua thử</td><td>Kết quả phụ thuộc cách diễn đạt và ngữ cảnh; mô hình người dùng thường quá trừu tượng để giải thích từng lượt</td><td><a href="https://arxiv.org/html/2506.03807v1">arXiv 2506.03807</a></td></tr>
+<tr><td>Thay đổi theo thời gian</td><td>Đổi theo bản phát hành</td><td>Cập nhật đổi hành vi; bản cập nhật tăng độ chính xác vẫn có thể làm giảm hiệu quả nhóm người-AI vì phá mô hình người dùng đã học</td><td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/4087">Bansal et al., AAAI 2019</a></td></tr>
+<tr><td>Hướng ảnh hưởng</td><td>Người dùng điều khiển, hệ thống phản hồi</td><td>Hai chiều: phản hồi của người dùng chỉnh mô hình, mô hình chỉnh lại cách người dùng tương tác</td><td><a href="https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Mental%20Models.pdf">PAIR Guidebook, Mental Models</a></td></tr>
+<tr><td>Hệ quả khi mô hình sai</td><td>Hiểu nhầm giao diện, thao tác sai</td><td>Over-trust hoặc under-trust; trust calibration và anthropomorphism liên quan chặt</td><td><a href="https://arxiv.org/html/2503.16114v1">Stochasticity study</a>, <a href="https://arxiv.org/abs/2405.06079">Cohn et al., 2024</a></td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Lưu ý về độ chắc của bằng chứng: cột phần mềm truyền thống chủ yếu là khung lý thuyết (Norman), không phải kết quả thực nghiệm đối chứng trực tiếp. Chưa tìm được nghiên cứu nào so sánh cùng một nhóm người dùng trên phần mềm truyền thống và AI. Đây là khoảng trống, đưa vào phần research question.</p>
+
+<h2>3. Biết điều này giúp gì trong thiết kế</h2>
+<p>Nó biến "người dùng dùng AI sai" thành một vấn đề thiết kế có thể xử lý: khoảng cách giữa conceptual model mà giao diện truyền đạt và mental model người dùng hình thành. Nhận định của Triadic Framework là bài toán nên chuyển từ làm AI thông minh hơn sang làm mental model của người dùng phù hợp hơn (<a href="https://www.qeios.com/read/I4RTBX/pdf">Polemi, peer review</a>). Bằng chứng thực nghiệm cho các thực hành dưới đây còn mỏng; mình ghi rõ chỗ nào là kết quả nghiên cứu, chỗ nào là khuyến nghị của guideline.</p>
+<p><strong>Năm thực hành, kèm bằng chứng.</strong></p>
+<ol>
+<li>Bắt đầu từ mô hình người dùng đã có. PAIR khuyên xác định mô hình họ mang từ giải pháp hiện tại, xây trên đó và dạy phần khác biệt; cảnh báo thông điệp quảng bá có thể tạo kỳ vọng quá cao (<a href="https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Mental%20Models.pdf">PAIR, Mental Models</a>). Đây là guideline, không phải kết quả đối chứng.</li>
+<li>Nói rõ giới hạn và năng lực từ đầu, và sửa lỗi theo từng giai đoạn. Bộ 18 guideline của Microsoft chia theo bốn thời điểm: ban đầu, khi dùng thường xuyên, khi sai, và theo thời gian (<a href="https://www.microsoft.com/research/project/guidelines-for-human-ai-interaction/">HAX</a>). Được kiểm chứng qua quy trình 4 bước trong bài CHI 2019.</li>
+<li>Cho thấy tính biến thiên của output. Trong thí nghiệm trong-nhóm, người tham gia xem một câu trả lời hoặc mười câu (có và không có hỗ trợ nhận thức); giả thuyết của nhóm là chỉ thấy một câu trả lời trông chắc chắn dẫn đến mô hình sai và trust lệch (<a href="https://arxiv.org/html/2503.16114v1">Stochasticity study</a>). Mình chưa đọc phần kết quả chi tiết, nên chưa nêu mức hiệu quả.</li>
+<li>Minh bạch chỉ hiệu quả khi mô hình người dùng đã đủ đầy. Các vector minh bạch cải thiện khả năng diễn giải chỉ khi mô hình tinh thần đầy đủ hơn (<a href="https://arxiv.org/html/2506.03807v1">Understanding Mental Models of Generative Conversational Search</a>). Hệ quả: chèn thêm giải thích không thay được việc xây mô hình nền.</li>
+<li>Thích ứng hành vi theo mô hình người dùng và quản lý cập nhật. Điều chỉnh hành vi agent cho khớp mô hình người dùng, kể cả ngầm, cải thiện tính dễ dùng, hiệu quả hội thoại và thành công (<a href="https://aclanthology.org/2025.findings-naacl.56/">Vanderlyn et al.</a>). Ở chiều ngược lại, cập nhật không tương thích với kinh nghiệm cũ có thể hại hiệu quả nhóm (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/4087">Bansal et al.</a>).</li>
+</ol>
+
+<figure>
+<svg viewBox="0 0 760 256" role="img" aria-label="A more accurate update can still break what users learned">
+<defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="mk" d="M0 0L10 5L0 10z"/></marker></defs>
+<text class="h" x="24" y="34">A more accurate update can still break what users learned</text>
+<path class="ln" d="M224 94H278" marker-end="url(#a3)"/>
+<path class="ln" d="M480 94H534" marker-end="url(#a3)"/>
+<path class="ln" d="M690 124V176" marker-end="url(#a3)"/>
+<path class="ln" d="M550 124V150H380V176" marker-end="url(#a3)"/>
+<rect class="box" x="24" y="64" width="200" height="60" rx="8"/>
+<text class="b" x="124" y="88" text-anchor="middle">Users learn the AI</text>
+<text class="m" x="124" y="104" text-anchor="middle">Where it errs and where not</text>
+<rect class="box" x="280" y="64" width="200" height="60" rx="8"/>
+<text class="b" x="380" y="88" text-anchor="middle">An update ships</text>
+<text class="m" x="380" y="104" text-anchor="middle">Average accuracy goes up</text>
+<rect class="box" x="536" y="64" width="200" height="60" rx="8"/>
+<text class="b" x="636" y="88" text-anchor="middle">Errors move?</text>
+<text class="m" x="636" y="104" text-anchor="middle">New failures where trusted</text>
+<text class="m" x="465" y="144" text-anchor="middle">no</text>
+<text class="m" x="700" y="154">yes</text>
+<rect class="box" x="270" y="176" width="220" height="56" rx="8"/>
+<text class="b" x="380" y="200" text-anchor="middle">Learned trust still fits</text>
+<text class="m" x="380" y="216" text-anchor="middle">Team performance holds</text>
+<rect class="acc" x="516" y="176" width="220" height="56" rx="8"/>
+<text class="b" x="626" y="200" text-anchor="middle">Learned trust misfires</text>
+<text class="m" x="626" y="216" text-anchor="middle">Team performance can drop</text>
+</svg>
+<figcaption>Bản cập nhật chỉ an toàn cho nhóm người-AI khi lỗi mới không rơi vào những chỗ người dùng đã học là tin được. Theo Bansal et al., AAAI 2019.</figcaption>
+</figure>
+
+<p><strong>Gắn vào 6 lớp và Double Diamond</strong> (đề xuất của mình, chưa kiểm chứng).</p>
+
+<figure>
+<svg viewBox="0 0 760 366" role="img" aria-label="Each diamond leads on two or three layers, not all six">
+<text class="h" x="24" y="34">Each diamond leads on two or three layers, not all six</text>
+<path class="ln" d="M230 62H450"/>
+<path class="ln" d="M470 62H690"/>
+<text class="m" x="340" y="54" text-anchor="middle">Problem space</text>
+<text class="m" x="580" y="54" text-anchor="middle">Solution space</text>
+<text class="b" x="280" y="90" text-anchor="middle">Discover</text>
+<text class="b" x="400" y="90" text-anchor="middle">Define</text>
+<text class="b" x="520" y="90" text-anchor="middle">Develop</text>
+<text class="b" x="640" y="90" text-anchor="middle">Deliver</text>
+<g class="rule"><line x1="24" x2="736" y1="142" y2="142"/><line x1="24" x2="736" y1="178" y2="178"/><line x1="24" x2="736" y1="214" y2="214"/><line x1="24" x2="736" y1="250" y2="250"/><line x1="24" x2="736" y1="286" y2="286"/></g>
+<text x="24" y="128">User interface</text>
+<text x="24" y="164">Context</text>
+<text x="24" y="200">Harness</text>
+<text x="24" y="236">Model</text>
+<text x="24" y="272">Governance</text>
+<text x="24" y="308">Emergence</text>
+<circle class="dot" cx="280" cy="160" r="9"/><circle class="dot" cx="280" cy="304" r="9"/>
+<circle class="dot" cx="400" cy="232" r="9"/><circle class="dot" cx="400" cy="268" r="9"/>
+<circle class="dot" cx="520" cy="124" r="9"/><circle class="dot" cx="520" cy="160" r="9"/><circle class="dot" cx="520" cy="196" r="9"/>
+<circle class="dot" cx="640" cy="124" r="9"/><circle class="dot" cx="640" cy="268" r="9"/><circle class="dot" cx="640" cy="304" r="9"/>
+<text class="m" x="24" y="346">Layer assignment comes from the workshop draft, not from research</text>
+</svg>
+<figcaption>Chấm là lớp dẫn dắt ở giai đoạn đó. Discover và Define là problem space; Develop và Deliver là solution space.</figcaption>
+</figure>
+
+<div class="scroll">
+<table>
+<thead><tr><th>Lớp</th><th>Mental model cần chỉnh</th><th>Việc thiết kế</th></tr></thead>
+<tbody>
+<tr><td>Context</td><td>"Nó biết gì về mình?"</td><td>Hiển thị phần context người dùng đưa vào và phần hệ thống suy ra</td></tr>
+<tr><td>User Interface</td><td>"Mình điều khiển được đến đâu?"</td><td>Cho thấy biến thiên và độ chắc chắn, chỗ can thiệp, chỗ giám sát</td></tr>
+<tr><td>Governance</td><td>"Nó được và không được làm gì?"</td><td>Làm các giới hạn và lời từ chối đọc được</td></tr>
+<tr><td>Model</td><td>"Nó giỏi và dở ở đâu?"</td><td>Truyền đạt ranh giới năng lực; kiểm tra tính tương thích khi đổi model</td></tr>
+<tr><td>Harness</td><td>"Nó hành động bằng gì, thay mình làm gì?"</td><td>Hiển thị công cụ, kết nối, quyền của agent</td></tr>
+<tr><td>Emergence</td><td>"Sao nó làm điều bất ngờ?"</td><td>Quan sát sau launch, cập nhật mô hình người dùng theo hành vi phát sinh</td></tr>
+</tbody>
+</table>
+</div>
+<p>Theo trục thời gian: Discover dùng để elicit mô hình hiện có, Define chốt conceptual model muốn truyền đạt, Develop dựng cách truyền đạt vào UI, Deliver kiểm tra độ lệch và theo dõi sau launch.</p>
+
+<h3>Khi nào mental model bị vỡ</h3>
+<p>Mental model vỡ khi hành vi thật của AI mâu thuẫn với điều người dùng đã học hoặc mặc định. Hai nguyên nhân đầu trong bảng có nguồn; bốn nguyên nhân sau là suy luận của mình, chưa kiểm chứng.</p>
+
+<figure>
+<svg viewBox="0 0 760 210" role="img" aria-label="Mental models are most fragile at four moments">
+<defs><marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="mk" d="M0 0L10 5L0 10z"/></marker></defs>
+<text class="h" x="24" y="34">Mental models are most fragile at four moments</text>
+<path class="ln" d="M40 120H724" marker-end="url(#a4)"/>
+<text x="160" y="92" text-anchor="middle">First confident error</text>
+<path class="hol" d="M160 110l10 10l-10 10l-10 -10z"/>
+<text class="m" x="160" y="148" text-anchor="middle">Inference</text>
+<text x="320" y="92" text-anchor="middle">Inferred context used</text>
+<path class="hol" d="M320 110l10 10l-10 10l-10 -10z"/>
+<text class="m" x="320" y="148" text-anchor="middle">Inference</text>
+<text class="b" x="480" y="92" text-anchor="middle">Model update</text>
+<path class="dot" d="M480 110l10 10l-10 10l-10 -10z"/>
+<text class="m" x="480" y="148" text-anchor="middle">Sourced</text>
+<text x="640" y="92" text-anchor="middle">Agent gains new access</text>
+<path class="hol" d="M640 110l10 10l-10 10l-10 -10z"/>
+<text class="m" x="640" y="148" text-anchor="middle">Gap, no study found</text>
+<text class="m" x="40" y="186">Time of use, order illustrative</text>
+<text class="m" x="736" y="186" text-anchor="end">Filled: has a source. Hollow: inference or gap.</text>
+</svg>
+<figcaption>Bốn khoảnh khắc cần canh trong sản phẩm. Hai nguyên nhân còn lại, output biến thiên và ranh giới năng lực không đều, tác động xuyên suốt thay vì ở một thời điểm.</figcaption>
+</figure>
+
+<div class="scroll">
+<table>
+<thead><tr><th>Nguyên nhân</th><th>Vì sao vỡ</th><th>Mức bằng chứng</th><th>Việc thiết kế</th></tr></thead>
+<tbody>
+<tr><td>Cập nhật model</td><td>Lỗi mới rơi vào chỗ người dùng đã học là tin được</td><td>Có nguồn: <a href="https://ojs.aaai.org/index.php/AAAI/article/view/4087">Bansal et al.</a></td><td>Ghi rõ điều gì đã đổi; kiểm tra tính tương thích trước khi đổi</td></tr>
+<tr><td>Output biến thiên</td><td>Một câu trả lời đơn lẻ trông chắc chắn khiến người dùng ngộ nhận có một đáp án đúng duy nhất</td><td>Giả thuyết trong <a href="https://arxiv.org/html/2503.16114v1">Stochasticity study</a>; mình chưa đọc kết quả</td><td>Cho thấy nhiều phương án hoặc mức chắc chắn</td></tr>
+<tr><td>Lỗi tự tin đầu tiên sau khi trust hình thành</td><td>Giọng văn và đại từ "tôi" làm tăng điểm đánh giá độ chính xác (<a href="https://arxiv.org/abs/2405.06079">Cohn et al.</a>), nên cú vỡ có thể đau hơn khi giao diện càng giống người</td><td>Suy luận của mình, một phần dựa trên Cohn et al.</td><td>Nói rõ giới hạn từ đầu; thiết kế cách báo lỗi và sửa lỗi</td></tr>
+<tr><td>Ranh giới năng lực không đều</td><td>AI giải việc khó nhưng hỏng việc dễ, người dùng không suy ra được chỗ an toàn</td><td>Suy luận, dựa trên khung "jagged" của <a href="https://www.qeios.com/read/GAG6KD/pdf">Triadic Framework</a> (lý thuyết)</td><td>Truyền đạt ranh giới năng lực theo từng loại tác vụ</td></tr>
+<tr><td>Dùng context suy ra mà người dùng không biết</td><td>Hệ thống hành động dựa trên điều người dùng không thấy</td><td>Suy luận của mình</td><td>Hiển thị phần context đưa vào và phần suy ra</td></tr>
+<tr><td>Agent vượt phạm vi người dùng hình dung</td><td>Làm nhiều hơn người dùng tưởng</td><td>Khoảng trống: chưa thấy nghiên cứu thực nghiệm</td><td>Báo trước phạm vi, quyền và công cụ</td></tr>
+</tbody>
+</table>
+</div>
+<p>Các điểm cần canh: ngay sau mỗi lần đổi model, lần lỗi đầu tiên của người dùng mới, lúc hệ thống dùng context suy ra, và lúc agent chạm công cụ hoặc quyền mới.</p>
+
+<h3>Áp dụng trong công việc hàng ngày</h3>
+<p>Phần này là suy luận từ các mục trên, chưa có nghiên cứu kiểm chứng riêng cho quy trình.</p>
+<div class="scroll">
+<table>
+<thead><tr><th>Khi nào</th><th>Việc làm</th></tr></thead>
+<tbody>
+<tr><td>Trước khi thiết kế</td><td>Viết một trang "kỳ vọng và thực tế": người dùng nghĩ gì, hệ thống làm gì, mình muốn truyền đạt gì. Hỏi người dùng dự đoán trước khi cho xem output.</td></tr>
+<tr><td>Khi review</td><td>Đi qua bốn khoảnh khắc dễ vỡ; mỗi câu trả lời "chưa có" là một ticket thiết kế.</td></tr>
+<tr><td>Khi thiết kế UI</td><td>Hiển thị context đã dùng, mức chắc chắn, đường sửa lỗi và phạm vi hành động của agent. Bắt đầu từ pattern của Google PAIR và Microsoft HAX.</td></tr>
+<tr><td>Sau khi ship</td><td>Coi mỗi lần đổi model là một release có tác động UX: ghi lại thay đổi, theo dõi tín hiệu lệch như người dùng sửa output nhiều hơn hoặc bỏ tính năng.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Nếu chỉ làm một việc: trang "kỳ vọng và thực tế", vì rẻ và cho dữ liệu để các bước sau dựa vào.</p>
+
+<h2>4. Research question liên quan</h2>
+<p>Mười câu hỏi dưới đây xếp theo nhóm. Cột trạng thái chỉ nói về những gì mình thấy trong lần tìm này, không phải toàn bộ tài liệu; "khoảng trống" nghĩa là không tìm thấy nguồn trực tiếp, chưa chắc không tồn tại.</p>
+
+<figure>
+<svg viewBox="0 0 760 232" role="img" aria-label="Ba trong mười câu hỏi nghiên cứu còn là khoảng trống">
+<text class="h" x="24" y="34">Ba trong mười câu hỏi nghiên cứu còn là khoảng trống</text>
+<text class="m" x="24" y="56">10 câu hỏi theo trạng thái bằng chứng, phân loại theo bảng bên dưới</text>
+<line class="rule" x1="190" x2="190" y1="80" y2="216"/>
+<text x="24" y="111">Có bằng chứng</text>
+<rect class="bar" x="190" y="92" width="330" height="28" rx="4"><title>Có bằng chứng: 3 câu hỏi</title></rect>
+<text class="b" x="530" y="111">3</text>
+<text x="24" y="155">Một phần</text>
+<rect class="bar" x="190" y="136" width="440" height="28" rx="4"><title>Một phần: 4 câu hỏi</title></rect>
+<text class="b" x="640" y="155">4</text>
+<text x="24" y="199">Khoảng trống</text>
+<rect class="barf" x="190" y="180" width="330" height="28" rx="4"><title>Khoảng trống: 3 câu hỏi</title></rect>
+<text class="b" x="530" y="199">3</text>
+</svg>
+<figcaption>Ba khoảng trống là câu 3, 8 và 10; các câu còn lại đã có ít nhất một nguồn liên quan. Phân loại là của mình, theo bảng bên dưới.</figcaption>
+</figure>
+
+<div class="scroll">
+<table>
+<thead><tr><th>#</th><th>Research question</th><th>Lớp liên quan</th><th>Trạng thái bằng chứng</th><th>Phương pháp gợi ý</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Người dùng mang mô hình nào từ phần mềm và từ cộng tác với người sang AI, và mô hình nào gây lỗi nhiều nhất?</td><td>Context, UI</td><td>Có một phần: nghiên cứu help-seeking cho thấy người dùng phải điều chỉnh mô hình cũ; Triadic Framework ở mức lý thuyết</td><td>Contextual inquiry, elicitation trước khi dùng</td></tr>
+<tr><td>2</td><td>Mental model thay đổi thế nào qua các lần tương tác đầu, và khi nào nó "đóng cứng"?</td><td>UI</td><td>Có một phần: Vanderlyn đo trước và sau tương tác với dialog agent</td><td>Nghiên cứu dọc, đo trước và sau</td></tr>
+<tr><td>3</td><td>Gulf of Execution và Gulf of Evaluation rộng ở đâu khi người dùng ra lệnh và đọc kết quả từ AI?</td><td>UI, Context</td><td>Khoảng trống: chưa thấy nguồn đo hai gulf này riêng cho AI</td><td>Think-aloud, task analysis theo Norman</td></tr>
+<tr><td>4</td><td>Cho thấy biến thiên của output có giảm overtrust trong tác vụ thật không, hay chỉ trong thí nghiệm?</td><td>UI, Model</td><td>Có một thí nghiệm; mình chưa đọc kết quả chi tiết</td><td>Thí nghiệm trong-nhóm, đo trust calibration</td></tr>
+<tr><td>5</td><td>Minh bạch (giải thích, nguồn, độ chắc) giúp người dùng ở mức mô hình nền nào, và khi nào phản tác dụng?</td><td>UI, Governance</td><td>Có một nghiên cứu: giúp khi mô hình đã đầy hơn</td><td>Thí nghiệm có đo mức đầy đủ của mô hình trước</td></tr>
+<tr><td>6</td><td>Cập nhật model làm vỡ những mô hình người dùng đã học ở mức nào, với AI sinh nội dung (không chỉ phân loại)?</td><td>Model, Emergence</td><td>Có cho tác vụ phân loại rủi ro cao (Bansal); khoảng trống cho generative</td><td>A/B giữa bản model cũ và mới, đo performance và compatibility</td></tr>
+<tr><td>7</td><td>Người dùng gán ý thức hay trí thông minh cho AI, và điều nào làm họ nghe theo lời khuyên?</td><td>UI</td><td>Có, nhưng chưa thống nhất: tín hiệu giống người tăng đánh giá độ chính xác; gán trí thông minh dự đoán nghe theo, gán ý thức thì không</td><td>Thí nghiệm đăng ký trước, mẫu đủ lớn</td></tr>
+<tr><td>8</td><td>Với agent hành động thay người dùng (đọc file, gọi công cụ), người dùng hình dung phạm vi quyền thế nào?</td><td>Harness, Governance</td><td>Khoảng trống: workshop MM/AI nêu đây là vùng mới nhưng chưa thấy nghiên cứu thực nghiệm</td><td>Elicitation theo kịch bản agent, drawing task</td></tr>
+<tr><td>9</td><td>Phương pháp elicitation nào cho kết quả so sánh được giữa các nghiên cứu?</td><td>Mọi lớp</td><td>Vấn đề đã được nêu (MM/AI workshop), chưa có chuẩn</td><td>So sánh nhiều phương pháp trên cùng nhóm mẫu</td></tr>
+<tr><td>10</td><td>Mô hình và hành vi tin cậy khác nhau thế nào giữa người dùng nghiệp vụ (ví dụ nhân viên tín dụng) và người dùng phổ thông, trong bối cảnh quy định chặt?</td><td>Governance, Context</td><td>Khoảng trống trong lần tìm này; cần tìm thêm, kể cả nguồn tiếng Việt</td><td>Nghiên cứu định tính theo vai trò, kết hợp quan sát tại chỗ</td></tr>
+</tbody>
+</table>
+</div>
+<p>Hai khoảng trống đáng chú ý nhất: không thấy nghiên cứu so sánh trực tiếp cùng một nhóm người dùng giữa phần mềm truyền thống và AI (cơ sở của phần 2), và chưa có bằng chứng về agent hành động thay người dùng (câu 8). Câu 10 và câu 3 là nơi bạn có lợi thế dữ liệu thực địa, nếu khung công bố cho phép.</p>
+
+<h2>Nguồn tham khảo</h2>
+<p class="note">Giới hạn: toàn bộ dựa trên đoạn trích trong kết quả tìm kiếm ngày 18/10/2026, chưa mở toàn văn từng bài. Trước khi trích vào portfolio hoặc tài liệu đào tạo, cần đọc bản đầy đủ của các bài được dùng làm bằng chứng chính (Bansal, Vanderlyn, Stochasticity study, 2506.03807).</p>
+<p><strong>Học thuật</strong></p>
+<ul class="src">
+<li><a href="https://ojs.aaai.org/index.php/AAAI/article/view/4087">Bansal et al., Updates in Human-AI Teams, AAAI 2019</a></li>
+<li><a href="https://arxiv.org/abs/2408.14154">Vanderlyn et al., Investigating the effect of Mental Models in User Interaction with an Adaptive Dialog Agent, 2024</a></li>
+<li><a href="https://arxiv.org/html/2506.03807v1">Understanding Mental Models of Generative Conversational Search and The Effect of Interface Transparency</a></li>
+<li><a href="https://arxiv.org/html/2503.16114v1">The Impact of Revealing LLM Stochasticity on Trust, Reliability, and Anthropomorphization</a></li>
+<li><a href="https://arxiv.org/abs/2405.06079">Cohn et al., Believing Anthropomorphism, CHI 2024</a></li>
+<li><a href="https://researchonline.lse.ac.uk/id/eprint/128172">Colombatto, Birch &amp; Fleming, mental state attributions and trust in LLMs, Communications Psychology 2025</a></li>
+<li><a href="https://www.ijcai.org/proceedings/2021/0648.pdf">Mental Models of AI Agents in a Cooperative Game Setting, IJCAI 2021</a></li>
+<li><a href="https://arxiv.org/pdf/2402.08030">Why and When LLM-Based Assistants Can Go Wrong, software help-seeking</a></li>
+<li><a href="https://www.qeios.com/read/GAG6KD/pdf">Saßmannshausen &amp; Wagener, Triadic Framework (preprint, Qeios)</a> và <a href="https://www.qeios.com/read/I4RTBX/pdf">peer review của Polemi</a></li>
+<li><a href="https://www.emergentmind.com/papers/2609.17206">MM/AI workshop: Mental Models in Human-AI Interaction</a></li>
+</ul>
+<p><strong>Ngành</strong></p>
+<ul class="src">
+<li><a href="https://pair.withgoogle.com/chapter/People%20+%20AI%20Guidebook%20-%20Mental%20Models.pdf">Google PAIR, People + AI Guidebook, chương Mental Models</a></li>
+<li><a href="https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/">Microsoft, Guidelines for Human-AI Interaction (Amershi et al., CHI 2019)</a></li>
+<li><a href="https://ballparkhq.com/research-glossary/mental-model">Ballpark, Research Glossary: Mental Model</a> (nguồn thứ cấp cho Craik và ba mô hình của Norman)</li>
+</ul>
+
+</main>
+</body>
+</html>

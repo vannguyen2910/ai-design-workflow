@@ -1,6 +1,6 @@
 # AI Design Workflow (program)
 
-Chương trình 14 session (7 module hằng tuần, mỗi module gồm một buổi dạy và một buổi thực hành; mỗi tuần hai session 90 phút, trong 7 tuần) dành cho designer mid và senior: một case, một workflow AI lặp lại được, một Knowledge Hub dựng dần theo từng trang. Đọc `plan.md` trước.
+Chương trình 12 buổi trong 6 tuần (mỗi tuần hai buổi 90 phút; 9 buổi học nội dung và 3 buổi Check point ở buổi 5, 10, 12) dành cho designer mid và senior: một case, một workflow AI lặp lại được, một Knowledge Hub dựng dần theo từng trang. Lộ trình đi theo trang Notion "AI Design Workflow cho Product Designer". Đọc `plan.md` trước.
 
 **Program và lesson nằm ở hai chỗ** (từ 2026-10-07):
 - **Program** (thư mục này): kế hoạch, research, method, pitch deck, tài nguyên dùng chung.
@@ -41,17 +41,24 @@ Quy ước:
 
 ## Lessons
 
-| Tuần | Slug | Module | Trạng thái |
-|---|---|---|---|
-| 1 | [`design-process-with-ai`](../../library/lessons/ai-design-workflow/design-process-with-ai/materials/design-process-with-ai-lesson.md) | Your design process, with AI (làm mới bốn stage, vocabulary, data safety, case folder) | 🚧 Draft |
-| 2 | `discover-the-problem` | Discover the problem (câu hỏi viết cho stakeholder, phỏng vấn peer, user-voice synthesis) | ⬜ Planned |
-| 3 | `frame-the-problem` | Frame the problem worth solving | ⬜ Planned |
-| 4 | `explore-ideas` | Explore ideas and pick a direction | ⬜ Planned |
-| 5 | `build-your-first-prototype` | Build your first prototype (systematic AI prototyping, điểm "Win to market" của khoá) | ⬜ Planned |
-| 6 | `refine-and-test` | Refine your design and test with users | ⬜ Planned |
-| 7 | `hand-off-and-present` | Hand off, measure and present (final project ở session 14) | ⬜ Planned |
+Mỗi buổi nội dung là một lesson. Ba Check point không có lesson hay deck riêng; Check point là buổi làm việc trên case của học viên (xem `plan.md`).
 
-Slug của tuần 2 đến 7 lấy từ `plan.md`; chi tiết từng lesson nằm trong `lesson-details.md`. Thư mục chỉ được tạo khi bắt đầu lesson, không tạo trước: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
+| Tuần | Buổi | Slug | Nội dung | Trạng thái |
+|---|---|---|---|---|
+| 1 | 1 | [`design-process-with-ai`](../../library/lessons/ai-design-workflow/design-process-with-ai/materials/design-process-with-ai-lesson.md) | Your design process, with AI (tương lai nghề và ba hướng đi, bốn stage, bốn khái niệm AI cốt lõi, data safety, case folder) | 🚧 Draft (đang dành cho 2 buổi, cần gộp thành 1) |
+| 1 | 2 | `discover-the-problem` | Discover the problem (business question, trao đổi với PO và business, success metric và baseline, scope chung, heuristic evaluation) | ⬜ Planned |
+| 2 | 3 | `research-you-can-trust` | Turn research into insights you can trust (competitor, desk research, user-voice synthesis, kiểm theme về quote gốc) | ⬜ Planned |
+| 2 | 4 | `frame-the-problem` | Frame the problem worth solving (opportunity, principle check, hypothesis, Goals/Signals/Metrics) | ⬜ Planned |
+| 3 | 5 | không có | **Check point 1**: chạy Discover đến Define, ra problem brief | ⬜ Planned |
+| 3 | 6 | `explore-ideas` | Explore ideas and pick a direction (ba hướng, chọn hướng, user flow, nội dung) | ⬜ Planned |
+| 4 | 7 | `build-your-first-prototype` | Build your first prototype (pattern-first, design system notes, rules file; điểm "Win to market" của khoá) | ⬜ Planned |
+| 4 | 8 | `refine-and-check` | Refine and check your design (state, edge case, responsive, kiểm tra AI với design system và accessibility) | ⬜ Planned |
+| 5 | 9 | `test-with-real-users` | Test with real users (test plan, usability test, SUS) | ⬜ Planned |
+| 5 | 10 | không có | **Check point 2**: dựng main flow, refine, peer test, sửa finding | ⬜ Planned |
+| 6 | 11 | `hand-off-and-measure` | Hand off and measure success (handoff pack, measurement plan, số đếm về workflow) | ⬜ Planned |
+| 6 | 12 | không có | **Check point 3**: trình bày case, hoàn thiện Knowledge Hub | ⬜ Planned |
+
+Slug của buổi 2 đến 11 lấy từ `lesson-details.md` (đã bỏ slug gộp `refine-and-test` và `hand-off-and-present` của bản 7 module). Chi tiết từng lesson nằm trong `lesson-details.md`, chưa đồng bộ với 12 buổi. Thư mục chỉ được tạo khi bắt đầu lesson, không tạo trước: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
 
 ## Thêm một lesson
 
@@ -85,4 +92,4 @@ Trong `workspace/` còn có `site/` (website Astro + Starlight dựng từ hub) 
 
 ## Trang program trên site
 
-Trang program trên site được dựng từ repo website (`src/pages/training/programs/*.sessions.js`), không phải từ thư mục này. Khoá này chưa có file `*.sessions.js` ở đó, nên chưa có trang program và dòng `programs:` trong front matter của lesson chưa có tác dụng. Khi thêm file đó, thêm `programs: [ai-design-workflow:01]` (và tương tự cho các tuần khác) vào front matter của từng lesson.
+Trang program trên site được dựng từ repo website (`src/pages/training/programs/*.sessions.js`), không phải từ thư mục này. Khoá này chưa có file `*.sessions.js` ở đó, nên chưa có trang program và dòng `programs:` trong front matter của lesson chưa có tác dụng. Khi thêm file đó, thêm `programs: [ai-design-workflow:01]` (và tương tự cho các buổi khác) vào front matter của từng lesson.
