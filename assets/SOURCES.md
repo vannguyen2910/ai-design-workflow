@@ -20,3 +20,15 @@
 
 ## Our own diagrams (`diagrams/`)
 Original work for this series, drawn by Claude for Winnie. Inspired by the patterns documented in `../learning/research.md` Part 1 and `../learning/method.md` Part 3; no third-party artwork copied. Credit the underlying sources in the notes of any slide that uses them.
+
+## Outcome examples (`outcome-examples/`)
+Screenshots of the Travel Buddy demo case (Winnie's own project, `workspace-template/demo-case/`), saved 2026-10-23 to show what a finished case looks like. They are used on the program page of the personal website and may be used in promotion material.
+
+| File | Shows | Notes |
+|---|---|---|
+| `knowledge-hub-overview.webp` | Knowledge Hub overview: counts, gates, warnings | Gate and warning figures are from a work-in-progress hub |
+| `knowledge-hub-work.webp` | Hub Work page: documents by stage with Draft and Verified status | |
+| `knowledge-hub-insights.webp` | Hub Insights page: opportunities, hypotheses, decisions, evidence | |
+| `information-architecture.webp` | Information architecture of the app | |
+| `user-flow-swimlane.webp` | User flow (swimlane): on the trip, arrival and Connect | |
+| `prototype-welcome-screen.webp` | First screen of the prototype | **Check the licence of the background photo before wider promotion** |

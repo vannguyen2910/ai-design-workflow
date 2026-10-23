@@ -2,7 +2,7 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 69
+slide_count: 70
 duration: "90 min (buổi 1) + bài tập về nhà"
 status: draft
 built_deck: ""
@@ -35,15 +35,15 @@ last_synced: 2026-10-22
 
 ---
 
-## Slide structure: 69 slides
+## Slide structure: 70 slides
 
-- Một deck cho buổi 1, gồm **38 slide trong luồng dạy**, **3 slide Homework reference** (đặt sau slide END, chiếu khi học viên hỏi cách làm bài tập về nhà), **1 slide Terms reference** (agent và connector, thuật ngữ pre-read) và **27 slide Appendix** (method reference, chỉ mở khi học viên hỏi). Trên lớp chỉ có ice breaker và một activity (viết data rules); ở nhà chỉ có một bài tập (dựng case folder).
-- Arc: **Ice breaker** (2, tính cả cover) → **Tương lai của nghề và hướng đi của bạn** (8: divider, số liệu, áp lực nằm ở đâu, ba slide cho ba hướng đi, lập trường partner, dòng một câu) → **Quy trình thiết kế của bạn, cùng AI** (10: một divider, stage map, bốn slide stage, hai slide về AI làm tốt và còn yếu, hai slide về workflow chưa ổn) → **Một task làm hai lần, bốn khái niệm và data safety** (7) → **Activity: viết data rules** (1) → **Case folder, series, hub và bài tập về nhà** (7: divider, case folder, working file, series map, hub, chia sẻ hub, bài tập về nhà) → **Hỏi đáp, lời kết, kết thúc** (3).
-- Khớp với tám phase của lesson. Phase 1 (ice breaker) = slide 1–2. Phase 2 = slide 3–10. Phase 3 = slide 11–20. Phase 4 = slide 21–25. Phase 5 = slide 26–27. Phase 6 = slide 28. Phase 7 = slide 29–35. Phase 8 = slide 36 (hỏi đáp), rồi slide 37–38 trong phần kết thúc và buffer. Homework reference = slide 39–41. Terms reference = slide 42. Appendix = slide 43–69.
-- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE` (`Num:` = số phút): ice breaker = 7, Activity = 8; slide tham khảo bài tập về nhà ghi 45. Timing các phase: Phase 1 7 phút, Phase 2 14, Phase 3 14, Phase 4 11, Phase 5 8, Phase 6 8, Phase 7 12, Phase 8 8; tổng nội dung 82 trên 90 phút, kết thúc và buffer 8 phút. Phase 2 chia: ground rule 1, số liệu 4, áp lực nằm ở đâu 2, ba hướng đi 5, lập trường partner và dòng một câu 2. Phase 3 chia: stage map 2, bốn stage 6, AI làm tốt và còn yếu 3, workflow chưa ổn 3. Phase 4 chia: demo 7, bốn khái niệm 4. Phase 7 chia: divider và case folder 4, working file 1, series map 2, hub 2, chia sẻ hub 2, bài tập về nhà 1.
-- Thứ tự cắt khi quá giờ: slide 20 (ba câu hỏi), slide 18 (trông đúng chưa chắc đúng), phần chia sẻ hub ở Phase 7, rút hỏi đáp còn 4 phút, rồi rút ice breaker còn 5 phút; data safety và Activity không bao giờ bị cắt. Các method, sáu thuật ngữ còn lại và chi tiết folder nằm trong pre-read brief, nên deck không có slide nào đọc định nghĩa thành tiếng.
+- Một deck cho buổi 1, gồm **39 slide trong luồng dạy**, **3 slide Homework reference** (đặt sau slide END, chiếu khi học viên hỏi cách làm bài tập về nhà), **1 slide Terms reference** (agent và connector, thuật ngữ pre-read) và **27 slide Appendix** (method reference, chỉ mở khi học viên hỏi). Trên lớp chỉ có ice breaker và một activity (viết data rules); ở nhà chỉ có một bài tập (dựng case folder).
+- Arc: **Ice breaker** (2, tính cả cover) → **Tương lai của nghề và hướng đi của bạn** (8: divider, số liệu, áp lực nằm ở đâu, ba slide cho ba hướng đi, lập trường partner, dòng một câu) → **Quy trình thiết kế của bạn, cùng AI** (11: một divider, stage map, bốn slide stage, hai slide về AI làm tốt và còn yếu, một slide hình về nút thắt chuyển sang verification, hai slide về workflow chưa ổn) → **Một task làm hai lần, bốn khái niệm và data safety** (7) → **Activity: viết data rules** (1) → **Case folder, series, hub và bài tập về nhà** (7: divider, case folder, working file, series map, hub, chia sẻ hub, bài tập về nhà) → **Hỏi đáp, lời kết, kết thúc** (3).
+- Khớp với tám phase của lesson. Phase 1 (ice breaker) = slide 1–2. Phase 2 = slide 3–10. Phase 3 = slide 11–21. Phase 4 = slide 22–26. Phase 5 = slide 27–28. Phase 6 = slide 29. Phase 7 = slide 30–36. Phase 8 = slide 37 (hỏi đáp), rồi slide 38–39 trong phần kết thúc và buffer. Homework reference = slide 40–42. Terms reference = slide 43. Appendix = slide 44–70.
+- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE` (`Num:` = số phút): ice breaker = 7, Activity = 8; slide tham khảo bài tập về nhà ghi 45. Timing các phase: Phase 1 7 phút, Phase 2 14, Phase 3 15, Phase 4 11, Phase 5 8, Phase 6 8, Phase 7 12, Phase 8 8; tổng nội dung 83 trên 90 phút, kết thúc và buffer 7 phút. Phase 2 chia: ground rule 1, số liệu 4, áp lực nằm ở đâu 2, ba hướng đi 5, lập trường partner và dòng một câu 2. Phase 3 chia: stage map 2, bốn stage 6, AI làm tốt và còn yếu 3, nút thắt chuyển sang verification 1, workflow chưa ổn 3. Phase 4 chia: demo 7, bốn khái niệm 4. Phase 7 chia: divider và case folder 4, working file 1, series map 2, hub 2, chia sẻ hub 2, bài tập về nhà 1.
+- Thứ tự cắt khi quá giờ: slide 21 (ba câu hỏi), slide 18 (hình nút thắt), slide 19 (trông đúng chưa chắc đúng), phần chia sẻ hub ở Phase 7, rút hỏi đáp còn 4 phút, rồi rút ice breaker còn 5 phút; data safety và Activity không bao giờ bị cắt. Các method, sáu thuật ngữ còn lại và chi tiết folder nằm trong pre-read brief, nên deck không có slide nào đọc định nghĩa thành tiếng.
 - Mọi con số trên slide ở Phase 2 ghi nguồn, năm và cỡ mẫu. Chỉ dùng số liệu đã đọc ở nguồn gốc (xem `programs/ai-design-workflow/learning/research.md`, Part 5); không đưa lên slide những con số mà mục 10 của Part 5 xếp vào danh sách chưa dùng.
-- Các con số ở slide 17 và 18 (Phase 3) ghi nguồn, năm và cỡ mẫu theo bảng ở mục 3.4 của lesson (References [13] đến [19]); số liệu về agent đổi theo từng phiên bản mô hình, nên kiểm tra lại trước khi dạy. Slide 19 và 20 dựa trên mục 3.5 (References [20] và [21]); handout tám câu là `before-you-automate.md`.
+- Các con số ở slide 17 và 19 (Phase 3) ghi nguồn, năm và cỡ mẫu theo bảng ở mục 3.4 của lesson (References [13] đến [19]); số liệu về agent đổi theo từng phiên bản mô hình, nên kiểm tra lại trước khi dạy. Slide 18 là hình minh hoạ, không phải bằng chứng; ý của nó nằm ở phần "Suy luận của tác giả" trong mục 3.5. Slide 20 và 21 dựa trên mục 3.5 (References [20] và [21]); handout tám câu là `before-you-automate.md`.
 - Buổi 1 không có buổi thực hành đi kèm: Activity là phần làm việc duy nhất trên case của học viên.
 
 ---
@@ -341,6 +341,23 @@ last_synced: 2026-10-22
   - Hỏi: việc nào bạn đang giao cho AI mà thật ra là một chuỗi dài nhiều bước?
   - Hai phút
 - 🎨 Visual hint: SCHEMATIC. Compare hai cột. Cột trái trơn, cột phải purple đặc với chữ trắng.
+
+---
+
+### IMAGE · The bottleneck moves
+- Kicker: Before and after AI
+- Title: AI widens the build.\n*The bottleneck moves to verification.*
+- On-slide: Software trước và sau AI: idea vào, implementation nở ra, verification vẫn hẹp.
+- Speaker notes:
+  - Đây là hình minh hoạ từ cộng đồng, không phải số liệu; nói rõ với lớp và đừng trình bày như một phát hiện nghiên cứu
+  - Nhìn hình trên: trước AI, nút thắt nằm ở implementation. Dòng ý tưởng bị siết lại ở đó, nên việc làm ra sản phẩm tốn thời gian
+  - Nhìn hình dưới: AI nới implementation ra, ý tưởng đi vào nhiều hơn và nhanh hơn. Nhưng verification vẫn là một ống hẹp, nên phần việc chưa kiểm tra dồn lại ở đó
+  - Nối sang designer: AI cho bạn mười hướng thiết kế trong vài phút, còn việc chọn hướng nào đúng và kiểm tra nó với người dùng thật vẫn tốn thời gian như trước
+  - Nối lại dòng "AI soạn nháp. Bạn kiểm tra. Bạn quyết định." ở slide 10: bước kiểm tra là nơi giá trị của bạn nằm
+  - Hỏi: trong công việc của bạn, phần nào đang được AI làm nhanh hơn, và ai đang kiểm tra phần đó?
+  - Một phút
+  - Nguồn hình: ảnh lưu truyền trên mạng, chưa truy ra tác giả [to confirm]; xác nhận nguồn trước khi đưa deck lên site công khai
+- 🎨 Visual hint: REAL. Một ảnh, gần full bleed, không chú thích thêm; chữ trong ảnh giữ nguyên tiếng Anh. Tệp: `../assets/software-before-after-ai.webp`.
 
 ---
 

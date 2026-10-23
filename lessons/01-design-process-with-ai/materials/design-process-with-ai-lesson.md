@@ -176,6 +176,10 @@ Các mục trên cho biết AI hỗ trợ được ở đâu và còn yếu ở 
 
 **Suy luận của tác giả.** Khi AI làm đầu ra rẻ đi, chi phí chuyển sang bước kiểm tra. Một workflow thiếu mục tiêu rõ hoặc thiếu gate sẽ chuyển lỗi sang stage sau nhanh hơn. Với designer, đây là suy luận từ hai nguồn trên chứ không phải kết quả đo trên công việc design.
 
+![Software trước và sau AI: trước AI, nút thắt nằm ở implementation; sau AI, implementation nở ra còn verification vẫn là ống hẹp](../assets/software-before-after-ai.webp)
+
+*Hình minh hoạ trực quan cho ý trên, không phải số liệu. Nguồn: ảnh lưu truyền trên mạng, chưa truy ra tác giả [to confirm].* Trước AI, dòng ý tưởng bị siết ở bước implementation. Sau AI, implementation rộng ra nên ý tưởng và bản nháp đi vào nhiều hơn, nhưng bước verification vẫn hẹp, nên phần chưa kiểm tra dồn lại ở đó. Với designer: AI tạo mười hướng trong vài phút, còn việc chọn hướng đúng và kiểm tra với người dùng thật thì không nhanh theo.
+
 **Quy tắc của chương trình:** sửa hoặc bỏ workflow trước, rồi mới dùng AI.
 
 Ba câu hỏi trước khi automate:
@@ -345,14 +349,14 @@ Người công khai là người host và chịu trách nhiệm. GitHub hiển t
 |---|---|---|---|
 | 1 | Ice breaker: giới thiệu và một lần AI làm bạn bất ngờ hoặc bực | 7.2 | 7 phút |
 | 2 | Tương lai của nghề, ba hướng đi, lập trường partner | 1, 2, 3.3 | 14 phút |
-| 3 | Quy trình thiết kế cùng AI: mỗi stage gồm gì và AI hỗ trợ ở đâu (không đi vào từng method); AI làm tốt và còn yếu ở đâu; ba câu hỏi trước khi automate | 3.1 đến 3.5 | 14 phút |
+| 3 | Quy trình thiết kế cùng AI: mỗi stage gồm gì và AI hỗ trợ ở đâu (không đi vào từng method); AI làm tốt và còn yếu ở đâu; nút thắt chuyển sang verification; ba câu hỏi trước khi automate | 3.1 đến 3.5 | 15 phút |
 | 4 | Một task làm hai lần; bốn khái niệm gắn vào demo | 4 | 11 phút |
 | 5 | Data safety | 5 | 8 phút |
 | 6 | Activity: viết data rules trên tài liệu thật của case | 5, 7.2 | 8 phút |
 | 7 | Case folder và working file: xem layout, hub mẫu, cách chia sẻ hub; giao bài tập về nhà | 6 | 12 phút |
 | 8 | Hỏi đáp | 7.3 | 8 phút |
-| | **Tổng nội dung** | | **82 phút** |
-| | Kết thúc và buffer | | 8 phút |
+| | **Tổng nội dung** | | **83 phút** |
+| | Kết thúc và buffer | | 7 phút |
 
 Timing chưa được thử với một lớp thật. Buổi chỉ có một activity trên lớp (Activity) và một bài tập về nhà; ice breaker không tính là activity. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** slide ba câu hỏi trước khi automate, rồi slide "trông đúng chưa chắc đúng", rồi phần chia sẻ hub ở Phase 7, rồi rút hỏi đáp còn 4 phút, rồi rút ice breaker còn 5 phút. Data safety và Activity không bao giờ bị cắt.
 

@@ -3,6 +3,10 @@
 Only the pages listed here appear on the site, in this order. To show a page, move its line from the
 'Not shown' block into a `##` group above. To hide one, delete the line or move it down.
 
+## About
+
+- [Giới thiệu chương trình](introduction.md)
+
 ## Examples
 
 - [Example: Competitor Analysis](examples/competitor-analysis/README.md)
