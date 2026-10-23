@@ -86,9 +86,13 @@ Mỗi loại evidence trả lời một câu hỏi khác nhau và có điểm y�
 | Phỏng vấn ngắn (3 đến 5 người) | Vì sao, và hành vi trong quá khứ | Sơ cấp | Mẫu nhỏ; người quen lịch sự; dữ liệu cá nhân và consent |
 | Support ticket, analytics | Vấn đề thật, hành vi thật | Nội bộ | Data safety; quyền truy cập; ẩn danh |
 
+**Ví dụ minh hoạ (tình huống giả định, bản nháp, không phải dữ liệu thực).** Team của app giao đồ ăn hư cấu "Ăn Ngay" cần biết vì sao user bỏ giỏ hàng ở bước thanh toán. Cách dễ lấy nhất là xem ba app đối thủ thanh toán thế nào (competitor analysis), nhưng nguồn này chỉ cho biết đối thủ có ít bước hơn hoặc hiện phí giao hàng sớm hơn. Nó không phân biệt được user của Ăn Ngay dừng lại vì phí hiện muộn, thiếu phương thức thanh toán hay ngại nhập thẻ. Nguồn đúng với câu hỏi này là analytics, để xác định bước có tỷ lệ rớt cao nhất, rồi phỏng vấn ngắn một vài user đã bỏ giỏ để hỏi lý do. Điểm rút ra: loại evidence dễ lấy nhất trả lời một câu hỏi khác với câu hỏi đang có.
+
 ### 1.2 The pairing rule
 
 Competitor analysis cho thấy đối thủ làm gì. Nó không cho thấy vì sao user hành xử như vậy, nên một Discover chỉ dựa trên đối thủ là evidence yếu nhất. Mỗi evidence pack ghép một nguồn về điều người khác làm với một nguồn về điều user nói hoặc làm, vì mỗi loại che điểm mù của loại kia.
+
+**Ví dụ minh hoạ (tình huống giả định, bản nháp, không phải dữ liệu thực).** Giả sử team Ăn Ngay chỉ phân tích đối thủ và thấy cả ba app hiện phí giao hàng ngay ở giỏ hàng, nên đưa phí lên sớm hơn. Nếu tỷ lệ bỏ giỏ gần như không đổi, review công khai của chính Ăn Ngay có thể cho thấy lý do khác, chẳng hạn nhiều user phàn nàn không biết đơn tới lúc nào. Nguồn thứ nhất cho hướng đi, nguồn thứ hai cho lý do.
 
 ### 1.3 Data safety applies here
 
@@ -104,6 +108,10 @@ Buổi này chỉ nêu bốn thói quen; phân tích đầy đủ là bài tập
 2. **Mô tả ảnh trước.** Cho AI mô tả ảnh chụp giao diện trước, rồi mới điền bảng so sánh. Đọc sai hoặc thiếu thành phần UI là lỗi hay gặp.
 3. **Đối chiếu từng ô với ảnh gốc.** Bảng gọn tạo cảm giác chắc chắn hơn mức bằng chứng thật.
 4. **Mở từng nguồn do AI dẫn.** Một phần citation do AI đưa ra không tồn tại: các phép đo cho thấy 3 đến 13% URL citation bịa ở một số mô hình thương mại [1], và 14 đến 95% citation bịa tuỳ mô hình trong một benchmark khác [2].
+
+**Ví dụ minh hoạ (tình huống giả định, bản nháp, không phải dữ liệu thực).** Team Ăn Ngay chụp trang gói thành viên của một app đối thủ và nhờ AI điền bảng so sánh. Ảnh có bốn gói, bảng chỉ có ba; gói bị bỏ là gói duy nhất miễn phí giao hàng, nên kết luận về đối thủ lệch. Khi AI mô tả ảnh trước (thói quen 2), việc thiếu một gói lộ ra ở bước mô tả, trước khi nó trở thành một ô trong bảng.
+
+**Ví dụ minh hoạ (tình huống giả định, bản nháp, không phải dữ liệu thực).** AI dẫn một bài nghiên cứu về hành vi bỏ giỏ hàng, có tác giả, năm và đường link, làm nguồn duy nhất cho một claim trong desk research. Khi mở link, trang báo không tìm thấy. Nếu bài đã được đưa vào evidence pack, claim dựa trên một nguồn không tồn tại (thói quen 4).
 
 ---
 
@@ -174,17 +182,17 @@ Hình dạng: ice breaker, theory (bốn phần, mỗi phần kết thúc bằng
 |---|---|---|---|
 | 1 | Ice breaker: một lần tin một insight rồi thấy nó sai | 6.3 | 6 phút |
 | 2 | Theory 1: evidence menu và quy tắc ghép | 1 | 7 phút |
-| 3 | Theory 2: điều người khác làm (tổng quan) | 2 | 7 phút |
+| 3 | Theory 2: điều người khác làm (tổng quan) | 2 | 4 phút |
 | 4 | Theory 3: user-voice synthesis (demo trên "Ăn Ngay") | 3 | 16 phút |
 | 5 | Theory 4: kiểm tra, xếp theme | 4 | 10 phút |
 | 6 | Bridge: nghỉ, hai câu kiểm tra, cheat sheet | 6.3 | 4 phút |
 | 7 | Activity: "Săn lỗi" | 6.3 | 20 phút |
 | 8 | Hỏi đáp | 6.1 | 8 phút |
 | 9 | Close: debrief, bài tập về nhà, nối sang buổi 4 | 6.4 | 6 phút |
-| | **Tổng nội dung** | | **84 phút** |
-| | Buffer | | 6 phút |
+| | **Tổng nội dung** | | **81 phút** |
+| | Buffer | | 9 phút |
 
-Timing chưa được thử với một lớp thật. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** Theory 2 rút còn 4 phút, rồi hỏi đáp rút còn 4 phút, rồi rút bớt demo ở Theory 3.
+Timing chưa được thử với một lớp thật. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** hỏi đáp rút còn 4 phút, rồi rút bớt demo ở Theory 3. Theory 2 đã ở mức 4 phút nên không còn chỗ rút.
 
 ### 6.2 Engagement rules
 

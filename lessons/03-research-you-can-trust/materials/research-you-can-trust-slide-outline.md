@@ -6,7 +6,7 @@ slide_count: 23
 duration: "90 min"
 status: draft
 built_deck: ""
-last_synced: 2026-10-22
+last_synced: 2026-10-23
 ---
 
 > **Source of truth:** `research-you-can-trust-lesson.md`
@@ -39,9 +39,9 @@ last_synced: 2026-10-22
 
 - Arc: **Open** (cover, ice breaker) → **Theory** (divider cộng 4 phần: evidence menu, điều người khác làm, user-voice synthesis, kiểm tra) → **Bridge** (nghỉ và cheat sheet) → **Practice** (một activity "Săn lỗi") → **Close** (hỏi đáp, bài tập về nhà, lời kết, kết thúc).
 - Khớp với chín phase của lesson. Phase 1 (ice breaker) = slide 1–2. Theory = slide 3–14 (T1 = 4–5, T2 = 6–7, T3 = 8–11, T4 = 12–14). Bridge = slide 15–16. Practice = slide 17–19. Hỏi đáp và Close = slide 20–23.
-- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, bridge = 4, activity = 20. Timing các phase: ice breaker 6, T1 7, T2 7, T3 16, T4 10, bridge 4, activity 20, hỏi đáp 8, close 6; tổng nội dung 84 trên 90 phút, buffer 6 phút.
+- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, bridge = 4, activity = 20. Timing các phase: ice breaker 6, T1 7, T2 4, T3 16, T4 10, bridge 4, activity 20, hỏi đáp 8, close 6; tổng nội dung 81 trên 90 phút, buffer 9 phút.
 - Theory 40 phút, không có activity trong khối. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
-- Thứ tự cắt khi quá giờ: T2 rút còn 4 phút (bỏ slide 7), rồi hỏi đáp còn 4 phút, rồi rút bớt demo ở T3 (bỏ slide 11).
+- Thứ tự cắt khi quá giờ: hỏi đáp còn 4 phút, rồi rút bớt demo ở T3 (bỏ slide 11). T2 đã ở mức 4 phút nên không còn chỗ rút.
 - Cái bẫy của buổi nằm ở slide 11 (bản synthesis nghe hợp lý) và ở activity.
 
 ---
@@ -105,11 +105,34 @@ last_synced: 2026-10-22
   - 03 · Review và forum công khai: user nói gì
   - 04 · Phỏng vấn ngắn: vì sao
   - 05 · Ticket và analytics: vấn đề thật
+- Giờ: 4 phút
+- Ví dụ: bản nháp (bỏ giỏ hàng ở bước thanh toán, app giao đồ ăn Ăn Ngay), chờ Winnie xác nhận hoặc thay bằng ví dụ thật
+- Câu hỏi hay gặp:
+  - Có cần dùng cả năm loại không? Không; chọn hai loại bổ sung nhau, một loại cho "cái gì", một loại cho "vì sao".
+  - Ai trả lời "đối thủ" hoặc "review" vì dễ lấy? Hỏi lại "loại này có cho bạn biết vì sao không?"
+  - Không có ticket hay analytics thì sao? Dùng review và phỏng vấn ngắn, và ghi rõ trong evidence pack rằng thiếu dữ liệu nội bộ.
 - Speaker notes:
-  - Chọn evidence theo câu hỏi cần trả lời, không theo thứ dễ lấy nhất
-  - Mỗi loại có điểm yếu: đối thủ không cho biết vì sao; review lệch về hai cực; phỏng vấn mẫu nhỏ
-  - Ticket và analytics thuộc dữ liệu nội bộ: cần data safety và ẩn danh
-  - Bảy phút cho slide này và slide tiếp theo
+
+  > Team của Ăn Ngay muốn biết vì sao user bỏ giỏ hàng ở bước thanh toán. Bạn sẽ bắt đầu từ đâu?
+
+  - Cách dễ nhất là mở ba app đối thủ ra xem họ thanh toán thế nào; hai mươi phút là xong
+  - Xem đối thủ chỉ cho biết họ có ít bước hơn, chưa cho biết user của Ăn Ngay dừng lại vì phí hiện muộn, thiếu phương thức thanh toán hay ngại nhập thẻ
+  - Cách đúng với câu hỏi này: analytics cho thấy bước nào rớt nhiều nhất, rồi phỏng vấn ngắn vài user đã bỏ giỏ để hỏi vì sao
+
+  > **Chọn evidence theo câu hỏi bạn cần trả lời, chứ không phải theo thứ dễ lấy nhất.**
+
+  > Đây là năm loại evidence. Hãy nhìn nó như một cái menu, không phải checklist.
+
+  - 01 Competitor analysis: biết đối thủ làm gì, không biết vì sao user chọn họ
+  - 02 Desk research: biết điều đã được nghiên cứu, nhưng có thể cũ hoặc khác thị trường của mình
+  - 03 Review và forum công khai: user tự nói, nhưng lệch về hai cực, nhóm ở giữa im lặng
+  - 04 Phỏng vấn ngắn: trả lời được "vì sao", nhưng mẫu nhỏ nên chỉ cho hướng, chưa đủ để kết luận
+  - 05 Ticket và analytics: thấy vấn đề thật, nhưng là dữ liệu nội bộ nên cần data safety và ẩn danh trước khi đưa vào AI chat tool
+
+  > Câu hỏi bạn đang làm là gì, và bạn sẽ bắt đầu từ loại nào? Gõ vào chat một dòng.
+
+  > Chọn được loại rồi thì bước tiếp theo là ghép chúng thành cặp. Slide sau cho bạn thấy cách ghép.
+
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, năm hàng, số purple.
 
 ---
@@ -120,11 +143,30 @@ last_synced: 2026-10-22
 - On-slide:
   - Trái, điều người khác làm: đối thủ, desk research
   - Phải, điều user nói và làm: review, phỏng vấn, ticket
+- Giờ: 3 phút
+- Ví dụ: bản nháp (chỉ phân tích đối thủ rồi sửa vị trí hiện phí giao hàng, Ăn Ngay), chờ Winnie xác nhận hoặc thay bằng ví dụ thật
+- Câu hỏi hay gặp:
+  - Ghép hai nguồn cùng bên có được không? Không; hai nguồn cùng bên che cùng một điểm mù.
 - Speaker notes:
-  - Đối thủ cho biết họ làm gì, không cho biết vì sao user hành xử như vậy
-  - Mỗi evidence pack ghép một nguồn của mỗi bên; loại này che điểm mù của loại kia
-  - Quay lại bảng ice breaker: lý do nào là điểm mù của một loại?
-  - Câu hỏi 30 giây (chat): A nếu bạn từng quyết định chỉ dựa trên đối thủ, B nếu chưa
+
+  > Giả sử team chỉ phân tích đối thủ. Cả ba app đều hiện phí giao hàng ngay ở giỏ hàng, nên team làm theo.
+
+  - Team đưa phí lên sớm hơn, giống đối thủ, và coi như đã xử lý vấn đề
+  - Giả sử tỷ lệ bỏ giỏ gần như không đổi
+  - Mở review công khai của chính Ăn Ngay thì thấy một điều khác: nhiều người phàn nàn không biết đơn tới lúc nào
+  - Đối thủ cho biết họ làm gì, không cho biết vì sao user của mình hành xử như vậy
+
+  > **Mỗi evidence pack ghép một nguồn về điều người khác làm với một nguồn về điều user nói hoặc làm.**
+
+  - Hai bên che điểm mù của nhau: bên trái cho hướng đi, bên phải cho lý do
+  - Quay lại bảng ice breaker và chỉ ra lý do nào là điểm mù của một loại evidence
+
+  > Bạn từng quyết định chỉ dựa trên đối thủ chưa? A nếu từng, B nếu chưa. Gõ vào chat.
+
+  - Hai mươi giây cho kết quả bỏ phiếu; nhóm chọn A là nhóm đã thấy rủi ro này
+
+  > Bây giờ mình đi vào điều người khác làm, với bốn thói quen để dùng AI mà không bị lừa.
+
 - 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái xám, cột phải purple; mũi tên hai chiều ở giữa.
 
 ---
@@ -137,11 +179,29 @@ last_synced: 2026-10-22
   - 02 · Cho AI mô tả ảnh trước
   - 03 · Đối chiếu từng ô với ảnh gốc
   - 04 · Mở từng nguồn AI dẫn
+- Giờ: 2 phút
+- Ví dụ: bản nháp (bảng gói thành viên của một app đối thủ bị AI bỏ sót một gói, Ăn Ngay), chờ Winnie xác nhận hoặc thay bằng ví dụ thật
+- Câu hỏi hay gặp:
+  - Có cần làm cả bốn thói quen mỗi lần không? Có, nhưng mỗi thói quen chỉ mất vài phút; thói quen hai và ba là chỗ lỗi hay xảy ra nhất.
+  - Phân tích đối thủ đầy đủ thì làm ở đâu? Là bài tập tuỳ chọn sau buổi học.
 - Speaker notes:
-  - Ở buổi này chỉ nêu bốn thói quen; phân tích đầy đủ là bài tập tuỳ chọn
-  - Đọc sai hoặc thiếu thành phần giao diện là lỗi hay gặp, nên mô tả ảnh trước rồi mới điền bảng
-  - Bảng gọn tạo cảm giác chắc chắn hơn mức bằng chứng thật
-  - Ví dụ nhanh: chụp trang giá của một đối thủ, nhờ AI mô tả, rồi đối chiếu từng gói
+
+  > Team chụp trang gói thành viên của một app đối thủ, rồi nhờ AI điền luôn bảng so sánh. Bảng ra rất gọn.
+
+  - Giả sử trong ảnh có bốn gói nhưng bảng chỉ có ba
+  - Gói bị bỏ lại là gói duy nhất miễn phí giao hàng, nên kết luận của team lệch hẳn
+  - Nếu cho AI mô tả ảnh trước, lỗi lộ ra ngay ở bước mô tả, trước khi nó thành một ô trong bảng
+
+  > **Bảng gọn tạo cảm giác chắc chắn hơn mức bằng chứng thật.**
+
+  - Thói quen một: tự lưu nguồn, chụp màn hình và ghi ngày, thay vì để AI nhớ
+  - Thói quen hai: cho AI mô tả ảnh trước, rồi mới điền bảng; đọc sai hoặc thiếu thành phần giao diện là lỗi hay gặp
+  - Thói quen ba: đối chiếu từng ô với ảnh gốc
+  - Thói quen bốn: mở từng nguồn do AI dẫn; slide sau nói riêng về điều này
+  - Buổi này chỉ nêu bốn thói quen; phân tích đầy đủ là bài tập tuỳ chọn
+
+  > Thói quen thứ tư là cái dễ quên nhất, nên mình dành riêng một slide.
+
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước hai được tô purple.
 
 ---
@@ -150,11 +210,28 @@ last_synced: 2026-10-22
 - Kicker: Part 2 · Open every source
 - Title: A link is not\n*proof.*
 - On-slide: Một phần citation do AI đưa ra không tồn tại. Mở từng nguồn.
+- Giờ: 2 phút
+- Ví dụ: bản nháp (AI dẫn một bài nghiên cứu về hành vi bỏ giỏ hàng nhưng link không tồn tại), chờ Winnie xác nhận hoặc thay bằng ví dụ thật
+- Câu hỏi hay gặp:
+  - Số 3 đến 13% có nghĩa là 3 đến 13% mọi câu trả lời của AI sai không? Không; đó là tỷ lệ URL citation bịa trong một phép đo, không phải mọi tham chiếu.
+  - Link mở được thì có đúng không? Chưa chắc; mở link xong vẫn phải đọc xem trang có nói đúng điều AI nêu không.
 - Speaker notes:
+
+  > AI đưa ra một bài nghiên cứu về hành vi bỏ giỏ hàng, có tác giả, có năm, có đường link. Bạn mở link ra và trang báo không tìm thấy.
+
+  - Giả sử bài đó là nguồn duy nhất cho một claim trong desk research
+  - Nếu đã đưa vào evidence pack, claim đó dựa trên một nguồn không tồn tại, và không ai biết cho đến khi có người mở link
   - Các phép đo cho thấy 3 đến 13% URL citation bịa ở một số mô hình thương mại, và 14 đến 95% tuỳ mô hình trong một benchmark khác
-  - Đây là số đo trên URL và benchmark, không phải mọi tham chiếu; đừng nâng thành kết luận chung
-  - Thói quen: mở từng nguồn do AI dẫn trước khi đưa vào evidence pack
-  - Câu hỏi 30 giây (chat): A nếu bạn từng gặp một nguồn AI dẫn mà không tồn tại, B nếu chưa
+  - Đây là số đo trên URL và benchmark, không phải mọi tham chiếu; không nâng thành kết luận chung
+
+  > **Một đường link không phải là bằng chứng. Mở từng nguồn trước khi đưa vào evidence pack.**
+
+  > Bạn từng gặp một nguồn AI dẫn mà không tồn tại chưa? A nếu từng, B nếu chưa. Gõ vào chat.
+
+  - Nhóm chọn A: hỏi nhanh họ phát hiện bằng cách nào; thường là do mở link
+
+  > Hai phần đầu nói về nguồn. Phần tiếp theo là tổng hợp giọng người dùng, nơi AI làm nhiều việc nhất.
+
 - 🎨 Visual hint: TYPOGRAPHIC. Title lớn, một dòng ngắn bên dưới.
 
 ---
