@@ -14,7 +14,7 @@ Buổi 3 của chương trình (tuần 2), sau buổi 2 (Discover the Problem) v
 
 ## Structure
 
-Hình dạng của chương trình này (quyết định 2026-10-22): mỗi lesson có **ice breaker**, **theory** và **một activity ngắn trên lớp**; phần luyện tập dài nằm ở **bài tập về nhà** và **Check point** (buổi 5, 10, 12). Vì vậy buổi không theo mức tối thiểu 30 phút practice của Rule LP-3; ghi chú lệch quy tắc này ở `plan.md` mục 3. **Quy tắc engagement (đề xuất 2026-10-22, áp dụng cho mọi lesson):** (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và học viên tự bắt được. Activity bên dưới là phương án mặc định, Winnie có thể thay khi soạn lesson mà không phải đổi cấu trúc buổi.
+Hình dạng của chương trình này (quyết định 2026-10-22): mỗi lesson có **ice breaker**, **theory** và **một activity ngắn trên lớp**; phần luyện tập dài nằm ở **bài tập về nhà** và **Check point** (buổi 5, 9, 12). Vì vậy buổi không theo mức tối thiểu 30 phút practice của Rule LP-3; ghi chú lệch quy tắc này ở `plan.md` mục 3. **Quy tắc engagement (đề xuất 2026-10-22, áp dụng cho mọi lesson):** (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và học viên tự bắt được. Activity bên dưới là phương án mặc định, Winnie có thể thay khi soạn lesson mà không phải đổi cấu trúc buổi.
 
 Running example cho phần giảng là bộ quote hư cấu của app giao đồ ăn "Ăn Ngay" (6 ghi chú phỏng vấn, đã có sẵn kèm các lỗi cài sẵn). Activity trên lớp chạy trên chính bộ này, nên cả lớp so sánh được kết quả; synthesis trên quote thật của học viên làm ở bài tập về nhà.
 
@@ -66,7 +66,7 @@ Tổng: 6 + 40 + 4 + 20 + 8 + 6 = 84 phút, buffer 6 phút. Nếu quá giờ, th
 
 **Câu hỏi mở cho Winnie**
 1. Học viên không có quote thật (chưa phỏng vấn, không có review công khai của sản phẩm): mặc định dùng bộ "Ăn Ngay" cho bài tập về nhà? Có cần bộ thứ hai gần với domain B2B không?
-2. Bản synthesis có sẵn cho activity: tôi soạn bằng AI rồi cài lỗi có kiểm soát (theo phụ lục B của handout), hay bạn muốn tự chạy demo trực tiếp để lấy bản thật?
+2. Bản synthesis có sẵn cho activity: đã soạn thủ công với 10 lỗi cài sẵn (xem `assets/templates/synthesis-hunt/`); nếu muốn bản AI thật, chạy prompt trong lesson rồi cập nhật bảng lỗi.
 3. Competitor analysis và desk research chỉ còn 7 phút tổng quan: đủ cho mô tả "điều người khác làm" trong Notion buổi 3 không?
 4. Bài kiểm tra transcript tiếng Việt: chấp nhận chỉ là khuyến nghị tự làm, không kiểm tra trên lớp?
 5. Mô tả buổi 3 trên Notion có cần chỉnh (synthesis trên quote thật thành bài tập về nhà, activity là kiểm tra) không?

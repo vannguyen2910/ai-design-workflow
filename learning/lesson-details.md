@@ -2,13 +2,13 @@
 
 Tài liệu tham chiếu để dựng từng lesson. **Đọc `plan.md` trước.** File này giữ phần chi tiết mà plan không có: bộ từ vựng của series, rồi mục tiêu, activity và output của từng lesson (Lesson 1 đến 9) và ba Check point.
 
-Cập nhật 2026-10-22: lộ trình đi theo Notion, 12 buổi trong 6 tuần. Mỗi lesson là một buổi nội dung (buổi 1, 2, 3, 4, 6, 7, 8, 9, 11); ba buổi còn lại (5, 10, 12) là Check point, không có lesson hay deck riêng. Bảng buổi và tuần ở `plan.md`. Mô hình 7 module với session A/B của bản 14 session đã bỏ; một số chi tiết bên dưới còn viết cho mô hình cũ và được đánh dấu **cần chia lại**. Khi file nhắc "module", "tuần" hay "session", đối chiếu với `plan.md`.
+Cập nhật 2026-10-22: lộ trình đi theo Notion, 12 buổi trong 6 tuần. Mỗi lesson là một buổi nội dung (buổi 1, 2, 3, 4, 6, 7, 8, 10, 11); ba buổi còn lại (5, 9, 12) là Check point, không có lesson hay deck riêng. Bảng buổi và tuần ở `plan.md`. Mô hình 7 module với session A/B của bản 14 session đã bỏ; một số chi tiết bên dưới còn viết cho mô hình cũ và được đánh dấu **cần chia lại**. Khi file nhắc "module", "tuần" hay "session", đối chiếu với `plan.md`.
 
 **Trong file này**
 
 - Series Vocabulary
 - Lesson 1 đến 9
-- Ba Check point (buổi 5, 10, 12)
+- Ba Check point (buổi 5, 9, 12)
 - Optional: Build Your Own AI Workflow (workflow lab)
 
 Bản 14 session trước khi đồng bộ với Notion nằm ở `_archive/lesson-details-2026-10-22-14-session.md`. Bản tiếng Anh trước khi dọn (có bảng cân đối timing, bảng mapping lesson cũ và danh sách lỗi đã sửa) nằm ở `_archive/lesson-details-2026-10-15-en.md`.
@@ -60,7 +60,7 @@ Khoá `rel: "strains"` trong file dữ liệu của hub được giữ nguyên; 
 
 ## Lesson 1: Your Design Process, with AI
 
-*Slug:* `design-process-with-ai` (folder cũ: `ai-workflow-for-ux-designers`). Là **buổi 1 (tuần 1)** theo Notion, một buổi 90 phút. Đã gộp từ hai buổi (dạy và thực hành) thành một buổi, 2026-10-22. File nguồn: `library/lessons/ai-design-workflow/design-process-with-ai/materials/design-process-with-ai-lesson.md`. Khi nội dung ở đây lệch với lesson file, lesson file thắng.
+*Slug:* `design-process-with-ai` (folder cũ: `ai-workflow-for-ux-designers`). Là **buổi 1 (tuần 1)** theo Notion, một buổi 90 phút. Đã gộp từ hai buổi (dạy và thực hành) thành một buổi, 2026-10-22. File nguồn: `programs/ai-design-workflow/lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md`. Khi nội dung ở đây lệch với lesson file, lesson file thắng.
 
 > **Xem thêm:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md), mục 5, cho vị trí của thông điệp "đừng automate bad workflow" và checklist trước khi automate trong từng lesson.
 
@@ -403,7 +403,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 8: Test with Real Users
 
-*Slug:* `test-with-real-users`. Là **buổi 9 (tuần 5)**; **Check point 2 (buổi 10)** dùng kết quả test để refine và sửa finding.
+*Slug:* `test-with-real-users`. Là **buổi 10 (tuần 5)**, ngay sau Check point 2 (buổi 9, Build AI Prototype); buổi này test prototype đó và sửa finding.
 
 **Sau lesson, học viên có thể:**
 
@@ -411,7 +411,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 2. Chạy một usability test và đo task success, time on task, errors và SUS so với baseline.
 3. Kiểm tra phần phân tích finding do AI hỗ trợ với bản ghi hình hoặc ghi chú gốc, và xếp finding theo mức quan trọng chứ không theo tần suất.
 
-**Key activity:** Plan-and-read-the-measurement flow (Investigate pattern), phạm vi trước launch, chưa vẽ. **Trong buổi 9 (90 phút):** lập plan và script cho test, rồi peer usability test theo cặp (học viên test prototype của nhau theo ground rule về bảo mật; sanitise nếu cần). Test với người ngoài là homework tuỳ chọn. Phần sửa finding và refine nằm ở Check point 2 (buổi 10).
+**Key activity:** Plan-and-read-the-measurement flow (Investigate pattern), phạm vi trước launch, chưa vẽ. **Trong buổi 10 (90 phút):** lập plan và script cho test, rồi peer usability test theo cặp (học viên test prototype của nhau theo ground rule về bảo mật; sanitise nếu cần). Test với người ngoài là homework tuỳ chọn. Phần sửa finding làm ngay trong buổi này và ở bài tập về nhà.
 
 **Output:** finding, decision log đã cập nhật, prototype đã cập nhật.
 
@@ -419,7 +419,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 9: Hand Off and Measure Success
 
-*Slug:* `hand-off-and-measure`. Là **buổi 11 (tuần 6)**, ngay trước Check point 3.
+*Slug:* `hand-off-and-measure`. Là **buổi 11 (tuần 6)**, ngay trước Check point 3 (buổi 12).
 
 **Sau lesson, học viên có thể:**
 
@@ -461,19 +461,19 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 | Rules file cho AI tool | Buổi 1 | Data rules và bản đồ case folder được viết một lần |
 | Traceability và outcome loop | Buổi 4, 8, 11 | Mỗi decision truy được về một need; metric có target, kết quả và verdict |
 | Signal so với noise trong check | Buổi 8 | Cảnh báo của alignment check được chia mức; case mới bắt đầu sạch |
-| Fail loudly, test trên dữ liệu mới | Buổi 9, 10 | Peer test và finding; một check không nói gì thì không phải là pass |
+| Fail loudly, test trên dữ liệu mới | Buổi 10 | Peer test và finding; một check không nói gì thì không phải là pass |
 | Chọn tool theo ràng buộc của nó | Buổi 7 | AI coding tool hay diagram tool đều có giới hạn; quyết định điều chỉnh, tự dựng hay đổi, và dữ liệu nào rời khỏi máy |
 
 ---
 
-## Check point (buổi 5, 10, 12)
+## Check point (buổi 5, 9, 12)
 
 Ba buổi không có lesson mới, không có slug và không có deck. *Thay cho practice session B của bản 14 session (2026-10-22).* Mỗi Check point là một buổi làm việc có coaching theo nhóm nhỏ trên case của học viên, kèm phần bắt kịp cho người đang chậm, và là chỗ **SHOW** của KNOW / DO / SHOW (trình bày và review chéo, có mentor coaching). Mỗi Check point sẽ có một hướng dẫn facilitation một trang (chưa viết) liệt kê exit test:
 
 | Check point | Buổi | Vị trí | Exit test |
 |---|---|---|---|
 | 1 | 5 | Sau buổi 1 đến 4 (Discover, Define) | Problem brief đã viết (check 2a đến 2d), trên nền evidence pack đã qua Gate 1 (check 1a đến 1g) |
-| 2 | 10 | Sau buổi 6 đến 9 (Develop) | Prototype đã dựng và refine, peer test đã chạy, finding đã sửa (check 3b, 3c, 4a, 4b). Hướng đã chọn (3a) và design system dùng được (3d) phải đã đạt từ buổi 6 và 7 |
+| 2 | 9 | Sau buổi 6 đến 8 (Develop) | Build AI Prototype: prototype của main flow chạy được, đã qua bản kiểm tra ở buổi 8, sẵn sàng đem đi test (check 3d). Hướng đã chọn (3a) đã đạt từ buổi 6 |
 | 3 | 12 | Sau buổi 11 (Deliver) | Final project (bên dưới) |
 
 **Format (đề xuất, chưa thử):** check-in 10 phút (đang vướng ở đâu), khoảng 60 phút làm việc riêng trong breakout room 3 đến 4 người có coaching, 20 phút review trực tiếp hai hub. Homework chỉ nối tiếp phần việc này.
