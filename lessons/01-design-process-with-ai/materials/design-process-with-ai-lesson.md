@@ -280,7 +280,7 @@ Hai vai không giao cho AI: người dùng thật và người phía product và
 1. **Một AI coding tool mở cả project folder** làm project của nó.
 2. **`AGENTS.md` ở gốc folder là quy tắc chung.** Tool tự đọc file này khi mở folder; trong đó có luật propose first (đề xuất trước khi tạo hoặc sửa nhiều file) và luật không đọc `_personal/` và `work/sources/_raw-private/`.
 3. **Mỗi agent là một step card**, một file Markdown trong `toolkit/skills/`, ghi bước đó đọc file nào, làm gì và ghi vào đâu. Chạy một agent nghĩa là nhờ tool đọc step card của bước đó, sau khi đọc context pack trong `context/`.
-4. **Output ghi vào file**: tài liệu trong `work/`, item (decision, evidence, finding...) trong `insights/` qua `new-item.py`. Design memory chính là project folder cộng hub, và hub được dựng lại bằng `refresh-hub.md` và `export-hub.py`.
+4. **Output ghi vào file**: tài liệu trong `work/`, item (decision, evidence, finding...) trong `insights/` qua `new-item.py`. Design memory chính là project folder cộng hub, và hub được dựng lại bằng `refresh-hub.md` và `build-report.py`.
 5. **Gate là tiêu chí trong `standards/`** (gates, principle checks, severity levels), dùng để designer kiểm tra trước khi sang phase sau.
 
 Flow của một bước: designer ra lệnh, tool đọc step card và context, tool đề xuất, designer duyệt, tool ghi file, designer kiểm tra theo gate, rồi mới sang bước tiếp. Mũi tên REVIEW trong sơ đồ chính là gate này.
@@ -378,7 +378,7 @@ Bên cạnh item, mỗi tài liệu làm ra trong dự án (phân tích đối t
 
 **Hub mặc định là private.** Có bốn cách cho người khác xem, từ ít rủi ro nhất:
 
-1. Dùng trang chủ `index.html` của hub: một file HTML tự chứa, tạo bằng `toolkit/skills/export-hub.py` (my-project có sẵn một bản mẫu), mở bằng trình duyệt mà không cần cài gì. Copy ra ngoài và đổi tên khi gửi; hoặc export các page chính ra PDF. File HTML là sản phẩm xuất ra từ Markdown, không phải nguồn.
+1. Dùng trang chủ `index.html` của hub: một file HTML tự chứa, tạo bằng `toolkit/skills/build-report.py` (my-project có sẵn một bản mẫu), mở bằng trình duyệt mà không cần cài gì. Copy ra ngoài và đổi tên khi gửi; hoặc export các page chính ra PDF. File HTML là sản phẩm xuất ra từ Markdown, không phải nguồn.
 2. Gửi file nén của cả project folder (các page hub link sang nhiều folder, nên nén riêng một folder con làm link hỏng).
 3. Mời một người vào repository private trên GitHub.
 4. Công khai cả project folder trong một repository public mới, chỉ khi toàn bộ case được phép chia sẻ (case của chương trình, hoặc phiên bản đã làm sạch từ công việc thật).

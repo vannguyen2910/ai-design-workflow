@@ -910,7 +910,7 @@ last_synced: 2026-10-23
 - On-slide: Private: file HTML hoặc PDF, file nén, hoặc mời vào repo private. Public: chỉ khi cả case được phép chia sẻ.
 - Speaker notes:
   - **Hub mặc định là private**: nó nằm trong project folder của bạn và không ai thấy trừ khi bạn gửi
-  - Để cho stakeholder xem, chạy script `toolkit/skills/export-hub.py` để ra một file HTML mở được bằng trình duyệt, hoặc export các page chính ra PDF; hoặc gửi file nén của cả project folder, vì các page hub link sang nhiều folder
+  - Để cho stakeholder xem, chạy script `toolkit/skills/build-report.py` để ra một file HTML mở được bằng trình duyệt, hoặc export các page chính ra PDF; hoặc gửi file nén của cả project folder, vì các page hub link sang nhiều folder
   - Muốn một người xem trực tiếp, mời họ vào repository private trên GitHub
   - Chỉ khi toàn bộ case được phép chia sẻ (case của khoá, hoặc bản đã làm sạch từ công việc của bạn) mới công khai cả project folder trong một repository public mới; GitHub hiển thị Markdown nên không cần dựng website; guide và homework tuỳ chọn có hướng dẫn
   - **Nếu bạn công khai, bạn là người host và chịu trách nhiệm**; công việc thật được giữ private
