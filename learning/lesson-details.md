@@ -21,9 +21,9 @@ Quy tắc ngôn ngữ đơn giản (2026-10-05). Mỗi ý chỉ dùng **một t�
 
 | Nói | Nghĩa là | Không nói |
 |---|---|---|
-| **case**, **case folder** | Project học viên làm xuyên suốt, và folder chứa nó | case file, project file |
+| **case**, **project folder** | Project học viên làm xuyên suốt, và folder chứa nó | case file, project file |
 | **working file** | Một file Markdown mà một activity điền vào, từng section một | living file |
-| **context pack** | Các file `context-*` trong `learnings/`, được dán vào các bước AI trước tiên | constraint layer |
+| **context pack** | Các file trong `context/`, được dán vào các bước AI trước tiên | constraint layer |
 | **hub** (Knowledge Hub ở lần dùng đầu) | Website liên kết chứa mọi output | final report (chỉ dùng cho hub đã hoàn thiện) |
 | **output** | File hoặc trang mà một bước tạo ra | artifact, deliverable |
 | **gate** và **check** | Gate là checklist ngắn trước khi đi tiếp. Check là một câu hỏi có hoặc không (1a, 3b ...) | không có |
@@ -66,7 +66,7 @@ Khoá `rel: "strains"` trong file dữ liệu của hub được giữ nguyên; 
 
 **Why:** mọi lesson sau đều giả định học viên hiểu được các thuật ngữ AI, biết dữ liệu nào an toàn để đưa cho AI tool, và giữ công việc trong một folder mà AI dùng được. Lesson này cho họ những điều đó một lần, để không lesson nào sau phải dạy lại.
 
-**Phạm vi:** tương lai của nghề và ba hướng đi (strategic designer, design builder, AI product designer) kèm bằng chứng có nguồn; bốn stage của Double Diamond và AI hỗ trợ ở đâu; mười thuật ngữ; data safety; case folder và hub mẫu; những gì AI làm tốt và còn yếu theo bằng chứng; thông điệp "đừng automate bad workflow". Bằng chứng và giới hạn về nghề: `research.md` Part 5.
+**Phạm vi:** tương lai của nghề và ba hướng đi (strategic designer, design builder, AI product designer) kèm bằng chứng có nguồn; bốn stage của Double Diamond và AI hỗ trợ ở đâu; mười thuật ngữ; data safety; project folder và hub mẫu; những gì AI làm tốt và còn yếu theo bằng chứng; thông điệp "đừng automate bad workflow". Bằng chứng và giới hạn về nghề: `research.md` Part 5.
 
 ### Mục tiêu
 
@@ -76,7 +76,7 @@ Sau buổi 1 và bài tập về nhà, học viên có thể:
 2. **Kể tên** các method chính trong bốn stage, và nêu AI hỗ trợ ở đâu, phần nào designer vẫn phải tự thực hiện.
 3. **Giải thích** bốn khái niệm AI cốt lõi bằng lời của mình (context, grounding, hallucination, AI-assisted so với AI-generated), và nhận ra sáu thuật ngữ tham khảo khi gặp ở các buổi sau (bảng bên dưới).
 4. **Quyết định** dữ liệu nào an toàn để đưa cho AI tool: phân loại thành safe, ask first và never in a public tool; ẩn danh trước khi dán; viết data rules của riêng mình.
-5. **Cài đặt** case folder của chương trình cho case của chính mình, gồm layout chuẩn, `AGENTS.md`, context pack đã bắt đầu và một hub Markdown mẫu.
+5. **Cài đặt** project folder của chương trình cho case của chính mình, gồm layout chuẩn, `AGENTS.md`, context pack đã bắt đầu và một hub Markdown mẫu.
 6. **Dùng lại** một file đã lưu làm context thay vì mô tả lại project, và yêu cầu AI chỉ rõ nguồn cho từng ý, kèm câu trả lời "unknown" khi không có thông tin.
 7. **Giải thích** cách chia sẻ hub với stakeholder: mặc định private (PDF, folder nén hoặc repository private), chỉ công khai khi toàn bộ case được phép chia sẻ.
 8. **Nêu** hai loại task AI làm tốt và hai loại AI còn yếu, kèm một bằng chứng cho mỗi bên.
@@ -84,7 +84,7 @@ Sau buổi 1 và bài tập về nhà, học viên có thể:
 
 ### Cấu trúc buổi
 
-Một buổi 90 phút (gộp từ hai buổi, 2026-10-22). Trên lớp chỉ có ice breaker và một activity (Activity 2, viết data rules); ở nhà chỉ có một bài tập (dựng case folder).
+Một buổi 90 phút (gộp từ hai buổi, 2026-10-22). Trên lớp chỉ có ice breaker và một activity (Activity 2, viết data rules); ở nhà chỉ có một bài tập (dựng project folder).
 
 | Phase | Nội dung | Thời gian |
 |---|---|---|
@@ -94,7 +94,7 @@ Một buổi 90 phút (gộp từ hai buổi, 2026-10-22). Trên lớp chỉ có
 | 4 | Một task làm hai lần; bốn khái niệm gắn vào demo | 11 phút |
 | 5 | Data safety | 8 phút |
 | 6 | Activity 2: viết data rules | 8 phút |
-| 7 | Case folder, working file, hub và cách chia sẻ; giao bài tập về nhà | 12 phút |
+| 7 | Project folder, working file, hub và cách chia sẻ; giao bài tập về nhà | 12 phút |
 | 8 | Hỏi đáp | 8 phút |
 | | **Tổng nội dung** | **82 phút** |
 | | Kết thúc và buffer | 8 phút |
@@ -103,10 +103,10 @@ Timing chưa được thử với lớp thật. **Thứ tự cắt khi quá gi�
 
 ### Activity, homework và output
 
-- **Key activity:** demo của giảng viên về một task làm hai lần (instruction mơ hồ so với instruction có cấu trúc, trên một case card); trên lớp, học viên viết data rules (Activity 2); ở nhà, học viên dựng case folder và chạy một instruction với một file đã lưu.
-- **Homework (một bài tập, khoảng 45 phút):** dựng case folder theo năm bước, bước cuối là viết `_personal/my-direction.md`.
+- **Key activity:** demo của giảng viên về một task làm hai lần (instruction mơ hồ so với instruction có cấu trúc, trên một case card); trên lớp, học viên viết data rules (Activity 2); ở nhà, học viên dựng project folder và chạy một instruction với một file đã lưu.
+- **Homework (một bài tập, khoảng 45 phút):** dựng project folder theo năm bước, bước cuối là viết `_personal/my-direction.md`.
 - **Handout gửi riêng:** `assets/templates/before-you-automate.md` (thông điệp, checklist tám câu, cách đọc kết quả).
-- **Output:** case folder với các file `context-*` trong `learnings/` đã bắt đầu (sản phẩm và người dùng, data rules, accessibility rules tuỳ chọn, glossary tuỳ chọn) cho case của học viên, cùng một hub mẫu (private) và `_personal/my-direction.md`.
+- **Output:** project folder với folder `context/` đã bắt đầu (sản phẩm và người dùng, data rules, accessibility rules tuỳ chọn, glossary tuỳ chọn) cho case của học viên, cùng một hub mẫu (private) và `_personal/my-direction.md`.
 
 ### Terminology List
 
@@ -136,26 +136,22 @@ Nói lướt, không có thẻ riêng: model, prompt, in-tool AI features, token
 Layout dưới đây theo lesson file (mục 6.2). Đây là layout mặc định của cả series.
 
 ```
-[case-name]/
-├── index.html           trang chủ của hub: file HTML xuất từ hub/, mở bằng trình duyệt
+[project-name]/
+├── index.html           báo cáo của project: một file HTML xuất từ các file Markdown, mở bằng trình duyệt
+├── README.md            Project card (tên, câu hỏi business, stage hiện tại) và việc nên làm tiếp
 ├── AGENTS.md            file luật cho AI tool: bản đồ folder, thứ tự đọc, các luật cứng
-├── case-log.md          mỗi decision một dòng, kèm lý do
-├── learnings/           mọi file làm việc, để phẳng; tên file bắt đầu bằng giai đoạn
-│   ├── context-product-and-users.md
-│   ├── context-principle-checks.md          (viết ở Lesson 4)
-│   ├── context-design-system-notes.md       (thêm ở Lesson 6)
-│   ├── context-accessibility-rules.md
-│   ├── context-data-rules.md
-│   ├── context-glossary.md                  (tuỳ chọn)
-│   ├── discover-*.md   define-problem-brief.md   develop-*.md   deliver-*.md
-│   ├── sources/         anonymised/ (AI đọc) và _raw-private/ (AI không đọc, không lên GitHub)
-│   └── prototype/       code prototype
-├── hub/                 Knowledge Hub: folder Markdown, mỗi item (O, H, D, T, M) một file
-├── tools/               export-hub.py và các step card
+├── context/             context pack: product-and-users, data-rules, accessibility-rules, glossary, open-questions,
+│                        design-system-notes (thêm ở Lesson 6)
+├── work/                mọi thứ làm ra trong project: phân tích, persona, wireframe, prototype (mỗi tài liệu một file hoặc một folder)
+│   └── sources/         anonymised/ (AI đọc) và _raw-private/ (AI không đọc, không lên GitHub)
+├── insights/            những gì học được và các quyết định: opportunities, hypotheses, metrics, decisions, evidence, findings,
+│                        project-log.md (mỗi decision một dòng, kèm lý do)
+├── stages/              câu chuyện của từng stage, do hub tự dựng
+├── standards/           thước đo công việc: gates, principle-checks (viết ở Lesson 4), severity-levels
 └── _personal/           my-direction.md (viết sau buổi 1, xem lại ở buổi 12); không đưa cho AI tool
 ```
 
-**Vì sao layout này phù hợp với làm việc với AI:** ít folder, tiền tố giai đoạn giữ đúng thứ tự; mỗi activity một file nên mỗi bước AI có một input có tên; các file `context-*` được dán trước tiên vào mọi bước; file văn bản ngắn dễ đưa cho AI có chọn lọc; và một AI coding tool mở được cả folder như một project.
+**Vì sao layout này phù hợp với làm việc với AI:** mỗi folder một vai (`context/` đưa vào đầu tiên, `work/` là output, `insights/` là học được và decision); mỗi activity một file nên mỗi bước AI có một input có tên; các file trong `context/` được dán trước tiên vào mọi bước; file văn bản ngắn dễ đưa cho AI có chọn lọc; và một AI coding tool mở được cả folder như một project.
 
 **Lưu ý:** giữ case ở local folder thuần khi AI tool đang ghi file, rồi mới sao chép lên cloud storage. `AGENTS.md` là luật, không phải rào chắn kỹ thuật. Rào chắn thật là `.gitignore` cho `_raw-private/` và `_personal/`.
 
@@ -272,7 +268,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 |---|---|---|---|
 | 1 Full access | Gặp được PO và business | Gửi câu hỏi bằng văn bản, rồi họp nếu được mời; chia sẻ lại scope nháp và lấy sự đồng ý | **agreed** |
 | 2 Limited access | Nhắn hoặc tiếp cận PO gián tiếp (qua lead, PM hoặc account manager) | Gửi câu hỏi AI soạn nháp và một assumptions memo kèm ngày cần trả lời. Xin chỉnh sửa, không xin một buổi họp đầy đủ | **pending** cho đến khi có trả lời |
-| 3 No access | Không tiếp cận được PO hay business | Dựng scope từ những gì đang có (PRD hoặc brief, thông tin công khai của công ty, dữ liệu sản phẩm nhìn thấy được, đồng nghiệp làm việc với business). Ghi mọi outcome và metric là **assumed**. Chọn usability measure mình kiểm soát được (task success, time, errors, SUS). Đánh dấu scope là chưa xác nhận trong case log | **not available** |
+| 3 No access | Không tiếp cận được PO hay business | Dựng scope từ những gì đang có (PRD hoặc brief, thông tin công khai của công ty, dữ liệu sản phẩm nhìn thấy được, đồng nghiệp làm việc với business). Ghi mọi outcome và metric là **assumed**. Chọn usability measure mình kiểm soát được (task success, time, errors, SUS). Đánh dấu scope là chưa xác nhận trong project log | **not available** |
 
 **Bước dự phòng (limited và no access):** đường văn bản là mặc định; ở limited hoặc no access, "gửi câu hỏi bằng văn bản và assumptions memo" là tất cả những gì có, không có buổi họp. AI soạn nháp cả hai từ tài liệu của học viên; học viên chỉnh và gửi. Nếu không ai trả lời, học viên đi tiếp với các assumption đã gắn nhãn và mang rủi ro đó theo.
 
@@ -325,7 +321,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 **Sau lesson, học viên có thể:**
 
 1. Biến evidence pack thành danh sách opportunity đã xếp hạng (user need, không phải feature), mỗi cái gắn với evidence của nó.
-2. Biến 10 heuristic của Nielsen (cộng principle của tổ chức nếu có) thành các principle check có hoặc không cho sản phẩm này, lưu trong `learnings/context-principle-checks.md`.
+2. Biến 10 heuristic của Nielsen (cộng principle của tổ chức nếu có) thành các principle check có hoặc không cho sản phẩm này, lưu trong `standards/principle-checks.md`.
 3. Viết hypothesis kiểm chứng được cho hướng giải pháp ("chúng tôi tin X cho Y sẽ thay đổi Z, và sẽ biết nhờ M") và đặt đúng mức chi tiết cho từng hypothesis.
 4. Định nghĩa thành công bằng Goals, Signals, Metrics, chọn metric đo được trước khi launch.
 
@@ -365,15 +361,15 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 **Sau lesson, học viên có thể:**
 
-1. Viết `learnings/context-design-system-notes.md` (token, component, pattern, do và don't, accessibility rules) ở dạng AI coding tool đọc được (từ design pattern của mình trong Figma hoặc một bộ có sẵn), và đặt các quy tắc cố định vào một rules file.
-2. Dựng prototype project trong case folder: rules file, flow và content model từ lesson trước, và hiểu rõ tool nhìn thấy và sửa được những gì (agent, connector).
+1. Viết `context/design-system-notes.md` (token, component, pattern, do và don't, accessibility rules) ở dạng AI coding tool đọc được (từ design pattern của mình trong Figma hoặc một bộ có sẵn), và đặt các quy tắc cố định vào một rules file.
+2. Dựng prototype project trong project folder: rules file, flow và content model từ lesson trước, và hiểu rõ tool nhìn thấy và sửa được những gì (agent, connector).
 3. So sánh instruction mơ hồ với instruction có ràng buộc trên cùng một màn hình, và giải thích khác biệt. (Đặc tả chi tiết, file thiết kế được liên kết và accessibility requirement được nêu rõ cho kết quả tốt hơn; instruction mơ hồ cho layout chung chung.)
 4. Dựng phiên bản đầu của main flow, từng màn hình một, bằng cách kiểm tra các file mà agent đã sửa chứ không chỉ câu trả lời, và lưu từng trạng thái chạy được.
 5. Đánh giá độ trung thực (fidelity), và biết prototype là bản tham chiếu, không phải production code.
 
 **Key activity:** Prototype build flow (Generate pattern), chưa vẽ.
 
-**Output:** prototype chạy được đầu tiên trong `learnings/prototype/`, design system notes, một rules file, và các design decision đầu tiên (item D) trong hub. Gate check 3d (design system used) bắt đầu từ đây.
+**Output:** prototype chạy được đầu tiên trong `work/prototype/`, design system notes, một rules file, và các design decision đầu tiên (item D) trong hub. Gate check 3d (design system used) bắt đầu từ đây.
 
 **Chưa có design system?** Dùng một starter system do giảng viên cung cấp hoặc một open design system, kèm ghi chú ngắn về phần đã mượn.
 
@@ -458,7 +454,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 |---|---|---|
 | Source of truth, built view | Buổi 1 (từ vựng), buổi 4 | Các trang của hub được dựng từ file của case; không có gì sao chép tay |
 | Propose first | Buổi 3 | Ghi chú phỏng vấn theo cặp đi vào; AI đề xuất insight; học viên duyệt trước khi item được tạo |
-| Rules file cho AI tool | Buổi 1 | Data rules và bản đồ case folder được viết một lần |
+| Rules file cho AI tool | Buổi 1 | Data rules và bản đồ project folder được viết một lần |
 | Traceability và outcome loop | Buổi 4, 8, 11 | Mỗi decision truy được về một need; metric có target, kết quả và verdict |
 | Signal so với noise trong check | Buổi 8 | Cảnh báo của alignment check được chia mức; case mới bắt đầu sạch |
 | Fail loudly, test trên dữ liệu mới | Buổi 10 | Peer test và finding; một check không nói gì thì không phải là pass |
@@ -495,4 +491,4 @@ Ba buổi không có lesson mới, không có slug và không có deck. *Thay ch
 3. Nêu phần nào của workflow họ sẽ giữ, chỉnh hay bỏ, kèm lý do từ kết quả đo của chính mình.
 4. Hoàn thiện **Knowledge Hub**: mọi output của case trên một site liên kết, các cross-link chạy được, để người đọc bắt đầu từ bất kỳ decision nào cũng tới được opportunity, hypothesis, principle, test và metric của nó.
 
-**Output:** Knowledge Hub hoàn thiện (final report), case folder đầy đủ, và một sản phẩm cho portfolio.
+**Output:** Knowledge Hub hoàn thiện (final report), project folder đầy đủ, và một sản phẩm cho portfolio.

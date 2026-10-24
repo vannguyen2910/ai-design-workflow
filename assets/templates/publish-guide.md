@@ -36,7 +36,7 @@ Go to github.com and choose **Sign up**. Use an email you check. Confirm the ema
 
 ### 2. Create a public repository
 1. Select **+** at the top right, then **New repository**.
-2. Name it something like `my-case-hub` (lowercase, hyphens, no spaces).
+2. Name it something like `my-project-hub` (lowercase, hyphens, no spaces).
 3. Choose **Public**. (Free Pages sites need a public repository.)
 4. Tick **Add a README file** so the repository is not empty.
 5. Select **Create repository**.
@@ -53,7 +53,7 @@ A single upload takes up to 100 files, each up to 25 MB. Compress large images f
 1. In the repository, open **Settings**, then **Pages** in the left menu.
 2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
 3. Set **Branch** to **main** and the folder to **/ (root)**, then select **Save**.
-4. Wait one to two minutes and refresh the page. A message appears: *Your site is live at* with your web address. It looks like `https://your-username.github.io/my-case-hub/`.
+4. Wait one to two minutes and refresh the page. A message appears: *Your site is live at* with your web address. It looks like `https://your-username.github.io/my-project-hub/`.
 
 ### 5. Check it like a stakeholder would
 Open the address in a **private (incognito) window**. You should see your hub's Overview page, with the menu on the left. If you see an error page, see "If something goes wrong" below.

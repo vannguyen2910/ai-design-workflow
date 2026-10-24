@@ -22,7 +22,7 @@
 Original work for this series, drawn by Claude for Winnie. Inspired by the patterns documented in `../learning/research.md` Part 1 and `../learning/method.md` Part 3; no third-party artwork copied. Credit the underlying sources in the notes of any slide that uses them.
 
 ## Outcome examples (`outcome-examples/`)
-Screenshots of the Travel Buddy demo case (Winnie's own project, `workspace-template/demo-case/`), saved 2026-10-23 to show what a finished case looks like. They are used on the program page of the personal website and may be used in promotion material.
+Screenshots of the Travel Buddy demo project (Winnie's own project, `workspace-template/demo-project/`), saved 2026-10-23 to show what a finished project looks like. They are used on the program page of the personal website and may be used in promotion material.
 
 | File | Shows | Notes |
 |---|---|---|

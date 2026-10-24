@@ -20,7 +20,7 @@ programs/ai-design-workflow/                  (thư mục này)
   assets/                   starter-files, hub và doc template, diagram, ảnh tham khảo
     method-cards/           card tham khảo cho từng design method, theo stage
     templates/workflow-kit/ bộ mẫu cho buổi tuỳ chọn "Build your own AI workflow" (step card, luật cho AI tool, propose first…)
-  workspace-template/       repo mẫu cho học viên (GitHub: ai-product-workflow): my-case (trống), demo-case (Travel Buddy), toolkit/
+  workspace-template/       repo mẫu cho học viên (GitHub: ai-product-workflow): my-project (trống), demo-project (Travel Buddy), toolkit/
   examples/                 ví dụ làm sẵn (step card)
   _archive/                 bản nháp đã thay thế
 
@@ -77,12 +77,12 @@ Bài tập về nhà của mentee không lưu ở đây: `mentees/<tên>/homewor
 
 | Trong `workspace/` | Nguồn trong `assets/` |
 |---|---|
-| `my-case/` (trừ `hub/` và `learnings/prototype/`) | `starter-files/case-folder-template/` |
-| `my-case/hub/` (và `demo-case/hub/`) | **viết trực tiếp ở `workspace/`, dạng markdown** (README.md, gates.md, trang theo tuần, item theo folder). `templates/hub/` là bản HTML cũ, không còn đồng bộ |
-| `my-case/learnings/prototype/` | `starter-files/prototype-starter/` |
-| `demo-case/` | **Travel Buddy** (dự án thật của giảng viên, từ `05_Learning/SRH/.../Travel Buddy`), viết trực tiếp ở `workspace/`. Bản Kitchen Crate cũ nằm ở `_archive/demo-case-kitchen-crate/` |
+| `my-project/` (trừ `insights/` và `work/prototype/`) | `starter-files/case-folder-template/` |
+| `my-project/insights/` (và `demo-project/insights/`) | **viết trực tiếp ở `workspace/`, dạng markdown** (README.md, gates.md, trang theo tuần, item theo folder). `templates/hub/` là bản HTML cũ, không còn đồng bộ |
+| `my-project/work/prototype/` | `starter-files/prototype-starter/` |
+| `demo-project/` | **Travel Buddy** (dự án thật của giảng viên, từ `05_Learning/SRH/.../Travel Buddy`), viết trực tiếp ở `workspace/`. Bản Kitchen Crate cũ nằm ở `_archive/demo-case-kitchen-crate/` |
 | `AGENTS.md`, `tools/step-*.md` | `assets/starter-files/case-folder-template/` (bản gốc) và `examples/*/step-cards.md` (nguồn của card, đã chuyển sang tiếng Việt và đổi đường dẫn) |
-| `README.md`, `toolkit/`, README của `my-case/`, `demo-case/` | viết trực tiếp ở `workspace/` (tiếng Việt) |
+| `README.md`, `toolkit/`, README của `my-project/`, `demo-project/` | viết trực tiếp ở `workspace/` (tiếng Việt) |
 
 Đưa lên GitHub: tạo repo riêng chỉ chứa nội dung `workspace/` (copy hoặc `git subtree split`), bật **Settings, Template repository** để học viên có nút Use this template, và để repo Public. Học viên tạo bản Private của họ từ template.
 

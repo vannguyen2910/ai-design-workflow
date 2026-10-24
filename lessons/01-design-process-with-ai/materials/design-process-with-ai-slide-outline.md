@@ -27,7 +27,7 @@ last_synced: 2026-10-23
 | Field | Value |
 |---|---|
 | Program | AI Design Workflow |
-| Track / session | Buổi 1 (tuần 1) của series: một buổi 90 phút, online, 7 đến 8 học viên, kèm bài tập về nhà dựng case folder |
+| Track / session | Buổi 1 (tuần 1) của series: một buổi 90 phút, online, 7 đến 8 học viên, kèm bài tập về nhà dựng project folder |
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
@@ -37,8 +37,8 @@ last_synced: 2026-10-23
 
 ## Slide structure: 35 slide dạy + 14 slide tham khảo
 
-- Một deck cho buổi 1, gồm **35 slide trong luồng dạy** (`slide_count` ở đầu file chỉ tính 35 slide này; tổng 49 gồm cả 14 slide tham khảo nằm sau slide END, chiếu khi học viên hỏi), **3 slide Homework reference** (đặt sau slide END), **1 slide Terms reference** (connector và reusable instructions), **10 slide chuyển ra khỏi luồng dạy** (ba hướng đi, bốn stage, working file, series map, chia sẻ hub) (27 slide method reference đã bỏ khỏi deck ngày 2026-10-24: mỗi method đã có method card riêng ở `assets/method-cards/`, bản cũ nằm trong `_archive`). Trên lớp chỉ có ice breaker và một activity (đoán trước, rồi để AI phân loại, kèm viết data rules); ở nhà chỉ có một bài tập (dựng case folder).
-- Arc: **Ice breaker** (2, tính cả cover) → **T1 Tương lai của nghề** (6: divider, số liệu, áp lực, ba hướng đi, lập trường partner, dòng một câu) → **T2 Quy trình thiết kế có AI** (8: divider, stage map, AI giúp được ở đâu, AI làm tốt và còn yếu, nút thắt, hai statement, ba câu hỏi) → **T3 Một task làm hai lần và bốn khái niệm** (5) → **T4 Agent và đội AI** (4: divider, agent, đội AI, đội cần gì) → **T5 Case folder và Knowledge Hub** (2) → **T6 Data safety** (2) → **Activity** (2: milestone và năm đoạn trích) → **Hỏi đáp, bài tập về nhà, lời kết, kết thúc** (4).
+- Một deck cho buổi 1, gồm **35 slide trong luồng dạy** (`slide_count` ở đầu file chỉ tính 35 slide này; tổng 49 gồm cả 14 slide tham khảo nằm sau slide END, chiếu khi học viên hỏi), **3 slide Homework reference** (đặt sau slide END), **1 slide Terms reference** (connector và reusable instructions), **10 slide chuyển ra khỏi luồng dạy** (ba hướng đi, bốn stage, working file, series map, chia sẻ hub) (27 slide method reference đã bỏ khỏi deck ngày 2026-10-24: mỗi method đã có method card riêng ở `assets/method-cards/`, bản cũ nằm trong `_archive`). Trên lớp chỉ có ice breaker và một activity (đoán trước, rồi để AI phân loại, kèm viết data rules); ở nhà chỉ có một bài tập (dựng project folder).
+- Arc: **Ice breaker** (2, tính cả cover) → **T1 Tương lai của nghề** (6: divider, số liệu, áp lực, ba hướng đi, lập trường partner, dòng một câu) → **T2 Quy trình thiết kế có AI** (8: divider, stage map, AI giúp được ở đâu, AI làm tốt và còn yếu, nút thắt, hai statement, ba câu hỏi) → **T3 Một task làm hai lần và bốn khái niệm** (5) → **T4 Agent và đội AI** (4: divider, agent, đội AI, đội cần gì) → **T5 Project folder và Knowledge Hub** (2) → **T6 Data safety** (2) → **Activity** (2: milestone và năm đoạn trích) → **Hỏi đáp, bài tập về nhà, lời kết, kết thúc** (4).
 - Khớp với brief và lesson mục 7.1. Slide 1–2 = ice breaker (6 phút). Slide 3–8 = T1 (5 phút). Slide 9–16 = T2 (10). Slide 17–21 = T3 (10). Slide 22–25 = T4 (10). Slide 26–27 = T5 (5). Slide 28–29 = T6 (4). Slide 30–31 = Activity (18). Slide 32 = hỏi đáp (8). Slide 33–35 = bài tập về nhà, lời kết, kết thúc (6). Homework reference = slide 36–38. Terms reference = slide 39. Slide chuyển ra khỏi luồng = slide 40–49.
 - Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE` (`Num:` = số phút): ice breaker = 6, Activity = 18; slide tham khảo bài tập về nhà ghi 45. Tổng: ice breaker 6, theory 44, Activity 18, hỏi đáp 8, kết thúc 6 = 82 phút, buffer 8 phút. Theory chia: T1 5, T2 10, T3 10, T4 10, T5 5, T6 4. Mỗi phần kết thúc bằng một câu A/B 30 giây bằng chat; câu nằm trong speaker notes của slide cuối mỗi phần (T1 ở "Three paths", T2 ở "AI helps, you do", T3 ở "Hallucination", T4 ở "What the team needs", T5 ở "The Knowledge Hub", T6 ở "Three kinds of material").
 - Thứ tự cắt khi quá giờ: slide "Three questions" (ba câu hỏi), rồi phần ví dụ từng agent ở slide "Your AI team", rồi rút hỏi đáp còn 4 phút, rồi rút ice breaker còn 5 phút; T6 và Activity không bao giờ bị cắt. Các method, các stage và các thuật ngữ còn lại nằm trong pre-read brief, method card và Appendix, nên deck không có slide nào đọc định nghĩa thành tiếng.
@@ -69,7 +69,7 @@ last_synced: 2026-10-23
   - Mọi lesson sau đều dùng những thứ này, nên mình cài đặt một lần ngay từ đầu
   - Nêu lập trường của cả series: designer cùng định nghĩa requirement với product và business
   - Nói rõ lớp ưu tiên designer; nếu có PO, PM hoặc BA thì các bạn học cùng một workflow, không cần build prototype từ đầu
-  - Sau phần chào là ice breaker sáu phút. Nói rõ format: hai buổi 90 phút mỗi tuần, 12 buổi trong sáu tuần, gồm chín buổi học nội dung và ba buổi Check point làm việc trên case của chính bạn; bài tập về nhà chỉ làm tiếp phần đã bắt đầu, tối đa 45 phút. Buổi hôm nay có bài tập dựng case folder ở nhà
+  - Sau phần chào là ice breaker sáu phút. Nói rõ format: hai buổi 90 phút mỗi tuần, 12 buổi trong sáu tuần, gồm chín buổi học nội dung và ba buổi Check point làm việc trên case của chính bạn; bài tập về nhà chỉ làm tiếp phần đã bắt đầu, tối đa 45 phút. Buổi hôm nay có bài tập dựng project folder ở nhà
 - 🎨 Visual hint: Cover layout, cố định. Panel trái trắng với dòng năm, nhãn stage, title (accent ở dòng 2) và subtitle. Panel phải là ảnh thật với gradient tối, tên và ba dòng credentials ở góc dưới trái.
 
 ---
@@ -514,10 +514,10 @@ last_synced: 2026-10-23
 - Speaker notes:
   - Chiếu sơ đồ, đi qua từng phase khoảng 40 giây; mỗi agent là một instruction, một input riêng và một output ghi vào design memory
   - Ví dụ với Kitchen Crate: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding
-  - Design memory là một record dùng chung cho cả tám agent; hôm nay nó chính là case folder và hub (slide kế tiếp và T5)
+  - Design memory là một record dùng chung cho cả tám agent; hôm nay nó chính là project folder và hub (slide kế tiếp và T5)
   - **Designer duyệt ở mỗi mũi tên REVIEW**; không có agent nào duyệt thay, vì một agent duyệt cũng có thể sai
   - Hai vai không giao cho AI: người dùng thật và người phía product và business
-  - Nói thật về hiện trạng: toolkit hiện có step card cho agent 01 và 03; sáu agent còn lại mới có template tài liệu, card được dựng ở các buổi sau
+  - Nói thật về hiện trạng: toolkit hiện có step card cho agent 01 đến 06; hai agent còn lại (07 và 08) mới có template tài liệu, card được dựng ở các buổi sau
   - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc; sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX) nhưng tên và phạm vi agent là của chương trình; chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design `[to confirm]`
   - Bốn phút cho slide này
 - 🎨 Visual hint: SCHEMATIC. Một ảnh, gần full bleed: sơ đồ bốn phase, mỗi phase một khung hai agent, design memory ở dưới, vòng Next round; agent Framing được nhấn màu accent. Tệp: `../assets/designer-agents-double-diamond.png` (nguồn HTML: `_system/diagrams/designer-agents-double-diamond.html`).
@@ -536,7 +536,7 @@ last_synced: 2026-10-23
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Nhiều agent hơn không làm đội chạy tốt hơn; nối lại ba câu hỏi trước khi automate, một workflow chưa ổn chạy nhanh hơn thì lỗi cũng đến nhanh hơn
-  - Mỗi thứ chỉ cần hiểu bằng một dòng ở đây; cả bốn hiện ra thành file và folder thật ở slide kế tiếp (context pack là các file `context-*`, step card nằm trong `tools/`, quy tắc chung là `AGENTS.md`)
+  - Mỗi thứ chỉ cần hiểu bằng một dòng ở đây; cả bốn hiện ra thành file và folder thật ở slide kế tiếp (context pack là folder `context/`, step card nằm trong `toolkit/skills/`, quy tắc chung là `AGENTS.md`)
   - Hôm nay chưa cần agent: bài tập về nhà dựng nền, buổi 7 mới giao việc cho đội
   - Cách setup trong một câu: một AI coding tool mở cả folder, mỗi agent là một step card, flow là đề xuất, duyệt, ghi file rồi qua gate (lesson mục 4.4)
   - **Câu A/B 30 giây:** nếu chỉ giao được một agent cho AI, bạn chọn desk research agent hay prototype agent?
@@ -546,26 +546,26 @@ last_synced: 2026-10-23
 
 ---
 
-## 5. Case folder and Knowledge Hub (T5)
+## 5. Project folder and Knowledge Hub (T5)
 
 ---
 
-### DIAGRAM · The case folder
+### DIAGRAM · The project folder
 - Kicker: One plain local folder
-- Title: The case\n*folder*
-- On-slide: Bốn chỗ cần nhớ: AGENTS.md, learnings, tools, hub
+- Title: The project\n*folder*
+- On-slide: Bốn chỗ cần nhớ: AGENTS.md, context, work, insights
 - Ví dụ: Không cần. Slide chỉ ra bốn chỗ trong cấu trúc folder; phần thực hành là bài tập về nhà.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Folder local nằm trên máy của bạn, không phải file design trên server hay tài liệu cloud
   - AI coding tool mở cả folder làm project của nó và đọc mọi thứ bên trong; folder đồng bộ cloud có thể gặp lỗi giữa chừng khi đang ghi
-  - Đi qua cây folder: trang chủ `index.html` của hub (bấm đúp là mở bằng trình duyệt), file luật `AGENTS.md` và context pack trước, rồi folder `learnings/` với file làm việc đặt tên theo giai đoạn
-  - `AGENTS.md` là file tool tự đọc khi mở folder, nên các quy tắc không phụ thuộc vào việc bạn nhớ dán lại; `tools/` (step card) ghi rõ mỗi bước ai làm, đọc file nào, ghi vào đâu
+  - Đi qua cây folder: trang chủ `index.html` của hub (bấm đúp là mở bằng trình duyệt), file luật `AGENTS.md` và folder `context/` trước, rồi `work/` (những gì làm ra) và `insights/` (những gì học được, các decision)
+  - `AGENTS.md` là file tool tự đọc khi mở folder, nên các quy tắc không phụ thuộc vào việc bạn nhớ dán lại; step card nằm ở `toolkit/skills/` (gốc workspace, dùng chung cho mọi project) và ghi rõ mỗi bước ai làm, đọc file nào, ghi vào đâu
   - Dữ liệu gốc nằm trong `_raw-private/`, không lên GitHub; AI chỉ đọc bản đã ẩn danh trong `anonymised/`. Ghi chú riêng nằm trong `_personal/`, ngoài context pack
-  - Ít folder: tiền tố giai đoạn trong tên file giữ đúng thứ tự; một file cho mỗi activity cho mỗi bước AI một input có tên
+  - Mỗi folder một vai: `context/` là thứ đưa vào đầu tiên ở mọi bước, `work/` là những gì làm ra, `insights/` là những gì học được và các decision
   - Layout khác vẫn ổn cho project riêng của bạn; ở đây mình dùng layout này
   - Hai loại file, trong một hơi: Markdown (`.md`) là plain text bạn làm việc trong đó và AI tool xử lý ổn định, hub cũng là Markdown và xem được trên GitHub hoặc VS Code; HTML chỉ còn ở prototype
-  - Hai phút cho slide này; chỉ chỉ ra bốn chỗ: `AGENTS.md`, `learnings/`, `tools/` (step card) và `hub/`; phần còn lại là bài tập về nhà
+  - Hai phút cho slide này; chỉ chỉ ra bốn chỗ: `AGENTS.md`, `context/`, `work/` và `insights/`; phần còn lại là bài tập về nhà
   - Buổi này không dựng folder trên lớp; mọi người dựng ở nhà theo bài tập
 - 🎨 Visual hint: SCHEMATIC. Một cây folder gọn, `AGENTS.md` và folder context được tô purple, folder hub màu ink; `_raw-private` và `_personal` có biểu tượng khoá.
 
@@ -578,7 +578,7 @@ last_synced: 2026-10-23
 - Ví dụ: cần ví dụ: lần ngược một decision về user need và evidence
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Hub là một folder Markdown gồm các page theo tuần và mỗi item một file, liên kết với nhau trong case folder của bạn
+  - Hub là một folder Markdown gồm các page theo tuần và mỗi item một file, liên kết với nhau trong project folder của bạn
   - Báo cáo cuối của series là hub hoàn chỉnh, không phải một tài liệu; mỗi buổi thêm các item và một page
   - Chiếu ba ảnh kết quả có sẵn (overview, work, insights) thay cho demo trực tiếp; ở nhà mọi người mở hub mẫu trong folder của mình
   - Từ mỗi decision, bấm sang tài liệu làm bằng chứng cho nó (phân tích đối thủ, persona, flow, prototype)
@@ -632,7 +632,7 @@ last_synced: 2026-10-23
   - AI coding tool hoặc agent đọc toàn bộ project folder, nên hãy giữ file riêng tư ở chỗ khác
   - Một dòng về connector: nó cho AI đọc thẳng file design hoặc tài liệu của bạn (ví dụ trong công cụ design hoặc ghi chú); **trước khi kết nối, biết nó đọc và sửa được những gì**, và áp data rules như khi dán. Dạy kỹ hơn ở buổi 7
   - Dữ liệu gốc cần ẩn danh nằm trong `_raw-private/`: không lên GitHub, và file luật bảo tool không đọc; đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder
-  - Output của AI có được dùng cho công việc với client hay không, và ai sở hữu nó, tuỳ công ty và quốc gia của bạn; hãy ghi lại trong case log chỗ nào đã dùng AI
+  - Output của AI có được dùng cho công việc với client hay không, và ai sở hữu nó, tuỳ công ty và quốc gia của bạn; hãy ghi lại trong project log chỗ nào đã dùng AI
   - Bạn sẽ viết data rules của riêng mình ở cuối Activity ngay sau phần này; cho đến lúc đó đừng dán tài liệu thật vào AI tool
   - Hai phút
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước ba được tô purple.
@@ -651,7 +651,7 @@ last_synced: 2026-10-23
   - **Bước 1, ba phút, cá nhân:** mỗi người tự xếp năm đoạn trích hư cấu (slide kế tiếp) vào safe, ask first hoặc never in a public tool; **chưa mở AI tool**
   - **Bước 2, sáu phút, cặp hoặc cá nhân:** nhờ AI chat tool xếp cùng năm đoạn theo ba nhóm, rồi so với bản của mình; ghi số đoạn AI xếp khớp
   - **Cái bẫy:** đoạn D, transcript đã thay tên bằng chữ cái nhưng còn vai trò, tuổi và nơi ở; AI thường xếp "an toàn" vì thấy đã bỏ tên. Để học viên tự bắt được; đừng nói trước
-  - **Bước 3, bảy phút, cá nhân:** viết ba dòng vào `context-data-rules.md` cho case của chính mình: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì; chưa biết chính sách công ty thì ghi "cần hỏi" và hỏi trước buổi 2
+  - **Bước 3, bảy phút, cá nhân:** viết ba dòng vào `context/data-rules.md` cho case của chính mình: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì; chưa biết chính sách công ty thì ghi "cần hỏi" và hỏi trước buổi 2
   - Ai dùng case card của khoá thì viết cho case card, và viết lại cho case thật sau; chưa dán tài liệu thật vào AI tool
   - **Bước 4, hai phút, cả lớp:** mỗi người nói một con số "AI xếp đúng X trên 5"
   - Hỏi lớp: "Nếu file này lọt ra ngoài, ai sẽ biết?"
@@ -703,19 +703,19 @@ last_synced: 2026-10-23
 - Kicker: Before the next lesson
 - Title: Your folder,\n*your first hub*
 - On-slide:
-  - Một bài tập: dựng case folder của bạn (khoảng 45 phút)
+  - Một bài tập: dựng project folder của bạn (khoảng 45 phút)
   - Lấy folder từ template, viết product-and-users, mở hub, chạy một instruction
   - Cuối cùng: hai dòng về hướng của bạn
 - Ví dụ: có (instruction "năm điều AI cần biết mà file không có", chạy trên file đã lưu)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Chỉ một bài tập, khoảng bốn mươi lăm phút; ba phút rưỡi cho slide này, và chiếu luôn slide tham khảo "Five steps" ở Appendix vì đây là lần duy nhất học viên thấy đủ năm bước; xong trước buổi 2 vì các buổi sau làm trên chính folder này
-  - Năm bước nằm ở phần Homework reference sau slide END: lấy folder `my-case`, viết product-and-users, mở hub, chạy một instruction với file đã lưu, rồi ghi hai đến ba dòng vào `_personal/my-direction.md`
+  - Năm bước nằm ở phần Homework reference sau slide END: tạo project từ `my-project`, viết product-and-users, mở hub, chạy một instruction với file đã lưu, rồi ghi hai đến ba dòng vào `_personal/my-direction.md`
   - `my-direction.md`: hướng nghiêng về trong ba hướng đi, lý do, một kỹ năng muốn xây; file xem lại ở buổi 12
   - **Chưa dán tài liệu thật của case vào AI tool trước khi viết data rules**; ai chưa viết xong Activity thì dùng case card để thử
   - Nếu case không thể mang vào AI tool, dùng case card của khoá
   - Đây là folder dự án của bạn, không phải bài nộp; nhắc tải workspace template (ZIP) trước nếu chưa có
-- 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Dựng case folder" kèm ba dòng ngắn bên dưới.
+- 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Dựng project folder" kèm ba dòng ngắn bên dưới.
 
 ---
 
@@ -744,7 +744,7 @@ last_synced: 2026-10-23
 - Speaker notes:
   - Nhắc họ gửi cây folder và file product để nhận feedback sau khi làm xong bước 2 của bài tập (product-and-users)
   - Mời đặt câu hỏi
-  - Ở lại với ai muốn được giúp về case folder
+  - Ở lại với ai muốn được giúp về project folder
 - 🎨 Visual hint: End layout, cố định. Nền paper-deeper nhạt, kicker, title lớn in nghiêng, chữ ký và hàng liên hệ.
 
 ---
@@ -909,10 +909,10 @@ last_synced: 2026-10-23
 - Title: Your hub is\n*yours to share*
 - On-slide: Private: file HTML hoặc PDF, file nén, hoặc mời vào repo private. Public: chỉ khi cả case được phép chia sẻ.
 - Speaker notes:
-  - **Hub mặc định là private**: nó nằm trong case folder của bạn và không ai thấy trừ khi bạn gửi
-  - Để cho stakeholder xem, chạy script `tools/export-hub.py` để ra một file HTML mở được bằng trình duyệt, hoặc export các page chính ra PDF; hoặc gửi file nén của cả case folder, vì các page hub link ra ngoài folder `hub/`
+  - **Hub mặc định là private**: nó nằm trong project folder của bạn và không ai thấy trừ khi bạn gửi
+  - Để cho stakeholder xem, chạy script `toolkit/skills/export-hub.py` để ra một file HTML mở được bằng trình duyệt, hoặc export các page chính ra PDF; hoặc gửi file nén của cả project folder, vì các page hub link sang nhiều folder
   - Muốn một người xem trực tiếp, mời họ vào repository private trên GitHub
-  - Chỉ khi toàn bộ case được phép chia sẻ (case của khoá, hoặc bản đã làm sạch từ công việc của bạn) mới công khai cả case folder trong một repository public mới; GitHub hiển thị Markdown nên không cần dựng website; guide và homework tuỳ chọn có hướng dẫn
+  - Chỉ khi toàn bộ case được phép chia sẻ (case của khoá, hoặc bản đã làm sạch từ công việc của bạn) mới công khai cả project folder trong một repository public mới; GitHub hiển thị Markdown nên không cần dựng website; guide và homework tuỳ chọn có hướng dẫn
   - **Nếu bạn công khai, bạn là người host và chịu trách nhiệm**; công việc thật được giữ private
 - 🎨 Visual hint: SCHEMATIC. Hai cột. Trái, "Private (mặc định)": một folder có khoá, mũi tên tới một PDF, một file nén và một người được mời. Phải, "Public (tuỳ chọn)": một bản case đã làm sạch, mũi tên "upload" vào một repository public mới.
 
@@ -924,16 +924,16 @@ last_synced: 2026-10-23
 
 ---
 
-### MILESTONE · Homework, build your case folder
+### MILESTONE · Homework, build your project folder
 - Num: 45
 - Kicker: At home
-- Title: Build your\ncase folder
+- Title: Build your\nproject folder
 - Sub: Folder. File context. Hub mẫu. Một instruction.
 - Speaker notes:
   - Slide tham khảo của bài tập về nhà (khoảng bốn mươi lăm phút), không chiếu trên lớp; năm bước ở slide kế tiếp
   - Ai mà công ty cấm AI tool, hoặc case quá nhạy cảm, dùng case card của khoá cho bước bốn
   - **Ai gõ lại tóm tắt project từ trí nhớ: chỉ họ về file**
-  - Ai thấy bảng và link hiển thị thô: mở cả folder case trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
+  - Ai thấy bảng và link hiển thị thô: mở cả folder project trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
@@ -942,15 +942,15 @@ last_synced: 2026-10-23
 - Kicker: Homework
 - Title: Build, write,\n*add, test, note*
 - On-slide:
-  - 01 · Lấy case folder từ template và đặt tên
+  - 01 · Lấy project folder từ template và đặt tên
   - 02 · Viết product-and-users
   - 03 · Mở hub và đọc AGENTS.md
   - 04 · Chạy một instruction với một file đã lưu
   - 05 · Viết hai dòng vào my-direction.md
 - Speaker notes:
-  - 01: năm phút, lấy folder `my-case` từ template, đổi tên theo case và đối chiếu với layout chuẩn
+  - 01: năm phút, tải template, nhờ AI tool tạo project bằng `new-project.py` và đối chiếu với layout chuẩn
   - 02: mười phút, product-and-users đã ẩn danh, cộng với data-rules từ Activity
-  - 03: năm phút, mở cả folder case bằng công cụ quen thuộc (AI coding tool, VS Code hoặc Obsidian), mở `hub/README.md` để thấy dữ liệu mẫu và đọc `AGENTS.md`; chưa chỉnh gì
+  - 03: năm phút, mở cả folder project bằng công cụ quen thuộc (AI coding tool, VS Code hoặc Obsidian), mở `README.md` và `index.html` để thấy báo cáo mẫu, rồi đọc `AGENTS.md`; chưa chỉnh gì
   - 04: hai mươi phút, đính kèm file product, hỏi còn thiếu gì, rồi đọc câu trả lời có phản biện
   - 05: năm phút, hai đến ba dòng vào `_personal/my-direction.md`: hướng nghiêng về, lý do, một kỹ năng muốn xây
   - Instruction nằm ở slide kế tiếp
@@ -966,7 +966,7 @@ last_synced: 2026-10-23
   - Đính kèm file product-and-users rồi dán instruction; đây là instruction của demo, áp dụng trên case của chính họ
   - Đọc câu trả lời có phản biện: câu nào hữu ích, câu nào chung chung, câu nào bạn tự tìm ra được?
   - **Câu hỏi coaching: "Bạn sẽ sửa gì trước khi dùng nó?"**
-  - Lưu những câu hữu ích vào file `context-open-questions.md` trong `learnings/`
+  - Lưu những câu hữu ích vào file `context/open-questions.md`
   - Nếu ai nhận được câu trả lời bịa, đó chính là demo hallucination trên công việc của họ
 - 🎨 Visual hint: TYPOGRAPHIC. Title lớn; instruction nằm trong một card nhạt, font monospace.
 
@@ -990,6 +990,6 @@ last_synced: 2026-10-23
 - Speaker notes:
   - Connector giống một cái USB: cắm giữa file design và AI tool để AI đọc được thứ bạn đang làm
   - **Trước khi kết nối, xác định nó đọc và sửa được những gì**, và áp data rules như khi dán
-  - Reusable instructions gồm skills, file luật của project và project memory; `AGENTS.md` trong case folder là ví dụ đầu tiên
+  - Reusable instructions gồm skills, file luật của project và project memory; `AGENTS.md` trong project folder là ví dụ đầu tiên
   - Dạy sâu ở buổi 7
 - 🎨 Visual hint: SCHEMATIC. Trái: một file design nối bằng đầu cắm USB tới một khung AI tool. Phải: một file `AGENTS.md` có mũi tên tới nhiều cuộc hội thoại.

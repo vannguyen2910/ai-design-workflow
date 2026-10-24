@@ -467,7 +467,7 @@ Gợi ý, chưa đưa vào lesson nào.
 - [ ] Quyết định **cách publish trên hub**: site hiện chỉ render file `.md` trong `SUMMARY.md`, nên file `.html` cần thêm cơ chế (copy sang `docs/assets` và gắn link tải).
 - [ ] Đưa nội dung vào lesson file và slide outline của Lesson 2, theo quy tắc sync.
 - [ ] Quyết định có **đổi quote ID `I01-01` thành `P1-01`** trong flow, course case và workspace template hay không (khoảng 60 chỗ). Hiện hai loại mã cùng tồn tại: P1 cho người, I01-01 cho quote.
-- [ ] Dựng lại `index.html` của `my-case` và `demo-case` trong workspace template để bảng gate trong báo cáo có đủ 7 check.
+- [ ] Dựng lại `index.html` của `my-project` và `demo-project` trong workspace template để bảng gate trong báo cáo có đủ 7 check.
 - [ ] Đưa thông báo mẫu ở mục 6 vào facilitator page hoặc một handout ngắn, để học viên dùng ngay đầu buổi phỏng vấn.
 - [ ] Làm bốn **template** ở `desk-research-competitor-practice.md` thành file dùng được (brief, sổ nguồn, bảng bằng chứng, bảng nhận định) trong `assets/templates/`, và đồng bộ với `examples/competitor-analysis/` và hai method card (`desk-research.md`, `competitor-analysis.md`).
 - [ ] **Chạy thử Practice A và B** trên một case thật, đo thời gian từng bước và tỷ lệ ô sai ở bước kiểm tra; điều chỉnh số ảnh mỗi lượt và tỷ lệ mẫu kiểm tra.
