@@ -60,7 +60,7 @@ Làm theo thứ tự. Chưa việc nào khác cần chú ý.
 | Topic | Decision |
 |---|---|
 | Positioning | Design is a **partner** that defines the requirement with product and business, starting from the business question. A brief from product is a good starting point, not something to fix. |
-| Lesson format | Mỗi lesson có **ice breaker** (5 đến 7 phút), theory, **một activity ngắn trên lớp** và hỏi đáp. Phần luyện tập dài nằm ở **bài tập về nhà** (một bài, khoảng 45 phút) và **Check point**. Lệch có chủ ý khỏi Rule LP-3 (practice tối thiểu 30 phút liên tục) cho chương trình này. Quyết định 2026-10-22. |
+| Lesson format | Mỗi lesson có **ice breaker** (5 đến 7 phút), theory, **một activity ngắn trên lớp** và hỏi đáp. Phần luyện tập dài nằm ở **bài tập về nhà** (một bài, khoảng 45 phút) và **Check point**. Lệch có chủ ý khỏi Rule LP-3 (practice tối thiểu 30 phút liên tục) cho chương trình này. Quyết định 2026-10-22. **Buổi 1 là ngoại lệ (2026-10-23):** theory 44 phút thay vì tối đa 40, để có chỗ cho agent và đội AI (10 phút) và Knowledge Hub (5 phút) ở buổi đầu tiên; tổng 82 phút, buffer 8. |
 | Check point rule | Check point (buổi 5, 9, 12) không có nội dung mới. Học viên làm việc trên case của mình, có coaching theo nhóm nhỏ và review chéo. Thay cho quy tắc Session A/B của bản 14 session, 2026-10-22. |
 | Language | Never cast PO, PM or BA as an obstacle or the side that "hands down" requirements. Say "product and business". Having little access to product is a situation, not a fault. |
 | Main outcome | Run a repeatable AI workflow. Not prompt tips, not tools. |
