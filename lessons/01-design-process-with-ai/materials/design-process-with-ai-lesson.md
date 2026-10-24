@@ -285,7 +285,7 @@ Hai vai không giao cho AI: người dùng thật và người phía product và
 
 Flow của một bước: designer ra lệnh, tool đọc step card và context, tool đề xuất, designer duyệt, tool ghi file, designer kiểm tra theo gate, rồi mới sang bước tiếp. Mũi tên REVIEW trong sơ đồ chính là gate này.
 
-*Hiện trạng của toolkit (kiểm tra 2026-10-24):* có step card cho competitor analysis (agent 01), interview (agent 02), user-voice synthesis và add insights (agent 03), framing (agent 04), ideation (agent 05), prototype (agent 06), cùng các card hạ tầng (new item, refresh hub, export hub, add media, build process map). Với agent 07 và 08, toolkit mới có template tài liệu (test report, measurement plan) chứ chưa có step card. Các card còn thiếu được dựng ở các buổi tương ứng.
+*Hiện trạng của toolkit (kiểm tra 2026-10-24):* có step card cho competitor analysis (agent 01), interview (agent 02), user-voice synthesis và add insights (agent 03), framing (agent 04), ideation (agent 05), prototype (agent 06), test (agent 07), handoff (agent 08), cùng các card hạ tầng (new item, refresh hub, export hub, add media, build process map). Cả tám card đều là bản nháp, chưa được thử với một lớp thật; mỗi card được chỉnh sau lần chạy đầu ở buổi tương ứng.
 
 **Giới hạn.** Cách chia vai ở trên là phương pháp của chương trình, không phải kết quả nghiên cứu; chưa có nguồn nào đo hiệu quả của một đội agent trong công việc design [to confirm].
 

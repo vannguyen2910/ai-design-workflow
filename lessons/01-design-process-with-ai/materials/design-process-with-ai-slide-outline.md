@@ -517,7 +517,7 @@ last_synced: 2026-10-23
   - Design memory là một record dùng chung cho cả tám agent; hôm nay nó chính là project folder và hub (slide kế tiếp và T5)
   - **Designer duyệt ở mỗi mũi tên REVIEW**; không có agent nào duyệt thay, vì một agent duyệt cũng có thể sai
   - Hai vai không giao cho AI: người dùng thật và người phía product và business
-  - Nói thật về hiện trạng: toolkit hiện có step card cho agent 01 đến 06; hai agent còn lại (07 và 08) mới có template tài liệu, card được dựng ở các buổi sau
+  - Nói thật về hiện trạng: toolkit hiện có step card cho cả tám agent, nhưng đều là bản nháp chưa thử với lớp thật; mỗi card được chỉnh sau lần chạy đầu ở buổi tương ứng
   - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc; sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX) nhưng tên và phạm vi agent là của chương trình; chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design `[to confirm]`
   - Bốn phút cho slide này
 - 🎨 Visual hint: SCHEMATIC. Một ảnh, gần full bleed: sơ đồ bốn phase, mỗi phase một khung hai agent, design memory ở dưới, vòng Next round; agent Framing được nhấn màu accent. Tệp: `../assets/designer-agents-double-diamond.png` (nguồn HTML: `_system/diagrams/designer-agents-double-diamond.html`).
