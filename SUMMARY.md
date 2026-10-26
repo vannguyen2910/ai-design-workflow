@@ -6,16 +6,19 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 ## About
 
 - [Giới thiệu chương trình](introduction.md)
+- [Lộ trình 6 tuần](assets/diagrams/ai-design-workflow-six-weeks.html)
 
 ## Examples
 
-- [Example: Competitor Analysis](examples/competitor-analysis/README.md)
-- [Example: User Flow and Process Map with AI](examples/user-flow-process-map/README.md)
-- [Example: User-Voice Synthesis](examples/user-voice-synthesis/README.md)
+- [Outcome Examples](examples/outcome-examples/README.md)
+- [GitHub, Create to Publish](assets/diagrams/github-create-build-push-publish.html)
 
 <!--
 Not shown. Move a line above the comment to publish it.
 
+- [Example: Competitor Analysis](examples/competitor-analysis/README.md)
+- [Example: User Flow and Process Map with AI](examples/user-flow-process-map/README.md)
+- [Example: User-Voice Synthesis](examples/user-voice-synthesis/README.md)
 - [Mẫu giọng tiếng Việt (đã được Winnie duyệt 2026-10-06, dùng làm chuẩn)](learning/voice-sample-vi.md)
 - [Asset Sources and Credits](assets/SOURCES.md)
 - [Method card](assets/method-cards/README.md)

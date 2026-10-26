@@ -1,6 +1,10 @@
-# AI Design Workflow (program)
+---
+description: "Chương trình 12 buổi trong 6 tuần cho designer mid và senior: một case, một workflow AI dùng lại được, một Knowledge Hub."
+---
 
-Chương trình 12 buổi trong 6 tuần (mỗi tuần hai buổi 90 phút; 9 buổi học nội dung và 3 buổi Check point ở buổi 5, 9, 12) dành cho designer mid và senior: một case, một workflow AI lặp lại được, một Knowledge Hub dựng dần theo từng trang. Lộ trình đi theo trang Notion "AI Design Workflow cho Product Designer". Đọc `plan.md` trước.
+# AI Design Workflow
+
+Chương trình 12 buổi trong 6 tuần dành cho designer mid và senior. Mỗi tuần hai buổi 90 phút: một buổi theory rồi một buổi practice. Tuần 6 kết bằng một ngày test và buổi reflection và wrap-up. Học viên làm một case, một workflow AI dùng lại được, và một Knowledge Hub dựng dần theo từng trang. Không còn Check point. Đọc `learning/plan.md` trước, vì đây là nguồn chuẩn cho cấu trúc.
 
 **Program và lesson cùng nằm trong thư mục này** (từ 2026-10-23, trước đó lesson nằm ở `library/lessons/ai-design-workflow/`):
 - **Program**: kế hoạch, research, method, pitch deck, tài nguyên dùng chung.
@@ -14,12 +18,12 @@ programs/ai-design-workflow/                  (thư mục này)
   plan.md                kế hoạch một trang: trọng tâm, lịch, quyết định chính (đọc trước)
   research.md  method.md  quality-and-measurement.md
   pitch-deck-plan.md                             kế hoạch pitch deck
-  lesson-details.md         learning objective, activity và output của từng lesson (có mục workflow lab tuỳ chọn)
+  lesson-details.md         learning objective, activity và output của từng lesson (còn lesson cũ, chưa gộp theo 6 lesson)
   workflow-design-log.md quyết định thiết kế và các sự cố của workspace phía sau khoá, cho giảng viên và pitch
   voice-sample-vi.md        bản thử giọng tiếng Việt
   assets/                   starter-files, hub và doc template, diagram, ảnh tham khảo
     method-cards/           card tham khảo cho từng design method, theo stage
-    templates/workflow-kit/ bộ mẫu cho buổi tuỳ chọn "Build your own AI workflow" (step card, luật cho AI tool, propose first…)
+    templates/workflow-kit/ bộ mẫu workflow (step card, luật cho AI tool, propose first…); không dùng trong lớp
   workspace-template/       repo mẫu cho học viên (GitHub: ai-product-workflow): my-project (trống), demo-project (Travel Buddy), toolkit/
   examples/                 ví dụ làm sẵn (step card)
   _archive/                 bản nháp đã thay thế
@@ -35,34 +39,28 @@ programs/ai-design-workflow/                  (thư mục này)
 
 Quy ước:
 - **File chỉ dùng cho một lesson** để trong `assets/` của lesson. **File dùng cho từ hai lesson trở lên** (starter file, hub template, diagram) để trong `assets/` của program.
-- **Thư mục lesson có tiền tố là số buổi**, ví dụ `02-discover-the-problem`, để biết thứ tự khi mở thư mục. Số buổi theo Notion: các buổi 5, 9, 12 là Check point nên không có thư mục lesson; `test-with-real-users` là buổi 10. Slug và URL của site không có số (`discover-the-problem`) vì `build-home.py` bỏ tiền tố; tên file vẫn là `<slug>-lesson.md`, không đánh số.
+- **Thư mục lesson có tiền tố là số lesson** (01 đến 06), ví dụ `02-discover-the-problem`, để biết thứ tự khi mở thư mục. Số lesson khác số buổi: lesson 2 là buổi 3 trong dãy 12 buổi. Buổi practice không có thư mục lesson hay deck riêng. Slug và URL của site không có số (`discover-the-problem`) vì `build-home.py` bỏ tiền tố; tên file vẫn là `<slug>-lesson.md`, không đánh số.
 - File chính phải là `<slug>-lesson.md`. Lesson và slide outline luôn sync với nhau (xem `CLAUDE.md` ở thư mục gốc).
 - Các đường dẫn tới lesson trong file của program (ví dụ `design-process-with-ai/materials/`) tính từ `programs/ai-design-workflow/lessons/`.
 
 ## Lessons
 
-Mỗi buổi nội dung là một lesson. Ba Check point (buổi 5, 9, 12) không có lesson hay deck riêng; Check point là buổi làm việc trên case của học viên (xem `plan.md`).
+Mỗi buổi theory là một lesson. Buổi practice đi liền sau mỗi lesson, không có lesson hay deck riêng (xem `learning/plan.md`).
 
-| Tuần | Buổi | Slug | Nội dung | Trạng thái |
+| Tuần | Lesson (buổi) | Slug | Nội dung | Trạng thái |
 |---|---|---|---|---|
-| 1 | 1 | [`design-process-with-ai`](lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md) | Your design process, with AI (tương lai nghề và ba hướng đi, bốn stage, bốn khái niệm AI cốt lõi, data safety, case folder) | 🚧 Draft (đang dành cho 2 buổi, cần gộp thành 1) |
-| 1 | 2 | [`discover-the-problem`](lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md) | Discover the problem (business question, trao đổi với PO và business, success metric và baseline, scope chung, heuristic evaluation) | 🚧 Draft |
-| 2 | 3 | [`research-you-can-trust`](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md) | Turn research into insights you can trust (competitor, desk research, user-voice synthesis, kiểm theme về quote gốc) | 🚧 Draft |
-| 2 | 4 | `frame-the-problem` | Frame the problem worth solving (opportunity, principle check, hypothesis, Goals/Signals/Metrics) | ⬜ Planned |
-| 3 | 5 | không có | **Check point 1**: chạy Discover đến Define, ra problem brief | ⬜ Planned |
-| 3 | 6 | `explore-ideas` | Explore ideas and pick a direction (ba hướng, chọn hướng, user flow, nội dung) | ⬜ Planned |
-| 4 | 7 | `build-your-first-prototype` | Build your first prototype (pattern-first, design system notes, rules file; điểm "Win to market" của khoá) | ⬜ Planned |
-| 4 | 8 | `refine-and-check` | Refine and check your design (state, edge case, responsive, kiểm tra AI với design system và accessibility) | ⬜ Planned |
-| 5 | 9 | không có | **Check point 2**: Build AI Prototype, dựng prototype main flow trên case của từng người | ⬜ Planned |
-| 5 | 10 | `test-with-real-users` | Test with real users (test plan, usability test, peer test, SUS, sửa finding) | ⬜ Planned |
-| 6 | 11 | `hand-off-and-measure` | Hand off and measure success (handoff pack, measurement plan, số đếm về workflow) | ⬜ Planned |
-| 6 | 12 | không có | **Check point 3**: trình bày case, hoàn thiện Knowledge Hub | ⬜ Planned |
+| 1 | 1 (buổi 1) | [`design-process-with-ai`](lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md) | Your design process, with AI (tương lai nghề và ba hướng đi, bốn stage, bốn khái niệm AI cốt lõi, data safety) | 🚧 Draft |
+| 2 | 2 (buổi 3) | [`discover-the-problem`](lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md) | Discover the problem (Design Principles, break the brief, hiểu người dùng, package thành agent và hub) | 🚧 Draft (viết lại 2026-10-26) |
+| 3 | 3 (buổi 5) | [`research-you-can-trust`](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md) | Insights you can trust (synthesis, persona, journey map, opportunity, mỗi dòng dẫn về quote có ID) | 🚧 Draft (cần sửa theo cấu trúc mới) |
+| 4 | 4 (buổi 7) | `explore-ideas` | Explore ideas (hypothesis, How might we, sketch giấy rồi AI, chọn hướng bằng principle check) | ⬜ Planned |
+| 5 | 5 (buổi 9) | `ai-prototyping` | AI prototyping (design system, pattern, template, rules file; prototype sẵn sàng test, có thể là final design) | ⬜ Planned |
+| 6 | 6 (buổi 11) | `test-with-real-users` | Test with real users (metrics, test plan, phân tích kết quả, SUS, sửa finding) | ⬜ Planned |
 
-Slug của buổi 2 đến 11 lấy từ `lesson-details.md` (đã bỏ slug gộp `refine-and-test` và `hand-off-and-present` của bản 7 module). Chi tiết từng lesson nằm trong `lesson-details.md`, chưa đồng bộ với 12 buổi. Thư mục chỉ được tạo khi bắt đầu lesson, không tạo trước: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
+Tuần 6 còn một buổi test trong một ngày và buổi 12 reflection và wrap-up, đều không có lesson riêng. Chi tiết từng lesson nằm trong `learning/lesson-details.md` (còn lesson 4 đến 11 cũ, chưa gộp theo bảng trên). Thư mục chỉ được tạo khi bắt đầu lesson, không tạo trước: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
 
 ## Thêm một lesson
 
-1. `mkdir -p programs/ai-design-workflow/lessons/<NN>-<slug>/{materials,slides,assets,_archive}` (NN là số buổi, hai chữ số)
+1. `mkdir -p programs/ai-design-workflow/lessons/<NN>-<slug>/{materials,slides,assets,_archive}` (NN là số lesson, hai chữ số)
 2. Copy `_system/learning templates/_template-lesson.md` thành `<slug>/materials/<slug>-lesson.md`; copy `_system/learning templates/_template-slide-outline.md` thành `<slug>/materials/<slug>-slide-outline.md`. Đặt `program: ai-design-workflow` và `draft: true` trong front matter.
 3. Cập nhật bảng ở trên và dòng tương ứng trong `library/lessons/README.md`.
 4. Chạy `python3 _system/scripts/build-home.py`.
