@@ -61,7 +61,7 @@ Sau buổi 2, học viên có thể:
 ## Materials Needed
 
 - Case folder từ buổi 1 (`context-product-and-users.md`, `context-data-rules.md`).
-- Case card hư cấu của chương trình (Kitchen Crate) cho phần demo, và cho học viên có case quá nhạy cảm.
+- [Case card](../../../assets/starter-files/course-case/case-card.md) hư cấu của chương trình (Kitchen Crate) cho phần demo, và cho học viên có case quá nhạy cảm.
 - Template `principles.md` (bốn mục: UX principles, business principles, severity, gates).
 - Cheat sheet một màn hình: năm hoạt động Break the brief, ba mức access, thang severity 0 đến 4, các check của Gate 1.
 - Một AI chat tool đã được công ty cho phép.
@@ -109,7 +109,7 @@ Nếu không có chuẩn, AI đối chiếu công việc với "điều nghe h�
 | UX principles | Mười usability heuristic của Nielsen làm nền [1], cộng nguyên tắc riêng của tổ chức nếu có | Có sẵn trong chương trình |
 | Business principles | Ràng buộc và ưu tiên của business mà thiết kế không được vi phạm: mission, brand value, compliance, KPI, guardrail | Từ business hoặc PRD; học viên không tiếp cận được business lấy từ PRD và thông tin công khai, ghi **assumed** |
 | Severity | Thang 0 đến 4 của Nielsen [2]: 0 không phải vấn đề, 1 chỉ là thẩm mỹ, 2 vấn đề nhỏ, 3 vấn đề lớn cần ưu tiên sửa, 4 nghiêm trọng, phải sửa trước khi phát hành | Có sẵn; học viên chấm |
-| Gates | Gate 1 của chương trình (`learning/method.md`, Part 3): các check 1a đến 1g. Buổi 2 dùng 1a (business question và outcome đã agreed hay assumed) và 1f (data rules) | Có sẵn |
+| Gates | Gate 1 của chương trình ([Gates](../../../assets/starter-files/case-folder-template/hub/gates.md)): các check 1a đến 1g. Buổi 2 dùng 1a (business question và outcome đã agreed hay assumed) và 1f (data rules) | Có sẵn |
 
 ### 2.2 Principles first, then AI
 
@@ -184,7 +184,7 @@ Sau đó học viên xếp từng assumption theo mức độ quan trọng so v�
 
 ### 3.6 Competitor analysis
 
-Competitor analysis cho thấy đối thủ **làm gì**, không cho thấy người dùng **vì sao** chọn họ. Quy trình rút gọn từ `learning/desk-research-competitor-practice.md`, Practice B: chốt phạm vi (một journey, ba đến năm đối thủ, tối đa sáu tiêu chí), AI mô tả ảnh chụp trước, đánh giá sau, rồi điền bảng bằng chứng với tên file cho mỗi ô; học viên mở ảnh gốc, đối chiếu các ô quan trọng và ghi tỷ lệ ô sai. Kết luận là giả thuyết để hỏi trong phỏng vấn, không phải kết luận về người dùng. Buổi 3 giữ phần ghép điều người khác làm với điều user nói và làm.
+Competitor analysis cho thấy đối thủ **làm gì**, không cho thấy người dùng **vì sao** chọn họ. Quy trình rút gọn (xem thêm [method card Competitor analysis](../../../assets/method-cards/01-discover/competitor-analysis.md)): chốt phạm vi (một journey, ba đến năm đối thủ, tối đa sáu tiêu chí), AI mô tả ảnh chụp trước, đánh giá sau, rồi điền bảng bằng chứng với tên file cho mỗi ô; học viên mở ảnh gốc, đối chiếu các ô quan trọng và ghi tỷ lệ ô sai. Kết luận là giả thuyết để hỏi trong phỏng vấn, không phải kết luận về người dùng. Buổi 3 giữ phần ghép điều người khác làm với điều user nói và làm.
 
 ---
 
@@ -266,7 +266,7 @@ Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trư�
 
 ### 7.4 Practice session and homework
 
-**Buổi practice 90 phút** nằm ngay sau buổi này (lịch cố định sau mỗi lesson nội dung, Winnie quyết định 2026-10-26). Nội dung buổi practice `[to confirm]`: hoàn thiện `principles.md`, chạy năm hoạt động Break the brief trên case của từng người, lập lịch phỏng vấn peer cho buổi 3. Thiết kế chi tiết nằm ở tài liệu riêng của buổi practice.
+**Buổi practice 90 phút** ([Practice 2](discover-the-problem-practice.md)) nằm ngay sau buổi này (lịch cố định sau mỗi lesson nội dung, Winnie quyết định 2026-10-26). Nội dung buổi practice `[to confirm]`: hoàn thiện `principles.md`, chạy năm hoạt động Break the brief trên case của từng người, lập lịch phỏng vấn peer cho buổi 3. Thiết kế chi tiết nằm ở tài liệu riêng của buổi practice.
 
 **Bài tập về nhà** (chờ Winnie chốt vai trò sau khi có buổi practice): đủ nhỏ để không chồng lên buổi practice. Mặc định tạm: lên lịch 2 đến 3 buổi phỏng vấn ngắn với đồng nghiệp hoặc người dùng để có quote cho buổi 3.
 

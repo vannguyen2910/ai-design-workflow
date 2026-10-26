@@ -84,6 +84,7 @@ Làm theo thứ tự.
 2. Capstone: mỗi người một case (nghiêng về hướng này, chưa chốt hẳn).
 
 **Việc cần làm:**
+- Viết practice P3 đến P6 và thư mục `07-wrap-up` (chỉ có file practice) khi chốt nội dung; P1 và P2 đã có bản nháp. Hub hiện Lesson và Practice trong nhóm `Lessons` của `SUMMARY.md`, không hiện outline.
 - Đổi nhãn "buổi N" thành "lesson N" trong các file lesson và slide outline; gộp lesson 4 đến 11 cũ trong `lesson-details.md`.
 - Sửa các trang còn nhắc Check point, handoff hoặc 9+3 buổi: `README.md`, `introduction.md`, lesson 1, `lesson-details.md`.
 - Kiểm chứng ở Việt Nam: phỏng vấn 5 đến 8 designer hoặc hiring manager (`research.md` Part 3).

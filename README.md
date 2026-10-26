@@ -1,4 +1,7 @@
 ---
+body: false
+lessons_total: 6
+practices_total: 6
 description: "Chương trình 12 buổi trong 6 tuần cho designer mid và senior: một case, một workflow AI dùng lại được, một Knowledge Hub."
 ---
 
