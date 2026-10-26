@@ -38,13 +38,14 @@ Làm theo thứ tự.
 | Tuần | Theory | Practice | Output |
 |---|---|---|---|
 | 1 | **Your Design Process, with AI**: nghề đang đi đâu, AI trong Double Diamond, data safety | Dựng case folder, data rules, hub | Case folder, hub |
-| 2 | **Discover the Problem**: principles, break the brief, hiểu người dùng | `principles.md` và năm file Break the brief; lên lịch phỏng vấn | Scope, `ux-audit`, `assumption`, `competitor-analysis` |
+| 2 | **Discover the Problem**: principles, break the brief, hiểu người dùng | `principles.md` và bốn file Break the brief; lên lịch phỏng vấn | Scope, `ux-audit`, `assumption`, `competitor-analysis` |
 | 3 | **Insights You Can Trust**: synthesis, persona, journey map, opportunity (mỗi dòng dẫn về quote có ID) | Phỏng vấn peer, synthesis, persona, journey, opportunity | Evidence pack, **problem brief** |
 | 4 | **Explore Ideas**: hypothesis, How might we, sketch giấy rồi AI, chọn hướng | Hypothesis, ý tưởng, chọn hướng bằng principle check | Hướng đã chọn, flow |
 | 5 | **AI Prototyping**: design system, pattern, template, rules file | Build prototype main flow | Prototype sẵn sàng test, có thể là final design |
 | 6 | **Test with Real Users**: metrics, test plan, phân tích kết quả | Test với peer trong **một ngày**, rồi buổi 12 **reflection và wrap-up** | Prototype đã test, hub đầy đủ |
 
 **Cần nhớ:**
+- Sơ đồ sáu tuần trên hub dựng từ `assets/diagrams/ai-design-workflow-six-weeks.swimlane.json` (không đọc từ file này): đổi kế hoạch thì sửa cả bảng ở đây và file JSON đó.
 - Tuần 4, 5, 6 mỗi buổi theory gộp hai lesson cũ; chỉ giữ khái niệm lõi, phần còn lại thành cheat sheet và được coaching ở practice. Tuần 3 và 6 nặng nhất.
 - Define rải theo mạch: problem brief ở cuối tuần 3, hypothesis đầu tuần 4, metrics ở tuần 6. Không còn lesson handoff và measurement plan (bỏ 2026-10-26).
 - Tên gọi: buổi theory là "lesson" (T1 đến T6), buổi practice là "practice" (P1 đến P6). File lesson hiện còn ghi "buổi N" theo số lesson; đổi khi sửa lần tới.
@@ -61,7 +62,7 @@ Làm theo thứ tự.
 | Vai trò của design | **Partner** của product và business, bắt đầu từ business question. Brief có sẵn là điểm xuất phát, không phải thứ cần sửa. Không gọi PO, PM, BA là rào cản; nói "product and business". |
 | Kết quả chính | Một workflow AI dùng lại được. Không dạy prompt tips hay tool. |
 | Nhịp học | Theory rồi practice mỗi tuần (xem mục 2). Mỗi lesson: ice breaker, theory, activity khoảng 5 phút, hỏi đáp. Luyện tập ở buổi practice. Lesson 1 có theory dài hơn (44 phút). Không có Check point. |
-| Case | Mỗi người một case của chính mình; case card của chương trình là phương án dự phòng. Tài liệu bảo mật được ẩn danh trước. |
+| Case | Mỗi người một case của chính mình; case mẫu của chương trình là phương án dự phòng. Tài liệu bảo mật được ẩn danh trước. |
 | Data safety | Dạy ở buổi 1: ba loại tài liệu (an toàn, hỏi trước, không đưa vào tool công khai), bốn thói quen, học viên tự viết data rules. |
 | Discover | Không role-play: AI không bao giờ đóng PO hay user. Dùng câu hỏi gửi business bằng văn bản và phỏng vấn peer. Principles đặt trước, AI chạy sau. |
 | Access | Ba mức (full, limited, none). Outcome chưa xác nhận ghi là **assumed**. |

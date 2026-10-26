@@ -269,7 +269,7 @@ Quote của người thật là dữ liệu cá nhân. Ẩn danh trước khi d�
 
 | Buổi | Vai trò |
 |---|---|
-| Buổi 2 | `principles.md`, scope, `assumption.md`, `ux-audit.md`, `competitor-analysis.md` (năm hoạt động Break the brief, làm ở buổi practice sau buổi 2); nguồn cho evidence pack |
+| Buổi 2 | `principles.md`, scope, `assumption.md`, `ux-audit.md`, `competitor-analysis.md` (bốn hoạt động Break the brief, làm ở buổi practice sau buổi 2); nguồn cho evidence pack |
 | **Buổi 3 (buổi này)** | Evidence menu, user-voice synthesis, kiểm tra theme về quote |
 | Buổi 4 | Opportunity xếp hạng, principle check, hypothesis, Goals/Signals/Metrics |
 | Buổi 5 (Check point 1) | Chạy Discover đến Define; Gate 1; problem brief |

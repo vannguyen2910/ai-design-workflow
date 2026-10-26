@@ -1,0 +1,255 @@
+{
+  "id": "weeks",
+  "title": "AI Design Workflow in six weeks",
+  "eyebrow": "Swimlane · AI Design Workflow",
+  "subtitle": "Sáu tuần của chương trình: mỗi tuần một hàng với theory, practice và outcome. Bấm một thẻ để xem chi tiết.",
+  "description": "Swimlane with one row per week and three lanes: theory, practice and outcome. Each week leaves outcomes that feed the next week. Selecting a card opens its details.",
+  "lanes": [
+    "THEORY",
+    "PRACTICE",
+    "OUTCOME"
+  ],
+  "focal_label": "Mốc của chương trình",
+  "rows": [
+    {
+      "label": "TUẦN 1",
+      "stage": "NỀN TẢNG",
+      "focal": false,
+      "cells": [
+        {
+          "title": "Your Design Process, with AI",
+          "sub": "Buổi 1 · theory",
+          "details": [
+            "Nghề đang đi đâu và ba hướng đi",
+            "AI giúp được gì ở từng stage",
+            "Bốn khái niệm AI cốt lõi",
+            "Data safety: ba loại tài liệu"
+          ]
+        },
+        {
+          "title": "Dựng case folder và hub",
+          "sub": "Buổi 2 · practice",
+          "details": [
+            "Dựng case folder, viết context sản phẩm",
+            "Viết data rules của riêng mình",
+            "Dựng Knowledge Hub khung",
+            "Chọn hướng nghề của mình"
+          ]
+        },
+        {
+          "title": "Case folder, hub khung",
+          "sub": "context, data rules, hướng nghề",
+          "details": [
+            "context-product-and-users.md",
+            "context-data-rules.md",
+            "my-direction.md",
+            "Knowledge Hub khung"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "TUẦN 2",
+      "stage": "DISCOVER",
+      "focal": true,
+      "cells": [
+        {
+          "title": "Discover the Problem",
+          "sub": "Buổi 3 · theory",
+          "details": [
+            "Discover trong Double Diamond, AI capabilities",
+            "Design Principles: UX, business, severity, gates",
+            "Break the brief: bốn hoạt động",
+            "Understand our users (theory), package, hub"
+          ]
+        },
+        {
+          "title": "Break the brief",
+          "sub": "Buổi 4 · practice",
+          "details": [
+            "Hoàn thiện principles.md",
+            "Research questions",
+            "UX observation, challenge assumptions",
+            "Competitor analysis, lên lịch phỏng vấn peer"
+          ]
+        },
+        {
+          "title": "principles.md + 4 file hub",
+          "sub": "chuẩn để AI đối chiếu",
+          "details": [
+            "principles.md",
+            "research-questions.md, ux-audit.md",
+            "assumption.md, competitor-analysis.md"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "TUẦN 3",
+      "stage": "DISCOVER, DEFINE",
+      "focal": false,
+      "cells": [
+        {
+          "title": "Insights You Can Trust",
+          "sub": "Buổi 5 · theory",
+          "details": [
+            "Synthesis trên quote đã ẩn danh",
+            "Kiểm từng theme về quote gốc",
+            "Persona và journey map, mỗi dòng có quote ID",
+            "Opportunity statement"
+          ]
+        },
+        {
+          "title": "Phỏng vấn, synthesis",
+          "sub": "Buổi 6 · practice",
+          "details": [
+            "Phỏng vấn peer",
+            "Synthesis và kiểm theme",
+            "Persona, journey map có nguồn",
+            "Opportunity, Gate 1, problem brief"
+          ]
+        },
+        {
+          "title": "Evidence + problem brief",
+          "sub": "insight, persona, journey",
+          "details": [
+            "Evidence pack",
+            "Problem brief",
+            "Persona và journey map có nguồn",
+            "Gate 1 đã chạy"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "TUẦN 4",
+      "stage": "DEFINE, DEVELOP",
+      "focal": false,
+      "cells": [
+        {
+          "title": "Explore Ideas",
+          "sub": "Buổi 7 · theory",
+          "details": [
+            "Hypothesis kiểm chứng được",
+            "How might we từ opportunity",
+            "Sketch giấy trước, AI sau",
+            "Chọn hướng bằng principle check"
+          ]
+        },
+        {
+          "title": "Ý tưởng và chọn hướng",
+          "sub": "Buổi 8 · practice",
+          "details": [
+            "Viết hypothesis",
+            "Ba hướng thật sự khác nhau",
+            "Chọn hướng bằng principle check",
+            "Flow và nội dung của hướng đã chọn"
+          ]
+        },
+        {
+          "title": "Hướng đã chọn + flow",
+          "sub": "hypothesis, principle check",
+          "details": [
+            "Hypothesis",
+            "Hướng đã chọn, có lý do",
+            "Flow và nội dung"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "TUẦN 5",
+      "stage": "DEVELOP",
+      "focal": false,
+      "cells": [
+        {
+          "title": "AI Prototyping",
+          "sub": "Buổi 9 · theory",
+          "details": [
+            "Design system notes mà AI coding tool đọc được",
+            "Design pattern và template",
+            "Rules file, prototype pattern-first",
+            "State, edge case, responsive, accessibility"
+          ]
+        },
+        {
+          "title": "Build prototype",
+          "sub": "Buổi 10 · practice",
+          "details": [
+            "Dựng prototype main flow bằng AI coding tool",
+            "Chạy các check với design system, rules file",
+            "Review chéo"
+          ]
+        },
+        {
+          "title": "Prototype sẵn sàng test",
+          "sub": "có thể là final design",
+          "details": [
+            "Prototype main flow chạy được",
+            "Sẵn sàng đem đi test"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "TUẦN 6",
+      "stage": "DEVELOP, DELIVER",
+      "focal": false,
+      "cells": [
+        {
+          "title": "Test with Real Users",
+          "sub": "Buổi 11 · theory",
+          "details": [
+            "Goals, Signals, Metrics từ hypothesis",
+            "Test plan và script (dùng lại tuần 2)",
+            "Consent, câu hỏi trung lập; AI không đóng vai user",
+            "Phân tích kết quả (dùng lại synthesis tuần 3)",
+            "Task success, time on task, errors, SUS"
+          ]
+        },
+        {
+          "title": "Test với peer",
+          "sub": "Một ngày · practice",
+          "details": [
+            "Test với peer trong một ngày",
+            "Sửa finding"
+          ]
+        },
+        {
+          "title": "Prototype đã test",
+          "sub": "finding đã sửa",
+          "details": [
+            "Prototype đã test với người thật",
+            "Finding đã sửa"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "BUỔI 12",
+      "stage": "WRAP-UP",
+      "focal": true,
+      "cells": [
+        null,
+        {
+          "title": "Reflection và wrap-up",
+          "sub": "Buổi 12 · practice",
+          "details": [
+            "Trình bày case cùng evidence, decision, trade-off",
+            "Workflow nào giữ, chỉnh hay bỏ",
+            "Xem lại hướng nghề đã chọn"
+          ]
+        },
+        {
+          "title": "Hub hoàn chỉnh",
+          "sub": "case để portfolio",
+          "details": [
+            "Knowledge Hub hoàn chỉnh",
+            "Case folder đầy đủ",
+            "Một sản phẩm cho portfolio"
+          ]
+        }
+      ]
+    }
+  ]
+}

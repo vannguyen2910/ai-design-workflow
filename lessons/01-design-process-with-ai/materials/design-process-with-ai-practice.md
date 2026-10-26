@@ -14,7 +14,7 @@ Dựng nền mà cả chương trình chạy trên đó: một project folder ch
 ## Before you start
 
 - Bạn đã học [Lesson 1](design-process-with-ai-lesson.md) và có bản đầu của data rules từ activity trên lớp.
-- Case của bạn đã được ẩn danh theo data rules. Nếu công ty không cho dùng AI tool, hoặc case quá nhạy cảm, dùng [case card](../../../assets/starter-files/course-case/case-card.md) của chương trình (Kitchen Crate) cho Step 4.
+- Case của bạn đã được ẩn danh theo data rules. Nếu công ty không cho dùng AI tool, hoặc case quá nhạy cảm, dùng [case mẫu](../../../assets/starter-files/course-case/case-card.md) của chương trình (Kitchen Crate) cho Step 4.
 - Một AI chat tool đã được công ty cho phép, và một công cụ mở folder quen thuộc (AI coding tool, VS Code hoặc Obsidian).
 - Workspace template đã tải về dạng ZIP và đặt ở một folder không đồng bộ cloud.
 
@@ -73,5 +73,5 @@ Còn khoảng 10 phút dự phòng cho phần coaching theo nhóm nhỏ. Thời 
 
 ## If you get stuck
 
-- **Công ty không cho dùng AI tool:** làm Step 4 trên case card của chương trình, và quay lại case thật khi được phép.
+- **Công ty không cho dùng AI tool:** làm Step 4 trên case mẫu của chương trình, và quay lại case thật khi được phép.
 - **Chưa có tài liệu nào về sản phẩm:** viết `context-product-and-users.md` từ những gì bạn tự biết, và ghi "chưa có nguồn" ở các chỗ bạn đoán.

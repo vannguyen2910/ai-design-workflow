@@ -1,13 +1,13 @@
-# Case card: Kitchen Crate (fictional)
+# Case mẫu: Kitchen Crate (hư cấu)
 
-Kitchen Crate is a meal-kit subscription app. Customers pick a plan (2 or 4 people, 3 or 4 dinners a week), choose a delivery day, and a box of ingredients and recipe cards arrives weekly.
+Kitchen Crate là một app meal-kit theo gói đăng ký. Khách chọn gói (2 hoặc 4 người, 3 hoặc 4 bữa tối mỗi tuần), chọn ngày giao, và mỗi tuần nhận một hộp nguyên liệu kèm thẻ công thức.
 
-**The problem the team sees:** many new customers pause or cancel after their first box. The team wants to improve onboarding.
+**Vấn đề team thấy:** nhiều khách mới tạm dừng hoặc huỷ sau hộp đầu tiên. Team muốn cải thiện onboarding.
 
-**What exists:** a delivery date picker, a menu screen where customers choose recipes, and a payment step. Settings has a "Plan" section.
+**Hiện có:** date picker chọn ngày giao, một màn hình menu để khách chọn công thức, và một bước thanh toán. Phần Settings có mục "Plan".
 
-**What the team believes:** price is the main reason people leave.
+**Điều team tin:** giá là lý do chính khiến khách rời đi.
 
-**What is known:** no research has been done yet. 30-day retention is 41%.
+**Điều đã biết:** chưa có research nào. Tỷ lệ giữ chân sau 30 ngày là 41%.
 
-**What is not known:** why people pause or cancel, what they expected from the first box, and how they decide the delivery day.
+**Điều chưa biết:** vì sao khách tạm dừng hoặc huỷ, họ kỳ vọng gì ở hộp đầu tiên, và họ quyết định ngày giao như thế nào.

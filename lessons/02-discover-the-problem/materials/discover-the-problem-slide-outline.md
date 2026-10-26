@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 26
+slide_count: 25
 duration: "90 min"
 status: draft
 built_deck: ""
@@ -31,18 +31,18 @@ last_synced: 2026-10-26
 | Stage | Discover |
 | Prior session | Buổi 1: Your Design Process, with AI |
 | Next session | Buổi practice của buổi 2, rồi buổi 3: Turn Research into Insights You Can Trust |
-| Running example | App meal-kit theo gói đăng ký (Kitchen Crate, case card hư cấu); học viên làm activity trên case của chính mình |
+| Running example | App meal-kit theo gói đăng ký (Kitchen Crate, case mẫu hư cấu); học viên làm activity trên case của chính mình |
 
 ---
 
-## Slide structure: 26 slides
+## Slide structure: 25 slides
 
 - Arc: **Open** (cover, ice breaker) → **Theory** (divider cộng bốn phần: Discover và AI, Design Principles, Break the brief, Understand our users) → **Activity** (5 phút, nằm sau phần Design Principles) → **Package** (agent và hub) → **Close** (hỏi đáp, buổi practice, kết thúc).
-- Khớp với tám phase của lesson (mục 7.1). Phase 1 (ice breaker) = slide 1–2. Theory 1 (Discover và AI) = slide 3–6. Theory 2 (Design Principles) = slide 7–9. Activity = slide 10–11. Theory 3 (Break the brief) = slide 12–19. Theory 4 (Understand our users) = slide 20–21. Package = slide 22–23. Hỏi đáp và close = slide 24–26.
-- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, activity = 5, hỏi đáp = 6. Timing các phase: ice breaker 6, T1 8, T2 10, activity 5, T3 28, T4 10, package 9, hỏi đáp 6; tổng nội dung 82 trên 90 phút, buffer 8 phút. Slide 25 và 26 chiếu trong phase hỏi đáp.
+- Khớp với tám phase của lesson (mục 7.1). Phase 1 (ice breaker) = slide 1–2. Theory 1 (Discover và AI) = slide 3–6. Theory 2 (Design Principles) = slide 7–9. Activity = slide 10–11. Theory 3 (Break the brief) = slide 12–18. Theory 4 (Understand our users) = slide 19–20. Package = slide 21–22. Hỏi đáp và close = slide 23–25.
+- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, activity = 5, hỏi đáp = 6. Timing các phase: ice breaker 6, T1 8, T2 10, activity 5, T3 28, T4 10, package 9, hỏi đáp 6; tổng nội dung 82 trên 90 phút, buffer 8 phút. Slide 24 và 25 chiếu trong phase hỏi đáp.
 - Theory khoảng 56 phút vì buổi practice 90 phút nằm ngay sau. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
-- Thứ tự cắt khi quá giờ: demo Break the brief rút còn hai hoạt động (UX observation và challenge assumptions; bỏ slide 13 và 19), rồi hỏi đáp còn 4 phút, rồi gộp slide 20 và 21 thành một.
-- Cái bẫy của buổi nằm ở slide 18: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
+- Thứ tự cắt khi quá giờ: demo Break the brief rút còn ba hoạt động (bỏ slide 18, competitor analysis), rồi hỏi đáp còn 4 phút, rồi gộp slide 19 và 20 thành một.
+- Cái bẫy của buổi nằm ở slide 17: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
 
 ---
 
@@ -79,7 +79,7 @@ last_synced: 2026-10-26
   - Sáu phút, cả lớp; mình nói trước hai mươi giây để làm mẫu, rồi mỗi người nói tên và một câu
   - Ghi nhanh vào hai cột "vấn đề" và "giải pháp" cho cả lớp thấy; đừng bình luận lúc này
   - **Giữ bảng này để quay lại ở slide Discover**
-  - Nhắc nhanh bài tập buổi 1: case folder và product-and-users đã có chưa, ai chưa xong thì dùng case card
+  - Nhắc nhanh bài tập buổi 1: case folder và product-and-users đã có chưa, ai chưa xong thì dùng case mẫu
 
   > Brief gần nhất bạn nhận nói "cần giải quyết điều gì", hay nói "cần làm cái gì"?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới hai cột trống "Vấn đề" và "Giải pháp" để ghi.
@@ -110,7 +110,7 @@ last_synced: 2026-10-26
   - Kim cương 1: Discover mở rộng, Define thu hẹp
   - Kim cương 2: Develop mở rộng, Deliver thu hẹp
   - Discover: gom điều đã biết, điều user nói và làm, điều thị trường làm
-- Ví dụ: có (Kitchen Crate, case card của chương trình)
+- Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Discover có phải chỉ là nghiên cứu user không? Không. Nó gồm cả đọc tài liệu product, câu hỏi cho business, xem trải nghiệm hiện tại và xem đối thủ.
 - Speaker notes:
@@ -276,53 +276,27 @@ last_synced: 2026-10-26
 
 ### DIAGRAM · Break the brief
 - Kicker: Overview
-- Title: Five activities, *five files*
+- Title: Four activities, *four files*
 - On-slide:
-  - Self-documentation → nhiều file `.md`
   - Research questions → `research-questions.md` (gồm cả scope)
   - UX observation → `ux-audit.md`
   - Challenge assumptions → `assumption.md`
   - Competitor analysis → `competitor-analysis.md`
-- Ví dụ: có (Kitchen Crate, case card của chương trình)
+- Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
 - Câu hỏi hay gặp:
-  - Phải làm đủ năm hoạt động? Không bắt buộc đủ ngay; buổi practice cho thời gian làm và chọn hoạt động nào hợp với case.
+  - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; buổi practice cho thời gian làm và chọn hoạt động nào hợp với case.
 - Speaker notes:
 
-  > Team Kitchen Crate nhận brief "cải thiện onboarding". Break the brief là năm việc mình làm trước khi chấp nhận brief đó.
+  > Team Kitchen Crate nhận brief "cải thiện onboarding". Break the brief là bốn việc mình làm trước khi chấp nhận brief đó.
 
   - Mỗi hoạt động có cùng nhịp: AI soạn nháp, bạn kiểm tra, ra một file trong hub
-  - Hôm nay mình đi qua cả năm; mình demo hai hoạt động trên Kitchen Crate (UX observation và challenge assumptions)
-  - Ba hoạt động còn lại bạn làm ở buổi practice với cheat sheet này
+  - Self-documentation, bước đưa tài liệu product vào AI để có context, đã làm ở Practice 1; Break the brief bắt đầu từ context pack đó
+  - Hôm nay mình đi qua cả bốn; mình demo hai hoạt động trên Kitchen Crate (UX observation và challenge assumptions)
+  - Hai hoạt động còn lại bạn làm ở buổi practice với cheat sheet này
   - Brief là điểm xuất phát tốt; việc ở đây là kiểm tra nó phục vụ đúng vấn đề chưa
 
-  > Trong năm hoạt động này, bạn đang làm hoạt động nào rồi, dù chưa gọi tên?
-- 🎨 Visual hint: SCHEMATIC. Hộp lớn "Break the brief" ở trên, năm ô con xuống dưới, mỗi ô nối với một ô purple là file output.
-
----
-
-### DIAGRAM · Self-documentation
-- Kicker: Method
-- Title: Self-documentation
-- On-slide:
-  - What: Đưa tài liệu product vào AI để AI có context
-  - Why: Không uổng phí buổi trao đổi cho điều đã có trong tài liệu
-  - When: Thực hiện sớm, trước khi hỏi business
-  - Where AI helps: Tóm tắt tài liệu thành các file nhỏ có nguồn
-- Ví dụ: bản nháp (một designer đưa PRD, ba ticket và một báo cáo analytics của Kitchen Crate vào AI, ra năm file context)
-- Câu hỏi hay gặp:
-  - Tài liệu nội bộ nhạy cảm thì sao? Ẩn danh theo data rules ở buổi 1 trước khi đưa vào; không đưa tài liệu vào công cụ chưa được công ty cho phép.
-- Speaker notes:
-
-  > Một designer mất hai buổi họp chỉ để hỏi điều đã nằm trong PRD của team. Self-documentation là cách đọc trước, để buổi họp dành cho điều chưa có.
-
-  - Gom mọi tài liệu liên quan tới product: PRD, brief, ticket, research cũ, analytics
-  - Đưa vào AI chat tool đã được phép, rồi nhờ tóm tắt thành các file nhỏ theo chủ đề
-  - Buổi 1 dựng khung case folder; hoạt động này đổ nội dung vào khung đó
-  - **Mọi file phải ghi nguồn; mục nào không có nguồn thì ghi "chưa có nguồn"**
-  - Rủi ro chính là AI lấp chỗ trống bằng điều nghe hợp lý
-
-  > Tài liệu nào bạn có thể đưa vào AI ngay hôm nay mà không cần xin phép ai?
-- 🎨 Visual hint: SCHEMATIC. Method card: bốn hàng nhãn What / Why / When / Where AI helps; bên phải một cụm tài liệu đi vào AI và ra nhiều ô `.md` nhỏ.
+  > Trong bốn hoạt động này, bạn đang làm hoạt động nào rồi, dù chưa gọi tên?
+- 🎨 Visual hint: SCHEMATIC. Hộp lớn "Break the brief" ở trên, bốn ô con xuống dưới, mỗi ô nối với một ô purple là file output.
 
 ---
 
@@ -335,7 +309,7 @@ last_synced: 2026-10-26
   - 03 · Baseline: hiện tại là bao nhiêu?
   - 04 · Ràng buộc: ngân sách, kỹ thuật, pháp lý
   - 05 · Thời hạn và người quyết định
-- Ví dụ: có (Kitchen Crate, case card của chương trình)
+- Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Câu hỏi vision và mission khác năm câu này thế nào? Vision và mission là câu hỏi cấp cao về lý do sản phẩm tồn tại; năm câu này là câu gửi business để chốt scope.
 - Speaker notes:
@@ -439,7 +413,7 @@ last_synced: 2026-10-26
 
   > AI liệt kê ba điều team Kitchen Crate có thể đang tin: giá là lý do chính, khách không hiểu cách đổi ngày giao, bước thanh toán làm khách ngại cam kết.
 
-  - Chỉ điều đầu có trong case card; hai điều sau nghe rất hợp lý nhưng không có nguồn nào
+  - Chỉ điều đầu có trong case mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào
   - Đây là cái bẫy của buổi: điều nghe hợp lý chưa phải điều có evidence
   - Mục nào không có trong tài liệu thì ghi "chưa có nguồn", không đưa vào danh sách như sự thật
   - Bước pull insight tìm xem điều nào đã có evidence trong research cũ của team
@@ -585,7 +559,7 @@ last_synced: 2026-10-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Sáu phút; hai slide tiếp theo chiếu trong phase này
-  - Gom câu hỏi theo năm hoạt động Break the brief; câu nào quá riêng thì hẹn ở buổi practice
+  - Gom câu hỏi theo bốn hoạt động Break the brief; câu nào quá riêng thì hẹn ở buổi practice
   - Nhắc: buổi practice là nơi làm, buổi này chỉ để biết cần làm gì
 
   > Điều gì bạn muốn hỏi trước khi vào buổi practice?
@@ -603,9 +577,9 @@ last_synced: 2026-10-26
 - Ví dụ: Không cần. Slide giao việc.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Buổi practice là nơi làm năm hoạt động; mang theo case folder và brief hoặc PRD đã ẩn danh
+  - Buổi practice là nơi làm bốn hoạt động; mang theo case folder và brief hoặc PRD đã ẩn danh
   - Bài tập về nhà đủ nhỏ để không chồng lên buổi practice: lên lịch phỏng vấn để có quote cho buổi 3
-  - Học viên có case nhạy cảm dùng case card của chương trình
+  - Học viên có case nhạy cảm dùng case mẫu của chương trình
   - Nội dung chi tiết của buổi practice sẽ gửi riêng
 
   > Bạn sẽ mang case nào đến buổi practice?

@@ -18,7 +18,7 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 
 ## Resources
 
-- [Case Card: Kitchen Crate](assets/starter-files/course-case/case-card.md)
+- [Case mẫu: Kitchen Crate](assets/starter-files/course-case/case-card.md)
 - [Gates](assets/starter-files/case-folder-template/hub/gates.md)
 - [Method Cards](assets/method-cards/README.md)
   - [Competitor analysis](assets/method-cards/01-discover/competitor-analysis.md)
@@ -126,7 +126,7 @@ Not shown. Move a line above the comment to publish it.
 - [Workflow: User-Voice Synthesis](assets/starter-files/case-folder-template/tools/step-user-voice-synthesis.md)
 - [Checkpoint prototype (week 6)](assets/starter-files/checkpoint-prototype/README.md)
 - [Course case: Kitchen Crate (fictional)](assets/starter-files/course-case/README.md)
-- [Case card: Kitchen Crate (fictional)](assets/starter-files/course-case/case-card.md)
+- [Case mẫu: Kitchen Crate (hư cấu)](assets/starter-files/course-case/case-card.md)
 - [Stand-in PO case pack: Kitchen Crate (fictional)](assets/starter-files/course-case/po-case-pack.md)
 - [Quote set: answer key (instructor only)](assets/starter-files/course-case/quotes-answer-key.md)
 - [Quote set: Kitchen Crate (fictional)](assets/starter-files/course-case/quotes.md)

@@ -23,7 +23,7 @@ Buổi giải quyết năm vấn đề, theo thứ tự trình bày:
 
 1. **Discover nằm ở đâu và AI giúp được gì.** Discover là nửa đầu của Double Diamond: mở rộng để hiểu vấn đề, rồi thu hẹp về vấn đề đáng giải. AI mạnh ở việc soạn nháp rộng và nhanh, yếu ở việc biết điều chưa có trong tài liệu.
 2. **Design Principles làm chuẩn cho AI.** Bốn phần: UX principles, business principles, severity và gates. AI dùng bộ chuẩn này để đối chiếu công việc ở các bước sau, nên học viên đặt chuẩn trước khi AI chạy.
-3. **Break the brief.** Năm hoạt động, mỗi hoạt động cho ra một file trong hub: self-documentation, research questions, UX observation, challenge assumptions và competitor analysis.
+3. **Break the brief.** Bốn hoạt động, mỗi hoạt động cho ra một file trong hub: research questions, UX observation, challenge assumptions và competitor analysis. Self-documentation (đưa tài liệu product vào AI để có context) đã làm ở Practice 1 khi dựng context pack, nên không lặp lại ở đây.
 4. **Understand our users (theory).** Ba nhánh: methods (interview, survey), research với AI (research plan, facilitator script) và post-interview (transcript, recording rồi synthesis). Phần thực hành nằm ở buổi practice và bài tập phỏng vấn peer.
 5. **Package thành agents và contribute vào hub.** Khi hài lòng với một quy trình, học viên đóng gói nó thành một agent và đóng góp vào Knowledge Hub.
 
@@ -41,7 +41,7 @@ Sau buổi 2, học viên có thể:
 
 1. **Chỉ ra** Discover nằm ở đâu trong Double Diamond và **nêu** AI giúp được gì, chưa giúp được gì ở stage này
 2. **Viết** `principles.md` gồm UX principles, business principles, severity và các check của Gate 1, và **giải thích** vì sao chuẩn đặt trước khi AI chạy
-3. **Mô tả** năm hoạt động của Break the brief, file mỗi hoạt động tạo ra và phần học viên kiểm tra
+3. **Mô tả** bốn hoạt động của Break the brief, file mỗi hoạt động tạo ra và phần học viên kiểm tra
 4. **Giải thích** vì sao AI không được đóng vai PO hay user, và **gắn** trạng thái confirmed hoặc assumed, cùng agreement status, cho scope
 5. **Nêu** ba nhánh của Understand our users và vai trò của AI ở từng nhánh
 6. **Nêu** khi nào một quy trình đã sẵn sàng để package thành agent và đóng góp vào hub
@@ -51,7 +51,7 @@ Sau buổi 2, học viên có thể:
 ## Success Check
 
 - Học viên có `principles.md` với ít nhất một UX principle và một business principle của case, mỗi cái một câu (làm trên lớp, 5 phút). Phần còn lại hoàn thiện ở buổi practice.
-- Học viên nói được năm hoạt động của Break the brief và file mỗi hoạt động tạo ra.
+- Học viên nói được bốn hoạt động của Break the brief và file mỗi hoạt động tạo ra.
 - Học viên giải thích được vì sao một điều đang tin do AI đưa ra mà không có trong tài liệu phải được đánh dấu "chưa có nguồn".
 
 **Checkpoint trên lớp:** `principles.md` có hai dòng đầu tiên. Các mục còn lại hoàn thành ở buổi practice.
@@ -61,9 +61,9 @@ Sau buổi 2, học viên có thể:
 ## Materials Needed
 
 - Case folder từ buổi 1 (`context-product-and-users.md`, `context-data-rules.md`).
-- [Case card](../../../assets/starter-files/course-case/case-card.md) hư cấu của chương trình (Kitchen Crate) cho phần demo, và cho học viên có case quá nhạy cảm.
+- [Case mẫu](../../../assets/starter-files/course-case/case-card.md) hư cấu của chương trình (Kitchen Crate) cho phần demo, và cho học viên có case quá nhạy cảm.
 - Template `principles.md` (bốn mục: UX principles, business principles, severity, gates).
-- Cheat sheet một màn hình: năm hoạt động Break the brief, ba mức access, thang severity 0 đến 4, các check của Gate 1.
+- Cheat sheet một màn hình: bốn hoạt động Break the brief, ba mức access, thang severity 0 đến 4, các check của Gate 1.
 - Một AI chat tool đã được công ty cho phép.
 
 ## Pre-Class Preparation
@@ -123,25 +123,18 @@ Gate là danh sách check dạng có hoặc không, mỗi check trỏ được t
 
 ## 3. Break the brief
 
-### 3.1 Five activities, five files
+### 3.1 Four activities, four files
 
-Break the brief là cách kiểm tra brief trước khi chấp nhận nó. Năm hoạt động theo thứ tự dưới đây, mỗi hoạt động có phần AI soạn nháp, phần học viên kiểm tra và một file trong hub.
+Break the brief là cách kiểm tra brief trước khi chấp nhận nó. Self-documentation, bước đưa mọi tài liệu product (PRD, brief, ticket, research cũ, analytics) vào AI để có context, đã được làm ở Practice 1 khi dựng context pack; Break the brief bắt đầu từ context pack đó. Bốn hoạt động theo thứ tự dưới đây, mỗi hoạt động có phần AI soạn nháp, phần học viên kiểm tra và một file trong hub.
 
 | # | Activity | AI soạn nháp | Học viên kiểm tra | File |
 |---|---|---|---|---|
-| 1 | Self-documentation | Đọc toàn bộ tài liệu product và tóm tắt thành nhiều file context | Từng mục có nguồn không; mục không có nguồn ghi "chưa có nguồn" | Nhiều file `.md` trong hub |
-| 2 | Research questions | Câu hỏi cấp cao (vision, mission) và câu hỏi gửi business | Đối chiếu với điều mình thật sự biết; gửi và ghi agreement status | `research-questions.md` (gồm cả phần scope) |
-| 3 | User experience observation | Finding về trải nghiệm hiện tại, dựa trên principles | Mở giao diện xem vấn đề có thật không; chấm severity | `ux-audit.md` |
-| 4 | Challenge assumptions | Danh sách điều đang tin, evidence đang có và đang thiếu; kéo insight từ research có sẵn | Xếp mức độ quan trọng so với evidence | `assumption.md` |
-| 5 | Competitor analysis | Mô tả rồi bảng bằng chứng theo từng đối thủ | Mở ảnh gốc, đối chiếu từng ô quan trọng, ghi tỷ lệ ô sai | `competitor-analysis.md` |
+| 1 | Research questions | Câu hỏi cấp cao (vision, mission) và câu hỏi gửi business | Đối chiếu với điều mình thật sự biết; gửi và ghi agreement status | `research-questions.md` (gồm cả phần scope) |
+| 2 | User experience observation | Finding về trải nghiệm hiện tại, dựa trên principles | Mở giao diện xem vấn đề có thật không; chấm severity | `ux-audit.md` |
+| 3 | Challenge assumptions | Danh sách điều đang tin, evidence đang có và đang thiếu; kéo insight từ research có sẵn | Xếp mức độ quan trọng so với evidence | `assumption.md` |
+| 4 | Competitor analysis | Mô tả rồi bảng bằng chứng theo từng đối thủ | Mở ảnh gốc, đối chiếu từng ô quan trọng, ghi tỷ lệ ô sai | `competitor-analysis.md` |
 
-### 3.2 Self-documentation
-
-Học viên đưa mọi tài liệu liên quan tới product (PRD, brief, ticket, research cũ, analytics) vào AI chat tool để AI có context, rồi nhờ AI tóm tắt thành các file nhỏ. Buổi 1 dựng khung (case folder, `context-product-and-users.md`); hoạt động này đổ nội dung vào khung đó.
-
-Hai rủi ro: tài liệu nhạy cảm vào công cụ không được phép, và AI lấp chỗ trống bằng điều nghe hợp lý. Vì vậy chỉ đưa tài liệu đã ẩn danh theo data rules ở buổi 1, và mọi file gắn nguồn hoặc "chưa có nguồn".
-
-### 3.3 Research questions
+### 3.2 Research questions
 
 Có hai tầng câu hỏi. Tầng cao là câu hỏi mang tính vision và mission cho sản phẩm (ví dụ "sản phẩm này tồn tại để giải việc gì cho người dùng?"). Tầng gửi business có năm câu: outcome, success metric, baseline, ràng buộc, thời hạn và người quyết định.
 
@@ -161,7 +154,7 @@ Câu trả lời nhận được ghi vào scope với trạng thái **confirmed*
 
 Access khác nhau giữa mọi người và không có access là vị thế yếu hơn. Quy trình giảm nhẹ chứ không giả vờ vấn đề không tồn tại. Một scope bằng văn bản có nhãn assumption vẫn tốt hơn thiết kế từ một brief mà assumption bị giấu.
 
-### 3.4 User experience observation
+### 3.3 User experience observation
 
 Học viên chọn một flow của trải nghiệm hiện tại. AI soạn nháp finding theo `principles.md`; học viên kiểm tra từng finding và chấm severity.
 
@@ -174,7 +167,7 @@ Kiểm tra một finding của AI theo bốn câu:
 
 Với accessibility, kiểm thử tự động chỉ phủ một phần vấn đề: 57% tính theo số lượng trong một nghiên cứu của vendor, thấp hơn theo cách tính tiêu chí [5].
 
-### 3.5 Challenge assumptions
+### 3.4 Challenge assumptions
 
 AI liệt kê điều team có thể đang tin về sản phẩm và người dùng, kèm evidence đang có và đang thiếu cho từng điều. Học viên đối chiếu với tài liệu của case. Mục AI đưa ra mà tài liệu không có là mục "chưa có nguồn", không phải mục để đưa vào danh sách như một sự thật.
 
@@ -182,7 +175,7 @@ Bước kéo insight từ research có sẵn (pull insights from existing resear
 
 Sau đó học viên xếp từng assumption theo mức độ quan trọng so với evidence hiện có, để quyết định kiểm chứng điều nào trước.
 
-### 3.6 Competitor analysis
+### 3.5 Competitor analysis
 
 Competitor analysis cho thấy đối thủ **làm gì**, không cho thấy người dùng **vì sao** chọn họ. Quy trình rút gọn (xem thêm [method card Competitor analysis](../../../assets/method-cards/01-discover/competitor-analysis.md)): chốt phạm vi (một journey, ba đến năm đối thủ, tối đa sáu tiêu chí), AI mô tả ảnh chụp trước, đánh giá sau, rồi điền bảng bằng chứng với tên file cho mỗi ô; học viên mở ảnh gốc, đối chiếu các ô quan trọng và ghi tỷ lệ ô sai. Kết luận là giả thuyết để hỏi trong phỏng vấn, không phải kết luận về người dùng. Buổi 3 giữ phần ghép điều người khác làm với điều user nói và làm.
 
@@ -218,11 +211,11 @@ Khung kết bài này lặp lại ở các buổi sau (xem `lessons/hub/how-the-
 
 ## 6. Worked example: Kitchen Crate
 
-Case card (hư cấu): một app meal-kit theo gói đăng ký. Nhiều khách hàng mới tạm dừng sau hộp đầu tiên. Team muốn cải thiện onboarding. App có date picker chọn ngày giao, một màn hình menu và một bước thanh toán. Team nghi ngờ giá là lý do khách rời đi. Chưa có research nào được thực hiện.
+Case mẫu (hư cấu): một app meal-kit theo gói đăng ký. Nhiều khách hàng mới tạm dừng sau hộp đầu tiên. Team muốn cải thiện onboarding. App có date picker chọn ngày giao, một màn hình menu và một bước thanh toán. Team nghi ngờ giá là lý do khách rời đi. Chưa có research nào được thực hiện.
 
 - **Brief:** "Cải thiện onboarding." **Business question:** "Vì sao khách mới tạm dừng sau hộp đầu tiên, và điều gì giữ họ lại?"
 - **Principles:** UX principle: kiểm soát và tự do của người dùng. Business principle: không tăng tỷ lệ huỷ gói sau tuần đầu (assumed). Severity: thang 0 đến 4. Gate: 1a và 1f.
-- **Điều đang tin (AI soạn nháp, học viên đối chiếu):** giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong case card, nên đánh dấu "chưa có nguồn".
+- **Điều đang tin (AI soạn nháp, học viên đối chiếu):** giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong case mẫu, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ tạm dừng sau hộp đầu tiên. Baseline: chưa biết, ghi assumed, người cần xác nhận là business.
 - **UX observation:** trên flow chọn ngày giao, ví dụ các finding về trạng thái hệ thống (không có xác nhận sau khi chọn ngày), quyền kiểm soát của người dùng (không đổi được ngày sau khi thanh toán) và nhất quán (nhãn nút khác nhau giữa hai màn hình).
 
@@ -240,14 +233,14 @@ Hình dạng: ice breaker, theory (bốn phần, mỗi phần kết thúc bằng
 | 2 | Theory 1: Discover trong Double Diamond và AI capabilities | 1 | 8 phút |
 | 3 | Theory 2: Design Principles (bốn phần) | 2 | 10 phút |
 | 4 | Activity: viết hai dòng đầu của `principles.md` | 7.3 | 5 phút |
-| 5 | Theory 3: Break the brief (năm hoạt động, demo trên case mẫu) | 3 | 28 phút |
+| 5 | Theory 3: Break the brief (bốn hoạt động, demo trên case mẫu) | 3 | 28 phút |
 | 6 | Theory 4: Understand our users | 4 | 10 phút |
 | 7 | Package thành agents và contribute vào hub | 5 | 9 phút |
 | 8 | Hỏi đáp | 7.1 | 6 phút |
 | | **Tổng nội dung** | | **82 phút** |
 | | Buffer | | 8 phút |
 
-Theory khoảng 56 phút, vượt mức 44 phút của buổi 1. Lý do: buổi practice 90 phút nằm ngay sau, nên buổi này dành thời gian để học viên thấy đủ năm hoạt động trước khi tự làm. Timing chưa được thử với một lớp thật. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** demo Break the brief rút từ năm hoạt động còn hai (UX observation và challenge assumptions), rồi hỏi đáp rút còn 4 phút, rồi Theory 4 rút còn một slide.
+Theory khoảng 56 phút, vượt mức 44 phút của buổi 1. Lý do: buổi practice 90 phút nằm ngay sau, nên buổi này dành thời gian để học viên thấy đủ bốn hoạt động trước khi tự làm. Timing chưa được thử với một lớp thật. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** demo Break the brief rút từ bốn hoạt động còn hai (UX observation và challenge assumptions), rồi hỏi đáp rút còn 4 phút, rồi Theory 4 rút còn một slide.
 
 ### 7.2 Engagement rules
 
@@ -262,11 +255,11 @@ Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trư�
 2. (2 phút) Viết một business principle (ràng buộc hoặc ưu tiên của business) trong một câu. Chưa có thông tin thì ghi "assumed" và người cần xác nhận.
 3. (1 phút) Mỗi người đọc một câu cho cả lớp, hoặc dán vào chat.
 
-*Quy tắc dữ liệu:* chỉ dùng thông tin đã ẩn danh; học viên có case nhạy cảm dùng case card. *Output:* hai dòng đầu của `principles.md`. Không mở AI tool trong activity này.
+*Quy tắc dữ liệu:* chỉ dùng thông tin đã ẩn danh; học viên có case nhạy cảm dùng case mẫu. *Output:* hai dòng đầu của `principles.md`. Không mở AI tool trong activity này.
 
 ### 7.4 Practice session and homework
 
-**Buổi practice 90 phút** ([Practice 2](discover-the-problem-practice.md)) nằm ngay sau buổi này (lịch cố định sau mỗi lesson nội dung, Winnie quyết định 2026-10-26). Nội dung buổi practice `[to confirm]`: hoàn thiện `principles.md`, chạy năm hoạt động Break the brief trên case của từng người, lập lịch phỏng vấn peer cho buổi 3. Thiết kế chi tiết nằm ở tài liệu riêng của buổi practice.
+**Buổi practice 90 phút** ([Practice 2](discover-the-problem-practice.md)) nằm ngay sau buổi này (lịch cố định sau mỗi lesson nội dung, Winnie quyết định 2026-10-26). Nội dung buổi practice `[to confirm]`: hoàn thiện `principles.md`, chạy bốn hoạt động Break the brief trên case của từng người, lập lịch phỏng vấn peer cho buổi 3. Thiết kế chi tiết nằm ở tài liệu riêng của buổi practice.
 
 **Bài tập về nhà** (chờ Winnie chốt vai trò sau khi có buổi practice): đủ nhỏ để không chồng lên buổi practice. Mặc định tạm: lên lịch 2 đến 3 buổi phỏng vấn ngắn với đồng nghiệp hoặc người dùng để có quote cho buổi 3.
 
@@ -301,7 +294,7 @@ Tài liệu đưa vào AI và tin gửi business không nêu tên người hay d
 
 1. Discover nằm ở đâu trong Double Diamond, và AI giúp được gì ở đó?
 2. Bốn phần của Design Principles là gì, và vì sao đặt chúng trước khi AI chạy?
-3. Năm hoạt động của Break the brief tạo ra những file nào?
+3. Bốn hoạt động của Break the brief tạo ra những file nào?
 4. Vì sao AI không được đóng vai PO hay user?
 5. Một quy trình cần đạt điều kiện nào trước khi package thành agent?
 

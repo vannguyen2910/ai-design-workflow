@@ -49,7 +49,7 @@ Tổng: 6 + 40 + 4 + 18 + 8 + 6 = 82 phút, buffer 8 phút. Nếu quá giờ, th
 ## Key decisions
 
 **Running example và lý do**
-- Phần giảng dùng Kitchen Crate (meal-kit hư cấu, đã quen từ buổi 1) để học viên không phải đoán bối cảnh; activity chạy trên case của chính học viên (hoặc case card của khoá nếu case nhạy cảm).
+- Phần giảng dùng Kitchen Crate (meal-kit hư cấu, đã quen từ buổi 1) để học viên không phải đoán bối cảnh; activity chạy trên case của chính học viên (hoặc case mẫu của khoá nếu case nhạy cảm).
 
 **AI xuất hiện ở đâu, và manual trước AI**
 - AI: soạn nháp câu hỏi cho business, danh sách điều đang tin, và finding heuristic.

@@ -31,7 +31,7 @@ last_synced: 2026-10-24
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
-| Running example | App meal-kit theo gói đăng ký (case card hư cấu cho phần demo); học viên áp dụng các bước vào case của chính mình |
+| Running example | App meal-kit theo gói đăng ký (case mẫu hư cấu cho phần demo); học viên áp dụng các bước vào case của chính mình |
 
 ---
 
@@ -107,7 +107,7 @@ last_synced: 2026-10-24
   - Mở bằng câu hỏi mà nhiều bạn đã hỏi mình: AI phổ biến thì UI/UX và product design sẽ ra sao?
   - Nói trước: có số liệu có nguồn, có hướng đi cụ thể, và cũng có chỗ chưa ai đo được; mình sẽ nói rõ từng chỗ
   - Nói ground rule của lớp trong một hơi: những gì chia sẻ trên lớp ở lại trong lớp; ẩn danh trước; không ai bắt buộc phải trình bày công việc confidential
-  - Case card của khoá luôn sẵn sàng nếu case của bạn quá nhạy cảm
+  - Case mẫu của khoá luôn sẵn sàng nếu case của bạn quá nhạy cảm
   - **Nhắc cả lớp:** cứ ghi câu hỏi vào chat bất cứ lúc nào; 8 phút cuối buổi để trả lời, câu nào chưa kịp thì mình trả lời sau bằng văn bản
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper lavender nhạt, số phần lớn, title có accent ở dòng 2.
 
@@ -393,11 +393,11 @@ last_synced: 2026-10-24
 - Title: One task,\n*two instructions*
 - On-slide:
   - Trái, mơ hồ: "Làm sao để cải thiện onboarding cho app meal-kit của tôi?"
-  - Phải, có cấu trúc (đính kèm case card): "Chỉ dùng case card. Liệt kê năm điều bạn cần biết mà KHÔNG có trong đó. Không đoán. Nói 'unknown'. Chỉ trả về danh sách."
-- Ví dụ: có (Kitchen Crate: hai instruction trên cùng một case card, lesson mục 4.2)
+  - Phải, có cấu trúc (đính kèm case mẫu): "Chỉ dùng case mẫu. Liệt kê năm điều bạn cần biết mà KHÔNG có trong đó. Không đoán. Nói 'unknown'. Chỉ trả về danh sách."
+- Ví dụ: có (Kitchen Crate: hai instruction trên cùng một case mẫu, lesson mục 4.2)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Cho xem case card trước: một app meal-kit hư cấu mà nhiều khách mới tạm dừng sau hộp đầu tiên; nghi ngờ do giá; chưa có research
+  - Cho xem case mẫu trước: một app meal-kit hư cấu mà nhiều khách mới tạm dừng sau hộp đầu tiên; nghi ngờ do giá; chưa có research
   - **Đoán trước:** chiếu hai instruction nhưng chưa chạy; cho cả lớp bỏ phiếu trong chat, bản nào cho kết quả đáng tin hơn? Ghi lại số phiếu
   - Chạy cả hai instruction trực tiếp (mình đã chạy thử một lần trước đó) và cho xem hai output cạnh nhau
   - Bản mơ hồ thường cho lời khuyên tự tin nhưng chung chung, và có thể nói về sản phẩm như sự thật
@@ -420,7 +420,7 @@ last_synced: 2026-10-24
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Năm thuật ngữ còn lại (AI chat tool, AI coding tool, context window, connector, reusable instructions) nằm trong pre-read và được dạy lại đúng buổi cần, chủ yếu buổi 7; agent được giới thiệu ngay ở phần sau
-  - Gắn với demo: case card là context; "chỉ dùng case card" là grounding; lời khuyên tự tin của bản mơ hồ là rủi ro hallucination
+  - Gắn với demo: case mẫu là context; "chỉ dùng case mẫu" là grounding; lời khuyên tự tin của bản mơ hồ là rủi ro hallucination
   - AI-assisted vs AI-generated: đã nói ở đầu buổi qua slide "AI drafts. You verify. You decide."
   - Hỏi một câu nhanh: "Trong demo, cái nào là thứ bạn đưa cho AI, cái nào là điều AI tự thêm vào?"
   - Một phút cho slide này; ba phút rưỡi cho hai slide tiếp theo
@@ -432,14 +432,14 @@ last_synced: 2026-10-24
 - Kicker: Talking to the AI
 - Title: Context and\n*grounding*
 - On-slide: Chỉ đưa những gì một bước cần. Rồi bảo nó chỉ dùng những gì bạn đưa.
-- Ví dụ: có (case card Kitchen Crate làm context)
+- Ví dụ: có (case mẫu Kitchen Crate làm context)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Context là instruction của bạn, text đã dán, file đính kèm và các tin nhắn trước đó; không có gì khác về project của bạn
   - AI giữ được lượng thông tin có giới hạn (context window); khi tài liệu dài và lộn xộn, chi tiết sẽ nhoè hoặc rơi mất
   - **Chỉ đưa những phần mà một bước cần, không phải cả project**
-  - Grounding: bảo AI chỉ dùng tài liệu bạn đưa và nêu nguồn cho từng ý; "Chỉ dùng case card" trong demo là grounding
-  - Gắn với demo: case card là context
+  - Grounding: bảo AI chỉ dùng tài liệu bạn đưa và nêu nguồn cho từng ý; "Chỉ dùng case mẫu" trong demo là grounding
+  - Gắn với demo: case mẫu là context
 - 🎨 Visual hint: SCHEMATIC. Một khung gắn nhãn "context" chứa các tile file nhỏ, vài tile rơi ra ngoài khung. Purple cho phần nằm trong, xám cho phần rơi ra.
 
 ---
@@ -694,7 +694,7 @@ last_synced: 2026-10-24
   - **Bước 2, sáu phút, cặp hoặc cá nhân:** nhờ AI chat tool xếp cùng năm đoạn theo ba nhóm, rồi so với bản của mình; ghi số đoạn AI xếp khớp
   - **Cái bẫy:** đoạn D, transcript đã thay tên bằng chữ cái nhưng còn vai trò, tuổi và nơi ở; AI thường xếp "an toàn" vì thấy đã bỏ tên. Để học viên tự bắt được; đừng nói trước
   - **Bước 3, bảy phút, cá nhân:** viết ba dòng vào `context/data-rules.md` cho case của chính mình: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì; chưa biết chính sách công ty thì ghi "cần hỏi" và hỏi trước buổi 2
-  - Ai dùng case card của khoá thì viết cho case card, và viết lại cho case thật sau; chưa dán tài liệu thật vào AI tool
+  - Ai dùng case mẫu của khoá thì viết cho case mẫu, và viết lại cho case thật sau; chưa dán tài liệu thật vào AI tool
   - **Bước 4, hai phút, cả lớp:** mỗi người nói một con số "AI xếp đúng X trên 5"
   - Hỏi lớp: "Nếu file này lọt ra ngoài, ai sẽ biết?"
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn, không có diagram.
@@ -754,8 +754,8 @@ last_synced: 2026-10-24
   - Chỉ một bài tập, khoảng bốn mươi lăm phút; ba phút rưỡi cho slide này, và chiếu luôn slide tham khảo "Five steps" ở Appendix vì đây là lần duy nhất học viên thấy đủ năm bước; xong trước buổi 2 vì các buổi sau làm trên chính folder này
   - Năm bước nằm ở phần Homework reference sau slide END: tạo project từ `my-project`, viết product-and-users, mở hub, chạy một instruction với file đã lưu, rồi ghi hai đến ba dòng vào `_personal/my-direction.md`
   - `my-direction.md`: hướng nghiêng về trong ba hướng đi, lý do, một kỹ năng muốn xây; file xem lại ở buổi 12
-  - **Chưa dán tài liệu thật của case vào AI tool trước khi viết data rules**; ai chưa viết xong Activity thì dùng case card để thử
-  - Nếu case không thể mang vào AI tool, dùng case card của khoá
+  - **Chưa dán tài liệu thật của case vào AI tool trước khi viết data rules**; ai chưa viết xong Activity thì dùng case mẫu để thử
+  - Nếu case không thể mang vào AI tool, dùng case mẫu của khoá
   - Đây là folder dự án của bạn, không phải bài nộp; nhắc tải workspace template (ZIP) trước nếu chưa có
 - 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Dựng project folder" kèm ba dòng ngắn bên dưới.
 
@@ -973,7 +973,7 @@ last_synced: 2026-10-24
 - Sub: Folder. File context. Hub mẫu. Một instruction.
 - Speaker notes:
   - Slide tham khảo của bài tập về nhà (khoảng bốn mươi lăm phút), không chiếu trên lớp; năm bước ở slide kế tiếp
-  - Ai mà công ty cấm AI tool, hoặc case quá nhạy cảm, dùng case card của khoá cho bước bốn
+  - Ai mà công ty cấm AI tool, hoặc case quá nhạy cảm, dùng case mẫu của khoá cho bước bốn
   - **Ai gõ lại tóm tắt project từ trí nhớ: chỉ họ về file**
   - Ai thấy bảng và link hiển thị thô: mở cả folder project trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.

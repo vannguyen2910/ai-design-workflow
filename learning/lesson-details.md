@@ -103,7 +103,7 @@ Timing chưa được thử với lớp thật. **Thứ tự cắt khi quá gi�
 
 ### Activity, homework và output
 
-- **Key activity:** demo của giảng viên về một task làm hai lần (instruction mơ hồ so với instruction có cấu trúc, trên một case card); trên lớp, học viên viết data rules (Activity 2); ở nhà, học viên dựng project folder và chạy một instruction với một file đã lưu.
+- **Key activity:** demo của giảng viên về một task làm hai lần (instruction mơ hồ so với instruction có cấu trúc, trên một case mẫu); trên lớp, học viên viết data rules (Activity 2); ở nhà, học viên dựng project folder và chạy một instruction với một file đã lưu.
 - **Homework (một bài tập, khoảng 45 phút):** dựng project folder theo năm bước, bước cuối là viết `_personal/my-direction.md`.
 - **Handout gửi riêng:** `assets/templates/before-you-automate.md` (thông điệp, checklist tám câu, cách đọc kết quả).
 - **Output:** project folder với folder `context/` đã bắt đầu (sản phẩm và người dùng, data rules, accessibility rules tuỳ chọn, glossary tuỳ chọn) cho case của học viên, cùng một hub mẫu (private) và `_personal/my-direction.md`.
