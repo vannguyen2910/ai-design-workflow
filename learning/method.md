@@ -83,7 +83,7 @@ Every AI step's instruction should contain, in plain words:
 - Rules 2, 6, 8 and 11 and the two patterns are **my design choices**, not research findings. Tune after testing.
 
 ### 7. Diagram style (all stage map and activity flow diagrams)
-Three colours only: **black, white, purple** (`#6B3FEE`). Your steps solid purple, AI steps solid black, the working file a pale purple tint. Gates are white circles with a black ring. Flat fills, no bold outlines. Reference: `assets/diagrams/competitor-analysis-activity-flow.svg` (activity flow). New activity flows are drawn as plain HTML, not SVG: see `assets/diagrams/user-flow-process-map-activity-flow.html`. Same three colours and symbols and `assets/diagrams/ai-design-workflow-double-diamond.svg` (stage map).
+Three colours only: **black, white, purple** (`#6B3FEE`). Your steps solid purple, AI steps solid black, the working file a pale purple tint. Gates are white circles with a black ring. Flat fills, no bold outlines. Activity flows are drawn as plain HTML, not SVG: see `assets/diagrams/user-flow-process-map-activity-flow.html`. Other diagrams follow the `diagram-design` skill (for example `assets/diagrams/ai-design-workflow-six-weeks.html`).
 
 ### 8. Worked examples
 | Activity | Pattern | Status |

@@ -1,6 +1,6 @@
 # Step Cards — User-Voice Synthesis
 
-**Created:** 2026-10-05 · **Status: draft, untested.** Second worked example of the standard in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Pattern: A Investigate. Diagram: `../../assets/diagrams/user-voice-synthesis-activity-flow.svg`. The AI instructions are my design and have not been run in a class. Uses generic labels per CLAUDE.md.
+**Created:** 2026-10-05 · **Status: draft, untested.** Second worked example of the standard in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Pattern: A Investigate. The AI instructions are my design and have not been run in a class. Uses generic labels per CLAUDE.md.
 
 **Why this is the main Discover example.** Competitor analysis shows what rivals do. It cannot show why users behave as they do. User voice (what real people say in reviews, forums and interviews) is the evidence designers most need and most often synthesise badly. This flow keeps the AI on real quotes and makes every theme traceable.
 

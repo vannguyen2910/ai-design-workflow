@@ -1,7 +1,7 @@
 # Step Cards — Competitor Analysis
 
 **Created:** 2026-10-05 · **Revised 2026-10-05:** single working file; 8 steps (was 7); gate-fail rules; belief check; decision answered at the end.
-**Worked example of the standard** in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Pattern: A Investigate. Diagram: `../../assets/diagrams/competitor-analysis-activity-flow.svg`. Report page: the hub's Evidence page, `../../assets/templates/hub/evidence.html`.
+**Worked example of the standard** in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Pattern: A Investigate. Report page: the hub's Evidence page, `../../assets/templates/hub/evidence.html`.
 **Status: draft, untested.** The AI instructions are my design, built from the research principles, and have not been run in a class. Test on one real case before teaching. Uses generic labels ("AI chat tool") per CLAUDE.md.
 
 ## The working file (one file, one folder)

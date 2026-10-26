@@ -4,7 +4,6 @@ Second worked example of the activity flow standard (`../../learning/method.md` 
 
 | Part | Where |
 |---|---|
-| activity flow diagram | `../../assets/diagrams/user-voice-synthesis-activity-flow.svg` |
 | step cards | `step-cards.md` (this folder) |
 | Hub page | Evidence page of `../../assets/templates/hub/` ("What users said") |
 

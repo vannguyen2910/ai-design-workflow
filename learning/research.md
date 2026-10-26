@@ -114,7 +114,7 @@ Key lessons: set fidelity expectations early; keep a **shared component library*
 | Vietnam-specific context | I found only generic market stats (demand growing; salaries up) and no data on PRD-handoff-only roles ⚠️ | Validate with your own network: interview 5–8 designers/hiring managers |
 
 ### 6. Draft workflow (superseded)
-*This section held my first six-stage draft diagram. It is replaced by the stage map (`assets/diagrams/ai-design-workflow-double-diamond.svg`) and the single gate list in `method.md` Part 3, §2. Removed 2026-10-05 so there is only one version of the workflow.*
+*This section held my first six-stage draft diagram. It is replaced by the single gate list in `method.md` Part 3, §2 (the stage map diagram that stood beside it has since been removed). Removed 2026-10-05 so there is only one version of the workflow.*
 
 ### 7. Open questions from this first pass (answered)
 | Question | Answer (see `plan.md`; the full dated decisions are in `_archive/00-plan-full-2026-10-07.md`) |

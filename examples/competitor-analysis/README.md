@@ -4,7 +4,6 @@ First worked example of the activity flow standard (`../../learning/method.md` P
 
 | Part | Where |
 |---|---|
-| activity flow diagram | `../../assets/diagrams/competitor-analysis-activity-flow.svg` |
 | step cards | `step-cards.md` (this folder) |
 | Report page (HTML, a page of the hub) | `../../assets/templates/hub/evidence.html` |
 
