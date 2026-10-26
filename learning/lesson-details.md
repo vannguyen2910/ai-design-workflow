@@ -164,6 +164,8 @@ Layout dưới đây theo lesson file (mục 6.2). Đây là layout mặc địn
 
 ## Lesson 2: Discover the Problem
 
+> **Cập nhật 2026-10-26:** Lesson 2 đã được viết lại theo sơ đồ Knowledge của Winnie (Discover trong Double Diamond, AI capabilities, Design Principles, Break the brief, Understand our users ở mức theory, package thành agents và hub), kèm một buổi practice 90 phút sau buổi 2. Nguồn chính xác nằm ở `lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md`. Các mục "Sau lesson", "Key activity" và phân bổ thời gian bên dưới là bản trước, giữ để tham khảo cho đến khi Winnie chốt cấu trúc lesson và practice.
+
 *Slug:* `discover-the-problem`. Là **buổi 2 (tuần 1)** theo Notion. Trước đây gộp với Lesson 3 thành module 2 và dùng chung một slug; nay mỗi lesson một buổi. Buổi role-play với PO đã bị bỏ (2026-10-07) và thay bằng stakeholder check bằng văn bản cùng phỏng vấn user theo cặp. Tên activity nội bộ "Shape the brief" trong `method.md` và hub được giữ nguyên.
 
 **Dự kiến bổ sung (2026-10-15, chưa có trong lesson file):** hai quy trình từ `ai-in-discover.md`: chuẩn bị phỏng vấn (brainstorm research plan, facilitation script, facilitator page ở mức giới thiệu) và từ session đến learning (ẩn danh trước khi dán, tóm tắt, liệt kê điều bị bỏ sót, xếp vào file có sẵn bằng propose first). Cần một HTML template; xem to-do trong `plan.md`.

@@ -2,11 +2,11 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 35
+slide_count: 36
 duration: "90 min (buổi 1) + bài tập về nhà"
 status: draft
 built_deck: ""
-last_synced: 2026-10-23
+last_synced: 2026-10-24
 ---
 
 > **Source of truth:** `design-process-with-ai-lesson.md`
@@ -35,11 +35,11 @@ last_synced: 2026-10-23
 
 ---
 
-## Slide structure: 35 slide dạy + 14 slide tham khảo
+## Slide structure: 36 slide dạy + 14 slide tham khảo
 
-- Một deck cho buổi 1, gồm **35 slide trong luồng dạy** (`slide_count` ở đầu file chỉ tính 35 slide này; tổng 49 gồm cả 14 slide tham khảo nằm sau slide END, chiếu khi học viên hỏi), **3 slide Homework reference** (đặt sau slide END), **1 slide Terms reference** (connector và reusable instructions), **10 slide chuyển ra khỏi luồng dạy** (ba hướng đi, bốn stage, working file, series map, chia sẻ hub) (27 slide method reference đã bỏ khỏi deck ngày 2026-10-24: mỗi method đã có method card riêng ở `assets/method-cards/`, bản cũ nằm trong `_archive`). Trên lớp chỉ có ice breaker và một activity (đoán trước, rồi để AI phân loại, kèm viết data rules); ở nhà chỉ có một bài tập (dựng project folder).
-- Arc: **Ice breaker** (2, tính cả cover) → **T1 Tương lai của nghề** (6: divider, số liệu, áp lực, ba hướng đi, lập trường partner, dòng một câu) → **T2 Quy trình thiết kế có AI** (8: divider, stage map, AI giúp được ở đâu, AI làm tốt và còn yếu, nút thắt, hai statement, ba câu hỏi) → **T3 Một task làm hai lần và bốn khái niệm** (5) → **T4 Agent và đội AI** (4: divider, agent, đội AI, đội cần gì) → **T5 Project folder và Knowledge Hub** (2) → **T6 Data safety** (2) → **Activity** (2: milestone và năm đoạn trích) → **Hỏi đáp, bài tập về nhà, lời kết, kết thúc** (4).
-- Khớp với brief và lesson mục 7.1. Slide 1–2 = ice breaker (6 phút). Slide 3–8 = T1 (5 phút). Slide 9–16 = T2 (10). Slide 17–21 = T3 (10). Slide 22–25 = T4 (10). Slide 26–27 = T5 (5). Slide 28–29 = T6 (4). Slide 30–31 = Activity (18). Slide 32 = hỏi đáp (8). Slide 33–35 = bài tập về nhà, lời kết, kết thúc (6). Homework reference = slide 36–38. Terms reference = slide 39. Slide chuyển ra khỏi luồng = slide 40–49.
+- Một deck cho buổi 1, gồm **36 slide trong luồng dạy** (`slide_count` ở đầu file chỉ tính 36 slide này; tổng 50 gồm cả 14 slide tham khảo nằm sau slide END, chiếu khi học viên hỏi), **3 slide Homework reference** (đặt sau slide END), **1 slide Terms reference** (connector và reusable instructions), **10 slide chuyển ra khỏi luồng dạy** (ba hướng đi, bốn stage, working file, series map, chia sẻ hub) (27 slide method reference đã bỏ khỏi deck ngày 2026-10-24: mỗi method đã có method card riêng ở `assets/method-cards/`, bản cũ nằm trong `_archive`). Trên lớp chỉ có ice breaker và một activity (đoán trước, rồi để AI phân loại, kèm viết data rules); ở nhà chỉ có một bài tập (dựng project folder).
+- Arc: **Ice breaker** (2, tính cả cover) → **T1 Tương lai của nghề** (6: divider, số liệu, áp lực, ba hướng đi, lập trường partner, dòng một câu) → **T2 Quy trình thiết kế có AI** (8: divider, stage map, AI giúp được ở đâu, AI làm tốt và còn yếu, nút thắt, hai statement, ba câu hỏi) → **T3 Một task làm hai lần và bốn khái niệm** (5) → **T4 Agent và đội AI** (5: divider, agent, agent đầu tiên, đội AI, đội cần gì) → **T5 Project folder và Knowledge Hub** (2) → **T6 Data safety** (2) → **Activity** (2: milestone và năm đoạn trích) → **Hỏi đáp, bài tập về nhà, lời kết, kết thúc** (4).
+- Khớp với brief và lesson mục 7.1. Slide 1–2 = ice breaker (6 phút). Slide 3–8 = T1 (5 phút). Slide 9–16 = T2 (10). Slide 17–21 = T3 (10). Slide 22–26 = T4 (10). Slide 27–28 = T5 (5). Slide 29–30 = T6 (4). Slide 31–32 = Activity (18). Slide 33 = hỏi đáp (8). Slide 34–36 = bài tập về nhà, lời kết, kết thúc (6). Homework reference = slide 37–39. Terms reference = slide 40. Slide chuyển ra khỏi luồng = slide 41–50.
 - Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE` (`Num:` = số phút): ice breaker = 6, Activity = 18; slide tham khảo bài tập về nhà ghi 45. Tổng: ice breaker 6, theory 44, Activity 18, hỏi đáp 8, kết thúc 6 = 82 phút, buffer 8 phút. Theory chia: T1 5, T2 10, T3 10, T4 10, T5 5, T6 4. Mỗi phần kết thúc bằng một câu A/B 30 giây bằng chat; câu nằm trong speaker notes của slide cuối mỗi phần (T1 ở "Three paths", T2 ở "AI helps, you do", T3 ở "Hallucination", T4 ở "What the team needs", T5 ở "The Knowledge Hub", T6 ở "Three kinds of material").
 - Thứ tự cắt khi quá giờ: slide "Three questions" (ba câu hỏi), rồi phần ví dụ từng agent ở slide "Your AI team", rồi rút hỏi đáp còn 4 phút, rồi rút ice breaker còn 5 phút; T6 và Activity không bao giờ bị cắt. Các method, các stage và các thuật ngữ còn lại nằm trong pre-read brief, method card và Appendix, nên deck không có slide nào đọc định nghĩa thành tiếng.
 - Mọi con số trên slide ở T1 ghi nguồn, năm và cỡ mẫu. Chỉ dùng số liệu đã đọc ở nguồn gốc (xem `programs/ai-design-workflow/learning/research.md`, Part 5); không đưa lên slide những con số mà mục 10 của Part 5 xếp vào danh sách chưa dùng.
@@ -495,8 +495,42 @@ last_synced: 2026-10-23
   - AI coding tool thường hoạt động theo kiểu này; câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm trong folder
   - **Agent vẫn hallucinate**: nó có thể báo "xong" khi chưa xong; nối lại slide "Looks finished. Is it right?"
   - Connector (MCP) và reusable instructions không dạy ở đây; có một slide tham khảo ở Appendix, dạy sâu ở buổi 7
-  - Ba phút cho slide này
+  - Hai phút cho slide này
 - 🎨 Visual hint: SCHEMATIC. Hai hàng: hàng trên một prompt và một câu trả lời; hàng dưới một prompt, mũi tên tách thành ba bước nhỏ (đọc, sửa, chạy), rồi một báo cáo kèm icon folder.
+
+---
+
+### PROCESS · Your first agent
+- Kicker: Cách làm
+- Title: Your first\n*agent*
+- On-slide:
+  - 01 · Mở AI coding tool trên project folder
+  - 02 · Giao một vai và một kết quả cụ thể
+  - 03 · Chạy thử, đối chiếu với nguồn, chỉnh
+  - 04 · Ghi kết quả ra file Markdown
+  - 05 · Lưu cách làm thành step card
+- Ví dụ: có (step card Competitor Analysis trong `toolkit/skills/`; ảnh chụp `../assets/competitor-analysis-step-card.webp`)
+- Câu hỏi hay gặp: "Step card khác skill ở đâu?" Trả lời: cùng một ý, là file Markdown ghi cách làm một loại việc; hôm nay chưa cần phân biệt, buổi 7 sẽ dạy.
+- Speaker notes:
+
+  > Một agent đầu tiên chỉ cần một vai, một folder và một lần chạy thử.
+
+  - Ví dụ thật của mình: agent Competitor Analysis là một step card, file `toolkit/skills/competitor-analysis.md`; mình mở project folder, nhờ tool đọc step card này và làm theo
+  - Step card ghi rõ file làm việc là `work/competitor-analysis.md`, nguồn là `work/sources/anonymised/`, và mỗi bước điền một mục: bước 1 bạn viết Scope, bước 2 và 3 AI đề xuất rồi bạn chốt danh sách đối thủ
+  - Bước 5 AI soạn mục Evidence (AI draft) và bạn không sửa mục này; bước 6 bạn tự đối chiếu với nguồn rồi ghi bản đã sửa vào Evidence (verified)
+
+  > **Chạy thử xong thì mở file ra đối chiếu với nguồn, đừng tin dòng "xong rồi".**
+
+  - Chỗ AI không được sửa và bạn tự đối chiếu chính là bước 3; nối lại slide "Looks finished. Is it right?" và vai trò của gate ở slide kế
+  - Output là file Markdown trong `work/`, nên lần sau ở project khác chỉ cần mở lại step card; muốn đưa sang Excel hoặc email thì nối connector sau (dạy ở buổi 7)
+  - Bước 5: khi một lần chạy đã ổn, nhờ tool ghi lại cách làm thành step card, như card này; mỗi agent trong đội ở slide kế tiếp ra đời theo cách đó
+  - `AGENTS.md` không điều phối các agent; nó là luật chung tool đọc mỗi lần mở folder, còn người điều phối vẫn là designer
+  - Hai phút rưỡi cho slide này; card tự ghi "Status: draft", nói thật là chưa thử với lớp thật
+
+  > Nếu giao cho AI một vai trong project của bạn, bạn chọn vai nào trước? Nghĩ một câu, chưa cần trả lời.
+
+  > Một agent chạy ổn thì có một step card; tám step card thành một đội.
+- 🎨 Visual hint: SCHEMATIC. Process track năm bước, bước ba được tô purple. Ảnh chụp step card để ở slide tham khảo hoặc chiếu khi học viên hỏi.
 
 ---
 
@@ -519,7 +553,7 @@ last_synced: 2026-10-23
   - Hai vai không giao cho AI: người dùng thật và người phía product và business
   - Nói thật về hiện trạng: toolkit hiện có step card cho cả tám agent, nhưng đều là bản nháp chưa thử với lớp thật; mỗi card được chỉnh sau lần chạy đầu ở buổi tương ứng
   - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc; sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX) nhưng tên và phạm vi agent là của chương trình; chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design `[to confirm]`
-  - Bốn phút cho slide này
+  - Ba phút cho slide này
 - 🎨 Visual hint: SCHEMATIC. Một ảnh, gần full bleed: sơ đồ bốn phase, mỗi phase một khung hai agent, design memory ở dưới, vòng Next round; agent Framing được nhấn màu accent. Tệp: `../assets/designer-agents-double-diamond.png` (nguồn HTML: `_system/diagrams/designer-agents-double-diamond.html`).
 
 ---
@@ -541,7 +575,7 @@ last_synced: 2026-10-23
   - Cách setup trong một câu: một AI coding tool mở cả folder, mỗi agent là một step card, flow là đề xuất, duyệt, ghi file rồi qua gate (lesson mục 4.4)
   - **Câu A/B 30 giây:** nếu chỉ giao được một agent cho AI, bạn chọn desk research agent hay prototype agent?
   - Mình trả lời trước để làm mẫu: mình chọn prototype agent
-  - Hai phút rưỡi
+  - Hai phút
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước ba được tô purple.
 
 ---
@@ -575,19 +609,27 @@ last_synced: 2026-10-23
 - Kicker: The final report
 - Title: The Knowledge\n*Hub*
 - On-slide: Bắt đầu từ bất kỳ decision nào. Lần ra user need và test đứng sau nó.
-- Ví dụ: cần ví dụ: lần ngược một decision về user need và evidence
+- Ví dụ: bản nháp (lần ngược quyết định chọn khẩu phần của Kitchen Crate về nhu cầu người dùng và bằng chứng)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Hub là một folder Markdown gồm các page theo tuần và mỗi item một file, liên kết với nhau trong project folder của bạn
-  - Báo cáo cuối của series là hub hoàn chỉnh, không phải một tài liệu; mỗi buổi thêm các item và một page
+
+  > Giả sử giám đốc sản phẩm hỏi: vì sao màn hình đầu tiên của app Kitchen Crate bắt người dùng chọn khẩu phần? Bạn mở hub, bấm vào quyết định đó, và thấy ngay nhu cầu, bằng chứng và kết quả kiểm thử đứng sau.
+
+  - Hub là một folder trong project của bạn; mỗi quyết định, nhu cầu, giả định và kết quả kiểm thử là một file, nối với nhau
+  - Ví dụ: quyết định D3 nối tới nhu cầu O2 "người dùng sợ đặt dư đồ ăn", bằng chứng là 3 trong 8 buổi phỏng vấn nhắc chuyện lãng phí, và bài test T1 xác nhận hướng này
   - Chiếu ba ảnh kết quả có sẵn (overview, work, insights) thay cho demo trực tiếp; ở nhà mọi người mở hub mẫu trong folder của mình
-  - Từ mỗi decision, bấm sang tài liệu làm bằng chứng cho nó (phân tích đối thủ, persona, flow, prototype)
-  - Mỗi item (opportunity, decision, test) là một file và là nguồn duy nhất; AI dựng lại bảng alignment và warning từ các file đó: decision không có user need phía sau, hypothesis không có test
-  - **Hub mặc định là private**; cách chia sẻ cho người khác xem có ở slide tham khảo và trong `guides/04-share-your-hub.md`
-  - **Hub làm cho lập luận của bạn có thể được người khác kiểm chứng**
-  - **Câu A/B 30 giây:** người đọc hub của bạn nên thấy evidence trước hay decision trước?
-  - Mình trả lời trước để làm mẫu: decision trước, evidence sau; đây cũng là lý do slide nói bắt đầu từ bất kỳ decision nào rồi lần ngược ra
+  - Hub chỉ ra chỗ yếu: quyết định chưa có nhu cầu người dùng phía sau, giả định chưa có test; AI dựng bảng này từ các file, bước này chưa thử với lớp thật nên cần đối chiếu vài dòng với file gốc
+  - Với tổ chức, hub giữ lại lý do khi người làm đổi dự án, và giúp designer báo cáo bằng bằng chứng thay vì cảm nhận
+
+  > **Hub làm cho lập luận của bạn có thể được người khác kiểm chứng.**
+
+  - Hub mặc định là private; cách chia sẻ có ở slide tham khảo và trong `guides/04-share-your-hub.md`
+  - Báo cáo cuối của series chính là hub hoàn chỉnh; mỗi buổi thêm item và một page
   - Ba phút, gồm câu A/B
+
+  > Người đọc hub của bạn nên thấy bằng chứng trước hay quyết định trước? Trả lời bằng chat, 30 giây.
+
+  > Mình trả lời trước để làm mẫu: quyết định trước, bằng chứng sau; vì vậy slide nói bắt đầu từ bất kỳ quyết định nào rồi lần ngược ra.
 - 🎨 Visual hint: REAL. Ba ảnh kết quả cạnh nhau: overview, work, insights (`programs/ai-design-workflow/assets/outcome-examples/knowledge-hub-*.webp`; copy vào `assets/` của lesson khi dựng deck).
 
 ---

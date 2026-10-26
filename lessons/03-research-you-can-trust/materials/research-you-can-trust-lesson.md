@@ -20,7 +20,7 @@ Tài liệu này mô tả buổi 3 của chương trình AI Design Workflow, dà
 Buổi giải quyết bốn vấn đề, theo thứ tự trình bày:
 
 1. **Evidence menu.** Chọn loại evidence theo câu hỏi cần trả lời, và luôn ghép "điều người khác làm" với "điều user nói hoặc làm".
-2. **Điều người khác làm.** Competitor analysis và desk research ở mức tổng quan, với hai rủi ro chính: AI đọc sai giao diện và AI bịa citation.
+2. **Điều người khác làm.** Competitor analysis và desk research ở mức tổng quan, với hai rủi ro chính: AI đọc sai giao diện và AI bịa citation. Từ 2026-10-26, quy trình competitor analysis đầy đủ được dạy ở buổi 2 (Break the brief); buổi này chỉ dùng kết quả của nó để ghép với điều user nói và làm. `[to confirm]` Winnie xem lại phần slide của mục này khi sửa buổi 3.
 3. **User-voice synthesis.** Ẩn danh trước khi dán, gắn quote ID, dùng codebook ngắn, và quy tắc "chỉ dùng quote, trả lại word for word, được phép nói unknown".
 4. **Kiểm tra.** Truy theme về quote, đọc mẫu điều AI bỏ ra, đếm lỗi, và xếp theme theo severity, context và reach thay cho số lần.
 
@@ -269,7 +269,7 @@ Quote của người thật là dữ liệu cá nhân. Ẩn danh trước khi d�
 
 | Buổi | Vai trò |
 |---|---|
-| Buổi 2 | Scope, điều đang tin, finding heuristic; nguồn cho evidence pack |
+| Buổi 2 | `principles.md`, scope, `assumption.md`, `ux-audit.md`, `competitor-analysis.md` (năm hoạt động Break the brief, làm ở buổi practice sau buổi 2); nguồn cho evidence pack |
 | **Buổi 3 (buổi này)** | Evidence menu, user-voice synthesis, kiểm tra theme về quote |
 | Buổi 4 | Opportunity xếp hạng, principle check, hypothesis, Goals/Signals/Metrics |
 | Buổi 5 (Check point 1) | Chạy Discover đến Define; Gate 1; problem brief |
