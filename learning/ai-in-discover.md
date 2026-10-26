@@ -1,6 +1,6 @@
 # AI in Discover: Evidence and Practice, by Activity
 
-**Nghiên cứu:** 2026-10-15; mục 4 mở rộng 2026-10-18. **Phạm vi:** stage Discover: chuẩn bị và chạy phỏng vấn user, xử lý kết quả sau buổi phỏng vấn, desk research, competitor analysis, questionnaire, stakeholder meeting, observation. **Trạng thái:** bản nghiên cứu kèm quy trình thực hành đề xuất. **Quyết định (2026-10-15):** mục 1 đến 3 thuộc Lesson 2 (Discover the problem), và mục 3 trao kết quả cho flow user-voice synthesis của Lesson 3; chưa đưa vào lesson file.
+**Nghiên cứu:** 2026-10-15; mục 4 mở rộng 2026-10-18; mục 4b đến 4e (Break the brief của Lesson 2) thêm 2026-10-26. **Phạm vi:** stage Discover: chuẩn bị và chạy phỏng vấn user, xử lý kết quả sau buổi phỏng vấn, desk research, competitor analysis, research questions, đánh giá trải nghiệm hiện tại, challenge assumptions, questionnaire, stakeholder meeting, observation. **Trạng thái:** bản nghiên cứu kèm quy trình thực hành đề xuất. **Quyết định (2026-10-15):** mục 1 đến 3 thuộc Lesson 2 (Discover the problem), và mục 3 trao kết quả cho flow user-voice synthesis của Lesson 3; chưa đưa vào lesson file.
 
 File này bổ sung cho mục Discover trong `method.md` Part 3 §1 và các task Discover (số 1 đến 15) trong `ai-strengths-and-limits.md` (mục 6). Mã nguồn bắt đầu bằng D, tách riêng với mã E trong bảng Evidence and Sources của `ai-strengths-and-limits.md`.
 
@@ -20,6 +20,8 @@ File này bổ sung cho mục Discover trong `method.md` Part 3 §1 và các tas
 4. **Việc kiểm tra cũng khó.** Trong một benchmark kiểm tra nhận định của báo cáo nghiên cứu, chuyên gia cấp tiến sĩ không có công cụ chỉ đúng khoảng 61% (D10). Chưa có số đo tương đương cho bản tóm tắt phỏng vấn, nhưng kết quả này cho thấy cần quy trình đối chiếu nguồn chứ không chỉ "đã có người đọc lại".
 5. **Cách dùng AI an toàn nhất ở Discover là giữ người làm chủ buổi phỏng vấn,** dùng AI để chuẩn bị, giữ cấu trúc và xử lý sau, như quy trình ở các mục 1 đến 3.
 6. **Gate trước khi sang Define cần cứng ở ba chỗ:** truy được nguồn, đã kiểm tra và đếm lỗi (kể cả điều bị bỏ sót), và đã có consent. Các check còn lại có thể có ngoại lệ ghi lý do (mục 8).
+7. **Với Break the brief, cả hai nghiên cứu về heuristic evaluation bằng LLM đều kết luận cần người kiểm tra** (D45, D46), nhưng số đo lệch nhau: một nghiên cứu thấy AI tìm được 21,2% vấn đề của chuyên gia và 24,3% là false positive, nghiên cứu kia thấy AI tìm được 73 đến 77% so với 57 đến 63% của năm chuyên gia gộp lại. Hai thiết kế khác nhau, không so trực tiếp được (mục 4c).
+8. **Thứ tự "method trước, AI sau" có cơ sở gián tiếp, chưa có thí nghiệm trực tiếp.** Người dùng tin AI nhiều hơn thì tự báo cáo là ít tư duy phản biện hơn (D52, tự báo cáo), và người làm research lo suy giảm tư duy phản biện (D6). Với học viên mới biết method "nửa vời", đây là lý do để họ tự viết bản đầu trước khi xem AI (mục 4e).
 
 ## Mức dùng AI trong research
 
@@ -34,7 +36,9 @@ File này bổ sung cho mục Discover trong `method.md` Part 3 §1 và các tas
 
 | Method | AI làm được gì (có bằng chứng) | AI hỏng ở đâu | Mức bằng chứng |
 |---|---|---|---|
-| **Research questions** | Soạn nháp câu hỏi rõ và liên quan hơn bản viết tay trong một thử nghiệm (D12) | Yếu ở bước thử trước (pretest) và bỏ sót vấn đề tinh vi như social desirability (D12) | **Trung bình**, đo trên survey |
+| **Research questions** | Soạn nháp câu hỏi rõ và liên quan hơn bản viết tay trong một thử nghiệm (D12) | Yếu ở bước thử trước (pretest) và bỏ sót vấn đề tinh vi như social desirability (D12). Chưa có nghiên cứu về research question của UX (mục 4b) | **Trung bình**, đo trên survey |
+| **Evaluate current experience** | Đóng vai thêm một evaluator: tìm vấn đề theo heuristic từ ảnh chụp (D45, D46) | Bỏ sót nhiều vấn đề chuyên gia thấy, có false positive, thiếu độ sâu (D45); lẫn "non-issue" (D46) | **Trung bình**, hai nghiên cứu, mỗi nghiên cứu một hệ thống hoặc hai app |
+| **Challenge assumptions** | Chưa có nghiên cứu đo | Nghiêng theo người hỏi (D32); không biết điều gì đã có bằng chứng ngoài file được đưa | **Không có bằng chứng trực tiếp** |
 | **Desk research** | Tìm và tóm tắt nguồn nhanh | Citation bịa: 3 đến 13% URL agent dẫn không tồn tại (D7); 14 đến 95% citation bịa tuỳ mô hình (D8); agent tốt nhất dưới 68% tiêu chí chuyên gia (D9) | **Mạnh** về lỗi |
 | **Competitor analysis** | Gom thông tin công khai thành bảng so sánh; đọc ảnh chụp giao diện ở mức khá (D37, D38) | Cùng lỗi với desk research (D7, D8, D9); đọc sai hoặc thiếu thành phần UI (D38) | **Yếu**: chưa có benchmark riêng; có hướng dẫn thực hành (D36) |
 | **Stakeholder meetings** | Tóm tắt cuộc họp | Hallucination và bỏ sót; metric tự động thường không phát hiện (D11) | **Trung bình** |
@@ -199,6 +203,9 @@ Flow đầy đủ tám bước của competitor analysis nằm ở `examples/com
 - **Đọc ảnh chụp giao diện.** Một nghiên cứu về điều hướng giao diện điện thoại ghi nhận GPT-4V hiểu tốt icon và chữ trên màn hình, và đưa ảnh vào giữ được nhiều thông tin hơn là chuyển ảnh thành mô tả bằng chữ (D37). Ở một benchmark năm 2026 về trích xuất thành phần UI từ ảnh chụp, mô hình tốt nhất đạt F1 khoảng 0,70 và mô hình đứng sau khoảng 0,67 (D38). Cả hai chưa đo trên competitor analysis.
 - **Quy trình thực hành.** Hướng dẫn của Sparkbox (D36) chọn một journey thay vì cả sản phẩm, đưa cho AI một brief đủ bối cảnh như với đồng nghiệp, chụp màn hình theo cùng cấu trúc cho mọi đối thủ, rồi mới nhờ AI gom theme. Họ cảnh báo AI có thể khái quát quá mức, bịa lý do, và một bảng gọn gàng dễ tạo cảm giác chắc chắn dù phần so sánh bên dưới yếu. Một số hướng dẫn khác khuyên ghi ngày cho mỗi ảnh chụp, ghi URL cho mỗi nhận định và đối chiếu với trang thật (D40). Các nguồn này là bài của practitioner, chưa có số đo.
 - **Sổ ghi nguồn và nhận định.** Các hướng dẫn về deep research khuyên giữ nhật ký tìm kiếm, bảng nhận định kèm nguồn, nhật ký mâu thuẫn, và với nhận định quan trọng thì cần ít nhất hai nguồn độc lập (D41). Đây là thực hành đề xuất, chưa được đo.
+- **Competitive usability evaluation (đã đọc bài gốc).** NN/g định nghĩa là so sản phẩm của mình với nhiều thiết kế cạnh tranh, dạng *review* (chuyên gia xem lại các sản phẩm) hoặc *testing* (người dùng làm task trên nhiều site). Thường chọn 2 đến 4 đối thủ; tiêu chí xuất phát từ thách thức thiết kế và các task chính; mục tiêu không phải tuyên bố bên thắng mà là cải thiện thiết kế của mình, và không nên chỉ tìm sản phẩm kém hơn để so (D49).
+
+**Suy luận:** Practice B ở `desk-research-competitor-practice.md` là dạng *review*, không phải *testing*. Vì vậy kết quả là giả thuyết về điểm mạnh yếu, cần user research xác nhận (nối sang Understand our users).
 
 **Suy luận:** vì AI đọc ảnh ở mức khá nhưng không hoàn hảo (D38), ảnh chụp là đầu vào dùng được cho competitor analysis, với điều kiện **mỗi ô trong bảng đều được đối chiếu lại với ảnh gốc**. Vì citation bịa còn phổ biến (D7, D8), người dùng nên tự tìm và lưu nguồn, rồi để AI chỉ đọc những gì đã lưu.
 
@@ -232,6 +239,178 @@ Nguyên tắc chung: học viên tự tìm và lưu nguồn, AI chỉ đọc nh�
 - **Bảng gọn tạo cảm giác chắc chắn** (D36). Ghi tỷ lệ ô sai sau bước kiểm tra.
 
 Danh sách đầy đủ ở file cách làm.
+
+---
+
+## 4b. Research Questions
+
+Dùng cho hoạt động **Research questions** của Break the brief (đầu ra `research-questions.md`). Từ 2026-10-26 hoạt động này đứng **sau** UX observation và challenge assumptions: câu hỏi xuất phát từ ba giả định hàng đầu của 4d. Business question và quyết định được chốt trước, ở bước scope. Research question là câu hỏi nhóm *muốn học được*, khác với interview question là câu *hỏi người tham gia*. Hai thứ này hay bị trộn.
+
+### Bằng chứng
+
+- **Về method (đã đọc bài gốc).** NN/g mô tả chuỗi bảy bước đi từ task quan trọng của user và mối lo của tổ chức, đến problem statement, research goals, hành vi cần quan sát, rồi scenario. Problem statement gợi ra goals của nghiên cứu. Bài này không định nghĩa và không phân biệt research question với hypothesis (D47). Bài video của NN/g về ba khái niệm này chỉ đọc được phần tóm tắt, chưa có định nghĩa (D48).
+- **Về AI.** Chưa có nghiên cứu nào đo AI soạn research question cho UX. Bằng chứng gần nhất là soạn câu hỏi khảo sát: bản AI soạn rõ và liên quan, nhưng bỏ sót vấn đề tinh vi như social desirability (D12).
+
+**Suy luận:** research question là chỗ quyết định cả Break the brief đi đúng hướng hay không, và AI không có thông tin nào về quyết định kinh doanh của học viên ngoài những gì được đưa. Vì vậy phần "câu hỏi này phục vụ quyết định nào" phải do học viên viết.
+
+### Method cần ôn (học viên biết nửa vời)
+
+Gợi ý cho phần ôn, chưa phải kết quả nghiên cứu. Đối chiếu với `customer-understanding` Part 3 (Research Questions) trong library theo mức tiêu đề, chưa đọc từng đoạn:
+
+- Chuỗi: business question → quyết định cần đưa → research goal → research question → (sau này) interview question.
+- Năm tiêu chí tự kiểm một research question: (1) trả lời được bằng bằng chứng, (2) mở chứ không phải có/không, (3) gắn với đúng một quyết định, (4) không gợi sẵn giải pháp, (5) biết sẽ tìm câu trả lời ở đâu (file, desk research, phỏng vấn, data).
+- Một cặp ví dụ xấu và tốt. Ví dụ: "Người dùng có thích tính năng lưu giỏ không?" (có/không, gợi giải pháp) so với "Người dùng đang làm gì khi cần giữ lại món định mua sau, và điều gì khiến họ bỏ dở?"
+
+### AI hỗ trợ được gì
+
+| Việc | AI hỗ trợ | Người vẫn làm |
+|---|---|---|
+| Làm rõ quyết định | Hỏi ngược: "quyết định nào sẽ đổi nếu biết câu trả lời?" | Trả lời; chốt business question và quyết định |
+| Soạn nháp câu hỏi | Đề xuất câu bị thiếu từ context pack | Giữ, sửa hoặc bỏ, ghi nguồn gốc (mine, AI, cả hai) |
+| Kiểm theo tiêu chí | Chỉ câu nào có/không, gợi giải pháp, hoặc gộp hai ý | Quyết định sửa thế nào |
+| Gán nơi tìm câu trả lời | Gợi ý file, desk research hay phỏng vấn | Chọn; đánh dấu câu cần user thật |
+
+### Cách làm đề xuất (method trước, AI sau)
+
+1. **Học viên tự viết (không AI):** biến ba giả định hàng đầu (từ `assumption.md`) thành research question, mỗi câu kèm "phục vụ quyết định nào" (quyết định đã chốt ở bước scope) và nơi tìm câu trả lời.
+2. **AI phản biện:** đưa context pack, hỏi trung tính (D32): "câu nào không trả lời được bằng bằng chứng, câu nào dẫn dắt, còn thiếu câu nào để quyết định được". Chỉ dùng điều có trong file; thiếu thì ghi unknown.
+3. **Học viên đối chiếu hai bản và ghi nguồn gốc từng câu.** Đầu ra là `research-questions.md` có cột: câu hỏi, quyết định phục vụ, tìm ở đâu, nguồn gốc.
+
+### Chỗ cần kiểm tra
+
+- Câu AI thêm vào nghe hợp lý nhưng không gắn với quyết định nào.
+- Câu hỏi thực ra là interview question.
+- Học viên chấp nhận danh sách AI mà không có bản của mình để so (mất ý nghĩa của bước 1).
+
+---
+
+## 4c. UX Observation: Evaluate Current Experience
+
+Dùng cho hoạt động **UX observation** (đầu ra `ux-audit.md`). Ở Break the brief, học viên chưa có user thật nên đây là đánh giá của chuyên gia trên trải nghiệm hiện có.
+
+### Bằng chứng
+
+- **Heuristic evaluation (đã đọc bài gốc).** Ba bước: chuẩn bị; đánh giá độc lập (một lượt để làm quen, một lượt tìm vi phạm heuristic, khoảng 1 đến 2 giờ); gộp vấn đề bằng affinity diagram rồi thảo luận. NN/g khuyên ba đến năm người đánh giá độc lập vì mỗi người, dù giỏi, đều bỏ sót vấn đề. Bài nhấn mạnh heuristic evaluation không thay được user research, và một vi phạm heuristic chưa chắc là vấn đề vì còn phụ thuộc ngữ cảnh (D42). Bộ mười heuristic của Nielsen (D44).
+- **Severity (đã đọc bài gốc).** Ba yếu tố: tần suất, tác động, tính lặp lại. Thang 0 đến 4: 0 không phải vấn đề; 1 chỉ thẩm mỹ; 2 nhỏ; 3 lớn, ưu tiên cao; 4 thảm hoạ, phải sửa trước khi phát hành. Đánh giá severity của một người không đáng tin; trung bình ba người thì đủ dùng cho nhiều việc thực tế (D43).
+- **AI làm evaluator.** Hai nghiên cứu đọc ở mức tóm tắt tác giả và đoạn đầu bài:
+  - Guerino và cộng sự (INTERACT 2025): GPT-4o, một hệ thống web, 20 ảnh chụp, mỗi ảnh chạy một lần. Chỉ 21,2% vấn đề của chuyên gia (14 trên 66) cũng được GPT-4o tìm thấy, AI thêm 27 vấn đề mới, 24,3% output là false positive. Kết luận: AI là phần bổ sung, cần người kiểm tra (D45).
+  - Zhong, McDonald, Hsieh (preprint): GPT-4 trên hai app; AI tìm được 73% và 77% vấn đề, năm chuyên gia gộp lại 57% và 63%. Bài cũng nói AI cho nhiều non-issue cần lọc, và một số công việc thủ công vẫn cần (D46).
+  - Hai nghiên cứu không có số κ, không đo độ ổn định giữa các lần chạy, và không cho thấy AI chấm severity đáng tin (đã kiểm tra, không có trong hai bài).
+
+**Suy luận:** hai kết quả khác hướng vì khác thiết kế (cách dựng "danh sách vấn đề chuẩn", mô hình, ảnh một màn hình hay luồng có task, "chuyên gia" là freelancer hay nhóm đã công bố). Điều cả hai đồng ý là AI nên đứng cạnh người đánh giá, không thay người. Nếu coi học viên là evaluator thứ nhất và AI là evaluator thứ hai, thì lời khuyên "ba đến năm người, độc lập" của NN/g gợi ý học viên **không cho AI xem bản của mình trước**.
+
+### Method cần ôn
+
+Đối chiếu với `evaluate-current-experience` (Parts 1 đến 5, Practice A đến C) và `desk-research` trong library, theo mức tiêu đề:
+
+- Mười heuristic, cách ghi một vấn đề (màn hình, heuristic vi phạm, bằng chứng, hệ quả cho user).
+- Thang severity và ba yếu tố, và vì sao một người chấm thì không đủ.
+- Giới hạn: đánh giá chuyên gia cho **giả thuyết**, không phải bằng chứng về user. Nó trở thành research question cho bước Understand our users.
+
+### AI hỗ trợ được gì
+
+| Việc | AI hỗ trợ | Người vẫn làm |
+|---|---|---|
+| Lượt đánh giá thứ hai | Tìm vi phạm heuristic trên ảnh chụp đã chọn | Đối chiếu từng vấn đề với ảnh gốc |
+| Tìm điều bị bỏ sót | Chỉ màn hình và trạng thái chưa được xét (lỗi, rỗng, tải) | Quyết định có xét thêm không |
+| Viết lại vấn đề | Chuẩn hoá thành một dòng: ở đâu, heuristic nào, hậu quả | Giữ nguyên ý của mình |
+| Chấm severity | Đề xuất điểm độc lập, kèm lý do theo tần suất, tác động, lặp lại | Quyết định điểm cuối; không dùng điểm AI thay điểm mình |
+
+### Cách làm đề xuất
+
+1. **Học viên chọn một luồng và bốn đến sáu ảnh chụp theo cùng cấu trúc** (cùng bước, cùng trạng thái), ghi ngày.
+2. **Học viên tự đánh giá (khoảng 15 phút, không AI):** mỗi vấn đề ghi heuristic, bằng chứng (ảnh nào), severity theo ba yếu tố.
+3. **AI đánh giá độc lập** trên cùng ảnh, không xem bản của học viên. Yêu cầu mỗi vấn đề kèm ảnh nào và vùng nào; điều không nhìn thấy trong ảnh thì ghi unknown.
+4. **So hai bản:** vấn đề cả hai thấy, chỉ mình thấy, chỉ AI thấy; ghi số false positive của AI (đúng tinh thần Gate 1: đếm lỗi).
+5. **Học viên chốt `ux-audit.md`,** mỗi dòng có cột nguồn (mine, AI, cả hai) và cột "cần user thật xác nhận".
+
+### Chỗ cần kiểm tra
+
+- Vấn đề AI nêu không chỉ ra được ảnh hoặc vùng nào trên ảnh.
+- AI đánh giá điều chỉ có thể biết khi dùng sản phẩm thật (tốc độ, nội dung động).
+- Severity do AI chấm không được dùng thay cho severity của học viên.
+- Mẫu nhỏ của hai nghiên cứu (D45: một hệ thống; D46: hai app): không hứa tỷ lệ phát hiện cho học viên.
+
+---
+
+## 4d. Challenge Assumptions
+
+Dùng cho hoạt động **Challenge assumptions** (đầu ra `assumption.md`). Hoạt động này là chỗ gom những gì học viên đang tin nhưng chưa có bằng chứng, để chọn thứ cần kiểm chứng ở Understand our users.
+
+### Bằng chứng
+
+- **Assumption mapping (đã đọc bài gốc, trích từ sách của Bland).** Viết giả định dạng "chúng tôi tin rằng…", cụ thể và kiểm chứng được; xếp trên hai trục: bằng chứng (đã có hay chưa) và tầm quan trọng. Câu hỏi để chấm tầm quan trọng: giả định nào, nếu sai, sẽ làm ý tưởng thất bại. Test trước ở góc quan trọng và chưa có bằng chứng. Bằng chứng là điều quan sát được, định tính hoặc định lượng. Nhóm rủi ro: desirability, feasibility, viability; trang ghi không nhất quán, có chỗ thêm adaptability (D50).
+- **Assumption testing của Torres (đã đọc bài gốc).** Năm loại giả định: desirability, usability, feasibility, viability, ethical. Bốn nhóm cách test: prototype, khảo sát một câu hỏi, khai thác data có sẵn, research spike. Giả định càng cụ thể càng dễ test. Trang này không hướng dẫn cách ưu tiên hay test bao nhiêu giả định (D51).
+- **AI.** Chưa có nghiên cứu đo AI trong assumption mapping. Rủi ro gần nhất: AI nghiêng theo câu khẳng định của người hỏi nhiều hơn theo câu hỏi trung tính, chênh khoảng 24 điểm phần trăm (D32), và AI không biết điều gì đã có bằng chứng ngoài file được đưa.
+
+**Suy luận:** AI hợp với việc *tìm giả định ẩn* (những điều brief ngầm tin) và *hỏi ngược bằng chứng*, không hợp với việc *quyết định giả định nào quan trọng*, vì "quan trọng" phụ thuộc vào business và vào quyết định của học viên.
+
+### Method cần ôn
+
+Đối chiếu với `desk-research` (Structure Your Assumptions), `customer-understanding` Part 2 (Assumptions) trong library, theo mức tiêu đề:
+
+- Giả định là gì, khác sự thật và khác ý kiến thế nào; cách viết "chúng tôi tin rằng…".
+- Ba đến năm loại rủi ro (chọn thang gọn cho lớp).
+- Bản đồ hai trục và câu hỏi chấm quan trọng.
+- Quan hệ với research question: giả định ở góc quan trọng và chưa có bằng chứng thường trở thành research question.
+
+### AI hỗ trợ được gì
+
+| Việc | AI hỗ trợ | Người vẫn làm |
+|---|---|---|
+| Tìm giả định ẩn | Đọc brief, `ux-audit.md`, context pack, liệt kê điều đang được coi là đúng | Giữ cái có thật, bỏ cái không liên quan |
+| Hỏi ngược bằng chứng | "Giả định này dựa vào file nào? Nếu không có, ghi unknown" | Đánh dấu có hay chưa có bằng chứng |
+| Phản biện | Nêu lý lẽ cho cả hai phía, hỏi trung tính | Quyết định đổi kết luận hay không |
+| Gắn loại rủi ro | Gợi ý loại | Chốt loại; chấm quan trọng |
+
+### Cách làm đề xuất
+
+1. **Học viên liệt kê giả định (10 phút, không AI)** từ context pack, `ux-audit.md` và `research-questions.md`: viết dạng "chúng tôi tin rằng…", gắn loại rủi ro, chấm quan trọng, ghi file làm bằng chứng nếu có.
+2. **AI tìm giả định ẩn và hỏi ngược bằng chứng** của từng giả định đã liệt kê, dùng prompt trung tính (D32).
+3. **Học viên xếp lại trên bản đồ,** chọn ba giả định ở góc quan trọng và chưa có bằng chứng. Ba giả định này là đầu vào cho Understand our users (research plan và interview).
+4. **Đầu ra `assumption.md`:** giả định, loại, quan trọng, bằng chứng (file hoặc "chưa có"), nguồn (mine, AI, cả hai), việc kiểm chứng đề xuất.
+
+### Chỗ cần kiểm tra
+
+- AI gọi "đã có bằng chứng" cho điều chỉ là kiến thức chung.
+- Giả định quá rộng để kiểm chứng ("người dùng muốn trải nghiệm tốt hơn").
+- Danh sách giả định đẹp nhưng không dẫn tới việc cần làm tiếp.
+
+---
+
+## 4e. Cân bằng giữa ôn method và dùng AI: method trước, AI sau
+
+Winnie chọn nguyên tắc này (2026-10-26) vì học viên biết method "nửa vời".
+
+### Vì sao thứ tự này (bằng chứng gián tiếp)
+
+- Khảo sát 319 người làm tri thức (tự báo cáo): tin AI nhiều hơn đi cùng ít tư duy phản biện hơn, tự tin vào bản thân đi cùng nhiều hơn (chỉ đọc phần tóm tắt; chưa đọc phần hạn chế) (D52).
+- Người làm research lo ngại suy giảm tư duy phản biện (63%) và hallucination (91%) (D6, khảo sát vendor).
+- AI nghiêng theo cách đặt câu hỏi (D32), nên một học viên chưa có bản của mình dễ bị định hướng.
+- Cả hai nghiên cứu heuristic evaluation đều cần người xác nhận (D45, D46). Người chưa nắm method khó xác nhận.
+- Nghiên cứu của Bastani và cộng sự (PNAS 2025) về AI và học toán ở học sinh phổ thông không đọc được (trang chặn truy cập); chưa dùng số nào từ đó.
+
+**Suy luận:** nếu học viên chưa tự viết bản của mình, họ không có gì để so với bản AI, và bước "đối chiếu" trở thành đọc lướt. Các nguồn trên đều không đo đúng tình huống này (mentee designer, buổi học 90 phút), nên đây là giả thuyết cho khoá, cần thử và đo.
+
+### Khung dùng chung cho cả bốn hoạt động
+
+| Pha | Việc | AI |
+|---|---|---|
+| 1. Ôn | 5 phút nhắc lại method trên slide: khái niệm, tiêu chí, ví dụ xấu và tốt | Không |
+| 2. Tự làm | Học viên viết bản của mình trên case | Không |
+| 3. AI sau | AI phản biện hoặc soạn bản độc lập, dùng prompt trung tính, chỉ dùng file đã đưa | Có |
+| 4. So sánh | Học viên đánh dấu mine, AI, cả hai; đếm điều AI sai hoặc bịa | Người quyết định |
+
+### Phân bổ giữa lớp và practice
+
+| Hoạt động | Ôn method trên lớp | Tự làm và AI sau ở practice |
+|---|---|---|
+| Research questions | Chuỗi từ business question, năm tiêu chí, ví dụ xấu và tốt | Viết, AI phản biện, so sánh |
+| UX observation | Mười heuristic, thang severity, giới hạn | Đánh giá, AI độc lập, so sánh |
+| Challenge assumptions | Dạng "chúng tôi tin rằng…", loại rủi ro, bản đồ hai trục | Liệt kê, AI tìm giả định ẩn, xếp lại |
+| Competitor analysis | Review và testing; 2 đến 4 đối thủ; không tuyên bố bên thắng | Practice B có sẵn |
+
+**Cần cân nhắc:** pha 2 làm mỗi hoạt động dài thêm khoảng 10 đến 15 phút. Practice 2 hiện 75 trên 90 phút, bốn hoạt động sẽ vượt. Có ba cách: giảm số hoạt động ở practice 2 (đẩy competitor sang practice sau), rút ảnh chụp và số giả định, hoặc làm hai hoạt động bắt buộc và hai hoạt động mở rộng.
 
 ---
 
@@ -381,7 +560,11 @@ Quy tắc cũ cho phép gate qua khi một check không đạt nhưng có ghi l�
 - **Chưa có nghiên cứu về observation thực địa** với AI, chỉ có phân tích video session.
 - **Chưa có nghiên cứu đo trực tiếp trên stakeholder meeting** (độ chính xác của action item, chủ sở hữu, hạn).
 - **Chưa có benchmark cho competitive analysis,** chỉ có benchmark cho deep research nói chung. Số đo đọc ảnh giao diện (D37, D38) đo trên tác vụ điều hướng và trích xuất thành phần UI, không phải so sánh sản phẩm. Các template và quy trình ở `desk-research-competitor-practice.md` chưa được chạy thử với học viên.
-- **Nguồn NN/g** được đọc qua mô tả video và bản tóm tắt, chưa đọc bài gốc.
+- **Nguồn NN/g** ở mục 1 đến 3 được đọc qua mô tả video và bản tóm tắt. Các bài ở mục 4b đến 4d (heuristic evaluation, severity, mười heuristic, research goals, competitive evaluation) đã đọc bản gốc (D42 đến D44, D47, D49); video về research goals, questions, hypotheses chỉ đọc được phần tóm tắt (D48).
+- **Chưa có nghiên cứu đo AI soạn research question hoặc làm assumption mapping cho UX.** Mục 4b và 4d dựa vào method gốc cộng bằng chứng gần (D12, D32).
+- **Hai nghiên cứu AI làm heuristic evaluator** (D45, D46) khác thiết kế và quy mô nhỏ; chưa đọc đầy đủ phương pháp dựng "danh sách vấn đề chuẩn". D46 là preprint, chưa xác nhận nơi công bố, và có chỗ ghi 77% hoặc 78% cho cùng một con số.
+- **Bastani và cộng sự (PNAS 2025)** chưa đọc được (403); phần hạn chế của D52 chưa đọc.
+- **Chưa có thí nghiệm đo "method trước, AI sau"** trên người học designer (mục 4e).
 - **Chưa có số đo cho tiếng Việt trên phỏng vấn UX:** có benchmark nhận dạng giọng nói trên giọng đọc, nhưng chưa có số đo trên hội thoại tự nhiên, giọng vùng miền, từ tiếng Anh chen vào, và chưa có benchmark hallucination cho tóm tắt tiếng Việt (mục 7).
 - **Không đi sâu vào văn bản luật** (quyết định phạm vi): mục 6 chỉ dùng tóm tắt của văn phòng luật. Nếu chương trình mở rộng ra nghiên cứu cho khách hàng hoặc công bố, cần xem lại.
 
@@ -402,6 +585,9 @@ Gợi ý, chưa đưa vào lesson nào.
 | Consent (mục 6) | Đưa thông báo mẫu vào đầu buổi phỏng vấn (trong facilitator page hoặc một handout ngắn); dạy ba điều cần xin phép: ghi hình, dùng cho nghiên cứu nội bộ, không chia sẻ ra ngoài |
 | Độ chính xác tiếng Việt chưa có số đo (mục 7) | Dạy bài kiểm tra 10 phút trước khi dùng một công cụ transcript; không hứa độ chính xác. Task 1 của `ai-strengths-and-limits.md` (mục 6) đang xếp transcript ở L1 Automate: cần cân nhắc ghi chú cho tiếng Việt |
 | Gate 1 mở rộng (mục 8) | Dùng làm checklist trước khi sang Define; ba check hard stop (1b, 1c, 1f); với lớp 3 đến 5 phỏng vấn, 1d chỉ yêu cầu ghi cỡ mẫu và giới hạn |
+| Research questions, UX observation, challenge assumptions (mục 4b đến 4d) | **Lesson 2, Break the brief.** Mỗi hoạt động theo khung ôn → tự làm → AI sau → so sánh (mục 4e); đầu ra ghi nguồn gốc từng dòng (mine, AI, cả hai) |
+| AI làm evaluator thứ hai (D45, D46) | Học viên đánh giá trước, AI đánh giá độc lập, đếm false positive; không dùng severity của AI thay severity của học viên |
+| Giả định ở góc quan trọng và chưa có bằng chứng (D50) | Ba giả định này là đầu vào của research plan ở Understand our users |
 | Quy tắc "hỏi trung tính" (D32) | Dạy cách viết prompt tổng hợp không nêu giả thuyết của người hỏi, và thử cả khung ủng hộ lẫn phản đối |
 
 ## Evidence and Sources
@@ -449,6 +635,17 @@ Gợi ý, chưa đưa vào lesson nào.
 | D39 | [UXtweak, UX Competitive Analysis Guide](https://blog.uxtweak.com/competitive-analysis-in-ux-research/) | Phân loại đối thủ trực tiếp, gián tiếp; tiêu chí đánh giá thường dùng | Blog của vendor; chưa đọc toàn văn |
 | D40 | [Nexasphere, AI competitive research](https://nexasphere.io/blog/ai-competitive-research-market-analysis-2026) và [FreeAcademy, Competitive Analysis with AI](https://freeacademy.ai/es/lessons/prodpm-competitive-analysis) | Chụp ảnh trang giá và các bước onboarding, ghi ngày, ghi URL cho mỗi nhận định, đối chiếu với trang thật | Bài của vendor hoặc đơn vị đào tạo; đọc qua bản tóm tắt tìm kiếm |
 | D41 | [Trust Insights, fact-check bằng deep research](https://www.trustinsights.ai/?p=92983) và [skills.sh, quy trình deep research](https://skills.sh/standardhuman) | Sổ nhận định kèm nguồn, nhật ký mâu thuẫn, hai nguồn độc lập cho nhận định quan trọng | Tài liệu practitioner; đọc qua bản tóm tắt tìm kiếm; không có số đo |
+| D42 | [NN/g, How to Conduct a Heuristic Evaluation (Moran và Gordon, 2023)](https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/) | Ba bước; ba đến năm evaluator độc lập; không thay user research; vi phạm heuristic chưa chắc là vấn đề | Đã đọc bài gốc; không nêu tỷ lệ vấn đề một người tìm được |
+| D43 | [NN/g, Severity Ratings for Usability Problems (Nielsen, 1994)](https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/) | Tần suất, tác động, tính lặp lại; thang 0 đến 4; trung bình ba người đánh giá | Đã đọc bài gốc; bài cũ |
+| D44 | [NN/g, 10 Usability Heuristics (Nielsen, 1994; xem lại 01/2024)](https://www.nngroup.com/articles/ten-usability-heuristics/) | Mười heuristic, giữ nguyên từ 1994 | Đã đọc bài gốc |
+| D45 | [Guerino và cộng sự, Can GPT-4o Evaluate Usability Like Human Experts? (arXiv 2506.16345, INTERACT 2025)](https://arxiv.org/abs/2506.16345) | 21,2% vấn đề chuyên gia (14 trên 66); thêm 27 vấn đề mới; 24,3% false positive; cần người kiểm tra | Một hệ thống, 20 ảnh, chạy một lần; mẫu số của 24,3% chưa thống nhất trong bản tóm tắt; không có κ; một số câu kết luận đọc qua tóm tắt |
+| D46 | [Zhong, McDonald, Hsieh, Synthetic Heuristic Evaluation (arXiv 2507.02306)](https://arxiv.org/abs/2507.02306) | GPT-4 tìm 73% và 77% vấn đề so với 57% và 63% của năm chuyên gia gộp lại; nhiều non-issue | Preprint; hai app; chưa xác nhận nơi công bố; ghi 77% hoặc 78% ở hai chỗ; không có số đồng thuận severity |
+| D47 | [NN/g, From Research Goals to Usability-Testing Scenarios: 7 steps (Farrell, 2017)](https://www.nngroup.com/articles/ux-research-goals-to-scenarios/) | Bảy bước từ task và mối lo đến scenario | Đã đọc bài gốc; không phân biệt research question và hypothesis |
+| D48 | [NN/g, What, When, Why: Research Goals, Questions, and Hypotheses (Rosala, 2023)](https://www.nngroup.com/videos/research-goals-questions-hypotheses/) | Ba công cụ để tập trung nghiên cứu | Chỉ có phần tóm tắt; chưa xem video |
+| D49 | [NN/g, Competitive Usability Evaluations (Neusesser, 2024)](https://www.nngroup.com/articles/competitive-usability-evaluations/) | Review và testing; 2 đến 4 đối thủ; không tuyên bố bên thắng | Đã đọc bài gốc |
+| D50 | [Strategyzer, How Assumptions Mapping Can Focus Your Teams (Bland, 2020)](https://strategyzer.com/library/how-assumptions-mapping-can-focus-your-teams-on-running-experiments-that-matter) | Hai trục bằng chứng và quan trọng; test góc quan trọng và chưa có bằng chứng | Đã đọc; trích từ sách; số nhóm rủi ro ghi không nhất quán (ba hoặc bốn) |
+| D51 | [Product Talk, Assumption Testing (Torres)](https://www.producttalk.org/glossary-discovery-assumption-testing/) | Năm loại giả định; bốn nhóm test; giả định cụ thể dễ test | Đã đọc; không có hướng dẫn ưu tiên hay số lượng |
+| D52 | [Lee và cộng sự, The Impact of Generative AI on Critical Thinking (CHI 2025)](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/) | 319 người làm tri thức; tin AI nhiều hơn đi cùng ít tư duy phản biện hơn | Khảo sát tự báo cáo, chỉ đọc phần tóm tắt; không đo hiệu quả công việc |
 
 ## Decisions and To-do
 
@@ -472,7 +669,14 @@ Gợi ý, chưa đưa vào lesson nào.
 - [ ] Làm bốn **template** ở `desk-research-competitor-practice.md` thành file dùng được (brief, sổ nguồn, bảng bằng chứng, bảng nhận định) trong `assets/templates/`, và đồng bộ với `examples/competitor-analysis/` và hai method card (`desk-research.md`, `competitor-analysis.md`).
 - [ ] **Chạy thử Practice A và B** trên một case thật, đo thời gian từng bước và tỷ lệ ô sai ở bước kiểm tra; điều chỉnh số ảnh mỗi lượt và tỷ lệ mẫu kiểm tra.
 - [ ] Thử nhỏ với transcript tiếng Việt đã ẩn danh của mentee (mục 7, bài kiểm tra 10 phút).
+- [ ] Chờ Winnie duyệt mục 4b đến 4e, rồi mới đưa vào `discover-the-problem-lesson.md`, slide outline và practice 2 (chưa sửa file nào).
+- [ ] Xem video NN/g về research goals, questions, hypotheses (D48) để lấy định nghĩa; đọc phần hạn chế của D52; thử mở bản PNAS qua nguồn khác.
+- [ ] Đọc `evaluate-current-experience`, `desk-research`, `customer-understanding` đầy đủ để đối chiếu với mục 4b đến 4d (hiện đối chiếu theo tiêu đề).
 
 ## Open Questions
+
+- ~~Thứ tự bốn hoạt động của Break the brief.~~ **Đã chốt 2026-10-26:** scope (business question và quyết định) → UX observation → challenge assumptions → research questions → competitor analysis. Đã sửa lesson 2, outline, practice 2, `plan.md` và sơ đồ sáu tuần.
+- **Thời lượng.** Practice 2 hiện 85 trên 90 phút (bảy bước, có pha "bạn làm trước"); chưa thử với lớp thật. Quy ước tạm: nếu thiếu giờ thì bỏ competitor (Step 6) trước.
+- **Một người hay hai người đánh giá.** Học viên một mình cộng AI chưa đạt "ba đến năm evaluator" của NN/g. Có cần đánh giá chéo theo cặp trong lớp không?
 
 1. Có muốn đọc bản gốc của D1, D2 và D4 trước, vì đây là ba nguồn mạnh nhất cho phần synthesis?

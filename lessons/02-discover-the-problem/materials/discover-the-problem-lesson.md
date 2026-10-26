@@ -13,7 +13,7 @@ previous-session: "Your Design Process, with AI"
 next-session: "Turn Research into Insights You Can Trust"
 ---
 
-> **Ghi chú đồng bộ (2026-10-26).** Buổi 2 được dựng lại theo sơ đồ Knowledge của Winnie: Discover trong Double Diamond, AI capabilities, Design Principles, Break the brief, Understand our users, rồi package thành agents và contribute vào hub. Bản trước (business question, tin gửi business, heuristic evaluation là trục chính) lưu ở `_archive/discover-the-problem-lesson-pre-knowledge-restructure-2026-10-26.md`. Sau buổi 2 có một buổi practice 90 phút; cấu trúc "lesson + practice" áp dụng cho cả chương trình đang chờ Winnie chốt ở `learning/plan.md`, mục 4.
+> **Ghi chú đồng bộ (2026-10-26).** Buổi 2 được dựng lại theo sơ đồ Knowledge của Winnie: Discover trong Double Diamond, AI capabilities, Design Principles, Break the brief, Understand our users, rồi package thành agents và contribute vào hub. Bản trước (business question, tin gửi business, heuristic evaluation là trục chính) lưu ở `_archive/discover-the-problem-lesson-pre-knowledge-restructure-2026-10-26.md`. Thứ tự Break the brief đổi ngày 2026-10-26 (bản cũ ở `_archive/discover-the-problem-lesson-pre-activity-order-2026-10-26.md`): business question và scope, UX observation, challenge assumptions, research questions, competitor analysis. Sau buổi 2 có một buổi practice 90 phút; cấu trúc "lesson + practice" áp dụng cho cả chương trình đang chờ Winnie chốt ở `learning/plan.md`, mục 4.
 
 ## Abstract
 
@@ -23,7 +23,7 @@ Buổi giải quyết năm vấn đề, theo thứ tự trình bày:
 
 1. **Discover nằm ở đâu và AI giúp được gì.** Discover là nửa đầu của Double Diamond: mở rộng để hiểu vấn đề, rồi thu hẹp về vấn đề đáng giải. AI mạnh ở việc soạn nháp rộng và nhanh, yếu ở việc biết điều chưa có trong tài liệu.
 2. **Design Principles làm chuẩn cho AI.** Bốn phần: UX principles, business principles, severity và gates. AI dùng bộ chuẩn này để đối chiếu công việc ở các bước sau, nên học viên đặt chuẩn trước khi AI chạy.
-3. **Break the brief.** Bốn hoạt động, mỗi hoạt động cho ra một file trong hub: research questions, UX observation, challenge assumptions và competitor analysis. Self-documentation (đưa tài liệu product vào AI để có context) đã làm ở Practice 1 khi dựng context pack, nên không lặp lại ở đây.
+3. **Break the brief.** Chốt business question và scope trước, rồi bốn hoạt động theo thứ tự UX observation, challenge assumptions, research questions và competitor analysis. Mỗi hoạt động chạy theo nhịp method trước, AI sau, và cho ra một file trong hub. Self-documentation (đưa tài liệu product vào AI để có context) đã làm ở Practice 1 khi dựng context pack, nên không lặp lại ở đây.
 4. **Understand our users (theory).** Ba nhánh: methods (interview, survey), research với AI (research plan, facilitator script) và post-interview (transcript, recording rồi synthesis). Phần thực hành nằm ở buổi practice và bài tập phỏng vấn peer.
 5. **Package thành agents và contribute vào hub.** Khi hài lòng với một quy trình, học viên đóng gói nó thành một agent và đóng góp vào Knowledge Hub.
 
@@ -88,7 +88,7 @@ Một brief thường nêu giải pháp ("thêm bước onboarding"). Một busi
 
 AI giúp được ở ba việc: đọc nhanh nhiều tài liệu, soạn nháp danh sách rộng (câu hỏi, điều đang tin, finding) và gom ghi chú thành nhóm. AI chưa giúp được ở hai việc: biết điều không có trong tài liệu (nó dễ lấp chỗ trống bằng điều nghe hợp lý) và thay người thật trả lời.
 
-Hai nghiên cứu nhỏ cho thấy phạm vi và giới hạn. Với heuristic evaluation, một mô hình tìm được 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia, nhưng yếu khi xét nhiều màn hình cùng lúc [3]. Một nghiên cứu khác về độ nhất quán cho thấy phát hiện vấn đề ở mức vừa phải (kappa 0,50) và đồng thuận về severity thấp giữa các lần chạy [4].
+Hai nghiên cứu nhỏ về heuristic evaluation cho thấy phạm vi và giới hạn, và kết quả khác nhau. Một mô hình tìm được 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại, kèm nhiều non-issue cần lọc [3]. Nghiên cứu kia thấy mô hình chỉ tìm lại 21,2% vấn đề của chuyên gia, và 24,3% output là false positive [4]. Cả hai đều kết luận cần người kiểm tra.
 
 **Suy luận:** AI hữu ích để soạn nháp rộng và nhanh. Việc chọn điều gì đáng đưa vào scope và chấm mức độ nghiêm trọng vẫn thuộc về học viên.
 
@@ -123,22 +123,27 @@ Gate là danh sách check dạng có hoặc không, mỗi check trỏ được t
 
 ## 3. Break the brief
 
-### 3.1 Four activities, four files
+### 3.1 Five steps, four files
 
-Break the brief là cách kiểm tra brief trước khi chấp nhận nó. Self-documentation, bước đưa mọi tài liệu product (PRD, brief, ticket, research cũ, analytics) vào AI để có context, đã được làm ở Practice 1 khi dựng context pack; Break the brief bắt đầu từ context pack đó. Bốn hoạt động theo thứ tự dưới đây, mỗi hoạt động có phần AI soạn nháp, phần học viên kiểm tra và một file trong hub.
+Break the brief là cách kiểm tra brief trước khi chấp nhận nó. Self-documentation, bước đưa mọi tài liệu product (PRD, brief, ticket, research cũ, analytics) vào AI để có context, đã được làm ở Practice 1 khi dựng context pack; Break the brief bắt đầu từ context pack đó.
 
-| # | Activity | AI soạn nháp | Học viên kiểm tra | File |
+**Thứ tự đi từ điều quan sát được đến điều cần học.** Chốt business question trước (bước 0), rồi quan sát trải nghiệm hiện tại, rồi liệt kê điều đang tin mà chưa có bằng chứng, rồi biến những điều đó thành research question. Competitor analysis đứng cuối vì là hoạt động nặng nhất và có thể làm tiếp sau buổi practice mà không chặn Understand our users.
+
+**Method trước, AI sau.** Học viên mới biết method nửa vời, nên mỗi hoạt động chạy theo bốn pha: nhắc lại method trên slide, học viên tự làm bản của mình, AI phản biện hoặc làm bản độc lập (dùng prompt trung tính, chỉ dựa trên file đã đưa), rồi học viên so hai bản và ghi nguồn gốc từng dòng (mine, AI, cả hai). Học viên chưa có bản của mình thì không có gì để đối chiếu với AI. Đây là thiết kế của chương trình dựa trên bằng chứng gián tiếp, chưa được đo (xem `learning/ai-in-discover.md`, mục 4e).
+
+| # | Activity | Học viên làm trước | AI sau | File |
 |---|---|---|---|---|
-| 1 | Research questions | Câu hỏi cấp cao (vision, mission) và câu hỏi gửi business | Đối chiếu với điều mình thật sự biết; gửi và ghi agreement status | `research-questions.md` (gồm cả phần scope) |
-| 2 | User experience observation | Finding về trải nghiệm hiện tại, dựa trên principles | Mở giao diện xem vấn đề có thật không; chấm severity | `ux-audit.md` |
-| 3 | Challenge assumptions | Danh sách điều đang tin, evidence đang có và đang thiếu; kéo insight từ research có sẵn | Xếp mức độ quan trọng so với evidence | `assumption.md` |
-| 4 | Competitor analysis | Mô tả rồi bảng bằng chứng theo từng đối thủ | Mở ảnh gốc, đối chiếu từng ô quan trọng, ghi tỷ lệ ô sai | `competitor-analysis.md` |
+| 0 | Business question và scope | Viết business question và quyết định nó phục vụ | Soạn nháp năm câu gửi business, hỏi trung tính | `research-questions.md` (phần scope) |
+| 1 | UX observation | Đánh giá một flow theo `principles.md`, chấm severity | Đánh giá độc lập trên cùng ảnh chụp; học viên so hai bản | `ux-audit.md` |
+| 2 | Challenge assumptions | Liệt kê điều đang tin, loại rủi ro, mức quan trọng, bằng chứng | Tìm giả định ẩn, hỏi ngược bằng chứng | `assumption.md` |
+| 3 | Research questions | Biến ba giả định hàng đầu thành câu hỏi, kiểm theo tiêu chí | Phản biện câu hỏi, chỉ chỗ dẫn dắt hoặc thiếu | `research-questions.md` (phần câu hỏi) |
+| 4 | Competitor analysis | Chốt phạm vi và tiêu chí | Bảng bằng chứng theo từng đối thủ | `competitor-analysis.md` |
 
-### 3.2 Research questions
+### 3.2 Business question và scope
 
-Có hai tầng câu hỏi. Tầng cao là câu hỏi mang tính vision và mission cho sản phẩm (ví dụ "sản phẩm này tồn tại để giải việc gì cho người dùng?"). Tầng gửi business có năm câu: outcome, success metric, baseline, ràng buộc, thời hạn và người quyết định.
+Có hai tầng câu hỏi. Tầng cao là câu hỏi mang tính vision và mission cho sản phẩm (ví dụ "sản phẩm này tồn tại để giải việc gì cho người dùng?"). Tầng gửi business có năm câu: outcome, success metric, baseline, ràng buộc, thời hạn và người quyết định. Học viên viết thêm **quyết định** mà câu trả lời sẽ phục vụ; không biết quyết định nào thì chưa nên nghiên cứu.
 
-Câu trả lời nhận được ghi vào scope với trạng thái **confirmed**. Câu chưa có trả lời ghi **assumed**, kèm người cần xác nhận. Scope gồm: business question, outcome, metric (confirmed hoặc assumed), các điều đang tin và **agreement status** (agreed, pending, not available).
+Câu trả lời nhận được ghi vào scope với trạng thái **confirmed**. Câu chưa có trả lời ghi **assumed**, kèm người cần xác nhận. Scope gồm: business question, quyết định, outcome, metric (confirmed hoặc assumed), các điều đang tin và **agreement status** (agreed, pending, not available).
 
 **AI không đóng vai PO hay user.** Các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe, nên không thay được người thật [6]. Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý. Vì vậy AI chuẩn bị câu hỏi và soạn nháp ghi chú, còn câu trả lời luôn do người thật đưa ra.
 
@@ -156,28 +161,38 @@ Access khác nhau giữa mọi người và không có access là vị thế y�
 
 ### 3.3 User experience observation
 
-Học viên chọn một flow của trải nghiệm hiện tại. AI soạn nháp finding theo `principles.md`; học viên kiểm tra từng finding và chấm severity.
+Đây là đánh giá của chuyên gia trên trải nghiệm hiện có (heuristic evaluation), khi chưa có user thật. **Method cần nhắc:** mười heuristic của Nielsen [1]; mỗi vấn đề ghi màn hình, heuristic bị vi phạm, evidence và hậu quả; severity theo tần suất, tác động và tính lặp lại, trên thang 0 đến 4 [2]. NN/g khuyên ba đến năm người đánh giá độc lập, và nhấn mạnh heuristic evaluation không thay được user research: một vi phạm chưa chắc là vấn đề thật.
+
+Học viên chọn một flow, chụp bốn đến sáu màn hình theo cùng cấu trúc (có ghi ngày), tự đánh giá trước rồi mới mở AI. AI đánh giá độc lập trên cùng ảnh, không xem bản của học viên, rồi học viên so hai bản: vấn đề cả hai thấy, chỉ mình thấy, chỉ AI thấy, và số finding của AI sai. Vì học viên một mình cộng AI chưa đủ "ba đến năm người", kết quả là giả thuyết cần user xác nhận ở bước Understand our users.
 
 Kiểm tra một finding của AI theo bốn câu:
 
 1. Principle AI gán có đúng với vấn đề mô tả không?
-2. Vấn đề có thật trên giao diện không (mở ra xem)?
+2. Vấn đề có thật trên giao diện không (mở ra xem)? AI chỉ ra được ảnh và vùng nào?
 3. Evidence có đủ để người khác nhìn lại không (ảnh chụp hoặc ví dụ cụ thể)?
 4. Severity do học viên chấm, không lấy của AI.
 
-Với accessibility, kiểm thử tự động chỉ phủ một phần vấn đề: 57% tính theo số lượng trong một nghiên cứu của vendor, thấp hơn theo cách tính tiêu chí [5].
+Hai nghiên cứu về AI làm người đánh giá cho kết quả khác nhau: một nghiên cứu chỉ tìm lại 21,2% vấn đề của chuyên gia và 24,3% output là false positive [4]; nghiên cứu kia thấy mô hình tìm 73 đến 77% vấn đề, so với 57 đến 63% của năm chuyên gia gộp lại, kèm nhiều non-issue cần lọc [3]. Cả hai đều kết luận AI là phần bổ sung, cần người kiểm tra. Với accessibility, kiểm thử tự động chỉ phủ một phần vấn đề: 57% tính theo số lượng trong một nghiên cứu của vendor, thấp hơn theo cách tính tiêu chí [5].
 
 ### 3.4 Challenge assumptions
 
-AI liệt kê điều team có thể đang tin về sản phẩm và người dùng, kèm evidence đang có và đang thiếu cho từng điều. Học viên đối chiếu với tài liệu của case. Mục AI đưa ra mà tài liệu không có là mục "chưa có nguồn", không phải mục để đưa vào danh sách như một sự thật.
+Giả định là điều đang tin mà chưa có bằng chứng quan sát được. **Method cần nhắc** [8]: viết dạng "chúng tôi tin rằng…", cụ thể và kiểm chứng được; gắn loại rủi ro (desirability, usability, feasibility, viability); xếp trên hai trục, tầm quan trọng (nếu giả định này sai thì ý tưởng có thất bại không) và bằng chứng (đã có điều quan sát được hay chưa). Giả định ở góc quan trọng mà chưa có bằng chứng được kiểm chứng trước.
 
-Bước kéo insight từ research có sẵn (pull insights from existing researches) tìm xem điều nào trong danh sách đã có evidence trong nghiên cứu cũ của team. Học viên chưa có research cũ ghi "chưa có" và để cho buổi 3 và phỏng vấn peer.
+Học viên liệt kê giả định từ context pack, `ux-audit.md` và scope, rồi mới nhờ AI. AI tìm giả định ẩn của brief và hỏi ngược bằng chứng của từng giả định ("dựa vào file nào? Nếu không có, ghi unknown"); mục AI đưa ra mà tài liệu không có là mục "chưa có nguồn", không đưa vào danh sách như một sự thật. Bước kéo insight từ research có sẵn tìm xem điều nào đã có bằng chứng; học viên chưa có research cũ ghi "chưa có" và để cho phỏng vấn peer. Cuối cùng học viên xếp lại bản đồ và chọn **ba giả định hàng đầu**: chúng là đầu vào của bước tiếp theo.
 
-Sau đó học viên xếp từng assumption theo mức độ quan trọng so với evidence hiện có, để quyết định kiểm chứng điều nào trước.
+### 3.5 Research questions
 
-### 3.5 Competitor analysis
+Research question là câu hỏi nhóm muốn học được, khác với interview question là câu hỏi người tham gia. Ba giả định hàng đầu của bước 2 trở thành research question, mỗi câu gắn với quyết định ở bước 0.
 
-Competitor analysis cho thấy đối thủ **làm gì**, không cho thấy người dùng **vì sao** chọn họ. Quy trình rút gọn (xem thêm [method card Competitor analysis](../../../assets/method-cards/01-discover/competitor-analysis.md)): chốt phạm vi (một journey, ba đến năm đối thủ, tối đa sáu tiêu chí), AI mô tả ảnh chụp trước, đánh giá sau, rồi điền bảng bằng chứng với tên file cho mỗi ô; học viên mở ảnh gốc, đối chiếu các ô quan trọng và ghi tỷ lệ ô sai. Kết luận là giả thuyết để hỏi trong phỏng vấn, không phải kết luận về người dùng. Buổi 3 giữ phần ghép điều người khác làm với điều user nói và làm.
+**Method cần nhắc:** chuỗi business question, quyết định, research goal, research question, rồi mới đến interview question [9]. Năm tiêu chí tự kiểm: (1) trả lời được bằng bằng chứng, (2) mở chứ không phải có/không, (3) gắn với đúng một quyết định, (4) không gợi sẵn giải pháp, (5) biết sẽ tìm câu trả lời ở đâu (file, desk research, phỏng vấn, data). Ví dụ xấu: "Khách có thích tính năng đổi ngày giao không?" Ví dụ tốt hơn: "Khách đang làm gì khi cần dời hộp sắp tới, và điều gì khiến họ bỏ dở?"
+
+Học viên viết câu hỏi trước. AI phản biện bằng prompt trung tính: câu nào không trả lời được bằng bằng chứng, câu nào dẫn dắt, còn thiếu câu nào để đưa ra quyết định. Học viên ghi nguồn gốc từng câu. Các câu hỏi này là đầu vào của research plan và phỏng vấn ở phần Understand our users.
+
+### 3.6 Competitor analysis
+
+Competitor analysis cho thấy đối thủ **làm gì**, không cho thấy người dùng **vì sao** chọn họ. Đây là dạng *competitive review*: chuyên gia xem lại 2 đến 4 đối thủ, khác với *competitive testing* cho user làm task trên nhiều site. Mục tiêu là cải thiện thiết kế của mình, không phải tuyên bố bên thắng [10]. Có thể dùng lại chính danh sách heuristic và thang severity của bước UX observation cho các đối thủ.
+
+Quy trình rút gọn (xem thêm [method card Competitor analysis](../../../assets/method-cards/01-discover/competitor-analysis.md)): chốt phạm vi (một journey, hai đến bốn đối thủ, tối đa sáu tiêu chí), AI mô tả ảnh chụp trước, đánh giá sau, rồi điền bảng bằng chứng với tên file cho mỗi ô; học viên mở ảnh gốc, đối chiếu các ô quan trọng và ghi tỷ lệ ô sai. Kết luận là giả thuyết để hỏi trong phỏng vấn, không phải kết luận về người dùng. Buổi 3 giữ phần ghép điều người khác làm với điều user nói và làm.
 
 ---
 
@@ -215,9 +230,10 @@ Case mẫu (hư cấu): một app meal-kit theo gói đăng ký. Nhiều khách 
 
 - **Brief:** "Cải thiện onboarding." **Business question:** "Vì sao khách mới tạm dừng sau hộp đầu tiên, và điều gì giữ họ lại?"
 - **Principles:** UX principle: kiểm soát và tự do của người dùng. Business principle: không tăng tỷ lệ huỷ gói sau tuần đầu (assumed). Severity: thang 0 đến 4. Gate: 1a và 1f.
+- **UX observation:** trên flow chọn ngày giao, ví dụ các finding về trạng thái hệ thống (không có xác nhận sau khi chọn ngày), quyền kiểm soát của người dùng (không đổi được ngày sau khi thanh toán) và nhất quán (nhãn nút khác nhau giữa hai màn hình).
 - **Điều đang tin (AI soạn nháp, học viên đối chiếu):** giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong case mẫu, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ tạm dừng sau hộp đầu tiên. Baseline: chưa biết, ghi assumed, người cần xác nhận là business.
-- **UX observation:** trên flow chọn ngày giao, ví dụ các finding về trạng thái hệ thống (không có xác nhận sau khi chọn ngày), quyền kiểm soát của người dùng (không đổi được ngày sau khi thanh toán) và nhất quán (nhãn nút khác nhau giữa hai màn hình).
+- **Research question (từ giả định "khách không hiểu cách đổi ngày giao"):** "Khách đang làm gì khi cần dời hộp sắp tới, và điều gì khiến họ bỏ dở?" Phục vụ quyết định: có thiết kế lại bước đổi ngày hay không. Tìm ở phỏng vấn peer.
 
 ---
 
@@ -233,14 +249,14 @@ Hình dạng: ice breaker, theory (bốn phần, mỗi phần kết thúc bằng
 | 2 | Theory 1: Discover trong Double Diamond và AI capabilities | 1 | 8 phút |
 | 3 | Theory 2: Design Principles (bốn phần) | 2 | 10 phút |
 | 4 | Activity: viết hai dòng đầu của `principles.md` | 7.3 | 5 phút |
-| 5 | Theory 3: Break the brief (bốn hoạt động, demo trên case mẫu) | 3 | 28 phút |
+| 5 | Theory 3: Break the brief (scope và bốn hoạt động, demo ba hoạt động trên case mẫu) | 3 | 28 phút |
 | 6 | Theory 4: Understand our users | 4 | 10 phút |
 | 7 | Package thành agents và contribute vào hub | 5 | 9 phút |
 | 8 | Hỏi đáp | 7.1 | 6 phút |
 | | **Tổng nội dung** | | **82 phút** |
 | | Buffer | | 8 phút |
 
-Theory khoảng 56 phút, vượt mức 44 phút của buổi 1. Lý do: buổi practice 90 phút nằm ngay sau, nên buổi này dành thời gian để học viên thấy đủ bốn hoạt động trước khi tự làm. Timing chưa được thử với một lớp thật. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** demo Break the brief rút từ bốn hoạt động còn hai (UX observation và challenge assumptions), rồi hỏi đáp rút còn 4 phút, rồi Theory 4 rút còn một slide.
+Theory khoảng 56 phút, vượt mức 44 phút của buổi 1. Lý do: buổi practice 90 phút nằm ngay sau, nên buổi này dành thời gian để học viên thấy đủ bốn hoạt động trước khi tự làm. Timing chưa được thử với một lớp thật. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** bỏ phần giới thiệu competitor analysis (làm sau buổi practice), rồi rút demo research questions xuống còn một ví dụ, rồi hỏi đáp rút còn 4 phút, rồi Theory 4 rút còn một slide.
 
 ### 7.2 Engagement rules
 
@@ -259,7 +275,7 @@ Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trư�
 
 ### 7.4 Practice session and homework
 
-**Buổi practice 90 phút** ([Practice 2](discover-the-problem-practice.md)) nằm ngay sau buổi này (lịch cố định sau mỗi lesson nội dung, Winnie quyết định 2026-10-26). Nội dung buổi practice `[to confirm]`: hoàn thiện `principles.md`, chạy bốn hoạt động Break the brief trên case của từng người, lập lịch phỏng vấn peer cho buổi 3. Thiết kế chi tiết nằm ở tài liệu riêng của buổi practice.
+**Buổi practice 90 phút** ([Practice 2](discover-the-problem-practice.md)) nằm ngay sau buổi này (lịch cố định sau mỗi lesson nội dung, Winnie quyết định 2026-10-26). Nội dung buổi practice `[to confirm]`: hoàn thiện `principles.md`, chạy Break the brief theo thứ tự scope, UX observation, challenge assumptions, research questions, competitor analysis trên case của từng người, lập lịch phỏng vấn peer cho buổi 3. Thiết kế chi tiết nằm ở tài liệu riêng của buổi practice.
 
 **Bài tập về nhà** (chờ Winnie chốt vai trò sau khi có buổi practice): đủ nhỏ để không chồng lên buổi practice. Mặc định tạm: lên lịch 2 đến 3 buổi phỏng vấn ngắn với đồng nghiệp hoặc người dùng để có quote cho buổi 3.
 
@@ -315,32 +331,38 @@ Tài liệu đưa vào AI và tin gửi business không nêu tên người hay d
 
 ## 11. Connection to the series
 
-| Buổi | Vai trò |
+| Lesson và practice | Vai trò |
 |---|---|
-| Buổi 1 | Case folder, data rules, bốn khái niệm; nền để dùng buổi này |
-| **Buổi 2 (buổi này)** | Principles, Break the brief, giới thiệu Understand our users, package và hub |
-| Buổi practice sau buổi 2 | Học viên hoàn thiện `principles.md` và chạy Break the brief trên case của mình |
-| Buổi 3 | Phỏng vấn peer (quote đã ẩn danh), user-voice synthesis, kiểm theme về quote; ghép điều người khác làm (đã làm ở buổi 2) với điều user nói |
-| Buổi 4 | Opportunity, principle check, hypothesis, Goals/Signals/Metrics |
-| Buổi 5 (Check point 1) | Chạy Discover đến Define trên case của từng người |
+| Lesson 1 (buổi 1), Practice 1 (buổi 2) | Case folder, data rules, bốn khái niệm, context pack; nền để dùng buổi này |
+| **Lesson 2 (buổi 3, buổi này)** | Principles, Break the brief, giới thiệu Understand our users, package và hub |
+| Practice 2 (buổi 4) | Hoàn thiện `principles.md` và chạy bốn hoạt động Break the brief trên case của mình; lên lịch phỏng vấn peer |
+| Lesson 3 (buổi 5) | Synthesis trên quote đã ẩn danh từ phỏng vấn peer, persona và journey map dẫn về quote, opportunity; ghép điều người khác làm (đã làm ở Lesson 2) với điều user nói |
+| Practice 3 (buổi 6) | Phỏng vấn peer, synthesis, persona, journey, opportunity, Gate 1 và problem brief trên case của từng người |
+| Lesson 4 đến 6 (buổi 7, 9, 11) | Explore Ideas, AI Prototyping, Test with Real Users; mỗi buổi có practice đi kèm |
 
 ---
 
 ## References
 
-[1] Nielsen Norman Group. *10 Usability Heuristics for User Interface Design.* https://www.nngroup.com/articles/ten-usability-heuristics/ `[to confirm]` trích nguồn gốc khi viết slide.
+[1] Nielsen Norman Group. *10 Usability Heuristics for User Interface Design.* https://www.nngroup.com/articles/ten-usability-heuristics/ Đã đọc bản gốc (xem lại 01/2024). Cách tiến hành: *How to Conduct a Heuristic Evaluation* (Moran và Gordon, 2023), https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/
 
-[2] Nielsen Norman Group. *Severity Ratings for Usability Problems.* https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/ `[to confirm]`
+[2] Nielsen Norman Group. *Severity Ratings for Usability Problems* (Nielsen, 1994). https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/ Đã đọc bản gốc: tần suất, tác động, tính lặp lại; thang 0 đến 4; trung bình ba người đánh giá.
 
-[3] *Synthetic heuristic evaluation* (arXiv 2507.02306). Mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của 5 chuyên gia; nghiên cứu nhỏ. https://arxiv.org/abs/2507.02306 `[to confirm]` bản gốc.
+[3] Zhong, McDonald, Hsieh. *Synthetic Heuristic Evaluation* (arXiv 2507.02306, preprint). GPT-4 trên hai app: 73% và 77% vấn đề, so với 57% và 63% của năm chuyên gia gộp lại; nhiều non-issue. https://arxiv.org/abs/2507.02306 Đã đọc phần tóm tắt và đoạn đầu; số 77% hay 78% ở hai chỗ khác nhau, kiểm bản gốc trước khi trích lên slide.
 
-[4] Nghiên cứu về độ nhất quán của LLM trong heuristic evaluation (arXiv 2506.16345). Kappa 0,50; đồng thuận về severity thấp. https://arxiv.org/html/2506.16345v1 `[to confirm]` bản gốc.
+[4] Guerino và cộng sự. *Can GPT-4o Evaluate Usability Like Human Experts?* (arXiv 2506.16345, INTERACT 2025). Một hệ thống web, 20 ảnh: tìm lại 21,2% vấn đề của chuyên gia; 24,3% false positive; không có số kappa trong bài. https://arxiv.org/abs/2506.16345 Đã đọc phần tóm tắt và đoạn đầu.
 
 [5] Deque. Nghiên cứu về độ phủ của kiểm thử tự động (57% vấn đề tính theo số lượng; của vendor). https://www.deque.com/blog/automated-testing-study-identifies-57-percent-of-digital-accessibility-issues `[to confirm]`
 
 [6] *Evaluating Silicon Sampling* (CMS 2025; 6.076 người ở bốn nước, QWK 0,40 đến 0,45, chủ đề nhận diện khuôn mặt) và *Mitigating Social Desirability Bias in Random Silicon* (arXiv 2512.22725). https://arxiv.org/html/2512.22725v1 `[to confirm]` bản gốc.
 
 [7] *Ask, Don't Tell: Reducing Sycophancy in LLMs* (arXiv 2602.23971) và UK AISI. https://arxiv.org/abs/2602.23971 `[to confirm]` bản gốc.
+
+[8] Bland (Strategyzer, 2020), *How Assumptions Mapping Can Focus Your Teams on Running Experiments That Matter*, https://strategyzer.com/library/how-assumptions-mapping-can-focus-your-teams-on-running-experiments-that-matter ; Torres (Product Talk), *Assumption Testing*, https://www.producttalk.org/glossary-discovery-assumption-testing/ Đã đọc bản gốc.
+
+[9] Farrell (NN/g, 2017), *From Research Goals to Usability-Testing Scenarios*, https://www.nngroup.com/articles/ux-research-goals-to-scenarios/ Bài không phân biệt research question với hypothesis; năm tiêu chí tự kiểm là gợi ý của chương trình, `[to confirm]` định nghĩa khi xem video NN/g.
+
+[10] Neusesser (NN/g, 2024), *Competitive Usability Evaluations*, https://www.nngroup.com/articles/competitive-usability-evaluations/ Đã đọc bản gốc.
 
 Nhật ký bằng chứng đầy đủ nằm trong `programs/ai-design-workflow/learning/ai-in-discover.md` và `ai-strengths-and-limits.md`.
 

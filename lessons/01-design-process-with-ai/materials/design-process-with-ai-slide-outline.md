@@ -69,7 +69,7 @@ last_synced: 2026-10-24
   - Mọi lesson sau đều dùng những thứ này, nên mình cài đặt một lần ngay từ đầu
   - Nêu lập trường của cả series: designer cùng định nghĩa requirement với product và business
   - Nói rõ lớp ưu tiên designer; nếu có PO, PM hoặc BA thì các bạn học cùng một workflow, không cần build prototype từ đầu
-  - Sau phần chào là ice breaker sáu phút. Nói rõ format: hai buổi 90 phút mỗi tuần, 12 buổi trong sáu tuần, gồm chín buổi học nội dung và ba buổi Check point làm việc trên case của chính bạn; bài tập về nhà chỉ làm tiếp phần đã bắt đầu, tối đa 45 phút. Buổi hôm nay có bài tập dựng project folder ở nhà
+  - Sau phần chào là ice breaker sáu phút. Nói rõ format: hai buổi 90 phút mỗi tuần, 12 buổi trong sáu tuần, mỗi tuần một buổi theory rồi một buổi practice làm việc trên case của chính bạn, tuần 6 kết bằng test một ngày và buổi wrap-up; việc giữa các buổi chỉ nối tiếp phần đã làm, tối đa 20 phút. Phần dựng project folder làm ở Practice 1, ngay sau buổi hôm nay
 - 🎨 Visual hint: Cover layout, cố định. Panel trái trắng với dòng năm, nhãn stage, title (accent ở dòng 2) và subtitle. Panel phải là ảnh thật với gradient tối, tên và ba dòng credentials ở góc dưới trái.
 
 ---

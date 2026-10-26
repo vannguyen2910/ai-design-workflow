@@ -27,8 +27,8 @@ Dựng nền mà cả chương trình chạy trên đó: một project folder ch
 
 ### Step 2 · Bắt đầu context pack · 20 phút · YOU
 
-- Viết bản đầu của `learnings/context-product-and-users.md`: sản phẩm là gì, ai dùng, job chính của họ. Nửa trang, đã ẩn danh.
-- Đưa data rules vào `learnings/context-data-rules.md`, bằng lời của bạn.
+- Viết bản đầu của `context/product-and-users.md`: sản phẩm là gì, ai dùng, job chính của họ. Nửa trang, đã ẩn danh.
+- Đưa data rules vào `context/data-rules.md`, bằng lời của bạn.
 
 ### Step 3 · Đọc folder, chưa chỉnh sửa · 5 phút · YOU
 
@@ -37,12 +37,12 @@ Dựng nền mà cả chương trình chạy trên đó: một project folder ch
 
 ### Step 4 · Chạy một instruction với file đã lưu · 25 phút · AI soạn nháp, bạn kiểm tra
 
-- **AI soạn nháp:** đính kèm `learnings/context-product-and-users.md` vào AI chat tool và dùng instruction sau.
+- **AI soạn nháp:** đính kèm `context/product-and-users.md` vào AI chat tool và dùng instruction sau.
 
   > Đây là context cho design case của tôi. Chỉ dùng file này. Liệt kê năm điều quan trọng nhất bạn cần biết về sản phẩm và người dùng mà KHÔNG có trong file, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời "unknown". Chỉ trả về danh sách.
 
 - **Bạn kiểm tra:** đọc câu trả lời có phản biện. Câu nào hữu ích, câu nào chung chung, câu nào bạn tự tìm ra được?
-- **File:** lưu những câu hữu ích vào `learnings/context-open-questions.md`.
+- **File:** lưu những câu hữu ích vào `context/open-questions.md`.
 
 ### Step 5 · Hướng nghề của bạn · 5 phút · YOU
 
@@ -51,7 +51,7 @@ Dựng nền mà cả chương trình chạy trên đó: một project folder ch
 
 ### Step 6 · Đọc thử theo cặp · 10 phút · YOU
 
-- Đổi `learnings/context-product-and-users.md` với một bạn trong lớp.
+- Đổi `context/product-and-users.md` với một bạn trong lớp.
 - Trả lời một câu: người ngoài có hình dung được sản phẩm và người dùng sau khi đọc file không?
 
 Còn khoảng 10 phút dự phòng cho phần coaching theo nhóm nhỏ. Thời lượng từng bước chưa được thử với một lớp thật.
@@ -59,9 +59,9 @@ Còn khoảng 10 phút dự phòng cho phần coaching theo nhóm nhỏ. Thời 
 ## Output
 
 - Project folder đúng layout
-- `learnings/context-product-and-users.md` (bản đầu)
-- `learnings/context-data-rules.md`
-- `learnings/context-open-questions.md`
+- `context/product-and-users.md` (bản đầu)
+- `context/data-rules.md`
+- `context/open-questions.md`
 - `_personal/my-direction.md`
 
 ## Self-check

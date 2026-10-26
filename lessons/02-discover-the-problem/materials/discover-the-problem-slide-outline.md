@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 25
+slide_count: 26
 duration: "90 min"
 status: draft
 built_deck: ""
@@ -35,13 +35,13 @@ last_synced: 2026-10-26
 
 ---
 
-## Slide structure: 25 slides
+## Slide structure: 26 slides
 
 - Arc: **Open** (cover, ice breaker) → **Theory** (divider cộng bốn phần: Discover và AI, Design Principles, Break the brief, Understand our users) → **Activity** (5 phút, nằm sau phần Design Principles) → **Package** (agent và hub) → **Close** (hỏi đáp, buổi practice, kết thúc).
-- Khớp với tám phase của lesson (mục 7.1). Phase 1 (ice breaker) = slide 1–2. Theory 1 (Discover và AI) = slide 3–6. Theory 2 (Design Principles) = slide 7–9. Activity = slide 10–11. Theory 3 (Break the brief) = slide 12–18. Theory 4 (Understand our users) = slide 19–20. Package = slide 21–22. Hỏi đáp và close = slide 23–25.
-- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, activity = 5, hỏi đáp = 6. Timing các phase: ice breaker 6, T1 8, T2 10, activity 5, T3 28, T4 10, package 9, hỏi đáp 6; tổng nội dung 82 trên 90 phút, buffer 8 phút. Slide 24 và 25 chiếu trong phase hỏi đáp.
+- Khớp với tám phase của lesson (mục 7.1). Phase 1 (ice breaker) = slide 1–2. Theory 1 (Discover và AI) = slide 3–6. Theory 2 (Design Principles) = slide 7–9. Activity = slide 10–11. Theory 3 (Break the brief) = slide 12–19: tổng quan, scope (câu hỏi gửi business, ba mức access, AI không đóng vai PO hay user), UX observation, challenge assumptions, research questions, competitor analysis. Theory 4 (Understand our users) = slide 20–21. Package = slide 22–23. Hỏi đáp và close = slide 24–26.
+- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, activity = 5, hỏi đáp = 6. Timing các phase: ice breaker 6, T1 8, T2 10, activity 5, T3 28, T4 10, package 9, hỏi đáp 6; tổng nội dung 82 trên 90 phút, buffer 8 phút. Slide 25 và 26 chiếu trong phase hỏi đáp.
 - Theory khoảng 56 phút vì buổi practice 90 phút nằm ngay sau. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
-- Thứ tự cắt khi quá giờ: demo Break the brief rút còn ba hoạt động (bỏ slide 18, competitor analysis), rồi hỏi đáp còn 4 phút, rồi gộp slide 19 và 20 thành một.
+- Thứ tự cắt khi quá giờ: bỏ slide 19 (competitor analysis, làm sau buổi practice), rồi rút demo research questions (slide 18) còn một ví dụ, rồi hỏi đáp còn 4 phút, rồi gộp slide 20 và 21 thành một.
 - Cái bẫy của buổi nằm ở slide 17: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
 
 ---
@@ -135,7 +135,7 @@ last_synced: 2026-10-26
   - Phải, bạn vẫn tự làm: biết điều chưa có trong tài liệu, chấm severity, hỏi người thật
 - Ví dụ: bản nháp (AI liệt kê 12 điều đang tin về Kitchen Crate trong một phút, hai điều không có trong tài liệu)
 - Câu hỏi hay gặp:
-  - AI làm heuristic evaluation tốt đến đâu? Trong một nghiên cứu nhỏ mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia, nhưng yếu khi xét nhiều màn hình cùng lúc (nguồn 3).
+  - AI làm heuristic evaluation tốt đến đâu? Hai nghiên cứu nhỏ lệch nhau: một mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại (nguồn 3), mô hình khác chỉ tìm lại 21,2% vấn đề chuyên gia và 24,3% false positive (nguồn 4). Cả hai đều cần người kiểm tra.
 - Speaker notes:
 
   > Giả sử mình nhờ AI liệt kê điều team có thể đang tin về app Kitchen Crate. Một phút sau có mười hai dòng, đọc rất hợp lý.
@@ -143,7 +143,7 @@ last_synced: 2026-10-26
   - Hai trong mười hai dòng không có trong bất kỳ tài liệu nào của case
   - AI lấp chỗ trống bằng điều nghe hợp lý, không báo là nó đang đoán
   - Việc AI làm nhanh là soạn nháp rộng; việc chọn dòng nào đáng đưa vào scope vẫn là của bạn
-  - Con số heuristic evaluation (nguồn 3) cho thấy AI tìm được nhiều, nhưng severity thì không ổn định giữa các lần chạy (nguồn 4)
+  - Hai nghiên cứu heuristic evaluation (nguồn 3, 4) cho số khác nhau, nhưng đều kết luận AI là phần bổ sung và cần người kiểm tra
 
   > Bạn thường tin danh sách AI đưa ra ngay, hay kiểm tra từng dòng?
 - 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái sage "AI giúp được", cột phải purple "Bạn vẫn tự làm"; ở giữa một dòng nhỏ "AI soạn nháp. Bạn kiểm tra. Bạn quyết định."
@@ -276,32 +276,36 @@ last_synced: 2026-10-26
 
 ### DIAGRAM · Break the brief
 - Kicker: Overview
-- Title: Four activities, *four files*
+- Title: Scope, then *four activities*
 - On-slide:
-  - Research questions → `research-questions.md` (gồm cả scope)
+  - Scope: business question và quyết định → `research-questions.md`
   - UX observation → `ux-audit.md`
   - Challenge assumptions → `assumption.md`
+  - Research questions → `research-questions.md`
   - Competitor analysis → `competitor-analysis.md`
 - Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
 - Câu hỏi hay gặp:
-  - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; buổi practice cho thời gian làm và chọn hoạt động nào hợp với case.
+  - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm sau buổi practice, các hoạt động còn lại nối nhau nên làm theo thứ tự.
+  - Vì sao research questions đứng sau UX observation và assumptions? Câu hỏi nghiên cứu xuất phát từ điều mình chưa biết; UX observation và assumptions chỉ ra điều đó.
 - Speaker notes:
 
   > Team Kitchen Crate nhận brief "cải thiện onboarding". Break the brief là bốn việc mình làm trước khi chấp nhận brief đó.
 
-  - Mỗi hoạt động có cùng nhịp: AI soạn nháp, bạn kiểm tra, ra một file trong hub
+  - Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question, quan sát trải nghiệm, liệt kê điều đang tin, rồi mới viết câu hỏi
+  - **Mỗi hoạt động có cùng nhịp: method trước, bạn tự làm bản của mình, rồi mới đến AI, rồi bạn so hai bản**
+  - Mỗi hoạt động ra một file trong hub
   - Self-documentation, bước đưa tài liệu product vào AI để có context, đã làm ở Practice 1; Break the brief bắt đầu từ context pack đó
-  - Hôm nay mình đi qua cả bốn; mình demo hai hoạt động trên Kitchen Crate (UX observation và challenge assumptions)
-  - Hai hoạt động còn lại bạn làm ở buổi practice với cheat sheet này
+  - Hôm nay mình đi qua từng bước và demo ba hoạt động trên Kitchen Crate: UX observation, challenge assumptions, research questions
+  - Competitor analysis mình giới thiệu ngắn; bạn làm ở buổi practice với cheat sheet này
   - Brief là điểm xuất phát tốt; việc ở đây là kiểm tra nó phục vụ đúng vấn đề chưa
 
-  > Trong bốn hoạt động này, bạn đang làm hoạt động nào rồi, dù chưa gọi tên?
-- 🎨 Visual hint: SCHEMATIC. Hộp lớn "Break the brief" ở trên, bốn ô con xuống dưới, mỗi ô nối với một ô purple là file output.
+  > Trong các bước này, bạn đang làm bước nào rồi, dù chưa gọi tên?
+- 🎨 Visual hint: SCHEMATIC. Hộp lớn "Break the brief" ở trên, một ô scope rồi bốn ô con nối tiếp theo thứ tự, mỗi ô nối với một ô purple là file output.
 
 ---
 
-### NUMBERED · Research questions
-- Kicker: Questions
+### NUMBERED · Scope questions
+- Kicker: Scope
 - Title: Five questions *to send first*
 - On-slide:
   - 01 · Outcome: thay đổi nào cho thấy vấn đề đã được giải?
@@ -309,6 +313,7 @@ last_synced: 2026-10-26
   - 03 · Baseline: hiện tại là bao nhiêu?
   - 04 · Ràng buộc: ngân sách, kỹ thuật, pháp lý
   - 05 · Thời hạn và người quyết định
+  - Kèm: quyết định nào câu trả lời sẽ phục vụ
 - Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Câu hỏi vision và mission khác năm câu này thế nào? Vision và mission là câu hỏi cấp cao về lý do sản phẩm tồn tại; năm câu này là câu gửi business để chốt scope.
@@ -318,7 +323,7 @@ last_synced: 2026-10-26
 
   - Có hai tầng: câu hỏi cấp cao (vision, mission của sản phẩm) và năm câu gửi business
   - Gửi bằng văn bản, mỗi câu một ý, để người bận trả lời được trong vài dòng
-  - **Bạn viết business question của mình trước, rồi mới mở AI**
+  - **Bạn viết business question và quyết định của mình trước, rồi mới mở AI**
   - Câu trả lời nhận được ghi vào scope với trạng thái confirmed; câu chưa có trả lời ghi assumed kèm người cần xác nhận
   - Hỏi trung tính: "liệt kê những điều có thể giải thích hiện tượng này" tốt hơn "giải thích vì sao giá là nguyên nhân" (nguồn 7)
 
@@ -377,25 +382,29 @@ last_synced: 2026-10-26
 - Kicker: Demo
 - Title: UX observation, *principles first*
 - On-slide:
-  - 1 · Chọn một flow và đối chiếu với principles.md
-  - 2 · AI soạn nháp finding, mỗi finding một principle
-  - 3 · Bạn mở giao diện, kiểm tra, chấm severity 0 đến 4
+  - 1 · Bạn chọn flow, tự đánh giá theo principles.md, chấm severity 0 đến 4
+  - 2 · AI đánh giá độc lập trên cùng ảnh, mỗi finding chỉ ra ảnh và vùng
+  - 3 · Bạn so hai bản, đếm finding AI sai, chốt severity
 - Ví dụ: có (Kitchen Crate, flow chọn ngày giao)
 - Câu hỏi hay gặp:
-  - Severity AI chấm có dùng được không? Không lấy của AI; đồng thuận về severity giữa các lần chạy thấp (nguồn 4).
+  - Severity AI chấm có dùng được không? Không lấy của AI: chưa có nghiên cứu cho thấy AI chấm severity đáng tin, và NN/g khuyên nhiều người đánh giá độc lập, lấy trung bình (nguồn 2).
+  - Học viên một mình cộng AI đã đủ ba đến năm người đánh giá chưa? Chưa; kết quả là giả thuyết, cần user xác nhận ở bước Understand our users.
   - Đánh giá accessibility bằng AI đủ không? Kiểm thử tự động chỉ phủ một phần vấn đề, 57% tính theo số lượng trong một nghiên cứu của vendor (nguồn 5).
 - Speaker notes:
 
   > Trên flow chọn ngày giao của Kitchen Crate, AI báo ba finding. Một: không có xác nhận sau khi chọn ngày. Hai: không đổi được ngày sau khi thanh toán. Ba: nhãn nút khác nhau giữa hai màn hình.
 
+  - Method trước: mười heuristic, và severity theo tần suất, tác động, tính lặp lại (nguồn 1, 2)
+  - Bạn đánh giá bản của mình trước; AI đánh giá độc lập, không xem bản của bạn
   - Finding một thuộc trạng thái hệ thống, hai thuộc quyền kiểm soát của người dùng, ba thuộc nhất quán
   - Kiểm tra từng finding bằng bốn câu: principle có đúng không, vấn đề có thật không, evidence có đủ không, severity do bạn chấm
   - **Severity do bạn chấm, không lấy của AI**
   - Mỗi finding cần evidence: ảnh chụp hoặc ví dụ cụ thể để người khác nhìn lại được
+  - Hai nghiên cứu về AI làm người đánh giá lệch nhau: một nghiên cứu tìm lại 21,2% vấn đề chuyên gia và 24,3% false positive, nghiên cứu kia 73 đến 77% so với 57 đến 63% của năm chuyên gia (nguồn 3, 4); cả hai cần người kiểm tra
   - Kết quả vào `ux-audit.md` trong hub
 
   > Trong ba finding này, bạn chấm finding nào cao nhất, và dựa vào đâu?
-- 🎨 Visual hint: SCHEMATIC. Ba bước ngang; bên dưới ba finding mẫu, mỗi finding có chip principle và ô severity trống để chấm.
+- 🎨 Visual hint: SCHEMATIC. Ba bước ngang (bạn, AI, so sánh); bên dưới ba finding mẫu, mỗi finding có chip principle và ô severity trống để chấm.
 
 ---
 
@@ -403,9 +412,9 @@ last_synced: 2026-10-26
 - Kicker: Demo
 - Title: Challenge *assumptions*
 - On-slide:
-  - AI liệt kê điều đang tin, evidence đang có và đang thiếu
+  - Bạn liệt kê điều đang tin; AI tìm giả định ẩn và hỏi ngược bằng chứng
   - Mục không có trong tài liệu: "chưa có nguồn"
-  - Kéo insight từ research có sẵn, rồi xếp theo mức độ quan trọng
+  - Xếp theo quan trọng và bằng chứng, chọn ba giả định hàng đầu
 - Ví dụ: có (Kitchen Crate: giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết)
 - Câu hỏi hay gặp:
   - Chưa có research cũ thì pull insight từ đâu? Ghi "chưa có" và để cho phỏng vấn peer và buổi 3.
@@ -413,15 +422,42 @@ last_synced: 2026-10-26
 
   > AI liệt kê ba điều team Kitchen Crate có thể đang tin: giá là lý do chính, khách không hiểu cách đổi ngày giao, bước thanh toán làm khách ngại cam kết.
 
-  - Chỉ điều đầu có trong case mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào
-  - Đây là cái bẫy của buổi: điều nghe hợp lý chưa phải điều có evidence
+  - Chỉ điều đầu có trong case mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào: đây là cái bẫy của buổi, điều nghe hợp lý chưa phải điều có evidence
   - Mục nào không có trong tài liệu thì ghi "chưa có nguồn", không đưa vào danh sách như sự thật
-  - Bước pull insight tìm xem điều nào đã có evidence trong research cũ của team
-  - Sau đó xếp từng assumption theo mức độ quan trọng so với evidence để chọn kiểm chứng điều nào trước
+  - Bước pull insight tìm xem điều nào đã có evidence trong research cũ của team, rồi xếp theo mức độ quan trọng so với evidence
+  - Method trước: giả định viết dạng "chúng tôi tin rằng…", xếp theo tầm quan trọng và bằng chứng (nguồn 8)
+  - Bạn liệt kê trước; AI tìm giả định ẩn và hỏi ngược bằng chứng
+  - Chọn ba giả định hàng đầu: quan trọng và chưa có bằng chứng; chúng thành câu hỏi ở slide tiếp theo
   - Kết quả vào `assumption.md`
 
   > Điều đang tin nào của case bạn nghe rất hợp lý nhưng bạn chưa từng thấy bằng chứng?
 - 🎨 Visual hint: SCHEMATIC. Danh sách ba assumption; mỗi dòng có chip "có nguồn" (sage) hoặc "chưa có nguồn" (sienna); bên phải một khối nhỏ "existing research" nối vào danh sách bằng mũi tên.
+
+---
+
+### PROCESS · Research questions
+- Kicker: Demo
+- Title: From assumption *to question*
+- On-slide:
+  - 01 · Lấy ba giả định hàng đầu từ assumption.md
+  - 02 · Viết research question, kèm quyết định nó phục vụ
+  - 03 · Tự kiểm năm tiêu chí, rồi để AI phản biện
+- Ví dụ: bản nháp (Kitchen Crate: giả định "khách không hiểu cách đổi ngày giao" thành câu hỏi "khách đang làm gì khi cần dời hộp sắp tới, và điều gì khiến họ bỏ dở?")
+- Câu hỏi hay gặp:
+  - Research question khác interview question thế nào? Research question là điều nhóm muốn học; interview question là câu hỏi đặt cho người tham gia, viết sau ở bước research plan.
+- Speaker notes:
+
+  > Team Kitchen Crate tin rằng khách không hiểu cách đổi ngày giao. Niềm tin này quan trọng, nhưng chưa có bằng chứng. Mình biến nó thành một câu hỏi.
+
+  - Câu xấu: "khách có thích tính năng đổi ngày giao không?" là câu có hoặc không, và gợi sẵn giải pháp
+  - Câu tốt hơn: "khách đang làm gì khi cần dời hộp sắp tới, và điều gì khiến họ bỏ dở?"
+  - Năm tiêu chí tự kiểm: trả lời được bằng bằng chứng, mở, gắn một quyết định, không gợi giải pháp, biết tìm ở đâu
+  - **Bạn viết câu hỏi trước; AI chỉ phản biện: câu nào không trả lời được, câu nào dẫn dắt, còn thiếu câu nào**
+  - Ghi nguồn gốc từng câu: mine, AI, cả hai
+  - Kết quả vào phần câu hỏi của `research-questions.md`, là đầu vào của research plan và phỏng vấn
+
+  > Giả định hàng đầu của case bạn, nếu viết thành một câu hỏi mở, sẽ là câu gì?
+- 🎨 Visual hint: SCHEMATIC. Ba bước ngang theo layout Process; bên dưới một câu "xấu" gạch ngang màu muted và một câu "tốt hơn" màu sage.
 
 ---
 
@@ -431,7 +467,7 @@ last_synced: 2026-10-26
 - On-slide:
   - What: Đối thủ làm gì ở cùng một journey
   - Why: Không uổng phí thời gian vào điều thị trường đã làm
-  - When: Thực hiện sau khi chốt scope
+  - When: Làm sau cùng; có thể làm tiếp sau buổi practice
   - Where AI helps: Mô tả ảnh chụp, điền bảng bằng chứng có tên file
 - Ví dụ: bản nháp (so sánh luồng chọn ngày giao của ba app meal-kit đối thủ, AI điền bảng, học viên mở ảnh gốc và ghi tỷ lệ ô sai)
 - Câu hỏi hay gặp:
@@ -440,7 +476,8 @@ last_synced: 2026-10-26
 
   > Một designer nhờ AI điền bảng so sánh ba app đối thủ từ ảnh chụp. Bảng ra rất gọn, nhưng một ô ghi tính năng mà ảnh không hề có.
 
-  - Chốt phạm vi trước: một journey, ba đến năm đối thủ, tối đa sáu tiêu chí
+  - Chốt phạm vi trước: một journey, hai đến bốn đối thủ, tối đa sáu tiêu chí (nguồn 10)
+  - Đây là review của chuyên gia, không phải testing với user; mục tiêu là cải thiện thiết kế của mình, không tuyên bố bên thắng
   - AI mô tả ảnh trước, đánh giá sau; bảng bằng chứng ghi tên file cho từng ô
   - **Bảng gọn tạo cảm giác chắc chắn, nên bạn ghi tỷ lệ ô sai sau khi đối chiếu**
   - Mở ảnh gốc cho hai ba tiêu chí quan trọng nhất và mọi ô AI ghi "suy luận"
@@ -559,7 +596,7 @@ last_synced: 2026-10-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Sáu phút; hai slide tiếp theo chiếu trong phase này
-  - Gom câu hỏi theo bốn hoạt động Break the brief; câu nào quá riêng thì hẹn ở buổi practice
+  - Gom câu hỏi theo các bước Break the brief; câu nào quá riêng thì hẹn ở buổi practice
   - Nhắc: buổi practice là nơi làm, buổi này chỉ để biết cần làm gì
 
   > Điều gì bạn muốn hỏi trước khi vào buổi practice?
@@ -572,12 +609,12 @@ last_synced: 2026-10-26
 - Title: Practice and homework
 - On-slide:
   - Buổi practice 90 phút ngay sau buổi này
-  - Làm: hoàn thiện principles.md, chạy Break the brief trên case của bạn
+  - Làm: hoàn thiện principles.md, chạy Break the brief theo thứ tự trên case của bạn
   - Về nhà: lên lịch 2 đến 3 buổi phỏng vấn ngắn
 - Ví dụ: Không cần. Slide giao việc.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Buổi practice là nơi làm bốn hoạt động; mang theo case folder và brief hoặc PRD đã ẩn danh
+  - Buổi practice là nơi làm scope và bốn hoạt động theo thứ tự; mang theo case folder và brief hoặc PRD đã ẩn danh
   - Bài tập về nhà đủ nhỏ để không chồng lên buổi practice: lên lịch phỏng vấn để có quote cho buổi 3
   - Học viên có case nhạy cảm dùng case mẫu của chương trình
   - Nội dung chi tiết của buổi practice sẽ gửi riêng

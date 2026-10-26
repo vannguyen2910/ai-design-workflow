@@ -34,7 +34,7 @@ Chương trình đặt ra một lập trường: **designer là partner cùng đ
 
 **Đối tượng.** Chương trình thiết kế cho Product Designer và UI/UX Designer. Product Owner, Product Manager và Business Analyst có thể học cùng trọn vẹn: cùng stage, cùng project folder, cùng hub. Họ không cần kỹ năng design và không phải build prototype từ đầu; ở phần prototype, họ dùng một design system có sẵn và để AI tạo template từ đó. Ở các buổi sau, những khác biệt theo vai trò được ghi trong mục "Nếu bạn là PO, PM hoặc BA".
 
-**Nhịp học của cả chương trình.** 12 buổi trong 6 tuần, hai buổi online mỗi tuần, mỗi buổi 90 phút, 7 đến 8 học viên. Chín buổi học nội dung (mỗi buổi một lesson); ba buổi Check point (buổi 5, 9, 12) là buổi làm việc trên case của học viên, có coaching. Chuẩn bị tối đa 10 phút trước mỗi buổi (khoảng 25 phút ở buổi 1, gồm kiểm tra tool và pre-read); bài tập về nhà tối đa khoảng 45 phút và chỉ nối tiếp phần đã bắt đầu trên lớp. Buổi live không phụ thuộc vào việc bài tập về nhà đã hoàn thành hay chưa.
+**Nhịp học của cả chương trình.** 12 buổi trong 6 tuần, hai buổi online mỗi tuần, mỗi buổi 90 phút, 7 đến 8 học viên. Mỗi tuần một cặp: buổi theory (một lesson) rồi buổi practice làm việc trên case của học viên, có coaching; tuần 6 kết bằng practice một ngày và buổi reflection và wrap-up. Chuẩn bị tối đa 10 phút trước mỗi buổi (khoảng 25 phút ở buổi 1, gồm kiểm tra tool và pre-read); việc làm giữa các buổi tối đa khoảng 20 phút và chỉ nối tiếp phần đã làm. Buổi live không phụ thuộc vào việc phần đó đã xong hay chưa.
 
 **Vị trí của buổi.** Buổi 1 nằm trước bước đầu tiên của workflow. Buổi này giả định người học đã có kinh nghiệm research, UX design và prototyping, và bổ sung lớp AI lên trên những kỹ năng đó.
 
@@ -106,8 +106,8 @@ Ba hướng đi dưới đây không loại trừ nhau, và chúng mô tả xu h
 
 | Hướng | Công việc chính | Kỹ năng trọng tâm | Bằng chứng và giới hạn | Chương trình này hỗ trợ |
 |---|---|---|---|---|
-| **Strategic designer** (senior generalist) | Cùng product và business chọn vấn đề đáng giải; research, framing, ra quyết định | Research, framing, stakeholder management, judgment | NN/g 2026: vị trí senior và generalist phục hồi nhanh hơn [3]; nghiên cứu Stanford cho thấy nhóm có kinh nghiệm ổn định [6]. **Mức vừa:** một bài phân tích có thẩm quyền cộng một nghiên cứu gián tiếp | Buổi 2 đến 5 (Discover, Define, Check point 1); hub làm bằng chứng cho lập luận |
-| **Design builder** (design engineer) | Dựng prototype chạy được và đưa lên production bằng AI coding tool | Design system, kiểm tra các file mà AI coding tool đã sửa, đọc output | Một nửa designer được khảo sát đã đưa code do AI tạo lên production [1]. **Mức vừa** về xu hướng; số liệu tuyển dụng thì yếu | Buổi 7 đến 9 (prototype, refine, Check point 2) |
+| **Strategic designer** (senior generalist) | Cùng product và business chọn vấn đề đáng giải; research, framing, ra quyết định | Research, framing, stakeholder management, judgment | NN/g 2026: vị trí senior và generalist phục hồi nhanh hơn [3]; nghiên cứu Stanford cho thấy nhóm có kinh nghiệm ổn định [6]. **Mức vừa:** một bài phân tích có thẩm quyền cộng một nghiên cứu gián tiếp | Buổi 3 đến 8 (Lesson 2 đến 4 và các practice: Discover, Define); hub làm bằng chứng cho lập luận |
+| **Design builder** (design engineer) | Dựng prototype chạy được và đưa lên production bằng AI coding tool | Design system, kiểm tra các file mà AI coding tool đã sửa, đọc output | Một nửa designer được khảo sát đã đưa code do AI tạo lên production [1]. **Mức vừa** về xu hướng; số liệu tuyển dụng thì yếu | Buổi 9 và 10 (AI Prototyping và practice dựng prototype) |
 | **AI product designer** | Thiết kế sản phẩm có AI bên trong: hành vi, ranh giới, lỗi và niềm tin của người dùng | Hiểu hallucination và grounding, đánh giá output, conversation design | NN/g và các nguồn nghề nghiệp nêu đây là chuyên môn đang lên [3]; số liệu tăng trưởng chưa đáng tin. **Mức yếu** | **Chỉ có nền tảng.** Chương trình dạy cách dùng AI để làm việc, không dạy thiết kế sản phẩm AI |
 
 UX research là một hướng liên quan: NN/g nêu research và stakeholder management là những kỹ năng tạo khác biệt [3]. Hướng thiên về execution ở entry level (wireframe, sản xuất asset) là hướng chịu áp lực nhiều nhất theo các nguồn trên, và là lý do để chọn hướng sớm.
@@ -462,7 +462,7 @@ Học viên được khuyến khích ghi câu hỏi vào chat trong suốt buổ
 
 ### 8.2 Homework: build your project folder (khoảng 45 phút, nối tiếp phần đã bắt đầu trên lớp)
 
-> Từ 2026-10-26 bài tập này nằm trong buổi practice 90 phút ngay sau buổi 1: xem [Practice 1](design-process-with-ai-practice.md). Các tên file trong practice theo `case-folder-template` (`learnings/context-product-and-users.md`); mục này vẫn ghi tên cũ `context/product-and-users.md` và cần đồng bộ khi sửa lesson 1.
+> Từ 2026-10-26 bài tập này nằm trong buổi practice 90 phút ngay sau buổi 1: xem [Practice 1](design-process-with-ai-practice.md). Practice 1 dùng đúng các tên file của mục này.
 
 Phần này không phải bài nộp để chấm. Đó là một bài tập duy nhất để project folder trở thành workspace dùng được cho dự án thật, cả trong khoá lẫn sau khoá. Nên xong trước buổi 2, vì các buổi sau làm trên chính folder này. Hướng dẫn chia sẻ hub (tuỳ chọn) nằm trong `guides/04-share-your-hub.md`.
 
@@ -518,18 +518,18 @@ Dữ liệu đưa vào AI tool có thể bị lưu lại. Phân loại tài li�
 
 | Buổi | Vai trò |
 |---|---|
-| **Buổi 1 (buổi này)** | Tương lai của nghề và ba hướng đi; bốn stage và các method; AI ở mức tổng quan; bộ từ vựng chung; agent và đội AI ở mức khái niệm; Knowledge Hub; data rules; project folder; lập trường AI-assisted |
-| Buổi 2: Discover the Problem | Lần đầu dùng project folder và các step card trong `toolkit/skills/`; bắt đầu từ câu hỏi của business; stakeholder check bằng văn bản; success metric và baseline; heuristic evaluation |
-| Buổi 3: Turn Research into Insights You Can Trust | Ghép điều người khác làm với điều user nói; user-voice synthesis trên quote thật với quy tắc "unknown"; kiểm theme về quote gốc |
-| Buổi 4: Frame the Problem Worth Solving | Opportunity, principle checks vào `standards/principle-checks.md`, hypothesis, Goals/Signals/Metrics thành các file item trong `insights/` |
-| Buổi 5: Check point 1 | Chạy Discover đến Define trên case của từng người; problem brief |
-| Buổi 6: Explore Ideas | Method brainstorm và select của Develop ở mức sâu; chọn một hướng; viết flows và content |
-| Buổi 7: Build Your First Prototype | Dạy sâu agent và dựng đội AI đầu tiên trên project folder; thêm design system notes vào `context/design-system-notes.md`; dựng prototype đầu tiên và ghi các decision đầu tiên thành file item |
-| Buổi 8: Refine and Check | State, edge case, kiểm tra AI với design system và accessibility, alignment check |
-| Buổi 9: Check point 2 | Build AI Prototype: dựng prototype main flow trên case của từng người, có coaching |
-| Buổi 10: Test with Real Users | Test plan, usability test, peer test, SUS; sửa finding; tạo file test và dựng lại hub để thấy các khoảng trống |
-| Buổi 11: Hand Off and Measure Success | Handoff pack, measurement plan, mô tả kết quả workflow bằng số đếm |
-| Buổi 12: Check point 3 | Final project; hoàn thiện hub thành báo cáo cuối; xem lại `_personal/my-direction.md` đã viết sau buổi 1 |
+| **Lesson 1 (buổi 1, buổi này)** | Tương lai của nghề và ba hướng đi; bốn stage và các method; AI ở mức tổng quan; bộ từ vựng chung; agent và đội AI ở mức khái niệm; Knowledge Hub; data rules; project folder; lập trường AI-assisted |
+| Practice 1 (buổi 2) | Dựng project folder, context pack, data rules, hub khung và hướng nghề |
+| Lesson 2 (buổi 3): Discover the Problem | Design Principles, Break the brief (research questions, UX observation, challenge assumptions, competitor analysis), Understand our users ở mức theory, package thành agent và đóng góp vào hub |
+| Practice 2 (buổi 4) | `principles.md` và bốn file Break the brief; lên lịch phỏng vấn peer |
+| Lesson 3 (buổi 5): Insights You Can Trust | Synthesis trên quote đã ẩn danh, kiểm theme về quote gốc, persona và journey map dẫn về quote có ID, opportunity |
+| Practice 3 (buổi 6) | Phỏng vấn peer, synthesis, persona, journey, opportunity, Gate 1, problem brief |
+| Lesson 4 (buổi 7): Explore Ideas | Hypothesis, How might we, sketch giấy rồi AI, chọn hướng bằng principle check |
+| Practice 4 (buổi 8) | Hypothesis, ba hướng, chọn hướng, flow và nội dung |
+| Lesson 5 (buổi 9): AI Prototyping | Design system notes, pattern, template, rules file; prototype sẵn sàng test |
+| Practice 5 (buổi 10) | Dựng prototype main flow bằng AI coding tool, chạy các check, review chéo |
+| Lesson 6 (buổi 11): Test with Real Users | Goals/Signals/Metrics, test plan và script, phân tích kết quả, sửa finding |
+| Practice 6 (một ngày) và wrap-up (buổi 12) | Test với peer, sửa finding; trình bày case, reflection, hoàn thiện hub, xem lại `_personal/my-direction.md` |
 
 ---
 

@@ -1,0 +1,181 @@
+{
+  "_about": "Read by _system/scripts/consistency.py. `terms` lists wording that was retired or renamed (a hit means a file still says the old thing); `mentions` lists facts that every file depending on them must contain. Add a rule whenever a decision changes a name or a number.",
+  "terms": [
+    {
+      "pattern": "check ?point",
+      "why": "no Check points any more (2026-10-26): practice sessions replaced them",
+      "scope": [
+        "lessons/*/materials/*.md",
+        "introduction.md",
+        "README.md",
+        "SUMMARY.md",
+        "learning/plan.md",
+        "learning/lesson-details.md"
+      ],
+      "allow": [
+        "(không còn|không có|bỏ|thay cho|thay quyết định|đã bỏ|no longer|without) *check ?point",
+        "Checkpoint trên lớp",
+        "checkpoint-prototype",
+        "Checkpoint prototype",
+        "Sửa các trang còn nhắc",
+        "Trang Notion có thể còn ghi"
+      ]
+    },
+    {
+      "pattern": "case card",
+      "why": "renamed to \"case mẫu\" in Vietnamese content (2026-10-26)",
+      "scope": [
+        "lessons/*/materials/*.md",
+        "introduction.md",
+        "README.md",
+        "SUMMARY.md",
+        "learning/plan.md",
+        "learning/lesson-details.md"
+      ],
+      "allow": [
+        "case-card\\.md"
+      ]
+    },
+    {
+      "pattern": "hand-?off-and-measure|hand off and measure|lesson (11|handoff)",
+      "why": "the hand-off and measure lesson was dropped (2026-10-26)",
+      "scope": [
+        "lessons/*/materials/*.md",
+        "introduction.md",
+        "README.md",
+        "SUMMARY.md",
+        "learning/plan.md",
+        "learning/lesson-details.md"
+      ],
+      "allow": [
+        "(bỏ|không còn|đã bỏ|dropped|Đã bỏ)"
+      ]
+    },
+    {
+      "pattern": "workflow lab",
+      "why": "the workflow lab was dropped (2026-10-26)",
+      "scope": [
+        "lessons/*/materials/*.md",
+        "introduction.md",
+        "README.md",
+        "SUMMARY.md",
+        "learning/plan.md",
+        "learning/lesson-details.md"
+      ],
+      "allow": [
+        "(bỏ|không dùng|bỏ khỏi|dropped|không còn)"
+      ]
+    },
+    {
+      "pattern": "(chín|9) buổi (học )?nội dung|14 session|7 tuần|session (A|B)\\b",
+      "why": "old programme shape (9 content sessions, 14 sessions, 7 weeks); now 12 sessions in 6 weeks",
+      "scope": [
+        "lessons/*/materials/*.md",
+        "introduction.md",
+        "README.md",
+        "SUMMARY.md",
+        "learning/plan.md"
+      ],
+      "allow": [
+        "(bản|thay|bỏ|trước|cũ).{0,30}(14 session|session (A|B))",
+        "(14 session|session (A|B)).{0,30}(bản|bỏ|cũ|archive)",
+        "Trang Notion có thể còn ghi"
+      ]
+    },
+    {
+      "pattern": "năm hoạt động|five activities|self-documentation",
+      "why": "Break the brief has four activities; self-documentation moved to Practice 1",
+      "scope": [
+        "lessons/02-*/materials/*.md",
+        "assets/diagrams/*.swimlane.json",
+        "introduction.md",
+        "learning/plan.md"
+      ],
+      "allow": [
+        "đã làm ở Practice 1",
+        "đã được làm ở Practice 1",
+        "context pack"
+      ]
+    },
+    {
+      "pattern": "learnings/context-|case-folder-template/learnings",
+      "why": "students download workspace-template: the files are context/product-and-users.md, context/data-rules.md, context/open-questions.md",
+      "scope": [
+        "lessons/*/materials/*.md",
+        "introduction.md"
+      ],
+      "allow": []
+    }
+  ],
+  "mentions": [
+    {
+      "term": "principles.md",
+      "why": "the standard AI checks against",
+      "in": [
+        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json",
+        "learning/plan.md"
+      ]
+    },
+    {
+      "term": "research-questions.md",
+      "why": "output of the research questions activity",
+      "in": [
+        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
+      ]
+    },
+    {
+      "term": "ux-audit.md",
+      "why": "output of the UX observation activity",
+      "in": [
+        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
+      ]
+    },
+    {
+      "term": "assumption.md",
+      "why": "output of the challenge assumptions activity",
+      "in": [
+        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
+      ]
+    },
+    {
+      "term": "competitor-analysis.md",
+      "why": "output of the competitor analysis activity",
+      "in": [
+        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
+      ]
+    },
+    {
+      "term": "my-direction.md",
+      "why": "career direction file written in Practice 1 and revisited at the wrap-up",
+      "in": [
+        "lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md",
+        "lessons/01-design-process-with-ai/materials/design-process-with-ai-practice.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
+      ]
+    },
+    {
+      "term": "context/product-and-users.md",
+      "why": "file name in workspace-template/my-project/context",
+      "in": [
+        "lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md",
+        "lessons/01-design-process-with-ai/materials/design-process-with-ai-practice.md",
+        "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md"
+      ]
+    }
+  ]
+}

@@ -38,7 +38,7 @@ Làm theo thứ tự.
 | Tuần | Theory | Practice | Output |
 |---|---|---|---|
 | 1 | **Your Design Process, with AI**: nghề đang đi đâu, AI trong Double Diamond, data safety | Dựng case folder, data rules, hub | Case folder, hub |
-| 2 | **Discover the Problem**: principles, break the brief, hiểu người dùng | `principles.md` và bốn file Break the brief; lên lịch phỏng vấn | Scope, `ux-audit`, `assumption`, `competitor-analysis` |
+| 2 | **Discover the Problem**: principles, break the brief, hiểu người dùng | `principles.md` rồi Break the brief theo thứ tự scope, UX observation, challenge assumptions, research questions, competitor; lên lịch phỏng vấn | `research-questions` (scope và câu hỏi), `ux-audit`, `assumption`, `competitor-analysis` |
 | 3 | **Insights You Can Trust**: synthesis, persona, journey map, opportunity (mỗi dòng dẫn về quote có ID) | Phỏng vấn peer, synthesis, persona, journey, opportunity | Evidence pack, **problem brief** |
 | 4 | **Explore Ideas**: hypothesis, How might we, sketch giấy rồi AI, chọn hướng | Hypothesis, ý tưởng, chọn hướng bằng principle check | Hướng đã chọn, flow |
 | 5 | **AI Prototyping**: design system, pattern, template, rules file | Build prototype main flow | Prototype sẵn sàng test, có thể là final design |

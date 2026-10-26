@@ -433,7 +433,7 @@ last_synced: 2026-10-23
 - Speaker notes:
   - Dùng quote đã ẩn danh; ai chưa có quote thì dùng bộ "Ăn Ngay" mình gửi
   - Trang Evidence gom synthesis cùng finding heuristic và điều đang tin từ buổi 2
-  - Gate 1 chạy ở Check point 1, buổi 5: nhắc ba hard stop là 1b, 1c, 1f
+  - Gate 1 chạy ở Practice 3, buổi 6: nhắc ba hard stop là 1b, 1c, 1f
   - Tuỳ chọn: ai dùng công cụ transcript tiếng Việt thì đối chiếu bằng mắt một đoạn trước
   - Đây là folder dự án của bạn, không phải bài nộp
 - 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Evidence page" kèm hai dòng ngắn bên dưới.

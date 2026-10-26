@@ -28,7 +28,7 @@ Nguyên tắc vận hành giữ nguyên: **AI soạn nháp. Học viên kiểm t
 
 **Hình dạng buổi.** Ice breaker, theory, một activity ngắn trên lớp, hỏi đáp. Activity trên lớp là kiểm tra một bản synthesis có sẵn trên bộ quote hư cấu; synthesis trên quote của chính học viên làm ở bài tập về nhà (quyết định 2026-10-22; xem `plan.md`).
 
-**Vị trí của buổi.** Buổi 3 giả định học viên đã có scope, danh sách điều đang tin và finding heuristic từ buổi 2. Các thành phần này cùng với synthesis hợp thành evidence pack; Gate 1 chạy ở Check point 1 (buổi 5).
+**Vị trí của buổi.** Buổi 3 giả định học viên đã có scope, danh sách điều đang tin và finding heuristic từ buổi 2. Các thành phần này cùng với synthesis hợp thành evidence pack; Gate 1 chạy ở Practice 3 (buổi 6).
 
 ---
 
@@ -211,7 +211,7 @@ Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổ
 
 ### 6.4 Homework
 
-Một bài, khoảng 45 phút: chạy user-voice synthesis trên quote của chính mình (đã ẩn danh; học viên chưa có quote dùng bộ "Ăn Ngay"), kiểm tra theme về quote bằng bốn bước, rồi gộp thành trang Evidence trong hub cùng finding heuristic và điều đang tin từ buổi 2. Tuỳ chọn: competitor analysis đầy đủ trên 2 đến 3 đối thủ. Gate 1 (các check 1a đến 1g, ba hard stop 1b, 1c, 1f) chạy ở Check point 1 (buổi 5).
+Một bài, khoảng 45 phút: chạy user-voice synthesis trên quote của chính mình (đã ẩn danh; học viên chưa có quote dùng bộ "Ăn Ngay"), kiểm tra theme về quote bằng bốn bước, rồi gộp thành trang Evidence trong hub cùng finding heuristic và điều đang tin từ buổi 2. Tuỳ chọn: competitor analysis đầy đủ trên 2 đến 3 đối thủ. Gate 1 (các check 1a đến 1g, ba hard stop 1b, 1c, 1f) chạy ở Practice 3 (buổi 6).
 
 ---
 
@@ -267,12 +267,12 @@ Quote của người thật là dữ liệu cá nhân. Ẩn danh trước khi d�
 
 ## 10. Connection to the series
 
-| Buổi | Vai trò |
+| Lesson và practice | Vai trò |
 |---|---|
-| Buổi 2 | `principles.md`, scope, `assumption.md`, `ux-audit.md`, `competitor-analysis.md` (bốn hoạt động Break the brief, làm ở buổi practice sau buổi 2); nguồn cho evidence pack |
-| **Buổi 3 (buổi này)** | Evidence menu, user-voice synthesis, kiểm tra theme về quote |
-| Buổi 4 | Opportunity xếp hạng, principle check, hypothesis, Goals/Signals/Metrics |
-| Buổi 5 (Check point 1) | Chạy Discover đến Define; Gate 1; problem brief |
+| Lesson 2 (buổi 3), Practice 2 (buổi 4) | `principles.md`, `research-questions.md`, `ux-audit.md`, `assumption.md`, `competitor-analysis.md` (bốn hoạt động Break the brief); nguồn cho evidence pack |
+| **Lesson 3 (buổi 5, buổi này)** | Evidence menu, user-voice synthesis, kiểm tra theme về quote (persona, journey map và opportunity sẽ thêm khi viết lại lesson này) |
+| Practice 3 (buổi 6) | Phỏng vấn peer, synthesis, kiểm theme, Gate 1, problem brief |
+| Lesson 4 (buổi 7) | Hypothesis, How might we, ý tưởng, chọn hướng bằng principle check |
 
 ---
 
