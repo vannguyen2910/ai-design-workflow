@@ -45,3 +45,10 @@ header.header { border-bottom: 1px dashed var(--minimal-border); backdrop-filter
 .sl-markdown-content table { border-collapse: separate; border-spacing: 0; }
 .sl-markdown-content th { background: var(--sl-color-gray-6); border: 0; font-weight: 600; }
 .sl-markdown-content td { border: 0; border-bottom: 1px dashed var(--minimal-border); }
+
+
+/* landing page preview: a live, scaled-down iframe that opens the full page on click */
+.lp-preview { --s: .55; display: block; position: relative; height: calc(900px * var(--s)); margin: 1.5rem 0 .75rem; overflow: hidden; border-radius: 16px; box-shadow: var(--minimal-card-shadow); text-decoration: none; }
+.lp-preview iframe { width: 1440px; max-width: none; height: 900px; border: 0; transform: scale(var(--s)); transform-origin: 0 0; pointer-events: none; background: #fff; }
+.lp-preview-cta { position: absolute; right: 12px; bottom: 12px; padding: 0 12px; line-height: 32px; border-radius: 8px; background: var(--sl-color-accent); color: #fff; font-weight: 700; font-size: 14px; }
+.lp-preview:hover .lp-preview-cta { background: var(--sl-color-accent-high); }

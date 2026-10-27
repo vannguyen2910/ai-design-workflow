@@ -10,7 +10,8 @@ export default defineConfig({
 			title: 'AI Design Workflow',
 			customCss: ['./src/styles/custom.css'],
 			sidebar: [
-				{ label: 'Giới thiệu', slug: 'index' },
+				{ label: 'Giới thiệu chương trình', slug: 'index' },
+				{ label: 'Landing Page', slug: 'landing' },
 				{
 					label: 'Lessons',
 					items: [
