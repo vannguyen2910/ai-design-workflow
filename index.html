@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Design Workflow</title>
+<style>
+:root{--bg:#faf8f4;--card:#fff;--ink:#1d1b18;--mute:#6b665e;--line:#e4dfd5;--theory:#2f5fd0;--practice:#c2580a;--done:#2b8a4b;--draft:#b8860b;--plan:#8a857b}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15140f;--card:#201e18;--ink:#f1ede4;--mute:#a39d90;--line:#35322a;--theory:#7ba2ff;--practice:#f09a54;--done:#5cc17d;--draft:#e0b64a;--plan:#8f8a7e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1040px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.1;margin:0 0 12px}
+h2{font-size:1.25rem;margin:48px 0 4px}
+p{margin:0}.lead{color:var(--mute);max-width:62ch}.sub{color:var(--mute);font-size:.9rem;margin-bottom:16px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 16px}
+.stat b{display:block;font-size:1.5rem}.stat span{color:var(--mute);font-size:.85rem}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.85rem;color:var(--mute);margin-bottom:12px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:baseline}
+.weeks{display:grid;gap:12px}
+.week{display:grid;grid-template-columns:64px 1fr 1fr;gap:12px;align-items:stretch}
+.wk{display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--mute);border-right:2px solid var(--line);padding-right:12px;text-align:center;font-size:.9rem}
+.sess{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--theory);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.sess.p{border-top-color:var(--practice)}
+.sess .k{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:var(--theory)}
+.sess.p .k{color:var(--practice)}
+.sess h3{margin:0;font-size:1.02rem;line-height:1.3}
+.sess .d{color:var(--mute);font-size:.88rem;flex:1}
+.sess{position:relative}
+.sess a{color:inherit}.sess a::after{content:"";position:absolute;inset:0}
+.sess:has(a):hover{border-color:var(--theory)}
+.tag{align-self:flex-start;font-size:.75rem;border-radius:99px;padding:2px 10px;border:1px solid currentColor}
+.t-draft{color:var(--draft)}.t-plan{color:var(--plan)}.t-done{color:var(--done)}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:12px}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+.links a:hover{border-color:var(--theory)}.links b{display:block}.links span{color:var(--mute);font-size:.88rem}
+.out{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:12px}
+.out div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.out b{display:block;margin-bottom:4px}.out span{color:var(--mute);font-size:.9rem}
+@media (max-width:720px){.week{grid-template-columns:1fr}.wk{justify-content:flex-start;border-right:0;border-bottom:2px solid var(--line);padding:0 0 4px}}
+</style>
+</head>
+<body>
+<main>
+<h1>AI Design Workflow</h1>
+<p class="lead">Chương trình 12 buổi trong 6 tuần cho designer mid và senior. Mỗi tuần hai buổi 90 phút: một buổi theory, một buổi practice. Học viên làm một case và ra khỏi chương trình với một workflow AI dùng lại được, cùng một Knowledge Hub dựng dần theo từng trang.</p>
+<div class="stats">
+  <div class="stat"><b>6</b><span>tuần</span></div>
+  <div class="stat"><b>12</b><span>buổi, 90 phút</span></div>
+  <div class="stat"><b>6</b><span>lesson + 6 practice</span></div>
+  <div class="stat"><b>3 / 6</b><span>lesson đã có bản draft</span></div>
+</div>
+
+<h2>Lộ trình 6 tuần</h2>
+<p class="sub">Mỗi tuần một lesson (theory), rồi một buổi practice làm trên chính case của học viên.</p>
+<div class="legend"><span><i class="dot" style="background:var(--theory)"></i>Theory</span><span><i class="dot" style="background:var(--practice)"></i>Practice</span></div>
+<div class="weeks">
+
+<div class="week"><div class="wk">Tuần 1</div>
+  <div class="sess"><span class="k">Buổi 1 · Lesson 1</span><h3><a href="viewer.html?f=lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md">Your Design Process, with AI</a></h3><p class="d">Tương lai nghề và ba hướng đi, bốn stage, bốn khái niệm AI cốt lõi, data safety.</p><span class="tag t-draft">Draft</span></div>
+  <div class="sess p"><span class="k">Buổi 2 · Practice 1</span><h3><a href="viewer.html?f=lessons/01-design-process-with-ai/materials/design-process-with-ai-practice.md">Case Folder and Hub</a></h3><p class="d">Dựng folder dự án và trang đầu của Knowledge Hub.</p></div></div>
+
+<div class="week"><div class="wk">Tuần 2</div>
+  <div class="sess"><span class="k">Buổi 3 · Lesson 2</span><h3><a href="viewer.html?f=lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md">Discover the Problem</a></h3><p class="d">Design Principles, break the brief, hiểu người dùng, package thành agent và hub.</p><span class="tag t-draft">Draft · viết lại 2026-10-26</span></div>
+  <div class="sess p"><span class="k">Buổi 4 · Practice 2</span><h3><a href="viewer.html?f=lessons/02-discover-the-problem/materials/discover-the-problem-practice.md">Break the Brief</a></h3><p class="d">Tách brief thành câu hỏi cần trả lời trước khi thiết kế.</p></div></div>
+
+<div class="week"><div class="wk">Tuần 3</div>
+  <div class="sess"><span class="k">Buổi 5 · Lesson 3</span><h3><a href="viewer.html?f=lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md">Insights You Can Trust</a></h3><p class="d">Synthesis, persona, journey map, opportunity; mỗi dòng dẫn về quote có ID.</p><span class="tag t-draft">Draft · cần sửa theo cấu trúc mới</span></div>
+  <div class="sess p"><span class="k">Buổi 6 · Practice 3</span><h3><a href="viewer.html?f=lessons/03-research-you-can-trust/materials/research-you-can-trust-practice.md">Run the Four Steps</a></h3><p class="d">Chạy bốn bước từ quote đến insight với AI.</p></div></div>
+
+<div class="week"><div class="wk">Tuần 4</div>
+  <div class="sess"><span class="k">Buổi 7 · Lesson 4</span><h3>Explore Ideas</h3><p class="d">Hypothesis, How might we, sketch giấy rồi AI, chọn hướng bằng principle check.</p><span class="tag t-plan">Planned</span></div>
+  <div class="sess p"><span class="k">Buổi 8 · Practice 4</span><h3>Practice 4</h3><p class="d">Chưa có nội dung.</p></div></div>
+
+<div class="week"><div class="wk">Tuần 5</div>
+  <div class="sess"><span class="k">Buổi 9 · Lesson 5</span><h3>AI Prototyping</h3><p class="d">Design system, pattern, template, rules file; prototype sẵn sàng test, có thể là final design.</p><span class="tag t-plan">Planned</span></div>
+  <div class="sess p"><span class="k">Buổi 10 · Practice 5</span><h3>Practice 5</h3><p class="d">Chưa có nội dung.</p></div></div>
+
+<div class="week"><div class="wk">Tuần 6</div>
+  <div class="sess"><span class="k">Buổi 11 · Lesson 6</span><h3>Test with Real Users</h3><p class="d">Metrics, test plan, phân tích kết quả, SUS, sửa finding.</p><span class="tag t-plan">Planned</span></div>
+  <div class="sess p"><span class="k">Một ngày test · Buổi 12</span><h3>Test day, Reflection and Wrap-up</h3><p class="d">Một ngày test với người dùng thật, rồi buổi reflection và wrap-up. Không có lesson riêng.</p></div></div>
+
+</div>
+
+<h2>Học viên mang đi gì</h2>
+<div class="out">
+  <div><b>Một case hoàn chỉnh</b><span>Đi từ discover đến test trên một dự án thật.</span></div>
+  <div><b>Một workflow AI dùng lại được</b><span>Step card, luật cho AI tool, cách đề xuất trước rồi mới tạo.</span></div>
+  <div><b>Một Knowledge Hub</b><span>Mỗi insight, ý tưởng, quyết định đều dẫn ngược về bằng chứng.</span></div>
+</div>
+
+<h2>Tài liệu để collaborate</h2>
+<div class="links">
+  <a href="viewer.html?f=README.md"><b>README</b><span>Cấu trúc thư mục, bảng lesson, cách thêm lesson.</span></a>
+  <a href="viewer.html?f=learning/plan.md"><b>Plan</b><span>Nguồn chuẩn cho cấu trúc chương trình. Đọc trước khi sửa lesson.</span></a>
+  <a href="assets/diagrams/ai-design-workflow-six-weeks.html"><b>Sơ đồ 6 tuần</b><span>Swimlane chi tiết hoạt động và file đầu ra.</span></a>
+  <a href="viewer.html?f=assets/method-cards/README.md"><b>Method cards</b><span>Card tham khảo cho từng method, theo stage.</span></a>
+  <a href="viewer.html?f=assets/starter-files/course-case/case-card.md"><b>Case mẫu: Kitchen Crate</b><span>Case hư cấu dùng trong lớp.</span></a>
+  <a href="viewer.html?f=introduction.md"><b>Giới thiệu chương trình</b><span>Bản mô tả gửi học viên.</span></a>
+</div>
+</main>
+</body>
+</html>

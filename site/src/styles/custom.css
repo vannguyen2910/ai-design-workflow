@@ -1,0 +1,47 @@
+/* Minimal design system (green, Public Sans), mapped onto Starlight's tokens.
+   Source of the values: _system/scripts/minimal.css in the Mentoring repo. */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+	--sl-font: 'Public Sans', system-ui, sans-serif;
+	--sl-content-width: 50rem;
+	--minimal-border: rgba(145, 158, 171, .28);
+	--minimal-card-shadow: 0 0 2px 0 rgba(145, 158, 171, .2), 0 12px 24px -4px rgba(145, 158, 171, .12);
+}
+
+/* light: green accent, cool grey scale (Starlight's light scale runs dark to light) */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #d3f5e4;
+	--sl-color-accent: #00a76f;
+	--sl-color-accent-high: #007867;
+	--sl-color-white: #1c252e;
+	--sl-color-gray-1: #212b36;
+	--sl-color-gray-2: #454f5b;
+	--sl-color-gray-3: #637381;
+	--sl-color-gray-4: #919eab;
+	--sl-color-gray-5: #c4cdd5;
+	--sl-color-gray-6: #f4f6f8;
+	--sl-color-gray-7: #f9fafb;
+	--sl-color-black: #fff;
+}
+
+:root[data-theme='dark'] {
+	--sl-color-accent-low: #063d2e;
+	--sl-color-accent: #00a76f;
+	--sl-color-accent-high: #5be49b;
+}
+
+h1, h2, h3 { letter-spacing: -.01em; }
+h1 { font-weight: 800; }
+
+/* top bar: translucent, dashed rule */
+header.header { border-bottom: 1px dashed var(--minimal-border); backdrop-filter: blur(6px); }
+.sidebar-pane { border-inline-end: 1px dashed var(--minimal-border); }
+
+/* soft cards, no outline */
+.card, .sl-link-card { border: 0 !important; border-radius: 16px; box-shadow: var(--minimal-card-shadow); }
+
+/* tables: grey header band, dashed rows */
+.sl-markdown-content table { border-collapse: separate; border-spacing: 0; }
+.sl-markdown-content th { background: var(--sl-color-gray-6); border: 0; font-weight: 600; }
+.sl-markdown-content td { border: 0; border-bottom: 1px dashed var(--minimal-border); }
