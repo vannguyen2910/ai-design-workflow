@@ -15,6 +15,7 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 - [Lesson 2: Discover the Problem](lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md)
   - [Practice 2: Break the Brief](lessons/02-discover-the-problem/materials/discover-the-problem-practice.md)
 - [Lesson 3: Insights You Can Trust](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md)
+  - [Practice 3: Run the Four Steps](lessons/03-research-you-can-trust/materials/research-you-can-trust-practice.md)
 
 ## Resources
 
@@ -62,6 +63,10 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 
 - [Outcome Examples](examples/outcome-examples/README.md)
 - [GitHub, Create to Publish](assets/diagrams/github-create-build-push-publish.html)
+- [Lesson 3: Checking a quote](lessons/03-research-you-can-trust/assets/quote-check.html)
+- [Lesson 3: Four steps with AI](lessons/03-research-you-can-trust/assets/four-steps-with-ai.html)
+- [Lesson 3: Quote to insight hub](lessons/03-research-you-can-trust/assets/insight-chain.html)
+- [Lesson 3: Search before asking](lessons/03-research-you-can-trust/assets/insight-hub-loop.html)
 
 <!--
 Not shown. Move a line above the comment to publish it.

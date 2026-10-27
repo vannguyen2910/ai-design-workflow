@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 26
+slide_count: 28
 duration: "90 min"
 status: draft
 built_deck: ""
@@ -35,13 +35,13 @@ last_synced: 2026-10-26
 
 ---
 
-## Slide structure: 26 slides
+## Slide structure: 28 slides
 
 - Arc: **Open** (cover, ice breaker) → **Theory** (divider cộng bốn phần: Discover và AI, Design Principles, Break the brief, Understand our users) → **Activity** (5 phút, nằm sau phần Design Principles) → **Package** (agent và hub) → **Close** (hỏi đáp, buổi practice, kết thúc).
-- Khớp với tám phase của lesson (mục 7.1). Phase 1 (ice breaker) = slide 1–2. Theory 1 (Discover và AI) = slide 3–6. Theory 2 (Design Principles) = slide 7–9. Activity = slide 10–11. Theory 3 (Break the brief) = slide 12–19: tổng quan, scope (câu hỏi gửi business, ba mức access, AI không đóng vai PO hay user), UX observation, challenge assumptions, research questions, competitor analysis. Theory 4 (Understand our users) = slide 20–21. Package = slide 22–23. Hỏi đáp và close = slide 24–26.
-- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, activity = 5, hỏi đáp = 6. Timing các phase: ice breaker 6, T1 8, T2 10, activity 5, T3 28, T4 10, package 9, hỏi đáp 6; tổng nội dung 82 trên 90 phút, buffer 8 phút. Slide 25 và 26 chiếu trong phase hỏi đáp.
-- Theory khoảng 56 phút vì buổi practice 90 phút nằm ngay sau. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
-- Thứ tự cắt khi quá giờ: bỏ slide 19 (competitor analysis, làm sau buổi practice), rồi rút demo research questions (slide 18) còn một ví dụ, rồi hỏi đáp còn 4 phút, rồi gộp slide 20 và 21 thành một.
+- Khớp với tám phase của lesson (mục 7.1). Phase 1 (ice breaker) = slide 1–2. Theory 1 (Discover và AI) = slide 3–6. Theory 2 (Design Principles) = slide 7–9. Activity = slide 10–11. Theory 3 (Break the brief) = slide 12–19: tổng quan, scope (câu hỏi gửi business, ba mức access, AI không đóng vai PO hay user), UX observation, challenge assumptions, research questions, competitor analysis. Theory 4 (Understand our users) = slide 20–23: tổng quan, năm thói quen phỏng vấn, research plan với AI, từ phỏng vấn đến insight. Package = slide 24–25. Hỏi đáp và close = slide 26–28.
+- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, activity = 5, hỏi đáp = 6. Timing các phase: ice breaker 6, T1 8, T2 10, activity 5, T3 28, T4 14, package 9, hỏi đáp 6; tổng nội dung 86 trên 90 phút, buffer 4 phút. Slide 27 và 28 chiếu trong phase hỏi đáp.
+- Theory khoảng 60 phút vì buổi practice 90 phút nằm ngay sau. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
+- Thứ tự cắt khi quá giờ: bỏ slide 19 (competitor analysis, làm sau buổi practice), rồi rút demo research questions (slide 18) còn một ví dụ, rồi hỏi đáp còn 4 phút, rồi rút Theory 4 còn hai slide (20 và 23).
 - Cái bẫy của buổi nằm ở slide 17: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
 
 ---
@@ -240,7 +240,7 @@ last_synced: 2026-10-26
 - Num: 5
 - Kicker: Activity
 - Title: One line\n*each*
-- Sub: Hai dòng đầu của principles.md, chưa mở AI
+- Sub: Hai dòng đầu của bộ nguyên tắc, chưa mở AI
 - Ví dụ: Không cần. Học viên viết trên case của chính mình.
 - Câu hỏi hay gặp:
   - Chưa biết business principle thì viết gì? Ghi "assumed" và người cần xác nhận.
@@ -256,7 +256,7 @@ last_synced: 2026-10-26
 
 ### PROCESS · Two lines to write
 - Kicker: How-to
-- Title: Start `principles.md`
+- Title: Start your *principles*
 - On-slide:
   - 01 · Chọn một UX principle, viết một câu vì sao quan trọng
   - 02 · Viết một business principle, ghi assumed nếu chưa biết
@@ -278,11 +278,11 @@ last_synced: 2026-10-26
 - Kicker: Overview
 - Title: Scope, then *four activities*
 - On-slide:
-  - Scope: business question và quyết định → `research-questions.md`
-  - UX observation → `ux-audit.md`
-  - Challenge assumptions → `assumption.md`
-  - Research questions → `research-questions.md`
-  - Competitor analysis → `competitor-analysis.md`
+  - Scope: business question và quyết định → bản scope
+  - UX observation → bản đánh giá UX
+  - Challenge assumptions → bản đồ giả định
+  - Research questions → danh sách research question
+  - Competitor analysis → bản phân tích đối thủ
 - Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm sau buổi practice, các hoạt động còn lại nối nhau nên làm theo thứ tự.
@@ -292,7 +292,7 @@ last_synced: 2026-10-26
   > Team Kitchen Crate nhận brief "cải thiện onboarding". Break the brief là bốn việc mình làm trước khi chấp nhận brief đó.
 
   - Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question, quan sát trải nghiệm, liệt kê điều đang tin, rồi mới viết câu hỏi
-  - **Mỗi hoạt động có cùng nhịp: method trước, bạn tự làm bản của mình, rồi mới đến AI, rồi bạn so hai bản**
+  - **Mỗi hoạt động có cùng nhịp: nhắc method, AI soạn nháp theo method, bạn kiểm tra và quyết định**
   - Mỗi hoạt động ra một file trong hub
   - Self-documentation, bước đưa tài liệu product vào AI để có context, đã làm ở Practice 1; Break the brief bắt đầu từ context pack đó
   - Hôm nay mình đi qua từng bước và demo ba hoạt động trên Kitchen Crate: UX observation, challenge assumptions, research questions
@@ -323,7 +323,7 @@ last_synced: 2026-10-26
 
   - Có hai tầng: câu hỏi cấp cao (vision, mission của sản phẩm) và năm câu gửi business
   - Gửi bằng văn bản, mỗi câu một ý, để người bận trả lời được trong vài dòng
-  - **Bạn viết business question và quyết định của mình trước, rồi mới mở AI**
+  - **Bạn nêu business question và quyết định của mình, rồi AI mới soạn năm câu; AI không trả lời thay business**
   - Câu trả lời nhận được ghi vào scope với trạng thái confirmed; câu chưa có trả lời ghi assumed kèm người cần xác nhận
   - Hỏi trung tính: "liệt kê những điều có thể giải thích hiện tượng này" tốt hơn "giải thích vì sao giá là nguyên nhân" (nguồn 7)
 
@@ -382,29 +382,29 @@ last_synced: 2026-10-26
 - Kicker: Demo
 - Title: UX observation, *principles first*
 - On-slide:
-  - 1 · Bạn chọn flow, tự đánh giá theo principles.md, chấm severity 0 đến 4
-  - 2 · AI đánh giá độc lập trên cùng ảnh, mỗi finding chỉ ra ảnh và vùng
-  - 3 · Bạn so hai bản, đếm finding AI sai, chốt severity
+  - 1 · Method: mười heuristic và thang severity 0 đến 4
+  - 2 · AI đánh giá flow theo bộ nguyên tắc, mỗi finding chỉ ra ảnh và vùng
+  - 3 · Bạn lọc qua ba cổng, đếm finding AI sai, chốt severity
 - Ví dụ: có (Kitchen Crate, flow chọn ngày giao)
 - Câu hỏi hay gặp:
   - Severity AI chấm có dùng được không? Không lấy của AI: chưa có nghiên cứu cho thấy AI chấm severity đáng tin, và NN/g khuyên nhiều người đánh giá độc lập, lấy trung bình (nguồn 2).
-  - Học viên một mình cộng AI đã đủ ba đến năm người đánh giá chưa? Chưa; kết quả là giả thuyết, cần user xác nhận ở bước Understand our users.
+  - Một người cộng AI đã đủ ba đến năm người đánh giá chưa? Chưa; kết quả là giả thuyết, cần user xác nhận ở bước Understand our users.
   - Đánh giá accessibility bằng AI đủ không? Kiểm thử tự động chỉ phủ một phần vấn đề, 57% tính theo số lượng trong một nghiên cứu của vendor (nguồn 5).
 - Speaker notes:
 
   > Trên flow chọn ngày giao của Kitchen Crate, AI báo ba finding. Một: không có xác nhận sau khi chọn ngày. Hai: không đổi được ngày sau khi thanh toán. Ba: nhãn nút khác nhau giữa hai màn hình.
 
   - Method trước: mười heuristic, và severity theo tần suất, tác động, tính lặp lại (nguồn 1, 2)
-  - Bạn đánh giá bản của mình trước; AI đánh giá độc lập, không xem bản của bạn
+  - AI soạn nháp finding; bạn lọc qua ba cổng: thấy được trên màn hình không, có vi phạm principle không, user thật có gặp không
   - Finding một thuộc trạng thái hệ thống, hai thuộc quyền kiểm soát của người dùng, ba thuộc nhất quán
   - Kiểm tra từng finding bằng bốn câu: principle có đúng không, vấn đề có thật không, evidence có đủ không, severity do bạn chấm
   - **Severity do bạn chấm, không lấy của AI**
   - Mỗi finding cần evidence: ảnh chụp hoặc ví dụ cụ thể để người khác nhìn lại được
   - Hai nghiên cứu về AI làm người đánh giá lệch nhau: một nghiên cứu tìm lại 21,2% vấn đề chuyên gia và 24,3% false positive, nghiên cứu kia 73 đến 77% so với 57 đến 63% của năm chuyên gia (nguồn 3, 4); cả hai cần người kiểm tra
-  - Kết quả vào `ux-audit.md` trong hub
+  - Kết quả vào bản đánh giá UX trong hub
 
   > Trong ba finding này, bạn chấm finding nào cao nhất, và dựa vào đâu?
-- 🎨 Visual hint: SCHEMATIC. Ba bước ngang (bạn, AI, so sánh); bên dưới ba finding mẫu, mỗi finding có chip principle và ô severity trống để chấm.
+- 🎨 Visual hint: SCHEMATIC. Ba bước ngang (method, AI, bạn kiểm tra); bên dưới ba finding mẫu, mỗi finding có chip principle và ô severity trống để chấm.
 
 ---
 
@@ -412,9 +412,9 @@ last_synced: 2026-10-26
 - Kicker: Demo
 - Title: Challenge *assumptions*
 - On-slide:
-  - Bạn liệt kê điều đang tin; AI tìm giả định ẩn và hỏi ngược bằng chứng
+  - AI viết lại, tìm giả định ẩn, hỏi ngược bằng chứng; bạn xếp lên ma trận
   - Mục không có trong tài liệu: "chưa có nguồn"
-  - Xếp theo quan trọng và bằng chứng, chọn ba giả định hàng đầu
+  - Chọn ba giả định ở góc quan trọng cao, bằng chứng thấp
 - Ví dụ: có (Kitchen Crate: giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết)
 - Câu hỏi hay gặp:
   - Chưa có research cũ thì pull insight từ đâu? Ghi "chưa có" và để cho phỏng vấn peer và buổi 3.
@@ -425,10 +425,11 @@ last_synced: 2026-10-26
   - Chỉ điều đầu có trong case mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào: đây là cái bẫy của buổi, điều nghe hợp lý chưa phải điều có evidence
   - Mục nào không có trong tài liệu thì ghi "chưa có nguồn", không đưa vào danh sách như sự thật
   - Bước pull insight tìm xem điều nào đã có evidence trong research cũ của team, rồi xếp theo mức độ quan trọng so với evidence
-  - Method trước: giả định viết dạng "chúng tôi tin rằng…", xếp theo tầm quan trọng và bằng chứng (nguồn 8)
-  - Bạn liệt kê trước; AI tìm giả định ẩn và hỏi ngược bằng chứng
-  - Chọn ba giả định hàng đầu: quan trọng và chưa có bằng chứng; chúng thành câu hỏi ở slide tiếp theo
-  - Kết quả vào `assumption.md`
+  - Method trước: bốn loại giả định (User, Problem, Solution, Business), công thức "chúng tôi tin rằng nhóm người dùng nào sẽ làm gì, vì sao… biết mình đúng khi…", ma trận Importance × Evidence (nguồn 8)
+  - AI liệt kê giả định theo công thức, tìm giả định ẩn, hỏi ngược bằng chứng; bạn xếp lên ma trận và sửa ít nhất hai giả định
+  - Chọn ba giả định hàng đầu ở góc top-left (quan trọng cao, bằng chứng thấp); framework cho phép đến năm, lớp chọn ba vì giới hạn thời gian
+  - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở buổi 3 sau phỏng vấn peer; hôm nay chỉ ghi finding của ux-audit làm bằng chứng
+  - Kết quả vào bản đồ giả định
 
   > Điều đang tin nào của case bạn nghe rất hợp lý nhưng bạn chưa từng thấy bằng chứng?
 - 🎨 Visual hint: SCHEMATIC. Danh sách ba assumption; mỗi dòng có chip "có nguồn" (sage) hoặc "chưa có nguồn" (sienna); bên phải một khối nhỏ "existing research" nối vào danh sách bằng mũi tên.
@@ -439,9 +440,9 @@ last_synced: 2026-10-26
 - Kicker: Demo
 - Title: From assumption *to question*
 - On-slide:
-  - 01 · Lấy ba giả định hàng đầu từ assumption.md
-  - 02 · Viết research question, kèm quyết định nó phục vụ
-  - 03 · Tự kiểm năm tiêu chí, rồi để AI phản biện
+  - 01 · Lấy ba giả định hàng đầu từ bản đồ giả định
+  - 02 · AI soạn research question, kèm quyết định nó phục vụ
+  - 03 · Bạn kiểm năm tiêu chí, cắt câu dẫn dắt, chốt danh sách
 - Ví dụ: bản nháp (Kitchen Crate: giả định "khách không hiểu cách đổi ngày giao" thành câu hỏi "khách đang làm gì khi cần dời hộp sắp tới, và điều gì khiến họ bỏ dở?")
 - Câu hỏi hay gặp:
   - Research question khác interview question thế nào? Research question là điều nhóm muốn học; interview question là câu hỏi đặt cho người tham gia, viết sau ở bước research plan.
@@ -449,44 +450,45 @@ last_synced: 2026-10-26
 
   > Team Kitchen Crate tin rằng khách không hiểu cách đổi ngày giao. Niềm tin này quan trọng, nhưng chưa có bằng chứng. Mình biến nó thành một câu hỏi.
 
-  - Câu xấu: "khách có thích tính năng đổi ngày giao không?" là câu có hoặc không, và gợi sẵn giải pháp
+  - Chuỗi: giả định, rồi research question, rồi 5 đến 8 interview question; hôm nay dừng ở research question (nguồn 8)
+  - Ba kiểu câu xấu: tìm phản hồi, kiểm tra sở thích, hỏi hành vi giả định; câu xấu của Kitchen Crate: "khách có thích tính năng đổi ngày giao không?"
   - Câu tốt hơn: "khách đang làm gì khi cần dời hộp sắp tới, và điều gì khiến họ bỏ dở?"
-  - Năm tiêu chí tự kiểm: trả lời được bằng bằng chứng, mở, gắn một quyết định, không gợi giải pháp, biết tìm ở đâu
-  - **Bạn viết câu hỏi trước; AI chỉ phản biện: câu nào không trả lời được, câu nào dẫn dắt, còn thiếu câu nào**
-  - Ghi nguồn gốc từng câu: mine, AI, cả hai
-  - Kết quả vào phần câu hỏi của `research-questions.md`, là đầu vào của research plan và phỏng vấn
+  - Năm tiêu chí tự kiểm: trung tính, hỏi về hành vi hoặc bối cảnh, không quá rộng hay hẹp, gắn một giả định và một quyết định, biết tìm ở đâu
+  - **AI soạn câu hỏi; bạn cắt câu có hoặc không, câu dẫn dắt hoặc hỏi sở thích, và kiểm xem còn thiếu câu nào để quyết định được**
+  - Kết quả vào danh sách research question, là đầu vào của research plan và phỏng vấn
 
   > Giả định hàng đầu của case bạn, nếu viết thành một câu hỏi mở, sẽ là câu gì?
 - 🎨 Visual hint: SCHEMATIC. Ba bước ngang theo layout Process; bên dưới một câu "xấu" gạch ngang màu muted và một câu "tốt hơn" màu sage.
 
 ---
 
-### DIAGRAM · Competitor analysis
+### NUMBERED · Competitor analysis
 - Kicker: Method
-- Title: Competitor analysis
+- Title: Competitor analysis, *five points*
 - On-slide:
-  - What: Đối thủ làm gì ở cùng một journey
-  - Why: Không uổng phí thời gian vào điều thị trường đã làm
-  - When: Làm sau cùng; có thể làm tiếp sau buổi practice
-  - Where AI helps: Mô tả ảnh chụp, điền bảng bằng chứng có tên file
+  - 01 · Trả lời một giả định, không liệt kê tính năng
+  - 02 · Hai đến bốn đối thủ: trực tiếp và gián tiếp
+  - 03 · Ghi pattern, không ghi ảnh chụp
+  - 04 · AI mô tả trước, bạn đối chiếu từng ô
+  - 05 · Cho biết họ làm gì, không cho biết vì sao user chọn
 - Ví dụ: bản nháp (so sánh luồng chọn ngày giao của ba app meal-kit đối thủ, AI điền bảng, học viên mở ảnh gốc và ghi tỷ lệ ô sai)
 - Câu hỏi hay gặp:
   - Competitor analysis có cho biết vì sao user chọn đối thủ không? Không; nó chỉ cho biết họ làm gì, kết luận là giả thuyết để hỏi trong phỏng vấn.
+  - Cần cả competitive testing không? Không ở buổi này; testing cho user làm task trên nhiều site, làm sau khi đã có prototype.
 - Speaker notes:
 
   > Một designer nhờ AI điền bảng so sánh ba app đối thủ từ ảnh chụp. Bảng ra rất gọn, nhưng một ô ghi tính năng mà ảnh không hề có.
 
-  - Chốt phạm vi trước: một journey, hai đến bốn đối thủ, tối đa sáu tiêu chí (nguồn 10)
-  - Đây là review của chuyên gia, không phải testing với user; mục tiêu là cải thiện thiết kế của mình, không tuyên bố bên thắng
-  - AI mô tả ảnh trước, đánh giá sau; bảng bằng chứng ghi tên file cho từng ô
-  - **Bảng gọn tạo cảm giác chắc chắn, nên bạn ghi tỷ lệ ô sai sau khi đối chiếu**
-  - Mở ảnh gốc cho hai ba tiêu chí quan trọng nhất và mọi ô AI ghi "suy luận"
-  - Competitor analysis cho biết đối thủ làm gì, không cho biết user vì sao chọn họ; buổi 3 ghép phần này với điều user nói và làm
-  - Chi tiết quy trình ở `learning/desk-research-competitor-practice.md`, Practice B
-  - Kết quả vào `competitor-analysis.md`
+  - Quét có mục tiêu: mỗi thứ ghi lại gắn với một giả định nó xác nhận hoặc bác
+  - Hai đến bốn đối thủ, có cả gián tiếp (cùng việc cho user, khác loại sản phẩm) và có đối thủ tốt hơn mình (nguồn 9)
+  - Một pattern cần thấy ở nhiều nguồn: cả ba app đều hiện định dạng file trước bước upload mới là pattern
+  - AI mô tả ảnh trước, đánh giá sau; mỗi ô ghi tên file; **bảng gọn tạo cảm giác chắc chắn, nên bạn ghi tỷ lệ ô sai sau khi đối chiếu**
+  - Mở ảnh gốc cho hai ba tiêu chí quan trọng nhất; có thể dùng lại bộ nguyên tắc và thang severity của UX observation
+  - Đây là review của chuyên gia, không phải testing; mục tiêu là cải thiện thiết kế của mình, không tuyên bố bên thắng
+  - Buổi 3 ghép phần này với điều user nói và làm; kết quả vào bản phân tích đối thủ
 
   > Bạn đã từng quyết định thiết kế chỉ dựa trên đối thủ chưa?
-- 🎨 Visual hint: SCHEMATIC. Method card với bốn hàng What / Why / When / Where AI helps; bên phải một bảng nhỏ có một ô được khoanh sienna và nhãn "ô sai".
+- 🎨 Visual hint: SCHEMATIC. Năm hàng đánh số 01 đến 05 theo layout Numbered; bên phải một bảng nhỏ có một ô được khoanh sienna và nhãn "ô sai".
 
 ---
 
@@ -495,8 +497,8 @@ last_synced: 2026-10-26
 - Title: Understand our *users*
 - On-slide:
   - Methods: interview (stakeholder, user) và user survey
-  - Research với AI: research plan và facilitator script
-  - Post-interview: transcript hoặc recording, rồi synthesis
+  - Research với AI: research plan và facilitation script
+  - Post-interview: transcript hoặc recording, rồi quote có ID
 - Ví dụ: bản nháp (một designer nhờ AI soạn nháp research plan và facilitator script cho ba buổi phỏng vấn khách Kitchen Crate)
 - Câu hỏi hay gặp:
   - Tại sao chỉ giới thiệu mà không thực hành? Buổi practice ngay sau và buổi 3 dành cho phần thực hành và synthesis.
@@ -505,13 +507,70 @@ last_synced: 2026-10-26
   > Một designer chuẩn bị ba buổi phỏng vấn khách Kitchen Crate. Cô nhờ AI soạn nháp research plan và facilitator script, rồi tự sửa câu hỏi cho trung lập.
 
   - Ba nhánh trên sơ đồ: methods, research với AI, post-interview
-  - Methods: interview với stakeholder và user, hoặc user survey; mỗi method cho ra một `insight.md`
+  - Methods: interview khi cần hiểu hành vi và lý do, survey khi đã biết cần hỏi gì và cần con số; survey không thay được phỏng vấn để tìm điều chưa biết
   - Research với AI: AI soạn nháp plan và script, bạn chỉnh và quyết định
-  - Post-interview: lấy transcript hoặc recording, ẩn danh trước khi AI đọc, rồi nhờ AI synthesis
-  - Hôm nay chỉ giới thiệu; thực hành ở buổi practice và bài tập phỏng vấn peer
+  - Post-interview: lấy transcript hoặc recording, ẩn danh trước khi AI đọc, rồi rút quote có ID
+  - Đầu vào là research question vừa chốt ở slide trước
+  - Hôm nay chỉ là theory; thực hành ở buổi practice và bài tập phỏng vấn peer
 
   > Bạn đã từng dùng AI để soạn câu hỏi phỏng vấn chưa, và có sửa lại không?
 - 🎨 Visual hint: SCHEMATIC. Hộp lớn "Understand our users" ở trên, ba nhánh xuống ba ô; nhánh Methods tách thêm Interviews và User survey.
+
+---
+
+### NUMBERED · Interview habits
+- Kicker: Method
+- Title: Five habits, *one golden rule*
+- On-slide:
+  - 01 · Hỏi câu mở, mời một câu chuyện
+  - 02 · Đi theo câu chuyện, kể cả ngoài script
+  - 03 · Tò mò như lần đầu nghe
+  - 04 · Nghe nhiều hơn nói, dưới 20% thời gian
+  - 05 · Quan sát, không chỉ nghe
+- Ví dụ: bản nháp (một designer hỏi "bạn có thích tính năng đổi ngày giao không?", rồi đổi thành "kể mình nghe lần gần nhất bạn cần dời hộp")
+- Câu hỏi hay gặp:
+  - Survey có thay được phỏng vấn không? Không; survey cho con số khi đã biết cần hỏi gì, phỏng vấn để tìm điều chưa biết.
+- Speaker notes:
+
+  > Câu "bạn có thích tính năng đổi ngày giao không?" nghe rất tự nhiên, và câu trả lời gần như chắc chắn là "có". Câu "kể mình nghe lần gần nhất bạn cần dời hộp" cho một câu chuyện.
+
+  - Quy tắc vàng: mục tiêu là hiểu thực tế của user, không phải để user xác nhận ý tưởng của bạn
+  - Khi bạn bắt đầu trình bày giải pháp hoặc hỏi "bạn có dùng không?", bạn đã thôi làm user research
+  - Script là lưới an toàn: điều bất ngờ user nói thường là insight quan trọng nhất
+  - Nói quá khoảng 20% thời gian là dấu hiệu sai; im lặng là có ích
+  - User nói "ổn" nhưng dừng năm giây trước khi bấm: khoảng dừng mới là insight
+  - Phỏng vấn stakeholder cho biết business muốn gì; phỏng vấn user cho biết thực tế của họ
+
+  > Câu hỏi nào trong script phỏng vấn gần nhất của bạn là câu đóng, và bạn sẽ đổi thành gì?
+- 🎨 Visual hint: SCHEMATIC. Năm hàng đánh số 01 đến 05 theo layout Numbered; bên phải một cặp câu "đóng" gạch ngang màu muted và "mở" màu sage.
+
+---
+
+### PROCESS · Research plan with AI
+- Kicker: How-to
+- Title: Plan with AI, *pilot it*
+- On-slide:
+  - 01 · Research goal và người cần phỏng vấn
+  - 02 · Từ research question đến 5 đến 8 interview question
+  - 03 · Script có nhánh follow-up
+  - 04 · Chạy thử với một đồng nghiệp
+  - 05 · Xin phép: ghi hình, dùng nội bộ, không chia sẻ ra ngoài
+- Ví dụ: bản nháp (AI soạn mười câu từ research question về việc dời hộp; designer cắt còn năm, đổi hai câu dẫn dắt, thử với một đồng nghiệp rồi mới hẹn khách)
+- Câu hỏi hay gặp:
+  - Có cần xin phép bằng văn bản không? Chương trình dạy mức nghiên cứu nội bộ: nói rõ ba điều trước buổi và xin phép; theo chính sách công ty nếu có quy định riêng.
+- Speaker notes:
+
+  > AI soạn cho designer mười câu hỏi từ một research question. Cô cắt còn năm, vì AI lặp ý, rồi đổi hai câu có hướng người trả lời tới đáp án mong muốn.
+
+  - AI giúp rõ nhất ở khâu chuẩn bị: goal, profile người tham gia, câu hỏi lọc, interview question, script
+  - **Bạn cắt ít nhất một nửa câu hỏi AI soạn và viết lại câu dẫn dắt**
+  - Nhánh follow-up dạng "nếu user nói X thì hỏi Y" giúp giữ luồng mà không đọc script như đọc bài
+  - Có thể nhờ AI dựng một trang nhỏ từ script (câu hỏi theo thứ tự, ô ghi chú, timer) và dùng lại cho các round sau
+  - Chạy thử là bắt buộc vì AI yếu ở bước thử trước
+  - Người giữ vai moderator; công cụ chỉ giữ cấu trúc
+
+  > Ai là người bạn có thể chạy thử câu hỏi trước buổi phỏng vấn thật?
+- 🎨 Visual hint: SCHEMATIC. Năm bước ngang theo layout Process; bước 4 có chấm "người thật", các bước 1 đến 3 có chấm "AI soạn nháp".
 
 ---
 
@@ -532,8 +591,10 @@ last_synced: 2026-10-26
   > Sau ba buổi phỏng vấn, AI báo theme "khách không biết đổi ngày giao". Theme này dẫn về quote nào của người nào? Nếu không chỉ ra được ID, theme chưa phải insight.
 
   - Năm bước, trong đó hai bước do người làm hoàn toàn: phỏng vấn và kiểm tra
-  - Quote được ẩn danh trước khi AI đọc
-  - AI chỉ làm việc trên quote thật và trả lại nguyên văn kèm ID
+  - Ẩn danh trước khi AI đọc: thay tên bằng mã P1, P2, giữ bảng ánh xạ ở nơi AI không đọc; không nhờ AI ẩn danh sau khi đã dán
+  - AI chỉ làm việc trên quote thật và trả lại nguyên văn kèm ID, không viết lại bằng lời của nó vì bản tóm tắt dễ bỏ sót (nguồn 10)
+  - Nhờ AI liệt kê điều người tham gia nói mà chưa được đưa vào: đọc danh sách chỉ bắt được điều sai, không bắt được điều thiếu
+  - Gộp vào ghi chú có sẵn theo kiểu đề xuất trước: AI nêu ý nào vào đâu, bạn duyệt rồi mới ghi
   - Buổi 3 làm chi tiết bước này và gắn Gate 1b, 1c
 
   > Insight của bạn dẫn về quote gốc nào?
@@ -546,7 +607,7 @@ last_synced: 2026-10-26
 - Title: Package into an *agent*
 - On-slide:
   - 01 · Viết quy trình thành step card
-  - 02 · Biến step card thành agent, dùng principles.md làm chuẩn
+  - 02 · Biến step card thành agent, dùng bộ nguyên tắc làm chuẩn
   - 03 · Đóng góp agent và file vào hub
 - Ví dụ: bản nháp (quy trình UX observation đã chạy ổn trên hai flow của Kitchen Crate được đóng thành một agent)
 - Câu hỏi hay gặp:
@@ -556,12 +617,12 @@ last_synced: 2026-10-26
   > Quy trình UX observation đã chạy ổn trên hai flow của Kitchen Crate. Bạn viết nó thành step card, rồi biến thành một agent dùng lại được.
 
   - Step card ghi ai làm (bạn hay AI), đầu vào, đầu ra, check nào phải qua
-  - Agent là một bộ instruction dùng lại được, gắn với principles.md làm chuẩn
+  - Agent là một bộ instruction dùng lại được, gắn với bộ nguyên tắc làm chuẩn
   - Đóng gói sớm quá sẽ đóng gói cả lỗi; chờ khi quy trình đã chạy hai lần
   - Khung này lặp lại ở các buổi sau
 
   > Quy trình nào của bạn đã chạy đủ hai lần?
-- 🎨 Visual hint: SCHEMATIC. Ba bước ngang; bước 2 có một biểu tượng agent nhỏ nối với file principles.md.
+- 🎨 Visual hint: SCHEMATIC. Ba bước ngang; bước 2 có một biểu tượng agent nhỏ nối với bộ nguyên tắc.
 
 ---
 
@@ -569,9 +630,9 @@ last_synced: 2026-10-26
 - Kicker: Overview
 - Title: What goes into the *hub*
 - On-slide:
-  - principles.md
-  - ux-audit.md, assumption.md, competitor-analysis.md
-  - insight.md cho mỗi method
+  - bộ nguyên tắc
+  - bản đánh giá UX, bản đồ giả định, bản phân tích đối thủ
+  - bản insight cho mỗi method
   - Agent đã package
 - Ví dụ: Không cần. Slide tổng hợp file của buổi.
 - Câu hỏi hay gặp:
@@ -609,7 +670,7 @@ last_synced: 2026-10-26
 - Title: Practice and homework
 - On-slide:
   - Buổi practice 90 phút ngay sau buổi này
-  - Làm: hoàn thiện principles.md, chạy Break the brief theo thứ tự trên case của bạn
+  - Làm: hoàn thiện bộ nguyên tắc, chạy Break the brief theo thứ tự trên case của bạn
   - Về nhà: lên lịch 2 đến 3 buổi phỏng vấn ngắn
 - Ví dụ: Không cần. Slide giao việc.
 - Câu hỏi hay gặp: None.

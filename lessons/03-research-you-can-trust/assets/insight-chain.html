@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Từ quote đến insight hub · Flowchart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #f5f5f5;
+      --color-ink:     #2d3142;
+      --color-muted:   #4f5d75;
+      --color-accent:  #bf4520;
+      --font-sans:     'Geist', system-ui, sans-serif;
+      --font-serif:    'Instrument Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1200px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      margin-bottom: 1.5rem;
+    }
+    .scroll { overflow-x: auto; }
+    svg { width: 100%; min-width: 1100px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Flowchart · AI Design Workflow</p>
+    <h1>Từ quote đến insight hub</h1>
+
+    <div class="scroll">
+    <svg viewBox="0 0 1100 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="insight-chain-title insight-chain-desc">
+      <title id="insight-chain-title">Từ quote đến insight hub</title>
+      <desc id="insight-chain-desc">Chuỗi năm bước từ synthesis, persona, journey map, opportunity đến insight hub, trong đó mỗi bước dùng đầu ra của bước trước và mọi dòng đều dẫn về quote ID.</desc>
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker>
+        <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#bf4520"/></marker>
+      </defs>
+
+      <rect width="100%" height="100%" fill="#f5f5f5"/>
+
+      <!-- Group labels -->
+      <text x="110" y="56" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">ÔN LẠI</text>
+      <text x="550" y="56" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">BA PHẦN MỚI</text>
+      <text x="990" y="56" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">THÓI QUEN</text>
+      <line x1="40" y1="66" x2="180" y2="66" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+      <line x1="260" y1="66" x2="840" y2="66" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+      <line x1="920" y1="66" x2="1060" y2="66" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+
+      <!-- Arrows (drawn first) -->
+      <line x1="180" y1="122" x2="260" y2="122" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="400" y1="122" x2="480" y2="122" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="620" y1="122" x2="700" y2="122" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="840" y1="122" x2="920" y2="122" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+      <!-- Dashed: every step cites quote ID -->
+      <line x1="110" y1="154" x2="110" y2="214" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+      <line x1="330" y1="154" x2="330" y2="214" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+      <line x1="550" y1="154" x2="550" y2="214" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+      <line x1="770" y1="154" x2="770" y2="214" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+      <line x1="990" y1="154" x2="990" y2="214" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+
+      <!-- Arrow labels -->
+      <rect x="188" y="102" width="64" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="220" y="111" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">THEME</text>
+      <rect x="408" y="102" width="64" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="440" y="111" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">HÀNH VI</text>
+      <rect x="628" y="102" width="64" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="660" y="111" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">PAIN POINT</text>
+      <rect x="848" y="102" width="64" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="880" y="111" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">ĐÃ KIỂM TRA</text>
+
+      <!-- Steps -->
+      <rect x="40" y="90" width="140" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="110" y="118" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Synthesis</text>
+      <text x="110" y="136" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">quote → theme</text>
+
+      <rect x="260" y="90" width="140" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="330" y="118" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Persona</text>
+      <text x="330" y="136" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">nhóm hành vi</text>
+
+      <rect x="480" y="90" width="140" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="550" y="118" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Journey map</text>
+      <text x="550" y="136" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">bước và chỗ đau</text>
+
+      <rect x="700" y="90" width="140" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="770" y="118" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Opportunity</text>
+      <text x="770" y="136" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">nhu cầu đáng giải</text>
+
+      <rect x="920" y="90" width="140" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="990" y="118" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Insight hub</text>
+      <text x="990" y="136" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">insights/ trong hub</text>
+
+      <!-- Focal: quote ID thread -->
+      <rect x="40" y="214" width="1020" height="48" rx="6" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+      <text x="550" y="236" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Quote ID</text>
+      <text x="550" y="252" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">mọi dòng ở mọi bước dẫn về quote gốc, đúng từng chữ</text>
+
+      <!-- Legend -->
+      <line x1="40" y1="282" x2="1060" y2="282" stroke="rgba(45,49,66,0.10)" stroke-width="0.8"/>
+      <text x="40" y="298" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LEGEND</text>
+
+      <rect x="40" y="310" width="14" height="10" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="60" y="318" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Bước</text>
+
+      <rect x="132" y="310" width="14" height="10" rx="2" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+      <text x="152" y="318" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Sợi dây nối cả chuỗi</text>
+
+      <line x1="312" y1="315" x2="340" y2="315" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <text x="348" y="318" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Đầu ra thành đầu vào</text>
+
+      <line x1="508" y1="315" x2="536" y2="315" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+      <text x="544" y="318" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Dẫn về quote ID</text>
+    </svg>
+    </div>
+  </div>
+</body>
+</html>

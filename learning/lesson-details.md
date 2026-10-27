@@ -284,35 +284,23 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 3: Turn Research into Insights You Can Trust
 
-*Slug:* `research-you-can-trust`. Là **buổi 3 (tuần 2)** theo Notion. Phỏng vấn user theo cặp (mặc định tạm: bài tập về nhà giữa buổi 2 và 3, xem `plan.md` mục 4) nuôi phần user-voice synthesis bên dưới; AI soạn nháp interview guide, học viên kiểm tra, và ghi chú được ẩn danh trước khi AI nhìn thấy.
+*Slug:* `research-you-can-trust`. Là **buổi 3** của series (buổi 5 trong chuỗi 12 session), theo `plan.md` mục 2. Viết lại 2026-10-27 theo `learning/ai-in-insights.md` mục 6: bốn bước Decision, Evidence, Claim, Challenge thay cho tám bước và ba cổng; thêm persona, journey map, opportunity và insight hub; evidence menu và competitor analysis đã chuyển sang Lesson 2. Phỏng vấn peer (bài tập của Lesson 2 và Practice 2) cung cấp quote đã ẩn danh làm đầu vào.
 
-**Why:** competitor analysis cho thấy đối thủ làm gì. Nó không cho thấy vì sao user hành xử như vậy, nên một Discover chỉ dựa trên nó là evidence yếu nhất. Lesson ghép hai loại evidence và giữ AI trung thực ở cả hai.
+**Why:** AI soạn nháp được pattern từ research, nhưng độ tin cậy của insight nằm ở phạm vi nguồn dẫn và ý kiến trái chiều được giữ lại. Lesson dạy cách biến quote thành persona, journey map và opportunity mà mỗi dòng truy được về quote gốc, và cách đóng góp insight đã kiểm tra vào insight hub để không làm lại research.
 
 **Sau lesson, học viên có thể:**
 
-1. Chọn loại evidence phù hợp với câu hỏi từ một menu, và luôn ghép **điều người khác làm** (đối thủ, desk research) với **điều user nói hoặc làm** (review, forum, phỏng vấn, ticket, analytics).
-2. Chạy một **user-voice synthesis**: AI chỉ làm việc trên quote thật đã ẩn danh (review công khai, bài đăng forum, cộng 3 đến 5 buổi phỏng vấn ngắn), trả lại mọi quote word for word kèm ID, và được phép trả lời "unclassified" hoặc "unknown".
-3. Kiểm tra: truy từng theme chính về quote, xác nhận chúng word for word, đọc một mẫu những gì AI bỏ ra, đếm lỗi, và quyết định có chạy lại một bước không.
-4. Xếp theme theo severity, context và reach, không chỉ theo số lần; viết opportunity candidate kèm quote ID; và nêu rõ mẫu không cho họ biết điều gì.
-5. Chạy competitor analysis như activity thứ hai, và gộp cả hai thành một evidence pack.
+1. Gọi tên quyết định mà nghiên cứu phục vụ trước khi nhờ AI tóm tắt, và kiểm tra từng quote AI trả lại với bản gốc.
+2. Chạy bốn bước Decision, Evidence, Claim, Challenge, và chỉ ra phần AI làm với phần học viên tự làm.
+3. Viết persona, journey map hoặc opportunity như một claim "ai, khi nào, quyết định nào", mỗi dòng dẫn về quote ID, và đánh dấu ô chưa có quote là assumption.
+4. Phản biện một claim và giữ ý kiến trái chiều.
+5. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu, và đóng góp một insight đã kiểm tra vào insight hub.
 
-**Key activity:** **User-voice synthesis** là activity chính trên lớp (`examples/user-voice-synthesis/`, flow và step card đã có). **Competitor analysis** là activity thứ hai (`examples/competitor-analysis/`): demo trực tiếp 20 phút, là thứ đầu tiên bị cắt nếu buổi 3 quá giờ, phần phân tích đầy đủ là homework tuỳ chọn. Interview synthesis, desk research và support ticket là biến thể của cùng một flow (đổi nguồn ở bước 4).
+**Key activity:** **viết claim, phản biện chéo** (14 phút, theo cặp, không dùng AI) trên bộ 24 quote của case Kitchen Crate (`assets/starter-files/course-case/quotes.md`). Mỗi người viết một claim cho quyết định chung (có thiết kế lại bước đổi ngày giao hay không), rồi bạn cùng cặp phản biện bằng bốn câu hỏi, mỗi lỗi kèm quote ID. Việc làm trên quote của học viên nằm ở Practice 3.
 
-*Chia giờ giả định cho 90 phút: user voice khoảng 50, competitor demo khoảng 20, gộp evidence pack và kết thúc khoảng 10, buffer 10. Học viên dùng evidence họ đã có (đã ẩn danh) hoặc bộ quote chuẩn bị sẵn. Chưa thử.*
+*Chia giờ 90 phút (80 phút nội dung, buffer 10):* ice breaker 5, ôn quote 7, bốn bước 11, persona 9, journey map 9, opportunity 7, activity 14, insight hub 6, hỏi đáp 7, close 5. Chưa thử với một lớp thật.
 
-**Evidence menu (chọn theo câu hỏi):**
-
-| Evidence | Cho biết | Loại nguồn | Cần cẩn thận |
-|---|---|---|---|
-| Competitor analysis | Người khác làm gì | Trang công khai | Không cho biết vì sao user chọn; dễ sao chép đối thủ |
-| Desk research | Điều đã biết | Bài viết, báo cáo | Trích dẫn bịa; đối chiếu từng claim với nguồn |
-| Review và bài đăng forum công khai | User nói gì, ở quy mô lớn | Thứ cấp | Lệch về hai cực; review giả |
-| Phỏng vấn ngắn (3 đến 5) | Vì sao, và hành vi trong quá khứ | Sơ cấp | Mẫu nhỏ; bạn bè lịch sự; dữ liệu cá nhân và consent |
-| Support ticket, analytics | Vấn đề thật, hành vi thật | Nội bộ | Data safety; quyền truy cập; ẩn danh |
-
-**Data safety áp dụng ở đây:** ẩn danh trước khi AI nhìn thấy bất kỳ quote nào (find and replace trên máy của mình), và giữ dữ liệu công việc thật ở chế độ private (Lesson 1).
-
-**Output:** `## Evidence` (bản nháp của AI và đã kiểm tra, gồm finding của heuristic evaluation kèm severity và assumption map đã xếp hạng) cùng `## Themes` hoặc `## Patterns`; trang Evidence trong hub; evidence pack nuôi problem brief. Gate check 1b, 1c, 1d, 1e, 1g (và 2a khi evidence hỗ trợ một opportunity).
+**Output của practice:** evidence pack (observation có quote ID, persona, journey map, opportunity), một trang cho lead, một entry trong insight hub; problem brief. Gate check 1b, 1c, 1d, 1e, 1g (và 2a khi evidence hỗ trợ một opportunity). Tên file cụ thể trong folder của học viên chưa chốt `[to confirm]`.
 
 ---
 

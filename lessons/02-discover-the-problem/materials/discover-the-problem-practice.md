@@ -20,7 +20,9 @@ Hoàn thiện `principles.md` và chạy Break the brief trên case của bạn 
 
 ## Steps
 
-Quy tắc chung cho mọi bước: **method trước, AI sau.** Viết phần của bạn trước, rồi mới nhờ AI soạn nháp hoặc phản biện, và dùng prompt trung tính. AI không đóng vai PO hay user. Mục AI đưa ra mà tài liệu của case không có thì ghi "chưa có nguồn". Mỗi dòng trong file hub ghi nguồn gốc: mine, AI hoặc cả hai.
+Tên file trong bài này là gợi ý theo hub mẫu của chương trình. Bạn có thể đặt tên, cấu trúc hoặc công cụ khác, miễn mỗi bước có một đầu ra lưu lại được.
+
+Quy tắc chung cho mọi bước: **nhớ method, để AI soạn nháp, bạn kiểm tra và quyết định.** Dùng prompt trung tính và chỉ đưa AI file đã có. AI không đóng vai PO hay user. Mục AI đưa ra mà tài liệu của case không có thì ghi "chưa có nguồn".
 
 ### Step 1 · Hoàn thiện principles.md · 10 phút · YOU
 
@@ -36,40 +38,40 @@ Quy tắc chung cho mọi bước: **method trước, AI sau.** Viết phần c�
 - **Bạn kiểm tra:** gửi bằng văn bản và ghi agreement status vào scope: agreed, pending hoặc not available. Câu chưa có trả lời ghi "assumed".
 - **File:** `research-questions.md` (phần scope, ở đầu file)
 
-### Step 3 · UX observation · 20 phút · bạn làm trước, AI làm độc lập
+### Step 3 · UX observation · 20 phút · AI soạn nháp, bạn kiểm tra
 
 - Chọn một flow của trải nghiệm hiện tại và chụp bốn đến sáu màn hình theo cùng cấu trúc, ghi ngày.
-- **Bạn đánh giá trước (khoảng 8 phút, chưa mở AI):** mỗi vấn đề ghi màn hình, principle bị vi phạm, evidence và severity (tần suất, tác động, tính lặp lại).
-- **AI đánh giá độc lập** trên cùng ảnh, không xem bản của bạn. Yêu cầu mỗi finding chỉ ra ảnh và vùng nào; điều không thấy trong ảnh thì ghi "unknown".
-- **Bạn so hai bản:** vấn đề cả hai thấy, chỉ bạn thấy, chỉ AI thấy; đếm finding của AI sai. Severity do bạn chốt. Đánh dấu dòng nào cần user thật xác nhận.
+- **AI soạn nháp:** đưa ảnh và `principles.md`; mỗi finding ghi màn hình, principle bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất. Điều không thấy trong ảnh thì ghi "unknown".
+- **Bạn kiểm tra:** mỗi finding qua ba cổng: thấy được trên màn hình không, có vi phạm principle không, user thật có gặp không. Không qua thì bỏ; đếm số finding AI sai.
+- **Bạn quyết định:** chốt severity theo tần suất, tác động, tính lặp lại. Đánh dấu dòng nào cần user thật xác nhận.
 - **File:** `ux-audit.md`
 
-### Step 4 · Challenge assumptions · 15 phút · bạn làm trước, AI hỏi ngược
+### Step 4 · Challenge assumptions · 15 phút · AI soạn nháp, bạn kiểm tra
 
-- **Bạn liệt kê trước (khoảng 7 phút):** các điều đang tin, viết dạng "chúng tôi tin rằng…", từ context pack, `ux-audit.md` và scope. Gắn loại rủi ro (desirability, usability, feasibility, viability), mức quan trọng và file làm bằng chứng nếu có.
-- **AI tìm giả định ẩn** của brief và hỏi ngược bằng chứng của từng giả định: dựa vào file nào, nếu không có thì "unknown".
-- **Bạn xếp lại:** quan trọng và chưa có bằng chứng ở một phía. Chọn **ba giả định hàng đầu**. Kéo insight từ research có sẵn nếu có.
+- **AI soạn nháp:** đưa context pack, `ux-audit.md` và scope; AI liệt kê giả định theo công thức "chúng tôi tin rằng [nhóm người dùng nào] sẽ [làm gì] vì [vì sao]; chúng tôi biết mình đúng khi [tín hiệu]", gắn loại (User, Problem, Solution, Business), tìm giả định ẩn của brief, và với mỗi giả định nêu file làm bằng chứng (nếu không có thì "unknown"). Finding trong `ux-audit.md` cũng là bằng chứng.
+- **Bạn kiểm tra:** sửa ít nhất hai giả định cho cụ thể với case của bạn; loại giả định quá chung.
+- **Bạn quyết định:** xếp lên ma trận Importance × Evidence (quan trọng và bằng chứng do bạn chấm) và chọn **ba giả định hàng đầu** ở góc quan trọng cao, bằng chứng thấp. Kéo insight từ research có sẵn nếu có.
 - **File:** `assumption.md`
 
-### Step 5 · Research questions · 15 phút · bạn làm trước, AI phản biện
+### Step 5 · Research questions · 10 phút · AI soạn nháp, bạn kiểm tra
 
-- **Bạn viết trước:** biến ba giả định hàng đầu thành research question, mỗi câu kèm quyết định nó phục vụ và nơi tìm câu trả lời (file, desk research, phỏng vấn, data).
-- **Tự kiểm năm tiêu chí:** trả lời được bằng bằng chứng, mở, gắn một quyết định, không gợi giải pháp, biết tìm ở đâu.
-- **AI phản biện:** câu nào không trả lời được, câu nào dẫn dắt, còn thiếu câu nào để quyết định được. Bạn giữ, sửa hoặc bỏ, và ghi nguồn gốc.
+- **AI soạn nháp:** từ ba giả định hàng đầu, mỗi giả định một đến hai research question, kèm quyết định nó phục vụ (đã chốt ở Step 2) và nơi tìm câu trả lời (file, desk research, phỏng vấn, data).
+- **Bạn kiểm tra theo năm tiêu chí:** trung tính và không nói về giải pháp; hỏi về hành vi, thái độ hoặc bối cảnh (không phải phản hồi, sở thích hay hành vi giả định); không quá rộng hoặc quá hẹp; gắn một giả định và một quyết định; biết tìm ở đâu.
+- **Bạn quyết định:** cắt câu dẫn dắt hoặc hỏi sở thích, sửa câu quá rộng hay quá hẹp, chốt danh sách.
 - **File:** `research-questions.md` (phần câu hỏi, dưới phần scope)
 
 ### Step 6 · Competitor analysis, lượt đầu · 10 phút · AI soạn nháp, bạn kiểm tra
 
-- Làm theo [method card Competitor analysis](../../../assets/method-cards/01-discover/competitor-analysis.md). Chốt phạm vi: một journey, hai đến bốn đối thủ, tối đa sáu tiêu chí. Có thể dùng lại heuristic và severity ở Step 3.
-- **AI soạn nháp:** bảng bằng chứng, mỗi ô ghi tên file nguồn.
-- **Bạn kiểm tra:** mở ảnh gốc cho các ô quan trọng và ghi tỷ lệ ô sai. Phần còn lại hoàn thiện sau buổi này.
+- Làm theo [method card Competitor analysis](../../../assets/method-cards/01-discover/competitor-analysis.md). Chốt phạm vi: **một giả định hàng đầu** ở Step 4, một journey, hai đến bốn đối thủ (có cả gián tiếp), tối đa sáu tiêu chí. Có thể dùng lại heuristic và severity ở Step 3.
+- **AI soạn nháp:** mô tả từng ảnh chụp trước, rồi điền bảng bằng chứng, mỗi ô ghi tên file nguồn; ghi pattern thấy ở nhiều đối thủ và giả định nó xác nhận hoặc bác.
+- **Bạn kiểm tra:** mở ảnh gốc cho các ô quan trọng và ghi tỷ lệ ô sai. Kết luận là giả thuyết để hỏi trong phỏng vấn, không phải về người dùng. Phần còn lại hoàn thiện sau buổi này.
 - **File:** `competitor-analysis.md`
 
 ### Step 7 · Lên lịch phỏng vấn peer · 5 phút · YOU
 
 - Hẹn hai đến ba buổi phỏng vấn ngắn với đồng nghiệp hoặc người dùng. Quote thu được dùng cho Lesson 3. Research question ở Step 5 là đầu vào cho câu hỏi phỏng vấn.
 
-Còn khoảng 5 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đến 5 trước, Step 6 làm sau buổi này. Thời lượng từng bước (kể cả phần "bạn làm trước") chưa được thử với một lớp thật `[to confirm]`.
+Còn khoảng 10 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đến 5 trước, Step 6 làm sau buổi này. Thời lượng từng bước chưa được thử với một lớp thật `[to confirm]`.
 
 ## Output
 
@@ -89,7 +91,7 @@ Xem hình dạng các file này khi đã nằm trong hub ở [Outcome Examples](
 - [ ] Mỗi finding trong `ux-audit.md` có evidence và severity do bạn chấm.
 - [ ] Mỗi mục trong `assumption.md` có nguồn hoặc nhãn "chưa có nguồn", và ba giả định hàng đầu được đánh dấu.
 - [ ] Mỗi research question gắn với một giả định, một quyết định và nơi tìm câu trả lời.
-- [ ] Bạn đã viết bản của mình trước khi mở AI ở Step 3, 4 và 5.
+- [ ] Bạn đã kiểm tra từng dòng AI soạn ở Step 3, 4 và 5, và biết dòng nào bạn đã sửa.
 - [ ] Bạn biết file nào do AI soạn nháp, và phần nào bạn đã kiểm tra.
 
 ## If you get stuck

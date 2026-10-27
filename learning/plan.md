@@ -21,7 +21,7 @@ Làm theo thứ tự.
 |---|---|---|
 | 1 | **Lesson 1:** xác nhận số liệu Figma 36/35/29 trong báo cáo đầy đủ trước khi dạy; dựng lại deck | File xong; deck chưa dựng |
 | 2 | **Lesson 2:** lesson và slide outline đã viết lại (2026-10-26); xem lại các ví dụ `bản nháp`; dựng deck | File xong; chờ Winnie xem lại |
-| 3 | **Lesson 3:** sửa lesson và slide (competitor đầy đủ đã chuyển sang lesson 2; thêm persona, journey map, opportunity) | Chưa bắt đầu |
+| 3 | **Lesson 3:** sửa lesson và slide (competitor đầy đủ đã chuyển sang lesson 2; thêm persona, journey map, opportunity, insight hub; synthesis rút gọn thành phần ôn) | Đã có desk research và đề xuất cấu trúc 90 phút (`ai-in-insights.md` mục 6, 2026-10-27); chưa sửa lesson |
 | 4 | **Lesson 4, 5, 6** (mỗi lesson gộp hai lesson cũ), theo thứ tự | Chưa bắt đầu |
 | 5 | Hướng dẫn facilitation một trang cho practice P1 đến P5 và buổi wrap-up | Chưa bắt đầu |
 | 6 | Lớp chạy thử: kiểm tra 3,5 đến 4 giờ mỗi tuần; theory lesson 2 (56 phút), lesson 3 và 6 có quá tải không | Sau lớp đầu |
@@ -39,7 +39,7 @@ Làm theo thứ tự.
 |---|---|---|---|
 | 1 | **Your Design Process, with AI**: nghề đang đi đâu, AI trong Double Diamond, data safety | Dựng case folder, data rules, hub | Case folder, hub |
 | 2 | **Discover the Problem**: principles, break the brief, hiểu người dùng | `principles.md` rồi Break the brief theo thứ tự scope, UX observation, challenge assumptions, research questions, competitor; lên lịch phỏng vấn | `research-questions` (scope và câu hỏi), `ux-audit`, `assumption`, `competitor-analysis` |
-| 3 | **Insights You Can Trust**: synthesis, persona, journey map, opportunity (mỗi dòng dẫn về quote có ID) | Phỏng vấn peer, synthesis, persona, journey, opportunity | Evidence pack, **problem brief** |
+| 3 | **Insights You Can Trust**: synthesis, persona, journey map, opportunity (mỗi dòng dẫn về quote có ID) | Bốn bước trên quote peer: `personas.md`, `journey-map.md`, `frame-opportunity.md`, một trang cho lead, entry insight hub | Evidence pack, **problem brief** |
 | 4 | **Explore Ideas**: hypothesis, How might we, sketch giấy rồi AI, chọn hướng | Hypothesis, ý tưởng, chọn hướng bằng principle check | Hướng đã chọn, flow |
 | 5 | **AI Prototyping**: design system, pattern, template, rules file | Build prototype main flow | Prototype sẵn sàng test, có thể là final design |
 | 6 | **Test with Real Users**: metrics, test plan, phân tích kết quả | Test với peer trong **một ngày**, rồi buổi 12 **reflection và wrap-up** | Prototype đã test, hub đầy đủ |

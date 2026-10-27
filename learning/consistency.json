@@ -1,5 +1,5 @@
 {
-  "_about": "Read by _system/scripts/consistency.py. `terms` lists wording that was retired or renamed (a hit means a file still says the old thing); `mentions` lists facts that every file depending on them must contain. Add a rule whenever a decision changes a name or a number.",
+  "_about": "Read by _system/scripts/consistency.py. `terms` lists wording that was retired or renamed (a hit means a file still says the old thing); `mentions` lists facts that every file depending on them must contain. Add a rule whenever a decision changes a name or a number. Lesson and slide-outline files stay generic about hub file names (2026-10-26), so only the practice sheet, the diagram and plan.md must mention them.",
   "terms": [
     {
       "pattern": "check ?point",
@@ -105,6 +105,17 @@
         "introduction.md"
       ],
       "allow": []
+    },
+    {
+      "pattern": "tám bước|ba cổng|ba gate|Săn lỗi|evidence menu",
+      "why": "Lesson 3 was rewritten around four steps (2026-10-27): the eight-step flow, three gates, evidence menu and the Săn lỗi activity are retired",
+      "scope": [
+        "lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md",
+        "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md"
+      ],
+      "allow": [
+        "(thay cho|Bản cũ|bản cũ|không còn|đã chuyển|chuyển sang|đã bỏ|tám bước cũ|quy trình cũ)"
+      ]
     }
   ],
   "mentions": [
@@ -112,9 +123,7 @@
       "term": "principles.md",
       "why": "the standard AI checks against",
       "in": [
-        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
         "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
-        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
         "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json",
         "learning/plan.md"
       ]
@@ -123,9 +132,7 @@
       "term": "research-questions.md",
       "why": "output of the research questions activity",
       "in": [
-        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
         "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
-        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
         "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
       ]
     },
@@ -133,9 +140,7 @@
       "term": "ux-audit.md",
       "why": "output of the UX observation activity",
       "in": [
-        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
         "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
-        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
         "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
       ]
     },
@@ -143,9 +148,7 @@
       "term": "assumption.md",
       "why": "output of the challenge assumptions activity",
       "in": [
-        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
         "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
-        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
         "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
       ]
     },
@@ -153,9 +156,7 @@
       "term": "competitor-analysis.md",
       "why": "output of the competitor analysis activity",
       "in": [
-        "lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md",
         "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
-        "lessons/02-discover-the-problem/materials/discover-the-problem-slide-outline.md",
         "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
       ]
     },
@@ -175,6 +176,33 @@
         "lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md",
         "lessons/01-design-process-with-ai/materials/design-process-with-ai-practice.md",
         "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md"
+      ]
+    },
+    {
+      "term": "personas.md",
+      "why": "output of the persona step in Practice 3",
+      "in": [
+        "lessons/03-research-you-can-trust/materials/research-you-can-trust-practice.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json",
+        "learning/plan.md"
+      ]
+    },
+    {
+      "term": "journey-map.md",
+      "why": "output of the journey map step in Practice 3",
+      "in": [
+        "lessons/03-research-you-can-trust/materials/research-you-can-trust-practice.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json",
+        "learning/plan.md"
+      ]
+    },
+    {
+      "term": "frame-opportunity.md",
+      "why": "output of the opportunity step in Practice 3",
+      "in": [
+        "lessons/03-research-you-can-trust/materials/research-you-can-trust-practice.md",
+        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json",
+        "learning/plan.md"
       ]
     }
   ]

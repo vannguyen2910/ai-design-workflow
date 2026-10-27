@@ -13,7 +13,7 @@ previous-session: ""
 next-session: "Discover the Problem"
 ---
 
-> **Sync note 2026-10-23.** Buổi được đổi theo hình dạng chung của chương trình (ice breaker, theory, một activity, hỏi đáp) và thêm hai phần cho buổi đầu: Agent và đội AI (mục 4.4) và Knowledge Hub. Theory nới lên 44 phút, một activity 18 phút, tổng 82 phút. Bản trước nằm ở `_archive/design-process-with-ai-lesson-pre-agent-hub-2026-10-23.md`. Brief: `learning/briefs/design-process-with-ai-brief.md`.
+> **Sync note 2026-10-23.** Buổi được đổi theo hình dạng chung của chương trình (ice breaker, theory, một activity, hỏi đáp) và thêm hai phần cho buổi đầu: Agent và đội AI (mục 4.4) và Knowledge Hub. Theory nới lên 44 phút, một activity 18 phút, tổng 82 phút. Bản trước nằm trong thư mục lưu trữ của lesson.
 
 ## Abstract
 
@@ -53,7 +53,7 @@ Sau buổi 1, học viên có thể:
 
 Sau bài tập về nhà (mục 8.2), học viên có thể:
 
-7. **Cài đặt** project folder của chương trình cho case của chính mình, gồm layout chuẩn, file luật cho AI tool (`AGENTS.md`), context pack đã bắt đầu và một hub Markdown mẫu
+7. **Cài đặt** project folder của chương trình cho case của chính mình, gồm layout chuẩn, file luật cho AI tool (`AGENTS.md`), context pack đã bắt đầu và một hub Markdown mẫu. Tên file và cấu trúc ở buổi này là của hub mẫu; học viên có cách tổ chức khác vẫn đạt mục tiêu nếu AI tool đọc được luật, context và dữ liệu, và người khác kiểm tra được
 8. **Dùng lại** một file đã lưu làm context thay vì mô tả lại project, và yêu cầu AI chỉ rõ nguồn cho từng ý, kèm câu trả lời "unknown" khi không có thông tin
 9. **Giải thích** cách chia sẻ hub với stakeholder (tuỳ chọn, theo `guides/04-share-your-hub.md`): mặc định private (PDF, folder nén hoặc mời vào repository private), chỉ công khai cả project folder khi toàn bộ case được phép chia sẻ
 
@@ -521,7 +521,7 @@ Dữ liệu đưa vào AI tool có thể bị lưu lại. Phân loại tài li�
 | **Lesson 1 (buổi 1, buổi này)** | Tương lai của nghề và ba hướng đi; bốn stage và các method; AI ở mức tổng quan; bộ từ vựng chung; agent và đội AI ở mức khái niệm; Knowledge Hub; data rules; project folder; lập trường AI-assisted |
 | Practice 1 (buổi 2) | Dựng project folder, context pack, data rules, hub khung và hướng nghề |
 | Lesson 2 (buổi 3): Discover the Problem | Design Principles, Break the brief (research questions, UX observation, challenge assumptions, competitor analysis), Understand our users ở mức theory, package thành agent và đóng góp vào hub |
-| Practice 2 (buổi 4) | `principles.md` và bốn file Break the brief; lên lịch phỏng vấn peer |
+| Practice 2 (buổi 4) | bộ nguyên tắc và các bản Break the brief; lên lịch phỏng vấn peer |
 | Lesson 3 (buổi 5): Insights You Can Trust | Synthesis trên quote đã ẩn danh, kiểm theme về quote gốc, persona và journey map dẫn về quote có ID, opportunity |
 | Practice 3 (buổi 6) | Phỏng vấn peer, synthesis, persona, journey, opportunity, Gate 1, problem brief |
 | Lesson 4 (buổi 7): Explore Ideas | Hypothesis, How might we, sketch giấy rồi AI, chọn hướng bằng principle check |
@@ -557,7 +557,7 @@ Dữ liệu đưa vào AI tool có thể bị lưu lại. Phân loại tài li�
 
 [11] Chính phủ. *Nghị định 356/2025/NĐ-CP* quy định chi tiết một số điều và biện pháp thi hành Luật Bảo vệ dữ liệu cá nhân, ban hành ngày 31/12/2025. https://english.luatvietnam.vn/decree-no-356-2025-nd-cp-dated-december-31-2025-of-the-government-detailing-a-number-of-articles-and-measures-for-the-implementation-of-the-law-on-p-422896-doc1.html
 
-[12] Trang data controls và điều khoản dành cho người dùng của từng nhà cung cấp AI tool (nguồn gốc; cần đọc bản hiện hành của tool đang dùng). Danh sách các trang đã được đối chiếu và ngày kiểm tra nằm trong `programs/ai-design-workflow/learning/research.md`, Part 6.
+[12] Trang data controls và điều khoản dành cho người dùng của từng nhà cung cấp AI tool (nguồn gốc; cần đọc bản hiện hành của tool đang dùng). Danh sách các trang đã được đối chiếu và ngày kiểm tra nằm trong tài liệu nghiên cứu nội bộ của chương trình.
 
 [13] Noy, S. và Zhang, W. *Experimental evidence on the productivity effects of generative artificial intelligence*. Science, 2023 (453 người làm chuyên môn có trình độ đại học). https://scale.stanford.edu/publications/experimental-evidence-productivity-effects-generative-artificial-intelligence
 
@@ -577,9 +577,9 @@ Dữ liệu đưa vào AI tool có thể bị lưu lại. Phân loại tài li�
 
 [21] Hammer, M. *Reengineering Work: Don't Automate, Obliterate*. Harvard Business Review, tháng 7 và 8 năm 1990 (reprint 90406). Siêu dữ liệu đã kiểm tra trên trang HBR; phần thân bị chặn nên lập luận chưa đối chiếu với bản đầy đủ. https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate
 
-[22] Anthropic. *Building effective agents*. https://www.anthropic.com/engineering/building-effective-agents . Đọc qua tóm tắt trong `programs/ai-design-workflow/learning/agentic-ai-concepts.md` (mục 2); chưa đối chiếu bản gốc [to confirm].
+[22] Anthropic. *Building effective agents*. https://www.anthropic.com/engineering/building-effective-agents . Đọc qua tóm tắt trong tài liệu nghiên cứu nội bộ của chương trình; chưa đối chiếu bản gốc [to confirm].
 
-Nhật ký bằng chứng đầy đủ, mức độ tin cậy từng con số và các nhận định chưa dùng nằm trong `programs/ai-design-workflow/learning/research.md` (Part 5 và Part 6).
+Nhật ký bằng chứng đầy đủ, mức độ tin cậy từng con số và các nhận định chưa dùng nằm trong tài liệu nghiên cứu nội bộ của chương trình.
 
 ---
 

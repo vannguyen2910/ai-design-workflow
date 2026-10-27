@@ -255,7 +255,7 @@ Dùng cho hoạt động **Research questions** của Break the brief (đầu ra
 
 ### Method cần ôn (học viên biết nửa vời)
 
-Gợi ý cho phần ôn, chưa phải kết quả nghiên cứu. Đối chiếu với `customer-understanding` Part 3 (Research Questions) trong library theo mức tiêu đề, chưa đọc từng đoạn:
+**Đã đối chiếu nội dung (2026-10-26):** `customer-understanding` Part 3 có chuỗi giả định → research question → 5 đến 8 interview question, ba kiểu câu xấu (tìm phản hồi, kiểm tra sở thích, hỏi hành vi giả định), ví dụ tốt và một case urban farming; lesson 2 dùng lại các ý này. Phần dưới là bản đề xuất ban đầu của mục này; hai tiêu chí "gắn một quyết định" và "biết tìm ở đâu" là thêm của chương trình, không có trong library.
 
 - Chuỗi: business question → quyết định cần đưa → research goal → research question → (sau này) interview question.
 - Năm tiêu chí tự kiểm một research question: (1) trả lời được bằng bằng chứng, (2) mở chứ không phải có/không, (3) gắn với đúng một quyết định, (4) không gợi sẵn giải pháp, (5) biết sẽ tìm câu trả lời ở đâu (file, desk research, phỏng vấn, data).
@@ -347,7 +347,9 @@ Dùng cho hoạt động **Challenge assumptions** (đầu ra `assumption.md`). 
 
 ### Method cần ôn
 
-Đối chiếu với `desk-research` (Structure Your Assumptions), `customer-understanding` Part 2 (Assumptions) trong library, theo mức tiêu đề:
+**Đã đối chiếu nội dung (2026-10-26):** `library/frameworks/assumption-map/framework-assumption-map.md` là nguồn duy nhất trong repo; `customer-understanding` Part 2 và `desk-research` Part 1 chỉ dẫn về file đó. Lesson 2 dùng bốn loại của framework (User, Problem, Solution, Business), công thức WHO/WHAT/WHY/SIGNAL và ma trận Importance × Evidence (top-left kiểm chứng trước, 3 đến 5 giả định), thay cho các loại desirability, usability, feasibility, viability của D50, D51 ở đoạn dưới (hai nguồn đó giữ làm tham chiếu ngoài). Hai điểm khác cần biết: (1) library cho AI sinh 10 giả định trước (activity "Create Assumptions with AI"), còn lesson 2 chọn học viên liệt kê trước, AI viết lại và tìm giả định ẩn; (2) library chạy assumption map trước mọi bằng chứng, còn lesson 2 cho UX observation đứng trước, rồi dùng finding làm bằng chứng cho map (bước "update the map" của framework).
+
+Các ý dưới đây là phần đối chiếu theo tiêu đề ban đầu:
 
 - Giả định là gì, khác sự thật và khác ý kiến thế nào; cách viết "chúng tôi tin rằng…".
 - Ba đến năm loại rủi ro (chọn thang gọn cho lớp).
@@ -381,6 +383,8 @@ Dùng cho hoạt động **Challenge assumptions** (đầu ra `assumption.md`). 
 ## 4e. Cân bằng giữa ôn method và dùng AI: method trước, AI sau
 
 Winnie chọn nguyên tắc này (2026-10-26) vì học viên biết method "nửa vời".
+
+**Cập nhật cùng ngày:** Winnie chọn bỏ các bước làm tay song song; lesson 2 và practice 2 theo nhịp **nhắc method, AI soạn nháp, học viên kiểm tra và quyết định**, không có pha "học viên tự viết bản của mình trước" như khung bốn pha bên dưới. Bằng chứng gián tiếp ở dưới vẫn đúng như lý do để giữ bước kiểm tra từng dòng (ba cổng, đếm lỗi, sửa ít nhất hai giả định), vì không còn bản tự viết để so sánh. Rủi ro: học viên đọc lướt kết quả AI; giảm bằng cách yêu cầu đếm lỗi và sửa có chủ đích. Chưa thử với lớp thật.
 
 ### Vì sao thứ tự này (bằng chứng gián tiếp)
 

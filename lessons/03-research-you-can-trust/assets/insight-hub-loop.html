@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vòng insight hub · Loop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #f5f5f5;
+      --color-ink:     #2d3142;
+      --color-muted:   #4f5d75;
+      --color-accent:  #bf4520;
+      --font-sans:     'Geist', system-ui, sans-serif;
+      --font-serif:    'Instrument Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1100px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      margin-bottom: 1.5rem;
+    }
+    .scroll { overflow-x: auto; }
+    svg { width: 100%; min-width: 1040px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Loop · AI Design Workflow</p>
+    <h1>Tìm trước khi research lại</h1>
+
+    <div class="scroll">
+    <svg viewBox="0 0 1040 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="insight-loop-title insight-loop-desc">
+      <title id="insight-loop-title">Vòng insight hub</title>
+      <desc id="insight-loop-desc">Vòng năm bước từ câu hỏi mới, tìm trong hub, research thêm, kiểm tra đến đóng góp, trong đó insight hub ở giữa được đọc ở bước tìm và được ghi ở bước đóng góp.</desc>
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker>
+        <marker id="arrow-soft" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#5a6580"/></marker>
+      </defs>
+      <rect width="100%" height="100%" fill="#f5f5f5"/>
+      <!-- Ring flow -->
+      <path d="M 600.000,113.726 A 240 240 0 0 1 733.784,230.930" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 755.932,296.000 A 240 240 0 0 1 696.043,503.122" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 594.940,568.000 A 240 240 0 0 1 446.201,568.372" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 344.774,504.000 A 240 240 0 0 1 283.851,297.180" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 305.673,232.000 A 240 240 0 0 1 438.870,114.129" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <!-- Spokes -->
+      <line x1="372.00" y1="290.67" x2="414.31" y2="304.77" stroke="#5a6580" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow-soft)"/>
+      <line x1="625.69" y1="304.77" x2="662.31" y2="292.56" stroke="#5a6580" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow-soft)"/>
+      <rect x="383.6" y="278.4" width="28" height="12" rx="2" fill="#f5f5f5"/><text x="397.6" y="287.4" fill="#5a6580" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">GHI</text>
+      <rect x="623.6" y="279.4" width="32" height="12" rx="2" fill="#f5f5f5"/><text x="639.6" y="288.4" fill="#5a6580" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">ĐỌC</text>
+      <!-- Stations -->
+      <rect x="440" y="68" width="160" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="440" y="68" width="160" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="520.0" y="96" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Câu hỏi mới</text>
+      <text x="520.0" y="114" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">bắt đầu từ một quyết định</text>
+      <rect x="668" y="232" width="160" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="668" y="232" width="160" height="64" rx="6" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+      <text x="748.0" y="260" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Tìm trong hub</text>
+      <text x="748.0" y="278" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">đã có thì dùng lại</text>
+      <rect x="580" y="504" width="160" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="580" y="504" width="160" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="660.0" y="532" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Research thêm</text>
+      <text x="660.0" y="550" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">chỉ phần còn thiếu</text>
+      <rect x="300" y="504" width="160" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="300" y="504" width="160" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="380.0" y="532" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Kiểm tra</text>
+      <text x="380.0" y="550" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">quote, ý kiến trái chiều</text>
+      <rect x="212" y="232" width="160" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="212" y="232" width="160" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="292.0" y="260" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Đóng góp</text>
+      <text x="292.0" y="278" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">entry có ID, tag, ngày</text>
+      <rect x="420.0" y="288.0" width="200" height="104" rx="6" fill="#2d3142"/>
+      <text x="520" y="338" fill="#f5f5f5" font-size="13" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Insight hub</text>
+      <text x="520" y="356" fill="#bfc0c0" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">insights/ trong Knowledge Hub</text>
+      
+      <line x1="40" y1="602" x2="1000" y2="602" stroke="rgba(45,49,66,0.10)" stroke-width="0.8"/>
+      <text x="40" y="618" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LEGEND</text>
+      <rect x="40" y="630" width="14" height="10" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="60" y="638" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Bước</text>
+      <rect x="120" y="630" width="14" height="10" rx="2" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+      <text x="140" y="638" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Thói quen cốt lõi: tìm trước khi hỏi</text>
+      <rect x="360" y="630" width="14" height="10" rx="2" fill="#2d3142"/>
+      <text x="380" y="638" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Nơi lưu insight</text>
+      <line x1="500" y1="635" x2="528" y2="635" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <text x="536" y="638" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Vòng làm việc</text>
+      <line x1="650" y1="635" x2="678" y2="635" stroke="#5a6580" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrow-soft)"/>
+      <text x="686" y="638" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Đọc từ hub, ghi vào hub</text>
+    </svg>
+    </div>
+  </div>
+</body>
+</html>
