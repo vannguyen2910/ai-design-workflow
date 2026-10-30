@@ -47,6 +47,14 @@ header.header { border-bottom: 1px dashed var(--minimal-border); backdrop-filter
 .sl-markdown-content td { border: 0; border-bottom: 1px dashed var(--minimal-border); }
 
 
+/* lesson overview: two cards, Lý thuyết and Thực hành */
+.lesson-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 1.5rem 0; }
+.lesson-card { display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 16px; box-shadow: var(--minimal-card-shadow); text-decoration: none; color: inherit; }
+.lesson-card:hover { box-shadow: 0 0 2px 0 rgba(0, 167, 111, .4), 0 12px 24px -4px rgba(0, 167, 111, .18); }
+.lesson-card__kicker { font-size: 13px; color: var(--sl-color-gray-3); }
+.lesson-card__title { font-size: 20px; font-weight: 700; color: var(--sl-color-accent-high); }
+.lesson-card__text { font-size: 15px; line-height: 1.5; color: var(--sl-color-gray-2); }
+
 /* landing page preview: a live, scaled-down iframe that opens the full page on click */
 .lp-preview { --s: .55; display: block; position: relative; height: calc(900px * var(--s)); margin: 1.5rem 0 .75rem; overflow: hidden; border-radius: 16px; box-shadow: var(--minimal-card-shadow); text-decoration: none; }
 .lp-preview iframe { width: 1440px; max-width: none; height: 900px; border: 0; transform: scale(var(--s)); transform-origin: 0 0; pointer-events: none; background: #fff; }

@@ -15,8 +15,7 @@ export default defineConfig({
 				{
 					label: 'Lessons',
 					items: [
-						{ label: 'Lesson 1: Your Design Process, with AI', slug: 'lessons/design-process-with-ai/lesson' },
-						{ label: 'Practice 1: Case Folder and Hub', slug: 'lessons/design-process-with-ai/practice' },
+						{ label: 'Lesson 1', slug: 'lessons/design-process-with-ai/overview' },
 						{ label: 'Lesson 2: Discover the Problem', slug: 'lessons/discover-the-problem/lesson' },
 						{ label: 'Practice 2: Break the Brief', slug: 'lessons/discover-the-problem/practice' },
 						{ label: 'Lesson 3: Insights You Can Trust', slug: 'lessons/research-you-can-trust/lesson' },

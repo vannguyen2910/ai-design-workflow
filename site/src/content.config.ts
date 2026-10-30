@@ -9,13 +9,13 @@ const id = ({ entry }: { entry: string }) =>
 		? 'index'
 		: entry === 'landing/landing-page.md'
 		? 'landing'
-		: entry.replace(/^lessons\/\d+-([^/]+)\/materials\/.*-(lesson|practice)\.md$/, 'lessons/$1/$2');
+		: entry.replace(/^lessons\/\d+-([^/]+)\/materials\/.*-(lesson|practice|overview)\.mdx?$/, 'lessons/$1/$2');
 
 export const collections = {
 	docs: defineCollection({
 		loader: glob({
 			base: '..',
-			pattern: ['introduction.md', 'landing/landing-page.md', 'lessons/*/materials/*-lesson.md', 'lessons/*/materials/*-practice.md'],
+			pattern: ['introduction.md', 'landing/landing-page.md', 'lessons/*/materials/*-lesson.md', 'lessons/*/materials/*-practice.md', 'lessons/*/materials/*-overview.mdx'],
 			generateId: id,
 		}),
 		// lessons use `draft: true` to mean work in progress; the site still publishes them

@@ -15,6 +15,8 @@ next-session: "Discover the Problem"
 
 > **Sync note 2026-10-23.** Buổi được đổi theo hình dạng chung của chương trình (ice breaker, theory, một activity, hỏi đáp) và thêm hai phần cho buổi đầu: Agent và đội AI (mục 4.4) và Knowledge Hub. Theory nới lên 44 phút, một activity 18 phút, tổng 82 phút. Bản trước nằm trong thư mục lưu trữ của lesson.
 
+> **Sync note 2026-10-30.** Trên site, Lesson 1 là một trang tổng quan với hai card: Lý thuyết (file này) và Thực hành (`design-process-with-ai-practice.md`). Sidebar chỉ còn mục Lesson 1. Nội dung buổi và slide outline không đổi.
+
 ## Abstract
 
 Tài liệu này mô tả buổi đầu tiên của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Module là buổi 1 của chương trình, một buổi 90 phút trình bày bối cảnh, khung kiến thức và một activity ngắn trên lớp. Phần dựng project folder trên case của chính người học chuyển thành bài tập về nhà ngay sau buổi.
