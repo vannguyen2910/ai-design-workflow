@@ -13,6 +13,8 @@ previous-session: "Your Design Process, with AI"
 next-session: "Turn Research into Insights You Can Trust"
 ---
 
+> **Sync note 2026-10-30.** Trên site, Lesson 2 là trang tổng quan với hai card: Lý thuyết (file này) và Thực hành (`discover-the-problem-practice.md`). Sidebar chỉ còn mục Lesson 2. Nội dung buổi và slide outline không đổi.
+
 ## Abstract
 
 Tài liệu này mô tả buổi 2 của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi 2 mở stage Discover bằng một bộ nguyên tắc chung, rồi cho học viên thấy cách phá brief (break the brief) và cách hiểu người dùng (understand our users) với AI. Học viên dựng hoặc đào sâu từng phần ở buổi practice ngay sau đó.

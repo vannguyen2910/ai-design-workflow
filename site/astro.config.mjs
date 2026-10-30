@@ -16,10 +16,8 @@ export default defineConfig({
 					label: 'Lessons',
 					items: [
 						{ label: 'Lesson 1', slug: 'lessons/design-process-with-ai/overview' },
-						{ label: 'Lesson 2: Discover the Problem', slug: 'lessons/discover-the-problem/lesson' },
-						{ label: 'Practice 2: Break the Brief', slug: 'lessons/discover-the-problem/practice' },
-						{ label: 'Lesson 3: Insights You Can Trust', slug: 'lessons/research-you-can-trust/lesson' },
-						{ label: 'Practice 3: Run the Four Steps', slug: 'lessons/research-you-can-trust/practice' },
+						{ label: 'Lesson 2', slug: 'lessons/discover-the-problem/overview' },
+						{ label: 'Lesson 3', slug: 'lessons/research-you-can-trust/overview' },
 					],
 				},
 			],

@@ -15,6 +15,8 @@ next-session: "Frame the Problem Worth Solving"
 
 > **Ghi chú sync (2026-10-27).** Lesson được viết lại theo mục 6 của `learning/ai-in-insights.md`. Bản cũ (tám bước, ba cổng, evidence menu, competitor analysis) nằm ở `materials/_archive/research-you-can-trust-lesson-pre-four-steps-2026-10-27.md`. Thay đổi chính: bốn bước Decision, Evidence, Claim, Challenge thay cho tám bước và ba cổng; thêm persona, journey map, opportunity và insight hub; evidence menu và competitor analysis đã chuyển sang Lesson 2. Mục đánh dấu `[to confirm]` chờ Winnie xác nhận.
 
+> **Sync note 2026-10-30.** Trên site, Lesson 3 là trang tổng quan với hai card: Lý thuyết (file này) và Thực hành (`research-you-can-trust-practice.md`). Sidebar chỉ còn mục Lesson 3. Nội dung buổi và slide outline không đổi.
+
 ## Abstract
 
 Tài liệu này mô tả buổi 3 của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi 3 tiếp tục stage Discover: học viên đã có quote từ phỏng vấn peer (xem Lesson 2) và biến chúng thành persona, customer journey map và opportunity mà mỗi dòng truy được về quote gốc, rồi đóng góp insight đã kiểm tra vào insight hub.
