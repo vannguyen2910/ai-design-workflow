@@ -1,10 +1,16 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { listLessons } from './scripts/lessons.mjs';
+import remarkLinks from './scripts/remark-links.mjs';
+
+// one sidebar entry per lesson folder: lessons/NN-slug/ -> "Lesson N" -> its overview page
+const lessons = listLessons().map((l) => ({ label: `Lesson ${l.num}`, slug: `lessons/${l.slug}/overview` }));
 
 export default defineConfig({
 	site: 'https://vannguyen2910.github.io',
 	base: '/ai-design-workflow',
+	markdown: { remarkPlugins: [remarkLinks] },
 	integrations: [
 		starlight({
 			title: 'AI Design Workflow',
@@ -12,15 +18,7 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Giới thiệu chương trình', slug: 'index' },
 				{ label: 'Landing Page', slug: 'landing' },
-				{
-					label: 'Lessons',
-					items: [
-						{ label: 'Lesson 1', slug: 'lessons/design-process-with-ai/overview' },
-						{ label: 'Lesson 2', slug: 'lessons/discover-the-problem/overview' },
-						{ label: 'Lesson 3', slug: 'lessons/research-you-can-trust/overview' },
-						{ label: 'Lesson 5', slug: 'lessons/ai-prototyping/overview' },
-					],
-				},
+				{ label: 'Lessons', items: lessons },
 			],
 		}),
 	],

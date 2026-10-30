@@ -2,11 +2,11 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 28
+slide_count: 33
 duration: "90 min"
 status: draft
 built_deck: ""
-last_synced: 2026-10-26
+last_synced: 2026-10-30
 ---
 
 > **Source of truth:** `discover-the-problem-lesson.md`
@@ -18,6 +18,8 @@ last_synced: 2026-10-26
 
 > **Copy standard:** mọi Kicker, Title và dòng On-slide đọc được trong một cái nhìn, không câu nào quá khoảng 15 từ. Title là nhãn chủ đề ngắn (6 từ trở xuống). Speaker notes dùng ngôi "mình".
 
+> **Sync note (2026-10-30):** synthesis chuyển từ Lesson 3 sang đây (tám slide: ba quy tắc, bốn câu hỏi về dữ liệu, kiểm tra quote, bốn bước, ai làm gì, năm điều cần soi, activity viết claim và cách làm). Bỏ activity viết hai dòng nguyên tắc (hai slide) vì bộ nguyên tắc nay viết ở nhà, và slide package thành agent chuyển sang Lesson 3. Bản trước (28 slide) nằm ở `materials/_archive/discover-the-problem-slide-outline-pre-synthesis-move-2026-10-30.md`.
+
 > **Deck status:** chưa có deck nào được build từ outline này.
 
 ---
@@ -27,22 +29,23 @@ last_synced: 2026-10-26
 | Field | Value |
 |---|---|
 | Program | AI Design Workflow |
-| Track / session | Buổi 2 (tuần 1) của series, 90 phút, online, 7 đến 8 học viên; buổi practice 90 phút ngay sau đó |
+| Track / session | Buổi 2 (tuần 1) của series, 90 phút, online, 7 đến 8 học viên; sau đó là chuỗi practice ở nhà (khoảng 4 giờ), rồi buổi practice trên lớp |
 | Stage | Discover |
 | Prior session | Buổi 1: Your Design Process, with AI |
-| Next session | Buổi practice của buổi 2, rồi buổi 3: Turn Research into Insights You Can Trust |
-| Running example | App meal-kit theo gói đăng ký (Kitchen Crate, case mẫu hư cấu); học viên làm activity trên case của chính mình |
+| Next session | Chuỗi practice ở nhà và buổi practice trên lớp, rồi buổi 3: Turn Research into Insights You Can Trust |
+| Running example | App meal-kit theo gói đăng ký (Kitchen Crate, case mẫu hư cấu); activity dùng bộ quote Kitchen Crate; chuỗi việc ở nhà làm trên case của chính học viên |
 
 ---
 
-## Slide structure: 28 slides
+## Slide structure: 33 slides
 
-- Arc: **Open** (cover, ice breaker) → **Theory** (divider cộng bốn phần: Discover và AI, Design Principles, Break the brief, Understand our users) → **Activity** (5 phút, nằm sau phần Design Principles) → **Package** (agent và hub) → **Close** (hỏi đáp, buổi practice, kết thúc).
-- Khớp với tám phase của lesson (mục 7.1). Phase 1 (ice breaker) = slide 1–2. Theory 1 (Discover và AI) = slide 3–6. Theory 2 (Design Principles) = slide 7–9. Activity = slide 10–11. Theory 3 (Break the brief) = slide 12–19: tổng quan, scope (câu hỏi gửi business, ba mức access, AI không đóng vai PO hay user), UX observation, challenge assumptions, research questions, competitor analysis. Theory 4 (Understand our users) = slide 20–23: tổng quan, năm thói quen phỏng vấn, research plan với AI, từ phỏng vấn đến insight. Package = slide 24–25. Hỏi đáp và close = slide 26–28.
-- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, activity = 5, hỏi đáp = 6. Timing các phase: ice breaker 6, T1 8, T2 10, activity 5, T3 28, T4 14, package 9, hỏi đáp 6; tổng nội dung 86 trên 90 phút, buffer 4 phút. Slide 27 và 28 chiếu trong phase hỏi đáp.
-- Theory khoảng 60 phút vì buổi practice 90 phút nằm ngay sau. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
-- Thứ tự cắt khi quá giờ: bỏ slide 19 (competitor analysis, làm sau buổi practice), rồi rút demo research questions (slide 18) còn một ví dụ, rồi hỏi đáp còn 4 phút, rồi rút Theory 4 còn hai slide (20 và 23).
-- Cái bẫy của buổi nằm ở slide 17: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
+- Arc: **Open** (cover, ice breaker) → **Theory** (divider cộng năm phần: Discover và AI, Design Principles, Break the brief, Understand our users, Synthesis) → **Activity** (10 phút, nằm sau phần Synthesis) → **Close** (hub, hỏi đáp, chuỗi việc ở nhà, kết thúc).
+- Khớp với chín phase của lesson (mục 7.1). Phase 1 (ice breaker) = slide 1–2. Theory 1 (Discover và AI) = slide 3–6. Theory 2 (Design Principles) = slide 7–9. Theory 3 (Break the brief) = slide 10–17: tổng quan, scope (câu hỏi gửi business, ba mức access, AI không đóng vai PO hay user), UX observation, challenge assumptions, research questions, competitor analysis. Theory 4 (Understand our users) = slide 18–20: tổng quan, năm thói quen phỏng vấn, research plan với AI. Theory 5 (Synthesis) = slide 21–27: từ phỏng vấn đến insight, ba quy tắc với quote, bốn câu hỏi về dữ liệu, kiểm tra quote, bốn bước với AI, ai làm gì, năm điều cần soi. Activity = slide 28–29. Close = slide 30 (hub), 31 (hỏi đáp), 32 (chuỗi việc ở nhà), 33 (kết thúc).
+- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 5, activity = 10, hỏi đáp = 5. Timing các phase: ice breaker 5, T1 6, T2 7, T3 22, T4 8, T5 18, activity 10, hỏi đáp 5, close 4; tổng nội dung 85 trên 90 phút, buffer 5 phút. Slide 30 và 32 chiếu trong phase close; slide 31 trong phase hỏi đáp.
+- Theory khoảng 61 phút vì chuỗi việc ở nhà bắt đầu ngay sau buổi này. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
+- Thứ tự cắt khi quá giờ (đề xuất, chưa thử): bỏ slide 17 (competitor analysis, làm ở nhà), rồi rút demo research questions (slide 16) còn một ví dụ, rồi chuyển slide 26 và 27 (ai làm gì, năm điều cần soi) sang cheat sheet, rồi hỏi đáp còn 3 phút, rồi rút Theory 4 còn hai slide (18 và 20).
+- Hai cái bẫy của buổi: slide 15, một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case; slide 24, một quote AI trả lại nghe đúng nhưng bị cắt mất câu quan trọng nhất.
+---
 
 ---
 
@@ -69,14 +72,14 @@ last_synced: 2026-10-26
 ---
 
 ### MILESTONE · Ice breaker
-- Num: 6
+- Num: 5
 - Kicker: Open
 - Title: Problem or\n*solution?*
 - Sub: Tên của bạn, và brief gần nhất bạn nhận nêu vấn đề hay nêu giải pháp?
 - Ví dụ: Không cần. Học viên kể trải nghiệm của chính mình.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Sáu phút, cả lớp; mình nói trước hai mươi giây để làm mẫu, rồi mỗi người nói tên và một câu
+  - Năm phút, cả lớp; mình nói trước hai mươi giây để làm mẫu, rồi mỗi người nói tên và một câu
   - Ghi nhanh vào hai cột "vấn đề" và "giải pháp" cho cả lớp thấy; đừng bình luận lúc này
   - **Giữ bảng này để quay lại ở slide Discover**
   - Nhắc nhanh bài tập buổi 1: case folder và product-and-users đã có chưa, ai chưa xong thì dùng case mẫu
@@ -88,17 +91,17 @@ last_synced: 2026-10-26
 
 ### SECTION DIVIDER · Theory
 - Num: 01
-- Kicker: Four parts
+- Kicker: Five parts
 - Title: Before you\n*design anything*
-- Sub: Discover và AI, principles, break the brief, hiểu người dùng
+- Sub: Discover và AI, principles, break the brief, hiểu người dùng, synthesis
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Nối từ ice breaker: phần lớn cột "giải pháp" là brief; phần này đi từ brief sang câu hỏi
-  - Bốn phần, mỗi phần kết thúc bằng một câu hỏi ngắn bỏ phiếu bằng chat
-  - Activity 5 phút nằm sau phần principles; phần luyện tập dài nằm ở buổi practice
+  - Năm phần, mỗi phần kết thúc bằng một câu hỏi ngắn bỏ phiếu bằng chat
+  - Activity 10 phút nằm sau phần synthesis; phần luyện tập dài làm ở nhà trong Practice 2
 
-  > Bốn phần, mỗi phần có một ví dụ từ Kitchen Crate; mình bắt đầu với việc Discover nằm ở đâu.
+  > Năm phần, mỗi phần có một ví dụ từ Kitchen Crate; mình bắt đầu với việc Discover nằm ở đâu.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
 
 ---
@@ -220,57 +223,19 @@ last_synced: 2026-10-26
 - On-slide:
   - 1a: business question và outcome đã agreed hay assumed?
   - 1f: data rules đã được tuân thủ?
-  - 1b, 1c: hard stop, dùng ở buổi 3
-- Ví dụ: Không cần. Slide giới thiệu danh sách check, ví dụ áp dụng nằm ở buổi 3.
+  - 1b, 1c: hard stop, dùng ở phần synthesis
+- Ví dụ: Không cần. Slide giới thiệu danh sách check, ví dụ áp dụng nằm ở phần synthesis.
 - Câu hỏi hay gặp:
   - Hard stop là gì? Check không thể qua bằng lý do ghi lại; stage không đi tiếp cho đến khi thật sự qua.
 - Speaker notes:
   - Gate 1 có bảy check, 1a đến 1g, và ba hard stop là 1b, 1c, 1f
   - Hôm nay chỉ nhìn qua hai check: 1a (business question và outcome) và 1f (data rules)
-  - Các check về insight (1b đến 1e, 1g) dùng ở buổi 3 khi có quote thật
+  - Các check về insight (1b đến 1e, 1g) dùng ở phần synthesis khi có quote thật
   - Mỗi check là câu có hoặc không, và trả lời được bằng cách chỉ vào một file trong hub
   - Không qua được thì ghi lý do, trừ hard stop
 
   > Bỏ phiếu trong chat: A nếu bạn có thể chỉ vào file chứng minh business question đã được đồng ý, B nếu chưa.
 - 🎨 Visual hint: SCHEMATIC. Danh sách bảy check dạng hàng ngang, hai check 1a và 1f tô purple, ba hard-stop có dấu chấm đỏ nhỏ.
-
----
-
-### MILESTONE · Activity
-- Num: 5
-- Kicker: Activity
-- Title: One line\n*each*
-- Sub: Hai dòng đầu của bộ nguyên tắc, chưa mở AI
-- Ví dụ: Không cần. Học viên viết trên case của chính mình.
-- Câu hỏi hay gặp:
-  - Chưa biết business principle thì viết gì? Ghi "assumed" và người cần xác nhận.
-- Speaker notes:
-  - Năm phút, cá nhân, không mở AI tool
-  - Hai phút cho UX principle, hai phút cho business principle, một phút đọc cho cả lớp hoặc dán vào chat
-  - Đây chỉ là hai dòng; phần còn lại làm ở buổi practice
-
-  > Chọn một nguyên tắc quan trọng nhất với case của bạn, và viết một câu: vì sao.
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới hai dòng trống "UX principle" và "Business principle".
-
----
-
-### PROCESS · Two lines to write
-- Kicker: How-to
-- Title: Start your *principles*
-- On-slide:
-  - 01 · Chọn một UX principle, viết một câu vì sao quan trọng
-  - 02 · Viết một business principle, ghi assumed nếu chưa biết
-  - 03 · Đọc một câu cho cả lớp
-- Ví dụ: bản nháp (Kitchen Crate: "Kiểm soát của người dùng: khách phải đổi được ngày giao sau khi thanh toán")
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-
-  > Với Kitchen Crate, mình viết: "Kiểm soát của người dùng, vì khách mới hay đổi ngày giao và không có đường quay lại sau khi thanh toán."
-
-  - Câu viết ngắn, một ý; không cần đẹp
-  - Business principle ví dụ: không tăng tỷ lệ huỷ gói sau tuần đầu, ghi assumed
-  - Không mở AI tool trong activity này
-- 🎨 Visual hint: SCHEMATIC. Ba bước nằm ngang, bước 1 và 2 có ô nhập, bước 3 là biểu tượng chat; slide ở lại màn hình trong lúc học viên viết.
 
 ---
 
@@ -285,7 +250,7 @@ last_synced: 2026-10-26
   - Competitor analysis → bản phân tích đối thủ
 - Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
 - Câu hỏi hay gặp:
-  - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm sau buổi practice, các hoạt động còn lại nối nhau nên làm theo thứ tự.
+  - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm muộn hơn, ở nhà, các hoạt động còn lại nối nhau nên làm theo thứ tự.
   - Vì sao research questions đứng sau UX observation và assumptions? Câu hỏi nghiên cứu xuất phát từ điều mình chưa biết; UX observation và assumptions chỉ ra điều đó.
 - Speaker notes:
 
@@ -296,7 +261,7 @@ last_synced: 2026-10-26
   - Mỗi hoạt động ra một file trong hub
   - Self-documentation, bước đưa tài liệu product vào AI để có context, đã làm ở Practice 1; Break the brief bắt đầu từ context pack đó
   - Hôm nay mình đi qua từng bước và demo ba hoạt động trên Kitchen Crate: UX observation, challenge assumptions, research questions
-  - Competitor analysis mình giới thiệu ngắn; bạn làm ở buổi practice với cheat sheet này
+  - Competitor analysis mình giới thiệu ngắn; bạn làm ở nhà với cheat sheet này
   - Brief là điểm xuất phát tốt; việc ở đây là kiểm tra nó phục vụ đúng vấn đề chưa
 
   > Trong các bước này, bạn đang làm bước nào rồi, dù chưa gọi tên?
@@ -417,7 +382,7 @@ last_synced: 2026-10-26
   - Chọn ba giả định ở góc quan trọng cao, bằng chứng thấp
 - Ví dụ: có (Kitchen Crate: giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết)
 - Câu hỏi hay gặp:
-  - Chưa có research cũ thì pull insight từ đâu? Ghi "chưa có" và để cho phỏng vấn peer và buổi 3.
+  - Chưa có research cũ thì pull insight từ đâu? Ghi "chưa có" và để cho phỏng vấn user.
 - Speaker notes:
 
   > AI liệt kê ba điều team Kitchen Crate có thể đang tin: giá là lý do chính, khách không hiểu cách đổi ngày giao, bước thanh toán làm khách ngại cam kết.
@@ -428,7 +393,7 @@ last_synced: 2026-10-26
   - Method trước: bốn loại giả định (User, Problem, Solution, Business), công thức "chúng tôi tin rằng nhóm người dùng nào sẽ làm gì, vì sao… biết mình đúng khi…", ma trận Importance × Evidence (nguồn 8)
   - AI liệt kê giả định theo công thức, tìm giả định ẩn, hỏi ngược bằng chứng; bạn xếp lên ma trận và sửa ít nhất hai giả định
   - Chọn ba giả định hàng đầu ở góc top-left (quan trọng cao, bằng chứng thấp); framework cho phép đến năm, lớp chọn ba vì giới hạn thời gian
-  - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở buổi 3 sau phỏng vấn peer; hôm nay chỉ ghi finding của ux-audit làm bằng chứng
+  - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở nhà sau phỏng vấn user; hôm nay chỉ ghi finding của ux-audit làm bằng chứng
   - Kết quả vào bản đồ giả định
 
   > Điều đang tin nào của case bạn nghe rất hợp lý nhưng bạn chưa từng thấy bằng chứng?
@@ -485,7 +450,7 @@ last_synced: 2026-10-26
   - AI mô tả ảnh trước, đánh giá sau; mỗi ô ghi tên file; **bảng gọn tạo cảm giác chắc chắn, nên bạn ghi tỷ lệ ô sai sau khi đối chiếu**
   - Mở ảnh gốc cho hai ba tiêu chí quan trọng nhất; có thể dùng lại bộ nguyên tắc và thang severity của UX observation
   - Đây là review của chuyên gia, không phải testing; mục tiêu là cải thiện thiết kế của mình, không tuyên bố bên thắng
-  - Buổi 3 ghép phần này với điều user nói và làm; kết quả vào bản phân tích đối thủ
+  - Phần synthesis ghép phần này với điều user nói và làm; kết quả vào bản phân tích đối thủ
 
   > Bạn đã từng quyết định thiết kế chỉ dựa trên đối thủ chưa?
 - 🎨 Visual hint: SCHEMATIC. Năm hàng đánh số 01 đến 05 theo layout Numbered; bên phải một bảng nhỏ có một ô được khoanh sienna và nhãn "ô sai".
@@ -498,10 +463,10 @@ last_synced: 2026-10-26
 - On-slide:
   - Methods: interview (stakeholder, user) và user survey
   - Research với AI: research plan và facilitation script
-  - Post-interview: transcript hoặc recording, rồi quote có ID
+  - Post-interview: transcript hoặc recording, rồi synthesis ở phần tiếp theo
 - Ví dụ: bản nháp (một designer nhờ AI soạn nháp research plan và facilitator script cho ba buổi phỏng vấn khách Kitchen Crate)
 - Câu hỏi hay gặp:
-  - Tại sao chỉ giới thiệu mà không thực hành? Buổi practice ngay sau và buổi 3 dành cho phần thực hành và synthesis.
+  - Tại sao chỉ giới thiệu mà không thực hành? Phỏng vấn user thật và synthesis làm ở nhà trong Practice 2.
 - Speaker notes:
 
   > Một designer chuẩn bị ba buổi phỏng vấn khách Kitchen Crate. Cô nhờ AI soạn nháp research plan và facilitator script, rồi tự sửa câu hỏi cho trung lập.
@@ -511,7 +476,7 @@ last_synced: 2026-10-26
   - Research với AI: AI soạn nháp plan và script, bạn chỉnh và quyết định
   - Post-interview: lấy transcript hoặc recording, ẩn danh trước khi AI đọc, rồi rút quote có ID
   - Đầu vào là research question vừa chốt ở slide trước
-  - Hôm nay chỉ là theory; thực hành ở buổi practice và bài tập phỏng vấn peer
+  - Hôm nay là theory; phỏng vấn user thật và synthesis làm ở nhà trong Practice 2
 
   > Bạn đã từng dùng AI để soạn câu hỏi phỏng vấn chưa, và có sửa lại không?
 - 🎨 Visual hint: SCHEMATIC. Hộp lớn "Understand our users" ở trên, ba nhánh xuống ba ô; nhánh Methods tách thêm Interviews và User survey.
@@ -585,7 +550,7 @@ last_synced: 2026-10-26
   - 05 · Bạn kiểm tra từng theme về quote gốc
 - Ví dụ: bản nháp (một theme "khách không biết đổi ngày giao" phải dẫn về ít nhất hai quote có ID)
 - Câu hỏi hay gặp:
-  - Ẩn danh bằng cách nào? Theo data rules ở buổi 1; chi tiết ở buổi 3.
+  - Ẩn danh bằng cách nào? Theo data rules ở buổi 1; chi tiết ở các slide tiếp theo.
 - Speaker notes:
 
   > Sau ba buổi phỏng vấn, AI báo theme "khách không biết đổi ngày giao". Theme này dẫn về quote nào của người nào? Nếu không chỉ ra được ID, theme chưa phải insight.
@@ -595,34 +560,240 @@ last_synced: 2026-10-26
   - AI chỉ làm việc trên quote thật và trả lại nguyên văn kèm ID, không viết lại bằng lời của nó vì bản tóm tắt dễ bỏ sót (nguồn 10)
   - Nhờ AI liệt kê điều người tham gia nói mà chưa được đưa vào: đọc danh sách chỉ bắt được điều sai, không bắt được điều thiếu
   - Gộp vào ghi chú có sẵn theo kiểu đề xuất trước: AI nêu ý nào vào đâu, bạn duyệt rồi mới ghi
-  - Buổi 3 làm chi tiết bước này và gắn Gate 1b, 1c
+  - Các slide tiếp theo đi chi tiết từng bước; Gate 1b và 1c áp dụng ở đây
 
   > Insight của bạn dẫn về quote gốc nào?
 - 🎨 Visual hint: SCHEMATIC. Năm bước ngang; bước 3 và 5 có chấm "bạn làm", bước 4 có chấm "AI".
 
 ---
 
-### PROCESS · From workflow to agent
-- Kicker: How-to
-- Title: Package into an *agent*
+### NUMBERED · Three rules with quotes
+- Kicker: Cách làm
+- Title: Ba quy tắc với quote
 - On-slide:
-  - 01 · Viết quy trình thành step card
-  - 02 · Biến step card thành agent, dùng bộ nguyên tắc làm chuẩn
-  - 03 · Đóng góp agent và file vào hub
-- Ví dụ: bản nháp (quy trình UX observation đã chạy ổn trên hai flow của Kitchen Crate được đóng thành một agent)
+  - 01 · Ẩn danh trên máy trước khi đưa cho AI
+  - 02 · Mỗi quote có ID, ví dụ I01-03
+  - 03 · AI được phép nói unknown
+- Ví dụ: có (case Kitchen Crate: phỏng vấn 1 không nói gì về giá, I01-01 đến I01-03)
 - Câu hỏi hay gặp:
-  - Package khi nào là đủ sớm? Khi quy trình đã chạy ít nhất hai lần trên hai đầu vào khác nhau và phần bạn kiểm tra đã được ghi rõ.
+  - Ẩn danh có thể nhờ AI làm không? Không; dùng find and replace trên máy, vì nhờ AI nghĩa là đã đưa dữ liệu gốc cho nó.
+  - Quote ID đặt thế nào? Theo nguồn và số thứ tự: R01 cho review, F01 cho bài đăng forum, I01-03 cho quote thứ 3 của phỏng vấn 01.
+  - Vì sao phải cho AI nói unknown? Nếu không, AI lấp chỗ trống bằng điều nghe hợp lý.
 - Speaker notes:
 
-  > Quy trình UX observation đã chạy ổn trên hai flow của Kitchen Crate. Bạn viết nó thành step card, rồi biến thành một agent dùng lại được.
+  > Hỏi AI một câu về người được phỏng vấn số 1 của Kitchen Crate: họ nghĩ gì về giá? Ba quote I01-01, I01-02, I01-03 nói về ngày giao, bỏ qua một tuần và thời gian nấu, không có chữ nào về giá.
 
-  - Step card ghi ai làm (bạn hay AI), đầu vào, đầu ra, check nào phải qua
-  - Agent là một bộ instruction dùng lại được, gắn với bộ nguyên tắc làm chuẩn
-  - Đóng gói sớm quá sẽ đóng gói cả lỗi; chờ khi quy trình đã chạy hai lần
-  - Khung này lặp lại ở các buổi sau
+  - Nếu cho phép, AI sẽ viết một câu nghe rất hợp lý về giá, và câu đó không có trong dữ liệu
+  - Vì vậy quy tắc ba: AI được phép nói unknown, và chỉ dùng quote mình đưa, trả lại nguyên văn
+  - Quy tắc một: ẩn danh bằng find and replace trên máy, thay tên bằng P1, P2, trước khi đưa cho AI
+  - Dữ liệu gốc chưa ẩn danh nằm ngoài vùng AI đọc, như đã làm ở buổi 1
+  - Quy tắc hai: mỗi quote có ID theo nguồn, R cho review, F cho forum, I cho phỏng vấn, để mọi dòng về sau dẫn được về đúng chỗ
 
-  > Quy trình nào của bạn đã chạy đủ hai lần?
-- 🎨 Visual hint: SCHEMATIC. Ba bước ngang; bước 2 có một biểu tượng agent nhỏ nối với bộ nguyên tắc.
+  > **Quote ID là sợi dây mà cả buổi hôm nay dựa vào.**
+
+  > Hỏi nhanh: bạn nghĩ AI sẽ trả lời gì nếu hỏi về giá của người phỏng vấn số 1? Gõ một từ vào chat: unknown hoặc một câu trả lời.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba hàng, số purple.
+
+---
+
+### NUMBERED · Questions about data
+- Kicker: Dữ liệu
+- Title: Bốn câu hỏi về dữ liệu
+- On-slide:
+  - 01 · Participant đã đồng ý điều gì, có nhắc AI không?
+  - 02 · Công ty có cho phép công cụ này không?
+  - 03 · Công cụ có huấn luyện trên dữ liệu không, đã tắt chưa?
+  - 04 · Mình đã ẩn danh trên máy chưa?
+- Ví dụ: bản nháp (một designer ở team product dán transcript vào công cụ cá nhân rồi mới biết công cụ có huấn luyện trên dữ liệu)
+- Câu hỏi hay gặp:
+  - Luật Việt Nam nói gì? Luật bảo vệ dữ liệu cá nhân có hiệu lực từ 01/01/2026 lấy sự đồng ý làm trung tâm; mình chưa đọc toàn văn, nên đây là thói quen chứ không phải tư vấn pháp lý.
+  - Câu nào cũng không biết thì sao? Hỏi lead hoặc bộ phận pháp lý trước khi đưa vào.
+  - Công cụ chạy trên máy có cần hỏi không? Vẫn cần hỏi câu một và hai, vì chúng là về participant và công ty.
+- Speaker notes:
+
+  > Một designer ở team product dán cả transcript phỏng vấn vào một công cụ cá nhân để tóm tắt nhanh. Một tuần sau mới đọc điều khoản và thấy công cụ dùng dữ liệu để huấn luyện.
+
+  - Dữ liệu đã đi rồi và không lấy lại được
+  - Participant chỉ đồng ý cho nghiên cứu, không đồng ý cho việc làm dữ liệu huấn luyện của một công ty khác
+  - Hướng dẫn cho nhà nghiên cứu cùng một ý: câu hỏi chính là công cụ có huấn luyện trên dữ liệu không và có tắt được không
+  - Hỏi thêm thời gian lưu dữ liệu và việc xoá có tới bản sao lưu không
+  - Bốn câu này là thói quen mình giữ, không phải tư vấn pháp lý
+
+  > **Chỉ cần một câu trả lời là "không biết" thì hỏi lead trước, đừng đoán.**
+
+  > Bạn trả lời được bao nhiêu trong bốn câu cho công cụ bạn đang dùng? Gõ một con số vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng, số purple.
+
+---
+
+### DIAGRAM · Checking a quote
+- Kicker: Cách làm
+- Title: Cách kiểm tra quote
+- On-slide:
+  - Tìm đúng chuỗi trong transcript
+  - Đọc ngữ cảnh quanh quote
+  - Ghi lỗi, rồi sửa theo bản gốc
+- Ví dụ: bản nháp (quote I01-03 bị cắt mất câu cuối "I felt like I was doing it wrong")
+- Câu hỏi hay gặp:
+  - Tìm chuỗi bằng cách nào? Chức năng tìm của editor là đủ, hoặc một đoạn script ngắn.
+  - Nếu AI diễn đạt lại bằng lời khác thì sao? Không có chuỗi để tìm; đó là lý do bước sau yêu cầu dòng "quote này không cho biết gì".
+  - Bao nhiêu lỗi thì chạy lại? Chưa có ngưỡng đã đo; nhiều lỗi ở một bước thì chạy lại bước đó với prompt chặt hơn.
+- Speaker notes:
+
+  > Quote gốc I01-03 là: The first recipe was fine, but it said 30 minutes and I was still chopping at 30. I felt like I was doing it wrong. AI trả lại đến chữ still chopping at 30 rồi dừng.
+
+  - Cả câu nghe đúng, nhưng mất câu quan trọng nhất cho onboarding: khách cảm thấy mình làm sai
+  - Một nghiên cứu trên phỏng vấn thấy việc chọn quote của AI thấp và không đều, và lỗi từ đổi một từ, cắt cụt, đến ghép các đoạn làm đổi nghĩa
+  - Lớp một: tìm đúng chuỗi, bắt được quote bịa
+  - Lớp hai: đọc ngữ cảnh, bắt được quote có thật nhưng bị cắt
+  - Đếm lỗi và ghi lại, để biết có nên chạy lại không
+
+  > **Tìm đúng chuỗi chỉ bắt được quote bịa, không bắt được ý bị diễn đạt lại.**
+
+  > Câu hỏi 30 giây: trong hai lớp kiểm tra, lớp nào bắt được quote bị cắt? Gõ một hoặc hai vào chat.
+- 🎨 Visual hint: SCHEMATIC. Diagram `quote-check.html`: flowchart quote từ AI, hai câu hỏi kiểm tra, ghi lỗi và sửa, đếm lỗi để chạy lại hoặc dùng được.
+
+---
+
+### DIAGRAM · Four steps with AI
+- Kicker: Quy trình
+- Title: Bốn bước với AI
+- On-slide:
+  - Decision: bạn gọi tên quyết định
+  - Evidence: AI rút quote, bạn kiểm tra
+  - Claim: AI đề xuất, bạn chọn và viết lại
+  - Challenge: bạn phản biện và giữ ý kiến trái chiều
+- Ví dụ: bản nháp (Decision của team Kitchen Crate: có thiết kế lại bước đổi ngày giao hay không)
+- Câu hỏi hay gặp:
+  - Vì sao Decision không nhờ AI? Chỉ bạn biết quyết định nào đang chờ; AI sẽ tóm tắt tất cả, không phục vụ quyết định nào.
+  - Có phải chạy đủ bốn bước mỗi lần? Không; với việc chỉ tìm một quote thì không cần.
+- Speaker notes:
+
+  > Team Kitchen Crate có một quyết định chờ: có thiết kế lại bước đổi ngày giao hay không. Nếu không gọi tên quyết định này, AI sẽ tóm tắt cả 24 quote như nhau.
+
+  - Bước một là Decision, bạn tự viết, vì chỉ bạn biết quyết định nào đang chờ
+  - Bước hai là Evidence: AI rút observation, mỗi observation có mã người tham gia, một câu nguyên văn và một dòng "quote này không cho biết gì"
+  - Bước ba là Claim: AI đề xuất ba claim, bạn chọn một câu và viết lại bằng lời của mình
+  - Bước bốn là Challenge: bạn phản biện claim, và giữ lại ý kiến trái chiều
+  - Hai bước đánh dấu màu cam là hai quyết định không giao cho AI
+
+  > **AI soạn nháp được pattern. Độ tin cậy nằm ở số nguồn dẫn và ý kiến trái chiều bạn giữ lại.**
+
+  > Trong bốn bước, bạn thấy bước nào hay bị bỏ nhất khi làm vội? Gõ số bước vào chat.
+- 🎨 Visual hint: SCHEMATIC. Diagram `four-steps-with-ai.html`: swimlane hai làn (học viên, AI), bốn cột, hai bước màu cam.
+
+---
+
+### COMPARE · Who does what
+- Kicker: So sánh
+- Title: AI làm, bạn làm
+- On-slide:
+  - AI: rút observation, đề xuất ba claim, đóng vai người phản biện
+  - Bạn: viết Decision, kiểm tra quote, chọn và viết lại claim
+  - Bạn vẫn đọc: một vài transcript trước, ngữ cảnh của mọi quote dùng
+  - Insight là của bạn khi đóng AI lại vẫn bảo vệ được claim
+- Ví dụ: bản nháp (hai designer: một người đóng AI lại vẫn giải thích được claim, một người thì không)
+- Câu hỏi hay gặp:
+  - Đọc bao nhiêu transcript là đủ? Chưa có nguồn đo; mình đề xuất một vài transcript trước khi hỏi AI, cần chạy thử lớp.
+  - Có thể giao AI đọc hết rồi mình chỉ kiểm tra không? Nghiên cứu cho thấy độ đồng thuận giữa AI và người khi gắn code thấp, nên vẫn cần đọc.
+  - Làm sao biết insight còn của mình? Đóng AI lại, giải thích claim và chỉ ra quote đỡ nó.
+- Speaker notes:
+
+  > Hai designer cùng chạy bốn bước trên cùng bộ quote. Khi stakeholder hỏi vì sao chọn claim này, một người đóng laptop lại vẫn trả lời được, người kia thì mở lại AI để hỏi.
+
+  - Người thứ nhất tự viết Decision, tự viết lại claim, tự phản biện; người thứ hai chỉ duyệt bản AI
+  - Một nghiên cứu so AI với người thấy AI nhanh hơn rất nhiều nhưng độ đồng thuận khi gắn code chỉ 36 đến 47%
+  - Người nhận ra theme tinh tế, mang tính diễn giải tốt hơn, nên vẫn cần đọc
+  - Đầu ra của AI trơn tru nên lỗi khó thấy hơn; đây là suy luận của mình, chưa có nguồn đo riêng cho research UX
+  - Cách làm: đọc một vài transcript trước khi hỏi AI, và đọc ngữ cảnh của mọi quote dùng cho claim
+
+  > **Đóng AI lại vẫn giải thích được claim, đó là phép thử insight còn của bạn.**
+
+  > Câu hỏi 30 giây: bạn đóng AI lại và giải thích được claim gần nhất của mình không? Có hoặc không.
+- 🎨 Visual hint: SCHEMATIC. Compare hai cột: AI làm và Bạn làm; hàng dưới là phép thử đóng AI lại.
+
+---
+
+### NUMBERED · Five things to question
+- Kicker: Kiểm tra
+- Title: Năm điều cần soi
+- On-slide:
+  - 01 · Phạm vi: claim nói rộng hơn mẫu
+  - 02 · Đồng thuận: ai cũng nói vậy, thật không?
+  - 03 · Sample mix: ai có mặt, ai vắng mặt
+  - 04 · Giải pháp: nhảy sang tính năng
+  - 05 · Cảm xúc: quote mạnh che việc nó hiếm
+- Ví dụ: có (case Kitchen Crate: điều team tin là giá, so với 24 quote; R06, F07, I02-03, R01)
+- Câu hỏi hay gặp:
+  - Năm điều này lấy từ đâu? Từ cách mình soi insight khi review; chưa phải kết quả nghiên cứu.
+  - Có cần soi cả năm điều mỗi lần? Không; chọn một hai điều thấy rủi ro nhất với claim đang có.
+  - Sample mix khác phạm vi ở đâu? Phạm vi là claim nói rộng cỡ nào, sample mix là ai thực sự nằm trong mẫu.
+- Speaker notes:
+
+  > Team Kitchen Crate đang tin: giá là lý do chính khiến khách rời đi. Trong 24 quote, chỉ R06 và F07 nhắc tới giá, và R06 còn nói giá hơi cao nhưng đồ ăn ngon nên vẫn giữ gói.
+
+  - Đây là điều một: phạm vi, claim khách rời đi vì giá rộng hơn dữ liệu cho phép
+  - Điều hai là đồng thuận: I02-03 nói thời gian nấu làm phiền hơn giá, nên không phải ai cũng nói về giá
+  - Điều ba là sample mix: review nghiêng về người có cảm xúc mạnh, forum là người đã gặp vấn đề, hai người phỏng vấn đều lịch sự
+  - Điều bốn là giải pháp: nhảy sang thêm popup nhắc ngày giao thay vì nói nhu cầu
+  - Điều năm là cảm xúc: R01 nói nửa số đồ ăn bị hỏng nghe rất mạnh, nhưng chỉ là một review
+
+  > **Soi năm điều này ở bước Challenge, trước khi đưa claim cho ai.**
+
+  > Câu hỏi 30 giây: claim gần nhất bạn viết, điều nào trong năm điều này đáng lo nhất? Gõ số vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, năm hàng, số purple.
+
+---
+
+### MILESTONE · Activity: Write and challenge
+- Num: 10
+- Kicker: Activity
+- Title: Write a claim,\n*then attack it*
+- Sub: Viết một claim từ bộ quote Kitchen Crate, rồi bạn cùng cặp phản biện
+- Ví dụ: Không cần. Activity dùng bộ quote Kitchen Crate.
+- Speaker notes:
+
+  > Quyết định đang chờ: có thiết kế lại bước đổi ngày giao hay không. Bạn có 24 quote và ba phút để viết một claim.
+
+  - Mười phút: ba phút viết một mình, năm phút đổi bài và phản biện, hai phút chia sẻ
+  - Bộ quote là quotes.md của case Kitchen Crate: 24 quote hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
+  - Ba phút đầu không dùng AI: đây là phần bạn tự viết, đúng phép thử đóng AI lại
+  - Quote nào dẫn vào claim phải khớp từng chữ với bản gốc, kể cả khi bạn viết claim bằng tiếng Việt
+  - Chia lớp thành các cặp; mình đi coaching từng cặp
+
+  > **Không có quote ID thì không tính là một lỗi.**
+- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
+
+---
+
+### PROCESS · How to write and challenge
+- Kicker: Cách làm
+- Title: Cách viết và phản biện claim
+- On-slide:
+  - Viết claim: ai, cần gì, khi nào, quyết định nào
+  - Dẫn ít nhất hai quote ID và một dòng "không cho biết gì"
+  - Đổi bài, phản biện bằng bốn câu hỏi
+  - Sửa claim, rồi một cặp chia sẻ lỗi bắt được hay nhất
+- Ví dụ: bản nháp (claim mẫu: "Mọi khách mới thấy công thức nấu lâu hơn ghi trên thẻ và cảm thấy mình làm sai", dẫn R05 và I01-03)
+- Câu hỏi hay gặp:
+  - Viết claim bằng tiếng Việt được không? Được; quote dẫn vào giữ nguyên bản tiếng Anh và ID.
+  - Không tìm ra lỗi thì sao? Hỏi lại bốn câu: quote có đúng không, claim có rộng quá không, ý kiến trái chiều ở đâu, đây là nhu cầu hay tính năng.
+  - Có được hỏi AI không? Không trong activity này; muốn thử thì làm ở nhà trong Practice 2.
+- Speaker notes:
+
+  > Claim mẫu: mọi khách mới thấy công thức nấu lâu hơn ghi trên thẻ và cảm thấy mình làm sai. Dẫn R05 và I01-03. Bạn bắt được lỗi nào?
+
+  - Chữ mọi là lỗi phạm vi: hai quote không đủ để nói mọi khách
+  - R05 chỉ nói công thức lâu hơn ghi, không nói cảm giác làm sai; cảm giác đó chỉ có ở I01-03, một người: đó là lỗi cảm xúc
+  - Trong 24 quote không có ai nói thời gian nấu đúng như ghi, nên ý kiến trái chiều ở đây là chưa có; dòng "bộ quote này không cho biết gì" vẫn cần
+  - Bước một: viết claim theo mẫu ai làm hoặc cần gì khi nào, quan trọng với quyết định nào
+  - Bước hai: đổi bài, người nhận mở quote gốc đối chiếu từng chữ
+  - Bốn câu hỏi của người phản biện: quote có đúng không, claim có rộng quá không, ý kiến trái chiều nào bị bỏ, đây là nhu cầu hay tính năng
+
+  > **Mỗi lỗi phải kèm quote ID, không thì chưa tính.**
+
+  > Cặp nào đã bắt được lỗi đầu tiên? Gõ vào chat hoặc giơ tay.
+- 🎨 Visual hint: SCHEMATIC. Process bốn bước ngang, bước 3 active.
 
 ---
 
@@ -631,57 +802,60 @@ last_synced: 2026-10-26
 - Title: What goes into the *hub*
 - On-slide:
   - bộ nguyên tắc
-  - bản đánh giá UX, bản đồ giả định, bản phân tích đối thủ
-  - bản insight cho mỗi method
-  - Agent đã package
-- Ví dụ: Không cần. Slide tổng hợp file của buổi.
+  - scope, bản đánh giá UX, bản đồ giả định
+  - research questions, bản phân tích đối thủ
+  - claim và insight, mỗi dòng dẫn về quote ID
+- Ví dụ: Không cần. Slide tổng hợp file của chuỗi việc ở nhà.
 - Câu hỏi hay gặp:
   - Hub nằm ở đâu? Trong case folder của học viên, private mặc định; xuất bản lên GitHub là tuỳ chọn.
 - Speaker notes:
-  - Đây là các file học viên mang ra khỏi buổi 2 và buổi practice
+  - Đây là các file bạn mang ra khỏi buổi 2 và chuỗi việc ở nhà
   - Hub private mặc định, nằm trong case folder; xuất bản là tuỳ chọn
-  - Buổi 3 và 4 dùng các file này làm đầu vào cho evidence pack và opportunity
+  - Lesson 3 dùng claim và insight của bạn làm đầu vào cho persona, journey map và opportunity
   - Mỗi file có nguồn hoặc nhãn "chưa có nguồn"
 
-  > Bạn muốn file nào đầy đủ nhất trước buổi 3?
+  > Bạn muốn file nào đầy đủ nhất trước Lesson 3?
 - 🎨 Visual hint: SCHEMATIC. Một hộp "Knowledge Hub" chứa các ô purple nhỏ mang tên file, đúng màu và tên như trên sơ đồ Knowledge.
 
 ---
 
 ### MILESTONE · Q&A
-- Num: 6
+- Num: 5
 - Kicker: Questions
 - Title: Questions\n*and answers*
-- Sub: Hỏi đáp, rồi buổi practice và bài tập tiếp theo
+- Sub: Hỏi đáp, rồi chuỗi việc ở nhà
 - Ví dụ: Không cần. Học viên hỏi về case của mình.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Sáu phút; hai slide tiếp theo chiếu trong phase này
-  - Gom câu hỏi theo các bước Break the brief; câu nào quá riêng thì hẹn ở buổi practice
-  - Nhắc: buổi practice là nơi làm, buổi này chỉ để biết cần làm gì
+  - Năm phút; hai slide tiếp theo chiếu trong phase này
+  - Gom câu hỏi theo các bước Break the brief và synthesis; câu nào quá riêng thì hẹn ở buổi practice trên lớp
+  - Nhắc: chuỗi việc ở nhà là nơi làm, buổi này chỉ để biết cần làm gì
 
-  > Điều gì bạn muốn hỏi trước khi vào buổi practice?
+  > Điều gì bạn muốn hỏi trước khi bắt đầu làm ở nhà?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
 
 ### PRACTICE · Next steps
 - Kicker: Next
-- Title: Practice and homework
+- Title: Practice at home
 - On-slide:
-  - Buổi practice 90 phút ngay sau buổi này
-  - Làm: hoàn thiện bộ nguyên tắc, chạy Break the brief theo thứ tự trên case của bạn
-  - Về nhà: lên lịch 2 đến 3 buổi phỏng vấn ngắn
+  - Làm ở nhà, khoảng 4 giờ, trên case của bạn
+  - Chuỗi việc: nguyên tắc, research plan, phỏng vấn, synthesis, hub
+  - Mỗi bước một file; đầu ra bước trước là đầu vào bước sau
+  - Buổi practice trên lớp: làm tiếp phần dang dở, rồi được chấm
 - Ví dụ: Không cần. Slide giao việc.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Buổi practice là nơi làm scope và bốn hoạt động theo thứ tự; mang theo case folder và brief hoặc PRD đã ẩn danh
-  - Bài tập về nhà đủ nhỏ để không chồng lên buổi practice: lên lịch phỏng vấn để có quote cho buổi 3
-  - Học viên có case nhạy cảm dùng case mẫu của chương trình
-  - Nội dung chi tiết của buổi practice sẽ gửi riêng
+  - Sáu bước theo thứ tự: bộ nguyên tắc, research plan (scope, UX observation, giả định, research questions, competitor), phỏng vấn user thật, ẩn danh transcript, synthesis, đưa insight lên hub
+  - Phỏng vấn cần hẹn lịch và consent, nên bắt đầu hẹn người ngay hôm nay
+  - Ẩn danh transcript trước khi đưa cho AI; dữ liệu gốc ở lại ngoài vùng AI đọc
+  - Buổi practice trên lớp làm tiếp phần chưa xong nếu còn thời gian, rồi mình chấm; cách chấm chưa quyết, sẽ báo sau
+  - Chuỗi việc kết thúc bằng ba phút ghi learning log và một câu reflection; log là file riêng tư và được đọc lại ở buổi cuối
+  - Số giờ và nội dung chi tiết sẽ gửi riêng
 
-  > Bạn sẽ mang case nào đến buổi practice?
-- 🎨 Visual hint: SCHEMATIC. Hai thẻ practice cạnh nhau: "Practice" và "Homework", viền ink, mũi tên purple đầu mỗi dòng.
+  > Bạn sẽ hẹn phỏng vấn ai, và hẹn trong tuần này được không?
+- 🎨 Visual hint: SCHEMATIC. Hai thẻ cạnh nhau: "At home" và "In class", viền ink, mũi tên purple đầu mỗi dòng.
 
 ---
 

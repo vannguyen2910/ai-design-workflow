@@ -1,5 +1,6 @@
 ---
 title: "Run the Four Steps"
+summary: "Chạy bốn bước trên quote phỏng vấn của bạn và ghi insight vào hub."
 type: practice
 program: ai-design-workflow
 lesson: research-you-can-trust
@@ -36,7 +37,7 @@ File nào chưa có thì ghi "chưa có" ở đầu `work/user-voice-synthesis.m
 
 Tên file là gợi ý theo workspace template của chương trình; bạn có thể đặt tên khác, miễn mỗi bước có một đầu ra lưu lại được.
 
-**AI soạn nháp, bạn kiểm tra, bạn quyết định.** Chỉ đưa AI quote đã ẩn danh và các file bạn đã kiểm tra. Yêu cầu AI chỉ dùng những gì bạn đưa, trả lại nguyên văn kèm quote ID, và được nói unknown. Điều từ `ux-audit.md` hoặc `competitor-analysis.md` là **giả thuyết cần quote xác nhận**, không phải bằng chứng về người dùng. Prompt mẫu ở [Lesson 3](research-you-can-trust-lesson.md) mục 9. **Bấm giờ từng bước** và ghi vào bảng cuối `work/user-voice-synthesis.md` để tự đo thời gian tiết kiệm.
+**AI soạn nháp, bạn kiểm tra, bạn quyết định.** Chỉ đưa AI quote đã ẩn danh và các file bạn đã kiểm tra. Yêu cầu AI chỉ dùng những gì bạn đưa, trả lại nguyên văn kèm quote ID, và được nói unknown. Điều từ `ux-audit.md` hoặc `competitor-analysis.md` là **giả thuyết cần quote xác nhận**, không phải bằng chứng về người dùng. Prompt mẫu cho bốn bước ở [Lesson 2](../../02-discover-the-problem/materials/discover-the-problem-lesson.md) mục 8, và cho persona, journey map, opportunity ở [Lesson 3](research-you-can-trust-lesson.md) mục 8. **Bấm giờ từng bước** và ghi vào bảng cuối `work/user-voice-synthesis.md` để tự đo thời gian tiết kiệm.
 
 ### Step 1 · Build persona · 24 phút · AI soạn nháp, bạn kiểm tra
 
@@ -60,6 +61,8 @@ Tên file là gợi ý theo workspace template của chương trình; bạn có 
 
 ### Step 4 · Challenge và cập nhật giả định · 14 phút · YOU, AI đóng vai người phản biện
 
+*Điểm coaching: giảng viên quan sát bước này, vì đây là chỗ dễ để AI viết hộ kết luận. Bạn sẽ nhận phản hồi về cách phản biện của mình.*
+
 - Chọn một claim quan trọng nhất (từ persona, journey map hoặc opportunity) và viết lại bằng lời của bạn.
 - Nhờ AI phản biện: chỗ nói quá, quote có thể sai, ba cách giải thích khác, điều bị bỏ, dữ liệu mới nào làm claim sai. Chỉ chấp nhận điều AI chỉ ra bằng quote ID có thật.
 - Bạn quyết định: ghi ý kiến trái chiều giữ lại và điều gì khiến bạn đổi ý. Phép thử: đóng AI lại, bạn còn giải thích được claim và chỉ ra quote nào đỡ nó không?
@@ -68,12 +71,18 @@ Tên file là gợi ý theo workspace template của chương trình; bạn có 
 
 ### Step 5 · Lead, insight hub và problem brief · 16 phút · YOU
 
-- **Một trang cho lead (6 phút):** quyết định, claim của bạn, evidence (bao nhiêu người, bao nhiêu quote, các quote ID), điều dữ liệu không cho biết, ý kiến trái chiều đã giữ, trạng thái các giả định, việc AI đã làm và bạn đã kiểm tra (kèm số lỗi đếm được), việc tiếp theo đề xuất.
+- **Một trang cho lead (6 phút, gồm 2 phút đọc cho bạn cùng cặp và nghe một phản hồi):** quyết định, claim của bạn, evidence (bao nhiêu người, bao nhiêu quote, các quote ID), điều dữ liệu không cho biết, ý kiến trái chiều đã giữ, trạng thái các giả định, việc AI đã làm và bạn đã kiểm tra (kèm số lỗi đếm được), việc tiếp theo đề xuất.
 - **Insight hub (3 phút):** copy `insights/_templates/_template-opportunity.md` vào `insights/opportunities/`, đặt tên theo mã tiếp theo (ví dụ `O1.md`) cho opportunity xếp hạng cao nhất, điền evidence bằng quote ID.
 - **Problem brief và Gate 1 (7 phút):** bắt đầu `work/problem-brief.md` từ outcome và success metric trong `research-questions.md`, opportunity đã xếp hạng ở Step 3, severity và gates trong `principles.md`. Chạy Gate 1 theo [Gates](../../../assets/starter-files/case-folder-template/hub/gates.md); check nào bỏ thì ghi lý do. Phần còn lại của brief hoàn thiện sau buổi này.
 - **File:** `work/lead-summary.md` `[to confirm]` tên file, `insights/opportunities/O1.md`, `work/problem-brief.md`
 
-Còn khoảng 4 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đến 4 trước; Step 5 làm sau buổi này. Thời lượng chưa được thử với một lớp thật `[to confirm]`.
+### Step 6 · Learning log và reflection · 3 phút · YOU
+
+- Mở `_personal/learning-log.md` (file riêng tư, không đưa cho AI tool) và thêm một mục cho buổi này, ba dòng: bạn đã làm gì, phản hồi nào bạn nhận được (từ giảng viên, bạn cùng cặp hoặc kết quả đếm lỗi của AI), lần sau bạn đổi gì.
+- Trả lời một câu: phản hồi nào hôm nay làm bạn đổi cách nghĩ? Dòng trả lời ghi ngay dưới mục vừa thêm.
+- **File:** `_personal/learning-log.md`
+
+Còn khoảng 1 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đến 4 trước; Step 5 làm sau buổi này, và giữ lại Step 6 vì nó chỉ mất ba phút. Thời lượng chưa được thử với một lớp thật `[to confirm]`.
 
 ## Output
 
@@ -85,6 +94,7 @@ Còn khoảng 4 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đ�
 - `work/lead-summary.md` (một trang cho lead)
 - `insights/opportunities/O1.md` (entry insight hub)
 - `work/problem-brief.md` (bản đầu)
+- `_personal/learning-log.md` (một mục mới: ba dòng và câu reflection)
 
 ## Self-check
 
@@ -94,6 +104,7 @@ Còn khoảng 4 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đ�
 - [ ] Claim bạn chọn có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều.
 - [ ] `assumption.md` ghi rõ giả định nào evidence ủng hộ, bác hay vẫn unknown, kèm quote ID.
 - [ ] Bạn đã dùng lại các file từ buổi trước và ghi thời gian từng bước.
+- [ ] `_personal/learning-log.md` có một mục mới: điều đã làm, phản hồi nhận được, điều sẽ đổi, và câu reflection đã trả lời.
 
 ## If you get stuck
 

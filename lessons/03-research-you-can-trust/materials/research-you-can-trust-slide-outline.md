@@ -2,11 +2,11 @@
 title: "Turn Research into Insights You Can Trust"
 lesson_file: "research-you-can-trust-lesson.md"
 level: ""
-slide_count: 26
+slide_count: 22
 duration: "90 min"
 status: draft
 built_deck: ""
-last_synced: 2026-10-27
+last_synced: 2026-10-30
 ---
 
 > **Source of truth:** `research-you-can-trust-lesson.md`
@@ -20,6 +20,8 @@ last_synced: 2026-10-27
 
 > **Sync note (2026-10-27):** outline được viết lại cùng lesson. Bản cũ (23 slide, tám bước và ba cổng, evidence menu) nằm ở `materials/_archive/research-you-can-trust-slide-outline-pre-four-steps-2026-10-27.md`. Các ví dụ đánh dấu `bản nháp` chờ Winnie xác nhận hoặc thay.
 
+> **Sync note (2026-10-30):** synthesis chuyển sang Lesson 2 (tám slide: ba quy tắc, bốn câu hỏi về dữ liệu, kiểm tra quote, bốn bước, ai làm gì, năm điều cần soi, activity viết claim và cách làm). Thêm slide ôn một trang, activity mới "persona có quote hay không" (hai slide) và slide package thành agent (chuyển từ Lesson 2). Cheat sheet chín câu hỏi rút còn bốn câu. Bản trước (26 slide) nằm ở `materials/_archive/research-you-can-trust-slide-outline-pre-synthesis-move-2026-10-30.md`.
+
 > **Deck status:** chưa có deck nào được build từ outline này.
 
 ---
@@ -29,22 +31,22 @@ last_synced: 2026-10-27
 | Field | Value |
 |---|---|
 | Program | AI Design Workflow |
-| Track / session | Buổi 3 của series, 90 phút, online, 7 đến 8 học viên; buổi practice 90 phút ngay sau đó |
+| Track / session | Buổi 3 của series, 90 phút, online, 7 đến 8 học viên; sau đó là chuỗi practice ở nhà (khoảng 4 giờ), rồi buổi practice trên lớp |
 | Stage | Discover |
 | Prior session | Buổi 2: Discover the Problem |
-| Next session | Buổi practice của buổi 3, rồi buổi 4: Frame the Problem Worth Solving |
-| Running example | Case Kitchen Crate của chương trình (app meal-kit hư cấu, 24 quote có ID: review R, forum F, phỏng vấn I); học viên làm việc trên quote của chính mình ở buổi practice |
+| Next session | Chuỗi practice ở nhà và buổi practice trên lớp, rồi buổi 4: Frame the Problem Worth Solving |
+| Running example | Case Kitchen Crate của chương trình (app meal-kit hư cấu, 24 quote có ID: review R, forum F, phỏng vấn I); học viên làm việc trên claim và insight của chính mình ở chuỗi practice |
 
 ---
 
-## Slide structure: 26 slides
+## Slide structure: 22 slides
 
-- Arc: **Open** (cover, ice breaker) → **Theory** (divider cộng năm phần: ôn quote, bốn bước, persona, journey map, opportunity) → **Activity** (Write and challenge, 14 phút) → **Insight hub** → **Hỏi đáp** (cheat sheet chín câu hỏi) → **Close** (bài tập về nhà, lời kết, kết thúc).
-- Khớp với mười phase của lesson (mục 8.1). Ice breaker = slide 1–2. Theory = slide 3–17: ôn quote = 4–6, bốn bước = 7–9, persona = 10–12, journey map = 13–15, opportunity = 16–17. Activity = slide 18–19. Insight hub = slide 20–21. Hỏi đáp = slide 22–23. Close = slide 24–26.
-- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 5, activity = 14, hỏi đáp = 7. Timing các phase: ice breaker 5, ôn 7, bốn bước 11, persona 9, journey map 9, opportunity 7, activity 14, insight hub 6, hỏi đáp 7, close 5; tổng nội dung 80 trên 90 phút, buffer 10 phút. Slide 23 (cheat sheet) chiếu trong lúc hỏi đáp.
-- Theory khoảng 43 phút (ôn đến opportunity), rồi activity 14 phút, rồi insight hub. Mỗi phần theory kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
-- Thứ tự cắt khi quá giờ: rút insight hub còn slide 20, chuyển năm điều cần soi (slide 9) sang cheat sheet, bỏ slide 15, rồi rút activity còn 10 phút (bỏ bước chia sẻ).
-- Cái bẫy của buổi nằm ở slide 12: persona do AI tự sinh nghe hợp lý nhưng không có quote nào đỡ.
+- Arc: **Open** (cover, ice breaker) → **Ôn** (divider, từ quote đến claim, chuỗi đến insight hub) → **Theory** (persona, journey map, opportunity) → **Activity** (Persona check, 10 phút) → **Insight hub** → **Package** → **Hỏi đáp** (cheat sheet bốn câu hỏi) → **Close** (chuỗi việc ở nhà, lời kết, kết thúc).
+- Khớp với mười phase của lesson (mục 7.1). Ice breaker = slide 1–2. Ôn = slide 3–5. Persona = 6–7, journey map = 8–10, opportunity = 11–12. Activity = 13–14. Insight hub = 15–16. Package = 17. Hỏi đáp = 18–19. Close = 20–22.
+- Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 5, activity = 10, hỏi đáp = 6. Timing các phase: ice breaker 5, ôn 5, persona 10, journey map 9, opportunity 8, activity 10, insight hub 6, package 5, hỏi đáp 6, close 5; tổng nội dung 69 trên 90 phút, buffer 21 phút `[to confirm]` (có thể dùng cho trang cho lead hoặc coaching trên activity). Slide 19 (cheat sheet) chiếu trong lúc hỏi đáp.
+- Theory khoảng 27 phút (persona đến opportunity), rồi activity 10 phút, rồi insight hub và package. Mỗi phần theory kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
+- Cái bẫy của buổi: slide 7, persona do AI tự sinh nghe rất hợp lý nhưng không có quote nào đỡ; activity ở slide 13–14 luyện đúng phép thử này.
+---
 
 ---
 
@@ -82,10 +84,10 @@ last_synced: 2026-10-27
 
   - Năm phút, cả lớp; mình nói trước hai mươi giây, rồi mỗi người nói tên và một câu
   - Ghi nhanh nguyên nhân lên bảng: mẫu nhỏ, người nói to, chỉ thấy điều mình mong thấy
-  - Hỏi nhanh về buổi 2: tin gửi business đã đi chưa, đã có trả lời nào chưa
+  - Hỏi nhanh về Practice 2: ai đã phỏng vấn xong, ai còn đang hẹn người
   - Ai chưa có câu chuyện thì kể điều mình lo khi tin vào một insight
 
-  > **Giữ bảng này lại. Mình sẽ quay lại nó ở bước phản biện.**
+  > **Giữ bảng này lại. Mình sẽ quay lại nó ở phần ôn.**
 
   > Những lý do này chính là lý do cần một quy trình kiểm tra. Mình vào phần nội dung.
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới một cột trống "Vì sao đã tin" để ghi.
@@ -96,197 +98,46 @@ last_synced: 2026-10-27
 - Num: 01
 - Kicker: Six parts
 - Title: What you can\n*actually trust*
-- Sub: Ôn quote, bốn bước, persona, journey map, opportunity, insight hub
+- Sub: Ôn, persona, journey map, opportunity, insight hub, package
 - Speaker notes:
 
   > Những lý do trên bảng sẽ quay lại ở mỗi phần dưới đây.
 
   - Sáu phần, mỗi phần kết thúc bằng một câu hỏi ngắn bỏ phiếu bằng chat
-  - Activity viết claim và phản biện chéo nằm sau phần opportunity; insight hub là phần cuối
-  - Phần nội dung chính là persona, journey map và opportunity, nhưng mọi thứ dựa trên quote nên mình ôn quote trước
-  - Cả ba đều là ba dạng của cùng một câu claim; sau bốn bước bạn sẽ thấy vì sao
+  - Activity persona có quote hay không nằm sau phần opportunity; insight hub và package là hai phần cuối
+  - Phần nội dung chính là persona, journey map và opportunity, nhưng mọi thứ dựa trên claim đã kiểm tra nên mình ôn từ quote đến claim trước
+  - Cả ba đều là ba dạng của cùng một câu claim; sau bốn bước ở Lesson 2 bạn đã thấy vì sao
 
-  > Mình bắt đầu từ thứ nhỏ nhất: một quote.
+  > Mình bắt đầu bằng việc ôn từ quote đến claim.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
 
 ---
 
-### NUMBERED · Three rules with quotes
-- Kicker: Cách làm
-- Title: Ba quy tắc với quote
+### DIAGRAM · Recap: quote to claim
+- Kicker: Ôn
+- Title: Từ quote đến claim
 - On-slide:
-  - 01 · Ẩn danh trên máy trước khi đưa cho AI
-  - 02 · Mỗi quote có ID, ví dụ I01-03
-  - 03 · AI được phép nói unknown
-- Ví dụ: có (case Kitchen Crate: phỏng vấn 1 không nói gì về giá, I01-01 đến I01-03)
+  - Ba quy tắc: ẩn danh, quote ID, được nói unknown
+  - Kiểm tra quote: tìm đúng chuỗi, rồi đọc ngữ cảnh
+  - Bốn bước: Decision, Evidence, Claim, Challenge
+  - Năm điều cần soi trước khi đưa claim cho ai
+- Ví dụ: có (case Kitchen Crate: claim về ngày giao đã qua bốn bước ở Lesson 2; quote I01-03 bị cắt; giá chỉ có R06 và F07)
 - Câu hỏi hay gặp:
-  - Ẩn danh có thể nhờ AI làm không? Không; dùng find and replace trên máy, vì nhờ AI nghĩa là đã đưa dữ liệu gốc cho nó.
-  - Quote ID đặt thế nào? Theo nguồn và số thứ tự: R01 cho review, F01 cho bài đăng forum, I01-03 cho quote thứ 3 của phỏng vấn 01.
-  - Vì sao phải cho AI nói unknown? Nếu không, AI lấp chỗ trống bằng điều nghe hợp lý.
+  - Chưa làm synthesis thì sao? Quay lại Lesson 2, phần bốn bước; persona dựng từ quote chưa kiểm tra vẫn là persona chưa kiểm tra.
+  - Phải chạy lại bốn bước cho mỗi persona? Không; dùng claim đã qua bốn bước, và chạy lại Challenge cho phần mới.
 - Speaker notes:
 
-  > Hỏi AI một câu về người được phỏng vấn số 1 của Kitchen Crate: họ nghĩ gì về giá? Ba quote I01-01, I01-02, I01-03 nói về ngày giao, bỏ qua một tuần và thời gian nấu, không có chữ nào về giá.
+  > Ở Lesson 2, bạn đã có một claim về ngày giao của Kitchen Crate, mỗi dòng dẫn về quote ID. Hôm nay claim đó là nguyên liệu: nó sẽ thành persona, journey map và opportunity.
 
-  - Nếu cho phép, AI sẽ viết một câu nghe rất hợp lý về giá, và câu đó không có trong dữ liệu
-  - Vì vậy quy tắc ba: AI được phép nói unknown, và chỉ dùng quote mình đưa, trả lại nguyên văn
-  - Quy tắc một: ẩn danh bằng find and replace trên máy, thay tên bằng P1, P2, trước khi đưa cho AI
-  - Dữ liệu gốc chưa ẩn danh nằm ngoài vùng AI đọc, như đã làm ở buổi 1
-  - Quy tắc hai: mỗi quote có ID theo nguồn, R cho review, F cho forum, I cho phỏng vấn, để mọi dòng về sau dẫn được về đúng chỗ
+  - Bốn thứ mình đã học: ba quy tắc với dữ liệu, kiểm tra quote, bốn bước và năm điều cần soi
+  - Mình không dạy lại; chỉ nhắc để cả lớp cùng điểm xuất phát
+  - Persona dựng từ quote chưa kiểm tra vẫn là persona chưa kiểm tra
+  - Claim nào của bạn chưa qua Challenge thì nên quay lại bước đó trước khi làm tiếp
 
-  > **Quote ID là sợi dây mà cả buổi hôm nay dựa vào.**
+  > **Nguyên liệu của hôm nay là claim đã kiểm tra, không phải quote thô.**
 
-  > Hỏi nhanh: bạn nghĩ AI sẽ trả lời gì nếu hỏi về giá của người phỏng vấn số 1? Gõ một từ vào chat: unknown hoặc một câu trả lời.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba hàng, số purple.
-
----
-
-### NUMBERED · Questions about data
-- Kicker: Dữ liệu
-- Title: Bốn câu hỏi về dữ liệu
-- On-slide:
-  - 01 · Participant đã đồng ý điều gì, có nhắc AI không?
-  - 02 · Công ty có cho phép công cụ này không?
-  - 03 · Công cụ có huấn luyện trên dữ liệu không, đã tắt chưa?
-  - 04 · Mình đã ẩn danh trên máy chưa?
-- Ví dụ: bản nháp (một designer ở team product dán transcript vào công cụ cá nhân rồi mới biết công cụ có huấn luyện trên dữ liệu)
-- Câu hỏi hay gặp:
-  - Luật Việt Nam nói gì? Luật bảo vệ dữ liệu cá nhân có hiệu lực từ 01/01/2026 lấy sự đồng ý làm trung tâm; mình chưa đọc toàn văn, nên đây là thói quen chứ không phải tư vấn pháp lý.
-  - Câu nào cũng không biết thì sao? Hỏi lead hoặc bộ phận pháp lý trước khi đưa vào.
-  - Công cụ chạy trên máy có cần hỏi không? Vẫn cần hỏi câu một và hai, vì chúng là về participant và công ty.
-- Speaker notes:
-
-  > Một designer ở team product dán cả transcript phỏng vấn vào một công cụ cá nhân để tóm tắt nhanh. Một tuần sau mới đọc điều khoản và thấy công cụ dùng dữ liệu để huấn luyện.
-
-  - Dữ liệu đã đi rồi và không lấy lại được
-  - Participant chỉ đồng ý cho nghiên cứu, không đồng ý cho việc làm dữ liệu huấn luyện của một công ty khác
-  - Hướng dẫn cho nhà nghiên cứu cùng một ý: câu hỏi chính là công cụ có huấn luyện trên dữ liệu không và có tắt được không
-  - Hỏi thêm thời gian lưu dữ liệu và việc xoá có tới bản sao lưu không
-  - Bốn câu này là thói quen mình giữ, không phải tư vấn pháp lý
-
-  > **Chỉ cần một câu trả lời là "không biết" thì hỏi lead trước, đừng đoán.**
-
-  > Bạn trả lời được bao nhiêu trong bốn câu cho công cụ bạn đang dùng? Gõ một con số vào chat.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng, số purple.
-
----
-
-### DIAGRAM · Checking a quote
-- Kicker: Cách làm
-- Title: Cách kiểm tra quote
-- On-slide:
-  - Tìm đúng chuỗi trong transcript
-  - Đọc ngữ cảnh quanh quote
-  - Ghi lỗi, rồi sửa theo bản gốc
-- Ví dụ: bản nháp (quote I01-03 bị cắt mất câu cuối "I felt like I was doing it wrong")
-- Câu hỏi hay gặp:
-  - Tìm chuỗi bằng cách nào? Chức năng tìm của editor là đủ, hoặc một đoạn script ngắn.
-  - Nếu AI diễn đạt lại bằng lời khác thì sao? Không có chuỗi để tìm; đó là lý do bước sau yêu cầu dòng "quote này không cho biết gì".
-  - Bao nhiêu lỗi thì chạy lại? Chưa có ngưỡng đã đo; nhiều lỗi ở một bước thì chạy lại bước đó với prompt chặt hơn.
-- Speaker notes:
-
-  > Quote gốc I01-03 là: The first recipe was fine, but it said 30 minutes and I was still chopping at 30. I felt like I was doing it wrong. AI trả lại đến chữ still chopping at 30 rồi dừng.
-
-  - Cả câu nghe đúng, nhưng mất câu quan trọng nhất cho onboarding: khách cảm thấy mình làm sai
-  - Một nghiên cứu trên phỏng vấn thấy việc chọn quote của AI thấp và không đều, và lỗi từ đổi một từ, cắt cụt, đến ghép các đoạn làm đổi nghĩa
-  - Lớp một: tìm đúng chuỗi, bắt được quote bịa
-  - Lớp hai: đọc ngữ cảnh, bắt được quote có thật nhưng bị cắt
-  - Đếm lỗi và ghi lại, để biết có nên chạy lại không
-
-  > **Tìm đúng chuỗi chỉ bắt được quote bịa, không bắt được ý bị diễn đạt lại.**
-
-  > Câu hỏi 30 giây: trong hai lớp kiểm tra, lớp nào bắt được quote bị cắt? Gõ một hoặc hai vào chat.
-- 🎨 Visual hint: SCHEMATIC. Diagram `quote-check.html`: flowchart quote từ AI, hai câu hỏi kiểm tra, ghi lỗi và sửa, đếm lỗi để chạy lại hoặc dùng được.
-
----
-
-### DIAGRAM · Four steps with AI
-- Kicker: Quy trình
-- Title: Bốn bước với AI
-- On-slide:
-  - Decision: bạn gọi tên quyết định
-  - Evidence: AI rút quote, bạn kiểm tra
-  - Claim: AI đề xuất, bạn chọn và viết lại
-  - Challenge: bạn phản biện và giữ ý kiến trái chiều
-- Ví dụ: bản nháp (Decision của team Kitchen Crate: có thiết kế lại bước đổi ngày giao hay không)
-- Câu hỏi hay gặp:
-  - Vì sao Decision không nhờ AI? Chỉ bạn biết quyết định nào đang chờ; AI sẽ tóm tắt tất cả, không phục vụ quyết định nào.
-  - Có phải chạy đủ bốn bước mỗi lần? Không; với việc chỉ tìm một quote thì không cần.
-  - Khác gì tám bước cũ? Bốn bước thay cho quy trình cũ; phần kiểm tra quote vẫn giữ nguyên.
-- Speaker notes:
-
-  > Team Kitchen Crate có một quyết định chờ: có thiết kế lại bước đổi ngày giao hay không. Nếu không gọi tên quyết định này, AI sẽ tóm tắt cả 24 quote như nhau.
-
-  - Bước một là Decision, bạn tự viết, vì chỉ bạn biết quyết định nào đang chờ
-  - Bước hai là Evidence: AI rút observation, mỗi observation có mã người tham gia, một câu nguyên văn và một dòng "quote này không cho biết gì"
-  - Bước ba là Claim: AI đề xuất ba claim, bạn chọn một câu và viết lại bằng lời của mình
-  - Bước bốn là Challenge: bạn phản biện claim, và giữ lại ý kiến trái chiều
-  - Hai bước đánh dấu màu cam là hai quyết định không giao cho AI
-
-  > **AI soạn nháp được pattern. Độ tin cậy nằm ở số nguồn dẫn và ý kiến trái chiều bạn giữ lại.**
-
-  > Trong bốn bước, bạn thấy bước nào hay bị bỏ nhất khi làm vội? Gõ số bước vào chat.
-- 🎨 Visual hint: SCHEMATIC. Diagram `four-steps-with-ai.html`: swimlane hai làn (học viên, AI), bốn cột, hai bước màu cam.
-
----
-
-### COMPARE · Who does what
-- Kicker: So sánh
-- Title: AI làm, bạn làm
-- On-slide:
-  - AI: rút observation, đề xuất ba claim, đóng vai người phản biện
-  - Bạn: viết Decision, kiểm tra quote, chọn và viết lại claim
-  - Bạn vẫn đọc: một vài transcript trước, ngữ cảnh của mọi quote dùng
-  - Insight là của bạn khi đóng AI lại vẫn bảo vệ được claim
-- Ví dụ: bản nháp (hai designer: một người đóng AI lại vẫn giải thích được claim, một người thì không)
-- Câu hỏi hay gặp:
-  - Đọc bao nhiêu transcript là đủ? Chưa có nguồn đo; mình đề xuất một vài transcript trước khi hỏi AI, cần chạy thử lớp.
-  - Có thể giao AI đọc hết rồi mình chỉ kiểm tra không? Nghiên cứu cho thấy độ đồng thuận giữa AI và người khi gắn code thấp, nên vẫn cần đọc.
-  - Làm sao biết insight còn của mình? Đóng AI lại, giải thích claim và chỉ ra quote đỡ nó.
-- Speaker notes:
-
-  > Hai designer cùng chạy bốn bước trên cùng bộ quote. Khi stakeholder hỏi vì sao chọn claim này, một người đóng laptop lại vẫn trả lời được, người kia thì mở lại AI để hỏi.
-
-  - Người thứ nhất tự viết Decision, tự viết lại claim, tự phản biện; người thứ hai chỉ duyệt bản AI
-  - Một nghiên cứu so AI với người thấy AI nhanh hơn rất nhiều nhưng độ đồng thuận khi gắn code chỉ 36 đến 47%
-  - Người nhận ra theme tinh tế, mang tính diễn giải tốt hơn, nên vẫn cần đọc
-  - Đầu ra của AI trơn tru nên lỗi khó thấy hơn; đây là suy luận của mình, chưa có nguồn đo riêng cho research UX
-  - Cách làm: đọc một vài transcript trước khi hỏi AI, và đọc ngữ cảnh của mọi quote dùng cho claim
-
-  > **Đóng AI lại vẫn giải thích được claim, đó là phép thử insight còn của bạn.**
-
-  > Câu hỏi 30 giây: bạn đóng AI lại và giải thích được claim gần nhất của mình không? Có hoặc không.
-- 🎨 Visual hint: SCHEMATIC. Compare hai cột: AI làm và Bạn làm; hàng dưới là phép thử đóng AI lại.
-
----
-
-### NUMBERED · Five things to question
-- Kicker: Kiểm tra
-- Title: Năm điều cần soi
-- On-slide:
-  - 01 · Phạm vi: claim nói rộng hơn mẫu
-  - 02 · Đồng thuận: ai cũng nói vậy, thật không?
-  - 03 · Sample mix: ai có mặt, ai vắng mặt
-  - 04 · Giải pháp: nhảy sang tính năng
-  - 05 · Cảm xúc: quote mạnh che việc nó hiếm
-- Ví dụ: có (case Kitchen Crate: điều team tin là giá, so với 24 quote; R06, F07, I02-03, R01)
-- Câu hỏi hay gặp:
-  - Năm điều này lấy từ đâu? Từ cách mình soi insight khi review; chưa phải kết quả nghiên cứu.
-  - Có cần soi cả năm điều mỗi lần? Không; chọn một hai điều thấy rủi ro nhất với claim đang có.
-  - Sample mix khác phạm vi ở đâu? Phạm vi là claim nói rộng cỡ nào, sample mix là ai thực sự nằm trong mẫu.
-- Speaker notes:
-
-  > Team Kitchen Crate đang tin: giá là lý do chính khiến khách rời đi. Trong 24 quote, chỉ R06 và F07 nhắc tới giá, và R06 còn nói giá hơi cao nhưng đồ ăn ngon nên vẫn giữ gói.
-
-  - Đây là điều một: phạm vi, claim khách rời đi vì giá rộng hơn dữ liệu cho phép
-  - Điều hai là đồng thuận: I02-03 nói thời gian nấu làm phiền hơn giá, nên không phải ai cũng nói về giá
-  - Điều ba là sample mix: review nghiêng về người có cảm xúc mạnh, forum là người đã gặp vấn đề, hai người phỏng vấn đều lịch sự
-  - Điều bốn là giải pháp: nhảy sang thêm popup nhắc ngày giao thay vì nói nhu cầu
-  - Điều năm là cảm xúc: R01 nói nửa số đồ ăn bị hỏng nghe rất mạnh, nhưng chỉ là một review
-
-  > **Soi năm điều này ở bước Challenge, trước khi đưa claim cho ai.**
-
-  > Câu hỏi 30 giây: claim gần nhất bạn viết, điều nào trong năm điều này đáng lo nhất? Gõ số vào chat.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, năm hàng, số purple.
+  > Câu hỏi 30 giây: claim gần nhất của bạn đã qua bước Challenge chưa? Có hoặc không.
+- 🎨 Visual hint: SCHEMATIC. Diagram `four-steps-with-ai.html` của Lesson 2 thu nhỏ, kèm bốn dòng ôn bên cạnh.
 
 ---
 
@@ -527,55 +378,54 @@ last_synced: 2026-10-27
 
 ---
 
-### MILESTONE · Activity: Write and challenge
-- Num: 14
+### MILESTONE · Activity: Persona check
+- Num: 10
 - Kicker: Activity
-- Title: Write a claim,\n*then attack it*
-- Sub: Viết một claim từ bộ quote Kitchen Crate, rồi bạn cùng cặp phản biện
-- Ví dụ: Không cần. Activity dùng bộ quote Kitchen Crate.
+- Title: Which lines\n*have quotes?*
+- Sub: Đánh dấu từng dòng của persona do AI sinh: có quote đỡ hay không
+- Ví dụ: cần ví dụ: persona mẫu do AI sinh cho Kitchen Crate (sáu dòng, có dòng không quote nào đỡ; chưa soạn)
 - Speaker notes:
 
-  > Quyết định đang chờ: có thiết kế lại bước đổi ngày giao hay không. Bạn có 24 quote và bốn phút để viết một claim.
+  > Đây là một persona AI sinh cho Kitchen Crate. Nghe rất hợp lý. Bạn có mười phút để tìm dòng nào có quote đỡ và dòng nào không.
 
-  - Mười bốn phút: bốn phút viết một mình, sáu phút đổi bài và phản biện, bốn phút chia sẻ
-  - Bộ quote là quotes.md của case Kitchen Crate: 24 quote hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
-  - Bốn phút đầu không dùng AI: đây là phần bạn tự viết, đúng phép thử đóng AI lại
-  - Quote nào dẫn vào claim phải khớp từng chữ với bản gốc, kể cả khi bạn viết claim bằng tiếng Việt
+  - Mười phút: ba phút viết một mình, bốn phút theo cặp, ba phút cả lớp
+  - Persona mẫu có sáu dòng; một số dòng có quote đỡ, một số không, và có dòng quote nói ngược lại
+  - Bộ quote là quotes.md của case Kitchen Crate: 24 quote hư cấu, đã ẩn danh và có ID
+  - Không dùng AI trong activity này; đây là phép thử đóng AI lại
   - Chia lớp thành các cặp; mình đi coaching từng cặp
 
-  > **Không có quote ID thì không tính là một lỗi.**
+  > **Dòng nào không có quote thì xoá hoặc ghi unknown.**
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
 
-### PROCESS · How to write and challenge
+### PROCESS · How to check a persona
 - Kicker: Cách làm
-- Title: Cách viết và phản biện claim
+- Title: Cách kiểm tra persona
 - On-slide:
-  - Viết claim: ai, cần gì, khi nào, quyết định nào
-  - Dẫn ít nhất hai quote ID và một dòng "không cho biết gì"
-  - Đổi bài, phản biện bằng bốn câu hỏi
-  - Sửa claim, rồi chia sẻ lỗi bắt được hay nhất
-- Ví dụ: bản nháp (claim mẫu: "Mọi khách mới thấy công thức nấu lâu hơn ghi trên thẻ và cảm thấy mình làm sai", dẫn R05 và I01-03)
+  - Đánh dấu từng dòng: có quote ID hay không
+  - Đối chiếu quote gốc, từng chữ
+  - Dòng không có quote: xoá hoặc ghi unknown
+  - Một cặp chia sẻ dòng bắt được hay nhất
+- Ví dụ: cần ví dụ: persona mẫu do AI sinh cho Kitchen Crate, có dòng "nấu vào cuối tuần" không quote nào đỡ (chưa soạn)
 - Câu hỏi hay gặp:
-  - Viết claim bằng tiếng Việt được không? Được; quote dẫn vào giữ nguyên bản tiếng Anh và ID.
-  - Không tìm ra lỗi thì sao? Hỏi lại bốn câu: quote có đúng không, claim có rộng quá không, ý kiến trái chiều ở đâu, đây là nhu cầu hay tính năng.
-  - Có được hỏi AI không? Không trong activity này; muốn thử thì làm ở buổi practice.
+  - Dòng có quote nhưng quote nói ngược thì sao? Sửa theo quote và ghi vào danh sách lỗi.
+  - Không tìm ra dòng nào sai thì sao? Đếm lại từng dòng: có quote ID chưa, quote có khớp từng chữ chưa.
+  - Có được hỏi AI không? Không trong activity này; muốn thử thì làm ở nhà trong Practice 3.
 - Speaker notes:
 
-  > Claim mẫu: mọi khách mới thấy công thức nấu lâu hơn ghi trên thẻ và cảm thấy mình làm sai. Dẫn R05 và I01-03. Bạn bắt được lỗi nào?
+  > Dòng này nói khách mới thường nấu vào cuối tuần. Quote nào đỡ nó?
 
-  - Chữ mọi là lỗi phạm vi: hai quote không đủ để nói mọi khách
-  - R05 chỉ nói công thức lâu hơn ghi, không nói cảm giác làm sai; cảm giác đó chỉ có ở I01-03, một người: đó là lỗi cảm xúc
-  - Trong 24 quote không có ai nói thời gian nấu đúng như ghi, nên ý kiến trái chiều ở đây là chưa có; dòng "bộ quote này không cho biết gì" vẫn cần
-  - Bước một: viết claim theo mẫu ai làm hoặc cần gì khi nào, quan trọng với quyết định nào
-  - Bước hai: đổi bài, người nhận mở quote gốc đối chiếu từng chữ
-  - Bốn câu hỏi của người phản biện: quote có đúng không, claim có rộng quá không, ý kiến trái chiều nào bị bỏ, đây là nhu cầu hay tính năng
+  - Bước một: đánh dấu từng dòng, có quote ID hay không
+  - Bước hai: theo cặp, mở quote gốc đối chiếu từng chữ
+  - Có ba kết quả: quote đỡ khớp, quote chỉ gần đúng, hoặc không có quote
+  - Dòng không có quote thì xoá hoặc ghi unknown; dòng quote nói ngược thì sửa theo quote
+  - Cuối cùng một cặp kể dòng bắt được hay nhất; mình nối với năm điều cần soi ở Lesson 2
 
-  > **Mỗi lỗi phải kèm quote ID, không thì chưa tính.**
+  > **Mỗi lỗi phải kèm quote ID, hoặc ghi rõ không có quote.**
 
-  > Cặp nào đã bắt được lỗi đầu tiên? Gõ vào chat hoặc giơ tay.
-- 🎨 Visual hint: SCHEMATIC. Process bốn bước ngang, bước 3 active.
+  > Cặp nào đã tìm ra dòng không có quote đầu tiên? Gõ vào chat hoặc giơ tay.
+- 🎨 Visual hint: SCHEMATIC. Process bốn bước ngang, bước 2 active.
 
 ---
 
@@ -633,23 +483,49 @@ last_synced: 2026-10-27
 
   > **Thói quen cốt lõi là tìm trước khi hỏi lại, bước màu cam trên vòng.**
 
-  > Còn bảy phút hỏi đáp. Mình chiếu chín câu hỏi designer hay hỏi khi dùng AI cho research.
+  > Còn một việc cuối: khi quy trình đã chạy ổn, bạn đóng gói nó thành agent.
 - 🎨 Visual hint: SCHEMATIC. Diagram `insight-hub-loop.html`: vòng năm bước quanh insight hub; bước "Tìm trong hub" màu cam; hai mũi tên nét đứt đọc từ hub và ghi vào hub.
 
 ---
 
+### PROCESS · From workflow to agent
+- Kicker: How-to
+- Title: Package into an *agent*
+- On-slide:
+  - 01 · Viết quy trình thành step card
+  - 02 · Biến step card thành agent, dùng bộ nguyên tắc làm chuẩn
+  - 03 · Đóng góp agent và file vào hub
+- Ví dụ: bản nháp (bốn bước synthesis đã chạy ổn trên hai bộ quote của Kitchen Crate được đóng thành một agent)
+- Câu hỏi hay gặp:
+  - Package khi nào là đủ sớm? Khi quy trình đã chạy ít nhất hai lần trên hai đầu vào khác nhau và phần bạn kiểm tra đã được ghi rõ.
+- Speaker notes:
+
+  > Bốn bước synthesis đã chạy ổn trên hai bộ quote của Kitchen Crate. Bạn viết nó thành step card, rồi biến thành một agent dùng lại được.
+
+  - Step card ghi ai làm (bạn hay AI), đầu vào, đầu ra, check nào phải qua
+  - Agent là một bộ instruction dùng lại được, gắn với bộ nguyên tắc làm chuẩn
+  - Đóng gói sớm quá sẽ đóng gói cả lỗi; chờ khi quy trình đã chạy hai lần
+  - Agent không thay bước Challenge và bước kiểm tra quote; hai bước đó vẫn do bạn làm
+  - Khung này lặp lại ở các buổi sau
+
+  > Quy trình nào của bạn đã chạy đủ hai lần?
+
+- 🎨 Visual hint: SCHEMATIC. Ba bước ngang; bước 2 có một biểu tượng agent nhỏ nối với bộ nguyên tắc.
+
+---
+
 ### MILESTONE · Hỏi đáp
-- Num: 7
+- Num: 6
 - Kicker: Q and A
 - Title: Questions you\n*still have*
-- Sub: Chín câu hỏi, một trang cheat sheet
+- Sub: Bốn câu hỏi còn lại, một trang cheat sheet
 - Ví dụ: Không cần. Slide chuyển tiếp.
 - Speaker notes:
 
-  > Mình chiếu chín câu hỏi mà designer hay hỏi khi dùng AI cho research. Bạn hỏi câu bạn thấy chưa rõ, mình trả lời trên slide.
+  > Mình chiếu bốn câu hỏi còn lại mà designer hay hỏi khi dùng AI cho research. Năm câu đầu mình đã trả lời ở Lesson 2. Bạn hỏi câu bạn thấy chưa rõ, mình trả lời trên slide.
 
-  - Bảy phút; cheat sheet ở slide sau chiếu trong lúc hỏi đáp
-  - Nếu quá giờ, rút còn bốn phút và để câu còn lại cho buổi practice
+  - Sáu phút; cheat sheet ở slide sau chiếu trong lúc hỏi đáp
+  - Nếu quá giờ, rút còn ba phút và để câu còn lại cho buổi practice trên lớp
   - Câu hỏi nào chưa có nguồn đo thì mình nói thẳng là chưa có
   - Ghi lại câu hỏi mới để thêm vào cheat sheet cho lớp sau
 
@@ -658,68 +534,64 @@ last_synced: 2026-10-27
 
 ---
 
-### NUMBERED · Nine questions, one page
+### NUMBERED · Four questions, one page
 - Kicker: Cheat sheet
-- Title: Chín câu hỏi, một trang
+- Title: Bốn câu hỏi, một trang
 - On-slide:
-  - 01 · Được đưa dữ liệu vào AI không? Bốn câu hỏi về dữ liệu
-  - 02 · Không bịa quote? Tìm đúng chuỗi, đọc ngữ cảnh
-  - 03 · Còn phải đọc? Có, một vài transcript và ngữ cảnh mọi quote
-  - 04 · Insight còn của mình? Đóng AI lại vẫn bảo vệ được
-  - 05 · Làm phẳng khách hàng? Giữ ý kiến trái chiều cùng trang
-  - 06 · Đưa gì cho lead? Một trang: quyết định, claim, evidence, điều không biết
-  - 07 · Tiết kiệm bao nhiêu? Một bước giảm mạnh, cả quy trình chưa ai đo
-  - 08 · Khi nào bỏ AI? Mẫu nhỏ, nhóm dễ tổn thương, chưa được phép
-  - 09 · Dùng công cụ nào? Chọn theo năm tiêu chí
-- Ví dụ: có (bốn câu hỏi về dữ liệu, kiểm tra quote, bộ quote Kitchen Crate và các slide trước)
+  - 01 · Đưa gì cho lead? Một trang: quyết định, claim, evidence, điều không biết
+  - 02 · Tiết kiệm bao nhiêu? Một bước giảm mạnh, cả quy trình chưa ai đo
+  - 03 · Khi nào bỏ AI? Mẫu nhỏ, nhóm dễ tổn thương, chưa được phép
+  - 04 · Dùng công cụ nào? Chọn theo năm tiêu chí
+- Ví dụ: có (bộ quote Kitchen Crate, persona, journey map, opportunity và các slide trước)
 - Câu hỏi hay gặp:
   - Thời gian tiết kiệm thật sự là bao nhiêu? Một nghiên cứu trên 40 tin nhắn SMS thấy khoảng 20 phút so với 567 phút cho bước phân tích theme, với mô hình đời 2024. Không suy sang cả quy trình.
   - Công cụ nào tốt nhất? Không có đánh giá độc lập về độ chính xác; chọn theo dữ liệu, truy được nguồn, nói được unknown, công ty cho phép, xuất được dữ liệu.
   - Đưa gì cho lead? Một trang gồm bảy mục; mục việc đã kiểm tra là đề xuất của mình, chưa có nguồn cho thấy lead muốn đọc nó.
+  - Năm câu đầu của danh sách chín câu nằm ở đâu? Ở Lesson 2, phần synthesis.
 - Speaker notes:
 
   > Một designer hỏi: AI giúp mình tiết kiệm bao nhiêu thời gian? Một nghiên cứu thấy khoảng hai mươi phút so với hơn chín tiếng. Nhưng đó là phân tích theme trên bốn mươi tin nhắn SMS, không phải phỏng vấn.
 
-  - Câu bảy: con số lớn là của một bước, không phải cả quy trình gồm kiểm tra; chưa ai đo cả quy trình cho designer
-  - Câu tám: nên bỏ AI khi chưa chắc được phép đưa dữ liệu vào, khi mẫu nhỏ đọc hết được, nhóm dễ tổn thương, theme trừu tượng, hoặc quyết định lớn mà chỉ có bản AI chưa kiểm tra
-  - Câu chín: không có so sánh độc lập về độ chính xác, nên chọn theo tiêu chí dữ liệu, truy được nguồn, nói được unknown, được công ty cho phép, xuất được dữ liệu
-  - Câu sáu: một trang gồm quyết định, claim, evidence, điều không biết, ý kiến trái chiều, việc đã kiểm tra, việc tiếp theo
-  - Câu một đến năm mình đã nói trong buổi
+  - Câu hai: con số lớn là của một bước, không phải cả quy trình gồm kiểm tra; chưa ai đo cả quy trình cho designer
+  - Câu ba: nên bỏ AI khi chưa chắc được phép đưa dữ liệu vào, khi mẫu nhỏ đọc hết được, nhóm dễ tổn thương, theme trừu tượng, hoặc quyết định lớn mà chỉ có bản AI chưa kiểm tra
+  - Câu bốn: không có so sánh độc lập về độ chính xác, nên chọn theo tiêu chí dữ liệu, truy được nguồn, nói được unknown, được công ty cho phép, xuất được dữ liệu
+  - Câu một: một trang gồm quyết định, claim, evidence, điều không biết, ý kiến trái chiều, việc đã kiểm tra, việc tiếp theo
+  - Năm câu còn lại của danh sách chín câu mình đã nói ở Lesson 2
 
-  > **Với câu nào chưa có số đo, mình nói thẳng là chưa có, và đề xuất bạn tự đo ở buổi practice.**
+  > **Với câu nào chưa có số đo, mình nói thẳng là chưa có, và đề xuất bạn tự đo ở chuỗi practice.**
 
-  > Câu nào trong chín câu này bạn vẫn còn băn khoăn nhất?
-- 🎨 Visual hint: SCHEMATIC. Numbered lưới 3 cột, chín ô; chữ nhỏ đọc được trong một cái nhìn; giữ trên màn hình suốt hỏi đáp.
+  > Câu nào trong bốn câu này bạn vẫn còn băn khoăn nhất?
+- 🎨 Visual hint: SCHEMATIC. Numbered lưới 2 cột, bốn ô; chữ nhỏ đọc được trong một cái nhìn; giữ trên màn hình suốt hỏi đáp.
 
 ---
 
 ### PRACTICE · Homework and next session
 - Kicker: Việc tiếp theo
-- Title: Chuẩn bị cho practice
+- Title: Practice at home
 - On-slide:
-  - Trước buổi practice, dưới 20 phút: ẩn danh quote của phỏng vấn peer, gắn participant code và quote ID
-  - Viết một đến ba quyết định mà nghiên cứu phục vụ
-  - Mang theo các file từ Practice 2: scope, giả định, UX audit, competitor analysis, principles
-  - Ở buổi practice: chạy bốn bước trên dữ liệu của bạn, dùng output buổi trước làm đầu vào
-  - Một trang cho lead, và một entry cho insight hub
-  - Bấm giờ từng bước để tự đo thời gian tiết kiệm
+  - Làm ở nhà, khoảng 4 giờ, trên claim và insight của bạn
+  - Persona, journey map, opportunity, mỗi dòng dẫn về quote ID
+  - Challenge và cập nhật giả định; một trang cho lead
+  - Một entry cho insight hub; bấm giờ từng bước
+  - Buổi practice trên lớp: làm tiếp phần dang dở, rồi được chấm
 - Ví dụ: Không cần. Slide giao việc.
 - Speaker notes:
 
-  > Hôm nay bạn đã thấy cả quy trình bốn bước. Ở buổi practice, bạn dùng đúng quy trình đó trên dữ liệu của mình.
+  > Hôm nay bạn đã thấy ba dạng của claim. Ở nhà, bạn dùng đúng chuỗi đó trên claim và insight của chính mình.
 
-  - Bài về nhà dưới hai mươi phút: ẩn danh quote, gắn ID, viết Decision
-  - Ẩn danh bằng find and replace trên máy; không nhờ AI làm
-  - Quyết định bạn viết sẽ là bước một ở buổi practice
-  - Output của buổi trước là input của buổi này: scope và research question cho Decision, giả định để quote xác nhận hoặc bác, UX audit và competitor analysis làm giả thuyết
-  - Ở buổi practice, bạn chạy bốn bước, làm một trang cho lead và đóng góp một entry vào hub
+  - Đầu vào là claim và insight bạn đã có từ Practice 2, không phải quote peer
+  - Output của các buổi trước là input của chuỗi này: scope và research question cho Decision, giả định để quote xác nhận hoặc bác, UX audit và competitor analysis làm giả thuyết
+  - Bạn làm persona, rồi journey map, rồi opportunity, mỗi dòng dẫn về quote ID
+  - Làm một trang cho lead và đóng góp một entry vào insight hub
   - Bấm giờ từng bước; đây là cách bạn tự trả lời câu hỏi tiết kiệm bao nhiêu thời gian
-  - Kết quả là evidence pack và problem brief, và Gate 1 chạy ở đó
+  - Kết quả là evidence pack và problem brief; Gate 1 chạy ở đó
+  - Buổi practice trên lớp làm tiếp phần chưa xong, rồi mình chấm; cách chấm chưa quyết, sẽ báo sau
+  - Cuối chuỗi, ghi learning log ba dòng và trả lời một câu: phản hồi nào hôm nay làm bạn đổi cách nghĩ?
 
-  > **Quote đã ẩn danh và quyết định bạn viết là đầu vào của buổi practice.**
+  > **Claim và insight bạn đã kiểm tra là đầu vào của chuỗi practice.**
 
-  > Ai chưa có quote từ phỏng vấn peer, hãy nhắn cho mình hôm nay.
-- 🎨 Visual hint: TYPOGRAPHIC. Practice layout hai card: Trước buổi practice (bài về nhà) và Ở buổi practice.
+  > Ai chưa có claim đã qua Challenge ở Practice 2, hãy nhắn cho mình hôm nay.
+- 🎨 Visual hint: TYPOGRAPHIC. Practice layout hai card: At home và In class.
 
 ---
 
@@ -735,12 +607,13 @@ last_synced: 2026-10-27
   - Bốn bước: Decision, Evidence, Claim, Challenge
   - Ba dạng của claim: persona, journey map, opportunity
   - Quote ID là sợi dây; ô chưa có quote thì ghi assumption
+  - Quy trình chạy ổn hai lần thì package thành agent
   - Ý kiến trái chiều được giữ cùng trang với claim
   - Insight đã kiểm tra thì đóng góp vào hub, để lần sau tìm trước khi hỏi
 
   > **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.**
 
-  > Mình hẹn bạn ở buổi practice.
+  > Mình hẹn bạn ở buổi practice trên lớp.
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; ba dòng, accent ở dòng cuối.
 
 ---
@@ -749,9 +622,9 @@ last_synced: 2026-10-27
 - Kicker: End
 - Title: Thank *you*
 - Sign: Winnie Nguyen
-- Contact: Buổi tiếp theo, buổi practice của buổi 3
+- Contact: Buổi tiếp theo: chuỗi practice ở nhà, rồi buổi practice trên lớp
 - Speaker notes:
   - Cảm ơn cả lớp
-  - Nhắc lại: quote đã ẩn danh và các quyết định là đầu vào của practice
-  - Gửi cheat sheet chín câu hỏi sau buổi học
+  - Nhắc lại: claim và insight của bạn là đầu vào của practice
+  - Gửi cheat sheet bốn câu hỏi sau buổi học
 - 🎨 Visual hint: End layout, nền paper-deeper; title lớn nghiêng, tên bên dưới.

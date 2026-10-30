@@ -1,5 +1,6 @@
 ---
 title: "Break the Brief"
+summary: "Hoàn thiện principles.md và chạy Break the brief trên case của bạn."
 type: practice
 program: ai-design-workflow
 lesson: discover-the-problem
@@ -71,7 +72,13 @@ Quy tắc chung cho mọi bước: **nhớ method, để AI soạn nháp, bạn 
 
 - Hẹn hai đến ba buổi phỏng vấn ngắn với đồng nghiệp hoặc người dùng. Quote thu được dùng cho Lesson 3. Research question ở Step 5 là đầu vào cho câu hỏi phỏng vấn.
 
-Còn khoảng 10 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đến 5 trước, Step 6 làm sau buổi này. Thời lượng từng bước chưa được thử với một lớp thật `[to confirm]`.
+### Step 8 · Learning log và reflection · 3 phút · YOU
+
+- Thêm một mục vào `_personal/learning-log.md` (file riêng tư, không đưa cho AI tool), ba dòng: bạn đã làm gì, phản hồi nào bạn nhận được (từ giảng viên, bạn cùng lớp hoặc số finding AI sai bạn đếm ở Step 3), lần sau bạn đổi gì.
+- Trả lời một câu: phản hồi nào hôm nay làm bạn đổi cách nghĩ? Ghi ngay dưới mục vừa thêm.
+- **File:** `_personal/learning-log.md`
+
+Còn khoảng 7 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đến 5 trước, Step 6 làm sau buổi này, và giữ lại Step 8 vì nó chỉ mất ba phút. Thời lượng từng bước chưa được thử với một lớp thật `[to confirm]`.
 
 ## Output
 
@@ -81,6 +88,7 @@ Còn khoảng 10 phút dự phòng. Nếu thiếu giờ, hoàn thành Step 1 đ�
 - `assumption.md` (có ba giả định hàng đầu)
 - `competitor-analysis.md` (lượt đầu)
 - Lịch phỏng vấn peer
+- `_personal/learning-log.md` (một mục mới: ba dòng và câu reflection)
 
 Xem hình dạng các file này khi đã nằm trong hub ở [Outcome Examples](../../../examples/outcome-examples/README.md).
 
@@ -93,6 +101,7 @@ Xem hình dạng các file này khi đã nằm trong hub ở [Outcome Examples](
 - [ ] Mỗi research question gắn với một giả định, một quyết định và nơi tìm câu trả lời.
 - [ ] Bạn đã kiểm tra từng dòng AI soạn ở Step 3, 4 và 5, và biết dòng nào bạn đã sửa.
 - [ ] Bạn biết file nào do AI soạn nháp, và phần nào bạn đã kiểm tra.
+- [ ] `_personal/learning-log.md` có một mục mới: điều đã làm, phản hồi nhận được, điều sẽ đổi, và câu reflection đã trả lời.
 
 ## If you get stuck
 

@@ -1,5 +1,6 @@
 ---
 title: "Build the Prototype"
+summary: "Dựng luồng chính của prototype từ design system của bạn."
 type: practice
 program: ai-design-workflow
 lesson: ai-prototyping

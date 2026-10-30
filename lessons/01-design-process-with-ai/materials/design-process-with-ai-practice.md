@@ -1,5 +1,6 @@
 ---
 title: "Case Folder and Hub"
+summary: "Dựng case folder, context pack và Knowledge Hub cho case của bạn."
 type: practice
 program: ai-design-workflow
 lesson: design-process-with-ai
@@ -54,7 +55,14 @@ Dựng nền mà cả chương trình chạy trên đó: một project folder ch
 - Đổi `context/product-and-users.md` với một bạn trong lớp.
 - Trả lời một câu: người ngoài có hình dung được sản phẩm và người dùng sau khi đọc file không?
 
-Còn khoảng 10 phút dự phòng cho phần coaching theo nhóm nhỏ. Thời lượng từng bước chưa được thử với một lớp thật.
+### Step 7 · Learning log đầu tiên · 3 phút · YOU
+
+- Mở `_personal/learning-log.md` (file riêng tư, như `my-direction.md`, không đưa cho AI tool) và thêm mục đầu tiên, ba dòng: bạn đã làm gì, phản hồi nào bạn nhận được (từ giảng viên, từ bạn đọc thử ở Step 6, hoặc từ câu trả lời của AI ở Step 4), lần sau bạn đổi gì.
+- Trả lời một câu: phản hồi nào hôm nay làm bạn đổi cách nghĩ? Ghi ngay dưới mục vừa thêm.
+- Từ nay, mỗi buổi practice kết thúc bằng bước này. Cuối khoá, bạn đọc lại cả log để tìm điều lặp lại.
+- **File:** `_personal/learning-log.md`
+
+Còn khoảng 7 phút dự phòng cho phần coaching theo nhóm nhỏ. Thời lượng từng bước chưa được thử với một lớp thật.
 
 ## Output
 
@@ -63,6 +71,7 @@ Còn khoảng 10 phút dự phòng cho phần coaching theo nhóm nhỏ. Thời 
 - `context/data-rules.md`
 - `context/open-questions.md`
 - `_personal/my-direction.md`
+- `_personal/learning-log.md` (mục đầu tiên: ba dòng và câu reflection)
 
 ## Self-check
 
@@ -70,6 +79,7 @@ Còn khoảng 10 phút dự phòng cho phần coaching theo nhóm nhỏ. Thời 
 - [ ] `context-product-and-users.md` đủ cụ thể để người ngoài hình dung được người dùng.
 - [ ] Data rules viết bằng lời của chính bạn, không sao chép nguyên mẫu.
 - [ ] `my-direction.md` có hai đến ba dòng và nằm ngoài context pack.
+- [ ] `_personal/learning-log.md` có mục đầu tiên: điều đã làm, phản hồi nhận được, điều sẽ đổi, và câu reflection đã trả lời.
 
 ## If you get stuck
 

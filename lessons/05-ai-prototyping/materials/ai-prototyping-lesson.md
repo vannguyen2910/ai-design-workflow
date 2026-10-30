@@ -1,5 +1,6 @@
 ---
 title: "AI Prototyping"
+summary: "Dựng prototype từ design system riêng bằng rules file, thay vì để AI tự vẽ lại từng màn hình."
 subtitle: "Dựng prototype từ design system riêng bằng rules file, thay vì để AI tự vẽ lại từng màn hình"
 type: lesson
 program: ai-design-workflow

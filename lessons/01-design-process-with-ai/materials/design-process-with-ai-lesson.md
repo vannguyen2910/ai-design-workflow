@@ -1,25 +1,24 @@
 ---
 title: "Your Design Process, with AI"
+summary: "Nghề thiết kế đang đi về đâu, bốn stage bạn đã biết, AI giúp gì ở mỗi stage và workspace mà các buổi sau sẽ dùng."
 subtitle: "Where design careers are heading, the four stages you already know, where AI helps in each, and the workspace every later lesson builds on"
 type: lesson
 program: ai-design-workflow
 tags: [ai, design-process, double-diamond, terminology, context, folder, data-safety, hub, foundational]
 level: foundational
-duration: "90 min (buổi 1) + bài tập về nhà"
+duration: "90 min (buổi 1) + Practice 1 ở nhà"
 date: 2026-10-06
 draft: true
-slides: ""
+slides: "https://claude.ai/artifact/St1HGVWFHvngrRsdUFb8Xv"
 previous-session: ""
 next-session: "Discover the Problem"
 ---
 
 > **Sync note 2026-10-23.** Buổi được đổi theo hình dạng chung của chương trình (ice breaker, theory, một activity, hỏi đáp) và thêm hai phần cho buổi đầu: Agent và đội AI (mục 4.4) và Knowledge Hub. Theory nới lên 44 phút, một activity 18 phút, tổng 82 phút. Bản trước nằm trong thư mục lưu trữ của lesson.
 
-> **Sync note 2026-10-30.** Trên site, Lesson 1 là một trang tổng quan với hai card: Lý thuyết (file này) và Thực hành (`design-process-with-ai-practice.md`). Sidebar chỉ còn mục Lesson 1. Nội dung buổi và slide outline không đổi.
-
 ## Abstract
 
-Tài liệu này mô tả buổi đầu tiên của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Module là buổi 1 của chương trình, một buổi 90 phút trình bày bối cảnh, khung kiến thức và một activity ngắn trên lớp. Phần dựng project folder trên case của chính người học chuyển thành bài tập về nhà ngay sau buổi.
+Tài liệu này mô tả buổi đầu tiên của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Module là buổi 1 của chương trình, một buổi 90 phút trình bày bối cảnh, khung kiến thức và một activity ngắn trên lớp. Phần dựng project folder trên case của chính người học chuyển thành Practice 1 ở nhà ngay sau buổi.
 
 Buổi này giải quyết sáu vấn đề, theo thứ tự trình bày:
 
@@ -36,7 +35,7 @@ Chương trình đặt ra một lập trường: **designer là partner cùng đ
 
 **Đối tượng.** Chương trình thiết kế cho Product Designer và UI/UX Designer. Product Owner, Product Manager và Business Analyst có thể học cùng trọn vẹn: cùng stage, cùng project folder, cùng hub. Họ không cần kỹ năng design và không phải build prototype từ đầu; ở phần prototype, họ dùng một design system có sẵn và để AI tạo template từ đó. Ở các buổi sau, những khác biệt theo vai trò được ghi trong mục "Nếu bạn là PO, PM hoặc BA".
 
-**Nhịp học của cả chương trình.** 12 buổi trong 6 tuần, hai buổi online mỗi tuần, mỗi buổi 90 phút, 7 đến 8 học viên. Mỗi tuần một cặp: buổi theory (một lesson) rồi buổi practice làm việc trên case của học viên, có coaching; tuần 6 kết bằng practice một ngày và buổi reflection và wrap-up. Chuẩn bị tối đa 10 phút trước mỗi buổi (khoảng 25 phút ở buổi 1, gồm kiểm tra tool và pre-read); việc làm giữa các buổi tối đa khoảng 20 phút và chỉ nối tiếp phần đã làm. Buổi live không phụ thuộc vào việc phần đó đã xong hay chưa.
+**Nhịp học của cả chương trình.** 12 buổi trong 6 tuần, hai buổi online mỗi tuần, mỗi buổi 90 phút, 7 đến 8 học viên. Mỗi tuần một cặp: buổi theory (một lesson), rồi practice là chuỗi việc làm ở nhà trên case của học viên (khoảng 4 giờ mỗi tuần, ước lượng chưa đo), và một buổi practice trên lớp để làm tiếp phần còn dang dở rồi Winnie chấm kết quả (cách chấm chưa quyết); tuần 6 kết bằng practice một ngày và buổi reflection và wrap-up. Chuẩn bị tối đa 10 phút trước mỗi buổi (khoảng 25 phút ở buổi 1, gồm kiểm tra tool và pre-read). Buổi theory không phụ thuộc vào việc practice trước đó đã xong hay chưa.
 
 **Vị trí của buổi.** Buổi 1 nằm trước bước đầu tiên của workflow. Buổi này giả định người học đã có kinh nghiệm research, UX design và prototyping, và bổ sung lớp AI lên trên những kỹ năng đó.
 
@@ -53,7 +52,7 @@ Sau buổi 1, học viên có thể:
 5. **Mô tả** agent là gì, khác gì một lượt hỏi đáp, **phác** một đội AI cho product design (agent theo phase, phần designer giữ lại), và **nêu** Knowledge Hub dùng để làm gì
 6. **Phân loại** tài liệu thành ba nhóm (safe, ask first, never in a public tool) và **viết** bản đầu data rules của riêng mình
 
-Sau bài tập về nhà (mục 8.2), học viên có thể:
+Sau Practice 1 ở nhà (mục 8.2), học viên có thể:
 
 7. **Cài đặt** project folder của chương trình cho case của chính mình, gồm layout chuẩn, file luật cho AI tool (`AGENTS.md`), context pack đã bắt đầu và một hub Markdown mẫu. Tên file và cấu trúc ở buổi này là của hub mẫu; học viên có cách tổ chức khác vẫn đạt mục tiêu nếu AI tool đọc được luật, context và dữ liệu, và người khác kiểm tra được
 8. **Dùng lại** một file đã lưu làm context thay vì mô tả lại project, và yêu cầu AI chỉ rõ nguồn cho từng ý, kèm câu trả lời "unknown" khi không có thông tin
@@ -66,7 +65,7 @@ Sau bài tập về nhà (mục 8.2), học viên có thể:
 - Học viên nêu được bốn khái niệm (context, grounding, hallucination, AI-assisted so với AI-generated) bằng lời của mình.
 - Học viên nêu được agent khác một lượt hỏi đáp ở điểm nào, và gọi tên ít nhất hai agent trong một đội AI cùng phần designer vẫn giữ.
 - `context/data-rules.md` có ba dòng bằng lời của chính học viên.
-- Sau bài tập về nhà: project folder dựng đúng layout, `context/product-and-users.md` đủ cụ thể để người ngoài hình dung được người dùng, và `my-direction.md` có hai đến ba dòng.
+- Sau Practice 1: project folder dựng đúng layout, `context/product-and-users.md` đủ cụ thể để người ngoài hình dung được người dùng, và `my-direction.md` có hai đến ba dòng.
 
 **Checkpoint trên lớp:** bản đầu của `context/data-rules.md` hoàn thành trong Activity, sau khi học viên tự phân loại năm đoạn trích và so với bản của AI.
 
@@ -114,7 +113,7 @@ Ba hướng đi dưới đây không loại trừ nhau, và chúng mô tả xu h
 
 UX research là một hướng liên quan: NN/g nêu research và stakeholder management là những kỹ năng tạo khác biệt [3]. Hướng thiên về execution ở entry level (wireframe, sản xuất asset) là hướng chịu áp lực nhiều nhất theo các nguồn trên, và là lý do để chọn hướng sớm.
 
-Sau buổi 1, ở bài tập về nhà, học viên ghi hai đến ba dòng vào `_personal/my-direction.md` (hướng nghiêng về, lý do, một kỹ năng muốn xây trong chương trình). File được xem lại ở buổi 12 và có thể thay đổi. File nằm ngoài context pack vì là ghi chú riêng của học viên, không đưa cho AI tool.
+Sau buổi 1, ở Practice 1, học viên ghi hai đến ba dòng vào `_personal/my-direction.md` (hướng nghiêng về, lý do, một kỹ năng muốn xây trong chương trình). File được xem lại ở buổi 12 và có thể thay đổi. File nằm ngoài context pack vì là ghi chú riêng của học viên, không đưa cho AI tool.
 
 ---
 
@@ -240,7 +239,7 @@ Ví dụ minh hoạ dùng một case hư cấu của chương trình.
 
 **Quan sát điển hình.** Instruction 1 thường cho lời khuyên tự tin nhưng chung chung, và có thể nói về sản phẩm như thể đó là sự thật. Instruction 2 thường hỏi đúng những điều chỉ research hoặc business mới trả lời được.
 
-**Diễn giải theo thuật ngữ.** Case mẫu là **context**; "chỉ dùng case mẫu" là **grounding**; lời khuyên tự tin của instruction 1 là rủi ro **hallucination**; câu trả lời "unknown" là lý do instruction 2 hữu ích. Cho phép AI trả lời "unknown" thường giúp giảm việc lấp chỗ trống bằng nội dung bịa; đây là giả định thực hành được kiểm nghiệm lại ở bài tập về nhà (bước 4), không phải kết quả đã được đo trong tài liệu này. Khái niệm thứ tư, **AI-assisted so với AI-generated**, là lập trường đã nói ở đầu buổi: ở demo, designer là người chọn bản nào đáng tin.
+**Diễn giải theo thuật ngữ.** Case mẫu là **context**; "chỉ dùng case mẫu" là **grounding**; lời khuyên tự tin của instruction 1 là rủi ro **hallucination**; câu trả lời "unknown" là lý do instruction 2 hữu ích. Cho phép AI trả lời "unknown" thường giúp giảm việc lấp chỗ trống bằng nội dung bịa; đây là giả định thực hành được kiểm nghiệm lại ở Practice 1 ở nhà (bước 4), không phải kết quả đã được đo trong tài liệu này. Khái niệm thứ tư, **AI-assisted so với AI-generated**, là lập trường đã nói ở đầu buổi: ở demo, designer là người chọn bản nào đáng tin.
 
 ### 4.3 Reuse rather than retype
 
@@ -256,7 +255,7 @@ Mục này giới thiệu ở mức khái niệm. Học viên chưa dựng độ
 
 Hệ quả thực hành có hai điểm. Câu trả lời của agent là bản tóm tắt, còn kết quả thật nằm ở các file nó đã sửa, nên việc kiểm tra là kiểm tra file. Agent vẫn có thể báo xong khi chưa xong, cùng cơ chế "kết quả yếu thường trông ổn" ở mục 3.4.
 
-**Agent đầu tiên.** Trong chương trình, một agent đầu tiên được dựng theo năm bước, đây là phương pháp của chương trình chứ không phải kết quả nghiên cứu: (1) mở AI coding tool trên project folder; (2) giao một vai và một kết quả cụ thể, ví dụ agent Competitor Analysis là step card `toolkit/skills/competitor-analysis.md`, đọc nguồn đã ẩn danh trong `work/sources/anonymised/` và điền từng mục của `work/competitor-analysis.md` (mục AI soạn không được sửa, bản đã đối chiếu do designer ghi riêng); (3) chạy thử, mở file kết quả, đối chiếu với nguồn rồi chỉnh chỉ dẫn; (4) ghi kết quả ra file Markdown trong `work/`, và chỉ nối sang Excel hoặc email qua connector sau khi file Markdown đã ổn; (5) khi một lần chạy đã ổn, nhờ tool ghi lại cách làm thành step card để dùng lại. Bước 3 là bước không bỏ được, vì agent có thể báo xong khi kết quả thiếu nguồn. `AGENTS.md` ở bước này chỉ là quy tắc chung của folder; việc điều phối các agent vẫn do designer làm qua gate. Step card Competitor Analysis tự ghi trạng thái draft, chưa được thử với một lớp thật (ảnh: `assets/competitor-analysis-step-card.webp`).
+**Agent đầu tiên.** Trong chương trình, một agent đầu tiên được dựng theo năm bước, đây là phương pháp của chương trình chứ không phải kết quả nghiên cứu: (1) mở AI coding tool trên project folder; (2) giao một vai và một kết quả cụ thể, ví dụ agent Competitor Analysis là step card `toolkit/skills/competitor-analysis/SKILL.md`, đọc nguồn đã ẩn danh trong `work/sources/anonymised/` và điền từng mục của `work/competitor-analysis.md` (mục AI soạn không được sửa, bản đã đối chiếu do designer ghi riêng); (3) chạy thử, mở file kết quả, đối chiếu với nguồn rồi chỉnh chỉ dẫn; (4) ghi kết quả ra file Markdown trong `work/`, và chỉ nối sang Excel hoặc email qua connector sau khi file Markdown đã ổn; (5) khi một lần chạy đã ổn, nhờ tool ghi lại cách làm thành step card để dùng lại. Bước 3 là bước không bỏ được, vì agent có thể báo xong khi kết quả thiếu nguồn. `AGENTS.md` ở bước này chỉ là quy tắc chung của folder; việc điều phối các agent vẫn do designer làm qua gate. Step card Competitor Analysis tự ghi trạng thái draft, chưa được thử với một lớp thật (ảnh: `assets/competitor-analysis-step-card.webp`).
 
 **Đội AI cho product design.** Trong chương trình, đội AI là một cách tổ chức công việc: mỗi agent là một instruction, một input riêng và một output ghi vào file; designer dẫn dắt, kiểm tra và quyết định. Sơ đồ dưới đây đặt hai agent vào mỗi phase của Double Diamond, tám agent cùng đọc và ghi một design memory dùng chung, và designer duyệt ở mỗi lần chuyển phase.
 
@@ -283,7 +282,7 @@ Hai vai không giao cho AI: người dùng thật và người phía product và
 
 1. **Một AI coding tool mở cả project folder** làm project của nó.
 2. **`AGENTS.md` ở gốc folder là quy tắc chung.** Tool tự đọc file này khi mở folder; trong đó có luật propose first (đề xuất trước khi tạo hoặc sửa nhiều file) và luật không đọc `_personal/` và `work/sources/_raw-private/`.
-3. **Mỗi agent là một step card**, một file Markdown trong `toolkit/skills/`, ghi bước đó đọc file nào, làm gì và ghi vào đâu. Chạy một agent nghĩa là nhờ tool đọc step card của bước đó, sau khi đọc context pack trong `context/`.
+3. **Mỗi agent là một step card**, một folder trong `toolkit/skills/` với step card là file `SKILL.md`, ghi bước đó đọc file nào, làm gì và ghi vào đâu. Chạy một agent nghĩa là nhờ tool đọc step card của bước đó, sau khi đọc context pack trong `context/`.
 4. **Output ghi vào file**: tài liệu trong `work/`, item (decision, evidence, finding...) trong `insights/` qua `new-item.py`. Design memory chính là project folder cộng hub, và hub được dựng lại bằng `refresh-hub.md` và `build-report.py`.
 5. **Gate là tiêu chí trong `standards/`** (gates, principle checks, severity levels), dùng để designer kiểm tra trước khi sang phase sau.
 
@@ -349,7 +348,7 @@ Output của mục này là `context/data-rules.md`: ba dòng bằng lời của
 │                        project-log.md (mỗi decision một dòng, kèm lý do)
 ├── stages/              câu chuyện của từng stage, do hub tự dựng
 ├── standards/           thước đo công việc: gates, principle-checks (viết ở buổi 4), severity-levels
-└── _personal/           my-direction.md (viết sau buổi 1, xem lại ở buổi 12); không đưa cho AI tool
+└── _personal/           my-direction.md (viết sau buổi 1, xem lại ở buổi 12), learning-log.md (một mục sau mỗi buổi practice); không đưa cho AI tool
 ```
 
 Layout này phục vụ làm việc với AI vì:
@@ -374,15 +373,15 @@ Mỗi activity điền vào một file Markdown, từng section một. Năm quy 
 
 ### 6.4 Knowledge Hub and sharing
 
-Ở buổi 1, hub được giới thiệu trong khoảng 5 phút cùng layout project folder, bằng ba ảnh kết quả (overview, work, insights; xem [Outcome Examples](../../../examples/outcome-examples/README.md)); học viên mở hub mẫu trong folder của mình ở bài tập về nhà. Cách chia sẻ hub (bốn cách bên dưới) nằm ở slide tham khảo và `guides/04-share-your-hub.md`, không giảng trên lớp.
+Ở buổi 1, hub được giới thiệu trong khoảng 5 phút cùng layout project folder, bằng ba ảnh kết quả (overview, work, insights; xem [Outcome Examples](../../../examples/outcome-examples/README.md)); học viên mở hub mẫu trong folder của mình ở Practice 1 ở nhà. Cách chia sẻ hub (bốn cách bên dưới) nằm ở slide tham khảo và `guides/04-share-your-hub.md`, không giảng trên lớp.
 
 Mọi output đi vào **Knowledge Hub**: một folder Markdown nằm trong project folder, gồm các page theo tuần, và mỗi item một file riêng ngay trong `insights/` (O1, H1, M1, D1, T1...; chữ cái đầu của mã cho biết loại). Các file liên kết với nhau qua properties, nên người đọc có thể bắt đầu từ bất kỳ design decision nào và lần ra user need, hypothesis, principle và test đứng sau nó. Hub hoàn chỉnh là báo cáo cuối của chương trình; mỗi buổi thêm các item và một page. Về giá trị với tổ chức: hub giữ lại lý do đằng sau mỗi decision khi người làm đổi dự án, cho phép người đọc kiểm chứng lập luận từ decision ngược về evidence, và chỉ ra chỗ yếu trước khi đầu tư xây. Ví dụ minh hoạ (bản nháp, chưa lấy từ một case thật): decision chọn khẩu phần ở màn hình đầu của Kitchen Crate nối tới một user need về việc sợ đặt dư đồ ăn, một evidence từ phỏng vấn và một test xác nhận. Công cụ nào mở được folder đều dùng được. Obsidian thêm Graph view, Backlinks và bảng theo loại item (Bases, file `insights/traceability.base`); wikilink trong properties chỉ bấm được trong Obsidian, nhưng các công cụ khác vẫn đọc và sửa được vì đó là text. Để chia sẻ cho người khác thì xuất báo cáo HTML.
 
-Bên cạnh item, mỗi tài liệu làm ra trong dự án (phân tích đối thủ, persona, khảo sát, user flow, prototype) là một **artifact** có trang riêng, nối với các item nó hỗ trợ; tệp ảnh, PDF, HTML thả vào folder của artifact được tự nhận diện, và link Figma được mở ở tab ngoài. File item là nguồn duy nhất. Bảng alignment, danh sách warnings (decision không có user need phía sau, hypothesis không có test) và trạng thái gate do AI dựng lại bằng bước `toolkit/skills/refresh-hub.md`, vào các khối đánh dấu `generated`. Bước này chưa được thử với một lớp thật; sau mỗi lần dựng, học viên đối chiếu vài dòng với file item.
+Bên cạnh item, mỗi tài liệu làm ra trong dự án (phân tích đối thủ, persona, khảo sát, user flow, prototype) là một **artifact** có trang riêng, nối với các item nó hỗ trợ; tệp ảnh, PDF, HTML thả vào folder của artifact được tự nhận diện, và link Figma được mở ở tab ngoài. File item là nguồn duy nhất. Bảng alignment, danh sách warnings (decision không có user need phía sau, hypothesis không có test) và trạng thái gate do AI dựng lại bằng bước `toolkit/skills/refresh-hub/SKILL.md`, vào các khối đánh dấu `generated`. Bước này chưa được thử với một lớp thật; sau mỗi lần dựng, học viên đối chiếu vài dòng với file item.
 
 **Hub mặc định là private.** Có bốn cách cho người khác xem, từ ít rủi ro nhất:
 
-1. Dùng trang chủ `index.html` của hub: một file HTML tự chứa, tạo bằng `toolkit/skills/build-report.py` (my-project có sẵn một bản mẫu), mở bằng trình duyệt mà không cần cài gì. Copy ra ngoài và đổi tên khi gửi; hoặc export các page chính ra PDF. File HTML là sản phẩm xuất ra từ Markdown, không phải nguồn.
+1. Dùng trang chủ `index.html` của hub: một file HTML tự chứa, tạo bằng `toolkit/tools/build-report.py` (my-project có sẵn một bản mẫu), mở bằng trình duyệt mà không cần cài gì. Copy ra ngoài và đổi tên khi gửi; hoặc export các page chính ra PDF. File HTML là sản phẩm xuất ra từ Markdown, không phải nguồn.
 2. Gửi file nén của cả project folder (các page hub link sang nhiều folder, nên nén riêng một folder con làm link hỏng).
 3. Mời một người vào repository private trên GitHub.
 4. Công khai cả project folder trong một repository public mới, chỉ khi toàn bộ case được phép chia sẻ (case của chương trình, hoặc phiên bản đã làm sạch từ công việc thật).
@@ -395,7 +394,7 @@ Người công khai là người host và chịu trách nhiệm. GitHub hiển t
 
 ### 7.1 Structure
 
-**Buổi 1 (90 phút).** Trình bày ngắn, xen câu hỏi bỏ phiếu bằng chat, kèm ice breaker và một activity trên lớp (đoán trước, rồi để AI phân loại, kèm viết data rules). Mỗi phần theory kết thúc bằng một câu hỏi A/B 30 giây. Việc dựng project folder là bài tập về nhà (mục 8.2).
+**Buổi 1 (90 phút).** Trình bày ngắn, xen câu hỏi bỏ phiếu bằng chat, kèm ice breaker và một activity trên lớp (đoán trước, rồi để AI phân loại, kèm viết data rules). Mỗi phần theory kết thúc bằng một câu hỏi A/B 30 giây. Việc dựng project folder là Practice 1, làm ở nhà (mục 8.2).
 
 | Phase | Nội dung | Mục của tài liệu | Thời gian |
 |---|---|---|---|
@@ -408,11 +407,11 @@ Người công khai là người host và chịu trách nhiệm. GitHub hiển t
 | 7 | T6: data safety | 5 | 4 phút |
 | 8 | Activity: đoán trước năm đoạn trích, so với AI, rồi viết data rules cho case | 5, 7.2 | 18 phút |
 | 9 | Hỏi đáp | 7.3 | 8 phút |
-| 10 | Bài tập về nhà và lời kết | 8.2 | 6 phút |
+| 10 | Practice 1 ở nhà và lời kết | 8.2 | 6 phút |
 | | **Tổng** | | **82 phút** |
 | | Buffer | | 8 phút |
 
-Theory (phase 2 đến 7) là 44 phút, nới có chủ đích so với mức tối đa 40 phút của hình dạng chung để có chỗ cho agent, đội AI và Knowledge Hub. Timing chưa được thử với một lớp thật; nên chạy thử bằng tay trước khi dựng deck. Buổi chỉ có một activity trên lớp và một bài tập về nhà; ice breaker không tính là activity. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** ba câu hỏi trước khi automate, rồi phần ví dụ đội AI ở T4, rồi rút hỏi đáp còn 4 phút, rồi rút ice breaker còn 5 phút. Data safety và Activity không bao giờ bị cắt.
+Theory (phase 2 đến 7) là 44 phút, nới có chủ đích so với mức tối đa 40 phút của hình dạng chung để có chỗ cho agent, đội AI và Knowledge Hub. Timing chưa được thử với một lớp thật; nên chạy thử bằng tay trước khi dựng deck. Buổi chỉ có một activity trên lớp và Practice 1 ở nhà; ice breaker không tính là activity. **Thứ tự cắt khi quá giờ (đề xuất, chưa thử):** ba câu hỏi trước khi automate, rồi phần ví dụ đội AI ở T4, rồi rút hỏi đáp còn 4 phút, rồi rút ice breaker còn 5 phút. Data safety và Activity không bao giờ bị cắt.
 
 ### 7.2 Activities
 
@@ -420,11 +419,11 @@ Theory (phase 2 đến 7) là 44 phút, nới có chủ đích so với mức t�
 
 **Activity: đoán trước, rồi để AI phân loại** (18 phút, ngay sau phần data safety). *Mục đích:* áp dụng ba nhóm dữ liệu, thấy AI phân loại đúng ở đâu và sai ở đâu, rồi viết data rules cho case thật. *Quy trình:* (1) 3 phút, cá nhân: nhận năm đoạn trích hư cấu của Kitchen Crate (trang giá công khai của một đối thủ; ghi chú quy trình giao hàng nội bộ; tóm tắt research chưa công bố, không có tên người; transcript phỏng vấn đã thay tên bằng chữ cái nhưng còn vai trò, tuổi và nơi ở; ảnh chụp admin dashboard đang chạy thật) và tự xếp vào safe, ask first hoặc never in a public tool trước khi mở AI tool; (2) 6 phút, cặp hoặc cá nhân: nhờ AI chat tool xếp cùng năm đoạn rồi so với bản của mình; (3) 7 phút, cá nhân: viết ba dòng vào `context/data-rules.md` cho case của chính mình (được dán gì, sẽ không dán gì, dùng tool nào cho việc gì), chỗ nào chưa biết chính sách của công ty thì ghi "cần hỏi"; (4) 2 phút, cả lớp: mỗi người nói một con số "AI xếp đúng X trên 5". Học viên dùng case mẫu của chương trình thì viết cho case mẫu và viết lại cho case thật sau; chưa dán tài liệu thật vào AI tool. *Output:* bản đầu của `context/data-rules.md`. Bộ năm đoạn trích được gửi cho học viên trong chat đúng lúc bắt đầu Activity, không gửi trước, để bước đoán trước còn nguyên.
 
-**Bài tập về nhà.** Dựng project folder không chạy trên lớp; quy trình nằm ở mục 8.2.
+**Practice 1 (ở nhà).** Dựng project folder không chạy trên lớp; quy trình nằm ở mục 8.2.
 
 ### 7.3 Participation
 
-Học viên được khuyến khích ghi câu hỏi vào chat trong suốt buổi. Tám phút hỏi đáp ở cuối buổi dành cho các câu hỏi đó, ưu tiên những câu được nhiều người quan tâm; câu nào cần số liệu hoặc cần cân nhắc thêm được trả lời bằng văn bản sau buổi. Bài tập về nhà và việc chuẩn bị cho buổi 2 được nói ở phần kết thúc (6 phút), không nằm trong 8 phút hỏi đáp.
+Học viên được khuyến khích ghi câu hỏi vào chat trong suốt buổi. Tám phút hỏi đáp ở cuối buổi dành cho các câu hỏi đó, ưu tiên những câu được nhiều người quan tâm; câu nào cần số liệu hoặc cần cân nhắc thêm được trả lời bằng văn bản sau buổi. Practice 1 và việc chuẩn bị cho buổi practice trên lớp được nói ở phần kết thúc (6 phút), không nằm trong 8 phút hỏi đáp.
 
 ### 7.4 Preparation and materials
 
@@ -434,15 +433,15 @@ Học viên được khuyến khích ghi câu hỏi vào chat trong suốt buổ
 3. Chọn case: project, sản phẩm hoặc feature của chính mình, đã ẩn danh. Hub mặc định là private. Nếu công ty cấm AI tool hoặc case quá nhạy cảm để mang lên lớp, dùng case mẫu của chương trình.
 4. Nghĩ trước một câu hỏi: trong 12 tháng tới, mong muốn công việc khác đi ở điểm nào? Không cần có câu trả lời.
 5. Tìm hiểu quy định của công ty về AI tool: có chính sách bằng văn bản không, tool nào được duyệt.
-6. Tải workspace template về máy (ZIP, không cần tài khoản GitHub; xem `guides/01-get-the-folder.md`) và đặt ở một folder trên máy, không đặt trong folder đồng bộ cloud, để bài tập về nhà có sẵn nền.
+6. Tải workspace template về máy (ZIP, không cần tài khoản GitHub; xem `guides/01-get-the-folder.md`) và đặt ở một folder trên máy, không đặt trong folder đồng bộ cloud, để Practice 1 có sẵn nền.
 
-**Giữa buổi 1 và buổi 2:** làm bài tập về nhà (mục 8.2). Trước khi viết data rules ở Activity, chưa dán tài liệu thật của case vào AI tool; nếu muốn thử AI tool, chỉ dùng case mẫu của chương trình hoặc năm đoạn trích hư cấu của Activity.
+**Giữa buổi 1 và buổi practice trên lớp:** làm Practice 1 ở nhà (mục 8.2). Trước khi viết data rules ở Activity, chưa dán tài liệu thật của case vào AI tool; nếu muốn thử AI tool, chỉ dùng case mẫu của chương trình hoặc năm đoạn trích hư cấu của Activity.
 
 **Tài liệu:** handout về tool (`tools-to-bring.md`), handout `before-you-automate.md` (checklist tám câu, gửi sau buổi 1), case mẫu của chương trình (`course-case/case-card.md`), bộ năm đoạn trích của Activity (gửi trong chat lúc bắt đầu Activity), workspace template (`my-project` gồm `AGENTS.md`, các folder `context/`, `work/`, `insights/` và hub Markdown mẫu; `toolkit/` ở gốc workspace chứa step card, template tài liệu và guide; `demo-project` cho học viên cần case giả), các method card, hướng dẫn chia sẻ hub (`guides/04-share-your-hub.md`).
 
 ---
 
-## 8. Assessment and homework
+## 8. Assessment and practice at home
 
 ### 8.1 Self-check questions
 
@@ -462,22 +461,24 @@ Học viên được khuyến khích ghi câu hỏi vào chat trong suốt buổ
 14. Nêu hai agent trong một đội AI cho product design, phần designer vẫn tự làm ở mỗi agent, và hai vai không giao cho AI.
 15. Knowledge Hub dùng để làm gì, và vì sao mỗi item là một file?
 
-### 8.2 Homework: build your project folder (khoảng 45 phút, nối tiếp phần đã bắt đầu trên lớp)
+### 8.2 Practice 1 at home: build your project folder (khoảng 4 giờ, ước lượng chưa đo)
 
-> Từ 2026-10-26 bài tập này nằm trong buổi practice 90 phút ngay sau buổi 1: xem [Practice 1](design-process-with-ai-practice.md). Practice 1 dùng đúng các tên file của mục này.
+> Từ 2026-10-30 Practice 1 là chuỗi việc làm ở nhà (thay cho buổi practice 90 phút chia theo phút). Buổi practice trên lớp sau đó làm tiếp phần còn dang dở rồi Winnie chấm; cách chấm chưa quyết. Practice sheet `design-process-with-ai-practice.md` vẫn theo cấu trúc cũ và cần viết lại theo chuỗi này `[to confirm]`.
 
-Phần này không phải bài nộp để chấm. Đó là một bài tập duy nhất để project folder trở thành workspace dùng được cho dự án thật, cả trong khoá lẫn sau khoá. Nên xong trước buổi 2, vì các buổi sau làm trên chính folder này. Hướng dẫn chia sẻ hub (tuỳ chọn) nằm trong `guides/04-share-your-hub.md`.
+Phần này không phải bài nộp. Đó là chuỗi việc để project folder trở thành workspace dùng được cho dự án thật, cả trong khoá lẫn sau khoá. Hướng dẫn chia sẻ hub (tuỳ chọn) nằm trong `guides/04-share-your-hub.md`; hướng dẫn GitHub nằm ở `learning/github-setup-and-publish.md`.
 
 *Mục đích:* dựng nền tảng mà cả chương trình chạy trên đó, và kiểm tra nó bằng một instruction giống instruction ở ví dụ 4.2. *Quy trình:*
-1. (5 phút) Tải workspace template bằng ZIP (không cần tài khoản GitHub), mở cả workspace bằng AI coding tool và nhờ "Tạo một dự án mới tên …"; lệnh `toolkit/tools/new-project.py` tạo project folder từ `my-project` (tên chữ thường, nối bằng dấu gạch ngang) và thêm một thẻ vào trang chủ. Đối chiếu cây folder với layout ở 6.2.
-2. (10 phút) Bắt đầu context pack: viết phiên bản đầu của `context/product-and-users.md` (sản phẩm là gì, ai dùng, job chính của họ; nửa trang, đã ẩn danh); đưa `context/data-rules.md` từ Activity vào.
-3. (5 phút) Mở cả folder project bằng công cụ mình quen (AI coding tool, VS Code hoặc Obsidian), rồi mở `README.md` (Project card) và `index.html` (tab Overview của báo cáo). Đọc `AGENTS.md` để biết AI tool sẽ được dặn những gì. Chưa chỉnh sửa gì.
-4. (20 phút) Chạy một instruction với một file đã lưu. Đính kèm `context/product-and-users.md` vào AI chat tool và dùng: "Đây là context cho design case của tôi. Chỉ dùng file này. Liệt kê năm điều quan trọng nhất bạn cần biết về sản phẩm và người dùng mà KHÔNG có trong file, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời 'unknown'. Chỉ trả về danh sách." Đọc câu trả lời có phản biện: câu nào hữu ích, câu nào chung chung, câu nào tự tìm ra được; lưu những câu hữu ích vào `context/open-questions.md` trong `learnings/`.
-5. (5 phút) Ghi hai đến ba dòng vào `_personal/my-direction.md`: hướng nghiêng về trong ba hướng đi, lý do, một kỹ năng muốn xây trong chương trình. File nằm ngoài context pack, không đưa cho AI tool, và được xem lại ở buổi 12.
+1. (khoảng 15 phút) Tải workspace template bằng ZIP (không cần tài khoản GitHub), mở cả workspace bằng AI coding tool và nhờ "Tạo một dự án mới tên …"; lệnh `toolkit/tools/new-project.py` tạo project folder từ `my-project` (tên chữ thường, nối bằng dấu gạch ngang) và thêm một thẻ vào trang chủ. Đối chiếu cây folder với layout ở 6.2.
+2. (khoảng 45 phút) Đưa context về product cho AI: viết phiên bản đầu của `context/product-and-users.md` (sản phẩm là gì, ai dùng, job chính của họ; nửa trang, đã ẩn danh); đưa `context/data-rules.md` từ Activity vào.
+3. (khoảng 45 phút) Self-documentation bởi AI: AI đọc folder rồi viết `README.md` (Project card) mô tả cấu trúc và mục đích từng file, và rules file `AGENTS.md` cho chính nó từ context đã đưa vào. Học viên mở cả folder bằng công cụ quen thuộc (AI coding tool, VS Code hoặc Obsidian), đọc `index.html` (tab Overview), kiểm tra từng dòng AI viết và sửa; rules file là luật AI sẽ đọc ở mọi buổi sau.
+4. (khoảng 30 phút) Chạy một instruction với một file đã lưu. Đính kèm `context/product-and-users.md` vào AI chat tool và dùng: "Đây là context cho design case của tôi. Chỉ dùng file này. Liệt kê năm điều quan trọng nhất bạn cần biết về sản phẩm và người dùng mà KHÔNG có trong file, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời 'unknown'. Chỉ trả về danh sách." Đọc câu trả lời có phản biện: câu nào hữu ích, câu nào chung chung, câu nào tự tìm ra được; lưu những câu hữu ích vào `context/open-questions.md`.
+5. (khoảng 10 phút) Ghi hai đến ba dòng vào `_personal/my-direction.md`: hướng nghiêng về trong ba hướng đi, lý do, một kỹ năng muốn xây trong chương trình. File nằm ngoài context pack, không đưa cho AI tool, và được xem lại ở buổi 12.
+6. (tuỳ chọn, khoảng 1 giờ) Push lên Git và bật trang live, cho học viên muốn chia sẻ hub: repo Private, GitHub Desktop để push; chỉ bật trang live khi toàn bộ case được phép công khai. Hướng dẫn ở `learning/github-setup-and-publish.md`. Output chính của chuỗi không phụ thuộc vào bước này.
+7. (khoảng 5 phút) Thêm mục đầu tiên vào `_personal/learning-log.md`: ba dòng (đã làm gì, phản hồi nhận được, lần sau đổi gì) và một câu reflection (phản hồi nào làm bạn đổi cách nghĩ?). File riêng tư, không đưa cho AI tool. Từ đây mỗi chuỗi practice kết thúc bằng bước này, và log được đọc lại ở buổi 12.
 
-*Output:* project folder, context pack đã bắt đầu, hub mẫu đã mở, `context/open-questions.md`, `my-direction.md`. Học viên có công ty không cho phép AI tool, hoặc case quá nhạy cảm, dùng case mẫu của chương trình cho bước 4.
+*Output:* một ready-folder với context: project folder, context pack đã bắt đầu, `README.md` và rules file do AI viết và học viên đã kiểm tra, hub mẫu đã mở, `context/open-questions.md`, `my-direction.md`, `learning-log.md`. Học viên có công ty không cho phép AI tool, hoặc case quá nhạy cảm, dùng case mẫu của chương trình cho các bước đưa dữ liệu vào AI.
 
-Dấu hiệu đạt: cấu trúc folder thật; `context/product-and-users.md` đủ cụ thể để người ngoài hình dung được người dùng; data rules bằng lời của chính học viên. Buổi live tiếp theo không phụ thuộc vào việc bài tập đã xong hay chưa.
+Dấu hiệu đạt: cấu trúc folder thật; `context/product-and-users.md` đủ cụ thể để người ngoài hình dung được người dùng; data rules bằng lời của chính học viên; rules file đã được học viên kiểm tra và sửa, không để nguyên bản AI viết. Buổi theory tiếp theo không phụ thuộc vào việc chuỗi này đã xong hay chưa.
 
 ---
 
@@ -521,13 +522,13 @@ Dữ liệu đưa vào AI tool có thể bị lưu lại. Phân loại tài li�
 | Buổi | Vai trò |
 |---|---|
 | **Lesson 1 (buổi 1, buổi này)** | Tương lai của nghề và ba hướng đi; bốn stage và các method; AI ở mức tổng quan; bộ từ vựng chung; agent và đội AI ở mức khái niệm; Knowledge Hub; data rules; project folder; lập trường AI-assisted |
-| Practice 1 (buổi 2) | Dựng project folder, context pack, data rules, hub khung và hướng nghề |
-| Lesson 2 (buổi 3): Discover the Problem | Design Principles, Break the brief (research questions, UX observation, challenge assumptions, competitor analysis), Understand our users ở mức theory, package thành agent và đóng góp vào hub |
-| Practice 2 (buổi 4) | bộ nguyên tắc và các bản Break the brief; lên lịch phỏng vấn peer |
-| Lesson 3 (buổi 5): Insights You Can Trust | Synthesis trên quote đã ẩn danh, kiểm theme về quote gốc, persona và journey map dẫn về quote có ID, opportunity |
-| Practice 3 (buổi 6) | Phỏng vấn peer, synthesis, persona, journey, opportunity, Gate 1, problem brief |
-| Lesson 4 (buổi 7): Explore Ideas | Hypothesis, How might we, sketch giấy rồi AI, chọn hướng bằng principle check |
-| Practice 4 (buổi 8) | Hypothesis, ba hướng, chọn hướng, flow và nội dung |
+| Practice 1 (ở nhà, rồi buổi 2 trên lớp) | Chuỗi việc ở nhà: project folder, context pack, data rules, self-documentation, hub khung, hướng nghề; buổi lớp làm tiếp và chấm |
+| Lesson 2 (buổi 3): Discover the Problem | Design Principles, Break the brief (research questions, UX observation, challenge assumptions, competitor analysis), Understand our users (methods, plan, script) và synthesis: quote có ID, bốn bước, claim |
+| Practice 2 (ở nhà, rồi buổi 4 trên lớp) | Chuỗi việc ở nhà: bộ nguyên tắc, research plan, phỏng vấn user thật, ẩn danh, synthesis, insight lên hub |
+| Lesson 3 (buổi 5): Insights You Can Trust | Persona, journey map, opportunity dẫn về quote ID từ insight của học viên; insight hub; package thành agent |
+| Practice 3 (ở nhà, rồi buổi 6 trên lớp) | Chuỗi việc ở nhà: persona, journey, opportunity, Gate 1, problem brief |
+| Lesson 4 (buổi 7): Explore Ideas | Hypothesis, How might we, Solution Tree, sketch giấy rồi AI, chọn hướng bằng principle check |
+| Practice 4 (ở nhà, rồi buổi 8 trên lớp) | Hypothesis, Solution Tree, danh sách giải pháp có ưu tiên, concept sketch, chọn hướng, user flow |
 | Lesson 5 (buổi 9): AI Prototyping | Design system notes, pattern, template, rules file; prototype sẵn sàng test |
 | Practice 5 (buổi 10) | Dựng prototype main flow bằng AI coding tool, chạy các check, review chéo |
 | Lesson 6 (buổi 11): Test with Real Users | Goals/Signals/Metrics, test plan và script, phân tích kết quả, sửa finding |
