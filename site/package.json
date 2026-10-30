@@ -11,7 +11,7 @@
     "predev": "node scripts/lesson-overviews.mjs",
     "prestart": "node scripts/lesson-overviews.mjs",
     "prebuild": "node scripts/lesson-overviews.mjs",
-    "sync": "node scripts/sync-from-drive.mjs",
+    "sync": "node scripts/sync.mjs",
     "publish": "node scripts/publish.mjs"
   },
   "dependencies": {

@@ -1,4 +1,4 @@
-// One command for a lesson change made in Drive: sync -> build -> commit. Pushes only with --push.
+// One command for a lesson change made in Drive: two-way sync -> build -> commit. Pushes only with --push.
 // Usage: npm run publish -- "message"        (commit locally)
 //        npm run publish -- "message" --push (commit and push the current branch)
 import { spawnSync } from 'node:child_process';
@@ -17,7 +17,7 @@ function run(cmd, cmdArgs, cwd = ROOT) {
 }
 
 const site = `${ROOT}/site`;
-run('node', ['scripts/sync-from-drive.mjs'], site);
+run('node', ['scripts/sync.mjs'], site);
 run('npm', ['run', 'build'], site);
 
 run('git', ['add', 'lessons', 'site/scripts', 'site/src', 'site/astro.config.mjs', 'site/package.json', 'site/package-lock.json', '.gitignore']);
