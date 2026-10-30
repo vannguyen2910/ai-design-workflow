@@ -18,6 +18,7 @@ export default defineConfig({
 						{ label: 'Lesson 1', slug: 'lessons/design-process-with-ai/overview' },
 						{ label: 'Lesson 2', slug: 'lessons/discover-the-problem/overview' },
 						{ label: 'Lesson 3', slug: 'lessons/research-you-can-trust/overview' },
+						{ label: 'Lesson 5', slug: 'lessons/ai-prototyping/overview' },
 					],
 				},
 			],
