@@ -3,7 +3,15 @@ import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+// The repo root holds both lessons/ and site/. Walk up from the working directory, because Astro bundles this
+// file into site/dist/, where a path relative to the file would be wrong.
+function findRoot() {
+	for (let d = process.cwd(), i = 0; i < 4; i++, d = join(d, '..')) {
+		if (existsSync(join(d, 'lessons')) && existsSync(join(d, 'site'))) return d;
+	}
+	return join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+}
+export const ROOT = findRoot();
 const LESSONS = join(ROOT, 'lessons');
 
 // frontmatter: flat `key: value` pairs, quotes stripped

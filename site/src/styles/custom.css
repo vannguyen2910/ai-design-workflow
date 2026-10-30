@@ -60,3 +60,11 @@ header.header { border-bottom: 1px dashed var(--minimal-border); backdrop-filter
 .lp-preview iframe { width: 1440px; max-width: none; height: 900px; border: 0; transform: scale(var(--s)); transform-origin: 0 0; pointer-events: none; background: #fff; }
 .lp-preview-cta { position: absolute; right: 12px; bottom: 12px; padding: 0 12px; line-height: 32px; border-radius: 8px; background: var(--sl-color-accent); color: #fff; font-weight: 700; font-size: 14px; }
 .lp-preview:hover .lp-preview-cta { background: var(--sl-color-accent-high); }
+
+/* right nav: sections only; the sub-sections open for the section being read */
+starlight-toc ul ul, mobile-starlight-toc ul ul { display: none; }
+starlight-toc li:has(> a[aria-current='true']) > ul,
+starlight-toc li:has(ul a[aria-current='true']) > ul,
+mobile-starlight-toc li:has(> a[aria-current='true']) > ul,
+mobile-starlight-toc li:has(ul a[aria-current='true']) > ul { display: block; }
+starlight-toc a[aria-current='true'], mobile-starlight-toc a[aria-current='true'] { font-weight: 600; background: var(--sl-color-accent-low); }

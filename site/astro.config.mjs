@@ -15,6 +15,8 @@ export default defineConfig({
 		starlight({
 			title: 'AI Design Workflow',
 			customCss: ['./src/styles/custom.css'],
+				components: { PageTitle: './src/components/PageTitle.astro' },
+				routeMiddleware: './src/routeData.ts',
 			sidebar: [
 				{ label: 'Giới thiệu chương trình', slug: 'index' },
 				{ label: 'Landing Page', slug: 'landing' },
