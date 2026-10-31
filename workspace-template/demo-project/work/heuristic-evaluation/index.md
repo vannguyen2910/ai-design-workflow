@@ -1,6 +1,6 @@
 ---
 type: "heuristic-evaluation"
-title: "Heuristic evaluation of the current Travel Buddy experience"
+title: "Evaluate experience"
 stage: "Develop"
 status: "draft"
 summary: "The final prototype checked against the 10 usability principles. 11 issues are pinned on 8 screenshots: 6 new from this walkthrough and 5 already on record from the earlier test round."
@@ -9,27 +9,26 @@ takeaways:
   - "The prototype often shows a state the traveller did not set: a destination that was preselected, a trip and journals that already exist, and a capture banner for a trip never started. All are minor, and some may be sample data."
   - "One evaluator wrote this draft. Levels should be confirmed by at least three people who rate separately before the team decides what to fix."
 supports:
-  - "[[F1]]"
-  - "[[F2]]"
-  - "[[F3]]"
-  - "[[F5]]"
-  - "[[F7]]"
   - "[[F8]]"
   - "[[F9]]"
   - "[[F10]]"
   - "[[F11]]"
   - "[[F12]]"
   - "[[F13]]"
+links:
+  - "Final prototype|#/final-prototype"
 embed: true
 ---
 *Develop stage. An expert check of the final prototype against the project's principles, before any test with real users. It does not replace that test.*
 
 > **Read first:** this is a draft by one evaluator (an AI tool that walked through the prototype). The levels are a starting point. Under the project's severity rules, ask at least three people to rate separately, then compare.
 
+**Prototype evaluated:** [Final prototype](../final-prototype/index.md).
+
 **Where the issues are:** the annotated screenshots below show every issue on the screen where it appears. Click a pin or an item in the list to jump between them. The viewer can also be edited (move pins, change a description or severity, add an issue) and exported.
 
 ## Scope
-- **Product:** Travel Buddy, final interactive prototype, walked through at phone size.
+- **Product:** Travel Buddy, the [Final prototype](../final-prototype/index.md), walked through at phone size.
 - **Tasks checked:** first launch and sign-up (full path and "Explore without signing up"); the first tip; reading a trip in Plan; browsing people in Connect; reading and sharing a journal trip; changing settings.
 - **Not walked through (yet):** the Map and Country views on Home, Discover more tips, Save to plan, sending a message, the Messages tab, notification, privacy and help settings, and log out.
 - **Date:** 31 October 2026. **Evaluators:** one (AI draft); two more needed.

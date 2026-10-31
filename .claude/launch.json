@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "travel-buddy-hub",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd workspace-template/demo-project && python3 ../toolkit/tools/serve-hub.py --port 8000"],
+      "port": 8000
+    },
+    {
+      "name": "course-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "site", "run", "dev"],
+      "port": 4321
+    }
+  ]
+}
