@@ -3,7 +3,7 @@ type: "problem-brief"
 title: "Problem brief"
 stage: "Define"
 status: "draft"
-summary: ""
+summary: "Four goals with targets nobody has confirmed, opportunities ranked by the survey (planning first) and six design hypotheses. Not signed off: there is no real product owner."
 supports: []
 ---
 *Define stage. A shared requirement. Sign it off with product and business, or record the agreement status.*

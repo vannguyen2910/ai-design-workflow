@@ -3,7 +3,7 @@ type: "findings"
 title: "Findings"
 stage: "Deliver"
 status: "draft"
-summary: ""
+summary: "Results of the simulated test round, ranked by severity: two critical problems finding and inviting a specific person, then major and minor ones. Not evidence from real users."
 supports: []
 ---
 *Deliver stage, after the test. What real users did. The AI can help analyse; check every finding against the notes or the recording.*

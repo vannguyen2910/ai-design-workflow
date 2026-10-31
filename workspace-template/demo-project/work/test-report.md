@@ -1,6 +1,6 @@
 ---
 type: "test-report"
-title: "Usability test report (simulated)"
+title: "Test report"
 stage: "Deliver"
 status: "simulated"
 summary: "A moderated test round with three personas played by the researcher. The two Critical findings share one cause: the missing find-a-person-and-invite pattern."

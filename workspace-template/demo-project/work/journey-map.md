@@ -1,6 +1,6 @@
 ---
 type: "journey-map"
-title: "Customer Journey Map"
+title: "Journey map"
 stage: "Define"
 status: "draft"
 summary: "A five-stage journey map for a traveller who plans seriously but flexibly, from first inspiration to the memories after the trip: what they do, where they do it, how they feel, and what we want to achieve at each stage."

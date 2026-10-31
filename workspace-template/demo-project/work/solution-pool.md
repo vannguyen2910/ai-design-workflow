@@ -1,6 +1,6 @@
 ---
 type: "solution-pool"
-title: "Solution pool: 26 solutions across five pillars"
+title: "Solution pool"
 stage: "Define"
 status: "verified"
 summary: "A list of potential solutions (IDs SP-*) before prioritisation, across five pillars: Discover, Connect, Plan, Journal, Adoption."

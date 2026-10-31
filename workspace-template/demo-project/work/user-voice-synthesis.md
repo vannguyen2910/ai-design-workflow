@@ -1,6 +1,6 @@
 ---
 type: "interview-synthesis"
-title: "User interview synthesis"
+title: "Interview synthesis"
 stage: "Discover"
 status: "verified"
 summary: "One interview  out of the 5 to 8 planned: six themes, in which fragmentation is the main pain."

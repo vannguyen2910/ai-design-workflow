@@ -1,6 +1,6 @@
 ---
 type: "survey-results"
-title: "Survey results and research synthesis"
+title: "Survey results"
 stage: "Discover"
 status: "verified"
 summary: "13 valid responses (17 submitted, 4 empty). Tips from locals are trusted more than reviews from strangers; planning is the most important feature."

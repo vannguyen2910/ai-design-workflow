@@ -1,6 +1,6 @@
 ---
 type: "ia-sitemap"
-title: "Information architecture and card sort"
+title: "Information architecture"
 stage: "Define"
 status: "draft"
 summary: "A hypothesis sitemap (7 second-level items) and a card sort board of 26 cards into 5 groups. Not yet confirmed by a real card sort."

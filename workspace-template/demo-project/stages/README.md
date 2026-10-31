@@ -14,7 +14,7 @@ To change the content: edit the file in `work/` or the item in `insights/`, then
 | `scope` | Scope | Discover | Business question, outcome, agreement | `scope.md` | |
 | `evidence` | Evidence | Discover | What was learned from the sources, one source per claim | `user-voice-synthesis.md`, `competitor-analysis.md` | |
 | `problem-brief` | Problem brief | Define | Opportunity, hypothesis, metric, principle | `problem-brief.md` | opportunities, hypotheses, metrics |
-| `develop` | Options, flows, prototype | Develop | The directions explored, decisions | `options.md`, `process-map.md`, `wireframes/`, `final-prototype/` | decisions |
+| `develop` | Options, flows, prototype | Develop | The directions explored, decisions | `process-map.md`, `wireframes/`, `final-prototype/` | decisions |
 | `alignment` | Alignment check | Develop | Principle audit, verdict | `alignment.md` | |
 | `findings` | Findings | Deliver | Results of testing with users | `findings.md` | evidence, findings |
 | `handoff` | Handoff and measurement | Deliver | Handoff pack, measurement plan | `handoff.md`, `measurement-plan.md` | |

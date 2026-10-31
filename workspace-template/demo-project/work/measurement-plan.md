@@ -3,7 +3,7 @@ type: "measurement-plan"
 title: "Measurement plan"
 stage: "Deliver"
 status: "draft"
-summary: ""
+summary: "What to track after launch: time to first tip, sign-up rate, tips saved, filter use and test scores. No owner or review date yet."
 supports: []
 ---
 *Deliver stage, at handoff. What to track after launch, and who is responsible. Give it to the PO even if you cannot see the data yourself.*

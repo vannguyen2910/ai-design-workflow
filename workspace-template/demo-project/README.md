@@ -25,7 +25,7 @@ The original project was made before this workspace's AI-assisted way of working
 | `work/scope.md`, `user-voice-synthesis.md`, `competitor-analysis.md` | Scope, user voice synthesis, competitor analysis | Discover |
 | `work/sources/anonymised/` | The original research documents: hypotheses, survey, interview guide, synthesis, competitors | Discover |
 | `work/problem-brief.md` | Problem brief | Define |
-| `work/options.md`, `alignment.md`, `work/process-map.md`, `work/wireframes/` | Directions, alignment, the E2E process map, wireframes | Develop |
+| `work/alignment.md`, `work/process-map.md`, `work/wireframes/` | Alignment, the E2E process map, wireframes | Develop |
 | `work/test-plan.md`, `findings.md`, `handoff.md`, `measurement-plan.md` | Test plan, findings, handoff, measurement plan | Deliver |
 | `insights/` | 5 needs, 6 hypotheses, 7 decisions, 2 evidence, 7 findings, 5 metrics | All stages |
 | `stages/README.md` | The table of seven stage pages (scope, evidence, problem brief, develop, alignment, findings, handoff); each page is built from `work/` and `insights/` | All stages |

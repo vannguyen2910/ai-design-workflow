@@ -3,7 +3,7 @@ type: "learning"
 title: "Learning"
 stage: "Learn"
 status: "draft"
-summary: ""
+summary: "Travel Buddy has not been released, so there are no measured results. Records what the simulated test can and cannot say, and the test with real people to run next."
 supports: []
 ---
 *After launch. Travel Buddy is an academic practice project and has not been released, so there are no real measurements. This page says so clearly instead of leaving it empty.*

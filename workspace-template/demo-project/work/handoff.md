@@ -3,7 +3,7 @@ type: "handoff"
 title: "Handoff"
 stage: "Deliver"
 status: "draft"
-summary: ""
+summary: "Not ready: only the Explore tab has a requirements document. Lists the prototype, decisions, acceptance notes and four open questions for developers."
 supports: []
 ---
 *Deliver stage, at handoff. What a developer needs to build it without coming back with questions.*

@@ -1,6 +1,6 @@
 ---
 type: "prototype"
-title: "Final prototype Travel Buddy"
+title: "Final prototype"
 stage: "Deliver"
 status: "draft"
 summary: "The final interactive prototype of Travel Buddy, a single HTML file that runs right in the browser. Open it right on the page or in a new tab."

@@ -1,6 +1,6 @@
 ---
 type: "test-plan"
-title: "Unmoderated usability test plan"
+title: "Test plan"
 stage: "Deliver"
 status: "planned"
 summary: "A plan for 8 to 12 people, five tasks along the journey, measured by task success, SEQ and SUS. Not run yet."

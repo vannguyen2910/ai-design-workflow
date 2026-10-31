@@ -3,7 +3,7 @@ type: "scope"
 title: "Scope"
 stage: "Discover"
 status: "draft"
-summary: ""
+summary: "Travellers juggle 8 to 10 apps and distrust commercial reviews. Could one companion app replace them? The outcome and metrics are assumed: there is no real product owner."
 supports: []
 ---
 *Discover stage. Define it together with the PO and business, or write it as assumptions if you cannot reach them.*

@@ -1,6 +1,6 @@
 ---
 type: "process-map"
-title: "E2E process map: how a trip moves through Travel Buddy"
+title: "E2E process map"
 stage: "Develop"
 status: "draft"
 summary: "A swimlane map of the Travel Buddy journey with four actors (traveler, Travel Buddy, a local, a companion or contact): how the parts of the app hand over to each other, before the trip, on the trip and after it."

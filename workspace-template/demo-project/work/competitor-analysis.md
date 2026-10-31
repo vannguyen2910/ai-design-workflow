@@ -1,6 +1,6 @@
 ---
 type: "competitor-analysis"
-title: "Competitor analysis and SWOT"
+title: "Competitor analysis"
 stage: "Discover"
 status: "verified"
 summary: "Five competitors plus AI chat tools, compared on ten criteria: nobody covers all three pillars of discovery, connection and journal, for free."

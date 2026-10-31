@@ -1,6 +1,6 @@
 ---
 type: "requirements"
-title: "PRD tab Explore"
+title: "Explore PRD"
 stage: "Develop"
 status: "draft"
 summary: "Requirements for the discovery tab: three modes (Near Me, Country, Map), the crowd signal, one-tap save, visitors browse without an account."

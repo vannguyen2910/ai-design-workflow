@@ -3,7 +3,7 @@ type: "alignment"
 title: "Alignment check"
 stage: "Develop"
 status: "draft"
-summary: ""
+summary: "Every decision traces to a need and a hypothesis. Two hypotheses have no test with real people, and the ten principles have no yes/no questions yet, so the principle audit is not done."
 supports: []
 ---
 *End of the Develop stage. Does every decision trace back to a user need and pass the principles? This page holds the audit and the verdicts.*

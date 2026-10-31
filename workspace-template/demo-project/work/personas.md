@@ -1,6 +1,6 @@
 ---
 type: "persona"
-title: "Ba persona: Aisha, Marco, Ji-yeon"
+title: "Persona"
 stage: "Define"
 status: "verified"
 summary: "Three personas built from the survey and one interview; Aisha was reframed to include the traits of a Pragmatic Planner."

@@ -1,6 +1,6 @@
 ---
 type: "wireframe"
-title: "Travel Buddy wireframes: lo-fi and the main screens"
+title: "Wireframes"
 stage: "Develop"
 status: "draft"
 summary: "Five lo-fi wireframe boards (Onboarding, Discover, Plan, Connect, Journal) with annotations tying each screen to a solution in the Solution Pool, and an HTML wireframe of the main screens (mobile 390 × 844) that opens right on the page."
