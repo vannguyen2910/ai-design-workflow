@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiểm tra quote do AI trả lại · Flowchart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #f5f5f5;
+      --color-ink:     #2d3142;
+      --color-muted:   #4f5d75;
+      --color-accent:  #bf4520;
+      --font-sans:     'Geist', system-ui, sans-serif;
+      --font-serif:    'Instrument Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1200px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      margin-bottom: 1.5rem;
+    }
+    .scroll { overflow-x: auto; }
+    svg { width: 100%; min-width: 1100px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Flowchart · AI Design Workflow</p>
+    <h1>Kiểm tra quote do AI trả lại</h1>
+
+    <div class="scroll">
+    <svg viewBox="0 0 1100 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="quote-check-title quote-check-desc">
+      <title id="quote-check-title">Kiểm tra quote do AI trả lại</title>
+      <desc id="quote-check-desc">Flowchart kiểm tra từng quote: tìm đúng chuỗi trong transcript, đọc ngữ cảnh gốc, ghi lỗi và sửa khi sai, rồi chạy lại với prompt chặt hơn nếu còn nhiều lỗi, hoặc dùng quote cho claim.</desc>
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker>
+      </defs>
+
+      <rect width="100%" height="100%" fill="#f5f5f5"/>
+
+      <!-- Arrows (drawn first) -->
+      <line x1="160" y1="150" x2="260" y2="150" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="420" y1="150" x2="540" y2="150" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="700" y1="150" x2="860" y2="150" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 340,202 V 296 Q 340,304 348,304 H 420" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 620,202 V 296 Q 620,304 612,304 H 580" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="500" y1="328" x2="500" y2="368" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="420" y1="420" x2="360" y2="420" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 580,420 H 912 Q 920,420 920,412 V 174" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+      <!-- Arrow labels -->
+      <rect x="466" y="130" width="28" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="480" y="139" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">CÓ</text>
+      <rect x="766" y="130" width="28" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="780" y="139" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">CÓ</text>
+      <rect x="348" y="240" width="44" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="370" y="249" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">KHÔNG</text>
+      <rect x="628" y="240" width="44" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="650" y="249" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">KHÔNG</text>
+      <rect x="376" y="400" width="28" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="390" y="409" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">CÓ</text>
+      <rect x="728" y="400" width="44" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="750" y="409" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">KHÔNG</text>
+
+      <!-- Start -->
+      <rect x="40" y="126" width="120" height="48" rx="24" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="100" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Quote từ AI</text>
+      <text x="100" y="162" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">kèm quote ID</text>
+
+      <!-- Decision 1 (focal) -->
+      <polygon points="340,98 420,150 340,202 260,150" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+      <text x="340" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Có trong</text>
+      <text x="340" y="161" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">transcript?</text>
+
+      <!-- Decision 2 -->
+      <polygon points="620,98 700,150 620,202 540,150" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="620" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Nghĩa còn</text>
+      <text x="620" y="161" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">nguyên?</text>
+
+      <!-- End: usable -->
+      <rect x="860" y="126" width="120" height="48" rx="24" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="920" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Dùng được</text>
+      <text x="920" y="162" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">cho claim</text>
+
+      <!-- Fix step -->
+      <rect x="420" y="280" width="160" height="48" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="500" y="301" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Ghi lỗi và sửa</text>
+      <text x="500" y="316" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">theo bản gốc</text>
+
+      <!-- Decision 3 -->
+      <polygon points="500,368 580,420 500,472 420,420" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="500" y="417" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Có nhiều</text>
+      <text x="500" y="431" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">lỗi?</text>
+
+      <!-- Rerun step -->
+      <rect x="200" y="396" width="160" height="48" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="280" y="417" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Chạy lại</text>
+      <text x="280" y="432" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">siết prompt, kiểm tra từ đầu</text>
+
+      <!-- Callout -->
+      <text x="40" y="238" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LƯU Ý</text>
+      <text x="40" y="258" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">Tìm đúng chuỗi chỉ bắt được quote bịa.</text>
+      <text x="40" y="276" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">Ý bị diễn đạt lại bằng lời khác thì không</text>
+      <text x="40" y="294" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">có chuỗi để tìm: đọc kỹ dòng “quote này</text>
+      <text x="40" y="312" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">không cho biết gì” của bước Evidence.</text>
+
+      <!-- Legend -->
+      <line x1="40" y1="500" x2="1060" y2="500" stroke="rgba(45,49,66,0.10)" stroke-width="0.8"/>
+      <text x="40" y="516" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LEGEND</text>
+
+      <rect x="40" y="528" width="22" height="10" rx="5" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="68" y="536" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Bắt đầu, kết thúc</text>
+
+      <rect x="188" y="528" width="14" height="10" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="208" y="536" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Bước</text>
+
+      <polygon points="280,533 286,528 292,533 286,538" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="298" y="536" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Câu hỏi kiểm tra</text>
+
+      <polygon points="420,533 426,528 432,533 426,538" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+      <text x="438" y="536" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Kiểm tra then chốt</text>
+
+      <line x1="568" y1="533" x2="596" y2="533" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <text x="604" y="536" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Có hoặc không</text>
+    </svg>
+    </div>
+  </div>
+</body>
+</html>

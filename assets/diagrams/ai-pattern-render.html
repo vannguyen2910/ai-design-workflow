@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Một file .md, nhiều bản flow · Flowchart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #f5f5f5;
+      --color-ink:     #2d3142;
+      --color-muted:   #4f5d75;
+      --color-accent:  #bf4520;
+      --font-sans:     'Geist', system-ui, sans-serif;
+      --font-serif:    'Instrument Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1200px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      margin-bottom: 1.5rem;
+    }
+    .scroll { overflow-x: auto; }
+    svg { width: 100%; min-width: 1100px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Mẫu 3 · Render · AI Design Workflow</p>
+    <h1>Một file .md, nhiều bản flow</h1>
+
+    <div class="scroll">
+    <svg viewBox="0 0 1100 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pattern-render-title pattern-render-desc">
+      <title id="pattern-render-title">Một file .md, nhiều bản flow</title>
+      <desc id="pattern-render-desc">Một file .md mô tả user flow đi qua AI render và người duyệt, rồi ra hai bản: flow trong tool thiết kế và flow bằng HTML; khi flow đổi thì sửa file .md rồi render lại.</desc>
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker>
+        <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#bf4520"/></marker>
+      </defs>
+
+      <rect width="100%" height="100%" fill="#f5f5f5"/>
+      <text x="140" y="56" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">NGUỒN</text>
+      <line x1="40" y1="66" x2="240" y2="66" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+      <text x="500" y="56" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">XỬ LÝ</text>
+      <line x1="300" y1="66" x2="700" y2="66" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+      <text x="920" y="56" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">RENDER RA</text>
+      <line x1="780" y1="66" x2="1060" y2="66" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+      <path d="M240,218 H300" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M480,218 H540" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M700,202 H732 Q740,202 740,194 V154 Q740,146 748,146 H780" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M700,234 H732 Q740,234 740,242 V282 Q740,290 748,290 H780" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M920,326 V342 Q920,350 912,350 H148 Q140,350 140,342 V254" fill="none" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+      <rect x="488" y="332" width="64" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="520" y="341" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">SỬA NGUỒN</text>
+      <rect x="40" y="182" width="200" height="72" rx="6" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+      <text x="140" y="214" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Mô tả user flow</text>
+      <text x="140" y="232" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">user-flow.md</text>
+      <rect x="300" y="182" width="180" height="72" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="390" y="214" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">AI render</text>
+      <text x="390" y="232" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">đọc .md, dựng flow</text>
+      <rect x="540" y="186" width="160" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="620" y="214" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Người duyệt</text>
+      <text x="620" y="232" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">đối chiếu với .md</text>
+      <rect x="780" y="110" width="280" height="72" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="920" y="142" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Flow trong tool thiết kế</text>
+      <text x="920" y="160" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">dùng để họp và chỉnh tay</text>
+      <rect x="780" y="254" width="280" height="72" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="920" y="286" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Flow bằng HTML</text>
+      <text x="920" y="304" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">bấm qua từng bước trong trình duyệt</text>
+      <line x1="40" y1="380" x2="1060" y2="380" stroke="rgba(45,49,66,0.10)" stroke-width="0.8"/>
+      <text x="40" y="396" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LEGEND</text>
+      <rect x="40" y="408" width="14" height="10" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <text x="60" y="416" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Bước</text>
+      <rect x="112" y="408" width="14" height="10" rx="2" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+      <text x="132" y="416" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Nguồn duy nhất, sửa ở đây</text>
+      <line x1="316" y1="413" x2="344" y2="413" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <text x="352" y="416" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Đầu ra thành đầu vào</text>
+      <line x1="516" y1="413" x2="544" y2="413" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+      <text x="552" y="416" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Sửa nguồn rồi render lại</text>
+    </svg>
+    </div>
+  </div>
+</body>
+</html>

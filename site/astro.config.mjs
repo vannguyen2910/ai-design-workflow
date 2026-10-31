@@ -1,28 +1,26 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { listLessons } from './scripts/lessons.mjs';
+import remarkLinks from './scripts/remark-links.mjs';
+
+// one sidebar entry per lesson folder: lessons/NN-slug/ -> "Lesson N" -> its overview page
+const lessons = listLessons().map((l) => ({ label: `Lesson ${l.num}`, slug: `lessons/${l.slug}/overview` }));
 
 export default defineConfig({
 	site: 'https://vannguyen2910.github.io',
 	base: '/ai-design-workflow',
+	markdown: { remarkPlugins: [remarkLinks] },
 	integrations: [
 		starlight({
 			title: 'AI Design Workflow',
 			customCss: ['./src/styles/custom.css'],
+				components: { PageTitle: './src/components/PageTitle.astro' },
+				routeMiddleware: './src/routeData.ts',
 			sidebar: [
 				{ label: 'Giới thiệu chương trình', slug: 'index' },
 				{ label: 'Landing Page', slug: 'landing' },
-				{
-					label: 'Lessons',
-					items: [
-						{ label: 'Lesson 1: Your Design Process, with AI', slug: 'lessons/design-process-with-ai/lesson' },
-						{ label: 'Practice 1: Case Folder and Hub', slug: 'lessons/design-process-with-ai/practice' },
-						{ label: 'Lesson 2: Discover the Problem', slug: 'lessons/discover-the-problem/lesson' },
-						{ label: 'Practice 2: Break the Brief', slug: 'lessons/discover-the-problem/practice' },
-						{ label: 'Lesson 3: Insights You Can Trust', slug: 'lessons/research-you-can-trust/lesson' },
-						{ label: 'Practice 3: Run the Four Steps', slug: 'lessons/research-you-can-trust/practice' },
-					],
-				},
+				{ label: 'Lessons', items: lessons },
 			],
 		}),
 	],

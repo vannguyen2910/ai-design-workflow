@@ -1,6 +1,6 @@
-# Five excerpts: Kitchen Crate
+# Five excerpts: app giao đồ ăn
 
-Năm đoạn trích dưới đây là **hư cấu**, thuộc case Kitchen Crate (app meal-kit theo gói đăng ký). Không có người thật, công ty thật hay số liệu thật. Dán chúng vào AI tool để thực hành là an toàn.
+Năm đoạn trích dưới đây là **hư cấu**, thuộc case app giao đồ ăn. Không có người thật, công ty thật hay số liệu thật. Dán chúng vào AI tool để thực hành là an toàn.
 
 Dùng cho Activity của buổi 1, bước 1 và bước 2.
 
@@ -24,46 +24,45 @@ Ghi lại: AI xếp khớp với bạn mấy đoạn trên 5, và đoạn nào l
 
 ## A
 
-**Trang giá công khai của một đối thủ (Bếp Nhà Box, hư cấu)**
+**Trang phí giao hàng công khai của một đối thủ (QuickPlate, hư cấu)**
 
-> **Chọn gói của bạn**
-> Gói Gia đình, 4 phần ăn mỗi bữa, 3 bữa mỗi tuần: 1.290.000 đồng mỗi tuần.
-> Gói Cặp đôi, 2 phần ăn mỗi bữa, 3 bữa mỗi tuần: 790.000 đồng mỗi tuần.
-> Gói Thử, 2 phần ăn mỗi bữa, 1 bữa: 249.000 đồng, chỉ dành cho khách mới.
-> Miễn phí giao hàng cho đơn từ 700.000 đồng. Tạm dừng hoặc huỷ bất kỳ lúc nào trước 18:00 thứ Năm.
+> **Bảng phí giao hàng**
+> Phí giao từ 15.000 đồng cho đơn dưới 3 km. Phí dịch vụ 5% giá trị đơn.
+> Hội viên QuickPlate Plus, 59.000 đồng mỗi tháng: miễn phí giao cho đơn từ 100.000 đồng.
+> Khách mới nhận mã giảm 30.000 đồng cho đơn đầu tiên. Huỷ đơn miễn phí trong 2 phút đầu.
 
 ## B
 
-**Ghi chú quy trình giao hàng nội bộ (Kitchen Crate, hư cấu)**
+**Ghi chú quy trình xử lý đơn giao trễ nội bộ (app giao đồ ăn, hư cấu)**
 
-> **Xử lý hộp giao trễ, bản nội bộ v3**
-> Hộp trễ quá 2 giờ so với khung đã hẹn: bộ phận chăm sóc khách hàng gọi lại trong 30 phút và đề nghị giao lại hoặc hoàn tiền một phần.
-> Mức hoàn mặc định là 20% giá trị hộp; quản lý ca được nâng lên 50% khi khách nêu thực phẩm có dấu hiệu hỏng.
-> Đối tác giao hàng chịu chi phí giao lại nếu lỗi nằm ở khâu vận chuyển. Không chia sẻ ngoài bộ phận vận hành và chăm sóc khách hàng.
+> **Xử lý đơn giao trễ, bản nội bộ v3**
+> Đơn trễ quá 30 phút so với giờ đã hẹn: bộ phận chăm sóc khách hàng gọi lại trong 10 phút và đề nghị giao lại hoặc hoàn tiền một phần.
+> Mức hoàn mặc định là 20% giá trị đơn; quản lý ca được nâng lên 50% khi khách nêu món ăn nguội hoặc có dấu hiệu hỏng.
+> Đối tác tài xế chịu chi phí giao lại nếu lỗi nằm ở khâu vận chuyển. Không chia sẻ ngoài bộ phận vận hành và chăm sóc khách hàng.
 
 ## C
 
-**Tóm tắt research chưa công bố, không có tên người (Kitchen Crate, hư cấu)**
+**Tóm tắt research chưa công bố, không có tên người (app giao đồ ăn, hư cấu)**
 
-> **Tóm tắt nội bộ: tám buổi phỏng vấn khách mới tạm dừng sau hộp đầu tiên (chưa công bố)**
-> Sáu trên tám người nói họ chưa biết trước khối lượng nấu ăn của mỗi hộp.
-> Ba người cho biết bước chọn ngày giao khiến họ lo bị ràng buộc dài hạn.
-> Hai người nhắc đến giá, cả hai đều so với một gói thử của đối thủ.
+> **Tóm tắt nội bộ: tám buổi phỏng vấn khách mới không đặt lại sau đơn đầu tiên (chưa công bố)**
+> Sáu trên tám người nói họ chưa biết trước thời gian giao thực tế của đơn đầu tiên.
+> Ba người cho biết bước chọn khung giờ giao khiến họ lo không đổi được lựa chọn.
+> Hai người nhắc đến phí giao, cả hai đều so với một mã giảm của đối thủ.
 > Tài liệu này chưa được trình bày với ban lãnh đạo; chưa có quyết định nào dựa trên nó.
 
 ## D
 
-**Transcript phỏng vấn đã thay tên bằng chữ cái (Kitchen Crate, hư cấu)**
+**Transcript phỏng vấn đã thay tên bằng chữ cái (app giao đồ ăn, hư cấu)**
 
 > **P3, nữ, 34 tuổi, quản lý một cửa hàng thời trang ở Đà Lạt, có hai con nhỏ**
-> Người phỏng vấn: Lần đầu mở hộp, chị thấy thế nào?
-> P3: Mình mở hộp tối thứ Sáu, sau khi đóng cửa hàng lúc chín giờ. Mình tưởng nấu nhanh, hoá ra bước sơ chế mất gần một tiếng, mà bé út đang quấy. Mình bấm tạm dừng ngay hôm sau. Cả cửa hàng chỉ có mình mình đặt hộp này, nên không ai để hỏi kinh nghiệm.
+> Người phỏng vấn: Lần đầu đặt đơn, chị thấy thế nào?
+> P3: Mình đặt tối thứ Sáu, sau khi đóng cửa hàng lúc chín giờ. App báo nửa tiếng là tới, hoá ra gần một tiếng sau mới có đồ ăn, mà bé út đang quấy. Hôm sau mình tính đặt lại nhưng nhớ cảnh chờ đó nên thôi. Cả cửa hàng chỉ có mình mình dùng app này, nên không ai để hỏi kinh nghiệm.
 
 ## E
 
-**Mô tả ảnh chụp màn hình admin dashboard đang chạy thật (Kitchen Crate, hư cấu)**
+**Mô tả ảnh chụp màn hình admin dashboard đang chạy thật (app giao đồ ăn, hư cấu)**
 
-> *[Ảnh chụp trang quản trị Kitchen Crate, chụp lúc 09:42 sáng nay]*
+> *[Ảnh chụp trang quản trị app giao đồ ăn, chụp lúc 09:42 sáng nay]*
 > Doanh thu hôm nay: 48.600.000 đồng. Số đơn đang chờ giao: 213.
-> Bảng "Đơn mới nhất" hiện năm dòng: họ tên đầy đủ, số điện thoại, địa chỉ giao hàng và gói đã chọn của từng khách.
+> Bảng "Đơn mới nhất" hiện năm dòng: họ tên đầy đủ, số điện thoại, địa chỉ giao hàng và món đã đặt của từng khách.
 > Góc phải có nút "Xuất toàn bộ danh sách khách hàng".

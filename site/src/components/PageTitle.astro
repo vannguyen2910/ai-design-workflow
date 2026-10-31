@@ -1,0 +1,59 @@
+---
+// Lesson pages: the card name is the title, the lesson name sits above it as a link back to the lesson.
+import { listLessons } from '../../scripts/lessons.mjs';
+
+const { id, entry } = Astro.locals.starlightRoute;
+const m = id.match(/^lessons\/([^/]+)\/(lesson|practice|overview)$/);
+const lesson = m && listLessons().find((l) => l.slug === m[1]);
+const kind = m?.[2];
+const CARD = { lesson: 'Lý thuyết', practice: 'Thực hành', overview: `Lesson ${lesson?.num}` };
+const title = lesson ? CARD[kind] : entry.data.title;
+const overview = lesson && `${import.meta.env.BASE_URL.replace(/\/$/, '')}/lessons/${lesson.slug}/overview/`;
+---
+
+{
+	lesson && (
+		<nav class="crumbs" aria-label="Breadcrumb">
+			<span>Lessons</span>
+			<span aria-hidden="true">›</span>
+			{kind === 'overview' ? (
+				<span aria-current="page">Lesson {lesson.num}</span>
+			) : (
+				<a href={overview}>
+					Lesson {lesson.num} · {lesson.lesson.title}
+				</a>
+			)}
+		</nav>
+	)
+}
+<h1 id="_top">{title}</h1>
+{lesson && kind === 'overview' && <p class="lesson-name">{lesson.lesson.title}</p>}
+
+<style>
+	h1 {
+		margin-top: 0.5rem;
+		font-size: var(--sl-text-h1);
+		line-height: var(--sl-line-height-headings);
+		font-weight: 600;
+		color: var(--sl-color-white);
+	}
+	.crumbs {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		margin-top: 1rem;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+	}
+	.crumbs a {
+		color: var(--sl-color-accent-high);
+		text-decoration: none;
+	}
+	.crumbs a:hover {
+		text-decoration: underline;
+	}
+	.lesson-name {
+		margin: 0.25rem 0 0;
+		color: var(--sl-color-gray-3);
+	}
+</style>
