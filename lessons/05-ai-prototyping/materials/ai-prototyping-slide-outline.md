@@ -9,47 +9,29 @@ built_deck: ""
 last_synced: 2026-10-30
 ---
 
-> **Source of truth:** `ai-prototyping-lesson.md`
-
-> **Copy standard:** mọi Kicker, Title và dòng On-slide đọc được trong một cái nhìn, không câu nào quá khoảng 15 từ. Speaker notes dùng ngôi "mình".
-
-> **Deck status:** đã build tại `Lesson 5 - AI Prototyping.dc.html` (32 slide). File này được đồng bộ ngược từ deck; nội dung on-slide trích từ chính slide.
-
----
-
 ## Session metadata
 
 | Field | Value |
 |---|---|
 | Program | AI Design Workflow |
-| Track / session | Buổi theory tuần 5 (Lesson 5), 90 phút, online, 7 đến 8 học viên; Practice 5 ngay sau đó |
+| Track / session | Buổi theory tuần 5 (Lesson 5), 90 phút, online, 7 đến 8 designer; Practice 5 ngay sau đó |
 | Stage | Develop |
 | Prior session | Lesson 4 và Practice 4: Explore Ideas |
 | Next session | Practice 5: Build prototype main flow |
-| Running example | Một delivery app hư cấu (màn hình "Chọn thời gian giao" ở activity); học viên làm trên case của chính mình ở Practice 5 |
+| Running example | Một delivery app hư cấu (màn hình "Chọn thời gian giao" ở activity); designer làm trên một case cụ thể ở Practice 5 |
 
----
-
-## Slide structure: 32 slides
-
-- Arc: **Open** (Cover, Agenda, Ice breaker) → **01 The Aim** → **02 One View** → **03 The Second View** → **04 Gate, Rules, Skill** → **Close** (Cheat sheet, Q&A, Practice 5, Takeaway).
-- Hai activity dùng chung khuôn: Ice breaker (nền tím, căn trái, câu hỏi trên slide). Rule-break hunt và các slide đáp án đã bỏ khỏi deck.
-- Ảnh lưu ở thư mục `assets/` của project deck.
+**Deck:** đã build tại `Lesson 5 - AI Prototyping.dc.html` (32 slide). File này được đồng bộ ngược từ deck; nội dung on-slide trích từ chính slide.
 
 ---
 
 ## Slides
 
 ### 01 · Cover · Systematic AI Prototyping
-- Kicker: 2026 · Winnie Nguyen
+- Kicker: 2026 · AI Design Workflow
 - Title: Systematic AI Prototyping
 - On-slide:
   - Develop
   - Xây dựng prototype với Design System và Rules
-  - Winnie
-  - Nguyen
-  - Senior Product Designer
-  - Master of UX & Service Design
   - Product Design Instructor
 - Speaker notes:
 
@@ -73,7 +55,7 @@ last_synced: 2026-10-30
   > Bốn phần, mỗi phần kết thúc bằng một câu hỏi ngắn bỏ phiếu bằng chat.
 
   - Việc dựng prototype là ở buổi practice
-  - Phần nặng nhất là One View: nó đặt tên cho những gì bạn sẽ đưa cho AI
+  - Phần nặng nhất là One View: nó đặt tên cho những gì designer sẽ đưa cho AI
 - 🎨 Visual hint: Typographic / layout chữ
 ---
 
@@ -81,15 +63,15 @@ last_synced: 2026-10-30
 - Kicker: Activity
 - Title: Looked fine,\n*was wrong*
 - On-slide:
-  - Lần gần nhất AI dựng cho bạn một màn hình trông ổn, đến khi kiểm lại bạn mới thấy sai. Sai ở đâu, và bạn phát hiện bằng cách nào?
+  - Lần gần nhất AI dựng cho designer một màn hình trông ổn, đến khi kiểm lại designer mới thấy sai. Sai ở đâu, và designer phát hiện bằng cách nào?
 - Speaker notes:
 
-  > Lần gần nhất AI dựng cho bạn một màn hình trông ổn, đến khi kiểm lại bạn mới thấy sai. Sai ở đâu, và bạn phát hiện bằng cách nào?
+  > Lần gần nhất AI dựng cho designer một màn hình trông ổn, đến khi kiểm lại designer mới thấy sai. Sai ở đâu, và designer phát hiện bằng cách nào?
 
-  - Sáu phút, cả lớp; mình nói trước hai mươi giây, rồi mỗi người nói tên và một câu
-  - Ghi nhanh các kiểu lỗi lên bảng: màu lệch, component lạ, điều hướng khác nhau, nội dung bịa
-  - Hỏi nhanh về tuần 4: hướng đã chọn và flow đã có chưa
-  - Ai chưa có câu chuyện thì kể điều mình sợ nhất khi AI dựng giao diện
+  - Sáu phút, cả lớp; nói trước hai mươi giây, rồi mỗi người nói tên và một câu
+  - Các kiểu lỗi: màu lệch, component lạ, điều hướng khác nhau, nội dung bịa
+  > Hướng đã chọn và flow ở tuần 4 đã có chưa?
+  - Ai chưa có câu chuyện thì kể điều lo ngại nhất khi AI dựng giao diện
 
   > Mình giữ bảng này để quay lại ở cuối buổi.
 
@@ -108,7 +90,7 @@ last_synced: 2026-10-30
 
   - Bốn phần, mỗi phần kết thúc bằng một câu hỏi ngắn bỏ phiếu bằng chat
   - Việc dựng prototype là ở buổi practice
-  - Phần nặng nhất là One View: nó đặt tên cho những gì bạn sẽ đưa cho AI
+  - Phần nặng nhất là One View: nó đặt tên cho những gì designer sẽ đưa cho AI
 
   > Mình bắt đầu từ câu hỏi: vì sao dựng từng màn hình lại bị lệch?
 - 🎨 Visual hint: Typographic / layout chữ
@@ -128,7 +110,7 @@ last_synced: 2026-10-30
   - Ít phải suy lại, ít phải thử lại
 - Speaker notes:
 
-  > Giả sử bạn dựng ba màn của một delivery app: giỏ hàng, chọn thời gian giao, thanh toán, mỗi màn một prompt riêng. Màn một và màn hai thường ổn. Màn ba có thể đã đổi thanh điều hướng và màu nút.
+  > Giả sử designer dựng ba màn của một delivery app: giỏ hàng, chọn thời gian giao, thanh toán, mỗi màn một prompt riêng. Màn một và màn hai thường ổn. Màn ba có thể đã đổi thanh điều hướng và màu nút.
 
   - Vấn đề một: mọi thứ lệch dần, nút ở màn một hơi khác nút ở màn ba; cách sửa là mọi màn dùng chung bố cục
   - Vấn đề hai: AI quên hết, mỗi yêu cầu bắt đầu lại từ đầu; cách sửa là một pattern viết sẵn, đọc lại ở mỗi prompt
@@ -139,7 +121,7 @@ last_synced: 2026-10-30
 
   > Cả bốn vấn đề quy về một gốc: AI không có gì cố định để bám.
 
-  > Bạn đã thấy ba màn của một app có ba kiểu điều hướng chưa?
+  > Designer đã thấy ba màn của một app có ba kiểu điều hướng chưa?
 
   > Câu hỏi hay gặp:
   - Viết prompt thật hay có đủ không? Prompt giúp từng màn, nhưng không giữ được những thứ phải cố định giữa các màn.
@@ -167,20 +149,20 @@ last_synced: 2026-10-30
   - định nghĩa một lần
 - Speaker notes:
 
-  > Với delivery app, thay vì dựng màn giỏ hàng rồi màn thanh toán từ đầu, bạn định nghĩa hệ thống một lần. Ba màn sau đó là ba cách sắp xếp những thứ đã có.
+  > Với delivery app, thay vì dựng màn giỏ hàng rồi màn thanh toán từ đầu, designer định nghĩa hệ thống một lần. Ba màn sau đó là ba cách sắp xếp những thứ đã có.
 
   - Ý một: tư duy hệ thống. Hệ thống đi trước, màn hình đi sau
   - Ý hai: pattern first. Design system là đầu vào của prototype, không phải đầu ra của việc thiết kế
-  - Ý ba: AI lắp ráp, còn bạn định nghĩa hệ thống, đặt ràng buộc và review từng màn
+  - Ý ba: AI lắp ráp, còn designer định nghĩa hệ thống, đặt ràng buộc và review từng màn
   - Cách nghĩ của lập trình: định nghĩa một mẫu một lần, dùng lại nhiều lần và chỉ tuỳ chỉnh phần khác biệt
 
   > Hệ thống là đầu vào của prototype, không phải đầu ra.
 
-  > Trong ba ý này, ý nào khác nhất với cách bạn đang làm?
+  > Trong ba ý này, ý nào khác nhất với cách designer đang làm?
 
   > Câu hỏi hay gặp:
   - Pattern ở đây là gì? Design Pattern là tên chung cho bộ token, component, template và shell.
-  - Vì sao AI-assisted? Học viên giữ các quyết định: định nghĩa hệ thống, đặt ràng buộc, review từng màn.
+  - Vì sao AI-assisted? Designer giữ các quyết định: định nghĩa hệ thống, đặt ràng buộc, review từng màn.
 - 🎨 Visual hint: Có diagram SVG line-art
 ---
 
@@ -232,9 +214,9 @@ last_synced: 2026-10-30
   - Token, component, shell, template và một journey chính
 - Speaker notes:
 
-  > Phần này đặt tên cho những gì bạn sẽ đưa cho AI: bốn layer của Design Pattern và một journey.
+  > Phần này đặt tên cho những gì designer sẽ đưa cho AI: bốn layer của Design Pattern và một journey.
 
-  - Đi từ layer thấp lên cao: token, component, shell, template
+  - Thứ tự từ layer thấp lên cao: token, component, shell, template
   - Rồi phạm vi: một shell và một journey
 
   > Mình bắt đầu từ định nghĩa One View.
@@ -266,7 +248,7 @@ last_synced: 2026-10-30
 
   > Cùng một nền thì mọi prototype có cùng content voice.
 
-  > Product của bạn hiện có bao nhiêu cách gọi cho cùng một thứ?
+  > Product của designer hiện có bao nhiêu cách gọi cho cùng một thứ?
 
   > Câu hỏi hay gặp:
   - View là gì? Một cách nhìn vào cùng một product. One View là nền chuẩn; The Second View là prototype thật.
@@ -298,14 +280,14 @@ last_synced: 2026-10-30
 
   - Bốn layer xếp từ dưới lên: token, component, shell, template
   - Cả bộ gọi là Design Pattern, đúng cách chương trình đã dùng ở khoá AI Prototype Development
-  - Design system của bạn có token và component; chưa có shell và template
-  - Shell và template thuộc về từng product, nên bạn tự định nghĩa cho product của bạn
+  - Design system của designer có token và component; chưa có shell và template
+  - Shell và template thuộc về từng product, nên designer tự định nghĩa cho product của designer
   - Thứ tự từ dưới lên là suy luận từ cấu trúc: đổi shell là đổi mọi màn hình
   - Khi đọc tài liệu khác, đối chiếu từ của họ với bốn layer này: Carbon nói UI shell, Material nói layout scaffold (nguồn 4 và 6)
 
-  > Bốn layer này là thứ bạn đưa cho AI trước khi nó dựng.
+  > Bốn layer này là thứ designer đưa cho AI trước khi nó dựng.
 
-  > Trong design system của bạn hôm nay, layer nào đang thiếu?
+  > Trong design system của designer hôm nay, layer nào đang thiếu?
 
   > Câu hỏi hay gặp:
   - Search hay navigation lặp lại ở nhiều màn có phải Design Pattern không? Không; đó là experience pattern, ghép từ component. Design Pattern là tên chung cho cả bốn layer.
@@ -333,9 +315,9 @@ last_synced: 2026-10-30
 
   > Token là lời đặt tên cho giá trị, để AI không tự bịa mã màu.
 
-  > Design system của bạn đã có token nào?
+  > Design system của designer đã có token nào?
 
-  > (Bản nháp: nội dung do mình soạn, cần chỉnh lại.)
+  > (Bản nháp: nội dung do người soạn viết, cần chỉnh lại.)
 - 🎨 Visual hint: Ảnh: `assets/token-color.png`
 ---
 
@@ -358,9 +340,9 @@ last_synced: 2026-10-30
 
   > AI chỉ được dùng component có trong inventory.
 
-  > Component nào product của bạn hay bị làm lại ở từng màn?
+  > Component nào product của designer hay bị làm lại ở từng màn?
 
-  > (Bản nháp: nội dung do mình soạn, cần chỉnh lại.)
+  > (Bản nháp: nội dung do người soạn viết, cần chỉnh lại.)
 - 🎨 Visual hint: Ảnh: `assets/component-inventory.png`
 ---
 
@@ -376,14 +358,14 @@ last_synced: 2026-10-30
 
   > Đây là dự án demo Travel Buddy của khoá: màn nào cũng có cùng một thanh tab ở đáy. Trong delivery app, đó là cùng một thanh trên cùng và cùng một menu ở màn giỏ hàng và màn thanh toán. Phần lặp đó là shell.
 
-  - Shell là khung bao mọi màn hình; bạn quyết định nó một lần
+  - Shell là khung bao mọi màn hình; designer quyết định nó một lần
   - Năm quyết định: có header không, có side nav không, các mục điều hướng, nút chính ở đâu, màn hình hẹp thì sao
-  - Đây là thứ AI hay tự thêm hoặc đổi từng màn nếu bạn không cố định
-  - Năm quyết định này là phần bạn tự định nghĩa cho product của bạn
+  - Đây là thứ AI hay tự thêm hoặc đổi từng màn nếu designer không cố định
+  - Năm quyết định này là phần designer tự định nghĩa cho product của designer
 
   > Quyết định shell một lần, rồi cấm AI tự thêm điều hướng.
 
-  > Product của bạn hiện có mấy kiểu điều hướng khác nhau?
+  > Product của designer hiện có mấy kiểu điều hướng khác nhau?
 
   > Câu hỏi hay gặp:
   - Shell có phải một component? Là một nhóm component đặt cố định; Carbon gọi là UI shell và tách thành header và panel.
@@ -405,11 +387,11 @@ last_synced: 2026-10-30
   - Template trả lời câu hỏi nội dung nằm ở đâu trong khung của shell
   - Hai đến ba template là đủ cho một flow
   - Frost mô tả template là bộ khung cấp trang; nội dung thật làm lộ chỗ hệ thống chưa chịu được
-  - Việc chọn template cho flow là phần bạn tự định nghĩa cho product của bạn
+  - Việc chọn template cho flow là phần designer tự định nghĩa cho product của designer
 
   > Một màn hình, một template. Không có template phù hợp thì AI phải dừng và hỏi.
 
-  > Flow của bạn dùng mấy kiểu trang?
+  > Flow của designer dùng mấy kiểu trang?
 
   > Câu hỏi hay gặp:
   - Cần bao nhiêu template? Hai đến ba cho một flow; nhiều hơn thường là chưa chọn.
@@ -445,7 +427,7 @@ last_synced: 2026-10-30
 
   > Một shell và một journey. Chưa phải cả product.
 
-  > Đường chính của product bạn gồm mấy màn?
+  > Đường chính của product designer gồm mấy màn?
 
   > Câu hỏi hay gặp:
   - Một journey có đủ để test không? Đủ để test đường chính, không đại diện cho cả product.
@@ -498,11 +480,11 @@ last_synced: 2026-10-30
   - Cài đặt
 - Speaker notes:
 
-  > Cùng một màn hình, cùng một AI. Bên trái prompt chỉ nói "dựng màn chọn thời gian giao". Bên phải kèm rules file. Trước khi mình mở file, bạn đoán bản nào dùng đúng design system.
+  > Cùng một màn hình, cùng một AI. Bên trái prompt chỉ nói "dựng màn chọn thời gian giao". Bên phải kèm rules file. Trước khi mở file, designer đoán bản nào dùng đúng design system.
 
-  - Cho cả lớp đoán trước, rồi bỏ phiếu bằng chat
-  - Mở file bản trái: màu thô, điều hướng riêng, component lạ
-  - Mở file bản phải: dùng đúng token và component, nằm trong shell
+  - Đoán trước, rồi bỏ phiếu bằng chat
+  - Bản trái: màu thô, điều hướng riêng, component lạ
+  - Bản phải: dùng đúng token và component, nằm trong shell
   - Hai bản dựng sẵn trước buổi dạy; không chạy trực tiếp
   - Đây là một ví dụ, không phải số đo mức AI vi phạm quy tắc
 
@@ -542,20 +524,20 @@ last_synced: 2026-10-30
   - quy tắc
 - Speaker notes:
 
-  > Bạn đổi màu chính trong token: nút ở cả năm màn đổi theo. Bạn đổi tên một mục menu trong shell: AI không tự biết, bạn phải dựng lại qua một prompt có quy tắc.
+  > Designer đổi màu chính trong token: nút ở cả năm màn đổi theo. Designer đổi tên một mục menu trong shell: AI không tự biết, designer phải dựng lại qua một prompt có quy tắc.
 
   - The Second View là prototype thật: chạy được trong trình duyệt, dựng từ One View
-  - One View cho biết "đúng" trông thế nào; The Second View là nơi áp dụng vào flow của bạn
+  - One View cho biết "đúng" trông thế nào; The Second View là nơi áp dụng vào flow của designer
   - Thay đổi được đưa từ One View sang The Second View theo quy tắc đã viết
   - Chỉ layer token tự cập nhật, như lesson Scaling the Prototype của chương trình đã nói
   - Quy tắc: sửa ở nguồn, dựng lại phần bị ảnh hưởng, rồi review
   - Trang design-system.html và các màn hình cùng dùng tokens.css, nên đổi token là cả hai đổi theo
   - Nhiều demo nói "tự động cập nhật" mà không nói rõ lớp nào; đó là chỗ cần nói thẳng
-  - Hệ thống của bạn cập nhật đáng tin cậy, và điều đó hữu ích hơn là tự động
+  - Hệ thống của designer cập nhật đáng tin cậy, và điều đó hữu ích hơn là tự động
 
   > Sửa ở One View, rồi để quy tắc đưa thay đổi sang The Second View.
 
-  > Trong prototype của bạn, thay đổi nào sẽ phải qua một prompt thay vì tự cập nhật?
+  > Trong prototype của designer, thay đổi nào sẽ phải qua một prompt thay vì tự cập nhật?
 
   > Câu hỏi hay gặp:
   - Đổi ở One View là mọi thứ tự cập nhật? Chỉ layer token. Với component, shell và template, thay đổi được đưa sang qua một prompt có kiểm soát, theo quy tắc.
@@ -602,9 +584,9 @@ last_synced: 2026-10-30
 
   > Flow nói AI đi đâu, requirement nói màn đó có gì.
 
-  > Flow của bạn đã có ID requirement cho màn quan trọng nhất chưa?
+  > Flow của designer đã có ID requirement cho màn quan trọng nhất chưa?
 
-  > (Bản nháp: nội dung do mình soạn từ các lựa chọn của bạn, cần chỉnh lại.)
+  > (Bản nháp: nội dung do người soạn viết từ các lựa chọn của designer, cần chỉnh lại.)
 - 🎨 Visual hint: Có diagram SVG line-art
 ---
 
@@ -626,17 +608,17 @@ last_synced: 2026-10-30
   - AI dựng journey trong shell
 - Speaker notes:
 
-  > Với delivery app: mình viết rules, dựng khung header và menu trống, đưa vào flow đặt đồ ăn năm màn đã có, để AI dựng, rồi mở từng file để review.
+  > Với delivery app: viết rules, dựng khung header và menu trống, đưa vào flow đặt đồ ăn năm màn đã có, để AI dựng, rồi mở từng file để review.
 
   - Thứ tự là phương pháp của chương trình: rules trước, rồi shell, rồi flow, rồi dựng, rồi review
   - Màn hình số 0 là shell trống; kiểm ở độ rộng điện thoại và máy tính trước khi dựng tiếp
   - Flow đến từ tuần 4, không phải AI nghĩ ra
   - Chưa có nghiên cứu đo hiệu quả của thứ tự này
-  - Skill prototype của toolkit có các gate kiểm; bạn dùng nó ở Practice 5
+  - Skill prototype của toolkit có các gate kiểm; designer dùng nó ở Practice 5
 
   > Review là bước dài nhất, vì một lượt dựng cả journey cho ra nhiều chỗ cần sửa.
 
-  > Trong năm bước, bước nào bạn thường bỏ khi làm vội?
+  > Trong năm bước, bước nào designer thường bỏ khi làm vội?
 
   > Câu hỏi hay gặp:
   - Dựng cả journey một lượt hay từng màn? Chương trình dạy dựng cả journey sau khi có rules và shell; các gate của skill dùng để kiểm.
@@ -667,18 +649,18 @@ last_synced: 2026-10-30
   - Fix too low
 - Speaker notes:
 
-  > Nút màu cam xuất hiện ở cả năm màn của delivery app. Nếu sửa từng màn, màn sau sẽ lại cam. Câu hỏi để bạn tự dùng khi không có mình: lỗi này có sai ở nhiều hơn một màn không?
+  > Nút màu cam xuất hiện ở cả năm màn của delivery app. Nếu sửa từng màn, màn sau sẽ lại cam. Câu hỏi để designer tự dùng khi không có người hướng dẫn: lỗi này có sai ở nhiều hơn một màn không?
 
   - Ladder từ rộng đến hẹp: token (mọi màn), component (mọi chỗ dùng), shell (mọi loại màn), template (mọi màn cùng loại), màn hình (chỉ màn đó)
   - Quy tắc: sửa ở layer rộng nhất mà lỗi còn đúng, không phải layer rộng nhất có thể
   - Fix too low là cách sai quen thuộc: thực chất vẫn là dựng từng màn một
   - Push too high ít ai cảnh báo: hệ thống chứa đầy những thứ chỉ một màn cần
   - Một màn không dẫn đi đâu thì sửa ở flow, không sửa ở layer nào của ladder
-  - Đây là layer ladder của lesson Scaling the Prototype; việc xếp shell vào ladder là điều chỉnh của mình
+  - Đây là layer ladder của lesson Scaling the Prototype; việc xếp shell vào ladder là điều chỉnh của người soạn
 
   > Sửa ở layer rộng nhất mà lỗi còn đúng. Không phải layer rộng nhất có thể.
 
-  > Lỗi nào bạn từng sửa đi sửa lại ở nhiều màn?
+  > Lỗi nào designer từng sửa đi sửa lại ở nhiều màn?
 
   > Câu hỏi hay gặp:
   - Vì sao shell nằm trong ladder? Ladder gốc ở lesson Scaling the Prototype có bốn bậc; shell được xếp thêm theo phần shared layout của cùng lesson [to confirm].
@@ -720,9 +702,9 @@ last_synced: 2026-10-30
   - AI gắn ID và liệt kê chỗ hở; người duyệt quyết định bổ sung hay bỏ requirement đó
   - Đây là cách một số designer đang làm, chưa phải chuẩn ngành
 
-  > Requirement chưa có element nào gắn là chỗ hở, và chỗ hở đó do bạn quyết, không phải AI.
+  > Requirement chưa có element nào gắn là chỗ hở, và chỗ hở đó do designer quyết, không phải AI.
 
-  > Trong flow của bạn, bạn có thể liệt kê ba requirement nào cho màn quan trọng nhất? Gõ vào chat một requirement.
+  > Trong flow của designer, designer có thể liệt kê ba requirement nào cho màn quan trọng nhất? Gõ vào chat một requirement.
 
   > Câu hỏi hay gặp:
   - Requirement lấy từ đâu? Dòng ngắn rút từ problem brief và hướng đã chọn [to confirm].
@@ -750,7 +732,7 @@ last_synced: 2026-10-30
   - link chạy được, rules file, điều chưa làm
 - Speaker notes:
 
-  > Prototype của delivery app chạy được: bạn bấm qua năm màn, đặt được một đơn giả. Điều đó chưa nói người dùng có hiểu màn chọn thời gian giao hay không.
+  > Prototype của delivery app chạy được: designer bấm qua năm màn, đặt được một đơn giả. Điều đó chưa nói người dùng có hiểu màn chọn thời gian giao hay không.
 
   - Prototype là bản tham chiếu cho developer và thứ để test
   - Không phải code production
@@ -783,7 +765,7 @@ last_synced: 2026-10-30
 
   - Gate, rules và skill
   - Mười quy tắc của rules file, chia hai nhóm
-  - Quy tắc nào bạn viết lại bằng lời của mình mới là của bạn
+  - Quy tắc nào được viết lại bằng lời riêng mới là của người làm
 
   > Mình bắt đầu từ ba khái niệm.
 - 🎨 Visual hint: Typographic / layout chữ
@@ -813,11 +795,11 @@ last_synced: 2026-10-30
 
   > Quy tắc và gate được đặt trước khi dựng, không thêm vào sau.
 
-  > Quy trình nào của bạn đang nằm trong đầu bạn mà chưa viết ra?
+  > Quy trình nào của designer đang nằm trong đầu designer mà chưa viết ra?
 
   > Câu hỏi hay gặp:
   - Skill khác rules file thế nào? Rules là quy tắc cố định; skill là các bước và prompt của một quy trình.
-  - Gate có phải review không? Gate là điểm dừng; review là việc bạn làm ở một gate.
+  - Gate có phải review không? Gate là điểm dừng; review là việc designer làm ở một gate.
 
   > Nguồn: có (Atlassian cài skill vào repo kèm chỉ dẫn trong AGENTS.md [3]; Uber dùng một skill cho mỗi mục spec [9])
 - 🎨 Visual hint: Typographic / layout chữ
@@ -842,15 +824,15 @@ last_synced: 2026-10-30
   > Một rules file cho delivery app có quy tắc 1: thiếu component trong inventory thì yêu cầu thêm trước, rồi mới dựng. AI đọc quy tắc đó trước mỗi lần dựng.
 
   - Mười quy tắc chia hai nhóm: năm quy tắc hệ thống ở slide này, năm quy tắc làm việc ở slide kế
-  - Không đọc hết năm quy tắc; nhấn ba quy tắc đầu
+  - Trọng tâm là ba quy tắc đầu
   - Quy tắc 1 và 2 cùng trả lời câu "đừng dùng gì ngoài design system"
   - Vế sau của quy tắc 2 ngăn một token còn thiếu biến thành một mã màu tự bịa mà trông vẫn ổn
-  - Quy tắc 3 giúp cập nhật thay đổi xuống các màn hình về sau; mình thêm "nằm trong shell" vào quy tắc gốc
+  - Quy tắc 3 giúp cập nhật thay đổi xuống các màn hình về sau; chương trình thêm "nằm trong shell" vào quy tắc gốc
   - Quy tắc 5 có thêm "đúng content voice đã chốt", theo content voice ở slide One View
 
   > Quy tắc 1 và 2 là toàn bộ câu trả lời cho: đừng dùng gì ngoài design system.
 
-  > Trong năm quy tắc này, quy tắc nào bạn chưa từng viết cho AI?
+  > Trong năm quy tắc này, quy tắc nào designer chưa từng viết cho AI?
 
   > Câu hỏi hay gặp:
   - Vì sao quy tắc 2 có vế "báo cái chưa có"? Để một token còn thiếu không biến thành một mã màu tự bịa mà trông vẫn ổn.
@@ -874,18 +856,18 @@ last_synced: 2026-10-30
   - WCAG 2.1 AA mọi màn: tương phản, focus, vùng chạm
 - Speaker notes:
 
-  > Bạn đính kèm cả folder để AI hiểu rõ hơn. Kết quả thường ngược lại: AI có thêm nhiều file để sửa nhầm.
+  > Designer đính kèm cả folder để AI hiểu rõ hơn. Kết quả thường ngược lại: AI có thêm nhiều file để sửa nhầm.
 
-  - Năm quy tắc làm việc nói về cách học viên và tool cư xử, khác năm quy tắc hệ thống ở slide trước
-  - Nhấn quy tắc 7 và quy tắc 10, để slide tự nói phần còn lại
+  - Năm quy tắc làm việc nói về cách designer và tool cư xử, khác năm quy tắc hệ thống ở slide trước
+  - Trọng tâm là quy tắc 7 và quy tắc 10; phần còn lại để slide tự nói
   - Quy tắc 7 ngược trực giác: thêm context không giúp, nó chỉ mở rộng phạm vi tool có thể sửa
   - Quy tắc 10: màn do AI dựng thường có focus không nhìn thấy và độ tương phản sát ngưỡng
   - Quy tắc 9: "lưu" là lưu một checkpoint; skill prototype dùng lệnh "Lưu lại"
-  - Quy tắc 8: mỗi lần dựng kết thúc bằng những gì AI chưa làm được, để bạn không phải đoán
+  - Quy tắc 8: mỗi lần dựng kết thúc bằng những gì AI chưa làm được, để designer không phải đoán
 
   > Áp quy tắc lúc dựng không tốn gì. Kiểm tra sau thì tốn cả một buổi.
 
-  > Quy tắc nào trong năm quy tắc này bạn sẽ khó giữ nhất?
+  > Quy tắc nào trong năm quy tắc này designer sẽ khó giữ nhất?
 
   > Câu hỏi hay gặp:
   - Vì sao đính kèm ít file hơn? Thêm file không giúp hơn; nó chỉ mở rộng phạm vi tool có thể sửa.
@@ -897,23 +879,23 @@ last_synced: 2026-10-30
 - Kicker: Nguyên tắc
 - Title: Rules you\n*rewrite* are yours
 - On-slide:
-  - Quy tắc nhận từ người khác chưa thuộc về bạn
+  - Quy tắc nhận từ người khác chưa thuộc về designer
   - rules.md
   - Dùng màu chính cho nút chính
   - Dùng màu chính cho mọi nút chính
 - Speaker notes:
 
-  > Bạn nhận bộ mười quy tắc từ mình. Sau lần dựng đầu, bạn sẽ thấy dòng nào AI vẫn vi phạm, dòng nào thiếu. Dòng bạn viết lại bằng lời của mình mới là dòng của bạn.
+  > Bộ mười quy tắc này là bản mẫu. Sau lần dựng đầu sẽ thấy dòng nào AI vẫn vi phạm, dòng nào thiếu. Dòng được viết lại bằng lời riêng mới là dòng của người làm.
 
   - Bộ quy tắc mẫu đến từ kinh nghiệm của người khác
-  - Quy tắc chỉ thuộc về bạn sau khi bạn dựng một lần và thấy quy tắc nào thiếu
+  - Quy tắc chỉ thuộc về designer sau khi designer dựng một lần và thấy quy tắc nào thiếu
   - Rules file và design system có thể lệch nhau khi một bên đổi mà bên kia không đổi
   - Một nguồn agency báo rủi ro này; đó là kinh nghiệm của một agency, chưa phải kết quả đo
   - Quy tắc của chương trình: thêm component hoặc đổi token thì cập nhật cả hai trong cùng lượt
   - Quy tắc không bắt được gì chưa chắc là sai: đánh dấu, đừng xoá, xem lại sau journey thứ hai
-  - Quy tắc nào chưa có thì viết thêm bằng lời của bạn, đặt ở đầu danh sách
+  - Quy tắc nào chưa có thì viết thêm bằng lời của designer, đặt ở đầu danh sách
 
-  > Quy tắc bạn viết lại bằng lời của mình mới là quy tắc của bạn.
+  > Quy tắc được viết lại bằng lời riêng mới là quy tắc của người làm.
 
   > Câu hỏi 30 giây: khi thiếu component, rules file nên nói gì? A, tạo cái gần giống nhất. B, dừng và hỏi. Gõ A hoặc B vào chat.
 
@@ -950,7 +932,7 @@ last_synced: 2026-10-30
   - WCAG 2.1 AA mọi màn
 - Speaker notes:
 
-  > Một màn hình để bạn quay lại khi làm ở buổi practice.
+  > Một màn hình để designer quay lại khi làm ở buổi practice.
 
   - Hai thẻ: năm quy tắc hệ thống và năm quy tắc làm việc
   - Slide này ở lại trên màn hình trong phần hỏi đáp
@@ -958,7 +940,7 @@ last_synced: 2026-10-30
 
   > Mọi thứ trên slide này đã nói trong buổi; không có nội dung mới.
 
-  > Có dòng nào trên đây bạn chưa hiểu?
+  > Có dòng nào trên đây designer chưa hiểu?
 
   > Câu hỏi hay gặp:
   - Tài liệu này gửi sau buổi không? Có.
@@ -966,22 +948,22 @@ last_synced: 2026-10-30
 ---
 
 ### 30 · STATEMENT · Q&A
-- Kicker: Bạn muốn hỏi về
+- Kicker: Các chủ đề có thể hỏi
 - Title: Q&A
 - On-slide:
-  - Thiết kế hệ thống của mình
+  - Thiết kế hệ thống riêng
   - Viết rules cho AI
   - Dựng AI prototype
 - Speaker notes:
 
-  > Mười phút cho câu hỏi. Mình đọc từ chat, bắt đầu với những câu bạn đã ghi trong chat.
+  > Mười phút cho câu hỏi. Mình đọc từ chat, bắt đầu với những câu designer đã ghi trong chat.
 
-  - Câu hỏi học viên ghi trong chat suốt buổi
+  - Câu hỏi designer ghi trong chat suốt buổi
   - Ưu tiên câu liên quan đến design system và dữ liệu của công ty
   - Nếu hỏi về tinh chỉnh state, accessibility, principle audit: nói đây là việc ở Practice 5
   - Nếu hỏi về số liệu hiệu quả: nói thẳng là chưa có số đo độc lập
 
-  > Câu nào chưa có số đo, mình nói thẳng là chưa có.
+  > Câu nào chưa có số đo, nói thẳng là chưa có.
 
   > Câu hỏi đầu tiên là gì?
 - 🎨 Visual hint: Typographic / layout chữ
@@ -991,7 +973,7 @@ last_synced: 2026-10-30
 - Kicker: Practice
 - Title: Build the *prototype*
 - On-slide:
-  - Dựng prototype chạy được cho một flow của bạn, từ design system và các màn đã thiết kế
+  - Dựng prototype chạy được cho một flow của designer, từ design system và các màn đã thiết kế
   - 01
   - Có một bộ design system
   - 02
@@ -1006,18 +988,18 @@ last_synced: 2026-10-30
   - Dựng journey prototype
 - Speaker notes:
 
-  > Hôm nay bạn đã có bốn layer và mười quy tắc của rules file. Ở Practice 5, bạn dùng đúng chúng trên flow của chính bạn.
+  > Hôm nay designer đã có bốn layer và mười quy tắc của rules file. Ở Practice 5, designer dùng đúng chúng trên flow của một case cụ thể.
 
   - Bài không giới hạn một buổi: làm phần đầu ở nhà, tiếp tục trên lớp; mỗi bước có một file lưu lại
   - Mang theo: design system trong Figma (token, component kèm trạng thái), hướng đã chọn và flow từ tuần 4, nội dung thật, một AI coding tool đã được công ty cho phép
-  - Design system của công ty có thể là tài liệu mật; không chắc thì dùng bản của giảng viên
-  - Hai làn: Figma (bạn tự làm) và AI coding tool (AI dựng, bạn kiểm tra)
+  - Design system của công ty có thể là tài liệu mật; không chắc thì dùng bản của người hướng dẫn
+  - Hai làn: Figma (designer tự làm) và AI coding tool (AI dựng, designer kiểm tra)
   - Gate A ở Step 3, Gate B ở Step 4, Gate C ở Screen plan của Step 6, Gate D ở Step 7, Gate E ở Step 8
   - Gợi ý chia việc (chưa thử với lớp thật): Step 1 đến 3 ở nhà, Step 4 đến 8 trên lớp
   - Nếu đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau
   - Output: tokens.css, components.css, components.html, project-rules.md, file shell và template, file màn hình, work/prototype/index.md, _personal/learning-log.md
 
-  > Shell và template của product là phần bạn tự định nghĩa; AI không làm thay.
+  > Shell và template của product là phần designer tự định nghĩa; AI không làm thay.
 - 🎨 Visual hint: Typographic / layout chữ
 ---
 
@@ -1025,10 +1007,10 @@ last_synced: 2026-10-30
 - Kicker: Takeaway
 - Title: Hệ thống là *đầu vào* của prototype, không phải đầu ra.
 - On-slide:
-  - Winnie Nguyen
+  - AI Design Workflow
 - Speaker notes:
 
   - Cảm ơn cả lớp
-  - Nhắc lại: Practice 5 dùng bốn layer và mười quy tắc của hôm nay
-  - Gửi cheat sheet sau buổi học
+  - Practice 5 dùng bốn layer và mười quy tắc của hôm nay
+  - Cheat sheet gửi sau buổi học
 - 🎨 Visual hint: Typographic / layout chữ

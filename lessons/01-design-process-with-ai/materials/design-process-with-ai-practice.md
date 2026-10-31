@@ -1,6 +1,6 @@
 ---
 title: "Case Folder and Hub"
-summary: "Dựng case folder, context pack và Knowledge Hub cho case của bạn."
+summary: "Dựng case folder, context pack và Knowledge Hub cho một case."
 type: practice
 program: ai-design-workflow
 lesson: design-process-with-ai
@@ -15,7 +15,7 @@ Dựng nền mà cả chương trình chạy trên đó: một project folder ch
 ## Before you start
 
 - Bạn đã học [Lesson 1](design-process-with-ai-lesson.md) và có bản đầu của data rules từ activity trên lớp.
-- Case của bạn đã được ẩn danh theo data rules. Nếu công ty không cho dùng AI tool, hoặc case quá nhạy cảm, dùng [case mẫu](../../../assets/starter-files/course-case/case-card.md) của chương trình (Kitchen Crate) cho Step 4.
+- Case của bạn đã được ẩn danh theo data rules. Nếu công ty không cho dùng AI tool, hoặc case quá nhạy cảm, dùng [case mẫu](../../../assets/starter-files/course-case/case-card.md) của chương trình (app giao đồ ăn) cho Step 4.
 - Một AI chat tool đã được công ty cho phép, và một công cụ mở folder quen thuộc (AI coding tool, VS Code hoặc Obsidian).
 - Workspace template đã tải về dạng ZIP và đặt ở một folder không đồng bộ cloud.
 

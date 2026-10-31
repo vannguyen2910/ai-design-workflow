@@ -14,33 +14,29 @@ previous-session: "Discover the Problem"
 next-session: "Frame the Problem Worth Solving"
 ---
 
-> **Ghi chú sync (2026-10-30).** Synthesis chuyển sang Lesson 2 (`discover-the-problem-lesson.md` mục 5): ba quy tắc và bốn câu hỏi về dữ liệu, kiểm tra quote, bốn bước Decision, Evidence, Claim, Challenge, năm điều cần soi, giữ ý kiến trái chiều, cùng activity viết claim và phản biện chéo. Buổi này giữ phần ôn ngắn, rồi đi tiếp từ claim sang persona, journey map, opportunity và insight hub. Package thành agent chuyển về đây từ Lesson 2. Bốn câu hỏi về giới hạn của AI còn lại (lead, thời gian, khi nào bỏ AI, chọn công cụ); năm câu đầu của cheat sheet chín câu nằm ở Lesson 2. Activity mới: persona có quote hay không. Đầu vào của học viên là claim và insight của chính họ từ Practice 2 (không dùng quote peer). Practice là chuỗi việc ở nhà. Bản trước nằm ở `materials/_archive/research-you-can-trust-lesson-pre-synthesis-move-2026-10-30.md`. Thời lượng mới chưa được thử `[to confirm]`.
-
-> **Ghi chú sync (2026-10-27).** Lesson được viết lại theo mục 6 của `learning/ai-in-insights.md`. Bản cũ (tám bước, ba cổng, evidence menu, competitor analysis) nằm ở `materials/_archive/research-you-can-trust-lesson-pre-four-steps-2026-10-27.md`. Thay đổi chính: bốn bước Decision, Evidence, Claim, Challenge thay cho tám bước và ba cổng; thêm persona, journey map, opportunity và insight hub; evidence menu và competitor analysis đã chuyển sang Lesson 2. Mục đánh dấu `[to confirm]` chờ Winnie xác nhận.
+> **Sync note 2026-10-30.** Synthesis chuyển sang Lesson 2 (mục 5); buổi này giữ phần ôn ngắn rồi đi tiếp từ claim sang persona, journey map, opportunity và insight hub. Package thành agent chuyển về đây từ Lesson 2. Còn bốn câu hỏi về giới hạn của AI (năm câu đầu của cheat sheet chín câu nằm ở Lesson 2). Activity mới: persona có quote hay không. Đầu vào là claim và insight của designer từ Practice 2. Lesson được rút gọn: số mục, bảng phase và trích dẫn [n] giữ nguyên; kịch bản ice breaker và Activity dời sang `learning/lesson-3-details.md`. Bản trước nằm ở `materials/_archive/research-you-can-trust-lesson-pre-condense-2026-10-30.md` (và các bản cũ hơn cùng thư mục). Thời lượng mới chưa thử `[to confirm]`.
 
 ## Abstract
 
-Tài liệu này mô tả buổi 3 của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi 3 tiếp tục stage Discover: học viên đã có quote từ phỏng vấn user thật, cùng claim và insight đã qua synthesis ở Lesson 2 và Practice 2, và biến chúng thành persona, customer journey map và opportunity mà mỗi dòng truy được về quote gốc, rồi đóng góp insight đã kiểm tra vào insight hub và package quy trình thành agent.
+Buổi 3 của AI Design Workflow tiếp tục stage Discover cho Product Designer và UI/UX Designer ở cấp mid và senior. Designer đã có quote từ phỏng vấn user thật, cùng claim và insight đã qua synthesis ở Lesson 2 và Practice 2. Buổi này biến chúng thành persona, customer journey map và opportunity mà mỗi dòng truy được về quote gốc, rồi đóng góp insight đã kiểm tra vào insight hub và package quy trình thành agent.
 
-Buổi giải quyết năm vấn đề, theo thứ tự trình bày:
+Năm phần theo thứ tự trình bày:
 
-1. **Ôn: từ quote đến claim.** Ba quy tắc với dữ liệu, bốn bước Decision, Evidence, Claim, Challenge và năm điều cần soi, đã học ở Lesson 2; buổi này chỉ nhắc lại để nối sang persona, journey map và opportunity.
-2. **Ba dạng của claim.** Persona, journey map và opportunity là ba cách điền câu claim "ai, khi nào, quyết định nào". Mỗi dạng có cách AI giúp và chỗ cần kiểm tra riêng.
+1. **Ôn: từ quote đến claim.** Chỉ nhắc lại những gì đã học ở Lesson 2 để nối sang ba dạng của claim.
+2. **Ba dạng của claim.** Persona, journey map và opportunity là ba cách điền câu claim "ai, khi nào, quyết định nào"; mỗi dạng có cách AI giúp và chỗ cần kiểm tra riêng.
 3. **Insight hub.** Một phần của Knowledge Hub, nơi lưu insight đã kiểm tra để lần sau tìm trước khi hỏi lại.
-4. **Package thành agent.** Khi một quy trình đã chạy ổn, học viên viết nó thành step card, biến thành agent và đóng góp vào hub.
-5. **Giới hạn của AI, bốn câu hỏi còn lại.** Đưa gì cho lead, tiết kiệm bao nhiêu thời gian, khi nào bỏ AI, và chọn công cụ theo tiêu chí nào.
+4. **Package thành agent.** Khi một quy trình đã chạy ổn, designer viết nó thành step card và biến thành agent.
+5. **Giới hạn của AI, bốn câu hỏi còn lại:** đưa gì cho lead, tiết kiệm bao nhiêu thời gian, khi nào bỏ AI, chọn công cụ theo tiêu chí nào.
 
-Nguyên tắc vận hành giữ nguyên: **AI soạn nháp. Học viên kiểm tra. Học viên quyết định.**
+Nguyên tắc vận hành giữ nguyên: **AI soạn nháp. Designer kiểm tra. Designer quyết định.**
 
-**Hình dạng buổi.** Ice breaker, ôn ngắn, theory (ba dạng của claim), một activity 10 phút trên lớp (persona có quote hay không), insight hub, package, hỏi đáp và cheat sheet. Việc làm trên insight của chính học viên là chuỗi practice ở nhà ngay sau buổi này.
-
-**Vị trí của buổi.** Buổi 3 giả định học viên đã có scope, danh sách giả định, finding heuristic, quote đã ẩn danh từ phỏng vấn user thật, claim và insight đã qua bốn bước (Lesson 2 và Practice 2). Các thành phần này hợp thành evidence pack; Gate 1 chạy ở Practice 3.
+**Hình dạng buổi.** Ice breaker, ôn ngắn, theory (ba dạng của claim), một activity 10 phút (persona có quote hay không), insight hub, package, hỏi đáp và cheat sheet. Việc làm trên insight của designer là chuỗi practice ở nhà ngay sau buổi. Buổi giả định designer đã có scope, danh sách giả định, finding heuristic, quote đã ẩn danh, claim và insight đã qua bốn bước; các thành phần này hợp thành evidence pack.
 
 ---
 
 ## Learning Objectives
 
-Sau buổi 3, học viên có thể:
+Sau buổi 3, designer có thể:
 
 1. **Nối** claim đã kiểm tra từ Lesson 2 với persona, journey map hoặc opportunity, mỗi dòng dẫn về quote ID
 2. **Viết** persona, journey map hoặc opportunity như một claim "ai, khi nào, quyết định nào", và **đánh dấu** ô chưa có quote là assumption
@@ -49,33 +45,23 @@ Sau buổi 3, học viên có thể:
 5. **Nêu** khi nào một quy trình đã sẵn sàng để package thành agent
 6. **Quyết định** khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu
 
----
-
 ## Success Check
 
 - Mỗi dòng của persona, journey map và opportunity truy được về ít nhất một quote ID, và quote khớp từng chữ với bản gốc.
 - Số lỗi của AI (quote sai, chi tiết bịa, điều bị bỏ, opportunity viết như tính năng) được đếm và ghi lại, không chỉ cảm nhận.
 - Mỗi claim có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều được giữ lại.
-
-**Checkpoint trên lớp:** mỗi cặp chỉ ra ít nhất một dòng của persona do AI sinh mà không có quote nào đỡ, kèm lý do.
-
----
+- Checkpoint trên lớp: mỗi cặp chỉ ra ít nhất một dòng của persona do AI sinh mà không có quote nào đỡ, kèm lý do.
 
 ## Materials Needed
 
-- Case Kitchen Crate của chương trình (hư cấu): `assets/starter-files/course-case/quotes.md` (24 quote bằng tiếng Anh, đã ẩn danh và có ID) và `case-card.md`. Bảng đáp án `quotes-answer-key.md` chỉ dành cho giảng viên.
-- Persona mẫu do AI sinh cho case Kitchen Crate (sáu dòng, một số dòng có quote đỡ, một số không) cho activity: `assets/starter-files/course-case/persona-ai-draft.md` `[to create]` (file chưa có; cần soạn cùng đáp án cho giảng viên).
-- Hai diagram trong `assets/` của lesson: `insight-chain` và `insight-hub-loop`. Phần ôn dùng thêm hai diagram `quote-check` và `four-steps-with-ai` ở `assets/` của Lesson 2.
-- Cheat sheet một màn hình: bốn câu hỏi còn lại và ba prompt cho persona, journey map, opportunity.
-- Một AI chat tool đã được công ty cho phép.
+- case app giao đồ ăn hư cấu: `assets/starter-files/course-case/quotes.md` (24 quote tiếng Anh, đã ẩn danh, có ID) và `case-card.md`. Bảng đáp án `quotes-answer-key.md` chỉ dành cho người hướng dẫn.
+- Persona mẫu do AI sinh cho app giao đồ ăn (sáu dòng, một số có quote đỡ, một số không) cho activity: `assets/starter-files/course-case/persona-ai-draft.md` `[to create]` (cần soạn cùng đáp án cho người hướng dẫn).
+- Hai diagram trong `assets/` của lesson: `insight-chain` và `insight-hub-loop`; phần ôn dùng thêm `quote-check` và `four-steps-with-ai` ở Lesson 2.
+- Cheat sheet một màn hình (bốn câu hỏi còn lại, ba prompt cho persona, journey map, opportunity) và một AI chat tool đã được công ty cho phép.
 
 ## Pre-Class Preparation
 
-Tối đa khoảng 10 phút:
-
-1. Mở lại claim và insight của chính mình từ Practice 2 (đã đưa lên hub): mỗi dòng đã dẫn về quote ID chưa.
-2. Mang theo các file từ Practice 2 (scope và research question, giả định, UX audit, competitor analysis, principles, quote đã ẩn danh); chúng là đầu vào của chuỗi practice ở nhà sau buổi này.
-3. Học viên chưa phỏng vấn được thì dùng bộ quote Kitchen Crate, và ai cũng dùng bộ này ở activity để đối chiếu được với bạn cùng cặp.
+Tối đa khoảng 10 phút: mở lại claim và insight từ Practice 2 (mỗi dòng đã dẫn về quote ID chưa); mang theo các file từ Practice 2 (scope, giả định, UX audit, competitor analysis, principles, quote đã ẩn danh) làm đầu vào cho chuỗi practice. Designer chưa phỏng vấn được thì dùng bộ quote app giao đồ ăn; mọi người đều dùng bộ này ở activity để đối chiếu với bạn cùng cặp.
 
 ---
 
@@ -85,30 +71,30 @@ Phần này nhắc lại những gì đã học ở Lesson 2 (mục 5), đủ đ
 
 | Điều đã học | Nhắc lại |
 |---|---|
-| Ba quy tắc với dữ liệu | Ẩn danh trên máy trước khi đưa cho AI; mỗi quote có ID theo nguồn; AI được phép nói unknown (Lesson 2, mục 5.1) |
-| Kiểm tra quote | Tìm đúng chuỗi trong transcript, rồi đọc ngữ cảnh quanh quote; tìm đúng chuỗi chỉ bắt được quote bịa (mục 5.3) |
-| Bốn bước | Decision (học viên viết), Evidence (AI rút, học viên kiểm tra), Claim (AI đề xuất, học viên chọn và viết lại), Challenge (học viên phản biện, giữ ý kiến trái chiều) (mục 5.4) |
-| Năm điều cần soi | Phạm vi, sự đồng thuận, sample mix, giải pháp, cảm xúc (mục 5.7) |
+| Ba quy tắc với dữ liệu | Ẩn danh trên máy trước khi đưa cho AI; mỗi quote có ID theo nguồn; AI được phép nói unknown (Lesson 2, 5.1) |
+| Kiểm tra quote | Tìm đúng chuỗi trong transcript, rồi đọc ngữ cảnh quanh quote; tìm đúng chuỗi chỉ bắt được quote bịa (5.3) |
+| Bốn bước | Decision (designer viết), Evidence (AI rút, designer kiểm tra), Claim (AI đề xuất, designer chọn và viết lại), Challenge (designer phản biện, giữ ý kiến trái chiều) (5.4) |
+| Năm điều cần soi | Phạm vi, sự đồng thuận, sample mix, giải pháp, cảm xúc (5.7) |
 
-Persona, journey map và opportunity (mục 2) dùng claim đã qua bốn bước làm nguyên liệu. Một persona dựng từ quote chưa kiểm tra vẫn là persona chưa kiểm tra.
+Persona, journey map và opportunity dùng claim đã qua bốn bước làm nguyên liệu. Một persona dựng từ quote chưa kiểm tra vẫn là persona chưa kiểm tra.
 
 ---
 
 ## 2. Three forms of a claim
 
-Persona, journey map và opportunity là ba cách điền câu claim: persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity điền chỗ "quyết định nào" (suy luận của người soạn, `[to confirm]`). Chuỗi nối chúng (diagram `insight-chain`): synthesis (đã làm ở Lesson 2), persona, journey map, opportunity, insight hub; mỗi bước dùng đầu ra của bước trước, và mọi dòng dẫn về quote ID.
+Persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity điền chỗ "quyết định nào" (suy luận của người soạn, `[to confirm]`). Chuỗi nối chúng (diagram `insight-chain`): synthesis (đã làm ở Lesson 2), persona, journey map, opportunity, insight hub; mỗi bước dùng đầu ra của bước trước, và mọi dòng dẫn về quote ID.
 
 ### 2.1 Persona
 
 | | |
 |---|---|
 | **What** | Mô tả một nhóm người dùng có cùng hành vi, mục tiêu và kỳ vọng trong một tình huống, dựng từ dữ liệu research. Không phải một người điển hình, cũng không phải một nhóm nhân khẩu học |
-| **Why** | Cả team nói về cùng một người thay vì mỗi người hình dung một kiểu, và tránh thiết kế cho chính mình |
+| **Why** | Cả team nói về cùng một người thay vì mỗi người hình dung một kiểu, và tránh thiết kế theo sở thích của người thiết kế |
 | **When** | Sau khi synthesis cho thấy các nhóm hành vi khác nhau, trước journey map. Không cần khi chỉ có một nhóm rõ ràng; khi dữ liệu mới có vài phỏng vấn, gọi nó là giả định `[to confirm]` |
-| **How with AI** | AI gom theme và claim đã kiểm tra thành tối đa 3 nhóm hành vi và soạn mô tả. Học viên đối chiếu từng dòng với quote ID; dòng không có quote thì xoá hoặc ghi unknown |
+| **How with AI** | AI gom theme và claim đã kiểm tra thành tối đa 3 nhóm hành vi và soạn mô tả. Designer đối chiếu từng dòng với quote ID; dòng không có quote thì xoá hoặc ghi unknown |
 | **AI không làm** | Tự sinh persona từ kiến thức chung |
 
-**Phát hiện.** Nghiên cứu CHI 2024 phân tích 450 persona do LLM sinh, với 4 người đánh giá nội bộ và 5 chuyên gia lĩnh vực: thiên lệch về tuổi, nghề, pain point và nghiêng mạnh về persona ở Mỹ. Người đánh giá chấm các mô tả là thông tin, đáng tin và gần gũi; chuyên gia chấm hơi rập khuôn hơn. Các tác giả kết luận mức rập khuôn tương đối thấp; mẫu người đánh giá nhỏ và không so với persona dựng từ dữ liệu thật [1]. NN/g chạy lại ba nghiên cứu cũ với người dùng AI: giá trị và nhu cầu nêu ra quá nông, mọi yếu tố được coi ngang nhau nên không có ích cho xếp ưu tiên hay tạo persona, và người dùng AI lý tưởng hoá hành vi (nói đã hoàn thành mọi khoá học, nói dùng forum trong khi người thật tránh) [2]. NN/g chấp nhận proto persona được xem lại sau research thật [2]. Hướng "persona có nguồn" (chỉ trả lời từ tài liệu thật, từ chối khi thiếu dữ liệu) có ở một preprint [13], chưa được đánh giá độc lập.
+**Phát hiện.** Nghiên cứu CHI 2024 phân tích 450 persona do LLM sinh (4 người đánh giá nội bộ, 5 chuyên gia): thiên lệch về tuổi, nghề, pain point và nghiêng mạnh về persona ở Mỹ. Người đánh giá chấm các mô tả là thông tin, đáng tin và gần gũi; chuyên gia chấm hơi rập khuôn hơn; mẫu người đánh giá nhỏ và không so với persona dựng từ dữ liệu thật [1]. NN/g chạy lại ba nghiên cứu cũ với người dùng AI: giá trị và nhu cầu nêu ra quá nông, mọi yếu tố được coi ngang nhau nên không giúp xếp ưu tiên, và người dùng AI lý tưởng hoá hành vi; NN/g chấp nhận proto persona được xem lại sau research thật [2]. Hướng "persona có nguồn" (chỉ trả lời từ tài liệu thật, từ chối khi thiếu dữ liệu) có ở một preprint [13], chưa được đánh giá độc lập.
 
 **Suy luận.** Vấn đề không phải AI viết persona được hay không (viết được và đọc thuyết phục) mà là người đọc không phân biệt được persona có dữ liệu với persona nghe hợp lý.
 
@@ -119,10 +105,10 @@ Persona, journey map và opportunity là ba cách điền câu claim: persona đ
 | **What** | Bản đồ các bước một persona đi qua để đạt một mục tiêu, với hành động, suy nghĩ, cảm xúc và chỗ đau ở từng bước |
 | **Why** | Cho thấy chỗ đau xảy ra ở bước nào và sau điều gì, thay vì một danh sách pain point rời rạc |
 | **When** | Sau persona, khi vấn đề trải dài qua nhiều bước, kênh hoặc thời gian. Không cần khi vấn đề nằm trong một màn hình |
-| **How with AI** | Học viên liệt kê các giai đoạn trước; AI đề xuất bước còn thiếu và điền ô từ quote. Ô nào không có quote được đánh dấu assumption, và học viên đếm tỷ lệ ô assumption |
+| **How with AI** | Designer liệt kê các giai đoạn trước; AI đề xuất bước còn thiếu và điền ô từ quote. Ô nào không có quote được đánh dấu assumption, và designer đếm tỷ lệ ô assumption |
 | **AI không làm** | Vẽ trọn một bản đồ từ kiến thức chung |
 
-**Phát hiện.** Không tìm thấy nghiên cứu đo độ chính xác của journey map do AI soạn. Nghiên cứu gần nhất là mind map do LLM tạo so với bản của designer: LLM nắm khái niệm trung tâm nhưng yếu ở phân cấp và bám ngữ cảnh [9]. Hướng dẫn thực hành: pain point trên persona phải xuất hiện lại ở đúng bước gây ra nó, và chỗ nào là suy đoán phải được đánh dấu [10]. **Suy luận:** bản đồ trông đầy đủ ngay cả khi các bước là bịa, nên bài dạy bằng quy trình kiểm tra, không hứa độ chính xác. Assumption không phải lỗi; giấu assumption mới là lỗi.
+**Phát hiện.** Không tìm thấy nghiên cứu đo độ chính xác của journey map do AI soạn. Nghiên cứu gần nhất là mind map do LLM tạo so với bản của designer: LLM nắm khái niệm trung tâm nhưng yếu ở phân cấp và bám ngữ cảnh [9]. Hướng dẫn thực hành: pain point trên persona phải xuất hiện lại ở đúng bước gây ra nó, và chỗ suy đoán phải được đánh dấu [10]. **Suy luận:** bản đồ trông đầy đủ ngay cả khi các bước là bịa, nên bài dạy bằng quy trình kiểm tra, không hứa độ chính xác. Assumption không phải lỗi; giấu assumption mới là lỗi.
 
 ### 2.3 Opportunity
 
@@ -131,7 +117,7 @@ Persona, journey map và opportunity là ba cách điền câu claim: persona đ
 | **What** | Danh sách các nhu cầu và khó khăn của người dùng đáng giải, viết như vấn đề của khách hàng chứ không phải tính năng, mỗi cái có evidence và được xếp thứ tự |
 | **Why** | Tách vấn đề khỏi giải pháp trước khi nghĩ ý tưởng, và nối research với quyết định |
 | **When** | Sau journey map (từ các pain point), trước hypothesis và ý tưởng ở Lesson 4. Không dùng làm danh sách việc cần làm |
-| **How with AI** | AI viết opportunity theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]", cấm nhắc tính năng. Học viên kiểm tra: nhu cầu hay giải pháp, có quote ID chưa, xếp theo severity, context và reach |
+| **How with AI** | AI viết opportunity theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]", cấm nhắc tính năng. Designer kiểm tra: nhu cầu hay giải pháp, có quote ID chưa, xếp theo severity, context và reach |
 | **AI không làm** | Quyết định opportunity nào đáng giải |
 
 **Phát hiện.** Trong opportunity solution tree, opportunity là tầng khách hàng (nhu cầu, pain point, mong muốn) nằm giữa outcome và solution; một opportunity sai khung kéo lệch mọi tầng phía trên [11]. Không tìm thấy nghiên cứu độc lập đo chất lượng opportunity do AI đề xuất. **Suy luận:** AI nghiêng về viết tính năng, nên kiểm tra quan trọng nhất là "nhu cầu hay giải pháp?".
@@ -149,30 +135,30 @@ Insight hub là một phần của Knowledge Hub của case (thư mục `insight
 | **What** | Nơi lưu các insight đã kiểm tra, mỗi insight có ID, evidence, ngày và tag |
 | **Why** | Tránh làm lại research cho cùng một câu hỏi, giữ insight khi người thay đổi, và nối insight với các quyết định về sau |
 | **When** | Đóng góp sau khi insight đã qua kiểm tra; tìm trong hub trước khi lên kế hoạch research mới |
-| **How with AI** | AI giúp tìm entry liên quan và gợi ý tag. Chỉ được trích entry có ID, và học viên duyệt trước khi thêm |
+| **How with AI** | AI giúp tìm entry liên quan và gợi ý tag. Chỉ được trích entry có ID, và designer duyệt trước khi thêm |
 | **AI không làm** | Tự thêm insight vào hub |
 
 **Phát hiện.** Atomic research được đề xuất năm 2018 sau khi một team lặp lại nghiên cứu vì không tìm lại được câu trả lời cũ: finding chia thành đơn vị nhỏ có evidence và tag, và thói quen "kiểm tra repository trước" ngăn việc làm lại [12]. Tag có kiểm soát giữ repository tìm được [12]. NN/g ghi nhận chỉ một tỷ lệ nhỏ tổ chức có vai trò riêng để quản lý repository [16] (con số cụ thể chưa kiểm chứng). Nguồn về atomic research là blog của agency và vendor.
 
-**Thói quen** (diagram `insight-hub-loop`): đóng góp mỗi insight đã kiểm tra thành một entry (ID, quote ID dẫn về, ngày, độ mạnh evidence, tag, người phụ trách); tìm trước khi hỏi; cập nhật khi có evidence mới thay vì thêm bản trùng; có người chăm (với học viên làm một mình, chính là học viên). Cấu trúc `insights/` hiện có đã đủ; `[to confirm]` có thêm tag hay trường mới không.
+**Thói quen** (diagram `insight-hub-loop`): đóng góp mỗi insight đã kiểm tra thành một entry (ID, quote ID dẫn về, ngày, độ mạnh evidence, tag, người phụ trách); tìm trước khi hỏi; cập nhật khi có evidence mới thay vì thêm bản trùng; có người chăm (với người làm một mình, chính là người đó). Cấu trúc `insights/` hiện có đã đủ; `[to confirm]` có thêm tag hay trường mới không.
 
 ---
 
 ## 4. Package into agents
 
-Khi học viên hài lòng với một quy trình (ví dụ bốn bước synthesis đã chạy ổn trên hai bộ quote), bước cuối là đóng gói nó:
+Khi designer hài lòng với một quy trình (ví dụ bốn bước synthesis đã chạy ổn trên hai bộ quote), bước cuối là đóng gói nó:
 
-1. Viết quy trình thành step card: ai làm (học viên hay AI), đầu vào, đầu ra, check nào phải qua.
+1. Viết quy trình thành step card: ai làm (designer hay AI), đầu vào, đầu ra, check nào phải qua.
 2. Biến step card thành một agent: một bộ instruction dùng lại được, gắn với bộ nguyên tắc làm chuẩn.
-3. Đóng góp agent và file output vào Knowledge Hub của mình, cùng insight đã kiểm tra, để buổi sau dùng lại.
+3. Đóng góp agent và file output vào Knowledge Hub của case, cùng insight đã kiểm tra, để buổi sau dùng lại.
 
-Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai đầu vào khác nhau và phần học viên kiểm tra đã được ghi rõ. Đóng gói sớm quá sẽ đóng gói cả lỗi. Agent không thay bước Challenge và bước kiểm tra quote: những bước đó vẫn do học viên làm.
+Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai đầu vào khác nhau và phần designer kiểm tra đã được ghi rõ. Đóng gói sớm quá sẽ đóng gói cả lỗi. Agent không thay bước Challenge và bước kiểm tra quote: những bước đó vẫn do designer làm.
 
 ---
 
 ## 5. Four questions about AI in research
 
-Bốn câu hỏi còn lại nảy ra khi dùng AI cho research, và câu trả lời ngắn. Năm câu đầu của danh sách chín câu (được đưa dữ liệu vào AI không, làm sao biết không bịa quote, còn phải đọc research không, insight còn của mình không, AI có làm phẳng khách hàng không) đã được trả lời ở Lesson 2, mục 5. Đây là nội dung cheat sheet của buổi này.
+Bốn câu hỏi còn lại nảy ra khi dùng AI cho research, và câu trả lời ngắn. Năm câu đầu của danh sách chín câu (được đưa dữ liệu vào AI không, làm sao biết không bịa quote, còn phải đọc research không, insight còn của người làm không, AI có làm phẳng khách hàng không) đã được trả lời ở Lesson 2, mục 5. Đây là nội dung cheat sheet của buổi này.
 
 | # | Câu hỏi | Trả lời ngắn | Mục |
 |---|---|---|---|
@@ -183,13 +169,13 @@ Bốn câu hỏi còn lại nảy ra khi dùng AI cho research, và câu trả l
 
 ### 5.1 What goes in front of the lead
 
-Một trang gồm: (1) quyết định mà insight phục vụ; (2) claim, do học viên viết; (3) evidence: bao nhiêu người, bao nhiêu quote, các quote ID; (4) điều dữ liệu không cho biết; (5) ý kiến trái chiều đã giữ lại; (6) AI đã làm gì, học viên đã kiểm tra gì, đếm lỗi; (7) việc tiếp theo đề xuất. Hướng dẫn thực hành khuyên nêu method và cỡ mẫu từ đầu, tập trung 3 đến 5 insight, dùng quote nguyên văn và không ngụ ý chắc chắn thống kê [17]. Mục này là đề xuất của người soạn, chưa có nguồn cho thấy lead muốn đọc nó.
+Một trang gồm: (1) quyết định mà insight phục vụ; (2) claim, do designer viết; (3) evidence: bao nhiêu người, bao nhiêu quote, các quote ID; (4) điều dữ liệu không cho biết; (5) ý kiến trái chiều đã giữ lại; (6) AI đã làm gì, designer đã kiểm tra gì, đếm lỗi; (7) việc tiếp theo đề xuất. Hướng dẫn thực hành khuyên nêu method và cỡ mẫu từ đầu, tập trung 3 đến 5 insight, dùng quote nguyên văn và không ngụ ý chắc chắn thống kê [17]. Mục này là đề xuất của người soạn, chưa có nguồn cho thấy lead muốn đọc nó.
 
 ### 5.2 How much time does it save
 
-Nghiên cứu JMIR AI 2024 so hai công cụ AI chat với người trên 40 tin nhắn SMS: khoảng 20 phút (SD 3,5) so với khoảng 567 phút (SD 106,5) cho phân tích theme. Theme của AI khớp 71% (5 trên 7) theme của người ở cách quy nạp và 50 đến 58% ở cách diễn dịch, còn độ đồng thuận khi gắn code chỉ 36 đến 47% [5]. Dữ liệu là tin nhắn ngắn, hai công cụ đời 2024, nên không suy trực tiếp sang bộ phỏng vấn dài hay mô hình hiện nay. Trong bảng task của chương trình, việc loại soạn nháp và kiểm tra tiết kiệm khoảng 25 đến 55% khi đã tính bước kiểm tra (`ai-strengths-and-limits.md`).
+Nghiên cứu JMIR AI 2024 so hai công cụ AI chat với người trên 40 tin nhắn SMS: khoảng 20 phút (SD 3,5) so với khoảng 567 phút (SD 106,5) cho phân tích theme. Theme của AI khớp 71% (5 trên 7) theme của người ở cách quy nạp và 50 đến 58% ở cách diễn dịch, còn độ đồng thuận khi gắn code chỉ 36 đến 47% [5]. Dữ liệu là tin nhắn ngắn, hai công cụ đời 2024, nên không suy trực tiếp sang bộ phỏng vấn dài hay mô hình hiện nay. Trong bảng task của chương trình, việc loại soạn nháp và kiểm tra tiết kiệm khoảng 25 đến 55% khi đã tính bước kiểm tra (`reference/ai-strengths-and-limits.md`).
 
-**Suy luận.** Con số lớn là của một bước (phân tích theme), không phải cả quy trình. Chưa có nguồn đo cả quy trình gồm kiểm tra cho designer. Nên cho học viên tự đo: bấm giờ từng bước trên cùng bộ quote và ghi chênh lệch với cách tự làm (làm ở practice).
+**Suy luận.** Con số lớn là của một bước (phân tích theme), không phải cả quy trình; chưa có nguồn đo cả quy trình gồm kiểm tra cho designer. Nên cho designer tự đo: bấm giờ từng bước trên cùng bộ quote và ghi chênh lệch với cách tự làm.
 
 ### 5.3 When to leave AI out
 
@@ -197,7 +183,7 @@ Danh sách dưới đây là suy luận từ các nguồn, không có nguồn đ
 
 | Không nên dùng khi | Vì sao |
 |---|---|
-| Chưa chắc được phép đưa dữ liệu vào (Lesson 2, mục 5.2) | Quyền của participant đi trước lợi ích tốc độ |
+| Chưa chắc được phép đưa dữ liệu vào (Lesson 2, 5.2) | Quyền của participant đi trước lợi ích tốc độ |
 | Mẫu nhỏ, tự đọc hết được trong cùng thời gian | Lợi ích thời gian nhỏ, rủi ro lệch vẫn còn |
 | Nhóm dễ tổn thương hoặc chủ đề nhạy cảm | Bất đồng giữa người và AI rõ nhất ở trải nghiệm sống [6] |
 | Mục tiêu là hiểu cảm xúc, bối cảnh, theme trừu tượng | AI yếu ở theme diễn giải [5][6] |
@@ -217,13 +203,13 @@ Không tìm thấy đánh giá độc lập về độ chính xác so sánh các
 
 ---
 
-## 6. Worked example: Kitchen Crate
+## 6. Worked example: app giao đồ ăn
 
 ### 6.1 The data
 
-Case mẫu hư cấu của chương trình: một app meal-kit theo gói đăng ký, nhiều khách mới tạm dừng hoặc huỷ sau hộp đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng case với buổi 2). Bộ quote `quotes.md` có 24 quote từ ba loại nguồn: 10 review (R01 đến R10), 8 bài đăng forum (F01 đến F08) và hai phỏng vấn ngắn (I01-01 đến I02-03). Quote bằng tiếng Anh; claim có thể viết bằng tiếng Việt, nhưng quote dẫn vào phải khớp từng chữ với bản gốc.
+Case mẫu hư cấu: app giao đồ ăn, nhiều khách mới không đặt lại sau đơn đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng case với buổi 2). Bộ quote `quotes.md` có 24 quote: 10 review (R01 đến R10), 8 bài đăng forum (F01 đến F08) và hai phỏng vấn ngắn (I01-01 đến I02-03). Quote bằng tiếng Anh; claim có thể viết bằng tiếng Việt, nhưng quote dẫn vào phải khớp từng chữ với bản gốc.
 
-Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở hộp đầu tiên (mục 2.1), journey từ chọn ngày giao đến tạm dừng (mục 2.2) và opportunity về ngày giao (mục 2.3). Activity dùng thêm một persona mẫu do AI sinh cho cùng case, có sẵn dòng không có quote đỡ để học viên tự phát hiện `[to create]`. Bảng đáp án dành riêng cho giảng viên (`quotes-answer-key.md`).
+Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở đơn đầu tiên (2.1), journey từ chọn khung giờ giao đến huỷ đơn (2.2) và opportunity về khung giờ giao (2.3). Activity dùng thêm một persona mẫu do AI sinh cho cùng case, có sẵn dòng không có quote đỡ để designer tự phát hiện `[to create]`. Bảng đáp án dành riêng cho người hướng dẫn (`quotes-answer-key.md`).
 
 ---
 
@@ -231,7 +217,7 @@ Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở hộp
 
 ### 7.1 Structure
 
-Hình dạng: ice breaker, ôn ngắn, theory (ba dạng của claim, mỗi phần kết thúc bằng một câu hỏi 30 giây có hai lựa chọn, bỏ phiếu bằng chat), activity, insight hub, package, hỏi đáp, close.
+Hình dạng: ice breaker, ôn ngắn, theory (ba dạng của claim, mỗi phần kết thúc bằng một câu hỏi 30 giây có hai lựa chọn), activity, insight hub, package, hỏi đáp, close.
 
 | Phase | Nội dung | Mục | Thời gian |
 |---|---|---|---|
@@ -248,34 +234,19 @@ Hình dạng: ice breaker, ôn ngắn, theory (ba dạng của claim, mỗi ph�
 | | **Tổng nội dung** | | **69 phút** |
 | | Buffer | | 21 phút |
 
-Buổi này nhẹ hơn bản trước vì synthesis đã chuyển sang Lesson 2. Khoảng 21 phút còn lại chưa được phân bổ `[to confirm]`: có thể dùng để dạy trang cho lead (mục 5.1) thay vì chỉ nhắc ở cheat sheet, hoặc để coaching trên activity. Timing chưa được thử với một lớp thật.
+Buổi này nhẹ hơn bản trước vì synthesis đã chuyển sang Lesson 2. Khoảng 21 phút còn lại chưa phân bổ `[to confirm]`: có thể dùng để dạy trang cho lead (5.1) thay vì chỉ nhắc ở cheat sheet, hoặc để coaching trên activity. Timing chưa thử với lớp thật.
 
 ### 7.2 Engagement rules
 
-Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổi kiểu tương tác mỗi 8 đến 10 phút, mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; mỗi buổi có một "cái bẫy". Cái bẫy của buổi 3 là persona do AI tự sinh nghe rất hợp lý nhưng không có quote nào đỡ (slide "Persona từ quote, persona từ AI" của outline, và activity).
+Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổi kiểu tương tác mỗi 8 đến 10 phút và kết thúc mỗi phần theory bằng một câu hỏi 30 giây; mỗi buổi có một "cái bẫy". Cái bẫy của buổi 3: persona do AI tự sinh nghe rất hợp lý nhưng không có quote nào đỡ.
 
 ### 7.3 Activities
 
-**Ice breaker** (5 phút, cả lớp, không có output). Mỗi người nói tên và một câu: một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin. Giảng viên ghi nhanh nguyên nhân (mẫu nhỏ, người nói to, chỉ thấy điều mình mong thấy) và quay lại bảng này ở phần ôn.
-
-**Activity: persona có quote hay không** (10 phút, theo cặp, không dùng AI) `[to confirm]` bản thiết kế mới, chưa thử. *Mục đích:* luyện phép thử quan trọng nhất của persona: dòng nào của persona có quote nào đỡ, và dòng nào chỉ nghe hợp lý. *Đầu vào:* bộ quote Kitchen Crate (`quotes.md`) và persona mẫu do AI sinh (`persona-ai-draft.md`, `[to create]`). *Quy trình:*
-1. (3 phút, một mình) Mỗi người đánh dấu từng dòng của persona: có quote ID đỡ hay không.
-2. (4 phút, theo cặp) Hai người đối chiếu quote gốc: dòng nào quote đỡ khớp từng chữ, dòng nào chỉ nghe hợp lý, dòng nào quote nói ngược lại. Mỗi dòng ghi kèm quote ID hoặc "không có quote".
-3. (3 phút, cả lớp) Một cặp báo dòng bắt được hay nhất; giảng viên nối với cách xử lý: xoá, ghi unknown, hoặc giữ kèm quote ID.
-
-*Quy tắc dữ liệu:* dữ liệu hư cấu, không có thông tin thật. *Output:* persona đã sửa và danh sách dòng bị xoá hoặc ghi unknown, kèm lý do. *Checkpoint trên lớp:* mỗi cặp chỉ ra ít nhất một dòng không có quote đỡ.
+**Ice breaker** (5 phút, cả lớp): mỗi người nói tên và một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin; người hướng dẫn ghi nguyên nhân và quay lại ở phần ôn. **Activity: persona có quote hay không** (10 phút, theo cặp, không dùng AI; `[to confirm]` bản thiết kế mới, chưa thử): mỗi người đánh dấu từng dòng của persona mẫu có quote ID đỡ hay không (3 phút), hai người đối chiếu quote gốc (4 phút), một cặp báo dòng bắt được hay nhất và người hướng dẫn nối với cách xử lý: xoá, ghi unknown, hoặc giữ kèm quote ID (3 phút). Output: persona đã sửa và danh sách dòng bị xoá hoặc ghi unknown, kèm lý do. Kịch bản đầy đủ nằm ở `learning/lesson-3-details.md`.
 
 ### 7.4 Practice at home and in-class session
 
-**Practice 3 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo với lớp thật), trên claim và insight của chính học viên từ Practice 2:
-1. Persona, rồi journey map, rồi opportunity, mỗi dòng dẫn về quote ID.
-2. Challenge và cập nhật trạng thái các giả định (xác nhận, chưa xác nhận hoặc unknown).
-3. Một trang cho lead (mục 5.1).
-4. Một entry đóng góp vào insight hub, và nội dung đã có trên hub.
-5. Mỗi dòng nối về quote ID.
-6. Bấm giờ từng bước để tự đo thời gian tiết kiệm.
-
-**Đầu vào là output của các buổi trước:** scope và research question (cho Decision và problem brief), danh sách giả định (để xác nhận hoặc bác bằng quote), UX audit và competitor analysis (giả thuyết cần quote xác nhận), principles (severity và gates), và claim cùng insight từ Practice 2. Output là evidence pack, trạng thái mới của các giả định và problem brief. Gate 1 chạy ở Practice 3. **Buổi practice trên lớp (90 phút)** nằm sau chuỗi việc này: học viên làm tiếp phần dang dở nếu còn thời gian, rồi Winnie chấm; cách chấm chưa quyết. Practice sheet `research-you-can-trust-practice.md` hiện còn theo kế hoạch cũ (buổi 90 phút, quote peer) và cần viết lại theo cấu trúc này `[to confirm]`.
+**Practice 3 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo), trên claim và insight của designer từ Practice 2: persona, journey map, opportunity (mỗi dòng dẫn về quote ID); Challenge và cập nhật trạng thái các giả định; một trang cho lead (5.1); một entry vào insight hub; bấm giờ từng bước để tự đo thời gian tiết kiệm. Đầu vào là output của các buổi trước (scope, giả định, UX audit, competitor analysis, principles, claim và insight từ Practice 2); output là evidence pack, trạng thái mới của các giả định và problem brief. **Buổi practice trên lớp (90 phút)** làm tiếp phần dang dở rồi được chấm; cách chấm chưa quyết. Practice sheet `research-you-can-trust-practice.md` đã viết lại theo chuỗi 8 step này, bắt đầu từ claim và insight của Practice 2 (2026-10-30).
 
 ---
 
@@ -289,14 +260,11 @@ Ba prompt tương ứng với ba dạng của claim, dùng với AI chat tool, k
 2. **Journey map:** *"Tôi liệt kê các giai đoạn: [danh sách]. Đề xuất bước còn thiếu, rồi điền hành động, suy nghĩ, cảm xúc và chỗ đau cho từng bước, chỉ từ quote tôi đưa, kèm quote ID. Ô nào không có quote thì ghi assumption."*
 3. **Opportunity:** *"Từ các pain point trên, viết opportunity theo mẫu: [Người dùng] gặp khó khi [tình huống] vì [lý do]. Không nhắc tính năng. Mỗi opportunity kèm quote ID và một dòng 'mẫu này không cho biết điều gì'."*
 
-**Cách kiểm tra bằng tay sau mỗi prompt:** mở quote gốc đối chiếu từng chữ; đếm dòng không truy được; ghi lại ý kiến trái chiều giữ lại.
+**Kiểm tra bằng tay sau mỗi prompt:** mở quote gốc đối chiếu từng chữ; đếm dòng không truy được; ghi lại ý kiến trái chiều giữ lại.
 
 ### 🧠 Critical thinking prompt
 
-- Dòng nào của persona, journey hoặc opportunity không có quote?
-- Opportunity nào thực ra là một tính năng?
-- Ý kiến trái chiều nào đã bị làm phẳng hoặc bỏ ra?
-- Mẫu này không cho biết điều gì?
+Dòng nào của persona, journey hoặc opportunity không có quote? Opportunity nào thực ra là một tính năng? Ý kiến trái chiều nào đã bị làm phẳng hoặc bỏ ra, và mẫu này không cho biết điều gì?
 
 ### ✍️ Prompt engineering tip
 
@@ -321,7 +289,7 @@ Quote của người thật là dữ liệu cá nhân. Ẩn danh trước khi đ
 
 ### Reflection prompt (homework)
 
-> *"AI đưa ra điều gì nghe hợp lý nhất mà tôi suýt tin? Tôi đã kiểm tra bằng cách nào, và ý kiến trái chiều nào tôi đã giữ lại?"*
+> *"AI đưa ra điều gì nghe hợp lý nhất mà suýt được tin? Đã kiểm tra bằng cách nào, và ý kiến trái chiều nào đã được giữ lại?"*
 
 Câu trả lời ghi vào `_personal/learning-log.md`, cùng mục ba dòng của chuỗi practice.
 
@@ -329,13 +297,10 @@ Câu trả lời ghi vào `_personal/learning-log.md`, cùng mục ba dòng củ
 
 ## 10. Limitations and ethics
 
-- **Bằng chứng về AI gắn code và tổng hợp** đến từ nghiên cứu nhỏ ở các lĩnh vực khác (tin nhắn SMS, sức khoẻ, sinh viên khuyết tật, review sản phẩm); áp vào phỏng vấn UX bằng tiếng Việt là suy luận.
-- **Không có nghiên cứu đo độ chính xác** của journey map và opportunity do AI soạn; phần này dựa trên suy luận và quy trình.
-- **Con số tiết kiệm thời gian** nổi bật nhất là từ một nghiên cứu trên 40 tin nhắn SMS với mô hình đời 2024 [5].
-- **Chưa có số đo cho tiếng Việt** trên phỏng vấn UX tự nhiên (giọng vùng miền, từ tiếng Anh chen vào).
-- **Cách coi ba khái niệm là ba dạng của claim** do chương trình tự thiết kế, chưa thử với một lớp thật.
-- **Bộ quote Kitchen Crate và persona mẫu** là dữ liệu hư cấu bằng tiếng Anh do chương trình soạn, không đại diện cho dữ liệu thật hay cho phỏng vấn bằng tiếng Việt. Persona mẫu chưa được soạn.
-- **Thời gian trong thiết kế buổi** và **activity persona có quote hay không** chưa được kiểm chứng.
+- **Bằng chứng về AI gắn code và tổng hợp** đến từ nghiên cứu nhỏ ở các lĩnh vực khác (tin nhắn SMS, sức khoẻ, sinh viên khuyết tật, review sản phẩm); áp vào phỏng vấn UX bằng tiếng Việt là suy luận, và chưa có số đo cho tiếng Việt (giọng vùng miền, từ tiếng Anh chen vào).
+- **Không có nghiên cứu đo độ chính xác** của journey map và opportunity do AI soạn; phần này dựa trên suy luận và quy trình. Con số tiết kiệm thời gian nổi bật nhất đến từ một nghiên cứu trên 40 tin nhắn SMS với mô hình đời 2024 [5].
+- **Cách coi ba khái niệm là ba dạng của claim** do chương trình tự thiết kế, chưa thử với lớp thật. Thời gian trong thiết kế buổi và activity persona có quote hay không cũng chưa được kiểm chứng.
+- **Bộ quote app giao đồ ăn và persona mẫu** là dữ liệu hư cấu tiếng Anh do chương trình soạn, không đại diện cho dữ liệu thật hay phỏng vấn bằng tiếng Việt. Persona mẫu chưa được soạn.
 - **Các nguồn đánh dấu `[to confirm]`** chưa được mở bản gốc.
 
 ---
@@ -344,22 +309,22 @@ Câu trả lời ghi vào `_personal/learning-log.md`, cùng mục ba dòng củ
 
 | Lesson và practice | Vai trò |
 |---|---|
-| Lesson 2 (buổi 3), Practice 2 (buổi 4) | Bộ nguyên tắc, scope, giả định, UX audit, competitor analysis, research question; synthesis: quote có ID, bốn bước, claim và insight của chính học viên |
+| Lesson 2 (buổi 3), Practice 2 (buổi 4) | Bộ nguyên tắc, scope, giả định, UX audit, competitor analysis, research question; synthesis: quote có ID, bốn bước, claim và insight của designer |
 | **Lesson 3 (buổi 5, buổi này)** | Ôn từ quote đến claim; persona, journey map, opportunity dẫn về quote ID; insight hub; package thành agent; bốn câu hỏi về giới hạn của AI |
-| Practice 3 (buổi 6) | Chuỗi việc ở nhà: persona, journey, opportunity trên insight của mình, Gate 1, problem brief, entry insight hub; buổi lớp làm tiếp và chấm |
+| Practice 3 (buổi 6) | Persona, journey, opportunity trên insight của case, problem brief, entry insight hub; buổi lớp làm tiếp và chấm |
 | Lesson 4 (buổi 7) | Hypothesis, How might we, Solution Tree, ý tưởng, chọn hướng bằng principle check |
 
 ---
 
 ## References
 
-Trạng thái ghi cuối mỗi nguồn: *đã đọc* (mở bản gốc hoặc abstract ngày 2026-10-27, ghi rõ mức) hoặc `[to confirm]` (chỉ qua kết quả tìm kiếm). Nhật ký đầy đủ nằm ở `learning/ai-in-insights.md` và `learning/ai-in-discover.md`.
+Trạng thái ghi cuối mỗi nguồn: *đã đọc* (mở bản gốc hoặc abstract ngày 2026-10-27, ghi rõ mức) hoặc `[to confirm]` (chỉ qua kết quả tìm kiếm). Nhật ký đầy đủ nằm ở `learning/reference/ai-in-insights.md` và `learning/reference/ai-in-discover.md`.
 
 [1] Salminen, J. và cộng sự (2024). *Deus Ex Machina and Personas from Large Language Models: Investigating the Composition of AI-Generated Persona Descriptions.* CHI 2024. 450 persona, 4 người đánh giá nội bộ, 5 chuyên gia. https://doi.org/10.1145/3613904.3642036. Đã đọc abstract.
 
 [2] Rosala, M. và Moran, K. (2024-06-21). *Synthetic Users: If, When, and How to Use AI-Generated "Research".* Nielsen Norman Group. https://www.nngroup.com/articles/synthetic-users/. Đã đọc toàn bài.
 
-[3] Li, D., Li, L. và Qiu, H. S. (2025). *ChatGPT is not A Man but Das Man: Representativeness and Structural Consistency of Silicon Samples Generated by Large Language Models.* arXiv 2507.02919. https://arxiv.org/abs/2507.02919. Đã đọc abstract; PDF không đọc được; về khảo sát dân số, không phải persona.
+[3] Li, D., Li, L. và Qiu, H. S. (2025). *ChatGPT is not A Man but Das Man: Representativeness and Structural Consistency of Silicon Samples Generated by Large Language Models.* arXiv 2507.02919. https://arxiv.org/abs/2507.02919. Đã đọc abstract; về khảo sát dân số, không phải persona.
 
 [4] Mehta, S. D. và cộng sự (2025). *Evaluation of large language models within GenAI in qualitative research.* Scientific Reports 15, 34993. https://doi.org/10.1038/s41598-025-18969-w. Đã đọc abstract; không có số lượng transcript hay tỷ lệ lỗi.
 
@@ -393,4 +358,4 @@ Nguồn [3], [4], [7], [8] và [15] nay được trích ở Lesson 2 (mục 5, �
 
 ---
 
-*Created by Winnie Nguyen · AI Design Workflow · Last updated October 2026*
+*AI Design Workflow · Last updated October 2026*

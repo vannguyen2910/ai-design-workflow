@@ -1,0 +1,27 @@
+# macOS and Windows
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Cloud sync stubs
+*.icloud
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Raw, non-anonymised data never leaves your computer
+**/_raw-private/*
+!**/_raw-private/README.md
+
+# Personal notes never leave your computer
+**/_personal/*
+
+# Exported report is an output: regenerate it with toolkit/tools/build-report.py
+**/hub/_export/*
+
+# Obsidian: keep personal workspace state out of the repo
+.obsidian/workspace*.json
+.obsidian/cache
