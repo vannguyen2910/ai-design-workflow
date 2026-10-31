@@ -1,0 +1,29 @@
+---
+type: "persona"
+title: "Persona"
+stage: "Define"
+status: "draft"
+summary: ""
+takeaways:
+  - ""
+supports: []
+# source: "../../work/persona.md"
+# media: []
+# links: []
+# embed: false
+---
+## Who
+Name, background, a one-sentence description. A persona is a representation built from data, not a real person.
+
+## Goals and motivations
+
+## Frustrations and behaviours
+
+## Evidence
+The data and sources behind this persona (survey, interviews). Write the sample size.
+
+## Quote
+> A typical sentence, with its source.
+
+## Design implications
+What this persona demands of the product.
