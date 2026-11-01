@@ -130,7 +130,7 @@ Thư mục `learning/` (riêng tư, không lên site trừ các file có trong `
 | `assets/templates/handout-ai-design-workflow-buoc-1.md` | Giáo án một buổi thực hành (workflow audit, role card, baseline run). Chưa dùng trong 12 buổi; role card hợp với lesson 5 |
 | `assets/references/claude-code-16-lessons-nhat-anh.md` | Ghi chú từ một video về cách dùng AI coding tool; tài liệu tham khảo, không thuộc khoá |
 | `assets/templates/workflow-kit/` | Bộ mẫu cho học viên: step card, luật cho AI tool, propose first, prompt vocabulary, checklist, failure case |
-| `workspace-template/` | Repo mẫu cho học viên (GitHub: `ai-product-workflow`) |
+| `../workspace-template/` (repo riêng, ngoài repo này) | Repo mẫu cho học viên (GitHub: `ai-design-workflow-template`) |
 | `examples/` | Hai ví dụ làm sẵn: competitor analysis, user-voice synthesis |
 | `README.md` | Thứ tự lesson, trạng thái, cách thêm lesson. Các lesson nằm ở `programs/ai-design-workflow/lessons/` |
 | `_archive/` | Bản thay thế và bản trước khi dọn (có hậu tố ngày) |
