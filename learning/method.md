@@ -159,12 +159,12 @@ Start from the hub's Evidence page (`assets/templates/hub/evidence.html`) and ke
 
 ### 1. Evidence by stage
 
-> **See also:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md) pulls together what AI is good at, where it falls short, and the case for not automating a bad workflow, with a pre-automation checklist.
+> **See also:** [reference/ai-strengths-and-limits.md](reference/ai-strengths-and-limits.md) pulls together what AI is good at, where it falls short, and the case for not automating a bad workflow, with a pre-automation checklist.
 
 *Regrouped 2026-10-15 from six working stages (Frame, Explore, Shape, Prototype, Validate, Hand off) to the four Double Diamond stages the course uses. The text under each source is unchanged.*
 
 #### Discover (was: Explore, research and options)
-> **See also:** [ai-in-discover.md](ai-in-discover.md) has the external evidence for each Discover method, with sources and gaps.
+> **See also:** [reference/ai-in-discover.md](reference/ai-in-discover.md) has the external evidence for each Discover method, with sources and gaps.
 
 - AI is useful for cleaning data, transcribing, clustering and tagging. It is weak at importance: "A minor visual bug might get mentioned 20 times because it is obvious" while critical issues appear rarely. Frequency isn't weight. ([Parallel HQ](https://www.parallelhq.com/blog/ai-assisted-ux-research-workflow))
 - NN/g tested LLM synthesis tools: several research steps benefit, but "analysis and synthesis consistently falls short", producing insight-shaped output. Their 2025 testing is summarised in secondary sources, not read directly. ⚠️
@@ -231,7 +231,7 @@ Start from the hub's Evidence page (`assets/templates/hub/evidence.html`) and ke
 | | 4c | Could a developer build it without asking? Handoff pack and decision log complete. |
 | | 4d | Is the measurement plan handed to the PO (what to track, where, when to review)? |
 
-**Gate 1 was extended on 2026-10-15** from three to seven checks (1d to 1g added; 1b and 1c reworded), which makes 20 checks in total. The evidence and the reasoning are in `ai-in-discover.md` section 8. The split between hard-stop checks and checks with a recorded reason is a proposal for Discover only; it has not been tried with a class.
+**Gate 1 was extended on 2026-10-15** from three to seven checks (1d to 1g added; 1b and 1c reworded), which makes 20 checks in total. The evidence and the reasoning are in `reference/ai-in-discover.md` section 8. The split between hard-stop checks and checks with a recorded reason is a proposal for Discover only; it has not been tried with a class.
 
 **Where each check is practised (lesson plan):** Your design process with AI 1f (data rules) · Shape the brief 1a, 1f · Research you can trust 1b, 1c, 1d, 1e, 1g · Frame the problem 2a to 2d · Explore ideas 3a · First prototype 3d (design system) · Refine and check 3d (accessibility), then the closing alignment check 3b, 3c · Test with users 4a, 4b · Hand off and measure 4c, 4d · Capstone all.
 

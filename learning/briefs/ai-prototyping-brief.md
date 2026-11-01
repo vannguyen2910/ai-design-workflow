@@ -27,7 +27,7 @@ Running example là một **delivery app** (Winnie chọn, 2026-10-28), nối ti
    - The Second View, 10 phút: prototype thật dựng từ One View; sửa ở One View rồi để luật đưa thay đổi sang (chỉ token tự lan); thứ tự rules, shell, flow, dựng, review; sửa ở đúng tầng; prototype là gì và đi cùng gì.
    - Gate, Rules and Skill, 10 phút: ba lớp kiểm soát; rules file mười luật của deck lesson 3 (năm luật hệ thống, năm luật làm việc); cập nhật cùng design system; luật nhận từ người khác chưa thuộc về học viên.
 3. **Bridge, 4 phút:** hai câu kiểm tra nhanh, cheat sheet một màn hình (The Design Stack bốn tầng, mười luật của rules file, các bước kiểm sau khi dựng).
-4. **Activity trên lớp, 5 phút: "Rule-break hunt".** Chiếu một màn hình có ba lỗi cài sẵn (điều hướng tự thêm, màu thô, component ngoài hệ thống). Học viên tự tìm trong 2 phút, lộ đáp án và đối chiếu với `components.html`, rồi nối sang dự án của mình. Đã soạn: `learning/lesson-5-activity-rule-break-hunt.md`, `assets/templates/rule-break-hunt/`.
+4. **Activity trên lớp, 5 phút: "Rule-break hunt".** Chiếu một màn hình có ba lỗi cài sẵn (điều hướng tự thêm, màu thô, component ngoài hệ thống). Học viên tự tìm trong 2 phút, lộ đáp án và đối chiếu với `components.html`, rồi nối sang dự án của mình. Đã soạn: `learning/reference/lesson-5-activity-rule-break-hunt.md`, `assets/templates/rule-break-hunt/`.
 5. **Hỏi đáp, 10 phút.**
 6. **Close, 8 phút:** nối sang P5, giao bài tập về nhà dưới 20 phút, nhắc mang gì tới P5.
 
@@ -88,7 +88,7 @@ Tổng: 6 + 40 + 4 + 5 + 10 + 8 = 73 phút, **buffer 17 phút** để chống ov
 
 ## Sources
 
-Đã đọc để soạn brief. Phát hiện là điều nguồn nói. **Chưa có nguồn nào đo hiệu quả của thứ tự shell, template, rồi màn hình**; đó là phương pháp của Winnie (lesson 3 trong library) cộng suy luận, và lesson **không nêu số liệu hiệu quả**. Ghi chi tiết ở `learning/ai-in-prototype.md` (mã P) và `learning/ai-prototype-foundations.md` (mã T).
+Đã đọc để soạn brief. Phát hiện là điều nguồn nói. **Chưa có nguồn nào đo hiệu quả của thứ tự shell, template, rồi màn hình**; đó là phương pháp của Winnie (lesson 3 trong library) cộng suy luận, và lesson **không nêu số liệu hiệu quả**. Ghi chi tiết ở `learning/reference/ai-in-prototype.md` (mã P) và `learning/reference/ai-prototype-foundations.md` (mã T).
 
 | Ý dùng trong lesson | Nguồn, năm, cỡ mẫu | Trạng thái |
 |---|---|---|
@@ -108,5 +108,5 @@ Tổng: 6 + 40 + 4 + 5 + 10 + 8 = 73 phút, **buffer 17 phút** để chống ov
 ## Tài liệu và công cụ liên quan
 
 - `workspace-template/toolkit/skills/prototype/` (SKILL.md, starter): dùng ở P5, đã có bước shell và template.
-- `learning/lesson-5-activity-rule-break-hunt.md` và `assets/templates/rule-break-hunt/`: activity.
+- `learning/reference/lesson-5-activity-rule-break-hunt.md` và `assets/templates/rule-break-hunt/`: activity.
 - `learning/plan.md` (tuần 5), `learning/lesson-details.md` (Lesson 6 và 7 cũ, **đã lỗi thời** so với plan: cần cập nhật khi duyệt brief).

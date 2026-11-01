@@ -116,6 +116,20 @@
       "allow": [
         "(thay cho|Bản cũ|bản cũ|không còn|đã chuyển|chuyển sang|đã bỏ|tám bước cũ|quy trình cũ)"
       ]
+    },
+    {
+      "pattern": "\\b[Qq]uote\\b|\\b[Cc]laim\\b|quote ID",
+      "why": "quote and claim are no longer course concepts (2026-11-01): Lesson 2 and 3 work from source notes, insights, source IDs and insight IDs",
+      "scope": [
+        "lessons/02-discover-the-problem/materials/*.md",
+        "lessons/03-research-you-can-trust/materials/*.md",
+        "learning/lesson-2-details.md",
+        "learning/lesson-3-details.md",
+        "assets/starter-files/course-case/*.md"
+      ],
+      "allow": [
+        "Sync note 2026-11-01"
+      ]
     }
   ],
   "mentions": [

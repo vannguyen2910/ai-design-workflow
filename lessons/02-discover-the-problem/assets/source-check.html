@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kiểm tra quote do AI trả lại · Flowchart</title>
+  <title>Kiểm tra insight do AI trả lại · Flowchart</title>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -52,12 +52,12 @@
 <body>
   <div class="frame">
     <p class="eyebrow">Flowchart · AI Design Workflow</p>
-    <h1>Kiểm tra quote do AI trả lại</h1>
+    <h1>Kiểm tra insight do AI trả lại</h1>
 
     <div class="scroll">
-    <svg viewBox="0 0 1100 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="quote-check-title quote-check-desc">
-      <title id="quote-check-title">Kiểm tra quote do AI trả lại</title>
-      <desc id="quote-check-desc">Flowchart kiểm tra từng quote: tìm đúng chuỗi trong transcript, đọc ngữ cảnh gốc, ghi lỗi và sửa khi sai, rồi chạy lại với prompt chặt hơn nếu còn nhiều lỗi, hoặc dùng quote cho claim.</desc>
+    <svg viewBox="0 0 1100 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="source-check-title source-check-desc">
+      <title id="source-check-title">Kiểm tra insight do AI trả lại</title>
+      <desc id="source-check-desc">Flowchart kiểm tra từng insight: tìm đúng source ID trong ghi chú nguồn, đọc ngữ cảnh gốc, ghi lỗi và sửa khi sai, rồi chạy lại với prompt chặt hơn nếu còn nhiều lỗi, hoặc giữ insight.</desc>
       <defs>
         <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker>
       </defs>
@@ -90,23 +90,23 @@
 
       <!-- Start -->
       <rect x="40" y="126" width="120" height="48" rx="24" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
-      <text x="100" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Quote từ AI</text>
-      <text x="100" y="162" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">kèm quote ID</text>
+      <text x="100" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Insight từ AI</text>
+      <text x="100" y="162" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">kèm source ID</text>
 
       <!-- Decision 1 (focal) -->
       <polygon points="340,98 420,150 340,202 260,150" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
-      <text x="340" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Có trong</text>
-      <text x="340" y="161" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">transcript?</text>
+      <text x="340" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Source ID</text>
+      <text x="340" y="161" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">có thật?</text>
 
       <!-- Decision 2 -->
       <polygon points="620,98 700,150 620,202 540,150" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
-      <text x="620" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Nghĩa còn</text>
-      <text x="620" y="161" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">nguyên?</text>
+      <text x="620" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Nguồn nói</text>
+      <text x="620" y="161" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">đúng ý?</text>
 
       <!-- End: usable -->
       <rect x="860" y="126" width="120" height="48" rx="24" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
-      <text x="920" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Dùng được</text>
-      <text x="920" y="162" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">cho claim</text>
+      <text x="920" y="147" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Giữ được</text>
+      <text x="920" y="162" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">insight</text>
 
       <!-- Fix step -->
       <rect x="420" y="280" width="160" height="48" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
@@ -125,10 +125,10 @@
 
       <!-- Callout -->
       <text x="40" y="238" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LƯU Ý</text>
-      <text x="40" y="258" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">Tìm đúng chuỗi chỉ bắt được quote bịa.</text>
-      <text x="40" y="276" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">Ý bị diễn đạt lại bằng lời khác thì không</text>
-      <text x="40" y="294" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">có chuỗi để tìm: đọc kỹ dòng “quote này</text>
-      <text x="40" y="312" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">không cho biết gì” của bước Evidence.</text>
+      <text x="40" y="258" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">Source ID có thật vẫn có thể sai nghĩa.</text>
+      <text x="40" y="276" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">Insight diễn đạt lại bằng lời khác thì</text>
+      <text x="40" y="294" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">không có chuỗi để tìm: đọc kỹ dòng “nguồn này</text>
+      <text x="40" y="312" fill="#2d3142" font-size="13" font-style="italic" font-family="'Instrument Serif', serif">không cho biết gì” của insight.</text>
 
       <!-- Legend -->
       <line x1="40" y1="500" x2="1060" y2="500" stroke="rgba(45,49,66,0.10)" stroke-width="0.8"/>

@@ -55,7 +55,7 @@ last_synced: 2026-10-30
   > Năm phần, mỗi phần kết thúc bằng một câu hỏi bỏ phiếu 30 giây trong chat.
 
   - Phần nặng nhất là Break the brief và Synthesis, vì cả hai đều chạy tiếp ở nhà
-  - Giữa buổi có một activity viết claim và phản biện chéo
+  - Giữa buổi có một activity viết insight và phản biện chéo
   - Việc dựng từng file nằm ở chuỗi practice sau buổi, không làm hết trên lớp
 - 🎨 Visual hint: TYPOGRAPHIC. Năm dòng đánh số lớn, số in nghiêng purple, tên phần in ink.
 
@@ -483,7 +483,7 @@ last_synced: 2026-10-30
   - Ba nhánh trên sơ đồ: methods, research với AI, post-interview
   - Methods: interview khi cần hiểu hành vi và lý do, survey khi đã biết cần hỏi gì và cần con số; survey không thay được phỏng vấn để tìm điều chưa biết
   - Research với AI: AI soạn nháp plan và script, designer chỉnh và quyết định
-  - Post-interview: lấy transcript hoặc recording, ẩn danh trước khi AI đọc, rồi rút quote có ID
+  - Post-interview: lấy transcript hoặc recording, ẩn danh trước khi AI đọc, rồi rút ghi chú có source ID
   - Đầu vào là research question đã chốt ở slide Research questions
   - Hôm nay là theory; phỏng vấn user thật và synthesis làm ở nhà trong Practice 2
 
@@ -555,50 +555,50 @@ last_synced: 2026-10-30
   - 01 · Phỏng vấn người thật
   - 02 · Lấy transcript hoặc recording
   - 03 · Ẩn danh trước khi AI đọc
-  - 04 · AI synthesis, trả lại quote nguyên văn kèm ID
-  - 05 · Designer kiểm tra từng theme về quote gốc
-- Ví dụ: bản nháp (một theme "khách không biết đổi khung giờ giao" phải dẫn về ít nhất hai quote có ID)
+  - 04 · AI synthesis, trả lại insight kèm source ID
+  - 05 · Designer kiểm tra từng insight về ghi chú gốc
+- Ví dụ: bản nháp (một theme "khách không biết đổi khung giờ giao" phải dẫn về ít nhất hai ghi chú có source ID)
 - Câu hỏi hay gặp:
   - Ẩn danh bằng cách nào? Theo data rules ở buổi 1; chi tiết ở các slide tiếp theo.
 - Speaker notes:
 
-  > Sau ba buổi phỏng vấn, AI báo theme "khách không biết đổi khung giờ giao". Theme này dẫn về quote nào của người nào? Nếu không chỉ ra được ID, theme chưa phải insight.
+  > Sau ba buổi phỏng vấn, AI báo theme "khách không biết đổi khung giờ giao". Theme này dẫn về ghi chú nào của người nào? Nếu không chỉ ra được ID, theme chưa phải insight.
 
   - Năm bước, trong đó hai bước do người làm hoàn toàn: phỏng vấn và kiểm tra
   - Ẩn danh trước khi AI đọc: thay tên bằng mã P1, P2, giữ bảng ánh xạ ở nơi AI không đọc; không nhờ AI ẩn danh sau khi đã dán
-  - AI chỉ làm việc trên quote thật và trả lại nguyên văn kèm ID, không viết lại bằng lời của nó vì bản tóm tắt dễ bỏ sót (nguồn 10)
+  - AI chỉ làm việc trên ghi chú thật và trả lại kèm source ID, không bịa nguồn, không viết lại bằng lời của nó vì bản tóm tắt dễ bỏ sót (nguồn 10)
   - Nhờ AI liệt kê điều người tham gia nói mà chưa được đưa vào: đọc danh sách chỉ bắt được điều sai, không bắt được điều thiếu
   - Gộp vào ghi chú có sẵn theo kiểu đề xuất trước: AI nêu ý nào vào đâu, designer duyệt rồi mới ghi
   - Các slide tiếp theo đi chi tiết từng bước
 
-  > Insight của designer dẫn về quote gốc nào?
+  > Insight của designer dẫn về ghi chú gốc nào?
 - 🎨 Visual hint: SCHEMATIC. Năm bước ngang; bước 3 và 5 có chấm "designer làm", bước 4 có chấm "AI".
 
 ---
 
-### NUMBERED · Three rules with quotes
+### NUMBERED · Three rules with the data
 - Kicker: Cách làm
-- Title: Ba quy tắc với quote
+- Title: Ba quy tắc với dữ liệu
 - On-slide:
   - 01 · Ẩn danh trên máy trước khi đưa cho AI
-  - 02 · Mỗi quote có ID, ví dụ I01-03
+  - 02 · Mỗi ghi chú có source ID, ví dụ I01-03
   - 03 · AI được phép nói unknown
 - Ví dụ: có (case app giao đồ ăn: phỏng vấn 1 không nói gì về giá, I01-01 đến I01-03)
 - Câu hỏi hay gặp:
   - Ẩn danh có thể nhờ AI làm không? Không; dùng find and replace trên máy, vì nhờ AI nghĩa là đã đưa dữ liệu gốc cho nó.
-  - Quote ID đặt thế nào? Theo nguồn và số thứ tự: R01 cho review, F01 cho bài đăng forum, I01-03 cho quote thứ 3 của phỏng vấn 01.
+  - Source ID đặt thế nào? Theo nguồn và số thứ tự: R01 cho review, F01 cho bài đăng forum, I01-03 cho ghi chú thứ 3 của phỏng vấn 01. Insight có insight ID riêng (IN-01).
   - Vì sao phải cho AI nói unknown? Nếu không, AI lấp chỗ trống bằng điều nghe hợp lý.
 - Speaker notes:
 
-  > Hỏi AI một câu về người được phỏng vấn số 1 của app giao đồ ăn: họ nghĩ gì về giá? Ba quote I01-01, I01-02, I01-03 nói về khung giờ giao, huỷ đơn và thời gian chờ, không có chữ nào về giá.
+  > Hỏi AI một câu về người được phỏng vấn số 1 của app giao đồ ăn: họ nghĩ gì về giá? Ba ghi chú I01-01, I01-02, I01-03 nói về khung giờ giao, huỷ đơn và thời gian chờ, không có chữ nào về giá.
 
   - Nếu cho phép, AI sẽ viết một câu nghe rất hợp lý về giá, và câu đó không có trong dữ liệu
-  - Vì vậy quy tắc ba: AI được phép nói unknown, và chỉ dùng quote được đưa vào, trả lại nguyên văn
+  - Vì vậy quy tắc ba: AI được phép nói unknown, và chỉ dùng ghi chú được đưa vào, kèm source ID có thật
   - Quy tắc một: ẩn danh bằng find and replace trên máy, thay tên bằng P1, P2, trước khi đưa cho AI
   - Dữ liệu gốc chưa ẩn danh nằm ngoài vùng AI đọc, như đã làm ở buổi 1
-  - Quy tắc hai: mỗi quote có ID theo nguồn, R cho review, F cho forum, I cho phỏng vấn, để mọi dòng về sau dẫn được về đúng chỗ
+  - Quy tắc hai: mỗi ghi chú có source ID theo nguồn, R cho review, F cho forum, I cho phỏng vấn, để mọi dòng về sau dẫn được về đúng chỗ
 
-  > **Quote ID là sợi dây mà cả buổi hôm nay dựa vào.**
+  > **Source ID là sợi dây mà cả buổi hôm nay dựa vào.**
 
   > Hỏi nhanh: designer nghĩ AI sẽ trả lời gì nếu hỏi về giá của người phỏng vấn số 1? Gõ một từ vào chat: unknown hoặc một câu trả lời.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba hàng, số purple.
@@ -635,61 +635,59 @@ last_synced: 2026-10-30
 
 ---
 
-### DIAGRAM · Checking a quote
+### DIAGRAM · Checking an insight
 - Kicker: Cách làm
-- Title: Cách kiểm tra quote
+- Title: Cách kiểm tra insight
 - On-slide:
-  - Tìm đúng chuỗi trong transcript
-  - Đọc ngữ cảnh quanh quote
+  - Tìm đúng source ID trong bộ ghi chú
+  - Đọc ngữ cảnh quanh ghi chú
   - Ghi lỗi, rồi sửa theo bản gốc
-- Ví dụ: bản nháp (quote I01-03 bị cắt mất câu cuối "I felt like I had done something wrong")
+- Ví dụ: bản nháp (ghi chú I01-03 bị cắt mất câu cuối "I felt like I had done something wrong")
 - Câu hỏi hay gặp:
-  - Tìm chuỗi bằng cách nào? Chức năng tìm của editor là đủ, hoặc một đoạn script ngắn.
-  - Nếu AI diễn đạt lại bằng lời khác thì sao? Không có chuỗi để tìm; đó là lý do bước sau yêu cầu dòng "quote này không cho biết gì".
+  - Tìm source ID bằng cách nào? Chức năng tìm của editor là đủ, hoặc một đoạn script ngắn.
+  - Nếu AI diễn đạt lại bằng lời khác thì sao? Không có chuỗi để tìm; đó là lý do bước Insight yêu cầu dòng "nguồn này không cho biết gì".
   - Bao nhiêu lỗi thì chạy lại? Chưa có ngưỡng đã đo; nhiều lỗi ở một bước thì chạy lại bước đó với prompt chặt hơn.
 - Speaker notes:
 
-  > Quote gốc I01-03 là: The first order was fine, but it said 25 minutes and I was still waiting at 50. I felt like I had done something wrong. AI trả lại đến chữ still waiting at 50 rồi dừng.
+  > Ghi chú gốc I01-03 là: The first order was fine, but it said 25 minutes and I was still waiting at 50. I felt like I had done something wrong. Insight của AI dẫn ghi chú này nhưng chỉ nhắc đến chữ still waiting at 50 rồi dừng.
 
   - Cả câu nghe đúng, nhưng mất câu quan trọng nhất cho onboarding: khách cảm thấy làm sai
-  - Một nghiên cứu trên phỏng vấn thấy việc chọn quote của AI thấp và không đều, và lỗi từ đổi một từ, cắt cụt, đến ghép các đoạn làm đổi nghĩa
-  - Lớp một: tìm đúng chuỗi, bắt được quote bịa
-  - Lớp hai: đọc ngữ cảnh, bắt được quote có thật nhưng bị cắt
+  - Một nghiên cứu trên phỏng vấn thấy việc chọn nội dung dẫn của AI thấp và không đều, và lỗi từ đổi một từ, cắt cụt, đến ghép các đoạn làm đổi nghĩa
+  - Lớp một: tìm đúng source ID, bắt được nguồn bịa
+  - Lớp hai: đọc ngữ cảnh, bắt được ghi chú có thật nhưng bị cắt
   - Đếm lỗi và ghi lại, để biết có nên chạy lại không
 
-  > **Tìm đúng chuỗi chỉ bắt được quote bịa, không bắt được ý bị diễn đạt lại.**
+  > **Tìm đúng source ID chỉ bắt được nguồn bịa, không bắt được ý bị diễn đạt lại.**
 
-  > Câu hỏi 30 giây: trong hai lớp kiểm tra, lớp nào bắt được quote bị cắt? Gõ một hoặc hai vào chat.
-- 🎨 Visual hint: SCHEMATIC. Diagram `quote-check.html`: flowchart quote từ AI, hai câu hỏi kiểm tra, ghi lỗi và sửa, đếm lỗi để chạy lại hoặc dùng được.
+  > Câu hỏi 30 giây: trong hai lớp kiểm tra, lớp nào bắt được ghi chú bị cắt? Gõ một hoặc hai vào chat.
+- 🎨 Visual hint: SCHEMATIC. Diagram `source-check.html`: flowchart insight từ AI, hai câu hỏi kiểm tra, ghi lỗi và sửa, đếm lỗi để chạy lại hoặc giữ insight.
 
 ---
 
-### DIAGRAM · Four steps with AI
+### DIAGRAM · Three steps with AI
 - Kicker: Quy trình
-- Title: Bốn bước với AI
+- Title: Ba bước với AI
 - On-slide:
   - Decision: designer gọi tên quyết định
-  - Evidence: AI rút quote, designer kiểm tra
-  - Claim: AI đề xuất, designer chọn và viết lại
+  - Insight: AI đề xuất kèm source ID, designer kiểm tra và viết lại
   - Challenge: designer phản biện và giữ ý kiến trái chiều
 - Ví dụ: bản nháp (Decision của team app giao đồ ăn: có thiết kế lại bước đổi khung giờ giao hay không)
 - Câu hỏi hay gặp:
   - Vì sao Decision không nhờ AI? Chỉ designer biết quyết định nào đang chờ; AI sẽ tóm tắt tất cả, không phục vụ quyết định nào.
-  - Có phải chạy đủ bốn bước mỗi lần? Không; với việc chỉ tìm một quote thì không cần.
+  - Có phải chạy đủ ba bước mỗi lần? Không; với việc chỉ tìm một ghi chú thì không cần.
 - Speaker notes:
 
-  > Team app giao đồ ăn có một quyết định chờ: có thiết kế lại bước đổi khung giờ giao hay không. Nếu không gọi tên quyết định này, AI sẽ tóm tắt cả 24 quote như nhau.
+  > Team app giao đồ ăn có một quyết định chờ: có thiết kế lại bước đổi khung giờ giao hay không. Nếu không gọi tên quyết định này, AI sẽ tóm tắt cả 24 ghi chú như nhau.
 
   - Bước một là Decision, designer tự viết, vì chỉ designer biết quyết định nào đang chờ
-  - Bước hai là Evidence: AI rút observation, mỗi observation có mã người tham gia, một câu nguyên văn và một dòng "quote này không cho biết gì"
-  - Bước ba là Claim: AI đề xuất ba claim, designer chọn một câu và viết lại bằng lời riêng
-  - Bước bốn là Challenge: designer phản biện claim, và giữ lại ý kiến trái chiều
-  - Hai bước đánh dấu màu cam là hai quyết định không giao cho AI
+  - Bước hai là Insight: AI đề xuất tối đa ba insight, mỗi insight kèm source ID, nguồn (interview, scope hay assumption) và một dòng "nguồn này không cho biết gì"; designer kiểm tra từng source ID, chọn một insight và viết lại bằng lời riêng
+  - Bước ba là Challenge: designer phản biện insight, và giữ lại ý kiến trái chiều
+  - Hai bước đánh dấu màu cam là hai quyết định không giao cho AI (Decision và Challenge)
 
   > **AI soạn nháp được pattern. Độ tin cậy nằm ở số nguồn dẫn và ý kiến trái chiều designer giữ lại.**
 
-  > Trong bốn bước, designer thấy bước nào hay bị bỏ nhất khi làm vội? Gõ số bước vào chat.
-- 🎨 Visual hint: SCHEMATIC. Diagram `four-steps-with-ai.html`: swimlane hai làn (designer, AI), bốn cột, hai bước màu cam.
+  > Trong ba bước, designer thấy bước nào hay bị bỏ nhất khi làm vội? Gõ số bước vào chat.
+- 🎨 Visual hint: SCHEMATIC. Diagram `three-steps-with-ai.html`: swimlane hai làn (designer, AI), ba cột, hai bước màu cam.
 
 ---
 
@@ -697,28 +695,28 @@ last_synced: 2026-10-30
 - Kicker: So sánh
 - Title: AI làm, designer làm
 - On-slide:
-  - AI: rút observation, đề xuất ba claim, đóng vai người phản biện
-  - Designer: viết Decision, kiểm tra quote, chọn và viết lại claim
-  - Designer vẫn đọc: một vài transcript trước, ngữ cảnh của mọi quote dùng
-  - Insight là của designer khi đóng AI lại vẫn bảo vệ được claim
-- Ví dụ: bản nháp (hai designer: một người đóng AI lại vẫn giải thích được claim, một người thì không)
+  - AI: đề xuất insight kèm source ID, đóng vai người phản biện
+  - Designer: viết Decision, kiểm tra source ID, chọn và viết lại insight
+  - Designer vẫn đọc: một vài transcript trước, ngữ cảnh của mọi ghi chú dùng
+  - Insight là của designer khi đóng AI lại vẫn bảo vệ được insight
+- Ví dụ: bản nháp (hai designer: một người đóng AI lại vẫn giải thích được insight, một người thì không)
 - Câu hỏi hay gặp:
   - Đọc bao nhiêu transcript là đủ? Chưa có nguồn đo; đề xuất một vài transcript trước khi hỏi AI, cần chạy thử lớp.
   - Có thể giao AI đọc hết rồi chỉ kiểm tra không? Nghiên cứu cho thấy độ đồng thuận giữa AI và người khi gắn code thấp, nên vẫn cần đọc.
-  - Làm sao biết insight còn của người làm? Đóng AI lại, giải thích claim và chỉ ra quote đỡ nó.
+  - Làm sao biết insight còn của người làm? Đóng AI lại, giải thích insight và chỉ ra ghi chú đỡ nó.
 - Speaker notes:
 
-  > Hai designer cùng chạy bốn bước trên cùng bộ quote. Khi stakeholder hỏi vì sao chọn claim này, một người đóng laptop lại vẫn trả lời được, người kia thì mở lại AI để hỏi.
+  > Hai designer cùng chạy ba bước trên cùng bộ ghi chú nguồn. Khi stakeholder hỏi vì sao chọn insight này, một người đóng laptop lại vẫn trả lời được, người kia thì mở lại AI để hỏi.
 
-  - Người thứ nhất tự viết Decision, tự viết lại claim, tự phản biện; người thứ hai chỉ duyệt bản AI
+  - Người thứ nhất tự viết Decision, tự viết lại insight, tự phản biện; người thứ hai chỉ duyệt bản AI
   - Một nghiên cứu so AI với người thấy AI nhanh hơn rất nhiều nhưng độ đồng thuận khi gắn code chỉ 36 đến 47%
   - Người nhận ra theme tinh tế, mang tính diễn giải tốt hơn, nên vẫn cần đọc
   - Đầu ra của AI trơn tru nên lỗi khó thấy hơn; đây là suy luận của người soạn, chưa có nguồn đo riêng cho research UX
-  - Cách làm: đọc một vài transcript trước khi hỏi AI, và đọc ngữ cảnh của mọi quote dùng cho claim
+  - Cách làm: đọc một vài transcript trước khi hỏi AI, và đọc ngữ cảnh của mọi ghi chú dùng cho insight
 
-  > **Đóng AI lại vẫn giải thích được claim, đó là phép thử insight còn của designer.**
+  > **Đóng AI lại vẫn giải thích được insight, đó là phép thử insight còn của designer.**
 
-  > Câu hỏi 30 giây: đóng AI lại, có giải thích được claim gần nhất không? Có hoặc không.
+  > Câu hỏi 30 giây: đóng AI lại, có giải thích được insight gần nhất không? Có hoặc không.
 - 🎨 Visual hint: SCHEMATIC. Compare hai cột: AI làm và Designer làm; hàng dưới là phép thử đóng AI lại.
 
 ---
@@ -727,29 +725,29 @@ last_synced: 2026-10-30
 - Kicker: Kiểm tra
 - Title: Năm điều cần soi
 - On-slide:
-  - 01 · Phạm vi: claim nói rộng hơn mẫu
+  - 01 · Phạm vi: insight nói rộng hơn mẫu
   - 02 · Đồng thuận: ai cũng nói vậy, thật không?
   - 03 · Sample mix: ai có mặt, ai vắng mặt
   - 04 · Giải pháp: nhảy sang tính năng
-  - 05 · Cảm xúc: quote mạnh che việc nó hiếm
-- Ví dụ: có (case app giao đồ ăn: điều team tin là giá, so với 24 quote; R06, F07, I02-03, R01)
+  - 05 · Cảm xúc: ghi chú mạnh che việc nó hiếm
+- Ví dụ: có (case app giao đồ ăn: điều team tin là giá, so với 24 ghi chú; R06, F07, I02-03, R01)
 - Câu hỏi hay gặp:
   - Năm điều này lấy từ đâu? Từ cách soi insight khi review; chưa phải kết quả nghiên cứu.
-  - Có cần soi cả năm điều mỗi lần? Không; chọn một hai điều thấy rủi ro nhất với claim đang có.
-  - Sample mix khác phạm vi ở đâu? Phạm vi là claim nói rộng cỡ nào, sample mix là ai thực sự nằm trong mẫu.
+  - Có cần soi cả năm điều mỗi lần? Không; chọn một hai điều thấy rủi ro nhất với insight đang có.
+  - Sample mix khác phạm vi ở đâu? Phạm vi là insight nói rộng cỡ nào, sample mix là ai thực sự nằm trong mẫu.
 - Speaker notes:
 
-  > Team app giao đồ ăn đang tin: giá là lý do chính khiến khách rời đi. Trong 24 quote, chỉ R06 và F07 nhắc tới giá, và R06 còn nói giá hơi cao nhưng đồ ăn ngon nên vẫn tiếp tục đặt.
+  > Team app giao đồ ăn đang tin: giá là lý do chính khiến khách rời đi. Trong 24 ghi chú, chỉ R06 và F07 nhắc tới giá, và R06 còn nói giá hơi cao nhưng đồ ăn ngon nên vẫn tiếp tục đặt.
 
-  - Đây là điều một: phạm vi, claim khách rời đi vì giá rộng hơn dữ liệu cho phép
+  - Đây là điều một: phạm vi, insight khách rời đi vì giá rộng hơn dữ liệu cho phép
   - Điều hai là đồng thuận: I02-03 nói thời gian chờ làm phiền hơn phí giao, nên không phải ai cũng nói về giá
   - Điều ba là sample mix: review nghiêng về người có cảm xúc mạnh, forum là người đã gặp vấn đề, hai người phỏng vấn đều lịch sự
   - Điều bốn là giải pháp: nhảy sang thêm popup nhắc khung giờ giao thay vì nói nhu cầu
   - Điều năm là cảm xúc: R01 kể đồ ăn nguội ngoài cửa khi khách ở sân bay, nghe rất mạnh, nhưng chỉ là một review
 
-  > **Soi năm điều này ở bước Challenge, trước khi đưa claim cho ai.**
+  > **Soi năm điều này ở bước Challenge, trước khi đưa insight cho ai.**
 
-  > Câu hỏi 30 giây: claim gần nhất designer viết, điều nào trong năm điều này đáng lo nhất? Gõ số vào chat.
+  > Câu hỏi 30 giây: insight gần nhất designer viết, điều nào trong năm điều này đáng lo nhất? Gõ số vào chat.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, năm hàng, số purple.
 
 ---
@@ -757,51 +755,51 @@ last_synced: 2026-10-30
 ### MILESTONE · Activity: Write and challenge
 - Num: 10
 - Kicker: Activity
-- Title: Viết claim,\n*rồi phản biện*
-- Sub: Viết một claim từ bộ quote app giao đồ ăn, rồi designer cùng cặp phản biện
-- Ví dụ: Không cần. Activity dùng bộ quote app giao đồ ăn.
+- Title: Viết insight,\n*rồi phản biện*
+- Sub: Viết một insight từ bộ ghi chú nguồn app giao đồ ăn, rồi designer cùng cặp phản biện
+- Ví dụ: Không cần. Activity dùng bộ ghi chú nguồn app giao đồ ăn.
 - Speaker notes:
 
-  > Quyết định đang chờ: có thiết kế lại bước đổi khung giờ giao hay không. Designer có 24 quote và ba phút để viết một claim.
+  > Quyết định đang chờ: có thiết kế lại bước đổi khung giờ giao hay không. Designer có 24 ghi chú và ba phút để viết một insight.
 
   - Mười phút: ba phút viết một mình, năm phút đổi bài và phản biện, hai phút chia sẻ
-  - Bộ quote là quotes.md của case app giao đồ ăn: 24 quote hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
+  - Bộ ghi chú nguồn là source-notes.md của case app giao đồ ăn: 24 ghi chú hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
   - Ba phút đầu không dùng AI: đây là phần designer tự viết, đúng phép thử đóng AI lại
-  - Quote nào dẫn vào claim phải khớp từng chữ với bản gốc, kể cả khi designer viết claim bằng tiếng Việt
+  - Source ID nào dẫn vào insight phải có thật và khớp với ghi chú gốc, kể cả khi designer viết insight bằng tiếng Việt
 
-  > **Không có quote ID thì không tính là một lỗi.**
+  > **Không có source ID thì không tính là một lỗi.**
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
 
 ### PROCESS · How to write and challenge
 - Kicker: Cách làm
-- Title: Cách viết và phản biện claim
+- Title: Cách viết và phản biện insight
 - On-slide:
-  - Viết claim: ai, cần gì, khi nào, quyết định nào
-  - Dẫn ít nhất hai quote ID và một dòng "không cho biết gì"
+  - Viết insight: ai, cần gì, khi nào, quyết định nào
+  - Dẫn ít nhất hai source ID và một dòng "không cho biết gì"
   - Đổi bài, phản biện bằng bốn câu hỏi
-  - Sửa claim, rồi một cặp chia sẻ lỗi bắt được hay nhất
-- Ví dụ: bản nháp (claim mẫu: "Mọi khách mới thấy đơn giao lâu hơn ước tính trong app và cảm thấy mình đã làm sai", dẫn R05 và I01-03)
+  - Sửa insight, rồi một cặp chia sẻ lỗi bắt được hay nhất
+- Ví dụ: bản nháp (insight mẫu: "Mọi khách mới thấy đơn giao lâu hơn ước tính trong app và cảm thấy mình đã làm sai", dẫn R05 và I01-03)
 - Câu hỏi hay gặp:
-  - Viết claim bằng tiếng Việt được không? Được; quote dẫn vào giữ nguyên bản tiếng Anh và ID.
-  - Không tìm ra lỗi thì sao? Hỏi lại bốn câu: quote có đúng không, claim có rộng quá không, ý kiến trái chiều ở đâu, đây là nhu cầu hay tính năng.
+  - Viết insight bằng tiếng Việt được không? Được; ghi chú dẫn vào giữ nguyên bản tiếng Anh và source ID.
+  - Không tìm ra lỗi thì sao? Hỏi lại bốn câu: ghi chú có đúng không, insight có rộng quá không, ý kiến trái chiều ở đâu, đây là nhu cầu hay tính năng.
   - Có được hỏi AI không? Không trong activity này; muốn thử thì làm ở nhà trong Practice 2.
 - Speaker notes:
 
-  > Claim mẫu: mọi khách mới thấy đơn giao lâu hơn ước tính trong app và cảm thấy mình đã làm sai. Dẫn R05 và I01-03. Designer bắt được lỗi nào?
+  > Insight mẫu: mọi khách mới thấy đơn giao lâu hơn ước tính trong app và cảm thấy mình đã làm sai. Dẫn R05 và I01-03. Designer bắt được lỗi nào?
 
-  - Chữ mọi là lỗi phạm vi: hai quote không đủ để nói mọi khách
+  - Chữ mọi là lỗi phạm vi: hai ghi chú không đủ để nói mọi khách
   - R05 chỉ nói đơn giao lâu hơn ước tính, không nói cảm giác làm sai; cảm giác đó chỉ có ở I01-03, một người: đó là lỗi cảm xúc
-  - Trong 24 quote không có ai nói thời gian giao đúng như ước tính, nên ý kiến trái chiều ở đây là chưa có; dòng "bộ quote này không cho biết gì" vẫn cần
-  - Bước một: viết claim theo mẫu ai làm hoặc cần gì khi nào, quan trọng với quyết định nào
-  - Bước hai: đổi bài, người nhận mở quote gốc đối chiếu từng chữ
-  - Bốn câu hỏi của người phản biện: quote có đúng không, claim có rộng quá không, ý kiến trái chiều nào bị bỏ, đây là nhu cầu hay tính năng
+  - Trong 24 ghi chú không có ai nói thời gian giao đúng như ước tính, nên ý kiến trái chiều ở đây là chưa có; dòng "bộ ghi chú này không cho biết gì" vẫn cần
+  - Bước một: viết insight theo mẫu ai làm hoặc cần gì khi nào, quan trọng với quyết định nào
+  - Bước hai: đổi bài, người nhận mở ghi chú gốc đối chiếu từng chữ
+  - Bốn câu hỏi của người phản biện: ghi chú có đúng không, insight có rộng quá không, ý kiến trái chiều nào bị bỏ, đây là nhu cầu hay tính năng
 
-  > **Mỗi lỗi phải kèm quote ID, không thì chưa tính.**
+  > **Mỗi lỗi phải kèm source ID, không thì chưa tính.**
 
   > Cặp nào đã bắt được lỗi đầu tiên? Gõ vào chat hoặc giơ tay.
-- 🎨 Visual hint: SCHEMATIC. Process bốn bước ngang, bước 3 active.
+- 🎨 Visual hint: SCHEMATIC. Process bốn bước của activity ngang, bước 3 active.
 
 ---
 
@@ -813,14 +811,14 @@ last_synced: 2026-10-30
   - scope, bản đánh giá UX, bản đồ giả định
   - research questions, bản phân tích đối thủ
   - research plan, script, transcript đã ẩn danh
-  - claim và insight, mỗi dòng dẫn về quote ID
+  - insight, mỗi dòng dẫn về source ID
 - Ví dụ: Không cần. Slide tổng hợp file của chuỗi việc ở nhà.
 - Câu hỏi hay gặp:
   - Hub nằm ở đâu? Trong case folder của designer, private mặc định; xuất bản lên GitHub là tuỳ chọn.
 - Speaker notes:
   - Đây là các file designer mang ra khỏi buổi 2 và chuỗi việc ở nhà
   - Hub private mặc định, nằm trong case folder; xuất bản là tuỳ chọn
-  - Lesson 3 dùng claim và insight của designer làm đầu vào cho persona, journey map và opportunity
+  - Lesson 3 dùng bộ nguyên tắc và insight của designer làm đầu vào cho persona, journey map và opportunity
   - Mỗi file có nguồn hoặc nhãn "chưa có nguồn"
 
   > Designer muốn file nào đầy đủ nhất trước Lesson 3?
@@ -856,7 +854,7 @@ last_synced: 2026-10-30
 - Ví dụ: Không cần. Slide giao việc.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Mười hai step chia ba phần: Break the brief (nguyên tắc, scope, UX observation, giả định, research question, đối thủ), phỏng vấn user thật (research plan và script, phỏng vấn, ẩn danh và quote ID), synthesis và hub (bốn bước, insight lên hub, learning log)
+  - Mười hai step chia ba phần: Break the brief (nguyên tắc, scope, UX observation, giả định, research question, đối thủ), phỏng vấn user thật (research plan và script, phỏng vấn, ẩn danh và source ID), synthesis và hub (ba bước, insight lên hub, learning log)
   - Phỏng vấn cần hẹn lịch và consent, nên bắt đầu hẹn người ngay hôm nay
   - Ẩn danh transcript trước khi đưa cho AI; dữ liệu gốc ở lại ngoài vùng AI đọc
   - Buổi practice trên lớp làm tiếp phần chưa xong nếu còn thời gian, rồi chấm; cách chấm chưa quyết, sẽ báo sau
@@ -873,13 +871,13 @@ last_synced: 2026-10-30
 - On-slide:
   - Đặt chuẩn trước, rồi mới để AI chạy
   - Điều AI đưa ra mà không có nguồn thì ghi "chưa có nguồn"
-  - Một claim đáng tin dẫn về quote gốc và giữ ý kiến trái chiều
+  - Một insight đáng tin dẫn về ghi chú gốc và giữ ý kiến trái chiều
 - Sign: AI Design Workflow
 - Ví dụ: Không cần. Slide kết thúc.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
-  > Ba điều mang về: chuẩn đặt trước, nguồn cho mọi dòng, và claim có quote để kiểm.
+  > Ba điều mang về: chuẩn đặt trước, nguồn cho mọi dòng, và insight có source ID để kiểm.
 
   - Chuỗi practice ở nhà, rồi buổi practice trên lớp và buổi 3
   - Nguyên tắc vận hành: AI soạn nháp, designer kiểm tra, designer quyết định

@@ -73,15 +73,15 @@ Tổng: 6 + 40 + 4 + 18 + 8 + 6 = 82 phút, buffer 8 phút. Nếu quá giờ, th
 
 ## Sources
 
-Phát hiện từ nguồn (chưa phải suy luận của tác giả). Nguồn đang nằm trong `programs/ai-design-workflow/learning/ai-in-discover.md` và `research.md`; **chưa xác thực nguồn gốc**, đánh dấu `[to confirm]` cho đến khi session xác thực nguồn xong (session hiện tại chỉ phủ các số liệu của buổi 1).
+Phát hiện từ nguồn (chưa phải suy luận của tác giả). Nguồn đang nằm trong `programs/ai-design-workflow/learning/reference/ai-in-discover.md` và `research.md`; **chưa xác thực nguồn gốc**, đánh dấu `[to confirm]` cho đến khi session xác thực nguồn xong (session hiện tại chỉ phủ các số liệu của buổi 1).
 
 | Ý dùng trong lesson | Nguồn, năm, cỡ mẫu | Trạng thái |
 |---|---|---|
-| AI soạn nháp câu hỏi nghiên cứu rõ và liên quan hơn bản viết tay, nhưng yếu ở bước thử trước và ở thiên lệch social desirability | D12 trong `ai-in-discover.md`, đo trên survey | `[to confirm]` bản gốc |
+| AI soạn nháp câu hỏi nghiên cứu rõ và liên quan hơn bản viết tay, nhưng yếu ở bước thử trước và ở thiên lệch social desirability | D12 trong `reference/ai-in-discover.md`, đo trên survey | `[to confirm]` bản gốc |
 | Người trả lời mô phỏng quá dễ chiều, thiên về câu dễ nghe, nên AI không đóng vai user hay PO | D13: Evaluating Silicon Sampling (CMS 2025), 6.076 người ở bốn nước, chủ đề nhận diện khuôn mặt; NN/g và UXAgent (CHI 2025) trong `research.md` Part 2 | `[to confirm]`; kết quả đo ở lĩnh vực khác, áp vào design là suy luận |
 | Tóm tắt cuộc họp có hallucination và bỏ sót, metric tự động không bắt hết | D11: Re-FRAME (EMNLP Findings 2025), What's under the hood (arXiv 2404.11124) | `[to confirm]`; đo trên benchmark tóm tắt, không phải cuộc họp product |
 | AI nghiêng theo người hỏi khi câu hỏi mang giả thuyết, nên hỏi trung tính | D32: Ask, Don't Tell (arXiv 2602.23971), UK AISI | `[to confirm]` |
-| Heuristic evaluation bằng AI tìm 73 đến 77% vấn đề nhưng có false positive; đánh giá severity bất ổn; công cụ accessibility tự động phủ khoảng 30 đến 57% | E7, E8, E9 trong `ai-strengths-and-limits.md` mục 2.3 | `[to confirm]` |
+| Heuristic evaluation bằng AI tìm 73 đến 77% vấn đề nhưng có false positive; đánh giá severity bất ổn; công cụ accessibility tự động phủ khoảng 30 đến 57% | E7, E8, E9 trong `reference/ai-strengths-and-limits.md` mục 2.3 | `[to confirm]` |
 | Mười heuristic của Nielsen | Nielsen Norman Group, 10 Usability Heuristics | cần trích nguồn gốc khi viết lesson |
 
 Phương pháp Winnie tự thiết kế, không có nghiên cứu hỗ trợ trực tiếp: ba mức access và đường văn bản làm đường chính; agreement status (agreed, pending, not available); gắn "assumed" cho metric chưa xác nhận.

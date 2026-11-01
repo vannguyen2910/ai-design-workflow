@@ -83,12 +83,12 @@ Việc dựng case folder và chia sẻ hub chuyển thành mục tiêu của b�
 2. Activity mặc định là "đoán trước, rồi để AI phân loại" (gắn với data safety). Hay muốn dùng Activity khác, ví dụ cho học viên tự viết instruction thứ ba sau demo T3 và chấm bằng ba tiêu chí?
 3. Có giữ ba con số về nghề ở T1 ở mức này không, hay muốn rút còn hai để nhường thời gian cho T3?
 4. Ba câu hỏi trước khi automate nằm cuối T2 và là phần bị cắt đầu tiên. Có muốn chuyển nó sang pre-read hẳn không?
-- (Đã xong 2026-10-23) Bộ năm đoạn trích: `lessons/01-design-process-with-ai/assets/five-excerpts.md`; đáp án: `learning/five-excerpts-answer-key.md`.
+- (Đã xong 2026-10-23) Bộ năm đoạn trích: `lessons/01-design-process-with-ai/assets/five-excerpts.md`; đáp án: `learning/reference/five-excerpts-answer-key.md`.
 6. Mô tả buổi 1 trên Notion có cần cập nhật sau khi chốt không?
 
 ## Sources
 
-Số liệu đã được đối chiếu ngày 2026-10-22 trong [`source-verification-lesson-1.md`](../source-verification-lesson-1.md). Bảng dưới là các ý T1 và T2 dùng và những chỗ vẫn mở.
+Số liệu đã được đối chiếu ngày 2026-10-22 trong [`reference/source-verification-lesson-1.md`](../source-verification-lesson-1.md). Bảng dưới là các ý T1 và T2 dùng và những chỗ vẫn mở.
 
 | Ý dùng trong lesson | Nguồn, năm, cỡ mẫu | Trạng thái |
 |---|---|---|
@@ -100,7 +100,7 @@ Số liệu đã được đối chiếu ngày 2026-10-22 trong [`source-verific
 | AI khuếch đại điểm mạnh lẫn điểm yếu; làm nhanh quy trình cũ không tạo bước nhảy | DORA 2025 (gần 5.000 người, qua bản tóm tắt thứ cấp); Hammer 1990 | Hammer chưa đối chiếu thân bài; DORA ở lĩnh vực phần mềm, áp vào design là suy luận |
 | Hình "nút thắt chuyển sang verification" | Ảnh lưu truyền trên mạng | `[to confirm]` tác giả; chỉ là minh hoạ, không phải bằng chứng |
 | Hình "nút thắt dịch chuyển": khung lý thuyết | Theory of Constraints (Goldratt, *The Goal*, 1984); Amdahl's law (1967); Brooks, *No Silver Bullet* (1986) | `[to confirm]`: nhớ từ kiến thức nền, chưa đọc nguồn; áp vào design là suy luận |
-| Agent, đội AI theo stage | `agentic-ai-concepts.md` mục 2 đến 4 (trong `learning/`) | Cần chọn nguồn công khai để trích trên slide; chưa có |
+| Agent, đội AI theo stage | `reference/agentic-ai-concepts.md` mục 2 đến 4 (trong `learning/`) | Cần chọn nguồn công khai để trích trên slide; chưa có |
 | Số liệu Figma 36/35/29 | Không xác thực được | Đã gỡ khỏi lesson, không dùng |
 | Luật 91/2025/QH15 và Nghị định 356/2025/NĐ-CP | Quốc hội 26/06/2025; Chính phủ 31/12/2025 | Khớp; hiệu lực Nghị định chưa đọc toàn văn |
 

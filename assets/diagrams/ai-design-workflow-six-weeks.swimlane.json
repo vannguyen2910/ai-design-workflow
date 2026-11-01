@@ -93,17 +93,17 @@
           "title": "Insights You Can Trust",
           "sub": "Buổi 5 · theory",
           "details": [
-            "Bốn bước: Decision, Evidence, Claim, Challenge",
-            "Persona, journey map, opportunity có quote ID",
+            "Bộ nguyên tắc và insight làm đầu vào",
+            "Persona, journey map, opportunity có insight ID",
             "Giữ ý kiến trái chiều",
             "Insight hub: tìm trước khi hỏi"
           ]
         },
         {
-          "title": "Bốn bước trên quote",
+          "title": "Persona, journey, opportunity trên insight",
           "sub": "Buổi 6 · practice",
           "details": [
-            "Quote peer đã ẩn danh, bốn bước",
+            "Insight của designer, ba bước đã chạy",
             "personas.md, journey-map.md, frame-opportunity.md",
             "Một trang cho lead, O1 trong insight hub",
             "Gate 1, problem-brief.md"

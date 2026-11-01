@@ -9,7 +9,7 @@ draft: true
 
 ## Goal
 
-Làm một case của bạn đi hết stage Discover: từ bộ nguyên tắc và Break the brief, qua phỏng vấn user thật, đến một claim mà mỗi dòng dẫn về quote gốc. Mỗi step cho ra một file. Các file này là đầu vào cho Lesson 3 (persona, journey map, opportunity).
+Làm một case của bạn đi hết stage Discover: từ bộ nguyên tắc và Break the brief, qua phỏng vấn user thật, đến một insight mà mỗi dòng dẫn về source ID. Mỗi step cho ra một file. Các file này là đầu vào cho Lesson 3 (persona, journey map, opportunity).
 
 ## Tổng quan 12 step
 
@@ -23,8 +23,8 @@ Làm một case của bạn đi hết stage Discover: từ bộ nguyên tắc v�
 | | 6 | Phân tích đối thủ, lượt đầu | `competitor-analysis.md` |
 | **B. Phỏng vấn** | 7 | Chuẩn bị research plan và script | `research-plan.md`, `interview-script.md` |
 | | 8 | Phỏng vấn user thật | transcript gốc |
-| | 9 | Ẩn danh và gắn quote ID | transcript đã ẩn danh |
-| **C. Synthesis** | 10 | Chạy bốn bước: Decision, Evidence, Claim, Challenge | `work/user-voice-synthesis.md` |
+| | 9 | Ẩn danh và gắn source ID | transcript đã ẩn danh |
+| **C. Synthesis** | 10 | Chạy ba bước: Decision, Insight, Challenge | `work/user-voice-synthesis.md` |
 | | 11 | Đưa insight lên hub | một entry trong `insights/evidence/` |
 | | 12 | Learning log và reflection | `_personal/learning-log.md` |
 
@@ -172,7 +172,7 @@ Script là lưới an toàn, không phải khuôn. Nếu cả buổi chỉ đi t
 **Xong khi:** có transcript hoặc ghi chú của mỗi buổi. Lưu bản gốc vào `work/sources/_raw-private/`, ngoài vùng AI đọc.
 **File:** transcript gốc
 
-### Step 9 · Ẩn danh và gắn quote ID
+### Step 9 · Ẩn danh và gắn source ID
 
 **Ai làm:** bạn.
 
@@ -182,44 +182,43 @@ Script là lưới an toàn, không phải khuôn. Nếu cả buổi chỉ đi t
    - Công cụ có huấn luyện trên dữ liệu tải lên không, và đã tắt chưa? Lưu bao lâu?
    - Đã ẩn danh trên máy chưa?
 2. **Ẩn danh trên máy** bằng find and replace: thay tên bằng participant code (P1, P2). Không nhờ AI ẩn danh sau khi đã dán.
-3. **Gắn ID** cho mỗi quote theo mẫu: `I01-03` là quote thứ 3 của phỏng vấn 01.
+3. **Gắn source ID** cho mỗi ghi chú theo mẫu: `I01-03` là ghi chú thứ 3 của phỏng vấn 01.
 4. Lưu bản đã ẩn danh vào `work/sources/anonymised/`.
 
-**Xong khi:** mỗi quote có ID, bản ẩn danh nằm trong `work/sources/anonymised/`, bản gốc vẫn nằm ngoài vùng AI đọc.
+**Xong khi:** mỗi ghi chú có source ID, bản ẩn danh nằm trong `work/sources/anonymised/`, bản gốc vẫn nằm ngoài vùng AI đọc.
 **File:** transcript đã ẩn danh
 
 ---
 
 ## Phần C · Synthesis và hub
 
-### Step 10 · Chạy bốn bước: Decision, Evidence, Claim, Challenge
+### Step 10 · Chạy ba bước: Decision, Insight, Challenge
 
-**Ai làm:** xem từng bước. Prompt mẫu cho cả bốn bước ở [Lesson 2](discover-the-problem-lesson.md), mục 8.
+**Ai làm:** xem từng bước. Prompt mẫu cho cả ba bước ở [Lesson 2](discover-the-problem-lesson.md), mục 8.
 
 Trước khi hỏi AI, **đọc trực tiếp** một vài transcript.
 
 | Bước | Việc | Ai làm |
 |---|---|---|
 | 1. Decision | Viết 1 đến 3 quyết định mà nghiên cứu này phục vụ | **Bạn**, không nhờ AI |
-| 2. Evidence | AI rút observation: mã người tham gia, một câu nguyên văn, một dòng "quote này không cho biết điều gì", quote ID. Nhờ AI liệt kê thêm điều người tham gia nói mà chưa được đưa vào | AI soạn, bạn kiểm tra |
-| 3. Claim | AI đề xuất 3 claim theo mẫu *"[Ai] làm hoặc cần [gì] khi [bối cảnh], và điều này quan trọng với quyết định [nào]"*. Bạn chọn một câu và viết lại bằng lời của mình | AI đề xuất, bạn chọn và viết |
-| 4. Challenge | AI đóng vai người phản biện: chỗ nói quá, quote có thể sai, ba cách giải thích khác, điều bị bỏ, dữ liệu mới nào làm claim sai | Bạn quyết định |
+| 2. Insight | AI đề xuất tối đa 3 insight theo mẫu *"[Ai] làm hoặc cần [gì] khi [bối cảnh], và điều này quan trọng với quyết định [nào]"*. Mỗi insight kèm source ID, nguồn (interview, scope hay assumption), số người nói và một dòng "nguồn này không cho biết điều gì". Nhờ AI liệt kê thêm điều người tham gia nói mà chưa được đưa vào. Bạn kiểm tra từng source ID, chọn một insight và viết lại bằng lời của mình | AI đề xuất, bạn kiểm tra, chọn và viết |
+| 3. Challenge | AI đóng vai người phản biện: chỗ nói quá, source ID có thể sai, ba cách giải thích khác, điều bị bỏ, dữ liệu mới nào làm insight sai | Bạn quyết định |
 
-**Kiểm tra mỗi quote AI trả lại ở bước 2:**
+**Kiểm tra mỗi insight AI trả lại ở bước 2:**
 
-1. Tìm đúng chuỗi trong transcript. Quote không có trong transcript là quote bịa.
-2. Đọc ngữ cảnh quanh quote. Quote có thật nhưng bị cắt hay ghép làm đổi nghĩa vẫn là lỗi.
-3. Đếm số dòng không truy được về quote gốc.
+1. Tìm đúng source ID trong bộ ghi chú. ID không có trong bộ ghi chú là nguồn bịa.
+2. Đọc ngữ cảnh quanh ghi chú. Ghi chú có thật nhưng bị cắt hay ghép làm đổi nghĩa vẫn là lỗi.
+3. Đếm số dòng không truy được về ghi chú gốc.
 
-**Ở bước 3 và 4:**
+**Ở bước 2 và 3:**
 
-- Claim dẫn ít nhất 2 quote ID và có một dòng "bộ quote này không cho biết điều gì".
-- Giữ ý kiến trái chiều **cùng trang** với claim, không đưa xuống phụ lục. Ghi điều gì làm bạn đổi ý.
-- Cập nhật `assumption.md`: mỗi giả định hàng đầu là Confirmed, Unconfirmed hay Unknown, kèm quote ID.
+- Insight dẫn ít nhất 2 source ID và có một dòng "nguồn này không cho biết điều gì".
+- Giữ ý kiến trái chiều **cùng trang** với insight, không đưa xuống phụ lục. Ghi điều gì làm bạn đổi ý.
+- Cập nhật `assumption.md`: mỗi giả định hàng đầu là Confirmed, Unconfirmed hay Unknown, kèm source ID.
 
-**Phép thử:** đóng AI lại. Bạn có giải thích được claim và chỉ ra quote nào đỡ nó không? Chưa thì claim chưa phải của bạn.
+**Phép thử:** đóng AI lại. Bạn có giải thích được insight và chỉ ra source ID nào đỡ nó không? Chưa thì insight chưa phải của bạn.
 
-**Xong khi:** có một claim mà mỗi dòng dẫn về quote ID, có ý kiến trái chiều đi kèm, và `assumption.md` đã cập nhật.
+**Xong khi:** có một insight mà mỗi dòng dẫn về source ID, có ý kiến trái chiều đi kèm, và `assumption.md` đã cập nhật.
 **File:** `work/user-voice-synthesis.md`, `assumption.md`
 
 ### Step 11 · Đưa insight lên hub
@@ -227,10 +226,10 @@ Trước khi hỏi AI, **đọc trực tiếp** một vài transcript.
 **Ai làm:** bạn.
 
 1. Copy `insights/_templates/_template-evidence.md` vào `insights/evidence/`, đặt mã tiếp theo (ví dụ `E1.md`).
-2. Điền claim, các quote ID, điều dữ liệu không cho biết và ý kiến trái chiều.
+2. Điền insight, các source ID, điều dữ liệu không cho biết và ý kiến trái chiều.
 3. Nối entry về business question trong `research-questions.md`.
 
-**Xong khi:** mỗi dòng của entry dẫn về một quote ID, và entry nối được về business question.
+**Xong khi:** mỗi dòng của entry dẫn về một source ID, và entry nối được về business question.
 **File:** một entry trong `insights/evidence/`
 
 ### Step 12 · Learning log và reflection
@@ -255,8 +254,8 @@ Trước khi hỏi AI, **đọc trực tiếp** một vài transcript.
 - [ ] `assumption.md` (có ba giả định hàng đầu, đã cập nhật trạng thái)
 - [ ] `competitor-analysis.md` (lượt đầu)
 - [ ] `research-plan.md` và `interview-script.md`
-- [ ] Transcript đã ẩn danh, có quote ID
-- [ ] `work/user-voice-synthesis.md` (Decision, Evidence, Claim, Challenge)
+- [ ] Transcript đã ẩn danh, có source ID
+- [ ] `work/user-voice-synthesis.md` (Decision, Insight, Challenge)
 - [ ] Một entry trong `insights/evidence/`
 - [ ] `_personal/learning-log.md` (một mục mới và câu reflection)
 
@@ -267,8 +266,8 @@ Xem hình dạng các file này khi đã nằm trong hub ở [Outcome Examples](
 - [ ] Mỗi UX principle riêng có dòng "điều này không có nghĩa là…" và một quyết định nó đảo ngược.
 - [ ] Case có một business question, tách khỏi giải pháp trong brief.
 - [ ] Mọi dòng AI soạn ở Step 3 đến 5 và Step 10 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
-- [ ] Bạn tìm đúng chuỗi và đọc ngữ cảnh của mọi quote dùng cho claim.
-- [ ] Claim có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều.
+- [ ] Bạn tìm đúng source ID và đọc ngữ cảnh của mọi ghi chú dùng cho insight.
+- [ ] Insight có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều.
 - [ ] Dữ liệu gốc chưa ẩn danh không nằm trong vùng AI đọc.
 
 Xong cả 12 step thì mang các file này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
@@ -277,8 +276,8 @@ Xong cả 12 step thì mang các file này tới buổi practice trên lớp: b�
 
 - **Không tiếp cận được business:** dựng scope từ PRD hoặc brief, thông tin công khai và dữ liệu nhìn thấy được. Ghi mọi outcome và metric là "assumed", agreement status là "not available".
 - **Chưa có research cũ để kéo insight:** ghi "chưa có" ở `assumption.md` và để phần đó cho phỏng vấn.
-- **Chưa phỏng vấn được user thật, hoặc case quá nhạy cảm:** làm Step 1 đến 7 trên case của bạn. Với Step 10, dùng bộ quote app giao đồ ăn ([quotes.md](../../../assets/starter-files/course-case/quotes.md), 24 quote đã có ID) rồi làm lại với quote của bạn khi có.
+- **Chưa phỏng vấn được user thật, hoặc case quá nhạy cảm:** làm Step 1 đến 7 trên case của bạn. Với Step 10, dùng bộ ghi chú nguồn app giao đồ ăn ([source-notes.md](../../../assets/starter-files/course-case/source-notes.md), 24 ghi chú đã có source ID) rồi làm lại với ghi chú của bạn khi có.
 - **Không rõ người tham gia đã đồng ý gì, hoặc công cụ có huấn luyện trên dữ liệu không:** dừng lại, hỏi lead. Đừng đưa transcript cho AI.
 - **Không làm hết được:** làm Step 1 đến 5 trước, giữ lại Step 12. Step 6 làm sau.
 - **AI đưa ra điều nghe hợp lý nhưng không có trong tài liệu:** ghi "chưa có nguồn", không đưa vào như một sự thật.
-- **AI trả lại quote không tìm thấy trong transcript:** đó là quote bịa. Bỏ nó và đếm vào số lỗi.
+- **AI trả lại source ID không có trong bộ ghi chú:** đó là nguồn bịa. Bỏ nó và đếm vào số lỗi.

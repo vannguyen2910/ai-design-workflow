@@ -128,7 +128,7 @@ Key lessons: set fidelity expectations early; keep a **shared component library*
 
 ## Part 2 — Failure cases and risks
 
-> **See also:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md) pulls together what AI is good at, where it falls short, and the case for not automating a bad workflow, with a pre-automation checklist.
+> **See also:** [reference/ai-strengths-and-limits.md](reference/ai-strengths-and-limits.md) pulls together what AI is good at, where it falls short, and the case for not automating a bad workflow, with a pre-automation checklist.
 
 **Researched:** 2026-10-05 · Why this matters: each risk below should become a **checkpoint** in the workflow, not just a warning slide.
 

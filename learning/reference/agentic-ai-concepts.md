@@ -168,7 +168,7 @@ Ví dụ harness: Claude Code, Cursor, Codex CLI, Gemini CLI. Cùng model có th
 - Tool gọn, ít chồng chéo: nếu con người không biết nên dùng tool nào thì agent cũng vậy.
 - Few-shot chọn lọc: vài ví dụ tiêu biểu tốt hơn một danh sách ca biên dài.
 
-*Góc mental model và thiết kế quyền hạn của harness (không phải định nghĩa kỹ thuật): xem `ai-mental-model-harness.md`.*
+*Góc mental model và thiết kế quyền hạn của harness (không phải định nghĩa kỹ thuật): xem `ai-mental-model.md`.*
 
 **File hướng dẫn cho harness.** `CLAUDE.md`, `AGENTS.md`: markdown nằm trong repo, được nạp mỗi phiên để nói cho agent biết quy ước dự án, lệnh build/test, điều cần tránh. Giữ ngắn, vì mọi dòng đều tốn token mỗi lượt.
 

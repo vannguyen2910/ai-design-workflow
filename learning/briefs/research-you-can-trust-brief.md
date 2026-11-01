@@ -73,7 +73,7 @@ Tổng: 6 + 40 + 4 + 20 + 8 + 6 = 84 phút, buffer 6 phút. Nếu quá giờ, th
 
 ## Sources
 
-Phát hiện từ nguồn. Nguồn nằm trong `programs/ai-design-workflow/learning/ai-in-discover.md` (mục Synthesis, Evidence and Sources) và `research.md`; **chưa xác thực nguồn gốc**, đánh dấu `[to confirm]` cho đến khi có session xác thực các nguồn Discover.
+Phát hiện từ nguồn. Nguồn nằm trong `programs/ai-design-workflow/learning/reference/ai-in-discover.md` (mục Synthesis, Evidence and Sources) và `research.md`; **chưa xác thực nguồn gốc**, đánh dấu `[to confirm]` cho đến khi có session xác thực các nguồn Discover.
 
 | Ý dùng trong lesson | Nguồn, năm, cỡ mẫu | Trạng thái |
 |---|---|---|
@@ -86,6 +86,6 @@ Phát hiện từ nguồn. Nguồn nằm trong `programs/ai-design-workflow/lear
 | Người trả lời mô phỏng quá dễ chiều | D13 (CMS 2025; arXiv 2512.22725), NN/g và UXAgent (CHI 2025) | `[to confirm]` |
 | Hỏi trung tính giảm xu hướng chiều người hỏi | D32 (arXiv 2602.23971; UK AISI) | `[to confirm]` |
 | Mức dùng AI trong research: 58% (Maze 2025, hơn 800 người) và 80% researcher, 91% lo hallucination (User Interviews, năm chưa xác nhận) | D5, D6 (cả hai do vendor thực hiện) | `[to confirm]`; mẫu số và năm chưa rõ |
-| Nghiên cứu về tiếng Việt | Chưa có số đo cho tiếng Việt trên phỏng vấn UX | khoảng trống đã ghi ở `ai-in-discover.md` mục Gaps; không hứa độ chính xác |
+| Nghiên cứu về tiếng Việt | Chưa có số đo cho tiếng Việt trên phỏng vấn UX | khoảng trống đã ghi ở `reference/ai-in-discover.md` mục Gaps; không hứa độ chính xác |
 
 Phương pháp Winnie tự thiết kế, không có nghiên cứu hỗ trợ trực tiếp: quy trình user-voice synthesis tám bước với ba gate (A đúng giọng, B word for word và truy được, C xếp theo mức độ chứ không đếm); ghép hai loại evidence trong một evidence pack; bốn bước kiểm tra theme về quote.
