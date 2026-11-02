@@ -27,7 +27,6 @@ programs/ai-design-workflow/                  (thư mục này)
   assets/                   starter-files, hub và doc template, diagram, ảnh tham khảo
     method-cards/           card tham khảo cho từng design method, theo stage
     templates/workflow-kit/ bộ mẫu workflow (step card, luật cho AI tool, propose first…); không dùng trong lớp
-  workspace-template/       repo mẫu cho học viên (GitHub: ai-product-workflow): my-project (trống), demo-project (Travel Buddy), toolkit/
   examples/                 ví dụ làm sẵn (step card)
   _archive/                 bản nháp đã thay thế
 
@@ -87,7 +86,7 @@ Bài tập về nhà của mentee không lưu ở đây: `mentees/<tên>/homewor
 
 Đưa lên GitHub: tạo repo riêng chỉ chứa nội dung `workspace/` (copy hoặc `git subtree split`), bật **Settings, Template repository** để học viên có nút Use this template, và để repo Public. Học viên tạo bản Private của họ từ template.
 
-**Bản đã đăng lên GitHub** nằm ở `workspace-template/` (repo `vannguyen2910/ai-design-workspace-template`). Folder này là một repo Git riêng: phần `.git` của nó nằm ngoài Google Drive, ở `~/.git-workspace-template` (cùng cách với repo Mentorship), và repo Mentorship bỏ qua nó qua `.git/info/exclude`. `workspace/` vẫn là nơi soạn nội dung; muốn cập nhật bản đã đăng, copy nội dung đã sửa sang `workspace-template/`, rồi commit và push ở đó. Đừng sửa trực tiếp trong `workspace-template/` để tránh hai bản lệch nhau.
+**Template nằm ở repo riêng**, ngang hàng với repo này: `~/Developer/ai-design-workflow-class/workspace-template` (GitHub: `vannguyen2910/ai-design-workflow-template`). Đó là nơi duy nhất để sửa template. Repo này không còn giữ bản sao, nên không có hai bản lệch nhau.
 
 Trong `workspace/` còn có `site/` (website Astro + Starlight dựng từ hub) và `.github/workflows/publish-hub.yml` (đăng site lên GitHub Pages, mặc định tắt, bật bằng repo variable `PUBLISH_HUB=true`). `astro-prototype/` là bản thử nghiệm gốc của `site/`; khi sửa một bên, đồng bộ bên kia.
 
