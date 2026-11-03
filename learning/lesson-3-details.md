@@ -8,27 +8,27 @@ File làm việc riêng, không lên site. Các phần dưới đây được d�
 
 ### 7.2 Engagement rules
 
-Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổi kiểu tương tác mỗi 8 đến 10 phút, mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; mỗi buổi có một "cái bẫy". Cái bẫy của buổi 3 là persona do AI tự sinh nghe rất hợp lý nhưng không có quote nào đỡ (slide "Persona từ quote, persona từ AI" của outline, và activity).
+Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổi kiểu tương tác mỗi 8 đến 10 phút, mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; mỗi buổi có một "cái bẫy". Cái bẫy của buổi 3 là persona do AI tự sinh nghe rất hợp lý nhưng không có insight nào làm căn cứ (slide "Persona từ insight, persona từ AI" của outline, và activity).
 
 ### 7.3 Activities
 
-**Ice breaker** (5 phút, cả lớp, không có output). Mỗi người nói tên và một câu: một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin. Người hướng dẫn ghi nhanh nguyên nhân (mẫu nhỏ, người nói to, chỉ thấy điều mong thấy) và quay lại bảng này ở phần ôn.
+**Ice breaker** (6 phút, cả lớp, không có output). Mỗi người nói tên và một câu: một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin. Người hướng dẫn ghi nguyên nhân (mẫu nhỏ, người nói to, chỉ thấy điều mong thấy) vào cột "Vì sao đã tin" và quay lại bảng này ở phần ôn.
 
-**Activity: persona có quote hay không** (10 phút, theo cặp, không dùng AI) `[to confirm]` bản thiết kế mới, chưa thử. *Mục đích:* luyện phép thử quan trọng nhất của persona: dòng nào của persona có quote nào đỡ, và dòng nào chỉ nghe hợp lý. *Đầu vào:* bộ quote app giao đồ ăn (`quotes.md`) và persona mẫu do AI sinh (`persona-ai-draft.md`, `[to create]`). *Quy trình:*
-1. (3 phút, một mình) Mỗi người đánh dấu từng dòng của persona: có quote ID đỡ hay không.
-2. (4 phút, theo cặp) Hai người đối chiếu quote gốc: dòng nào quote đỡ khớp từng chữ, dòng nào chỉ nghe hợp lý, dòng nào quote nói ngược lại. Mỗi dòng ghi kèm quote ID hoặc "không có quote".
-3. (3 phút, cả lớp) Một cặp báo dòng bắt được hay nhất; người hướng dẫn nối với cách xử lý: xoá, ghi unknown, hoặc giữ kèm quote ID.
+**Activity: persona có insight hay không** (14 phút, theo cặp, không dùng AI) `[to confirm]` bản thiết kế mới, chưa thử. *Mục đích:* luyện phép thử quan trọng nhất của persona: dòng nào của persona có insight nào làm căn cứ, và dòng nào chỉ nghe hợp lý. *Đầu vào:* bộ insight app giao đồ ăn (`insight-set.md`) và persona mẫu do AI sinh (`persona-ai-draft.md`, bản nháp, đáp án ở cuối file). *Quy trình:*
+1. (4 phút, một mình) Mỗi người đánh dấu từng dòng của persona: có insight ID làm căn cứ hay không.
+2. (6 phút, theo cặp) Hai người đối chiếu với `insight-set.md` và mở source ID của insight đó: dòng nào insight làm căn cứ khớp, dòng nào chỉ nghe hợp lý, dòng nào insight nói ngược lại. Mỗi dòng ghi kèm insight ID hoặc "không có insight".
+3. (4 phút, cả lớp) Một cặp báo dòng bắt được hay nhất; người hướng dẫn nối với cách xử lý: xoá, ghi unknown, hoặc giữ kèm insight ID.
 
-*Quy tắc dữ liệu:* dữ liệu hư cấu, không có thông tin thật. *Output:* persona đã sửa và danh sách dòng bị xoá hoặc ghi unknown, kèm lý do. *Checkpoint trên lớp:* mỗi cặp chỉ ra ít nhất một dòng không có quote đỡ.
+*Quy tắc dữ liệu:* dữ liệu hư cấu, không có thông tin thật. *Output:* persona đã sửa và danh sách dòng bị xoá hoặc ghi unknown, kèm lý do. *Checkpoint trên lớp:* mỗi cặp chỉ ra ít nhất một dòng không có insight làm căn cứ.
 
 ### 7.4 Practice at home and in-class session
 
-**Practice 3 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo với lớp thật), trên claim và insight của chính designer từ Practice 2:
-1. Persona, rồi journey map, rồi opportunity, mỗi dòng dẫn về quote ID.
+**Practice 3 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo với lớp thật), trên bộ nguyên tắc và insight của chính designer từ Practice 2:
+1. Persona, rồi journey map, rồi opportunity, mỗi dòng dẫn về insight ID.
 2. Challenge và cập nhật trạng thái các giả định (xác nhận, chưa xác nhận hoặc unknown).
 3. Một trang cho lead (mục 5.1).
 4. Một entry đóng góp vào insight hub, và nội dung đã có trên hub.
-5. Mỗi dòng nối về quote ID.
+5. Mỗi dòng nối về insight ID.
 6. Bấm giờ từng bước để tự đo thời gian tiết kiệm.
 
-**Đầu vào là output của các buổi trước:** scope và research question (cho Decision và problem brief), danh sách giả định (để xác nhận hoặc bác bằng quote), UX audit và competitor analysis (giả thuyết cần quote xác nhận), principles (severity), và claim cùng insight từ Practice 2. Output là evidence pack, trạng thái mới của các giả định và problem brief. **Buổi practice trên lớp (90 phút)** nằm sau chuỗi việc này: designer làm tiếp phần dang dở nếu còn thời gian, rồi được chấm; cách chấm chưa quyết. Practice sheet `research-you-can-trust-practice.md` đã viết lại theo chuỗi 8 step này, bắt đầu từ claim và insight của Practice 2 (2026-10-30).
+**Đầu vào là output của các buổi trước:** scope và research question (cho Decision và problem brief), danh sách giả định (để xác nhận hoặc bác bằng insight), UX audit và competitor analysis (giả thuyết cần insight xác nhận), principles (severity), và insight từ Practice 2. Output là evidence pack, trạng thái mới của các giả định và problem brief. **Buổi practice trên lớp (90 phút)** nằm sau chuỗi việc này: designer làm tiếp phần dang dở nếu còn thời gian, rồi được chấm; cách chấm chưa quyết. Practice sheet `research-you-can-trust-practice.md` đã viết lại theo chuỗi 8 step này, bắt đầu từ bộ nguyên tắc và insight của Practice 2 (2026-10-30, cập nhật 2026-11-01).

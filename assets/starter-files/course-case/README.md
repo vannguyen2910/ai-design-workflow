@@ -11,6 +11,8 @@ Use it when:
 |---|---|---|
 | `case-card.md` | Week 1 demo and fallback project | One page |
 | `po-case-pack.md` | Retired, not used in class | For the student who has no PO to talk to. **The PO-only section is for the person playing the PO** |
-| `quotes.md` | Week 2, session B | 24 fictional quotes with IDs, from three kinds of source |
+| `source-notes.md` | Week 2, session B | 24 fictional source notes with IDs, from three kinds of source |
+| `insight-set.md` | Week 3 | Nine fictional insights with insight IDs, source type and strength; the input for persona, journey map and opportunity |
+| `persona-ai-draft.md` | Week 3 activity | A six-line persona an AI might write; some lines have an insight behind them, some do not. Answer key inside, instructor only |
 | `competitors/` | Week 2 demo | Three fictional competitor pages |
-| `quotes-answer-key.md` | Instructor only | The intended themes, the traps, and what a good answer looks like. **Do not share with students before the exercise** |
+| `source-notes-answer-key.md` | Instructor only | The intended themes, the traps, and what a good answer looks like. **Do not share with students before the exercise** |

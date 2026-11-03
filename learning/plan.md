@@ -21,7 +21,7 @@ Làm theo thứ tự.
 |---|---|---|
 | 1 | **Lesson 1:** xác nhận số liệu Figma 36/35/29 trong báo cáo đầy đủ trước khi dạy; dựng lại deck | File xong; deck chưa dựng |
 | 2 | **Lesson 2:** lesson và slide outline đã viết lại (2026-10-26); xem lại các ví dụ `bản nháp`; dựng deck | File xong; chờ Winnie xem lại |
-| 3 | **Lesson 3:** sửa lesson và slide (competitor đầy đủ đã chuyển sang lesson 2; thêm persona, journey map, opportunity, insight hub; synthesis rút gọn thành phần ôn) | Đã có desk research và đề xuất cấu trúc 90 phút (`ai-in-insights.md` mục 6, 2026-10-27); chưa sửa lesson |
+| 3 | **Lesson 3:** sửa lesson và slide (competitor đầy đủ đã chuyển sang lesson 2; thêm persona, journey map, opportunity, insight hub; synthesis rút gọn thành phần ôn) | Đã có desk research và đề xuất cấu trúc 90 phút (`reference/ai-in-insights.md` mục 6, 2026-10-27); chưa sửa lesson |
 | 4 | **Lesson 4, 5, 6** (mỗi lesson gộp hai lesson cũ), theo thứ tự | Chưa bắt đầu |
 | 5 | Hướng dẫn facilitation một trang cho practice P1 đến P5 và buổi wrap-up | Chưa bắt đầu |
 | 6 | Lớp chạy thử: kiểm tra 3,5 đến 4 giờ mỗi tuần; theory lesson 2 (56 phút), lesson 3 và 6 có quá tải không | Sau lớp đầu |
@@ -91,7 +91,7 @@ Làm theo thứ tự.
 - Kiểm chứng ở Việt Nam: phỏng vấn 5 đến 8 designer hoặc hiring manager (`research.md` Part 3).
 - Dọn file cũ: `assets/templates/po-case-pack-template.md`, `assets/starter-files/course-case/po-case-pack.md`.
 - Vẽ các flow còn thiếu: problem brief, ideation, prototype build, alignment check.
-- Làm template facilitator page cho phỏng vấn (câu hỏi, follow-up, ghi chú, timer) trước practice P2 và P3; chi tiết ở `ai-in-discover.md`.
+- Làm template facilitator page cho phỏng vấn (câu hỏi, follow-up, ghi chú, timer) trước practice P2 và P3; chi tiết ở `reference/ai-in-discover.md`.
 
 ---
 
@@ -115,12 +115,11 @@ Thư mục `learning/` (riêng tư, không lên site trừ các file có trong `
 | File | Nội dung |
 |---|---|
 | `research.md` | Thị trường, failure case và rủi ro, thị trường Việt Nam, dạy designer đi làm, tương lai nghề và data safety (Part 5, 6, tiếng Việt) |
-| `ai-strengths-and-limits.md` | AI làm tốt và còn yếu ở đâu, không automate workflow xấu, checklist trước khi automate, danh mục 100 task |
-| `ai-in-discover.md` | Bằng chứng và cách làm cho stage Discover (phỏng vấn, desk research, competitor, consent, tiếng Việt) |
-| `desk-research-competitor-practice.md` | Cách làm, template và prompt cho desk research và competitor analysis (tách từ `ai-in-discover.md` mục 4) |
-| `ai-mental-model-desk-research.md` | Report AI mental model: người dùng hình dung AI thế nào |
-| `ai-mental-model-harness.md` | Bổ sung cho report trên: harness và agent ở góc mental model và thiết kế quyền hạn |
-| `agentic-ai-concepts.md` | Khái niệm kỹ thuật: agent, tool use, MCP, skills, harness, workflow pattern (KNOW / DO / SHOW) |
+| `reference/ai-strengths-and-limits.md` | AI làm tốt và còn yếu ở đâu, không automate workflow xấu, checklist trước khi automate, danh mục 100 task |
+| `reference/ai-in-discover.md` | Bằng chứng và cách làm cho stage Discover (phỏng vấn, desk research, competitor, consent, tiếng Việt) |
+| `reference/desk-research-competitor-practice.md` | Cách làm, template và prompt cho desk research và competitor analysis (tách từ `reference/ai-in-discover.md` mục 4) |
+| `reference/ai-mental-model.md` | Report AI mental model: người dùng hình dung AI thế nào, kèm phần bổ sung về harness và agent ở góc mental model và thiết kế quyền hạn |
+| `reference/agentic-ai-concepts.md` | Khái niệm kỹ thuật: agent, tool use, MCP, skills, harness, workflow pattern (KNOW / DO / SHOW) |
 
 **Ở nơi khác**
 

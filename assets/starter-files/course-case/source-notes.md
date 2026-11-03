@@ -1,13 +1,13 @@
-# Quote set: Kitchen Crate (fictional)
+# Source notes: Kitchen Crate (fictional)
 
-**All quotes are invented.** There are 24, from three kinds of source:
+**All notes are invented.** There are 24, from three kinds of source:
 - **R01 to R10:** app store reviews
 - **F01 to F08:** posts in a user forum
 - **I01-01 to I02-03:** extracts from two short interviews
 
-They are already anonymised and have IDs. Use them word for word. Any quote you cite in your work must match this text exactly.
+They are already anonymised and have IDs. Use them word for word. Any insight you write must name the source IDs it rests on, and each ID must exist in this file.
 
-| ID | Source | Quote |
+| Source ID | Source | Note |
 |---|---|---|
 | R01 | Review | I picked a delivery date without realising it could not be changed after checkout. The box arrived while I was on holiday and half the food went off. |
 | R02 | Review | The date picker is confusing. It shows a Friday but the box came on a Wednesday. I still do not know which one I chose. |

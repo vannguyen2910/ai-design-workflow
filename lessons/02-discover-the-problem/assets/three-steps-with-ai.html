@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ba bước làm việc với AI · Swimlane</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #f5f5f5;
+      --color-ink:     #2d3142;
+      --color-muted:   #4f5d75;
+      --color-accent:  #bf4520;
+      --font-sans:     'Geist', system-ui, sans-serif;
+      --font-serif:    'Instrument Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1200px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      margin-bottom: 1.5rem;
+    }
+    .scroll { overflow-x: auto; }
+    svg { width: 100%; min-width: 1100px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Swimlane · AI Design Workflow</p>
+    <h1>Ba bước làm việc với AI</h1>
+
+    <div class="scroll">
+    <svg viewBox="0 0 1100 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="three-steps-title three-steps-desc">
+<title id="three-steps-title">Ba bước làm việc với AI</title><desc id="three-steps-desc">Swimlane hai làn (học viên, AI) cho ba bước Decision, Insight, Challenge; học viên viết quyết định, kiểm tra từng insight với source ID rồi viết lại bằng lời của mình, và quyết định giữ hay đổi insight; AI đề xuất insight kèm source ID và phản biện.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker></defs><rect width="100%" height="100%" fill="#f5f5f5"/>
+<line x1="40" y1="100" x2="1060" y2="100" stroke="rgba(45,49,66,0.22)" stroke-width="1"/><line x1="40" y1="220" x2="1060" y2="220" stroke="rgba(45,49,66,0.10)" stroke-width="1"/><line x1="40" y1="340" x2="1060" y2="340" stroke="rgba(45,49,66,0.22)" stroke-width="1"/><line x1="160" y1="100" x2="160" y2="340" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+<text x="330" y="92" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">1 · DECISION</text>
+<text x="590" y="92" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">2 · INSIGHT</text>
+<text x="850" y="92" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.18em">3 · CHALLENGE</text>
+<text x="52" y="163" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="start" letter-spacing="0.18em">HỌC VIÊN</text>
+<text x="52" y="283" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="start" letter-spacing="0.18em">AI</text>
+<text x="330" y="284" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">AI không viết bước này</text>
+<path d="M 406,160 H 434 Q 442,160 442,168 V 272 Q 442,280 450,280 H 514" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="590" y1="256" x2="590" y2="184" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M 666,160 H 694 Q 702,160 702,168 V 272 Q 702,280 710,280 H 774" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="850" y1="256" x2="850" y2="184" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+<rect x="430" y="196" width="56" height="12" rx="2" fill="#f5f5f5"/><text x="458.0" y="205" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">QUYẾT ĐỊNH</text>
+<rect x="598" y="226" width="52" height="12" rx="2" fill="#f5f5f5"/><text x="624.0" y="235" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">INSIGHT</text>
+<rect x="690" y="196" width="80" height="12" rx="2" fill="#f5f5f5"/><text x="730.0" y="205" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">INSIGHT ĐÃ DUYỆT</text>
+<rect x="858" y="226" width="56" height="12" rx="2" fill="#f5f5f5"/><text x="886.0" y="235" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">PHẢN BIỆN</text>
+<rect x="254" y="136" width="152" height="48" rx="6" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/><text x="330" y="158" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Gọi tên quyết định</text><text x="330" y="172" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">trước khi ai tóm tắt</text>
+<rect x="514" y="136" width="152" height="48" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="590" y="158" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Kiểm tra, viết lại</text><text x="590" y="172" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">source ID đúng; lời của bạn</text>
+<rect x="774" y="136" width="152" height="48" rx="6" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/><text x="850" y="158" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Giữ hay đổi insight</text><text x="850" y="172" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">giữ ý kiến trái chiều</text>
+<rect x="514" y="256" width="152" height="48" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="590" y="278" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Đề xuất insight</text><text x="590" y="292" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">kèm source ID · không nói gì</text>
+<rect x="774" y="256" width="152" height="48" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="850" y="278" fill="#2d3142" font-size="11" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Phản biện insight</text><text x="850" y="292" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">nói quá · nguồn sai</text>
+<line x1="40" y1="360" x2="1060" y2="360" stroke="rgba(45,49,66,0.10)" stroke-width="0.8"/><text x="40" y="376" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="start" letter-spacing="0.18em">LEGEND</text>
+<rect x="40" y="388" width="14" height="10" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="60" y="396" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Bước</text><rect x="132" y="388" width="14" height="10" rx="2" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/><text x="152" y="396" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Quyết định của học viên, không giao cho AI</text><line x1="412" y1="393" x2="440" y2="393" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/><text x="448" y="396" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Chuyển giao</text></svg>
+    </div>
+  </div>
+</body>
+</html>

@@ -39,8 +39,8 @@ Quy tắc ngôn ngữ đơn giản (2026-10-05). Mỗi ý chỉ dùng **một t�
 | **consent** | Xin phép người tham gia trước buổi phỏng vấn: ghi hình, dùng cho nghiên cứu nội bộ, không chia sẻ ra ngoài | permission slip |
 | **ẩn danh** | Thay tên và thông tin nhận dạng bằng mã, bằng find and replace trên máy, **trước** khi dán vào AI tool | nhờ AI ẩn danh sau khi đã dán |
 | **participant code** | Mã thay tên người tham gia trong transcript và ghi chú: P1, P2... | alias, tên giả |
-| **quote ID** | Mã của một quote, ví dụ `I01-01` là quote 1 của buổi phỏng vấn 01 (người tham gia P1); quote từ review dùng `R01` | quote number |
-| **codebook** | Bộ nhãn (code) dùng để gắn tag cho quote | tag list, label set |
+| **source ID** | Mã của một ghi chú nguồn, ví dụ `I01-01` là ghi chú 1 của buổi phỏng vấn 01 (người tham gia P1); ghi chú từ review dùng `R01`. Mỗi insight có insight ID riêng (`IN-01`) và dẫn về source ID | source number |
+| **codebook** | Bộ nhãn (code) dùng để gắn tag cho ghi chú nguồn | tag list, label set |
 | **AI draft**, **verified copy** | Bản AI trả về, không sửa; và bản sao học viên đã kiểm tra và chỉnh | raw output, final |
 | **counterexample** | Ví dụ mâu thuẫn với một theme hoặc một giả thuyết. "Đã tìm, không có" cũng được ghi lại | negative project |
 | **hard stop** | Check mà gate không được qua bằng lý do: phải thật sự đạt. Gate 1 có ba: 1b, 1c, 1f | blocker, chặn cứng |
@@ -62,7 +62,7 @@ Khoá `rel: "strains"` trong file dữ liệu của hub được giữ nguyên; 
 
 *Slug:* `design-process-with-ai` (folder cũ: `ai-workflow-for-ux-designers`). Là **buổi 1 (tuần 1)** theo Notion, một buổi 90 phút. Đã gộp từ hai buổi (dạy và thực hành) thành một buổi, 2026-10-22. File nguồn: `programs/ai-design-workflow/lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md`. Khi nội dung ở đây lệch với lesson file, lesson file thắng.
 
-> **Xem thêm:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md), mục 5, cho vị trí của thông điệp "đừng automate bad workflow" và checklist trước khi automate trong từng lesson.
+> **Xem thêm:** [reference/ai-strengths-and-limits.md](reference/ai-strengths-and-limits.md), mục 5, cho vị trí của thông điệp "đừng automate bad workflow" và checklist trước khi automate trong từng lesson.
 
 **Why:** mọi lesson sau đều giả định học viên hiểu được các thuật ngữ AI, biết dữ liệu nào an toàn để đưa cho AI tool, và giữ công việc trong một folder mà AI dùng được. Lesson này cho họ những điều đó một lần, để không lesson nào sau phải dạy lại.
 
@@ -168,7 +168,7 @@ Layout dưới đây theo lesson file (mục 6.2). Đây là layout mặc địn
 
 *Slug:* `discover-the-problem`. Là **buổi 2 (tuần 1)** theo Notion. Trước đây gộp với Lesson 3 thành module 2 và dùng chung một slug; nay mỗi lesson một buổi. Buổi role-play với PO đã bị bỏ (2026-10-07) và thay bằng stakeholder check bằng văn bản cùng phỏng vấn user theo cặp. Tên activity nội bộ "Shape the brief" trong `method.md` và hub được giữ nguyên.
 
-**Dự kiến bổ sung (2026-10-15, chưa có trong lesson file):** hai quy trình từ `ai-in-discover.md`: chuẩn bị phỏng vấn (brainstorm research plan, facilitation script, facilitator page ở mức giới thiệu) và từ session đến learning (ẩn danh trước khi dán, tóm tắt, liệt kê điều bị bỏ sót, xếp vào file có sẵn bằng propose first). Cần một HTML template; xem to-do trong `plan.md`.
+**Dự kiến bổ sung (2026-10-15, chưa có trong lesson file):** hai quy trình từ `reference/ai-in-discover.md`: chuẩn bị phỏng vấn (brainstorm research plan, facilitation script, facilitator page ở mức giới thiệu) và từ session đến learning (ẩn danh trước khi dán, tóm tắt, liệt kê điều bị bỏ sót, xếp vào file có sẵn bằng propose first). Cần một HTML template; xem to-do trong `plan.md`.
 
 **Why:** brief tốt nhất do product, business và design cùng định hình, sớm, với evidence trên bàn. Lesson cho designer một cách tham gia cuộc trao đổi đó với thứ cụ thể, và cho người product một cách nói họ cần gì từ design.
 
@@ -209,7 +209,7 @@ Trong mô hình cũ, module gồm Lesson 2 và Lesson 3 trong hai buổi 90 phú
 | Nhóm | Phút |
 |---|---|
 | Nội dung đã có (business question, assumption map, heuristic evaluation, desk research, evidence menu, phỏng vấn theo cặp, user-voice synthesis, competitor demo, gộp evidence pack) | khoảng 166 |
-| Nội dung mới từ `ai-in-discover.md` (research plan, giới thiệu facilitator page, consent, bước sau mỗi buổi phỏng vấn, Gate 1, bài kiểm tra transcript tiếng Việt) | khoảng 44 |
+| Nội dung mới từ `reference/ai-in-discover.md` (research plan, giới thiệu facilitator page, consent, bước sau mỗi buổi phỏng vấn, Gate 1, bài kiểm tra transcript tiếng Việt) | khoảng 44 |
 | **Tổng nhu cầu** | **khoảng 210** |
 | Sức chứa hai buổi (180) trừ buffer khoảng 16 | khoảng 164 |
 
@@ -236,7 +236,7 @@ Trong mô hình cũ, module gồm Lesson 2 và Lesson 3 trong hai buổi 90 phú
 |---|---|---|
 | B1 | Check-in; đọc thông báo consent | 5 |
 | B2 | Phỏng vấn theo cặp, hai lượt, dùng research plan và facilitator page | 35 |
-| B3 | Sau mỗi buổi: ẩn danh, rút quote kèm ID, liệt kê điều bị bỏ qua, chọn ý (mục 3, bước 1 đến 5) | 10 |
+| B3 | Sau mỗi buổi: ẩn danh, rút ghi chú nguồn kèm source ID, liệt kê điều bị bỏ qua, chọn ý (mục 3, bước 1 đến 5) | 10 |
 | B4 | User-voice synthesis từ bước 5 (gắn code, kiểm tra); bước 7 và 8 hoàn thành ở homework nếu hết giờ | 25 |
 | B5 | Gộp evidence pack và chạy Gate 1 | 10 |
 | B6 | Tổng kết | 3 |
@@ -284,23 +284,23 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 3: Turn Research into Insights You Can Trust
 
-*Slug:* `research-you-can-trust`. Là **buổi 3** của series (buổi 5 trong chuỗi 12 session), theo `plan.md` mục 2. Viết lại 2026-10-27 theo `learning/ai-in-insights.md` mục 6: bốn bước Decision, Evidence, Claim, Challenge thay cho tám bước và ba cổng; thêm persona, journey map, opportunity và insight hub; evidence menu và competitor analysis đã chuyển sang Lesson 2. Phỏng vấn peer (bài tập của Lesson 2 và Practice 2) cung cấp quote đã ẩn danh làm đầu vào.
+*Slug:* `research-you-can-trust`. Là **buổi 3** của series (buổi 5 trong chuỗi 12 session), theo `plan.md` mục 2. Viết lại 2026-10-27 theo `learning/reference/ai-in-insights.md` mục 6: ba bước Decision, Insight, Challenge (cập nhật 2026-11-01, trước đó bốn bước có Evidence và Claim) thay cho tám bước và ba cổng; thêm persona, journey map, opportunity và insight hub; evidence menu và competitor analysis đã chuyển sang Lesson 2. Phỏng vấn peer (bài tập của Lesson 2 và Practice 2) cung cấp ghi chú nguồn đã ẩn danh; Lesson 3 nhận bộ nguyên tắc và insight làm đầu vào.
 
-**Why:** AI soạn nháp được pattern từ research, nhưng độ tin cậy của insight nằm ở phạm vi nguồn dẫn và ý kiến trái chiều được giữ lại. Lesson dạy cách biến quote thành persona, journey map và opportunity mà mỗi dòng truy được về quote gốc, và cách đóng góp insight đã kiểm tra vào insight hub để không làm lại research.
+**Why:** AI soạn nháp được pattern từ research, nhưng độ tin cậy của insight nằm ở phạm vi nguồn dẫn và ý kiến trái chiều được giữ lại. Lesson dạy cách biến insight thành persona, journey map và opportunity mà mỗi dòng truy được về insight ID, và cách đóng góp insight đã kiểm tra vào insight hub để không làm lại research.
 
 **Sau lesson, học viên có thể:**
 
-1. Gọi tên quyết định mà nghiên cứu phục vụ trước khi nhờ AI tóm tắt, và kiểm tra từng quote AI trả lại với bản gốc.
-2. Chạy bốn bước Decision, Evidence, Claim, Challenge, và chỉ ra phần AI làm với phần học viên tự làm.
-3. Viết persona, journey map hoặc opportunity như một claim "ai, khi nào, quyết định nào", mỗi dòng dẫn về quote ID, và đánh dấu ô chưa có quote là assumption.
-4. Phản biện một claim và giữ ý kiến trái chiều.
+1. Gọi tên quyết định mà nghiên cứu phục vụ trước khi nhờ AI tóm tắt, và kiểm tra từng source ID AI trả lại với ghi chú gốc.
+2. Chạy ba bước Decision, Insight, Challenge, và chỉ ra phần AI làm với phần học viên tự làm.
+3. Viết persona, journey map hoặc opportunity như một insight "ai, khi nào, quyết định nào", dùng bộ nguyên tắc làm ràng buộc và phép kiểm tra, mỗi dòng dẫn về insight ID, và đánh dấu ô chưa có insight là assumption.
+4. Phản biện một insight và giữ ý kiến trái chiều.
 5. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu, và đóng góp một insight đã kiểm tra vào insight hub.
 
-**Key activity:** **viết claim, phản biện chéo** (14 phút, theo cặp, không dùng AI) trên bộ 24 quote của project Kitchen Crate (`assets/starter-files/course-case/quotes.md`). Mỗi người viết một claim cho quyết định chung (có thiết kế lại bước đổi ngày giao hay không), rồi bạn cùng cặp phản biện bằng bốn câu hỏi, mỗi lỗi kèm quote ID. Việc làm trên quote của học viên nằm ở Practice 3.
+**Key activity:** **persona có insight hay không** (14 phút, theo cặp, không dùng AI) trên bộ insight của project Kitchen Crate (`assets/starter-files/course-case/insight-set.md`, `persona-ai-draft.md`). Mỗi người đánh dấu từng dòng của persona do AI sinh có insight ID đỡ hay không, rồi bạn cùng cặp mở source ID để đối chiếu, mỗi lỗi kèm insight ID. Việc làm trên insight của học viên nằm ở Practice 3.
 
-*Chia giờ 90 phút (80 phút nội dung, buffer 10):* ice breaker 5, ôn quote 7, bốn bước 11, persona 9, journey map 9, opportunity 7, activity 14, insight hub 6, hỏi đáp 7, close 5. Chưa thử với một lớp thật.
+*Chia giờ 90 phút (không còn buffer, 2026-11-01):* ice breaker 6, ôn nguyên tắc và insight 5, persona 14, journey map 13, opportunity 11, activity 14, insight hub 8, package 6, hỏi đáp 8, close 5. Cấu trúc ở `lessons/03-research-you-can-trust/assets/lesson-structure.html`. Chưa thử với một lớp thật.
 
-**Output của practice:** evidence pack (observation có quote ID, persona, journey map, opportunity), một trang cho lead, một entry trong insight hub; problem brief. Gate check 1b, 1c, 1d, 1e, 1g (và 2a khi evidence hỗ trợ một opportunity). Tên file cụ thể trong folder của học viên chưa chốt `[to confirm]`.
+**Output của practice:** evidence pack (insight có insight ID và source ID, persona, journey map, opportunity), một trang cho lead, một entry trong insight hub; problem brief. Gate check 1b, 1c, 1d, 1e, 1g (và 2a khi evidence hỗ trợ một opportunity). Tên file cụ thể trong folder của học viên chưa chốt `[to confirm]`.
 
 ---
 
