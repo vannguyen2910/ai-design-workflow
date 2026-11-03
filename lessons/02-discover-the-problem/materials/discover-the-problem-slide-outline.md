@@ -65,14 +65,14 @@ last_synced: 2026-10-30
 - Num: 5
 - Kicker: Mở đầu
 - Title: Vấn đề hay\n*giải pháp?*
-- Sub: Tên của designer, và brief gần nhất designer nhận nêu vấn đề hay nêu giải pháp?
+- Sub: Brief gần nhất bạn nhận nêu vấn đề hay nêu giải pháp?
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Bảng này được dùng lại ở slide Discover
   - Bài tập buổi 1: case folder và product-and-users đã có chưa, ai chưa xong thì dùng case mẫu
 
-  > Brief gần nhất designer nhận nói "cần giải quyết điều gì", hay nói "cần làm cái gì"?
+  > Mỗi người nói tên và một câu: brief gần nhất bạn nhận nói "cần giải quyết điều gì", hay nói "cần làm cái gì"?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới hai cột trống "Vấn đề" và "Giải pháp" để ghi.
 
 ---

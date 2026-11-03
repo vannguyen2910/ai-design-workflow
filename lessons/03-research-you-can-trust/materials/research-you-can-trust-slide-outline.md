@@ -49,15 +49,15 @@ last_synced: 2026-11-01
 - Num: 6
 - Kicker: Mở đầu
 - Title: Tin rồi,\n*hoá ra sai*
-- Sub: Tên của designer, và một lần designer tin một insight rồi thấy nó sai
+- Sub: Kể một lần bạn tin một insight, rồi mới thấy nó sai.
 - Speaker notes:
 
-  > Hãy nghĩ đến một lần designer tin một insight, rồi mới thấy nó sai. Điều gì đã làm designer tin?
+  > Hãy kể một lần bạn tin một insight, rồi mới thấy nó sai. Điều gì đã làm bạn tin?
 
-  - Sáu phút, cả lớp; nói trước hai mươi giây, rồi mỗi người nói tên và một câu
-  - Nguyên nhân: mẫu nhỏ, người nói to, chỉ thấy điều mong thấy
-  > Ai đã phỏng vấn xong, ai còn đang hẹn người?
-  - Ai chưa có câu chuyện thì kể điều lo ngại khi tin vào một insight
+  - Sáu phút, cả lớp; mỗi người nói tên và một câu, khoảng bốn mươi giây
+  - Các nguyên nhân hay gặp là mẫu nhỏ, người nói to nhất, và chỉ thấy điều mình mong thấy
+  - Ai chưa có câu chuyện thì kể điều bạn lo ngại khi tin vào một insight
+  - Các nguyên nhân được ghi vào cột "Vì sao đã tin" để dùng lại ở phần ôn
 
   > **Giữ bảng này lại. Mình sẽ quay lại nó ở phần ôn.**
 
@@ -99,16 +99,16 @@ last_synced: 2026-11-01
   - Phải chạy lại ba bước cho mỗi persona? Không; dùng insight đã qua ba bước, và chạy lại Challenge cho phần mới.
 - Speaker notes:
 
-  > Ở Lesson 2, designer đã có insight về khung giờ giao của app giao đồ ăn, mỗi insight dẫn về source ID, cùng bộ nguyên tắc. Hôm nay insight đó là nguyên liệu: nó sẽ thành persona, journey map và opportunity.
+  > Ở Lesson 2, bạn đã có insight về khung giờ giao của app giao đồ ăn, mỗi insight dẫn về source ID, cùng bộ nguyên tắc. Hôm nay insight đó là nguyên liệu: nó sẽ thành persona, journey map và opportunity.
 
   - Bốn thứ đã học: bộ nguyên tắc, ba quy tắc với dữ liệu, ba bước và năm điều cần soi
-  - Mình không dạy lại; chỉ nhắc để cả lớp cùng điểm xuất phát
+  - Phần ôn chỉ để cả lớp có cùng điểm xuất phát
   - Persona dựng từ insight chưa kiểm tra vẫn là persona chưa kiểm tra
-  - Insight nào của designer chưa qua Challenge thì nên quay lại bước đó trước khi làm tiếp
+  - Insight nào chưa qua Challenge thì nên quay lại bước đó trước khi làm tiếp
 
   > **Nguyên liệu của hôm nay là insight đã kiểm tra, không phải ghi chú thô.**
 
-  > Câu hỏi 30 giây: insight gần nhất của designer đã qua bước Challenge chưa? Có hoặc không.
+  > Câu hỏi 30 giây: insight gần nhất của bạn đã qua bước Challenge chưa? Có hoặc không.
 - 🎨 Visual hint: SCHEMATIC. Diagram `three-steps-with-ai.html` của Lesson 2 thu nhỏ, kèm bốn dòng ôn bên cạnh.
 
 ---
@@ -137,7 +137,7 @@ last_synced: 2026-11-01
 
   > **Một dòng không có insight ID là một dòng không còn là output của research.**
 
-  > Hôm nay đi từ trái sang phải. Persona trước.
+  > Hôm nay mình đi từ trái sang phải, bắt đầu từ persona.
 - 🎨 Visual hint: SCHEMATIC. Diagram `insight-chain.html`: flowchart ngang năm bước, nhãn nhóm ôn lại, ba phần mới, thói quen, và thanh Insight ID nối bên dưới.
 
 ---
@@ -180,16 +180,16 @@ last_synced: 2026-11-01
   - Từ insight: mỗi dòng có insight ID, có dòng ghi unknown
   - Từ AI tự sinh: nghe đáng tin, lệch về tuổi, nghề, pain point và nghiêng về Mỹ
   - NN/g: người dùng AI nói đã hoàn thành mọi khoá học, người thật hay bỏ dở
-- Ví dụ: bản nháp (persona B: người đặt đồ ăn 35 tuổi, ăn chay, thích thử quán mới vào cuối tuần; mô tả trơn tru nhưng chỉ chi tiết ăn chay và thích đa dạng có insight đỡ, IN-05)
+- Ví dụ: bản nháp (persona B: người đặt đồ ăn 35 tuổi, ăn chay, thích thử quán mới vào cuối tuần; mô tả trơn tru nhưng chỉ chi tiết ăn chay và thích đa dạng có insight làm căn cứ, IN-05)
 - Câu hỏi hay gặp:
   - Có bao giờ dùng persona AI tự sinh không? NN/g chấp nhận proto persona được xem lại sau khi có research thật.
   - Nghiên cứu nói persona AI tệ không? Các tác giả kết luận mức rập khuôn tương đối thấp; mẫu đánh giá nhỏ và không so với persona dựng từ dữ liệu thật.
   - Vì sao đáng tin vẫn là vấn đề? Vì người đọc khó phân biệt persona có dữ liệu với persona nghe hợp lý.
 - Speaker notes:
 
-  > Persona B: người đặt đồ ăn 35 tuổi, ăn chay, thích thử quán mới vào cuối tuần. Đọc rất mượt. Designer thử tìm insight nào đỡ cho chi tiết đặt vào cuối tuần xem.
+  > Persona B: người đặt đồ ăn 35 tuổi, ăn chay, thích thử quán mới vào cuối tuần. Đọc rất trôi chảy. Bạn thử tìm xem insight nào làm căn cứ cho chi tiết đặt vào cuối tuần.
 
-  - Trong chín insight, IN-05 (dẫn F08 khen món chay và R07 thích sự đa dạng) đỡ hai chi tiết; không insight nào nói đặt vào cuối tuần, và không insight nào nói người đó 35 tuổi
+  - Trong chín insight, IN-05 (dẫn F08 khen món chay và R07 thích sự đa dạng) làm căn cứ cho hai chi tiết; không insight nào nói đặt vào cuối tuần, và không insight nào nói người đó 35 tuổi
   - Nghiên cứu CHI 2024 phân tích 450 persona AI sinh: thiên lệch về tuổi, nghề, pain point và nghiêng mạnh về persona ở Mỹ
   - Người đánh giá chấm chúng đáng tin và gần gũi; chuyên gia chấm hơi rập khuôn hơn; tác giả kết luận mức rập khuôn tương đối thấp
   - Vấn đề không phải AI viết persona được hay không, mà là người đọc không phân biệt được
@@ -198,7 +198,7 @@ last_synced: 2026-11-01
 
   > **Persona tự sinh nghe đúng hơn, nhưng chỉ persona dựng từ insight mới truy được về nguồn.**
 
-  > Câu hỏi 30 giây: designer từng đọc persona nào mà không biết có dữ liệu phía sau không? Có hoặc không.
+  > Câu hỏi 30 giây: bạn từng đọc persona nào mà không biết có dữ liệu phía sau không? Có hoặc không.
 - 🎨 Visual hint: SCHEMATIC. Compare hai cột: persona dựng từ insight (có insight ID) và persona AI tự sinh (không có); chi tiết đặt vào cuối tuần tô màu cam ở cột phải.
 
 ---
@@ -213,7 +213,7 @@ last_synced: 2026-11-01
   - AI giúp: đề xuất bước còn thiếu, điền ô từ insight
 - Ví dụ: có (case app giao đồ ăn: bước bỏ qua một tuần, IN-02, dẫn I01-02, R04, F04)
 - Câu hỏi hay gặp:
-  - Có số đo độ chính xác của journey map AI soạn không? Không tìm thấy; nên bài dạy bằng quy trình kiểm tra.
+  - Có số đo độ chính xác của journey map AI soạn không? Chưa tìm thấy nghiên cứu nào, vì vậy buổi này dạy quy trình kiểm tra thay cho con số.
   - Cần cảm xúc ở từng bước không? Có thì ghi, nhưng mỗi ô phải có insight ID; ô không có insight ghi assumption.
   - Khi nào không cần? Khi vấn đề nằm trong một màn hình hoặc một thao tác.
 - Speaker notes:
@@ -224,11 +224,11 @@ last_synced: 2026-11-01
   - Journey map là các bước một persona đi qua để đạt một mục tiêu, kèm hành động, suy nghĩ, cảm xúc và chỗ đau
   - Dùng khi vấn đề trải dài qua nhiều bước, kênh hoặc thời gian; nếu chỉ một màn hình thì không cần
   - Designer tự liệt kê các giai đoạn trước, rồi mới để AI đề xuất bước còn thiếu và điền ô từ insight
-  - Cách làm này theo cùng lý do với method trước, AI sau
+  - Cách làm này giống các method trước: designer làm trước, AI hỗ trợ sau
 
   > **Ô nào không có insight thì ghi assumption, không điền cho đẹp.**
 
-  > Journey designer đang vẽ có mấy giai đoạn? Gõ một con số vào chat.
+  > Journey bạn đang vẽ có mấy giai đoạn? Gõ một con số vào chat.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng với nhãn What, Why, When, AI giúp.
 
 ---
@@ -260,7 +260,7 @@ last_synced: 2026-11-01
 
   > **Một ô assumption không làm journey xấu đi. Giấu nó mới làm nó xấu.**
 
-  > Journey của designer có bao nhiêu ô assumption trên tổng số ô? Gõ một con số.
+  > Journey của bạn có bao nhiêu ô assumption trên tổng số ô? Gõ một con số.
 - 🎨 Visual hint: SCHEMATIC. Process năm bước ngang; bước 5 active (đáy cảm xúc); dòng dưới mỗi bước là insight ID hoặc "assumption" nét đứt.
 
 ---
@@ -275,7 +275,7 @@ last_synced: 2026-11-01
   - Ô "Not set yet" có làm journey xấu đi không? Không; đó là cách ghi assumption, giống ô chưa có insight.
 - Speaker notes:
 
-  > Đây là một journey map hoàn chỉnh của một app lập kế hoạch du lịch demo. Hãy nhìn đường cảm xúc: nó thấp nhất ở giai đoạn Decision, khi người dùng phải gõ tay danh sách đã chọn vào bảng tính.
+  > Đây là một journey map hoàn chỉnh của một app lập kế hoạch du lịch demo. Bạn nhìn đường cảm xúc: nó thấp nhất ở giai đoạn Decision, khi người dùng phải gõ tay danh sách đã chọn vào bảng tính.
 
   - Journey map có năm giai đoạn, từ Awareness đến giai đoạn cuối; mỗi giai đoạn có một câu cảm xúc ngắn, như "Tired of copying by hand" ở Decision
   - Đường cảm xúc nối năm giai đoạn; đoạn đỏ đi xuống đáy là chỗ đau chính của người dùng
@@ -284,7 +284,7 @@ last_synced: 2026-11-01
   - Chỉ số chưa xác nhận được ghi thẳng là "target, not confirmed" hoặc "Not set yet", đúng nguyên tắc ô chưa có insight thì ghi assumption
   - Hình chụp từ trang demo của template; chữ trong hình giữ tiếng Anh, và giai đoạn cuối bị cắt khỏi khung chụp
 
-  > Đường cảm xúc của journey designer đang vẽ thấp nhất ở giai đoạn nào, và insight nào nằm ở đó?
+  > Đường cảm xúc của journey bạn đang vẽ thấp nhất ở giai đoạn nào, và insight nào nằm ở đó?
 - 🎨 Visual hint: REAL. Một ảnh, gần full bleed, không chú thích thêm. Tệp: `../assets/journey-map-example.webp`. Ảnh đang chụp cả thanh trình duyệt và cắt mất giai đoạn cuối; nên chụp lại toàn bộ trang trước khi build deck.
 
 ---
@@ -300,7 +300,7 @@ last_synced: 2026-11-01
   - Có nên bỏ ô assumption đi không? Không; giữ để team biết chỗ nào cần thêm research.
 - Speaker notes:
 
-  > Một bản đồ nghe đầy đủ nhất là bản đồ không có ô trống. Nhưng ô trống nói thật là: chỗ này chưa có insight.
+  > Một journey map không có ô trống nghe rất đầy đủ. Nhưng một ô trống nói đúng sự thật: chỗ này chưa có insight.
 
   - Journey map do AI soạn trông đầy đủ ngay cả khi các bước là bịa
   - Assumption là chỗ team còn đoán; đánh dấu nó thì team biết chỗ nào cần thêm research
@@ -309,7 +309,7 @@ last_synced: 2026-11-01
 
   > **Một ô trống được ghi rõ giá trị hơn một ô đầy được bịa.**
 
-  > Câu hỏi 30 giây: designer đánh dấu hay điền cho đẹp? Chọn một.
+  > Câu hỏi 30 giây: bạn đánh dấu ô chưa có insight hay điền cho đẹp? Chọn một.
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; chữ lớn, accent ở nửa sau.
 
 ---
@@ -324,7 +324,7 @@ last_synced: 2026-11-01
   - AI giúp: viết theo mẫu, cấm nhắc tính năng
 - Ví dụ: có (case app giao đồ ăn: khách cần biết khung giờ giao là cuối cùng trước khi cam kết; R01, F02, I02-01)
 - Câu hỏi hay gặp:
-  - Opportunity khác ý tưởng ở đâu? Opportunity là nhu cầu của người dùng, ý tưởng là cách giải; designer cần cái đầu trước.
+  - Opportunity khác ý tưởng ở đâu? Opportunity là nhu cầu của người dùng, ý tưởng là cách giải; cần xác định nhu cầu trước.
   - Mẫu viết thế nào? Người dùng gặp khó khi tình huống vì lý do, không nhắc tính năng.
   - Xếp thứ tự bằng gì? Severity, context và reach, không theo số lần được nhắc.
 - Speaker notes:
@@ -340,7 +340,7 @@ last_synced: 2026-11-01
 
   > **Câu hỏi kiểm tra duy nhất: đây là nhu cầu của người dùng hay là một tính năng?**
 
-  > Designer đang có một opportunity nào đang viết như tính năng không? Gõ có hoặc không.
+  > Bạn có opportunity nào đang viết như tính năng không? Gõ có hoặc không.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng với nhãn What, Why, When, AI giúp.
 
 ---
@@ -369,7 +369,7 @@ last_synced: 2026-11-01
 
   > **Opportunity có động từ làm ra thứ gì thì nó đã là giải pháp.**
 
-  > Câu hỏi 30 giây: opportunity đang viết trong case của designer là nhu cầu hay giải pháp? Gõ một.
+  > Câu hỏi 30 giây: opportunity bạn đang viết là nhu cầu hay giải pháp? Gõ một.
 - 🎨 Visual hint: SCHEMATIC. Compare hai cột: giải pháp và nhu cầu; hàng dưới là ba tiêu chí xếp thứ tự.
 
 ---
@@ -378,16 +378,16 @@ last_synced: 2026-11-01
 - Num: 14
 - Kicker: Activity
 - Title: Dòng nào\n*có insight?*
-- Sub: Đánh dấu từng dòng của persona do AI sinh: có insight đỡ hay không
-- Ví dụ: có (persona mẫu do AI sinh cho app giao đồ ăn, sáu dòng, có dòng không insight nào đỡ: `persona-ai-draft.md`, bản nháp)
+- Sub: Đánh dấu từng dòng của persona do AI sinh: có insight làm căn cứ hay không
+- Ví dụ: có (persona mẫu do AI sinh cho app giao đồ ăn, sáu dòng, có dòng không có insight nào làm căn cứ: `persona-ai-draft.md`, bản nháp)
 - Speaker notes:
 
-  > Đây là một persona AI sinh cho app giao đồ ăn. Nghe rất hợp lý. Designer có mười bốn phút để tìm dòng nào có insight đỡ và dòng nào không.
+  > Đây là một persona AI sinh cho app giao đồ ăn. Nghe rất hợp lý. Bạn có mười bốn phút để tìm dòng nào có insight làm căn cứ và dòng nào không.
 
   - Mười bốn phút: bốn phút một mình, sáu phút theo cặp, bốn phút cả lớp
-  - Persona mẫu có sáu dòng; một số dòng có insight đỡ, một số không, và có dòng insight nói ngược lại (dòng về giá, IN-04)
+  - Persona mẫu có sáu dòng; một số dòng có insight làm căn cứ, một số không, và có dòng insight nói ngược lại (dòng về giá, IN-04)
   - Bộ insight là insight-set.md của case app giao đồ ăn: chín insight hư cấu, mỗi insight có ID, nguồn, source ID và mức độ chắc chắn
-  - Không dùng AI trong activity này; đây là phép thử đóng AI lại
+  - Activity này không dùng AI, để thấy phần kiểm tra thuần của designer
 
   > **Dòng nào không có insight thì xoá hoặc ghi unknown.**
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
@@ -402,18 +402,18 @@ last_synced: 2026-11-01
   - Mở source ID của insight, đối chiếu từng chữ
   - Dòng không có insight: xoá hoặc ghi unknown
   - Một cặp chia sẻ dòng bắt được hay nhất
-- Ví dụ: có (persona mẫu do AI sinh cho app giao đồ ăn: dòng về tuổi và thói quen mua sắm không insight nào đỡ, dòng về giá bị IN-04 nói ngược)
+- Ví dụ: có (persona mẫu do AI sinh cho app giao đồ ăn: dòng về tuổi và thói quen mua sắm không có insight nào làm căn cứ, dòng về giá bị IN-04 nói ngược)
 - Câu hỏi hay gặp:
   - Dòng có insight nhưng insight nói ngược thì sao? Sửa theo insight và ghi vào danh sách lỗi.
   - Không tìm ra dòng nào sai thì sao? Đếm lại từng dòng: có insight ID chưa, source ID của insight có nói đúng điều dòng ấy nói không.
   - Có được hỏi AI không? Không trong activity này; muốn thử thì làm ở nhà trong Practice 3.
 - Speaker notes:
 
-  > Dòng này nói khách mới tuổi 28 đến 35, ở căn hộ thành phố, đi siêu thị hai lần một tuần. Insight nào đỡ nó?
+  > Dòng này nói khách mới tuổi 28 đến 35, ở căn hộ thành phố, đi siêu thị hai lần một tuần. Insight nào làm căn cứ cho nó?
 
   - Bước một: đánh dấu từng dòng, có insight ID hay không
   - Bước hai: theo cặp, mở insight rồi source ID của nó, đối chiếu từng chữ
-  - Có ba kết quả: insight đỡ khớp, insight chỉ gần đúng, hoặc không có insight
+  - Có ba kết quả: insight làm căn cứ khớp, insight chỉ gần đúng, hoặc không có insight
   - Dòng không có insight thì xoá hoặc ghi unknown; dòng insight nói ngược thì sửa theo insight
   - Một cặp kể dòng bắt được hay nhất, nối với năm điều cần soi ở Lesson 2
 
@@ -449,7 +449,7 @@ last_synced: 2026-11-01
 
   > **Tìm trong hub trước khi lên kế hoạch research mới.**
 
-  > Câu hỏi 30 giây: team designer có chỗ nào lưu insight đã kiểm tra không? Có hoặc không.
+  > Câu hỏi 30 giây: team của bạn có chỗ nào lưu insight đã kiểm tra không? Có hoặc không.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng với nhãn What, Why, When, AI giúp.
 
 ---
@@ -468,7 +468,7 @@ last_synced: 2026-11-01
   - Không có người chăm hub thì sao? Hub dần cũ; một nguồn thứ cấp ghi chỉ một tỷ lệ nhỏ tổ chức có vai trò riêng cho việc này, chưa kiểm chứng.
 - Speaker notes:
 
-  > Câu hỏi mới: hạn chót huỷ đơn nên hiện ở đâu? Designer mở hub trước, thấy một entry gần đúng, nên chỉ research phần còn thiếu.
+  > Câu hỏi mới: hạn chót huỷ đơn nên hiện ở đâu? Designer mở hub trước, thấy một entry gần đúng, và chỉ research phần còn thiếu.
 
   - Đây là cả vòng: câu hỏi mới, tìm trong hub, research thêm khi cần, kiểm tra, đóng góp
   - Hub ở giữa: được đọc ở bước tìm và được ghi ở bước đóng góp
@@ -478,7 +478,7 @@ last_synced: 2026-11-01
 
   > **Thói quen cốt lõi là tìm trước khi hỏi lại, bước màu cam trên vòng.**
 
-  > Còn một việc cuối: khi quy trình đã chạy ổn, designer đóng gói nó thành agent.
+  > Còn một việc cuối: khi quy trình đã chạy ổn, bạn đóng gói nó thành agent.
 - 🎨 Visual hint: SCHEMATIC. Diagram `insight-hub-loop.html`: vòng năm bước quanh insight hub; bước "Tìm trong hub" màu cam; hai mũi tên nét đứt đọc từ hub và ghi vào hub.
 
 ---
@@ -503,7 +503,7 @@ last_synced: 2026-11-01
   - Agent không thay bước Challenge và bước kiểm tra insight; hai bước đó vẫn do designer làm
   - Khung này lặp lại ở các buổi sau
 
-  > Quy trình nào của designer đã chạy đủ hai lần?
+  > Quy trình nào của bạn đã chạy đủ hai lần?
 
 - 🎨 Visual hint: SCHEMATIC. Ba bước ngang; bước 2 có một biểu tượng agent nhỏ nối với bộ nguyên tắc.
 
@@ -517,12 +517,12 @@ last_synced: 2026-11-01
 - Ví dụ: Không cần. Slide chuyển tiếp.
 - Speaker notes:
 
-  > Mình chiếu bốn câu hỏi còn lại mà designer hay hỏi khi dùng AI cho research. Năm câu đầu đã trả lời ở Lesson 2. Designer hỏi câu designer thấy chưa rõ, trả lời trên slide.
+  > Đây là bốn câu hỏi còn lại mà designer hay hỏi khi dùng AI cho research; năm câu đầu đã trả lời ở Lesson 2. Bạn hỏi câu nào bạn thấy chưa rõ.
 
   - Tám phút; cheat sheet ở slide sau chiếu trong lúc hỏi đáp
-  - Nếu quá giờ, rút còn năm phút và để câu còn lại cho buổi practice trên lớp
+  - Khi quá giờ, phần này rút còn năm phút và câu còn lại để cho buổi practice trên lớp
   - Câu hỏi nào chưa có nguồn đo thì nói thẳng là chưa có
-  - Câu hỏi mới ghi vào cheat sheet cho lớp sau
+  - Câu hỏi mới được ghi vào cheat sheet cho lớp sau
 
   > **Câu nào trả lời bằng suy luận chứ không bằng số đo, sẽ nói rõ.**
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
@@ -555,7 +555,7 @@ last_synced: 2026-11-01
 
   > **Với câu nào chưa có số đo, nói thẳng là chưa có, và đề xuất designer tự đo ở chuỗi practice.**
 
-  > Câu nào trong bốn câu này designer vẫn còn băn khoăn nhất?
+  > Câu nào trong bốn câu này bạn còn băn khoăn nhất?
 - 🎨 Visual hint: SCHEMATIC. Numbered lưới 2 cột, bốn ô; chữ nhỏ đọc được trong một cái nhìn; giữ trên màn hình suốt hỏi đáp.
 
 ---
@@ -572,7 +572,7 @@ last_synced: 2026-11-01
 - Ví dụ: Không cần. Slide giao việc.
 - Speaker notes:
 
-  > Hôm nay đã thấy ba đầu ra từ insight. Ở nhà, dùng đúng chuỗi đó trên bộ nguyên tắc và insight của một case cụ thể.
+  > Hôm nay đã thấy ba đầu ra từ insight. Ở nhà, bạn dùng đúng chuỗi đó trên bộ nguyên tắc và insight của project của mình.
 
   - Đầu vào là bộ nguyên tắc và insight designer đã có từ Practice 2
   - Output của các buổi trước là input của chuỗi này: scope và research question cho Decision, giả định để insight xác nhận hoặc bác, UX audit và competitor analysis làm giả thuyết
@@ -597,7 +597,7 @@ last_synced: 2026-11-01
 - Ví dụ: Không cần. Slide kết, đã có ví dụ ở các slide trước.
 - Speaker notes:
 
-  > Lần tới designer thấy một bản tóm tắt AI soạn nghe rất hợp lý, hãy hỏi một câu: dòng nào trong đó truy được về insight?
+  > Lần tới bạn thấy một bản tóm tắt AI soạn nghe rất hợp lý, hãy hỏi một câu: dòng nào trong đó truy được về insight?
 
   - Ba bước: Decision, Insight, Challenge
   - Ba đầu ra từ insight: persona, journey map, opportunity
@@ -608,7 +608,7 @@ last_synced: 2026-11-01
 
   > **AI soạn nháp. Designer kiểm tra. Designer quyết định.**
 
-  > Mình hẹn designer ở buổi practice trên lớp.
+  > Mình hẹn gặp bạn ở buổi practice trên lớp.
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; ba dòng, accent ở dòng cuối.
 
 ---

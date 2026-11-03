@@ -41,8 +41,8 @@ Nguyên tắc vận hành giữ nguyên: **AI soạn nháp. Designer kiểm tra.
 Sau buổi 3, designer có thể:
 
 1. **Nối** insight đã kiểm tra từ Lesson 2 với persona, journey map hoặc opportunity, mỗi dòng dẫn về insight ID
-2. **Viết** persona, journey map hoặc opportunity như một insight "ai, khi nào, quyết định nào", **dùng** bộ nguyên tắc làm ràng buộc cho AI và phép kiểm tra, và **đánh dấu** ô chưa có insight đỡ là assumption
-3. **Phân biệt** persona dựng từ insight với persona AI tự sinh, và **chỉ ra** dòng không có insight nào đỡ
+2. **Viết** persona, journey map hoặc opportunity như một insight "ai, khi nào, quyết định nào", **dùng** bộ nguyên tắc làm ràng buộc cho AI và phép kiểm tra, và **đánh dấu** ô chưa có insight làm căn cứ là assumption
+3. **Phân biệt** persona dựng từ insight với persona AI tự sinh, và **chỉ ra** dòng không có insight nào làm căn cứ
 4. **Đóng góp** một insight đã kiểm tra vào insight hub, và **tìm** trong hub trước khi hỏi lại
 5. **Nêu** khi nào một quy trình đã sẵn sàng để package thành agent
 6. **Quyết định** khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu
@@ -52,12 +52,12 @@ Sau buổi 3, designer có thể:
 - Mỗi dòng của persona, journey map và opportunity truy được về ít nhất một insight ID, và insight đó nói đúng điều dòng ấy nói; insight ID có thật trong bộ insight.
 - Số lỗi của AI (insight ID sai, chi tiết bịa, điều bị bỏ, opportunity viết như tính năng) được đếm và ghi lại, không chỉ cảm nhận.
 - Mỗi insight có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều được giữ lại.
-- Checkpoint trên lớp: mỗi cặp chỉ ra ít nhất một dòng của persona do AI sinh mà không có insight nào đỡ, kèm lý do.
+- Checkpoint trên lớp: mỗi cặp chỉ ra ít nhất một dòng của persona do AI sinh mà không có insight nào làm căn cứ, kèm lý do.
 
 ## Materials Needed
 
 - case app giao đồ ăn hư cấu: `assets/starter-files/course-case/insight-set.md` (chín insight có insight ID, nguồn và mức độ chắc chắn, dẫn về `source-notes.md`) và `case-card.md`. Bảng đáp án của bộ ghi chú nguồn `source-notes-answer-key.md` chỉ dành cho người hướng dẫn.
-- Persona mẫu do AI sinh cho app giao đồ ăn (sáu dòng, một số có insight đỡ, một số không) cho activity: `assets/starter-files/course-case/persona-ai-draft.md`, kèm đáp án cho người hướng dẫn ở cuối file (cắt trước khi chia sẻ). Bản nháp, chưa thử với lớp `[to confirm]`.
+- Persona mẫu do AI sinh cho app giao đồ ăn (sáu dòng, một số có insight làm căn cứ, một số không) cho activity: `assets/starter-files/course-case/persona-ai-draft.md`, kèm đáp án cho người hướng dẫn ở cuối file (cắt trước khi chia sẻ). Bản nháp, chưa thử với lớp `[to confirm]`.
 - Hai diagram trong `assets/` của lesson: `insight-chain` và `insight-hub-loop`; phần ôn dùng thêm `source-check` và `three-steps-with-ai` ở Lesson 2.
 - Cheat sheet một màn hình (bốn câu hỏi còn lại, ba prompt cho persona, journey map, opportunity) và một AI chat tool đã được công ty cho phép.
 
@@ -212,7 +212,7 @@ Không tìm thấy đánh giá độc lập về độ chính xác so sánh các
 
 Case mẫu hư cấu: app giao đồ ăn, nhiều khách mới không đặt lại sau đơn đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng case với buổi 2). Bộ `insight-set.md` có chín insight (IN-01 đến IN-09): sáu từ phỏng vấn, review và forum, một từ scope, hai là giả định, mỗi cái kèm nguồn, source ID dẫn về `source-notes.md` (24 ghi chú) và mức độ chắc chắn. Insight bằng tiếng Anh; persona, journey map và opportunity có thể viết bằng tiếng Việt, nhưng mọi insight ID dẫn vào phải có thật.
 
-Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở đơn đầu tiên (2.1), journey từ chọn khung giờ giao đến huỷ đơn (2.2) và opportunity về khung giờ giao (2.3). Activity dùng thêm một persona mẫu do AI sinh cho cùng case, có sẵn dòng không có insight đỡ để designer tự phát hiện (`persona-ai-draft.md`). Bảng đáp án dành riêng cho người hướng dẫn nằm cuối file đó.
+Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở đơn đầu tiên (2.1), journey từ chọn khung giờ giao đến huỷ đơn (2.2) và opportunity về khung giờ giao (2.3). Activity dùng thêm một persona mẫu do AI sinh cho cùng case, có sẵn dòng không có insight làm căn cứ để designer tự phát hiện (`persona-ai-draft.md`). Bảng đáp án dành riêng cho người hướng dẫn nằm cuối file đó.
 
 ---
 
@@ -240,11 +240,11 @@ Buổi này nhẹ hơn bản trước vì synthesis đã chuyển sang Lesson 2.
 
 ### 7.2 Engagement rules
 
-Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổi kiểu tương tác mỗi 8 đến 10 phút và kết thúc mỗi phần theory bằng một câu hỏi 30 giây; mỗi buổi có một "cái bẫy". Cái bẫy của buổi 3: persona do AI tự sinh nghe rất hợp lý nhưng không có insight nào đỡ.
+Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổi kiểu tương tác mỗi 8 đến 10 phút và kết thúc mỗi phần theory bằng một câu hỏi 30 giây; mỗi buổi có một "cái bẫy". Cái bẫy của buổi 3: persona do AI tự sinh nghe rất hợp lý nhưng không có insight nào làm căn cứ.
 
 ### 7.3 Activities
 
-**Ice breaker** (6 phút, cả lớp): mỗi người nói tên và một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin; người hướng dẫn ghi nguyên nhân và quay lại ở phần ôn. **Activity: persona có insight hay không** (14 phút, theo cặp, không dùng AI; `[to confirm]` bản thiết kế mới, chưa thử): mỗi người đánh dấu từng dòng của persona mẫu có insight ID đỡ hay không (4 phút), hai người đối chiếu với `insight-set.md` và mở source ID của insight đó để xem nó nói đúng điều dòng ấy nói (6 phút), một cặp báo dòng bắt được hay nhất và người hướng dẫn nối với cách xử lý: xoá, ghi unknown, hoặc giữ kèm insight ID (4 phút). Output: persona đã sửa và danh sách dòng bị xoá hoặc ghi unknown, kèm lý do. Kịch bản đầy đủ nằm ở `learning/lesson-3-details.md`.
+**Ice breaker** (6 phút, cả lớp): mỗi người nói tên và một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin; người hướng dẫn ghi nguyên nhân vào cột "Vì sao đã tin" và quay lại ở phần ôn. **Activity: persona có insight hay không** (14 phút, theo cặp, không dùng AI; `[to confirm]` bản thiết kế mới, chưa thử): mỗi người đánh dấu từng dòng của persona mẫu có insight ID làm căn cứ hay không (4 phút), hai người đối chiếu với `insight-set.md` và mở source ID của insight đó để xem nó nói đúng điều dòng ấy nói (6 phút), một cặp báo dòng bắt được hay nhất và người hướng dẫn nối với cách xử lý: xoá, ghi unknown, hoặc giữ kèm insight ID (4 phút). Output: persona đã sửa và danh sách dòng bị xoá hoặc ghi unknown, kèm lý do. Kịch bản đầy đủ nằm ở `learning/lesson-3-details.md`.
 
 ### 7.4 Practice at home and in-class session
 
@@ -266,7 +266,7 @@ Ba prompt tương ứng với ba đầu ra, dùng với AI chat tool, kèm bộ 
 
 ### 🧠 Critical thinking prompt
 
-Dòng nào của persona, journey hoặc opportunity không có insight đỡ? Opportunity nào thực ra là một tính năng? Ý kiến trái chiều nào đã bị làm phẳng hoặc bỏ ra, và mẫu này không cho biết điều gì?
+Dòng nào của persona, journey hoặc opportunity không có insight làm căn cứ? Opportunity nào thực ra là một tính năng? Ý kiến trái chiều nào đã bị làm phẳng hoặc bỏ ra, và mẫu này không cho biết điều gì?
 
 ### ✍️ Prompt engineering tip
 
@@ -284,7 +284,7 @@ Lời của người thật là dữ liệu cá nhân. Ẩn danh trước khi đ
 
 1. Persona, journey map và opportunity là ba dạng của cái gì?
 2. Phân biệt một opportunity với một tính năng bằng một câu hỏi.
-3. Một dòng của persona không có insight nào đỡ thì xử lý thế nào?
+3. Một dòng của persona không có insight nào làm căn cứ thì xử lý thế nào?
 4. Insight hub giúp tránh điều gì, và AI không được làm gì với nó?
 5. Một quy trình cần đạt điều kiện nào trước khi package thành agent?
 6. Nêu hai trường hợp không nên dùng AI cho một bộ dữ liệu research.

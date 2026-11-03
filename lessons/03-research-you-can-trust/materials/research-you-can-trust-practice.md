@@ -107,7 +107,7 @@ File nào chưa có thì ghi "chưa có" ở đầu `work/user-voice-synthesis.m
 3. **Bạn quyết định:** ghi ý kiến trái chiều giữ lại, cùng trang với insight, và điều gì khiến bạn đổi ý.
 4. **Cập nhật `assumption.md`:** mỗi giả định hàng đầu là Confirmed, Unconfirmed hay Unknown, kèm insight ID. Persona, journey map và opportunity có thể đổi trạng thái so với Practice 2. Đây là đầu vào cho hypothesis ở Lesson 4.
 
-**Phép thử:** đóng AI lại. Bạn có giải thích được insight và chỉ ra insight ID nào đỡ nó không?
+**Phép thử:** đóng AI lại. Bạn có giải thích được insight và chỉ ra insight ID nào làm căn cứ cho nó không?
 
 **Xong khi:** insight có một dòng nêu điều dữ liệu không cho biết, có ít nhất một ý kiến trái chiều, và `assumption.md` đã cập nhật.
 **File:** `work/user-voice-synthesis.md` (mục Challenge), `assumption.md`
@@ -193,6 +193,6 @@ Xong cả 8 step thì mang các file này tới buổi practice trên lớp: b�
 - **Chưa có insight từ Practice 2:** quay lại Step 10 của Practice 2. Chưa phỏng vấn được ai thì dùng bộ insight [app giao đồ ăn](../../../assets/starter-files/course-case/insight-set.md) (chín insight đã có ID, dẫn về `source-notes.md`) và [case mẫu](../../../assets/starter-files/course-case/case-card.md), rồi làm lại với insight của bạn khi có.
 - **Thiếu file từ Practice 1 hoặc 2:** ghi "chưa có" ở đầu `work/user-voice-synthesis.md` và bỏ phần đối chiếu liên quan.
 - **Công ty không cho dùng AI tool, hoặc không rõ công cụ có huấn luyện trên dữ liệu:** dừng lại, hỏi lead. Bạn vẫn làm được bản tay trên insight, rồi so với bản AI khi có công cụ được phép.
-- **AI đưa ra điều nghe hợp lý nhưng không có insight nào đỡ:** ghi "chưa có nguồn" hoặc "unknown", không đưa vào như một sự thật.
+- **AI đưa ra điều nghe hợp lý nhưng không có insight nào làm căn cứ:** ghi "chưa có nguồn" hoặc "unknown", không đưa vào như một sự thật.
 - **Ít insight (dưới khoảng 5) hoặc chỉ một người phỏng vấn đứng sau:** gọi persona là giả định, ghi rõ số người trong file, và dành thêm sức cho Step 4.
 - **Không làm hết được:** làm Step 1 đến 4 trước, giữ lại Step 8. Step 5 đến 7 làm sau.

@@ -8,18 +8,18 @@ File làm việc riêng, không lên site. Các phần dưới đây được d�
 
 ### 7.2 Engagement rules
 
-Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổi kiểu tương tác mỗi 8 đến 10 phút, mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; mỗi buổi có một "cái bẫy". Cái bẫy của buổi 3 là persona do AI tự sinh nghe rất hợp lý nhưng không có insight nào đỡ (slide "Persona từ insight, persona từ AI" của outline, và activity).
+Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổi kiểu tương tác mỗi 8 đến 10 phút, mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; mỗi buổi có một "cái bẫy". Cái bẫy của buổi 3 là persona do AI tự sinh nghe rất hợp lý nhưng không có insight nào làm căn cứ (slide "Persona từ insight, persona từ AI" của outline, và activity).
 
 ### 7.3 Activities
 
-**Ice breaker** (5 phút, cả lớp, không có output). Mỗi người nói tên và một câu: một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin. Người hướng dẫn ghi nhanh nguyên nhân (mẫu nhỏ, người nói to, chỉ thấy điều mong thấy) và quay lại bảng này ở phần ôn.
+**Ice breaker** (6 phút, cả lớp, không có output). Mỗi người nói tên và một câu: một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin. Người hướng dẫn ghi nguyên nhân (mẫu nhỏ, người nói to, chỉ thấy điều mong thấy) vào cột "Vì sao đã tin" và quay lại bảng này ở phần ôn.
 
-**Activity: persona có insight hay không** (14 phút, theo cặp, không dùng AI) `[to confirm]` bản thiết kế mới, chưa thử. *Mục đích:* luyện phép thử quan trọng nhất của persona: dòng nào của persona có insight nào đỡ, và dòng nào chỉ nghe hợp lý. *Đầu vào:* bộ insight app giao đồ ăn (`insight-set.md`) và persona mẫu do AI sinh (`persona-ai-draft.md`, bản nháp, đáp án ở cuối file). *Quy trình:*
-1. (4 phút, một mình) Mỗi người đánh dấu từng dòng của persona: có insight ID đỡ hay không.
-2. (6 phút, theo cặp) Hai người đối chiếu với `insight-set.md` và mở source ID của insight đó: dòng nào insight đỡ khớp, dòng nào chỉ nghe hợp lý, dòng nào insight nói ngược lại. Mỗi dòng ghi kèm insight ID hoặc "không có insight".
+**Activity: persona có insight hay không** (14 phút, theo cặp, không dùng AI) `[to confirm]` bản thiết kế mới, chưa thử. *Mục đích:* luyện phép thử quan trọng nhất của persona: dòng nào của persona có insight nào làm căn cứ, và dòng nào chỉ nghe hợp lý. *Đầu vào:* bộ insight app giao đồ ăn (`insight-set.md`) và persona mẫu do AI sinh (`persona-ai-draft.md`, bản nháp, đáp án ở cuối file). *Quy trình:*
+1. (4 phút, một mình) Mỗi người đánh dấu từng dòng của persona: có insight ID làm căn cứ hay không.
+2. (6 phút, theo cặp) Hai người đối chiếu với `insight-set.md` và mở source ID của insight đó: dòng nào insight làm căn cứ khớp, dòng nào chỉ nghe hợp lý, dòng nào insight nói ngược lại. Mỗi dòng ghi kèm insight ID hoặc "không có insight".
 3. (4 phút, cả lớp) Một cặp báo dòng bắt được hay nhất; người hướng dẫn nối với cách xử lý: xoá, ghi unknown, hoặc giữ kèm insight ID.
 
-*Quy tắc dữ liệu:* dữ liệu hư cấu, không có thông tin thật. *Output:* persona đã sửa và danh sách dòng bị xoá hoặc ghi unknown, kèm lý do. *Checkpoint trên lớp:* mỗi cặp chỉ ra ít nhất một dòng không có insight đỡ.
+*Quy tắc dữ liệu:* dữ liệu hư cấu, không có thông tin thật. *Output:* persona đã sửa và danh sách dòng bị xoá hoặc ghi unknown, kèm lý do. *Checkpoint trên lớp:* mỗi cặp chỉ ra ít nhất một dòng không có insight làm căn cứ.
 
 ### 7.4 Practice at home and in-class session
 
