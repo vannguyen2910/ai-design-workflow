@@ -24,7 +24,7 @@ Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổ
 ### 7.4 Practice at home and in-class session
 
 **Practice 3 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo với lớp thật), trên bộ nguyên tắc và insight của chính designer từ Practice 2:
-1. Persona, rồi journey map, rồi opportunity, mỗi dòng dẫn về insight ID.
+1. Persona, rồi journey map, rồi opportunity, mỗi dòng dẫn về insight ID. Mỗi bản: AI soạn nháp, bạn chỉnh sửa, đối chiếu từng ô với evidence, rồi lưu thành file markdown (HTML nếu định dạng phức tạp) và đưa lên hub. Journey map có thể dựng bằng một skill tải từ internet (đọc `SKILL.md` trước khi dùng) hoặc bảng markdown thuần.
 2. Challenge và cập nhật trạng thái các giả định (xác nhận, chưa xác nhận hoặc unknown).
 3. Một trang cho lead (mục 5.1).
 4. Một entry đóng góp vào insight hub, và nội dung đã có trên hub.

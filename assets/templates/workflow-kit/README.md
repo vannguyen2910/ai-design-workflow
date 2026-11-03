@@ -16,7 +16,7 @@ Mục tiêu: biến một việc bạn lặp lại thành một workflow mà AI 
 ## Thứ tự gợi ý
 
 1. Chọn một việc bạn đã làm ít nhất ba lần.
-2. Viết một step card cho việc đó.
+2. Viết một skill cho việc đó.
 3. Viết luật cho AI tool trong `agents-md-starter.md`.
 4. Chạy thử với dữ liệu mới (không phải dữ liệu bạn đã dùng để viết).
 5. Đối chiếu với checklist, sửa, rồi chạy lại.

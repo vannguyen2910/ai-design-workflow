@@ -4,7 +4,7 @@ Third worked example of the activity flow standard (`../../learning/method.md` P
 
 | Part | Where |
 |---|---|
-| step cards | `step-cards.md` (this folder) |
+| skills | `step-cards.md` (this folder) |
 | activity flow diagram | `../../assets/diagrams/user-flow-process-map-activity-flow.html` (plain HTML, 16:9, one-slide size; open in a browser) |
 | lesson summary | Section 6 of `information-architecture-lesson.md` |
 

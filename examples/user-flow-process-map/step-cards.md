@@ -1,4 +1,4 @@
-# Step Cards — User Flow and Process Map
+# Skills — User Flow and Process Map
 
 **Created:** 2026-10-09 · **Status: draft, untested.** Third worked example of the standard in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Uses generic labels per CLAUDE.md. The AI instructions are my design and have not been run in a class.
 

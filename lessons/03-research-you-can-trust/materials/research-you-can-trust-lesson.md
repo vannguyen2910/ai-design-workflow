@@ -27,7 +27,7 @@ Năm phần theo thứ tự trình bày:
 1. **Ôn: nguyên tắc và insight.** Chỉ nhắc lại những gì đã học ở Lesson 2 để nối sang ba đầu ra.
 2. **Ba đầu ra từ insight.** Persona, journey map và opportunity là ba cách điền câu insight "ai, khi nào, quyết định nào"; mỗi dạng có cách AI giúp và chỗ cần kiểm tra riêng.
 3. **Insight hub.** Một phần của Knowledge Hub, nơi lưu insight đã kiểm tra để lần sau tìm trước khi hỏi lại.
-4. **Package thành agent.** Khi một quy trình đã chạy ổn, designer viết nó thành step card và biến thành agent.
+4. **Package thành agent.** Khi một quy trình đã chạy ổn, designer viết nó thành skill và biến thành agent.
 5. **Giới hạn của AI, bốn câu hỏi còn lại:** đưa gì cho lead, tiết kiệm bao nhiêu thời gian, khi nào bỏ AI, chọn công cụ theo tiêu chí nào.
 
 Nguyên tắc vận hành giữ nguyên: **AI soạn nháp. Designer kiểm tra. Designer quyết định.**
@@ -101,6 +101,8 @@ Persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity đ
 
 **Suy luận.** Vấn đề không phải AI viết persona được hay không (viết được và đọc thuyết phục) mà là người đọc không phân biệt được persona có dữ liệu với persona nghe hợp lý.
 
+**Quy trình làm việc với persona.** AI soạn nháp từ insight, designer chỉnh sửa, rồi AI đối chiếu từng ô với evidence (insight ID, rồi source ID) và designer mở source ID để xác nhận. Khi bản nháp đã chỉnh xong, lưu thành file markdown và đặt vào `hub/artifacts/` (`type: persona`); định dạng phức tạp thì dùng HTML trong một folder có `index.md`. `[to confirm]` bản thiết kế mới, chưa thử với lớp.
+
 ### 2.2 Customer journey map
 
 | | |
@@ -112,6 +114,8 @@ Persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity đ
 | **AI không làm** | Vẽ trọn một bản đồ từ kiến thức chung |
 
 **Phát hiện.** Không tìm thấy nghiên cứu đo độ chính xác của journey map do AI soạn. Nghiên cứu gần nhất là mind map do LLM tạo so với bản của designer: LLM nắm khái niệm trung tâm nhưng yếu ở phân cấp và bám ngữ cảnh [9]. Hướng dẫn thực hành: pain point trên persona phải xuất hiện lại ở đúng bước gây ra nó, và chỗ suy đoán phải được đánh dấu [10]. **Suy luận:** bản đồ trông đầy đủ ngay cả khi các bước là bịa, nên bài dạy bằng quy trình kiểm tra, không hứa độ chính xác. Assumption không phải lỗi; giấu assumption mới là lỗi.
+
+**Quy trình làm việc với journey map.** AI soạn nháp từ insight, designer chỉnh sửa, rồi AI đối chiếu từng ô với evidence (insight ID, rồi source ID) và designer mở source ID để xác nhận. Bản đồ dựng bằng một skill tải từ internet (hoặc skill `customer-journey-map` của toolkit) với ghi chú phỏng vấn đã ẩn danh làm đầu vào, hoặc tự làm bằng một bảng markdown thuần. Skill tải từ internet là code của người khác: đọc `SKILL.md` trước khi dùng, chỉ dùng từ nguồn tin cậy, và không đưa dữ liệu chưa ẩn danh. Khi bản nháp đã chỉnh xong, lưu thành file markdown và đặt vào `hub/artifacts/` (`type: journey-map`); định dạng phức tạp thì dùng HTML trong một folder có `index.md`. `[to confirm]` bản thiết kế mới, chưa thử với lớp.
 
 ### 2.3 Opportunity
 
@@ -126,6 +130,8 @@ Persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity đ
 **Phát hiện.** Trong opportunity solution tree, opportunity là tầng khách hàng (nhu cầu, pain point, mong muốn) nằm giữa outcome và solution; một opportunity sai khung kéo lệch mọi tầng phía trên [11]. Không tìm thấy nghiên cứu độc lập đo chất lượng opportunity do AI đề xuất. **Suy luận:** AI nghiêng về viết tính năng, nên kiểm tra quan trọng nhất là "nhu cầu hay giải pháp?".
 
 **Xếp opportunity.** Một opportunity chỉ một người gặp nhưng khiến họ bỏ dở task vẫn quan trọng hơn một khó chịu nhỏ nhiều người nhắc. Opportunity được xếp theo severity (hậu quả), context (hoàn cảnh xảy ra) và reach (bao nhiêu người, thuộc nhóm nào), không theo số lần nhắc, và đi kèm một câu nêu mẫu không cho biết điều gì.
+
+**Quy trình làm việc với opportunity.** AI soạn nháp từ insight, designer chỉnh sửa, rồi AI đối chiếu từng ô với evidence (insight ID, rồi source ID) và designer mở source ID để xác nhận. Khi bản nháp đã chỉnh xong, lưu thành file markdown và đặt vào `hub/artifacts/` (`type: opportunity`); định dạng phức tạp thì dùng HTML trong một folder có `index.md`. `[to confirm]` bản thiết kế mới, chưa thử với lớp.
 
 ---
 
@@ -151,8 +157,8 @@ Insight hub là một phần của Knowledge Hub của project (thư mục `insi
 
 Khi designer hài lòng với một quy trình (ví dụ ba bước synthesis đã chạy ổn trên hai bộ ghi chú nguồn), bước cuối là đóng gói nó:
 
-1. Viết quy trình thành step card: ai làm (designer hay AI), đầu vào, đầu ra, check nào phải qua.
-2. Biến step card thành một agent: một bộ instruction dùng lại được, gắn với bộ nguyên tắc làm chuẩn.
+1. Viết quy trình thành skill: ai làm (designer hay AI), đầu vào, đầu ra, check nào phải qua.
+2. Biến skill thành một agent: một bộ instruction dùng lại được, gắn với bộ nguyên tắc làm chuẩn.
 3. Đóng góp agent và file output vào Knowledge Hub của project, cùng insight đã kiểm tra, để buổi sau dùng lại.
 
 Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai đầu vào khác nhau và phần designer kiểm tra đã được ghi rõ. Đóng gói sớm quá sẽ đóng gói cả lỗi. Agent không thay bước Challenge và bước kiểm tra insight: những bước đó vẫn do designer làm.

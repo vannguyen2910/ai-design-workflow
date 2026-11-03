@@ -34,7 +34,7 @@ File này là trang đầu của dự án. Điền **Project card** trước, v�
 │   ├── sources/     dữ liệu nghiên cứu: anonymised/ (đã ẩn danh) và _raw-private/ (gốc, không đưa vào AI tool)
 │   └── prototype/   code prototype
 ├── hub/             Knowledge Hub: trang giai đoạn, item (O1, H1, D1...), artifacts/ (mở README.md)
-├── tools/           script tạo index.html và các step card của quy trình AI-assisted
+├── tools/           script tạo index.html và các skill của quy trình AI-assisted
 └── _personal/       ghi chú riêng, không đưa vào AI tool
 ```
 

@@ -105,7 +105,7 @@ Thư mục `learning/` (riêng tư, không lên site trừ các file có trong `
 |---|---|
 | `plan.md` | Trang này |
 | `lesson-details.md` | Vocabulary, objectives, activity và output của từng lesson và buổi practice (theo 12 buổi) |
-| `method.md` | Activity flow standard, step card, stage method và 20 gate check |
+| `method.md` | Activity flow standard, skill, stage method và 20 gate check |
 | `quality-and-measurement.md` | Traceability, alignment check, đo thành công |
 | `workflow-design-log.md` | Quyết định thiết kế và sự cố của workspace phía sau khoá (cho giảng viên và pitch) |
 | `voice-sample-vi.md` | Mẫu giọng tiếng Việt; quy tắc chính nằm ở `_system/rules/vi-voice.md` |
@@ -128,7 +128,7 @@ Thư mục `learning/` (riêng tư, không lên site trừ các file có trong `
 | `assets/templates/synthesis-hunt/` | Bộ activity "Săn lỗi" cho lesson 3: quote "Ăn Ngay", bản synthesis có lỗi cài sẵn, bảng lỗi cho giảng viên (không gửi học viên trước khi activity kết thúc) |
 | `assets/templates/handout-ai-design-workflow-buoc-1.md` | Giáo án một buổi thực hành (workflow audit, role card, baseline run). Chưa dùng trong 12 buổi; role card hợp với lesson 5 |
 | `assets/references/claude-code-16-lessons-nhat-anh.md` | Ghi chú từ một video về cách dùng AI coding tool; tài liệu tham khảo, không thuộc khoá |
-| `assets/templates/workflow-kit/` | Bộ mẫu cho học viên: step card, luật cho AI tool, propose first, prompt vocabulary, checklist, failure case |
+| `assets/templates/workflow-kit/` | Bộ mẫu cho học viên: skill, luật cho AI tool, propose first, prompt vocabulary, checklist, failure case |
 | `../workspace-template/` (repo riêng, ngoài repo này) | Repo mẫu cho học viên (GitHub: `ai-design-workflow-template`) |
 | `examples/` | Hai ví dụ làm sẵn: competitor analysis, user-voice synthesis |
 | `README.md` | Thứ tự lesson, trạng thái, cách thêm lesson. Các lesson nằm ở `programs/ai-design-workflow/lessons/` |

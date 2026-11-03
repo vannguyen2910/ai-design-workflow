@@ -2,7 +2,7 @@
 title: "Turn Research into Insights You Can Trust"
 lesson_file: "research-you-can-trust-lesson.md"
 level: ""
-slide_count: 23
+slide_count: 33
 duration: "90 min"
 status: draft
 built_deck: ""
@@ -39,9 +39,31 @@ last_synced: 2026-11-01
   - Chào cả nhóm và nói buổi này làm gì: biến insight thành persona, journey map và opportunity mà mỗi dòng truy được về insight ID
   - Từ buổi 2: bộ nguyên tắc, scope, điều đang tin và insight từ nghiên cứu đã có; hôm nay là biến chúng thành persona, journey map và opportunity tin được
   - Nguyên tắc: AI soạn nháp, designer kiểm tra, designer quyết định
-  - Format buổi: ice breaker, sáu phần nội dung, một activity persona có insight hay không, hỏi đáp
+  - Format buổi: ice breaker, năm phần nội dung, một activity persona có insight hay không, hỏi đáp
   - Làm trên insight riêng là việc của buổi practice ngay sau
 - 🎨 Visual hint: Cover layout, cố định. Panel trái trắng với dòng năm, nhãn stage, title (accent ở dòng 2) và subtitle. Panel phải là ảnh thật với gradient tối, tên và ba dòng credentials ở góc dưới trái.
+
+---
+
+### NUMBERED · Agenda
+- Kicker: Lộ trình
+- Title: Nội dung\n*buổi học*
+- On-slide:
+  - 01 · Từ insight đến đầu ra
+  - 02 · Persona
+  - 03 · Journey map
+  - 04 · Opportunity
+  - 05 · Insight hub và agent
+- Ví dụ: Không cần. Slide định hướng.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Năm phần. Ba phần giữa là ba đầu ra từ insight; mỗi phần có một slide riêng về việc AI giúp được gì.
+
+  - Mỗi phần kết thúc bằng một câu hỏi bỏ phiếu 30 giây trong chat
+  - Giữa buổi có một activity: persona có insight hay không
+  - Việc làm trên insight riêng của bạn nằm ở chuỗi practice ngay sau buổi
+- 🎨 Visual hint: TYPOGRAPHIC. Năm dòng đánh số lớn, số in nghiêng purple, tên phần in ink.
 
 ---
 
@@ -66,23 +88,24 @@ last_synced: 2026-11-01
 
 ---
 
-### SECTION DIVIDER · Theory
+### SECTION DIVIDER · Insight to outputs
 - Num: 01
-- Kicker: Sáu phần
-- Title: Điều thật sự\n*đáng tin*
-- Sub: Persona, journey map, opportunity truy được về nguồn.
+- Kicker: Nền tảng
+- Title: Từ insight\n*đến đầu ra*
+- Sub: Ôn nguyên liệu, rồi xem cả chuỗi.
+- Ví dụ: Không cần. Slide chuyển phần.
+- Câu hỏi hay gặp: None.
 - Speaker notes:
 
   > Những lý do trên bảng sẽ quay lại ở mỗi phần dưới đây.
 
-  - Sáu phần, mỗi phần kết thúc bằng một câu hỏi ngắn bỏ phiếu bằng chat
-  - Activity persona có insight hay không nằm sau phần opportunity; insight hub và package là hai phần cuối
-  - Phần nội dung chính là persona, journey map và opportunity, nhưng mọi thứ dựa trên insight đã kiểm tra nên ôn bộ nguyên tắc và insight trước
-  - Cả ba đều là ba đầu ra của cùng một câu insight; sau ba bước ở Lesson 2 designer đã thấy vì sao
+  - Năm phần, mỗi phần kết thúc bằng một câu hỏi ngắn bỏ phiếu bằng chat
+  - Phần này ôn bộ nguyên tắc và insight, rồi nhìn cả chuỗi từ insight đến hub
+  - Mọi thứ dựa trên insight đã kiểm tra, nên ôn trước khi làm ba đầu ra
+  - Activity persona có insight hay không nằm sau phần opportunity
 
   > Mình bắt đầu bằng việc ôn bộ nguyên tắc và insight.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
-
 ---
 
 ### DIAGRAM · Recap: principles and insights
@@ -142,14 +165,35 @@ last_synced: 2026-11-01
 
 ---
 
+### SECTION DIVIDER · Persona
+- Num: 02
+- Kicker: Ai
+- Title: *Persona*
+- Sub: Nhóm hành vi dựng từ insight, không phải một người tưởng tượng.
+- Ví dụ: Không cần. Slide chuyển phần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Phần đầu tiên là persona: ai là người đang gặp vấn đề.
+
+  - Persona điền chỗ "ai" trong câu insight
+  - Có ba slide: persona là gì, AI giúp gì, và vì sao persona do AI tự sinh khó tin
+
+  > Mình bắt đầu từ định nghĩa persona.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
+
+---
+
 ### NUMBERED · What is a persona
 - Kicker: Định nghĩa
 - Title: Persona là gì?
 - On-slide:
-  - What: nhóm người dùng có cùng hành vi, mục tiêu, kỳ vọng
-  - Why: cả team nói về cùng một người
-  - When: sau synthesis, trước journey map
-  - AI giúp: gom theme thành tối đa 3 nhóm hành vi
+  - What: nhóm người dùng có cùng hành vi, mục tiêu và kỳ vọng trong một tình huống, dựng từ dữ liệu research
+  - Không phải: một người điển hình, hay một nhóm nhân khẩu học
+  - Why: cả team nói về cùng một người thay vì mỗi người hình dung một kiểu
+  - Nếu thiếu: thiết kế theo sở thích của chính người thiết kế
+  - When: sau synthesis, khi dữ liệu cho thấy các nhóm hành vi khác nhau, trước journey map
+  - Không cần khi: chỉ có một nhóm rõ ràng; mới có vài phỏng vấn thì gọi là giả định
 - Ví dụ: có (project app giao đồ ăn: khách mới ở đơn đầu tiên, từ I01-01, I02-01, F01, R01)
 - Câu hỏi hay gặp:
   - Persona khác nhóm nhân khẩu học thế nào? Persona nói về hành vi và kỳ vọng trong một tình huống, không phải tuổi hay nghề.
@@ -163,13 +207,43 @@ last_synced: 2026-11-01
   - Hai bài đăng F01 và review R01 cùng nói về đơn đến lúc không ai ở nhà
   - Persona là nhóm hành vi, không phải một người điển hình và không phải nhóm nhân khẩu học
   - Lý do cần: cả team nói về cùng một người thay vì mỗi người hình dung một kiểu
-  - AI giúp gom theme đã kiểm tra thành tối đa ba nhóm hành vi và soạn mô tả
-  - Designer đối chiếu từng dòng với insight ID; dòng không có insight thì xoá hoặc ghi unknown
+  - Nếu thiếu persona, mỗi người thiết kế cho người dùng trong đầu mình, hoặc theo sở thích của chính người thiết kế
+  - Dùng sau synthesis, khi dữ liệu cho thấy các nhóm hành vi khác nhau; chỉ có một nhóm rõ ràng thì không cần
+  - Mới có vài phỏng vấn thì gọi nó là giả định, chưa phải persona
 
   > **Mỗi dòng của persona phải truy được về insight ID, và dòng nào không có thì xoá hoặc ghi unknown.**
 
   > Nhóm hành vi nào đang có trong dữ liệu? Gõ một dòng vào chat.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng với nhãn What, Why, When, AI giúp; ví dụ khách mới ở đơn đầu tiên ở dòng cuối.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Không phải, Why, Nếu thiếu, When, Không cần khi; ví dụ khách mới ở đơn đầu tiên nằm trong speaker notes.
+
+---
+
+### COMPARE · AI with persona
+- Kicker: AI
+- Title: AI giúp gì với persona
+- On-slide:
+  - AI làm: gom insight đã kiểm tra thành tối đa ba nhóm hành vi, soạn mô tả theo bộ nguyên tắc
+  - Designer làm: đối chiếu từng dòng với insight ID; dòng không có thì xoá hoặc ghi unknown
+  - AI không làm: tự sinh persona từ kiến thức chung
+  - Bản đã duyệt: lưu thành file markdown, đưa lên hub
+- Ví dụ: bản nháp (prompt: chỉ dùng insight và bộ nguyên tắc được đưa, gom thành tối đa ba nhóm, mỗi dòng kèm insight ID, thiếu thì ghi unknown; chạy trên chín insight của app giao đồ ăn)
+- Câu hỏi hay gặp:
+  - Đưa AI những insight nào? Insight đã qua ba bước ở Lesson 2, mỗi insight kèm insight ID.
+  - AI thêm tuổi hoặc nghề thì sao? Xoá, trừ khi insight có nói; đó là dấu hiệu AI điền từ kiến thức chung.
+  - AI báo không đủ dữ liệu thì sao? Đó là kết quả tốt; ghi unknown và quay lại phỏng vấn.
+- Speaker notes:
+
+  > Mình đưa AI chín insight của app giao đồ ăn và một yêu cầu: gom thành tối đa ba nhóm hành vi, mỗi dòng kèm insight ID, dòng nào không có insight thì ghi unknown.
+
+  - Prompt có bốn phần: chỉ dùng insight được đưa, tối đa ba nhóm, mỗi dòng kèm insight ID, thiếu thì ghi unknown
+  - Bộ nguyên tắc từ Lesson 2 dùng hai lần: đưa vào prompt làm ràng buộc, rồi dùng lại khi kiểm tra bản AI soạn
+  - Designer mở insight theo ID, rồi mở source ID của nó và đối chiếu từng chữ
+  - AI không tự sinh persona từ kiến thức chung, vì người đọc không phân biệt được nó với persona có dữ liệu
+
+  > **AI gom và soạn. Designer đối chiếu từng dòng với insight ID.**
+
+  > Câu hỏi 30 giây: bộ insight của bạn đã đủ để gom thành nhóm hành vi chưa? Có hoặc không.
+- 🎨 Visual hint: SCHEMATIC. Compare hai cột: AI làm và Designer làm; dòng dưới ghi "AI không làm" bằng chữ cam.
 
 ---
 
@@ -203,14 +277,35 @@ last_synced: 2026-11-01
 
 ---
 
+### SECTION DIVIDER · Journey map
+- Num: 03
+- Kicker: Khi nào
+- Title: Journey *map*
+- Sub: Các bước người dùng đi qua, và chỗ chưa có insight.
+- Ví dụ: Không cần. Slide chuyển phần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Phần tiếp theo là journey map: chỗ đau xảy ra ở bước nào.
+
+  - Journey map điền chỗ "khi nào" trong câu insight
+  - Có ví dụ năm giai đoạn, một bản journey map mẫu và nguyên tắc assumption
+
+  > Mình bắt đầu từ định nghĩa journey map.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
+
+---
+
 ### NUMBERED · What is a journey map
 - Kicker: Định nghĩa
 - Title: Journey map là gì?
 - On-slide:
-  - What: các bước một persona đi qua để đạt mục tiêu
-  - Why: thấy chỗ đau xảy ra ở bước nào
-  - When: sau persona, khi vấn đề trải dài qua nhiều bước
-  - AI giúp: đề xuất bước còn thiếu, điền ô từ insight
+  - What: các bước một persona đi qua để đạt một mục tiêu
+  - Gồm: hành động, suy nghĩ, cảm xúc và chỗ đau ở từng bước
+  - Why: thấy chỗ đau xảy ra ở bước nào và sau điều gì
+  - Nếu thiếu: chỉ có một danh sách pain point rời rạc
+  - When: sau persona, khi vấn đề trải dài qua nhiều bước, kênh hoặc thời gian
+  - Không cần khi: vấn đề nằm trong một màn hình hoặc một thao tác
 - Ví dụ: có (project app giao đồ ăn: bước bỏ qua một tuần, IN-02, dẫn I01-02, R04, F04)
 - Câu hỏi hay gặp:
   - Có số đo độ chính xác của journey map AI soạn không? Chưa tìm thấy nghiên cứu nào, vì vậy buổi này dạy quy trình kiểm tra thay cho con số.
@@ -223,13 +318,74 @@ last_synced: 2026-11-01
   - Hai ghi chú này (cùng thuộc IN-02) nằm ở cùng một bước: huỷ hoặc sửa đơn; journey map cho thấy chỗ đau xảy ra ở đâu và sau điều gì
   - Journey map là các bước một persona đi qua để đạt một mục tiêu, kèm hành động, suy nghĩ, cảm xúc và chỗ đau
   - Dùng khi vấn đề trải dài qua nhiều bước, kênh hoặc thời gian; nếu chỉ một màn hình thì không cần
-  - Designer tự liệt kê các giai đoạn trước, rồi mới để AI đề xuất bước còn thiếu và điền ô từ insight
-  - Cách làm này giống các method trước: designer làm trước, AI hỗ trợ sau
+  - Nếu thiếu journey map, pain point chỉ là một danh sách rời rạc, không biết chúng xảy ra sau điều gì
 
   > **Ô nào không có insight thì ghi assumption, không điền cho đẹp.**
 
   > Journey bạn đang vẽ có mấy giai đoạn? Gõ một con số vào chat.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng với nhãn What, Why, When, AI giúp.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Gồm, Why, Nếu thiếu, When, Không cần khi.
+
+---
+
+### COMPARE · AI with journey map
+- Kicker: AI
+- Title: AI giúp gì với journey map
+- On-slide:
+  - Designer làm trước: liệt kê các giai đoạn
+  - AI làm: đề xuất bước còn thiếu, điền hành động, suy nghĩ, cảm xúc và chỗ đau từ insight
+  - Ô không có insight: ghi assumption; designer đếm tỷ lệ
+  - AI không làm: vẽ trọn một bản đồ từ kiến thức chung
+- Ví dụ: bản nháp (prompt: giai đoạn do designer liệt kê, chỉ dùng insight được đưa, mỗi ô kèm insight ID, ô không có insight ghi assumption; chạy trên chín insight của app giao đồ ăn)
+- Câu hỏi hay gặp:
+  - Vì sao designer liệt kê giai đoạn trước? Để khung do designer đặt, AI chỉ đề xuất thêm và điền ô, không tự vẽ cả bản đồ.
+  - Có số đo độ chính xác của journey map AI soạn không? Chưa tìm thấy nghiên cứu nào; buổi này dạy quy trình kiểm tra thay cho con số.
+  - Tỷ lệ assumption cao thì sao? Quay lại phỏng vấn, không điền cho đẹp.
+- Speaker notes:
+
+  > Mình liệt kê các giai đoạn trước, rồi nhờ AI đề xuất bước còn thiếu và điền ô, chỉ từ insight được đưa; ô nào không có insight thì ghi assumption.
+
+  - Thứ tự là của designer: giai đoạn trước, AI điền sau
+  - Prompt yêu cầu chỉ dùng insight được đưa, mỗi ô kèm insight ID, ô thiếu thì ghi assumption
+  - Một bản đồ AI soạn trông đầy đủ ngay cả khi các bước là bịa, nên bài dạy bằng quy trình kiểm tra
+  - Designer đếm tỷ lệ ô assumption; tỷ lệ cao thì quay lại phỏng vấn
+
+  > **Designer đặt khung. AI điền ô. Ô nào không có insight thì ghi assumption.**
+
+  > Bạn đã liệt kê giai đoạn journey của mình chưa? Có hoặc không.
+- 🎨 Visual hint: SCHEMATIC. Compare hai cột: Designer làm trước và AI làm sau; dòng dưới ghi "AI không làm" bằng chữ cam.
+
+---
+
+### PROCESS · Journey map workflow
+- Kicker: Cách làm
+- Title: Từ bản nháp đến hub
+- On-slide:
+  - 01 · AI soạn nháp từ insight, bạn chỉnh sửa
+  - 02 · Đối chiếu từng ô với evidence: insight ID, rồi source ID
+  - 03 · Dựng bằng skill tải từ internet, hoặc tự làm bảng markdown thuần
+  - 04 · Bản đã duyệt lưu thành file markdown
+  - 05 · Định dạng phức tạp thì dùng HTML; đưa lên hub
+- Ví dụ: bản nháp (journey app giao đồ ăn: bảng markdown năm giai đoạn, mỗi ô kèm insight ID, Thanh toán ghi assumption; lưu vào `hub/artifacts/` với `type: journey-map`)
+- Câu hỏi hay gặp:
+  - Khi nào dùng HTML thay vì markdown? Khi bản đồ cần hình, màu hoặc bố cục mà bảng thuần không thể hiện; còn lại dùng markdown để dễ sửa và dễ đọc lại.
+  - Ghi chú phỏng vấn nào được đưa vào skill? Ghi chú đã ẩn danh và có source ID, theo ba quy tắc với dữ liệu ở Lesson 2.
+  - Skill tải từ internet có an toàn không? Chưa chắc; đọc SKILL.md trước khi dùng, chỉ dùng từ nguồn bạn tin, và thử trên dữ liệu hư cấu trước.
+  - AI tự đối chiếu có đủ không? Không; AI làm lượt đầu, designer mở source ID để xác nhận.
+- Speaker notes:
+
+  > AI soạn nháp, bạn chỉnh sửa, rồi cả bản nháp đi qua một lượt đối chiếu với evidence trước khi trở thành journey map.
+
+  - Đối chiếu: mỗi ô mở insight ID, rồi source ID; AI làm lượt đầu, designer xác nhận
+  - Ô nào không truy được thì ghi assumption hoặc xoá
+  - Dựng bản đồ bằng một skill tải từ internet (hoặc skill customer-journey-map của toolkit), với ghi chú phỏng vấn đã ẩn danh làm đầu vào; hoặc bạn tự làm bằng một bảng markdown thuần
+  - Skill tải từ internet là code của người khác: đọc SKILL.md trước khi dùng, chỉ dùng từ nguồn bạn tin, và không đưa dữ liệu chưa ẩn danh
+  - Bản đã duyệt lưu thành file markdown và đặt vào `hub/artifacts/`; định dạng phức tạp hơn thì dùng HTML trong một folder có `index.md`
+  - Chỉ đưa lên hub khi bản nháp đã được chỉnh xong
+
+  > **Bản nháp chỉ lên hub sau khi từng ô đã được đối chiếu với evidence.**
+
+  > Journey map của bạn sẽ ở dạng bảng markdown hay HTML? Gõ một.
+- 🎨 Visual hint: SCHEMATIC. Process năm bước ngang; bước 2 ghi "insight ID, rồi source ID"; bước cuối rẽ hai nhánh markdown và HTML.
 
 ---
 
@@ -314,14 +470,35 @@ last_synced: 2026-11-01
 
 ---
 
+### SECTION DIVIDER · Opportunity
+- Num: 04
+- Kicker: Quyết định nào
+- Title: *Opportunity*
+- Sub: Nhu cầu đáng giải, tách khỏi giải pháp.
+- Ví dụ: Không cần. Slide chuyển phần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Phần thứ ba là opportunity: nhu cầu nào đáng giải trước.
+
+  - Opportunity điền chỗ "quyết định nào" trong câu insight
+  - Sau phần này là activity persona có insight hay không
+
+  > Mình bắt đầu từ định nghĩa opportunity.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
+
+---
+
 ### NUMBERED · What is an opportunity
 - Kicker: Định nghĩa
 - Title: Opportunity là gì?
 - On-slide:
-  - What: nhu cầu hoặc khó khăn của người dùng đáng giải
-  - Why: tách vấn đề khỏi giải pháp trước khi nghĩ ý tưởng
-  - When: sau journey map, trước hypothesis ở buổi sau
-  - AI giúp: viết theo mẫu, cấm nhắc tính năng
+  - What: nhu cầu hoặc khó khăn của người dùng đáng giải, mỗi cái có evidence và được xếp thứ tự
+  - Viết như: vấn đề của khách hàng, không phải tính năng
+  - Why: tách vấn đề khỏi giải pháp trước khi nghĩ ý tưởng, và nối research với quyết định
+  - Nếu thiếu: nhảy thẳng vào tính năng
+  - When: sau journey map, từ các pain point, trước hypothesis ở buổi sau
+  - Không dùng làm: danh sách việc cần làm
 - Ví dụ: có (project app giao đồ ăn: khách cần biết khung giờ giao là cuối cùng trước khi cam kết; R01, F02, I02-01)
 - Câu hỏi hay gặp:
   - Opportunity khác ý tưởng ở đâu? Opportunity là nhu cầu của người dùng, ý tưởng là cách giải; cần xác định nhu cầu trước.
@@ -334,14 +511,43 @@ last_synced: 2026-11-01
   - Nhu cầu ở đây là: khách cần biết khung giờ giao là cuối cùng trước khi cam kết, hoặc đổi được nó
   - Opportunity là tầng khách hàng nằm giữa outcome và solution trong opportunity solution tree
   - Tách nhu cầu khỏi giải pháp trước khi nghĩ ý tưởng, để không nhảy thẳng vào tính năng
-  - AI viết theo mẫu người dùng gặp khó khi tình huống vì lý do, và bị cấm nhắc tính năng
-  - Designer kiểm tra ba điều: nhu cầu hay giải pháp, có insight ID chưa, xếp theo severity, context và reach
+  - Opportunity nối research với quyết định: nó trả lời nhu cầu nào đáng giải trước
+  - Không dùng opportunity làm danh sách việc cần làm
   - Một opportunity sai khung kéo lệch mọi thứ phía trên nó
 
   > **Câu hỏi kiểm tra duy nhất: đây là nhu cầu của người dùng hay là một tính năng?**
 
   > Bạn có opportunity nào đang viết như tính năng không? Gõ có hoặc không.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng với nhãn What, Why, When, AI giúp.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Viết như, Why, Nếu thiếu, When, Không dùng làm.
+
+---
+
+### COMPARE · AI with opportunity
+- Kicker: AI
+- Title: AI giúp gì với opportunity
+- On-slide:
+  - AI làm: viết opportunity theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]", không nhắc tính năng
+  - Designer làm: kiểm tra nhu cầu hay giải pháp, có insight ID chưa, xếp theo severity, context và reach
+  - AI không làm: quyết định opportunity nào đáng giải
+  - Bản đã duyệt: lưu thành file markdown, đưa lên hub
+- Ví dụ: bản nháp (prompt: viết opportunity theo mẫu từ các pain point trên journey map, không nhắc tính năng, mỗi opportunity kèm insight ID và một dòng "mẫu này không cho biết điều gì")
+- Câu hỏi hay gặp:
+  - Vì sao phải cấm nhắc tính năng? AI nghiêng về viết tính năng; đây là suy luận của chương trình, chưa có nghiên cứu độc lập đo chất lượng opportunity do AI đề xuất.
+  - Một dòng "mẫu này không cho biết điều gì" để làm gì? Nhắc designer mỗi opportunity dựa trên bao nhiêu người, và còn thiếu gì.
+  - AI xếp thứ tự giúp được không? AI đề xuất, designer quyết định.
+- Speaker notes:
+
+  > Từ các pain point trên journey map, mình nhờ AI viết opportunity theo một mẫu cố định và cấm nhắc tính năng.
+
+  - Mẫu cố định: người dùng gặp khó khi tình huống vì lý do
+  - Mỗi opportunity kèm insight ID và một dòng nói mẫu này không cho biết điều gì
+  - Designer kiểm tra ba điều: nhu cầu hay giải pháp, có insight ID chưa, xếp theo severity, context và reach
+  - Quyết định opportunity nào đáng giải luôn là của designer
+
+  > **AI viết theo mẫu. Designer quyết định cái nào đáng giải.**
+
+  > Ai quyết định thứ tự opportunity của bạn? Gõ: tôi hoặc AI.
+- 🎨 Visual hint: SCHEMATIC. Compare hai cột: AI làm và Designer làm; dòng dưới ghi "AI không làm" bằng chữ cam.
 
 ---
 
@@ -424,14 +630,35 @@ last_synced: 2026-11-01
 
 ---
 
+### SECTION DIVIDER · Hub and agent
+- Num: 05
+- Kicker: Lưu và dùng lại
+- Title: Hub và *agent*
+- Sub: Lưu insight đã kiểm tra, rồi đóng gói quy trình.
+- Ví dụ: Không cần. Slide chuyển phần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Phần cuối: làm sao để insight không mất đi sau khi buổi học kết thúc.
+
+  - Insight hub lưu insight đã kiểm tra để tìm lại
+  - Agent đóng gói quy trình đã chạy ổn để dùng lại
+
+  > Mình bắt đầu từ insight hub.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
+
+---
+
 ### NUMBERED · What is an insight hub
 - Kicker: Định nghĩa
 - Title: Insight hub là gì?
 - On-slide:
-  - What: nơi lưu insight đã kiểm tra, trong thư mục insights
+  - What: nơi lưu insight đã kiểm tra, mỗi insight có ID, evidence, ngày và tag
+  - Nằm ở: thư mục insights trong Knowledge Hub của project, không phải công cụ riêng
   - Why: không làm lại research cho cùng một câu hỏi
-  - When: đóng góp sau khi kiểm tra; tìm trước khi hỏi
-  - AI giúp: tìm entry liên quan, gợi ý tag
+  - Còn giúp: giữ insight khi người trong team thay đổi, và nối insight với quyết định về sau
+  - When: đóng góp sau khi insight đã qua kiểm tra
+  - Tìm: trong hub trước khi lên kế hoạch research mới
 - Ví dụ: bản nháp (sáu tháng sau một designer hỏi lại vì sao khách huỷ đơn vẫn bị tính tiền, và hub đã có entry INS-014 kèm insight ID)
 - Câu hỏi hay gặp:
   - Insight hub là một công cụ riêng à? Không; là một phần của Knowledge Hub của project, thư mục insights.
@@ -445,12 +672,40 @@ last_synced: 2026-11-01
   - Atomic research bắt đầu từ việc một team lặp lại nghiên cứu vì không tìm được câu trả lời cũ
   - Mỗi entry có insight ID, source ID dẫn về, ngày, độ mạnh evidence, tag và người phụ trách
   - Tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc
-  - AI giúp tìm entry và gợi ý tag; chỉ được trích entry có ID, và designer duyệt trước khi thêm
+  - Hub còn giữ insight khi người trong team thay đổi, và nối insight với các quyết định về sau
 
   > **Tìm trong hub trước khi lên kế hoạch research mới.**
 
   > Câu hỏi 30 giây: team của bạn có chỗ nào lưu insight đã kiểm tra không? Có hoặc không.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng với nhãn What, Why, When, AI giúp.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Nằm ở, Why, Còn giúp, When, Tìm.
+
+---
+
+### COMPARE · AI with insight hub
+- Kicker: AI
+- Title: AI giúp gì với insight hub
+- On-slide:
+  - AI làm: tìm entry liên quan đến câu hỏi mới, gợi ý tag
+  - Designer làm: duyệt trước khi thêm; chỉ dùng entry có ID
+  - AI không làm: tự thêm insight vào hub
+- Ví dụ: bản nháp (câu hỏi mới về hạn chót huỷ đơn; AI tìm thấy entry INS-014 và gợi ý tag huỷ đơn; designer duyệt trước khi dùng)
+- Câu hỏi hay gặp:
+  - Tag do ai đặt? Lấy từ một danh sách cố định; AI chỉ chọn trong danh sách, nếu không tag chồng chéo làm hỏng bộ lọc.
+  - AI trích một entry không có ID thì sao? Không dùng; chỉ trích entry có ID.
+  - Vì sao AI không tự thêm insight? Một insight chưa kiểm tra vào hub sẽ bị dùng lại như thể đã kiểm tra.
+- Speaker notes:
+
+  > Hub chỉ có ích khi tìm lại được. AI giúp hai việc: tìm entry gần với câu hỏi mới, và gợi ý tag.
+
+  - AI chỉ được trích entry có ID
+  - Tag lấy từ một danh sách cố định
+  - Designer duyệt từng entry trước khi thêm vào hub
+  - Insight chưa kiểm tra thì chưa vào hub
+
+  > **AI tìm và gợi ý. Designer quyết định cái gì được vào hub.**
+
+  > Câu hỏi 30 giây: bạn cho AI tự thêm insight vào hub hay duyệt trước? Gõ một.
+- 🎨 Visual hint: SCHEMATIC. Compare hai cột: AI làm và Designer làm; dòng dưới ghi "AI không làm" bằng chữ cam.
 
 ---
 
@@ -485,19 +740,19 @@ last_synced: 2026-11-01
 
 ### PROCESS · From workflow to agent
 - Kicker: Cách làm
-- Title: Đóng gói thành *agent*
+- Title: ## Đóng gói quy trình thành *agent*
 - On-slide:
-  - 01 · Viết quy trình thành step card
-  - 02 · Biến step card thành agent, dùng bộ nguyên tắc làm chuẩn
+  - 01 · Viết quy trình thành skill
+  - 02 · Biến skill thành agent, dùng bộ nguyên tắc làm chuẩn
   - 03 · Đóng góp agent và file vào hub
 - Ví dụ: bản nháp (ba bước synthesis đã chạy ổn trên hai bộ ghi chú nguồn của app giao đồ ăn được đóng thành một agent)
 - Câu hỏi hay gặp:
   - Package khi nào là đủ sớm? Khi quy trình đã chạy ít nhất hai lần trên hai đầu vào khác nhau và phần designer kiểm tra đã được ghi rõ.
 - Speaker notes:
 
-  > Ba bước synthesis đã chạy ổn trên hai bộ ghi chú nguồn của app giao đồ ăn. Designer viết nó thành step card, rồi biến thành một agent dùng lại được.
+  > Ba bước synthesis đã chạy ổn trên hai bộ ghi chú nguồn của app giao đồ ăn. Designer viết nó thành skill, rồi biến thành một agent dùng lại được.
 
-  - Step card ghi ai làm (designer hay AI), đầu vào, đầu ra, check nào phải qua
+  - Skill ghi ai làm (designer hay AI), đầu vào, đầu ra, check nào phải qua
   - Agent là một bộ instruction dùng lại được, gắn với bộ nguyên tắc làm chuẩn
   - Đóng gói sớm quá sẽ đóng gói cả lỗi; chờ khi quy trình đã chạy hai lần
   - Agent không thay bước Challenge và bước kiểm tra insight; hai bước đó vẫn do designer làm
@@ -615,11 +870,11 @@ last_synced: 2026-11-01
 
 ### END
 - Kicker: Kết thúc
-- Title: Cảm *ơn*
+- Title: Mỗi dòng truy được\n*về insight*
 - Sign: AI Design Workflow
 - Contact: Buổi tiếp theo: chuỗi practice ở nhà, rồi buổi practice trên lớp
 - Speaker notes:
-  - Cảm ơn cả lớp
+  - Một câu để mang về: dòng nào của persona, journey map hay opportunity truy được về insight thì giữ, dòng nào không thì xoá hoặc ghi assumption
   - Bộ nguyên tắc và insight của designer là đầu vào của practice
   - Cheat sheet bốn câu hỏi gửi sau buổi học
 - 🎨 Visual hint: End layout, nền paper-deeper; title lớn nghiêng, tên bên dưới.

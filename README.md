@@ -26,8 +26,8 @@ programs/ai-design-workflow/                  (thư mục này)
   voice-sample-vi.md        bản thử giọng tiếng Việt
   assets/                   starter-files, hub và doc template, diagram, ảnh tham khảo
     method-cards/           card tham khảo cho từng design method, theo stage
-    templates/workflow-kit/ bộ mẫu workflow (step card, luật cho AI tool, propose first…); không dùng trong lớp
-  examples/                 ví dụ làm sẵn (step card)
+    templates/workflow-kit/ bộ mẫu workflow (skill, luật cho AI tool, propose first…); không dùng trong lớp
+  examples/                 ví dụ làm sẵn (skill)
   _archive/                 bản nháp đã thay thế
 
   lessons/                  (các lesson)

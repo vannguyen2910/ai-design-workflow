@@ -1,4 +1,4 @@
-# Step Cards — Competitor Analysis
+# Skills — Competitor Analysis
 
 **Created:** 2026-10-05 · **Revised 2026-10-05:** single working file; 8 steps (was 7); gate-fail rules; belief check; decision answered at the end.
 **Worked example of the standard** in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Pattern: A Investigate. Report page: the hub's Evidence page, `../../assets/templates/hub/evidence.html`.

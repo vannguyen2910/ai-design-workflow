@@ -22,7 +22,7 @@ Bốn phần theo thứ tự trình bày:
 1. **The Aim.** Dựng từng màn hình từ đầu thì kết quả lệch dần. Tư duy hệ thống: Design Pattern trước, AI-assisted chứ không phải AI-generated. Các đội lớn đưa design system vào dạng AI đọc được.
 2. **One View.** Nền chuẩn mà mọi prototype xuất phát từ nó: cùng starter, cấu trúc folder, component và content voice. Gồm bốn layer (token, component, template, shell) và một journey chuẩn.
 3. **The Second View.** Prototype thật, dựng từ One View theo thứ tự rules, shell, flow, dựng, review. Chỉ layer token tự cập nhật khi One View đổi; mỗi element mang ID của requirement nó thể hiện, để thấy requirement còn hở.
-4. **Gate, Rules and Skill.** Các gate, rules file và step card mà AI tool làm theo. Quy tắc nhận từ người khác chưa thuộc về designer cho đến khi tự viết lại.
+4. **Gate, Rules and Skill.** Các gate, rules file và skill mà AI tool làm theo. Quy tắc nhận từ người khác chưa thuộc về designer cho đến khi tự viết lại.
 
 Nguyên tắc vận hành giữ nguyên: **AI soạn nháp. Designer kiểm tra. Designer quyết định.**
 
@@ -210,7 +210,7 @@ Khi chuyển cho người khác, ba thứ đi cùng prototype: link chạy đư�
 |---|---|---|
 | **Gate** | Điểm dừng kiểm tra giữa các bước: các gate của skill `prototype` (design system, shell, kế hoạch, review, điều chưa làm) | Dừng lại kiểm trước khi đi tiếp |
 | **Rules** | Rules file: các quy tắc AI đọc trước mỗi lần dựng | Giữ AI trong One View |
-| **Skill** | Step card: các bước và prompt mà AI tool làm theo | Làm quy trình có thể dùng lại |
+| **Skill** | Các bước và prompt mà AI tool làm theo | Làm quy trình có thể dùng lại |
 
 Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong `AGENTS.md` [3]; Uber dùng một skill riêng cho mỗi mục của spec [9]. Cả hai là cách giữ cho quy trình không nằm trong trí nhớ của một người.
 

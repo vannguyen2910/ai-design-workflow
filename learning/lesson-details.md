@@ -27,7 +27,7 @@ Quy tắc ngôn ngữ đơn giản (2026-10-05). Mỗi ý chỉ dùng **một t�
 | **hub** (Knowledge Hub ở lần dùng đầu) | Website liên kết chứa mọi output | final report (chỉ dùng cho hub đã hoàn thiện) |
 | **output** | File hoặc trang mà một bước tạo ra | artifact, deliverable |
 | **gate** và **check** | Gate là checklist ngắn trước khi đi tiếp. Check là một câu hỏi có hoặc không (1a, 3b ...) | không có |
-| **stage map**, **activity flow**, **step card** | Ba góc nhìn: cả series, một activity, một bước | Level 1, Level 2, Level 3 |
+| **stage map**, **activity flow**, **skill** | Ba góc nhìn: cả series, một activity, một bước | Level 1, Level 2, Level 3 |
 | **pattern** (Investigate hoặc Generate) | Hình dạng xuất phát của một activity flow | archetype |
 | **alignment check**, **alignment table** | Mỗi decision có truy được về một user need và vượt qua các principle không | alignment matrix |
 | **opportunity** | Một user need đáng giải, có evidence đi kèm | không có |
@@ -430,11 +430,11 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 3. Dùng *propose first* cho mọi bước tạo hoặc sửa nhiều file.
 4. Test workflow của mình trên dữ liệu mới, và nói được điều gì khiến nó hỏng một cách âm thầm.
 
-**Key activity:** viết một step card cho một task mình lặp lại, chạy nó trên dữ liệu mới, rồi chạy hygiene checklist.
+**Key activity:** viết một skill cho một task mình lặp lại, chạy nó trên dữ liệu mới, rồi chạy hygiene checklist.
 
-**Output:** một step card đã test, một rules file, và một bộ prompt ngắn mình hay dùng.
+**Output:** một skill đã test, một rules file, và một bộ prompt ngắn mình hay dùng.
 
-**Tài liệu:** `assets/templates/workflow-kit/` (step card template, rules file starter, propose-first card, bộ prompt, hygiene checklist, năm failure case).
+**Tài liệu:** `assets/templates/workflow-kit/` (skill template, rules file starter, propose-first card, bộ prompt, hygiene checklist, năm failure case).
 
 **Thời gian:** khoảng 90 phút nếu chạy trực tiếp; khoảng hai giờ nếu là bài tập tại nhà.
 

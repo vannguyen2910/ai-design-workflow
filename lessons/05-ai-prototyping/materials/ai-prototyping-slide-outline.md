@@ -782,14 +782,14 @@ last_synced: 2026-10-30
   - Rules
   - Quy tắc AI đọc trước mỗi lần dựng
   - 03
-  - Step card mà AI tool làm theo
+  - Skill mà AI tool làm theo
 - Speaker notes:
 
   > Atlassian cài bộ skill vào repo và thêm một chỉ dẫn ngắn trong AGENTS.md để mọi agent dùng chung. Uber dùng một skill riêng cho mỗi mục của spec.
 
   - Gate là điểm dừng kiểm tra giữa các bước; skill prototype có nhiều gate, mỗi gate kiểm xong mới đi tiếp
   - Rules là rules file; AI đọc nó trước mỗi lần dựng
-  - Skill là step card: các bước và prompt mà AI tool làm theo, để quy trình lặp lại được
+  - Skill là các bước và prompt mà AI tool làm theo, để quy trình lặp lại được
   - Cả ba cùng một mục đích: quy trình không nằm trong trí nhớ của một người
   - Ba lớp này chạy xuyên cả One View và The Second View, và được đặt trước khi dựng
 

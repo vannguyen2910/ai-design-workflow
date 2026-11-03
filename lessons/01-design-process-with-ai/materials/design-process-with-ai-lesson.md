@@ -246,7 +246,7 @@ Mục này giới thiệu ở mức khái niệm. Designer chưa dựng đội t
 
 Hai vai không giao cho AI: người dùng thật và người phía product và business (xem 3.2). Không có agent nào duyệt thay designer, vì một agent duyệt cũng có thể sai.
 
-**Để đội chạy được** cần bốn thứ trong project folder: context pack, step card trong `toolkit/skills/`, gate và rules file `AGENTS.md`. Thêm vai khi chưa có bốn thứ này không làm đội tốt hơn; theo 3.5, workflow chưa ổn chạy nhanh hơn thì lỗi cũng đến nhanh hơn.
+**Để đội chạy được** cần bốn thứ trong project folder: context pack, skill trong `toolkit/skills/`, gate và rules file `AGENTS.md`. Thêm vai khi chưa có bốn thứ này không làm đội tốt hơn; theo 3.5, workflow chưa ổn chạy nhanh hơn thì lỗi cũng đến nhanh hơn.
 
 **Agent đầu tiên** được dựng theo năm bước, trong đó bước chạy thử và đối chiếu file kết quả với nguồn là bước không bỏ được. Chi tiết năm bước, cách setup và hiện trạng toolkit nằm ở `learning/lesson-1-details.md`.
 

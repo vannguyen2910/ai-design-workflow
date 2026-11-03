@@ -1,6 +1,6 @@
-# Tools và step card
+# Tools và skill
 
-Folder này chứa script `export-hub.py` (tạo `index.html`) và các step card: định nghĩa quy trình AI-assisted dưới dạng file, để AI tool đọc được và quy trình được lưu cùng project. Mỗi file là một workflow, gồm các step có thứ tự, và mỗi step ghi rõ ai làm (AI hay bạn), đọc file nào và ghi vào đâu.
+Folder này chứa script `export-hub.py` (tạo `index.html`) và các skill: định nghĩa quy trình AI-assisted dưới dạng file, để AI tool đọc được và quy trình được lưu cùng project. Mỗi file là một workflow, gồm các step có thứ tự, và mỗi step ghi rõ ai làm (AI hay bạn), đọc file nào và ghi vào đâu.
 
 ## Cards
 

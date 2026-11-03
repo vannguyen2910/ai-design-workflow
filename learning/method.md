@@ -1,10 +1,10 @@
-# Method: Activity Flow Standard, Step Cards, Stage Gates
+# Method: Activity Flow Standard, Skills, Stage Gates
 
-How every activity in the series is designed. Part 1 is the standard; Part 2 is the step card format; Part 3 is what to delegate and which gate applies at each stage. Worked example: `examples/competitor-analysis/`.
+How every activity in the series is designed. Part 1 is the standard; Part 2 is the skill format; Part 3 is what to delegate and which gate applies at each stage. Worked example: `examples/competitor-analysis/`.
 
 **In this file**
 - [Part 1 — Activity flow standard](#part-1--activity-flow-standard)
-- [Part 2 — Step card template](#part-2--step-card-template)
+- [Part 2 — Skill template](#part-2--skill-template)
 - [Part 3 — Stage methods, delegation and gates](#part-3--stage-methods-delegation-and-gates)
 
 ---
@@ -12,14 +12,14 @@ How every activity in the series is designed. Part 1 is the standard; Part 2 is 
 ## Part 1 — Activity flow standard
 
 **Created:** 2026-10-05 · **Status:** draft standard, built from one worked example (competitor analysis) and not yet tested on other activities.
-This file is the **standard**. It applies to any design activity (competitor analysis, interview synthesis, ideation, flows, prototyping, usability findings, and so on). Specific activities live in `examples/`, and each one follows this file. Step card format: `method.md` Part 2.
+This file is the **standard**. It applies to any design activity (competitor analysis, interview synthesis, ideation, flows, prototyping, usability findings, and so on). Specific activities live in `examples/`, and each one follows this file. Skill format: `method.md` Part 2.
 
 ### 1. Three views
 | View | Shows | Format | Used for |
 |---|---|---|---|
 | 1 Stage map | Stages (Discover, Define, Develop, Deliver), input → output, gate | Double Diamond columns | Series overview slide |
 | 2 Activity flow | Steps inside one activity: who does each (you / AI), the file it writes to, the review gates | **Swimlane flowchart** | One slide per activity |
-| 3 Step card | Per step: goal, input, AI instruction, checks, failure signs, output | Text card | Lesson handout |
+| 3 Skill | Per step: goal, input, AI instruction, checks, failure signs, output | Text card | Lesson handout |
 
 Swimlane is the format because the series' claim is *human review after every AI step*: the alternation between the YOU and AI lanes is the review loop.
 
@@ -88,8 +88,8 @@ Three colours only: **black, white, purple** (`#6B3FEE`). Your steps solid purpl
 ### 8. Worked examples
 | Activity | Pattern | Status |
 |---|---|---|
-| Competitor analysis | A Investigate | ✅ Flow, step cards and HTML template: `examples/competitor-analysis/` |
-| User-voice synthesis (public reviews, forum posts, short interviews) | A Investigate | ✅ Flow and step cards: `examples/user-voice-synthesis/` |
+| Competitor analysis | A Investigate | ✅ Flow, skills and HTML template: `examples/competitor-analysis/` |
+| User-voice synthesis (public reviews, forum posts, short interviews) | A Investigate | ✅ Flow and skills: `examples/user-voice-synthesis/` |
 | Shape the brief (partnering with business and product) | A (adapted; includes a human-only meeting step) | To draw |
 | Interview synthesis | A | To draft |
 | Ideation (3 distinct directions) | B Generate | To draft |
@@ -100,7 +100,7 @@ Three colours only: **black, white, purple** (`#6B3FEE`). Your steps solid purpl
 
 ---
 
-## Part 2 — Step card template
+## Part 2 — Skill template
 
 **Created:** 2026-10-05 · Use with `method.md` Part 1. One card per step in an activity flow. A finished example: `examples/competitor-analysis/step-cards.md`.
 Use generic labels ("AI chat tool", "AI coding tool") per CLAUDE.md.

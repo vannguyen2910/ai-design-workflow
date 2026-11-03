@@ -1,4 +1,4 @@
-# Step Cards — User-Voice Synthesis
+# Skills — User-Voice Synthesis
 
 **Created:** 2026-10-05 · **Status: draft, untested.** Second worked example of the standard in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Pattern: A Investigate. The AI instructions are my design and have not been run in a class. Uses generic labels per CLAUDE.md.
 

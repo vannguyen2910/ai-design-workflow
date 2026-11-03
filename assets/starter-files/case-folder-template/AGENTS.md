@@ -4,7 +4,7 @@ File này dành cho AI tool. Đọc nó trước khi làm bất cứ việc gì 
 
 ## What this folder is
 
-Project folder của một designer làm việc theo quy trình AI-assisted: AI soạn nháp, designer kiểm tra và quyết định. Working file nằm phẳng trong `learnings/` (tên file bắt đầu bằng tên giai đoạn: `discover-`, `define-`…), và mỗi bước của quy trình được định nghĩa bằng một step card trong `tools/`.
+Project folder của một designer làm việc theo quy trình AI-assisted: AI soạn nháp, designer kiểm tra và quyết định. Working file nằm phẳng trong `learnings/` (tên file bắt đầu bằng tên giai đoạn: `discover-`, `define-`…), và mỗi bước của quy trình được định nghĩa bằng một skill trong `tools/`.
 
 ## Map
 
@@ -12,7 +12,7 @@ Project folder của một designer làm việc theo quy trình AI-assisted: AI 
 |---|---|---|
 | `AGENTS.md` | Luật cho AI tool (file này) | Đọc |
 | `learnings/context-*.md` | Context pack: thông tin nền của project | Đọc đầu tiên ở mọi bước. Không sửa trừ khi được yêu cầu |
-| `tools/step-*.md` | Định nghĩa từng bước (step card) | Đọc card của bước đang chạy |
+| `tools/step-*.md` | Định nghĩa từng bước (skill) | Đọc skill của bước đang chạy |
 | `learnings/discover-*.md` … `deliver-*.md` | Working file theo giai đoạn | Chỉ ghi vào đúng section được yêu cầu |
 | `learnings/sources/anonymised/` | Dữ liệu đã ẩn danh, có ID | Đọc. Nguồn duy nhất cho quote và số liệu |
 | `hub/O1.md`, `H1.md`, `M1.md`, `D1.md`, `T1.md`… | **Nguồn duy nhất** của mỗi item (O, H, M, D, T) | Đọc. Chỉ sửa khi được yêu cầu sửa đúng item đó |
@@ -50,7 +50,7 @@ Không đọc cả folder để "lấy thêm ngữ cảnh": thêm file không li
 
 Khi designer nói "chạy step N của `tools/step-<tên>.md`":
 
-1. Đọc card, tìm step N.
+1. Đọc skill, tìm step N.
 2. Chỉ đọc các file ở dòng `Input` của step đó.
 3. Làm theo dòng `Instruction` và ghi kết quả vào section ở dòng `Output`.
 4. Báo lại: đã đọc file nào, đã ghi vào đâu, điều gì bạn không chắc.
@@ -60,4 +60,4 @@ Step có nhãn **(YOU)** là việc của designer: bạn không làm thay, ch�
 ## Writing
 
 - Viết bằng tiếng Việt, giữ các thuật ngữ nghề bằng tiếng Anh (insight, hypothesis, opportunity, handoff...).
-- Giữ nguyên tiêu đề section bằng tiếng Anh, vì các step card và hub gọi theo đúng tên đó.
+- Giữ nguyên tiêu đề section bằng tiếng Anh, vì các skill và hub gọi theo đúng tên đó.

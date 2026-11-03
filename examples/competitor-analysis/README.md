@@ -4,7 +4,7 @@ First worked example of the activity flow standard (`../../learning/method.md` P
 
 | Part | Where |
 |---|---|
-| step cards | `step-cards.md` (this folder) |
+| skills | `step-cards.md` (this folder) |
 | Report page (HTML, a page of the hub) | `../../assets/templates/hub/evidence.html` |
 
 Pattern: A Investigate · 8 steps · 3 gates (A right competitors, B traceable, C evidence not AI opinion).

@@ -48,5 +48,5 @@ Request
 | Permissions and sandboxing | AI được sửa file nào, được đụng vào production không? |
 | Guardrails | Bước nào designer bắt buộc duyệt (human approval) trước khi giao đi? |
 
-- **Hoạt động đề xuất:** cho người học vẽ lại một workflow của chính họ (ví dụ competitor analysis) trên 6 term này, đánh dấu chỗ nào cần human approval. Có thể nối với step card và activity flow trong `../_archive`.
+- **Hoạt động đề xuất:** cho người học vẽ lại một workflow của chính họ (ví dụ competitor analysis) trên 6 term này, đánh dấu chỗ nào cần human approval. Có thể nối với skill và activity flow trong `../_archive`.
 - **Thuật ngữ:** giữ nguyên tiếng Anh cho cả 6 term; phần giải thích viết tiếng Việt theo `_system/rules/vi-voice.md`. Khi đưa vào lesson, dùng nhãn chung "AI tool" thay vì tên công cụ cụ thể.

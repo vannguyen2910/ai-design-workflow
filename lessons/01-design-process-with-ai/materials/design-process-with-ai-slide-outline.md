@@ -25,16 +25,16 @@ last_synced: 2026-10-30
 ## Slides
 
 ### COVER
-- Year: 2026 · AI Design Workflow
+- Year: 2026 · UX Level Up
 - Stage: Foundation
-- Title: Quy trình design,\n*cùng AI*
-- Subtitle: Hướng đi của nghề, chỗ AI giúp trong bốn stage, và team cùng workspace sẽ dựng
+- Title: Quy trình\nthiết kế\n*cùng AI*
+- Subtitle: Nghề đang đi về đâu, AI vào bốn giai đoạn thế nào, và đội AI cùng workspace bạn sẽ dựng
 - Author: AI Design Workflow
 - Credentials:
   - Senior Product Designer
   - Master of UX & Service Design
   - Product Design Instructor
-- Right panel photo: Ảnh thật bàn tay một designer trên laptop với cây folder đang mở, ánh sáng ấm, gần gũi, không mang hơi hướng công nghệ viễn tưởng
+- Right panel photo: Ảnh thật góc bàn làm việc trong phòng tối: màn hình lớn và laptop, đèn bàn ánh sáng ấm, rèm cửa bên trái; gần gũi, không mang hơi hướng công nghệ viễn tưởng
 - Ví dụ: Không cần. Slide chào và giới thiệu buổi.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -483,29 +483,29 @@ last_synced: 2026-10-30
   - 02 · Giao một vai và một kết quả cụ thể
   - 03 · Chạy thử, đối chiếu với nguồn, chỉnh
   - 04 · Ghi kết quả ra file Markdown
-  - 05 · Lưu cách làm thành step card
-- Ví dụ: có (step card Competitor Analysis trong `toolkit/skills/`; ảnh chụp `../assets/competitor-analysis-step-card.webp`)
-- Câu hỏi hay gặp: "Step card khác skill ở đâu?" Trả lời: cùng một ý, là file Markdown ghi cách làm một loại việc; hôm nay chưa cần phân biệt, buổi 7 sẽ dạy.
+  - 05 · Lưu cách làm thành skill
+- Ví dụ: có (skill Competitor Analysis trong `toolkit/skills/`; ảnh chụp `../assets/competitor-analysis-step-card.webp`)
+- Câu hỏi hay gặp: "Skill là gì?" Trả lời: một file Markdown ghi cách làm một loại việc, để AI tool đọc và làm theo; buổi 7 sẽ dạy cách viết.
 - Speaker notes:
 
   > Một agent đầu tiên chỉ cần một vai, một folder và một lần chạy thử.
 
-  - Ví dụ thật: agent Competitor Analysis là một step card, file `toolkit/skills/competitor-analysis/SKILL.md`; mở project folder, nhờ tool đọc step card này và làm theo
-  - Step card ghi rõ file làm việc là `work/competitor-analysis.md`, nguồn là `work/sources/anonymised/`, và mỗi bước điền một mục: bước 1 designer viết Scope, bước 2 và 3 AI đề xuất rồi designer chốt danh sách đối thủ
+  - Ví dụ thật: agent Competitor Analysis là một skill, file `toolkit/skills/competitor-analysis/SKILL.md`; mở project folder, nhờ tool đọc skill này và làm theo
+  - Skill ghi rõ file làm việc là `work/competitor-analysis.md`, nguồn là `work/sources/anonymised/`, và mỗi bước điền một mục: bước 1 designer viết Scope, bước 2 và 3 AI đề xuất rồi designer chốt danh sách đối thủ
   - Bước 5 AI soạn mục Evidence (AI draft) và designer không sửa mục này; bước 6 designer tự đối chiếu với nguồn rồi ghi bản đã sửa vào Evidence (verified)
 
   > **Chạy thử xong thì mở file ra đối chiếu với nguồn, đừng tin dòng "xong rồi".**
 
   - Chỗ AI không được sửa và designer tự đối chiếu chính là bước 3; nối lại slide "Looks finished. Is it right?" và vai trò của gate ở slide kế
-  - Output là file Markdown trong `work/`, nên lần sau ở project khác chỉ cần mở lại step card; muốn đưa sang Excel hoặc email thì nối connector sau (dạy ở buổi 7)
-  - Bước 5: khi một lần chạy đã ổn, nhờ tool ghi lại cách làm thành step card, như card này; mỗi agent trong đội ở slide kế tiếp ra đời theo cách đó
+  - Output là file Markdown trong `work/`, nên lần sau ở project khác chỉ cần mở lại skill; muốn đưa sang Excel hoặc email thì nối connector sau (dạy ở buổi 7)
+  - Bước 5: khi một lần chạy đã ổn, nhờ tool ghi lại cách làm thành skill, như skill này; mỗi agent trong đội ở slide kế tiếp ra đời theo cách đó
   - `AGENTS.md` không điều phối các agent; nó là luật chung tool đọc mỗi lần mở folder, còn người điều phối vẫn là designer
   - Hai phút rưỡi cho slide này; card tự ghi "Status: draft", nói thật là chưa thử với lớp thật
 
   > Nếu giao cho AI một vai trong project của designer, designer chọn vai nào trước? Nghĩ một câu, chưa cần trả lời.
 
-  > Một agent chạy ổn thì có một step card; tám step card thành một đội.
-- 🎨 Visual hint: SCHEMATIC. Process track năm bước, bước ba được tô purple. Ảnh chụp step card để ở slide tham khảo hoặc chiếu khi designer hỏi.
+  > Một agent chạy ổn thì có một skill; tám skill thành một đội.
+- 🎨 Visual hint: SCHEMATIC. Process track năm bước, bước ba được tô purple. Ảnh chụp skill để ở slide tham khảo hoặc chiếu khi designer hỏi.
 
 ---
 
@@ -526,7 +526,7 @@ last_synced: 2026-10-30
   - Design memory là một record dùng chung cho cả tám agent; hôm nay nó chính là project folder và hub (slide kế tiếp và T5)
   - **Designer duyệt ở mỗi mũi tên REVIEW**; không có agent nào duyệt thay, vì một agent duyệt cũng có thể sai
   - Hai vai không giao cho AI: người dùng thật và người phía product và business
-  - Hiện trạng: toolkit hiện có step card cho cả tám agent, nhưng đều là bản nháp chưa thử với lớp thật; mỗi card được chỉnh sau lần chạy đầu ở buổi tương ứng
+  - Hiện trạng: toolkit hiện có skill cho cả tám agent, nhưng đều là bản nháp chưa thử với lớp thật; mỗi skill được chỉnh sau lần chạy đầu ở buổi tương ứng
   - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc; sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX) nhưng tên và phạm vi agent là của chương trình; chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design `[to confirm]`
   - Ba phút cho slide này
 - 🎨 Visual hint: SCHEMATIC. Một ảnh, gần full bleed: sơ đồ bốn phase, mỗi phase một khung hai agent, design memory ở dưới, vòng Next round; agent Framing được nhấn màu accent. Tệp: `../assets/designer-agents-double-diamond.png` (nguồn HTML: `_system/diagrams/designer-agents-double-diamond.html`).
@@ -538,16 +538,16 @@ last_synced: 2026-10-30
 - Title: Team\n*cần gì*
 - On-slide:
   - 01 · Context pack: file đã lưu thay vì mô tả từ trí nhớ
-  - 02 · Step card: mỗi bước ai làm, đọc file nào, ghi vào đâu
+  - 02 · Skill: mỗi bước ai làm, đọc file nào, ghi vào đâu
   - 03 · Gate: checklist ngắn trước khi công việc đi tiếp
   - 04 · Quy tắc chung: viết một lần, tool tự đọc mỗi lần mở folder
-- Ví dụ: cần ví dụ: một step card thật (bước, file đọc, nơi ghi)
+- Ví dụ: cần ví dụ: một skill thật (bước, file đọc, nơi ghi)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Nhiều agent hơn không làm đội chạy tốt hơn; nối lại ba câu hỏi trước khi automate, một workflow chưa ổn chạy nhanh hơn thì lỗi cũng đến nhanh hơn
-  - Mỗi thứ chỉ cần hiểu bằng một dòng ở đây; cả bốn hiện ra thành file và folder thật ở slide kế tiếp (context pack là folder `context/`, step card nằm trong `toolkit/skills/`, quy tắc chung là `AGENTS.md`)
+  - Mỗi thứ chỉ cần hiểu bằng một dòng ở đây; cả bốn hiện ra thành file và folder thật ở slide kế tiếp (context pack là folder `context/`, skill nằm trong `toolkit/skills/`, quy tắc chung là `AGENTS.md`)
   - Hôm nay chưa cần agent: Practice 1 ở nhà dựng nền, buổi 7 mới giao việc cho đội
-  - Cách setup trong một câu: một AI coding tool mở cả folder, mỗi agent là một step card, flow là đề xuất, duyệt, ghi file rồi qua gate (chi tiết ở `learning/lesson-1-details.md`, mục 4.4)
+  - Cách setup trong một câu: một AI coding tool mở cả folder, mỗi agent là một skill, flow là đề xuất, duyệt, ghi file rồi qua gate (chi tiết ở `learning/lesson-1-details.md`, mục 4.4)
   - **Câu A/B 30 giây:** nếu chỉ giao được một agent cho AI, designer chọn desk research agent hay prototype agent?
   - Mình trả lời trước để làm mẫu: chọn prototype agent
   - Hai phút
@@ -569,7 +569,7 @@ last_synced: 2026-10-30
   - Folder local nằm trên máy của designer, không phải file design trên server hay tài liệu cloud
   - AI coding tool mở cả folder làm project của nó và đọc mọi thứ bên trong; folder đồng bộ cloud có thể gặp lỗi giữa chừng khi đang ghi
   - Cây folder: trang chủ `index.html` của hub (bấm đúp là mở bằng trình duyệt), file luật `AGENTS.md` và folder `context/` trước, rồi `work/` (những gì làm ra) và `insights/` (những gì học được, các decision)
-  - `AGENTS.md` là file tool tự đọc khi mở folder, nên các quy tắc không phụ thuộc vào việc designer nhớ dán lại; step card nằm ở `toolkit/skills/` (gốc workspace, dùng chung cho mọi project) và ghi rõ mỗi bước ai làm, đọc file nào, ghi vào đâu
+  - `AGENTS.md` là file tool tự đọc khi mở folder, nên các quy tắc không phụ thuộc vào việc designer nhớ dán lại; skill nằm ở `toolkit/skills/` (gốc workspace, dùng chung cho mọi project) và ghi rõ mỗi bước ai làm, đọc file nào, ghi vào đâu
   - Dữ liệu gốc nằm trong `_raw-private/`, không lên GitHub; AI chỉ đọc bản đã ẩn danh trong `anonymised/`. Ghi chú riêng nằm trong `_personal/`, ngoài context pack
   - Mỗi folder một vai: `context/` là thứ đưa vào đầu tiên ở mọi bước, `work/` là những gì làm ra, `insights/` là những gì học được và các decision
   - Layout khác vẫn ổn cho project riêng của designer; ở đây dùng layout này

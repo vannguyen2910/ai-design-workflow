@@ -9,16 +9,16 @@ File làm việc riêng, không lên site. Các phần dưới đây được d�
 **Agent đầu tiên** được dựng theo năm bước (phương pháp của chương trình, không phải kết quả nghiên cứu):
 
 1. Mở AI coding tool trên project folder.
-2. Giao một vai và một kết quả cụ thể. Ví dụ agent Competitor Analysis (step card `toolkit/skills/competitor-analysis/SKILL.md`) đọc nguồn đã ẩn danh trong `work/sources/anonymised/` và điền từng mục của `work/competitor-analysis.md`; mục AI soạn không được sửa, bản đã đối chiếu do designer ghi riêng.
+2. Giao một vai và một kết quả cụ thể. Ví dụ agent Competitor Analysis (skill `toolkit/skills/competitor-analysis/SKILL.md`) đọc nguồn đã ẩn danh trong `work/sources/anonymised/` và điền từng mục của `work/competitor-analysis.md`; mục AI soạn không được sửa, bản đã đối chiếu do designer ghi riêng.
 3. Chạy thử, mở file kết quả, đối chiếu với nguồn rồi chỉnh chỉ dẫn. Đây là bước không bỏ được.
 4. Ghi kết quả ra file Markdown trong `work/`; chỉ nối sang Excel hoặc email qua connector sau khi file Markdown đã ổn.
-5. Khi một lần chạy đã ổn, nhờ tool ghi lại cách làm thành step card để dùng lại.
+5. Khi một lần chạy đã ổn, nhờ tool ghi lại cách làm thành skill để dùng lại.
 
-**Điều kiện để đội chạy được.** Bốn thứ nằm trong project folder: context pack (file đã lưu thay vì mô tả từ trí nhớ), step card trong `toolkit/skills/` (mỗi bước ai làm, đọc file nào, ghi vào đâu), gate (checklist ngắn trước khi đi tiếp) và reusable instructions (`AGENTS.md`). Thêm vai khi chưa có bốn thứ này không làm đội tốt hơn; theo 3.5, workflow chưa ổn chạy nhanh hơn thì lỗi cũng đến nhanh hơn.
+**Điều kiện để đội chạy được.** Bốn thứ nằm trong project folder: context pack (file đã lưu thay vì mô tả từ trí nhớ), skill trong `toolkit/skills/` (mỗi bước ai làm, đọc file nào, ghi vào đâu), gate (checklist ngắn trước khi đi tiếp) và reusable instructions (`AGENTS.md`). Thêm vai khi chưa có bốn thứ này không làm đội tốt hơn; theo 3.5, workflow chưa ổn chạy nhanh hơn thì lỗi cũng đến nhanh hơn.
 
-**Cách setup.** Một AI coding tool mở cả project folder; `AGENTS.md` ở gốc là quy tắc chung (gồm quy tắc propose first và không đọc `_personal/`, `work/sources/_raw-private/`); mỗi agent là một step card; output ghi vào file trong `work/` và `insights/`; gate là tiêu chí trong `standards/`. Một bước chạy theo thứ tự: designer ra lệnh, tool đọc step card và context, tool đề xuất, designer duyệt, tool ghi file, designer kiểm tra theo gate, rồi mới sang bước tiếp.
+**Cách setup.** Một AI coding tool mở cả project folder; `AGENTS.md` ở gốc là quy tắc chung (gồm quy tắc propose first và không đọc `_personal/`, `work/sources/_raw-private/`); mỗi agent là một skill; output ghi vào file trong `work/` và `insights/`; gate là tiêu chí trong `standards/`. Một bước chạy theo thứ tự: designer ra lệnh, tool đọc skill và context, tool đề xuất, designer duyệt, tool ghi file, designer kiểm tra theo gate, rồi mới sang bước tiếp.
 
-*Hiện trạng toolkit (kiểm tra 2026-10-24):* có step card cho cả tám agent và các card hạ tầng (new item, refresh hub, export hub, add media, build process map). Tất cả là bản nháp, chưa thử với lớp thật; mỗi card được chỉnh sau lần chạy đầu ở buổi tương ứng. Cách chia vai là phương pháp của chương trình; chưa có nguồn đo hiệu quả của một đội agent trong công việc design [to confirm].
+*Hiện trạng toolkit (kiểm tra 2026-10-24):* có skill cho cả tám agent và các skill hạ tầng (new item, refresh hub, export hub, add media, build process map). Tất cả là bản nháp, chưa thử với lớp thật; mỗi skill được chỉnh sau lần chạy đầu ở buổi tương ứng. Cách chia vai là phương pháp của chương trình; chưa có nguồn đo hiệu quả của một đội agent trong công việc design [to confirm].
 
 ---
 
@@ -52,7 +52,7 @@ Layout này phục vụ làm việc với AI vì:
 
 - Mỗi folder một vai: `context/` đưa vào đầu tiên ở mọi bước, `work/` chứa những gì làm ra, `insights/` chứa những gì học được và quyết định. File Markdown ngắn dễ cung cấp có chọn lọc.
 - `AGENTS.md` là một reusable instruction: tool tự đọc khi mở folder, nên quy tắc không phụ thuộc việc designer nhớ dán lại. Tool đọc tên khác thì copy nội dung sang tên đó.
-- Step card trong `toolkit/skills/` (ở gốc workspace, dùng chung cho mọi project) lưu quy trình thành file thay vì nằm trong trí nhớ.
+- Skill trong `toolkit/skills/` (ở gốc workspace, dùng chung cho mọi project) lưu quy trình thành file thay vì nằm trong trí nhớ.
 - `_raw-private/` tách khỏi `anonymised/`, và `_personal/` nằm ngoài context pack vì ghi chú nghề nghiệp không phải context của project.
 
 **Giới hạn:** `AGENTS.md` là quy tắc, không phải rào chắn kỹ thuật; tool không tuân theo vẫn đọc được `_raw-private/` và `_personal/`. Rào chắn thật là `.gitignore` và việc để file thật sự confidential ngoài folder.

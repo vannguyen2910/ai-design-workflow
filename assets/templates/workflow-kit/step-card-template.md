@@ -1,6 +1,6 @@
-# Step card template
+# Skill template
 
-Một step card mô tả **một bước** làm việc. Viết để một AI tool đọc xong là làm được, và để bạn nhìn vào biết kết quả đúng hay sai.
+Một skill mô tả **một bước** làm việc. Viết để một AI tool đọc xong là làm được, và để bạn nhìn vào biết kết quả đúng hay sai.
 
 ## Cấu trúc
 
