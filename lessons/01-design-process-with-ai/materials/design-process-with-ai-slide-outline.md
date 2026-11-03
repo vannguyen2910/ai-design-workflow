@@ -42,7 +42,7 @@ last_synced: 2026-10-30
   - Mọi lesson sau đều dùng những thứ này, nên cài đặt một lần ngay từ đầu
   - Nêu lập trường của cả series: designer cùng định nghĩa requirement với product và business
   - Lớp ưu tiên designer; nếu có PO, PM hoặc BA thì cùng học một workflow, không cần build prototype từ đầu
-  - Sau phần chào là ice breaker sáu phút. Nói rõ format: hai buổi 90 phút mỗi tuần, 12 buổi trong sáu tuần, mỗi tuần một buổi theory, rồi practice là chuỗi việc ở nhà trên project của chính designer (khoảng bốn giờ mỗi tuần), và một buổi practice trên lớp để làm tiếp phần dang dở rồi chấm; tuần 6 kết bằng test một ngày và buổi wrap-up. Phần dựng project folder là Practice 1, làm ở nhà ngay sau buổi hôm nay
+  - Sau phần chào là ice breaker sáu phút. Format, lịch sáu tuần và cách theo dõi tiến bộ đã nói ở năm slide giới thiệu chương trình ngay trước slide này (`program-intro-slide-outline.md`), không nhắc lại. Chỉ nhắc: phần dựng project folder là Practice 1, làm ở nhà ngay sau buổi hôm nay
 - 🎨 Visual hint: Cover layout, cố định. Panel trái trắng với dòng năm, nhãn stage, title (accent ở dòng 2) và subtitle. Panel phải là ảnh thật với gradient tối, tên và ba dòng credentials ở góc dưới trái.
 
 ---
