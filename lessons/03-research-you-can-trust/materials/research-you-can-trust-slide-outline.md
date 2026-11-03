@@ -11,13 +11,13 @@ last_synced: 2026-10-30
 
 ## Session metadata
 
-| Field | Value |
-|---|---|
-| Program | AI Design Workflow |
-| Track / session | Buổi 3 của series, 90 phút, online, 7 đến 8 designer; sau đó là chuỗi practice ở nhà (khoảng 4 giờ), rồi buổi practice trên lớp |
-| Stage | Discover |
-| Prior session | Buổi 2: Discover the Problem |
-| Next session | Chuỗi practice ở nhà và buổi practice trên lớp, rồi buổi 4: Frame the Problem Worth Solving |
+| Field           | Value                                                                                                                                                                            |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Program         | AI Design Workflow                                                                                                                                                               |
+| Track / session | Buổi 3 của series, 90 phút, online, 7 đến 8 designer; sau đó là chuỗi practice ở nhà (khoảng 4 giờ), rồi buổi practice trên lớp                                                  |
+| Stage           | Discover                                                                                                                                                                         |
+| Prior session   | Buổi 2: Discover the Problem                                                                                                                                                     |
+| Next session    | Chuỗi practice ở nhà và buổi practice trên lớp, rồi buổi 4: Frame the Problem Worth Solving                                                                                      |
 | Running example | project app giao đồ ăn hư cấu của chương trình (24 quote có ID: review R, forum F, phỏng vấn I); designer làm việc trên claim và insight của một project cụ thể ở chuỗi practice |
 
 ---
@@ -48,16 +48,14 @@ last_synced: 2026-10-30
 ### MILESTONE · Ice breaker
 - Num: 5
 - Kicker: Mở đầu
-- Title: Tin rồi,\n*hoá ra sai*
-- Sub: Tên của designer, và một lần designer tin một insight rồi thấy nó sai
+- Title: Ice Breaker
+- Sub: Kể một lần bạn tin một insight trong experience, rồi mới thấy nó sai.
 - Speaker notes:
-
-  > Hãy nghĩ đến một lần designer tin một insight, rồi mới thấy nó sai. Điều gì đã làm designer tin?
-
-  - Năm phút, cả lớp; nói trước hai mươi giây, rồi mỗi người nói tên và một câu
-  - Nguyên nhân: mẫu nhỏ, người nói to, chỉ thấy điều mong thấy
-  > Ai đã phỏng vấn xong, ai còn đang hẹn người?
-  - Ai chưa có câu chuyện thì kể điều lo ngại khi tin vào một insight
+  > Hãy kể một lần bạn tin một insight, rồi mới thấy nó sai. Điều gì đã làm bạn tin?
+  - Năm phút, cả lớp; mỗi người nói tên và một câu, khoảng bốn mươi giây
+  - Các nguyên nhân hay gặp là mẫu nhỏ, người nói to nhất, và chỉ thấy điều mình mong thấy
+  - Ai chưa có câu chuyện thì kể điều bạn lo ngại khi tin vào một insight
+  - Các nguyên nhân được ghi vào cột "Vì sao đã tin" để dùng lại ở phần ôn
 
   > **Giữ bảng này lại. Mình sẽ quay lại nó ở phần ôn.**
 
@@ -70,7 +68,7 @@ last_synced: 2026-10-30
 - Num: 01
 - Kicker: Sáu phần
 - Title: Điều thật sự\n*đáng tin*
-- Sub: Ôn, persona, journey map, opportunity, insight hub, package
+- Sub: Persona, journey map, opportunity truy được về nguồn.
 - Speaker notes:
 
   > Những lý do trên bảng sẽ quay lại ở mỗi phần dưới đây.
@@ -489,7 +487,7 @@ last_synced: 2026-10-30
 - Num: 6
 - Kicker: Hỏi đáp
 - Title: Câu hỏi\n*còn lại*
-- Sub: Bốn câu hỏi còn lại, một trang cheat sheet
+- Sub: Bốn câu hỏi hay gặp, một trang cheat sheet.
 - Ví dụ: Không cần. Slide chuyển tiếp.
 - Speaker notes:
 

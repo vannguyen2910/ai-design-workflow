@@ -73,6 +73,7 @@ last_synced: 2026-10-30
 - Num: 01
 - Kicker: Câu hỏi nhiều designer đặt ra
 - Title: UI/UX sẽ ra sao\n*khi AI ở khắp nơi?*
+- Sub: Số liệu có nguồn và các hướng đi.
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -194,6 +195,7 @@ last_synced: 2026-10-30
 - Num: 02
 - Kicker: Bốn stage, bộ công cụ
 - Title: Method đã biết.\n*AI ở chỗ cần.*
+- Sub: Bốn stage quen thuộc, và chỗ AI giúp được.
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -349,7 +351,7 @@ last_synced: 2026-10-30
 - Num: 03
 - Kicker: Một demo, bốn khái niệm
 - Title: Những từ\n*gặp mỗi ngày*
-- Sub: Một demo, rồi bốn khái niệm gắn vào những gì vừa thấy
+- Sub: Bốn khái niệm, gắn với demo vừa xem.
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -441,6 +443,7 @@ last_synced: 2026-10-30
 - Num: 04
 - Kicker: Từ một chat đến một team
 - Title: Agent và\n*team AI*
+- Sub: Agent là gì, và cách dựng team AI.
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -944,7 +947,7 @@ last_synced: 2026-10-30
 - Num: 240
 - Kicker: Ở nhà
 - Title: Dựng\nproject folder
-- Sub: Folder. Context. Self-documentation. Một instruction.
+- Sub: Dựng project folder, làm ở nhà.
 - Speaker notes:
   - Slide tham khảo của Practice 1 (khoảng bốn giờ, ước lượng chưa đo), không chiếu trên lớp; bảy bước ở slide kế tiếp
   - Ai mà công ty cấm AI tool, hoặc project quá nhạy cảm, dùng project mẫu của khoá cho bước bốn

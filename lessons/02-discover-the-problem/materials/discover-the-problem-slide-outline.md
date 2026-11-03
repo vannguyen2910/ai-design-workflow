@@ -81,7 +81,7 @@ last_synced: 2026-10-30
 - Num: 01
 - Kicker: Năm phần
 - Title: Trước khi\n*thiết kế*
-- Sub: Discover và AI, principles, break the brief, hiểu người dùng, synthesis
+- Sub: Từ brief đến câu hỏi cần trả lời.
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -832,7 +832,7 @@ last_synced: 2026-10-30
 - Num: 5
 - Kicker: Câu hỏi
 - Title: Hỏi\n*và đáp*
-- Sub: Hỏi đáp, rồi chuỗi việc ở nhà
+- Sub: Hỏi điều bạn còn vướng.
 - Ví dụ: Không cần. Mỗi người hỏi về project riêng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
