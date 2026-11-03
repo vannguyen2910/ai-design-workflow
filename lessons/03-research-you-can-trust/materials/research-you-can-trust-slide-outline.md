@@ -291,8 +291,8 @@ last_synced: 2026-11-01
 
 ### STATEMENT · Assumption
 - Kicker: Nguyên tắc
-- Title: Assumption không phải lỗi,\ngiấu assumption mới là lỗi
-- On-slide: Đánh dấu ô chưa có insight, rồi đếm tỷ lệ
+- Title: Chưa có insight,\n*thì là assumption*
+- On-slide: Thông tin chưa có insight làm căn cứ thì ghi assumption, rồi đếm tỷ lệ
 - Ví dụ: có (journey app giao đồ ăn: giai đoạn Thanh toán là assumption)
 - Câu hỏi hay gặp:
   - Tỷ lệ assumption bao nhiêu là cao? Chưa có ngưỡng đo; tỷ lệ cao nghĩa là cần quay lại phỏng vấn, không phải điền cho đẹp.
@@ -300,14 +300,14 @@ last_synced: 2026-11-01
   - Có nên bỏ ô assumption đi không? Không; giữ để team biết chỗ nào cần thêm research.
 - Speaker notes:
 
-  > Một journey map không có ô trống nghe rất đầy đủ. Nhưng một ô trống nói đúng sự thật: chỗ này chưa có insight.
+  > Thông tin nào chưa có insight làm căn cứ thì chưa phải điều ta biết về người dùng. Nó là assumption.
 
   - Journey map do AI soạn trông đầy đủ ngay cả khi các bước là bịa
-  - Assumption là chỗ team còn đoán; đánh dấu nó thì team biết chỗ nào cần thêm research
+  - Assumption là chỗ team còn đoán; ghi rõ thì team biết chỗ nào cần thêm research, giấu đi thì cả team tưởng đó là sự thật
   - Đếm tỷ lệ assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp
   - Chưa có nghiên cứu đo độ chính xác của journey map do AI soạn nên đây là quy trình, không phải số đo
 
-  > **Một ô trống được ghi rõ giá trị hơn một ô đầy được bịa.**
+  > **Chưa có insight thì ghi assumption, không điền cho đẹp.**
 
   > Câu hỏi 30 giây: bạn đánh dấu ô chưa có insight hay điền cho đẹp? Chọn một.
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; chữ lớn, accent ở nửa sau.
