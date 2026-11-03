@@ -2,7 +2,7 @@
 title: "Turn Research into Insights You Can Trust"
 lesson_file: "research-you-can-trust-lesson.md"
 level: ""
-slide_count: 22
+slide_count: 23
 duration: "90 min"
 status: draft
 built_deck: ""
@@ -262,6 +262,30 @@ last_synced: 2026-11-01
 
   > Journey của designer có bao nhiêu ô assumption trên tổng số ô? Gõ một con số.
 - 🎨 Visual hint: SCHEMATIC. Process năm bước ngang; bước 5 active (đáy cảm xúc); dòng dưới mỗi bước là insight ID hoặc "assumption" nét đứt.
+
+---
+
+### IMAGE · Journey map mẫu
+- Kicker: Ví dụ
+- Title: Journey map hoàn chỉnh
+- On-slide: Năm giai đoạn, đường cảm xúc, và mỗi giai đoạn một cột việc cần làm.
+- Ví dụ: có (project demo Travel Buddy: journey map năm giai đoạn, đáy cảm xúc ở Decision; chỉ số chưa xác nhận được ghi "target, not confirmed" hoặc "Not set yet")
+- Câu hỏi hay gặp:
+  - Journey map có cần nhiều hàng như vậy không? Không; Actions, Touchpoints và cảm xúc là phần lõi, các hàng Opportunity, Business goals, KPI là phần nối sang bước sau.
+  - Ô "Not set yet" có làm journey xấu đi không? Không; đó là cách ghi assumption, giống ô chưa có insight.
+- Speaker notes:
+
+  > Đây là một journey map hoàn chỉnh của một app lập kế hoạch du lịch demo. Hãy nhìn đường cảm xúc: nó thấp nhất ở giai đoạn Decision, khi người dùng phải gõ tay danh sách đã chọn vào bảng tính.
+
+  - Journey map có năm giai đoạn, từ Awareness đến giai đoạn cuối; mỗi giai đoạn có một câu cảm xúc ngắn, như "Tired of copying by hand" ở Decision
+  - Đường cảm xúc nối năm giai đoạn; đoạn đỏ đi xuống đáy là chỗ đau chính của người dùng
+  - Mỗi cột có Actions và Touchpoints: người dùng làm gì và dùng công cụ nào ở giai đoạn đó
+  - Các hàng bên dưới nối journey sang bước sau: Opportunity, Business goals, KPI targets và Decisions made
+  - Chỉ số chưa xác nhận được ghi thẳng là "target, not confirmed" hoặc "Not set yet", đúng nguyên tắc ô chưa có insight thì ghi assumption
+  - Hình chụp từ trang demo của template; chữ trong hình giữ tiếng Anh, và giai đoạn cuối bị cắt khỏi khung chụp
+
+  > Đường cảm xúc của journey designer đang vẽ thấp nhất ở giai đoạn nào, và insight nào nằm ở đó?
+- 🎨 Visual hint: REAL. Một ảnh, gần full bleed, không chú thích thêm. Tệp: `../assets/journey-map-example.webp`. Ảnh đang chụp cả thanh trình duyệt và cắt mất giai đoạn cuối; nên chụp lại toàn bộ trang trước khi build deck.
 
 ---
 
