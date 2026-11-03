@@ -2,7 +2,7 @@
 
 **Created:** 2026-10-05 · **Revised 2026-10-05:** single working file; 8 steps (was 7); gate-fail rules; belief check; decision answered at the end.
 **Worked example of the standard** in `../../learning/method.md` Part 1, using the card format in `../../learning/method.md` Part 2. Pattern: A Investigate. Report page: the hub's Evidence page, `../../assets/templates/hub/evidence.html`.
-**Status: draft, untested.** The AI instructions are my design, built from the research principles, and have not been run in a class. Test on one real case before teaching. Uses generic labels ("AI chat tool") per CLAUDE.md.
+**Status: draft, untested.** The AI instructions are my design, built from the research principles, and have not been run in a class. Test on one real project before teaching. Uses generic labels ("AI chat tool") per CLAUDE.md.
 
 ## The working file (one file, one folder)
 ```
@@ -136,7 +136,7 @@ Then **build `analysis.html` yourself** from the provided template: comparison, 
 Competitor analysis shows **what rivals do**, not **why users choose them** or whether it works. Treat findings as hypotheses for Discover interviews, not conclusions.
 
 ## To test before teaching
-1. Run the full flow on one real case; time each step. Step 4 (collecting sources) will probably be the longest.
+1. Run the full flow on one real project; time each step. Step 4 (collecting sources) will probably be the longest.
 2. Measure the step-6 error rate (count wrong cells in the AI draft vs your verified table); if above ~10–15%, tighten the step-5 instruction. *(The threshold is my guess.)*
 3. Check the whole flow works for a non-technical designer using only an AI chat tool (pasting text and attaching files).
 4. Check the hub's Evidence page (`assets/templates/hub/evidence.html`) works when filled by an AI coding tool from the `.md` file.

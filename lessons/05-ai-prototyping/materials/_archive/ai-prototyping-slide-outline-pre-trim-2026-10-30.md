@@ -28,7 +28,7 @@ last_synced: 2026-10-30
 | Stage | Develop |
 | Prior session | Lesson 4 và Practice 4: Explore Ideas |
 | Next session | Practice 5: Build prototype main flow |
-| Running example | Một delivery app hư cấu (màn hình "Chọn thời gian giao" ở activity); designer làm trên một case cụ thể ở Practice 5 |
+| Running example | Một delivery app hư cấu (màn hình "Chọn thời gian giao" ở activity); designer làm trên một project cụ thể ở Practice 5 |
 
 ---
 
@@ -1004,7 +1004,7 @@ last_synced: 2026-10-30
   - Dựng journey prototype
 - Speaker notes:
 
-  > Hôm nay designer đã có bốn layer và mười quy tắc của rules file. Ở Practice 5, designer dùng đúng chúng trên flow của một case cụ thể.
+  > Hôm nay designer đã có bốn layer và mười quy tắc của rules file. Ở Practice 5, designer dùng đúng chúng trên flow của một project cụ thể.
 
   - Bài không giới hạn một buổi: làm phần đầu ở nhà, tiếp tục trên lớp; mỗi bước có một file lưu lại
   - Mang theo: design system trong Figma (token, component kèm trạng thái), hướng đã chọn và flow từ tuần 4, nội dung thật, một AI coding tool đã được công ty cho phép

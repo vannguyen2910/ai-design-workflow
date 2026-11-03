@@ -1,6 +1,6 @@
 # [Tên method]
 
-**Stage:** [Discover | Define | Develop | Deliver] · **Lưu vào:** `[file trong case folder]` · **Thời gian ước tính:** [khoảng thời gian ước chừng]
+**Stage:** [Discover | Define | Develop | Deliver] · **Lưu vào:** `[file trong project folder]` · **Thời gian ước tính:** [khoảng thời gian ước chừng]
 
 **Là gì**
 [Một hoặc hai câu.]

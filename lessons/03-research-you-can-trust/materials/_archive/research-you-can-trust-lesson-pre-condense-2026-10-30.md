@@ -63,8 +63,8 @@ Sau buổi 3, học viên có thể:
 
 ## Materials Needed
 
-- Case Kitchen Crate của chương trình (hư cấu): `assets/starter-files/course-case/quotes.md` (24 quote bằng tiếng Anh, đã ẩn danh và có ID) và `case-card.md`. Bảng đáp án `quotes-answer-key.md` chỉ dành cho giảng viên.
-- Persona mẫu do AI sinh cho case Kitchen Crate (sáu dòng, một số dòng có quote đỡ, một số không) cho activity: `assets/starter-files/course-case/persona-ai-draft.md` `[to create]` (file chưa có; cần soạn cùng đáp án cho giảng viên).
+- Project Kitchen Crate của chương trình (hư cấu): `assets/starter-files/course-case/quotes.md` (24 quote bằng tiếng Anh, đã ẩn danh và có ID) và `case-card.md`. Bảng đáp án `quotes-answer-key.md` chỉ dành cho giảng viên.
+- Persona mẫu do AI sinh cho project Kitchen Crate (sáu dòng, một số dòng có quote đỡ, một số không) cho activity: `assets/starter-files/course-case/persona-ai-draft.md` `[to create]` (file chưa có; cần soạn cùng đáp án cho giảng viên).
 - Hai diagram trong `assets/` của lesson: `insight-chain` và `insight-hub-loop`. Phần ôn dùng thêm hai diagram `quote-check` và `four-steps-with-ai` ở `assets/` của Lesson 2.
 - Cheat sheet một màn hình: bốn câu hỏi còn lại và ba prompt cho persona, journey map, opportunity.
 - Một AI chat tool đã được công ty cho phép.
@@ -142,7 +142,7 @@ Persona, journey map và opportunity là ba cách điền câu claim: persona đ
 
 ## 3. Insight hub
 
-Insight hub là một phần của Knowledge Hub của case (thư mục `insights/`), không phải một công cụ repository riêng.
+Insight hub là một phần của Knowledge Hub của project (thư mục `insights/`), không phải một công cụ repository riêng.
 
 | | |
 |---|---|
@@ -221,9 +221,9 @@ Không tìm thấy đánh giá độc lập về độ chính xác so sánh các
 
 ### 6.1 The data
 
-Case mẫu hư cấu của chương trình: một app meal-kit theo gói đăng ký, nhiều khách mới tạm dừng hoặc huỷ sau hộp đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng case với buổi 2). Bộ quote `quotes.md` có 24 quote từ ba loại nguồn: 10 review (R01 đến R10), 8 bài đăng forum (F01 đến F08) và hai phỏng vấn ngắn (I01-01 đến I02-03). Quote bằng tiếng Anh; claim có thể viết bằng tiếng Việt, nhưng quote dẫn vào phải khớp từng chữ với bản gốc.
+Project mẫu hư cấu của chương trình: một app meal-kit theo gói đăng ký, nhiều khách mới tạm dừng hoặc huỷ sau hộp đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng project với buổi 2). Bộ quote `quotes.md` có 24 quote từ ba loại nguồn: 10 review (R01 đến R10), 8 bài đăng forum (F01 đến F08) và hai phỏng vấn ngắn (I01-01 đến I02-03). Quote bằng tiếng Anh; claim có thể viết bằng tiếng Việt, nhưng quote dẫn vào phải khớp từng chữ với bản gốc.
 
-Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở hộp đầu tiên (mục 2.1), journey từ chọn ngày giao đến tạm dừng (mục 2.2) và opportunity về ngày giao (mục 2.3). Activity dùng thêm một persona mẫu do AI sinh cho cùng case, có sẵn dòng không có quote đỡ để học viên tự phát hiện `[to create]`. Bảng đáp án dành riêng cho giảng viên (`quotes-answer-key.md`).
+Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở hộp đầu tiên (mục 2.1), journey từ chọn ngày giao đến tạm dừng (mục 2.2) và opportunity về ngày giao (mục 2.3). Activity dùng thêm một persona mẫu do AI sinh cho cùng project, có sẵn dòng không có quote đỡ để học viên tự phát hiện `[to create]`. Bảng đáp án dành riêng cho giảng viên (`quotes-answer-key.md`).
 
 ---
 

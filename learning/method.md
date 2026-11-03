@@ -50,7 +50,7 @@ Each activity has one folder:
 - **Give each AI step only the sections it needs.**
 - **Markdown inside** (plain text is what AI reads and writes reliably); **HTML outside** for stakeholders.
 - Version history in the cloud drive is the safety net. *(⚠️ my recommendation, untested.)*
-- **Each activity's HTML page is one page of the Knowledge Hub** (`hub/` in the case folder), not a standalone report. Items that other activities refer to (opportunities, hypotheses, decisions, principle checks, tests, metrics) get short IDs so the hub can link them; see `quality-and-measurement.md` Part 1.
+- **Each activity's HTML page is one page of the Knowledge Hub** (`hub/` in the project folder), not a standalone report. Items that other activities refer to (opportunities, hypotheses, decisions, principle checks, tests, metrics) get short IDs so the hub can link them; see `quality-and-measurement.md` Part 1.
 
 ### 4. Two patterns (starting skeletons)
 Most activities fit one of two spines. Pick one, then adapt.
@@ -111,7 +111,7 @@ Use generic labels ("AI chat tool", "AI coding tool") per CLAUDE.md.
 3. Define the working file's sections: one per step that produces content.
 4. Write one card per step using the format below.
 5. Build the page template (HTML) for this activity's page in the Knowledge Hub.
-6. Run it once on a real case, time each step, and fill in "To test".
+6. Run it once on a real project, time each step, and fill in "To test".
 
 ### Page header for each activity's card file
 - Activity name, pattern, and the decision it supports
@@ -144,7 +144,7 @@ Use generic labels ("AI chat tool", "AI coding tool") per CLAUDE.md.
 - [ ] The last gate includes an alignment question (outcome, opportunity, hypothesis, principles)
 - [ ] "Limits to say out loud" is written
 - [ ] Failure sign written for every step
-- [ ] Tested on one real case; times and error rate recorded
+- [ ] Tested on one real project; times and error rate recorded
 
 ### Report template (the shareable output)
 Start from the hub's Evidence page (`assets/templates/hub/evidence.html`) and keep its skeleton: decision banner → our answer → what was compared/explored and why → main evidence table → beliefs or hypotheses tested → insights (each with a counter-argument and evidence link) → what this cannot tell us → appendix of sources and method. Rename sections to fit the activity.
@@ -159,7 +159,7 @@ Start from the hub's Evidence page (`assets/templates/hub/evidence.html`) and ke
 
 ### 1. Evidence by stage
 
-> **See also:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md) pulls together what AI is good at, where it falls short, and the case for not automating a bad workflow, with a pre-automation checklist.
+> **See also:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md) pulls together what AI is good at, where it falls short, and the project for not automating a bad workflow, with a pre-automation checklist.
 
 *Regrouped 2026-10-15 from six working stages (Frame, Explore, Shape, Prototype, Validate, Hand off) to the four Double Diamond stages the course uses. The text under each source is unchanged.*
 

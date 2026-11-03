@@ -31,7 +31,7 @@ last_synced: 2026-10-26
 | Stage | Discover |
 | Prior session | Buổi 1: Your Design Process, with AI |
 | Next session | Buổi practice của buổi 2, rồi buổi 3: Turn Research into Insights You Can Trust |
-| Running example | App meal-kit theo gói đăng ký (Kitchen Crate, case mẫu hư cấu); học viên làm activity trên case của chính mình |
+| Running example | App meal-kit theo gói đăng ký (Kitchen Crate, project mẫu hư cấu); học viên làm activity trên project của chính mình |
 
 ---
 
@@ -42,7 +42,7 @@ last_synced: 2026-10-26
 - Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, activity = 5, hỏi đáp = 6. Timing các phase: ice breaker 6, T1 8, T2 10, activity 5, T3 28, T4 14, package 9, hỏi đáp 6; tổng nội dung 86 trên 90 phút, buffer 4 phút. Slide 27 và 28 chiếu trong phase hỏi đáp.
 - Theory khoảng 60 phút vì buổi practice 90 phút nằm ngay sau. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
 - Thứ tự cắt khi quá giờ: bỏ slide 19 (competitor analysis, làm sau buổi practice), rồi rút demo research questions (slide 18) còn một ví dụ, rồi hỏi đáp còn 4 phút, rồi rút Theory 4 còn hai slide (20 và 23).
-- Cái bẫy của buổi nằm ở slide 17: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
+- Cái bẫy của buổi nằm ở slide 17: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của project.
 
 ---
 
@@ -79,7 +79,7 @@ last_synced: 2026-10-26
   - Sáu phút, cả lớp; mình nói trước hai mươi giây để làm mẫu, rồi mỗi người nói tên và một câu
   - Ghi nhanh vào hai cột "vấn đề" và "giải pháp" cho cả lớp thấy; đừng bình luận lúc này
   - **Giữ bảng này để quay lại ở slide Discover**
-  - Nhắc nhanh bài tập buổi 1: case folder và product-and-users đã có chưa, ai chưa xong thì dùng case mẫu
+  - Nhắc nhanh bài tập buổi 1: project folder và product-and-users đã có chưa, ai chưa xong thì dùng project mẫu
 
   > Brief gần nhất bạn nhận nói "cần giải quyết điều gì", hay nói "cần làm cái gì"?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới hai cột trống "Vấn đề" và "Giải pháp" để ghi.
@@ -110,7 +110,7 @@ last_synced: 2026-10-26
   - Kim cương 1: Discover mở rộng, Define thu hẹp
   - Kim cương 2: Develop mở rộng, Deliver thu hẹp
   - Discover: gom điều đã biết, điều user nói và làm, điều thị trường làm
-- Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
+- Ví dụ: có (Kitchen Crate, project mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Discover có phải chỉ là nghiên cứu user không? Không. Nó gồm cả đọc tài liệu product, câu hỏi cho business, xem trải nghiệm hiện tại và xem đối thủ.
 - Speaker notes:
@@ -140,7 +140,7 @@ last_synced: 2026-10-26
 
   > Giả sử mình nhờ AI liệt kê điều team có thể đang tin về app Kitchen Crate. Một phút sau có mười hai dòng, đọc rất hợp lý.
 
-  - Hai trong mười hai dòng không có trong bất kỳ tài liệu nào của case
+  - Hai trong mười hai dòng không có trong bất kỳ tài liệu nào của project
   - AI lấp chỗ trống bằng điều nghe hợp lý, không báo là nó đang đoán
   - Việc AI làm nhanh là soạn nháp rộng; việc chọn dòng nào đáng đưa vào scope vẫn là của bạn
   - Hai nghiên cứu heuristic evaluation (nguồn 3, 4) cho số khác nhau, nhưng đều kết luận AI là phần bổ sung và cần người kiểm tra
@@ -184,7 +184,7 @@ last_synced: 2026-10-26
   > Một designer nhờ AI xem lại màn hình thanh toán. AI trả về mười finding, và chín cái là "làm cho rõ ràng hơn". Chuẩn nào mà rõ ràng hơn?
 
   - Nếu không có chuẩn viết sẵn, AI đối chiếu với điều nghe hợp lý nói chung
-  - Với chuẩn của case, AI đối chiếu đúng tiêu chí mình cần: nguyên tắc nào, ràng buộc nào, mức nghiêm trọng nào
+  - Với chuẩn của project, AI đối chiếu đúng tiêu chí mình cần: nguyên tắc nào, ràng buộc nào, mức nghiêm trọng nào
   - UX principles: mười heuristic của Nielsen làm nền (nguồn 1), thêm nguyên tắc riêng của tổ chức nếu có
   - Business principles: ràng buộc và ưu tiên của business, như mission, brand value, compliance, KPI, guardrail
   - Severity: thang 0 đến 4 của Nielsen (nguồn 2); bạn chấm, không lấy của AI
@@ -241,7 +241,7 @@ last_synced: 2026-10-26
 - Kicker: Activity
 - Title: One line\n*each*
 - Sub: Hai dòng đầu của bộ nguyên tắc, chưa mở AI
-- Ví dụ: Không cần. Học viên viết trên case của chính mình.
+- Ví dụ: Không cần. Học viên viết trên project của chính mình.
 - Câu hỏi hay gặp:
   - Chưa biết business principle thì viết gì? Ghi "assumed" và người cần xác nhận.
 - Speaker notes:
@@ -249,7 +249,7 @@ last_synced: 2026-10-26
   - Hai phút cho UX principle, hai phút cho business principle, một phút đọc cho cả lớp hoặc dán vào chat
   - Đây chỉ là hai dòng; phần còn lại làm ở buổi practice
 
-  > Chọn một nguyên tắc quan trọng nhất với case của bạn, và viết một câu: vì sao.
+  > Chọn một nguyên tắc quan trọng nhất với project của bạn, và viết một câu: vì sao.
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới hai dòng trống "UX principle" và "Business principle".
 
 ---
@@ -283,7 +283,7 @@ last_synced: 2026-10-26
   - Challenge assumptions → bản đồ giả định
   - Research questions → danh sách research question
   - Competitor analysis → bản phân tích đối thủ
-- Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
+- Ví dụ: có (Kitchen Crate, project mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm sau buổi practice, các hoạt động còn lại nối nhau nên làm theo thứ tự.
   - Vì sao research questions đứng sau UX observation và assumptions? Câu hỏi nghiên cứu xuất phát từ điều mình chưa biết; UX observation và assumptions chỉ ra điều đó.
@@ -314,7 +314,7 @@ last_synced: 2026-10-26
   - 04 · Ràng buộc: ngân sách, kỹ thuật, pháp lý
   - 05 · Thời hạn và người quyết định
   - Kèm: quyết định nào câu trả lời sẽ phục vụ
-- Ví dụ: có (Kitchen Crate, case mẫu của chương trình)
+- Ví dụ: có (Kitchen Crate, project mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Câu hỏi vision và mission khác năm câu này thế nào? Vision và mission là câu hỏi cấp cao về lý do sản phẩm tồn tại; năm câu này là câu gửi business để chốt scope.
 - Speaker notes:
@@ -352,7 +352,7 @@ last_synced: 2026-10-26
   - Level 3: dựng scope từ PRD, thông tin công khai và dữ liệu nhìn thấy được, ghi mọi outcome và metric là assumed
   - Nói thẳng trong lớp: access khác nhau giữa mọi người, và quy trình được thiết kế để giảm nhẹ chứ không che đi
 
-  > Bạn đang ở level nào với case của mình?
+  > Bạn đang ở level nào với project của mình?
 - 🎨 Visual hint: SCHEMATIC. Ba cột bậc thang tăng dần, mỗi cột một chip agreement status (agreed, pending, not available).
 
 ---
@@ -422,7 +422,7 @@ last_synced: 2026-10-26
 
   > AI liệt kê ba điều team Kitchen Crate có thể đang tin: giá là lý do chính, khách không hiểu cách đổi ngày giao, bước thanh toán làm khách ngại cam kết.
 
-  - Chỉ điều đầu có trong case mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào: đây là cái bẫy của buổi, điều nghe hợp lý chưa phải điều có evidence
+  - Chỉ điều đầu có trong project mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào: đây là cái bẫy của buổi, điều nghe hợp lý chưa phải điều có evidence
   - Mục nào không có trong tài liệu thì ghi "chưa có nguồn", không đưa vào danh sách như sự thật
   - Bước pull insight tìm xem điều nào đã có evidence trong research cũ của team, rồi xếp theo mức độ quan trọng so với evidence
   - Method trước: bốn loại giả định (User, Problem, Solution, Business), công thức "chúng tôi tin rằng nhóm người dùng nào sẽ làm gì, vì sao… biết mình đúng khi…", ma trận Importance × Evidence (nguồn 8)
@@ -431,7 +431,7 @@ last_synced: 2026-10-26
   - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở buổi 3 sau phỏng vấn peer; hôm nay chỉ ghi finding của ux-audit làm bằng chứng
   - Kết quả vào bản đồ giả định
 
-  > Điều đang tin nào của case bạn nghe rất hợp lý nhưng bạn chưa từng thấy bằng chứng?
+  > Điều đang tin nào của project bạn nghe rất hợp lý nhưng bạn chưa từng thấy bằng chứng?
 - 🎨 Visual hint: SCHEMATIC. Danh sách ba assumption; mỗi dòng có chip "có nguồn" (sage) hoặc "chưa có nguồn" (sienna); bên phải một khối nhỏ "existing research" nối vào danh sách bằng mũi tên.
 
 ---
@@ -457,7 +457,7 @@ last_synced: 2026-10-26
   - **AI soạn câu hỏi; bạn cắt câu có hoặc không, câu dẫn dắt hoặc hỏi sở thích, và kiểm xem còn thiếu câu nào để quyết định được**
   - Kết quả vào danh sách research question, là đầu vào của research plan và phỏng vấn
 
-  > Giả định hàng đầu của case bạn, nếu viết thành một câu hỏi mở, sẽ là câu gì?
+  > Giả định hàng đầu của project bạn, nếu viết thành một câu hỏi mở, sẽ là câu gì?
 - 🎨 Visual hint: SCHEMATIC. Ba bước ngang theo layout Process; bên dưới một câu "xấu" gạch ngang màu muted và một câu "tốt hơn" màu sage.
 
 ---
@@ -636,10 +636,10 @@ last_synced: 2026-10-26
   - Agent đã package
 - Ví dụ: Không cần. Slide tổng hợp file của buổi.
 - Câu hỏi hay gặp:
-  - Hub nằm ở đâu? Trong case folder của học viên, private mặc định; xuất bản lên GitHub là tuỳ chọn.
+  - Hub nằm ở đâu? Trong project folder của học viên, private mặc định; xuất bản lên GitHub là tuỳ chọn.
 - Speaker notes:
   - Đây là các file học viên mang ra khỏi buổi 2 và buổi practice
-  - Hub private mặc định, nằm trong case folder; xuất bản là tuỳ chọn
+  - Hub private mặc định, nằm trong project folder; xuất bản là tuỳ chọn
   - Buổi 3 và 4 dùng các file này làm đầu vào cho evidence pack và opportunity
   - Mỗi file có nguồn hoặc nhãn "chưa có nguồn"
 
@@ -653,7 +653,7 @@ last_synced: 2026-10-26
 - Kicker: Questions
 - Title: Questions\n*and answers*
 - Sub: Hỏi đáp, rồi buổi practice và bài tập tiếp theo
-- Ví dụ: Không cần. Học viên hỏi về case của mình.
+- Ví dụ: Không cần. Học viên hỏi về project của mình.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Sáu phút; hai slide tiếp theo chiếu trong phase này
@@ -670,19 +670,19 @@ last_synced: 2026-10-26
 - Title: Practice and homework
 - On-slide:
   - Buổi practice 90 phút ngay sau buổi này
-  - Làm: hoàn thiện bộ nguyên tắc, chạy Break the brief theo thứ tự trên case của bạn
+  - Làm: hoàn thiện bộ nguyên tắc, chạy Break the brief theo thứ tự trên project của bạn
   - Cuối buổi practice: ba dòng learning log
   - Về nhà: lên lịch 2 đến 3 buổi phỏng vấn ngắn
 - Ví dụ: Không cần. Slide giao việc.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Buổi practice là nơi làm scope và bốn hoạt động theo thứ tự; mang theo case folder và brief hoặc PRD đã ẩn danh
+  - Buổi practice là nơi làm scope và bốn hoạt động theo thứ tự; mang theo project folder và brief hoặc PRD đã ẩn danh
   - Bài tập về nhà đủ nhỏ để không chồng lên buổi practice: lên lịch phỏng vấn để có quote cho buổi 3
   - Buổi practice kết thúc bằng ba phút ghi learning log và trả lời một câu reflection; log là file riêng tư và được đọc lại ở buổi cuối
-  - Học viên có case nhạy cảm dùng case mẫu của chương trình
+  - Học viên có project nhạy cảm dùng project mẫu của chương trình
   - Nội dung chi tiết của buổi practice sẽ gửi riêng
 
-  > Bạn sẽ mang case nào đến buổi practice?
+  > Bạn sẽ mang project nào đến buổi practice?
 - 🎨 Visual hint: SCHEMATIC. Hai thẻ practice cạnh nhau: "Practice" và "Homework", viền ink, mũi tên purple đầu mỗi dòng.
 
 ---

@@ -33,7 +33,7 @@ last_synced: 2026-10-27
 | Stage | Discover |
 | Prior session | Buổi 2: Discover the Problem |
 | Next session | Buổi practice của buổi 3, rồi buổi 4: Frame the Problem Worth Solving |
-| Running example | Case Kitchen Crate của chương trình (app meal-kit hư cấu, 24 quote có ID: review R, forum F, phỏng vấn I); học viên làm việc trên quote của chính mình ở buổi practice |
+| Running example | Project Kitchen Crate của chương trình (app meal-kit hư cấu, 24 quote có ID: review R, forum F, phỏng vấn I); học viên làm việc trên quote của chính mình ở buổi practice |
 
 ---
 
@@ -118,7 +118,7 @@ last_synced: 2026-10-27
   - 01 · Ẩn danh trên máy trước khi đưa cho AI
   - 02 · Mỗi quote có ID, ví dụ I01-03
   - 03 · AI được phép nói unknown
-- Ví dụ: có (case Kitchen Crate: phỏng vấn 1 không nói gì về giá, I01-01 đến I01-03)
+- Ví dụ: có (project Kitchen Crate: phỏng vấn 1 không nói gì về giá, I01-01 đến I01-03)
 - Câu hỏi hay gặp:
   - Ẩn danh có thể nhờ AI làm không? Không; dùng find and replace trên máy, vì nhờ AI nghĩa là đã đưa dữ liệu gốc cho nó.
   - Quote ID đặt thế nào? Theo nguồn và số thứ tự: R01 cho review, F01 cho bài đăng forum, I01-03 cho quote thứ 3 của phỏng vấn 01.
@@ -268,7 +268,7 @@ last_synced: 2026-10-27
   - 03 · Sample mix: ai có mặt, ai vắng mặt
   - 04 · Giải pháp: nhảy sang tính năng
   - 05 · Cảm xúc: quote mạnh che việc nó hiếm
-- Ví dụ: có (case Kitchen Crate: điều team tin là giá, so với 24 quote; R06, F07, I02-03, R01)
+- Ví dụ: có (project Kitchen Crate: điều team tin là giá, so với 24 quote; R06, F07, I02-03, R01)
 - Câu hỏi hay gặp:
   - Năm điều này lấy từ đâu? Từ cách mình soi insight khi review; chưa phải kết quả nghiên cứu.
   - Có cần soi cả năm điều mỗi lần? Không; chọn một hai điều thấy rủi ro nhất với claim đang có.
@@ -327,7 +327,7 @@ last_synced: 2026-10-27
   - Why: cả team nói về cùng một người
   - When: sau synthesis, trước journey map
   - AI giúp: gom theme thành tối đa 3 nhóm hành vi
-- Ví dụ: có (case Kitchen Crate: khách mới ở hộp đầu tiên, từ I01-01, I02-01, F01, R01)
+- Ví dụ: có (project Kitchen Crate: khách mới ở hộp đầu tiên, từ I01-01, I02-01, F01, R01)
 - Câu hỏi hay gặp:
   - Persona khác nhóm nhân khẩu học thế nào? Persona nói về hành vi và kỳ vọng trong một tình huống, không phải tuổi hay nghề.
   - Dữ liệu ít thì sao? Khi mới có vài phỏng vấn, gọi nó là giả định thay vì persona; đây là đề xuất, chưa có nguồn đo.
@@ -388,7 +388,7 @@ last_synced: 2026-10-27
   - Why: thấy chỗ đau xảy ra ở bước nào
   - When: sau persona, khi vấn đề trải dài qua nhiều bước
   - AI giúp: đề xuất bước còn thiếu, điền ô từ quote
-- Ví dụ: có (case Kitchen Crate: bước bỏ qua một tuần, I01-02, R04, F04)
+- Ví dụ: có (project Kitchen Crate: bước bỏ qua một tuần, I01-02, R04, F04)
 - Câu hỏi hay gặp:
   - Có số đo độ chính xác của journey map AI soạn không? Không tìm thấy; nên bài dạy bằng quy trình kiểm tra.
   - Cần cảm xúc ở từng bước không? Có thì ghi, nhưng mỗi ô phải có quote; ô không có quote ghi assumption.
@@ -419,7 +419,7 @@ last_synced: 2026-10-27
   - Nhận hộp đầu: R01, F01
   - Nấu bữa đầu: R05, I01-03
   - Tạm dừng một tuần: R04, F04 (đáy cảm xúc)
-- Ví dụ: có (case Kitchen Crate: năm giai đoạn từ chọn ngày giao đến tạm dừng)
+- Ví dụ: có (project Kitchen Crate: năm giai đoạn từ chọn ngày giao đến tạm dừng)
 - Câu hỏi hay gặp:
   - Một giai đoạn assumption có sao không? Không sao nếu được đánh dấu; vấn đề là giấu nó đi.
   - Đáy cảm xúc xác định thế nào? Từ quote có hậu quả rõ nhất, ở đây là bị tính tiền một hộp không muốn.
@@ -428,7 +428,7 @@ last_synced: 2026-10-27
 
   > Năm giai đoạn: chọn ngày giao, thanh toán, nhận hộp đầu, nấu bữa đầu, tạm dừng một tuần. Một giai đoạn không có quote nào.
 
-  - Thanh toán không có quote của case; team nghi bước này làm khách ngại cam kết, nhưng đó vẫn là assumption
+  - Thanh toán không có quote của project; team nghi bước này làm khách ngại cam kết, nhưng đó vẫn là assumption
   - Chọn ngày giao có I01-01 chạm vào ngày đầu tiên và I02-01 tưởng đổi được sau
   - Nhận hộp đầu có R01 hộp đến lúc đi nghỉ và F01 hộp đến lúc không ai ở nhà
   - Nấu bữa đầu có R05 nấu lâu hơn ghi và I01-03 cảm thấy mình làm sai
@@ -475,7 +475,7 @@ last_synced: 2026-10-27
   - Why: tách vấn đề khỏi giải pháp trước khi nghĩ ý tưởng
   - When: sau journey map, trước hypothesis ở buổi sau
   - AI giúp: viết theo mẫu, cấm nhắc tính năng
-- Ví dụ: có (case Kitchen Crate: khách cần biết ngày giao là cuối cùng trước khi cam kết; R01, F02, I02-01)
+- Ví dụ: có (project Kitchen Crate: khách cần biết ngày giao là cuối cùng trước khi cam kết; R01, F02, I02-01)
 - Câu hỏi hay gặp:
   - Opportunity khác ý tưởng ở đâu? Opportunity là nhu cầu của người dùng, ý tưởng là cách giải; bạn cần cái đầu trước.
   - Mẫu viết thế nào? Người dùng gặp khó khi tình huống vì lý do, không nhắc tính năng.
@@ -505,7 +505,7 @@ last_synced: 2026-10-27
   - Giải pháp: thêm popup nhắc ngày giao
   - Nhu cầu: khách cần biết ngày giao là cuối cùng trước khi cam kết
   - Xếp theo severity, context, reach, không theo số lần nhắc
-- Ví dụ: có (case Kitchen Crate: R04 bị tính tiền hộp không muốn so với R05 nấu lâu hơn ghi)
+- Ví dụ: có (project Kitchen Crate: R04 bị tính tiền hộp không muốn so với R05 nấu lâu hơn ghi)
 - Câu hỏi hay gặp:
   - Một người nói thì có đáng không? Nếu khiến họ mất tiền hoặc bỏ dở thì có thể quan trọng hơn khó chịu nhỏ nhiều người nhắc.
   - Severity, context, reach là gì? Hậu quả, hoàn cảnh xảy ra, và bao nhiêu người thuộc nhóm nào.
@@ -522,7 +522,7 @@ last_synced: 2026-10-27
 
   > **Opportunity có động từ làm ra thứ gì thì nó đã là giải pháp.**
 
-  > Câu hỏi 30 giây: opportunity đang viết trong case của bạn là nhu cầu hay giải pháp? Gõ một.
+  > Câu hỏi 30 giây: opportunity đang viết trong project của bạn là nhu cầu hay giải pháp? Gõ một.
 - 🎨 Visual hint: SCHEMATIC. Compare hai cột: giải pháp và nhu cầu; hàng dưới là ba tiêu chí xếp thứ tự.
 
 ---
@@ -538,7 +538,7 @@ last_synced: 2026-10-27
   > Quyết định đang chờ: có thiết kế lại bước đổi ngày giao hay không. Bạn có 24 quote và bốn phút để viết một claim.
 
   - Mười bốn phút: bốn phút viết một mình, sáu phút đổi bài và phản biện, bốn phút chia sẻ
-  - Bộ quote là quotes.md của case Kitchen Crate: 24 quote hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
+  - Bộ quote là quotes.md của project Kitchen Crate: 24 quote hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
   - Bốn phút đầu không dùng AI: đây là phần bạn tự viết, đúng phép thử đóng AI lại
   - Quote nào dẫn vào claim phải khớp từng chữ với bản gốc, kể cả khi bạn viết claim bằng tiếng Việt
   - Chia lớp thành các cặp; mình đi coaching từng cặp
@@ -589,14 +589,14 @@ last_synced: 2026-10-27
   - AI giúp: tìm entry liên quan, gợi ý tag
 - Ví dụ: bản nháp (sáu tháng sau một designer hỏi lại vì sao khách tạm dừng vẫn bị tính tiền, và hub đã có entry INS-014 kèm quote ID)
 - Câu hỏi hay gặp:
-  - Insight hub là một công cụ riêng à? Không; là một phần của Knowledge Hub của case, thư mục insights.
+  - Insight hub là một công cụ riêng à? Không; là một phần của Knowledge Hub của project, thư mục insights.
   - Mỗi entry cần những gì? ID, quote ID dẫn về, ngày, độ mạnh evidence, tag, người phụ trách.
   - Ai chăm hub? Với người làm một mình thì chính bạn; không ai chăm thì hub cũ nhanh.
 - Speaker notes:
 
   > Sáu tháng sau, một designer khác trong team hỏi lại: vì sao khách tạm dừng rồi vẫn bị tính tiền? Nếu hub đã có entry INS-014 với quote ID và ngày, câu trả lời mất hai phút thay vì hai tuần phỏng vấn.
 
-  - Insight hub là thư mục insights trong Knowledge Hub của case, không phải công cụ riêng
+  - Insight hub là thư mục insights trong Knowledge Hub của project, không phải công cụ riêng
   - Atomic research bắt đầu từ việc một team lặp lại nghiên cứu vì không tìm được câu trả lời cũ
   - Mỗi entry có ID, quote ID dẫn về, ngày, độ mạnh evidence, tag và người phụ trách
   - Tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc

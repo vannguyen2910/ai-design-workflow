@@ -12,7 +12,7 @@ A small design system, a rules file and an empty page, so you can build your fir
 | `index.html` | An empty page to build on |
 
 ## Steps
-1. Copy this folder to `03-develop/prototype/` in your case folder.
+1. Copy this folder to `03-develop/prototype/` in your project folder.
 2. Open `design-system/components.html` in a browser and look at what exists.
 3. Give the AI coding tool `project-rules.md`, your flow and content notes, and one screen to build. Check the files it changed.
 4. Save a working copy after each screen you are happy with.

@@ -1,11 +1,11 @@
 # Starter files
 
-Every lesson has a starting point, so nobody is blocked if homework was skipped. Copy what you need into your case folder.
+Every lesson has a starting point, so nobody is blocked if homework was skipped. Copy what you need into your project folder.
 
 | Lesson # | Lesson | Starter file | Where it is |
 |---|---|---|---|
-| 1 | Your design process, with AI | Case folder template, empty hub | `case-folder-template/` and `../templates/hub/` |
-| 2 | Discover the problem | `scope.md`; the stand-in PO case pack if you have no PO access | `case-folder-template/learnings/discover-scope.md`, `course-case/po-case-pack.md` |
+| 1 | Your design process, with AI | Project folder template, empty hub | `case-folder-template/` and `../templates/hub/` |
+| 2 | Discover the problem | `scope.md`; the stand-in PO project pack if you have no PO access | `case-folder-template/learnings/discover-scope.md`, `course-case/po-case-pack.md` |
 | 3 | Research you can trust | A prepared set of 24 quotes, plus the working file | `course-case/quotes.md`, `case-folder-template/learnings/discover-user-voice-synthesis.md` |
 | 3 (demo) | Competitor analysis | Three fictional competitor pages | `course-case/competitors/` |
 | 4 | Frame the problem | Problem brief | `case-folder-template/learnings/define-problem-brief.md` |
@@ -17,8 +17,8 @@ Every lesson has a starting point, so nobody is blocked if homework was skipped.
 | 10 | Capstone | None | |
 
 ## Two kinds of file
-- **Templates** (`case-folder-template/`): empty, for your own case. They hold prompts, not answers.
-- **Course case** (`course-case/`, `checkpoint-prototype/`): a fictional meal-kit app. Use it when your company bans AI tools, your case is too sensitive for class, or you missed a week and need to catch up. Everything in it is invented.
+- **Templates** (`case-folder-template/`): empty, for your own project. They hold prompts, not answers.
+- **Course project** (`course-case/`, `checkpoint-prototype/`): a fictional meal-kit app. Use it when your company bans AI tools, your project is too sensitive for class, or you missed a week and need to catch up. Everything in it is invented.
 
 ## Rules for every file
 1. Anonymise anything real before it goes into an AI tool or into class.

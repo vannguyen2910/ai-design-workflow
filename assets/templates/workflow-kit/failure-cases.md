@@ -1,6 +1,6 @@
 # Failure cases: năm tình huống hỏng thật
 
-Mỗi case ngắn, dùng để thảo luận trong nhóm. Đọc tình huống, đoán nguyên nhân trước khi xem cách sửa.
+Mỗi project ngắn, dùng để thảo luận trong nhóm. Đọc tình huống, đoán nguyên nhân trước khi xem cách sửa.
 
 ## 1. Báo cáo luôn khác, dù nội dung không đổi
 

@@ -14,7 +14,7 @@ Lịch, số buổi và vị trí Check point: theo [`plan.md`](../plan.md) (Not
 
 ## 1. Chương trình là gì
 
-Chương trình 12 buổi trong 6 tuần (9 buổi nội dung, 3 Check point), mỗi buổi 90 phút, online, lớp 7 đến 8 người. Học viên chạy một workflow thiết kế có AI lặp lại được trên case của chính mình, đi theo Double Diamond, và gom đầu ra vào một Knowledge Hub.
+Chương trình 12 buổi trong 6 tuần (9 buổi nội dung, 3 Check point), mỗi buổi 90 phút, online, lớp 7 đến 8 người. Học viên chạy một workflow thiết kế có AI lặp lại được trên project của chính mình, đi theo Double Diamond, và gom đầu ra vào một Knowledge Hub.
 
 Không phải: khoá mẹo prompt, khoá theo một công cụ, khoá thiết kế sản phẩm AI.
 
@@ -25,7 +25,7 @@ Không phải: khoá mẹo prompt, khoá theo một công cụ, khoá thiết k�
 | 1 | Dùng AI rời rạc | Dùng cho từng việc nhỏ, không có quy trình nối business question đến handoff |
 | 2 | Output không kiểm chứng được | Kết quả trông đã xong nhưng không truy ngược được về evidence, quote gốc, decision |
 | 3 | Vai trò và hướng đi mờ | Ranh giới design, product, engineering thay đổi; chưa rõ nên củng cố phần nào |
-| 4 | Thiếu sản phẩm chứng minh | Không có case, hub hay portfolio cho thấy cách làm việc cùng AI |
+| 4 | Thiếu sản phẩm chứng minh | Không có project, hub hay portfolio cho thấy cách làm việc cùng AI |
 
 ## 3. Vì sao quan trọng vào lúc này
 
@@ -41,20 +41,20 @@ Không dùng: các con số mà `research.md` Part 5 mục 10 xếp vào danh s�
 ## 4. Learning objective cấp chương trình
 
 Sau 12 buổi, học viên có thể:
-1. Chạy workflow thiết kế có AI từ business question đến handoff trên case của mình và giải thích vì sao mỗi bước nằm ở đó.
+1. Chạy workflow thiết kế có AI từ business question đến handoff trên project của mình và giải thích vì sao mỗi bước nằm ở đó.
 2. Kiểm tra output của AI, truy insight về quote gốc, decision về evidence, ghi rõ điều đã xác nhận và điều giả định.
 3. Dùng AI an toàn theo ba loại dữ liệu và data rules của riêng mình.
 4. Làm việc như partner của product và business, bắt đầu từ business question.
 5. Dựng prototype bằng AI coding tool, test với người dùng thật, sửa theo finding, không tự viết code.
-6. Trình bày case cùng evidence, decision, trade-off, và đánh giá phần workflow nên giữ, chỉnh hay bỏ.
+6. Trình bày project cùng evidence, decision, trade-off, và đánh giá phần workflow nên giữ, chỉnh hay bỏ.
 
 Objective chi tiết từng buổi: [`lesson-details.md`](../lesson-details.md). Khi sửa ở đây, kiểm tra lại các objective đó.
 
 ## 5. Người học
 
 - **Đối tượng:** UI/UX và product designer mức mid và senior, có ít nhất 2 đến 3 năm kinh nghiệm [to confirm con số], không cần biết code.
-- **Điều kiện đầu vào:** có một case thật của chính mình để làm xuyên suốt 6 tuần. Case của khoá (Kitchen Crate, hư cấu) là phương án dự phòng. Tài liệu bảo mật được ẩn danh trước.
-- **Không phù hợp:** chưa có case; muốn học thiết kế sản phẩm AI hoặc mẹo prompt cho một công cụ.
+- **Điều kiện đầu vào:** có một project thật của chính mình để làm xuyên suốt 6 tuần. Project của khoá (Kitchen Crate, hư cấu) là phương án dự phòng. Tài liệu bảo mật được ẩn danh trước.
+- **Không phù hợp:** chưa có project; muốn học thiết kế sản phẩm AI hoặc mẹo prompt cho một công cụ.
 - **Chưa quyết định:** có mở cho junior, PO, PM, BA hay không (lesson buổi 1 vẫn có ghi chú cho lớp có PO, PM, BA).
 
 ## 6. Định vị và giọng
@@ -67,9 +67,9 @@ Objective chi tiết từng buổi: [`lesson-details.md`](../lesson-details.md).
 ## 7. Cách học và đầu ra
 
 - Buổi nội dung: ice breaker, theory, một activity ngắn, hỏi đáp. Bài tập về nhà một bài, khoảng 45 phút.
-- Check point (buổi 5, 9, 12): làm trên case, coaching nhóm nhỏ, review chéo, không có nội dung mới.
+- Check point (buổi 5, 9, 12): làm trên project, coaching nhóm nhỏ, review chéo, không có nội dung mới.
 - Theo dõi: KNOW, DO, SHOW.
-- Đầu ra cuối: case folder đầy đủ, Knowledge Hub (mặc định riêng tư), một sản phẩm cho portfolio.
+- Đầu ra cuối: project folder đầy đủ, Knowledge Hub (mặc định riêng tư), một sản phẩm cho portfolio.
 
 ## 8. Chưa có, cần Winnie xác nhận
 

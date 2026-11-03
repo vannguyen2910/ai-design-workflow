@@ -1,14 +1,14 @@
 # Overview · Knowledge Hub
 
-Case ở một cái nhìn: mỗi gate đang ở đâu, và mỗi decision lần ngược về brief như thế nào.
+Project ở một cái nhìn: mỗi gate đang ở đâu, và mỗi decision lần ngược về brief như thế nào.
 
-> **Cách điền:** bạn chỉ sửa tên case, agreement status và phần narrative ở các trang tuần. Bảng Gates, bảng alignment và Warnings do AI dựng từ các file item và `gates.md` (xem [`how-the-hub-works.md`](how-the-hub-works.md)). Dữ liệu `[EXAMPLE]` ở đây để bạn thấy hub chạy ra sao. Xoá và thay bằng dữ liệu của bạn.
+> **Cách điền:** bạn chỉ sửa tên project, agreement status và phần narrative ở các trang tuần. Bảng Gates, bảng alignment và Warnings do AI dựng từ các file item và `gates.md` (xem [`how-the-hub-works.md`](how-the-hub-works.md)). Dữ liệu `[EXAMPLE]` ở đây để bạn thấy hub chạy ra sao. Xoá và thay bằng dữ liệu của bạn.
 
-## Case
+## Project
 
 | | |
 |---|---|
-| Tên case | [CASE NAME] |
+| Tên project | [CASE NAME] |
 | Agreement status | pending *(agreed / pending / not available)* |
 
 ## Gates
@@ -62,4 +62,4 @@ Verdict của bạn cho từng warning (sửa, chấp nhận như trade-off, ho�
 | [Alignment check](05-alignment.md) | Develop | Principle audit, verdict | `learnings/develop-alignment.md` |
 | [Findings](06-findings.md) | Deliver | Kết quả test với người dùng | `learnings/deliver-findings.md` |
 | [Handoff and measurement](07-handoff.md) | Deliver | Handoff pack, measurement plan | `learnings/deliver-handoff.md`, `measurement-plan.md` |
-| [Case log](../case-log.md) | mọi giai đoạn | Mỗi decision một dòng | `case-log.md` ở folder gốc của case |
+| [Project log](../case-log.md) | mọi giai đoạn | Mỗi decision một dòng | `case-log.md` ở folder gốc của project |

@@ -255,7 +255,7 @@ Dùng cho hoạt động **Research questions** của Break the brief (đầu ra
 
 ### Method cần ôn (học viên biết nửa vời)
 
-**Đã đối chiếu nội dung (2026-10-26):** `customer-understanding` Part 3 có chuỗi giả định → research question → 5 đến 8 interview question, ba kiểu câu xấu (tìm phản hồi, kiểm tra sở thích, hỏi hành vi giả định), ví dụ tốt và một case urban farming; lesson 2 dùng lại các ý này. Phần dưới là bản đề xuất ban đầu của mục này; hai tiêu chí "gắn một quyết định" và "biết tìm ở đâu" là thêm của chương trình, không có trong library.
+**Đã đối chiếu nội dung (2026-10-26):** `customer-understanding` Part 3 có chuỗi giả định → research question → 5 đến 8 interview question, ba kiểu câu xấu (tìm phản hồi, kiểm tra sở thích, hỏi hành vi giả định), ví dụ tốt và một project urban farming; lesson 2 dùng lại các ý này. Phần dưới là bản đề xuất ban đầu của mục này; hai tiêu chí "gắn một quyết định" và "biết tìm ở đâu" là thêm của chương trình, không có trong library.
 
 - Chuỗi: business question → quyết định cần đưa → research goal → research question → (sau này) interview question.
 - Năm tiêu chí tự kiểm một research question: (1) trả lời được bằng bằng chứng, (2) mở chứ không phải có/không, (3) gắn với đúng một quyết định, (4) không gợi sẵn giải pháp, (5) biết sẽ tìm câu trả lời ở đâu (file, desk research, phỏng vấn, data).
@@ -401,7 +401,7 @@ Winnie chọn nguyên tắc này (2026-10-26) vì học viên biết method "n�
 | Pha | Việc | AI |
 |---|---|---|
 | 1. Ôn | 5 phút nhắc lại method trên slide: khái niệm, tiêu chí, ví dụ xấu và tốt | Không |
-| 2. Tự làm | Học viên viết bản của mình trên case | Không |
+| 2. Tự làm | Học viên viết bản của mình trên project | Không |
 | 3. AI sau | AI phản biện hoặc soạn bản độc lập, dùng prompt trung tính, chỉ dùng file đã đưa | Có |
 | 4. So sánh | Học viên đánh dấu mine, AI, cả hai; đếm điều AI sai hoặc bịa | Người quyết định |
 
@@ -667,11 +667,11 @@ Gợi ý, chưa đưa vào lesson nào.
 - [ ] Viết **prompt mẫu** để học viên dựng hoặc tuỳ biến trang bằng AI coding tool.
 - [ ] Quyết định **cách publish trên hub**: site hiện chỉ render file `.md` trong `SUMMARY.md`, nên file `.html` cần thêm cơ chế (copy sang `docs/assets` và gắn link tải).
 - [ ] Đưa nội dung vào lesson file và slide outline của Lesson 2, theo quy tắc sync.
-- [ ] Quyết định có **đổi quote ID `I01-01` thành `P1-01`** trong flow, course case và workspace template hay không (khoảng 60 chỗ). Hiện hai loại mã cùng tồn tại: P1 cho người, I01-01 cho quote.
+- [ ] Quyết định có **đổi quote ID `I01-01` thành `P1-01`** trong flow, course project và workspace template hay không (khoảng 60 chỗ). Hiện hai loại mã cùng tồn tại: P1 cho người, I01-01 cho quote.
 - [ ] Dựng lại `index.html` của `my-project` và `demo-project` trong workspace template để bảng gate trong báo cáo có đủ 7 check.
 - [ ] Đưa thông báo mẫu ở mục 6 vào facilitator page hoặc một handout ngắn, để học viên dùng ngay đầu buổi phỏng vấn.
 - [ ] Làm bốn **template** ở `desk-research-competitor-practice.md` thành file dùng được (brief, sổ nguồn, bảng bằng chứng, bảng nhận định) trong `assets/templates/`, và đồng bộ với `examples/competitor-analysis/` và hai method card (`desk-research.md`, `competitor-analysis.md`).
-- [ ] **Chạy thử Practice A và B** trên một case thật, đo thời gian từng bước và tỷ lệ ô sai ở bước kiểm tra; điều chỉnh số ảnh mỗi lượt và tỷ lệ mẫu kiểm tra.
+- [ ] **Chạy thử Practice A và B** trên một project thật, đo thời gian từng bước và tỷ lệ ô sai ở bước kiểm tra; điều chỉnh số ảnh mỗi lượt và tỷ lệ mẫu kiểm tra.
 - [ ] Thử nhỏ với transcript tiếng Việt đã ẩn danh của mentee (mục 7, bài kiểm tra 10 phút).
 - [ ] Chờ Winnie duyệt mục 4b đến 4e, rồi mới đưa vào `discover-the-problem-lesson.md`, slide outline và practice 2 (chưa sửa file nào).
 - [ ] Xem video NN/g về research goals, questions, hypotheses (D48) để lấy định nghĩa; đọc phần hạn chế của D52; thử mở bản PNAS qua nguồn khác.

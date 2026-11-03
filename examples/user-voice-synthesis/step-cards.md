@@ -12,7 +12,7 @@
 | **Support tickets and feedback** (if you have access) | Secondary or internal | Real problems in the wild | Data safety: usually personal or internal; anonymise and use an approved tool only |
 | **Survey open-text** (if you ran one) | Primary | Many short answers | Shallow; self-selected |
 
-For the default outside-in case, use public reviews and forum posts plus 3 to 5 short interviews with people who use the product. Aim for at least 30 quotes from at least 3 sources or people, so a theme can be judged.
+For the default outside-in project, use public reviews and forum posts plus 3 to 5 short interviews with people who use the product. Aim for at least 30 quotes from at least 3 sources or people, so a theme can be judged.
 
 ## Pairing rule (Discover as a whole)
 Every Discover evidence pack combines **"what others do"** (competitor analysis or desk research) with **"what users say or do"** (this flow). Each answers a different question and covers the other's blind spot.
@@ -77,7 +77,7 @@ Stage checks are in `../../learning/method.md` Part 3, §2.
 ## Step 4 — Collect + anonymise (YOU)
 **Goal:** Gather the raw quotes and make them safe and checkable.
 **Do:** Export or copy at least 30 quotes from public sources and run 3 to 5 short interviews (record with permission; take notes or transcribe). **Anonymise before the AI sees anything:** remove names, usernames, emails, company names (find and replace on your computer, not by asking the AI). Give every quote an ID (R01… for reviews, I01-01… for interview 1, quote 1) and keep it word for word. Save to `sources/`.
-**Data safety (from the first lesson):** reviews are public but usernames can identify people; interviews are personal data. If the case is real work at your company, keep the files private and use only an approved tool.
+**Data safety (from the first lesson):** reviews are public but usernames can identify people; interviews are personal data. If the project is real work at your company, keep the files private and use only an approved tool.
 **Failure sign:** Quotes paraphrased "to tidy them up"; no IDs; names left in.
 **Output:** files in `sources/`
 
@@ -128,7 +128,7 @@ Stage checks are in `../../learning/method.md` Part 3, §2.
 This shows what people **say**, not what they **do**. Reviews lean to extremes, friends are polite, samples are small. Treat themes as hypotheses. Test them with real users later in the series.
 
 ## To test before teaching
-1. Run it on one case with at least 30 quotes and 3 interviews; time each step. Step 4 (collect and anonymise) will probably take longest.
+1. Run it on one project with at least 30 quotes and 3 interviews; time each step. Step 4 (collect and anonymise) will probably take longest.
 2. Measure the misquote rate in the AI's coding. If above about 5%, tighten the step 5 instruction. *(The threshold is my guess.)*
 3. Compare the AI's themes with your own coding of 20 quotes. How much do they agree?
 4. Check whether the step 7 counter-argument is a real argument or a token sentence.

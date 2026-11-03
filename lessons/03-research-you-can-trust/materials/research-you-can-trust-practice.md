@@ -189,7 +189,7 @@ Xong cả 8 step thì mang các file này tới buổi practice trên lớp: b�
 
 ## If you get stuck
 
-- **Chưa có claim hoặc insight từ Practice 2:** quay lại Step 10 của Practice 2. Chưa phỏng vấn được ai thì dùng bộ quote [app giao đồ ăn](../../../assets/starter-files/course-case/quotes.md) (24 quote đã có ID) và [case mẫu](../../../assets/starter-files/course-case/case-card.md), rồi làm lại với quote của bạn khi có.
+- **Chưa có claim hoặc insight từ Practice 2:** quay lại Step 10 của Practice 2. Chưa phỏng vấn được ai thì dùng bộ quote [app giao đồ ăn](../../../assets/starter-files/course-case/quotes.md) (24 quote đã có ID) và [project mẫu](../../../assets/starter-files/course-case/case-card.md), rồi làm lại với quote của bạn khi có.
 - **Thiếu file từ Practice 1 hoặc 2:** ghi "chưa có" ở đầu `work/user-voice-synthesis.md` và bỏ phần đối chiếu liên quan.
 - **Công ty không cho dùng AI tool, hoặc không rõ công cụ có huấn luyện trên dữ liệu:** dừng lại, hỏi lead. Bạn vẫn làm được bản tay trên quote, rồi so với bản AI khi có công cụ được phép.
 - **AI đưa ra điều nghe hợp lý nhưng không có quote nào đỡ:** ghi "chưa có nguồn" hoặc "unknown", không đưa vào như một sự thật.

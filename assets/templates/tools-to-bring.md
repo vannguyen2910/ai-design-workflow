@@ -14,7 +14,7 @@ Every session is a working session, so you need your own AI tool on your own lap
 Any equivalent tool is fine. The names above are examples, not a list you must follow.
 
 ## How to choose
-1. **Your company's rules first.** If you work somewhere, check which AI tools are allowed (see the data-safety part of week 1). If none are allowed, tell the instructor: you will use the course case for the in-class steps.
+1. **Your company's rules first.** If you work somewhere, check which AI tools are allowed (see the data-safety part of week 1). If none are allowed, tell the instructor: you will use the course project for the in-class steps.
 2. **It must accept a file.** You will attach `product-and-users.md` and other files. A tool that only takes typed text will slow you down.
 3. **Check what happens to your data.** Read the tool's data controls before you paste anything real. Settings and plans change.
 4. **It should run on the laptop you bring to class.** Try it there, not on another device.

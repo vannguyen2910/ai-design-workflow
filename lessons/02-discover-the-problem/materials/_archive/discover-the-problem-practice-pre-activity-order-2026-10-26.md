@@ -9,18 +9,18 @@ draft: true
 
 ## Goal
 
-Hoàn thiện `principles.md` và chạy bốn hoạt động của Break the brief trên case của bạn, mỗi hoạt động cho ra một file trong hub. Các file này là đầu vào cho phỏng vấn peer và cho evidence pack ở Lesson 3.
+Hoàn thiện `principles.md` và chạy bốn hoạt động của Break the brief trên project của bạn, mỗi hoạt động cho ra một file trong hub. Các file này là đầu vào cho phỏng vấn peer và cho evidence pack ở Lesson 3.
 
 ## Before you start
 
 - Bạn đã học [Lesson 2](discover-the-problem-lesson.md) và viết hai dòng đầu của `principles.md` trên lớp.
-- Case folder từ Practice 1, kèm `context/product-and-users.md` và data rules.
-- Brief hoặc PRD gần nhất của case (nếu có), đã ẩn danh theo data rules. Không có thì ghi "chưa có" và làm tiếp từ thông tin bạn biết.
-- Một AI chat tool đã được công ty cho phép. Học viên có case quá nhạy cảm dùng [case mẫu](../../../assets/starter-files/course-case/case-card.md) của chương trình.
+- Project folder từ Practice 1, kèm `context/product-and-users.md` và data rules.
+- Brief hoặc PRD gần nhất của project (nếu có), đã ẩn danh theo data rules. Không có thì ghi "chưa có" và làm tiếp từ thông tin bạn biết.
+- Một AI chat tool đã được công ty cho phép. Học viên có project quá nhạy cảm dùng [project mẫu](../../../assets/starter-files/course-case/case-card.md) của chương trình.
 
 ## Steps
 
-Quy tắc chung cho mọi bước: viết phần của bạn trước, rồi mới nhờ AI soạn nháp. AI không đóng vai PO hay user. Mục AI đưa ra mà tài liệu của case không có thì ghi "chưa có nguồn".
+Quy tắc chung cho mọi bước: viết phần của bạn trước, rồi mới nhờ AI soạn nháp. AI không đóng vai PO hay user. Mục AI đưa ra mà tài liệu của project không có thì ghi "chưa có nguồn".
 
 ### Step 1 · Hoàn thiện principles.md · 15 phút · YOU
 
@@ -46,7 +46,7 @@ Quy tắc chung cho mọi bước: viết phần của bạn trước, rồi m�
 ### Step 4 · Challenge assumptions · 10 phút · AI soạn nháp, bạn kiểm tra
 
 - **AI soạn nháp:** danh sách điều đang tin, kèm evidence đang có và đang thiếu cho từng điều.
-- **Bạn kiểm tra:** đối chiếu với tài liệu của case. Kéo insight từ research có sẵn nếu có, rồi xếp assumption theo mức độ quan trọng so với evidence.
+- **Bạn kiểm tra:** đối chiếu với tài liệu của project. Kéo insight từ research có sẵn nếu có, rồi xếp assumption theo mức độ quan trọng so với evidence.
 - **File:** `assumption.md`
 
 ### Step 5 · Competitor analysis, lượt đầu · 10 phút · AI soạn nháp, bạn kiểm tra
@@ -76,7 +76,7 @@ Xem hình dạng các file này khi đã nằm trong hub ở [Outcome Examples](
 ## Self-check
 
 - [ ] `principles.md` có đủ bốn phần: UX, business, severity, gates.
-- [ ] Case có một business question, tách khỏi giải pháp trong brief.
+- [ ] Project có một business question, tách khỏi giải pháp trong brief.
 - [ ] Mỗi finding trong `ux-audit.md` có evidence và severity do bạn chấm.
 - [ ] Mỗi mục trong `assumption.md` có nguồn hoặc nhãn "chưa có nguồn".
 - [ ] Bạn biết file nào do AI soạn nháp, và phần nào bạn đã kiểm tra.

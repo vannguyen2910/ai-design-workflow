@@ -70,7 +70,7 @@ last_synced: 2026-10-30
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Bảng này được dùng lại ở slide Discover
-  - Bài tập buổi 1: case folder và product-and-users đã có chưa, ai chưa xong thì dùng case mẫu
+  - Bài tập buổi 1: project folder và product-and-users đã có chưa, ai chưa xong thì dùng project mẫu
 
   > Brief gần nhất designer nhận nói "cần giải quyết điều gì", hay nói "cần làm cái gì"?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới hai cột trống "Vấn đề" và "Giải pháp" để ghi.
@@ -101,7 +101,7 @@ last_synced: 2026-10-30
   - Kim cương 1: Discover mở rộng, Define thu hẹp
   - Kim cương 2: Develop mở rộng, Deliver thu hẹp
   - Discover: gom điều đã biết, điều user nói và làm, điều thị trường làm
-- Ví dụ: có (app giao đồ ăn, case mẫu của chương trình)
+- Ví dụ: có (app giao đồ ăn, project mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Discover có phải chỉ là nghiên cứu user không? Không. Nó gồm cả đọc tài liệu product, câu hỏi cho business, xem trải nghiệm hiện tại và xem đối thủ.
 - Speaker notes:
@@ -131,7 +131,7 @@ last_synced: 2026-10-30
 
   > Giả sử nhờ AI liệt kê điều team có thể đang tin về app giao đồ ăn. Một phút sau có mười hai dòng, đọc rất hợp lý.
 
-  - Hai trong mười hai dòng không có trong bất kỳ tài liệu nào của case
+  - Hai trong mười hai dòng không có trong bất kỳ tài liệu nào của project
   - AI lấp chỗ trống bằng điều nghe hợp lý, không báo là nó đang đoán
   - Việc AI làm nhanh là soạn nháp rộng; việc chọn dòng nào đáng đưa vào scope vẫn là của designer
   - Hai nghiên cứu heuristic evaluation (nguồn 3, 4) cho số khác nhau, nhưng đều kết luận AI là phần bổ sung và cần người kiểm tra
@@ -174,7 +174,7 @@ last_synced: 2026-10-30
   > Một designer nhờ AI xem lại màn hình thanh toán. AI trả về mười finding, và chín cái là "làm cho rõ ràng hơn". Chuẩn nào mà rõ ràng hơn?
 
   - Nếu không có chuẩn viết sẵn, AI đối chiếu với điều nghe hợp lý nói chung
-  - Với chuẩn của case, AI đối chiếu đúng tiêu chí cần: nguyên tắc nào, ràng buộc nào, mức nghiêm trọng nào
+  - Với chuẩn của project, AI đối chiếu đúng tiêu chí cần: nguyên tắc nào, ràng buộc nào, mức nghiêm trọng nào
   - UX principles: mười heuristic của Nielsen làm nền (nguồn 1), thêm 3 đến 5 principle riêng của sản phẩm (slide kế tiếp)
   - Business principles: ràng buộc và ưu tiên của business, như mission, brand value, compliance, KPI, guardrail
   - Severity: thang 0 đến 4 của Nielsen (nguồn 2); designer chấm, không lấy của AI
@@ -197,7 +197,7 @@ last_synced: 2026-10-30
 - Ví dụ: bản nháp (app giao đồ ăn: "Đổi ý phải dễ hơn cam kết. Không có nghĩa là bỏ bước xác nhận thanh toán.")
 - Câu hỏi hay gặp:
   - Principle khác design system ở đâu? Design system là thành phần và quy tắc hình thức; principle là cách chọn khi hai hướng đều hợp lệ.
-  - Bao nhiêu principle là đủ? Tối đa 7 cho cả sản phẩm; case của chương trình cần 3 đến 5.
+  - Bao nhiêu principle là đủ? Tối đa 7 cho cả sản phẩm; project của chương trình cần 3 đến 5.
 - Speaker notes:
 
   > "Đơn giản và dễ dùng" là principle của hầu hết mọi sản phẩm, và không quyết định được gì. Thử hỏi: principle này đã từng đảo ngược quyết định nào của team chưa?
@@ -256,7 +256,7 @@ last_synced: 2026-10-30
   - Challenge assumptions → bản đồ giả định
   - Research questions → danh sách research question
   - Competitor analysis → bản phân tích đối thủ
-- Ví dụ: có (app giao đồ ăn, case mẫu của chương trình)
+- Ví dụ: có (app giao đồ ăn, project mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm muộn hơn, ở nhà, các hoạt động còn lại nối nhau nên làm theo thứ tự.
   - Vì sao research questions đứng sau UX observation và assumptions? Câu hỏi nghiên cứu xuất phát từ điều chưa biết; UX observation và assumptions chỉ ra điều đó.
@@ -285,7 +285,7 @@ last_synced: 2026-10-30
   - Why: thống nhất thế nào là thành công trước khi thiết kế
   - When: đầu tiên, trước mọi hoạt động khác của Break the brief
   - Năm câu: outcome, metric, baseline, ràng buộc, thời hạn, người quyết định
-- Ví dụ: có (app giao đồ ăn, case mẫu của chương trình)
+- Ví dụ: có (app giao đồ ăn, project mẫu của chương trình)
 - Câu hỏi hay gặp:
   - Câu hỏi vision và mission khác năm câu này thế nào? Vision và mission là câu hỏi cấp cao về lý do sản phẩm tồn tại; năm câu này là câu gửi business để chốt scope.
 - Speaker notes:
@@ -324,7 +324,7 @@ last_synced: 2026-10-30
   - Level 3: dựng scope từ PRD, thông tin công khai và dữ liệu nhìn thấy được, ghi mọi outcome và metric là assumed
   - Access khác nhau
 
-  > Đang ở access level nào với case này?
+  > Đang ở access level nào với project này?
 - 🎨 Visual hint: SCHEMATIC. Ba cột bậc thang tăng dần, mỗi cột một chip agreement status (agreed, pending, not available).
 
 ---
@@ -394,7 +394,7 @@ last_synced: 2026-10-30
 
   > AI liệt kê ba điều team app giao đồ ăn có thể đang tin: giá là lý do chính, khách không hiểu cách đổi khung giờ giao, bước thanh toán làm khách ngại cam kết.
 
-  - Chỉ điều đầu có trong case mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào: đây là cái bẫy của buổi, điều nghe hợp lý chưa phải điều có evidence
+  - Chỉ điều đầu có trong project mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào: đây là cái bẫy của buổi, điều nghe hợp lý chưa phải điều có evidence
   - Mục nào không có trong tài liệu thì ghi "chưa có nguồn", không đưa vào danh sách như sự thật
   - What, Why, When: giả định là điều đang tin chưa có bằng chứng; xếp theo ma trận để biết điều phải kiểm chứng trước. Method: bốn loại giả định (User, Problem, Solution, Business), công thức "chúng tôi tin rằng nhóm người dùng nào sẽ làm gì, vì sao… biết mình đúng khi…", ma trận Importance × Evidence (nguồn 8)
   - AI liệt kê giả định theo công thức, tìm giả định ẩn, hỏi ngược bằng chứng; designer xếp lên ma trận và sửa ít nhất hai giả định
@@ -403,7 +403,7 @@ last_synced: 2026-10-30
   - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở nhà sau phỏng vấn user; hôm nay chỉ ghi finding của ux-audit làm bằng chứng
   - Kết quả vào bản đồ giả định
 
-  > Điều đang tin nào của case designer nghe rất hợp lý nhưng designer chưa từng thấy bằng chứng?
+  > Điều đang tin nào của project designer nghe rất hợp lý nhưng designer chưa từng thấy bằng chứng?
 - 🎨 Visual hint: SCHEMATIC. Cột trái ba nhãn What, Why, When; cột phải danh sách ba assumption, mỗi dòng có chip "có nguồn" (sage) hoặc "chưa có nguồn" (sienna), và một khối nhỏ "existing research" nối vào danh sách bằng mũi tên.
 
 ---
@@ -431,7 +431,7 @@ last_synced: 2026-10-30
   - **AI soạn câu hỏi; designer cắt câu có hoặc không, câu dẫn dắt hoặc hỏi sở thích, và kiểm xem còn thiếu câu nào để quyết định được**
   - Kết quả vào danh sách research question, là đầu vào của research plan và phỏng vấn
 
-  > Giả định hàng đầu của case designer, nếu viết thành một câu hỏi mở, sẽ là câu gì?
+  > Giả định hàng đầu của project designer, nếu viết thành một câu hỏi mở, sẽ là câu gì?
 - 🎨 Visual hint: SCHEMATIC. Cột trái ba nhãn What, Why, When; cột phải ba bước ngang theo layout Process, bên dưới một câu "xấu" gạch ngang màu muted và một câu "tốt hơn" màu sage.
 
 ---
@@ -583,7 +583,7 @@ last_synced: 2026-10-30
   - 01 · Ẩn danh trên máy trước khi đưa cho AI
   - 02 · Mỗi quote có ID, ví dụ I01-03
   - 03 · AI được phép nói unknown
-- Ví dụ: có (case app giao đồ ăn: phỏng vấn 1 không nói gì về giá, I01-01 đến I01-03)
+- Ví dụ: có (project app giao đồ ăn: phỏng vấn 1 không nói gì về giá, I01-01 đến I01-03)
 - Câu hỏi hay gặp:
   - Ẩn danh có thể nhờ AI làm không? Không; dùng find and replace trên máy, vì nhờ AI nghĩa là đã đưa dữ liệu gốc cho nó.
   - Quote ID đặt thế nào? Theo nguồn và số thứ tự: R01 cho review, F01 cho bài đăng forum, I01-03 cho quote thứ 3 của phỏng vấn 01.
@@ -732,7 +732,7 @@ last_synced: 2026-10-30
   - 03 · Sample mix: ai có mặt, ai vắng mặt
   - 04 · Giải pháp: nhảy sang tính năng
   - 05 · Cảm xúc: quote mạnh che việc nó hiếm
-- Ví dụ: có (case app giao đồ ăn: điều team tin là giá, so với 24 quote; R06, F07, I02-03, R01)
+- Ví dụ: có (project app giao đồ ăn: điều team tin là giá, so với 24 quote; R06, F07, I02-03, R01)
 - Câu hỏi hay gặp:
   - Năm điều này lấy từ đâu? Từ cách soi insight khi review; chưa phải kết quả nghiên cứu.
   - Có cần soi cả năm điều mỗi lần? Không; chọn một hai điều thấy rủi ro nhất với claim đang có.
@@ -765,7 +765,7 @@ last_synced: 2026-10-30
   > Quyết định đang chờ: có thiết kế lại bước đổi khung giờ giao hay không. Designer có 24 quote và ba phút để viết một claim.
 
   - Mười phút: ba phút viết một mình, năm phút đổi bài và phản biện, hai phút chia sẻ
-  - Bộ quote là quotes.md của case app giao đồ ăn: 24 quote hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
+  - Bộ quote là quotes.md của project app giao đồ ăn: 24 quote hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
   - Ba phút đầu không dùng AI: đây là phần designer tự viết, đúng phép thử đóng AI lại
   - Quote nào dẫn vào claim phải khớp từng chữ với bản gốc, kể cả khi designer viết claim bằng tiếng Việt
 
@@ -816,10 +816,10 @@ last_synced: 2026-10-30
   - claim và insight, mỗi dòng dẫn về quote ID
 - Ví dụ: Không cần. Slide tổng hợp file của chuỗi việc ở nhà.
 - Câu hỏi hay gặp:
-  - Hub nằm ở đâu? Trong case folder của designer, private mặc định; xuất bản lên GitHub là tuỳ chọn.
+  - Hub nằm ở đâu? Trong project folder của designer, private mặc định; xuất bản lên GitHub là tuỳ chọn.
 - Speaker notes:
   - Đây là các file designer mang ra khỏi buổi 2 và chuỗi việc ở nhà
-  - Hub private mặc định, nằm trong case folder; xuất bản là tuỳ chọn
+  - Hub private mặc định, nằm trong project folder; xuất bản là tuỳ chọn
   - Lesson 3 dùng claim và insight của designer làm đầu vào cho persona, journey map và opportunity
   - Mỗi file có nguồn hoặc nhãn "chưa có nguồn"
 
@@ -833,7 +833,7 @@ last_synced: 2026-10-30
 - Kicker: Câu hỏi
 - Title: Hỏi\n*và đáp*
 - Sub: Hỏi đáp, rồi chuỗi việc ở nhà
-- Ví dụ: Không cần. Mỗi người hỏi về case riêng.
+- Ví dụ: Không cần. Mỗi người hỏi về project riêng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Năm phút; hai slide tiếp theo chiếu trong phase này
@@ -849,7 +849,7 @@ last_synced: 2026-10-30
 - Kicker: Tiếp theo
 - Title: Practice ở nhà
 - On-slide:
-  - Làm ở nhà, trên case của designer
+  - Làm ở nhà, trên project của designer
   - Ba phần: Break the brief, phỏng vấn user thật, synthesis và hub
   - Mỗi bước một file; đầu ra bước trước là đầu vào bước sau
   - Buổi practice trên lớp: làm tiếp phần dang dở, rồi được chấm

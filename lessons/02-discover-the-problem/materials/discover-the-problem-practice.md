@@ -1,5 +1,5 @@
 ---
-title: "Discover Your Case"
+title: "Discover Your Project"
 summary: "Chuỗi việc ở nhà: bộ nguyên tắc, Break the brief, phỏng vấn user thật, synthesis và đưa insight lên hub."
 type: practice
 program: ai-design-workflow
@@ -9,7 +9,7 @@ draft: true
 
 ## Goal
 
-Làm một case của bạn đi hết stage Discover: từ bộ nguyên tắc và Break the brief, qua phỏng vấn user thật, đến một claim mà mỗi dòng dẫn về quote gốc. Mỗi step cho ra một file. Các file này là đầu vào cho Lesson 3 (persona, journey map, opportunity).
+Làm một project của bạn đi hết stage Discover: từ bộ nguyên tắc và Break the brief, qua phỏng vấn user thật, đến một claim mà mỗi dòng dẫn về quote gốc. Mỗi step cho ra một file. Các file này là đầu vào cho Lesson 3 (persona, journey map, opportunity).
 
 ## Tổng quan 12 step
 
@@ -31,10 +31,10 @@ Làm một case của bạn đi hết stage Discover: từ bộ nguyên tắc v�
 ## Before you start
 
 - [ ] Đã học [Lesson 2](discover-the-problem-lesson.md).
-- [ ] Có case folder từ Practice 1, kèm `context/product-and-users.md` và data rules.
-- [ ] Có brief hoặc PRD gần nhất của case, đã ẩn danh theo data rules. Chưa có thì ghi "chưa có" và làm tiếp từ thông tin bạn biết.
+- [ ] Có project folder từ Practice 1, kèm `context/product-and-users.md` và data rules.
+- [ ] Có brief hoặc PRD gần nhất của project, đã ẩn danh theo data rules. Chưa có thì ghi "chưa có" và làm tiếp từ thông tin bạn biết.
 - [ ] Có một AI chat tool đã được công ty cho phép.
-- [ ] Có thể tiếp cận 2 đến 3 user thật của case để phỏng vấn. Chưa có hoặc case quá nhạy cảm: dùng [case mẫu app giao đồ ăn](../../../assets/starter-files/course-case/case-card.md) và xem mục If you get stuck.
+- [ ] Có thể tiếp cận 2 đến 3 user thật của project để phỏng vấn. Chưa có hoặc project quá nhạy cảm: dùng [project mẫu app giao đồ ăn](../../../assets/starter-files/course-case/case-card.md) và xem mục If you get stuck.
 
 ## Cách làm mọi step
 
@@ -42,7 +42,7 @@ Làm một case của bạn đi hết stage Discover: từ bộ nguyên tắc v�
 
 - Chỉ đưa AI những file bạn đã có và đã kiểm tra. Dùng prompt trung tính, không nêu sẵn đáp án bạn muốn.
 - AI không đóng vai PO hay user: câu trả lời luôn do người thật đưa ra.
-- Điều AI đưa ra mà tài liệu của case không có thì ghi **"chưa có nguồn"**, không coi là sự thật.
+- Điều AI đưa ra mà tài liệu của project không có thì ghi **"chưa có nguồn"**, không coi là sự thật.
 - Tên file là gợi ý theo hub mẫu. Bạn có thể đặt tên khác, miễn mỗi step có một đầu ra lưu lại được.
 
 ---
@@ -53,7 +53,7 @@ Làm một case của bạn đi hết stage Discover: từ bộ nguyên tắc v�
 
 **Ai làm:** bạn.
 
-1. **UX principles:** lấy mười heuristic của Nielsen làm nền (danh sách ở [Lesson 2](discover-the-problem-lesson.md), mục 2.2), rồi thêm 3 đến 5 principle riêng của case.
+1. **UX principles:** lấy mười heuristic của Nielsen làm nền (danh sách ở [Lesson 2](discover-the-problem-lesson.md), mục 2.2), rồi thêm 3 đến 5 principle riêng của project.
 2. Mỗi principle riêng cần đủ ba điều:
    - đảo ngược được ít nhất một quyết định của team;
    - có dòng "điều này không có nghĩa là…";
@@ -98,7 +98,7 @@ Làm một case của bạn đi hết stage Discover: từ bộ nguyên tắc v�
 **Ai làm:** AI soạn nháp, bạn kiểm tra và quyết định.
 
 1. **AI soạn nháp:** đưa context pack, `ux-audit.md` và scope. AI liệt kê giả định theo công thức *"Chúng tôi tin rằng [nhóm người dùng nào] sẽ [làm gì] vì [vì sao]. Chúng tôi biết mình đúng khi [tín hiệu]."*, gắn loại (User, Problem, Solution, Business), tìm giả định ẩn của brief, và với mỗi giả định nêu file làm bằng chứng (không có thì "unknown"). Finding trong `ux-audit.md` cũng là bằng chứng.
-2. **Bạn sửa** ít nhất hai giả định cho cụ thể với case; loại giả định quá chung.
+2. **Bạn sửa** ít nhất hai giả định cho cụ thể với project; loại giả định quá chung.
 3. **Bạn xếp** lên ma trận Importance × Evidence, rồi chọn **ba giả định hàng đầu** ở góc quan trọng cao, bằng chứng thấp.
 
 **Xong khi:** mỗi mục có nguồn hoặc nhãn "chưa có nguồn", và ba giả định hàng đầu được đánh dấu.
@@ -159,7 +159,7 @@ Tuỳ chọn: nhờ AI dựng một trang nhỏ từ script (câu hỏi theo th�
 
 **Ai làm:** bạn. Không dùng AI trong buổi phỏng vấn.
 
-Phỏng vấn 2 đến 3 user thật của case. Năm thói quen của một buổi phỏng vấn tốt:
+Phỏng vấn 2 đến 3 user thật của project. Năm thói quen của một buổi phỏng vấn tốt:
 
 1. **Hỏi câu mở.** "Kể lại lần gần nhất…" mời một câu chuyện; câu đóng cho dữ liệu khó dùng.
 2. **Đi theo câu chuyện.** User nói điều bất ngờ thì dừng lại và đi theo, kể cả ngoài script.
@@ -265,7 +265,7 @@ Xem hình dạng các file này khi đã nằm trong hub ở [Outcome Examples](
 ## Self-check
 
 - [ ] Mỗi UX principle riêng có dòng "điều này không có nghĩa là…" và một quyết định nó đảo ngược.
-- [ ] Case có một business question, tách khỏi giải pháp trong brief.
+- [ ] Project có một business question, tách khỏi giải pháp trong brief.
 - [ ] Mọi dòng AI soạn ở Step 3 đến 5 và Step 10 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
 - [ ] Bạn tìm đúng chuỗi và đọc ngữ cảnh của mọi quote dùng cho claim.
 - [ ] Claim có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều.
@@ -277,7 +277,7 @@ Xong cả 12 step thì mang các file này tới buổi practice trên lớp: b�
 
 - **Không tiếp cận được business:** dựng scope từ PRD hoặc brief, thông tin công khai và dữ liệu nhìn thấy được. Ghi mọi outcome và metric là "assumed", agreement status là "not available".
 - **Chưa có research cũ để kéo insight:** ghi "chưa có" ở `assumption.md` và để phần đó cho phỏng vấn.
-- **Chưa phỏng vấn được user thật, hoặc case quá nhạy cảm:** làm Step 1 đến 7 trên case của bạn. Với Step 10, dùng bộ quote app giao đồ ăn ([quotes.md](../../../assets/starter-files/course-case/quotes.md), 24 quote đã có ID) rồi làm lại với quote của bạn khi có.
+- **Chưa phỏng vấn được user thật, hoặc project quá nhạy cảm:** làm Step 1 đến 7 trên project của bạn. Với Step 10, dùng bộ quote app giao đồ ăn ([quotes.md](../../../assets/starter-files/course-case/quotes.md), 24 quote đã có ID) rồi làm lại với quote của bạn khi có.
 - **Không rõ người tham gia đã đồng ý gì, hoặc công cụ có huấn luyện trên dữ liệu không:** dừng lại, hỏi lead. Đừng đưa transcript cho AI.
 - **Không làm hết được:** làm Step 1 đến 5 trước, giữ lại Step 12. Step 6 làm sau.
 - **AI đưa ra điều nghe hợp lý nhưng không có trong tài liệu:** ghi "chưa có nguồn", không đưa vào như một sự thật.

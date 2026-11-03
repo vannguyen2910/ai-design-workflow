@@ -1,6 +1,6 @@
 # Workflow kit: dựng workflow AI của riêng bạn
 
-Bộ mẫu cho buổi tuỳ chọn **Build your own AI workflow**. Mỗi file ngắn, copy vào case folder và điền.
+Bộ mẫu cho buổi tuỳ chọn **Build your own AI workflow**. Mỗi file ngắn, copy vào project folder và điền.
 
 Mục tiêu: biến một việc bạn lặp lại thành một workflow mà AI tool chạy được, có chỗ để bạn kiểm tra, và dùng lại được sau này.
 

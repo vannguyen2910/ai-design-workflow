@@ -18,7 +18,7 @@ last_synced: 2026-10-30
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
-| Running example | App giao đồ ăn (case mẫu hư cấu cho phần demo); designer áp dụng các bước vào một case cụ thể |
+| Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
 
@@ -42,7 +42,7 @@ last_synced: 2026-10-30
   - Mọi lesson sau đều dùng những thứ này, nên cài đặt một lần ngay từ đầu
   - Nêu lập trường của cả series: designer cùng định nghĩa requirement với product và business
   - Lớp ưu tiên designer; nếu có PO, PM hoặc BA thì cùng học một workflow, không cần build prototype từ đầu
-  - Sau phần chào là ice breaker sáu phút. Nói rõ format: hai buổi 90 phút mỗi tuần, 12 buổi trong sáu tuần, mỗi tuần một buổi theory, rồi practice là chuỗi việc ở nhà trên case của chính designer (khoảng bốn giờ mỗi tuần), và một buổi practice trên lớp để làm tiếp phần dang dở rồi chấm; tuần 6 kết bằng test một ngày và buổi wrap-up. Phần dựng project folder là Practice 1, làm ở nhà ngay sau buổi hôm nay
+  - Sau phần chào là ice breaker sáu phút. Nói rõ format: hai buổi 90 phút mỗi tuần, 12 buổi trong sáu tuần, mỗi tuần một buổi theory, rồi practice là chuỗi việc ở nhà trên project của chính designer (khoảng bốn giờ mỗi tuần), và một buổi practice trên lớp để làm tiếp phần dang dở rồi chấm; tuần 6 kết bằng test một ngày và buổi wrap-up. Phần dựng project folder là Practice 1, làm ở nhà ngay sau buổi hôm nay
 - 🎨 Visual hint: Cover layout, cố định. Panel trái trắng với dòng năm, nhãn stage, title (accent ở dòng 2) và subtitle. Panel phải là ảnh thật với gradient tối, tên và ba dòng credentials ở góc dưới trái.
 
 ---
@@ -79,7 +79,7 @@ last_synced: 2026-10-30
   - Câu hỏi nhiều designer đã đặt ra: AI phổ biến thì UI/UX và product design sẽ ra sao?
   - Phần này có số liệu có nguồn, có hướng đi cụ thể, và cũng có chỗ chưa ai đo được
   - Ground rule của lớp: những gì chia sẻ trên lớp ở lại trong lớp; ẩn danh trước; không ai bắt buộc phải trình bày công việc confidential
-  - Case mẫu của khoá luôn sẵn sàng nếu case của designer quá nhạy cảm
+  - Project mẫu của khoá luôn sẵn sàng nếu project của designer quá nhạy cảm
   - Câu hỏi ghi vào chat bất cứ lúc nào; 8 phút cuối buổi để trả lời, câu nào chưa kịp thì trả lời sau bằng văn bản
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper lavender nhạt, số phần lớn, title có accent ở dòng 2.
 
@@ -365,11 +365,11 @@ last_synced: 2026-10-30
 - Title: Một task,\n*hai instruction*
 - On-slide:
   - Trái, mơ hồ: "Làm sao để cải thiện onboarding cho app giao đồ ăn của tôi?"
-  - Phải, có cấu trúc (đính kèm case mẫu): "Chỉ dùng case mẫu. Liệt kê năm điều cần biết mà KHÔNG có trong đó. Không đoán. Nói 'unknown'. Chỉ trả về danh sách."
-- Ví dụ: có (app giao đồ ăn: hai instruction trên cùng một case mẫu, lesson mục 4.2)
+  - Phải, có cấu trúc (đính kèm project mẫu): "Chỉ dùng project mẫu. Liệt kê năm điều cần biết mà KHÔNG có trong đó. Không đoán. Nói 'unknown'. Chỉ trả về danh sách."
+- Ví dụ: có (app giao đồ ăn: hai instruction trên cùng một project mẫu, lesson mục 4.2)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Case mẫu: một app giao đồ ăn hư cấu mà nhiều khách mới không đặt lại sau đơn đầu tiên; nghi ngờ do giá; chưa có research
+  - Project mẫu: một app giao đồ ăn hư cấu mà nhiều khách mới không đặt lại sau đơn đầu tiên; nghi ngờ do giá; chưa có research
   - **Đoán trước:** chiếu hai instruction nhưng chưa chạy; cho cả lớp bỏ phiếu trong chat, bản nào cho kết quả đáng tin hơn? Ghi lại số phiếu
   - Hai instruction chạy trực tiếp (đã chạy thử một lần trước đó), hai output đặt cạnh nhau
   - Bản mơ hồ thường cho lời khuyên tự tin nhưng chung chung, và có thể nói về sản phẩm như sự thật
@@ -392,7 +392,7 @@ last_synced: 2026-10-30
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Năm thuật ngữ còn lại (AI chat tool, AI coding tool, context window, connector, reusable instructions) nằm trong pre-read và được dạy lại đúng buổi cần, chủ yếu buổi 7; agent được giới thiệu ngay ở phần sau
-  - Gắn với demo: case mẫu là context; "chỉ dùng case mẫu" là grounding; lời khuyên tự tin của bản mơ hồ là rủi ro hallucination
+  - Gắn với demo: project mẫu là context; "chỉ dùng project mẫu" là grounding; lời khuyên tự tin của bản mơ hồ là rủi ro hallucination
   - AI-assisted vs AI-generated: đã nói ở đầu buổi qua slide "AI drafts. You verify. You decide."
   > Trong demo, cái nào là thứ designer đưa cho AI, cái nào là điều AI tự thêm vào?
   - Một phút cho slide này; ba phút rưỡi cho hai slide tiếp theo
@@ -404,14 +404,14 @@ last_synced: 2026-10-30
 - Kicker: Nói chuyện với AI
 - Title: Context and\n*grounding*
 - On-slide: Chỉ đưa những gì một bước cần. Rồi bảo nó chỉ dùng những gì designer đưa.
-- Ví dụ: có (case mẫu app giao đồ ăn làm context)
+- Ví dụ: có (project mẫu app giao đồ ăn làm context)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Context là instruction của designer, text đã dán, file đính kèm và các tin nhắn trước đó; không có gì khác về project của designer
   - AI giữ được lượng thông tin có giới hạn (context window); khi tài liệu dài và lộn xộn, chi tiết sẽ nhoè hoặc rơi mất
   - **Chỉ đưa những phần mà một bước cần, không phải cả project**
-  - Grounding: bảo AI chỉ dùng tài liệu designer đưa và nêu nguồn cho từng ý; "Chỉ dùng case mẫu" trong demo là grounding
-  - Gắn với demo: case mẫu là context
+  - Grounding: bảo AI chỉ dùng tài liệu designer đưa và nêu nguồn cho từng ý; "Chỉ dùng project mẫu" trong demo là grounding
+  - Gắn với demo: project mẫu là context
 - 🎨 Visual hint: SCHEMATIC. Một khung gắn nhãn "context" chứa các tile file nhỏ, vài tile rơi ra ngoài khung. Purple cho phần nằm trong, xám cho phần rơi ra.
 
 ---
@@ -614,7 +614,7 @@ last_synced: 2026-10-30
 - Kicker: Thứ đưa vào
 - Title: Ba loại\n*tài liệu*
 - On-slide:
-  - Safe: thông tin công khai, suy nghĩ của designer, case của khoá
+  - Safe: thông tin công khai, suy nghĩ của designer, project của khoá
   - Ask first: nội bộ, không nhạy cảm; chỉ dùng tool đã duyệt
   - Never in a public tool: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA
 - Ví dụ: có (năm đoạn trích app giao đồ ăn của Activity)
@@ -657,7 +657,7 @@ last_synced: 2026-10-30
 - Num: 18
 - Kicker: Đoán trước, rồi kiểm
 - Title: Đoán trước,\n*rồi để AI phân loại*
-- Sub: Đoán trước năm đoạn trích, so với AI, rồi viết data rules cho case của designer
+- Sub: Đoán trước năm đoạn trích, so với AI, rồi viết data rules cho project của designer
 - Ví dụ: có (năm đoạn trích app giao đồ ăn)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -665,8 +665,8 @@ last_synced: 2026-10-30
   - **Bước 1, ba phút, cá nhân:** mỗi người tự xếp năm đoạn trích hư cấu (slide kế tiếp) vào safe, ask first hoặc never in a public tool; **chưa mở AI tool**
   - **Bước 2, sáu phút, cặp hoặc cá nhân:** nhờ AI chat tool xếp cùng năm đoạn theo ba nhóm, rồi so với bản tự xếp; ghi số đoạn AI xếp khớp
   - **Cái bẫy:** đoạn D, transcript đã thay tên bằng chữ cái nhưng còn vai trò, tuổi và nơi ở; AI thường xếp "an toàn" vì thấy đã bỏ tên. Để designer tự bắt được; đừng nói trước
-  - **Bước 3, bảy phút, cá nhân:** viết ba dòng vào `context/data-rules.md` cho một case cụ thể: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì; chưa biết chính sách công ty thì ghi "cần hỏi" và hỏi trước buổi 2
-  - Ai dùng case mẫu của khoá thì viết cho case mẫu, và viết lại cho case thật sau; chưa dán tài liệu thật vào AI tool
+  - **Bước 3, bảy phút, cá nhân:** viết ba dòng vào `context/data-rules.md` cho một project cụ thể: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì; chưa biết chính sách công ty thì ghi "cần hỏi" và hỏi trước buổi 2
+  - Ai dùng project mẫu của khoá thì viết cho project mẫu, và viết lại cho project thật sau; chưa dán tài liệu thật vào AI tool
   - **Bước 4, hai phút, cả lớp:** mỗi người nói một con số "AI xếp đúng X trên 5"
   > Nếu file này lọt ra ngoài, ai sẽ biết?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn, không có diagram.
@@ -717,7 +717,7 @@ last_synced: 2026-10-30
 - Kicker: Trước buổi sau
 - Title: Folder,\n*hub đầu tiên*
 - On-slide:
-  - Practice 1: làm ở nhà, khoảng bốn giờ, trên case của designer
+  - Practice 1: làm ở nhà, khoảng bốn giờ, trên project của designer
   - Chuỗi việc: folder, context, self-documentation, một instruction
   - Tuỳ chọn: push lên Git và bật trang live
   - Cuối chuỗi: hai dòng hướng nghề, ba dòng learning log
@@ -730,7 +730,7 @@ last_synced: 2026-10-30
   - Output của chuỗi là một ready-folder với context; hai bước Git và trang live không bắt buộc
   - `my-direction.md`: hướng nghiêng về trong ba hướng đi, lý do, một kỹ năng muốn xây; file xem lại ở buổi 12
   - `learning-log.md`: ba dòng về điều đã làm, phản hồi nhận được và điều sẽ đổi, kèm một câu reflection; cuối khoá designer đọc lại để tìm điều lặp lại
-  - **Chưa dán tài liệu thật của case vào AI tool trước khi viết data rules**; ai chưa viết xong Activity thì dùng case mẫu để thử
+  - **Chưa dán tài liệu thật của project vào AI tool trước khi viết data rules**; ai chưa viết xong Activity thì dùng project mẫu để thử
   - Buổi practice trên lớp: làm tiếp phần chưa xong nếu còn thời gian, rồi chấm; cách chấm chưa quyết, sẽ báo sau
   - Đây là folder dự án của designer, không phải bài nộp; nhắc tải workspace template (ZIP) trước nếu chưa có
 - 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Dựng project folder" kèm bốn dòng ngắn bên dưới.
@@ -923,14 +923,14 @@ last_synced: 2026-10-30
 ### DIAGRAM · Private by default, public if you choose
 - Kicker: Chia sẻ hub
 - Title: Hub thuộc về\n*designer*
-- On-slide: Private: file HTML hoặc PDF, file nén, hoặc mời vào repo private. Public: chỉ khi cả case được phép chia sẻ.
+- On-slide: Private: file HTML hoặc PDF, file nén, hoặc mời vào repo private. Public: chỉ khi cả project được phép chia sẻ.
 - Speaker notes:
   - **Hub mặc định là private**: nó nằm trong project folder của designer và không ai thấy trừ khi designer gửi
   - Để cho stakeholder xem, chạy script `toolkit/tools/build-report.py` để ra một file HTML mở được bằng trình duyệt, hoặc export các page chính ra PDF; hoặc gửi file nén của cả project folder, vì các page hub link sang nhiều folder
   - Muốn một người xem trực tiếp, mời họ vào repository private trên GitHub
-  - Chỉ khi toàn bộ case được phép chia sẻ (case của khoá, hoặc bản đã làm sạch từ công việc của designer) mới công khai cả project folder trong một repository public mới; GitHub hiển thị Markdown nên không cần dựng website; guide và homework tuỳ chọn có hướng dẫn
+  - Chỉ khi toàn bộ project được phép chia sẻ (project của khoá, hoặc bản đã làm sạch từ công việc của designer) mới công khai cả project folder trong một repository public mới; GitHub hiển thị Markdown nên không cần dựng website; guide và homework tuỳ chọn có hướng dẫn
   - **Nếu designer công khai, designer là người host và chịu trách nhiệm**; công việc thật được giữ private
-- 🎨 Visual hint: SCHEMATIC. Hai cột. Trái, "Private (mặc định)": một folder có khoá, mũi tên tới một PDF, một file nén và một người được mời. Phải, "Public (tuỳ chọn)": một bản case đã làm sạch, mũi tên "upload" vào một repository public mới.
+- 🎨 Visual hint: SCHEMATIC. Hai cột. Trái, "Private (mặc định)": một folder có khoá, mũi tên tới một PDF, một file nén và một người được mời. Phải, "Public (tuỳ chọn)": một bản project đã làm sạch, mũi tên "upload" vào một repository public mới.
 
 ---
 
@@ -947,7 +947,7 @@ last_synced: 2026-10-30
 - Sub: Folder. Context. Self-documentation. Một instruction.
 - Speaker notes:
   - Slide tham khảo của Practice 1 (khoảng bốn giờ, ước lượng chưa đo), không chiếu trên lớp; bảy bước ở slide kế tiếp
-  - Ai mà công ty cấm AI tool, hoặc case quá nhạy cảm, dùng case mẫu của khoá cho bước bốn
+  - Ai mà công ty cấm AI tool, hoặc project quá nhạy cảm, dùng project mẫu của khoá cho bước bốn
   - **Ai gõ lại tóm tắt project từ trí nhớ: chỉ họ về file**
   - Ai thấy bảng và link hiển thị thô: mở cả folder project trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
@@ -972,7 +972,7 @@ last_synced: 2026-10-30
   - 03: khoảng bốn mươi lăm phút, AI đọc folder rồi viết `README.md` và rules file (`AGENTS.md`); designer kiểm tra từng dòng, vì rules file là luật AI sẽ đọc ở mọi buổi sau
   - 04: khoảng ba mươi phút, đính kèm file product, hỏi còn thiếu gì, rồi đọc câu trả lời có phản biện
   - 05: mười phút, hai đến ba dòng vào `_personal/my-direction.md`: hướng nghiêng về, lý do, một kỹ năng muốn xây
-  - 06: tuỳ chọn, khoảng một giờ, chỉ cho ai muốn chia sẻ hub; repo Private, và chỉ bật trang live khi case được phép công khai; output chính không phụ thuộc vào bước này
+  - 06: tuỳ chọn, khoảng một giờ, chỉ cho ai muốn chia sẻ hub; repo Private, và chỉ bật trang live khi project được phép công khai; output chính không phụ thuộc vào bước này
   - 07: năm phút, ba dòng và một câu reflection vào `_personal/learning-log.md`
   - Instruction của bước bốn nằm ở slide kế tiếp
 - 🎨 Visual hint: SCHEMATIC. Process track bảy bước, bước bốn được tô purple, bước sáu nét đứt vì tuỳ chọn.
@@ -984,7 +984,7 @@ last_synced: 2026-10-30
 - Title: Còn *thiếu gì?*
 - On-slide: "Chỉ dùng file này. Liệt kê năm điều cần biết mà KHÔNG có trong đó. Không đoán. Nếu chưa rõ, nói 'unknown'. Chỉ trả về danh sách."
 - Speaker notes:
-  - Đính kèm file product-and-users rồi dán instruction; đây là instruction của demo, áp dụng trên case của chính họ
+  - Đính kèm file product-and-users rồi dán instruction; đây là instruction của demo, áp dụng trên project của chính họ
   - Đọc câu trả lời có phản biện: câu nào hữu ích, câu nào chung chung, câu nào designer tự tìm ra được?
   - **Câu hỏi coaching: "Designer sẽ sửa gì trước khi dùng nó?"**
   - Lưu những câu hữu ích vào file `context/open-questions.md`

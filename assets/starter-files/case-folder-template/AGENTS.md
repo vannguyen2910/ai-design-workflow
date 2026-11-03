@@ -4,14 +4,14 @@ File này dành cho AI tool. Đọc nó trước khi làm bất cứ việc gì 
 
 ## What this folder is
 
-Case folder của một designer làm việc theo quy trình AI-assisted: AI soạn nháp, designer kiểm tra và quyết định. Working file nằm phẳng trong `learnings/` (tên file bắt đầu bằng tên giai đoạn: `discover-`, `define-`…), và mỗi bước của quy trình được định nghĩa bằng một step card trong `tools/`.
+Project folder của một designer làm việc theo quy trình AI-assisted: AI soạn nháp, designer kiểm tra và quyết định. Working file nằm phẳng trong `learnings/` (tên file bắt đầu bằng tên giai đoạn: `discover-`, `define-`…), và mỗi bước của quy trình được định nghĩa bằng một step card trong `tools/`.
 
 ## Map
 
 | Đường dẫn | Là gì | Bạn được làm gì |
 |---|---|---|
 | `AGENTS.md` | Luật cho AI tool (file này) | Đọc |
-| `learnings/context-*.md` | Context pack: thông tin nền của case | Đọc đầu tiên ở mọi bước. Không sửa trừ khi được yêu cầu |
+| `learnings/context-*.md` | Context pack: thông tin nền của project | Đọc đầu tiên ở mọi bước. Không sửa trừ khi được yêu cầu |
 | `tools/step-*.md` | Định nghĩa từng bước (step card) | Đọc card của bước đang chạy |
 | `learnings/discover-*.md` … `deliver-*.md` | Working file theo giai đoạn | Chỉ ghi vào đúng section được yêu cầu |
 | `learnings/sources/anonymised/` | Dữ liệu đã ẩn danh, có ID | Đọc. Nguồn duy nhất cho quote và số liệu |

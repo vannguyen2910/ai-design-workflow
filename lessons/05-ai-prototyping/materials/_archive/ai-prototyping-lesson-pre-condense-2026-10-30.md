@@ -20,7 +20,7 @@ next-session: "Practice 5: Build prototype main flow"
 
 ## Abstract
 
-Tài liệu này mô tả buổi 5 của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi 5 là buổi **theory** của tuần 5. Học viên đã có hướng được chọn và flow từ tuần 4, và buổi này chuẩn bị cho Practice 5, nơi prototype main flow được dựng trên case của chính họ.
+Tài liệu này mô tả buổi 5 của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi 5 là buổi **theory** của tuần 5. Học viên đã có hướng được chọn và flow từ tuần 4, và buổi này chuẩn bị cho Practice 5, nơi prototype main flow được dựng trên project của chính họ.
 
 Buổi giải quyết bốn vấn đề, theo thứ tự trình bày:
 
@@ -54,7 +54,7 @@ Sau buổi 5, học viên có thể:
 - Học viên chỉ ra đúng bốn layer và nói được layer nào chưa có trong design system của học viên (thường là shell và template).
 - Học viên phân biệt được One View với The Second View.
 - Học viên tìm ra ít nhất hai trong ba lỗi ở activity bằng cách đối chiếu với quy tắc và `components.html`, không theo cảm giác.
-- Học viên nêu được ít nhất ba quy tắc cần có trong rules file cho case của học viên, gồm quy tắc "thiếu component thì yêu cầu thêm trước".
+- Học viên nêu được ít nhất ba quy tắc cần có trong rules file cho project của học viên, gồm quy tắc "thiếu component thì yêu cầu thêm trước".
 
 **Checkpoint trên lớp:** mỗi học viên chỉ ra ít nhất một lỗi ở activity, nêu quy tắc bị vi phạm và cách tìm nó trong file.
 

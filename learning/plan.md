@@ -33,11 +33,11 @@ Làm theo thứ tự.
 **Ai học:** UI/UX và product designer mức mid và senior, lớp 7 đến 8 người.
 **Học xong được gì:** một workflow thiết kế có AI dùng lại được, từ business question đến prototype đã test. Output mỗi bước là input của bước sau, và gom vào một Knowledge Hub.
 
-**Nhịp học (2026-10-26):** 6 tuần, mỗi tuần hai buổi 90 phút. Một buổi **theory** (khái niệm, activity ngắn), rồi một buổi **practice** (làm trên case của mình, có coaching). Không có Check point. Bài tập về nhà chỉ là việc dưới 20 phút nối giữa các buổi.
+**Nhịp học (2026-10-26):** 6 tuần, mỗi tuần hai buổi 90 phút. Một buổi **theory** (khái niệm, activity ngắn), rồi một buổi **practice** (làm trên project của mình, có coaching). Không có Check point. Bài tập về nhà chỉ là việc dưới 20 phút nối giữa các buổi.
 
 | Tuần | Theory | Practice | Output |
 |---|---|---|---|
-| 1 | **Your Design Process, with AI**: nghề đang đi đâu, AI trong Double Diamond, data safety | Dựng case folder, data rules, hub | Case folder, hub |
+| 1 | **Your Design Process, with AI**: nghề đang đi đâu, AI trong Double Diamond, data safety | Dựng project folder, data rules, hub | Project folder, hub |
 | 2 | **Discover the Problem**: principles, break the brief, hiểu người dùng | `principles.md` rồi Break the brief theo thứ tự scope, UX observation, challenge assumptions, research questions, competitor; lên lịch phỏng vấn | `research-questions` (scope và câu hỏi), `ux-audit`, `assumption`, `competitor-analysis` |
 | 3 | **Insights You Can Trust**: synthesis, persona, journey map, opportunity (mỗi dòng dẫn về quote có ID) | Bốn bước trên quote peer: `personas.md`, `journey-map.md`, `frame-opportunity.md`, một trang cho lead, entry insight hub | Evidence pack, **problem brief** |
 | 4 | **Explore Ideas**: hypothesis, How might we, sketch giấy rồi AI, chọn hướng | Hypothesis, ý tưởng, chọn hướng bằng principle check | Hướng đã chọn, flow |
@@ -51,7 +51,7 @@ Làm theo thứ tự.
 - Tên gọi: buổi theory là "lesson" (T1 đến T6), buổi practice là "practice" (P1 đến P6). File lesson hiện còn ghi "buổi N" theo số lesson; đổi khi sửa lần tới.
 - Chi tiết từng lesson ở `lesson-details.md`.
 
-**Theo dõi tiến bộ:** KNOW (giải thích khái niệm bằng lời của mình), DO (một file trong case folder), SHOW (trình bày và review chéo ở practice và buổi wrap-up).
+**Theo dõi tiến bộ:** KNOW (giải thích khái niệm bằng lời của mình), DO (một file trong project folder), SHOW (trình bày và review chéo ở practice và buổi wrap-up).
 
 ---
 
@@ -62,7 +62,7 @@ Làm theo thứ tự.
 | Vai trò của design | **Partner** của product và business, bắt đầu từ business question. Brief có sẵn là điểm xuất phát, không phải thứ cần sửa. Không gọi PO, PM, BA là rào cản; nói "product and business". |
 | Kết quả chính | Một workflow AI dùng lại được. Không dạy prompt tips hay tool. |
 | Nhịp học | Theory rồi practice mỗi tuần (xem mục 2). Mỗi lesson: ice breaker, theory, activity khoảng 5 phút, hỏi đáp. Luyện tập ở buổi practice. Lesson 1 có theory dài hơn (44 phút). Không có Check point. |
-| Case | Mỗi người một case của chính mình; case mẫu của chương trình là phương án dự phòng. Tài liệu bảo mật được ẩn danh trước. |
+| Project | Mỗi người một project của chính mình; project mẫu của chương trình là phương án dự phòng. Tài liệu bảo mật được ẩn danh trước. |
 | Data safety | Dạy ở buổi 1: ba loại tài liệu (an toàn, hỏi trước, không đưa vào tool công khai), bốn thói quen, học viên tự viết data rules. |
 | Discover | Không role-play: AI không bao giờ đóng PO hay user. Dùng câu hỏi gửi business bằng văn bản và phỏng vấn peer. Principles đặt trước, AI chạy sau. |
 | Access | Ba mức (full, limited, none). Outcome chưa xác nhận ghi là **assumed**. |
@@ -71,7 +71,7 @@ Làm theo thứ tự.
 | Đo lường | Lõi là usability metrics trước launch (Goals, Signals, Metrics). Business metrics hỏi product, ghi assumed. |
 | Tool | Một AI chat tool từ lesson 1, một AI coding tool từ lesson 5. Lesson và slide dùng tên chung; tên cụ thể chỉ nằm ở `assets/templates/tools-to-bring.md`. |
 | Prototype | Học viên không viết code; AI coding tool làm. Mục tiêu lesson 5: prototype sẵn sàng test, có thể là final design. |
-| Hub | Private mặc định, nằm trong case folder. Đưa lên GitHub là tuỳ chọn. |
+| Hub | Private mặc định, nằm trong project folder. Đưa lên GitHub là tuỳ chọn. |
 | Định hướng nghề | Lesson 1 dành 18 phút cho hướng đi của nghề và ba con đường; số liệu có nguồn, năm, cỡ mẫu (`research.md` Part 5). Học viên viết `my-direction.md` và xem lại ở buổi wrap-up. Chương trình không dạy thiết kế sản phẩm AI. |
 | Đã bỏ | Lesson handoff và measurement plan; workflow lab (tài liệu cũ ở `assets/templates/workflow-kit/` giữ nguyên, không dùng trong lớp). Quyết định 2026-10-26. |
 | Tên gọi | Mỗi ý một tên, định nghĩa ở bảng vocabulary trong `lesson-details.md`. Không dùng tên tool AI trong lesson. |
@@ -82,7 +82,7 @@ Làm theo thứ tự.
 
 **Cần Winnie quyết:**
 1. Nội dung practice P1 đến P6 và bài tập về nhà còn việc nào.
-2. Capstone: mỗi người một case (nghiêng về hướng này, chưa chốt hẳn).
+2. Capstone: mỗi người một project (nghiêng về hướng này, chưa chốt hẳn).
 
 **Việc cần làm:**
 - Viết practice P3 đến P6 và thư mục `07-wrap-up` (chỉ có file practice) khi chốt nội dung; P1 và P2 đã có bản nháp. Hub hiện Lesson và Practice trong nhóm `Lessons` của `SUMMARY.md`, không hiện outline.

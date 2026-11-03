@@ -1,4 +1,4 @@
-# Case mẫu: Kitchen Crate (hư cấu)
+# Project mẫu: Kitchen Crate (hư cấu)
 
 Kitchen Crate là một app meal-kit theo gói đăng ký. Khách chọn gói (2 hoặc 4 người, 3 hoặc 4 bữa tối mỗi tuần), chọn ngày giao, và mỗi tuần nhận một hộp nguyên liệu kèm thẻ công thức.
 

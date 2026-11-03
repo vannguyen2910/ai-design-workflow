@@ -26,7 +26,7 @@ Tránh đoán mò và làm lại. Phép thử: developer có build được mà 
 **AI giúp được ở đâu**
 - Soạn nháp spec và chỉ ra state còn thiếu
 - Kiểm tra state, edge case và điểm không nhất quán còn thiếu, như các câu hỏi dành cho bạn
-- Soạn nháp bản tóm tắt decision log từ case log của bạn
+- Soạn nháp bản tóm tắt decision log từ project log của bạn
 
 **Phần bạn vẫn tự làm**
 - Kiểm tra từng câu với thiết kế thật

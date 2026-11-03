@@ -9,7 +9,7 @@ Xuất hub thành **một file HTML tự chứa** để xem trong trình duyệt
 | Khi nào | Khi bạn cần xem hub trong trình duyệt, hoặc gửi cho người khác |
 | Làm trước | Chạy `tools/step-refresh-hub.md` để các bảng không cũ |
 | Lệnh | `python3 tools/export-hub.py` |
-| Output | `index.html` ở gốc case folder |
+| Output | `index.html` ở gốc project folder |
 
 ## Vì sao là một script, không phải AI
 
@@ -33,7 +33,7 @@ Các khối "Cách điền" bị bỏ khỏi báo cáo. Link tới file ngoài b
 | **Hành trình** | Các trang theo giai đoạn (phần narrative); bấm một thẻ để mở trang |
 | **Tài liệu** | Mỗi artifact một thẻ, bấm để mở trang: tóm tắt, điểm chính, hình, prototype chạy được, link ngoài, và các item nó hỗ trợ. Lọc theo giai đoạn và loại |
 | **Insights** | Mỗi item (O, H, M, D, T) một thẻ, có tìm kiếm và lọc theo loại; nút **Cây** chuyển sang dạng **Opportunity > Hypothesis > Decision / Test / Metric** |
-| **Reference** | Gates, principle checks, case log |
+| **Reference** | Gates, principle checks, project log |
 
 Item không nằm trong menu bên trái mà nằm trong mục Insights, nên báo cáo vẫn dùng được khi có hàng chục item. Item chưa nối vào opportunity nào được gom riêng ở cuối cây.
 
@@ -65,7 +65,7 @@ Bản này gấp bản nháp lại và ghi "chưa kiểm tra". **Không gửi b�
 
 **Who:** YOU (hoặc AI tool, chỉ để chạy lệnh)
 **Input:** folder `hub/`, `case-log.md`, `learnings/context-principle-checks.md`
-**Output:** `index.html` ở gốc case folder
+**Output:** `index.html` ở gốc project folder
 
 ```
 python3 tools/export-hub.py
@@ -93,6 +93,6 @@ Mở file bằng trình duyệt và kiểm tra:
 
 ## Naming
 
-File luôn tên `index.html` và nằm ở gốc case folder, là **trang chủ của hub**: bấm đúp là mở. Template đã có sẵn một bản tạo từ dữ liệu mẫu, nên bạn xem được hub ngay từ ngày đầu. Mỗi lần bạn sửa hub, tạo lại để trang chủ khớp với nội dung mới.
+File luôn tên `index.html` và nằm ở gốc project folder, là **trang chủ của hub**: bấm đúp là mở. Template đã có sẵn một bản tạo từ dữ liệu mẫu, nên bạn xem được hub ngay từ ngày đầu. Mỗi lần bạn sửa hub, tạo lại để trang chủ khớp với nội dung mới.
 
 **Khi gửi cho người khác,** copy file ra ngoài và đổi tên cho dễ nhận ra, ví dụ `onboarding-redesign-report-2026-10-11.html`. Tên `index.html` đứng một mình trong hộp thư của người nhận không nói gì về nội dung. Bạn cũng có thể tạo thẳng bản gửi đi bằng `python3 tools/export-hub.py --out ten-file.html`.

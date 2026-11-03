@@ -1,6 +1,6 @@
 # Tools và step card
 
-Folder này chứa script `export-hub.py` (tạo `index.html`) và các step card: định nghĩa quy trình AI-assisted dưới dạng file, để AI tool đọc được và quy trình được lưu cùng case. Mỗi file là một workflow, gồm các step có thứ tự, và mỗi step ghi rõ ai làm (AI hay bạn), đọc file nào và ghi vào đâu.
+Folder này chứa script `export-hub.py` (tạo `index.html`) và các step card: định nghĩa quy trình AI-assisted dưới dạng file, để AI tool đọc được và quy trình được lưu cùng project. Mỗi file là một workflow, gồm các step có thứ tự, và mỗi step ghi rõ ai làm (AI hay bạn), đọc file nào và ghi vào đâu.
 
 ## Cards
 
@@ -15,7 +15,7 @@ Các card cho Frame, Explore, Prototype và Test sẽ được bổ sung. Bạn 
 
 ## How to run a step
 
-1. Mở cả folder case trong AI tool. Tool tự đọc `AGENTS.md` ở gốc.
+1. Mở cả folder project trong AI tool. Tool tự đọc `AGENTS.md` ở gốc.
 2. Commit trước (nếu bạn dùng Git), để quay lại được.
 3. Nói với tool: *"Chạy step 5 của `tools/step-user-voice-synthesis.md`."*
 4. Đọc kết quả, rồi tự kiểm tra ở step tiếp theo. Step có nhãn **(YOU)** là phần bạn vẫn tự làm.

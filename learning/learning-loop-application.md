@@ -7,7 +7,7 @@
 | Thành phần | Đã có trong khoá | Nhận xét |
 |---|---|---|
 | Knowledge | Buổi theory, cheat sheet | Đã đủ |
-| Experience, Skill, Training | Case của học viên, file trong case folder (DO), practice, bài tập dưới 20 phút | Đã đủ |
+| Experience, Skill, Training | Project của học viên, file trong project folder (DO), practice, bài tập dưới 20 phút | Đã đủ |
 | Performance | Test với peer trong một ngày (tuần 6); SHOW ở practice và wrap-up | Có, nhưng chỉ rõ ở cuối khoá |
 | Coaching | Winnie coach ở buổi practice | Đã có, chưa gọi tên |
 | Mentoring | Hỏi đáp ở buổi theory | Đã có, chưa gọi tên |
@@ -23,7 +23,7 @@ Khoá mạnh ở Knowing và Doing. Nhóm Assessing mới có coaching và feedb
 
 | # | Đề xuất | Chạm vào |
 |---|---|---|
-| 1 | `learning-log.md` trong case folder: ba dòng sau mỗi practice, khoảng 5 phút | `workspace-template`, Practice 1 và 2 |
+| 1 | `learning-log.md` trong project folder: ba dòng sau mỗi practice, khoảng 5 phút | `workspace-template`, Practice 1 và 2 |
 | 2 | Ba phút reflection cuối mỗi practice, một câu hỏi cố định: feedback nào hôm nay làm bạn đổi cách nghĩ? | Cuối mỗi `*-practice.md` |
 | 3 | Wrap-up đọc lại log sáu tuần, tìm mẫu lặp lại, rồi viết cùng `my-direction.md` | `07-wrap-up` |
 | 4 | Gọi tên vai trò một lần: theory là mentoring, practice là coaching, peer review là feedback | Lesson 1, `introduction.md` |

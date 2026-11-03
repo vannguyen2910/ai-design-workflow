@@ -18,7 +18,7 @@ next-session: "Turn Research into Insights You Can Trust"
 
 ## Abstract
 
-Buổi 2 của AI Design Workflow mở stage Discover cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi này đặt một bộ nguyên tắc chung, rồi cho designer thấy cách phá brief (break the brief), cách hiểu người dùng (understand our users) và cách biến quote phỏng vấn thành một claim mà mọi dòng dẫn về quote gốc (synthesis). Designer làm cả chuỗi này trên một case cụ thể ở nhà sau buổi; buổi practice trên lớp làm tiếp phần dang dở và chấm.
+Buổi 2 của AI Design Workflow mở stage Discover cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi này đặt một bộ nguyên tắc chung, rồi cho designer thấy cách phá brief (break the brief), cách hiểu người dùng (understand our users) và cách biến quote phỏng vấn thành một claim mà mọi dòng dẫn về quote gốc (synthesis). Designer làm cả chuỗi này trên một project cụ thể ở nhà sau buổi; buổi practice trên lớp làm tiếp phần dang dở và chấm.
 
 Năm phần theo thứ tự trình bày:
 
@@ -30,7 +30,7 @@ Năm phần theo thứ tự trình bày:
 
 Nguyên tắc vận hành giữ từ buổi 1: **AI soạn nháp. Designer kiểm tra. Designer quyết định.**
 
-**Hình dạng buổi.** Ice breaker, theory (năm phần), một activity 10 phút (viết claim rồi phản biện chéo), hỏi đáp và close. Buổi giả định designer đã có case folder và mô tả sản phẩm, người dùng từ buổi 1, và tiếp cận được user thật để phỏng vấn. Lesson 3 dùng claim và insight của designer làm đầu vào.
+**Hình dạng buổi.** Ice breaker, theory (năm phần), một activity 10 phút (viết claim rồi phản biện chéo), hỏi đáp và close. Buổi giả định designer đã có project folder và mô tả sản phẩm, người dùng từ buổi 1, và tiếp cận được user thật để phỏng vấn. Lesson 3 dùng claim và insight của designer làm đầu vào.
 
 ---
 
@@ -51,18 +51,18 @@ Sau buổi 2, designer có thể:
 - Designer nói được bốn hoạt động của Break the brief và file mỗi hoạt động tạo ra.
 - Designer giải thích được vì sao một điều AI đưa ra mà không có trong tài liệu phải được đánh dấu "chưa có nguồn".
 - Designer viết được một claim dẫn ít nhất hai quote ID và một dòng "bộ quote này không cho biết điều gì". Checkpoint trên lớp: mỗi cặp bắt được ít nhất một lỗi trong claim của người cùng cặp, kèm quote ID.
-- Sau Practice 2: bộ nguyên tắc có 3 đến 5 UX principle riêng của case (mỗi cái kèm "điều này không có nghĩa là…") và ít nhất một business principle.
+- Sau Practice 2: bộ nguyên tắc có 3 đến 5 UX principle riêng của project (mỗi cái kèm "điều này không có nghĩa là…") và ít nhất một business principle.
 
 ## Materials Needed
 
-- Case folder từ buổi 1 (mô tả sản phẩm và người dùng, data rules), và [case mẫu](../../../assets/starter-files/course-case/case-card.md) app giao đồ ăn cho phần demo.
+- Project folder từ buổi 1 (mô tả sản phẩm và người dùng, data rules), và [project mẫu](../../../assets/starter-files/course-case/case-card.md) app giao đồ ăn cho phần demo.
 - Bộ quote app giao đồ ăn `assets/starter-files/course-case/quotes.md` (24 quote tiếng Anh, đã ẩn danh, có ID: review R01 đến R10, forum F01 đến F08, phỏng vấn I01-01 đến I02-03). Bảng đáp án `quotes-answer-key.md` chỉ dành cho người hướng dẫn.
 - Template bộ nguyên tắc, hai diagram `quote-check` và `four-steps-with-ai` trong `assets/` của lesson, và cheat sheet một màn hình (bốn hoạt động, ba mức access, thang severity, bốn bước synthesis).
 - Một AI chat tool đã được công ty cho phép.
 
 ## Pre-Class Preparation
 
-Tối đa khoảng 10 phút: xem lại mô tả sản phẩm và người dùng (người ngoài đọc có hiểu không); tìm brief hoặc PRD gần nhất của case, đã ẩn danh theo data rules; nghĩ trước người quyết định của case là ai và họ đo thành công bằng gì.
+Tối đa khoảng 10 phút: xem lại mô tả sản phẩm và người dùng (người ngoài đọc có hiểu không); tìm brief hoặc PRD gần nhất của project, đã ẩn danh theo data rules; nghĩ trước người quyết định của project là ai và họ đo thành công bằng gì.
 
 ---
 
@@ -88,7 +88,7 @@ Phần AI làm nhanh nhất là biến brief thành màn hình. Phần AI chưa 
 
 ### 2.1 Three parts
 
-Không có chuẩn, AI đối chiếu công việc với "điều nghe hợp lý nói chung"; có chuẩn viết sẵn, AI đối chiếu với đúng tiêu chí của case. Designer viết chuẩn một lần, các bước sau dùng lại.
+Không có chuẩn, AI đối chiếu công việc với "điều nghe hợp lý nói chung"; có chuẩn viết sẵn, AI đối chiếu với đúng tiêu chí của project. Designer viết chuẩn một lần, các bước sau dùng lại.
 
 | Phần | Nội dung | Nguồn |
 |---|---|---|
@@ -124,7 +124,7 @@ Một principle dùng được cần bốn điều (tổng hợp từ hướng d
 1. **Đủ cụ thể để đảo ngược một quyết định.** "Đơn giản và dễ dùng" không đảo ngược được quyết định nào; "đổi ý phải dễ hơn cam kết" thì có.
 2. **Có thứ tự ưu tiên khi hai principle xung đột.** Không có thứ tự, AI và designer mỗi bên chọn một kiểu.
 3. **Có một dòng "điều này không có nghĩa là…".** Dòng này chặn AI áp dụng quá tay.
-4. **Ít.** Tối đa 7 cho cả sản phẩm; case của chương trình cần 3 đến 5.
+4. **Ít.** Tối đa 7 cho cả sản phẩm; project của chương trình cần 3 đến 5.
 
 Ví dụ app giao đồ ăn: *"Đổi ý phải dễ hơn cam kết. Không có nghĩa là bỏ bước xác nhận thanh toán."* Principle này đảo ngược quyết định "không đổi được khung giờ giao sau khi thanh toán" và cho UX observation (3.3) một tiêu chí cụ thể. Mỗi principle nên viết được thành một câu hỏi có hoặc không, ví dụ "Khách đổi được khung giờ giao sau khi thanh toán không?".
 
@@ -193,7 +193,7 @@ Giả định là điều đang tin về người dùng, vấn đề, giải ph�
 - **Ma trận Importance × Evidence:** góc quan trọng cao, bằng chứng thấp (top-left) là chỗ phải kiểm chứng trước. Framework cho phép 3 đến 5 giả định; lớp chọn 3 vì thời gian practice.
 - **Cập nhật bản đồ:** buổi này chỉ ghi finding của bản đánh giá UX làm bằng chứng cho giả định nó xác nhận hoặc bác. Chuyển sang Confirmed, Unconfirmed hay Unknown sau khi có quote phỏng vấn (mục 5).
 
-AI đọc context pack, bản đánh giá UX và scope rồi liệt kê giả định theo công thức, gắn loại, tìm giả định ẩn của brief và hỏi ngược bằng chứng của từng giả định ("dựa vào file nào? Nếu không có, ghi unknown"). Designer tự xếp lên ma trận, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh AI không có. Mục AI đưa ra mà tài liệu không có thì ghi "chưa có nguồn"; mỗi người sửa ít nhất hai giả định AI viết cho cụ thể với case. Kết quả là **ba giả định hàng đầu** ở góc top-left, đầu vào của bước tiếp theo.
+AI đọc context pack, bản đánh giá UX và scope rồi liệt kê giả định theo công thức, gắn loại, tìm giả định ẩn của brief và hỏi ngược bằng chứng của từng giả định ("dựa vào file nào? Nếu không có, ghi unknown"). Designer tự xếp lên ma trận, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh AI không có. Mục AI đưa ra mà tài liệu không có thì ghi "chưa có nguồn"; mỗi người sửa ít nhất hai giả định AI viết cho cụ thể với project. Kết quả là **ba giả định hàng đầu** ở góc top-left, đầu vào của bước tiếp theo.
 
 ### 3.5 Research questions
 
@@ -219,7 +219,7 @@ Năm điều cần nắm:
 
 ## 4. Understand our users (theory)
 
-Hai nhánh: methods, và research với AI (plan và script). Nhánh thứ ba, post-interview, nằm trong synthesis (mục 5). Designer phỏng vấn user thật của case ở nhà, sau buổi này và trước buổi practice trên lớp; đầu vào là research question đã chốt ở 3.5.
+Hai nhánh: methods, và research với AI (plan và script). Nhánh thứ ba, post-interview, nằm trong synthesis (mục 5). Designer phỏng vấn user thật của project ở nhà, sau buổi này và trước buổi practice trên lớp; đầu vào là research question đã chốt ở 3.5.
 
 ### 4.1 Methods: interview và survey
 
@@ -315,12 +315,12 @@ Bước Challenge là chỗ designer làm chủ kết luận. Năm câu phản b
 
 ## 6. Worked example: app giao đồ ăn
 
-Case mẫu (hư cấu): app giao đồ ăn, nhiều khách mới không đặt lại sau đơn đầu tiên, team nghi ngờ giá là lý do, chưa có research nào.
+Project mẫu (hư cấu): app giao đồ ăn, nhiều khách mới không đặt lại sau đơn đầu tiên, team nghi ngờ giá là lý do, chưa có research nào.
 
 - **Brief:** "Cải thiện onboarding." **Business question:** "Vì sao khách mới không đặt lại sau đơn đầu tiên, và điều gì giữ họ lại?"
 - **Principles:** UX heuristic: kiểm soát và tự do của người dùng; UX principle riêng: "đổi ý phải dễ hơn cam kết, không có nghĩa là bỏ bước xác nhận thanh toán". Business principle: không tăng tỷ lệ huỷ đơn sau đơn đầu tiên (assumed). Severity: thang 0 đến 4.
 - **UX observation** trên flow chọn khung giờ giao: không có xác nhận sau khi chọn khung giờ (trạng thái hệ thống), không đổi được khung giờ sau khi thanh toán (kiểm soát của người dùng), nhãn nút khác nhau giữa hai màn hình (nhất quán).
-- **Điều đang tin (AI soạn nháp, designer đối chiếu):** giá là lý do chính; khách không hiểu cách đổi khung giờ giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong case mẫu, nên đánh dấu "chưa có nguồn".
+- **Điều đang tin (AI soạn nháp, designer đối chiếu):** giá là lý do chính; khách không hiểu cách đổi khung giờ giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong project mẫu, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ đặt đơn thứ hai trong 30 ngày; baseline chưa biết, ghi assumed, người xác nhận là business.
 - **Research question** (từ giả định "khách không hiểu cách đổi khung giờ giao"): "Khách đang làm gì khi cần dời khung giờ giao của đơn đã đặt, và điều gì khiến họ bỏ dở?" Phục vụ quyết định có thiết kế lại bước đổi khung giờ hay không; tìm ở phỏng vấn user.
 
@@ -362,7 +362,7 @@ Ba quy tắc cho mọi lesson: đoán trước rồi mới xem kết quả của
 
 ### 7.4 Practice at home and in-class session
 
-**Practice 2 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo): hoàn thiện `principles.md`; viết research plan (scope, UX observation, giả định, research questions, competitor analysis) và facilitation script; phỏng vấn user thật của case, đã có consent; ẩn danh transcript và gắn quote ID; synthesis theo bốn bước; đưa insight lên hub và nối về business question. Mỗi bước cho ra một file. **Buổi practice trên lớp (90 phút)** làm tiếp phần còn dang dở rồi được chấm; cách chấm chưa quyết. Practice sheet `discover-the-problem-practice.md` đã viết lại theo chuỗi 12 step này (2026-10-30).
+**Practice 2 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo): hoàn thiện `principles.md`; viết research plan (scope, UX observation, giả định, research questions, competitor analysis) và facilitation script; phỏng vấn user thật của project, đã có consent; ẩn danh transcript và gắn quote ID; synthesis theo bốn bước; đưa insight lên hub và nối về business question. Mỗi bước cho ra một file. **Buổi practice trên lớp (90 phút)** làm tiếp phần còn dang dở rồi được chấm; cách chấm chưa quyết. Practice sheet `discover-the-problem-practice.md` đã viết lại theo chuỗi 12 step này (2026-10-30).
 
 ---
 
@@ -433,7 +433,7 @@ Quote của người thật là dữ liệu cá nhân. Ẩn danh trước khi đ
 
 | Lesson và practice | Vai trò |
 |---|---|
-| Lesson 1 (buổi 1), Practice 1 (buổi 2) | Case folder, data rules, bốn khái niệm, context pack; nền để dùng buổi này |
+| Lesson 1 (buổi 1), Practice 1 (buổi 2) | Project folder, data rules, bốn khái niệm, context pack; nền để dùng buổi này |
 | **Lesson 2 (buổi 3, buổi này)** | Principles, Break the brief, Understand our users, synthesis: quote có ID, bốn bước, claim dẫn về quote |
 | Practice 2 (buổi 4) | Bộ nguyên tắc, research plan, phỏng vấn user thật, ẩn danh, synthesis, insight lên hub |
 | Lesson 3 (buổi 5) | Persona, journey map, opportunity dẫn về quote ID; insight hub; package thành agent; bốn câu hỏi về giới hạn của AI |

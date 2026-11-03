@@ -54,7 +54,7 @@ Sau buổi 3, designer có thể:
 
 ## Materials Needed
 
-- case app giao đồ ăn hư cấu: `assets/starter-files/course-case/quotes.md` (24 quote tiếng Anh, đã ẩn danh, có ID) và `case-card.md`. Bảng đáp án `quotes-answer-key.md` chỉ dành cho người hướng dẫn.
+- project app giao đồ ăn hư cấu: `assets/starter-files/course-case/quotes.md` (24 quote tiếng Anh, đã ẩn danh, có ID) và `case-card.md`. Bảng đáp án `quotes-answer-key.md` chỉ dành cho người hướng dẫn.
 - Persona mẫu do AI sinh cho app giao đồ ăn (sáu dòng, một số có quote đỡ, một số không) cho activity: `assets/starter-files/course-case/persona-ai-draft.md` `[to create]` (cần soạn cùng đáp án cho người hướng dẫn).
 - Hai diagram trong `assets/` của lesson: `insight-chain` và `insight-hub-loop`; phần ôn dùng thêm `quote-check` và `four-steps-with-ai` ở Lesson 2.
 - Cheat sheet một màn hình (bốn câu hỏi còn lại, ba prompt cho persona, journey map, opportunity) và một AI chat tool đã được công ty cho phép.
@@ -128,7 +128,7 @@ Persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity đ
 
 ## 3. Insight hub
 
-Insight hub là một phần của Knowledge Hub của case (thư mục `insights/`), không phải một công cụ repository riêng.
+Insight hub là một phần của Knowledge Hub của project (thư mục `insights/`), không phải một công cụ repository riêng.
 
 | | |
 |---|---|
@@ -150,7 +150,7 @@ Khi designer hài lòng với một quy trình (ví dụ bốn bước synthesis
 
 1. Viết quy trình thành step card: ai làm (designer hay AI), đầu vào, đầu ra, check nào phải qua.
 2. Biến step card thành một agent: một bộ instruction dùng lại được, gắn với bộ nguyên tắc làm chuẩn.
-3. Đóng góp agent và file output vào Knowledge Hub của case, cùng insight đã kiểm tra, để buổi sau dùng lại.
+3. Đóng góp agent và file output vào Knowledge Hub của project, cùng insight đã kiểm tra, để buổi sau dùng lại.
 
 Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai đầu vào khác nhau và phần designer kiểm tra đã được ghi rõ. Đóng gói sớm quá sẽ đóng gói cả lỗi. Agent không thay bước Challenge và bước kiểm tra quote: những bước đó vẫn do designer làm.
 
@@ -207,9 +207,9 @@ Không tìm thấy đánh giá độc lập về độ chính xác so sánh các
 
 ### 6.1 The data
 
-Case mẫu hư cấu: app giao đồ ăn, nhiều khách mới không đặt lại sau đơn đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng case với buổi 2). Bộ quote `quotes.md` có 24 quote: 10 review (R01 đến R10), 8 bài đăng forum (F01 đến F08) và hai phỏng vấn ngắn (I01-01 đến I02-03). Quote bằng tiếng Anh; claim có thể viết bằng tiếng Việt, nhưng quote dẫn vào phải khớp từng chữ với bản gốc.
+Project mẫu hư cấu: app giao đồ ăn, nhiều khách mới không đặt lại sau đơn đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng project với buổi 2). Bộ quote `quotes.md` có 24 quote: 10 review (R01 đến R10), 8 bài đăng forum (F01 đến F08) và hai phỏng vấn ngắn (I01-01 đến I02-03). Quote bằng tiếng Anh; claim có thể viết bằng tiếng Việt, nhưng quote dẫn vào phải khớp từng chữ với bản gốc.
 
-Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở đơn đầu tiên (2.1), journey từ chọn khung giờ giao đến huỷ đơn (2.2) và opportunity về khung giờ giao (2.3). Activity dùng thêm một persona mẫu do AI sinh cho cùng case, có sẵn dòng không có quote đỡ để designer tự phát hiện `[to create]`. Bảng đáp án dành riêng cho người hướng dẫn (`quotes-answer-key.md`).
+Bộ này làm ví dụ xuyên suốt các slide: persona khách mới ở đơn đầu tiên (2.1), journey từ chọn khung giờ giao đến huỷ đơn (2.2) và opportunity về khung giờ giao (2.3). Activity dùng thêm một persona mẫu do AI sinh cho cùng project, có sẵn dòng không có quote đỡ để designer tự phát hiện `[to create]`. Bảng đáp án dành riêng cho người hướng dẫn (`quotes-answer-key.md`).
 
 ---
 
@@ -311,7 +311,7 @@ Câu trả lời ghi vào `_personal/learning-log.md`, cùng mục ba dòng củ
 |---|---|
 | Lesson 2 (buổi 3), Practice 2 (buổi 4) | Bộ nguyên tắc, scope, giả định, UX audit, competitor analysis, research question; synthesis: quote có ID, bốn bước, claim và insight của designer |
 | **Lesson 3 (buổi 5, buổi này)** | Ôn từ quote đến claim; persona, journey map, opportunity dẫn về quote ID; insight hub; package thành agent; bốn câu hỏi về giới hạn của AI |
-| Practice 3 (buổi 6) | Persona, journey, opportunity trên insight của case, problem brief, entry insight hub; buổi lớp làm tiếp và chấm |
+| Practice 3 (buổi 6) | Persona, journey, opportunity trên insight của project, problem brief, entry insight hub; buổi lớp làm tiếp và chấm |
 | Lesson 4 (buổi 7) | Hypothesis, How might we, Solution Tree, ý tưởng, chọn hướng bằng principle check |
 
 ---

@@ -28,7 +28,7 @@ File làm việc riêng, không lên site. Các phần dưới đây được d�
 
 - **Markdown (`.md`)** là tài liệu làm việc: plain text với vài ký hiệu đơn giản, định dạng AI tool xử lý ổn định và dễ cung cấp có chọn lọc.
 - **HTML** là phần trình bày. Prototype do AI dựng là file HTML; hub vẫn là Markdown, xem và sửa được bằng AI coding tool, VS Code, Obsidian hoặc GitHub. Khi stakeholder cần đọc, export ra PDF.
-- **Local folder.** Case nằm trong một folder local, không phải tài liệu trên cloud: AI coding tool mở cả folder làm project và đọc mọi thứ bên trong, còn folder đồng bộ cloud có thể lỗi khi đang ghi file.
+- **Local folder.** Project nằm trong một folder local, không phải tài liệu trên cloud: AI coding tool mở cả folder làm project và đọc mọi thứ bên trong, còn folder đồng bộ cloud có thể lỗi khi đang ghi file.
 
 ### 6.2 Project folder
 
@@ -53,7 +53,7 @@ Layout này phục vụ làm việc với AI vì:
 - Mỗi folder một vai: `context/` đưa vào đầu tiên ở mọi bước, `work/` chứa những gì làm ra, `insights/` chứa những gì học được và quyết định. File Markdown ngắn dễ cung cấp có chọn lọc.
 - `AGENTS.md` là một reusable instruction: tool tự đọc khi mở folder, nên quy tắc không phụ thuộc việc designer nhớ dán lại. Tool đọc tên khác thì copy nội dung sang tên đó.
 - Step card trong `toolkit/skills/` (ở gốc workspace, dùng chung cho mọi project) lưu quy trình thành file thay vì nằm trong trí nhớ.
-- `_raw-private/` tách khỏi `anonymised/`, và `_personal/` nằm ngoài context pack vì ghi chú nghề nghiệp không phải context của case.
+- `_raw-private/` tách khỏi `anonymised/`, và `_personal/` nằm ngoài context pack vì ghi chú nghề nghiệp không phải context của project.
 
 **Giới hạn:** `AGENTS.md` là quy tắc, không phải rào chắn kỹ thuật; tool không tuân theo vẫn đọc được `_raw-private/` và `_personal/`. Rào chắn thật là `.gitignore` và việc để file thật sự confidential ngoài folder.
 
@@ -69,7 +69,7 @@ Mỗi activity điền vào một file Markdown, từng section một. Năm quy 
 
 ### 6.4 Knowledge Hub and sharing
 
-Mọi output đi vào **Knowledge Hub**: một folder Markdown trong project folder, gồm các page theo tuần và mỗi item một file riêng trong `insights/` (O1, H1, M1, D1, T1…; chữ cái đầu cho biết loại). Các file liên kết qua properties, nên người đọc có thể bắt đầu từ một design decision và lần ra user need, hypothesis, principle và test đứng sau nó. Hub hoàn chỉnh là báo cáo cuối của chương trình. Giá trị với tổ chức: giữ lại lý do đằng sau mỗi decision khi người làm đổi dự án, cho phép kiểm chứng lập luận từ decision ngược về evidence, và chỉ ra chỗ yếu trước khi đầu tư xây. Ví dụ minh hoạ (bản nháp, chưa lấy từ case thật): decision chọn địa chỉ giao ở màn hình đầu của app giao đồ ăn nối tới một user need về nỗi lo đặt dư đồ ăn, một evidence từ phỏng vấn và một test xác nhận.
+Mọi output đi vào **Knowledge Hub**: một folder Markdown trong project folder, gồm các page theo tuần và mỗi item một file riêng trong `insights/` (O1, H1, M1, D1, T1…; chữ cái đầu cho biết loại). Các file liên kết qua properties, nên người đọc có thể bắt đầu từ một design decision và lần ra user need, hypothesis, principle và test đứng sau nó. Hub hoàn chỉnh là báo cáo cuối của chương trình. Giá trị với tổ chức: giữ lại lý do đằng sau mỗi decision khi người làm đổi dự án, cho phép kiểm chứng lập luận từ decision ngược về evidence, và chỉ ra chỗ yếu trước khi đầu tư xây. Ví dụ minh hoạ (bản nháp, chưa lấy từ project thật): decision chọn địa chỉ giao ở màn hình đầu của app giao đồ ăn nối tới một user need về nỗi lo đặt dư đồ ăn, một evidence từ phỏng vấn và một test xác nhận.
 
 Mỗi tài liệu làm ra trong dự án (phân tích đối thủ, persona, khảo sát, user flow, prototype) là một **artifact** có trang riêng, nối với các item nó hỗ trợ. Bảng alignment, warnings và trạng thái gate do AI dựng lại bằng `toolkit/skills/refresh-hub/SKILL.md`; bước này chưa thử với lớp thật, nên sau mỗi lần dựng designer đối chiếu vài dòng với file item. Ở buổi 1, hub được giới thiệu trong khoảng 5 phút bằng ba ảnh kết quả ([Outcome Examples](../examples/outcome-examples/README.md)).
 
@@ -78,7 +78,7 @@ Mỗi tài liệu làm ra trong dự án (phân tích đối thủ, persona, kh�
 1. Dùng `index.html` của hub (tạo bằng `toolkit/tools/build-report.py`), hoặc export các page chính ra PDF. File HTML là sản phẩm xuất ra từ Markdown, không phải nguồn.
 2. Gửi file nén của cả project folder (nén riêng một folder con làm link hỏng).
 3. Mời một người vào repository private trên GitHub.
-4. Công khai cả project folder trong một repository public, chỉ khi toàn bộ case được phép chia sẻ.
+4. Công khai cả project folder trong một repository public, chỉ khi toàn bộ project được phép chia sẻ.
 
 Người công khai là người host và chịu trách nhiệm. Hướng dẫn nằm ở `guides/04-share-your-hub.md` của workspace template.
 
@@ -99,7 +99,7 @@ Người công khai là người host và chịu trách nhiệm. Hướng dẫn 
 | 5 | T4: agent và đội AI cho product design | 4.4 | 10 phút |
 | 6 | T5: project folder và Knowledge Hub | 6 | 5 phút |
 | 7 | T6: data safety | 5 | 4 phút |
-| 8 | Activity: đoán trước năm đoạn trích, so với AI, rồi viết data rules cho case | 5, 7.2 | 18 phút |
+| 8 | Activity: đoán trước năm đoạn trích, so với AI, rồi viết data rules cho project | 5, 7.2 | 18 phút |
 | 9 | Hỏi đáp | 7.3 | 8 phút |
 | 10 | Practice 1 ở nhà và lời kết | 8.2 | 6 phút |
 | | **Tổng** | | **82 phút** |
@@ -111,14 +111,14 @@ Theory (phase 2 đến 7) là 44 phút, nới có chủ đích so với mức t�
 
 **Ice breaker: ai đang ở trong phòng** (6 phút, cả lớp, không có output). Mục đích: làm lớp bớt ngượng và lấy chất liệu thật cho phần sau. Người hướng dẫn làm mẫu 20 giây, rồi mỗi người nói khoảng 40 giây: tên và công việc, cùng một lần dùng AI khiến họ bất ngờ hoặc bực. Người hướng dẫn ghi vào bảng hai cột "bất ngờ" và "bực"; ai chưa dùng AI thì kể điều kỳ vọng hoặc lo ngại. Bảng được dùng lại ở T2, T3 và ba câu hỏi trước khi automate. Lớp dưới 6 người có thể giảm còn 5 phút.
 
-**Activity: đoán trước, rồi để AI phân loại** (18 phút, ngay sau data safety). Mục đích: áp dụng ba nhóm dữ liệu, thấy AI phân loại đúng và sai ở đâu, rồi viết data rules cho case thật.
+**Activity: đoán trước, rồi để AI phân loại** (18 phút, ngay sau data safety). Mục đích: áp dụng ba nhóm dữ liệu, thấy AI phân loại đúng và sai ở đâu, rồi viết data rules cho project thật.
 
 1. (3 phút, cá nhân) Nhận năm đoạn trích hư cấu của app giao đồ ăn (trang phí giao công khai của đối thủ; ghi chú quy trình giao hàng nội bộ; tóm tắt research chưa công bố, không có tên người; transcript phỏng vấn đã thay tên bằng chữ cái nhưng còn vai trò, tuổi và nơi ở; ảnh chụp admin dashboard đang chạy thật) và tự xếp vào safe, ask first hoặc never in a public tool trước khi mở AI tool.
 2. (6 phút, cặp hoặc cá nhân) Nhờ AI chat tool xếp cùng năm đoạn, rồi so với bản tự xếp.
-3. (7 phút, cá nhân) Viết ba dòng vào `context/data-rules.md` cho một case cụ thể (được dán gì, sẽ không dán gì, dùng tool nào cho việc gì); chỗ chưa biết chính sách công ty thì ghi "cần hỏi".
+3. (7 phút, cá nhân) Viết ba dòng vào `context/data-rules.md` cho một project cụ thể (được dán gì, sẽ không dán gì, dùng tool nào cho việc gì); chỗ chưa biết chính sách công ty thì ghi "cần hỏi".
 4. (2 phút, cả lớp) Mỗi người nói một con số "AI xếp đúng X trên 5".
 
-Designer dùng case mẫu thì viết cho case mẫu và viết lại cho case thật sau; chưa dán tài liệu thật vào AI tool. Bộ năm đoạn trích gửi trong chat đúng lúc bắt đầu Activity, không gửi trước, để bước đoán trước còn nguyên. Output: bản đầu của `context/data-rules.md`.
+Designer dùng project mẫu thì viết cho project mẫu và viết lại cho project thật sau; chưa dán tài liệu thật vào AI tool. Bộ năm đoạn trích gửi trong chat đúng lúc bắt đầu Activity, không gửi trước, để bước đoán trước còn nguyên. Output: bản đầu của `context/data-rules.md`.
 
 **Practice 1** làm ở nhà, không chạy trên lớp (mục 8.2).
 
@@ -132,11 +132,11 @@ Designer ghi câu hỏi vào chat trong suốt buổi. Tám phút hỏi đáp cu
 
 1. Mang một AI tool đã được công ty cho phép; đọc handout `tools-to-bring.md` (khoảng 5 phút) và làm bài kiểm tra 5 phút trong đó. Cần một chat tool ngay, một coding tool trước buổi 7.
 2. Đọc **pre-read brief** (khoảng 14 phút, Appendix A).
-3. Chọn case: project, sản phẩm hoặc feature đang làm, đã ẩn danh. Công ty cấm AI tool hoặc case quá nhạy cảm thì dùng case mẫu của chương trình.
+3. Chọn project: project, sản phẩm hoặc feature đang làm, đã ẩn danh. Công ty cấm AI tool hoặc project quá nhạy cảm thì dùng project mẫu của chương trình.
 4. Nghĩ trước một câu hỏi: trong 12 tháng tới, mong muốn công việc khác đi ở điểm nào? Không cần có câu trả lời.
 5. Tìm hiểu quy định của công ty về AI tool: có chính sách bằng văn bản không, tool nào được duyệt.
 6. Tải workspace template về máy (ZIP, không cần tài khoản GitHub; `guides/01-get-the-folder.md`) và đặt ở folder không đồng bộ cloud.
 
-Trước khi viết data rules ở Activity, chưa dán tài liệu thật của case vào AI tool; muốn thử thì chỉ dùng case mẫu hoặc năm đoạn trích hư cấu.
+Trước khi viết data rules ở Activity, chưa dán tài liệu thật của project vào AI tool; muốn thử thì chỉ dùng project mẫu hoặc năm đoạn trích hư cấu.
 
-**Tài liệu:** `tools-to-bring.md`, `before-you-automate.md` (gửi sau buổi 1), case mẫu (`course-case/case-card.md`), bộ năm đoạn trích của Activity, workspace template (`my-project`, `demo-project`, `toolkit/`), các method card và `guides/04-share-your-hub.md`.
+**Tài liệu:** `tools-to-bring.md`, `before-you-automate.md` (gửi sau buổi 1), project mẫu (`course-case/case-card.md`), bộ năm đoạn trích của Activity, workspace template (`my-project`, `demo-project`, `toolkit/`), các method card và `guides/04-share-your-hub.md`.

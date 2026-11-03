@@ -128,7 +128,7 @@ Key lessons: set fidelity expectations early; keep a **shared component library*
 
 ## Part 2 — Failure cases and risks
 
-> **See also:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md) pulls together what AI is good at, where it falls short, and the case for not automating a bad workflow, with a pre-automation checklist.
+> **See also:** [ai-strengths-and-limits.md](ai-strengths-and-limits.md) pulls together what AI is good at, where it falls short, and the project for not automating a bad workflow, with a pre-automation checklist.
 
 **Researched:** 2026-10-05 · Why this matters: each risk below should become a **checkpoint** in the workflow, not just a warning slide.
 
@@ -203,7 +203,7 @@ These interviews could also become your first **testimonial and needs-analysis e
 - General adult-learning guidance for AI courses: hands-on practice contextualised to the learner's job beats lectures, and groups should cover benefits, threats and barriers before integrating tools. Sources were workshop listings, not studies.
 
 ### Hypotheses for the series (derived, not proven)
-1. **One real work case across the whole series.** The chain only proves itself if output n becomes input n+1 on the same project. Supports the "repeatable workflow" outcome.
+1. **One real work project across the whole series.** The chain only proves itself if output n becomes input n+1 on the same project. Supports the "repeatable workflow" outcome.
 2. **Teach the gate, not the tool.** NN/g found tool capability "jagged" and changing; the verification habits (trace to source, argue back, test with real users) don't expire.
 3. **"Do it by hand first" reps** to counter deskilling (see `03`). Mid/senior designers already have the baseline to compare AI output against.
 4. **Make students write their own principles in lesson 0.** It forces ownership and gives the gate something concrete to check. Matches Linear's "define success before building".

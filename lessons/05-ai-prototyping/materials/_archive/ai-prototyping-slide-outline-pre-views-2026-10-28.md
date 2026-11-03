@@ -31,7 +31,7 @@ last_synced: 2026-10-28
 | Stage | Develop |
 | Prior session | Lesson 4 và Practice 4: Explore Ideas |
 | Next session | Practice 5: Build prototype main flow |
-| Running example | Một delivery app hư cấu (màn hình "Chọn thời gian giao" ở activity); học viên làm trên case của chính mình ở Practice 5 |
+| Running example | Một delivery app hư cấu (màn hình "Chọn thời gian giao" ở activity); học viên làm trên project của chính mình ở Practice 5 |
 
 ---
 

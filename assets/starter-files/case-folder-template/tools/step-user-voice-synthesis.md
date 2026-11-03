@@ -2,7 +2,7 @@
 
 Biến những gì người dùng thật nói (review, forum, phỏng vấn ngắn) thành theme và opportunity, mà AI không được bịa quote và mọi theme lần ngược về lời gốc.
 
-*Trạng thái: bản nháp. Hãy thử các instruction trên một case thật và chỉnh theo cách bạn làm trước khi dựa vào chúng.*
+*Trạng thái: bản nháp. Hãy thử các instruction trên một project thật và chỉnh theo cách bạn làm trước khi dựa vào chúng.*
 
 | | |
 |---|---|

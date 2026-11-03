@@ -24,4 +24,4 @@
 
 ## What changed because of this
 
-[Thay đổi thiết kế và các decision đã cập nhật. Thêm chúng vào [case log](../case-log.md).]
+[Thay đổi thiết kế và các decision đã cập nhật. Thêm chúng vào [project log](../case-log.md).]

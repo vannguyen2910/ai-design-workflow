@@ -25,19 +25,19 @@ next-session: "Discover the Problem"
 
 **4. Một quy tắc rõ ràng về dữ liệu nào an toàn để đưa cho AI tool.** Designer thường giữ tài liệu của người khác. Trước khi dán bất cứ thứ gì vào tool, bạn cần một cách để quyết định nó có an toàn hay không.
 
-**5. Một project folder để AI làm việc cùng.** Mỗi lesson sau thêm một file hoặc một page vào cùng một case. Khi cấu trúc rõ ràng, mỗi bước AI có một input có tên, và bạn dễ tìm, kiểm tra và dùng lại mọi thứ.
+**5. Một project folder để AI làm việc cùng.** Mỗi lesson sau thêm một file hoặc một page vào cùng một project. Khi cấu trúc rõ ràng, mỗi bước AI có một input có tên, và bạn dễ tìm, kiểm tra và dùng lại mọi thứ.
 
 Lesson cũng đặt ra lập trường cho cả series: **designer là partner cùng định nghĩa requirement với business và product.** Product và design cùng chọn vấn đề đáng giải trước khi build.
 
-**Ai học cùng.** Series được thiết kế cho Product Designer và UI/UX Designer. Lớp cũng có thể có Product Owner, Product Manager và Business Analyst, và họ học được trọn vẹn: cùng stage, cùng case folder, cùng hub. Họ không cần kỹ năng design và không phải build prototype từ đầu. Khi đến phần prototype, họ dùng một design system có sẵn và để AI tạo template từ đó. Ở các lesson sau, những chỗ có khác biệt theo vai trò được ghi rõ trong phần "Nếu bạn là PO, PM hoặc BA".
+**Ai học cùng.** Series được thiết kế cho Product Designer và UI/UX Designer. Lớp cũng có thể có Product Owner, Product Manager và Business Analyst, và họ học được trọn vẹn: cùng stage, cùng project folder, cùng hub. Họ không cần kỹ năng design và không phải build prototype từ đầu. Khi đến phần prototype, họ dùng một design system có sẵn và để AI tạo template từ đó. Ở các lesson sau, những chỗ có khác biệt theo vai trò được ghi rõ trong phần "Nếu bạn là PO, PM hoặc BA".
 
 **Điểm xuyên suốt ở mọi stage là AI-assisted, không phải AI-generated.** AI-generated nghĩa là AI đưa ra quyết định. AI-assisted nghĩa là bạn quyết định, AI lo phần lắp ráp. Ở mọi stage, mô hình đều giống nhau: **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.**
 
-**Mỗi tuần diễn ra thế nào (cả series).** Hai buổi online mỗi tuần, mỗi buổi 90 phút, 7 đến 8 học viên, hai buổi cách nhau khoảng ba ngày. Buổi đầu của tuần dạy một chủ đề rồi áp dụng ngay vào case của bạn. Buổi thứ hai là buổi thực hành: bạn làm tiếp case của mình trong nhóm nhỏ, có coaching. Chuẩn bị tối đa 10 phút trước buổi dạy (tuần đầu khoảng 20 phút vì phải cài đặt tool). Homework chỉ là làm tiếp phần đã bắt đầu trên lớp, tối đa khoảng 45 phút. Tổng cộng khoảng 3,5 đến 4 giờ mỗi tuần. Buổi live không phụ thuộc vào việc bạn đã làm homework hay chưa.
+**Mỗi tuần diễn ra thế nào (cả series).** Hai buổi online mỗi tuần, mỗi buổi 90 phút, 7 đến 8 học viên, hai buổi cách nhau khoảng ba ngày. Buổi đầu của tuần dạy một chủ đề rồi áp dụng ngay vào project của bạn. Buổi thứ hai là buổi thực hành: bạn làm tiếp project của mình trong nhóm nhỏ, có coaching. Chuẩn bị tối đa 10 phút trước buổi dạy (tuần đầu khoảng 20 phút vì phải cài đặt tool). Homework chỉ là làm tiếp phần đã bắt đầu trên lớp, tối đa khoảng 45 phút. Tổng cộng khoảng 3,5 đến 4 giờ mỗi tuần. Buổi live không phụ thuộc vào việc bạn đã làm homework hay chưa.
 
 > **Vị trí của lesson:** nằm trước bước đầu tiên của workflow. Lesson giả định bạn đã làm research, UX design và prototyping, và thêm lớp AI lên trên những kỹ năng đó. Với PO, PM và BA, phần nhắc lại bốn stage là lúc nhìn vào quy trình của designer; phần AI, từ vựng, data safety và folder dùng nguyên như nhau.
 
-**Lesson này kéo dài hai buổi.** Buổi 1 (dạy): tương lai của nghề và ba hướng đi, nhắc lại bốn stage cùng AI, thuật ngữ, data safety, hub. Buổi 1 có 15 phút cuối để hỏi đáp. Buổi 2 (thực hành): viết data rules và hướng đi của bạn, dựng case folder của chính bạn, chạy instruction đầu tiên với file đã lưu, đọc chéo với bạn cặp.
+**Lesson này kéo dài hai buổi.** Buổi 1 (dạy): tương lai của nghề và ba hướng đi, nhắc lại bốn stage cùng AI, thuật ngữ, data safety, hub. Buổi 1 có 15 phút cuối để hỏi đáp. Buổi 2 (thực hành): viết data rules và hướng đi của bạn, dựng project folder của chính bạn, chạy instruction đầu tiên với file đã lưu, đọc chéo với bạn cặp.
 
 ---
 
@@ -49,24 +49,24 @@ Sau hai buổi học, học viên có thể:
 2. **Kể tên** các method chính trong từng stage của bốn stage, và **nói được AI giúp ở đâu, phần nào mình vẫn phải tự làm**
 3. **Giải thích** mười thuật ngữ AI cốt lõi bằng lời của mình: AI chat tool, AI coding tool, context, context window, grounding, hallucination, agent, connector (MCP), reusable instructions (skills, rules file, project memory), và AI-assisted so với AI-generated
 4. **Quyết định** dữ liệu nào an toàn để đưa cho AI tool: phân loại tài liệu thành ba nhóm (safe, ask first, never in a public tool), ẩn danh trước khi dán, và viết data rules của riêng mình
-5. **Cài đặt** case folder của series cho case của chính mình, gồm layout chuẩn, context pack đã bắt đầu và một hub trống
+5. **Cài đặt** project folder của series cho project của chính mình, gồm layout chuẩn, context pack đã bắt đầu và một hub trống
 6. **Dùng lại** một file đã lưu làm context thay vì gõ lại mô tả project, và yêu cầu AI chỉ rõ nguồn cho từng ý, kèm câu trả lời "unknown" khi không có thông tin
-7. **Giải thích** cách chia sẻ hub với stakeholder: mặc định private (gửi PDF hoặc folder nén), chỉ publish lên GitHub khi case được phép chia sẻ
+7. **Giải thích** cách chia sẻ hub với stakeholder: mặc định private (gửi PDF hoặc folder nén), chỉ publish lên GitHub khi project được phép chia sẻ
 
 ---
 
 ## Materials Needed
 
-- **Ít nhất một AI chat tool trên laptop của học viên** mà công ty của học viên cho phép (hoặc case card của khoá, bên dưới, nếu không tool nào được phép). Các ví dụ khuyến nghị nằm trong handout về tool (`tools-to-bring.md`)
+- **Ít nhất một AI chat tool trên laptop của học viên** mà công ty của học viên cho phép (hoặc project card của khoá, bên dưới, nếu không tool nào được phép). Các ví dụ khuyến nghị nằm trong handout về tool (`tools-to-bring.md`)
 - Laptop với file explorer đã mở
 - Pre-read brief (bản pre-read một trang ở cuối file này)
-- Case card của khoá (`course-case/case-card.md`) cho phần demo ở Phase 3
+- Project card của khoá (`course-case/case-card.md`) cho phần demo ở Phase 3
 - Mười thẻ thuật ngữ, và sáu thẻ tài liệu cho bài tập phân loại
 - Bản research tương lai nghề (`programs/ai-design-workflow/learning/future-of-design-careers.md`) cho giảng viên: số liệu, nguồn và giới hạn của từng con số. Trước khi dạy, tải báo cáo State of the Designer 2026 của Figma (cần điền form, miễn phí) để xác nhận con số 36/35/29
-- Template case folder của series và folder template hub trống
+- Template project folder của series và folder template hub trống
 - Các method card (`programs/ai-design-workflow/assets/method-cards/`), có link từ pre-read brief. Các card này chưa được publish lên site, nên hãy chia sẻ cho học viên dưới dạng file hoặc folder
 - Hướng dẫn publish dành cho học viên (`publish-guide.md`), dùng cho homework tuỳ chọn
-- Một case dùng xuyên suốt series. **Mặc định là case của chính học viên** (thật hoặc gần thật). Phương án thay thế: case card của khoá, hoặc một sản phẩm học viên đã quen
+- Một project dùng xuyên suốt series. **Mặc định là project của chính học viên** (thật hoặc gần thật). Phương án thay thế: project card của khoá, hoặc một sản phẩm học viên đã quen
 
 ---
 
@@ -76,15 +76,15 @@ Sau hai buổi học, học viên có thể:
 
 1. **Mang theo AI tool của bạn.** Đọc handout về tool (`tools-to-bring.md`, khoảng 5 phút) và làm bài kiểm tra 5 phút trong đó để chắc chắn tool chạy được trước buổi học. Bạn cần một chat tool ngay bây giờ và một coding tool trước buổi 9 (tuần 5).
 2. **Đọc pre-read brief** (một trang, ở cuối file này). Brief gồm bốn stage cùng các method, mười thuật ngữ và layout folder, để thời gian trên lớp dành cho việc áp dụng.
-3. **Chọn case của bạn.** Là project, sản phẩm hoặc feature của chính bạn. Hub của bạn **mặc định là private**; bạn chỉ publish khi case được phép chia sẻ. Hãy quyết định trước bạn có thể trình bày gì trên lớp, và ẩn danh tên, số liệu, chi tiết chưa phát hành. Nếu công ty cấm AI tool hoặc case quá nhạy cảm để mang lên lớp, hãy dùng case card của khoá cho các bước trên lớp.
+3. **Chọn project của bạn.** Là project, sản phẩm hoặc feature của chính bạn. Hub của bạn **mặc định là private**; bạn chỉ publish khi project được phép chia sẻ. Hãy quyết định trước bạn có thể trình bày gì trên lớp, và ẩn danh tên, số liệu, chi tiết chưa phát hành. Nếu công ty cấm AI tool hoặc project quá nhạy cảm để mang lên lớp, hãy dùng project card của khoá cho các bước trên lớp.
 4. **Nghĩ trước một câu hỏi:** trong 12 tháng tới, bạn muốn công việc của mình khác đi ở điểm nào? Bạn không cần có câu trả lời; câu hỏi này sẽ quay lại ở Phase 1.
 5. **Tìm hiểu quy định của công ty về AI tool,** nếu bạn đang đi làm: có chính sách bằng văn bản không, tool nào được duyệt? Nếu chưa biết, hãy hỏi.
 
-6. **Trước buổi 2:** không có bài đọc mới. Chọn và ẩn danh tài liệu của case để dùng trong buổi thực hành, và kiểm tra lại AI tool chạy được. Giữa hai buổi, nếu muốn thử AI tool, chỉ dùng case card của khoá; chưa dán tài liệu thật của case vào AI tool trước khi bạn viết data rules ở buổi 2.
+6. **Trước buổi 2:** không có bài đọc mới. Chọn và ẩn danh tài liệu của project để dùng trong buổi thực hành, và kiểm tra lại AI tool chạy được. Giữa hai buổi, nếu muốn thử AI tool, chỉ dùng project card của khoá; chưa dán tài liệu thật của project vào AI tool trước khi bạn viết data rules ở buổi 2.
 **Dành cho giảng viên:**
 - Nhắc học viên ngay từ đầu buổi 1: cứ ghi câu hỏi vào chat bất cứ lúc nào. 15 phút cuối buổi dành để trả lời; câu nào không kịp thì mình trả lời sau bằng văn bản.
-- Chuẩn bị case card và hai instruction demo ở Phase 3. **Chạy thử cả hai một lần trước buổi học.**
-- Mở sẵn case folder của chính mình để chia sẻ màn hình, kèm folder `hub/` mở trong browser.
+- Chuẩn bị project card và hai instruction demo ở Phase 3. **Chạy thử cả hai một lần trước buổi học.**
+- Mở sẵn project folder của chính mình để chia sẻ màn hình, kèm folder `hub/` mở trong browser.
 - In hoặc gửi mười thẻ thuật ngữ và sáu thẻ tài liệu.
 - Thống nhất ground rule cho cả lớp (Phase 1).
 - Chuẩn bị hai breakout room 3 đến 4 người cho các activity, và lên kế hoạch coaching.
@@ -113,16 +113,16 @@ Buổi dạy: giảng ngắn, xen câu hỏi và nói chuyện theo cặp. Khôn
 | Phase | Hoạt động | Thời gian |
 |---|---|---|
 | 6 | Check-in; viết hướng của bạn; Activity 2 (viết data rules) | 14 phút |
-| 7 | File, folder và case folder của bạn | 9 phút |
-| 8 | Activity 3: dựng case folder | 40 phút |
-| 9 | Activity 4: đọc chéo với bạn cặp; xem một case folder trực tiếp | 16 phút |
+| 7 | File, folder và project folder của bạn | 9 phút |
+| 8 | Activity 3: dựng project folder | 40 phút |
+| 9 | Activity 4: đọc chéo với bạn cặp; xem một project folder trực tiếp | 16 phút |
 | 10 | Kết thúc buổi và homework | 6 phút |
 | | **Tổng nội dung** | **85 phút** |
 | | Buffer cho sự cố cài đặt | 5 phút |
 
 Mỗi buổi 90 phút live. Chuẩn bị tối đa 10 phút trước buổi dạy; homework tối đa 45 phút giữa hai tuần, chỉ làm tiếp phần đã bắt đầu trên lớp.
 
-**Thứ tự cắt khi buổi 1 bị dài:** phần mô tả hub ở Phase 5, rồi rút gọn mỗi stage xuống còn dòng về AI (học viên đã có các method trong pre-read brief), rồi rút mỗi hướng đi ở Phase 1 xuống một dòng. Phần hỏi đáp có thể co lại nếu cần, và câu hỏi chưa kịp trả lời được trả lời sau bằng văn bản. **Không bao giờ cắt data safety.** Buổi 2 có buffer 5 phút; nếu bị dài, rút gọn phần xem case folder trực tiếp ở Phase 9 trước. Timing chưa được thử với lớp thật, vì vậy hãy chạy thử một lần có bấm giờ trước khi dạy.
+**Thứ tự cắt khi buổi 1 bị dài:** phần mô tả hub ở Phase 5, rồi rút gọn mỗi stage xuống còn dòng về AI (học viên đã có các method trong pre-read brief), rồi rút mỗi hướng đi ở Phase 1 xuống một dòng. Phần hỏi đáp có thể co lại nếu cần, và câu hỏi chưa kịp trả lời được trả lời sau bằng văn bản. **Không bao giờ cắt data safety.** Buổi 2 có buffer 5 phút; nếu bị dài, rút gọn phần xem project folder trực tiếp ở Phase 9 trước. Timing chưa được thử với lớp thật, vì vậy hãy chạy thử một lần có bấm giờ trước khi dạy.
 
 ---
 
@@ -130,7 +130,7 @@ Mỗi buổi 90 phút live. Chuẩn bị tối đa 10 phút trước buổi dạ
 
 ### Phase 1 — Tương lai của nghề và hướng đi của bạn (17 phút)
 
-**Ground rule cho cả lớp (1 phút).** Đây là một lớp gồm các designer đang đi làm với case thật. Những gì chia sẻ trong lớp ở lại trong lớp. Chỉ chia sẻ những gì bạn thấy thoải mái, và ẩn danh trước. Không ai bắt buộc phải trình bày tài liệu confidential; case card của khoá luôn sẵn sàng. Nói thêm: cứ ghi câu hỏi vào chat bất cứ lúc nào; 15 phút cuối buổi để trả lời, câu nào chưa kịp thì mình trả lời sau bằng văn bản.
+**Ground rule cho cả lớp (1 phút).** Đây là một lớp gồm các designer đang đi làm với project thật. Những gì chia sẻ trong lớp ở lại trong lớp. Chỉ chia sẻ những gì bạn thấy thoải mái, và ẩn danh trước. Không ai bắt buộc phải trình bày tài liệu confidential; project card của khoá luôn sẵn sàng. Nói thêm: cứ ghi câu hỏi vào chat bất cứ lúc nào; 15 phút cuối buổi để trả lời, câu nào chưa kịp thì mình trả lời sau bằng văn bản.
 
 **Số liệu (3 phút).** Mở bằng câu hỏi mà nhiều bạn đã hỏi: AI phổ biến thì UI/UX và product design sẽ ra sao? Trả lời bằng bốn điều có nguồn. Với mỗi con số, nêu nguồn, năm và cỡ mẫu.
 
@@ -209,17 +209,17 @@ Nói rõ với lớp: các method này bạn đã dùng từ lesson design think
 
 ### Phase 3 — Một task làm hai lần; thuật ngữ trong thực tế (19 phút)
 
-**Một task, làm hai lần (7 phút).** Phần demo của giảng viên, để học viên thấy trước khi được giải thích. Dùng case card của khoá (hư cấu) và cho xem hai instruction trên cùng một task.
+**Một task, làm hai lần (7 phút).** Phần demo của giảng viên, để học viên thấy trước khi được giải thích. Dùng project card của khoá (hư cấu) và cho xem hai instruction trên cùng một task.
 
-*Case card (Kitchen Crate, hư cấu):* "Một app meal-kit theo gói đăng ký. Nhiều khách hàng mới tạm dừng sau hộp đầu tiên. Team muốn cải thiện onboarding. App có date picker chọn ngày giao, một màn hình menu và một bước thanh toán. Team nghi ngờ giá là lý do khách rời đi. Chưa có research nào được thực hiện."
+*Project card (Kitchen Crate, hư cấu):* "Một app meal-kit theo gói đăng ký. Nhiều khách hàng mới tạm dừng sau hộp đầu tiên. Team muốn cải thiện onboarding. App có date picker chọn ngày giao, một màn hình menu và một bước thanh toán. Team nghi ngờ giá là lý do khách rời đi. Chưa có research nào được thực hiện."
 
 *Instruction 1, mơ hồ:* "Làm sao để cải thiện onboarding cho app meal-kit của tôi?"
 
-*Instruction 2, có cấu trúc (đính kèm case card):* "Chỉ dùng case card. Liệt kê năm điều quan trọng nhất bạn cần biết mà KHÔNG có trong đó, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời 'unknown'. Chỉ trả về danh sách."
+*Instruction 2, có cấu trúc (đính kèm project card):* "Chỉ dùng project card. Liệt kê năm điều quan trọng nhất bạn cần biết mà KHÔNG có trong đó, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời 'unknown'. Chỉ trả về danh sách."
 
 Cho xem cả hai output. Bản mơ hồ thường cho lời khuyên tự tin nhưng chung chung, và có thể nói về sản phẩm như thể đó là sự thật. Bản có cấu trúc thường hỏi đúng những thứ chỉ research hoặc business mới trả lời được. Hỏi lớp: bạn tin bản nào hơn, và vì sao? Chưa giải thích ngay; phần tiếp theo sẽ gọi tên những gì học viên vừa thấy.
 
-**Thuật ngữ trong thực tế (8 phút).** Định nghĩa đã có trong pre-read brief, vì vậy đừng đọc lại. Gắn từng thuật ngữ với demo: case card là **context**; "chỉ dùng case card" là **grounding**; lời khuyên tự tin của instruction mơ hồ là rủi ro **hallucination**; "unknown" là lý do bản có cấu trúc hữu ích. Sau đó nhắc hai điểm mà học viên ít khi đọc kỹ. Thứ nhất là **context window**: chỉ đưa những phần mà một bước cần, vì tài liệu dài và lộn xộn làm kết quả kém chính xác. Thứ hai là **agent**: AI coding tool tự thực hiện nhiều bước, nên hãy kiểm tra các file nó đã sửa chứ đừng chỉ đọc câu trả lời. **Một AI được phép nói "unknown" sẽ bịa ít hơn một AI luôn cảm thấy phải lấp mọi chỗ trống.**
+**Thuật ngữ trong thực tế (8 phút).** Định nghĩa đã có trong pre-read brief, vì vậy đừng đọc lại. Gắn từng thuật ngữ với demo: project card là **context**; "chỉ dùng project card" là **grounding**; lời khuyên tự tin của instruction mơ hồ là rủi ro **hallucination**; "unknown" là lý do bản có cấu trúc hữu ích. Sau đó nhắc hai điểm mà học viên ít khi đọc kỹ. Thứ nhất là **context window**: chỉ đưa những phần mà một bước cần, vì tài liệu dài và lộn xộn làm kết quả kém chính xác. Thứ hai là **agent**: AI coding tool tự thực hiện nhiều bước, nên hãy kiểm tra các file nó đã sửa chứ đừng chỉ đọc câu trả lời. **Một AI được phép nói "unknown" sẽ bịa ít hơn một AI luôn cảm thấy phải lấp mọi chỗ trống.**
 
 **Activity 1 (4 phút)** diễn ra tiếp theo; xem phần Activities.
 
@@ -237,14 +237,14 @@ Cho xem cả hai output. Bản mơ hồ thường cho lời khuyên tự tin nh�
 
 | Nhóm | Ví dụ | Quy tắc |
 |---|---|---|
-| **Safe**: thông tin công khai, suy nghĩ của chính bạn, case hư cấu | Trang giá công khai của một đối thủ, ghi chú của bạn về một app công khai, case card của khoá | Dùng được với bất kỳ tool nào bạn thấy ổn |
+| **Safe**: thông tin công khai, suy nghĩ của chính bạn, project hư cấu | Trang giá công khai của một đối thủ, ghi chú của bạn về một app công khai, project card của khoá | Dùng được với bất kỳ tool nào bạn thấy ổn |
 | **Ask first**: nội bộ nhưng không nhạy cảm | Ghi chú quy trình nội bộ, tóm tắt research chưa công bố và không có tên người | Chỉ dùng trong tool mà công ty đã duyệt |
 | **Never in a public tool**: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA | Transcript phỏng vấn có tên, danh sách khách hàng, spec chưa phát hành, ảnh chụp admin dashboard đang chạy thật | Không dán. Ẩn danh trước, dùng tool đã được duyệt, hoặc bỏ ra ngoài |
 
-**Bốn thói quen trước khi dán:** (1) kiểm tra chính sách; nếu chưa có thì hỏi, và còn phân vân thì không dán; (2) phân loại tài liệu; (3) xoá thông tin định danh trước, bằng find and replace trên máy của bạn chứ không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi rồi (ẩn danh không phải lúc nào cũng hoàn hảo); (4) giữ file confidential ngoài folder của tool, vì AI coding tool hoặc agent đọc toàn bộ project folder. Ngoài ra, việc có được dùng output của AI cho công việc với client hay không, và ai sở hữu nó, tuỳ thuộc công ty và quốc gia của bạn. Hãy ghi lại trong case log chỗ nào đã dùng AI.
+**Bốn thói quen trước khi dán:** (1) kiểm tra chính sách; nếu chưa có thì hỏi, và còn phân vân thì không dán; (2) phân loại tài liệu; (3) xoá thông tin định danh trước, bằng find and replace trên máy của bạn chứ không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi rồi (ẩn danh không phải lúc nào cũng hoàn hảo); (4) giữ file confidential ngoài folder của tool, vì AI coding tool hoặc agent đọc toàn bộ project folder. Ngoài ra, việc có được dùng output của AI cho công việc với client hay không, và ai sở hữu nó, tuỳ thuộc công ty và quốc gia của bạn. Hãy ghi lại trong project log chỗ nào đã dùng AI.
 
 **Bài tập phân loại (theo cặp, 4 phút).** Sáu thẻ: (1) trang giá công khai của một đối thủ, (2) transcript phỏng vấn có tên người tham gia, (3) ghi chú của bạn về một app công khai bạn đang dùng, (4) một feature spec chưa phát hành, (5) danh sách email khách hàng, (6) ảnh chụp admin dashboard của công ty bạn. Kết quả mong đợi: 1 và 3 là safe; 2, 4, 5 và 6 là never in a public tool (2 có thể thành safe sau khi ẩn danh; 6 tuỳ vào nội dung nhìn thấy được). Thảo luận khi có bất đồng.
-Bạn sẽ viết data rules của riêng mình ở đầu buổi 2 (Activity 2), trên tài liệu thật của case. Cho đến lúc đó, đừng dán tài liệu thật vào AI tool.
+Bạn sẽ viết data rules của riêng mình ở đầu buổi 2 (Activity 2), trên tài liệu thật của project. Cho đến lúc đó, đừng dán tài liệu thật vào AI tool.
 
 ---
 
@@ -252,9 +252,9 @@ Bạn sẽ viết data rules của riêng mình ở đầu buổi 2 (Activity 2)
 
 **Cả series trong một bức tranh (2 phút).** Chiếu lại stage map, lần này kèm lesson dạy sâu từng method. Output của mỗi stage là input của stage kế tiếp. Một gate quyết định công việc có đi tiếp hay không, và ở mỗi stage có điều cần thống nhất với product và business. Series bắt đầu từ một câu hỏi của business, rồi product và design cùng làm rõ nó thành brief.
 
-**Experience Hub và cách chia sẻ (2 phút).** Mọi output đi vào một hub: một website nhỏ gồm các page liên kết với nhau, nằm trên máy của bạn. Hub hoàn chỉnh chính là báo cáo cuối của series. **Hub mặc định là private:** nó nằm trong case folder của bạn và không ai thấy được nếu bạn không gửi. Để cho stakeholder xem, export ra PDF hoặc gửi folder nén. Chỉ khi case được phép chia sẻ mới publish thành link trực tuyến, và khi đó bạn là người host và chịu trách nhiệm. Chi tiết nằm ở homework tuỳ chọn.
+**Experience Hub và cách chia sẻ (2 phút).** Mọi output đi vào một hub: một website nhỏ gồm các page liên kết với nhau, nằm trên máy của bạn. Hub hoàn chỉnh chính là báo cáo cuối của series. **Hub mặc định là private:** nó nằm trong project folder của bạn và không ai thấy được nếu bạn không gửi. Để cho stakeholder xem, export ra PDF hoặc gửi folder nén. Chỉ khi project được phép chia sẻ mới publish thành link trực tuyến, và khi đó bạn là người host và chịu trách nhiệm. Chi tiết nằm ở homework tuỳ chọn.
 
-**Kết thúc phần giảng (2 phút).** Hỏi hai hoặc ba học viên: bạn sẽ giải thích lại thuật ngữ nào theo cách khác, hoặc bạn sẽ chạy stage nào với AI theo cách khác? Rồi chuyển sang buổi 2: ba ngày nữa, mọi người viết data rules, viết hướng của mình và dựng case folder ngay trên lớp. Không có bài tập mới. Dặn: chọn và ẩn danh tài liệu của case, và giữa hai buổi chỉ dùng case card nếu muốn thử AI tool.
+**Kết thúc phần giảng (2 phút).** Hỏi hai hoặc ba học viên: bạn sẽ giải thích lại thuật ngữ nào theo cách khác, hoặc bạn sẽ chạy stage nào với AI theo cách khác? Rồi chuyển sang buổi 2: ba ngày nữa, mọi người viết data rules, viết hướng của mình và dựng project folder ngay trên lớp. Không có bài tập mới. Dặn: chọn và ẩn danh tài liệu của project, và giữa hai buổi chỉ dùng project card nếu muốn thử AI tool.
 
 **Hỏi đáp (15 phút).** Cho học viên hỏi bất cứ điều gì về nội dung buổi học, về hướng đi của họ, hoặc về khoá học. Bắt đầu bằng các câu hỏi đã ghi trong chat suốt buổi. Chọn câu hỏi được nhiều người quan tâm nhất trước. Câu nào cần số liệu hoặc cần nghĩ thêm, trả lời ngắn và hẹn trả lời bằng văn bản sau buổi. Nếu hỏi đáp kết thúc sớm, dùng thời gian còn lại để học viên hỏi về hướng đi nghề nghiệp của mình, và để ai cần giúp cài AI tool ở lại làm cùng.
 
@@ -262,24 +262,24 @@ Bạn sẽ viết data rules của riêng mình ở đầu buổi 2 (Activity 2)
 
 ## Buổi 2 — Practice session
 
-Buổi này không dạy nội dung mới. Học viên làm việc trên case của chính mình trong breakout room 3 đến 4 người, giảng viên đi quanh coaching. Phần giảng ngắn (file, folder) chỉ là điều kiện để bắt tay vào làm.
+Buổi này không dạy nội dung mới. Học viên làm việc trên project của chính mình trong breakout room 3 đến 4 người, giảng viên đi quanh coaching. Phần giảng ngắn (file, folder) chỉ là điều kiện để bắt tay vào làm.
 
 ### Phase 6 — Check-in; hướng của bạn; data rules (14 phút)
 
-**Check-in (3 phút).** Hỏi cả lớp: ai chưa chạy được AI tool, ai chưa chọn được case, ai còn băn khoăn về data rules? Ghi lại và xử lý trong lúc làm Activity 3. Ai bỏ lỡ buổi 1 nhận lại `data-rules.md` mẫu và nhóm với một học viên đã đi học.
+**Check-in (3 phút).** Hỏi cả lớp: ai chưa chạy được AI tool, ai chưa chọn được project, ai còn băn khoăn về data rules? Ghi lại và xử lý trong lúc làm Activity 3. Ai bỏ lỡ buổi 1 nhận lại `data-rules.md` mẫu và nhóm với một học viên đã đi học.
 
 **Viết hướng của bạn (3 phút).** Nhắc lại cuộc nói chuyện ở buổi 1. Mỗi học viên viết hai đến ba dòng vào `00-context/my-direction.md`: hướng bạn nghiêng về (strategic designer, design builder, AI product designer, hoặc hướng khác), lý do, và một kỹ năng bạn muốn xây trong khoá này. File này được xem lại ở tuần 7; được phép đổi.
 
-**Activity 2 (8 phút)** diễn ra tiếp theo: học viên áp dụng ba nhóm dữ liệu của buổi 1 vào tài liệu thật của case mình và viết `data-rules.md`; xem phần Activities.
+**Activity 2 (8 phút)** diễn ra tiếp theo: học viên áp dụng ba nhóm dữ liệu của buổi 1 vào tài liệu thật của project mình và viết `data-rules.md`; xem phần Activities.
 
 ---
 
-### Phase 7 — File, folder và case folder của bạn (9 phút)
+### Phase 7 — File, folder và project folder của bạn (9 phút)
 
 **File và folder (6 phút).** Chi tiết nằm trong pre-read brief. Hãy dùng thời gian trên lớp cho những chỗ học viên hay hiểu sai.
 
 - **Markdown và HTML.** Markdown (`.md`) là tài liệu làm việc: plain text với vài ký hiệu đơn giản, định dạng AI tool đọc và viết tốt nhất. HTML là phần trình bày, thứ browser hiển thị; prototype do AI dựng là một file HTML, hub cũng vậy. Bạn giữ phần Markdown; khi stakeholder cần đọc, AI dựng page từ đó.
-- **Case folder, giữ trên máy local.** Cho xem layout. Đây là một folder local, không phải tài liệu trên cloud: AI coding tool mở cả folder làm project của nó và đọc mọi thứ bên trong, còn folder đồng bộ cloud có thể gặp lỗi khi đang ghi file. Folder lộn xộn sẽ cho output lộn xộn.
+- **Project folder, giữ trên máy local.** Cho xem layout. Đây là một folder local, không phải tài liệu trên cloud: AI coding tool mở cả folder làm project của nó và đọc mọi thứ bên trong, còn folder đồng bộ cloud có thể gặp lỗi khi đang ghi file. Folder lộn xộn sẽ cho output lộn xộn.
 
 ```
 [case-name]/
@@ -304,23 +304,23 @@ Buổi này không dạy nội dung mới. Học viên làm việc trên case c�
 
 ---
 
-### Phase 8 — Activity 3: dựng case folder (40 phút)
+### Phase 8 — Activity 3: dựng project folder (40 phút)
 
-Học viên dựng case folder, context pack, hub trống và chạy instruction đầu tiên với file đã lưu. Chi tiết từng bước nằm ở phần Activities. Giảng viên đi giữa hai breakout room và dừng lại ở chỗ học viên gõ lại tóm tắt từ trí nhớ thay vì đính kèm file.
+Học viên dựng project folder, context pack, hub trống và chạy instruction đầu tiên với file đã lưu. Chi tiết từng bước nằm ở phần Activities. Giảng viên đi giữa hai breakout room và dừng lại ở chỗ học viên gõ lại tóm tắt từ trí nhớ thay vì đính kèm file.
 
 ---
 
-### Phase 9 — Activity 4: đọc chéo; xem một case folder (16 phút)
+### Phase 9 — Activity 4: đọc chéo; xem một project folder (16 phút)
 
 **Activity 4 (10 phút)** theo cặp; xem phần Activities.
 
-**Xem một case folder trực tiếp (6 phút).** Một học viên tự nguyện chia sẻ màn hình (hoặc dùng bản ẩn danh). Cả lớp trả lời một câu hỏi: nếu mình là người lạ nhận folder này, mình hiểu người dùng và sản phẩm trong hai phút không? Giảng viên nhận xét theo ba điểm: cấu trúc có thật không, `product-and-users.md` đủ cụ thể chưa, data rules có bằng lời của chính học viên không.
+**Xem một project folder trực tiếp (6 phút).** Một học viên tự nguyện chia sẻ màn hình (hoặc dùng bản ẩn danh). Cả lớp trả lời một câu hỏi: nếu mình là người lạ nhận folder này, mình hiểu người dùng và sản phẩm trong hai phút không? Giảng viên nhận xét theo ba điểm: cấu trúc có thật không, `product-and-users.md` đủ cụ thể chưa, data rules có bằng lời của chính học viên không.
 
 ---
 
 ### Phase 10 — Kết thúc buổi 2 và homework (6 phút)
 
-**Câu hỏi để kết (1 phút).** Hỏi hai hoặc ba học viên: trong năm điều AI nói còn thiếu về case của bạn, điều nào làm bạn bất ngờ nhất?
+**Câu hỏi để kết (1 phút).** Hỏi hai hoặc ba học viên: trong năm điều AI nói còn thiếu về project của bạn, điều nào làm bạn bất ngờ nhất?
 
 **Homework (2 phút).** Nhắc đây chỉ là làm tiếp phần đã bắt đầu hôm nay, tối đa 45 phút. Assignment 1 là bắt buộc; Assignment 2 (chia sẻ hub) là tuỳ chọn.
 
@@ -357,10 +357,10 @@ Nói với bạn cặp, 30 giây mỗi người: hướng bạn đang nghiêng v
 **Hình thức:** Theo cặp, dùng các thẻ thuật ngữ; nói chuyện, không có output
 
 **Mục đích:**
-Học viên diễn đạt hai thuật ngữ bằng lời của mình, kèm một ví dụ từ case của chính họ. Đây là câu hỏi tương tác, không phải bài tập có sản phẩm.
+Học viên diễn đạt hai thuật ngữ bằng lời của mình, kèm một ví dụ từ project của chính họ. Đây là câu hỏi tương tác, không phải bài tập có sản phẩm.
 
 **Hướng dẫn cho học viên:**
-Mỗi người lấy hai thẻ. Giải thích từng thuật ngữ cho bạn cặp trong một câu, kèm ví dụ từ case của bạn. Bạn cặp hỏi một câu: "Từ điều đó, bạn sẽ làm khác đi điều gì?"
+Mỗi người lấy hai thẻ. Giải thích từng thuật ngữ cho bạn cặp trong một câu, kèm ví dụ từ project của bạn. Bạn cặp hỏi một câu: "Từ điều đó, bạn sẽ làm khác đi điều gì?"
 
 **Giảng viên cần để ý:**
 - Định nghĩa bị chép lại từng chữ. Hãy yêu cầu học viên đưa ví dụ của riêng mình.
@@ -377,42 +377,42 @@ Mỗi người lấy hai thẻ. Giải thích từng thuật ngữ cho bạn c�
 **Hình thức:** Làm cá nhân, laptop của mình
 
 **Mục đích:**
-Học viên áp dụng ba nhóm dữ liệu đã học ở buổi 1 vào tài liệu thật của case mình và viết `00-context/data-rules.md`, để mọi bước AI sau đó có sẵn quy tắc.
+Học viên áp dụng ba nhóm dữ liệu đã học ở buổi 1 vào tài liệu thật của project mình và viết `00-context/data-rules.md`, để mọi bước AI sau đó có sẵn quy tắc.
 
 **Hướng dẫn cho học viên:**
-1. **(3 phút)** Liệt kê ba tài liệu thật của case (ví dụ: một bản research, một feature spec, một transcript phỏng vấn). Xếp từng cái vào safe, ask first hoặc never in a public tool.
+1. **(3 phút)** Liệt kê ba tài liệu thật của project (ví dụ: một bản research, một feature spec, một transcript phỏng vấn). Xếp từng cái vào safe, ask first hoặc never in a public tool.
 2. **(5 phút)** Viết ba dòng vào `data-rules.md`: mình được dán gì, mình sẽ không dán gì, mình dùng tool nào cho việc gì. Chỗ nào chưa biết chính sách của công ty thì ghi "cần hỏi", và hỏi trước buổi đầu tiên của tuần 2.
 
 **Giảng viên cần để ý:**
 - Học viên xếp mọi thứ vào "safe" vì ngại phiền. Hỏi: "Nếu file này lọt ra ngoài, ai sẽ biết?"
-- Data rules viết quá chung ("không dán thông tin nhạy cảm"). Yêu cầu một ví dụ cụ thể từ case.
-- Học viên dùng case card của khoá: viết data rules cho case card, và ghi chú sẽ viết lại cho case thật.
+- Data rules viết quá chung ("không dán thông tin nhạy cảm"). Yêu cầu một ví dụ cụ thể từ project.
+- Học viên dùng project card của khoá: viết data rules cho project card, và ghi chú sẽ viết lại cho project thật.
 
 **Output:** bản đầu của `data-rules.md` (ba dòng bằng lời của học viên), hoàn thiện ở homework nếu cần.
 
 ---
 
-### 🔧 Activity 3 — Dựng case folder của bạn
+### 🔧 Activity 3 — Dựng project folder của bạn
 **Loại:** Trên lớp · Thực hành, dùng laptop của mình
 **Thời gian:** 40 phút
 **Hình thức:** Làm cá nhân, trong breakout room 3 đến 4 người
 
 **Mục đích:**
-Học viên dựng nền tảng mà cả series chạy trên đó, cho case của chính mình, và kiểm tra nó bằng một instruction giống instruction trong demo.
+Học viên dựng nền tảng mà cả series chạy trên đó, cho project của chính mình, và kiểm tra nó bằng một instruction giống instruction trong demo.
 
 **Chuẩn bị (trước buổi học):**
-- Template case folder và folder template hub trống, sẵn sàng cho mọi học viên.
-- Một AI tool mà công ty của học viên cho phép. Nếu không có, case card của khoá thay cho case ở bước 4.
-- Case folder của giảng viên sẵn sàng để chia sẻ.
+- Template project folder và folder template hub trống, sẵn sàng cho mọi học viên.
+- Một AI tool mà công ty của học viên cho phép. Nếu không có, project card của khoá thay cho project ở bước 4.
+- Project folder của giảng viên sẵn sàng để chia sẻ.
 
 **Hướng dẫn cho học viên:**
 
-1. **(5 phút) Tạo case folder.** Một folder cho case của bạn, theo layout ở Phase 7. Tạo các subfolder. Đặt tên theo case, chữ thường, nối bằng dấu gạch ngang.
+1. **(5 phút) Tạo project folder.** Một folder cho project của bạn, theo layout ở Phase 7. Tạo các subfolder. Đặt tên theo project, chữ thường, nối bằng dấu gạch ngang.
 2. **(15 phút) Bắt đầu context pack.** Trong `00-context/`, viết phiên bản đầu của `product-and-users.md` (sản phẩm là gì, ai dùng, job chính của họ; nửa trang, đã ẩn danh) và `accessibility-rules.md` (các yêu cầu bạn phải đáp ứng; vài dòng). Đưa `data-rules.md` từ Activity 2 vào.
 3. **(5 phút) Thêm hub.** Copy folder template hub trống vào `hub/`. Mở `index.html` trong browser. Bạn sẽ thấy trang Overview với dữ liệu mẫu. Chưa chỉnh sửa gì.
 4. **(15 phút) Chạy một instruction với một file đã lưu.** Đính kèm `product-and-users.md` vào AI chat tool và dùng:
 
-   > *"Đây là context cho design case của tôi. Chỉ dùng file này. Liệt kê năm điều quan trọng nhất bạn cần biết về sản phẩm và người dùng mà KHÔNG có trong file, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời 'unknown'. Chỉ trả về danh sách."*
+   > *"Đây là context cho design project của tôi. Chỉ dùng file này. Liệt kê năm điều quan trọng nhất bạn cần biết về sản phẩm và người dùng mà KHÔNG có trong file, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời 'unknown'. Chỉ trả về danh sách."*
 
    Đọc câu trả lời một cách có phản biện. Câu nào hữu ích, câu nào chung chung, câu nào bạn tự tìm ra được? Lưu những câu hữu ích vào `00-context/open-questions.md`.
 
@@ -431,7 +431,7 @@ Học viên dựng nền tảng mà cả series chạy trên đó, cho case củ
 **Hình thức:** Theo cặp, đổi file `product-and-users.md` đã ẩn danh
 
 **Mục đích:**
-Học viên thấy file của mình qua mắt người không biết case, và dùng AI để chỉ ra chỗ còn thiếu, đúng thói quen "unknown" của series.
+Học viên thấy file của mình qua mắt người không biết project, và dùng AI để chỉ ra chỗ còn thiếu, đúng thói quen "unknown" của series.
 
 **Hướng dẫn cho học viên:**
 1. **(4 phút)** Đổi file với bạn cặp. Mỗi người đính kèm file của bạn cặp vào AI chat tool và chạy instruction ở bước 4 của Activity 3.
@@ -451,7 +451,7 @@ Học viên thấy file của mình qua mắt người không biết case, và d
 
 ### 🤖 Thử instruction này
 
-> *"Tôi là UX designer đang làm [case của bạn trong một hoặc hai câu]. Đây là context file của tôi: [đính kèm product-and-users.md]. Chỉ dùng file này, hãy viết instruction mà tôi nên dùng để nhờ bạn [task cụ thể]. Sau đó phản biện chính instruction của bạn: chỗ nào còn mơ hồ, chỗ nào bạn có thể trả lời bằng cách đoán, và tôi nên thêm gì để bạn có thể nói 'unknown' thay vì đoán."*
+> *"Tôi là UX designer đang làm [project của bạn trong một hoặc hai câu]. Đây là context file của tôi: [đính kèm product-and-users.md]. Chỉ dùng file này, hãy viết instruction mà tôi nên dùng để nhờ bạn [task cụ thể]. Sau đó phản biện chính instruction của bạn: chỗ nào còn mơ hồ, chỗ nào bạn có thể trả lời bằng cách đoán, và tôi nên thêm gì để bạn có thể nói 'unknown' thay vì đoán."*
 
 ### ⚖️ Lưu ý về đạo đức
 
@@ -478,12 +478,12 @@ Hỏi miệng ở phần hỏi đáp cuối buổi 1 hoặc ở phần check-in 
 
 ## Homework (tối đa 45 phút, chỉ làm tiếp phần đã bắt đầu trên lớp)
 
-### Assignment 1 — Case folder của bạn (bắt buộc, khoảng 20 phút)
+### Assignment 1 — Project folder của bạn (bắt buộc, khoảng 20 phút)
 **Hạn:** trước buổi đầu tiên của lesson tiếp theo
 
 Nếu đã xong Activity 3 và 4, phần lớn việc ở đây là bổ sung ba điều từ Activity 4 và dọn gọn.
 
-- Case folder hoàn chỉnh theo layout chuẩn
+- Project folder hoàn chỉnh theo layout chuẩn
 - `product-and-users.md` hoàn thiện (một trang): sản phẩm, người dùng, job chính của họ, thành công có thể trông như thế nào, và những gì bạn chưa biết
 - `accessibility-rules.md` và `data-rules.md` (ba dòng) hoàn thiện
 - Hub trống đã copy vào `hub/`
@@ -498,7 +498,7 @@ Nộp: ảnh chụp cây folder và `product-and-users.md` cho giảng viên đ�
 
 Chọn một trong hai:
 - **(a) Private.** Export trang Overview của hub ra PDF, và mở folder hub đã nén trên một thiết bị khác. Đây là cách bạn sẽ gửi hub cho stakeholder.
-- **(b) Public, nếu case được phép chia sẻ.** Làm theo guide publish (`publish-guide.md`): tạo tài khoản GitHub miễn phí, tạo repository public, upload nội dung của `hub/`, bật GitHub Pages, rồi mở link trong cửa sổ ẩn danh. Bạn là người host và chịu trách nhiệm.
+- **(b) Public, nếu project được phép chia sẻ.** Làm theo guide publish (`publish-guide.md`): tạo tài khoản GitHub miễn phí, tạo repository public, upload nội dung của `hub/`, bật GitHub Pages, rồi mở link trong cửa sổ ẩn danh. Bạn là người host và chịu trách nhiệm.
 
 Nếu không có thời gian, bạn có thể bỏ qua. Buổi live tiếp theo không phụ thuộc vào phần này.
 
@@ -521,8 +521,8 @@ Nếu không có thời gian, bạn có thể bỏ qua. Buổi live tiếp theo 
 
 | Lesson (tuần) | Vai trò |
 |---|---|
-| **Lesson này (tuần 1)** | Tương lai của nghề và ba hướng đi, nhắc lại bốn stage và các method, AI ở mức high level, bộ từ vựng chung, data rules, case folder, hub trống và lập trường AI-assisted |
-| Discover the Problem (tuần 2) | Lần đầu dùng case folder; bắt đầu từ câu hỏi của business, stakeholder check bằng văn bản, phỏng vấn user theo cặp, rồi user-voice synthesis trên quote thật với quy tắc "unknown" |
+| **Lesson này (tuần 1)** | Tương lai của nghề và ba hướng đi, nhắc lại bốn stage và các method, AI ở mức high level, bộ từ vựng chung, data rules, project folder, hub trống và lập trường AI-assisted |
+| Discover the Problem (tuần 2) | Lần đầu dùng project folder; bắt đầu từ câu hỏi của business, stakeholder check bằng văn bản, phỏng vấn user theo cặp, rồi user-voice synthesis trên quote thật với quy tắc "unknown" |
 | Frame the Problem Worth Solving (tuần 3) | Diễn giải findings và problem brief ở mức sâu; viết principle checks vào `00-context` và điền trang brief của hub |
 | Explore Ideas (tuần 4) | Method brainstorm và select của Develop ở mức sâu; chọn một hướng, viết flows và content |
 | Build Your First Prototype (tuần 5) | Thêm design system notes vào `00-context`; dựng prototype đầu tiên và điền hub |
@@ -569,13 +569,13 @@ Nếu không có thời gian, bạn có thể bỏ qua. Buổi live tiếp theo 
 
 Nhắc qua: **model** là phần lõi phía sau một tool, **prompt** là thứ bạn đưa cho AI, và **in-tool AI features** là các tính năng AI nằm sẵn trong design tool của bạn.
 
-**File trong ba dòng.** Markdown (`.md`) là plain text với vài ký hiệu đơn giản (`## Heading`, `**bold**`, danh sách `-`, bảng `|`); AI tool đọc và viết định dạng này tốt nhất. HTML là thứ browser hiển thị; prototype và hub đều là HTML. Local folder là folder nằm trên máy của bạn, không phải tài liệu trên cloud; hãy giữ case của bạn ở đó khi AI tool đang ghi file.
+**File trong ba dòng.** Markdown (`.md`) là plain text với vài ký hiệu đơn giản (`## Heading`, `**bold**`, danh sách `-`, bảng `|`); AI tool đọc và viết định dạng này tốt nhất. HTML là thứ browser hiển thị; prototype và hub đều là HTML. Local folder là folder nằm trên máy của bạn, không phải tài liệu trên cloud; hãy giữ project của bạn ở đó khi AI tool đang ghi file.
 
-**Case folder** là layout ở Phase 7: folder `00-context` đứng đầu, mỗi stage một folder, một folder `hub/`, và một file `case-log.md`.
+**Project folder** là layout ở Phase 7: folder `00-context` đứng đầu, mỗi stage một folder, một folder `hub/`, và một file `case-log.md`.
 
 **Dùng lại, đừng gõ lại.** Một cuộc hội thoại AI mới không biết gì về project của bạn. Trước khi mô tả project từ trí nhớ, hãy đính kèm file đã lưu. Một instruction tốt nêu rõ tài liệu cần dùng, yêu cầu một task duy nhất, nói "chỉ dùng tài liệu này, nêu nguồn cho từng ý, trả lời 'unknown' nếu tài liệu không nói, chỉ trả về section của bạn", và cho biết định dạng bạn muốn nhận.
 
-**Trước buổi học:** chọn case của bạn (case của chính bạn, đã ẩn danh), nghĩ xem trong 12 tháng tới bạn muốn công việc khác đi ở điểm nào, và tìm hiểu quy định của công ty về AI tool.
+**Trước buổi học:** chọn project của bạn (project của chính bạn, đã ẩn danh), nghĩ xem trong 12 tháng tới bạn muốn công việc khác đi ở điểm nào, và tìm hiểu quy định của công ty về AI tool.
 
 ---
 

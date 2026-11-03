@@ -11,7 +11,7 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 ## Lessons
 
 - [Lesson 1: Your Design Process, with AI](lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md)
-  - [Practice 1: Case Folder and Hub](lessons/01-design-process-with-ai/materials/design-process-with-ai-practice.md)
+  - [Practice 1: Project Folder and Hub](lessons/01-design-process-with-ai/materials/design-process-with-ai-practice.md)
 - [Lesson 2: Discover the Problem](lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md)
   - [Practice 2: Break the Brief](lessons/02-discover-the-problem/materials/discover-the-problem-practice.md)
 - [Lesson 3: Insights You Can Trust](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md)
@@ -19,7 +19,7 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 
 ## Resources
 
-- [Case mẫu: Kitchen Crate](assets/starter-files/course-case/case-card.md)
+- [Project mẫu: Kitchen Crate](assets/starter-files/course-case/case-card.md)
 - [Gates](assets/starter-files/case-folder-template/hub/gates.md)
 - [Method Cards](assets/method-cards/README.md)
   - [Competitor analysis](assets/method-cards/01-discover/competitor-analysis.md)
@@ -81,7 +81,7 @@ Not shown. Move a line above the comment to publish it.
 - [Starter files](assets/starter-files/README.md)
 - [Rules for the AI tool](assets/starter-files/case-folder-template/AGENTS.md)
 - [Project: [tên dự án]](assets/starter-files/case-folder-template/README.md)
-- [Case log](assets/starter-files/case-folder-template/case-log.md)
+- [Project log](assets/starter-files/case-folder-template/case-log.md)
 - [Scope](assets/starter-files/case-folder-template/hub/01-scope.md)
 - [Evidence](assets/starter-files/case-folder-template/hub/02-evidence.md)
 - [Problem brief](assets/starter-files/case-folder-template/hub/03-problem-brief.md)
@@ -130,9 +130,9 @@ Not shown. Move a line above the comment to publish it.
 - [Workflow: Refresh the Hub](assets/starter-files/case-folder-template/tools/step-refresh-hub.md)
 - [Workflow: User-Voice Synthesis](assets/starter-files/case-folder-template/tools/step-user-voice-synthesis.md)
 - [Checkpoint prototype (week 6)](assets/starter-files/checkpoint-prototype/README.md)
-- [Course case: Kitchen Crate (fictional)](assets/starter-files/course-case/README.md)
-- [Case mẫu: Kitchen Crate (hư cấu)](assets/starter-files/course-case/case-card.md)
-- [Stand-in PO case pack: Kitchen Crate (fictional)](assets/starter-files/course-case/po-case-pack.md)
+- [Course project: Kitchen Crate (fictional)](assets/starter-files/course-case/README.md)
+- [Project mẫu: Kitchen Crate (hư cấu)](assets/starter-files/course-case/case-card.md)
+- [Stand-in PO project pack: Kitchen Crate (fictional)](assets/starter-files/course-case/po-case-pack.md)
 - [Quote set: answer key (instructor only)](assets/starter-files/course-case/quotes-answer-key.md)
 - [Quote set: Kitchen Crate (fictional)](assets/starter-files/course-case/quotes.md)
 - [Competitor pages (fictional)](assets/starter-files/course-case/competitors/README.md)
@@ -142,7 +142,7 @@ Not shown. Move a line above the comment to publish it.
 - [Prototype starter (week 5)](assets/starter-files/prototype-starter/README.md)
 - [Project rules (give this file to your AI coding tool)](assets/starter-files/prototype-starter/project-rules.md)
 - [Starter design system: notes](assets/starter-files/prototype-starter/design-system/README.md)
-- [Stand-in PO Case Pack (template)](assets/templates/po-case-pack-template.md)
+- [Stand-in PO Project Pack (template)](assets/templates/po-case-pack-template.md)
 - [Publish Your Hub: a Step-by-Step Guide](assets/templates/publish-guide.md)
 - [Tools to bring](assets/templates/tools-to-bring.md)
 - [Knowledge Hub template](assets/templates/hub/README.md)

@@ -1,7 +1,7 @@
 # Publish Your Hub: a Step-by-Step Guide
 
 **For students. Optional. About 25 to 30 minutes. No coding and no Git commands: everything happens in your web browser.**
-**Your hub is private by default.** Use this guide only if your case is free to share (a course case, or a cleaned-up version of your work). By the end you will have one web address for your hub. It opens on any device with no login, you can email it to anyone, and you can update it yourself. If your case is confidential, skip this guide and use the next section.
+**Your hub is private by default.** Use this guide only if your project is free to share (a course project, or a cleaned-up version of your work). By the end you will have one web address for your hub. It opens on any device with no login, you can email it to anyone, and you can update it yourself. If your project is confidential, skip this guide and use the next section.
 
 ## Three ideas first
 - **GitHub** is a website that stores folders of files online.
@@ -10,7 +10,7 @@
 
 ## Before you start: what goes online
 - **Only the contents of your `hub/` folder go online.** Your `learnings/` files, notes, sources and working files stay on your computer.
-- A free GitHub Pages site is **public to anyone who has the link**. Choose a case you are free to share. Leave out confidential company figures, unreleased details and users' personal data.
+- A free GitHub Pages site is **public to anyone who has the link**. Choose a project you are free to share. Leave out confidential company figures, unreleased details and users' personal data.
 - Your GitHub username will appear in the address. If you prefer not to use your real name, pick a username you are comfortable showing.
 - **You host this hub and you are responsible for it:** the link, what is on it, and what you choose to make public. The instructor does not host or upload hubs for you.
 - If you do not want a GitHub account, use another free host that works by dragging a folder in (the options are in `hub/README.md`), and share that link instead.
@@ -20,12 +20,12 @@ If you use these templates on your employer's real project, **do not publish tha
 - **PDF:** open the hub in a browser, print each key page to PDF (the Overview, the problem brief, the findings), and send the PDFs.
 - **Zipped folder:** zip the `hub/` folder and send it; the recipient unzips it and opens `index.html`. Check that it opens on another device first.
 - **Your company's own tools:** attach the PDFs to your company's wiki or document system.
-A private web link would need a paid password plan or your company's own hosting; that is outside this course. Publish a hub only for a case you are free to share, such as a course case or a cleaned-up version of your work.
+A private web link would need a paid password plan or your company's own hosting; that is outside this course. Publish a hub only for a project you are free to share, such as a course project or a cleaned-up version of your work.
 
 ## Public or private repository?
 - **The repository that publishes your hub must be public.** On a free GitHub account, Pages only publishes from a public repository. A private repository does **not** make the website private, and publishing from a private repository needs a paid plan.
-- **You can still use a private repository, for a different job:** keep your *whole* case folder (context files, sources, working files) in a separate **private** repository as a backup with version history. Nothing in it is ever published. This is optional.
-- A good habit: one **private** repository for the case, one **public** repository that contains only the hub.
+- **You can still use a private repository, for a different job:** keep your *whole* project folder (context files, sources, working files) in a separate **private** repository as a backup with version history. Nothing in it is ever published. This is optional.
+- A good habit: one **private** repository for the project, one **public** repository that contains only the hub.
 
 The trade-off of this course: you need a GitHub account to publish. In return you get a free live link that you own and can update yourself.
 
@@ -59,7 +59,7 @@ A single upload takes up to 100 files, each up to 25 MB. Compress large images f
 Open the address in a **private (incognito) window**. You should see your hub's Overview page, with the menu on the left. If you see an error page, see "If something goes wrong" below.
 
 ### 6. Update it, and prove you can
-1. Change one small thing in `hub-data.js` on your computer, such as the case name.
+1. Change one small thing in `hub-data.js` on your computer, such as the project name.
 2. In your repository, choose **Add file → Upload files** and drag the changed file in.
 3. Select **Commit changes** and wait a minute.
 4. Refresh your link. The same address now shows the change.

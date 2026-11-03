@@ -1,8 +1,8 @@
-# Stand-in PO Case Pack (template)
+# Stand-in PO Project Pack (template)
 
 **Used in:** the "Discover the problem" lesson, as the **fallback** for students who have no access to a real PO, and as practice material. Students normally rehearse with a fact sheet about their own stakeholder; this pack is the ready-made alternative.
 **Why it exists:** students need a real conversation with a business stakeholder to practise the partner moves. A person plays the PO, from this pack, so the answers are consistent and never come from the AI. (The AI prepares questions and drafts notes; it does not play the PO.)
-**Who plays the PO:** the instructor, or a peer in pairs. In pairs, each person plays the PO once, for the other's case.
+**Who plays the PO:** the instructor, or a peer in pairs. In pairs, each person plays the PO once, for the other's project.
 
 ## 1. For the student (shared before the meeting)
 - **Product / company (public facts only):** [name, what it does, who it serves]
@@ -34,7 +34,7 @@
 - Record every number the PO gave. Mark anything you could not confirm as **assumed**.
 - Share the draft scope back (this is the first use of the live hub link) and record the agreement status: **agreed**, **pending** or **not available**.
 
-## 4. Quality checklist for a case pack
+## 4. Quality checklist for a project pack
 - [ ] Uses public facts only, or fictional ones clearly marked as fictional
 - [ ] Contains at least one weak assumption a good question can expose
 - [ ] Contains numbers (baseline and target) the student must ask for to learn

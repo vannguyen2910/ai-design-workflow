@@ -2,12 +2,12 @@
 body: false
 lessons_total: 6
 practices_total: 6
-description: "Chương trình 12 buổi trong 6 tuần cho designer mid và senior: một case, một workflow AI dùng lại được, một Knowledge Hub."
+description: "Chương trình 12 buổi trong 6 tuần cho designer mid và senior: một project, một workflow AI dùng lại được, một Knowledge Hub."
 ---
 
 # AI Design Workflow
 
-Chương trình 12 buổi trong 6 tuần dành cho designer mid và senior. Mỗi tuần hai buổi 90 phút: một buổi theory rồi một buổi practice. Tuần 6 kết bằng một ngày test và buổi reflection và wrap-up. Học viên làm một case, một workflow AI dùng lại được, và một Knowledge Hub dựng dần theo từng trang. Không còn Check point. Đọc `learning/plan.md` trước, vì đây là nguồn chuẩn cho cấu trúc.
+Chương trình 12 buổi trong 6 tuần dành cho designer mid và senior. Mỗi tuần hai buổi 90 phút: một buổi theory rồi một buổi practice. Tuần 6 kết bằng một ngày test và buổi reflection và wrap-up. Học viên làm một project, một workflow AI dùng lại được, và một Knowledge Hub dựng dần theo từng trang. Không còn Check point. Đọc `learning/plan.md` trước, vì đây là nguồn chuẩn cho cấu trúc.
 
 **Program và lesson cùng nằm trong thư mục này** (từ 2026-10-23, trước đó lesson nằm ở `library/lessons/ai-design-workflow/`):
 - **Program**: kế hoạch, research, method, pitch deck, tài nguyên dùng chung.

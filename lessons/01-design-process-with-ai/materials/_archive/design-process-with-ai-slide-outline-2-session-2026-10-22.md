@@ -31,14 +31,14 @@ last_synced: 2026-10-15
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Discover the Problem |
-| Running example | App meal-kit theo gói đăng ký (case card hư cấu cho phần demo); học viên áp dụng các bước vào case của chính mình |
+| Running example | App meal-kit theo gói đăng ký (project card hư cấu cho phần demo); học viên áp dụng các bước vào project của chính mình |
 
 ---
 
 ## Slide structure: 73 slides
 
 - Một deck cho cả hai buổi của module 1: **46 slide trong luồng dạy** và **27 slide Appendix** (method reference, đặt sau slide END, chỉ mở khi học viên hỏi). **Buổi 1 (dạy) = slide 1 đến 35. Buổi 2 (thực hành) = slide 36 đến 46.** Buổi 1 là buổi dạy: chỉ có câu hỏi và nói chuyện theo cặp, không có output; mọi output nằm ở buổi 2. Buổi 1 kết thúc bằng 15 phút hỏi đáp, rồi một slide nhắc chuẩn bị cho buổi 2.
-- Arc: **Tương lai của nghề và hướng đi của bạn** (10, tính cả cover: divider, số liệu, áp lực nằm ở đâu, ba slide cho ba hướng đi, warm-up nói về hướng của bạn, lập trường partner, dòng một câu) → **Quy trình thiết kế của bạn, cùng AI** (10: một divider, stage map, bốn slide stage, hai slide về AI làm tốt và còn yếu, hai slide về workflow chưa ổn) → **Một task làm hai lần, thuật ngữ và data safety** (9, gồm Activity 1 là nói chuyện theo cặp) → **Tiếp theo là gì, hub, kết thúc buổi 1, hỏi đáp, nhắc chuẩn bị** (6) → **Buổi 2: data rules, file, folder và case folder** (8, gồm Activity 2, 3 và 4) → **Homework và kết thúc buổi 2** (3).
+- Arc: **Tương lai của nghề và hướng đi của bạn** (10, tính cả cover: divider, số liệu, áp lực nằm ở đâu, ba slide cho ba hướng đi, warm-up nói về hướng của bạn, lập trường partner, dòng một câu) → **Quy trình thiết kế của bạn, cùng AI** (10: một divider, stage map, bốn slide stage, hai slide về AI làm tốt và còn yếu, hai slide về workflow chưa ổn) → **Một task làm hai lần, thuật ngữ và data safety** (9, gồm Activity 1 là nói chuyện theo cặp) → **Tiếp theo là gì, hub, kết thúc buổi 1, hỏi đáp, nhắc chuẩn bị** (6) → **Buổi 2: data rules, file, folder và project folder** (8, gồm Activity 2, 3 và 4) → **Homework và kết thúc buổi 2** (3).
 - Khớp với mười phase của lesson. Phase 1 = slide 1–10. Phase 2 = slide 11–20. Phase 3 = slide 21–27. Phase 4 = slide 28–29. Phase 5 = slide 30–35. Phase 6 = slide 36–37. Phase 7 = slide 38–39. Phase 8 = slide 40–42. Phase 9 = slide 43. Phase 10 = slide 44–46. Appendix = slide 47–73.
 - Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE` (`Num:` = số phút): warm-up = 3, Activity 1 = 4, Activity 2 = 8, Activity 3 = 40, Activity 4 = 10. Timing các phase: buổi 1 gồm Phase 1 20, Phase 2 16, Phase 3 19, Phase 4 12, Phase 5 21 (6 phút giảng và 15 phút hỏi đáp), tổng 88 trên 90 phút, buffer 2 phút (slide nhắc chuẩn bị cho buổi 2 chiếu trong buffer). Buổi 2 gồm Phase 6 14, Phase 7 9, Phase 8 40, Phase 9 16, Phase 10 6, tổng 85 trên 90 phút, buffer 5 phút. Phase 1 chia: ground rule 1, số liệu 4, áp lực nằm ở đâu 2, ba hướng đi 7, warm-up 3, lập trường partner và dòng một câu 3. Phase 2 chia: stage map 2, bốn stage mỗi stage 2, AI làm tốt và còn yếu 3 (compare 2, một slide ngắn 1), workflow chưa ổn 3 (statement 1, ba câu hỏi 2). Phase 3 chia: demo 7, thuật ngữ trong thực tế 8, Activity 1 4. Phase 4 chia: data safety 8, bài phân loại 4. Phase 5 chia: series map 2, hub và chia sẻ 2, kết thúc phần giảng 2, hỏi đáp 15.
 - Phase 2 chỉ nói mỗi stage gồm gì và AI hỗ trợ ở đâu, không đi vào từng design method, rồi nói AI làm tốt và còn yếu ở đâu theo bằng chứng và kết bằng thông điệp "đừng automate một workflow chưa ổn" kèm ba câu hỏi rút gọn. Phase 2 là phần nặng nhất của buổi 1 sau thay đổi này: nếu quá giờ, cắt theo thứ tự slide 20 (ba câu hỏi), slide 18 (trông đúng chưa chắc đúng), rồi phần hub ở Phase 5; data safety không bao giờ bị cắt. Các method, thuật ngữ và chi tiết folder nằm trong pre-read brief, nên deck không có slide nào đọc định nghĩa thành tiếng.
@@ -62,11 +62,11 @@ last_synced: 2026-10-15
   - Product Design Instructor
 - Right panel photo: Ảnh thật bàn tay một designer trên laptop với cây folder đang mở, ánh sáng ấm, gần gũi, không mang hơi hướng công nghệ viễn tưởng
 - Speaker notes:
-  - Chào cả nhóm và nói lesson này để làm gì: nói về tương lai của nghề và ba hướng đi, nhắc lại nhanh bốn stage có thêm AI, AI làm tốt gì và còn yếu ở đâu theo bằng chứng, vì sao không nên automate một workflow chưa ổn, một cách dùng AI an toàn, và một folder cho case của chính các bạn
+  - Chào cả nhóm và nói lesson này để làm gì: nói về tương lai của nghề và ba hướng đi, nhắc lại nhanh bốn stage có thêm AI, AI làm tốt gì và còn yếu ở đâu theo bằng chứng, vì sao không nên automate một workflow chưa ổn, một cách dùng AI an toàn, và một folder cho project của chính các bạn
   - Mọi lesson sau đều dùng những thứ này, nên mình cài đặt một lần ngay từ đầu
   - Nêu lập trường của cả series: designer cùng định nghĩa requirement với product và business
   - Nói rõ lớp ưu tiên designer; nếu có PO, PM hoặc BA thì các bạn học cùng một workflow, không cần build prototype từ đầu
-  - Nói rõ format: hai buổi 90 phút mỗi tuần; buổi hôm nay dạy, buổi sau thực hành trên case của chính bạn; homework chỉ làm tiếp phần đã bắt đầu, tối đa 45 phút
+  - Nói rõ format: hai buổi 90 phút mỗi tuần; buổi hôm nay dạy, buổi sau thực hành trên project của chính bạn; homework chỉ làm tiếp phần đã bắt đầu, tối đa 45 phút
 - 🎨 Visual hint: Cover layout, cố định. Panel trái trắng với dòng năm, nhãn stage, title (accent ở dòng 2) và subtitle. Panel phải là ảnh thật với gradient tối, tên và ba dòng credentials ở góc dưới trái.
 
 ---
@@ -83,7 +83,7 @@ last_synced: 2026-10-15
   - Mở bằng câu hỏi mà nhiều bạn đã hỏi mình: AI phổ biến thì UI/UX và product design sẽ ra sao?
   - Nói trước: có số liệu có nguồn, có hướng đi cụ thể, và cũng có chỗ chưa ai đo được; mình sẽ nói rõ từng chỗ
   - Nói ground rule của lớp trong một hơi: những gì chia sẻ trên lớp ở lại trong lớp; ẩn danh trước; không ai bắt buộc phải trình bày công việc confidential
-  - Case card của khoá luôn sẵn sàng nếu case của bạn quá nhạy cảm
+  - Project card của khoá luôn sẵn sàng nếu project của bạn quá nhạy cảm
   - **Nhắc cả lớp:** cứ ghi câu hỏi vào chat bất cứ lúc nào; 15 phút cuối buổi để trả lời, câu nào chưa kịp thì mình trả lời sau bằng văn bản
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper lavender nhạt, số phần lớn, title có accent ở dòng 2.
 
@@ -409,12 +409,12 @@ last_synced: 2026-10-15
 
 ### COMPARE · One task, done twice
 - Kicker: Live demo
-- Title: Same case.\n*Two instructions.*
+- Title: Same project.\n*Two instructions.*
 - On-slide:
   - Trái, mơ hồ: "Làm sao để cải thiện onboarding cho app meal-kit của tôi?"
-  - Phải, có cấu trúc (đính kèm case card): "Chỉ dùng case card. Liệt kê năm điều bạn cần biết mà KHÔNG có trong đó. Không đoán. Nói 'unknown'. Chỉ trả về danh sách."
+  - Phải, có cấu trúc (đính kèm project card): "Chỉ dùng project card. Liệt kê năm điều bạn cần biết mà KHÔNG có trong đó. Không đoán. Nói 'unknown'. Chỉ trả về danh sách."
 - Speaker notes:
-  - Cho xem case card trước: một app meal-kit hư cấu mà nhiều khách mới tạm dừng sau hộp đầu tiên; nghi ngờ do giá; chưa có research
+  - Cho xem project card trước: một app meal-kit hư cấu mà nhiều khách mới tạm dừng sau hộp đầu tiên; nghi ngờ do giá; chưa có research
   - Chạy cả hai instruction trực tiếp (mình đã chạy thử một lần trước đó) và cho xem hai output cạnh nhau
   - Bản mơ hồ thường cho lời khuyên tự tin nhưng chung chung, và có thể nói về sản phẩm như sự thật
   - Bản có cấu trúc thường hỏi những thứ chỉ research hoặc business mới trả lời được
@@ -435,7 +435,7 @@ last_synced: 2026-10-15
   - 5. Mang theo chuẩn của bạn: reusable instructions
 - Speaker notes:
   - Chỉ nhắc lại vì học viên đã đọc ở pre-read; hỏi hai câu nhanh để kiểm tra, ví dụ "cái nào là thứ bạn đưa cho AI, cái nào là giới hạn của AI?"
-  - Gắn với demo: case card là context; "chỉ dùng case card" là grounding
+  - Gắn với demo: project card là context; "chỉ dùng project card" là grounding
   - AI-assisted vs AI-generated là thuật ngữ thứ mười, đã nói ở trên
   - Tám phút cho slide này và ba slide tiếp theo gộp lại
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered grid, năm mục, số purple.
@@ -450,7 +450,7 @@ last_synced: 2026-10-15
   - Context là instruction của bạn, text đã dán, file đính kèm và các tin nhắn trước đó; không có gì khác về project của bạn
   - Window là giới hạn; vượt qua nó, hoặc khi tài liệu dài và lộn xộn, chi tiết sẽ nhoè hoặc rơi mất
   - **Chỉ đưa những phần mà một bước cần, không phải cả project**
-  - Gắn với demo: case card là context
+  - Gắn với demo: project card là context
 - 🎨 Visual hint: SCHEMATIC. Một khung gắn nhãn "context window" chứa các tile file nhỏ, vài tile rơi ra ngoài khung. Purple cho phần nằm trong, xám cho phần rơi ra.
 
 ---
@@ -489,7 +489,7 @@ last_synced: 2026-10-15
 - Sub: Hai thuật ngữ. Ví dụ của riêng bạn. Bạn sẽ làm khác đi điều gì?
 - Speaker notes:
   - Phát mười thẻ; mỗi người hai thẻ
-  - Giải thích trong một câu, kèm ví dụ từ case của bạn
+  - Giải thích trong một câu, kèm ví dụ từ project của bạn
   - Bạn cặp hỏi một câu: "Từ điều đó, bạn sẽ làm khác đi điều gì?"
   - **Lắng nghe sự thay đổi hành vi, không phải định nghĩa**
   - Không có output; `context-glossary.md` là tuỳ chọn, làm khi tiếp tục dự án
@@ -501,7 +501,7 @@ last_synced: 2026-10-15
 - Kicker: What you put in
 - Title: Before you paste,\n*sort it*
 - On-slide:
-  - Safe: thông tin công khai, suy nghĩ của bạn, case của khoá
+  - Safe: thông tin công khai, suy nghĩ của bạn, project của khoá
   - Ask first: nội bộ, không nhạy cảm; chỉ dùng tool đã duyệt
   - Never in a public tool: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA
 - Speaker notes:
@@ -527,8 +527,8 @@ last_synced: 2026-10-15
   - **Xoá thông tin định danh bằng find and replace trên máy của bạn**, không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi rồi
   - AI coding tool hoặc agent đọc toàn bộ project folder, nên hãy giữ file riêng tư ở chỗ khác
   - Dữ liệu gốc cần ẩn danh nằm trong `_raw-private/`: không lên GitHub, và file luật bảo tool không đọc; đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder
-  - Output của AI có được dùng cho công việc với client hay không, và ai sở hữu nó, tuỳ công ty và quốc gia của bạn; hãy ghi lại trong case log chỗ nào đã dùng AI
-  - Bạn sẽ viết data rules của riêng mình ở đầu buổi 2, trên tài liệu thật của case; cho đến lúc đó đừng dán tài liệu thật vào AI tool
+  - Output của AI có được dùng cho công việc với client hay không, và ai sở hữu nó, tuỳ công ty và quốc gia của bạn; hãy ghi lại trong project log chỗ nào đã dùng AI
+  - Bạn sẽ viết data rules của riêng mình ở đầu buổi 2, trên tài liệu thật của project; cho đến lúc đó đừng dán tài liệu thật vào AI tool
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước ba được tô purple.
 
 ---
@@ -569,9 +569,9 @@ last_synced: 2026-10-15
 - Title: Every output.\n*One connected place.*
 - On-slide: Bắt đầu từ bất kỳ decision nào. Lần ra user need, hypothesis, principle và test của nó.
 - Speaker notes:
-  - Hub là một folder Markdown gồm các page theo tuần và mỗi item một file, liên kết với nhau trong case folder của bạn
+  - Hub là một folder Markdown gồm các page theo tuần và mỗi item một file, liên kết với nhau trong project folder của bạn
   - Báo cáo cuối của series là hub hoàn chỉnh, không phải một tài liệu
-  - Cho xem hub của template, với dữ liệu mẫu, mở trong một công cụ xem Markdown (ví dụ Obsidian với Graph view và khung Backlinks); buổi 2 mọi người đã có sẵn hub này trong case folder của mình
+  - Cho xem hub của template, với dữ liệu mẫu, mở trong một công cụ xem Markdown (ví dụ Obsidian với Graph view và khung Backlinks); buổi 2 mọi người đã có sẵn hub này trong project folder của mình
   - Từ mỗi decision, bấm sang tài liệu làm bằng chứng cho nó (phân tích đối thủ, persona, flow, prototype) ở mục Documents
   - Mỗi item (opportunity, decision, test) là một file và là nguồn duy nhất; AI dựng lại bảng alignment và warning từ các file đó: decision không có user need phía sau, hypothesis không có test
   - **Hub làm cho lập luận của bạn có thể được người khác kiểm chứng**
@@ -582,14 +582,14 @@ last_synced: 2026-10-15
 ### DIAGRAM · Private by default, public if you choose
 - Kicker: Sharing your hub
 - Title: Your hub is\n*yours to share*
-- On-slide: Private: file HTML hoặc PDF, file nén, hoặc mời vào repo private. Public: chỉ khi cả case được phép chia sẻ.
+- On-slide: Private: file HTML hoặc PDF, file nén, hoặc mời vào repo private. Public: chỉ khi cả project được phép chia sẻ.
 - Speaker notes:
-  - **Hub mặc định là private**: nó nằm trong case folder của bạn và không ai thấy trừ khi bạn gửi
-  - Để cho stakeholder xem, chạy script `tools/export-hub.py` để ra một file HTML mở được bằng trình duyệt, hoặc export các page chính ra PDF; hoặc gửi file nén của cả case folder, vì các page hub link ra ngoài folder `hub/`
+  - **Hub mặc định là private**: nó nằm trong project folder của bạn và không ai thấy trừ khi bạn gửi
+  - Để cho stakeholder xem, chạy script `tools/export-hub.py` để ra một file HTML mở được bằng trình duyệt, hoặc export các page chính ra PDF; hoặc gửi file nén của cả project folder, vì các page hub link ra ngoài folder `hub/`
   - Muốn một người xem trực tiếp, mời họ vào repository private trên GitHub
-  - Chỉ khi toàn bộ case được phép chia sẻ (case của khoá, hoặc bản đã làm sạch từ công việc của bạn) mới công khai cả case folder trong một repository public mới; GitHub hiển thị Markdown nên không cần dựng website; guide và homework tuỳ chọn có hướng dẫn
+  - Chỉ khi toàn bộ project được phép chia sẻ (project của khoá, hoặc bản đã làm sạch từ công việc của bạn) mới công khai cả project folder trong một repository public mới; GitHub hiển thị Markdown nên không cần dựng website; guide và homework tuỳ chọn có hướng dẫn
   - **Nếu bạn công khai, bạn là người host và chịu trách nhiệm**; công việc thật được giữ private
-- 🎨 Visual hint: SCHEMATIC. Hai cột. Trái, "Private (mặc định)": một folder có khoá, mũi tên tới một PDF, một file nén và một người được mời. Phải, "Public (tuỳ chọn)": một bản case đã làm sạch, mũi tên "upload" vào một repository public mới.
+- 🎨 Visual hint: SCHEMATIC. Hai cột. Trái, "Private (mặc định)": một folder có khoá, mũi tên tới một PDF, một file nén và một người được mời. Phải, "Public (tuỳ chọn)": một bản project đã làm sạch, mũi tên "upload" vào một repository public mới.
 
 ---
 ### STATEMENT · Questions
@@ -608,31 +608,31 @@ last_synced: 2026-10-15
 
 ### PRACTICE · Before session 2
 - Kicker: Before the next session
-- Title: Bring your\n*case*
+- Title: Bring your\n*project*
 - On-slide:
-  - Chọn case của bạn; ẩn danh tên, số liệu, chi tiết chưa phát hành
+  - Chọn project của bạn; ẩn danh tên, số liệu, chi tiết chưa phát hành
   - Kiểm tra AI tool chạy được
-  - Giữa hai buổi, chỉ dùng case card nếu muốn thử AI tool
+  - Giữa hai buổi, chỉ dùng project card nếu muốn thử AI tool
 - Speaker notes:
-  - Không có bài tập mới; buổi 2, khoảng ba ngày nữa, mọi người viết data rules, viết hướng của mình và dựng case folder ngay trên lớp
-  - Nếu case không thể mang lên lớp, dùng case card của khoá
-  - **Chưa dán tài liệu thật của case vào AI tool trước khi viết data rules ở buổi 2**
+  - Không có bài tập mới; buổi 2, khoảng ba ngày nữa, mọi người viết data rules, viết hướng của mình và dựng project folder ngay trên lớp
+  - Nếu project không thể mang lên lớp, dùng project card của khoá
+  - **Chưa dán tài liệu thật của project vào AI tool trước khi viết data rules ở buổi 2**
   - Chiếu slide này sau phần hỏi đáp, trong thời gian buffer, để lời dặn không bị Q&A lấn át
-- 🎨 Visual hint: TYPOGRAPHIC. Practice layout, ba card ngắn: "Case", "AI tool", "Case card".
+- 🎨 Visual hint: TYPOGRAPHIC. Practice layout, ba card ngắn: "Project", "AI tool", "Project card".
 
 ---
 
-## 5. Files, folders and your case folder (session 2)
+## 5. Files, folders and your project folder (session 2)
 
 ---
 
-### SECTION DIVIDER · Files, folders and your case folder
+### SECTION DIVIDER · Files, folders and your project folder
 - Num: 05
 - Kicker: What the AI works with, then hands-on
 - Title: A folder\n*it can work with*
-- Sub: Học layout, rồi dựng case folder của bạn
+- Sub: Học layout, rồi dựng project folder của bạn
 - Speaker notes:
-  - Đây là buổi 2, buổi thực hành: mở bằng check-in ba phút (ai chưa chạy được AI tool, chưa chọn được case, còn băn khoăn về data rules?)
+  - Đây là buổi 2, buổi thực hành: mở bằng check-in ba phút (ai chưa chạy được AI tool, chưa chọn được project, còn băn khoăn về data rules?)
   - Rồi ba phút để mỗi người viết hai đến ba dòng vào `_personal/my-direction.md`: hướng nghiêng về, lý do, một kỹ năng muốn xây; file xem lại ở tuần 7
   - Sau đó là Activity 2 (data rules), rồi mới đến file và folder
   - Chi tiết file và folder nằm trong pre-read brief; dùng thời gian cho những chỗ mọi người hay hiểu sai
@@ -644,16 +644,16 @@ last_synced: 2026-10-15
 
 ### MILESTONE · Activity 2
 - Num: 8
-- Kicker: Your own case
+- Kicker: Your own project
 - Title: Write your
 *data rules*
 - Sub: Ba dòng bằng lời của bạn: dán gì, không dán gì, dùng tool nào
 - Speaker notes:
   - Tám phút, làm cá nhân trong breakout room; đây là lần đầu họ dùng ba nhóm dữ liệu của buổi 1 trên tài liệu thật
-  - Mỗi người xếp ba tài liệu thật của case mình vào safe, ask first hoặc never in a public tool
+  - Mỗi người xếp ba tài liệu thật của project mình vào safe, ask first hoặc never in a public tool
   - Rồi viết ba dòng vào `context-data-rules.md`: mình được dán gì, mình sẽ không dán gì, mình dùng tool nào cho việc gì
   - **Chỗ nào chưa biết chính sách của công ty: ghi "cần hỏi", và hỏi trước tuần 2**
-  - Ai dùng case card của khoá thì viết cho case card, và viết lại cho case thật sau
+  - Ai dùng project card của khoá thì viết cho project card, và viết lại cho project thật sau
   - Đi quanh và hỏi: "Nếu file này lọt ra ngoài, ai sẽ biết?"
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn, không có diagram.
 
@@ -661,7 +661,7 @@ last_synced: 2026-10-15
 
 ---
 
-### DIAGRAM · The case folder
+### DIAGRAM · The project folder
 - Kicker: One plain local folder
 - Title: Every lesson points\nto *this folder*
 - On-slide: AGENTS · learnings (context · discover · define · develop · deliver · sources · prototype) · hub · tools · case-log
@@ -705,9 +705,9 @@ last_synced: 2026-10-15
 - Sub: Folder. File context. Hub mẫu. Một instruction.
 - Speaker notes:
   - Bốn mươi phút; bốn bước ở slide kế tiếp
-  - Học viên mà công ty cấm AI tool, hoặc case quá nhạy cảm, dùng case card của khoá cho bước bốn
+  - Học viên mà công ty cấm AI tool, hoặc project quá nhạy cảm, dùng project card của khoá cho bước bốn
   - **Ai gõ lại tóm tắt project từ trí nhớ: chỉ họ về file**
-  - Ai thấy bảng và link hiển thị thô: mở cả folder case trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
+  - Ai thấy bảng và link hiển thị thô: mở cả folder project trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
@@ -716,14 +716,14 @@ last_synced: 2026-10-15
 - Kicker: Activity 3
 - Title: Build, write,\n*add, test*
 - On-slide:
-  - 01 · Lấy case folder từ template và đặt tên
+  - 01 · Lấy project folder từ template và đặt tên
   - 02 · Viết product-and-users
   - 03 · Mở hub và đọc AGENTS.md
   - 04 · Chạy một instruction với một file đã lưu
 - Speaker notes:
-  - 01: năm phút, lấy folder `my-case` từ template, đổi tên theo case và đối chiếu với layout chuẩn
+  - 01: năm phút, lấy folder `my-case` từ template, đổi tên theo project và đối chiếu với layout chuẩn
   - 02: mười phút, product-and-users đã ẩn danh, cộng với data-rules từ Activity 2; accessibility-rules làm khi tiếp tục dự án (Việc 1)
-  - 03: năm phút, mở cả folder case bằng công cụ quen thuộc (AI coding tool, VS Code hoặc Obsidian), mở `hub/README.md` để thấy dữ liệu mẫu và đọc `AGENTS.md`; chưa chỉnh gì
+  - 03: năm phút, mở cả folder project bằng công cụ quen thuộc (AI coding tool, VS Code hoặc Obsidian), mở `hub/README.md` để thấy dữ liệu mẫu và đọc `AGENTS.md`; chưa chỉnh gì
   - 04: hai mươi phút, đính kèm file product, hỏi còn thiếu gì, rồi đọc câu trả lời có phản biện
   - Instruction nằm ở slide kế tiếp
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước bốn được tô purple.
@@ -735,7 +735,7 @@ last_synced: 2026-10-15
 - Title: What is *missing?*
 - On-slide: "Chỉ dùng file này. Liệt kê năm điều bạn cần biết mà KHÔNG có trong đó. Không đoán. Nếu chưa rõ, nói 'unknown'. Chỉ trả về danh sách."
 - Speaker notes:
-  - Đính kèm file product-and-users rồi dán instruction; đây là instruction của demo, áp dụng trên case của chính họ
+  - Đính kèm file product-and-users rồi dán instruction; đây là instruction của demo, áp dụng trên project của chính họ
   - Đọc câu trả lời có phản biện: câu nào hữu ích, câu nào chung chung, câu nào bạn tự tìm ra được?
   - **Câu hỏi coaching: "Bạn sẽ sửa gì trước khi dùng nó?"**
   - Lưu những câu hữu ích vào file `context-open-questions.md` trong `learnings/`
@@ -751,12 +751,12 @@ last_synced: 2026-10-15
 - Sub: Bạn cặp chạy instruction "còn thiếu gì" trên file của bạn
 - Speaker notes:
   - Mười phút, theo cặp; đổi file `context-product-and-users.md` đã ẩn danh
-  - **Quy tắc dữ liệu:** chỉ đổi file đã ẩn danh và cả hai đồng ý; dùng trong một cuộc hội thoại mới, không dán sang nơi khác, xoá sau khi xong; case nhạy cảm thì dùng case card
+  - **Quy tắc dữ liệu:** chỉ đổi file đã ẩn danh và cả hai đồng ý; dùng trong một cuộc hội thoại mới, không dán sang nơi khác, xoá sau khi xong; project nhạy cảm thì dùng project card
   - Mỗi người đính kèm file của bạn cặp vào AI chat tool và chạy instruction ở bước 4
   - Rồi nói với bạn cặp: trong năm điều AI nói còn thiếu, điều nào thật sự thiếu, điều nào bạn cặp trả lời được ngay trong một câu
   - **Điều AI nói thiếu mà người viết trả lời được trong một câu: đó là chỗ file còn chưa đủ chi tiết**
   - Mỗi người ghi ba điều cần bổ sung
-  - Sau đó, sáu phút xem một case folder trực tiếp: cả lớp hỏi, nếu mình là người lạ nhận folder này, mình hiểu người dùng và sản phẩm trong hai phút không?
+  - Sau đó, sáu phút xem một project folder trực tiếp: cả lớp hỏi, nếu mình là người lạ nhận folder này, mình hiểu người dùng và sản phẩm trong hai phút không?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn, không có diagram.
 
 ---
@@ -782,7 +782,7 @@ last_synced: 2026-10-15
 - Title: The tools will change.\n*The way of working won't.*
 - On-slide: Đưa input rõ ràng. Yêu cầu nguồn. Kiểm tra. Tự quyết định.
 - Speaker notes:
-  - Hỏi hai hoặc ba học viên: trong năm điều AI nói còn thiếu về case của bạn, điều nào làm bạn bất ngờ nhất?
+  - Hỏi hai hoặc ba học viên: trong năm điều AI nói còn thiếu về project của bạn, điều nào làm bạn bất ngờ nhất?
   - Nói câu kết rồi dừng lại
   - Chỉ tới lesson tiếp theo: bắt đầu từ câu hỏi của business
   - Nhắc họ đọc brief một trang của lesson tiếp theo trước buổi học
@@ -798,7 +798,7 @@ last_synced: 2026-10-15
 - Speaker notes:
   - Nhắc họ gửi cây folder và file product để nhận feedback
   - Mời đặt câu hỏi
-  - Ở lại với ai muốn được giúp về case folder
+  - Ở lại với ai muốn được giúp về project folder
 - 🎨 Visual hint: End layout, cố định. Nền paper-deeper nhạt, kicker, title lớn in nghiêng, chữ ký và hàng liên hệ.
 
 ## Appendix. Method reference slides

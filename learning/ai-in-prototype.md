@@ -68,7 +68,7 @@
 ### Stripe (Protodash)
 
 - **Phát hiện (nguồn gốc, đọc qua trang giới thiệu).** Tập *How I AI* với Owen Williams, design manager ở Stripe (04/05/2026). Chỉ đọc được mô tả và danh sách chương, không có transcript (P15).
-- **Phát hiện (thứ cấp, tóm tắt tập podcast).** Roger Wong (12/05/2026) và Case Study Club (11/05/2026) cùng mô tả (P19, P20):
+- **Phát hiện (thứ cấp, tóm tắt tập podcast).** Roger Wong (12/05/2026) và Project Study Club (11/05/2026) cùng mô tả (P19, P20):
   - Nỗi đau: Figma khó với prototype dashboard dữ liệu (bộ lọc, trạng thái rỗng, lỗi, dữ liệu thật); tool đại trà cho ra giao diện chung chung bỏ qua quy ước của Stripe.
   - Cách làm: một bộ Cursor rules dạy model về design system, cộng khung router và chrome, cộng design system (Sail) mở qua MCP server. Link Figma đi qua MCP nội bộ để lấy component và token trước khi sinh code. Về sau thành Protodash Studio chạy trên dev box nên designer không phải cài gì.
   - Người dùng: designer và PM. Nguồn khác nhau về mức: ngang designer (Lenny's) hoặc nhiều hơn (Roger Wong). PM có thể dán PRD và nhận flow chạy được trước khi designer vào.
@@ -167,9 +167,9 @@ Các điểm dưới đây là **suy luận** từ các mẫu ở trên, không 
 | P15 | *How I AI*: *The internal AI tool that's transforming how Stripe designs products* (Owen Williams, host Claire Vo), lennysnewsletter.com | 04/05/2026 | Nguồn gốc (lời người trong cuộc); chỉ đọc mô tả và danh sách chương, không có transcript |
 | P16 | Shopify Engineering, *Quick* (Daniel Beauchamp, Alex Pilon), shopify.engineering/quick | 10/06/2026 | Nguồn gốc của kỹ sư Shopify; đọc đầy đủ; số liệu là dữ liệu nền tảng tự báo |
 | P17 | Designer Fund, *How to grow as a designer when AI is changing everything: Inside design at Shopify*; *Inside design at Linear* (designerfund.substack.com) | 24/08/2026; 12/08/2026 | Bài tổng hợp có trích dẫn trực tiếp người trong cuộc; đọc đầy đủ; số liệu là của tác giả |
-| P18 | Designer Fund và Foundation Capital, *AI in Design Report 2026*: trang case Shopify, stateofaidesign.com/cases/shopify | 06/10/2026 | Báo cáo tổng hợp có trích dẫn người trong cuộc; đọc đầy đủ; cỡ mẫu không đọc được |
+| P18 | Designer Fund và Foundation Capital, *AI in Design Report 2026*: trang project Shopify, stateofaidesign.com/cases/shopify | 06/10/2026 | Báo cáo tổng hợp có trích dẫn người trong cuộc; đọc đầy đủ; cỡ mẫu không đọc được |
 | P19 | Roger Wong, *Stripe Protodash*, rogerwong.me/2026/05/stripe-protodash-ai-prototyping | 12/05/2026 | Thứ cấp, tóm tắt tập podcast có bình luận riêng; đọc đầy đủ |
-| P20 | Case Study Club, *Inside Stripe's Protodash*, issue 002 | 11/05/2026 | Thứ cấp; đọc đầy đủ |
-| P21 | Designer Fund và Foundation Capital, *AI in Design Report 2026*: trang case Linear và chương *Craft* | 06/10/2026 | Báo cáo tổng hợp và khảo sát Q1 2026; đọc đầy đủ; cỡ mẫu không đọc được |
+| P20 | Project Study Club, *Inside Stripe's Protodash*, issue 002 | 11/05/2026 | Thứ cấp; đọc đầy đủ |
+| P21 | Designer Fund và Foundation Capital, *AI in Design Report 2026*: trang project Linear và chương *Craft* | 06/10/2026 | Báo cáo tổng hợp và khảo sát Q1 2026; đọc đầy đủ; cỡ mẫu không đọc được |
 | P22 | The Agent Times, *Airbnb Joins the AI Code Race as Managers Pick Up Claude Code* | 11/05/2026 | Thứ cấp, dẫn Business Insider và TechCrunch; đọc đầy đủ; chưa mở nguồn dẫn |
 | P23 | The AI Corner, *Brian Chesky: Airbnb AI lessons* | 20/10/2026 | Thứ cấp, bình luận về một podcast; đọc đầy đủ; chưa mở podcast |

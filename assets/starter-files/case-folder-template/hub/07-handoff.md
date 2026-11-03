@@ -7,7 +7,7 @@
 ## Handoff pack
 
 - Prototype: [link tới `learnings/prototype/`]
-- Decisions and reasons: [Case log](../case-log.md)
+- Decisions and reasons: [Project log](../case-log.md)
 - Acceptance notes: [điều gì phải đúng khi dựng xong]
 - Open questions: [danh sách]
 

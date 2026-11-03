@@ -36,6 +36,6 @@ Lệch phổ biến khác:
 ## Lưu ý khi dạy
 
 - B và C phụ thuộc chính sách của công ty học viên. Đáp án "ask first" là mặc định cho bài tập; nếu học viên nói công ty họ cấm AI tool bên ngoài, chấp nhận "never" và dùng đó để nối sang việc kiểm tra chính sách ở bước đầu của bốn thói quen.
-- Năm đoạn đều hư cấu nên học viên dán vào AI tool để thực hành là an toàn. Nhắc lại ngay trước bước 3: **tài liệu thật của case chưa được dán vào AI tool**.
+- Năm đoạn đều hư cấu nên học viên dán vào AI tool để thực hành là an toàn. Nhắc lại ngay trước bước 3: **tài liệu thật của project chưa được dán vào AI tool**.
 - Số liệu, giá và tên đối thủ (Bếp Nhà Box) đều bịa; không dùng ra ngoài buổi này như dữ kiện.
 - Đoạn D có chi tiết riêng (Đà Lạt, hai con nhỏ) được cài để dễ nhận ra người; giữ nguyên khi chỉnh sửa, nếu không cái bẫy sẽ yếu đi.

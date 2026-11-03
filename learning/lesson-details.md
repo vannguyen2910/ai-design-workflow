@@ -21,7 +21,7 @@ Quy tắc ngôn ngữ đơn giản (2026-10-05). Mỗi ý chỉ dùng **một t�
 
 | Nói | Nghĩa là | Không nói |
 |---|---|---|
-| **case**, **project folder** | Project học viên làm xuyên suốt, và folder chứa nó | case file, project file |
+| **project**, **project folder** | Project học viên làm xuyên suốt, và folder chứa nó | project file, project file |
 | **working file** | Một file Markdown mà một activity điền vào, từng section một | living file |
 | **context pack** | Các file trong `context/`, được dán vào các bước AI trước tiên | constraint layer |
 | **hub** (Knowledge Hub ở lần dùng đầu) | Website liên kết chứa mọi output | final report (chỉ dùng cho hub đã hoàn thiện) |
@@ -42,7 +42,7 @@ Quy tắc ngôn ngữ đơn giản (2026-10-05). Mỗi ý chỉ dùng **một t�
 | **quote ID** | Mã của một quote, ví dụ `I01-01` là quote 1 của buổi phỏng vấn 01 (người tham gia P1); quote từ review dùng `R01` | quote number |
 | **codebook** | Bộ nhãn (code) dùng để gắn tag cho quote | tag list, label set |
 | **AI draft**, **verified copy** | Bản AI trả về, không sửa; và bản sao học viên đã kiểm tra và chỉnh | raw output, final |
-| **counterexample** | Ví dụ mâu thuẫn với một theme hoặc một giả thuyết. "Đã tìm, không có" cũng được ghi lại | negative case |
+| **counterexample** | Ví dụ mâu thuẫn với một theme hoặc một giả thuyết. "Đã tìm, không có" cũng được ghi lại | negative project |
 | **hard stop** | Check mà gate không được qua bằng lý do: phải thật sự đạt. Gate 1 có ba: 1b, 1c, 1f | blocker, chặn cứng |
 
 Cách nói đơn giản cho cảnh báo và review trong hub:
@@ -76,9 +76,9 @@ Sau buổi 1 và bài tập về nhà, học viên có thể:
 2. **Kể tên** các method chính trong bốn stage, và nêu AI hỗ trợ ở đâu, phần nào designer vẫn phải tự thực hiện.
 3. **Giải thích** bốn khái niệm AI cốt lõi bằng lời của mình (context, grounding, hallucination, AI-assisted so với AI-generated), và nhận ra sáu thuật ngữ tham khảo khi gặp ở các buổi sau (bảng bên dưới).
 4. **Quyết định** dữ liệu nào an toàn để đưa cho AI tool: phân loại thành safe, ask first và never in a public tool; ẩn danh trước khi dán; viết data rules của riêng mình.
-5. **Cài đặt** project folder của chương trình cho case của chính mình, gồm layout chuẩn, `AGENTS.md`, context pack đã bắt đầu và một hub Markdown mẫu.
+5. **Cài đặt** project folder của chương trình cho project của chính mình, gồm layout chuẩn, `AGENTS.md`, context pack đã bắt đầu và một hub Markdown mẫu.
 6. **Dùng lại** một file đã lưu làm context thay vì mô tả lại project, và yêu cầu AI chỉ rõ nguồn cho từng ý, kèm câu trả lời "unknown" khi không có thông tin.
-7. **Giải thích** cách chia sẻ hub với stakeholder: mặc định private (PDF, folder nén hoặc repository private), chỉ công khai khi toàn bộ case được phép chia sẻ.
+7. **Giải thích** cách chia sẻ hub với stakeholder: mặc định private (PDF, folder nén hoặc repository private), chỉ công khai khi toàn bộ project được phép chia sẻ.
 8. **Nêu** hai loại task AI làm tốt và hai loại AI còn yếu, kèm một bằng chứng cho mỗi bên.
 9. **Đánh giá** một workflow có đáng automate hay chưa bằng ba câu hỏi: mục tiêu có rõ không, kết quả khi làm tay có ổn định không, và ai kiểm tra đầu ra.
 
@@ -103,10 +103,10 @@ Timing chưa được thử với lớp thật. **Thứ tự cắt khi quá gi�
 
 ### Activity, homework và output
 
-- **Key activity:** demo của giảng viên về một task làm hai lần (instruction mơ hồ so với instruction có cấu trúc, trên một case mẫu); trên lớp, học viên viết data rules (Activity 2); ở nhà, học viên dựng project folder và chạy một instruction với một file đã lưu.
+- **Key activity:** demo của giảng viên về một task làm hai lần (instruction mơ hồ so với instruction có cấu trúc, trên một project mẫu); trên lớp, học viên viết data rules (Activity 2); ở nhà, học viên dựng project folder và chạy một instruction với một file đã lưu.
 - **Homework (một bài tập, khoảng 45 phút):** dựng project folder theo năm bước, bước cuối là viết `_personal/my-direction.md`.
 - **Handout gửi riêng:** `assets/templates/before-you-automate.md` (thông điệp, checklist tám câu, cách đọc kết quả).
-- **Output:** project folder với folder `context/` đã bắt đầu (sản phẩm và người dùng, data rules, accessibility rules tuỳ chọn, glossary tuỳ chọn) cho case của học viên, cùng một hub mẫu (private) và `_personal/my-direction.md`.
+- **Output:** project folder với folder `context/` đã bắt đầu (sản phẩm và người dùng, data rules, accessibility rules tuỳ chọn, glossary tuỳ chọn) cho project của học viên, cùng một hub mẫu (private) và `_personal/my-direction.md`.
 
 ### Terminology List
 
@@ -131,7 +131,7 @@ Timing chưa được thử với lớp thật. **Thứ tự cắt khi quá gi�
 
 Nói lướt, không có thẻ riêng: model, prompt, in-tool AI features, token. Markdown, HTML và local folder được dạy như các loại file, ở phần folder. Cơ sở: Figma mô tả MCP là giao diện cho phép AI tool đọc thiết kế, và skills là các instruction Markdown dùng lại được ([Figma, design systems, AI and MCP](https://www.figma.com/blog/design-systems-ai-mcp/)); các thuật ngữ còn lại là cách dùng chuẩn.
 
-### The Case Folder
+### The Project Folder
 
 Layout dưới đây theo lesson file (mục 6.2). Đây là layout mặc định của cả series.
 
@@ -153,7 +153,7 @@ Layout dưới đây theo lesson file (mục 6.2). Đây là layout mặc địn
 
 **Vì sao layout này phù hợp với làm việc với AI:** mỗi folder một vai (`context/` đưa vào đầu tiên, `work/` là output, `insights/` là học được và decision); mỗi activity một file nên mỗi bước AI có một input có tên; các file trong `context/` được dán trước tiên vào mọi bước; file văn bản ngắn dễ đưa cho AI có chọn lọc; và một AI coding tool mở được cả folder như một project.
 
-**Lưu ý:** giữ case ở local folder thuần khi AI tool đang ghi file, rồi mới sao chép lên cloud storage. `AGENTS.md` là luật, không phải rào chắn kỹ thuật. Rào chắn thật là `.gitignore` cho `_raw-private/` và `_personal/`.
+**Lưu ý:** giữ project ở local folder thuần khi AI tool đang ghi file, rồi mới sao chép lên cloud storage. `AGENTS.md` là luật, không phải rào chắn kỹ thuật. Rào chắn thật là `.gitignore` cho `_raw-private/` và `_personal/`.
 
 ### Tình trạng
 
@@ -264,7 +264,7 @@ Trong mô hình cũ, module gồm Lesson 2 và Lesson 3 trong hai buổi 90 phú
 
 ### Access Risk: một số học viên không tiếp cận được PO hoặc business
 
-Một số học viên thật sự không tiếp cận được PO hoặc business. **Case mặc định giờ là case của chính học viên, nên ba mức access dưới đây áp dụng cho mọi người.** Đường văn bản (stakeholder check bằng văn bản) là đường chính cho tất cả; một buổi họp chỉ là phần thêm. Cần dạy ba mức này để học viên biết làm gì khi không có phản hồi hay buổi họp nào, và workflow phải chạy được ở cả ba.
+Một số học viên thật sự không tiếp cận được PO hoặc business. **Project mặc định giờ là project của chính học viên, nên ba mức access dưới đây áp dụng cho mọi người.** Đường văn bản (stakeholder check bằng văn bản) là đường chính cho tất cả; một buổi họp chỉ là phần thêm. Cần dạy ba mức này để học viên biết làm gì khi không có phản hồi hay buổi họp nào, và workflow phải chạy được ở cả ba.
 
 | Access level | Tình huống | Học viên làm gì | Agreement status |
 |---|---|---|---|
@@ -296,7 +296,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 4. Phản biện một claim và giữ ý kiến trái chiều.
 5. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu, và đóng góp một insight đã kiểm tra vào insight hub.
 
-**Key activity:** **viết claim, phản biện chéo** (14 phút, theo cặp, không dùng AI) trên bộ 24 quote của case Kitchen Crate (`assets/starter-files/course-case/quotes.md`). Mỗi người viết một claim cho quyết định chung (có thiết kế lại bước đổi ngày giao hay không), rồi bạn cùng cặp phản biện bằng bốn câu hỏi, mỗi lỗi kèm quote ID. Việc làm trên quote của học viên nằm ở Practice 3.
+**Key activity:** **viết claim, phản biện chéo** (14 phút, theo cặp, không dùng AI) trên bộ 24 quote của project Kitchen Crate (`assets/starter-files/course-case/quotes.md`). Mỗi người viết một claim cho quyết định chung (có thiết kế lại bước đổi ngày giao hay không), rồi bạn cùng cặp phản biện bằng bốn câu hỏi, mỗi lỗi kèm quote ID. Việc làm trên quote của học viên nằm ở Practice 3.
 
 *Chia giờ 90 phút (80 phút nội dung, buffer 10):* ice breaker 5, ôn quote 7, bốn bước 11, persona 9, journey map 9, opportunity 7, activity 14, insight hub 6, hỏi đáp 7, close 5. Chưa thử với một lớp thật.
 
@@ -442,11 +442,11 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 | Ý | Chỗ phù hợp nhất | Xuất hiện như thế nào |
 |---|---|---|
-| Source of truth, built view | Buổi 1 (từ vựng), buổi 4 | Các trang của hub được dựng từ file của case; không có gì sao chép tay |
+| Source of truth, built view | Buổi 1 (từ vựng), buổi 4 | Các trang của hub được dựng từ file của project; không có gì sao chép tay |
 | Propose first | Buổi 3 | Ghi chú phỏng vấn theo cặp đi vào; AI đề xuất insight; học viên duyệt trước khi item được tạo |
 | Rules file cho AI tool | Buổi 1 | Data rules và bản đồ project folder được viết một lần |
 | Traceability và outcome loop | Buổi 4, 8, 11 | Mỗi decision truy được về một need; metric có target, kết quả và verdict |
-| Signal so với noise trong check | Buổi 8 | Cảnh báo của alignment check được chia mức; case mới bắt đầu sạch |
+| Signal so với noise trong check | Buổi 8 | Cảnh báo của alignment check được chia mức; project mới bắt đầu sạch |
 | Fail loudly, test trên dữ liệu mới | Buổi 10 | Peer test và finding; một check không nói gì thì không phải là pass |
 | Chọn tool theo ràng buộc của nó | Buổi 7 | AI coding tool hay diagram tool đều có giới hạn; quyết định điều chỉnh, tự dựng hay đổi, và dữ liệu nào rời khỏi máy |
 
@@ -454,7 +454,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Check point (buổi 5, 9, 12)
 
-Ba buổi không có lesson mới, không có slug và không có deck. *Thay cho practice session B của bản 14 session (2026-10-22).* Mỗi Check point là một buổi làm việc có coaching theo nhóm nhỏ trên case của học viên, kèm phần bắt kịp cho người đang chậm, và là chỗ **SHOW** của KNOW / DO / SHOW (trình bày và review chéo, có mentor coaching). Mỗi Check point sẽ có một hướng dẫn facilitation một trang (chưa viết) liệt kê exit test:
+Ba buổi không có lesson mới, không có slug và không có deck. *Thay cho practice session B của bản 14 session (2026-10-22).* Mỗi Check point là một buổi làm việc có coaching theo nhóm nhỏ trên project của học viên, kèm phần bắt kịp cho người đang chậm, và là chỗ **SHOW** của KNOW / DO / SHOW (trình bày và review chéo, có mentor coaching). Mỗi Check point sẽ có một hướng dẫn facilitation một trang (chưa viết) liệt kê exit test:
 
 | Check point | Buổi | Vị trí | Exit test |
 |---|---|---|---|
@@ -470,15 +470,15 @@ Ba buổi không có lesson mới, không có slug và không có deck. *Thay ch
 
 ---
 
-## Check point 3 (buổi 12): Final Project, Present Your Case
+## Check point 3 (buổi 12): Final Project, Present Your Project
 
 *Trước 2026-10-07 gọi là "Lesson 10: Capstone"; từ 2026-10-22 là Check point 3, buổi 12 (tuần 6), không có slug riêng.*
 
 **Sau buổi này, học viên có thể:**
 
-1. Chạy trọn chuỗi trên một case thật, output của mỗi bước nuôi bước sau, và mọi gate được ghi trong hub.
-2. Trình bày case cùng evidence, decision và trade-off, để nhà tuyển dụng hay PO thấy phán đoán chứ không chỉ tốc độ.
+1. Chạy trọn chuỗi trên một project thật, output của mỗi bước nuôi bước sau, và mọi gate được ghi trong hub.
+2. Trình bày project cùng evidence, decision và trade-off, để nhà tuyển dụng hay PO thấy phán đoán chứ không chỉ tốc độ.
 3. Nêu phần nào của workflow họ sẽ giữ, chỉnh hay bỏ, kèm lý do từ kết quả đo của chính mình.
-4. Hoàn thiện **Knowledge Hub**: mọi output của case trên một site liên kết, các cross-link chạy được, để người đọc bắt đầu từ bất kỳ decision nào cũng tới được opportunity, hypothesis, principle, test và metric của nó.
+4. Hoàn thiện **Knowledge Hub**: mọi output của project trên một site liên kết, các cross-link chạy được, để người đọc bắt đầu từ bất kỳ decision nào cũng tới được opportunity, hypothesis, principle, test và metric của nó.
 
 **Output:** Knowledge Hub hoàn thiện (final report), project folder đầy đủ, và một sản phẩm cho portfolio.

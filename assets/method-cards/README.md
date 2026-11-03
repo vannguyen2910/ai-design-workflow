@@ -13,14 +13,14 @@ Mỗi design method có một card, tất cả dùng cùng các field, để m�
 | **AI giúp được ở đâu** | AI có thể soạn nháp hoặc đẩy nhanh phần nào, ở mức high level |
 | **Phần bạn vẫn tự làm** | Phán đoán, con người và việc kiểm tra |
 | **Lưu ý** | Cách có khả năng nhất khiến bước AI đi sai |
-| **Kết quả** | Bạn có gì ở cuối, và file nào trong case folder chứa nó |
+| **Kết quả** | Bạn có gì ở cuối, và file nào trong project folder chứa nó |
 
 ## Quy tắc khi viết một card
 - Giọng văn: đồng nghiệp nói với đồng nghiệp, từ ngữ giản dị, câu ngắn. Không nêu tên tool: "AI chat tool", "AI coding tool". Thuật ngữ kỹ thuật giữ tiếng Anh.
 - **"AI giúp được ở đâu" luôn ở mức high level.** Nói AI soạn nháp gì và bạn verify gì, không bao giờ nói dùng sản phẩm nào. Tính năng của tool thay đổi; cách chia việc thì không.
 - **AI không bao giờ là user.** Không card nào được gợi ý dùng user hay persona do AI giả lập làm evidence.
 - Bất cứ thứ gì mang tính cá nhân (tên, bản ghi, transcript) tuân theo data rules từ lesson đầu tiên: phân loại, ẩn danh, rồi mới quyết định có đưa vào tool không.
-- Không dùng tên mentee, không dùng ví dụ riêng của công ty. Dùng nhãn vai trò hoặc một case hư cấu.
+- Không dùng tên mentee, không dùng ví dụ riêng của công ty. Dùng nhãn vai trò hoặc một project hư cấu.
 - Chi tiết của một method được dạy trong lesson của stage đó. Card là tài liệu tham khảo, không phải bài giảng.
 
 ## Trạng thái

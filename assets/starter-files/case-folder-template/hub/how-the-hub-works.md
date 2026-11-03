@@ -1,6 +1,6 @@
 # How the Hub Works
 
-Hub là một folder markdown nằm trong case folder của bạn. Nó lưu các output đã kiểm tra của dự án và cho thấy chúng liên kết với nhau thế nào. Hub hoàn chỉnh là báo cáo cuối của khoá.
+Hub là một folder markdown nằm trong project folder của bạn. Nó lưu các output đã kiểm tra của dự án và cho thấy chúng liên kết với nhau thế nào. Hub hoàn chỉnh là báo cáo cuối của khoá.
 
 Công cụ nào mở được cả folder đều dùng được: AI coding tool, VS Code hay Obsidian. Obsidian thêm Graph view, Backlinks và file `traceability.base` (bảng theo loại item); hướng dẫn nằm ở `guides/05-obsidian.md`. Muốn gửi cho người khác, xuất báo cáo HTML bằng `tools/step-export-hub.md`.
 
@@ -30,7 +30,7 @@ hub/
 └── artifacts/             tài liệu của dự án (competitor analysis, persona, flow, prototype...)
 ```
 
-Case log nằm ở `../case-log.md`, và các principle (P1 đến P10) ở `../learnings/context-principle-checks.md`.
+Project log nằm ở `../case-log.md`, và các principle (P1 đến P10) ở `../learnings/context-principle-checks.md`.
 
 ## Item files
 
@@ -87,7 +87,7 @@ Quy tắc: **artifact trỏ về working file bằng `source:` chứ không ché
 | **Journey** | Mỗi trang giai đoạn là một thẻ | `01-scope.md` đến `07-handoff.md` |
 | **Documents** | Mỗi artifact là một thẻ, có tab theo giai đoạn | `artifacts/` |
 | **Insights** | Mỗi item là một thẻ, có tab theo loại và nút chuyển Cards hoặc Tree | `O1.md`, `H1.md`, `M1.md`, `D1.md`, `T1.md`… |
-| **Reference** | Gates, principle checks, case log | `gates.md`, `../learnings/context-principle-checks.md`, `../case-log.md` |
+| **Reference** | Gates, principle checks, project log | `gates.md`, `../learnings/context-principle-checks.md`, `../case-log.md` |
 
 Vài điều cần biết khi đọc:
 

@@ -2,7 +2,7 @@
 
 Cho thấy **đối thủ làm gì**, không cho thấy vì sao người dùng chọn họ. Coi kết quả là hypothesis để kiểm tra với người dùng thật.
 
-*Trạng thái: bản nháp. Hãy thử các instruction trên một case thật và chỉnh theo cách bạn làm trước khi dựa vào chúng.*
+*Trạng thái: bản nháp. Hãy thử các instruction trên một project thật và chỉnh theo cách bạn làm trước khi dựa vào chúng.*
 
 | | |
 |---|---|

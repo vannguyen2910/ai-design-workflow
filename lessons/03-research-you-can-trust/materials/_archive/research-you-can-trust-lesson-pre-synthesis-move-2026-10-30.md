@@ -29,7 +29,7 @@ Buổi giải quyết năm vấn đề, theo thứ tự trình bày:
 
 Nguyên tắc vận hành giữ nguyên: **AI soạn nháp. Học viên kiểm tra. Học viên quyết định.**
 
-**Hình dạng buổi.** Ice breaker, theory (sáu phần), một activity 14 phút trên lớp, hỏi đáp và cheat sheet. Activity là viết một claim từ bộ quote của case Kitchen Crate rồi phản biện chéo với bạn cùng cặp (thiết kế 2026-10-27); việc làm trên quote của chính học viên nằm ở buổi practice 90 phút ngay sau, và ở bài tập về nhà ngắn.
+**Hình dạng buổi.** Ice breaker, theory (sáu phần), một activity 14 phút trên lớp, hỏi đáp và cheat sheet. Activity là viết một claim từ bộ quote của project Kitchen Crate rồi phản biện chéo với bạn cùng cặp (thiết kế 2026-10-27); việc làm trên quote của chính học viên nằm ở buổi practice 90 phút ngay sau, và ở bài tập về nhà ngắn.
 
 **Vị trí của buổi.** Buổi 3 giả định học viên đã có scope, danh sách điều đang tin và finding heuristic từ buổi 2, cùng quote đã ẩn danh từ phỏng vấn peer. Các thành phần này hợp thành evidence pack; Gate 1 chạy ở Practice 3 (buổi 6).
 
@@ -60,7 +60,7 @@ Sau buổi 3, học viên có thể:
 
 ## Materials Needed
 
-- Case Kitchen Crate của chương trình (hư cấu): `assets/starter-files/course-case/quotes.md` (24 quote bằng tiếng Anh, đã ẩn danh và có ID: review R01 đến R10, forum F01 đến F08, phỏng vấn I01-01 đến I02-03) và `case-card.md` (một trang). Bảng đáp án `quotes-answer-key.md` chỉ dành cho giảng viên.
+- Project Kitchen Crate của chương trình (hư cấu): `assets/starter-files/course-case/quotes.md` (24 quote bằng tiếng Anh, đã ẩn danh và có ID: review R01 đến R10, forum F01 đến F08, phỏng vấn I01-01 đến I02-03) và `case-card.md` (một trang). Bảng đáp án `quotes-answer-key.md` chỉ dành cho giảng viên.
 - Cheat sheet một màn hình: chín câu hỏi và bốn prompt.
 - Bốn diagram trong `assets/` của lesson: `quote-check`, `four-steps-with-ai`, `insight-chain`, `insight-hub-loop`.
 - Một AI chat tool đã được công ty cho phép.
@@ -71,7 +71,7 @@ Tối đa khoảng 10 phút:
 
 1. Kiểm tra tin gửi business ở buổi 2: đã gửi chưa, đã có trả lời nào chưa.
 2. Mang theo các file từ Practice 2 (scope và research question, giả định, UX audit, competitor analysis, principles); chúng là đầu vào của buổi practice sau buổi này.
-3. Chuẩn bị bộ quote của case (nếu đã phỏng vấn peer): đã ẩn danh theo data rules, có participant code và quote ID. Học viên chưa có quote thì dùng bộ quote Kitchen Crate ở activity (mục 8.3), và ai cũng dùng bộ này trên lớp để đối chiếu được với bạn cùng cặp.
+3. Chuẩn bị bộ quote của project (nếu đã phỏng vấn peer): đã ẩn danh theo data rules, có participant code và quote ID. Học viên chưa có quote thì dùng bộ quote Kitchen Crate ở activity (mục 8.3), và ai cũng dùng bộ này trên lớp để đối chiếu được với bạn cùng cặp.
 
 ---
 
@@ -208,7 +208,7 @@ Bước Challenge là chỗ học viên làm chủ kết luận. Danh sách ph�
 
 ## 5. Insight hub
 
-Insight hub là một phần của Knowledge Hub của case (thư mục `insights/`), không phải một công cụ repository riêng.
+Insight hub là một phần của Knowledge Hub của project (thư mục `insights/`), không phải một công cụ repository riêng.
 
 | | |
 |---|---|
@@ -280,7 +280,7 @@ Không tìm thấy đánh giá độc lập về độ chính xác so sánh các
 
 ### 7.1 The data
 
-Case mẫu hư cấu của chương trình: một app meal-kit theo gói đăng ký, nhiều khách mới tạm dừng hoặc huỷ sau hộp đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng case với buổi 2). Bộ quote `quotes.md` có 24 quote từ ba loại nguồn: 10 review (R01 đến R10), 8 bài đăng forum (F01 đến F08) và hai phỏng vấn ngắn (I01-01 đến I02-03). Quote bằng tiếng Anh; claim có thể viết bằng tiếng Việt, nhưng quote dẫn vào phải khớp từng chữ với bản gốc.
+Project mẫu hư cấu của chương trình: một app meal-kit theo gói đăng ký, nhiều khách mới tạm dừng hoặc huỷ sau hộp đầu tiên, team tin giá là lý do chính, chưa có research nào (`case-card.md`, cùng project với buổi 2). Bộ quote `quotes.md` có 24 quote từ ba loại nguồn: 10 review (R01 đến R10), 8 bài đăng forum (F01 đến F08) và hai phỏng vấn ngắn (I01-01 đến I02-03). Quote bằng tiếng Anh; claim có thể viết bằng tiếng Việt, nhưng quote dẫn vào phải khớp từng chữ với bản gốc.
 
 Bộ này có sẵn các điểm để học viên tự phát hiện: một nhóm quote về một chủ đề nhưng ít quote và một quote còn tích cực (chủ đề giá), một quote nhiễu, một quote về giao hàng chứ không về sản phẩm, quote từ nguồn nghiêng về cảm xúc mạnh (review, forum) so với hai người phỏng vấn lịch sự. Bảng đáp án dành riêng cho giảng viên (`quotes-answer-key.md`).
 
@@ -319,7 +319,7 @@ Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổ
 
 **Ice breaker** (5 phút, cả lớp, không có output). Mỗi người nói tên và một câu: một lần họ tin một insight rồi mới thấy nó sai, điều gì khiến họ tin. Giảng viên ghi nhanh nguyên nhân (mẫu nhỏ, người nói to, chỉ thấy điều mình mong thấy) và quay lại bảng này ở phần bốn bước.
 
-**Activity: viết claim, phản biện chéo** (14 phút, theo cặp, không dùng AI). *Mục đích:* luyện hai bước dễ bị bỏ nhất, tự viết lại claim và tự phản biện (phép thử đóng AI lại), trước khi học viên chạy bốn bước trên dữ liệu của mình. *Đầu vào:* bộ quote Kitchen Crate (`quotes.md`, 24 quote) và quyết định chung: có thiết kế lại bước đổi ngày giao hay không (cùng case và cùng câu hỏi nghiên cứu với buổi 2). *Quy trình:*
+**Activity: viết claim, phản biện chéo** (14 phút, theo cặp, không dùng AI). *Mục đích:* luyện hai bước dễ bị bỏ nhất, tự viết lại claim và tự phản biện (phép thử đóng AI lại), trước khi học viên chạy bốn bước trên dữ liệu của mình. *Đầu vào:* bộ quote Kitchen Crate (`quotes.md`, 24 quote) và quyết định chung: có thiết kế lại bước đổi ngày giao hay không (cùng project và cùng câu hỏi nghiên cứu với buổi 2). *Quy trình:*
 1. (4 phút, một mình) Mỗi người viết một claim theo mẫu "[Ai] làm hoặc cần [gì] khi [bối cảnh], và điều này quan trọng với quyết định [theo quyết định chung]", dẫn ít nhất 2 quote ID và thêm một dòng "bộ quote này không cho biết điều gì".
 2. (6 phút, theo cặp) Hai người đổi bài. Người nhận mở quote gốc đối chiếu từng chữ và phản biện bằng bốn câu hỏi: quote có đúng và đúng người không, claim có rộng hơn số người nói không, ý kiến trái chiều nào bị bỏ, đây là nhu cầu hay tính năng. Mỗi lỗi ghi kèm quote ID. Tác giả sửa lại claim.
 3. (4 phút, cả lớp) Hai cặp kể lỗi bắt được hay nhất; giảng viên nối với năm điều cần soi (mục 2.4).

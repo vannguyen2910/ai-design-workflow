@@ -9,7 +9,7 @@
 | Câu hỏi | Quyết định |
 |---|---|
 | Phần synthesis hiện có của Lesson 3 | Rút gọn thành phần ôn đầu buổi; dành phần lớn thời gian cho persona, journey map, opportunity |
-| Insight hub | Một phần của Knowledge Hub của case (thư mục `insights/`), không phải một công cụ repository riêng |
+| Insight hub | Một phần của Knowledge Hub của project (thư mục `insights/`), không phải một công cụ repository riêng |
 | Góc nhìn AI | Ranh giới an toàn, synthetic user/persona, prompt và workflow cụ thể, tính năng AI của các tool research (tên tool chỉ ghi ở file learning này, không đưa vào lesson) |
 | Đầu ra | File này và ghi chú vào `plan.md`; chưa sửa lesson, outline, practice |
 
@@ -168,7 +168,7 @@ Mỗi khái niệm có một thẻ ngắn cho học viên ở nhiều level khá
 
 | | |
 |---|---|
-| **What** | Nơi lưu các insight đã kiểm tra, là thư mục `insights/` trong Knowledge Hub của case. Mỗi insight có ID, evidence, ngày và tag |
+| **What** | Nơi lưu các insight đã kiểm tra, là thư mục `insights/` trong Knowledge Hub của project. Mỗi insight có ID, evidence, ngày và tag |
 | **Why** | Tránh làm lại research cho cùng một câu hỏi, giữ insight khi người thay đổi, và nối insight với các quyết định về sau |
 | **When** | Đóng góp sau khi insight đã qua kiểm tra; tìm trong hub trước khi lên kế hoạch research mới. Không đưa vào hub những gì chưa kiểm tra |
 | **How with AI** | AI giúp tìm entry liên quan và gợi ý tag. Chỉ được trích entry có ID, và học viên duyệt trước khi thêm |
@@ -326,7 +326,7 @@ Học viên dán prompt cùng bộ quote đã ẩn danh và có ID.
 
 ## 6. Đề xuất cấu trúc Lesson 3 (90 phút, 2026-10-27)
 
-Đề xuất, chưa sửa lesson. Dựa trên bốn bước (mục 5b), chín câu hỏi (mục 0), các thẻ (mục 0b) và ba diagram trong `lessons/03-research-you-can-trust/assets/`. Hình dạng buổi giữ như `feedback_ai-design-workflow-lesson-format`: ice breaker, theory, một activity ngắn, hỏi đáp; phần làm trên case riêng nằm ở practice.
+Đề xuất, chưa sửa lesson. Dựa trên bốn bước (mục 5b), chín câu hỏi (mục 0), các thẻ (mục 0b) và ba diagram trong `lessons/03-research-you-can-trust/assets/`. Hình dạng buổi giữ như `feedback_ai-design-workflow-lesson-format`: ice breaker, theory, một activity ngắn, hỏi đáp; phần làm trên project riêng nằm ở practice.
 
 > **Cập nhật 2026-10-27:** activity Challenge trên gói AI soạn sẵn (khối 7, 16 phút, mục 6.3) đã bỏ và thay bằng activity "viết claim, phản biện chéo" 14 phút trên bộ quote Kitchen Crate của `course-case` (không cần gói soạn sẵn). Ví dụ xuyên suốt đổi từ "Ăn Ngay" sang Kitchen Crate. Khung giờ: 80 phút nội dung, buffer 10 phút. Lesson và outline đã sửa theo; các mục 6.2 và 6.3 giữ lại như bản đề xuất ban đầu.
 

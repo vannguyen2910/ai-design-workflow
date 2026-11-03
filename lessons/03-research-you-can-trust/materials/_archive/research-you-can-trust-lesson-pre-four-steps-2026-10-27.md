@@ -67,7 +67,7 @@ Sau buổi 3, học viên có thể:
 Tối đa khoảng 10 phút:
 
 1. Kiểm tra tin gửi business ở buổi 2: đã gửi chưa, đã có trả lời nào chưa.
-2. Chuẩn bị (nếu có) quote thật của case: review công khai, bài đăng forum, ghi chú phỏng vấn, đã ẩn danh theo data rules. Học viên chưa có quote dùng bộ "Ăn Ngay" ở bài tập về nhà.
+2. Chuẩn bị (nếu có) quote thật của project: review công khai, bài đăng forum, ghi chú phỏng vấn, đã ẩn danh theo data rules. Học viên chưa có quote dùng bộ "Ăn Ngay" ở bài tập về nhà.
 3. Học viên dùng công cụ transcript tiếng Việt thử một đoạn ngắn và đối chiếu bằng mắt (khoảng 5 phút); chương trình không hứa độ chính xác với tiếng Việt.
 
 ---

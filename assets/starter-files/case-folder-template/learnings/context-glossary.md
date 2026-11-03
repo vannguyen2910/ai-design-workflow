@@ -1,7 +1,7 @@
 # Glossary (optional)
 
-*Bằng lời của bạn, kèm một ví dụ từ case. Bắt đầu với ba thuật ngữ bạn đã làm trong lớp.*
+*Bằng lời của bạn, kèm một ví dụ từ project. Bắt đầu với ba thuật ngữ bạn đã làm trong lớp.*
 
-| Term | In my words | Example from my case | What I will do differently |
+| Term | In my words | Example from my project | What I will do differently |
 |---|---|---|---|
 | | | | |

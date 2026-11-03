@@ -1,6 +1,6 @@
 ---
-title: "Case Folder and Hub"
-summary: "Dựng case folder, context pack và Knowledge Hub cho một case."
+title: "Project Folder and Hub"
+summary: "Dựng project folder, context pack và Knowledge Hub cho một project."
 type: practice
 program: ai-design-workflow
 lesson: design-process-with-ai
@@ -10,12 +10,12 @@ draft: true
 
 ## Goal
 
-Dựng nền mà cả chương trình chạy trên đó: một project folder cho case của bạn, context pack đã bắt đầu, data rules bằng lời của chính bạn, hub khung và hai đến ba dòng về hướng nghề. Các buổi sau làm trên chính folder này.
+Dựng nền mà cả chương trình chạy trên đó: một project folder cho project của bạn, context pack đã bắt đầu, data rules bằng lời của chính bạn, hub khung và hai đến ba dòng về hướng nghề. Các buổi sau làm trên chính folder này.
 
 ## Before you start
 
 - Bạn đã học [Lesson 1](design-process-with-ai-lesson.md) và có bản đầu của data rules từ activity trên lớp.
-- Case của bạn đã được ẩn danh theo data rules. Nếu công ty không cho dùng AI tool, hoặc case quá nhạy cảm, dùng [case mẫu](../../../assets/starter-files/course-case/case-card.md) của chương trình (app giao đồ ăn) cho Step 4.
+- Project của bạn đã được ẩn danh theo data rules. Nếu công ty không cho dùng AI tool, hoặc project quá nhạy cảm, dùng [project mẫu](../../../assets/starter-files/course-case/case-card.md) của chương trình (app giao đồ ăn) cho Step 4.
 - Một AI chat tool đã được công ty cho phép, và một công cụ mở folder quen thuộc (AI coding tool, VS Code hoặc Obsidian).
 - Workspace template đã tải về dạng ZIP và đặt ở một folder không đồng bộ cloud.
 
@@ -40,7 +40,7 @@ Dựng nền mà cả chương trình chạy trên đó: một project folder ch
 
 - **AI soạn nháp:** đính kèm `context/product-and-users.md` vào AI chat tool và dùng instruction sau.
 
-  > Đây là context cho design case của tôi. Chỉ dùng file này. Liệt kê năm điều quan trọng nhất bạn cần biết về sản phẩm và người dùng mà KHÔNG có trong file, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời "unknown". Chỉ trả về danh sách.
+  > Đây là context cho design project của tôi. Chỉ dùng file này. Liệt kê năm điều quan trọng nhất bạn cần biết về sản phẩm và người dùng mà KHÔNG có trong file, và nói vì sao mỗi điều quan trọng. Không đoán, không dùng kiến thức chung để lấp chỗ trống. Nếu chỗ nào chưa rõ, trả lời "unknown". Chỉ trả về danh sách.
 
 - **Bạn kiểm tra:** đọc câu trả lời có phản biện. Câu nào hữu ích, câu nào chung chung, câu nào bạn tự tìm ra được?
 - **File:** lưu những câu hữu ích vào `context/open-questions.md`.
@@ -83,5 +83,5 @@ Còn khoảng 7 phút dự phòng cho phần coaching theo nhóm nhỏ. Thời l
 
 ## If you get stuck
 
-- **Công ty không cho dùng AI tool:** làm Step 4 trên case mẫu của chương trình, và quay lại case thật khi được phép.
+- **Công ty không cho dùng AI tool:** làm Step 4 trên project mẫu của chương trình, và quay lại project thật khi được phép.
 - **Chưa có tài liệu nào về sản phẩm:** viết `context-product-and-users.md` từ những gì bạn tự biết, và ghi "chưa có nguồn" ở các chỗ bạn đoán.

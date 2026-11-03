@@ -1,6 +1,6 @@
 # Knowledge Hub template
 
-One hub per case: a folder of linked pages that stores every output of the project and lets you cross-check them. This is the series' final report.
+One hub per project: a folder of linked pages that stores every output of the project and lets you cross-check them. This is the series' final report.
 
 ## Files
 | File | You edit it? | What it is |
@@ -17,7 +17,7 @@ One hub per case: a folder of linked pages that stores every output of the proje
 4. Any ID you type in the text of a page becomes a link automatically.
 
 ## One page per lesson
-Scope (shape the brief) → Evidence (discover) → Problem brief (define) → Options, flows, prototype (develop) → Alignment check → Findings (deliver) → Handoff and measurement → Case log. The Overview fills itself.
+Scope (shape the brief) → Evidence (discover) → Problem brief (define) → Options, flows, prototype (develop) → Alignment check → Findings (deliver) → Handoff and measurement → Project log. The Overview fills itself.
 
 
 ## Gates
@@ -52,9 +52,9 @@ The hub checks `hub-data.js` and each page, and lists problems in a box at the t
 - Principles P1 to P10 are Nielsen's 10 heuristics. Add your organisation's principles as P11 onwards.
 
 ## Share your hub (private by default; a live link is optional)
-A folder on your computer cannot be opened by a stakeholder directly, so you either send it (PDF or zip) or, for a case free to share, publish it as a live link.
+A folder on your computer cannot be opened by a stakeholder directly, so you either send it (PDF or zip) or, for a project free to share, publish it as a live link.
 
-**In this course (revised 2026-10-05): your hub is private by default.** It lives in your case folder. To show a stakeholder, export the key pages to PDF or send the folder zipped (see `../publish-guide.md`, "Sharing a private hub"). **Publishing is optional** and only for a case that is free to share. If you publish, you use **GitHub Pages** in your own public repository and update it yourself; the guide is `../publish-guide.md` (optional homework in the first lesson). Your published hub is public to anyone with the link, and you upload only the contents of this `hub/` folder. **The repository that publishes the hub must be public** (free Pages cannot publish from a private one). You may keep your full case folder in a separate private repository as a backup; only the hub repository is published. **You host it and you are responsible for it.** The instructor does not host, upload or moderate hubs. If you do not want a GitHub account, use another free static host from the list below and share the link.
+**In this course (revised 2026-10-05): your hub is private by default.** It lives in your project folder. To show a stakeholder, export the key pages to PDF or send the folder zipped (see `../publish-guide.md`, "Sharing a private hub"). **Publishing is optional** and only for a project that is free to share. If you publish, you use **GitHub Pages** in your own public repository and update it yourself; the guide is `../publish-guide.md` (optional homework in the first lesson). Your published hub is public to anyone with the link, and you upload only the contents of this `hub/` folder. **The repository that publishes the hub must be public** (free Pages cannot publish from a private one). You may keep your full project folder in a separate private repository as a backup; only the hub repository is published. **You host it and you are responsible for it.** The instructor does not host, upload or moderate hubs. If you do not want a GitHub account, use another free static host from the list below and share the link.
 
 **Outside the course** (your own portfolio or another project), put the whole folder on a free static host yourself:
 

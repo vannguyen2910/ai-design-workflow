@@ -1,6 +1,6 @@
 # Luật cho AI tool (AGENTS.md starter)
 
-Một file đặt ở gốc case folder. AI tool đọc nó trước khi làm bất cứ việc gì, nên bạn viết luật một lần thay vì nhắc lại mỗi buổi.
+Một file đặt ở gốc project folder. AI tool đọc nó trước khi làm bất cứ việc gì, nên bạn viết luật một lần thay vì nhắc lại mỗi buổi.
 
 Copy phần dưới vào file `AGENTS.md` và sửa.
 

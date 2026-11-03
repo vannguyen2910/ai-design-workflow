@@ -27,7 +27,7 @@ Buổi giải quyết năm vấn đề, theo thứ tự trình bày:
 
 Nguyên tắc vận hành giữ nguyên từ buổi 1: **AI soạn nháp. Học viên kiểm tra. Học viên quyết định.**
 
-**Hình dạng buổi.** Ice breaker, theory, một activity 5 phút, hỏi đáp. Luyện tập nằm ở buổi practice 90 phút ngay sau. Buổi này giả định học viên đã có case folder và mô tả sản phẩm và người dùng từ buổi 1; buổi 3 dùng các đầu ra của buổi này và quote từ phỏng vấn peer làm đầu vào cho evidence pack.
+**Hình dạng buổi.** Ice breaker, theory, một activity 5 phút, hỏi đáp. Luyện tập nằm ở buổi practice 90 phút ngay sau. Buổi này giả định học viên đã có project folder và mô tả sản phẩm và người dùng từ buổi 1; buổi 3 dùng các đầu ra của buổi này và quote từ phỏng vấn peer làm đầu vào cho evidence pack.
 
 ---
 
@@ -46,7 +46,7 @@ Sau buổi 2, học viên có thể:
 
 ## Success Check
 
-- Học viên có bộ nguyên tắc với ít nhất một UX principle và một business principle của case, mỗi cái một câu (làm trên lớp, 5 phút); phần còn lại hoàn thiện ở buổi practice.
+- Học viên có bộ nguyên tắc với ít nhất một UX principle và một business principle của project, mỗi cái một câu (làm trên lớp, 5 phút); phần còn lại hoàn thiện ở buổi practice.
 - Học viên nói được bốn hoạt động của Break the brief và file mỗi hoạt động tạo ra.
 - Học viên giải thích được vì sao một điều đang tin do AI đưa ra mà không có trong tài liệu phải được đánh dấu "chưa có nguồn".
 
@@ -54,8 +54,8 @@ Sau buổi 2, học viên có thể:
 
 ## Materials Needed
 
-- Case folder từ buổi 1 (mô tả sản phẩm và người dùng, data rules).
-- [Case mẫu](../../../assets/starter-files/course-case/case-card.md) hư cấu của chương trình (Kitchen Crate) cho phần demo, và cho học viên có case quá nhạy cảm.
+- Project folder từ buổi 1 (mô tả sản phẩm và người dùng, data rules).
+- [Project mẫu](../../../assets/starter-files/course-case/case-card.md) hư cấu của chương trình (Kitchen Crate) cho phần demo, và cho học viên có project quá nhạy cảm.
 - Template bộ nguyên tắc (bốn mục: UX principles, business principles, severity, gates).
 - Cheat sheet một màn hình: bốn hoạt động Break the brief, ba mức access, thang severity 0 đến 4, các check của Gate 1.
 - Một AI chat tool đã được công ty cho phép.
@@ -65,8 +65,8 @@ Sau buổi 2, học viên có thể:
 Tối đa khoảng 10 phút:
 
 1. Xem lại mô tả sản phẩm và người dùng: file đã đủ để người ngoài hiểu sản phẩm và người dùng chưa.
-2. Tìm lại brief hoặc PRD gần nhất của case (nếu có), đã ẩn danh theo data rules.
-3. Nghĩ trước một câu hỏi: người quyết định của case là ai, và họ đo thành công bằng gì.
+2. Tìm lại brief hoặc PRD gần nhất của project (nếu có), đã ẩn danh theo data rules.
+3. Nghĩ trước một câu hỏi: người quyết định của project là ai, và họ đo thành công bằng gì.
 
 ---
 
@@ -92,7 +92,7 @@ Phần AI làm nhanh nhất là biến brief thành màn hình; phần AI không
 
 ### 2.1 Four parts
 
-Không có chuẩn, AI đối chiếu công việc với "điều nghe hợp lý nói chung"; có chuẩn viết sẵn, AI đối chiếu với đúng tiêu chí của case. Học viên viết chuẩn một lần, các bước sau dùng lại.
+Không có chuẩn, AI đối chiếu công việc với "điều nghe hợp lý nói chung"; có chuẩn viết sẵn, AI đối chiếu với đúng tiêu chí của project. Học viên viết chuẩn một lần, các bước sau dùng lại.
 
 | Phần | Nội dung | Nguồn |
 |---|---|---|
@@ -168,7 +168,7 @@ Giả định là điều đang tin về người dùng, vấn đề, giải ph�
 - **Ma trận Importance × Evidence:** góc quan trọng cao, bằng chứng thấp (top-left) là chỗ phải kiểm chứng trước. Hướng nghiên cứu vào các giả định ở góc đó, không đi tìm mở. Framework cho phép 3 đến 5; lớp chọn 3 vì thời gian practice.
 - **Cập nhật bản đồ:** buổi này chỉ ghi finding của bản đánh giá UX làm bằng chứng cho giả định nó xác nhận hoặc bác. Chuyển sang Confirmed, Unconfirmed hay Unknown sau phỏng vấn peer làm ở Lesson 3.
 
-AI đọc context pack, bản đánh giá UX và scope rồi liệt kê giả định theo đúng công thức, gắn loại, tìm giả định ẩn của brief, và hỏi ngược bằng chứng của từng giả định ("dựa vào file nào? Nếu không có, ghi unknown"). Học viên xếp từng giả định lên ma trận: mức quan trọng và bằng chứng do học viên chấm, vì phụ thuộc vào bối cảnh mà AI không có. Mục AI đưa ra mà tài liệu không có thì ghi "chưa có nguồn"; mỗi người sửa ít nhất hai giả định AI viết cho cụ thể với case của mình. Cuối cùng học viên chọn **ba giả định hàng đầu** ở góc top-left, là đầu vào của bước tiếp theo.
+AI đọc context pack, bản đánh giá UX và scope rồi liệt kê giả định theo đúng công thức, gắn loại, tìm giả định ẩn của brief, và hỏi ngược bằng chứng của từng giả định ("dựa vào file nào? Nếu không có, ghi unknown"). Học viên xếp từng giả định lên ma trận: mức quan trọng và bằng chứng do học viên chấm, vì phụ thuộc vào bối cảnh mà AI không có. Mục AI đưa ra mà tài liệu không có thì ghi "chưa có nguồn"; mỗi người sửa ít nhất hai giả định AI viết cho cụ thể với project của mình. Cuối cùng học viên chọn **ba giả định hàng đầu** ở góc top-left, là đầu vào của bước tiếp theo.
 
 ### 3.5 Research questions
 
@@ -252,12 +252,12 @@ Khi học viên hài lòng với một quy trình (ví dụ UX observation chạ
 
 ## 6. Worked example: Kitchen Crate
 
-Case mẫu (hư cấu): một app meal-kit theo gói đăng ký. Nhiều khách hàng mới tạm dừng sau hộp đầu tiên. Team muốn cải thiện onboarding. App có date picker chọn ngày giao, một màn hình menu và một bước thanh toán. Team nghi ngờ giá là lý do khách rời đi. Chưa có research nào được thực hiện.
+Project mẫu (hư cấu): một app meal-kit theo gói đăng ký. Nhiều khách hàng mới tạm dừng sau hộp đầu tiên. Team muốn cải thiện onboarding. App có date picker chọn ngày giao, một màn hình menu và một bước thanh toán. Team nghi ngờ giá là lý do khách rời đi. Chưa có research nào được thực hiện.
 
 - **Brief:** "Cải thiện onboarding." **Business question:** "Vì sao khách mới tạm dừng sau hộp đầu tiên, và điều gì giữ họ lại?"
 - **Principles:** UX principle: kiểm soát và tự do của người dùng. Business principle: không tăng tỷ lệ huỷ gói sau tuần đầu (assumed). Severity: thang 0 đến 4. Gate: 1a và 1f.
 - **UX observation:** trên flow chọn ngày giao, ví dụ các finding về trạng thái hệ thống (không có xác nhận sau khi chọn ngày), quyền kiểm soát của người dùng (không đổi được ngày sau khi thanh toán) và nhất quán (nhãn nút khác nhau giữa hai màn hình).
-- **Điều đang tin (AI soạn nháp, học viên đối chiếu):** giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong case mẫu, nên đánh dấu "chưa có nguồn".
+- **Điều đang tin (AI soạn nháp, học viên đối chiếu):** giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong project mẫu, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ tạm dừng sau hộp đầu tiên. Baseline: chưa biết, ghi assumed, người cần xác nhận là business.
 - **Research question (từ giả định "khách không hiểu cách đổi ngày giao"):** "Khách đang làm gì khi cần dời hộp sắp tới, và điều gì khiến họ bỏ dở?" Phục vụ quyết định: có thiết kế lại bước đổi ngày hay không. Tìm ở phỏng vấn peer.
 
@@ -275,7 +275,7 @@ Hình dạng: ice breaker, theory (bốn phần, mỗi phần kết thúc bằng
 | 2 | Theory 1: Discover trong Double Diamond và AI capabilities | 1 | 8 phút |
 | 3 | Theory 2: Design Principles (bốn phần) | 2 | 10 phút |
 | 4 | Activity: viết hai dòng đầu của bộ nguyên tắc | 7.3 | 5 phút |
-| 5 | Theory 3: Break the brief (scope và bốn hoạt động, demo ba hoạt động trên case mẫu) | 3 | 28 phút |
+| 5 | Theory 3: Break the brief (scope và bốn hoạt động, demo ba hoạt động trên project mẫu) | 3 | 28 phút |
 | 6 | Theory 4: Understand our users | 4 | 14 phút |
 | 7 | Package thành agents và contribute vào hub | 5 | 9 phút |
 | 8 | Hỏi đáp | 7.1 | 6 phút |
@@ -286,22 +286,22 @@ Theory khoảng 60 phút, nhiều hơn buổi 1, vì học viên cần thấy đ
 
 ### 7.2 Engagement rules
 
-Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và học viên tự bắt được. Cái bẫy của buổi 2: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
+Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và học viên tự bắt được. Cái bẫy của buổi 2: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của project.
 
 ### 7.3 Activities
 
 **Ice breaker** (6 phút, cả lớp, không có output). Mỗi người nói tên và một câu: brief gần nhất họ nhận nêu vấn đề cần giải hay chỉ nêu giải pháp cần làm. Giảng viên ghi nhanh vào hai cột "vấn đề" và "giải pháp" và quay lại bảng này ở phần Discover.
 
 **Activity: một dòng cho mỗi chuẩn** (5 phút, cá nhân, light). *Mục đích:* học viên đặt viên gạch đầu tiên của bộ nguyên tắc trước khi AI chạy. *Quy trình:*
-1. (2 phút) Chọn một UX principle trong mười heuristic và viết một câu: principle này quan trọng với case vì sao.
+1. (2 phút) Chọn một UX principle trong mười heuristic và viết một câu: principle này quan trọng với project vì sao.
 2. (2 phút) Viết một business principle (ràng buộc hoặc ưu tiên của business) trong một câu. Chưa có thông tin thì ghi "assumed" và người cần xác nhận.
 3. (1 phút) Mỗi người đọc một câu cho cả lớp, hoặc dán vào chat.
 
-*Quy tắc dữ liệu:* chỉ dùng thông tin đã ẩn danh; học viên có case nhạy cảm dùng case mẫu. *Output:* hai dòng đầu của bộ nguyên tắc. Không mở AI tool trong activity này.
+*Quy tắc dữ liệu:* chỉ dùng thông tin đã ẩn danh; học viên có project nhạy cảm dùng project mẫu. *Output:* hai dòng đầu của bộ nguyên tắc. Không mở AI tool trong activity này.
 
 ### 7.4 Practice session and homework
 
-**Buổi practice 90 phút** ([Practice 2](discover-the-problem-practice.md)) nằm ngay sau buổi này. Nội dung: hoàn thiện bộ nguyên tắc, chạy Break the brief theo thứ tự scope, UX observation, challenge assumptions, research questions, competitor analysis trên case của từng người, lập lịch phỏng vấn peer cho buổi 3, rồi ghi `_personal/learning-log.md` và một câu reflection (3 phút).
+**Buổi practice 90 phút** ([Practice 2](discover-the-problem-practice.md)) nằm ngay sau buổi này. Nội dung: hoàn thiện bộ nguyên tắc, chạy Break the brief theo thứ tự scope, UX observation, challenge assumptions, research questions, competitor analysis trên project của từng người, lập lịch phỏng vấn peer cho buổi 3, rồi ghi `_personal/learning-log.md` và một câu reflection (3 phút).
 
 **Bài tập về nhà:** lên lịch 2 đến 3 buổi phỏng vấn ngắn với đồng nghiệp hoặc người dùng để có quote cho buổi 3.
 
@@ -358,11 +358,11 @@ Tài liệu đưa vào AI và tin gửi business không nêu tên người hay d
 
 | Lesson và practice | Vai trò |
 |---|---|
-| Lesson 1 (buổi 1), Practice 1 (buổi 2) | Case folder, data rules, bốn khái niệm, context pack; nền để dùng buổi này |
+| Lesson 1 (buổi 1), Practice 1 (buổi 2) | Project folder, data rules, bốn khái niệm, context pack; nền để dùng buổi này |
 | **Lesson 2 (buổi 3, buổi này)** | Principles, Break the brief, giới thiệu Understand our users, package và hub |
-| Practice 2 (buổi 4) | Hoàn thiện bộ nguyên tắc và chạy bốn hoạt động Break the brief trên case của mình; lên lịch phỏng vấn peer |
+| Practice 2 (buổi 4) | Hoàn thiện bộ nguyên tắc và chạy bốn hoạt động Break the brief trên project của mình; lên lịch phỏng vấn peer |
 | Lesson 3 (buổi 5) | Synthesis trên quote đã ẩn danh từ phỏng vấn peer, persona và journey map dẫn về quote, opportunity; ghép điều người khác làm (đã làm ở Lesson 2) với điều user nói |
-| Practice 3 (buổi 6) | Phỏng vấn peer, synthesis, persona, journey, opportunity, Gate 1 và problem brief trên case của từng người |
+| Practice 3 (buổi 6) | Phỏng vấn peer, synthesis, persona, journey, opportunity, Gate 1 và problem brief trên project của từng người |
 | Lesson 4 đến 6 (buổi 7, 9, 11) | Explore Ideas, AI Prototyping, Test with Real Users; mỗi buổi có practice đi kèm |
 
 ---

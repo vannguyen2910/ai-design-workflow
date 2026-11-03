@@ -28,7 +28,7 @@ Nguyên tắc vận hành giữ nguyên từ buổi 1: **AI soạn nháp. Học 
 
 **Hình dạng buổi.** Ice breaker, theory, một activity ngắn trên lớp, hỏi đáp. Phần luyện tập dài nằm ở bài tập về nhà và ở Check point (quyết định 2026-10-22; xem `plan.md`).
 
-**Vị trí của buổi.** Buổi 2 giả định học viên đã có case folder và `context-product-and-users.md` từ bài tập buổi 1. Buổi 3 dùng scope, danh sách điều đang tin và finding heuristic của buổi này làm một phần của evidence pack.
+**Vị trí của buổi.** Buổi 2 giả định học viên đã có project folder và `context-product-and-users.md` từ bài tập buổi 1. Buổi 3 dùng scope, danh sách điều đang tin và finding heuristic của buổi này làm một phần của evidence pack.
 
 ---
 
@@ -36,7 +36,7 @@ Nguyên tắc vận hành giữ nguyên từ buổi 1: **AI soạn nháp. Học 
 
 Sau buổi 2, học viên có thể:
 
-1. **Đặt** business question cho case của mình và **phân biệt** nó với giải pháp đã được nêu sẵn trong brief
+1. **Đặt** business question cho project của mình và **phân biệt** nó với giải pháp đã được nêu sẵn trong brief
 2. **Soạn** (cùng AI chat tool) bộ câu hỏi gửi business và danh sách điều đang tin, rồi **đối chiếu** từng mục với điều mình thật sự biết
 3. **Ghi** outcome và success metric với trạng thái confirmed hoặc assumed, và **gắn** agreement status cho scope chung
 4. **Đánh giá** một flow của trải nghiệm hiện tại theo heuristic, **kiểm tra** từng finding do AI soạn nháp bằng evidence, và **xếp** finding theo severity
@@ -46,7 +46,7 @@ Sau buổi 2, học viên có thể:
 
 ## Success Check
 
-- Case có một câu business question, tách khỏi giải pháp đã nêu trong brief.
+- Project có một câu business question, tách khỏi giải pháp đã nêu trong brief.
 - Có một tin gửi business, kèm danh sách điều đang tin đã đối chiếu với điều học viên biết.
 - Phần `## Scope` ghi outcome và metric kèm trạng thái confirmed hoặc assumed, cùng agreement status.
 - Có ít nhất 3 finding heuristic cho một flow, mỗi finding có evidence và severity.
@@ -57,8 +57,8 @@ Sau buổi 2, học viên có thể:
 
 ## Materials Needed
 
-- Case folder từ buổi 1 (`context-product-and-users.md`, `context-data-rules.md`).
-- Case card hư cấu của chương trình (Kitchen Crate) cho phần demo, và cho học viên có case quá nhạy cảm.
+- Project folder từ buổi 1 (`context-product-and-users.md`, `context-data-rules.md`).
+- Project card hư cấu của chương trình (Kitchen Crate) cho phần demo, và cho học viên có project quá nhạy cảm.
 - Cheat sheet một màn hình: câu hỏi gửi business, ba mức access, thang severity 0 đến 4.
 - Một AI chat tool đã được công ty cho phép.
 - Template `## Scope` (business question, outcome, metric, điều đang tin, agreement status).
@@ -68,8 +68,8 @@ Sau buổi 2, học viên có thể:
 Tối đa khoảng 10 phút:
 
 1. Xem lại `context-product-and-users.md`: file đã đủ để người ngoài hiểu sản phẩm và người dùng chưa.
-2. Tìm lại brief hoặc PRD gần nhất của case (nếu có), đã ẩn danh theo data rules.
-3. Nghĩ trước một câu hỏi: người quyết định của case là ai, và họ đo thành công bằng gì.
+2. Tìm lại brief hoặc PRD gần nhất của project (nếu có), đã ẩn danh theo data rules.
+3. Nghĩ trước một câu hỏi: người quyết định của project là ai, và họ đo thành công bằng gì.
 
 ---
 
@@ -94,10 +94,10 @@ Phần AI làm nhanh nhất là biến brief thành màn hình. Phần AI không
 Học viên viết trước một câu business question và ba điều mình đang tin mà chưa có evidence, **trước khi** mở AI chat tool. Sau đó AI soạn nháp:
 
 - câu hỏi gửi business (về outcome, metric, baseline, ràng buộc, thời hạn)
-- danh sách điều đang tin (assumption) của case
+- danh sách điều đang tin (assumption) của project
 - evidence đang có và evidence đang thiếu cho từng assumption
 
-Học viên đối chiếu từng mục với điều mình thật sự biết. Mục AI đưa ra mà không có trong tài liệu của case là mục cần đánh dấu "chưa có nguồn", không phải mục để đưa vào tin.
+Học viên đối chiếu từng mục với điều mình thật sự biết. Mục AI đưa ra mà không có trong tài liệu của project là mục cần đánh dấu "chưa có nguồn", không phải mục để đưa vào tin.
 
 ### 2.2 AI does not play the PO or the user
 
@@ -162,10 +162,10 @@ Mỗi finding được chấm 0 đến 4 theo thang của Nielsen [2]: 0 không 
 
 ## 5. Worked example: Kitchen Crate
 
-Case card (hư cấu): một app meal-kit theo gói đăng ký. Nhiều khách hàng mới tạm dừng sau hộp đầu tiên. Team muốn cải thiện onboarding. App có date picker chọn ngày giao, một màn hình menu và một bước thanh toán. Team nghi ngờ giá là lý do khách rời đi. Chưa có research nào được thực hiện.
+Project card (hư cấu): một app meal-kit theo gói đăng ký. Nhiều khách hàng mới tạm dừng sau hộp đầu tiên. Team muốn cải thiện onboarding. App có date picker chọn ngày giao, một màn hình menu và một bước thanh toán. Team nghi ngờ giá là lý do khách rời đi. Chưa có research nào được thực hiện.
 
 - **Brief:** "Cải thiện onboarding." **Business question:** "Vì sao khách mới tạm dừng sau hộp đầu tiên, và điều gì giữ họ lại?"
-- **Điều đang tin (AI soạn nháp, học viên đối chiếu):** giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong case card, nên đánh dấu "chưa có nguồn".
+- **Điều đang tin (AI soạn nháp, học viên đối chiếu):** giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong project card, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ tạm dừng sau hộp đầu tiên. Baseline: chưa biết, ghi assumed, người cần xác nhận là business.
 - **Heuristic:** trên flow chọn ngày giao, ví dụ các finding về trạng thái hệ thống (không có xác nhận sau khi chọn ngày), quyền kiểm soát của người dùng (không đổi được ngày sau khi thanh toán) và nhất quán (nhãn nút khác nhau giữa hai màn hình).
 
@@ -195,19 +195,19 @@ Timing chưa được thử với một lớp thật. **Thứ tự cắt khi qu�
 
 ### 6.2 Engagement rules
 
-Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và học viên tự bắt được. Cái bẫy của buổi 2: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
+Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và học viên tự bắt được. Cái bẫy của buổi 2: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của project.
 
 ### 6.3 Activities
 
 **Ice breaker** (6 phút, cả lớp, không có output). Mỗi người nói tên và một câu: brief gần nhất họ nhận nêu vấn đề cần giải hay chỉ nêu giải pháp cần làm. Giảng viên ghi nhanh vào hai cột "vấn đề" và "giải pháp" và quay lại bảng này ở phần business question.
 
 **Activity: đoán trước điều AI sẽ tìm ra** (18 phút). *Mục đích:* biến việc chuẩn bị trao đổi với business thành một phép thử cho chính học viên: AI giúp được gì, bỏ sót gì, bịa gì. *Quy trình:*
-1. (4 phút, cá nhân) Viết 3 điều đang tin về case mà chưa có evidence. Chưa mở AI tool.
-2. (6 phút, cá nhân) Nhờ AI liệt kê điều đang tin của case, rồi tự chấm: AI tìm được mấy điều mình không nghĩ ra, bỏ sót mấy điều mình nghĩ ra, và bịa mấy điều. Viết business question và tin gửi business từ danh sách đã kiểm tra.
+1. (4 phút, cá nhân) Viết 3 điều đang tin về project mà chưa có evidence. Chưa mở AI tool.
+2. (6 phút, cá nhân) Nhờ AI liệt kê điều đang tin của project, rồi tự chấm: AI tìm được mấy điều mình không nghĩ ra, bỏ sót mấy điều mình nghĩ ra, và bịa mấy điều. Viết business question và tin gửi business từ danh sách đã kiểm tra.
 3. (5 phút, theo cặp) Đọc tin gửi business của nhau và trả lời một câu: nếu là người bận, có hiểu họ cần trả lời gì trong 30 giây không? Đây là bài kiểm tra đọc, không phải đóng vai PO.
 4. (3 phút, cả lớp) Mỗi người nói một con số "AI đoán trúng X trên Y".
 
-*Quy tắc dữ liệu:* chỉ dùng tài liệu đã ẩn danh theo data rules ở buổi 1; học viên có case nhạy cảm dùng case card của chương trình. *Output:* tin gửi business và danh sách điều đang tin đã đối chiếu.
+*Quy tắc dữ liệu:* chỉ dùng tài liệu đã ẩn danh theo data rules ở buổi 1; học viên có project nhạy cảm dùng project card của chương trình. *Output:* tin gửi business và danh sách điều đang tin đã đối chiếu.
 
 ### 6.4 Homework
 
@@ -267,11 +267,11 @@ Tin gửi business không nêu tên người hay dữ liệu nội bộ chưa đ
 
 | Buổi | Vai trò |
 |---|---|
-| Buổi 1 | Case folder, data rules, bốn khái niệm; nền để dùng buổi này |
+| Buổi 1 | Project folder, data rules, bốn khái niệm; nền để dùng buổi này |
 | **Buổi 2 (buổi này)** | Business question, scope chung, điều đang tin, finding heuristic |
 | Buổi 3 | Ghép điều người khác làm với điều user nói; user-voice synthesis; kiểm theme về quote |
 | Buổi 4 | Opportunity, principle check, hypothesis, Goals/Signals/Metrics |
-| Buổi 5 (Check point 1) | Chạy Discover đến Define trên case của từng người |
+| Buổi 5 (Check point 1) | Chạy Discover đến Define trên project của từng người |
 
 ---
 

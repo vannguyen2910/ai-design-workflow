@@ -1,6 +1,6 @@
 # Five excerpts: app giao đồ ăn
 
-Năm đoạn trích dưới đây là **hư cấu**, thuộc case app giao đồ ăn. Không có người thật, công ty thật hay số liệu thật. Dán chúng vào AI tool để thực hành là an toàn.
+Năm đoạn trích dưới đây là **hư cấu**, thuộc project app giao đồ ăn. Không có người thật, công ty thật hay số liệu thật. Dán chúng vào AI tool để thực hành là an toàn.
 
 Dùng cho Activity của buổi 1, bước 1 và bước 2.
 

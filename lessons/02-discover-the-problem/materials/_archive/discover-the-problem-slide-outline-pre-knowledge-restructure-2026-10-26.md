@@ -31,7 +31,7 @@ last_synced: 2026-10-22
 | Stage | Discover |
 | Prior session | Buổi 1: Your Design Process, with AI |
 | Next session | Buổi 3: Turn Research into Insights You Can Trust |
-| Running example | App meal-kit theo gói đăng ký (Kitchen Crate, case card hư cấu); học viên làm activity trên case của chính mình |
+| Running example | App meal-kit theo gói đăng ký (Kitchen Crate, project card hư cấu); học viên làm activity trên project của chính mình |
 
 ---
 
@@ -42,7 +42,7 @@ last_synced: 2026-10-22
 - Thời gian trên màn hình chỉ xuất hiện ở slide `MILESTONE`: ice breaker = 6, bridge = 4, activity = 18. Timing các phase: ice breaker 6, T1 8, T2 12, T3 8, T4 12, bridge 4, activity 18, hỏi đáp 8, close 6; tổng nội dung 82 trên 90 phút, buffer 8 phút.
 - Theory 40 phút, không có activity trong khối. Mỗi phần kết thúc bằng một câu hỏi 30 giây với hai lựa chọn (bỏ phiếu bằng chat).
 - Thứ tự cắt khi quá giờ: T4 rút còn demo vài heuristic (bỏ slide 15 và 16), rồi hỏi đáp còn 4 phút, rồi bỏ câu kiểm tra ở Bridge.
-- Cái bẫy của buổi nằm ở slide 7 và activity: điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của case.
+- Cái bẫy của buổi nằm ở slide 7 và activity: điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của project.
 
 ---
 
@@ -77,7 +77,7 @@ last_synced: 2026-10-22
   - Sáu phút, cả lớp; mình nói trước hai mươi giây để làm mẫu, rồi mỗi người nói tên và một câu
   - Ghi nhanh vào hai cột "vấn đề" và "giải pháp" cho cả lớp thấy; đừng bình luận lúc này
   - **Giữ bảng này để quay lại ở slide tiếp theo**
-  - Nhắc nhanh bài tập buổi 1: case folder và product-and-users đã có chưa, ai chưa xong thì dùng case card
+  - Nhắc nhanh bài tập buổi 1: project folder và product-and-users đã có chưa, ai chưa xong thì dùng project card
   - Ai chưa có brief: kể về một yêu cầu công việc gần nhất
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới hai cột trống "Vấn đề" và "Giải pháp" để ghi.
 
@@ -98,7 +98,7 @@ last_synced: 2026-10-22
 
 ### COMPARE · A solution, or a problem?
 - Kicker: Part 1 · Business question
-- Title: Same case.\n*Two starting points.*
+- Title: Same project.\n*Two starting points.*
 - On-slide:
   - Trái, brief: "Cải thiện onboarding cho app meal-kit."
   - Phải, business question: "Vì sao khách mới tạm dừng sau hộp đầu tiên?"
@@ -135,7 +135,7 @@ last_synced: 2026-10-22
   - 04 · Ràng buộc: ngân sách, kỹ thuật, pháp lý
   - 05 · Thời hạn và người quyết định
 - Speaker notes:
-  - Đây là bộ câu hỏi gửi bằng văn bản; AI soạn nháp phiên bản cho từng case
+  - Đây là bộ câu hỏi gửi bằng văn bản; AI soạn nháp phiên bản cho từng project
   - **Học viên viết câu business question của mình trước, rồi mới mở AI**
   - Hỏi ngắn, từng câu một ý, để người bận trả lời được trong vài dòng
   - Đường văn bản dùng được ở mọi mức access; buổi họp chỉ là phần thêm
@@ -148,14 +148,14 @@ last_synced: 2026-10-22
 - Title: AI lists assumptions.\n*You check them.*
 - On-slide:
   - Trái, AI liệt kê: giá là lý do chính; khách không hiểu cách đổi ngày giao; bước thanh toán làm khách ngại cam kết
-  - Phải, case card nói: nghi ngờ do giá; chưa có research về hai điều còn lại
+  - Phải, project card nói: nghi ngờ do giá; chưa có research về hai điều còn lại
 - Speaker notes:
-  - Chạy trực tiếp prompt "liệt kê điều team có thể đang tin" trên case card Kitchen Crate (mình đã chạy thử một lần trước đó)
-  - Đối chiếu từng dòng: điều nào có trong case card, điều nào nghe hợp lý nhưng không có nguồn
+  - Chạy trực tiếp prompt "liệt kê điều team có thể đang tin" trên project card Kitchen Crate (mình đã chạy thử một lần trước đó)
+  - Đối chiếu từng dòng: điều nào có trong project card, điều nào nghe hợp lý nhưng không có nguồn
   - **Đây là cái bẫy của buổi: hai điều sau nghe rất đúng nhưng không có trong tài liệu**
   - Hỏi: bạn sẽ đưa điều nào vào tin gửi business, và đánh dấu điều nào là "chưa có nguồn"?
   - Hỏi trung tính ("điều gì có thể giải thích") đáng tin hơn hỏi khẳng định ("giải thích vì sao do giá")
-- 🎨 Visual hint: SCHEMATIC. Compare hai cột; cột trái là danh sách AI với biểu tượng cảnh báo ở hai dòng không có nguồn, cột phải trích case card.
+- 🎨 Visual hint: SCHEMATIC. Compare hai cột; cột trái là danh sách AI với biểu tượng cảnh báo ở hai dòng không có nguồn, cột phải trích project card.
 
 ---
 
@@ -231,7 +231,7 @@ last_synced: 2026-10-22
   - Trạng thái ghi cả khi tốt lẫn khi xấu; nó cho thấy scope đứng ở đâu
   - Pending kèm ngày cần trả lời
   - Not available không phải thất bại; scope vẫn dùng được và có nhãn assumed
-  - Câu hỏi 30 giây (chat): trạng thái nào có khả năng nhất cho case của bạn?
+  - Câu hỏi 30 giây (chat): trạng thái nào có khả năng nhất cho project của bạn?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered ba mục, mỗi mục một chấm màu (green, yellow, ink-muted).
 
 ---
@@ -264,7 +264,7 @@ last_synced: 2026-10-22
   - AI tìm rộng và nhanh, nhưng có finding sai hoặc chung chung và yếu khi xét nhiều màn hình cùng lúc
   - Độ đồng thuận về severity giữa các lần chạy thấp, nên severity luôn do học viên chấm
   - Bước ba: mở giao diện ra xem, đừng tin mô tả của AI
-  - Trên lớp mình chạy demo một flow Kitchen Crate; học viên tự làm trên case của mình ở bài tập về nhà
+  - Trên lớp mình chạy demo một flow Kitchen Crate; học viên tự làm trên project của mình ở bài tập về nhà
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước ba được tô purple.
 
 ---
@@ -304,10 +304,10 @@ last_synced: 2026-10-22
 - Title: Short break,\n*two questions*
 - Sub: Nghỉ hai phút, rồi hai câu kiểm tra nhanh
 - Speaker notes:
-  - Hai phút nghỉ; học viên mở sẵn case folder và AI chat tool
+  - Hai phút nghỉ; học viên mở sẵn project folder và AI chat tool
   - Hai câu kiểm tra nhanh, hỏi miệng: business question khác giải pháp ở đâu; vì sao AI không đóng vai PO
   - Nhắc cheat sheet ở slide kế tiếp sẽ ở lại trên màn hình suốt activity
-  - Ai chưa có case thì dùng case card
+  - Ai chưa có project thì dùng project card
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
@@ -327,11 +327,11 @@ last_synced: 2026-10-22
 
 ### SECTION DIVIDER · Practice
 - Num: 02
-- Kicker: Your own case
+- Kicker: Your own project
 - Title: Predict first.\n*Then compare.*
 - Sub: Một activity, có coaching
 - Speaker notes:
-  - Chuyển sang làm việc trên case của mình
+  - Chuyển sang làm việc trên project của mình
   - Nhắc quy tắc dữ liệu: chỉ dùng tài liệu đã ẩn danh
   - Mình đi quanh hỏi từng người
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
@@ -346,9 +346,9 @@ last_synced: 2026-10-22
 - Speaker notes:
   - Mười tám phút, bốn bước ở slide kế tiếp
   - **Bước một không mở AI: viết 3 điều bạn tin trước**
-  - Mục tiêu là biết AI giúp được gì, bỏ sót gì, bịa gì trên case của chính bạn
+  - Mục tiêu là biết AI giúp được gì, bỏ sót gì, bịa gì trên project của chính bạn
   - Đi quanh và hỏi: điều nào AI nói mà bạn không tìm được trong tài liệu?
-  - Ai dùng case card thì làm cho case card
+  - Ai dùng project card thì làm cho project card
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn, không có diagram.
 
 ---
@@ -365,7 +365,7 @@ last_synced: 2026-10-22
   - Bước ba là bài kiểm tra đọc, không phải đóng vai PO
   - Bước bốn: cả lớp nghe các con số; con số cao hay thấp đều là thông tin
   - Facilitator watch-for: ai nhận danh sách AI mà không đối chiếu; ai viết tin quá dài
-  - Nếu còn thời gian, học viên bắt đầu ghi `## Scope` trong case folder
+  - Nếu còn thời gian, học viên bắt đầu ghi `## Scope` trong project folder
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước hai được tô purple.
 
 ---
@@ -373,7 +373,7 @@ last_synced: 2026-10-22
 ### STATEMENT · Questions
 - Kicker: 8 minutes
 - Title: Ask me\n*anything*
-- On-slide: Về nội dung hôm nay, case của bạn, hoặc khoá học. Ghi vào chat.
+- On-slide: Về nội dung hôm nay, project của bạn, hoặc khoá học. Ghi vào chat.
 - Speaker notes:
   - Mở bằng một câu hỏi cho cả lớp: điều AI bịa nghe hợp lý nhất mà bạn bắt được hôm nay là gì?
   - Rồi đến các câu hỏi đã ghi trong chat; chọn câu được nhiều người quan tâm trước
@@ -387,7 +387,7 @@ last_synced: 2026-10-22
 - Kicker: Before the next lesson
 - Title: Finish your\n*scope*
 - On-slide:
-  - Một bài tập, khoảng 45 phút: hoàn thiện ## Scope của case
+  - Một bài tập, khoảng 45 phút: hoàn thiện ## Scope của project
   - Gửi tin cho business, ghi agreement status và metric assumed
   - Đánh giá một flow theo heuristic: tối thiểu 3 finding, evidence, severity
 - Speaker notes:
@@ -405,7 +405,7 @@ last_synced: 2026-10-22
 - Title: Questions before\n*screens.*
 - On-slide: AI soạn nháp. Bạn kiểm tra. Bạn quyết định.
 - Speaker notes:
-  - Hỏi hai hoặc ba học viên: điều AI đoán sai nhiều nhất về case của bạn là gì?
+  - Hỏi hai hoặc ba học viên: điều AI đoán sai nhiều nhất về project của bạn là gì?
   - Nói câu kết rồi dừng lại
   - Chỉ tới buổi 3: tuần sau chúng ta xem user nói và làm gì, và kiểm tra insight bằng quote gốc
   - Nhắc gửi tin cho business trước buổi 3
@@ -421,5 +421,5 @@ last_synced: 2026-10-22
 - Speaker notes:
   - Nhắc họ hoàn thiện Scope và gửi tin cho business
   - Mời đặt câu hỏi
-  - Ở lại với ai muốn được giúp về case
+  - Ở lại với ai muốn được giúp về project
 - 🎨 Visual hint: End layout, cố định. Nền paper-deeper nhạt, kicker, title lớn in nghiêng, chữ ký và hàng liên hệ.

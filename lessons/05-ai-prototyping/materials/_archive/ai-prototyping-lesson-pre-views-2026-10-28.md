@@ -17,7 +17,7 @@ next-session: "Practice 5: Build prototype main flow"
 
 ## Abstract
 
-Tài liệu này mô tả buổi 5 của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi 5 là buổi **theory** của tuần 5. Học viên đã có hướng được chọn và flow từ tuần 4, và buổi này chuẩn bị cho Practice 5, nơi prototype main flow được dựng trên case của chính họ.
+Tài liệu này mô tả buổi 5 của chương trình AI Design Workflow, dành cho Product Designer và UI/UX Designer ở cấp mid và senior. Buổi 5 là buổi **theory** của tuần 5. Học viên đã có hướng được chọn và flow từ tuần 4, và buổi này chuẩn bị cho Practice 5, nơi prototype main flow được dựng trên project của chính họ.
 
 Buổi giải quyết bốn vấn đề, theo thứ tự trình bày:
 
@@ -50,7 +50,7 @@ Sau buổi 5, học viên có thể:
 
 - Học viên chỉ ra đúng bốn tầng và nói được tầng nào chưa có trong design system của học viên (thường là shell và template).
 - Học viên tìm ra ít nhất hai trong ba lỗi ở activity bằng cách đối chiếu với luật và `components.html`, không theo cảm giác.
-- Học viên nêu được ít nhất ba dòng cần có trong rules file cho case của học viên.
+- Học viên nêu được ít nhất ba dòng cần có trong rules file cho project của học viên.
 
 **Checkpoint trên lớp:** mỗi học viên chỉ ra ít nhất một lỗi ở activity, nêu luật bị phá và cách tìm nó trong file.
 
@@ -261,7 +261,7 @@ Câu hỏi 30 giây ở cuối mỗi phần theory (hai lựa chọn, bỏ phi�
 
 **Bài tập về nhà (dưới 20 phút):** điền hai mục vào design-system notes của họ. Mục một là **bảng quyết định của shell**: có header không, có side nav không, các mục điều hướng, nút chính, hành vi ở màn hình hẹp. Mục hai là **2 đến 3 template**: khi nào dùng, các vùng bố cục. Mang tới Practice 5 cùng design system (hoặc bản của giảng viên), hướng đã chọn, flow và nội dung thật.
 
-**Việc ở Practice 5** theo `plan.md`: dựng prototype main flow trên case riêng bằng skill `prototype` của toolkit. Các bước: shell và template, rules file, màn hình số 0, dựng journey, review qua các gate, rule check và danh sách điều chưa làm. Output: prototype sẵn sàng test, có thể là final design `[to confirm]` (mức hoàn thiện cần chốt cho Practice 5).
+**Việc ở Practice 5** theo `plan.md`: dựng prototype main flow trên project riêng bằng skill `prototype` của toolkit. Các bước: shell và template, rules file, màn hình số 0, dựng journey, review qua các gate, rule check và danh sách điều chưa làm. Output: prototype sẵn sàng test, có thể là final design `[to confirm]` (mức hoàn thiện cần chốt cho Practice 5).
 
 ---
 
