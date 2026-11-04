@@ -1,0 +1,228 @@
+{
+  "main": {
+    "id": "7fb881bb9d9b8514",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee3a59507d8b3eca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d735e918affe134",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "research-you-can-trust-slide-outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "91b85d7cc3d086c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c66f5851b3c2326",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e41d5f3d35d2cd99",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9dd2956655240d75",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8ca1381534540893",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "751b1c58325669c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "17d83631ec68c6af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "46b53ce71502ac62",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "ab148e650aab30a7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "8837c336d41650a6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f4cf7fedfcd57ee1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e6091a7077e029ee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "8d735e918affe134",
+  "lastOpenFiles": [
+    "lessons/03-research-you-can-trust/materials/_archive/research-you-can-trust-slide-outline-pre-insights-2026-11-01.md",
+    "lessons/03-research-you-can-trust/materials/_archive/research-you-can-trust-practice-pre-insights-2026-11-01.md",
+    "lessons/03-research-you-can-trust/materials/_archive/research-you-can-trust-lesson-pre-insights-2026-11-01.md",
+    "lessons/03-research-you-can-trust/assets/three-steps-with-ai.html",
+    "lessons/03-research-you-can-trust/assets/source-check.html",
+    "lessons/03-research-you-can-trust/assets/lesson-structure.html",
+    "lessons/03-research-you-can-trust/assets/journey-map-example.webp",
+    "lessons/02-discover-the-problem/materials/_archive/discover-the-problem-slide-outline-pre-insights-2026-11-01.md",
+    "lessons/02-discover-the-problem/materials/_archive/discover-the-problem-practice-pre-insights-2026-11-01.md",
+    "lessons/02-discover-the-problem/materials/_archive/discover-the-problem-lesson-pre-insights-2026-11-01.md",
+    "lessons/02-discover-the-problem/assets/three-steps-with-ai.html",
+    "lessons/02-discover-the-problem/assets/source-check.html",
+    "learning/tooling/toolkit-refactor-stage.sh",
+    "learning/tooling/toolkit-refactor-plan.md",
+    "learning/tooling/github-setup-and-publish.md",
+    "learning/tooling",
+    "learning/reference/source-verification-lesson-1.md",
+    "learning/reference/lesson-5-activity-rule-break-hunt.md",
+    "learning/reference/five-excerpts-answer-key.md",
+    "learning/reference/desk-research-competitor-practice.md",
+    "learning/reference/ai-strengths-and-limits.md",
+    "learning/reference/ai-prototype-foundations.md",
+    "learning/reference/ai-mental-model.md",
+    "learning/reference/ai-in-prototype.md",
+    "learning/reference/ai-in-insights.md",
+    "learning/reference/ai-in-discover.md",
+    "learning/reference/agentic-ai-concepts.md",
+    "learning/reference/agent-frameworks-product-design.md",
+    "learning/reference",
+    "learning/lesson-3-research-questions.md",
+    "assets/starter-files/course-case/source-notes.md",
+    "assets/starter-files/course-case/source-notes-answer-key.md",
+    "assets/starter-files/course-case/persona-ai-draft.md",
+    "assets/starter-files/course-case/insight-set.md"
+  ]
+}

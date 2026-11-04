@@ -11,13 +11,13 @@ last_synced: 2026-11-01
 
 ## Session metadata
 
-| Field | Value |
-|---|---|
-| Program | AI Design Workflow |
-| Track / session | Buổi 3 của series, 90 phút, online, 7 đến 8 designer; sau đó là chuỗi practice ở nhà (khoảng 4 giờ), rồi buổi practice trên lớp |
-| Stage | Discover |
-| Prior session | Buổi 2: Discover the Problem |
-| Next session | Chuỗi practice ở nhà và buổi practice trên lớp, rồi buổi 4: Frame the Problem Worth Solving |
+| Field           | Value                                                                                                                                                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Program         | AI Design Workflow                                                                                                                                                                                                                          |
+| Track / session | Buổi 3 của series, 90 phút, online, 7 đến 8 designer; sau đó là chuỗi practice ở nhà (khoảng 4 giờ), rồi buổi practice trên lớp                                                                                                             |
+| Stage           | Discover                                                                                                                                                                                                                                    |
+| Prior session   | Buổi 2: Discover the Problem                                                                                                                                                                                                                |
+| Next session    | Chuỗi practice ở nhà và buổi practice trên lớp, rồi buổi 4: Frame the Problem Worth Solving                                                                                                                                                 |
 | Running example | project app giao đồ ăn hư cấu của chương trình (chín insight IN-01 đến IN-09 dẫn về 24 ghi chú nguồn có source ID: review R, forum F, phỏng vấn I); designer làm việc trên bộ nguyên tắc và insight của một project cụ thể ở chuỗi practice |
 
 ---
