@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 4 table to diagram</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f5f5f5; color: #2d3142; padding: 3rem 2rem; }
+    .frame { max-width: 760px; margin: 0 auto; }
+    .eyebrow { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: #4f5d75; margin-bottom: 0.5rem; }
+    h1 { font-size: 1.6rem; font-weight: 500; margin-bottom: 1.5rem; }
+    svg { width: 100%; display: block; }
+    .t { font-size: 14px; fill: #2d3142; }
+    .th { font-size: 14px; font-weight: 500; fill: #2d3142; }
+    .ts { font-size: 12px; fill: #4f5d75; }
+    .gray rect { fill: #F1EFE8; stroke: #5F5E5A; stroke-width: .5; }
+    .purple rect { fill: #EEEDFE; stroke: #534AB7; stroke-width: .5; }
+    .teal rect { fill: #E1F5EE; stroke: #0F6E56; stroke-width: .5; }
+    .coral rect { fill: #FAECE7; stroke: #993C1D; stroke-width: .5; }
+    .amber rect { fill: #FAEEDA; stroke: #854F0B; stroke-width: .5; }
+    .gray .th, .gray .ts { fill: #444441; } .gray .ts2 { fill: #5F5E5A; }
+    .purple .th, .purple .ts { fill: #3C3489; } .purple .ts2 { fill: #534AB7; }
+    .teal .th, .teal .ts { fill: #085041; } .teal .ts2 { fill: #0F6E56; }
+    .coral .th, .coral .ts { fill: #712B13; }
+    .amber .th { fill: #633806; }
+    .ts2 { font-size: 12px; }
+    .arr { stroke: #4f5d75; stroke-width: 1.5; fill: none; }
+    .leader { stroke: #b4b2a9; stroke-width: .5; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Session design · AI Design Workflow</p>
+    <h1>From table to diagram</h1>
+<svg viewBox="0 0 680 300" role="img"><title>From table to diagram</title><desc>Four steps with three gates; the table is the source of truth.</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><g class="gray"><rect x="30" y="60" width="130" height="70" rx="8"/><text class="th" x="95.0" y="87.0" text-anchor="middle" dominant-baseline="central">Collect</text><text class="ts2" x="95.0" y="105.0" text-anchor="middle" dominant-baseline="central">your walkthrough notes</text></g><line x1="160" y1="95" x2="193" y2="95" class="arr" marker-end="url(#arrow)"/><g class="purple"><rect x="195" y="60" width="130" height="70" rx="8"/><text class="th" x="260.0" y="87.0" text-anchor="middle" dominant-baseline="central">Table</text><text class="ts2" x="260.0" y="105.0" text-anchor="middle" dominant-baseline="central">AI drafts, you check</text></g><line x1="325" y1="95" x2="358" y2="95" class="arr" marker-end="url(#arrow)"/><g class="purple"><rect x="360" y="60" width="130" height="70" rx="8"/><text class="th" x="425.0" y="87.0" text-anchor="middle" dominant-baseline="central">Analyse</text><text class="ts2" x="425.0" y="105.0" text-anchor="middle" dominant-baseline="central">AI finds friction, you fix</text></g><line x1="490" y1="95" x2="523" y2="95" class="arr" marker-end="url(#arrow)"/><g class="teal"><rect x="525" y="60" width="130" height="70" rx="8"/><text class="th" x="590.0" y="87.0" text-anchor="middle" dominant-baseline="central">Diagram</text><text class="ts2" x="590.0" y="105.0" text-anchor="middle" dominant-baseline="central">AI codes, you match</text></g><g class="amber"><rect x="30" y="170" width="200" height="40" rx="8"/><text class="th" x="130.0" y="190.0" text-anchor="middle" dominant-baseline="central">Gate A: table matches the real product</text></g><g class="amber"><rect x="250" y="170" width="200" height="40" rx="8"/><text class="th" x="350.0" y="190.0" text-anchor="middle" dominant-baseline="central">Gate B: fix is defensible</text></g><g class="amber"><rect x="470" y="170" width="200" height="40" rx="8"/><text class="th" x="570.0" y="190.0" text-anchor="middle" dominant-baseline="central">Gate C: diagram matches the table</text></g><text class="ts" x="340" y="250" text-anchor="middle">Process map: reuse the verified table, add lane, handoff and wait columns.</text><text class="ts" x="340" y="272" text-anchor="middle">Unknown back-stage facts become questions for the team, not guesses.</text></svg>
+  </div>
+</body>
+</html>

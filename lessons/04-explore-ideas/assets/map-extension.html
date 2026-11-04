@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 4 map extension</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f5f5f5; color: #2d3142; padding: 3rem 2rem; }
+    .frame { max-width: 760px; margin: 0 auto; }
+    .eyebrow { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: #4f5d75; margin-bottom: 0.5rem; }
+    h1 { font-size: 1.6rem; font-weight: 500; margin-bottom: 1.5rem; }
+    svg { width: 100%; display: block; }
+    .t { font-size: 14px; fill: #2d3142; }
+    .th { font-size: 14px; font-weight: 500; fill: #2d3142; }
+    .ts { font-size: 12px; fill: #4f5d75; }
+    .gray rect { fill: #F1EFE8; stroke: #5F5E5A; stroke-width: .5; }
+    .purple rect { fill: #EEEDFE; stroke: #534AB7; stroke-width: .5; }
+    .teal rect { fill: #E1F5EE; stroke: #0F6E56; stroke-width: .5; }
+    .coral rect { fill: #FAECE7; stroke: #993C1D; stroke-width: .5; }
+    .amber rect { fill: #FAEEDA; stroke: #854F0B; stroke-width: .5; }
+    .gray .th, .gray .ts { fill: #444441; } .gray .ts2 { fill: #5F5E5A; }
+    .purple .th, .purple .ts { fill: #3C3489; } .purple .ts2 { fill: #534AB7; }
+    .teal .th, .teal .ts { fill: #085041; } .teal .ts2 { fill: #0F6E56; }
+    .coral .th, .coral .ts { fill: #712B13; }
+    .amber .th { fill: #633806; }
+    .ts2 { font-size: 12px; }
+    .arr { stroke: #4f5d75; stroke-width: 1.5; fill: none; }
+    .leader { stroke: #b4b2a9; stroke-width: .5; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Session design · AI Design Workflow</p>
+    <h1>One map, one more level</h1>
+<svg viewBox="0 0 680 420" role="img"><title>One map, one more level</title><desc>Lesson 3 gives goal and opportunities with insight IDs. Lesson 4 adds solutions under each opportunity.</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><g class="gray"><rect x="230" y="30" width="220" height="48" rx="8"/><text class="th" x="340.0" y="46.0" text-anchor="middle" dominant-baseline="central">Goal or Problem</text><text class="ts2" x="340.0" y="64.0" text-anchor="middle" dominant-baseline="central">Lesson 3</text></g><g class="gray"><rect x="40" y="130" width="160" height="48" rx="8"/><text class="th" x="120.0" y="146.0" text-anchor="middle" dominant-baseline="central">Opportunity A</text><text class="ts2" x="120.0" y="164.0" text-anchor="middle" dominant-baseline="central">IN-01, IN-02</text></g><line x1="340" y1="78" x2="120" y2="128" class="arr" marker-end="url(#arrow)"/><g class="gray"><rect x="260" y="130" width="160" height="48" rx="8"/><text class="th" x="340.0" y="146.0" text-anchor="middle" dominant-baseline="central">Opportunity B</text><text class="ts2" x="340.0" y="164.0" text-anchor="middle" dominant-baseline="central">IN-03</text></g><line x1="340" y1="78" x2="340" y2="128" class="arr" marker-end="url(#arrow)"/><g class="gray"><rect x="480" y="130" width="160" height="48" rx="8"/><text class="th" x="560.0" y="146.0" text-anchor="middle" dominant-baseline="central">Opportunity C</text><text class="ts2" x="560.0" y="164.0" text-anchor="middle" dominant-baseline="central">IN-05</text></g><line x1="340" y1="78" x2="560" y2="128" class="arr" marker-end="url(#arrow)"/><g class="purple"><rect x="50" y="230" width="140" height="40" rx="8"/><text class="th" x="120.0" y="250.0" text-anchor="middle" dominant-baseline="central">Solution A1</text></g><line x1="120" y1="178" x2="120" y2="228" class="arr" marker-end="url(#arrow)"/><g class="purple"><rect x="50" y="288" width="140" height="40" rx="8"/><text class="th" x="120.0" y="308.0" text-anchor="middle" dominant-baseline="central">Solution A2</text></g><line x1="120" y1="270" x2="120" y2="286" class="arr" marker-end="url(#arrow)"/><g class="purple"><rect x="270" y="230" width="140" height="40" rx="8"/><text class="th" x="340.0" y="250.0" text-anchor="middle" dominant-baseline="central">Solution B1</text></g><line x1="340" y1="178" x2="340" y2="228" class="arr" marker-end="url(#arrow)"/><g class="purple"><rect x="490" y="230" width="140" height="40" rx="8"/><text class="th" x="560.0" y="250.0" text-anchor="middle" dominant-baseline="central">Solution C1</text></g><line x1="560" y1="178" x2="560" y2="228" class="arr" marker-end="url(#arrow)"/><g class="purple"><rect x="490" y="288" width="140" height="40" rx="8"/><text class="th" x="560.0" y="308.0" text-anchor="middle" dominant-baseline="central">Solution C2</text></g><line x1="560" y1="270" x2="560" y2="286" class="arr" marker-end="url(#arrow)"/><g class="purple"><rect x="490" y="346" width="140" height="40" rx="8"/><text class="th" x="560.0" y="366.0" text-anchor="middle" dominant-baseline="central">Solution C3</text></g><line x1="560" y1="328" x2="560" y2="344" class="arr" marker-end="url(#arrow)"/><text class="ts" x="340" y="400" text-anchor="middle">Gray: Lesson 3, each opportunity traces to an insight ID. Purple: Lesson 4, each solution sits under one opportunity.</text></svg>
+  </div>
+</body>
+</html>

@@ -16,4 +16,4 @@ Mỗi lesson là một thư mục `<NN>-<slug>`, NN là số lesson (01 đến 0
 
 Hub chỉ hiện những trang được liệt kê trong nhóm `Lessons` của [`SUMMARY.md`](../SUMMARY.md): lesson và practice, không có outline. Practice viết cho học viên (xem `_system/learning templates/_template-practice.md`); ghi chú coaching cho giảng viên nằm ở `learning/`.
 
-Hiện có: `01-design-process-with-ai`, `02-discover-the-problem`, `03-research-you-can-trust`. Các lesson còn lại và `07-wrap-up` được tạo khi bắt đầu viết.
+Hiện có: `01-design-process-with-ai`, `02-discover-the-problem`, `03-research-you-can-trust`, `04-explore-ideas`. Các lesson còn lại và `07-wrap-up` được tạo khi bắt đầu viết.

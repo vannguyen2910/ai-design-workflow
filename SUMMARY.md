@@ -16,6 +16,8 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
   - [Practice 2: Break the Brief](lessons/02-discover-the-problem/materials/discover-the-problem-practice.md)
 - [Lesson 3: Insights You Can Trust](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md)
   - [Practice 3: Run the Four Steps](lessons/03-research-you-can-trust/materials/research-you-can-trust-practice.md)
+- [Lesson 4: Explore Ideas](lessons/04-explore-ideas/materials/explore-ideas-lesson.md)
+  - [Practice 4: Explore Ideas and Pick a Direction](lessons/04-explore-ideas/materials/explore-ideas-practice.md)
 
 ## Resources
 

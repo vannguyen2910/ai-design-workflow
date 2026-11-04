@@ -304,40 +304,25 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ---
 
-## Lesson 4: Frame the Problem Worth Solving
+## Lesson 4: Explore Ideas and Pick a Direction
 
-*Slug:* `frame-the-problem`. Là **buổi 4 (tuần 2)**. Output của buổi này, cùng bài tập buổi 1 đến 3, là đầu vào của **Check point 1 (buổi 5)**.
+*Slug:* `explore-ideas`. Là **buổi 4 (tuần 4)** theo `plan.md`. Viết lại 2026-11-04 theo board Lesson 4 của Winnie, thay mục "Lesson 4: Frame the Problem" và "Lesson 5: Explore Ideas" của bản cũ (hypothesis và metrics đã rải ở lesson khác hoặc bỏ). File nguồn: `lessons/04-explore-ideas/materials/explore-ideas-lesson.md`; khi nội dung ở đây lệch với lesson file, lesson file thắng.
 
-**Sau lesson, học viên có thể:**
-
-1. Biến evidence pack thành danh sách opportunity đã xếp hạng (user need, không phải feature), mỗi cái gắn với evidence của nó.
-2. Biến 10 heuristic của Nielsen (cộng principle của tổ chức nếu có) thành các principle check có hoặc không cho sản phẩm này, lưu trong `standards/principle-checks.md`.
-3. Viết hypothesis kiểm chứng được cho hướng giải pháp ("chúng tôi tin X cho Y sẽ thay đổi Z, và sẽ biết nhờ M") và đặt đúng mức chi tiết cho từng hypothesis.
-4. Định nghĩa thành công bằng Goals, Signals, Metrics, chọn metric đo được trước khi launch.
-
-**Key activity:** Problem brief flow (chưa vẽ).
-
-**Output:** problem brief chung, được product và business cùng ký, trở thành requirement: outcome và success metric, opportunity đã xếp hạng, hypothesis, principle để đối chiếu.
-
-**Partner move:** dẫn product và business đi qua brief và lấy sự đồng ý trước khi bắt đầu design; PRD, nếu được viết, được viết từ brief này.
-
-**Khi access hạn chế hoặc không có (xem Lesson 2):** phần "agreement" của gate không đạt được. Mang agreement status của Lesson 2 vào brief, đánh dấu mọi outcome và metric chưa xác nhận là **assumed**, và giữ nguyên phần evidence của gate. Học viên ở mức no access vẫn hoàn thành brief; brief được gắn nhãn "unconfirmed by business".
-
----
-
-## Lesson 5: Explore Ideas and Pick a Direction
-
-*Slug:* `explore-ideas`. Là **buổi 6 (tuần 3)**, sau Check point 1.
+**Why:** Lesson 3 dừng ở Goal hoặc Problem, rồi Opportunity. Lesson 4 kéo dài chính map đó xuống Solution, rồi đi từ solution đến concept sketch và flow.
 
 **Sau lesson, học viên có thể:**
 
-1. Điều khiển AI chat tool tạo ra ít nhất ba hướng thật sự khác nhau từ problem brief và constraints.
-2. Chọn một hướng bằng cách đối chiếu từng hướng với principle check và opportunity, và ghi lại vì sao các hướng còn lại bị gác.
-3. Định hình user flow và nội dung bằng các bản nháp AI mà mình chỉnh sửa và sở hữu (không có copy cuối do AI viết mà chưa review).
+1. Kéo dài map từ Lesson 3 xuống solution, mỗi solution dẫn về opportunity và insight ID.
+2. Viết solution thành câu How Might We, và sinh solution theo thứ tự designer trước, AI sau.
+3. Vẽ concept sketch đọc được trong 30 giây, có "This works because...".
+4. Dựng user flow từ bảng đã kiểm tra, rồi mở rộng thành process map bằng lane back-stage.
+5. Nêu khi nào quy trình sẵn sàng để package thành skill.
 
-**Key activity:** Ideation and flow flow (Generate pattern), chưa vẽ.
+**Key activity:** chọn một nhánh opportunity và thêm solution vào map, 10 phút (người trước, AI sau).
 
-**Output:** hướng đã chọn, flow, content model.
+**Output:** map có tầng solution, hướng đã chọn, user flow (và process map nếu cần).
+
+*Chia giờ 90 phút `[to confirm]`:* ice breaker 6, mở lại map 8, solution HMW 6, activity 10, AI sinh solution 6, concept sketching 10, user flow 12, process map 10, package 8, hỏi đáp và close 13 (tổng 89). Đã bỏ: Crazy 8s, Storyboarding, Concept Validation, Prioritisation, hypothesis. Chưa thử với lớp thật.
 
 ---
 

@@ -54,7 +54,7 @@ Mỗi buổi theory là một lesson. Buổi practice đi liền sau mỗi lesso
 | 1 | 1 (buổi 1) | [`design-process-with-ai`](lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md) | Your design process, with AI (tương lai nghề và ba hướng đi, bốn stage, bốn khái niệm AI cốt lõi, data safety) | 🚧 Draft |
 | 2 | 2 (buổi 3) | [`discover-the-problem`](lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md) | Discover the problem (Design Principles, break the brief, hiểu người dùng, package thành agent và hub) | 🚧 Draft (viết lại 2026-10-26) |
 | 3 | 3 (buổi 5) | [`research-you-can-trust`](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md) | Insights you can trust (synthesis, persona, journey map, opportunity, mỗi dòng dẫn về quote có ID) | 🚧 Draft (cần sửa theo cấu trúc mới) |
-| 4 | 4 (buổi 7) | `explore-ideas` | Explore ideas (hypothesis, How might we, sketch giấy rồi AI, chọn hướng bằng principle check) | ⬜ Planned |
+| 4 | 4 (buổi 7) | [`explore-ideas`](lessons/04-explore-ideas/materials/explore-ideas-lesson.md) | Explore ideas (map kéo dài xuống solution, How might we, concept sketching, user flow và process map, package thành skill) | 🚧 Draft |
 | 5 | 5 (buổi 9) | `ai-prototyping` | AI prototyping (design system, pattern, template, rules file; prototype sẵn sàng test, có thể là final design) | ⬜ Planned |
 | 6 | 6 (buổi 11) | `test-with-real-users` | Test with real users (metrics, test plan, phân tích kết quả, SUS, sửa finding) | ⬜ Planned |
 
