@@ -30,12 +30,12 @@ Tổng 82 phút, buffer 8 phút. Cập nhật 2026-10-23: thêm phần Agent và
 2. **Theory, 44 phút (6 phần, mỗi phần kết thúc bằng một câu A/B 30 giây bằng chat):**
    - **T1, 5 phút: Nghề đang dịch chuyển.** Hai đến ba con số có nguồn cộng giới hạn của chúng; ba hướng đi trong một slide; lập trường partner. Câu A/B: "Bạn nghiêng về hướng nào?"
    - **T2, 10 phút: Quy trình thiết kế có AI.** Bốn stage trong một sơ đồ, mỗi stage một dòng "AI giúp được ở đâu / bạn vẫn tự làm"; AI làm tốt và còn yếu; nút thắt chuyển sang verification (khung Theory of Constraints, xem mục Sources); ba câu hỏi trước khi automate. Câu A/B: "Workflow gần đây của bạn có trả lời được câu 1 và 2 không?"
-   - **T3, 10 phút: Một task, làm hai lần.** Demo Kitchen Crate với hai instruction; học viên đoán trước instruction nào đáng tin hơn rồi mới xem. Bốn khái niệm (context, grounding, hallucination, AI-assisted) được gọi tên đúng lúc chúng xuất hiện. Câu A/B: "Bản demo vừa rồi là AI-assisted hay AI-generated?"
+   - **T3, 10 phút: Một task, làm hai lần.** Demo Delivery App với hai instruction; học viên đoán trước instruction nào đáng tin hơn rồi mới xem. Bốn khái niệm (context, grounding, hallucination, AI-assisted) được gọi tên đúng lúc chúng xuất hiện. Câu A/B: "Bản demo vừa rồi là AI-assisted hay AI-generated?"
    - **T4, 10 phút: Agent và đội AI cho product design.** Agent là gì (một vòng lặp: đọc file, làm nhiều bước, báo lại; khác với chat một lượt) và ví dụ một dòng cho connector (MCP) và reusable instructions. Sau đó là cách dựng đội AI: hai agent cho mỗi phase của Double Diamond (tám agent, cùng ghi vào một design memory; sơ đồ ở `_system/diagrams/designer-agents-double-diamond.html`), mỗi vai trò có instruction và input riêng, còn designer là người dẫn dắt, kiểm tra và quyết định. Nhấn một điểm: đội AI chỉ chạy được khi có context pack, skill và gate; vì vậy buổi này chưa dựng đội, chỉ chuẩn bị nền. Câu A/B: "Vai trò nào trong đội bạn sẽ không bao giờ giao cho AI?"
    - **T5, 5 phút: Knowledge Hub.** Chiếu ba ảnh kết quả có sẵn (`assets/outcome-examples/knowledge-hub-*.webp`): mỗi output của chương trình đi vào hub, mỗi item một file, liên kết từ decision về user need; hub là báo cáo cuối của khoá và mặc định riêng tư. Kèm một slide layout project folder. Câu A/B: "Bạn muốn người đọc hub của mình tìm được điều gì đầu tiên?"
    - **T6, 4 phút: Data safety.** Ba nhóm, bốn thói quen trước khi dán, luật dữ liệu cá nhân ở Việt Nam một slide. Phần luyện nằm ở Activity. Câu A/B: "Transcript phỏng vấn có tên nằm ở nhóm nào?"
 3. **Activity trên lớp, 18 phút: "Đoán trước, rồi để AI phân loại".** Đây là activity duy nhất trên lớp, và là phương án mặc định:
-   - Cá nhân, 3 phút: nhận năm đoạn trích hư cấu của Kitchen Crate (một trang giá công khai, ghi chú quy trình nội bộ, tóm tắt research không tên, transcript phỏng vấn đã thay tên bằng chữ cái nhưng còn vai trò, tuổi và nơi ở, ảnh chụp admin dashboard) và tự xếp vào ba nhóm trước khi mở AI tool.
+   - Cá nhân, 3 phút: nhận năm đoạn trích hư cấu của Delivery App (một trang giá công khai, ghi chú quy trình nội bộ, tóm tắt research không tên, transcript phỏng vấn đã thay tên bằng chữ cái nhưng còn vai trò, tuổi và nơi ở, ảnh chụp admin dashboard) và tự xếp vào ba nhóm trước khi mở AI tool.
    - Cặp hoặc cá nhân, 6 phút: nhờ AI chat tool xếp cùng năm đoạn, rồi so với bản của mình. **Cái bẫy:** ít nhất một đoạn mà AI xếp "an toàn" vì thấy đã bỏ tên, trong khi vẫn đủ chi tiết để nhận ra người (vai trò, nơi ở, tuổi). Học viên tự bắt được chỗ này.
    - Cá nhân, 7 phút: viết ba dòng `context-data-rules.md` cho project của chính mình (được dán gì, sẽ không dán gì, dùng tool nào cho việc gì); chưa biết chính sách công ty thì ghi "cần hỏi". Chưa dán tài liệu thật vào AI tool.
    - Cả lớp, 2 phút: mỗi người nói một con số "AI xếp đúng X trên 5".
@@ -61,7 +61,7 @@ Việc dựng project folder và chia sẻ hub chuyển thành mục tiêu của
 ## Key decisions
 
 **Running example và lý do**
-- Kitchen Crate (meal-kit hư cấu) cho cả demo T3 và bộ năm đoạn trích của Activity, để học viên không phải mang tài liệu thật vào lớp trước khi có data rules.
+- Delivery App (meal-kit hư cấu) cho cả demo T3 và bộ năm đoạn trích của Activity, để học viên không phải mang tài liệu thật vào lớp trước khi có data rules.
 
 **AI xuất hiện ở đâu, và manual trước AI**
 - AI: trả lời hai instruction ở demo T3; xếp năm đoạn trích ở Activity.
@@ -79,7 +79,7 @@ Việc dựng project folder và chia sẻ hub chuyển thành mục tiêu của
 - Hiện có 70 slide (39 trong luồng dạy). Với 44 phút theory, luồng dạy còn khoảng 35 slide; các slide chuyển ra khỏi luồng nằm ở Appendix. Số chính xác chốt khi viết outline; khi đó cập nhật dòng `## Slide structure` và MILESTONE `Num:` theo quy tắc sync.
 
 **Câu hỏi mở cho Winnie**
-1. T4 giới thiệu đội AI ở mức khái niệm, chưa dựng. Có muốn kèm một slide ví dụ đội AI hoàn chỉnh cho project Kitchen Crate không, hay để dành cho buổi 7?
+1. T4 giới thiệu đội AI ở mức khái niệm, chưa dựng. Có muốn kèm một slide ví dụ đội AI hoàn chỉnh cho project Delivery App không, hay để dành cho buổi 7?
 2. Activity mặc định là "đoán trước, rồi để AI phân loại" (gắn với data safety). Hay muốn dùng Activity khác, ví dụ cho học viên tự viết instruction thứ ba sau demo T3 và chấm bằng ba tiêu chí?
 3. Có giữ ba con số về nghề ở T1 ở mức này không, hay muốn rút còn hai để nhường thời gian cho T3?
 4. Ba câu hỏi trước khi automate nằm cuối T2 và là phần bị cắt đầu tiên. Có muốn chuyển nó sang pre-read hẳn không?

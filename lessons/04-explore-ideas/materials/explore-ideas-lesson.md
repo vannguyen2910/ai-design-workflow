@@ -14,7 +14,7 @@ previous-session: "Turn Research into Insights You Can Trust"
 next-session: "AI Prototyping"
 ---
 
-> **Draft note 2026-11-04.** Bản nháp đầu, dựng theo board Lesson 4 của Winnie và hai lesson cũ (Develop Solutions & Ideate, Interaction Design & User Flows). Đã bỏ Crazy 8s, Storyboarding, Concept Validation, Prioritisation và hypothesis. Thời lượng chưa thử với lớp `[to confirm]`. Chỗ đánh dấu `[to confirm]` là suy luận của người soạn hoặc chưa có nguồn. Ví dụ Kitchen Crate ghi `bản nháp` là ví dụ tự dựng, chưa lấy từ dữ liệu của case.
+> **Draft note 2026-11-04.** Bản nháp đầu, dựng theo board Lesson 4 của Winnie và hai lesson cũ (Develop Solutions & Ideate, Interaction Design & User Flows). Đã bỏ Crazy 8s, Storyboarding, Concept Validation, Prioritisation và hypothesis. Thời lượng chưa thử với lớp `[to confirm]`. Chỗ đánh dấu `[to confirm]` là suy luận của người soạn hoặc chưa có nguồn. Ví dụ Delivery App ghi `bản nháp` là ví dụ tự dựng, chưa lấy từ dữ liệu của case.
 
 ## Abstract
 
@@ -26,7 +26,7 @@ Năm phần theo thứ tự trình bày:
 2. **AI sinh solution.** Designer nghĩ trước, AI mở rộng sau, và lý do thứ tự này quan trọng.
 3. **Concept sketching.** Một ý tưởng vẽ thô, đủ để người ngoài đọc hiểu trong 30 giây.
 4. **User flow và process map.** User flow mô tả đường đi của một người dùng. Process map là bước zoom out, thêm các lane phía sau màn hình.
-5. **Package thành skill.** Đóng gói quy trình user flow và process map để dùng lại.
+5. **Package thành skill và agent.** Đóng gói quy trình user flow và process map thành skill, gắn cho một agent để dùng lại.
 
 Nguyên tắc vận hành giữ nguyên: **AI soạn nháp. Designer kiểm tra. Designer quyết định.**
 
@@ -55,7 +55,7 @@ Sau buổi 4, designer có thể:
 
 ## Materials Needed
 
-- Map từ Lesson 3 của designer (Goal hoặc Problem → Opportunity, mỗi opportunity có insight ID). Designer chưa có thì dùng map mẫu của project Kitchen Crate hư cấu (`assets/starter-files/course-case/`), dựng từ `insight-set.md`.
+- Map từ Lesson 3 của designer (Goal hoặc Problem → Opportunity, mỗi opportunity có insight ID). Designer chưa có thì dùng map mẫu của project Delivery App hư cấu (`assets/starter-files/course-case/`), dựng từ `insight-set.md`.
 - Một whiteboard số, hoặc giấy, để vẽ map.
 - Một AI chat tool đã được công ty cho phép.
 - Giấy và bút (không dùng bút chì) cho concept sketch.
@@ -63,7 +63,7 @@ Sau buổi 4, designer có thể:
 
 ## Pre-Class Preparation
 
-Tối đa khoảng 10 phút: mở lại map từ Lesson 3 và kiểm tra mỗi opportunity đã dẫn về insight ID chưa. Mang theo problem brief và danh sách friction point trong journey map. Designer chưa có những thứ này thì dùng bộ Kitchen Crate; cả lớp dùng chung bộ này ở activity để so với bạn cùng cặp.
+Tối đa khoảng 10 phút: mở lại map từ Lesson 3 và kiểm tra mỗi opportunity đã dẫn về insight ID chưa. Mang theo problem brief và danh sách friction point trong journey map. Designer chưa có những thứ này thì dùng bộ Delivery App; cả lớp dùng chung bộ này ở activity để so với bạn cùng cặp.
 
 ---
 
@@ -98,7 +98,7 @@ GOAL hoặc PROBLEM          (Lesson 3)
 
 Journey map và user flow hiện tại cho thấy các friction point: bước người dùng gặp khó, chỗ chuyển giao bị đứt, bước mất nhiều thời gian, bước không cho kết quả rõ ràng. Mỗi friction point là một opportunity tiềm năng trên map, và mỗi opportunity nên gắn với một bước thật trong flow. Nếu một opportunity không gắn với bước nào, có thể flow chưa đủ hoặc opportunity đó yếu hơn dự kiến `[to confirm]`.
 
-Ví dụ Kitchen Crate: IN-01 (khách mới không biết ngày giao đã chốt) và IN-02 (khó tìm chỗ tạm dừng, cut-off không hiện) cùng trỏ về bước "chọn và đổi ngày giao". Hai friction point nằm ở một bước, nên chúng thuộc cùng một nhánh opportunity: *khách mới gặp khó khi muốn đổi hoặc tạm dừng vì không thấy cut-off đúng lúc đang quyết định.*
+Ví dụ Delivery App: IN-01 (khách mới không biết ngày giao đã chốt) và IN-02 (khó tìm chỗ tạm dừng, cut-off không hiện) cùng trỏ về bước "chọn và đổi ngày giao". Hai friction point nằm ở một bước, nên chúng thuộc cùng một nhánh opportunity: *khách mới gặp khó khi muốn đổi hoặc tạm dừng vì không thấy cut-off đúng lúc đang quyết định.*
 
 ### 1.3 Solution as How Might We
 
@@ -117,9 +117,9 @@ Solution được viết thành câu HMW, giữ user need làm ràng buộc: "L�
 3. (4 phút) Hỏi AI: "Các solution này cùng dựa trên giả định nào? Cho tôi ba solution đi ngược giả định đó, mỗi solution kèm opportunity ID." Những ý thật sự mới thì thêm vào map và ghi rõ là từ AI.
 4. (1 phút) Đọc lại cả cây: nhánh nào dày, nhánh nào còn trống, solution nào chưa dẫn về opportunity.
 
-*Ví dụ (bản nháp, Kitchen Crate):* AI chỉ ra rằng các solution của người viết đều giả định khách sẽ nhìn thấy màn đổi ngày. Một ý đi ngược giả định đó là nhắc cut-off qua tin nhắn. Khi hỏi AI trước, cả lớp chỉ ra "banner cut-off". Khi viết trước, lớp có thêm ý "chốt ngày sau khi xem menu".
+*Ví dụ (bản nháp, Delivery App):* AI chỉ ra rằng các solution của người viết đều giả định khách sẽ nhìn thấy màn đổi ngày. Một ý đi ngược giả định đó là nhắc cut-off qua tin nhắn. Khi hỏi AI trước, cả lớp chỉ ra "banner cut-off". Khi viết trước, lớp có thêm ý "chốt ngày sau khi xem menu".
 
-*Dữ liệu:* map của designer, hoặc Kitchen Crate (hư cấu). *Output:* map đã có tầng solution, mỗi solution ghi rõ do designer nghĩ hay do AI đề xuất. *Điều kiện:* không hỏi AI trước bước 2.
+*Dữ liệu:* map của designer, hoặc Delivery App (hư cấu). *Output:* map đã có tầng solution, mỗi solution ghi rõ do designer nghĩ hay do AI đề xuất. *Điều kiện:* không hỏi AI trước bước 2.
 
 ---
 
@@ -138,7 +138,7 @@ Một nghiên cứu về brainstorm có ChatGPT cho thấy ý tưởng của nh�
 
 **Dùng map làm ngữ cảnh.** Designer đưa map (dạng markdown, mỗi dòng có ID) vào AI và yêu cầu mỗi solution kèm opportunity ID. Câu trả lời không có ID nào là câu đoán. Cách này nối tiếp quy tắc "mỗi dòng dẫn về insight ID" của Lesson 3.
 
-*Ví dụ (bản nháp, Kitchen Crate):* AI đề xuất "nhắc cut-off 24 giờ trước" kèm opportunity về cut-off thì được đưa vào map. AI đề xuất "giảm giá hộp đầu" mà không kèm ID nào thì được ghi là hypothesis, và IN-04 cho thấy giá không phải lý do chính.
+*Ví dụ (bản nháp, Delivery App):* AI đề xuất "nhắc cut-off 24 giờ trước" kèm opportunity về cut-off thì được đưa vào map. AI đề xuất "giảm giá hộp đầu" mà không kèm ID nào thì được ghi là hypothesis, và IN-04 cho thấy giá không phải lý do chính.
 
 Các nghiên cứu về agent trong design workflow mô tả AI đọc tài liệu của designer thông qua retrieval hoặc MCP thay vì dán tay [3]. Phần này chỉ là một hướng đi, chưa phải quy trình đã thử với lớp `[to confirm]`.
 
@@ -156,7 +156,7 @@ Các nghiên cứu về agent trong design workflow mô tả AI đọc tài li�
 
 Concept sketch là công cụ để nghĩ, không phải wireframe. Một sketch gồm bốn phần: khoảnh khắc chính (một khoảnh khắc làm concept dễ hiểu, không phải cả flow), nhãn thành phần, ghi chú ý đồ, và một câu "This works because..." không kèm điều kiện. Người chưa nghe giải thích đọc được sketch trong khoảng 30 giây.
 
-**Four steps, one moment.** (1) Chọn một ý, ý thú vị nhất trên map. (2) Vẽ khoảnh khắc chính. (3) Ghi nhãn, không làm đẹp. (4) Viết "This works because...". *Ví dụ (bản nháp, Kitchen Crate):* vẽ màn chọn ngày giao có một chip "Chốt trong 2 ngày", với rationale: "This works because khách thấy cut-off ngay lúc đang quyết định".
+**Four steps, one moment.** (1) Chọn một ý, ý thú vị nhất trên map. (2) Vẽ khoảnh khắc chính. (3) Ghi nhãn, không làm đẹp. (4) Viết "This works because...". *Ví dụ (bản nháp, Delivery App):* vẽ màn chọn ngày giao có một chip "Chốt trong 2 ngày", với rationale: "This works because khách thấy cut-off ngay lúc đang quyết định".
 
 **Ví dụ thật.** Hai sketch thật từ lesson cũ. Một là sản phẩm QR seat-unlock với hai hành trình đặt cạnh nhau (quét QR, đặt chỗ, thanh toán; hoặc tải app trước rồi mới quét), mỗi hành trình có nhãn viết tay và khung Pros/Cons. Hai là ba concept urban farming vẽ trong 10 phút (seasonal pack, farm-partner flow, phygital grocery) với mức hoàn thiện khác nhau. Câu hỏi cho lớp: concept nào đọc nhanh nhất trong 30 giây, và vì sao?
 
@@ -176,9 +176,9 @@ Designer làm concept sketch cho project của mình ở buổi practice, không
 | **How with AI** | AI biến ghi chú walkthrough thành bảng, tìm friction so với mục tiêu và đề xuất ít nhất ba cấu trúc khác cho bước tệ nhất |
 | **AI không làm** | Vẽ diagram trước khi bảng được kiểm tra |
 
-**Task flow và user flow.** Task flow là chuỗi tuyến tính của đường đi dự kiến, không có nhánh lỗi, dùng để thống nhất phạm vi. User flow có đủ nhánh, lỗi và điểm kết, dùng trước khi dựng prototype. Designer vẽ task flow trước rồi mới mở rộng thành user flow (khái niệm giữ lại từ lesson Interaction Design & User Flows). *Ví dụ (bản nháp, Kitchen Crate):* task flow "đổi ngày giao hộp tuần sau" có bốn bước, còn user flow thêm nhánh "đã qua cut-off" và "lỗi thanh toán".
+**Task flow và user flow.** Task flow là chuỗi tuyến tính của đường đi dự kiến, không có nhánh lỗi, dùng để thống nhất phạm vi. User flow có đủ nhánh, lỗi và điểm kết, dùng trước khi dựng prototype. Designer vẽ task flow trước rồi mới mở rộng thành user flow (khái niệm giữ lại từ lesson Interaction Design & User Flows). *Ví dụ (bản nháp, Delivery App):* task flow "đổi ngày giao hộp tuần sau" có bốn bước, còn user flow thêm nhánh "đã qua cut-off" và "lỗi thanh toán".
 
-**Vì sao AI không được vẽ trước.** AI vẽ ra một flow gọn từ mô tả một dòng, và người xem không còn phân biệt được đâu là thật. *Ví dụ (bản nháp, Kitchen Crate):* AI vẽ flow đổi ngày giao có sáu bước, còn sản phẩm thật có bảy vì có thêm bước xác nhận cut-off. Vì vậy quy trình đi theo bảng trước, diagram sau, và giữ nguyên workflow 8 bước đã có (`examples/user-flow-process-map/`, bản nháp chưa chạy với lớp `[to confirm]`):
+**Vì sao AI không được vẽ trước.** AI vẽ ra một flow gọn từ mô tả một dòng, và người xem không còn phân biệt được đâu là thật. *Ví dụ (bản nháp, Delivery App):* AI vẽ flow đổi ngày giao có sáu bước, còn sản phẩm thật có bảy vì có thêm bước xác nhận cut-off. Vì vậy quy trình đi theo bảng trước, diagram sau, và giữ nguyên workflow 8 bước đã có (`examples/user-flow-process-map/`, bản nháp chưa chạy với lớp `[to confirm]`):
 
 1. Designer thu thập ghi chú walkthrough.
 2. AI soạn nháp bảng.
@@ -208,15 +208,16 @@ Process map dùng lại bảng đã kiểm tra của user flow, thêm ba cột (
 
 ---
 
-## 5. Package into a skill
+## 5. Package into a skill and agent
 
 Khi quy trình user flow và process map đã chạy ổn, designer đóng gói nó:
 
 1. Viết quy trình thành skill: ai làm (designer hay AI), đầu vào, đầu ra, và check nào phải qua.
 2. Giữ nguyên các gate: bảng khớp sản phẩm thật, fix bảo vệ được, diagram khớp bảng.
-3. Đặt skill và file output vào Knowledge Hub của project để buổi sau dùng lại.
+3. Gắn skill cho một agent để agent chạy đúng quy trình này mỗi lần cần.
+4. Đặt skill và file output vào Knowledge Hub của project để buổi sau dùng lại.
 
-Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai task khác nhau, và phần designer kiểm tra đã được ghi rõ. Đóng gói quá sớm là đóng gói luôn cả lỗi. Skill không thay được bước kiểm tra bảng và bước quyết định fix. *Ví dụ (bản nháp, Kitchen Crate):* skill "user flow và process map" chạy lần một với task đổi ngày giao, lần hai với task tạm dừng, rồi mới được đóng gói.
+Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai task khác nhau, và phần designer kiểm tra đã được ghi rõ. Đóng gói quá sớm là đóng gói luôn cả lỗi. Skill không thay được bước kiểm tra bảng và bước quyết định fix. *Ví dụ (bản nháp, Delivery App):* skill "user flow và process map" chạy lần một với task đổi ngày giao, lần hai với task tạm dừng, rồi mới được đóng gói.
 
 ---
 

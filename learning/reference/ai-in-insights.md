@@ -328,7 +328,7 @@ Học viên dán prompt cùng bộ quote đã ẩn danh và có ID.
 
 Đề xuất, chưa sửa lesson. Dựa trên bốn bước (mục 5b), chín câu hỏi (mục 0), các thẻ (mục 0b) và ba diagram trong `lessons/03-research-you-can-trust/assets/`. Hình dạng buổi giữ như `feedback_ai-design-workflow-lesson-format`: ice breaker, theory, một activity ngắn, hỏi đáp; phần làm trên project riêng nằm ở practice.
 
-> **Cập nhật 2026-10-27:** activity Challenge trên gói AI soạn sẵn (khối 7, 16 phút, mục 6.3) đã bỏ và thay bằng activity "viết claim, phản biện chéo" 14 phút trên bộ quote Kitchen Crate của `course-case` (không cần gói soạn sẵn). Ví dụ xuyên suốt đổi từ "Ăn Ngay" sang Kitchen Crate. Khung giờ: 80 phút nội dung, buffer 10 phút. Lesson và outline đã sửa theo; các mục 6.2 và 6.3 giữ lại như bản đề xuất ban đầu.
+> **Cập nhật 2026-10-27:** activity Challenge trên gói AI soạn sẵn (khối 7, 16 phút, mục 6.3) đã bỏ và thay bằng activity "viết claim, phản biện chéo" 14 phút trên bộ quote Delivery App của `course-case` (không cần gói soạn sẵn). Ví dụ xuyên suốt đổi từ "Ăn Ngay" sang Delivery App. Khung giờ: 80 phút nội dung, buffer 10 phút. Lesson và outline đã sửa theo; các mục 6.2 và 6.3 giữ lại như bản đề xuất ban đầu.
 
 ### 6.1 Ý tưởng dẫn dắt
 

@@ -53,7 +53,7 @@ Objective chi tiết từng buổi: [`lesson-details.md`](../lesson-details.md).
 ## 5. Người học
 
 - **Đối tượng:** UI/UX và product designer mức mid và senior, có ít nhất 2 đến 3 năm kinh nghiệm [to confirm con số], không cần biết code.
-- **Điều kiện đầu vào:** có một project thật của chính mình để làm xuyên suốt 6 tuần. Project của khoá (Kitchen Crate, hư cấu) là phương án dự phòng. Tài liệu bảo mật được ẩn danh trước.
+- **Điều kiện đầu vào:** có một project thật của chính mình để làm xuyên suốt 6 tuần. Project của khoá (Delivery App, hư cấu) là phương án dự phòng. Tài liệu bảo mật được ẩn danh trước.
 - **Không phù hợp:** chưa có project; muốn học thiết kế sản phẩm AI hoặc mẹo prompt cho một công cụ.
 - **Chưa quyết định:** có mở cho junior, PO, PM, BA hay không (lesson buổi 1 vẫn có ghi chú cho lớp có PO, PM, BA).
 

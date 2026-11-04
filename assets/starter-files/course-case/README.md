@@ -1,4 +1,4 @@
-# Course project: Kitchen Crate (fictional)
+# Course project: Delivery App (fictional)
 
 **Everything in this folder is invented.** No real company, person, review or number.
 

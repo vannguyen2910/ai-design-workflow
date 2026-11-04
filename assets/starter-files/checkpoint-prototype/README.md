@@ -1,6 +1,6 @@
 # Checkpoint prototype (week 6)
 
-A working three-screen first-box flow for the fictional Kitchen Crate project, built on the starter design system. Use it if you missed week 5, or if you want a known starting point for the refine and alignment-check practice. Open `index.html` in a browser.
+A working three-screen first-box flow for the fictional Delivery App project, built on the starter design system. Use it if you missed week 5, or if you want a known starting point for the refine and alignment-check practice. Open `index.html` in a browser.
 
 **Flow:** Start, Choose your delivery day, Check your first box (then "You are set").
 

@@ -16,14 +16,14 @@ Buổi 2 của chương trình (tuần 1), sau buổi 1 (project folder, data ru
 
 Hình dạng của chương trình này (quyết định 2026-10-22): mỗi lesson có **ice breaker**, **theory** và **một activity ngắn trên lớp**; phần luyện tập dài nằm ở **bài tập về nhà** và **Check point** (buổi 5, 9, 12). Vì vậy buổi không theo mức tối thiểu 30 phút practice của Rule LP-3; ghi chú lệch quy tắc này ở `plan.md` mục 3. **Quy tắc engagement (đề xuất 2026-10-22, áp dụng cho mọi lesson):** (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và học viên tự bắt được. Activity bên dưới là phương án mặc định, Winnie có thể thay khi soạn lesson mà không phải đổi cấu trúc buổi.
 
-Running example cho phần giảng là app meal-kit hư cấu (Kitchen Crate) đã dùng ở buổi 1; activity chạy trên project của chính học viên trong project folder đã dựng ở nhà.
+Running example cho phần giảng là app meal-kit hư cấu (Delivery App) đã dùng ở buổi 1; activity chạy trên project của chính học viên trong project folder đã dựng ở nhà.
 
 1. **Ice breaker, 6 phút:** mỗi người nói tên và một câu: "Brief gần nhất bạn nhận nêu vấn đề cần giải, hay chỉ nêu giải pháp cần làm?" Giảng viên ghi nhanh hai cột "vấn đề" và "giải pháp"; quay lại bảng này ở T1. Nhắc nhanh bài tập buổi 1.
 2. **Theory, 40 phút (4 phần, mỗi phần kết thúc bằng một câu hỏi 30 giây, không có activity trong khối này):**
    - T1, 8 phút: Business question và lập trường partner. Bắt đầu từ mục tiêu, ý tưởng hoặc vấn đề; brief hay PRD có sẵn là điểm xuất phát để cùng kiểm tra, không phải thứ để sửa.
-   - T2, 12 phút: Chuẩn bị trao đổi cùng AI. Demo trên Kitchen Crate: AI soạn nháp câu hỏi cho business, liệt kê điều đang tin (assumption) và evidence đang có hoặc đang thiếu; học viên đối chiếu với điều mình thật sự biết. Ba mức access (full, limited, none) và đường văn bản là đường chính. AI không bao giờ đóng vai PO.
+   - T2, 12 phút: Chuẩn bị trao đổi cùng AI. Demo trên Delivery App: AI soạn nháp câu hỏi cho business, liệt kê điều đang tin (assumption) và evidence đang có hoặc đang thiếu; học viên đối chiếu với điều mình thật sự biết. Ba mức access (full, limited, none) và đường văn bản là đường chính. AI không bao giờ đóng vai PO.
    - T3, 8 phút: Success metric, baseline và scope chung. Hỏi business về outcome, metric và baseline; metric chưa xác nhận ghi là "assumed"; scope kèm agreement status (agreed, pending, not available).
-   - T4, 12 phút: Đánh giá trải nghiệm hiện tại theo heuristic. Principle trước, AI sau: mười heuristic của Nielsen, AI soạn nháp một finding cho mỗi heuristic kèm evidence, học viên kiểm tra từng finding và chấm severity. Demo trọn một flow của Kitchen Crate; học viên tự làm trên project của mình ở bài tập về nhà.
+   - T4, 12 phút: Đánh giá trải nghiệm hiện tại theo heuristic. Principle trước, AI sau: mười heuristic của Nielsen, AI soạn nháp một finding cho mỗi heuristic kèm evidence, học viên kiểm tra từng finding và chấm severity. Demo trọn một flow của Delivery App; học viên tự làm trên project của mình ở bài tập về nhà.
 3. **Bridge, 4 phút:** nghỉ ngắn, hai câu kiểm tra nhanh, cheat sheet một màn hình (câu hỏi cho business, ba mức access).
 4. **Activity trên lớp, 18 phút: "Đoán trước điều AI sẽ tìm ra".** Đây là activity duy nhất trên lớp. Phương án mặc định:
    - Cá nhân, 4 phút: viết 3 điều đang tin về project mà chưa có evidence, chưa mở AI tool.
@@ -49,7 +49,7 @@ Tổng: 6 + 40 + 4 + 18 + 8 + 6 = 82 phút, buffer 8 phút. Nếu quá giờ, th
 ## Key decisions
 
 **Running example và lý do**
-- Phần giảng dùng Kitchen Crate (meal-kit hư cấu, đã quen từ buổi 1) để học viên không phải đoán bối cảnh; activity chạy trên project của chính học viên (hoặc project mẫu của khoá nếu project nhạy cảm).
+- Phần giảng dùng Delivery App (meal-kit hư cấu, đã quen từ buổi 1) để học viên không phải đoán bối cảnh; activity chạy trên project của chính học viên (hoặc project mẫu của khoá nếu project nhạy cảm).
 
 **AI xuất hiện ở đâu, và manual trước AI**
 - AI: soạn nháp câu hỏi cho business, danh sách điều đang tin, và finding heuristic.

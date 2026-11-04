@@ -1,6 +1,6 @@
-# Project mẫu: Kitchen Crate (hư cấu)
+# Project mẫu: Delivery App (hư cấu)
 
-Kitchen Crate là một app meal-kit theo gói đăng ký. Khách chọn gói (2 hoặc 4 người, 3 hoặc 4 bữa tối mỗi tuần), chọn ngày giao, và mỗi tuần nhận một hộp nguyên liệu kèm thẻ công thức.
+Delivery App là một app meal-kit theo gói đăng ký. Khách chọn gói (2 hoặc 4 người, 3 hoặc 4 bữa tối mỗi tuần), chọn ngày giao, và mỗi tuần nhận một hộp nguyên liệu kèm thẻ công thức.
 
 **Vấn đề team thấy:** nhiều khách mới tạm dừng hoặc huỷ sau hộp đầu tiên. Team muốn cải thiện onboarding.
 

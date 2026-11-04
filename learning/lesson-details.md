@@ -296,7 +296,7 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 4. Phản biện một insight và giữ ý kiến trái chiều.
 5. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu, và đóng góp một insight đã kiểm tra vào insight hub.
 
-**Key activity:** **persona có insight hay không** (14 phút, theo cặp, không dùng AI) trên bộ insight của project Kitchen Crate (`assets/starter-files/course-case/insight-set.md`, `persona-ai-draft.md`). Mỗi người đánh dấu từng dòng của persona do AI sinh có insight ID đỡ hay không, rồi bạn cùng cặp mở source ID để đối chiếu, mỗi lỗi kèm insight ID. Việc làm trên insight của học viên nằm ở Practice 3.
+**Key activity:** **persona có insight hay không** (14 phút, theo cặp, không dùng AI) trên bộ insight của project Delivery App (`assets/starter-files/course-case/insight-set.md`, `persona-ai-draft.md`). Mỗi người đánh dấu từng dòng của persona do AI sinh có insight ID đỡ hay không, rồi bạn cùng cặp mở source ID để đối chiếu, mỗi lỗi kèm insight ID. Việc làm trên insight của học viên nằm ở Practice 3.
 
 *Chia giờ 90 phút (không còn buffer, 2026-11-01):* ice breaker 6, ôn nguyên tắc và insight 5, persona 14, journey map 13, opportunity 11, activity 14, insight hub 8, package 6, hỏi đáp 8, close 5. Cấu trúc ở `lessons/03-research-you-can-trust/assets/lesson-structure.html`. Chưa thử với một lớp thật.
 

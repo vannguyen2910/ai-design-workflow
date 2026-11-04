@@ -1,4 +1,4 @@
-# Persona draft from an AI (Kitchen Crate, fictional)
+# Persona draft from an AI (Delivery App, fictional)
 
 **Instructor note: this file contains the answer key at the bottom. Cut it off before sharing.**
 

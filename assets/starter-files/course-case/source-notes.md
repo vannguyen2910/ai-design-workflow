@@ -1,4 +1,4 @@
-# Source notes: Kitchen Crate (fictional)
+# Source notes: Delivery App (fictional)
 
 **All notes are invented.** There are 24, from three kinds of source:
 - **R01 to R10:** app store reviews

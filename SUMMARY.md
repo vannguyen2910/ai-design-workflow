@@ -21,7 +21,7 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 
 ## Resources
 
-- [Project mẫu: Kitchen Crate](assets/starter-files/course-case/case-card.md)
+- [Project mẫu: Delivery App](assets/starter-files/course-case/case-card.md)
 - [Gates](assets/starter-files/case-folder-template/hub/gates.md)
 - [Method Cards](assets/method-cards/README.md)
   - [Competitor analysis](assets/method-cards/01-discover/competitor-analysis.md)
@@ -132,12 +132,12 @@ Not shown. Move a line above the comment to publish it.
 - [Workflow: Refresh the Hub](assets/starter-files/case-folder-template/tools/step-refresh-hub.md)
 - [Workflow: User-Voice Synthesis](assets/starter-files/case-folder-template/tools/step-user-voice-synthesis.md)
 - [Checkpoint prototype (week 6)](assets/starter-files/checkpoint-prototype/README.md)
-- [Course project: Kitchen Crate (fictional)](assets/starter-files/course-case/README.md)
-- [Project mẫu: Kitchen Crate (hư cấu)](assets/starter-files/course-case/case-card.md)
-- [Stand-in PO project pack: Kitchen Crate (fictional)](assets/starter-files/course-case/po-case-pack.md)
+- [Course project: Delivery App (fictional)](assets/starter-files/course-case/README.md)
+- [Project mẫu: Delivery App (hư cấu)](assets/starter-files/course-case/case-card.md)
+- [Stand-in PO project pack: Delivery App (fictional)](assets/starter-files/course-case/po-case-pack.md)
 - [Source notes: answer key (instructor only)](assets/starter-files/course-case/source-notes-answer-key.md)
-- [Source notes: Kitchen Crate (fictional)](assets/starter-files/course-case/source-notes.md)
-- [Insight set: Kitchen Crate (fictional)](assets/starter-files/course-case/insight-set.md)
+- [Source notes: Delivery App (fictional)](assets/starter-files/course-case/source-notes.md)
+- [Insight set: Delivery App (fictional)](assets/starter-files/course-case/insight-set.md)
 - [Competitor pages (fictional)](assets/starter-files/course-case/competitors/README.md)
 - [Daily Larder (fictional) — public page](assets/starter-files/course-case/competitors/dailylarder.md)
 - [HomeHarvest (fictional) — public page](assets/starter-files/course-case/competitors/homeharvest.md)

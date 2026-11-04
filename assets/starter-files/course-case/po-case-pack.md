@@ -1,15 +1,15 @@
-# Stand-in PO project pack: Kitchen Crate (fictional)
+# Stand-in PO project pack: Delivery App (fictional)
 
 *Built from `../../templates/po-case-pack-template.md`. Use it when you have no real PO to talk to. A person plays the PO, from this pack; the AI never plays the PO.*
 
 ## 1. For the student (share before the meeting)
-- **Company:** Kitchen Crate, a meal-kit subscription app (fictional).
+- **Company:** Delivery App, a meal-kit subscription app (fictional).
 - **The business question, as the business says it:** "Too many new customers pause after the first box. We want more of them to stay."
 - **What exists:** the project card (`case-card.md`). No PRD yet.
 - **Time for the meeting:** 15 minutes.
 
 ## 2. For the PO player only (do not share)
-**Role:** Head of Product at Kitchen Crate. **Manner:** busy and friendly; moves fast, but gives detail when asked a good question.
+**Role:** Head of Product at Delivery App. **Manner:** busy and friendly; moves fast, but gives detail when asked a good question.
 
 | The student asks about | The PO knows (say only when asked) |
 |---|---|

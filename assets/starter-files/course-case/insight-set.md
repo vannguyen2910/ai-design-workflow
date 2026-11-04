@@ -1,4 +1,4 @@
-# Insight set: Kitchen Crate (fictional)
+# Insight set: Delivery App (fictional)
 
 **All insights are invented.** They are what a designer's Lesson 2 work could hand to Lesson 3. Each one has an insight ID, a source type, the source IDs it rests on (see `source-notes.md`), and a strength. Persona, journey map and opportunity lines must cite these insight IDs.
 

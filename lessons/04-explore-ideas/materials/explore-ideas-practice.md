@@ -20,7 +20,7 @@ Từ map có opportunity (Lesson 3) đến **một hướng đã chọn và flow
 - Journey map hoặc user flow hiện tại (friction point)
 - Bộ nguyên tắc từ Lesson 2
 
-Designer chưa có thì dùng Kitchen Crate (`assets/starter-files/course-case/`).
+Designer chưa có thì dùng Delivery App (`assets/starter-files/course-case/`).
 
 ## Steps
 
