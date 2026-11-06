@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ee3a59507d8b3eca",
+        "id": "793f812785352d97",
         "type": "tabs",
         "children": [
           {
-            "id": "8d735e918affe134",
+            "id": "a9aef7fe9cffe2d0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "research-you-can-trust-slide-outline"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -83,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 301.12890625
   },
   "right": {
     "id": "751b1c58325669c6",
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +155,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,24 +181,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "8d735e918affe134",
+  "active": "e41d5f3d35d2cd99",
   "lastOpenFiles": [
+    "_archive/Program - AI Design Workflow.zip",
+    "graphify-out/manifest.json",
+    "graphify-out/graph.html",
+    "graphify-out/GRAPH_REPORT.md",
+    "graphify-out/graph.json",
+    "graphify-out/cache/semantic/p3d3a4e0b5d54/11756696bb2900b820419a8816fed5972ec19d2b94b855280bd3e6496a19d9de.json",
+    "graphify-out/cache/semantic/p3d3a4e0b5d54/eade5bd346bbe5411f9732eb1bbe65c7cfe06043f9f19f27a0b243a0066720e7.json",
+    "graphify-out/cache/semantic/p3d3a4e0b5d54/2df992e98573068434503874a673cc40478bac8c5aef1861cbf1f1d5368eda88.json",
+    "graphify-out/cache/semantic/p3d3a4e0b5d54/ecbd14ff0c9f7f0a188d862f01f43384038eab93c03fe7a0d2d484465b20743d.json",
+    "graphify-out/cache/semantic/p3d3a4e0b5d54/0298e194a1c57318d7938369e96d1412c0acb18780d1788846bf00458b049612.json",
+    "graphify-out/cache/semantic/p3d3a4e0b5d54/ade498d3f4e11412107707836768b3be94435c9e447b84ab58ab620411f76e5a.json",
+    "graphify-out/cache/semantic/p3d3a4e0b5d54/68a97079d14f71daf9bc5462ded188ccae07c9926bfdbd5761f93016d8df6d94.json",
+    "lessons/04-explore-ideas/materials/explore-ideas-slide-outline.md",
+    "lessons/04-explore-ideas/materials/explore-ideas-practice.md",
+    "lessons/04-explore-ideas/materials/explore-ideas-lesson.md",
+    "learning/slide-outline-standard-slides.md",
+    "Untitled.canvas",
+    "2026-11-04.md",
+    "lessons/03-research-you-can-trust/materials/research-you-can-trust-slide-outline.md",
     "lessons/03-research-you-can-trust/materials/_archive/research-you-can-trust-slide-outline-pre-insights-2026-11-01.md",
     "lessons/03-research-you-can-trust/materials/_archive/research-you-can-trust-practice-pre-insights-2026-11-01.md",
     "lessons/03-research-you-can-trust/materials/_archive/research-you-can-trust-lesson-pre-insights-2026-11-01.md",
-    "lessons/03-research-you-can-trust/assets/three-steps-with-ai.html",
-    "lessons/03-research-you-can-trust/assets/source-check.html",
-    "lessons/03-research-you-can-trust/assets/lesson-structure.html",
     "lessons/03-research-you-can-trust/assets/journey-map-example.webp",
     "lessons/02-discover-the-problem/materials/_archive/discover-the-problem-slide-outline-pre-insights-2026-11-01.md",
     "lessons/02-discover-the-problem/materials/_archive/discover-the-problem-practice-pre-insights-2026-11-01.md",
     "lessons/02-discover-the-problem/materials/_archive/discover-the-problem-lesson-pre-insights-2026-11-01.md",
-    "lessons/02-discover-the-problem/assets/three-steps-with-ai.html",
-    "lessons/02-discover-the-problem/assets/source-check.html",
-    "learning/tooling/toolkit-refactor-stage.sh",
     "learning/tooling/toolkit-refactor-plan.md",
     "learning/tooling/github-setup-and-publish.md",
-    "learning/tooling",
     "learning/reference/source-verification-lesson-1.md",
     "learning/reference/lesson-5-activity-rule-break-hunt.md",
     "learning/reference/five-excerpts-answer-key.md",
@@ -215,14 +220,6 @@
     "learning/reference/ai-mental-model.md",
     "learning/reference/ai-in-prototype.md",
     "learning/reference/ai-in-insights.md",
-    "learning/reference/ai-in-discover.md",
-    "learning/reference/agentic-ai-concepts.md",
-    "learning/reference/agent-frameworks-product-design.md",
-    "learning/reference",
-    "learning/lesson-3-research-questions.md",
-    "assets/starter-files/course-case/source-notes.md",
-    "assets/starter-files/course-case/source-notes-answer-key.md",
-    "assets/starter-files/course-case/persona-ai-draft.md",
-    "assets/starter-files/course-case/insight-set.md"
+    "learning/reference/ai-in-discover.md"
   ]
 }
