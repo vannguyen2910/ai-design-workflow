@@ -18,7 +18,7 @@ Every lesson has a starting point, so nobody is blocked if homework was skipped.
 
 ## Two kinds of file
 - **Templates** (`case-folder-template/`): empty, for your own project. They hold prompts, not answers.
-- **Course project** (`course-case/`, `checkpoint-prototype/`): a fictional meal-kit app. Use it when your company bans AI tools, your project is too sensitive for class, or you missed a week and need to catch up. Everything in it is invented.
+- **Course project** (`course-case/`, `checkpoint-prototype/`): a fictional food delivery app. Use it when your company bans AI tools, your project is too sensitive for class, or you missed a week and need to catch up. Everything in it is invented.
 
 ## Rules for every file
 1. Anonymise anything real before it goes into an AI tool or into class.

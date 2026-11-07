@@ -67,16 +67,16 @@ GOAL hoặc PROBLEM          (Lesson 3)
 
 Journey map và user flow hiện tại cho thấy các friction point: bước người dùng gặp khó, chỗ chuyển giao bị đứt, bước mất nhiều thời gian, bước không cho kết quả rõ ràng. Mỗi friction point là một opportunity tiềm năng trên map, và mỗi opportunity nên gắn với một bước thật trong flow. Nếu một opportunity không gắn với bước nào, có thể flow chưa đủ hoặc opportunity đó yếu hơn dự kiến.
 
-Ví dụ trong Delivery App: IN-01 (khách mới không biết ngày giao đã chốt) và IN-02 (khó tìm chỗ tạm dừng, cut-off không hiện) cùng trỏ về bước "chọn và đổi ngày giao". Hai friction point nằm ở một bước, nên chúng thuộc cùng một nhánh opportunity: *khách mới gặp khó khi muốn đổi hoặc tạm dừng vì không thấy cut-off đúng lúc đang quyết định.*
+Ví dụ trong Delivery App: IN-01 (khách mới không biết khung giờ giao đã chốt) và IN-02 (khó tìm chỗ huỷ đơn, cut-off không hiện) cùng trỏ về bước "chọn và đổi khung giờ giao". Hai friction point nằm ở một bước, nên chúng thuộc cùng một nhánh opportunity: *khách mới gặp khó khi muốn đổi hoặc huỷ đơn vì không thấy cut-off đúng lúc đang quyết định.*
 
 ### 1.3 Solution as How Might We
 
-Solution được viết thành câu HMW, giữ user need làm ràng buộc: "Làm sao để khách thấy cut-off ngay tại chỗ họ chọn ngày giao?" Câu HMW không chứa sẵn giải pháp nên nghĩ được nhiều solution khác nhau. Một câu đã ghi "thêm banner" thì chỉ còn một đáp án.
+Solution được viết thành câu HMW, giữ user need làm ràng buộc: "Làm sao để khách thấy cut-off ngay tại chỗ họ chọn khung giờ giao?" Câu HMW không chứa sẵn giải pháp nên nghĩ được nhiều solution khác nhau. Một câu đã ghi "thêm banner" thì chỉ còn một đáp án.
 
 | Viết thành tính năng | Viết thành HMW |
 |---|---|
-| Thêm banner cảnh báo cut-off | Làm sao để khách thấy cut-off ngay tại chỗ họ chọn ngày giao? |
-| Làm nút Pause to hơn | Làm sao để khách tìm thấy cách tạm dừng đúng lúc họ cần, thay vì phải đi tìm? |
+| Thêm banner cảnh báo cut-off | Làm sao để khách thấy cut-off ngay tại chỗ họ chọn khung giờ giao? |
+| Làm nút Huỷ đơn to hơn | Làm sao để khách tìm thấy cách huỷ đơn đúng lúc họ cần, thay vì phải đi tìm? |
 
 ### 1.4 Activity: add solutions to one branch (10 phút)
 
@@ -85,7 +85,7 @@ Solution được viết thành câu HMW, giữ user need làm ràng buộc: "L�
 3. (4 phút) Hỏi AI: "Các solution này cùng dựa trên giả định nào? Cho tôi ba solution đi ngược giả định đó, mỗi solution kèm opportunity ID." Những ý thật sự mới thì thêm vào map và ghi rõ là từ AI.
 4. (1 phút) Đọc lại cả cây: nhánh nào dày, nhánh nào còn trống, solution nào chưa dẫn về opportunity.
 
-*Ví dụ trong Delivery App:* AI chỉ ra rằng các solution của người viết đều giả định khách sẽ nhìn thấy màn đổi ngày. Một ý đi ngược giả định đó là nhắc cut-off qua tin nhắn. Khi hỏi AI trước, cả lớp chỉ ra "banner cut-off". Khi viết trước, lớp có thêm ý "chốt ngày sau khi xem menu".
+*Ví dụ trong Delivery App:* AI chỉ ra rằng các solution của người viết đều giả định khách sẽ nhìn thấy màn đổi khung giờ. Một ý đi ngược giả định đó là nhắc cut-off qua tin nhắn. Khi hỏi AI trước, cả lớp chỉ ra "banner cut-off". Khi viết trước, lớp có thêm ý "chốt khung giờ sau khi xem menu".
 
 Dữ liệu là map của bạn, hoặc Delivery App. Kết quả là map đã có tầng solution, mỗi solution ghi rõ do bạn nghĩ hay do AI đề xuất. Điều kiện duy nhất: không hỏi AI trước bước 2.
 
@@ -106,7 +106,7 @@ Một nghiên cứu về brainstorm có ChatGPT (Wharton Mack Institute, đăng 
 
 **Dùng map làm ngữ cảnh.** Bạn đưa map (dạng markdown, mỗi dòng có ID) vào AI và yêu cầu mỗi solution kèm opportunity ID. Câu trả lời không có ID nào là câu đoán. Cách này nối tiếp quy tắc "mỗi dòng dẫn về insight ID" của Lesson 3.
 
-*Ví dụ trong Delivery App:* AI đề xuất "nhắc cut-off 24 giờ trước" kèm opportunity về cut-off thì được đưa vào map. AI đề xuất "giảm giá hộp đầu" mà không kèm ID nào thì được ghi là hypothesis, và IN-04 cho thấy giá không phải lý do chính.
+*Ví dụ trong Delivery App:* AI đề xuất "nhắc cut-off 30 phút trước" kèm opportunity về cut-off thì được đưa vào map. AI đề xuất "giảm giá đơn đầu" mà không kèm ID nào thì được ghi là hypothesis, và IN-04 cho thấy giá không phải lý do chính.
 
 Các nghiên cứu về agent trong design workflow mô tả AI đọc tài liệu của designer thông qua retrieval hoặc MCP thay vì dán tay. Đây mới là một hướng đi, chưa phải quy trình đã thử với lớp.
 
@@ -124,7 +124,7 @@ Các nghiên cứu về agent trong design workflow mô tả AI đọc tài li�
 
 Concept sketch là công cụ để nghĩ, không phải wireframe. Một sketch gồm bốn phần: khoảnh khắc chính (một khoảnh khắc làm concept dễ hiểu, không phải cả flow), nhãn thành phần, ghi chú ý đồ, và một câu "This works because..." không kèm điều kiện. Người chưa nghe giải thích đọc được sketch trong khoảng 30 giây.
 
-**Four steps, one moment.** (1) Chọn một ý, ý thú vị nhất trên map. (2) Vẽ khoảnh khắc chính. (3) Ghi nhãn, không làm đẹp. (4) Viết "This works because...". *Ví dụ trong Delivery App:* vẽ màn chọn ngày giao có một chip "Chốt trong 2 ngày", với rationale: "This works because khách thấy cut-off ngay lúc đang quyết định".
+**Four steps, one moment.** (1) Chọn một ý, ý thú vị nhất trên map. (2) Vẽ khoảnh khắc chính. (3) Ghi nhãn, không làm đẹp. (4) Viết "This works because...". *Ví dụ trong Delivery App:* vẽ màn chọn khung giờ giao có một chip "Chốt trước 15 phút", với rationale: "This works because khách thấy cut-off ngay lúc đang quyết định".
 
 **Ví dụ thật.** Hai sketch thật từ các lớp trước. Một là sản phẩm QR seat-unlock với hai hành trình đặt cạnh nhau (quét QR, đặt chỗ, thanh toán; hoặc tải app trước rồi mới quét), mỗi hành trình có nhãn viết tay và khung Pros/Cons. Hai là ba concept urban farming vẽ trong 10 phút (seasonal pack, farm-partner flow, phygital grocery) với mức hoàn thiện khác nhau. Bạn thử xem concept nào đọc nhanh nhất trong 30 giây, và vì sao.
 
@@ -144,9 +144,9 @@ Bạn làm concept sketch cho project của mình ở bài tập về nhà.
 | **How with AI** | AI biến ghi chú walkthrough thành bảng, tìm friction so với mục tiêu và đề xuất ít nhất ba cấu trúc khác cho bước tệ nhất |
 | **AI không làm** | Vẽ diagram trước khi bảng được kiểm tra |
 
-**Task flow và user flow.** Task flow là chuỗi tuyến tính của đường đi dự kiến, không có nhánh lỗi, dùng để thống nhất phạm vi. User flow có đủ nhánh, lỗi và điểm kết, dùng trước khi dựng prototype. Bạn vẽ task flow trước rồi mới mở rộng thành user flow. *Ví dụ trong Delivery App:* task flow "đổi ngày giao hộp tuần sau" có bốn bước, còn user flow thêm nhánh "đã qua cut-off" và "lỗi thanh toán".
+**Task flow và user flow.** Task flow là chuỗi tuyến tính của đường đi dự kiến, không có nhánh lỗi, dùng để thống nhất phạm vi. User flow có đủ nhánh, lỗi và điểm kết, dùng trước khi dựng prototype. Bạn vẽ task flow trước rồi mới mở rộng thành user flow. *Ví dụ trong Delivery App:* task flow "đổi khung giờ giao của đơn đã đặt" có bốn bước, còn user flow thêm nhánh "đã qua cut-off" và "lỗi thanh toán".
 
-**Vì sao AI không được vẽ trước.** AI vẽ ra một flow gọn từ mô tả một dòng, và người xem không còn phân biệt được đâu là thật. *Ví dụ trong Delivery App:* AI vẽ flow đổi ngày giao có sáu bước, còn sản phẩm thật có bảy vì có thêm bước xác nhận cut-off. Vì vậy quy trình đi theo bảng trước, diagram sau:
+**Vì sao AI không được vẽ trước.** AI vẽ ra một flow gọn từ mô tả một dòng, và người xem không còn phân biệt được đâu là thật. *Ví dụ trong Delivery App:* AI vẽ flow đổi khung giờ giao có sáu bước, còn sản phẩm thật có bảy vì có thêm bước xác nhận cut-off. Vì vậy quy trình đi theo bảng trước, diagram sau:
 
 1. Bạn thu thập ghi chú walkthrough.
 2. AI soạn nháp bảng.
@@ -185,7 +185,7 @@ Khi quy trình user flow và process map đã chạy ổn, bạn đóng gói nó
 3. Gắn skill cho một agent để agent chạy đúng quy trình này mỗi lần cần.
 4. Đặt skill và file output vào Knowledge Hub của project để buổi sau dùng lại.
 
-Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai task khác nhau, và phần bạn kiểm tra đã được ghi rõ. Đóng gói quá sớm là đóng gói luôn cả lỗi. Skill không thay được bước kiểm tra bảng và bước quyết định fix. *Ví dụ trong Delivery App:* skill "user flow và process map" chạy lần một với task đổi ngày giao, lần hai với task tạm dừng, rồi mới được đóng gói.
+Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai task khác nhau, và phần bạn kiểm tra đã được ghi rõ. Đóng gói quá sớm là đóng gói luôn cả lỗi. Skill không thay được bước kiểm tra bảng và bước quyết định fix. *Ví dụ trong Delivery App:* skill "user flow và process map" chạy lần một với task đổi khung giờ giao, lần hai với task huỷ đơn, rồi mới được đóng gói.
 
 ---
 
@@ -193,7 +193,7 @@ Khi quy trình user flow và process map đã chạy ổn, bạn đóng gói nó
 
 | Sai lầm | Biểu hiện | Cách sửa |
 |---|---|---|
-| Viết solution thành opportunity | "Opportunity: thêm banner" | Viết lại thành user need: "khách không thấy cut-off khi chọn ngày" |
+| Viết solution thành opportunity | "Opportunity: thêm banner" | Viết lại thành user need: "khách không thấy cut-off khi chọn khung giờ" |
 | Hỏi AI trước | Ý số một của bạn là ý của AI | Viết solution của mình trước, rồi mới hỏi |
 | Solution không có opportunity | Phía trên solution không có opportunity nào | Tìm opportunity phù hợp, hoặc ghi hypothesis |
 | Sketch quá đẹp | Mất thời gian vẽ, không ghi nhãn | Giữ sketch thô và ghi nhãn mọi thành phần |

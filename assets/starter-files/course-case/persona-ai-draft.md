@@ -8,9 +8,9 @@ An AI wrote this persona from general knowledge and the insight set. Mark each l
 
 1. Works long days and wants dinner without planning.
 2. Aged 28 to 35, lives in a city flat, shops at a supermarket twice a week.
-3. Picks a delivery date quickly, without checking whether they will be home.
-4. Compares prices with the supermarket and leaves when the box feels expensive.
-5. Wants to pause or skip when travelling, and cannot find where.
+3. Picks a delivery time slot quickly, without checking whether they will be home.
+4. Compares prices with the restaurant and leaves when the delivery fee feels expensive.
+5. Wants to cancel or change an order when plans change, and cannot find where.
 6. Loves trying new cuisines and is excited by variety.
 
 ---

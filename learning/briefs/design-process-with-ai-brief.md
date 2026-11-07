@@ -61,7 +61,7 @@ Việc dựng project folder và chia sẻ hub chuyển thành mục tiêu của
 ## Key decisions
 
 **Running example và lý do**
-- Delivery App (meal-kit hư cấu) cho cả demo T3 và bộ năm đoạn trích của Activity, để học viên không phải mang tài liệu thật vào lớp trước khi có data rules.
+- Delivery App (app giao đồ ăn hư cấu) cho cả demo T3 và bộ năm đoạn trích của Activity, để học viên không phải mang tài liệu thật vào lớp trước khi có data rules.
 
 **AI xuất hiện ở đâu, và manual trước AI**
 - AI: trả lời hai instruction ở demo T3; xếp năm đoạn trích ở Activity.

@@ -18,7 +18,7 @@ last_synced: 2026-11-04
 | Stage | Develop |
 | Prior session | Buổi 3: Turn Research into Insights You Can Trust |
 | Next session | Buổi practice, rồi buổi 5: AI Prototyping |
-| Running example | project Delivery App hư cấu: IN-01 và IN-02 cùng trỏ về bước chọn và đổi ngày giao; opportunity "khách mới gặp khó khi muốn đổi hoặc tạm dừng vì không thấy cut-off" |
+| Running example | project Delivery App hư cấu: IN-01 và IN-02 cùng trỏ về bước chọn và đổi khung giờ giao; opportunity "khách mới gặp khó khi muốn đổi hoặc huỷ đơn vì không thấy cut-off" |
 | Chia giờ `[to confirm]` | ice breaker 6, mở lại map 8, solution HMW 6, activity 10, AI sinh solution 6, concept sketching 10, user flow 12, process map 10, package 8, hỏi đáp và close 13 (tổng 89) |
 
 ---
@@ -94,7 +94,7 @@ last_synced: 2026-11-04
   - Buổi 3: Goal hoặc Problem, rồi đến Opportunity
   - Buổi 4: thêm Solution dưới mỗi Opportunity
   - Mỗi opportunity vẫn dẫn về insight ID
-- Ví dụ: có (Delivery App: opportunity về cut-off ngày giao, dẫn về IN-01 và IN-02, chưa có solution nào)
+- Ví dụ: có (Delivery App: opportunity về cut-off khung giờ giao, dẫn về IN-01 và IN-02, chưa có solution nào)
 - Câu hỏi hay gặp:
   - Map của mình chưa có insight ID thì sao? Sửa opportunity trước khi nghĩ solution. Solution dựng trên opportunity chưa có căn cứ chỉ là đoán.
 - Speaker notes:
@@ -117,7 +117,7 @@ last_synced: 2026-11-04
 - Kicker: Nối với flow
 - Title: Mỗi friction point là một\n*opportunity tiềm năng*
 - On-slide: Mỗi opportunity nên gắn với một bước thật trong flow
-- Ví dụ: có (Delivery App: hai friction point về ngày giao và tạm dừng cùng nằm ở bước chọn ngày, nên thuộc cùng một nhánh)
+- Ví dụ: có (Delivery App: hai friction point về khung giờ giao và huỷ đơn cùng nằm ở bước chọn khung giờ, nên thuộc cùng một nhánh)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
@@ -137,9 +137,9 @@ last_synced: 2026-11-04
 - Title: Nhu cầu hay giải pháp?
 - On-slide:
   - Tính năng: thêm banner cảnh báo cut-off
-  - HMW: làm sao để khách thấy cut-off ngay chỗ chọn ngày giao?
+  - HMW: làm sao để khách thấy cut-off ngay chỗ chọn khung giờ giao?
   - Câu HMW không chứa sẵn đáp án
-- Ví dụ: có (Delivery App: "thêm banner cut-off" và "làm nút Pause to hơn", viết lại thành HMW)
+- Ví dụ: có (Delivery App: "thêm banner cut-off" và "làm nút Huỷ đơn to hơn", viết lại thành HMW)
 - Câu hỏi hay gặp:
   - Opportunity và HMW khác nhau thế nào? Opportunity mô tả khó khăn của người dùng. HMW là câu hỏi để nghĩ ra solution cho khó khăn đó.
 - Speaker notes:
@@ -152,7 +152,7 @@ last_synced: 2026-11-04
 
   > **Một câu hỏi tốt cho ra nhiều câu trả lời khác nhau.**
 
-  > Câu hỏi 30 giây: câu nào là HMW? "Thêm nút Pause" hay "Làm sao để khách tìm thấy cách tạm dừng khi cần?" Gõ A hoặc B vào chat.
+  > Câu hỏi 30 giây: câu nào là HMW? "Thêm nút Huỷ đơn" hay "Làm sao để khách tìm thấy cách huỷ đơn khi cần?" Gõ A hoặc B vào chat.
 
   > Trong map của bạn, opportunity nào thật ra là một tính năng viết lại?
 - 🎨 Visual hint: SCHEMATIC. Hai cột, trái viết tính năng (xám), phải viết HMW (purple).
@@ -169,13 +169,13 @@ last_synced: 2026-11-04
   - Nếu thiếu: ý tưởng không dẫn về nhu cầu nào, và không biết nhánh nào còn trống
   - When: sau khi opportunity dẫn về insight ID, trước khi sketch
   - Không cần khi: opportunity chưa rõ, nên quay lại sửa opportunity trước
-- Ví dụ: có (Delivery App: nhánh opportunity về cut-off ngày giao; lesson mục 1.2 và 1.3)
+- Ví dụ: có (Delivery App: nhánh opportunity về cut-off khung giờ giao; lesson mục 1.2 và 1.3)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
   > Một solution trên map là câu trả lời cho một opportunity cụ thể, không phải một ý tưởng nghĩ ra rồi để đó.
 
-  - Ví dụ: Delivery App có opportunity "khách mới gặp khó khi muốn đổi hoặc tạm dừng vì không thấy cut-off". Solution nằm dưới nó, chẳng hạn nhắc cut-off ngay chỗ chọn ngày giao
+  - Ví dụ: Delivery App có opportunity "khách mới gặp khó khi muốn đổi hoặc huỷ đơn vì không thấy cut-off". Solution nằm dưới nó, chẳng hạn nhắc cut-off ngay chỗ chọn khung giờ giao
   - AI giúp được ở đâu: đề xuất thêm solution sau khi bạn đã viết, kèm opportunity ID; AI không sinh solution trước và không đề xuất cho opportunity không có trên map
   - Khoảng 4 phút cho slide này
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Gồm, Why, Nếu thiếu, When, Không cần khi; ba cột What, Why, When, mỗi cột hai dòng.
@@ -212,7 +212,7 @@ last_synced: 2026-11-04
   - Viết solution của bạn trước, chưa hỏi AI
   - Hỏi AI về giả định chung, rồi đọc ba ý đi ngược giả định đó
   - Đọc lại cả cây: nhánh nào dày, nhánh nào còn trống
-- Ví dụ: có (bản nháp, Delivery App: AI chỉ ra các solution đều giả định khách sẽ nhìn thấy màn đổi ngày; ý đi ngược giả định là nhắc cut-off qua tin nhắn)
+- Ví dụ: có (bản nháp, Delivery App: AI chỉ ra các solution đều giả định khách sẽ nhìn thấy màn đổi khung giờ; ý đi ngược giả định là nhắc cut-off qua tin nhắn)
 - Câu hỏi hay gặp:
   - Không nghĩ ra đủ ba solution thì sao? Viết được bao nhiêu thì viết, ghi lại điều bạn chưa biết, và vẫn chưa hỏi AI sớm hơn.
   - Solution của AI hay hơn của mình thì sao? Vẫn giữ, ghi là từ AI, và kiểm tra nó dẫn về opportunity nào.
@@ -252,7 +252,7 @@ last_synced: 2026-11-04
   - Hỏi trước: câu trả lời của AI trở thành ý số một
   - Hỏi sau: AI thách thức và mở rộng ý của bạn
   - Nghiên cứu cho thấy ý tưởng kém đa dạng khi AI dẫn đầu
-- Ví dụ: có (bản nháp, Delivery App: hỏi AI trước thì cả lớp đều ra "banner cut-off"; viết trước thì có thêm ý "chốt ngày sau khi xem menu")
+- Ví dụ: có (bản nháp, Delivery App: hỏi AI trước thì cả lớp đều ra "banner cut-off"; viết trước thì có thêm ý "chốt khung giờ sau khi xem menu")
 - Câu hỏi hay gặp:
   - Con số cụ thể của nghiên cứu là gì? Xem nguồn [2] trong lesson. Kết luận là ý tưởng kém đa dạng; cỡ mẫu nằm trong nguồn.
 - Speaker notes:
@@ -280,7 +280,7 @@ last_synced: 2026-11-04
   - Yêu cầu mỗi solution kèm opportunity ID
   - Câu trả lời không có ID là câu đoán
   - Mọi thứ AI sinh ra là hypothesis cho đến khi gắn được với opportunity
-- Ví dụ: có (bản nháp, Delivery App: AI đề xuất "nhắc cut-off 24 giờ trước" kèm ID opportunity về cut-off. AI đề xuất "giảm giá hộp đầu" không có ID nào, nên ghi là hypothesis, và IN-04 cho thấy giá không phải lý do chính)
+- Ví dụ: có (bản nháp, Delivery App: AI đề xuất "nhắc cut-off 30 phút trước" kèm ID opportunity về cut-off. AI đề xuất "giảm giá đơn đầu" không có ID nào, nên ghi là hypothesis, và IN-04 cho thấy giá không phải lý do chính)
 - Câu hỏi hay gặp:
   - AI trích ID sai thì sao? Mở opportunity đó và đối chiếu. Một ID có thật chưa chắc đã đúng ý.
 - Speaker notes:
@@ -367,7 +367,7 @@ last_synced: 2026-11-04
   - Vẽ khoảnh khắc làm concept dễ hiểu nhất
   - Ghi nhãn, không làm đẹp
   - Viết "This works because..." không kèm điều kiện
-- Ví dụ: có (bản nháp, Delivery App: vẽ màn chọn ngày giao có một chip "Chốt trong 2 ngày", rationale: "This works because khách thấy cut-off ngay lúc đang quyết định")
+- Ví dụ: có (bản nháp, Delivery App: vẽ màn chọn khung giờ giao có một chip "Chốt trước 15 phút", rationale: "This works because khách thấy cut-off ngay lúc đang quyết định")
 - Câu hỏi hay gặp:
   - Không biết vẽ thì sao? Hình người que và các ô vuông là đủ. Thứ cần có là nhãn.
   - Rationale có chữ "nếu" hoặc "giả sử" thì sao? Mỗi chữ đó là một giả định đang bị giấu. Hãy ghi giả định đó ra riêng.
@@ -434,7 +434,7 @@ last_synced: 2026-11-04
   - Nếu thiếu: nhánh lỗi và nhánh phụ chỉ lộ ra khi đã dựng xong
   - When: sau khi chọn concept, trước prototype
   - Không cần khi: thay đổi chỉ nằm trong một màn hình
-- Ví dụ: có (Delivery App: task "đổi ngày giao hộp tuần sau", từ lúc mở app đến lúc nhận xác nhận)
+- Ví dụ: có (Delivery App: task "đổi khung giờ giao của đơn đã đặt", từ lúc mở app đến lúc nhận xác nhận)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
@@ -475,7 +475,7 @@ last_synced: 2026-11-04
   - AI vẽ ngay từ mô tả một dòng: flow gọn nhưng không có nguồn
   - Bảng trước: bạn kiểm tra bảng với sản phẩm thật rồi mới vẽ
   - Bảng là nguồn chuẩn, diagram chỉ là cách nhìn bảng
-- Ví dụ: có (bản nháp, Delivery App: AI vẽ flow đổi ngày giao có sáu bước, còn sản phẩm thật có bảy vì có thêm bước xác nhận cut-off)
+- Ví dụ: có (bản nháp, Delivery App: AI vẽ flow đổi khung giờ giao có sáu bước, còn sản phẩm thật có bảy vì có thêm bước xác nhận cut-off)
 - Câu hỏi hay gặp:
   - Làm vậy có mất thời gian hơn không? Có, ở bước kiểm tra bảng. Nhưng đó chính là phần không nên bỏ.
 - Speaker notes:
@@ -503,7 +503,7 @@ last_synced: 2026-11-04
   - AI soạn nháp bảng, bạn kiểm tra
   - AI phân tích bảng đã kiểm tra, bạn chọn fix
   - AI soạn code diagram từ bảng, bạn đối chiếu
-- Ví dụ: có (bản nháp, Delivery App: bảng đổi ngày giao, mỗi hàng gồm bước, người làm, điều xảy ra và nguồn ghi chú)
+- Ví dụ: có (bản nháp, Delivery App: bảng đổi khung giờ giao, mỗi hàng gồm bước, người làm, điều xảy ra và nguồn ghi chú)
 - Câu hỏi hay gặp:
   - Ba gate là gì? Bảng khớp sản phẩm thật, fix bảo vệ được, và diagram khớp bảng.
 - Speaker notes:
@@ -532,7 +532,7 @@ last_synced: 2026-11-04
   - Nếu thiếu: sửa màn hình mà friction vẫn còn
   - When: sau user flow, khi friction không giải thích được bằng màn hình
   - Không cần khi: chỉ có một actor, user flow là đủ
-- Ví dụ: có (bản nháp, Delivery App: lane Khách, App, Kho, Shipper; bước đổi ngày giao liên quan đến lịch của Kho)
+- Ví dụ: có (bản nháp, Delivery App: lane Khách, App, Nhà hàng, Shipper; bước đổi khung giờ giao liên quan đến lịch của Nhà hàng)
 - Câu hỏi hay gặp:
   - Chỉ có một actor thì có cần không? Không, user flow là đủ.
 - Speaker notes:
@@ -591,7 +591,7 @@ last_synced: 2026-11-04
   - Giữ nguyên ba gate
   - Đặt skill và output vào Knowledge Hub
   - Điều kiện: quy trình đã chạy hai lần trên hai task khác nhau
-- Ví dụ: có (bản nháp, Delivery App: skill "user flow và process map" chạy lần một với task đổi ngày giao, lần hai với task tạm dừng)
+- Ví dụ: có (bản nháp, Delivery App: skill "user flow và process map" chạy lần một với task đổi khung giờ giao, lần hai với task huỷ đơn)
 - Câu hỏi hay gặp:
   - Đóng gói sau lần chạy đầu tiên được không? Không nên. Đóng gói quá sớm là đóng gói luôn cả lỗi.
   - Skill có thay được bước kiểm tra bảng không? Không.

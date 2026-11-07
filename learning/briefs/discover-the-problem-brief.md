@@ -16,7 +16,7 @@ Buổi 2 của chương trình (tuần 1), sau buổi 1 (project folder, data ru
 
 Hình dạng của chương trình này (quyết định 2026-10-22): mỗi lesson có **ice breaker**, **theory** và **một activity ngắn trên lớp**; phần luyện tập dài nằm ở **bài tập về nhà** và **Check point** (buổi 5, 9, 12). Vì vậy buổi không theo mức tối thiểu 30 phút practice của Rule LP-3; ghi chú lệch quy tắc này ở `plan.md` mục 3. **Quy tắc engagement (đề xuất 2026-10-22, áp dụng cho mọi lesson):** (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và học viên tự bắt được. Activity bên dưới là phương án mặc định, Winnie có thể thay khi soạn lesson mà không phải đổi cấu trúc buổi.
 
-Running example cho phần giảng là app meal-kit hư cấu (Delivery App) đã dùng ở buổi 1; activity chạy trên project của chính học viên trong project folder đã dựng ở nhà.
+Running example cho phần giảng là app giao đồ ăn hư cấu (Delivery App) đã dùng ở buổi 1; activity chạy trên project của chính học viên trong project folder đã dựng ở nhà.
 
 1. **Ice breaker, 6 phút:** mỗi người nói tên và một câu: "Brief gần nhất bạn nhận nêu vấn đề cần giải, hay chỉ nêu giải pháp cần làm?" Giảng viên ghi nhanh hai cột "vấn đề" và "giải pháp"; quay lại bảng này ở T1. Nhắc nhanh bài tập buổi 1.
 2. **Theory, 40 phút (4 phần, mỗi phần kết thúc bằng một câu hỏi 30 giây, không có activity trong khối này):**
@@ -49,7 +49,7 @@ Tổng: 6 + 40 + 4 + 18 + 8 + 6 = 82 phút, buffer 8 phút. Nếu quá giờ, th
 ## Key decisions
 
 **Running example và lý do**
-- Phần giảng dùng Delivery App (meal-kit hư cấu, đã quen từ buổi 1) để học viên không phải đoán bối cảnh; activity chạy trên project của chính học viên (hoặc project mẫu của khoá nếu project nhạy cảm).
+- Phần giảng dùng Delivery App (app giao đồ ăn hư cấu, đã quen từ buổi 1) để học viên không phải đoán bối cảnh; activity chạy trên project của chính học viên (hoặc project mẫu của khoá nếu project nhạy cảm).
 
 **AI xuất hiện ở đâu, và manual trước AI**
 - AI: soạn nháp câu hỏi cho business, danh sách điều đang tin, và finding heuristic.

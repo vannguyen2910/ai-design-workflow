@@ -1,13 +1,13 @@
 # Project mẫu: Delivery App (hư cấu)
 
-Delivery App là một app meal-kit theo gói đăng ký. Khách chọn gói (2 hoặc 4 người, 3 hoặc 4 bữa tối mỗi tuần), chọn ngày giao, và mỗi tuần nhận một hộp nguyên liệu kèm thẻ công thức.
+Delivery App là một app giao đồ ăn. Khách chọn nhà hàng và món, chọn khung giờ giao, thanh toán, rồi theo dõi shipper trên bản đồ cho đến khi nhận được đơn.
 
-**Vấn đề team thấy:** nhiều khách mới tạm dừng hoặc huỷ sau hộp đầu tiên. Team muốn cải thiện onboarding.
+**Vấn đề team thấy:** nhiều khách mới không đặt lại sau đơn đầu tiên. Team muốn cải thiện onboarding.
 
-**Hiện có:** date picker chọn ngày giao, một màn hình menu để khách chọn công thức, và một bước thanh toán. Phần Settings có mục "Plan".
+**Hiện có:** màn hình chọn khung giờ giao, một màn hình menu để khách chọn món, và một bước thanh toán. Phần "Đơn hàng" có lịch sử đơn và nút Trợ giúp.
 
-**Điều team tin:** giá là lý do chính khiến khách rời đi.
+**Điều team tin:** giá là lý do chính khiến khách không đặt lại.
 
-**Điều đã biết:** chưa có research nào. Tỷ lệ giữ chân sau 30 ngày là 41%.
+**Điều đã biết:** chưa có research nào. Tỷ lệ khách đặt đơn thứ hai trong 30 ngày là 41%.
 
-**Điều chưa biết:** vì sao khách tạm dừng hoặc huỷ, họ kỳ vọng gì ở hộp đầu tiên, và họ quyết định ngày giao như thế nào.
+**Điều chưa biết:** vì sao khách không đặt lại, họ kỳ vọng gì ở đơn đầu tiên, và họ chọn khung giờ giao như thế nào.

@@ -3,8 +3,8 @@
 *Built from `../../templates/po-case-pack-template.md`. Use it when you have no real PO to talk to. A person plays the PO, from this pack; the AI never plays the PO.*
 
 ## 1. For the student (share before the meeting)
-- **Company:** Delivery App, a meal-kit subscription app (fictional).
-- **The business question, as the business says it:** "Too many new customers pause after the first box. We want more of them to stay."
+- **Company:** Delivery App, a food delivery app (fictional).
+- **The business question, as the business says it:** "Too many new customers do not reorder after the first order. We want more of them to come back."
 - **What exists:** the project card (`case-card.md`). No PRD yet.
 - **Time for the meeting:** 15 minutes.
 
@@ -13,12 +13,12 @@
 
 | The student asks about | The PO knows (say only when asked) |
 |---|---|
-| The outcome | Raise 30-day retention from 41% to 50% by the end of the quarter |
-| The metric and baseline | 30-day retention, owned by the growth team's dashboard. Currently 41%. Pause rate in the first month is 18% |
-| Users | The key segment is first-time subscribers aged 25 to 40 who live alone or with a partner. The business believes they are price-sensitive |
+| The outcome | Raise the 30-day second-order rate from 41% to 50% by the end of the quarter |
+| The metric and baseline | 30-day second-order rate, owned by the growth team's dashboard. Currently 41%. Cancellation rate on first orders is 18% |
+| Users | The key segment is first-time customers aged 25 to 40 who live alone or with a partner. The business believes they are price-sensitive |
 | Constraints | No change to pricing this quarter. Two designers, one engineering squad, six weeks. Mobile app on iOS and Android |
-| What was tried | A discount email last quarter. Little effect on retention |
-| What would make us stop | If the first-month pause rate rises above 22%, roll back |
+| What was tried | A discount email last quarter. Little effect on reorders |
+| What would make us stop | If the first-order cancellation rate rises above 22%, roll back |
 | Weak assumptions | "People leave because of price." There is no evidence for it, only a feeling in the team |
 
 **Rules for the PO player**

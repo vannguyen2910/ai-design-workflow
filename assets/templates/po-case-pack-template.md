@@ -42,5 +42,5 @@
 - [ ] Gives the PO player clear "I don't know" boundaries
 
 ## 5. Short example (fictional)
-- **Company:** a meal-kit subscription app (fictional). **Business question:** "Too many new customers pause after the first box."
-- **PO knows:** 30-day retention 41%, target 50% this quarter, owned by the growth team's dashboard; the first-box delivery date picker confuses people (anecdotal); a discount email was tried last quarter with little effect; the weak assumption: "people leave because of price" (no evidence).
+- **Company:** a food delivery app (fictional). **Business question:** "Too many new customers do not reorder after the first order."
+- **PO knows:** 30-day second-order rate 41%, target 50% this quarter, owned by the growth team's dashboard; the delivery time slot picker confuses people (anecdotal); a discount email was tried last quarter with little effect; the weak assumption: "people leave because of price" (no evidence).
