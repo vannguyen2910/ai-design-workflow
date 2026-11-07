@@ -63,7 +63,7 @@ Sau buổi 3, designer có thể:
 
 ## Pre-Class Preparation
 
-Tối đa khoảng 10 phút: mở lại bộ nguyên tắc và insight từ Practice 2 (mỗi insight đã có insight ID và source ID chưa); mang theo các file từ Practice 2 (scope, giả định, UX audit, competitor analysis, principles, insight) làm đầu vào cho chuỗi practice. Designer chưa phỏng vấn được thì dùng bộ insight app giao đồ ăn (`insight-set.md`); mọi người đều dùng bộ này ở activity để đối chiếu với bạn cùng cặp.
+Tối đa khoảng 10 phút: mở lại bộ nguyên tắc và insight từ Practice 2 (mỗi insight đã có insight ID và source ID chưa); mang theo các file từ Practice 2 (scope, giả định, competitor analysis, principles, insight) làm đầu vào cho chuỗi practice. Designer chưa phỏng vấn được thì dùng bộ insight app giao đồ ăn (`insight-set.md`); mọi người đều dùng bộ này ở activity để đối chiếu với bạn cùng cặp.
 
 ---
 
@@ -73,7 +73,7 @@ Phần này nhắc lại những gì đã học ở Lesson 2 (mục 5), đủ đ
 
 | Điều đã học | Nhắc lại |
 |---|---|
-| Bộ nguyên tắc | UX principle, business principle và severity (Lesson 2, mục 2): đặt trước khi AI chạy, dùng làm ràng buộc trong prompt và làm phép kiểm tra của designer |
+| Bộ nguyên tắc | UX principle và business principle (Lesson 2, mục 2): đặt trước khi AI chạy, dùng làm ràng buộc trong prompt và làm phép kiểm tra của designer |
 | Ba quy tắc với dữ liệu | Ẩn danh trên máy trước khi đưa cho AI; mỗi ghi chú nguồn có source ID, mỗi insight có insight ID; AI được phép nói unknown (Lesson 2, 5.1) |
 | Kiểm tra insight | Tìm đúng source ID trong bộ ghi chú, rồi đọc ngữ cảnh quanh ghi chú; tìm đúng source ID chỉ bắt được nguồn bịa (5.3) |
 | Ba bước | Decision (designer viết), Insight (AI đề xuất kèm source ID, designer kiểm tra, chọn và viết lại), Challenge (designer phản biện, giữ ý kiến trái chiều) (5.4) |
@@ -254,7 +254,7 @@ Giữ ba quy tắc của chương trình: đoán trước rồi mới xem; đổ
 
 ### 7.4 Practice at home and in-class session
 
-**Practice 3 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo), trên bộ nguyên tắc và insight của designer từ Practice 2: persona, journey map, opportunity (mỗi dòng dẫn về insight ID); Challenge và cập nhật trạng thái các giả định; một trang cho lead (5.1); một entry vào insight hub; bấm giờ từng bước để tự đo thời gian tiết kiệm. Đầu vào là output của các buổi trước (scope, giả định, UX audit, competitor analysis, principles, insight từ Practice 2); output là evidence pack, trạng thái mới của các giả định và problem brief. **Buổi practice trên lớp (90 phút)** làm tiếp phần dang dở rồi được chấm; cách chấm chưa quyết. Practice sheet `research-you-can-trust-practice.md` đã viết lại theo chuỗi 8 step này, bắt đầu từ bộ nguyên tắc và insight của Practice 2 (2026-10-30, cập nhật 2026-11-01).
+**Practice 3 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo), trên bộ nguyên tắc và insight của designer từ Practice 2: persona, journey map, opportunity (mỗi dòng dẫn về insight ID); Challenge và cập nhật trạng thái các giả định; một trang cho lead (5.1); một entry vào insight hub; bấm giờ từng bước để tự đo thời gian tiết kiệm. Đầu vào là output của các buổi trước (scope, giả định, competitor analysis, principles, insight từ Practice 2); output là evidence pack, trạng thái mới của các giả định và problem brief. **Buổi practice trên lớp (90 phút)** làm tiếp phần dang dở rồi được chấm; cách chấm chưa quyết. Practice sheet `research-you-can-trust-practice.md` đã viết lại theo chuỗi 8 step này, bắt đầu từ bộ nguyên tắc và insight của Practice 2 (2026-10-30, cập nhật 2026-11-01).
 
 ---
 
@@ -317,7 +317,7 @@ Câu trả lời ghi vào `_personal/learning-log.md`, cùng mục ba dòng củ
 
 | Lesson và practice | Vai trò |
 |---|---|
-| Lesson 2 (buổi 3), Practice 2 (buổi 4) | Bộ nguyên tắc, scope, giả định, UX audit, competitor analysis, research question; synthesis: source ID, ba bước, insight của designer |
+| Lesson 2 (buổi 3), Practice 2 (buổi 4) | Bộ nguyên tắc, scope, giả định, competitor analysis, research question; synthesis: source ID, ba bước, insight của designer |
 | **Lesson 3 (buổi 5, buổi này)** | Ôn bộ nguyên tắc và insight; persona, journey map, opportunity dẫn về insight ID; insight hub; package thành agent; bốn câu hỏi về giới hạn của AI |
 | Practice 3 (buổi 6) | Persona, journey, opportunity trên insight của project, problem brief, entry insight hub; buổi lớp làm tiếp và chấm |
 | Lesson 4 (buổi 7) | Hypothesis, How might we, Solution Tree, ý tưởng, chọn hướng bằng principle check |

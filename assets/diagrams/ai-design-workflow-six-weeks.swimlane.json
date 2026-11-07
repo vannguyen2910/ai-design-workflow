@@ -69,17 +69,17 @@
           "details": [
             "Hoàn thiện principles.md",
             "Business question và scope",
-            "UX observation, challenge assumptions",
+            "Challenge assumptions",
             "Research questions, competitor analysis, lên lịch phỏng vấn peer"
           ]
         },
         {
-          "title": "principles.md + 4 file hub",
+          "title": "principles.md + 3 file hub",
           "sub": "chuẩn để AI đối chiếu",
           "details": [
             "principles.md",
-            "research-questions.md, ux-audit.md",
-            "assumption.md, competitor-analysis.md"
+            "research-questions.md, assumption.md",
+            "competitor-analysis.md"
           ]
         }
       ]
@@ -204,7 +204,8 @@
             "Test plan và script (dùng lại tuần 2)",
             "Consent, câu hỏi trung lập; AI không đóng vai user",
             "Phân tích kết quả (dùng lại synthesis tuần 3)",
-            "Task success, time on task, errors, SUS"
+            "Task success, time on task, errors, SUS",
+            "Heuristic evaluation trên prototype (chuyển từ tuần 2)"
           ]
         },
         {

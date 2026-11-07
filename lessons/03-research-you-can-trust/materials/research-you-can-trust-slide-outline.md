@@ -830,7 +830,7 @@ last_synced: 2026-11-01
   > Hôm nay đã thấy ba đầu ra từ insight. Ở nhà, bạn dùng đúng chuỗi đó trên bộ nguyên tắc và insight của project của mình.
 
   - Đầu vào là bộ nguyên tắc và insight designer đã có từ Practice 2
-  - Output của các buổi trước là input của chuỗi này: scope và research question cho Decision, giả định để insight xác nhận hoặc bác, UX audit và competitor analysis làm giả thuyết
+  - Output của các buổi trước là input của chuỗi này: scope và research question cho Decision, giả định để insight xác nhận hoặc bác, competitor analysis làm giả thuyết
   - Designer làm persona, rồi journey map, rồi opportunity, mỗi dòng dẫn về insight ID
   - Làm một trang cho lead và đóng góp một entry vào insight hub
   - Bấm giờ từng bước; đây là cách designer tự trả lời câu hỏi tiết kiệm bao nhiêu thời gian

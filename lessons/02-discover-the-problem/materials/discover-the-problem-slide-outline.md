@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 34
+slide_count: 32
 duration: "90 min"
 status: draft
 built_deck: ""
@@ -123,10 +123,10 @@ last_synced: 2026-10-30
 - Title: AI giúp, *designer quyết định*
 - On-slide:
   - Trái, AI giúp được: đọc nhanh tài liệu, soạn nháp danh sách, gom ghi chú
-  - Phải, designer tự làm: biết điều chưa có, chấm severity, hỏi người thật
+  - Phải, designer tự làm: biết điều chưa có, hỏi người thật
 - Ví dụ: bản nháp (AI liệt kê 12 điều đang tin về app giao đồ ăn trong một phút, hai điều không có trong tài liệu)
 - Câu hỏi hay gặp:
-  - AI làm heuristic evaluation tốt đến đâu? Hai nghiên cứu nhỏ cho kết quả lệch nhau. Một mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại (nguồn 3). Mô hình khác chỉ tìm lại 21,2% vấn đề chuyên gia và có 24,3% false positive (nguồn 4). Cả hai đều cần người kiểm tra.
+  - AI đọc tài liệu có bỏ sót không? Có; AI lấp chỗ trống bằng điều nghe hợp lý, nên mọi dòng cần một nguồn hoặc nhãn "chưa có nguồn".
 - Speaker notes:
 
   > Giả sử nhờ AI liệt kê điều team có thể đang tin về app giao đồ ăn. Một phút sau có mười hai dòng, đọc rất hợp lý.
@@ -134,7 +134,6 @@ last_synced: 2026-10-30
   - Hai trong mười hai dòng không có trong bất kỳ tài liệu nào của project
   - AI lấp chỗ trống bằng điều nghe hợp lý, không báo là nó đang đoán
   - Việc AI làm nhanh là soạn nháp rộng; việc chọn dòng nào đáng đưa vào scope vẫn là của designer
-  - Hai nghiên cứu heuristic evaluation (nguồn 3, 4) cho số khác nhau, nhưng đều kết luận AI là phần bổ sung và cần người kiểm tra
 
   > Designer thường tin danh sách AI đưa ra ngay, hay kiểm tra từng dòng?
 - 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái sage "AI giúp được", cột phải purple "Designer vẫn tự làm"; ở giữa một dòng nhỏ "AI soạn nháp. Designer kiểm tra. Designer quyết định."
@@ -160,36 +159,32 @@ last_synced: 2026-10-30
 
 ### DIAGRAM · Design Principles
 - Kicker: Khung
-- Title: Ba phần của *bộ chuẩn*
+- Title: Hai phần của *bộ chuẩn*
 - On-slide:
-  - UX principles: mười heuristic của Nielsen và principle riêng của sản phẩm
+  - UX principles: 3 đến 5 principle riêng của sản phẩm
   - Business principles: ràng buộc và ưu tiên của business
-  - Severity: thang 0 đến 4, designer chấm
 - Ví dụ: bản nháp (business principle của app giao đồ ăn: không tăng tỷ lệ huỷ đơn sau đơn đầu tiên)
 - Câu hỏi hay gặp:
   - Business principle lấy ở đâu khi không gặp được business? Từ PRD, brief và thông tin công khai của công ty; ghi "assumed" và người cần xác nhận.
-  - Tổ chức chưa có UX principle riêng thì sao? Dùng mười heuristic của Nielsen làm nền (nguồn 1).
+  - Tổ chức chưa có UX principle riêng thì sao? Viết từ một quyết định gần nhất team phải chọn giữa hai hướng đều hợp lệ.
 - Speaker notes:
 
   > Một designer nhờ AI xem lại màn hình thanh toán. AI trả về mười finding, và chín cái là "làm cho rõ ràng hơn". Chuẩn nào mà rõ ràng hơn?
 
   - Nếu không có chuẩn viết sẵn, AI đối chiếu với điều nghe hợp lý nói chung
-  - Với chuẩn của project, AI đối chiếu đúng tiêu chí cần: nguyên tắc nào, ràng buộc nào, mức nghiêm trọng nào
-  - UX principles: mười heuristic của Nielsen làm nền (nguồn 1), thêm 3 đến 5 principle riêng của sản phẩm (slide kế tiếp)
+  - Với chuẩn của project, AI đối chiếu đúng tiêu chí cần: nguyên tắc nào, ràng buộc nào
+  - UX principles: 3 đến 5 principle riêng của sản phẩm (slide kế tiếp)
   - Business principles: ràng buộc và ưu tiên của business, như mission, brand value, compliance, KPI, guardrail
-  - Severity: thang 0 đến 4 của Nielsen (nguồn 2); designer chấm, không lấy của AI
-  - Hai thứ khác nhau: principle cho biết thiết kế có đúng hướng không, severity cho biết một vấn đề nặng đến đâu
 
   > Business của designer có nguyên tắc nào mà thiết kế không được vi phạm?
-- 🎨 Visual hint: SCHEMATIC. Một khung lớn "Design Principles (Standard for AI)" bên trong ba ô: UX principles, Business principles, Severity; bên ngoài một mũi tên "AI cross-check" chỉ vào khung.
+- 🎨 Visual hint: SCHEMATIC. Một khung lớn "Design Principles (Standard for AI)" bên trong hai ô: UX principles, Business principles; bên ngoài một mũi tên "AI cross-check" chỉ vào khung.
 
 ---
 
-### COMPARE · Two kinds of principles
+### NUMBERED · Product principle
 - Kicker: Định nghĩa
-- Title: Heuristic hay *principle*
+- Title: Principle *riêng* của sản phẩm
 - On-slide:
-  - Heuristic: đúng với mọi sản phẩm (mười heuristic của Nielsen)
   - What: principle riêng, chỉ đúng với sản phẩm này, đảo ngược được một quyết định
   - Why: AI và designer cùng đối chiếu một chuẩn, không dựa vào cảm giác
   - When: viết trước khi AI chạy, ở Step 1 của practice
@@ -202,78 +197,43 @@ last_synced: 2026-10-30
 
   > "Đơn giản và dễ dùng" là principle của hầu hết mọi sản phẩm, và không quyết định được gì. Thử hỏi: principle này đã từng đảo ngược quyết định nào của team chưa?
 
-  - NN/g tách heuristic và guideline chung khỏi design principles riêng của sản phẩm (nguồn 19)
   - What, Why, When: principle riêng là quy tắc chọn khi hai hướng đều hợp lệ; chuẩn chung để AI và designer đối chiếu; viết trước khi AI chạy
-  - Heuristic giúp bắt lỗi quen thuộc; principle riêng cho biết sản phẩm này đánh đổi điều gì
+  - Principle riêng cho biết sản phẩm này đánh đổi điều gì khi hai hướng đều hợp lệ
   - Bốn điều của một principle (nguồn 20, 21): đảo ngược được một quyết định, có thứ tự ưu tiên, có dòng "điều này không có nghĩa là…", và ít
   - Ví dụ app giao đồ ăn đảo ngược quyết định "không đổi được khung giờ giao sau khi thanh toán"
   - Principle cũng là rubric cho AI chấm; tiêu chí cần viết quan sát được và chạy thử vài vòng (nguồn 22)
 
   > Bỏ phiếu trong chat: A nếu designer có thể kể ra một principle riêng của sản phẩm đang làm, B nếu chưa.
-- 🎨 Visual hint: SCHEMATIC. Hai cột: trái "Heuristic (mọi sản phẩm)", phải ba nhãn What, Why, When của "Principle riêng" kèm ví dụ app giao đồ ăn; bên dưới bốn dấu tick cho bốn điều.
-
----
-
-### NUMBERED · Mười heuristic
-- Kicker: Tham khảo
-- Title: Mười *heuristic* của Nielsen
-- On-slide:
-  - 01 · Trạng thái hệ thống: luôn cho user biết điều gì đang diễn ra
-  - 02 · Khớp thế giới thực: dùng ngôn ngữ và khái niệm user quen
-  - 03 · Kiểm soát và tự do: có lối thoát, hoàn tác khi bấm nhầm
-  - 04 · Nhất quán và chuẩn: cùng một thứ thì cùng tên, cùng cách làm
-  - 05 · Ngăn lỗi: thiết kế để lỗi khó xảy ra ngay từ đầu
-  - 06 · Nhận ra, không phải nhớ: hiện sẵn lựa chọn thay vì bắt nhớ
-  - 07 · Linh hoạt và hiệu quả: có đường tắt cho người dùng thành thạo
-  - 08 · Gọn và tối giản: bỏ thông tin không cần cho việc đang làm
-  - 09 · Giúp sửa lỗi: báo lỗi rõ vấn đề và cách sửa
-  - 10 · Trợ giúp và tài liệu: tìm được hướng dẫn đúng lúc cần
-- Ví dụ: bản nháp (app giao đồ ăn: không có xác nhận sau khi chọn khung giờ là heuristic 01; không đổi được sau khi thanh toán là 03; nhãn nút khác nhau giữa hai màn hình là 04)
-- Câu hỏi hay gặp:
-  - Phải thuộc cả mười không? Không cần thuộc lòng; cần nhận ra nhãn nào đúng khi AI gán, và có thể giữ danh sách này cạnh `principles.md`.
-  - Mười heuristic thay được principle riêng không? Không: heuristic đúng với mọi sản phẩm, principle riêng cho biết sản phẩm này đánh đổi điều gì.
-- Speaker notes:
-
-  > AI báo một finding "vi phạm nhất quán". Để biết nhãn đó đúng hay sai, designer cần biết đủ mười heuristic, không chỉ ba cái hay gặp.
-
-  - Mười heuristic của Nielsen (nguồn 1) là chuẩn chung, dùng làm nền cho UX observation ở phần Break the brief
-  - Ba heuristic bám theo ví dụ: 01 trạng thái hệ thống, 03 kiểm soát và tự do, 04 nhất quán
-  - Cặp dễ nhầm: 01 (hệ thống không báo gì) với 04 (hai nơi nói khác nhau)
-  - Mỗi finding gắn đúng một heuristic
-  - Principles đặt trước, rồi mới đến AI: UX observation dựa trên principles chứ không ngược lại, và biết trước thì kiểm một finding mất vài chục giây thay vì vài phút
-
-  > Trong mười cái này, designer thấy cái nào hay bị vi phạm nhất ở sản phẩm đang làm?
-- 🎨 Visual hint: NUMBERED layout, hai cột năm hàng; số in nghiêng purple, tên heuristic in đậm, giải thích ngắn bên dưới.
+- 🎨 Visual hint: SCHEMATIC. Ba nhãn What, Why, When của "Principle riêng" kèm ví dụ app giao đồ ăn; bên dưới bốn dấu tick cho bốn điều.
 
 ---
 
 ### DIAGRAM · Break the brief
 - Kicker: Tổng quan
-- Title: Scope, rồi *bốn hoạt động*
+- Title: Scope, rồi *ba hoạt động*
 - On-slide:
   - Scope: business question và quyết định → bản scope
-  - UX observation → bản đánh giá UX
   - Challenge assumptions → bản đồ giả định
   - Research questions → danh sách research question
   - Competitor analysis → bản phân tích đối thủ
 - Ví dụ: có (app giao đồ ăn, project mẫu của chương trình)
 - Câu hỏi hay gặp:
-  - Phải làm đủ bốn hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm muộn hơn, ở nhà, các hoạt động còn lại nối nhau nên làm theo thứ tự.
-  - Vì sao research questions đứng sau UX observation và assumptions? Câu hỏi nghiên cứu xuất phát từ điều chưa biết; UX observation và assumptions chỉ ra điều đó.
+  - Phải làm đủ ba hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm muộn hơn, ở nhà, các hoạt động còn lại nối nhau nên làm theo thứ tự.
+  - Vì sao research questions đứng sau assumptions? Câu hỏi nghiên cứu xuất phát từ điều chưa biết; assumptions chỉ ra điều đó.
 - Speaker notes:
 
-  > Team app giao đồ ăn nhận brief "cải thiện onboarding". Break the brief là bốn việc làm trước khi chấp nhận brief đó.
+  > Team app giao đồ ăn nhận brief "cải thiện onboarding". Break the brief là ba việc làm trước khi chấp nhận brief đó.
 
-  - Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question, quan sát trải nghiệm, liệt kê điều đang tin, rồi mới viết câu hỏi
+  - Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question, liệt kê điều đang tin, rồi mới viết câu hỏi
   - **Mỗi hoạt động có cùng nhịp: nhắc method, AI soạn nháp theo method, designer kiểm tra và quyết định**
   - Mỗi hoạt động ra một file trong hub
   - Self-documentation, bước đưa tài liệu product vào AI để có context, đã làm ở Practice 1; Break the brief bắt đầu từ context pack đó
-  - Hôm nay đi qua từng bước và demo ba hoạt động trên app giao đồ ăn: UX observation, challenge assumptions, research questions
+  - Hôm nay đi qua từng bước và demo hai hoạt động trên app giao đồ ăn: challenge assumptions, research questions
   - Competitor analysis chỉ giới thiệu ngắn; designer làm ở nhà với cheat sheet này
   - Brief là điểm xuất phát tốt; việc ở đây là kiểm tra nó phục vụ đúng vấn đề chưa
 
   > Trong các bước này, designer đang làm bước nào rồi, dù chưa gọi tên?
-- 🎨 Visual hint: SCHEMATIC. Hộp lớn "Break the brief" ở trên, một ô scope rồi bốn ô con nối tiếp theo thứ tự, mỗi ô nối với một ô purple là file output.
+- 🎨 Visual hint: SCHEMATIC. Hộp lớn "Break the brief" ở trên, một ô scope rồi ba ô con nối tiếp theo thứ tự, mỗi ô nối với một ô purple là file output.
 
 ---
 
@@ -350,42 +310,13 @@ last_synced: 2026-10-30
 
 ---
 
-### DIAGRAM · UX observation
-- Kicker: Minh hoạ
-- Title: UX observation, *principles trước*
-- On-slide:
-  - What: chuyên gia đánh giá trải nghiệm hiện có theo mười heuristic
-  - Why: tìm sớm vấn đề đáng hỏi; kết quả là giả thuyết
-  - When: sau scope, trước Challenge assumptions
-  - AI giúp: đánh giá flow; designer lọc qua ba cổng và chốt severity
-- Ví dụ: có (app giao đồ ăn, flow chọn khung giờ giao)
-- Câu hỏi hay gặp:
-  - Severity AI chấm có dùng được không? Không lấy của AI: chưa có nghiên cứu cho thấy AI chấm severity đáng tin, và NN/g khuyên nhiều người đánh giá độc lập, lấy trung bình (nguồn 2).
-  - Một người cộng AI đã đủ ba đến năm người đánh giá chưa? Chưa; kết quả là giả thuyết, cần user xác nhận ở bước Understand our users.
-  - Đánh giá accessibility bằng AI đủ không? Kiểm thử tự động chỉ phủ một phần vấn đề, 57% tính theo số lượng trong một nghiên cứu của vendor (nguồn 5).
-- Speaker notes:
-
-  > Trên flow chọn khung giờ giao của app giao đồ ăn, AI báo ba finding. Một: không có xác nhận sau khi chọn khung giờ. Hai: không đổi được khung giờ sau khi thanh toán. Ba: nhãn nút khác nhau giữa hai màn hình.
-
-  - What, Why, When: heuristic evaluation khi chưa có user thật, cho ra giả thuyết; method là mười heuristic và severity theo tần suất, tác động, tính lặp lại (nguồn 1, 2)
-  - AI soạn nháp finding; designer lọc qua ba cổng: thấy được trên màn hình không, có vi phạm principle không, user thật có gặp không
-  - Finding một thuộc trạng thái hệ thống, hai thuộc quyền kiểm soát của người dùng, ba thuộc nhất quán
-  - **Severity do designer chấm, không lấy của AI**
-  - Hai nghiên cứu về AI làm người đánh giá cho kết quả lệch nhau. Một nghiên cứu tìm lại 21,2% vấn đề chuyên gia và có 24,3% false positive. Nghiên cứu kia tìm 73 đến 77% so với 57 đến 63% của năm chuyên gia (nguồn 3, 4). Cả hai cần người kiểm tra
-  - Kết quả vào bản đánh giá UX trong hub; mỗi finding cần evidence và severity do designer chấm
-
-  > Trong ba finding này, designer chấm finding nào cao nhất, và dựa vào đâu?
-- 🎨 Visual hint: SCHEMATIC. Cột trái ba nhãn What, Why, When và dòng AI giúp; cột phải ba bước ngang (method, AI, designer kiểm tra) với ba finding mẫu, mỗi finding có chip principle và ô severity trống để chấm.
-
----
-
 ### DIAGRAM · Challenge assumptions
 - Kicker: Minh hoạ
 - Title: Thách thức *assumptions*
 - On-slide:
   - What: giả định là điều đang tin chưa có bằng chứng, xếp theo ma trận
   - Why: biết điều gì phải kiểm chứng trước khi tốn công thiết kế
-  - When: sau UX observation, trước Research questions
+  - When: sau scope, trước Research questions
   - AI giúp: liệt kê giả định, tìm giả định ẩn, hỏi ngược bằng chứng
 - Ví dụ: có (app giao đồ ăn: giá là lý do chính; khách không hiểu cách đổi khung giờ giao; bước thanh toán làm khách ngại cam kết)
 - Câu hỏi hay gặp:
@@ -400,7 +331,7 @@ last_synced: 2026-10-30
   - AI liệt kê giả định theo công thức, tìm giả định ẩn, hỏi ngược bằng chứng; designer xếp lên ma trận và sửa ít nhất hai giả định
   - Chọn ba giả định hàng đầu ở góc top-left (quan trọng cao, bằng chứng thấp); framework cho phép đến năm, lớp chọn ba vì giới hạn thời gian
   - Nếu team đã có research cũ, kéo insight từ đó vào để xem điều nào đã có evidence, rồi xếp theo mức độ quan trọng so với evidence
-  - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở nhà sau phỏng vấn user; hôm nay chỉ ghi finding của ux-audit làm bằng chứng
+  - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở nhà sau phỏng vấn user; hôm nay chỉ ghi nguồn có sẵn (scope, tài liệu của project) làm bằng chứng
   - Kết quả vào bản đồ giả định
 
   > Điều đang tin nào của project designer nghe rất hợp lý nhưng designer chưa từng thấy bằng chứng?
@@ -457,7 +388,7 @@ last_synced: 2026-10-30
   - Hai đến bốn đối thủ, có cả gián tiếp (cùng việc cho user, khác loại sản phẩm) và có đối thủ tốt hơn sản phẩm đang xét (nguồn 9)
   - Một pattern cần thấy ở nhiều nguồn: hai trên ba app đối thủ cho đổi khung giờ giao đến một mốc rõ ràng mới là pattern; một app làm vậy thì chưa
   - AI mô tả ảnh trước, đánh giá sau; mỗi ô ghi tên file; **bảng gọn tạo cảm giác chắc chắn, nên designer ghi tỷ lệ ô sai sau khi đối chiếu**
-  - Mở ảnh gốc cho hai ba tiêu chí quan trọng nhất; có thể dùng lại bộ nguyên tắc và thang severity của UX observation
+  - Mở ảnh gốc cho hai ba tiêu chí quan trọng nhất; có thể dùng lại bộ nguyên tắc
   - Đây là review của chuyên gia, không phải testing; mục tiêu là cải thiện thiết kế đang xét, không tuyên bố bên thắng
   - Phần synthesis ghép phần này với điều user nói và làm; kết quả vào bản phân tích đối thủ
 
@@ -808,7 +739,7 @@ last_synced: 2026-10-30
 - Title: Những gì vào *hub*
 - On-slide:
   - bộ nguyên tắc
-  - scope, bản đánh giá UX, bản đồ giả định
+  - scope, bản đồ giả định
   - research questions, bản phân tích đối thủ
   - research plan, script, transcript đã ẩn danh
   - insight, mỗi dòng dẫn về source ID
@@ -854,7 +785,7 @@ last_synced: 2026-10-30
 - Ví dụ: Không cần. Slide giao việc.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Mười hai step chia ba phần: Break the brief (nguyên tắc, scope, UX observation, giả định, research question, đối thủ), phỏng vấn user thật (research plan và script, phỏng vấn, ẩn danh và source ID), synthesis và hub (ba bước, insight lên hub, learning log)
+  - Mười một step chia ba phần: Break the brief (nguyên tắc, scope, giả định, research question, đối thủ), phỏng vấn user thật (research plan và script, phỏng vấn, ẩn danh và source ID), synthesis và hub (ba bước, insight lên hub, learning log)
   - Phỏng vấn cần hẹn lịch và consent, nên bắt đầu hẹn người ngay hôm nay
   - Ẩn danh transcript trước khi đưa cho AI; dữ liệu gốc ở lại ngoài vùng AI đọc
   - Buổi practice trên lớp làm tiếp phần chưa xong nếu còn thời gian, rồi chấm; cách chấm chưa quyết, sẽ báo sau

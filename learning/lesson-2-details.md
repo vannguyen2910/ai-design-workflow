@@ -6,7 +6,7 @@ File làm việc riêng, không lên site. Các phần dưới đây được d�
 
 ## 2. Principles (chi tiết)
 
-**Nhịp Theory 2 (9 phút, chưa thử với lớp thật `[to confirm]`):** 2 phút ba phần của chuẩn (UX principles, business principles, severity); 4 phút heuristic và principle riêng, với ví dụ app giao đồ ăn; 1 phút principles first; 2 phút câu hỏi 30 giây (bỏ phiếu: designer có kể ra được một principle riêng của sản phẩm đang làm không).
+**Nhịp Theory 2 (8 phút, chưa thử với lớp thật `[to confirm]`):** 2 phút hai phần của chuẩn (UX principles, business principles); 3 phút principle riêng, với ví dụ app giao đồ ăn; 1 phút principles first; 2 phút câu hỏi 30 giây (bỏ phiếu: designer có kể ra được một principle riêng của sản phẩm đang làm không).
 
 **Cách thử một principle (dùng ở nhà, Step 1 của practice):** với mỗi principle nháp, trả lời ba câu. (1) Principle này đã đảo ngược hoặc sẽ đảo ngược quyết định nào của team? Không có thì principle quá chung. (2) Nếu hai principle xung đột thì cái nào thắng? (3) Dòng "điều này không có nghĩa là…" ngăn AI hay designer áp dụng quá tay ở chỗ nào? Sau đó viết mỗi principle thành một câu hỏi có hoặc không, ví dụ "Khách đổi được khung giờ giao sau khi thanh toán không?".
 
@@ -35,7 +35,7 @@ Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trư�
 
 **Practice 2 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo với lớp thật), trên project của từng designer:
 1. Hoàn thiện bộ nguyên tắc (`principles.md`): 3 đến 5 UX principle riêng của project (mỗi cái kèm "điều này không có nghĩa là…", cách thử ở mục 2), business principles, severity.
-2. Viết research plan: scope, UX observation, giả định, research questions và competitor analysis (Break the brief), cùng facilitation script cho buổi phỏng vấn.
+2. Viết research plan: scope, giả định, research questions và competitor analysis (Break the brief), cùng facilitation script cho buổi phỏng vấn.
 3. Phỏng vấn user thật của project, đã có consent.
 4. Ẩn danh transcript và gắn source ID.
 5. Synthesis theo ba bước Decision, Insight, Challenge; mỗi dòng của insight dẫn về source ID.
