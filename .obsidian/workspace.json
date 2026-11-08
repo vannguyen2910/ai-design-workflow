@@ -11,10 +11,14 @@
             "id": "a9aef7fe9cffe2d0",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "design-process-with-ai-lesson"
             }
           }
         ]
@@ -95,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -181,8 +188,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "e41d5f3d35d2cd99",
+  "active": "a9aef7fe9cffe2d0",
   "lastOpenFiles": [
+    "assets/images/solen-feyissa-hWSNT_Pp4x4-unsplash.jpg",
+    "assets/images/mohamed-nohassi-9Ge8ngH6JeQ-unsplash.jpg",
+    "assets/images/mohamed-nohassi-2iUrK025cec-unsplash.jpg",
+    "assets/images/kelly-sikkema-ml1IgjV8OvY-unsplash.jpg",
+    "assets/images/aidin-geranrekab-bV_P23FXxhI-unsplash.jpg",
+    "assets/images/photo-1743385779347-1549dabf1320.avif",
+    "assets/images",
+    "assets/untitled folder",
+    "learning/lesson-6-heuristic-evaluation.md",
     "_archive/Program - AI Design Workflow.zip",
     "graphify-out/manifest.json",
     "graphify-out/graph.html",
@@ -192,9 +208,6 @@
     "graphify-out/cache/semantic/p3d3a4e0b5d54/eade5bd346bbe5411f9732eb1bbe65c7cfe06043f9f19f27a0b243a0066720e7.json",
     "graphify-out/cache/semantic/p3d3a4e0b5d54/2df992e98573068434503874a673cc40478bac8c5aef1861cbf1f1d5368eda88.json",
     "graphify-out/cache/semantic/p3d3a4e0b5d54/ecbd14ff0c9f7f0a188d862f01f43384038eab93c03fe7a0d2d484465b20743d.json",
-    "graphify-out/cache/semantic/p3d3a4e0b5d54/0298e194a1c57318d7938369e96d1412c0acb18780d1788846bf00458b049612.json",
-    "graphify-out/cache/semantic/p3d3a4e0b5d54/ade498d3f4e11412107707836768b3be94435c9e447b84ab58ab620411f76e5a.json",
-    "graphify-out/cache/semantic/p3d3a4e0b5d54/68a97079d14f71daf9bc5462ded188ccae07c9926bfdbd5761f93016d8df6d94.json",
     "lessons/04-explore-ideas/materials/explore-ideas-slide-outline.md",
     "lessons/04-explore-ideas/materials/explore-ideas-practice.md",
     "lessons/04-explore-ideas/materials/explore-ideas-lesson.md",
@@ -219,7 +232,6 @@
     "learning/reference/ai-prototype-foundations.md",
     "learning/reference/ai-mental-model.md",
     "learning/reference/ai-in-prototype.md",
-    "learning/reference/ai-in-insights.md",
-    "learning/reference/ai-in-discover.md"
+    "learning/reference/ai-in-insights.md"
   ]
 }
