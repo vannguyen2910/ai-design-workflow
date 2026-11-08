@@ -42,7 +42,7 @@ Làm theo thứ tự.
 | 3 | **Insights You Can Trust**: synthesis, persona, journey map, opportunity (mỗi dòng dẫn về quote có ID) | Bốn bước trên quote peer: `personas.md`, `journey-map.md`, `frame-opportunity.md`, một trang cho lead, entry insight hub | Evidence pack, **problem brief** |
 | 4 | **Explore Ideas**: hypothesis, How might we, sketch giấy rồi AI, chọn hướng | Hypothesis, ý tưởng, chọn hướng bằng principle check | Hướng đã chọn, flow |
 | 5 | **AI Prototyping**: design system, pattern, template, rules file | Build prototype main flow | Prototype sẵn sàng test, có thể là final design |
-| 6 | **Test with Real Users**: metrics, test plan, phân tích kết quả | Test với peer trong **một ngày**, rồi buổi 12 **reflection và wrap-up** | Prototype đã test, hub đầy đủ |
+| 6 | **Test with Real Users**: UX Audit, metrics, test plan, phân tích kết quả | UX Audit rồi test với participant tự tìm trong **một ngày**, rồi buổi 12 **reflection và wrap-up** | Prototype đã test, hub đầy đủ |
 
 **Cần nhớ:**
 - Sơ đồ sáu tuần trên hub dựng từ `assets/diagrams/ai-design-workflow-six-weeks.swimlane.json` (không đọc từ file này): đổi kế hoạch thì sửa cả bảng ở đây và file JSON đó.

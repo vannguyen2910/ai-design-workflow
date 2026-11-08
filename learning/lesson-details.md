@@ -374,6 +374,8 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 ## Lesson 8: Test with Real Users
 
+> **Lỗi thời (2026-11-08).** Bản cũ. Lesson 6 hiện tại theo `learning/briefs/test-with-real-users-brief.md` và `learning/plan.md`; handoff pack và measurement plan đã bỏ khỏi chương trình.
+
 *Slug:* `test-with-real-users`. Là **buổi 10 (tuần 5)**, ngay sau Check point 2 (buổi 9, Build AI Prototype); buổi này test prototype đó và sửa finding.
 
 **Sau lesson, học viên có thể:**
@@ -389,6 +391,8 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 ---
 
 ## Lesson 9: Hand Off and Measure Success
+
+> **Lỗi thời (2026-11-08).** Bản cũ. Lesson 6 hiện tại theo `learning/briefs/test-with-real-users-brief.md` và `learning/plan.md`; handoff pack và measurement plan đã bỏ khỏi chương trình.
 
 *Slug:* `hand-off-and-measure`. Là **buổi 11 (tuần 6)**, ngay trước Check point 3 (buổi 12).
 

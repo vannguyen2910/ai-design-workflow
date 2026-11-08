@@ -56,7 +56,7 @@ Mỗi buổi theory là một lesson. Buổi practice đi liền sau mỗi lesso
 | 3 | 3 (buổi 5) | [`research-you-can-trust`](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md) | Insights you can trust (synthesis, persona, journey map, opportunity, mỗi dòng dẫn về quote có ID) | 🚧 Draft (cần sửa theo cấu trúc mới) |
 | 4 | 4 (buổi 7) | [`explore-ideas`](lessons/04-explore-ideas/materials/explore-ideas-lesson.md) | Explore ideas (map kéo dài xuống solution, How might we, concept sketching, user flow và process map, package thành skill) | 🚧 Draft |
 | 5 | 5 (buổi 9) | `ai-prototyping` | AI prototyping (design system, pattern, template, rules file; prototype sẵn sàng test, có thể là final design) | ⬜ Planned |
-| 6 | 6 (buổi 11) | `test-with-real-users` | Test with real users (metrics, test plan, phân tích kết quả, SUS, sửa finding) | ⬜ Planned |
+| 6 | 6 (buổi 11) | [`test-with-real-users`](lessons/06-test-with-real-users/materials/test-with-real-users-lesson.md) | Test with real users (UX Audit, metrics, test plan, phân tích kết quả, SUS, sửa finding) | 🚧 Draft |
 
 Tuần 6 còn một buổi test trong một ngày và buổi 12 reflection và wrap-up, đều không có lesson riêng. Chi tiết từng lesson nằm trong `learning/lesson-details.md` (còn lesson 4 đến 11 cũ, chưa gộp theo bảng trên). Thư mục chỉ được tạo khi bắt đầu lesson, không tạo trước: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
 
