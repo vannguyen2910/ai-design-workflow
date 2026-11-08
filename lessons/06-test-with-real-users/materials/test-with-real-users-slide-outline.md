@@ -725,7 +725,7 @@ last_synced: 2026-11-08
 
   - Hai phút tự tìm, một phút đối chiếu với bản AI soạn nháp, hai phút lộ đáp án
   - Mỗi người đếm số finding AI sai và số finding AI bỏ sót
-  - Màn hình và đáp án chưa soạn; cần làm trước buổi dạy
+  - Màn hình `screen.html` và đáp án nằm ở `assets/templates/audit-hunt/`; bản nháp chưa thử với lớp
   - Dữ liệu hư cấu, không dán tài liệu bảo mật
 
   > **Đếm lỗi của AI, đừng chỉ đọc kết quả.**
@@ -772,6 +772,7 @@ last_synced: 2026-11-08
   - Lesson 4: hướng giải pháp có lý do, flow rõ; chọn hướng trước khi tốn công của developer
   - Lesson 5: trải nghiệm nhất quán nhờ design system; prototype nhanh để test sớm, giảm làm lại
   - Lesson 6: bắt lỗi UX trước khi ship, giữ nền UX; giảm lỗi sau launch và có tín hiệu cho quyết định đầu tư
+  - Hình `course-contribution.html` trình bày cùng nội dung dưới dạng một bảng
   - Khoảng 4 phút cho slide này
 
   > **Mỗi lesson đóng góp ở cả hai phía: design và business.**

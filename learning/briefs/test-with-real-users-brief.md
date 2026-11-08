@@ -31,7 +31,7 @@ Running example là Delivery App giao đồ ăn (cùng case Lesson 1 đến 5). 
    - **Phân tích, xếp finding, sửa đúng layer, 8 phút:** kiểm bản AI với ghi chú hoặc bản ghi gốc (ba bước và source ID), xếp theo severity chứ không theo tần suất, giữ ý kiến trái chiều cùng trang, sửa ở layer rộng nhất mà lỗi còn đúng (layer ladder ở Lesson 5), rồi dựng lại.
    - **Handoff kiểu mới, 8 phút:** không phải handoff pack cũ. Bàn giao **UX foundation** để developer và AI của họ implement theo đó, thay vì chồng tính năng lên nhau. Gói gồm: rules file và design system (token, component); decision log (vì sao chọn hướng này); kết quả audit và test, kèm finding chưa sửa; danh sách điều chưa làm (state, nội dung, màn thiếu); một câu "điều không được phá" cho mỗi flow. Developer cho AI đọc chính gói này, như designer đã làm ở Lesson 5. Sau khi dev build, designer audit lại bản build: đó là vòng lặp, và là nhánh "audit bản dev" (chỉ nhắc, chưa dạy). Measurement plan vẫn đã bỏ khỏi chương trình.
 3. **Bridge, 3 phút:** cheat sheet một màn hình (checklist UX Audit, Goals/Signals/Metrics, các bước chạy một buổi test, thang severity).
-4. **Activity trên lớp, 5 phút: "Audit hunt".** Chiếu một màn hình Delivery App có vài vấn đề cài sẵn (state thiếu, nhãn lệch, vùng chạm nhỏ). Học viên tự tìm trong 2 phút, gán heuristic và severity, rồi đối chiếu với bản AI soạn nháp, đếm finding AI sai hoặc bỏ sót. **Chưa soạn**, cần làm màn hình và đáp án.
+4. **Activity trên lớp, 5 phút: "Audit hunt".** Chiếu một màn hình Delivery App có vài vấn đề cài sẵn (state thiếu, nhãn lệch, vùng chạm nhỏ). Học viên tự tìm trong 2 phút, gán heuristic và severity, rồi đối chiếu với bản AI soạn nháp, đếm finding AI sai hoặc bỏ sót. Màn hình và đáp án đã soạn ở `assets/templates/audit-hunt/` (bản nháp, chưa thử với lớp).
 5. **Course summary, 8 phút: mỗi lesson đóng góp gì cho design outcome và business outcome.** Lesson cuối nên có phần này. Phần này tóm tắt **đóng góp của từng lesson**, không liệt kê method hay file đã làm. Một trang là một bảng, nối với business question của Delivery App từ Lesson 2 (khách mới không đặt lại sau đơn đầu tiên; tỷ lệ đặt đơn thứ hai trong 30 ngày là 41%):
 
    | Lesson | Đóng góp cho design outcome | Đóng góp cho business outcome |
@@ -45,7 +45,7 @@ Running example là Delivery App giao đồ ăn (cùng case Lesson 1 đến 5). 
 
    Điểm cần nói rõ khi dạy: bảng nói **đóng góp có thể có**, không phải kết quả đã đo. Một prototype đã test cho tín hiệu về trải nghiệm, nhưng không chứng minh tỷ lệ đặt đơn thứ hai tăng; điều đó phải đo sau launch (ngoài phạm vi khoá). Nêu thêm điều bạn làm được bây giờ: cùng product và business chọn vấn đề đáng giải, dùng AI để làm nhanh mà vẫn tự kiểm tra và tự quyết định.
 
-   Phần này **không** hỏi cảm nhận cá nhân (đã đổi cách làm việc ở đâu, lần sau làm gì): câu đó thuộc slide reflection ở buổi 12. Cần làm: một diagram "mỗi lesson đóng góp gì" trong `assets/` (chưa có).
+   Phần này **không** hỏi cảm nhận cá nhân (đã đổi cách làm việc ở đâu, lần sau làm gì): câu đó thuộc slide reflection ở buổi 12. Diagram "mỗi lesson đóng góp gì" nằm ở `lessons/06-test-with-real-users/assets/course-contribution.html`.
 6. **Hỏi đáp, 6 phút.**
 7. **Close, 4 phút:** nối sang P6, nhắc mang prototype Lesson 5 và rules file, và việc tìm participant trước P6. Nhắc buổi 12.
 

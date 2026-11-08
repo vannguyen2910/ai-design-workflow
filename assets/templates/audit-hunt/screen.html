@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chọn thời gian giao</title>
+<!-- Activity "Audit hunt" (draft, invented screen, Delivery App giao đồ ăn). The answer key is in _instructor-only-error-key.md and is for the instructor only. -->
+<style>
+:root {
+  --color-primary: #2D6A4F;
+  --color-on-primary: #FFFFFF;
+  --color-text: #1F1F1F;
+  --color-muted: #555555;
+  --color-bg: #F7F5F0;
+  --color-surface: #FFFFFF;
+  --color-border: #D6D1C7;
+  --color-border-strong: #767676;
+  --color-focus: #1D4ED8;
+  --color-badge-bg: #DCEFE4;
+  --color-badge-text: #1F5139;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px;
+  --radius-md: 10px; --radius-lg: 16px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.625rem;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font); font-size: var(--text-md); line-height: 1.5; color: var(--color-text); background: var(--color-bg); }
+h1 { font-size: var(--text-xl); line-height: 1.2; margin: 0 0 var(--space-3); }
+h2 { font-size: var(--text-lg); margin: 0 0 var(--space-2); }
+p { margin: 0 0 var(--space-3); }
+.header { background: var(--color-surface); border-bottom: 1px solid var(--color-border); padding: var(--space-3) var(--space-4); display: flex; justify-content: space-between; align-items: center; }
+.header a { color: var(--color-primary); font-weight: 700; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+.container { max-width: 480px; margin: 0 auto; padding: var(--space-5) var(--space-4) var(--space-6); }
+.stack > * + * { margin-top: var(--space-4); }
+.card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); }
+.badge { display: inline-block; background: var(--color-badge-bg); color: var(--color-badge-text); font-size: var(--text-sm); font-weight: 700; padding: var(--space-1) var(--space-3); border-radius: 999px; }
+.steps { display: flex; gap: var(--space-2); list-style: none; padding: 0; margin: 0 0 var(--space-4); font-size: var(--text-sm); color: var(--color-muted); }
+.steps [aria-current] { color: var(--color-text); font-weight: 700; }
+.slot { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; padding: var(--space-3) var(--space-4); border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); background: var(--color-surface); }
+.slot input { width: 20px; height: 20px; accent-color: var(--color-primary); }
+.slot--off { background: #EEEEEE; color: #8A8A8A; border-color: var(--color-border); }
+.field { width: 100%; min-height: 44px; padding: var(--space-3); border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); font: inherit; background: var(--color-surface); }
+.field::placeholder { color: #BBBBBB; }
+.btn { display: block; width: 100%; min-height: 48px; border: 0; border-radius: var(--radius-md); font: inherit; font-weight: 700; cursor: pointer; }
+.btn--primary { background: var(--color-primary); color: var(--color-on-primary); }
+.link-small { font-size: var(--text-sm); color: var(--color-primary); display: inline-block; line-height: 20px; }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+.slot input:focus-visible, .slot:focus-within { outline: none; }
+</style></head>
+<body>
+<header class="header">
+  <strong>Delivery App</strong>
+  <a href="#orders">Đơn hàng</a>
+</header>
+<main class="container stack">
+  <ol class="steps" aria-label="Tiến độ"><li>Giỏ hàng</li><li aria-current="step">Giao hàng</li><li>Thanh toán</li></ol>
+  <h1>Chọn thời gian giao</h1>
+
+  <div class="card stack">
+    <h2>Hôm nay</h2>
+    <span class="badge">Phổ biến</span>
+    <label class="slot"><input type="radio" name="slot" checked> 18:30 đến 19:00</label>
+    <label class="slot"><input type="radio" name="slot"> 19:00 đến 19:30</label>
+    <label class="slot slot--off"><input type="radio" name="slot" disabled> 19:30 đến 20:00</label>
+    <label class="slot"><input type="radio" name="slot"> 20:00 đến 20:30</label>
+    <a class="link-small" href="#fee">Xem chi tiết phí giao</a>
+  </div>
+
+  <div class="card stack">
+    <h2>Ghi chú cho shipper</h2>
+    <input class="field" type="text" aria-label="Ghi chú cho shipper" placeholder="Ví dụ: gọi trước khi đến">
+  </div>
+
+  <button class="btn" type="button" style="background:#E8590C;color:#FFFFFF">Order</button>
+</main>
+</body></html>

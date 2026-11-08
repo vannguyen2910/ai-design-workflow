@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mỗi lesson đóng góp gì · AI Design Workflow</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --paper: #f5f5f5; --ink: #2d3142; --muted: #4f5d75; --accent: #6b3fee; --accent-tint: #ece6fd; --line: #d9d9e0;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  body { font-family: var(--sans); background: var(--paper); color: var(--ink); padding: 3rem 2rem; line-height: 1.45; }
+  .frame { max-width: 1200px; margin: 0 auto; }
+  .eyebrow { font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: .5rem; }
+  h1 { font-size: clamp(1.5rem, 2.4vw + .75rem, 2.1rem); font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; }
+  .sub { color: var(--muted); margin-bottom: 1.75rem; max-width: 70ch; }
+  .grid { display: grid; grid-template-columns: 4.5rem 1fr 1fr; border: 1px solid var(--line); background: #fff; border-radius: 12px; overflow: hidden; }
+  .grid > div { padding: .85rem 1rem; border-bottom: 1px solid var(--line); }
+  .grid > div:nth-last-child(-n+3) { border-bottom: 0; }
+  .head { background: var(--ink); color: #fff; font-weight: 600; font-size: .85rem; letter-spacing: .04em; }
+  .num { font-weight: 700; font-size: 1.4rem; color: var(--accent); background: var(--accent-tint); display: flex; align-items: center; justify-content: center; }
+  .note { margin-top: 1.25rem; color: var(--muted); font-size: .9rem; max-width: 80ch; }
+  @media (max-width: 720px) { .grid { grid-template-columns: 3rem 1fr; } .grid .head:nth-child(3), .grid .biz::before { display: block; } .grid .head:nth-child(2), .grid .head:nth-child(3) { display: none; } .grid .design, .grid .biz { grid-column: 2; } .grid .biz { background: #fafaff; } }
+</style>
+</head>
+<body>
+<div class="frame">
+  <p class="eyebrow">Cả khoá · AI Design Workflow</p>
+  <h1>Mỗi lesson đóng góp gì</h1>
+  <p class="sub">Nối với business question của Delivery App: khách mới không đặt lại sau đơn đầu tiên; tỷ lệ đặt đơn thứ hai trong 30 ngày là 41%.</p>
+  <div class="grid" role="table" aria-label="Đóng góp của từng lesson">
+    <div class="head" role="columnheader">Lesson</div>
+    <div class="head" role="columnheader">Design outcome</div>
+    <div class="head" role="columnheader">Business outcome</div>
+
+    <div class="num" role="cell">1</div>
+    <div class="design" role="cell">Làm việc với AI trong workspace lặp lại được, không đưa dữ liệu nhạy cảm vào AI tool công khai</div>
+    <div class="biz" role="cell">Giảm rủi ro dữ liệu và tuân thủ, để công ty dùng AI an toàn</div>
+
+    <div class="num" role="cell">2</div>
+    <div class="design" role="cell">Biết đúng vấn đề đáng giải, có chuẩn chung để đánh giá thiết kế</div>
+    <div class="biz" role="cell">Thống nhất business question và metric trước khi build, tránh build sai vấn đề</div>
+
+    <div class="num" role="cell">3</div>
+    <div class="design" role="cell">Hiểu người dùng bằng persona, journey map, opportunity có evidence</div>
+    <div class="biz" role="cell">Quyết định dựa trên evidence thay vì niềm tin của team</div>
+
+    <div class="num" role="cell">4</div>
+    <div class="design" role="cell">Chọn hướng giải pháp có lý do, vẽ rõ flow phía sau màn hình</div>
+    <div class="biz" role="cell">Chọn hướng trước khi tốn công của developer, thấy sớm việc chạm đến team nào</div>
+
+    <div class="num" role="cell">5</div>
+    <div class="design" role="cell">Trải nghiệm nhất quán nhờ design system và rules file</div>
+    <div class="biz" role="cell">Có prototype nhanh để test sớm, giảm làm lại giữa design và developer</div>
+
+    <div class="num" role="cell">6</div>
+    <div class="design" role="cell">Bắt lỗi UX trước khi ship, giữ UX foundation khi người khác implement</div>
+    <div class="biz" role="cell">Giảm lỗi sau launch, tránh chồng tính năng lên nền yếu; có tín hiệu cho quyết định đầu tư</div>
+  </div>
+  <p class="note">Đây là đóng góp có thể có, suy ra từ mục tiêu từng lesson, không phải kết quả đã đo.</p>
+</div>
+</body>
+</html>
