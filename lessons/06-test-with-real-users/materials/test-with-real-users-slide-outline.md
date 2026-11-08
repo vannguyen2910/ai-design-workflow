@@ -2,7 +2,7 @@
 title: "Test with Real Users"
 lesson_file: "test-with-real-users-lesson.md"
 level: ""
-slide_count: 37
+slide_count: 39
 duration: "90 min"
 status: draft
 built_deck: ""
@@ -725,11 +725,62 @@ last_synced: 2026-11-08
 
   - Hai phút tự tìm, một phút đối chiếu với bản AI soạn nháp, hai phút lộ đáp án
   - Mỗi người đếm số finding AI sai và số finding AI bỏ sót
-  - Màn hình `screen.html` và đáp án nằm ở `assets/templates/audit-hunt/`; bản nháp chưa thử với lớp
+  - Màn hình nằm ở slide kế tiếp và đáp án ở slide sau đó; nguồn của màn hình là `assets/templates/audit-hunt/screen.html`, bản nháp chưa thử với lớp
   - Dữ liệu hư cấu, không dán tài liệu bảo mật
 
   > **Đếm lỗi của AI, đừng chỉ đọc kết quả.**
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
+
+---
+
+### IMAGE · Audit hunt screen
+- Kicker: Màn hình mẫu
+- Title: Màn hình cần audit
+- On-slide: Màn "Chọn thời gian giao" của Delivery App
+- Ví dụ: bản nháp (Delivery App: màn chọn khung giờ giao trên điện thoại, có bảy vấn đề cài sẵn ở nhiều lớp)
+- Câu hỏi hay gặp:
+  - Màn này có trạng thái rỗng hay lỗi không? Màn tĩnh chỉ cho thấy một trạng thái; điều không thấy trong ảnh thì ghi unknown.
+- Speaker notes:
+
+  > Đây là màn hình bạn audit trong hai phút. Mỗi vấn đề, bạn ghi lớp và severity.
+
+  - Màn hình có bảy vấn đề cài sẵn, nằm ở nhiều lớp khác nhau
+  - Màn tĩnh không cho thấy trạng thái rỗng, đang tải và lỗi; điều không thấy thì ghi unknown
+  - Màn hình được nhúng vào slide dưới dạng khung điện thoại từ `screen.html`
+  - Khoảng 2 phút cho slide này
+
+  > **Chỉ ghi điều bạn thấy được trên màn hình.**
+- 🎨 Visual hint: REAL. Khung điện thoại 390 px đặt giữa slide, nền paper-deeper, không chú thích.
+
+---
+
+### NUMBERED · Audit hunt answers
+- Kicker: Đáp án
+- Title: Bảy vấn đề cài sẵn
+- On-slide:
+  - 1 · Không hiện cut-off · flow · severity 4
+  - 2 · Khung giờ bị khoá không có lý do · heuristic · severity 3
+  - 3 · Focus không nhìn thấy · accessibility · severity 3
+  - 4 · Vùng chạm nhỏ · accessibility · severity 2
+  - 5 · Nhãn "Order" lệch "Đơn hàng" · nội dung · severity 2
+  - 6 · Màu thô trên nút · design system · severity 1
+  - 7 · Placeholder quá nhạt · accessibility · severity 2
+- Ví dụ: bản nháp (Delivery App: vấn đề 1 nặng nhất vì khách thanh toán rồi mới biết không đổi được khung giờ)
+- Câu hỏi hay gặp:
+  - Mình chấm lệch một bậc thì sao? Bình thường; lệch hai bậc trở lên thì nêu lý do.
+  - AI bỏ sót vấn đề nào nhiều nhất? Thường là vấn đề flow (số 1), vì nó cần đối chiếu với requirement chứ không chỉ nhìn ảnh.
+- Speaker notes:
+
+  > Mình đối chiếu từng vấn đề. Bạn đếm số vấn đề AI bỏ sót và số finding AI sai.
+
+  - Vấn đề 1 chỉ thấy khi so với requirement của flow ở buổi 4
+  - Vấn đề 5 và 6 cùng nằm ở một nút: một thứ AI tự dựng thường kéo theo thứ khác
+  - Severity là gợi ý; điểm lệch một bậc là bình thường
+  - Mỗi người đếm số lỗi của AI để biết AI đáng tin đến đâu với loại task này
+  - Khoảng 3 phút cho slide này
+
+  > **Đếm lỗi của AI, đừng chỉ đọc kết quả.**
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bảy dòng với số lớn, mỗi dòng gồm vấn đề, lớp và severity.
 
 ---
 

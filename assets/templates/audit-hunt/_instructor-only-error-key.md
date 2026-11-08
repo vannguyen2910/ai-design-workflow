@@ -2,7 +2,7 @@
 
 **Không gửi file này cho học viên trước khi activity kết thúc.** Màn hình `screen.html` là bản nháp, nội dung bịa (Delivery App giao đồ ăn, không đặt tên thương hiệu). Chưa dùng trong lớp, chưa thử với học viên. Winnie xác nhận hoặc thay trước khi dạy.
 
-Màn hình dùng token và component của starter, trừ bảy chỗ cài sẵn dưới đây. Học viên tìm, gán lớp (heuristic, accessibility, design system, state, nội dung, flow) và chấm severity 0 đến 4 theo thang ở lesson (mục 2.3).
+Màn hình hiển thị như một màn hình điện thoại (khung 390 px khi mở trên máy tính). Màn hình dùng token và component của starter, trừ bảy chỗ cài sẵn dưới đây. Học viên tìm, gán lớp (heuristic, accessibility, design system, state, nội dung, flow) và chấm severity 0 đến 4 theo thang ở lesson (mục 2.3).
 
 ## Bảy vấn đề cài sẵn
 
@@ -12,7 +12,7 @@ Màn hình dùng token và component của starter, trừ bảy chỗ cài sẵn
 | 2 | **Khung giờ bị khoá không có lý do** | "19:30 đến 20:00" bị xám, không ghi "hết chỗ" hay lý do khác | Heuristic | Trạng thái hệ thống: luôn cho người dùng biết điều gì đang diễn ra | **3**: khách không biết vì sao không chọn được, dễ bỏ dở |
 | 3 | **Focus không nhìn thấy** | Tab qua các khung giờ: không có viền focus (CSS `outline: none` trên `.slot`) | Accessibility | WCAG 2.1 AA, focus nhìn thấy (rules file, quy tắc 10) | **3**: người dùng bàn phím không biết đang ở đâu |
 | 4 | **Vùng chạm nhỏ** | Link "Xem chi tiết phí giao" cao khoảng 20 px | Accessibility | Vùng chạm tối thiểu 44 px | **2**: khó bấm trên điện thoại nhưng có đường khác |
-| 5 | **Nhãn lệch** | Nút "Order" trong khi header ghi "Đơn hàng" | Nội dung | Content voice: luôn gọi "Đơn hàng", không trộn "Order" | **2**: nhãn không nhất quán nhưng vẫn hiểu được |
+| 5 | **Nhãn lệch** | Nút "Order" ở thanh dưới, trong khi thanh tiêu đề ghi "Đơn hàng" | Nội dung | Content voice: luôn gọi "Đơn hàng", không trộn "Order" | **2**: nhãn không nhất quán nhưng vẫn hiểu được |
 | 6 | **Màu thô** | Nút "Order" dùng `#E8590C` thay vì token `--color-primary` | Design system | Quy tắc 2 của rules file: chỉ dùng token | **1**: sai nguồn nhưng chưa gây hại cho người dùng |
 | 7 | **Placeholder quá nhạt** | Ô "Ghi chú cho shipper": chữ gợi ý `#BBBBBB` trên nền trắng | Accessibility | WCAG 2.1 AA, độ tương phản chữ từ 4,5:1 | **2**: khó đọc nhưng ô có nhãn riêng nên vẫn dùng được |
 
@@ -20,7 +20,7 @@ Vấn đề 5 và 6 cùng nằm ở một nút: một thứ AI tự dựng thư�
 
 ## Điểm trông lạ nhưng đúng (đừng gạch)
 
-- Thẻ "Phổ biến" (`.badge`), chỉ báo bước (`.steps`) và các thẻ `.card` là component có sẵn.
+- Thẻ "Phổ biến" (`.badge`), chỉ báo bước (`.steps`), các thẻ `.card`, thẻ địa chỉ giao và khối tạm tính (170.000đ cộng 15.000đ bằng 185.000đ, đúng) là component và nội dung hợp lệ.
 - Giá, thời gian và khung giờ đều là nội dung giả; không gạch "dữ liệu giả" như một lỗi.
 
 ## Điều không thấy trong ảnh (AI phải ghi unknown)

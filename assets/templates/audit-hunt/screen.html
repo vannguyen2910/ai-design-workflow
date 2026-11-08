@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chọn thời gian giao</title>
-<!-- Activity "Audit hunt" (draft, invented screen, Delivery App giao đồ ăn). The answer key is in _instructor-only-error-key.md and is for the instructor only. -->
+<!-- Activity "Audit hunt" (draft, invented screen, Delivery App giao đồ ăn). Shown as a phone screen. The answer key is in _instructor-only-error-key.md and is for the instructor only. -->
 <style>
 :root {
   --color-primary: #2D6A4F;
@@ -15,59 +15,95 @@
   --color-focus: #1D4ED8;
   --color-badge-bg: #DCEFE4;
   --color-badge-text: #1F5139;
-  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px;
   --radius-md: 10px; --radius-lg: 16px;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.625rem;
+  --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.125rem; --text-xl: 1.5rem;
 }
 *, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; font-family: var(--font); font-size: var(--text-md); line-height: 1.5; color: var(--color-text); background: var(--color-bg); }
-h1 { font-size: var(--text-xl); line-height: 1.2; margin: 0 0 var(--space-3); }
-h2 { font-size: var(--text-lg); margin: 0 0 var(--space-2); }
-p { margin: 0 0 var(--space-3); }
-.header { background: var(--color-surface); border-bottom: 1px solid var(--color-border); padding: var(--space-3) var(--space-4); display: flex; justify-content: space-between; align-items: center; }
-.header a { color: var(--color-primary); font-weight: 700; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
-.container { max-width: 480px; margin: 0 auto; padding: var(--space-5) var(--space-4) var(--space-6); }
+html, body { height: 100%; margin: 0; }
+body { font-family: var(--font); font-size: var(--text-md); line-height: 1.45; color: var(--color-text); background: #E4E1DA; display: flex; align-items: center; justify-content: center; }
+
+/* phone frame: on a wide screen the app is shown at phone size */
+.phone { width: 390px; height: 800px; max-height: 100vh; background: var(--color-bg); border-radius: 36px; border: 10px solid #1F1F1F; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+@media (max-width: 430px) { body { background: var(--color-bg); } .phone { width: 100%; height: 100%; border: 0; border-radius: 0; box-shadow: none; } }
+
+.status { display: flex; justify-content: space-between; padding: 10px 22px 4px; font-size: var(--text-sm); font-weight: 700; background: var(--color-surface); }
+.appbar { background: var(--color-surface); border-bottom: 1px solid var(--color-border); display: flex; align-items: center; gap: var(--space-2); padding: 0 var(--space-2); min-height: 52px; }
+.appbar .back { width: 44px; height: 44px; border: 0; background: none; font-size: 1.5rem; color: var(--color-text); }
+.appbar h2 { font-size: var(--text-lg); margin: 0; }
+
+.scroll { flex: 1; overflow-y: auto; padding: var(--space-4); }
 .stack > * + * { margin-top: var(--space-4); }
-.card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); }
-.badge { display: inline-block; background: var(--color-badge-bg); color: var(--color-badge-text); font-size: var(--text-sm); font-weight: 700; padding: var(--space-1) var(--space-3); border-radius: 999px; }
-.steps { display: flex; gap: var(--space-2); list-style: none; padding: 0; margin: 0 0 var(--space-4); font-size: var(--text-sm); color: var(--color-muted); }
+h1 { font-size: var(--text-xl); line-height: 1.2; margin: 0; }
+h3 { font-size: var(--text-md); margin: 0 0 var(--space-2); }
+p { margin: 0; }
+.steps { display: flex; gap: var(--space-3); list-style: none; padding: 0; margin: 0; font-size: var(--text-sm); color: var(--color-muted); }
 .steps [aria-current] { color: var(--color-text); font-weight: 700; }
-.slot { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; padding: var(--space-3) var(--space-4); border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); background: var(--color-surface); }
-.slot input { width: 20px; height: 20px; accent-color: var(--color-primary); }
-.slot--off { background: #EEEEEE; color: #8A8A8A; border-color: var(--color-border); }
+.card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); }
+.address { display: flex; align-items: center; gap: var(--space-3); }
+.address .pin { width: 40px; height: 40px; border-radius: 50%; background: var(--color-badge-bg); display: flex; align-items: center; justify-content: center; }
+.address small { color: var(--color-muted); display: block; }
+.badge { display: inline-block; background: var(--color-badge-bg); color: var(--color-badge-text); font-size: var(--text-sm); font-weight: 700; padding: var(--space-1) var(--space-3); border-radius: 999px; }
+.slots { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin-top: var(--space-3); }
+.slot { position: relative; display: flex; align-items: center; justify-content: center; min-height: 48px; padding: var(--space-2) var(--space-3); border: 1.5px solid var(--color-border-strong); border-radius: var(--radius-md); background: var(--color-surface); font-weight: 700; font-size: var(--text-sm); cursor: pointer; }
+.slot input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.slot:has(input:checked) { background: var(--color-badge-bg); border-color: var(--color-primary); color: var(--color-badge-text); }
+.slot--off { background: #EEEEEE; color: #8A8A8A; border-color: var(--color-border); cursor: default; }
+.link-small { font-size: var(--text-sm); color: var(--color-primary); display: inline-block; line-height: 20px; margin-top: var(--space-3); }
 .field { width: 100%; min-height: 44px; padding: var(--space-3); border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); font: inherit; background: var(--color-surface); }
 .field::placeholder { color: #BBBBBB; }
+.sum { display: flex; justify-content: space-between; color: var(--color-muted); font-size: var(--text-sm); }
+.sum strong { color: var(--color-text); }
+
+.bottom { background: var(--color-surface); border-top: 1px solid var(--color-border); padding: var(--space-3) var(--space-4) var(--space-4); }
 .btn { display: block; width: 100%; min-height: 48px; border: 0; border-radius: var(--radius-md); font: inherit; font-weight: 700; cursor: pointer; }
-.btn--primary { background: var(--color-primary); color: var(--color-on-primary); }
-.link-small { font-size: var(--text-sm); color: var(--color-primary); display: inline-block; line-height: 20px; }
 :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
-.slot input:focus-visible, .slot:focus-within { outline: none; }
+.slot:focus-within { outline: none; }
 </style></head>
 <body>
-<header class="header">
-  <strong>Delivery App</strong>
-  <a href="#orders">Đơn hàng</a>
-</header>
-<main class="container stack">
-  <ol class="steps" aria-label="Tiến độ"><li>Giỏ hàng</li><li aria-current="step">Giao hàng</li><li>Thanh toán</li></ol>
-  <h1>Chọn thời gian giao</h1>
+<div class="phone">
+  <div class="status"><span>9:41</span><span>●●● 5G</span></div>
+  <header class="appbar">
+    <button class="back" type="button" aria-label="Quay lại">←</button>
+    <h2>Đơn hàng</h2>
+  </header>
 
-  <div class="card stack">
-    <h2>Hôm nay</h2>
-    <span class="badge">Phổ biến</span>
-    <label class="slot"><input type="radio" name="slot" checked> 18:30 đến 19:00</label>
-    <label class="slot"><input type="radio" name="slot"> 19:00 đến 19:30</label>
-    <label class="slot slot--off"><input type="radio" name="slot" disabled> 19:30 đến 20:00</label>
-    <label class="slot"><input type="radio" name="slot"> 20:00 đến 20:30</label>
-    <a class="link-small" href="#fee">Xem chi tiết phí giao</a>
+  <main class="scroll stack">
+    <ol class="steps" aria-label="Tiến độ"><li>Giỏ hàng</li><li aria-current="step">Giao hàng</li><li>Thanh toán</li></ol>
+    <h1>Chọn thời gian giao</h1>
+
+    <div class="card address">
+      <div class="pin" aria-hidden="true">⌖</div>
+      <div><small>Giao đến</small><strong>Nhà · 12 Nguyễn Trãi, Quận 1</strong></div>
+    </div>
+
+    <div class="card">
+      <h3>Hôm nay</h3>
+      <span class="badge">Phổ biến</span>
+      <div class="slots">
+        <label class="slot"><input type="radio" name="slot" checked>18:30 – 19:00</label>
+        <label class="slot"><input type="radio" name="slot">19:00 – 19:30</label>
+        <label class="slot slot--off"><input type="radio" name="slot" disabled>19:30 – 20:00</label>
+        <label class="slot"><input type="radio" name="slot">20:00 – 20:30</label>
+      </div>
+      <a class="link-small" href="#fee">Xem chi tiết phí giao</a>
+    </div>
+
+    <div class="card">
+      <h3>Ghi chú cho shipper</h3>
+      <input class="field" type="text" aria-label="Ghi chú cho shipper" placeholder="Ví dụ: gọi trước khi đến">
+    </div>
+
+    <div class="card stack">
+      <div class="sum"><span>2 món</span><span>170.000đ</span></div>
+      <div class="sum"><span>Phí giao</span><span>15.000đ</span></div>
+      <div class="sum"><strong>Tạm tính</strong><strong>185.000đ</strong></div>
+    </div>
+  </main>
+
+  <div class="bottom">
+    <button class="btn" type="button" style="background:#E8590C;color:#FFFFFF">Order</button>
   </div>
-
-  <div class="card stack">
-    <h2>Ghi chú cho shipper</h2>
-    <input class="field" type="text" aria-label="Ghi chú cho shipper" placeholder="Ví dụ: gọi trước khi đến">
-  </div>
-
-  <button class="btn" type="button" style="background:#E8590C;color:#FFFFFF">Order</button>
-</main>
+</div>
 </body></html>
