@@ -314,13 +314,13 @@ last_synced: 2026-11-08
   - Một nghiên cứu: AI tìm lại khoảng 21% vấn đề của chuyên gia
 - Ví dụ: có (bản nháp, Delivery App: AI báo "thiếu nút Back" ở màn xác nhận trong khi màn đó cố ý không có, còn bỏ sót việc không có trạng thái hết khung giờ)
 - Câu hỏi hay gặp:
-  - Nghiên cứu nào cho con số 21%? Một nghiên cứu về GPT-4o đánh giá usability: tìm lại khoảng 21,2% vấn đề của chuyên gia, 24,3% output là false positive. Một nghiên cứu khác tìm được 73 đến 77% nhưng kèm nhiều non-issue.
+  - Nghiên cứu nào cho con số 21%? Trong một nghiên cứu, một mô hình ngôn ngữ lớn đánh giá usability tìm lại khoảng 21,2% vấn đề của chuyên gia, và 24,3% kết quả là false positive. Một nghiên cứu khác tìm được 73 đến 77% nhưng kèm nhiều non-issue.
   - Accessibility tự động có đủ không? Không; kiểm thử tự động chỉ phủ khoảng 57% vấn đề theo một nghiên cứu của vendor.
 - Speaker notes:
 
   > Hai nghiên cứu khác nhau, cùng một kết luận: AI là phần bổ sung, cần người kiểm tra.
 
-  - Nghiên cứu thứ nhất (GPT-4o, usability): khoảng 21,2% vấn đề của chuyên gia được tìm lại, 24,3% output là false positive
+  - Nghiên cứu thứ nhất (mô hình ngôn ngữ lớn, usability): khoảng 21,2% vấn đề của chuyên gia được tìm lại, 24,3% kết quả là false positive
   - Nghiên cứu thứ hai (preprint): mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại, kèm nhiều non-issue
   - NN/g khuyên ba đến năm người đánh giá độc lập, nên một người cộng AI cho ra giả thuyết cần người dùng xác nhận
   - AI giúp được ở đâu: phủ nhiều màn và soạn nháp evidence; AI không thay người dùng thật
@@ -756,7 +756,7 @@ last_synced: 2026-11-08
   - 1 · làm việc với AI an toàn; giảm rủi ro dữ liệu
   - 2 · biết đúng vấn đề; thống nhất business question và metric
   - 3 · hiểu người dùng có evidence; quyết định dựa trên evidence
-  - 4 · chọn hướng có lý do; chọn trước khi tốn công dev
+  - 4 · chọn hướng có lý do; chọn trước khi tốn công của developer
   - 5 · trải nghiệm nhất quán; prototype nhanh để test sớm
   - 6 · bắt lỗi UX trước khi ship; giữ nền UX
 - Ví dụ: có (bản nháp, Delivery App: business question từ buổi 2 là khách mới không đặt lại sau đơn đầu tiên, 41% đặt đơn thứ hai trong 30 ngày)
@@ -766,10 +766,10 @@ last_synced: 2026-11-08
 
   > Mỗi dòng có hai vế: lesson đó giúp design outcome thế nào, và giúp business outcome thế nào.
 
-  - Lesson 1: workspace lặp lại được, không đưa dữ liệu nhạy cảm vào tool công khai; giảm rủi ro dữ liệu và tuân thủ
+  - Lesson 1: workspace lặp lại được, không đưa dữ liệu nhạy cảm vào AI tool công khai; giảm rủi ro dữ liệu và tuân thủ
   - Lesson 2: biết đúng vấn đề đáng giải và có chuẩn chung; thống nhất business question và metric trước khi build
   - Lesson 3: persona, journey map, opportunity có evidence; quyết định dựa trên evidence thay vì niềm tin của team
-  - Lesson 4: hướng giải pháp có lý do, flow rõ; chọn hướng trước khi tốn công dev
+  - Lesson 4: hướng giải pháp có lý do, flow rõ; chọn hướng trước khi tốn công của developer
   - Lesson 5: trải nghiệm nhất quán nhờ design system; prototype nhanh để test sớm, giảm làm lại
   - Lesson 6: bắt lỗi UX trước khi ship, giữ nền UX; giảm lỗi sau launch và có tín hiệu cho quyết định đầu tư
   - Khoảng 4 phút cho slide này
