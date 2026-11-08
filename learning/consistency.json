@@ -151,14 +151,6 @@
       ]
     },
     {
-      "term": "ux-audit.md",
-      "why": "output of the UX observation activity",
-      "in": [
-        "lessons/02-discover-the-problem/materials/discover-the-problem-practice.md",
-        "assets/diagrams/ai-design-workflow-six-weeks.swimlane.json"
-      ]
-    },
-    {
       "term": "assumption.md",
       "why": "output of the challenge assumptions activity",
       "in": [

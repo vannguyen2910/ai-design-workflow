@@ -25,7 +25,7 @@ Running example là Delivery App giao đồ ăn (cùng case Lesson 1 đến 5). 
 1. **Ice breaker, 5 phút:** mỗi người một câu: "Lần gần nhất một sản phẩm AI dựng giúp, trông xong rồi mà người dùng vẫn gặp vấn đề, vấn đề đó là gì?" Ghi nhanh các kiểu vấn đề, dùng lại ở phần 1.
 2. **Theory, 53 phút (6 phần, mỗi phần kết thúc bằng câu hỏi A/B 30 giây):**
    - **Validate sau khi AI build, 7 phút:** verification là nút thắt (Lesson 1); audit khác test ở đâu; vì sao audit đi trước; prototype Lesson 5 chỉ chứng minh được đường chính và còn "Known gaps".
-   - **UX Audit với AI, 14 phút:** UX Audit gồm heuristic evaluation và các lớp khác (accessibility, độ khớp với design system, các state, nội dung, flow so với requirement). Bạn giữ phạm vi, tiêu chí và severity; AI soạn nháp finding kèm evidence (ảnh, vùng). Dùng lại ba cổng lọc ở Lesson 2 (thấy được trên màn hình không, vi phạm principle nào, user thật có gặp không). Giới hạn của AI: tìm lại khoảng 21% vấn đề của chuyên gia và 24% false positive trong một nghiên cứu; kiểm thử accessibility tự động chỉ phủ khoảng 57%.
+   - **UX Audit với AI, 14 phút:** UX Audit gồm heuristic evaluation và các lớp khác (accessibility, độ khớp với design system, các state, nội dung, flow so với requirement). Bạn giữ phạm vi, tiêu chí và severity; AI soạn nháp finding kèm evidence (ảnh, vùng). Ba cổng lọc (chuyển từ Lesson 2) (thấy được trên màn hình không, vi phạm principle nào, user thật có gặp không). Giới hạn của AI: tìm lại khoảng 21% vấn đề của chuyên gia và 24% false positive trong một nghiên cứu; kiểm thử accessibility tự động chỉ phủ khoảng 57%.
    - **Goals, Signals, Metrics, 6 phút:** từ hypothesis (Lesson 4) và business question (Lesson 2) đến câu hỏi test được; khung HEART; task success, time on task, errors; SUS và vì sao mẫu 5 người chỉ cho tín hiệu.
    - **Usability test với participant bạn tự tìm, 10 phút:** tìm 3 đến 5 người đúng nhóm, screener, rủi ro khi test với bạn bè, consent và data rules (Lesson 1), test plan và script với AI (hỏi trung tính, cắt câu dẫn dắt), chạy moderated, ghi chú. **AI không đóng vai user.**
    - **Phân tích, xếp finding, sửa đúng layer, 8 phút:** kiểm bản AI với ghi chú hoặc bản ghi gốc (ba bước và source ID), xếp theo severity chứ không theo tần suất, giữ ý kiến trái chiều cùng trang, sửa ở layer rộng nhất mà lỗi còn đúng (layer ladder ở Lesson 5), rồi dựng lại.
@@ -102,10 +102,10 @@ Phát hiện là điều nguồn nói; suy luận ghi riêng. **Chưa có nguồ
 |---|---|---|
 | Verification là nút thắt khi implementation rẻ đi | Lesson 1 mục 3.5; DORA 2025 (AI là bộ khuếch đại, độ bất ổn tăng), Hammer 1990 | Đã dùng ở Lesson 1; số DORA qua tóm tắt thứ cấp |
 | 40% desk worker nhận sản phẩm AI trông như xong nhưng thiếu nội dung | BetterUp Labs và Stanford Social Media Lab (Workslop), 1.150 người | Đã dùng ở Lesson 1 |
-| AI chỉ tìm lại 21,2% vấn đề của chuyên gia, 24,3% false positive | Guerino và cộng sự, *Can GPT-4o Evaluate Usability Like Human Experts?* (arXiv 2506.16345) | Đã dùng ở Lesson 2 |
+| AI chỉ tìm lại 21,2% vấn đề của chuyên gia, 24,3% false positive | Guerino và cộng sự, *Can GPT-4o Evaluate Usability Like Human Experts?* (arXiv 2506.16345) | Nguồn chuyển từ Lesson 2 sang Lesson 6 (2026-11-07), xem `learning/lesson-6-heuristic-evaluation.md` |
 | Mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại, kèm nhiều non-issue | Zhong, McDonald, Hsieh, *Synthetic Heuristic Evaluation* (arXiv 2507.02306, preprint); số 77% hay 78% lệch trong bài | Đã dùng ở Lesson 2; kiểm lại trước khi lên slide |
-| Kiểm thử accessibility tự động phủ khoảng 57% | Deque (vendor) | Đã dùng ở Lesson 2 |
-| Mười heuristic, thang severity 0 đến 4, ba đến năm người đánh giá | Nielsen Norman Group | Đã dùng ở Lesson 2 |
+| Kiểm thử accessibility tự động phủ khoảng 57% | Deque (vendor) | Nguồn chuyển từ Lesson 2 sang Lesson 6 (2026-11-07), xem `learning/lesson-6-heuristic-evaluation.md` |
+| Mười heuristic, thang severity 0 đến 4, ba đến năm người đánh giá | Nielsen Norman Group | Nguồn chuyển từ Lesson 2 sang Lesson 6 (2026-11-07), xem `learning/lesson-6-heuristic-evaluation.md` |
 | User do AI mô phỏng không thay user thật | NN/g, *Synthetic Users*; nghiên cứu silicon sampling | Đã dùng ở Lesson 3 |
 | 5 participant bắt được phần lớn vấn đề lớn của một nhóm người dùng | NN/g, *Why You Only Need to Test with 5 Users* | `[to confirm]`: chưa đọc lại bản gốc |
 | SUS: thang 0 đến 100, 68 là mức trung bình tham chiếu; mẫu nhỏ chỉ cho tín hiệu | Brooke 1996; Sauro (MeasuringU) | `[to confirm]` |

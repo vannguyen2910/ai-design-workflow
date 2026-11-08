@@ -42,9 +42,8 @@ Practice này **không làm lại** việc ở Practice 2: bạn không rút ins
 |---|---|---|
 | `context/product-and-users.md` | Practice 1 | 1 (persona) |
 | `research-questions.md` (scope và câu hỏi) | Practice 2 | 7 (outcome, metric) |
-| `ux-audit.md` (finding, severity) | Practice 2 | 1 và 2 (giả thuyết cần insight xác nhận) |
 | `competitor-analysis.md` (pattern) | Practice 2 | 1 và 2 (giả thuyết cần insight xác nhận) |
-| `principles.md` (severity) | Practice 2 | 3 (xếp opportunity), 7 |
+| `principles.md` | Practice 2 | 1 đến 3 (làm chuẩn kiểm tra), 7 |
 
 - [ ] Có một AI chat tool đã được công ty cho phép.
 
@@ -55,7 +54,7 @@ File nào chưa có thì ghi "chưa có" ở đầu `work/user-voice-synthesis.m
 **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.**
 
 - Chỉ đưa AI insight đã kiểm tra, `principles.md` và các file bạn đã kiểm tra. Yêu cầu AI chỉ dùng những gì bạn đưa, tuân theo bộ nguyên tắc, trả lại kèm insight ID có thật, và được nói "unknown".
-- Điều từ `ux-audit.md` và `competitor-analysis.md` là **giả thuyết cần insight xác nhận**, không phải bằng chứng về người dùng.
+- Điều từ `competitor-analysis.md` là **giả thuyết cần insight xác nhận**, không phải bằng chứng về người dùng.
 - Mỗi dòng dẫn về insight ID. Ô nào chưa có insight thì ghi "assumption".
 - **Ghi giờ bắt đầu và kết thúc** mỗi step vào bảng ở cuối `work/user-voice-synthesis.md`, để tự đo AI giúp tiết kiệm bao nhiêu thời gian.
 - Prompt mẫu: persona, journey map, opportunity ở [Lesson 3](research-you-can-trust-lesson.md) mục 8; prompt phản biện ở [Lesson 2](../../02-discover-the-problem/materials/discover-the-problem-lesson.md) mục 8.
@@ -67,7 +66,7 @@ File nào chưa có thì ghi "chưa có" ở đầu `work/user-voice-synthesis.m
 
 **Ai làm:** AI soạn nháp, bạn kiểm tra.
 
-1. Đọc lại insight, insight ID và source ID ở `work/user-voice-synthesis.md`, và đọc lại `ux-audit.md`, `competitor-analysis.md` để biết giả thuyết nào còn chờ insight xác nhận.
+1. Đọc lại insight, insight ID và source ID ở `work/user-voice-synthesis.md`, và đọc lại `competitor-analysis.md` để biết giả thuyết nào còn chờ insight xác nhận.
 2. **AI soạn nháp:** gom insight đã kiểm tra, cùng `context/product-and-users.md` và `principles.md`, thành tối đa 3 nhóm hành vi và viết mô tả; mỗi dòng kèm insight ID.
 3. **Bạn kiểm tra:** dòng nào không có insight thì xoá hoặc ghi "unknown". Kiểm lại với `principles.md`. Insight nào chưa mở source ID ở Practice 2 thì mở source ID và đọc ngữ cảnh trước khi dùng.
 4. Ghi số người và số insight mà persona dựa vào.
@@ -79,8 +78,8 @@ File nào chưa có thì ghi "chưa có" ở đầu `work/user-voice-synthesis.m
 
 **Ai làm:** bạn liệt kê trước, rồi AI soạn nháp, bạn kiểm tra.
 
-1. **Bạn liệt kê** các giai đoạn của persona, bắt đầu từ flow đã chọn ở `ux-audit.md`.
-2. **AI soạn nháp:** đề xuất bước còn thiếu và điền hành động, cảm xúc, chỗ đau từ insight. Finding và pattern từ Practice 2 chỉ được đưa vào ô có insight xác nhận.
+1. **Bạn liệt kê** các giai đoạn của persona, bắt đầu từ một flow chính của persona.
+2. **AI soạn nháp:** đề xuất bước còn thiếu và điền hành động, cảm xúc, chỗ đau từ insight. Pattern từ competitor analysis ở Practice 2 chỉ được đưa vào ô có insight xác nhận.
 3. **Bạn kiểm tra:** mỗi ô có insight ID; ô nào không có thì ghi "assumption". Đếm tỷ lệ ô assumption.
 
 **Xong khi:** mỗi ô có insight ID hoặc nhãn "assumption", và bạn biết tỷ lệ ô assumption.
@@ -92,7 +91,7 @@ File nào chưa có thì ghi "chưa có" ở đầu `work/user-voice-synthesis.m
 
 1. **AI soạn nháp:** viết opportunity từ các chỗ đau trên journey map theo mẫu *"[Người dùng] gặp khó khi [tình huống] vì [lý do]"*, không nhắc tính năng.
 2. **Bạn kiểm tra:** mỗi opportunity là nhu cầu hay giải pháp? Có insight ID chưa?
-3. **Bạn xếp hạng** theo severity (thang trong `principles.md`), context và reach, không theo số lần được nhắc.
+3. **Bạn xếp hạng** theo severity (hậu quả), context và reach, không theo số lần được nhắc.
 4. Thêm một câu nêu mẫu không cho biết điều gì.
 
 **Xong khi:** mỗi opportunity viết như một nhu cầu, có insight ID, và đã được xếp hạng.
@@ -190,7 +189,7 @@ Xong cả 8 step thì mang các file này tới buổi practice trên lớp: b�
 
 ## If you get stuck
 
-- **Chưa có insight từ Practice 2:** quay lại Step 10 của Practice 2. Chưa phỏng vấn được ai thì dùng bộ insight [app giao đồ ăn](../../../assets/starter-files/course-case/insight-set.md) (chín insight đã có ID, dẫn về `source-notes.md`) và [project mẫu](../../../assets/starter-files/course-case/case-card.md), rồi làm lại với insight của bạn khi có.
+- **Chưa có insight từ Practice 2:** quay lại Step 9 của Practice 2. Chưa phỏng vấn được ai thì dùng bộ insight [app giao đồ ăn](../../../assets/starter-files/course-case/insight-set.md) (chín insight đã có ID, dẫn về `source-notes.md`) và [project mẫu](../../../assets/starter-files/course-case/case-card.md), rồi làm lại với insight của bạn khi có.
 - **Thiếu file từ Practice 1 hoặc 2:** ghi "chưa có" ở đầu `work/user-voice-synthesis.md` và bỏ phần đối chiếu liên quan.
 - **Công ty không cho dùng AI tool, hoặc không rõ công cụ có huấn luyện trên dữ liệu:** dừng lại, hỏi lead. Bạn vẫn làm được bản tay trên insight, rồi so với bản AI khi có công cụ được phép.
 - **AI đưa ra điều nghe hợp lý nhưng không có insight nào làm căn cứ:** ghi "chưa có nguồn" hoặc "unknown", không đưa vào như một sự thật.

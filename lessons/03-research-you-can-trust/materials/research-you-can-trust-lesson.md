@@ -43,7 +43,7 @@ Phần này nhắc lại những gì bạn đã học ở Lesson 2, đủ để 
 
 | Điều đã học | Nhắc lại |
 |---|---|
-| Bộ nguyên tắc | UX principle, business principle và severity: đặt trước khi AI chạy, dùng làm ràng buộc trong prompt và làm phép kiểm tra của bạn |
+| Bộ nguyên tắc | UX principle và business principle: đặt trước khi AI chạy, dùng làm ràng buộc trong prompt và làm phép kiểm tra của bạn |
 | Ba quy tắc với dữ liệu | Ẩn danh trên máy trước khi đưa cho AI; mỗi ghi chú nguồn có source ID, mỗi insight có insight ID; AI được phép nói unknown |
 | Kiểm tra insight | Tìm đúng source ID trong bộ ghi chú, rồi đọc ngữ cảnh quanh ghi chú; tìm đúng source ID chỉ bắt được nguồn bịa |
 | Ba bước | Decision (bạn viết), Insight (AI đề xuất kèm source ID, bạn kiểm tra, chọn và viết lại), Challenge (bạn phản biện, giữ ý kiến trái chiều) |

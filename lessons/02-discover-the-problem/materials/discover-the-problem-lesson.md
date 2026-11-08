@@ -29,7 +29,7 @@ Buổi này mở stage Discover. Bạn đặt một bộ nguyên tắc chung, h�
 ## Sau buổi học, bạn có thể
 
 1. Chỉ ra Discover nằm ở đâu trong Double Diamond và nêu AI giúp được gì, chưa giúp được gì ở stage này
-2. Phân biệt heuristic chung với principle riêng của sản phẩm, viết một principle có thể đảo ngược một quyết định và có dòng "điều này không có nghĩa là", và giải thích vì sao chuẩn đặt trước khi AI chạy
+2. Viết một principle riêng của sản phẩm có thể đảo ngược một quyết định và có dòng "điều này không có nghĩa là", và giải thích vì sao chuẩn đặt trước khi AI chạy
 3. Mô tả bốn hoạt động của Break the brief, file mỗi hoạt động tạo ra và phần bạn kiểm tra
 4. Giải thích vì sao AI không được đóng vai PO hay user, và gắn trạng thái confirmed hoặc assumed, cùng agreement status, cho scope
 5. Nêu hai nhánh của Understand our users, năm thói quen của một buổi phỏng vấn tốt và vai trò của AI ở từng nhánh
@@ -58,42 +58,22 @@ Phần AI làm nhanh nhất là biến brief thành màn hình. Phần AI chưa 
 
 ## 2. Design Principles: the standard AI checks against
 
-### 2.1 Three parts
+### 2.1 Two parts
 
 Không có chuẩn, AI đối chiếu công việc với "điều nghe hợp lý nói chung". Có chuẩn viết sẵn, AI đối chiếu với đúng tiêu chí của project. Bạn viết chuẩn một lần, các bước sau dùng lại.
 
 | Phần | Nội dung | Nguồn |
 |---|---|---|
-| UX principles | Hai lớp: mười usability heuristic của Nielsen, dùng được cho mọi sản phẩm; và 3 đến 5 principle riêng của sản phẩm (2.2) | Heuristic có sẵn; principle riêng bạn viết |
+| UX principles | 3 đến 5 principle riêng của sản phẩm (2.2) | Bạn viết |
 | Business principles | Ràng buộc và ưu tiên của business mà thiết kế không được vi phạm: mission, brand value, compliance, KPI, guardrail | Từ business hoặc PRD; không tiếp cận được business thì lấy từ PRD và thông tin công khai, ghi **assumed** |
-| Severity | Thang 0 đến 4 của Nielsen: 0 không phải vấn đề, 1 thẩm mỹ, 2 nhỏ, 3 lớn cần ưu tiên sửa, 4 nghiêm trọng, phải sửa trước khi phát hành | Có sẵn; bạn chấm |
 
-Hai thứ trả lời hai câu hỏi khác nhau: principle cho biết thiết kế có đúng hướng không, severity cho biết một vấn đề nặng đến đâu.
-
-### 2.2 Two kinds of UX principles
+### 2.2 Product UX principles
 
 | | |
 |---|---|
 | **What** | Principle riêng là quy tắc của sản phẩm, dùng để chọn khi hai hướng đều hợp lệ |
 | **Why** | AI và bạn cùng đối chiếu một chuẩn thay vì cảm giác |
 | **When** | Viết trước khi AI chạy, ở Step 1 của bài tập về nhà |
-
-Nielsen Norman Group tách heuristic và guideline chung (mô tả điều làm một thiết kế tốt, đúng với mọi sản phẩm) khỏi design principles riêng của sản phẩm. Mười heuristic của Nielsen thuộc loại đầu. Chúng giúp AI và bạn bắt lỗi quen thuộc, nhưng không cho biết sản phẩm này nên đánh đổi điều gì. Principle riêng trả lời câu đó.
-
-**Mười heuristic của Nielsen** làm nền chung cho UX observation (3.3). Bạn cần nhận ra từng cái để kiểm nhãn mà AI gán cho finding.
-
-| # | Heuristic | Ý chính |
-|---|---|---|
-| 1 | Trạng thái hệ thống | Luôn cho user biết điều gì đang diễn ra |
-| 2 | Khớp thế giới thực | Dùng ngôn ngữ và khái niệm user quen |
-| 3 | Kiểm soát và tự do | Có lối thoát và hoàn tác khi bấm nhầm |
-| 4 | Nhất quán và chuẩn | Cùng một thứ thì cùng tên, cùng cách làm |
-| 5 | Ngăn lỗi | Thiết kế để lỗi khó xảy ra ngay từ đầu |
-| 6 | Nhận ra, không phải nhớ | Hiện sẵn lựa chọn thay vì bắt nhớ |
-| 7 | Linh hoạt và hiệu quả | Có đường tắt cho người dùng thành thạo |
-| 8 | Gọn và tối giản | Bỏ thông tin không cần cho việc đang làm |
-| 9 | Giúp sửa lỗi | Thông báo lỗi nói rõ vấn đề và cách khắc phục |
-| 10 | Trợ giúp và tài liệu | Tìm được hướng dẫn đúng lúc cần |
 
 Một principle dùng được cần bốn điều (tổng hợp từ hướng dẫn của 18F và một tài liệu practitioner, nên là gợi ý, chưa phải chuẩn):
 
@@ -102,31 +82,30 @@ Một principle dùng được cần bốn điều (tổng hợp từ hướng d
 3. **Có một dòng "điều này không có nghĩa là…".** Dòng này chặn AI áp dụng quá tay.
 4. **Ít.** Tối đa 7 cho cả sản phẩm; project của chương trình cần 3 đến 5.
 
-Ví dụ trong Delivery App: *"Đổi ý phải dễ hơn cam kết. Không có nghĩa là bỏ bước xác nhận thanh toán."* Principle này đảo ngược quyết định "không đổi được khung giờ giao sau khi thanh toán" và cho UX observation (3.3) một tiêu chí cụ thể. Mỗi principle nên viết được thành một câu hỏi có hoặc không, ví dụ "Khách đổi được khung giờ giao sau khi thanh toán không?".
+Ví dụ trong Delivery App: *"Đổi ý phải dễ hơn cam kết. Không có nghĩa là bỏ bước xác nhận thanh toán."* Principle này đảo ngược quyết định "không đổi được khung giờ giao sau khi thanh toán" và cho AI một tiêu chí cụ thể. Mỗi principle nên viết được thành một câu hỏi có hoặc không, ví dụ "Khách đổi được khung giờ giao sau khi thanh toán không?".
 
 Principle riêng cũng là rubric cho AI chấm. Nghiên cứu UXBench cho thấy AI chấm UX trên một màn hình dễ cho nhận xét trơn tru nhưng thiếu căn cứ, nên tiêu chí cần viết quan sát được và chạy thử vài vòng trên output thật.
 
 ### 2.3 Principles first, then AI
 
-Bạn nắm nguyên tắc trước để nhận ra khi AI gán sai nguyên tắc hoặc đưa ra finding chung chung. UX observation dựa trên principles, không ngược lại.
+Bạn nắm nguyên tắc trước để nhận ra khi AI gán sai nguyên tắc hoặc đưa ra nhận định chung chung: AI chạy sau, trên chuẩn của bạn, không ngược lại.
 
 ---
 
 ## 3. Break the brief
 
-### 3.1 Five steps, four files
+### 3.1 Four steps, three files
 
-Break the brief là cách kiểm tra brief trước khi chấp nhận nó, và bắt đầu từ context pack đã dựng ở bài tập buổi 1. Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question (bước 0), quan sát trải nghiệm hiện tại, liệt kê điều đang tin mà chưa có bằng chứng, biến những điều đó thành research question. Competitor analysis đứng cuối vì nặng nhất và có thể làm tiếp sau mà không chặn Understand our users.
+Break the brief là cách kiểm tra brief trước khi chấp nhận nó, và bắt đầu từ context pack đã dựng ở bài tập buổi 1. Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question (bước 0), liệt kê điều đang tin mà chưa có bằng chứng, biến những điều đó thành research question. Competitor analysis đứng cuối vì nặng nhất và có thể làm tiếp sau mà không chặn Understand our users.
 
 Mỗi hoạt động chạy theo ba pha: nhắc lại method (tiêu chuẩn để kiểm tra), AI soạn nháp từ context pack và các file đã có bằng prompt trung tính, rồi bạn kiểm tra từng dòng, sửa và quyết định. Bạn cần nắm method để kiểm tra được AI, không để làm lại việc AI làm.
 
 | # | Activity | Đầu vào của bạn | AI làm | Bạn kiểm tra và quyết định | Đầu ra |
 |---|---|---|---|---|---|
 | 0 | Business question và scope | Business question và quyết định (một hai câu) | Soạn nháp năm câu gửi business, hỏi trung tính | Gửi, ghi agreement status | bản scope |
-| 1 | UX observation | Một flow và bốn đến sáu ảnh chụp | Đánh giá theo bộ nguyên tắc, gắn heuristic, đề xuất severity | Ba cổng lọc finding, chốt severity | bản đánh giá UX |
-| 2 | Challenge assumptions | Context pack, bản đánh giá UX, scope | Liệt kê giả định theo công thức, tìm giả định ẩn, hỏi ngược bằng chứng | Xếp ma trận, chọn ba giả định hàng đầu | bản đồ giả định |
-| 3 | Research questions | Ba giả định hàng đầu | Soạn research question theo tiêu chí, gắn quyết định và nơi tìm | Cắt câu dẫn dắt, chốt danh sách | danh sách research question |
-| 4 | Competitor analysis | Phạm vi và tiêu chí | Bảng bằng chứng theo từng đối thủ | Đối chiếu ảnh gốc, ghi tỷ lệ ô sai | bản phân tích đối thủ |
+| 1 | Challenge assumptions | Context pack, scope | Liệt kê giả định theo công thức, tìm giả định ẩn, hỏi ngược bằng chứng | Xếp ma trận, chọn ba giả định hàng đầu | bản đồ giả định |
+| 2 | Research questions | Ba giả định hàng đầu | Soạn research question theo tiêu chí, gắn quyết định và nơi tìm | Cắt câu dẫn dắt, chốt danh sách | danh sách research question |
+| 3 | Competitor analysis | Phạm vi và tiêu chí | Bảng bằng chứng theo từng đối thủ | Đối chiếu ảnh gốc, ghi tỷ lệ ô sai | bản phân tích đối thủ |
 
 Tên file và cấu trúc thư mục trong hub mẫu chỉ là gợi ý. Cách làm khác vẫn đạt mục tiêu miễn là mỗi bước có một đầu ra lưu lại được, AI đọc được và người khác kiểm tra được.
 
@@ -154,44 +133,24 @@ Có hai tầng câu hỏi. Tầng cao mang tính vision và mission ("sản ph�
 
 Không có access là vị thế yếu hơn, và quy trình chỉ giảm nhẹ chứ không che đi điều đó. Một scope bằng văn bản có nhãn assumption vẫn tốt hơn thiết kế từ một brief mà assumption bị giấu.
 
-### 3.3 User experience observation
-
-| | |
-|---|---|
-| **What** | Đánh giá của chuyên gia trên trải nghiệm hiện có theo mười heuristic và thang severity, khi chưa có user thật |
-| **Why** | Tìm sớm các vấn đề đáng hỏi; kết quả là giả thuyết cho phỏng vấn, không phải kết luận về người dùng |
-| **When** | Sau scope, trước Challenge assumptions |
-
-Đây là heuristic evaluation. **Method cần nhắc:** mười heuristic của Nielsen; mỗi vấn đề ghi màn hình, heuristic bị vi phạm, evidence và hậu quả; severity theo tần suất, tác động và tính lặp lại, trên thang 0 đến 4. Heuristic evaluation không thay được user research: một vi phạm chưa chắc là vấn đề thật.
-
-Bạn chọn một flow và chụp bốn đến sáu màn hình theo cùng cấu trúc (có ghi ngày). AI đánh giá trên các ảnh theo bộ nguyên tắc: mỗi finding ghi màn hình, heuristic, evidence (ảnh và vùng nào) và severity đề xuất; điều không thấy trong ảnh thì ghi unknown. Bạn lọc finding qua ba cổng:
-
-1. Thấy được trên màn hình không?
-2. Có vi phạm principle đã gán không?
-3. User thật có gặp không?
-
-Không qua cổng nào thì bỏ. Severity cuối do bạn chốt, và số finding AI sai được đếm lại.
-
-AI đánh giá chưa thay được người. Một nghiên cứu chỉ tìm lại 21,2% vấn đề của chuyên gia và 24,3% output là false positive. Nghiên cứu khác thấy mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại, kèm nhiều non-issue. Cả hai kết luận AI là phần bổ sung, cần người kiểm tra. NN/g khuyên ba đến năm người đánh giá độc lập, nên một người cộng AI cho ra giả thuyết cần user xác nhận ở Understand our users. Với accessibility, kiểm thử tự động chỉ phủ một phần vấn đề (57% theo số lượng trong một nghiên cứu của vendor Deque).
-
-### 3.4 Challenge assumptions
+### 3.3 Challenge assumptions
 
 | | |
 |---|---|
 | **What** | Giả định là điều đang tin mà chưa có bằng chứng; xếp lên ma trận Importance × Evidence |
 | **Why** | Biết điều gì phải kiểm chứng trước khi tốn công thiết kế |
-| **When** | Sau UX observation, trước Research questions |
+| **When** | Sau scope, trước Research questions |
 
 Giả định là điều đang tin về người dùng, vấn đề, giải pháp hoặc business mà chưa có bằng chứng. **Method cần nhắc** (theo framework Assumption Map của Strategyzer và Product Talk):
 
 - **Bốn loại:** User, Problem, Solution, Business (khả thi thị trường, giá, quy định).
 - **Công thức:** "Chúng tôi tin rằng [nhóm người dùng nào] sẽ [làm gì] vì [vì sao]. Chúng tôi biết mình đúng khi [tín hiệu]."
 - **Ma trận Importance × Evidence:** góc quan trọng cao, bằng chứng thấp (top-left) là chỗ phải kiểm chứng trước. Framework cho phép 3 đến 5 giả định; chương trình chọn 3 vì thời gian.
-- **Cập nhật bản đồ:** ở bước này chỉ ghi finding của bản đánh giá UX làm bằng chứng cho giả định nó xác nhận hoặc bác. Chuyển sang Confirmed, Unconfirmed hay Unknown sau khi có insight từ phỏng vấn (mục 5).
+- **Cập nhật bản đồ:** chuyển giả định sang Confirmed, Unconfirmed hay Unknown sau khi có insight từ phỏng vấn (mục 5).
 
-AI đọc context pack, bản đánh giá UX và scope rồi liệt kê giả định theo công thức, gắn loại, tìm giả định ẩn của brief và hỏi ngược bằng chứng của từng giả định ("dựa vào file nào? Nếu không có, ghi unknown"). Bạn tự xếp lên ma trận, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh AI không có. Mục AI đưa ra mà tài liệu không có thì ghi "chưa có nguồn"; bạn sửa ít nhất hai giả định AI viết cho cụ thể với project. Kết quả là **ba giả định hàng đầu** ở góc top-left, đầu vào của bước tiếp theo.
+AI đọc context pack và scope rồi liệt kê giả định theo công thức, gắn loại, tìm giả định ẩn của brief và hỏi ngược bằng chứng của từng giả định ("dựa vào file nào? Nếu không có, ghi unknown"). Bạn tự xếp lên ma trận, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh AI không có. Mục AI đưa ra mà tài liệu không có thì ghi "chưa có nguồn"; bạn sửa ít nhất hai giả định AI viết cho cụ thể với project. Kết quả là **ba giả định hàng đầu** ở góc top-left, đầu vào của bước tiếp theo.
 
-### 3.5 Research questions
+### 3.4 Research questions
 
 | | |
 |---|---|
@@ -207,7 +166,7 @@ Ví dụ trong Delivery App: "Khách đang làm gì khi cần dời khung giờ 
 
 AI soạn research question cho từng giả định hàng đầu theo các tiêu chí trên bằng prompt trung tính. Bạn cắt câu dẫn dắt hoặc hỏi sở thích, sửa câu quá rộng hay quá hẹp và chốt danh sách. Đây là đầu vào của research plan và phỏng vấn.
 
-### 3.6 Competitor analysis
+### 3.5 Competitor analysis
 
 Năm điều cần nắm:
 
@@ -239,7 +198,7 @@ Với survey, AI soạn nháp và đánh giá câu hỏi nhanh nhưng bỏ sót 
 
 ### 4.2 Research với AI: plan và script
 
-AI giúp rõ nhất ở khâu chuẩn bị. Chuỗi: research goal, người cần phỏng vấn, research question (từ 3.5), 5 đến 8 interview question, rồi facilitation script.
+AI giúp rõ nhất ở khâu chuẩn bị. Chuỗi: research goal, người cần phỏng vấn, research question (từ 3.4), 5 đến 8 interview question, rồi facilitation script.
 
 | Việc | AI làm | Bạn làm |
 |---|---|---|
@@ -341,8 +300,7 @@ Project mẫu (hư cấu): Delivery App, nhiều khách mới không đặt lạ
 
 - **Brief:** "Cải thiện onboarding."
 - **Business question:** "Vì sao khách mới không đặt lại sau đơn đầu tiên, và điều gì giữ họ lại?"
-- **Principles:** UX heuristic là kiểm soát và tự do của người dùng. UX principle riêng: "đổi ý phải dễ hơn cam kết, không có nghĩa là bỏ bước xác nhận thanh toán". Business principle: không tăng tỷ lệ huỷ đơn sau đơn đầu tiên (assumed). Severity: thang 0 đến 4.
-- **UX observation** trên flow chọn khung giờ giao: không có xác nhận sau khi chọn khung giờ (trạng thái hệ thống), không đổi được khung giờ sau khi thanh toán (kiểm soát của người dùng), nhãn nút khác nhau giữa hai màn hình (nhất quán).
+- **Principles:** UX principle riêng: "đổi ý phải dễ hơn cam kết, không có nghĩa là bỏ bước xác nhận thanh toán". Business principle: không tăng tỷ lệ huỷ đơn sau đơn đầu tiên (assumed).
 - **Điều đang tin** (AI soạn nháp, bạn đối chiếu): giá là lý do chính; khách không hiểu cách đổi khung giờ giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong project mẫu, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ đặt đơn thứ hai trong 30 ngày; baseline chưa biết, ghi assumed, người xác nhận là business.
 - **Research question** (từ giả định "khách không hiểu cách đổi khung giờ giao"): "Khách đang làm gì khi cần dời khung giờ giao của đơn đã đặt, và điều gì khiến họ bỏ dở?" Câu này phục vụ quyết định có thiết kế lại bước đổi khung giờ hay không, và tìm câu trả lời ở phỏng vấn user.
@@ -364,7 +322,6 @@ Ví dụ ghi chú I01-03 bị cắt (5.3) và giả định về giá so với 2
 
 ## Giới hạn của bài học
 
-- Bằng chứng về AI làm heuristic evaluation đến từ hai nghiên cứu nhỏ và khác thiết kế. Người trả lời mô phỏng được đo ở lĩnh vực khác, nên áp vào design stakeholder là suy luận.
 - Bằng chứng về AI gắn code và tổng hợp (mục 5) đến từ nghiên cứu nhỏ ở các lĩnh vực khác (tin nhắn SMS, sức khoẻ, sinh viên khuyết tật). Áp vào phỏng vấn UX bằng tiếng Việt là suy luận và chưa có số đo.
 - Hướng dẫn viết principle (2.2) tổng hợp từ 18F và một tài liệu practitioner, không phải nghiên cứu thực nghiệm. UXBench mới được đọc qua kết quả tìm kiếm.
 - Ba mức access, agreement status, ba bước synthesis và năm điều cần soi do chương trình thiết kế, chưa thử với lớp thật.

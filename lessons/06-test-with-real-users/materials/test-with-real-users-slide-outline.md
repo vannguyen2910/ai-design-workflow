@@ -2,7 +2,7 @@
 title: "Test with Real Users"
 lesson_file: "test-with-real-users-lesson.md"
 level: ""
-slide_count: 39
+slide_count: 40
 duration: "90 min"
 status: draft
 built_deck: ""
@@ -175,10 +175,10 @@ last_synced: 2026-11-08
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần này nối từ heuristic evaluation ở buổi 2 sang UX Audit đầy đủ hơn
+  - Phần này dạy heuristic evaluation và UX Audit đầy đủ hơn; đối tượng là prototype của buổi 5
   - Phần này dùng lại thang severity
 
-  > Ở buổi 2, bạn đã đánh giá một sản phẩm có sẵn. Hôm nay bạn đánh giá chính prototype của mình.
+  > Hôm nay bạn đánh giá chính prototype của mình, theo một bộ tiêu chí có sẵn.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper.
 
 ---
@@ -200,7 +200,7 @@ last_synced: 2026-11-08
 
   > Một designer ở team product mở prototype ra và thấy nút Xác nhận dùng màu thô thay vì token. Đó là một finding của audit, không phải ý kiến cá nhân.
 
-  - Heuristic evaluation chấm giao diện theo mười heuristic của Nielsen, bạn đã dùng ở buổi 2
+  - Heuristic evaluation chấm giao diện theo mười heuristic của Nielsen, được nêu ở slide sau
   - UX Audit rộng hơn, gồm cả các lớp nằm trong rules file và design system của bạn
   - Đầu ra là danh sách finding có evidence và severity, không phải nhận xét chung chung
   - AI giúp được ở đâu: soạn nháp finding kèm evidence theo tiêu chí bạn đặt; AI không chấm severity cuối và không kết luận người dùng sẽ gặp vấn đề
@@ -243,6 +243,39 @@ last_synced: 2026-11-08
 
 ---
 
+### NUMBERED · Ten heuristics
+- Kicker: Tham khảo
+- Title: Mười *heuristic* của Nielsen
+- On-slide:
+  - 01 · Trạng thái hệ thống: luôn cho người dùng biết điều gì đang diễn ra
+  - 02 · Khớp thế giới thực: dùng ngôn ngữ và khái niệm người dùng quen
+  - 03 · Kiểm soát và tự do: có lối thoát, hoàn tác khi bấm nhầm
+  - 04 · Nhất quán và chuẩn: cùng một thứ thì cùng tên, cùng cách làm
+  - 05 · Ngăn lỗi: thiết kế để lỗi khó xảy ra ngay từ đầu
+  - 06 · Nhận ra, không phải nhớ: hiện sẵn lựa chọn thay vì bắt nhớ
+  - 07 · Linh hoạt và hiệu quả: có đường tắt cho người dùng thành thạo
+  - 08 · Gọn và tối giản: bỏ thông tin không cần cho việc đang làm
+  - 09 · Giúp sửa lỗi: báo lỗi rõ vấn đề và cách sửa
+  - 10 · Trợ giúp và tài liệu: tìm được hướng dẫn đúng lúc cần
+- Ví dụ: bản nháp (Delivery App: không có xác nhận sau khi chọn khung giờ là heuristic 01; không đổi được sau khi thanh toán là 03; nhãn nút khác nhau giữa hai màn hình là 04)
+- Câu hỏi hay gặp:
+  - Phải thuộc cả mười không? Không cần thuộc lòng; cần nhận ra nhãn nào đúng khi AI gán, và có thể giữ danh sách này cạnh `principles.md`.
+  - Mười heuristic thay được principle riêng không? Không: heuristic đúng với mọi sản phẩm, principle riêng cho biết sản phẩm này đánh đổi điều gì.
+- Speaker notes:
+
+  > AI báo một finding "vi phạm nhất quán". Để biết nhãn đó đúng hay sai, bạn cần biết đủ mười heuristic, không chỉ ba cái hay gặp.
+
+  - Mười heuristic của Nielsen là chuẩn chung để chấm một giao diện
+  - Ba heuristic bám theo ví dụ: 01 trạng thái hệ thống, 03 kiểm soát và tự do, 04 nhất quán
+  - Cặp dễ nhầm: 01 (hệ thống không báo gì) với 04 (hai nơi nói khác nhau)
+  - Mỗi finding gắn đúng một heuristic
+  - Khoảng 2 phút cho slide này
+
+  > Trong mười cái này, cái nào hay bị vi phạm nhất ở sản phẩm bạn đang làm?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, hai cột năm hàng; số in nghiêng purple, tên heuristic in đậm, giải thích ngắn bên dưới.
+
+---
+
 ### DIAGRAM · Severity scale
 - Kicker: Thang điểm
 - Title: Thang severity 0 đến 4
@@ -259,7 +292,7 @@ last_synced: 2026-11-08
   - Hai finding cùng điểm thì sửa cái nào trước? Cái nhiều người có thể gặp hơn, hoặc cái nằm ở layer rộng hơn.
 - Speaker notes:
 
-  > Bạn đã dùng thang này ở buổi 2. Hôm nay nó quyết định bạn sửa gì trước.
+  > Thang này quyết định bạn sửa gì trước, và bạn dùng lại nó khi xếp finding sau test.
 
   - Điểm 0 đến 4 là thang của Nielsen Norman Group
   - Ba điều giúp chọn điểm: tần suất (bao nhiêu người có thể gặp), tác động (hoàn thành được task hay bỏ dở), tính lặp lại (gặp một lần hay lần nào cũng gặp)
@@ -293,7 +326,7 @@ last_synced: 2026-11-08
 
   - Mỗi finding ghi màn hình, lớp, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất
   - Điều không thấy trong ảnh thì AI ghi unknown
-  - Ba cổng lọc là cổng đã dùng ở buổi 2
+  - Ba cổng lọc: thấy được trên màn hình không, vi phạm tiêu chí đã gán không, người dùng thật có gặp không
   - Finding không qua cổng nào thì bỏ, hoặc đổi thành giả thuyết để hỏi ở usability test
   - Số lỗi của AI cho bạn biết AI đáng tin đến đâu với loại task này
   - Khoảng 3 phút cho slide này
@@ -556,7 +589,7 @@ last_synced: 2026-11-08
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần này dùng lại ba bước, source ID và severity của buổi 2, cùng layer ladder của buổi 5
+  - Phần này dùng lại ba bước và source ID của buổi 2, thang severity ở phần 02 và layer ladder của buổi 5
 
   > Test xong, bạn có một chồng ghi chú. Phần này biến nó thành việc cần sửa.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper.

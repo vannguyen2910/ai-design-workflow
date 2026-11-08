@@ -79,7 +79,7 @@ Prototype ở Lesson 5 là bản tham chiếu và thứ để test, không phả
 
 ### 2.2 Heuristic evaluation và UX Audit
 
-Heuristic evaluation là một method: bạn chấm giao diện theo mười usability heuristic của Nielsen (bạn đã dùng ở Lesson 2) và thang severity. UX Audit rộng hơn, gồm heuristic evaluation và các lớp khác:
+Heuristic evaluation là một method: bạn chấm giao diện theo mười usability heuristic của Nielsen (mục 2.3) và thang severity (mục 2.4). UX Audit rộng hơn, gồm heuristic evaluation và các lớp khác:
 
 | Lớp | Câu hỏi | Ví dụ trong Delivery App |
 |---|---|---|
@@ -90,9 +90,28 @@ Heuristic evaluation là một method: bạn chấm giao diện theo mười usa
 | Nội dung | Nhãn và thông báo có nhất quán với content voice không? | Chỗ gọi "Đơn hàng", chỗ gọi "Order" |
 | Flow | Có khớp requirement và flow đã chọn ở Lesson 4 không? | Thiếu bước hiển thị cut-off trước khi thanh toán |
 
-### 2.3 Thang severity
+### 2.3 Mười heuristic của Nielsen
 
-Mỗi finding cần một severity để bạn biết sửa gì trước. Bạn đã dùng thang 0 đến 4 của Nielsen ở Lesson 2; đây là lúc dùng lại.
+Mười heuristic là chuẩn chung để chấm một giao diện. Bạn cần nhận ra từng cái để kiểm nhãn mà AI gán cho finding.
+
+| # | Heuristic | Ý chính |
+|---|---|---|
+| 1 | Trạng thái hệ thống | Luôn cho người dùng biết điều gì đang diễn ra |
+| 2 | Khớp thế giới thực | Dùng ngôn ngữ và khái niệm người dùng quen |
+| 3 | Kiểm soát và tự do | Có lối thoát và hoàn tác khi bấm nhầm |
+| 4 | Nhất quán và chuẩn | Cùng một thứ thì cùng tên, cùng cách làm |
+| 5 | Ngăn lỗi | Thiết kế để lỗi khó xảy ra ngay từ đầu |
+| 6 | Nhận ra, không phải nhớ | Hiện sẵn lựa chọn thay vì bắt nhớ |
+| 7 | Linh hoạt và hiệu quả | Có đường tắt cho người dùng thành thạo |
+| 8 | Gọn và tối giản | Bỏ thông tin không cần cho việc đang làm |
+| 9 | Giúp sửa lỗi | Thông báo lỗi nói rõ vấn đề và cách khắc phục |
+| 10 | Trợ giúp và tài liệu | Tìm được hướng dẫn đúng lúc cần |
+
+Ví dụ trong Delivery App: không có xác nhận sau khi chọn khung giờ là heuristic 1; không đổi được khung giờ sau khi thanh toán là heuristic 3; nhãn nút khác nhau giữa hai màn hình là heuristic 4. Mỗi finding gắn đúng một heuristic. Heuristic đúng với mọi sản phẩm; principle riêng ở bộ nguyên tắc của bạn mới cho biết sản phẩm này đánh đổi điều gì.
+
+### 2.4 Thang severity
+
+Mỗi finding cần một severity để bạn biết sửa gì trước. Chương trình dùng thang 0 đến 4 của Nielsen.
 
 | Điểm | Mức | Nghĩa | Ví dụ trong Delivery App |
 |---|---|---|---|
@@ -110,16 +129,16 @@ Ba điều giúp bạn chọn điểm:
 
 AI có thể đề xuất severity, nhưng bạn chốt điểm cuối, vì AI không biết hậu quả với người dùng và business của bạn. Khi đặt điểm, ghi kèm một dòng lý do (ví dụ "3, vì khách bỏ dở task mà không biết vì sao"). Ở mục 5.2, bạn dùng chính thang này để xếp finding sau test.
 
-### 2.4 Cách chạy một UX Audit với AI
+### 2.5 Cách chạy một UX Audit với AI
 
 1. **Tự rà trước (khoảng 5 phút).** Bạn mở prototype và tự ghi vài điều thấy ngay, trước khi nhờ AI.
 2. **Đặt phạm vi và tiêu chí.** Một flow, một số màn hình, các lớp ở bảng trên. Bộ nguyên tắc và rules file của bạn là tiêu chí.
 3. **AI soạn nháp finding.** Mỗi finding ghi màn hình, lớp, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất. Điều không thấy trong ảnh thì AI ghi unknown.
-4. **Lọc qua ba cổng (đã dùng ở Lesson 2).** (a) Thấy được trên màn hình không? (b) Có vi phạm tiêu chí đã gán không? (c) Người dùng thật có gặp không? Không qua cổng nào thì bỏ hoặc chuyển thành giả thuyết để hỏi ở usability test.
-5. **Bạn chấm severity** theo thang ở mục 2.3. Severity cuối do bạn chốt.
+4. **Lọc qua ba cổng.** (a) Thấy được trên màn hình không? (b) Có vi phạm tiêu chí đã gán không? (c) Người dùng thật có gặp không? Không qua cổng nào thì bỏ hoặc chuyển thành giả thuyết để hỏi ở usability test.
+5. **Bạn chấm severity** theo thang ở mục 2.4. Severity cuối do bạn chốt.
 6. **Đếm lỗi của AI:** finding sai, finding bỏ sót so với bước tự rà. Con số này cho bạn biết AI đáng tin đến đâu với loại task này.
 
-### 2.5 AI làm audit tốt đến đâu
+### 2.6 AI làm audit tốt đến đâu
 
 - Trong một nghiên cứu, một mô hình ngôn ngữ lớn đánh giá usability chỉ tìm lại khoảng 21,2% vấn đề của chuyên gia, và 24,3% kết quả là false positive.
 - Một nghiên cứu khác (preprint) thấy mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại, kèm nhiều non-issue.
@@ -225,7 +244,7 @@ Sau khi test, bạn có thể nhờ AI gom ghi chú thành finding nháp. Dùng 
 
 ### 5.2 Xếp finding theo severity, không theo tần suất
 
-Một vấn đề chỉ một người gặp nhưng khiến họ bỏ dở task vẫn quan trọng hơn một khó chịu nhỏ năm người cùng nhắc. Dùng thang ở mục 2.3 và xét ba điều: tần suất, tác động và tính lặp lại. Mỗi finding đi kèm một dòng nêu mẫu của bạn không cho biết điều gì, và ý kiến trái chiều giữ cùng trang với finding.
+Một vấn đề chỉ một người gặp nhưng khiến họ bỏ dở task vẫn quan trọng hơn một khó chịu nhỏ năm người cùng nhắc. Dùng thang ở mục 2.4 và xét ba điều: tần suất, tác động và tính lặp lại. Mỗi finding đi kèm một dòng nêu mẫu của bạn không cho biết điều gì, và ý kiến trái chiều giữ cùng trang với finding.
 
 ### 5.3 Sửa ở đúng layer
 
