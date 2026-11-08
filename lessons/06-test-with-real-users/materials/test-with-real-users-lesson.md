@@ -32,7 +32,7 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 1. Giải thích vì sao implement nhanh bằng AI làm verification thành nút thắt, và khi nào dùng UX Audit, khi nào dùng usability test
 2. Chạy một UX Audit với AI: đặt phạm vi và tiêu chí, lọc finding qua ba cổng, chấm severity, và đếm finding AI sai hoặc bỏ sót
 3. Viết Goals, Signals, Metrics cho một test và nêu giới hạn của SUS trên mẫu nhỏ
-4. Chuẩn bị một usability test: tìm participant, xin consent, viết test plan và script với AI mà không để AI đóng vai user
+4. Chuẩn bị một usability test: tìm participant, xin consent, viết test plan và script với AI mà không để AI đóng vai người dùng
 5. Kiểm tra phần phân tích của AI với ghi chú gốc, xếp finding theo severity và sửa ở đúng layer
 6. Gom gói handoff giữ UX foundation để người implement sau không chồng tính năng lên mà bỏ qua nền
 7. Nêu mỗi lesson đóng góp gì cho design outcome và business outcome, và phân biệt đóng góp có thể có với kết quả đã đo
@@ -115,18 +115,18 @@ AI có thể đề xuất severity, nhưng bạn chốt điểm cuối, vì AI k
 1. **Tự rà trước (khoảng 5 phút).** Bạn mở prototype và tự ghi vài điều thấy ngay, trước khi nhờ AI.
 2. **Đặt phạm vi và tiêu chí.** Một flow, một số màn hình, các lớp ở bảng trên. Bộ nguyên tắc và rules file của bạn là tiêu chí.
 3. **AI soạn nháp finding.** Mỗi finding ghi màn hình, lớp, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất. Điều không thấy trong ảnh thì AI ghi unknown.
-4. **Lọc qua ba cổng.** (a) Thấy được trên màn hình không? (b) Có vi phạm tiêu chí đã gán không? (c) Người dùng thật có gặp không? Không qua cổng nào thì bỏ hoặc chuyển thành giả thuyết để hỏi ở usability test.
+4. **Lọc qua ba cổng (đã dùng ở Lesson 2).** (a) Thấy được trên màn hình không? (b) Có vi phạm tiêu chí đã gán không? (c) Người dùng thật có gặp không? Không qua cổng nào thì bỏ hoặc chuyển thành giả thuyết để hỏi ở usability test.
 5. **Bạn chấm severity** theo thang ở mục 2.3. Severity cuối do bạn chốt.
 6. **Đếm lỗi của AI:** finding sai, finding bỏ sót so với bước tự rà. Con số này cho bạn biết AI đáng tin đến đâu với loại task này.
 
 ### 2.5 AI làm audit tốt đến đâu
 
-- Một nghiên cứu cho GPT-4o đánh giá usability chỉ tìm lại khoảng 21,2% vấn đề của chuyên gia, và 24,3% output là false positive.
+- Trong một nghiên cứu, một mô hình ngôn ngữ lớn đánh giá usability chỉ tìm lại khoảng 21,2% vấn đề của chuyên gia, và 24,3% kết quả là false positive.
 - Một nghiên cứu khác (preprint) thấy mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại, kèm nhiều non-issue.
 - Kiểm thử accessibility tự động chỉ phủ một phần vấn đề (khoảng 57% theo số lượng trong một nghiên cứu của vendor Deque).
 - NN/g khuyên ba đến năm người đánh giá độc lập cho heuristic evaluation.
 
-Cả hai nghiên cứu về AI kết luận AI là phần bổ sung, cần người kiểm tra. Vì vậy một người cộng AI cho ra giả thuyết cần người dùng xác nhận, không phải kết luận.
+Cả hai nghiên cứu cùng kết luận AI là phần bổ sung và cần người kiểm tra. Vì vậy, kết quả của một người làm cùng AI là giả thuyết cần người dùng xác nhận, chưa phải kết luận.
 
 ---
 
@@ -209,7 +209,7 @@ Bạn có sẵn template `deliver-test-plan.md`. Các phần chính: hypothesis 
 
 ### 4.6 Vì sao AI không đóng vai người dùng
 
-Các nghiên cứu về người trả lời mô phỏng (silicon sampling) cho thấy họ thiên về câu trả lời dễ nghe và chỉ khớp ở mức nhóm. NN/g, khi chạy lại ba nghiên cứu cũ với người dùng AI, thấy giá trị và nhu cầu nêu ra quá nông và hành vi bị lý tưởng hoá. Một "người dùng" do AI mô phỏng luôn làm được task, nên nó che đúng chỗ bạn cần thấy. AI giúp ở khâu chuẩn bị và gom ghi chú, người dùng thật thì không thay thế được.
+Các nghiên cứu về người trả lời mô phỏng (silicon sampling) cho thấy họ thiên về câu trả lời dễ nghe và chỉ khớp ở mức nhóm. NN/g, khi chạy lại ba nghiên cứu cũ với người dùng AI, thấy giá trị và nhu cầu nêu ra quá nông và hành vi bị lý tưởng hoá. Một "người dùng" do AI mô phỏng luôn làm được task, nên nó che đúng chỗ bạn cần thấy. AI giúp được ở khâu chuẩn bị và gom ghi chú, nhưng không thay thế được người dùng thật.
 
 ---
 
@@ -247,7 +247,7 @@ Có hai cách sai: **fix too low** (sửa lại ở từng màn, các bản lệ
 
 ### 6.1 Handoff không còn là bàn giao màn hình
 
-Handoff pack và measurement plan kiểu cũ đã không còn trong chương trình. Điều còn lại cần bàn giao là **UX foundation**, vì người implement sau (có thể là developer, product owner hay chính AI của họ) dễ chồng tính năng lên nhau mà không biết nền UX đang giữ điều gì.
+Handoff pack và measurement plan kiểu cũ không còn trong chương trình. Điều còn lại cần bàn giao là **UX foundation**, vì người implement sau (có thể là developer, product owner hay chính AI của họ) dễ chồng tính năng lên nhau mà không biết nền UX đang giữ điều gì.
 
 ### 6.2 Gói handoff
 
@@ -273,11 +273,11 @@ Lesson này là lesson cuối. Bảng dưới nối từng lesson với business
 
 | Lesson | Đóng góp cho design outcome | Đóng góp cho business outcome |
 |---|---|---|
-| 1 | Làm việc với AI trong một workspace lặp lại được, không đưa dữ liệu nhạy cảm vào tool công khai | Giảm rủi ro dữ liệu và tuân thủ, để công ty dùng AI một cách an toàn |
+| 1 | Làm việc với AI trong một workspace lặp lại được, không đưa dữ liệu nhạy cảm vào AI tool công khai | Giảm rủi ro dữ liệu và tuân thủ, để công ty dùng AI một cách an toàn |
 | 2 | Biết đúng vấn đề đáng giải và có chuẩn chung để đánh giá thiết kế | Thống nhất business question và metric với business trước khi build, tránh build sai vấn đề |
 | 3 | Hiểu người dùng bằng persona, journey map, opportunity có evidence | Quyết định dựa trên evidence thay vì niềm tin của team (ví dụ "giá là lý do chính") |
-| 4 | Chọn được hướng giải pháp có lý do và vẽ rõ flow phía sau màn hình | Chọn hướng trước khi tốn công dev, thấy sớm việc chạm đến team nào |
-| 5 | Trải nghiệm nhất quán nhờ design system và rules file | Có prototype nhanh để test sớm, giảm làm lại giữa design và dev |
+| 4 | Chọn được hướng giải pháp có lý do và vẽ rõ flow phía sau màn hình | Chọn hướng trước khi tốn công của developer, thấy sớm việc chạm đến team nào |
+| 5 | Trải nghiệm nhất quán nhờ design system và rules file | Có prototype nhanh để test sớm, giảm làm lại giữa design và developer |
 | 6 | Bắt lỗi UX trước khi ship và giữ UX foundation khi người khác implement | Giảm lỗi sau launch và tránh chồng tính năng lên nền yếu; có tín hiệu về task success cho quyết định đầu tư |
 
 Bảng này nói **đóng góp có thể có**, không phải kết quả đã đo. Một prototype đã test cho tín hiệu về trải nghiệm, nhưng không chứng minh tỷ lệ đặt đơn thứ hai tăng. Điều đó phải đo sau launch, ngoài phạm vi khoá.
@@ -290,7 +290,7 @@ Bảng này nói **đóng góp có thể có**, không phải kết quả đã �
 
 | Sai lầm | Biểu hiện | Cách sửa |
 |---|---|---|
-| Tin audit của AI | Gửi danh sách AI cho dev mà chưa kiểm | Lọc qua ba cổng và đếm lỗi của AI |
+| Tin audit của AI | Gửi danh sách AI cho developer mà chưa kiểm | Lọc qua ba cổng và đếm lỗi của AI |
 | Test với toàn bạn bè | Mọi người đều khen | Tìm ít nhất vài người đúng nhóm; ghi giới hạn nếu không được |
 | Câu hỏi dẫn dắt | "Bạn có thấy nút này dễ bấm không?" | Hỏi về điều đã xảy ra, không hỏi ý kiến |
 | Giúp participant giữa chừng | Chỉ chỗ bấm khi họ kẹt | Im lặng, ghi lại chỗ họ kẹt |
@@ -303,7 +303,7 @@ Bảng này nói **đóng góp có thể có**, không phải kết quả đã �
 ## Giới hạn của bài học
 
 - Mục 1.2 mô tả một xu hướng thường gặp trong thực tế làm việc, không phải kết quả nghiên cứu có số đo.
-- Bằng chứng về AI làm heuristic evaluation đến từ hai nghiên cứu nhỏ và khác thiết kế; áp vào prototype của bạn là suy luận.
+- Bằng chứng về AI làm heuristic evaluation đến từ hai nghiên cứu nhỏ có thiết kế khác nhau; áp vào prototype của bạn là suy luận.
 - Con số "3 đến 5 người", điểm SUS tham chiếu và khung HEART là kiến thức chung của ngành; chương trình chưa mở lại bản gốc để kiểm lại.
 - Mẫu test nhỏ chỉ cho tín hiệu định tính, không cho kết luận về tỷ lệ.
 - Bảng đóng góp ở mục 7 là suy luận của chương trình, chưa đo.

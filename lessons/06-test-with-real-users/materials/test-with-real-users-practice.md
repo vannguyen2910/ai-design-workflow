@@ -41,7 +41,7 @@ Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. *
 - **Bạn lọc qua ba cổng:** thấy được trên màn hình không; có vi phạm tiêu chí đã gán không; người dùng thật có gặp không. Finding không qua cổng nào thì bỏ, hoặc đổi thành giả thuyết để hỏi ở test.
 - **Bạn chấm severity** theo thang 0 đến 4, kèm một dòng lý do cho mỗi điểm.
 - **Đếm lỗi của AI:** số finding sai và số finding AI bỏ sót so với bước tự rà. Ghi hai con số.
-- **Kiểm tra:** mọi finding có evidence mở ra được. Dấu hiệu sai: finding không nói rõ màn nào; severity do AI chấm mà bạn chưa đổi.
+- **Kiểm tra:** mọi finding có evidence mở ra được. Dấu hiệu sai: finding không nói rõ màn nào; severity do AI đề xuất mà bạn chưa xem lại.
 - **File:** `work/prototype/audit.md` mục `## Audit findings`
 
 ### Step 3 · Tìm participant và chuẩn bị · bạn
