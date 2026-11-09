@@ -180,6 +180,252 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700}
 .dir-g .parts .p-stamp{border-color:#3A4BFF;color:#3A4BFF}
 .dir-g .parts .p-note::before{background:#62DDB0cc}
 
+/* H: round 2 after Winnie's feedback. Clean flat, bright pastel blocks, big radius, cheerful + professional */
+.h{--ink:#1B1A3A;--peri:#7C86FF;--sun:#FFE14A;--pink:#FF8AC4;--tang:#FF7A3D;--lime:#D4F252;--lilac:#D8C2FF;--warm:#FAFAFA;
+  background:#fff;color:var(--ink);border-radius:16px;padding:clamp(18px,3vw,34px);display:flex;flex-direction:column;gap:34px;border:1px solid var(--line)}
+.h,.h *{font-family:"Manrope",sans-serif}
+.h h2,.h h3,.h h4{margin:0}
+.h .lb{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.6;margin-bottom:12px}
+.h-sw{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:10px}
+.h-sw div{display:flex;flex-direction:column;gap:6px;font-size:.74rem;line-height:1.3;min-width:0}
+.h-sw i{display:block;height:64px;border-radius:12px}
+.h-sw i.edge{box-shadow:inset 0 0 0 1.5px #1B1A3A22}
+.h-sw b{font-weight:800}.h-sw span{opacity:.65;font-variant-numeric:tabular-nums}
+.h-head{font-weight:800;font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;letter-spacing:-.035em;text-wrap:balance;margin:0}
+.h-head em{font-style:normal;background:var(--lime);padding:0 .28em;border-radius:.2em;display:inline-block;line-height:1.05}
+.h-sub{font-size:1.05rem;font-weight:500;max-width:46ch;margin:14px 0 0;color:#1B1A3Acc}
+.h-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:30px;align-items:center;background:var(--warm);border-radius:18px;padding:clamp(20px,4vw,44px)}
+.h-hero>div{min-width:0}
+@media(max-width:760px){.h-hero{grid-template-columns:minmax(0,1fr)}}
+.h-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hb{font-weight:800;font-size:.95rem;padding:13px 22px;border-radius:10px;text-decoration:none;display:inline-block;border:2px solid transparent}
+.hb.p{background:var(--ink);color:#fff}
+.hb.s{background:var(--tang);color:#fff}
+.hb.o{border-color:var(--ink);color:var(--ink);background:transparent}
+.h-tag{display:inline-block;background:var(--sun);font-weight:800;font-size:.78rem;padding:6px 12px;border-radius:8px;margin-bottom:16px}
+.stairs{position:relative;width:100%;max-width:330px;height:268px;margin-inline:auto}
+.stairs div{position:absolute;width:150px;height:92px;border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;justify-content:flex-start;gap:2px}
+.stairs small{font-weight:700;font-size:.68rem;opacity:.75}
+.stairs b{font-weight:800;font-size:1rem;letter-spacing:-.02em}
+.stairs .a{left:0;top:176px;background:var(--peri);color:#fff;z-index:4}
+.stairs .b{left:60px;top:118px;background:var(--pink);z-index:3}
+.stairs .c{left:120px;top:60px;background:var(--sun);z-index:2}
+.stairs .d{left:180px;top:2px;background:var(--lime);z-index:1}
+.h-msgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.h-msgs div{border-radius:14px;padding:20px;min-width:0}
+.h-msgs h4{font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
+.h-msgs p{margin:6px 0 0;font-size:.9rem;font-weight:500}
+.h-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.h-card{border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:8px;min-height:210px;min-width:0}
+.h-card small{font-weight:800;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.h-card h4{font-weight:800;font-size:1.1rem;line-height:1.2;letter-spacing:-.02em}
+.h-card p{margin:0;font-size:.84rem;font-weight:500;opacity:.85;flex:1}
+.h-card .hb{align-self:flex-start;padding:8px 16px;font-size:.8rem;border:1.5px solid var(--ink);color:var(--ink)}
+.h-flow{background:#0E0E1A;border-radius:14px;padding:20px;background-image:radial-gradient(#ffffff26 1.5px,transparent 1.5px);background-size:18px 18px;min-width:0}
+.h-flow svg{display:block;width:100%;height:auto}
+.h-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.h-two>div{min-width:0}
+
+/* round 2 treatments: same H direction, four ways to use it */
+.tp{border-radius:16px;overflow:hidden;border:1px solid var(--line);color:#1B1A3A;min-width:0;--lk:#1B1A3A;--ink:#1B1A3A;--tang:#FF7A3D;--sun:#FFE14A;--lime:#D4F252;--pink:#FF8AC4;--peri:#7C86FF;--lilac:#D8C2FF}
+.tp,.tp *{font-family:"Manrope",sans-serif}
+.tp h3,.tp p{margin:0}
+.tp-nav{display:flex;align-items:center;gap:14px 20px;padding:14px clamp(16px,3vw,30px);flex-wrap:wrap}
+.tp-nav .brand{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-.03em;font-size:.98rem;line-height:1}
+.tp-nav .brand svg{width:30px;height:30px}
+.tp-nav nav{display:flex;gap:6px 18px;margin-left:auto;font-weight:600;font-size:.86rem;flex-wrap:wrap;align-items:center}
+.tp-nav .hb{padding:8px 15px;font-size:.8rem}
+.tp em{font-style:normal}
+.t-title{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;margin-bottom:10px}
+.t-title h3{font-size:1.15rem;font-weight:700}
+.t-title span{color:var(--muted);font-size:.9rem}
+.t-feel{margin:12px 0 0;color:var(--muted);font-size:.9rem;max-width:80ch}
+.t-feel b{color:var(--fg);font-weight:600}
+
+/* A: bold color field */
+.ta{background:#7C86FF;color:#fff;--lk:#fff}
+.ta-hero{padding:clamp(24px,5vw,54px) clamp(16px,3vw,30px) clamp(30px,5vw,56px);position:relative}
+.ta-hero h3{font-size:clamp(2.3rem,7vw,4.6rem);line-height:1;letter-spacing:-.045em;font-weight:800;max-width:11ch}
+.ta-hero h3 em{background:#D4F252;color:#1B1A3A;padding:0 .18em;border-radius:.2em;display:inline-block}
+.ta-hero p{max-width:44ch;font-size:1.1rem;font-weight:500;margin-top:18px}
+.ta-hero .hb.p{background:#D4F252;color:#1B1A3A}
+.ta-hero .hb.o{border-color:#fff;color:#fff}
+.ta-stk{position:absolute;right:clamp(16px,7vw,90px);top:clamp(20px,4vw,48px);width:clamp(100px,15vw,150px);aspect-ratio:1;border-radius:50%;background:#FFE14A;color:#1B1A3A;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;text-align:center;transform:rotate(12deg);line-height:1.05;font-size:.9rem}
+.ta-stk b{font-size:clamp(1.5rem,3vw,2.3rem);letter-spacing:-.04em}
+@media(max-width:760px){.ta-stk{position:static;margin-top:20px;transform:rotate(-6deg)}}
+.ta-rib{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:620px){.ta-rib{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ta-rib div{padding:18px 16px 22px;color:#1B1A3A;font-weight:800;font-size:1.05rem;letter-spacing:-.02em;display:flex;flex-direction:column;gap:8px}
+.ta-rib small{font-weight:700;font-size:.7rem;letter-spacing:.1em;opacity:.7}
+.ta-stats{background:#1B1A3A;color:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;padding:26px clamp(16px,3vw,30px)}
+.ta-stats b{display:block;font-size:2.4rem;line-height:1;letter-spacing:-.04em;color:#FFE14A;font-weight:800}
+.ta-stats span{font-size:.86rem;font-weight:500;opacity:.9}
+
+/* B: dark with colored pops */
+.tb{background:#12122A;color:#fff;--lk:#fff;background-image:radial-gradient(#ffffff22 1.5px,transparent 1.5px);background-size:20px 20px}
+.tb-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:30px;align-items:center;padding:clamp(24px,5vw,54px) clamp(16px,3vw,30px)}
+.tb-hero>div{min-width:0}
+@media(max-width:760px){.tb-hero{grid-template-columns:minmax(0,1fr)}}
+.tb-hero h3{font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;letter-spacing:-.04em;font-weight:800}
+.tb-hero h3 em{color:#FFE14A}
+.tb-hero p{margin-top:16px;font-size:1.05rem;font-weight:500;max-width:42ch;color:#ffffffd9}
+.tb .hb.p{background:#FFE14A;color:#1B1A3A}
+.tb .hb.o{border-color:#fff;color:#fff}
+.tb-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tb-chips span{font-weight:800;font-size:.8rem;padding:7px 14px;border-radius:8px;color:#1B1A3A}
+.tb svg.flow{display:block;width:100%;height:auto}
+
+/* C: level-up UI cards */
+.tc{background:#FAFAFA}
+.tc-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:30px;align-items:center;padding:clamp(24px,5vw,50px) clamp(16px,3vw,30px)}
+.tc-hero>div{min-width:0}
+@media(max-width:760px){.tc-hero{grid-template-columns:minmax(0,1fr)}}
+.tc-hero h3{font-size:clamp(2rem,5vw,3.3rem);line-height:1.06;letter-spacing:-.04em;font-weight:800}
+.tc-hero h3 em{background:#FFE14A;padding:0 .2em;border-radius:.2em;display:inline-block}
+.tc-hero p{margin-top:14px;font-size:1.05rem;font-weight:500;max-width:42ch;color:#1B1A3Acc}
+.tc-ui{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.uc{border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px;min-width:0;position:relative}
+.uc small{font-weight:700;font-size:.72rem;opacity:.75}
+.uc b{font-weight:800;font-size:1.1rem;letter-spacing:-.02em;line-height:1.2}
+.uc span.m{font-size:.8rem;font-weight:500;opacity:.8}
+.uc .go{position:absolute;right:14px;bottom:14px;width:34px;height:34px;border-radius:50%;background:#1B1A3A;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.uc.w{grid-column:span 2}
+.uc:has(.go) span.m{padding-right:42px}
+.track{display:flex;align-items:flex-start;margin-top:10px}
+.track div{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:.64rem;font-weight:700;text-align:center;position:relative}
+.track div::before{content:"";position:absolute;top:9px;left:-50%;width:100%;height:3px;background:#1B1A3A;z-index:0}
+.track div:first-child::before{display:none}
+.track i{width:20px;height:20px;border-radius:50%;background:#1B1A3A;position:relative;z-index:1;color:#fff;font-size:.62rem;font-style:normal;display:flex;align-items:center;justify-content:center}
+.track div.now i{background:#D4F252;border:3px solid #1B1A3A}
+.track div.next i{background:#D8C2FF;border:3px solid #1B1A3A}
+.track div.next::before{background:#1B1A3A55}
+.lvl{font-size:3rem;line-height:1;letter-spacing:-.05em;font-weight:800}
+.lvl s{text-decoration:none;font-size:1.2rem;opacity:.5}
+
+/* D: shape kit */
+.td{background:#fff}
+.td-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:center;padding:clamp(24px,5vw,50px) clamp(16px,3vw,30px) 20px}
+.td-hero>div{min-width:0}
+@media(max-width:760px){.td-hero{grid-template-columns:minmax(0,1fr)}}
+.td-hero h3{font-size:clamp(2rem,5vw,3.3rem);line-height:1.06;letter-spacing:-.04em;font-weight:800}
+.td-hero h3 em{color:#FF7A3D}
+.td-hero p{margin-top:14px;font-size:1.05rem;font-weight:500;max-width:42ch;color:#1B1A3Acc}
+.td-stk{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.td-stk span{font-weight:800;font-size:.82rem;padding:7px 14px;border-radius:8px}
+.td-stk span:nth-child(1){background:#FF7A3D;color:#fff;transform:rotate(-4deg)}
+.td-stk span:nth-child(2){background:#D4F252;transform:rotate(3deg)}
+.td svg.ill{display:block;width:100%;height:auto;max-width:420px;margin-inline:auto}
+.td-kit{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:6px clamp(16px,3vw,30px) 26px}
+.td-kit>b{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;opacity:.6;font-weight:700;margin-right:6px}
+.td-kit i{display:block;width:52px;height:52px}
+
+/* E: H-B colors (dark) + H-D treatment. F: H-C colors (off-white) + H-D treatment */
+.te{background:#12122A;color:#fff;--lk:#fff;background-image:radial-gradient(#ffffff22 1.5px,transparent 1.5px);background-size:20px 20px}
+.te .td-hero h3 em{color:#FFE14A}
+.te .td-hero p{color:#ffffffd9}
+.te .td-kit>b{color:#fff}
+.te .hb.p{background:#FFE14A;color:#1B1A3A}
+.te .hb.o{border-color:#fff;color:#fff}
+.te .td-stk span:nth-child(1){background:#FF8AC4;color:#1B1A3A}
+.te .td-stk span:nth-child(2){background:#D4F252;color:#1B1A3A}
+.te svg.ill,.tf svg.ill{display:block;width:100%;height:auto;max-width:420px;margin-inline:auto}
+.te .td-hero,.tf .td-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:center;padding:clamp(24px,5vw,50px) clamp(16px,3vw,30px) 20px}
+.te .td-hero>div,.tf .td-hero>div{min-width:0}
+@media(max-width:760px){.te .td-hero,.tf .td-hero{grid-template-columns:minmax(0,1fr)}}
+.te .td-hero h3,.tf .td-hero h3{font-size:clamp(2rem,5vw,3.3rem);line-height:1.06;letter-spacing:-.04em;font-weight:800}
+.te .td-hero p,.tf .td-hero p{margin-top:14px;font-size:1.05rem;font-weight:500;max-width:42ch}
+.tf .td-hero p{color:#1B1A3Acc}
+.te .td-stk,.tf .td-stk{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.te .td-stk span,.tf .td-stk span{font-weight:800;font-size:.82rem;padding:7px 14px;border-radius:8px}
+.te .td-stk span:nth-child(1),.tf .td-stk span:nth-child(1){transform:rotate(-4deg)}
+.te .td-stk span:nth-child(2),.tf .td-stk span:nth-child(2){transform:rotate(3deg)}
+.te .td-kit,.tf .td-kit{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:6px clamp(16px,3vw,30px) 26px}
+.te .td-kit>b,.tf .td-kit>b{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;opacity:.6;font-weight:700;margin-right:6px}
+.te .td-kit i,.tf .td-kit i{display:block;width:52px;height:52px}
+.tf{background:#FAFAFA}
+.tf .td-hero h3 em{background:#FFE14A;padding:0 .2em;border-radius:.2em;display:inline-block;color:#1B1A3A}
+.tf .td-stk span:nth-child(1){background:#1B1A3A;color:#fff}
+.tf .td-stk span:nth-child(2){background:#D8C2FF}
+.tf-ill{position:relative;max-width:420px;margin-inline:auto}
+.tf-card{position:absolute;left:0;top:6px;background:#fff;border-radius:18px;padding:12px 16px;box-shadow:0 6px 20px #1B1A3A1c;z-index:2}
+.tf-card small{display:block;font-weight:700;font-size:.68rem;opacity:.7}
+.tf-card b{font-size:1.9rem;line-height:1;letter-spacing:-.05em;font-weight:800}
+.tf-card s{text-decoration:none;font-size:.9rem;opacity:.5;font-weight:800}
+
+.r1{border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.r1>summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none;display:flex;align-items:center;gap:10px}
+.r1>summary::-webkit-details-marker{display:none}
+.r1>summary::before{content:"+";display:inline-flex;width:24px;height:24px;align-items:center;justify-content:center;border-radius:50%;background:var(--fg);color:var(--bg);font-weight:700;flex:none}
+.r1[open]>summary::before{content:"\2212"}
+.r1:focus-within{outline:none}
+.r1>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:16px}
+.r1-body{display:flex;flex-direction:column;gap:56px;padding:8px clamp(12px,2vw,20px) 28px}
+/* wonky: off-kilter, overlapping, uneven radii. G = off-white, H = dark */
+.tw{position:relative;--wk:#1B1A3A}
+.tw-c{background:#FAFAFA}
+.tw-d{background:#12122A;color:#fff;--lk:#fff;--wk:#fff;background-image:radial-gradient(#ffffff22 1.5px,transparent 1.5px);background-size:20px 20px}
+.tw-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:34px;align-items:center;padding:clamp(28px,5vw,54px) clamp(16px,3vw,30px) 20px}
+.tw-hero>div{min-width:0}
+@media(max-width:760px){.tw-hero{grid-template-columns:minmax(0,1fr)}}
+.tw-copy{position:relative}
+.tw-h{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;letter-spacing:-.04em;font-weight:800}
+.tw-h span{display:inline-block}
+.tw-h .l1{transform:none}
+.tw-h .pill{padding:.02em .26em;border-radius:.22em;transform:rotate(-2.5deg);position:relative;z-index:1}
+.tw-h .w{transform:none}
+.tw-c .tw-h .pill{background:#FFE14A}
+.tw-d .tw-h .pill{background:#D4F252;color:#1B1A3A}
+.tw-p{margin-top:20px;font-size:1.05rem;font-weight:500;max-width:40ch}
+.tw-c .tw-p{color:#1B1A3Acc}.tw-d .tw-p{color:#ffffffd9}
+.tw-stk{position:absolute;right:-6px;top:-30px;background:#FF7A3D;color:#fff;font-weight:800;font-size:.86rem;padding:8px 16px;border-radius:10px;transform:rotate(6deg);z-index:2}
+.tw-d .tw-stk{background:#FF8AC4;color:#1B1A3A}
+@media(max-width:520px){.tw-stk{right:0;top:-34px}}
+.tw-d .hb.p{background:#FFE14A;color:#1B1A3A}.tw-d .hb.o{border-color:#fff;color:#fff}
+.tw-ill{position:relative;height:300px;max-width:304px;width:100%;margin-inline:auto}
+.tw-ill>i,.tw-ill>div{position:absolute;display:block}
+.tw-ill .b{bottom:0;width:76px;border-radius:10px 10px 0 0}
+.tw-ill .b1{left:0;height:96px;background:#D8C2FF}
+.tw-ill .b2{left:76px;height:140px;background:#D4F252}
+.tw-ill .b3{left:152px;height:184px;background:#FFE14A}
+.tw-ill .b4{left:228px;height:228px;background:#1B1A3A}
+.tw-d .tw-ill .b1{background:#7C86FF}.tw-d .tw-ill .b2{background:#FF8AC4}.tw-d .tw-ill .b3{background:#D4F252}.tw-d .tw-ill .b4{background:#FF7A3D}
+.tw-ill .face{left:233px;bottom:216px;width:66px;height:66px;transform:rotate(12deg);z-index:6}
+.tw-ill .face svg{display:block;width:100%;height:100%}
+.tw-ill .blob,.tw-ill .dot{display:none}
+.tw-ill .badge{left:0;bottom:122px;width:84px;height:84px;border-radius:50%;background:#fff;color:#1B1A3A;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:.7rem;line-height:1.1;text-align:center;box-shadow:0 6px 18px #1B1A3A24;z-index:7}
+.tw-ill .badge b{font-size:1.6rem;letter-spacing:-.05em;line-height:1}
+.tw-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:14px clamp(16px,3vw,30px) 8px}
+@media(max-width:620px){.tw-cards{grid-template-columns:minmax(0,1fr)}}
+.tw-cards div{padding:18px 18px 22px;color:#1B1A3A;min-width:0;border-radius:14px}
+.tw-cards small{display:block;font-weight:800;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.tw-cards b{display:block;font-weight:800;font-size:1.08rem;letter-spacing:-.02em;margin-top:4px}
+.tw-cards span{display:block;font-size:.82rem;font-weight:500;margin-top:4px;opacity:.85}
+.tw-cards div:nth-child(1){background:#D8C2FF}
+.tw-cards div:nth-child(2){background:#D4F252}
+.tw-cards div:nth-child(3){background:#FF8AC4}
+.tw-d .tw-cards div:nth-child(1){background:#7C86FF;color:#fff}
+.tw-d .tw-cards div:nth-child(2){background:#FFE14A}
+.tw-kit{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:26px clamp(16px,3vw,30px) 28px}
+.tw-kit>b{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;opacity:.6;font-weight:700;margin-right:6px}
+.tw-kit i{display:block;width:52px;height:52px}
+.tw-flow{display:block;width:100%;height:auto;max-width:420px;margin-inline:auto}
+
+.tw-cards.ink div:nth-child(3){background:#1B1A3A;color:#fff}
+.tw-w{background:#FFFFFF}
+.tw-g{background:#FAFAFA}
+/* logo round 2 */
+.lg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.lg{border-radius:16px;overflow:hidden;background:#FAFAFA;color:#1B1A3A;border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.lg .l1{padding:22px;display:flex;align-items:center;gap:14px;--lk:#1B1A3A}
+.lg .l2{padding:16px 22px;display:flex;align-items:center;gap:10px;background:#1B1A3A;color:#fff;--lk:#fff}
+.lg .l3{padding:14px 22px 18px;font-size:.84rem;font-weight:500;line-height:1.45}
+.lg .l3 b{font-weight:800;display:block;margin-bottom:2px}
+.lg svg{flex:none;width:68px;height:68px}
+.lg .l2 svg{width:34px;height:34px}
+.lg .wm{font-family:"Manrope",sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.03em;font-size:1.3rem}
+.lg .l2 .wm{font-size:.95rem}
+.lg .l3,.lg .l3 *{font-family:"Manrope",sans-serif}
+
 /* mark concepts */
 .marks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
 /* marks use the E palette on fixed paper tiles, so they look the same in light and dark */
@@ -197,6 +443,50 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- round 2 logo marks (fixed brand colors; --lk is the ink that flips on dark) -->
+  <symbol id="n-path" viewBox="0 0 64 64">
+    <path d="M8 56 H22 V42 H36 V28 H50 V19" fill="none" stroke="var(--lk,#1B1A3A)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="50" cy="9" r="7" fill="#FF7A3D"/>
+  </symbol>
+  <symbol id="n-pathc" viewBox="0 0 64 64">
+    <path d="M6 56 H20" fill="none" stroke="#7C86FF" stroke-width="6" stroke-linecap="round"/>
+    <path d="M20 56 V42 H34" fill="none" stroke="#FF8AC4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M34 42 V28 H48" fill="none" stroke="#FFE14A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M48 28 V14 H58" fill="none" stroke="#FF7A3D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="n-notes" viewBox="0 0 64 64">
+    <rect x="3" y="38" width="22" height="22" rx="4" fill="#7C86FF"/>
+    <rect x="15" y="28" width="22" height="22" rx="4" fill="#FF8AC4"/>
+    <rect x="27" y="17" width="22" height="22" rx="4" fill="#FFE14A"/>
+    <rect x="39" y="5" width="22" height="22" rx="4" fill="#FF7A3D"/>
+  </symbol>
+  <symbol id="n-notes-tilt" viewBox="0 0 64 64">
+    <rect x="3" y="38" width="21" height="21" rx="4" transform="rotate(-8 13 48)" fill="#7C86FF"/>
+    <rect x="15" y="28" width="21" height="21" rx="4" transform="rotate(5 25 38)" fill="#FF8AC4"/>
+    <rect x="27" y="17" width="21" height="21" rx="4" transform="rotate(-5 37 27)" fill="#FFE14A"/>
+    <rect x="39" y="5" width="21" height="21" rx="4" transform="rotate(7 49 15)" fill="#FF7A3D"/>
+  </symbol>
+  <symbol id="n-hybrid" viewBox="0 0 64 64">
+    <path d="M4 60 H20 V47 H34 V34 H48 V21 H60" fill="none" stroke="var(--lk,#1B1A3A)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="6" y="47" width="10" height="10" rx="3" fill="#7C86FF"/>
+    <rect x="22" y="34" width="10" height="10" rx="3" fill="#FF8AC4"/>
+    <rect x="36" y="21" width="10" height="10" rx="3" fill="#FFE14A"/>
+    <rect x="50" y="8" width="10" height="10" rx="3" fill="#FF7A3D"/>
+  </symbol>
+  <symbol id="n-wobble" viewBox="0 0 64 64">
+    <path d="M7 57 H21 L22.5 43 H35 L37 30 H49 L50.5 21" fill="none" stroke="var(--lk,#1B1A3A)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="52" cy="10" r="7.5" fill="#FF7A3D"/>
+  </symbol>
+  <symbol id="n-pile" viewBox="0 0 64 64">
+    <rect x="2" y="38" width="22" height="22" rx="5" transform="rotate(-12 13 49)" fill="#7C86FF"/>
+    <rect x="13" y="30" width="22" height="22" rx="5" transform="rotate(9 24 41)" fill="#FF8AC4"/>
+    <rect x="24" y="19" width="22" height="22" rx="5" transform="rotate(-7 35 30)" fill="#FFE14A"/>
+    <rect x="37" y="5" width="23" height="23" rx="5" transform="rotate(15 48 16)" fill="#FF7A3D"/>
+  </symbol>
+  <symbol id="n-arrow" viewBox="0 0 64 64">
+    <path d="M6 58 H20 V44 H34 V30 H48 V20" fill="none" stroke="var(--lk,#1B1A3A)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M39 22 L48 12 L57 22" fill="none" stroke="#FF7A3D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
   <symbol id="m-stairs" viewBox="0 0 64 64">
     <rect x="5" y="40" width="12" height="18" rx="3" fill="var(--m1)"/>
     <rect x="19" y="30" width="12" height="28" rx="3" fill="var(--m1)"/>
@@ -236,17 +526,371 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700}
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">AI Design Workflow · brand exploration, round 1</div>
-    <h1>Seven directions for the course brand</h1>
-    <p class="lede">All three are editorial, warm and playful, with no gradients, robots or sparkles. Each one uses only free Google Fonts that support Vietnamese. The sample copy is placeholder, not final wording.</p>
+    <div class="eyebrow">AI Design Workflow · brand exploration, round 2</div>
+    <h1>Round 2: flat, bright, level-up</h1>
+    <p class="lede">After Winnie's feedback: cheerful, motivated, level up, and still professional. One direction (H) shown in eight treatments, then eight logo versions built from marks 2 and 6, including two looser ones. Fonts are free Google Fonts (Manrope). Sample copy is placeholder. Round 1 is collapsed at the bottom.</p>
     <div class="ask">
       <div><b>What I need back:</b></div>
-      <div>1. Pick a direction (A, B or C), or tell me which pieces to mix.</div>
-      <div>2. Pick one or two logo mark concepts from the grid at the bottom.</div>
-      <div>3. Say what feels off. A one-word reaction per direction is enough.</div>
+      <div>1. Pick a treatment (H-A to H-K, some letters retired), or say which pieces to mix.</div>
+      <div>2. Pick one logo (R1 to R8).</div>
+      <div>3. Say what feels off. A one-word reaction per treatment is enough.</div>
     </div>
   </header>
 
+  <!-- H -->
+  <section class="dir">
+    <div class="dir-meta"><h2>H · Vòng 2, theo feedback của Winnie</h2><span>Từ E, nhưng phẳng và sạch hơn, bảng màu tươi hơn. Thông điệp: vui, có động lực, lên cấp. Vẫn chuyên nghiệp.</span></div>
+    <div class="h">
+      <div>
+        <div class="lb">Palette</div>
+        <div class="h-sw">
+          <div><i style="background:#1B1A3A"></i><b>Ink</b><span>#1B1A3A</span></div>
+          <div><i class="edge" style="background:#FAFAFA"></i><b>Off-white</b><span>#FAFAFA</span></div>
+          <div><i style="background:#7C86FF"></i><b>Periwinkle</b><span>#7C86FF</span></div>
+          <div><i style="background:#FF8AC4"></i><b>Bubblegum</b><span>#FF8AC4</span></div>
+          <div><i style="background:#FFE14A"></i><b>Sun</b><span>#FFE14A</span></div>
+          <div><i style="background:#D4F252"></i><b>Lime</b><span>#D4F252</span></div>
+          <div><i style="background:#FF7A3D"></i><b>Tangerine</b><span>#FF7A3D</span></div>
+          <div><i style="background:#D8C2FF"></i><b>Lilac</b><span>#D8C2FF</span></div>
+        </div>
+      </div>
+
+      <div class="h-hero">
+        <div>
+          <span class="h-tag">12 buổi · 6 tuần</span>
+          <h3 class="h-head">Lên cấp cùng AI, từng <em>bậc</em> một.</h3>
+          <p class="h-sub">Dành cho designer mid và senior. Mỗi tuần một bước, cuối khóa bạn mang về một workflow dùng được ngay.</p>
+          <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+        </div>
+        <div class="stairs">
+          <div class="a"><small>Tuần 1</small><b>Quy trình</b></div>
+          <div class="b"><small>Tuần 2</small><b>Hiểu vấn đề</b></div>
+          <div class="c"><small>Tuần 3</small><b>Research</b></div>
+          <div class="d"><small>Tuần 4</small><b>Khám phá</b></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lb">Brand messages</div>
+        <div class="h-msgs">
+          <div style="background:#FFE14A"><h4>Vui</h4><p>Học nghiêm túc nhưng không khô. Có chỗ cho một nụ cười.</p></div>
+          <div style="background:#FF8AC4"><h4>Có động lực</h4><p>Mỗi buổi kết thúc với một thứ bạn thấy và dùng được.</p></div>
+          <div style="background:#D4F252"><h4>Lên cấp</h4><p>Từng bậc, từng stage, đến một workflow của riêng bạn.</p></div>
+        </div>
+      </div>
+
+      <div class="h-two">
+        <div>
+          <div class="lb">Lesson cards</div>
+          <div class="h-cards" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+            <div class="h-card" style="background:#7C86FF;color:#fff"><small>Tuần 1</small><h4>Quy trình với AI</h4><p>Bốn stage và bốn khái niệm cốt lõi.</p><a class="hb" style="border-color:#fff;color:#fff">Xem thêm</a></div>
+            <div class="h-card" style="background:#FFE14A"><small>Tuần 2</small><h4>Hiểu vấn đề</h4><p>Bóc brief, hiểu người dùng.</p><a class="hb">Xem thêm</a></div>
+            <div class="h-card" style="background:#FF8AC4"><small>Tuần 3</small><h4>Research đáng tin</h4><p>Mỗi dòng dẫn về một quote có ID.</p><a class="hb">Xem thêm</a></div>
+            <div class="h-card" style="background:#D4F252"><small>Tuần 4</small><h4>Khám phá ý tưởng</h4><p>Từ HMW đến user flow.</p><a class="hb">Xem thêm</a></div>
+          </div>
+        </div>
+        <div>
+          <div class="lb">Stage flow (on dark)</div>
+          <div class="h-flow">
+            <svg viewBox="0 0 360 214" role="img" aria-label="Four stages stepping up, Discover to Test">
+              <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M40 160 V131 H112" stroke="#FF8AC4"/>
+                <path d="M132 112 V83 H204" stroke="#7C86FF"/>
+                <path d="M224 64 V35 H272" stroke="#FFE14A"/>
+              </g>
+              <g font-family="Manrope, sans-serif" font-weight="800" font-size="15" fill="#1B1A3A" text-anchor="middle">
+                <rect x="20" y="160" width="106" height="38" rx="8" fill="#FF8AC4"/><text x="73" y="184">Discover</text>
+                <rect x="112" y="112" width="106" height="38" rx="8" fill="#7C86FF"/><text x="165" y="136" fill="#fff">Research</text>
+                <rect x="204" y="64" width="106" height="38" rx="8" fill="#FFE14A"/><text x="257" y="88">Explore</text>
+                <rect x="272" y="16" width="76" height="38" rx="8" fill="#D4F252"/><text x="310" y="40">Test</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lb">Type · Manrope (free, same as Winnie's pages)</div>
+        <h3 class="h-head" style="font-size:clamp(1.6rem,3.6vw,2.4rem)">Gom workflow về một mối, dùng AI gọn hơn.</h3>
+        <p class="h-sub" style="font-weight:500">Manrope 800 cho tiêu đề (tracking -3.5%), Manrope 500 cho nội dung. Một chữ trong tiêu đề được đặt trong viên thuốc màu lime để nhấn mạnh.</p>
+        <div class="h-btns"><a class="hb p">Primary</a><a class="hb s">Accent</a><a class="hb o">Outline</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Round 2 treatments -->
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">Round 2 · treatments</div>
+      <h2>Same direction, eight ways to use it</h2>
+      <p>All four keep direction H: the same palette, Manrope, flat shapes, big radius, and the three messages (cheerful, motivated, level up). Only the treatment changes: how much color, how much structure, and what the main visual is. Each uses logo R2 (four-color path) in the nav.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:44px">
+
+      <div>
+        <div class="t-title"><h3>H-A · Bold color field</h3><span>Big type on full-bleed color</span></div>
+        <div class="tp ta">
+          <div class="tp-nav"><div class="brand"><svg><use href="#n-pathc"/></svg>AI Design Workflow</div><nav><span>Chương trình</span><span>Giảng viên</span><span>Hỏi đáp</span><a class="hb p" style="background:#fff;color:#1B1A3A">Giữ chỗ</a></nav></div>
+          <div class="ta-hero">
+            <h3>Lên cấp cùng AI, từng <em>bậc</em> một.</h3>
+            <p>Dành cho designer mid và senior. Mỗi tuần một bước, cuối khóa bạn mang về một workflow dùng được ngay.</p>
+            <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+            <div class="ta-stk"><b>12</b>buổi<br>6 tuần</div>
+          </div>
+          <div class="ta-rib">
+            <div style="background:#FF8AC4"><small>01</small>Discover</div>
+            <div style="background:#FFE14A"><small>02</small>Research</div>
+            <div style="background:#D4F252"><small>03</small>Explore</div>
+            <div style="background:#FF7A3D"><small>04</small>Test</div>
+          </div>
+          <div class="ta-stats">
+            <div><b>12</b><span>buổi, mỗi buổi 90 phút</span></div>
+            <div><b>6</b><span>tuần, một lesson mỗi tuần</span></div>
+            <div><b>1</b><span>workflow dùng lại được</span></div>
+            <div><b>1</b><span>Knowledge Hub dựng dần</span></div>
+          </div>
+        </div>
+        <p class="t-feel"><b>Feel:</b> to, rõ, nhiều năng lượng. Gần với trang bán khóa học nhất, dễ chuyển đổi nhất. <b>Rủi ro:</b> màu đặc lớn nên cần giữ chữ gọn, và nền periwinkle kén ảnh chụp người.</p>
+      </div>
+
+      <div>
+        <div class="t-title"><h3>H-B · Dark with pops</h3><span>Dark ground, bright pills and a stage path</span></div>
+        <div class="tp tb">
+          <div class="tp-nav"><div class="brand"><svg><use href="#n-pathc"/></svg>AI Design Workflow</div><nav><span>Chương trình</span><span>Giảng viên</span><span>Hỏi đáp</span><a class="hb p">Giữ chỗ</a></nav></div>
+          <div class="tb-hero">
+            <div>
+              <h3>Lên cấp cùng AI, <em>từng bậc</em> một.</h3>
+              <p>Một workflow tập trung cho designer mid và senior. Mỗi stage kết thúc bằng một thứ bạn dùng được ngay.</p>
+              <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+              <div class="tb-chips"><span style="background:#FFE14A">Vui</span><span style="background:#FF8AC4">Có động lực</span><span style="background:#D4F252">Lên cấp</span></div>
+            </div>
+            <div>
+              <svg class="flow" viewBox="0 0 360 220" role="img" aria-label="Four stages stepping up, with the first three complete">
+                <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M40 160 V131 H112" stroke="#FF8AC4"/>
+                  <path d="M132 112 V83 H204" stroke="#7C86FF"/>
+                  <path d="M224 64 V35 H272" stroke="#FFE14A"/>
+                </g>
+                <g font-family="Manrope, sans-serif" font-weight="800" font-size="15" fill="#1B1A3A" text-anchor="middle">
+                  <rect x="20" y="160" width="106" height="38" rx="8" fill="#FF8AC4"/><text x="76" y="184">Discover</text>
+                  <rect x="112" y="112" width="106" height="38" rx="8" fill="#7C86FF"/><text x="168" y="136" fill="#fff">Research</text>
+                  <rect x="204" y="64" width="106" height="38" rx="8" fill="#FFE14A"/><text x="260" y="88">Explore</text>
+                  <rect x="272" y="16" width="76" height="38" rx="8" fill="#D4F252"/><text x="312" y="40">Test</text>
+                </g>
+                <g stroke-width="3" fill="#12122A">
+                  <circle cx="20" cy="179" r="11" stroke="#FF8AC4"/><circle cx="112" cy="131" r="11" stroke="#7C86FF"/><circle cx="204" cy="83" r="11" stroke="#FFE14A"/><circle cx="272" cy="35" r="11" stroke="#D4F252" stroke-dasharray="4 4"/>
+                </g>
+                <g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 179 L19 183 L26 175"/><path d="M107 131 L111 135 L118 127"/><path d="M199 83 L203 87 L210 79"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <p class="t-feel"><b>Feel:</b> hiện đại, hơi "tech" nhưng màu pop vẫn vui. Giữ được vẻ chuyên nghiệp nhất và làm nổi bật "level up" qua đường đi lên. <b>Rủi ro:</b> nền tối làm cảm giác bớt ấm, và cần chú ý độ tương phản của chữ tiếng Việt có dấu trên nền chấm.</p>
+      </div>
+
+      <div>
+        <div class="t-title"><h3>H-C · Level-up cards</h3><span>Product-style UI cards with progress</span></div>
+        <div class="tp tc">
+          <div class="tp-nav"><div class="brand"><svg><use href="#n-pathc"/></svg>AI Design Workflow</div><nav><span>Chương trình</span><span>Giảng viên</span><span>Hỏi đáp</span><a class="hb p">Giữ chỗ</a></nav></div>
+          <div class="tc-hero">
+            <div>
+              <h3>Lên cấp cùng AI, từng <em>bậc</em> một.</h3>
+              <p>Bạn thấy mình đang ở đâu và bước tiếp theo là gì. Mỗi tuần mở khóa một kỹ năng, lưu lại thành skill của riêng bạn.</p>
+              <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+            </div>
+            <div class="tc-ui">
+              <div class="uc" style="background:#D4F252"><small>Lesson mới · Tuần 4</small><b>Khám phá ý tưởng</b><span class="m">Từ HMW đến user flow</span><span class="go">→</span></div>
+              <div class="uc" style="background:#fff;box-shadow:0 6px 20px #1B1A3A14"><small>Level hiện tại</small><div class="lvl">4<s>/6</s></div><span class="m">Còn 2 bước nữa</span></div>
+              <div class="uc w" style="background:#D8C2FF"><small>Cập nhật tiến độ</small><b>Bạn vừa lên một bậc</b>
+                <div class="track"><div><i>✓</i>Quy trình</div><div><i>✓</i>Hiểu vấn đề</div><div><i>✓</i>Research</div><div class="now"><i></i>Khám phá</div><div class="next"><i></i>Prototype</div></div>
+              </div>
+              <div class="uc w" style="background:#1B1A3A;color:#fff"><small>Đã lưu vào Hub</small><b>Skill: Tổng hợp research</b><span class="m">Workflow của bạn · 3 skill</span><span class="go" style="background:#D4F252;color:#1B1A3A">→</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="t-feel"><b>Feel:</b> nhìn như một sản phẩm thật, tạo cảm giác tiến bộ và động lực rõ nhất ("level 4/6", "bạn vừa lên một bậc"). Giống mẫu thẻ của Wizeline mà Winnie gửi. <b>Rủi ro:</b> nội dung thẻ phải thật (số buổi, tên skill), nếu không sẽ thành mockup rỗng. Cần chốt cấu trúc chương trình trước.</p>
+      </div>
+
+      <div>
+        <div class="t-title"><h3>H-D · Flat illustration</h3><span>Flat illustration with a friendly character</span></div>
+        <div class="tp td">
+          <div class="tp-nav"><div class="brand"><svg><use href="#n-pathc"/></svg>AI Design Workflow</div><nav><span>Chương trình</span><span>Giảng viên</span><span>Hỏi đáp</span><a class="hb p">Giữ chỗ</a></nav></div>
+          <div class="td-hero">
+            <div>
+              <div class="td-stk"><span>Level up</span><span>12 buổi · 6 tuần</span></div>
+              <h3>Lên cấp cùng AI, <em>từng bậc</em> một.</h3>
+              <p>Học vui, làm thật. Mỗi tuần bạn leo thêm một bậc và mang về một phần của workflow.</p>
+              <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+            </div>
+            <div>
+              <svg class="ill" viewBox="0 0 320 250" role="img" aria-label="A smiling sun character climbing four colored steps">
+                <circle cx="48" cy="58" r="20" fill="#D8C2FF"/>
+                <rect x="10" y="176" width="72" height="64" rx="8" fill="#7C86FF"/>
+                <rect x="82" y="136" width="72" height="104" rx="8" fill="#FF8AC4"/>
+                <rect x="154" y="96" width="72" height="144" rx="8" fill="#D4F252"/>
+                <rect x="226" y="56" width="72" height="184" rx="8" fill="#FF7A3D"/>
+                <rect x="0" y="228" width="320" height="12" fill="#fff"/>
+                <circle cx="262" cy="26" r="24" fill="#FFE14A"/>
+                <circle cx="254" cy="22" r="2.8" fill="#1B1A3A"/><circle cx="270" cy="22" r="2.8" fill="#1B1A3A"/>
+                <path d="M253 32 Q262 41 271 32" fill="none" stroke="#1B1A3A" stroke-width="2.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <p class="t-feel"><b>Feel:</b> vui và thân thiện nhất, có cá tính riêng nhờ nhân vật nhỏ và hình bậc thang. Gần với phong cách Google Labs trong mẫu Winnie gửi. <b>Rủi ro:</b> dễ thành trẻ con nếu nhân vật làm quá nhiều, và cần có người vẽ thêm minh họa cho mỗi lesson.</p>
+      </div>
+
+      <div>
+        <div class="t-title"><h3>H-E · Dark + illustration</h3><span>H-B colors with the H-D treatment</span></div>
+        <div class="tp te">
+          <div class="tp-nav"><div class="brand"><svg><use href="#n-pathc"/></svg>AI Design Workflow</div><nav><span>Chương trình</span><span>Giảng viên</span><span>Hỏi đáp</span><a class="hb p">Giữ chỗ</a></nav></div>
+          <div class="td-hero">
+            <div>
+              <div class="td-stk"><span>Level up</span><span>12 buổi · 6 tuần</span></div>
+              <h3>Lên cấp cùng AI, <em>từng bậc</em> một.</h3>
+              <p>Học vui, làm thật. Mỗi tuần bạn leo thêm một bậc và mang về một phần của workflow.</p>
+              <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+            </div>
+            <div>
+              <svg class="ill" viewBox="0 0 320 250" role="img" aria-label="A smiling sun character climbing four colored steps on a dark ground">
+                <defs><clipPath id="clipE"><rect x="0" y="0" width="320" height="240"/></clipPath></defs>
+                <circle cx="48" cy="58" r="20" fill="#D8C2FF"/>
+                <path d="M96 104 C 130 70, 170 60, 214 40" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+                <g clip-path="url(#clipE)">
+                  <rect x="10" y="176" width="72" height="84" rx="8" fill="#7C86FF"/>
+                  <rect x="82" y="136" width="72" height="124" rx="8" fill="#FF8AC4"/>
+                  <rect x="154" y="96" width="72" height="164" rx="8" fill="#D4F252"/>
+                  <rect x="226" y="56" width="72" height="204" rx="8" fill="#FF7A3D"/>
+                </g>
+                <circle cx="262" cy="26" r="24" fill="#FFE14A"/>
+                <circle cx="254" cy="22" r="2.8" fill="#1B1A3A"/><circle cx="270" cy="22" r="2.8" fill="#1B1A3A"/>
+                <path d="M253 32 Q262 41 271 32" fill="none" stroke="#1B1A3A" stroke-width="2.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <p class="t-feel"><b>Feel:</b> vui nhưng có chiều sâu hơn H-D, vì các màu pop nổi lên trên nền tối. Đường chấm dẫn nhân vật đi lên nhấn vào "level up". <b>Rủi ro:</b> mặt cười trên nền tối có thể hơi lạc điệu nếu nội dung cần nghiêm túc, và chữ tiếng Việt có dấu cần đủ tương phản.</p>
+      </div>
+
+      <div>
+        <div class="t-title"><h3>H-G · Off-white + one wobble</h3><span>Clean layout, with three small off-kilter accents</span></div>
+        <div class="tp tw tw-c">
+          <div class="tp-nav"><div class="brand"><svg><use href="#n-wobble"/></svg>AI Design Workflow</div><nav><span>Chương trình</span><span>Giảng viên</span><span>Hỏi đáp</span><a class="hb p">Giữ chỗ</a></nav></div>
+          <div class="tw-hero">
+            <div class="tw-copy">
+              <span class="tw-stk">Level up!</span>
+              <h3 class="tw-h"><span class="l1">Lên cấp cùng AI,</span> <span><span class="pill">từng bậc</span> <span class="w">một.</span></span></h3>
+              <p class="tw-p">Học vui, làm thật. Mỗi tuần bạn leo thêm một bậc và mang về một phần của workflow.</p>
+              <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+            </div>
+            <div class="tw-ill" role="img" aria-label="Four uneven, overlapping steps with a tilted smiling character on top">
+              <i class="blob"></i><i class="dot"></i>
+              <div class="b b1"></div><div class="b b2"></div><div class="b b3"></div><div class="b b4"></div>
+              <div class="face"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#FF7A3D"/><circle cx="23" cy="27" r="3.2" fill="#1B1A3A"/><circle cx="41" cy="24" r="3.2" fill="#1B1A3A"/><path d="M20 38 Q33 51 45 36" fill="none" stroke="#1B1A3A" stroke-width="3" stroke-linecap="round"/></svg></div>
+              <div class="badge"><b>12</b>buổi<br>6 tuần</div>
+            </div>
+          </div>
+          <div class="tw-cards">
+            <div><small>Tuần 1</small><b>Quy trình với AI</b><span>Bốn stage, bốn khái niệm cốt lõi.</span></div>
+            <div><small>Tuần 2</small><b>Hiểu vấn đề</b><span>Bóc brief, hiểu người dùng.</span></div>
+            <div><small>Tuần 3</small><b>Research đáng tin</b><span>Mỗi dòng dẫn về một quote có ID.</span></div>
+          </div>
+        </div>
+        <p class="t-feel"><b>Feel:</b> bố cục vẫn thẳng và gọn. Chỉ có ba điểm nhấn hơi lệch: viên thuốc "từng bậc" nghiêng 2,5 độ, sticker "Level up!" nghiêng 6 độ đè lên góc tiêu đề, và nhân vật nghiêng 12 độ đè lên mép bậc cuối. <b>Quy tắc gợi ý:</b> mỗi màn hình tối đa hai ba chi tiết nghiêng, mọi thứ còn lại thẳng hàng.</p>
+      </div>
+
+      <div>
+        <div class="t-title"><h3>H-H · Dark + one wobble</h3><span>Clean layout, with a slightly tilted stage path as the accent</span></div>
+        <div class="tp tw tw-d">
+          <div class="tp-nav"><div class="brand"><svg><use href="#n-wobble"/></svg>AI Design Workflow</div><nav><span>Chương trình</span><span>Giảng viên</span><span>Hỏi đáp</span><a class="hb p">Giữ chỗ</a></nav></div>
+          <div class="tw-hero">
+            <div class="tw-copy">
+              <span class="tw-stk">Level up!</span>
+              <h3 class="tw-h"><span class="l1">Lên cấp cùng AI,</span> <span><span class="pill">từng bậc</span> <span class="w">một.</span></span></h3>
+              <p class="tw-p">Một workflow tập trung cho designer mid và senior. Mỗi stage kết thúc bằng một thứ bạn dùng được ngay.</p>
+              <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+            </div>
+            <div>
+              <svg class="tw-flow" viewBox="0 0 360 270" role="img" aria-label="Four stage pills, tilted and overlapping, joined by a dotted wobbly path">
+                <path d="M60 232 C 30 190, 110 190, 128 166 S 196 128, 214 106 S 276 78, 300 50" fill="none" stroke="#fff" stroke-width="2.6" stroke-dasharray="2 8" stroke-linecap="round"/>
+                <g font-family="Manrope, sans-serif" font-weight="800" font-size="16" text-anchor="middle" fill="#1B1A3A">
+                  <g transform="rotate(-3 70 232)"><rect x="16" y="212" width="112" height="42" rx="8" fill="#FF8AC4"/><text x="72" y="239">Discover</text></g>
+                  <g transform="rotate(2 156 172)"><rect x="98" y="152" width="116" height="42" rx="8" fill="#7C86FF"/><text x="156" y="179" fill="#fff">Research</text></g>
+                  <g transform="rotate(-2.5 238 114)"><rect x="182" y="94" width="112" height="42" rx="8" fill="#FFE14A"/><text x="238" y="121">Explore</text></g>
+                  <g transform="rotate(3 306 54)"><rect x="268" y="34" width="84" height="42" rx="8" fill="#D4F252"/><text x="310" y="61">Test</text></g>
+                </g>
+                <g transform="rotate(-8 322 18)"><circle cx="322" cy="16" r="15" fill="#FF7A3D"/><circle cx="316" cy="13" r="2.4" fill="#1B1A3A"/><circle cx="328" cy="11" r="2.4" fill="#1B1A3A"/><path d="M314 21 Q322 28 331 19" fill="none" stroke="#1B1A3A" stroke-width="2.4" stroke-linecap="round"/></g>
+              </svg>
+            </div>
+          </div>
+          <div class="tw-cards">
+            <div><small>Tuần 1</small><b>Quy trình với AI</b><span>Bốn stage, bốn khái niệm cốt lõi.</span></div>
+            <div><small>Tuần 2</small><b>Hiểu vấn đề</b><span>Bóc brief, hiểu người dùng.</span></div>
+            <div><small>Tuần 3</small><b>Research đáng tin</b><span>Mỗi dòng dẫn về một quote có ID.</span></div>
+          </div>
+        </div>
+        <p class="t-feel"><b>Feel:</b> giống H-E nhưng có thêm chút nghịch: các pill stage nghiêng 2 đến 3 độ và đường chấm hơi cong như vẽ tay, trong khi bậc thang cũ được thay bằng sơ đồ này. Phần còn lại thẳng hàng. <b>Rủi ro:</b> nếu thêm nhiều chi tiết nghiêng nữa thì sẽ lại rối.</p>
+      </div>
+
+      <div>
+        <div class="t-title"><h3>H-K · Off-white + stage path</h3><span>H-I on a neutral off-white (#FAFAFA)</span></div>
+        <div class="tp tw tw-c tw-g">
+          <div class="tp-nav"><div class="brand"><svg><use href="#n-wobble"/></svg>AI Design Workflow</div><nav><span>Chương trình</span><span>Giảng viên</span><span>Hỏi đáp</span><a class="hb p">Giữ chỗ</a></nav></div>
+          <div class="tw-hero">
+            <div class="tw-copy">
+              <span class="tw-stk">Level up!</span>
+              <h3 class="tw-h"><span class="l1">Lên cấp cùng AI,</span> <span><span class="pill">từng bậc</span> <span class="w">một.</span></span></h3>
+              <p class="tw-p">Một workflow tập trung cho designer mid và senior. Mỗi stage kết thúc bằng một thứ bạn dùng được ngay.</p>
+              <div class="h-btns"><a class="hb p">Giữ chỗ ngay</a><a class="hb o">Xem chương trình</a></div>
+            </div>
+            <div>
+              <svg class="tw-flow" viewBox="0 0 360 270" role="img" aria-label="Four stage pills, slightly tilted, joined by a dotted path">
+                <path d="M60 232 C 30 190, 110 190, 128 166 S 196 128, 214 106 S 276 78, 300 50" fill="none" stroke="#1B1A3A" stroke-width="2.6" stroke-dasharray="2 8" stroke-linecap="round"/>
+                <g font-family="Manrope, sans-serif" font-weight="800" font-size="16" text-anchor="middle" fill="#1B1A3A">
+                  <g transform="rotate(-3 70 232)"><rect x="16" y="212" width="112" height="42" rx="8" fill="#D8C2FF"/><text x="72" y="239">Discover</text></g>
+                  <g transform="rotate(2 156 172)"><rect x="98" y="152" width="116" height="42" rx="8" fill="#D4F252"/><text x="156" y="179">Research</text></g>
+                  <g transform="rotate(-2.5 238 114)"><rect x="182" y="94" width="112" height="42" rx="8" fill="#FFE14A"/><text x="238" y="121">Explore</text></g>
+                  <g transform="rotate(3 306 54)"><rect x="268" y="34" width="84" height="42" rx="8" fill="#1B1A3A"/><text x="310" y="61" fill="#fff">Test</text></g>
+                </g>
+                <g transform="rotate(-8 322 18)"><circle cx="322" cy="16" r="15" fill="#FF7A3D"/><circle cx="316" cy="13" r="2.4" fill="#1B1A3A"/><circle cx="328" cy="11" r="2.4" fill="#1B1A3A"/><path d="M314 21 Q322 28 331 19" fill="none" stroke="#1B1A3A" stroke-width="2.4" stroke-linecap="round"/></g>
+              </svg>
+            </div>
+          </div>
+          <div class="tw-cards ink">
+            <div><small>Tuần 1</small><b>Quy trình với AI</b><span>Bốn stage, bốn khái niệm cốt lõi.</span></div>
+            <div><small>Tuần 2</small><b>Hiểu vấn đề</b><span>Bóc brief, hiểu người dùng.</span></div>
+            <div><small>Tuần 3</small><b>Research đáng tin</b><span>Mỗi dòng dẫn về một quote có ID.</span></div>
+          </div>
+        </div>
+        <p class="t-feel"><b>Feel:</b> nền off-white trung tính `#FAFAFA` dịu hơn trắng thuần, không ngả vàng hay xanh, nên các màu pastel giữ nguyên độ tươi. <b>Rủi ro:</b> rất gần trắng thuần của H-J, nên khác biệt chỉ thấy khi để cạnh nhau.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo round 2 -->
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">Logo · round 2</div>
+      <h2>Mark 2 and mark 6, refined</h2>
+      <p>Winnie liked mark 2 (the step path) and mark 6 (the climbing notes). Here are six versions: ink-and-dot path, a path in four colors, flat notes, tilted notes, a path with notes on each step, and a path with a literal "up" arrow. Each shows light, dark, and a small lockup.</p>
+    </div>
+    <div class="lg-grid">
+      <div class="lg"><div class="l1"><svg><use href="#n-path"/></svg><div class="wm">AI Design<br>Workflow</div></div><div class="l2"><svg><use href="#n-path"/></svg><div class="wm">AI Design Workflow</div></div><div class="l3"><b>R1 · Step path</b>The simplest. One ink line, one orange dot at the top.</div></div>
+      <div class="lg"><div class="l1"><svg><use href="#n-pathc"/></svg><div class="wm">AI Design<br>Workflow</div></div><div class="l2"><svg><use href="#n-pathc"/></svg><div class="wm">AI Design Workflow</div></div><div class="l3"><b>R2 · Four-color path</b>Each step is a stage and gets its own color. The most cheerful, still simple.</div></div>
+      <div class="lg"><div class="l1"><svg><use href="#n-notes"/></svg><div class="wm">AI Design<br>Workflow</div></div><div class="l2"><svg><use href="#n-notes"/></svg><div class="wm">AI Design Workflow</div></div><div class="l3"><b>R3 · Flat notes</b>Four overlapping cards stepping up. Closest to the card style in Winnie's references.</div></div>
+      <div class="lg"><div class="l1"><svg><use href="#n-notes-tilt"/></svg><div class="wm">AI Design<br>Workflow</div></div><div class="l2"><svg><use href="#n-notes-tilt"/></svg><div class="wm">AI Design Workflow</div></div><div class="l3"><b>R4 · Tilted notes</b>The same cards slightly rotated. Keeps a bit of the craft feel from E.</div></div>
+      <div class="lg"><div class="l1"><svg><use href="#n-hybrid"/></svg><div class="wm">AI Design<br>Workflow</div></div><div class="l2"><svg><use href="#n-hybrid"/></svg><div class="wm">AI Design Workflow</div></div><div class="l3"><b>R5 · Path with notes</b>Combines both liked marks: the stair line with a colored card on each tread.</div></div>
+      <div class="lg"><div class="l1"><svg><use href="#n-arrow"/></svg><div class="wm">AI Design<br>Workflow</div></div><div class="l2"><svg><use href="#n-arrow"/></svg><div class="wm">AI Design Workflow</div></div><div class="l3"><b>R6 · Level-up arrow</b>Stairs ending in an up arrow. The most literal "level up", slightly more generic.</div></div>
+      <div class="lg"><div class="l1"><svg><use href="#n-wobble"/></svg><div class="wm">AI Design<br>Workflow</div></div><div class="l2"><svg><use href="#n-wobble"/></svg><div class="wm">AI Design Workflow</div></div><div class="l3"><b>R7 · Wobbly path</b>R1 with slightly slanted risers and an off-center dot. Looks hand-placed, not ruled.</div></div>
+      <div class="lg"><div class="l1"><svg><use href="#n-pile"/></svg><div class="wm">AI Design<br>Workflow</div></div><div class="l2"><svg><use href="#n-pile"/></svg><div class="wm">AI Design Workflow</div></div><div class="l3"><b>R8 · Piled notes</b>R4 pushed further: tighter overlap, bigger tilts. The most playful of the set.</div></div>
+    </div>
+  </section>
+
+  <details class="r1">
+    <summary>Round 1: font test, directions A to G, logo marks (collapsed)</summary>
+    <div class="r1-body">
   <section>
     <div class="sec-head">
       <div class="eyebrow">Font test</div>
@@ -573,7 +1217,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700}
 
   <section>
     <div class="sec-head">
-      <div class="eyebrow">Logo marks</div>
+      <div class="eyebrow">Logo marks · round 1</div>
       <h2>Six mark ideas, independent of direction</h2>
       <p>Each one hints at a level-up through steps or stages. The accent shape marks the top stage, which is where the course ends: a workflow you reuse. Any mark can be recolored for any direction.</p>
     </div>
@@ -591,4 +1235,6 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700}
     <div class="eyebrow">My lean</div>
     <p style="color:var(--fg);margin-top:8px"><b>Direction B with mark 3 or 4.</b> It fits "calm senior mentor" and "sharp practitioner" best, and it's the strongest match for editorial, warm and craft. You can borrow A's bold color blocks or C's sticker details for playful moments, so the page doesn't feel too quiet. Your pick decides, though.</p>
   </section>
+    </div>
+  </details>
 </div>
