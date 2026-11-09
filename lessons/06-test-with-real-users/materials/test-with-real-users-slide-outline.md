@@ -5,7 +5,7 @@ level: ""
 slide_count: 40
 duration: "90 min"
 status: draft
-built_deck: ""
+built_deck: "https://claude.ai/artifact/PHS9cMkfYJhB3AS5W4jwK2"
 last_synced: 2026-11-08
 ---
 
@@ -58,7 +58,7 @@ last_synced: 2026-11-08
 - Num: 5
 - Kicker: Mở đầu
 - Title: Ice Breaker
-- Sub: Kể một lần sản phẩm trông xong rồi mà người dùng vẫn gặp vấn đề.
+- Sub: Kể một lần sản phẩm trông đã xong nhưng người dùng vẫn gặp vấn đề.
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -78,7 +78,7 @@ last_synced: 2026-11-08
 - Num: 01
 - Kicker: Chuyển phần
 - Title: Validate\n*sau khi AI build*
-- Sub: Build nhanh hơn, nên kiểm tra là phần chậm lại.
+- Sub: Build nhanh hơn, nhưng kiểm tra vẫn chậm.
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -144,8 +144,8 @@ last_synced: 2026-11-08
 - Kicker: So sánh
 - Title: Audit hay test?
 - On-slide:
-  - UX Audit: bạn và AI rà, rẻ, làm trong vài giờ, cho biết chỗ nào đáng nghi
-  - Usability test: người thật làm task, cho biết họ có gặp vấn đề không và vì sao
+  - UX Audit: bạn và AI rà; rẻ, làm trong vài giờ; cho biết chỗ nào đáng nghi
+  - Usability test: người thật làm task; cho biết họ có gặp vấn đề không và vì sao
   - Audit đi trước, test dùng thời gian của người dùng cho điều audit chưa trả lời được
 - Ví dụ: có (bản nháp, Delivery App: audit thấy thiếu trạng thái "không còn khung giờ nào"; test cho biết khách có thực sự dừng ở đó không)
 - Câu hỏi hay gặp:
@@ -342,8 +342,8 @@ last_synced: 2026-11-08
 - Kicker: So sánh
 - Title: AI audit tốt đến đâu?
 - On-slide:
-  - AI giúp: rà nhanh, phủ nhiều màn, soạn nháp evidence
-  - AI yếu: bỏ sót vấn đề, sinh false positive, không biết hậu quả
+  - AI giúp: rà nhanh; phủ nhiều màn; soạn nháp evidence
+  - AI yếu: bỏ sót vấn đề; sinh false positive; không biết hậu quả
   - Một nghiên cứu: AI tìm lại khoảng 21% vấn đề của chuyên gia
 - Ví dụ: có (bản nháp, Delivery App: AI báo "thiếu nút Back" ở màn xác nhận trong khi màn đó cố ý không có, còn bỏ sót việc không có trạng thái hết khung giờ)
 - Câu hỏi hay gặp:
@@ -386,7 +386,7 @@ last_synced: 2026-11-08
 - Title: Từ goal đến metric
 - On-slide:
   - Goal: điều bạn muốn người dùng làm được
-  - Signal: hành vi bạn quan sát cho thấy goal đạt
+  - Signal: hành vi bạn quan sát cho thấy goal đã đạt
   - Metric: cách bạn đo signal
 - Ví dụ: có (bản nháp, Delivery App: goal là khách mới đặt xong đơn đầu và biết khung giờ đã chốt hay còn đổi được; signal là khách dừng đọc cut-off rồi thanh toán không hỏi lại; metric là task success, time on task, số lỗi)
 - Câu hỏi hay gặp:
@@ -411,7 +411,7 @@ last_synced: 2026-11-08
 ### STATEMENT · Small samples
 - Kicker: Giới hạn
 - Title: Ba đến năm người cho\n*tín hiệu, không cho tỷ lệ*
-- On-slide: SUS và task success ở mẫu nhỏ để so trước và sau khi sửa
+- On-slide: Với mẫu nhỏ, SUS và task success chỉ để so trước và sau khi sửa
 - Ví dụ: có (bản nháp, Delivery App: 4 trên 5 người hoàn thành task chọn khung giờ; điều đáng học là vì sao một người kẹt, không phải con số 80%)
 - Câu hỏi hay gặp:
   - SUS là gì? Bảng mười câu hỏi cho điểm 0 đến 100; điểm 68 thường là mức tham chiếu trung bình.
@@ -455,7 +455,7 @@ last_synced: 2026-11-08
   - Why: thấy thiết kế hỏng ở đâu và vì sao
   - Nếu thiếu: bạn chỉ biết điều mình nghĩ, không biết điều người dùng làm
   - When: sau audit và sau khi sửa lỗi hiển nhiên
-  - Không cần khi: chỉ so hai bản trên lượng lớn người dùng (dùng A/B test)
+  - Không cần khi: chỉ cần so hai bản trên lượng lớn người dùng (dùng A/B test)
 - Ví dụ: có (bản nháp, Delivery App: nhờ một người hay đặt đồ ăn giao tận nơi thử đặt một đơn lúc 19:00 và quan sát họ dừng ở đâu)
 - Câu hỏi hay gặp:
   - Moderated và unmoderated khác nhau ở đâu? Moderated có bạn ngồi cùng và hỏi ngay; unmoderated người dùng tự làm, không có bạn.
@@ -795,7 +795,7 @@ last_synced: 2026-11-08
   - 2 · Khung giờ bị khoá không có lý do · heuristic · severity 3
   - 3 · Focus không nhìn thấy · accessibility · severity 3
   - 4 · Vùng chạm nhỏ · accessibility · severity 2
-  - 5 · Nhãn "Order" lệch "Đơn hàng" · nội dung · severity 2
+  - 5 · Nhãn "Order" lệch với "Đơn hàng" · nội dung · severity 2
   - 6 · Màu thô trên nút · design system · severity 1
   - 7 · Placeholder quá nhạt · accessibility · severity 2
 - Ví dụ: bản nháp (Delivery App: vấn đề 1 nặng nhất vì khách thanh toán rồi mới biết không đổi được khung giờ)
