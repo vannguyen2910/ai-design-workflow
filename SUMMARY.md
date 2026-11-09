@@ -19,6 +19,10 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 - [Lesson 4: Explore Ideas](lessons/04-explore-ideas/materials/explore-ideas-lesson.md)
   - [Practice 4: Explore Ideas and Pick a Direction](lessons/04-explore-ideas/materials/explore-ideas-practice.md)
 
+## Project
+
+- [Project brief: Chia tiền nhóm đi chơi](assets/starter-files/practice-project/project-brief.md)
+
 ## Resources
 
 - [Project mẫu: Delivery App](assets/starter-files/course-case/case-card.md)
