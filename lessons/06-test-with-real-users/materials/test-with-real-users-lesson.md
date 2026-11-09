@@ -20,12 +20,10 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 ## Nội dung buổi học
 
 1. Validate sau khi AI build: vì sao verification là nút thắt
-2. UX Audit với AI: heuristic evaluation và các lớp khác
-3. Goals, Signals, Metrics: biến hypothesis thành câu hỏi test được
-4. Usability test với participant bạn tự tìm
-5. Phân tích, xếp finding và sửa đúng layer
-6. Handoff kiểu mới: bàn giao UX foundation
-7. Cả khoá: mỗi lesson đóng góp gì cho design outcome và business outcome
+2. UX Audit với AI: heuristic evaluation và các layer khác
+3. Usability test với người thật: Goals, Signals, Metrics, rồi test với participant bạn tự tìm
+4. Phân tích, xếp finding và sửa đúng layer
+5. Handoff kiểu mới: bàn giao UX foundation, và nhìn lại cả khoá
 
 ## Sau buổi học, bạn có thể
 
@@ -127,7 +125,7 @@ Ba điều giúp bạn chọn điểm:
 - **Tác động:** người gặp có hoàn thành được task không, hay bỏ dở.
 - **Tính lặp lại:** vấn đề chỉ gặp một lần, hay lần nào cũng gặp.
 
-AI có thể đề xuất severity, nhưng bạn chốt điểm cuối, vì AI không biết hậu quả với người dùng và business của bạn. Khi đặt điểm, ghi kèm một dòng lý do (ví dụ "3, vì khách bỏ dở task mà không biết vì sao"). Ở mục 5.2, bạn dùng chính thang này để xếp finding sau test.
+AI có thể đề xuất severity, nhưng bạn chốt điểm cuối, vì AI không biết hậu quả với người dùng và business của bạn. Khi đặt điểm, ghi kèm một dòng lý do (ví dụ "3, vì khách bỏ dở task mà không biết vì sao"). Ở mục 4.2, bạn dùng chính thang này để xếp finding sau test.
 
 ### 2.5 Cách chạy một UX Audit với AI
 
@@ -149,7 +147,7 @@ Cả hai nghiên cứu cùng kết luận AI là phần bổ sung và cần ngư
 
 ---
 
-## 3. Goals, Signals, Metrics
+## 3. Usability test with real users
 
 ### 3.1 Từ hypothesis đến câu hỏi test được
 
@@ -175,11 +173,7 @@ Khung HEART của Google gợi ý năm nhóm: Happiness, Engagement, Adoption, R
 
 SUS (System Usability Scale) là bảng mười câu hỏi, cho điểm từ 0 đến 100. Điểm 68 thường được dùng làm mức tham chiếu trung bình. Với 3 đến 5 người, SUS và tỷ lệ task success chỉ là tín hiệu để so sánh trước và sau khi sửa, không phải con số có ý nghĩa thống kê. Điều bạn học được nhiều nhất từ mẫu nhỏ là vì sao người dùng gặp khó, không phải bao nhiêu phần trăm.
 
----
-
-## 4. Usability test with participants you recruit
-
-### 4.1 Usability test là gì
+### 3.3 Usability test là gì
 
 | | |
 |---|---|
@@ -191,7 +185,7 @@ SUS (System Usability Scale) là bảng mười câu hỏi, cho điểm từ 0 �
 
 Buổi này dạy moderated test: bạn ngồi cùng (hoặc gọi video với) từng participant. A/B testing, concept testing và unmoderated test cũng tồn tại; bạn xem method card nếu cần.
 
-### 4.2 Tìm participant
+### 3.4 Tìm participant
 
 - **Số người:** 3 đến 5 người. Một số ít người dùng thường đủ để thấy phần lớn vấn đề lớn của một nhóm.
 - **Đúng nhóm:** chọn người giống nhóm người dùng mục tiêu (ví dụ khách đặt đồ ăn giao tận nơi), không chọn người cùng làm với bạn trong project.
@@ -199,7 +193,7 @@ Buổi này dạy moderated test: bạn ngồi cùng (hoặc gọi video với) 
 - **Cẩn thận với bạn bè:** người quen có xu hướng khen cho dễ chịu. Nếu chỉ có người quen, ghi rõ điều này như giới hạn của test.
 - **Có người từ chối ghi hình:** ghi chú tay.
 
-### 4.3 Consent và dữ liệu
+### 3.5 Consent và dữ liệu
 
 Participant là người thật, nên áp lại data rules từ Lesson 1:
 
@@ -210,43 +204,61 @@ Participant là người thật, nên áp lại data rules từ Lesson 1:
 
 Chương trình dạy mức thực hành cho nghiên cứu nội bộ, không thay chính sách công ty hay tư vấn pháp lý.
 
-### 4.4 Test plan và script với AI
+### 3.6 Test plan và script với AI
 
 Bạn có sẵn template `deliver-test-plan.md`. Các phần chính: hypothesis và điều gì làm bạn đổi ý, task, participant, script, metric.
 
 - **Task** là một việc người dùng thử làm, không nói trước cách làm. Ví dụ: "Bạn đặt một đơn và muốn nhận lúc 19:00. Hãy thử làm." Không viết "bấm vào ô chọn khung giờ".
 - **Script** gồm lời mở, các task, câu hỏi tiếp theo, lời kết. Câu hỏi hỏi về điều đã xảy ra ("Lúc nãy bạn dừng ở màn này, bạn đang nghĩ gì?"), không hỏi ý kiến về ý tưởng ("Bạn có thích màn này không?").
-- **AI soạn nháp, bạn cắt:** AI hay viết câu dẫn dắt và lặp ý. Bạn cắt ít nhất một nửa và viết lại các câu dẫn dắt. Quy tắc hỏi trung tính ở Lesson 2 áp dụng nguyên.
+- **AI soạn nháp, bạn cắt:** AI hay viết câu dẫn dắt và lặp ý. Bạn cắt ít nhất một nửa và viết lại các câu dẫn dắt. Quy tắc hỏi trung tính ở Lesson 2 áp dụng nguyên vẹn.
 
-### 4.5 Chạy buổi test
+### 3.7 Chạy buổi test
 
 1. Mở đầu: nói rõ bạn test prototype, không test người dùng, và không có câu trả lời sai.
 2. Nhờ họ nói to suy nghĩ khi làm.
 3. Đưa task, rồi **im lặng và quan sát**. Không chỉ cách làm. Khi họ hỏi "chỗ này bấm gì?", hỏi lại "bạn nghĩ nó sẽ làm gì?".
-4. Ghi: họ làm gì, dừng ở đâu, nói gì (nguyên văn khi được), có hoàn thành không, mất bao lâu.
+4. Ghi hình màn hình và tiếng khi họ đồng ý, và ghi nhanh khi cần: họ làm gì, dừng ở đâu, nói gì (nguyên văn khi được), có hoàn thành không, mất bao lâu. Người từ chối ghi hình thì bạn ghi chú tay.
 5. Cuối buổi: SUS và một hai câu hỏi mở.
 
-### 4.6 Vì sao AI không đóng vai người dùng
+### 3.8 Vì sao AI không đóng vai người dùng
 
 Các nghiên cứu về người trả lời mô phỏng (silicon sampling) cho thấy họ thiên về câu trả lời dễ nghe và chỉ khớp ở mức nhóm. NN/g, khi chạy lại ba nghiên cứu cũ với người dùng AI, thấy giá trị và nhu cầu nêu ra quá nông và hành vi bị lý tưởng hoá. Một "người dùng" do AI mô phỏng luôn làm được task, nên nó che đúng chỗ bạn cần thấy. AI giúp được ở khâu chuẩn bị và gom ghi chú, nhưng không thay thế được người dùng thật.
 
 ---
 
-## 5. Analysis, prioritising and fixing at the right layer
+## 4. Analysis, prioritising and fixing at the right layer
 
-### 5.1 Kiểm phần phân tích của AI
+### 4.1 Từ recording đến finding cùng AI
 
-Sau khi test, bạn có thể nhờ AI gom ghi chú thành finding nháp. Dùng lại cách của Lesson 2:
+Một cách làm thực tế: bạn ghi hình từng buổi test (màn hình và tiếng, khi participant đồng ý), nhờ AI clean up transcript, rồi để AI gom finding, tính SUS và đề xuất thay đổi. Bạn giữ phần quyết định.
 
-1. Ẩn danh ghi chú trước, gắn ID cho mỗi ghi chú (P1-03 là ghi chú thứ 3 của participant 1).
-2. AI trả finding kèm ID ghi chú. Bạn mở từng ID đối chiếu với ghi chú gốc: ID có thật không, đúng người không, nghĩa còn nguyên không.
-3. Bạn nhờ AI liệt kê điều participant nói hoặc làm mà chưa được đưa vào finding, vì đọc danh sách chỉ bắt được điều viết sai, không bắt được điều thiếu.
+**Bước 1: viết rules cho transcript, thay vì soát từng timestamp.** Bạn viết một bộ rules một lần và đưa cho AI cùng transcript. Rules nên có năm điều:
 
-### 5.2 Xếp finding theo severity, không theo tần suất
+1. Ẩn danh bằng participant code (P1, P2) trên máy trước khi đưa cho AI, và chỉ dùng công cụ công ty cho phép.
+2. Giữ nguyên văn lời participant, không diễn giải hay làm đẹp câu.
+3. Giữ timestamp và người nói cho mỗi lượt.
+4. Chỗ nghe không rõ thì ghi "không rõ", không đoán.
+5. Không thêm ý, không gộp hay bỏ lượt nói.
+
+Rules thay cho việc soát từng timestamp vì chúng ép transcript giữ đúng những thứ bạn cần kiểm sau này: lời nguyên văn và mốc thời gian để quay về video.
+
+**Bước 2: đưa AI đầu vào đủ.** Gồm transcript đã clean up, câu trả lời SUS của từng participant, test plan (goal, signal, metric) và rules file. Có test plan và rules file thì recommendation bám theo mục tiêu đã đặt, không theo cảm giác.
+
+**Bước 3: AI trả ba thứ.**
+
+- **Finding** kèm timestamp và lời trích nguyên văn. Finding không dẫn về được timestamp thì chưa phải finding.
+- **Điểm SUS** của từng người và trung bình, cùng task success của từng task. SUS có công thức cố định (câu lẻ lấy điểm trừ 1, câu chẵn lấy 5 trừ điểm, cộng lại rồi nhân 2,5), nên AI tính được. Bạn tự kiểm lại phép tính của một participant trước khi dùng cả bảng.
+- **Recommendation** kèm layer cần sửa (xem mục 4.3).
+
+**Bước 4: bạn quyết định.** Bạn chấm severity theo mục 4.2, mở timestamp của các finding quan trọng, nhờ AI liệt kê điều participant nói hoặc làm mà chưa được đưa vào finding (vì đọc danh sách chỉ bắt được điều viết sai, không bắt được điều thiếu), rồi chọn recommendation nào làm.
+
+Nếu participant từ chối ghi hình, bạn ghi chú tay, gõ lại theo cùng rules rồi làm tiếp từ bước 2.
+
+### 4.2 Xếp finding theo severity, không theo tần suất
 
 Một vấn đề chỉ một người gặp nhưng khiến họ bỏ dở task vẫn quan trọng hơn một khó chịu nhỏ năm người cùng nhắc. Dùng thang ở mục 2.4 và xét ba điều: tần suất, tác động và tính lặp lại. Mỗi finding đi kèm một dòng nêu mẫu của bạn không cho biết điều gì, và ý kiến trái chiều giữ cùng trang với finding.
 
-### 5.3 Sửa ở đúng layer
+### 4.3 Sửa ở đúng layer
 
 Dùng lại layer ladder ở Lesson 5. Câu hỏi kiểm tra: lỗi này có sai ở nhiều hơn một màn không?
 
@@ -262,13 +274,13 @@ Có hai cách sai: **fix too low** (sửa lại ở từng màn, các bản lệ
 
 ---
 
-## 6. A new way to hand off
+## 5. Handoff and the whole course
 
-### 6.1 Handoff không còn là bàn giao màn hình
+### 5.1 Handoff không còn là bàn giao màn hình
 
 Handoff pack và measurement plan kiểu cũ không còn trong chương trình. Điều còn lại cần bàn giao là **UX foundation**, vì người implement sau (có thể là developer, product owner hay chính AI của họ) dễ chồng tính năng lên nhau mà không biết nền UX đang giữ điều gì.
 
-### 6.2 Gói handoff
+### 5.2 Gói handoff
 
 | Mục | Dùng để |
 |---|---|
@@ -280,13 +292,11 @@ Handoff pack và measurement plan kiểu cũ không còn trong chương trình. 
 
 Người implement cho AI của họ đọc chính gói này, giống cách bạn đưa rules file cho AI ở Lesson 5.
 
-### 6.3 Vòng lặp
+### 5.3 Vòng lặp
 
 Sau khi bản build ra, bạn audit lại bản đó bằng cùng quy trình ở mục 2. Bạn có thể áp dụng cho cả bản developer đã build, không chỉ prototype của bạn. Đây là phần mở rộng, chưa phải nội dung chính của buổi.
 
----
-
-## 7. The whole course: what each lesson contributes
+### 5.4 Cả khoá: mỗi lesson đóng góp gì
 
 Lesson này là lesson cuối. Bảng dưới nối từng lesson với business question của Delivery App từ Lesson 2 (khách mới không đặt lại sau đơn đầu tiên; tỷ lệ đặt đơn thứ hai trong 30 ngày là 41%).
 
@@ -325,5 +335,5 @@ Bảng này nói **đóng góp có thể có**, không phải kết quả đã �
 - Bằng chứng về AI làm heuristic evaluation đến từ hai nghiên cứu nhỏ có thiết kế khác nhau; áp vào prototype của bạn là suy luận.
 - Con số "3 đến 5 người", điểm SUS tham chiếu và khung HEART là kiến thức chung của ngành; chương trình chưa mở lại bản gốc để kiểm lại.
 - Mẫu test nhỏ chỉ cho tín hiệu định tính, không cho kết luận về tỷ lệ.
-- Bảng đóng góp ở mục 7 là suy luận của chương trình, chưa đo.
+- Bảng đóng góp ở mục 5.4 là suy luận của chương trình, chưa đo.
 - Delivery App và các ví dụ là hư cấu, do chương trình tự dựng.

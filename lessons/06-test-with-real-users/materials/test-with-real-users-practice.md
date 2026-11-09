@@ -64,15 +64,18 @@ Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. *
 
 - Với mỗi participant: mở đầu (bạn test prototype, không test họ), nhờ họ nói to suy nghĩ, đưa task rồi im lặng quan sát, cuối buổi cho SUS và một hai câu hỏi mở.
 - Không giúp khi họ kẹt; ghi lại chỗ kẹt. Khi họ hỏi "chỗ này bấm gì?", hỏi lại "bạn nghĩ nó sẽ làm gì?".
-- Ghi: họ làm gì, dừng ở đâu, nói gì (nguyên văn khi được), hoàn thành hay không, mất bao lâu. Mỗi ghi chú có ID, ví dụ P1-03.
-- Ẩn danh ghi chú trên máy trước khi đưa cho AI ở Step 6.
-- **File:** `work/prototype/test-notes.md` (đã ẩn danh)
+- Ghi hình màn hình và tiếng khi participant đồng ý; người từ chối thì ghi chú tay (họ làm gì, dừng ở đâu, nói gì nguyên văn khi được, hoàn thành hay không, mất bao lâu).
+- Lưu câu trả lời SUS của từng người theo participant code.
+- **File:** recording lưu ngoài thư mục AI đọc, và `work/prototype/test-notes.md` cho phần ghi chú tay (đã ẩn danh)
 
-### Step 6 · Phân tích và xếp finding · AI gom, bạn kiểm tra
+### Step 6 · Từ recording đến finding · AI gom, bạn quyết định
 
-- **AI gom** ghi chú đã ẩn danh thành finding nháp, mỗi finding kèm ID ghi chú.
-- **Bạn mở từng ID**, đối chiếu với ghi chú gốc: ID có thật, đúng người, nghĩa còn nguyên không. Nhờ AI liệt kê thêm điều participant nói hoặc làm mà chưa được đưa vào finding.
-- **Xếp theo severity**, không theo số người nhắc. Mỗi finding có một dòng nêu mẫu của bạn không cho biết điều gì; ý kiến trái chiều giữ cùng trang.
+- **Viết rules để clean up transcript** một lần: ẩn danh bằng participant code trên máy trước khi đưa AI, giữ nguyên văn lời participant, giữ timestamp và người nói, chỗ nghe không rõ ghi "không rõ", không thêm ý, không gộp hay bỏ lượt nói. Lưu thành `work/prototype/transcript-rules.md`.
+- **AI clean up transcript** theo rules. Không cần soát từng timestamp, nhưng mở thử một đoạn đối chiếu với video để chắc rules được tuân thủ.
+- **Đưa AI đầu vào đủ:** transcript đã clean up, câu trả lời SUS, test plan và rules file của project.
+- **AI trả** finding kèm timestamp và lời trích nguyên văn, điểm SUS từng người và trung bình, task success từng task, và recommendation kèm layer cần sửa. Tự kiểm lại phép tính SUS của một participant.
+- **Bạn chốt severity** theo thang 0 đến 4, không theo số người nhắc. Mở timestamp của các finding quan trọng. Nhờ AI liệt kê thêm điều participant nói hoặc làm mà chưa được đưa vào finding. Mỗi finding có một dòng nêu mẫu của bạn không cho biết điều gì; ý kiến trái chiều giữ cùng trang.
+- **Bạn chọn** recommendation nào làm và ghi lý do cho những cái bạn không làm.
 - Điền bảng kết quả theo metric (task success, time, lỗi, SUS) và ghi rõ đây là tín hiệu từ mẫu nhỏ.
 - **File:** `work/prototype/findings.md` (theo template `deliver-findings.md`)
 
@@ -94,7 +97,7 @@ Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. *
 
 - [ ] `work/prototype/audit.md` (lần tự rà đầu tiên, finding đã lọc, severity kèm lý do, số lỗi của AI)
 - [ ] `work/prototype/test-participants.md` và `work/prototype/test-plan.md`
-- [ ] `work/prototype/test-notes.md` (đã ẩn danh) và `work/prototype/findings.md`
+- [ ] `work/prototype/transcript-rules.md`, `work/prototype/test-notes.md` (đã ẩn danh) và `work/prototype/findings.md`
 - [ ] Các file prototype đã sửa và `## Fix log` trong `work/prototype/index.md`
 - [ ] `work/prototype/handoff.md` và entry trong Knowledge Hub
 
@@ -103,9 +106,9 @@ Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. *
 - [ ] Bạn tự rà trước khi nhờ AI, và đã đếm số finding AI sai và bỏ sót.
 - [ ] Mọi finding có evidence mở ra được và một severity kèm lý do do chính bạn chốt.
 - [ ] Participant đúng nhóm người dùng; nếu chỉ có người quen, giới hạn đã được ghi.
-- [ ] Mọi ghi chú đã ẩn danh trước khi đưa cho AI; participant đã đồng ý điều bạn ghi hình hoặc ghi chú.
+- [ ] Transcript và ghi chú đã ẩn danh trước khi đưa cho AI; participant đã đồng ý điều bạn ghi hình hoặc ghi chú.
 - [ ] Script không có câu dẫn dắt, và bạn không giúp participant giữa chừng.
-- [ ] Mỗi finding dẫn về ID ghi chú gốc bạn đã mở và đối chiếu.
+- [ ] Mỗi finding dẫn về timestamp và lời trích nguyên văn; bạn đã mở timestamp của các finding quan trọng và kiểm lại phép tính SUS của một participant.
 - [ ] Finding xếp theo severity, không theo số lần được nhắc, và ý kiến trái chiều ở cùng trang.
 - [ ] Mỗi lỗi được sửa ở layer rộng nhất mà lỗi còn đúng.
 - [ ] Gói handoff có đủ năm mục và `## Known gaps` nêu rõ prototype chưa làm gì.
