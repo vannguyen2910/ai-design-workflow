@@ -107,6 +107,18 @@ Mỗi hoạt động chạy theo ba pha: nhắc lại method (tiêu chuẩn đ�
 | 2 | Research questions | Ba giả định hàng đầu | Soạn research question theo tiêu chí, gắn quyết định và nơi tìm | Cắt câu dẫn dắt, chốt danh sách | danh sách research question |
 | 3 | Competitor analysis | Phạm vi và tiêu chí | Bảng bằng chứng theo từng đối thủ | Đối chiếu ảnh gốc, ghi tỷ lệ ô sai | bản phân tích đối thủ |
 
+```mermaid
+flowchart LR
+  B0["0. Business question<br/>và scope"] -->|bản scope| B1["1. Challenge<br/>assumptions"] -->|bản đồ giả định| B2["2. Research<br/>questions"] -->|danh sách câu hỏi| B3["3. Competitor<br/>analysis"] -->|bản phân tích đối thủ| E["Đã kiểm tra brief"]
+```
+
+Mỗi bước chạy cùng một vòng ba pha:
+
+```mermaid
+flowchart LR
+  M["Nhắc lại method<br/>(tiêu chuẩn để kiểm tra)"] --> AI["AI soạn nháp<br/>từ context pack, prompt trung tính"] --> Y["Bạn kiểm tra từng dòng,<br/>sửa và quyết định"]
+```
+
 Tên file và cấu trúc thư mục trong hub mẫu chỉ là gợi ý. Cách làm khác vẫn đạt mục tiêu miễn là mỗi bước có một đầu ra lưu lại được, AI đọc được và người khác kiểm tra được.
 
 ### 3.2 Business question và scope

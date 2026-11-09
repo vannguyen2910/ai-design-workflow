@@ -93,6 +93,11 @@ Double Diamond gồm bốn stage; output của stage này là input của stage 
 | **Develop** | Mở rộng rồi thu hẹp: brainstorm, select, prototype | Một hướng đã chọn và một prototype |
 | **Deliver** | Thu hẹp: test và bàn giao | Findings, handoff pack, measurement plan |
 
+```mermaid
+flowchart LR
+  D1["Discover<br/>mở rộng<br/>Evidence, research thô"] --> D2["Define<br/>thu hẹp<br/>Insight, opportunity, challenge"] --> D3["Develop<br/>mở rộng rồi thu hẹp<br/>Hướng đã chọn, prototype"] --> D4["Deliver<br/>thu hẹp<br/>Findings, handoff"]
+```
+
 Mỗi stage kết thúc bằng một checklist ngắn gọi là **gate** trước khi công việc đi tiếp. Buổi này chỉ nói mỗi stage gồm gì và AI giúp được ở đâu; từng method nằm ở pre-read và method card.
 
 ### 3.2 Methods and the division of work
@@ -257,6 +262,17 @@ Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói
 | **Safe**: thông tin công khai, suy nghĩ riêng, project hư cấu | Trang phí giao công khai của đối thủ; project mẫu của chương trình | Dùng được với bất kỳ tool nào đã chấp nhận |
 | **Ask first**: nội bộ nhưng không nhạy cảm | Ghi chú quy trình nội bộ; tóm tắt research chưa công bố, không có tên người | Chỉ dùng trong tool mà công ty đã duyệt |
 | **Never in a public tool**: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA | Transcript phỏng vấn có tên; danh sách khách hàng; spec chưa phát hành; ảnh chụp admin dashboard đang chạy thật | Không dán. Ẩn danh trước, dùng tool đã được duyệt, hoặc để ngoài |
+
+```mermaid
+flowchart TD
+  Q["Tài liệu cần đưa cho AI"] --> P{"Công ty có chính sách?<br/>Chưa rõ thì hỏi, phân vân thì không dán"}
+  P --> C{"Thuộc nhóm nào?"}
+  C -->|Safe| S["Dùng với tool đã chấp nhận"]
+  C -->|Ask first| A["Chỉ dùng tool công ty đã duyệt"]
+  C -->|Never in a public tool| N["Không dán vào tool công khai"]
+  S --> X["Xoá thông tin định danh trên máy cục bộ"]
+  A --> X
+```
 
 ### 5.3 Four habits before pasting
 

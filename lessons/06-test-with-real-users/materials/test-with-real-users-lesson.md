@@ -136,6 +136,18 @@ AI có thể đề xuất severity, nhưng bạn chốt điểm cuối, vì AI k
 5. **Bạn chấm severity** theo thang ở mục 2.4. Severity cuối do bạn chốt.
 6. **Đếm lỗi của AI:** finding sai, finding bỏ sót so với bước tự rà. Con số này cho bạn biết AI đáng tin đến đâu với loại task này.
 
+```mermaid
+flowchart TD
+  subgraph B["Bạn"]
+    A1["1. Tự rà 5 phút"] --> A2["2. Đặt phạm vi và tiêu chí"]
+    C1["4. Lọc ba cổng"] --> C2["5. Chấm severity"] --> C3["6. Đếm lỗi của AI"]
+  end
+  subgraph AI["AI"]
+    D1["3. Soạn nháp finding kèm evidence"]
+  end
+  A2 --> D1 --> C1
+```
+
 ### 2.6 AI làm audit tốt đến đâu
 
 - Trong một nghiên cứu, một mô hình ngôn ngữ lớn đánh giá usability chỉ tìm lại khoảng 21,2% vấn đề của chuyên gia, và 24,3% kết quả là false positive.
@@ -254,6 +266,14 @@ Rules thay cho việc soát từng timestamp vì chúng ép transcript giữ đ�
 
 Nếu participant từ chối ghi hình, bạn ghi chú tay, gõ lại theo cùng rules rồi làm tiếp từ bước 2.
 
+```mermaid
+flowchart LR
+  R["Recording"] --> T["Transcript đã clean up<br/>(theo transcript-rules.md)"]
+  T --> AI["AI trả finding, SUS,<br/>task success, recommendation"]
+  S["SUS + test plan + rules file"] --> AI
+  AI --> Y["Bạn: chấm severity, mở timestamp,<br/>kiểm lại SUS, chọn recommendation"]
+```
+
 ### 4.2 Xếp finding theo severity, không theo tần suất
 
 Một vấn đề chỉ một người gặp nhưng khiến họ bỏ dở task vẫn quan trọng hơn một khó chịu nhỏ năm người cùng nhắc. Dùng thang ở mục 2.4 và xét ba điều: tần suất, tác động và tính lặp lại. Mỗi finding đi kèm một dòng nêu mẫu của bạn không cho biết điều gì, và ý kiến trái chiều giữ cùng trang với finding.
@@ -269,6 +289,13 @@ Dùng lại layer ladder ở Lesson 5. Câu hỏi kiểm tra: lỗi này có sai
 | Điều hướng sai ở mọi màn | Shell |
 | Cả loại trang sai bố cục | Template |
 | Chỉ một màn hình | Màn hình đó |
+
+```mermaid
+flowchart LR
+  T["Token<br/>mọi màn"] --> C["Component<br/>mọi chỗ dùng"] --> SH["Shell<br/>mọi loại màn"] --> TP["Template<br/>mọi màn cùng loại"] --> SC["Màn hình<br/>chỉ màn đó"]
+```
+
+Chọn bậc rộng nhất mà lỗi còn đúng (đọc từ trái sang phải).
 
 Có hai cách sai: **fix too low** (sửa lại ở từng màn, các bản lệch nhau thêm) và **push too high** (đưa vào hệ thống thứ chỉ một màn cần). Sau khi sửa ở nguồn, dựng lại phần bị ảnh hưởng và test lại đường chính một lần ngắn.
 
@@ -298,7 +325,7 @@ Sau khi bản build ra, bạn audit lại bản đó bằng cùng quy trình ở
 
 ### 5.4 Cả khoá: mỗi lesson đóng góp gì
 
-Lesson này là lesson cuối. Bảng dưới nối từng lesson với business question của Delivery App từ Lesson 2 (khách mới không đặt lại sau đơn đầu tiên; tỷ lệ đặt đơn thứ hai trong 30 ngày là 41%).
+Lesson này là lesson cuối. Bảng dưới nối từng lesson với business question của Delivery App từ Lesson 2 (khách mới không đặt lại sau đơn đầu tiên; tỷ lệ đặt đơn thứ hai trong 30 ngày là 41%). Cùng nội dung ở dạng bảng một trang: [course-contribution.html](../assets/course-contribution.html).
 
 | Lesson | Đóng góp cho design outcome | Đóng góp cho business outcome |
 |---|---|---|
