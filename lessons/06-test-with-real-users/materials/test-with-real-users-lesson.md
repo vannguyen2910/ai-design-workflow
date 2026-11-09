@@ -127,6 +127,8 @@ Ba điều giúp bạn chọn điểm:
 
 AI có thể đề xuất severity, nhưng bạn chốt điểm cuối, vì AI không biết hậu quả với người dùng và business của bạn. Khi đặt điểm, ghi kèm một dòng lý do (ví dụ "3, vì khách bỏ dở task mà không biết vì sao"). Ở mục 4.2, bạn dùng chính thang này để xếp finding sau test.
 
+Xem severity gắn lên màn hình thật trong audit mẫu của Travel Buddy: [travel-buddy-ux-audit.html](../assets/travel-buddy-ux-audit.html). Màn Connect có ba finding ở mức 4, 3 và 2.
+
 ### 2.5 Cách chạy một UX Audit với AI
 
 1. **Tự rà trước (khoảng 5 phút).** Bạn mở prototype và tự ghi vài điều thấy ngay, trước khi nhờ AI.
@@ -135,6 +137,8 @@ AI có thể đề xuất severity, nhưng bạn chốt điểm cuối, vì AI k
 4. **Lọc qua ba cổng.** (a) Thấy được trên màn hình không? (b) Có vi phạm tiêu chí đã gán không? (c) Người dùng thật có gặp không? Không qua cổng nào thì bỏ hoặc chuyển thành giả thuyết để hỏi ở usability test.
 5. **Bạn chấm severity** theo thang ở mục 2.4. Severity cuối do bạn chốt.
 6. **Đếm lỗi của AI:** finding sai, finding bỏ sót so với bước tự rà. Con số này cho bạn biết AI đáng tin đến đâu với loại task này.
+
+Một audit hoàn chỉnh trông như thế nào: phạm vi, 10 heuristic với câu hỏi yes/no, 11 finding ghim trên 8 màn hình, và mục giới hạn của audit. Mở [travel-buddy-ux-audit.html](../assets/travel-buddy-ux-audit.html) để xem; đây là bản nháp của một người, chưa phải kết luận.
 
 ```mermaid
 flowchart TD

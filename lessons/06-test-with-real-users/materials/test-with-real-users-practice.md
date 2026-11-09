@@ -36,6 +36,7 @@ Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. *
 
 ### Step 2 · Audit cùng AI · AI soạn nháp, bạn kiểm tra
 
+- **Xem mẫu trước:** mở `assets/travel-buddy-ux-audit.html` để thấy một audit hoàn chỉnh (phạm vi, tiêu chí, finding gắn màn hình, severity, giới hạn). Đích của bạn là đầu ra có dạng tương tự trên prototype của mình.
 - **Đặt phạm vi và tiêu chí:** chọn các lớp cần rà trong sáu lớp (heuristic, accessibility, design system, state, nội dung, flow). Bộ nguyên tắc và rules file của bạn là tiêu chí.
 - **AI soạn nháp finding:** mỗi finding ghi màn hình, lớp, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất. Điều không thấy trong ảnh thì AI ghi unknown.
 - **Bạn lọc qua ba cổng:** thấy được trên màn hình không; có vi phạm tiêu chí đã gán không; người dùng thật có gặp không. Finding không qua cổng nào thì bỏ, hoặc đổi thành giả thuyết để hỏi ở test.
