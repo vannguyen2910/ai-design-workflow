@@ -77,9 +77,9 @@ Prototype ở Lesson 5 là bản tham chiếu và thứ để test, không phả
 
 ### 2.2 Heuristic evaluation và UX Audit
 
-Heuristic evaluation là một method: bạn chấm giao diện theo mười usability heuristic của Nielsen (mục 2.3) và thang severity (mục 2.4). UX Audit rộng hơn, gồm heuristic evaluation và các lớp khác:
+Heuristic evaluation là một method: bạn chấm giao diện theo mười usability heuristic của Nielsen (mục 2.3) và thang severity (mục 2.4). UX Audit rộng hơn, gồm heuristic evaluation và các layer khác:
 
-| Lớp | Câu hỏi | Ví dụ trong Delivery App |
+| Layer | Câu hỏi | Ví dụ trong Delivery App |
 |---|---|---|
 | Heuristic | Màn hình vi phạm heuristic nào? | Chọn xong khung giờ mà không có xác nhận (trạng thái hệ thống) |
 | Accessibility | Có đạt WCAG 2.1 AA không? | Vùng chạm dưới 44 px, focus không nhìn thấy |
@@ -130,8 +130,8 @@ AI có thể đề xuất severity, nhưng bạn chốt điểm cuối, vì AI k
 ### 2.5 Cách chạy một UX Audit với AI
 
 1. **Tự rà trước (khoảng 5 phút).** Bạn mở prototype và tự ghi vài điều thấy ngay, trước khi nhờ AI.
-2. **Đặt phạm vi và tiêu chí.** Một flow, một số màn hình, các lớp ở bảng trên. Bộ nguyên tắc và rules file của bạn là tiêu chí.
-3. **AI soạn nháp finding.** Mỗi finding ghi màn hình, lớp, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất. Điều không thấy trong ảnh thì AI ghi unknown.
+2. **Đặt phạm vi và tiêu chí.** Một flow, một số màn hình, các layer ở bảng trên. Bộ nguyên tắc và rules file của bạn là tiêu chí.
+3. **AI soạn nháp finding.** Mỗi finding ghi màn hình, layer, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất. Điều không thấy trong ảnh thì AI ghi unknown.
 4. **Lọc qua ba cổng.** (a) Thấy được trên màn hình không? (b) Có vi phạm tiêu chí đã gán không? (c) Người dùng thật có gặp không? Không qua cổng nào thì bỏ hoặc chuyển thành giả thuyết để hỏi ở usability test.
 5. **Bạn chấm severity** theo thang ở mục 2.4. Severity cuối do bạn chốt.
 6. **Đếm lỗi của AI:** finding sai, finding bỏ sót so với bước tự rà. Con số này cho bạn biết AI đáng tin đến đâu với loại task này.

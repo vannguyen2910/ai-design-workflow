@@ -48,6 +48,17 @@ last_synced: 2026-11-09
   - 05 · Handoff và nhìn lại khoá học
 - Ví dụ: Không cần. Slide định hướng.
 - Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Đây là bản đồ buổi học: năm phần, đi từ lý do cần kiểm chứng đến handoff cho người implement.
+
+  - 01: AI build nhanh hơn, nút thắt chuyển sang bước kiểm tra
+  - 02: UX Audit cùng AI, bạn lọc và chấm severity
+  - 03: Usability test với người thật, từ test plan đến recording
+  - 04: Phân tích finding cùng AI rồi sửa đúng layer
+  - 05: Handoff UX foundation và nhìn lại cả khoá
+
+  > Bạn đã có ai để mời test chưa?
 - 🎨 Visual hint: TYPOGRAPHIC. Năm dòng đánh số lớn.
 
 ---
@@ -68,6 +79,8 @@ last_synced: 2026-11-09
   - Bảng kiểu vấn đề được dùng lại ở phần đầu tiên
 
   > **Giữ bảng này lại. Lát nữa mình quay lại khi nói về chuyện kiểm tra.**
+
+  > Bạn hãy kể một lần có sản phẩm được AI dựng giúp, trông đã xong, nhưng người dùng vẫn gặp vấn đề. Vấn đề đó là gì?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, một cột trống bên dưới.
 
 ---
@@ -139,8 +152,8 @@ last_synced: 2026-11-09
 ---
 
 ### COMPARE · Audit or test
-- Kicker: So sánh
-- Title: Audit hay test?
+- Kicker: Method
+- Title: Audit hay Usability test?
 - On-slide:
   - UX Audit: bạn và AI rà; rẻ, làm trong vài giờ; cho biết chỗ nào đáng nghi
   - Usability test: người thật làm task; cho biết họ có gặp vấn đề không và vì sao
@@ -199,20 +212,20 @@ last_synced: 2026-11-09
   > Một designer ở team product mở prototype ra và thấy nút Xác nhận dùng màu thô thay vì token. Đó là một finding của audit, không phải ý kiến cá nhân.
 
   - Heuristic evaluation chấm giao diện theo mười heuristic của Nielsen, được nêu ở slide sau
-  - UX Audit rộng hơn, gồm cả các lớp nằm trong rules file và design system của bạn
+  - UX Audit rộng hơn, gồm cả các layer nằm trong rules file và design system của bạn
   - Đầu ra là danh sách finding có evidence và severity, không phải nhận xét chung chung
   - AI giúp được ở đâu: soạn nháp finding kèm evidence theo tiêu chí bạn đặt; AI không chấm severity cuối và không kết luận người dùng sẽ gặp vấn đề
 
   > **Audit cho danh sách chỗ nên nghi, chưa phải kết luận.**
 
-  > Prototype của bạn có lớp nào chưa ai rà từ đầu đến giờ?
+  > Prototype của bạn có layer nào chưa ai rà từ đầu đến giờ?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Gồm, Why, Nếu thiếu, When, Không cần khi; icon kính lúp nhỏ góc phải.
 
 ---
 
 ### DIAGRAM · Six layers of an audit
 - Kicker: Phạm vi
-- Title: Sáu lớp của một audit
+- Title: Sáu layer của một audit
 - On-slide:
   - Heuristic: có vi phạm heuristic nào không
   - Accessibility: có đạt WCAG 2.1 AA không
@@ -220,23 +233,23 @@ last_synced: 2026-11-09
   - State: có trạng thái rỗng, đang tải, lỗi chưa
   - Nội dung: nhãn có nhất quán với content voice không
   - Flow: có khớp requirement và flow đã chọn không
-- Ví dụ: có (bản nháp, Delivery App: mỗi lớp một finding, như thiếu xác nhận sau khi chọn khung giờ, vùng chạm dưới 44 px, "Đơn hàng" chỗ này nhưng "Order" chỗ kia)
+- Ví dụ: có (bản nháp, Delivery App: mỗi layer một finding, như thiếu xác nhận sau khi chọn khung giờ, vùng chạm dưới 44 px, "Đơn hàng" chỗ này nhưng "Order" chỗ kia)
 - Câu hỏi hay gặp:
-  - Phải audit đủ sáu lớp không? Không; chọn lớp phù hợp với flow, và ghi rõ lớp nào chưa rà.
+  - Phải audit đủ sáu layer không? Không; chọn layer phù hợp với flow, và ghi rõ layer nào chưa rà.
 - Speaker notes:
 
-  > Mỗi lớp trả lời một câu hỏi khác nhau. Một màn hình qua lớp này vẫn có thể hỏng ở lớp kia.
+  > Mỗi layer trả lời một câu hỏi khác nhau. Một màn hình qua layer này vẫn có thể hỏng ở layer kia.
 
-  - Lớp heuristic: mười heuristic của Nielsen
-  - Lớp accessibility: độ tương phản, focus nhìn thấy, vùng chạm, theo rules file của buổi 5
-  - Lớp design system: giá trị thô, component ngoài inventory
-  - Lớp state và nội dung là chỗ AI hay bỏ sót nhất khi dựng
-  - Lớp flow đối chiếu với flow và requirement bạn đã chọn ở buổi 4
+  - Layer heuristic: mười heuristic của Nielsen
+  - Layer accessibility: độ tương phản, focus nhìn thấy, vùng chạm, theo rules file của buổi 5
+  - Layer design system: giá trị thô, component ngoài inventory
+  - Layer state và nội dung là chỗ AI hay bỏ sót nhất khi dựng
+  - Layer flow đối chiếu với flow và requirement bạn đã chọn ở buổi 4
   - Khoảng 3 phút cho slide này
 
-  > **Một màn hình qua lớp này vẫn có thể hỏng ở lớp khác.**
+  > **Một màn hình qua layer này vẫn có thể hỏng ở layer khác.**
 
-  > Lớp nào bạn nghĩ prototype của mình yếu nhất?
+  > Layer nào bạn nghĩ prototype của mình yếu nhất?
 - 🎨 Visual hint: SCHEMATIC. Sáu ô xếp 3 nhân 2, mỗi ô một câu hỏi.
 
 ---
@@ -325,7 +338,7 @@ last_synced: 2026-11-09
 ---
 
 ### PROCESS · How to run an audit with AI
-- Kicker: Cách làm
+- Kicker: Use case
 - Title: Chạy một audit trên màn hình
 - On-slide:
   - Tự rà 5 phút trước khi hỏi AI
@@ -341,7 +354,7 @@ last_synced: 2026-11-09
 
   > Bạn tự rà trước. Khi AI trả finding, bạn mới biết nó bỏ sót gì, và sai chỗ nào.
 
-  - Mỗi finding ghi màn hình, lớp, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất
+  - Mỗi finding ghi màn hình, layer, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất
   - Điều không thấy trong ảnh thì AI ghi unknown
   - Ba cổng lọc: thấy được trên màn hình không, vi phạm tiêu chí đã gán không, người dùng thật có gặp không
   - Finding không qua cổng nào thì bỏ, hoặc đổi thành giả thuyết để hỏi ở usability test
@@ -478,6 +491,8 @@ last_synced: 2026-11-09
   - Khoảng 2 phút cho slide này
 
   > **Mẫu nhỏ cho bạn biết vì sao, không cho bạn biết bao nhiêu phần trăm.**
+
+  > Bạn sẽ dùng SUS và task success để so sánh điều gì trước và sau khi sửa?
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "tín hiệu, không cho tỷ lệ".
 
 ---
@@ -597,8 +612,8 @@ last_synced: 2026-11-09
 ---
 
 ### PROCESS · Transcript rules
-- Kicker: Cách làm
-- Title: Rules để clean up transcript
+- Kicker: Use case
+- Title: AI Rules để clean up transcript
 - On-slide:
   - Ẩn danh bằng participant code trước khi đưa cho AI
   - Giữ nguyên văn lời participant, không diễn giải
@@ -643,6 +658,8 @@ last_synced: 2026-11-09
   - Khoảng 2 phút cho slide này
 
   > **Người thật mới cho bạn biết chỗ nào kẹt.**
+
+  > Bạn đang định hỏi AI điều gì mà chỉ người dùng thật mới trả lời được?
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "đóng vai người dùng".
 
 ---
@@ -754,7 +771,7 @@ last_synced: 2026-11-09
 
 ### NUMBERED · UX foundation package
 - Kicker: Gói handoff
-- Title: Gói bàn giao UX foundation
+- Title: Gói handoff UX foundation
 - On-slide:
   - Rules file và design system
   - Decision log
@@ -794,13 +811,13 @@ last_synced: 2026-11-09
 - Speaker notes:
   - Handoff tốt không giấu chỗ còn thiếu; developer thấy rõ điều gì chưa quyết và hỏi đúng người
 
-  > Gói bàn giao của bạn còn câu hỏi mở nào mà developer chắc chắn sẽ hỏi?
+  > Gói handoff của bạn còn câu hỏi mở nào mà developer chắc chắn sẽ hỏi?
 - 🎨 Visual hint: SCHEMATIC. Hai card, card "Còn mở" nền tối.
 
 ---
 
 ### PROCESS · The handoff loop
-- Kicker: Vòng lặp
+- Kicker: Quy trình
 - Title: Vòng lặp sau handoff
 - On-slide:
   - Bàn giao gói UX foundation
@@ -819,6 +836,8 @@ last_synced: 2026-11-09
   - Khoảng 2 phút cho slide này
 
   > **Handoff rồi vẫn phải kiểm lại.**
+
+  > Trong project của bạn, ai sẽ audit lại bản build sau khi handoff?
 - 🎨 Visual hint: SCHEMATIC. Process bốn bước ngang, vòng mũi tên từ bước cuối về bước đầu.
 
 ---
@@ -827,7 +846,7 @@ last_synced: 2026-11-09
 - Kicker: Tóm tắt
 - Title: Cheat sheet một trang
 - On-slide:
-  - Checklist UX Audit: sáu lớp
+  - Checklist UX Audit: sáu layer
   - Thang severity: 0 đến 4
   - Goals, Signals, Metrics
   - Các bước chạy một buổi test
@@ -851,10 +870,10 @@ last_synced: 2026-11-09
 - Sub: Tìm và chấm điểm các vấn đề trên một màn Delivery App.
 - Ví dụ: có (bản nháp, Delivery App: màn "Chọn thời gian giao" có vài vấn đề cài sẵn như thiếu state, nhãn lệch, vùng chạm nhỏ)
 - Câu hỏi hay gặp:
-  - Không tìm được lỗi nào thì sao? Đối chiếu theo sáu lớp ở bảng, hỏi từng lớp một.
+  - Không tìm được lỗi nào thì sao? Đối chiếu theo sáu layer ở bảng, hỏi từng layer một.
 - Speaker notes:
 
-  > Màn này có vài vấn đề cài sẵn. Bạn tự tìm trong hai phút, gán lớp và severity cho từng cái.
+  > Màn này có vài vấn đề cài sẵn. Bạn tự tìm trong hai phút, gán layer và severity cho từng cái.
 
   - Hai phút tự tìm, một phút đối chiếu với bản AI soạn nháp, hai phút lộ đáp án
   - Mỗi người đếm số finding AI sai và số finding AI bỏ sót
@@ -870,14 +889,14 @@ last_synced: 2026-11-09
 - Kicker: Màn hình mẫu
 - Title: Màn hình cần audit
 - On-slide: Màn "Chọn thời gian giao" của Delivery App
-- Ví dụ: bản nháp (Delivery App: màn chọn khung giờ giao trên điện thoại, có bảy vấn đề cài sẵn ở nhiều lớp)
+- Ví dụ: bản nháp (Delivery App: màn chọn khung giờ giao trên điện thoại, có bảy vấn đề cài sẵn ở nhiều layer)
 - Câu hỏi hay gặp:
   - Màn này có trạng thái rỗng hay lỗi không? Màn tĩnh chỉ cho thấy một trạng thái; điều không thấy trong ảnh thì ghi unknown.
 - Speaker notes:
 
-  > Đây là màn hình bạn audit trong hai phút. Mỗi vấn đề, bạn ghi lớp và severity.
+  > Đây là màn hình bạn audit trong hai phút. Mỗi vấn đề, bạn ghi layer và severity.
 
-  - Màn hình có bảy vấn đề cài sẵn, nằm ở nhiều lớp khác nhau
+  - Màn hình có bảy vấn đề cài sẵn, nằm ở nhiều layer khác nhau
   - Màn tĩnh không cho thấy trạng thái rỗng, đang tải và lỗi; điều không thấy thì ghi unknown
   - Màn hình được nhúng vào slide dưới dạng khung điện thoại từ `screen.html`
   - Khoảng 2 phút cho slide này
@@ -913,7 +932,7 @@ last_synced: 2026-11-09
   - Khoảng 3 phút cho slide này
 
   > **Đếm lỗi của AI, đừng chỉ đọc kết quả.**
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bảy dòng với số lớn, mỗi dòng gồm vấn đề, lớp và severity.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bảy dòng với số lớn, mỗi dòng gồm vấn đề, layer và severity.
 
 ---
 
@@ -966,6 +985,8 @@ last_synced: 2026-11-09
   - Khoảng 2 phút cho slide này
 
   > **Tín hiệu từ test không phải kết quả kinh doanh.**
+
+  > Project của bạn cần dữ liệu gì sau launch để biết prototype có tác động kinh doanh?
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "chưa phải kết quả đã đo".
 
 ---
@@ -1021,7 +1042,7 @@ last_synced: 2026-11-09
 ---
 
 ### STATEMENT · Closing line
-- Kicker: Kết lại
+- Kicker: Takeaway
 - Title: Muốn AI build đúng,
 *handoff rules*
 là điều không nên bỏ qua
@@ -1034,4 +1055,6 @@ là điều không nên bỏ qua
   - Ba điều để mang về: audit để biết chỗ nghi ngờ, test với người thật để biết chỗ có thật, sửa ở layer rộng nhất mà lỗi còn đúng
 
   > **Muốn AI build đúng, handoff điều không được phá.**
+
+  > Điều nào trong project của bạn mà AI hoặc developer dễ phá nhất?
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "handoff rules".
