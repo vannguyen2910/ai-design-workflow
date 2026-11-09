@@ -47,7 +47,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 @media(max-width:760px){.o .links{display:none}}
 
 /* ===== A: bento, tangerine / iris / lime ===== */
-.oa{--paper:#FAF9F6;--ink:#1B1A24;--c1:#FF6A2B;--c2:#8B6CF0;--c3:#C8F25A;--soft:#EDE8FB;--font:"Manrope",sans-serif;--lk:#1B1A24;--s1:#BBA8F5;--s2:#8B6CF0;--s3:#C8F25A;--s4:#FF6A2B}
+.oa{--paper:#FFFFFF;--ink:#1B1A24;--c1:#FF6A2B;--c2:#8B6CF0;--c3:#C8F25A;--soft:#EDE8FB;--font:"Manrope",sans-serif;--lk:#1B1A24;--s1:#BBA8F5;--s2:#8B6CF0;--s3:#C8F25A;--s4:#FF6A2B}
 .oa .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(18px,3vw,36px);align-items:center}
 .oa h3{font-size:clamp(2rem,4.6vw,3.2rem)}
 .oa h3 em{font-style:normal;background:var(--c3);padding:0 .18em;border-radius:.22em;display:inline-block}
@@ -81,7 +81,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 @media(max-width:760px){.oa .hero{grid-template-columns:minmax(0,1fr)}.oa .tri,.oa .strip{grid-template-columns:minmax(0,1fr)}.oa .mosaic{grid-template-rows:150px 150px}}
 
 /* ===== B: journey, coral / cobalt / butter ===== */
-.ob{--paper:#FFFDF8;--ink:#14213D;--c1:#FF6F61;--c2:#2F45E8;--c3:#FFD84D;--soft:#DCE8FF;--font:"Bricolage Grotesque","Manrope",sans-serif;--lk:#14213D;--s1:#9DB8FF;--s2:#2F45E8;--s3:#FFD84D;--s4:#FF6F61}
+.ob{--paper:#FFFFFF;--ink:#14213D;--c1:#FF6F61;--c2:#2F45E8;--c3:#FFD84D;--soft:#DCE8FF;--font:"Bricolage Grotesque","Manrope",sans-serif;--lk:#14213D;--s1:#9DB8FF;--s2:#2F45E8;--s3:#FFD84D;--s4:#FF6F61}
 .ob h3{font-weight:800;font-size:clamp(2.1rem,5vw,3.5rem);letter-spacing:-.02em}
 .ob h3 em{font-style:normal;color:var(--c2)}
 .ob .kick{background:var(--c3)}
@@ -112,14 +112,11 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 .ob .trio figure:nth-child(1) .ph{background-image:url(r3-img/p5.jpg);border-radius:999px 999px 24px 24px}
 .ob .trio figure:nth-child(2) .ph{background-image:url(r3-img/p3.jpg);border-radius:28px;height:190px}
 .ob .trio figure:nth-child(3) .ph{background-image:url(r3-img/p7.jpg);border-radius:110px 24px 110px 24px}
-.ob .trio figcaption{font-weight:700;font-size:.9rem;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
-.ob .trio figcaption i{width:12px;height:12px;border-radius:50%;background:var(--c1);flex:none}
-.ob .trio figure:nth-child(2) figcaption i{background:var(--c2);border-radius:3px}
-.ob .trio figure:nth-child(3) figcaption i{background:var(--c3)}
+.ob .trio figcaption{font-weight:700;font-size:.9rem;letter-spacing:-.01em;text-align:center}
 @media(max-width:760px){.ob .hero{grid-template-columns:minmax(0,1fr)}.ob .path{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}.ob .path::before{display:none}.ob .trio{grid-template-columns:minmax(0,1fr)}}
 
 /* ===== C: bold, indigo / chartreuse / pink ===== */
-.oc{--paper:#FBFAF6;--ink:#14123A;--c1:#4A3FEF;--c2:#DDF247;--c3:#FF5CB8;--soft:#ECEAFF;--font:"Manrope",sans-serif;--lk:#14123A;--s1:#A59FF7;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8}
+.oc{--paper:#FFFFFF;--ink:#14123A;--c1:#4A3FEF;--c2:#DDF247;--c3:#FF5CB8;--soft:#ECEAFF;--font:"Manrope",sans-serif;--lk:#14123A;--s1:#A59FF7;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8}
 .oc .nav{background:var(--c2);border-radius:999px;padding:8px 8px 8px 18px}
 .oc .btn{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);padding:8px 18px}
 .oc .hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.75fr) minmax(0,.9fr);grid-template-rows:auto auto;gap:12px}
@@ -171,9 +168,9 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 .ft .ph1{right:0;bottom:0;width:64%;height:100%;background-size:cover;background-position:center;border-radius:999px 999px 24px 24px}
 .ft .sh1{left:0;bottom:0;width:44%;aspect-ratio:1;border-radius:0 100% 0 0}
 .ft .sh2{left:6%;top:6%;width:34%;aspect-ratio:1;border-radius:50%}
-.fa{--hf:"Unbounded",sans-serif;--hw:700;--hs:clamp(1.5rem,3.2vw,2.2rem);--hl:1.3;--hls:-.01em;--paper:#FBFAF6;--ink:#14123A;--em:#14123A;--emb:#DDF247}
-.fb{--hf:"Plus Jakarta Sans",sans-serif;--hw:800;--hs:clamp(2rem,4.6vw,3.2rem);--hl:1.18;--hls:-.02em;--paper:#FAF9F6;--ink:#1B1A24;--em:#1B1A24;--emb:#C8F25A}
-.fc{--hf:"Fraunces",serif;--hw:800;--hs:clamp(2.1rem,4.8vw,3.4rem);--hl:1.12;--hls:-.015em;--paper:#FFFDF8;--ink:#14213D;--em:#2F45E8}
+.fa{--hf:"Unbounded",sans-serif;--hw:700;--hs:clamp(1.5rem,3.2vw,2.2rem);--hl:1.3;--hls:-.01em;--paper:#FFFFFF;--ink:#14123A;--em:#14123A;--emb:#DDF247}
+.fb{--hf:"Plus Jakarta Sans",sans-serif;--hw:800;--hs:clamp(2rem,4.6vw,3.2rem);--hl:1.18;--hls:-.02em;--paper:#FFFFFF;--ink:#1B1A24;--em:#1B1A24;--emb:#C8F25A}
+.fc{--hf:"Fraunces",serif;--hw:800;--hs:clamp(2.1rem,4.8vw,3.4rem);--hl:1.12;--hls:-.015em;--paper:#FFFFFF;--ink:#14213D;--em:#2F45E8}
 @media(max-width:700px){.ft{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
@@ -200,13 +197,13 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
   <!-- logo -->
   <section>
     <div class="meta"><h2>Logo · Bậc thang và chấm đích</h2><span>Bậc thang là các cấp, chấm tròn ở trên cùng là đích. Giữ nguyên hình, chỉ đổi màu chấm theo màu nhấn của từng option (A cam, B coral, C hồng). Trên nền tối, bậc thang đổi sang trắng.</span></div>
-    <div class="lgs"><div class="lgc" style="--s1:#BBA8F5;--s2:#8B6CF0;--s3:#C8F25A;--s4:#FF6A2B;--lk:#1B1A24;--paperL:#FAF9F6;--paperD:#1B1A24;font-family:Manrope,sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>A, nền sáng</small></span></div><div class="d" style="--s4:#FF6A2B"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>A, nền tối</small></span></div></div><div class="lgc" style="--s1:#9DB8FF;--s2:#2F45E8;--s3:#FFD84D;--s4:#FF6F61;--lk:#14213D;--paperL:#FFFDF8;--paperD:#14213D;font-family:'Bricolage Grotesque',sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>B, nền sáng</small></span></div><div class="d" style="--s4:#FF6F61"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>B, nền tối</small></span></div></div><div class="lgc" style="--s1:#A59FF7;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8;--lk:#14123A;--paperL:#FBFAF6;--paperD:#14123A;font-family:Manrope,sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>C, nền sáng</small></span></div><div class="d" style="--s4:#FF5CB8"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>C, nền tối</small></span></div></div></div>
+    <div class="lgs"><div class="lgc" style="--s1:#BBA8F5;--s2:#8B6CF0;--s3:#C8F25A;--s4:#FF6A2B;--lk:#1B1A24;--paperL:#FFFFFF;--paperD:#1B1A24;font-family:Manrope,sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>A, nền sáng</small></span></div><div class="d" style="--s4:#FF6A2B"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>A, nền tối</small></span></div></div><div class="lgc" style="--s1:#9DB8FF;--s2:#2F45E8;--s3:#FFD84D;--s4:#FF6F61;--lk:#14213D;--paperL:#FFFFFF;--paperD:#14213D;font-family:'Bricolage Grotesque',sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>B, nền sáng</small></span></div><div class="d" style="--s4:#FF6F61"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>B, nền tối</small></span></div></div><div class="lgc" style="--s1:#A59FF7;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8;--lk:#14123A;--paperL:#FFFFFF;--paperD:#14123A;font-family:Manrope,sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>C, nền sáng</small></span></div><div class="d" style="--s4:#FF5CB8"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>C, nền tối</small></span></div></div></div>
   </section>
 
   <!-- A -->
   <section>
     <div class="meta"><h2>A · Bento, cam, tím iris, lime</h2><span>Gần ảnh 1 nhất. Lưới ô với góc bo khác nhau, ảnh nằm trong vòm và lá. Chuyên nghiệp nhất, nghịch vừa phải.</span></div>
-    <div class="chips"><i style="--c:#FAF9F6">Paper #FAF9F6</i><i style="--c:#1B1A24">Ink #1B1A24</i><i style="--c:#FF6A2B">Tangerine #FF6A2B</i><i style="--c:#8B6CF0">Iris #8B6CF0</i><i style="--c:#C8F25A">Lime #C8F25A</i></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#1B1A24">Ink #1B1A24</i><i style="--c:#FF6A2B">Tangerine #FF6A2B</i><i style="--c:#8B6CF0">Iris #8B6CF0</i><i style="--c:#C8F25A">Lime #C8F25A</i></div>
     <div class="o oa">
       <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
       <div class="hero">
@@ -242,7 +239,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
   <!-- B -->
   <section>
     <div class="meta"><h2>B · Hành trình, coral, cobalt, butter</h2><span>Ấm và thân thiện hơn. Hero là ảnh trong vòm với các shape chồng nhẹ, rồi lộ trình lên cấp với mỗi nút một hình khác nhau. Chữ Bricolage Grotesque.</span></div>
-    <div class="chips"><i style="--c:#FFFDF8">Paper #FFFDF8</i><i style="--c:#14213D">Ink #14213D</i><i style="--c:#FF6F61">Coral #FF6F61</i><i style="--c:#2F45E8">Cobalt #2F45E8</i><i style="--c:#FFD84D">Butter #FFD84D</i></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#14213D">Ink #14213D</i><i style="--c:#FF6F61">Coral #FF6F61</i><i style="--c:#2F45E8">Cobalt #2F45E8</i><i style="--c:#FFD84D">Butter #FFD84D</i></div>
     <div class="o ob">
       <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
       <div class="hero">
@@ -265,9 +262,9 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
         <div class="node"><div class="sh">4</div><b>Bàn giao</b><span>Handoff và đo kết quả</span></div>
       </div>
       <div class="trio">
-        <figure><div class="ph"></div><figcaption><i></i>Cộng tác với trợ lý AI</figcaption></figure>
-        <figure><div class="ph"></div><figcaption><i></i>Research bằng ghi chú</figcaption></figure>
-        <figure><div class="ph"></div><figcaption><i></i>Thử công cụ trên điện thoại</figcaption></figure>
+        <figure><div class="ph"></div><figcaption>Cộng tác với trợ lý AI</figcaption></figure>
+        <figure><div class="ph"></div><figcaption>Research bằng ghi chú</figcaption></figure>
+        <figure><div class="ph"></div><figcaption>Thử công cụ trên điện thoại</figcaption></figure>
       </div>
     </div>
   </section>
@@ -275,7 +272,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
   <!-- C -->
   <section>
     <div class="meta"><h2>C · Táo bạo, indigo, chartreuse, hồng</h2><span>Mượn bố cục ô của ảnh 3: ô indigo lớn, ô nhỏ chartreuse, ảnh trong lá, sao hồng làm điểm nhấn. Có một section chartreuse đậm để làm chỗ gây chú ý.</span></div>
-    <div class="chips"><i style="--c:#FBFAF6">Paper #FBFAF6</i><i style="--c:#14123A">Ink #14123A</i><i style="--c:#4A3FEF">Indigo #4A3FEF</i><i style="--c:#DDF247">Chartreuse #DDF247</i><i style="--c:#FF5CB8">Pink #FF5CB8</i></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#14123A">Ink #14123A</i><i style="--c:#4A3FEF">Indigo #4A3FEF</i><i style="--c:#DDF247">Chartreuse #DDF247</i><i style="--c:#FF5CB8">Pink #FF5CB8</i></div>
     <div class="o oc">
       <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
       <div class="hero">
