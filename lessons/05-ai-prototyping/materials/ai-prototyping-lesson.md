@@ -98,6 +98,14 @@ Thông điệp rút ra là suy luận của chương trình: chất lượng đ�
 | **Shell** (còn gọi shared layout) | Khung lặp ở mọi màn hình | Header và menu của app | Từng product |
 | **Template** | Bố cục một loại trang | Trang danh sách, trang chi tiết | Từng product |
 
+```mermaid
+flowchart LR
+  subgraph OV["One View (design-system.html)"]
+    T["Token"] --> C["Component"] --> SH["Shell"] --> TP["Template"]
+  end
+  TP --> SV["The Second View<br/>các màn hình của journey"]
+```
+
 **Design Pattern** là tên chung cho cả bộ bốn layer này. **Experience pattern** là cụm component lặp ở nhiều màn (search, navigation, bộ lọc, trạng thái rỗng), ghép từ component có sẵn và khác với Design Pattern; dựng experience pattern ở bài tập về nhà là tuỳ chọn. Design system dùng làm chuẩn trong buổi này chỉ có token và component. Shell và template thuộc về từng product, nên bạn tự định nghĩa cho product đang làm.
 
 ### 2.3 Tên gọi khác nhau theo hệ thống
@@ -138,6 +146,14 @@ Cùng màn hình "Chọn thời gian giao", hai kết quả dựng khác nhau. B
 
 Một thay đổi ở One View có thể cập nhật sang The Second View, nhưng **chỉ layer token tự động cập nhật**. Với component, shell và template, thay đổi được đưa sang qua một prompt có kiểm soát, theo quy tắc đã viết. Cả trang `design-system.html` và các màn hình đều dùng `tokens.css`, nên đổi token là cả hai đổi theo. Quy tắc của chương trình: sửa ở nguồn trước, dựng lại phần bị ảnh hưởng, rồi review. Các demo hay nói "tự động cập nhật" mà không nói rõ lớp nào; điều đáng giá hơn là hệ thống cập nhật đáng tin cậy qua một prompt có quy tắc.
 
+```mermaid
+flowchart LR
+  OV["Đổi ở One View"] --> TK["Token"]
+  OV --> OT["Component, shell, template"]
+  TK -- "tự động qua tokens.css" --> SV["The Second View"]
+  OT -- "qua prompt có kiểm soát,<br/>theo quy tắc đã viết" --> SV
+```
+
 ### 3.3 Thứ tự dựng
 
 Rules, shell, flow, dựng, review:
@@ -147,6 +163,12 @@ Rules, shell, flow, dựng, review:
 3. **Flow:** đưa flow đã có từ buổi 4 vào, không để AI tự nghĩ ra flow.
 4. **Dựng:** AI dựng cả journey trong shell, dùng template đã chọn.
 5. **Review:** bạn mở các file đã đổi và mở trang ra dùng, đối chiếu với rules file.
+
+```mermaid
+flowchart LR
+  R["1. Rules"] --> SH["2. Shell"] --> F["3. Flow<br/>(từ buổi 4)"] --> B["4. Dựng"] --> RV["5. Review"]
+  RV -. "sửa ở layer rộng nhất<br/>mà lỗi còn đúng" .-> SH
+```
 
 Skill `prototype` của toolkit có thêm các gate kiểm (đối chiếu kế hoạch, bàn phím, hai độ rộng, giá trị thô) và được dùng ở bài tập về nhà.
 

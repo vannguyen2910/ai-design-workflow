@@ -25,6 +25,8 @@ Lesson 3 dừng ở một map đi từ Goal hoặc Problem xuống Opportunity, 
 4. User flow và process map: đường đi của một người dùng, rồi zoom out phía sau màn hình
 5. Package thành skill và agent: đóng gói quy trình để dùng lại
 
+Xem cấu trúc 90 phút trong [lesson-structure.html](../assets/lesson-structure.html).
+
 ## Sau buổi học, bạn có thể
 
 1. Kéo dài map từ Lesson 3 xuống solution, mỗi solution nằm dưới một opportunity và dẫn về insight ID
@@ -53,7 +55,7 @@ GOAL hoặc PROBLEM          (Lesson 3)
             └── Solution B1
 ```
 
-Đây là cấu trúc Opportunity Solution Tree của Teresa Torres. Goal và opportunity đã có thì giữ nguyên, chỉ thêm tầng solution. Map không dựng lại từ đầu. Nếu opportunity nào chưa có insight ID thì sửa nó trước khi nghĩ solution.
+Đây là cấu trúc Opportunity Solution Tree của Teresa Torres. Goal và opportunity đã có thì giữ nguyên, chỉ thêm tầng solution. Map không dựng lại từ đầu. Nếu opportunity nào chưa có insight ID thì sửa nó trước khi nghĩ solution. Xem hình ở [map-extension.html](../assets/map-extension.html).
 
 | | |
 |---|---|
@@ -157,6 +159,8 @@ Bạn làm concept sketch cho project của mình ở bài tập về nhà.
 7. Bạn đối chiếu diagram với bảng.
 
 Bảng là nguồn chuẩn, diagram chỉ là cách nhìn bảng. Có ba gate: bảng khớp sản phẩm thật, fix bảo vệ được, và diagram khớp bảng.
+
+Xem bốn bước từ bảng sang diagram, với ba gate, ở [flow-to-map.html](../assets/flow-to-map.html).
 
 ### 4.2 Process map: zoom out
 
