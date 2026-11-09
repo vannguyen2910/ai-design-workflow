@@ -1,0 +1,594 @@
+<title>AI Design Workflow Brand Directions</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+/* Layout: neutral review page; three self-contained direction specimens stacked, then a grid of logo mark concepts. */
+:root{
+  --bg:#F6F5F1; --surface:#FFFFFF; --fg:#1F1D1A; --muted:#6B675F; --line:#DDDAD2; --accent:#C2410C;
+  --f:"Be Vietnam Pro",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171613;--surface:#22201C;--fg:#F1EEE7;--muted:#A19C91;--line:#3A372F;--accent:#FB923C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171613;--surface:#22201C;--fg:#F1EEE7;--muted:#A19C91;--line:#3A372F;--accent:#FB923C;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f);line-height:1.6;font-size:16px;
+  padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));padding-block:40px 80px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700}
+.lede{max-width:62ch;color:var(--muted);margin:14px 0 0}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.ask{display:grid;gap:10px;margin-top:22px;padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:12px;max-width:62ch}
+.ask b{font-weight:600}
+.sec-head{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.sec-head h2{font-size:1.5rem}
+.sec-head p{margin:0;color:var(--muted);max-width:64ch}
+
+/* direction specimen: everything inside is driven by the direction's own vars */
+.dir{display:flex;flex-direction:column;gap:14px}
+.dir-meta{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline}
+.dir-meta h2{font-size:1.5rem}
+.dir-meta span{color:var(--muted);font-size:.92rem}
+.spec{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:0;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+@media(max-width:760px){.spec{grid-template-columns:minmax(0,1fr)}}
+.spec>div{min-width:0;padding:26px}
+.s-left{background:var(--paper);color:var(--ink);display:flex;flex-direction:column;gap:22px}
+.s-right{background:var(--panel);color:var(--panel-ink);display:flex;flex-direction:column;gap:20px}
+.lbl{font-family:var(--f);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;opacity:.65}
+.swatches{display:flex;flex-wrap:wrap;gap:10px}
+.sw{display:flex;flex-direction:column;gap:6px;width:92px;font-size:.72rem;line-height:1.3}
+.sw i{display:block;height:54px;border-radius:var(--r-sw);border:1.5px solid color-mix(in srgb,var(--ink) 18%,transparent)}
+.sw b{font-weight:600}
+.sw span{opacity:.65;font-variant-numeric:tabular-nums}
+.type h3{font-family:var(--fd);font-weight:var(--fdw);font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.1;letter-spacing:var(--fdls,0)}
+.type p{font-family:var(--fb);margin:10px 0 0;max-width:46ch;font-size:.98rem}
+.fnames{font-size:.74rem;opacity:.7;margin-top:8px}
+.lockups{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lk{border-radius:var(--r-card);padding:18px;display:flex;align-items:center;gap:12px;min-width:0}
+.lk svg{width:46px;height:46px;flex:none}
+.lk .wm{font-family:var(--fd);font-weight:var(--fdw);font-size:1.12rem;line-height:1.02;letter-spacing:var(--fdls,0)}
+.lk.l{background:var(--paper);color:var(--ink);border:1.5px solid color-mix(in srgb,var(--ink) 18%,transparent)}
+.lk.d{background:var(--ink);color:var(--paper)}
+@media(max-width:520px){.lockups{grid-template-columns:1fr}}
+
+/* mini hero sample on right panel */
+.hero{background:var(--hero-bg);color:var(--hero-ink);border-radius:var(--r-card);padding:24px;display:flex;flex-direction:column;gap:14px;position:relative}
+.hero .tag{align-self:flex-start;font-family:var(--fb);font-size:.74rem;font-weight:700;padding:5px 11px;border-radius:var(--r-pill)}
+.hero h3{font-family:var(--fd);font-weight:var(--fdw);font-size:clamp(1.45rem,3vw,1.9rem);line-height:1.12;letter-spacing:var(--fdls,0)}
+.hero p{font-family:var(--fb);margin:0;font-size:.9rem;opacity:.85;max-width:38ch}
+.hero .btn{align-self:flex-start;font-family:var(--fb);font-weight:700;font-size:.9rem;padding:10px 18px;text-decoration:none}
+.stages{display:flex;gap:8px;flex-wrap:wrap}
+.stages span{font-family:var(--fb);font-size:.72rem;font-weight:700;padding:5px 10px;border-radius:var(--r-pill)}
+.feel{font-size:.86rem;opacity:.85;margin:0}
+.feel b{font-weight:700}
+
+/* A: Bậc thang — flat blocks, ink outlines, hard shadows */
+.dir-a{--paper:#FFFDF8;--ink:#1A1633;--c1:#FF6A2B;--c2:#FFC933;--c3:#6EC6FF;--panel:#EDE9DD;--panel-ink:#1A1633;
+  --fd:"Bricolage Grotesque",sans-serif;--fdw:800;--fdls:-.02em;--fb:"Be Vietnam Pro",sans-serif;--f:"Be Vietnam Pro",sans-serif;
+  --r-sw:6px;--r-card:10px;--r-pill:6px;--hero-bg:#FFC933;--hero-ink:#1A1633;--m1:#1A1633;--m2:#FF6A2B;--m3:#FFFDF8}
+.dir-a .hero{border:2.5px solid #1A1633;box-shadow:6px 6px 0 #1A1633}
+.dir-a .hero .tag{background:#1A1633;color:#FFFDF8}
+.dir-a .btn{background:#FF6A2B;color:#1A1633;border:2.5px solid #1A1633;box-shadow:4px 4px 0 #1A1633;border-radius:8px}
+.dir-a .stages span{background:#FFFDF8;border:2px solid #1A1633;border-radius:6px}
+.dir-a .lk.d{--m1:#FFFDF8;--m3:#1A1633}
+
+/* B: Xưởng — kraft paper, stamp, tape, stitched edges */
+.dir-b{--paper:#FBF5E6;--ink:#2A211A;--c1:#D2402B;--c2:#234BA8;--c3:#5E7B3A;--panel:#E7D8BA;--panel-ink:#2A211A;
+  --fd:"Fraunces",serif;--fdw:700;--fdls:-.015em;--fb:"Nunito Sans",sans-serif;--f:"Nunito Sans",sans-serif;
+  --r-sw:4px;--r-card:6px;--r-pill:999px;--hero-bg:#FBF5E6;--hero-ink:#2A211A;--m1:#2A211A;--m2:#D2402B;--m3:#FBF5E6}
+.dir-b .hero{border:2px dashed #2A211A55;outline:8px solid #FBF5E6;box-shadow:0 8px 0 8px #00000012;transform:rotate(-.6deg);margin:8px}
+.dir-b .hero::before{content:"";position:absolute;top:-14px;left:28px;width:84px;height:26px;background:#E9C46Acc;transform:rotate(-4deg)}
+.dir-b .hero .tag{background:#D2402B;color:#FBF5E6;transform:rotate(-2deg);letter-spacing:.04em}
+.dir-b .btn{background:#2A211A;color:#FBF5E6;border-radius:4px;box-shadow:0 4px 0 #D2402B}
+.dir-b .stages span{background:#E7D8BA;border-radius:999px;border:1.5px solid #2A211A}
+.dir-b .lk.d{--m1:#FBF5E6;--m3:#2A211A}
+.dir-b .lk{border-radius:6px}
+
+/* C: Sân chơi — bubbly stickers, big radius, bright */
+.dir-c{--paper:#FFF9EC;--ink:#15133A;--c1:#FF86B7;--c2:#3A4BFF;--c3:#62DDB0;--panel:#FFE24D;--panel-ink:#15133A;
+  --fd:"Baloo 2",sans-serif;--fdw:800;--fdls:-.01em;--fb:"Be Vietnam Pro",sans-serif;--f:"Be Vietnam Pro",sans-serif;
+  --r-sw:50%;--r-card:24px;--r-pill:999px;--hero-bg:#3A4BFF;--hero-ink:#FFF9EC;--m1:#3A4BFF;--m2:#FF86B7;--m3:#FFF9EC}
+.dir-c .sw i{height:54px;width:54px}
+.dir-c .hero{border-radius:28px}
+.dir-c .hero .tag{background:#FFE24D;color:#15133A;transform:rotate(-3deg)}
+.dir-c .btn{background:#FF86B7;color:#15133A;border-radius:999px;box-shadow:0 5px 0 #15133A}
+.dir-c .stages span{background:#62DDB0;color:#15133A;border-radius:999px}
+.dir-c .stages span:nth-child(2){background:#FFE24D}.dir-c .stages span:nth-child(3){background:#FF86B7}.dir-c .stages span:nth-child(4){background:#FFF9EC}
+.dir-c .lk.d{--m1:#FFF9EC;--m2:#FF86B7;--m3:#15133A}
+.dir-c .lk{border-radius:24px}
+
+/* Manrope test: Winnie's current font on each direction's palette */
+.mtest{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.mt{border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:10px;font-family:"Manrope",sans-serif;min-width:0}
+.mt h3{font-family:"Manrope",sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2rem);line-height:1.12;letter-spacing:-.025em}
+.mt p{margin:0;font-weight:500;font-size:.95rem}
+.mt .w{font-size:.8rem;opacity:.75;font-variant-numeric:tabular-nums}
+.mt .w span{display:block}
+.mt-a{background:#FFC933;color:#1A1633;border:2.5px solid #1A1633;box-shadow:6px 6px 0 #1A1633}
+.mt-b{background:#FBF5E6;color:#2A211A;border:2px dashed #2A211A55}
+.mt-b h3{color:#D2402B}
+.mt-c{background:#3A4BFF;color:#FFF9EC;border-radius:28px}
+
+/* D: Winnie's palette (from program-tokens.css), Manrope, fresh and clean */
+.dir-d{--paper:#FFFDF7;--ink:#16140F;--c1:#3FCF6E;--c2:#D9713F;--c3:#E7C468;--panel:#15181C;--panel-ink:#FFFFFF;
+  --fd:"Manrope",sans-serif;--fdw:800;--fdls:-.03em;--fb:"Manrope",sans-serif;--f:"Manrope",sans-serif;
+  --r-sw:12px;--r-card:16px;--r-pill:999px;--hero-bg:#3FCF6E;--hero-ink:#16140F;--m1:#16140F;--m2:#3FCF6E;--m3:#FFFDF7}
+.dir-d .hero{border-radius:20px}
+.dir-d .hero .tag{background:#16140F;color:#FFFFFF}
+.dir-d .btn{background:#16140F;color:#FFFFFF;border-radius:999px}
+.dir-d .stages span{background:#FFFFFF;border-radius:999px}
+.dir-d .stages span:nth-child(2){background:#E7C468}.dir-d .stages span:nth-child(3){background:#F7D9C4}
+.dir-d .lk.d{--m1:#FFFFFF;--m2:#3FCF6E;--m3:#16140F}
+.dir-d .lk{border-radius:16px}
+.dir-d .s-right .lbl{color:#FFFFFF}
+.dir-d .s-right .feel{color:#FFFFFF}
+
+/* E: Manrope + Bậc thang/Xưởng style + Sân chơi colors */
+.dir-e{--paper:#FFF9EC;--ink:#15133A;--c1:#3A4BFF;--c2:#FF86B7;--c3:#FFE24D;--panel:#FFFDF7;--panel-ink:#15133A;
+  --fd:"Manrope",sans-serif;--fdw:800;--fdls:-.03em;--fb:"Manrope",sans-serif;--f:"Manrope",sans-serif;
+  --r-sw:8px;--r-card:12px;--r-pill:999px;--hero-bg:#3A4BFF;--hero-ink:#FFF9EC;--m1:#15133A;--m2:#FF86B7;--m3:#FFF9EC}
+.dir-e .hero{border:2.5px solid #15133A;box-shadow:6px 6px 0 #15133A;border-radius:14px;transform:rotate(-.5deg)}
+.dir-e .hero::before{content:"";position:absolute;top:-14px;right:34px;width:84px;height:26px;background:#FF86B7cc;transform:rotate(5deg)}
+.dir-e .hero .tag{background:#FF86B7;color:#15133A;border:2px solid #15133A;transform:rotate(-2deg)}
+.dir-e .btn{background:#FFE24D;color:#15133A;border:2.5px solid #15133A;box-shadow:4px 4px 0 #15133A;border-radius:10px}
+.dir-e .stages span{background:#FFF9EC;color:#15133A;border:2px solid #15133A;border-radius:999px}
+.dir-e .stages span:nth-child(2){background:#62DDB0}.dir-e .stages span:nth-child(3){background:#FF86B7}.dir-e .stages span:nth-child(4){background:#FFE24D}
+.dir-e .s-right{border-top:2.5px solid #15133A}
+@media(min-width:761px){.dir-e .s-right{border-top:0;border-left:2.5px solid #15133A}}
+.dir-e .lk.d{--m1:#FFF9EC;--m2:#FF86B7;--m3:#15133A}
+.dir-e .lk{border-radius:12px}
+.dir-e .lk.l{border:2.5px solid #15133A;box-shadow:4px 4px 0 #15133A}
+.parts{display:flex;flex-wrap:wrap;gap:18px 22px;align-items:center;padding:6px 4px 10px}
+.parts .p-btn{font-family:"Manrope",sans-serif;font-weight:800;font-size:.9rem;padding:10px 18px;background:#3A4BFF;color:#FFF9EC;border:2.5px solid #15133A;box-shadow:4px 4px 0 #15133A;border-radius:10px}
+.parts .p-sticker{font-family:"Manrope",sans-serif;font-weight:800;font-size:.8rem;padding:6px 12px;background:#62DDB0;border:2px solid #15133A;border-radius:999px;transform:rotate(-4deg)}
+.parts .p-stamp{width:86px;height:86px;border-radius:50%;border:3px double #FF4F9A;color:#FF4F9A;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:"Manrope",sans-serif;font-weight:800;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;transform:rotate(-12deg);line-height:1.25;text-align:center}
+.parts .p-stamp b{font-size:1.4rem;letter-spacing:0;line-height:1}
+.parts .p-note{position:relative;font-family:"Manrope",sans-serif;font-weight:600;font-size:.82rem;padding:16px 16px 12px;background:#FFFDF7;border:2px dashed #15133A66;border-radius:6px;transform:rotate(1.5deg);max-width:200px;box-shadow:4px 4px 0 #15133A}
+.parts .p-note::before{content:"";position:absolute;top:-11px;left:50%;margin-left:-32px;width:64px;height:20px;background:#FF86B7cc;transform:rotate(-3deg)}
+
+/* F: Manrope + Bậc thang style + Sân chơi colors (flat blocks, ink outlines, hard shadows, no rotation) */
+.dir-f{--paper:#FFF9EC;--ink:#15133A;--panel:#62DDB0;--panel-ink:#15133A;
+  --fd:"Manrope",sans-serif;--fdw:800;--fdls:-.03em;--fb:"Manrope",sans-serif;--f:"Manrope",sans-serif;
+  --r-sw:6px;--r-card:8px;--r-pill:6px;--hero-bg:#FFE24D;--hero-ink:#15133A;--m1:#15133A;--m2:#FF86B7;--m3:#FFF9EC}
+.dir-f .hero{border:2.5px solid #15133A;box-shadow:7px 7px 0 #15133A;border-radius:8px}
+.dir-f .hero .tag{background:#15133A;color:#FFF9EC;border-radius:6px}
+.dir-f .btn{background:#3A4BFF;color:#FFF9EC;border:2.5px solid #15133A;box-shadow:4px 4px 0 #15133A;border-radius:8px}
+.dir-f .stages span{background:#FFF9EC;border:2px solid #15133A;border-radius:6px}
+.dir-f .stages span:nth-child(2){background:#FF86B7}.dir-f .stages span:nth-child(3){background:#62DDB0}.dir-f .stages span:nth-child(4){background:#3A4BFF;color:#FFF9EC}
+.dir-f .lk{border-radius:8px}
+.dir-f .lk.l{border:2.5px solid #15133A;box-shadow:4px 4px 0 #15133A}
+.dir-f .lk.d{--m1:#FFF9EC;--m2:#FF86B7;--m3:#15133A}
+.dir-f .parts .p-btn{border-radius:8px}
+.dir-f .parts .p-sticker{transform:none;border-radius:6px;background:#FF86B7}
+.dir-f .parts .p-block{font-family:"Manrope",sans-serif;font-weight:700;font-size:.82rem;padding:14px 16px;background:#FFF9EC;border:2.5px solid #15133A;box-shadow:5px 5px 0 #15133A;border-radius:8px;max-width:210px}
+.dir-f .parts .p-block b{display:block;font-weight:800;font-size:1.05rem;letter-spacing:-.02em}
+
+/* G: Manrope + Xưởng style + Sân chơi colors (paper, tape, stamp, stitched edges, soft shadow, slight rotation) */
+.dir-g{--paper:#FFF9EC;--ink:#15133A;--panel:#FFE24D;--panel-ink:#15133A;
+  --fd:"Manrope",sans-serif;--fdw:800;--fdls:-.03em;--fb:"Manrope",sans-serif;--f:"Manrope",sans-serif;
+  --r-sw:4px;--r-card:6px;--r-pill:999px;--hero-bg:#FFFDF7;--hero-ink:#15133A;--m1:#15133A;--m2:#3A4BFF;--m3:#FFF9EC}
+.dir-g .hero{border:2px dashed #15133A66;outline:8px solid #FFFDF7;box-shadow:0 8px 0 8px #15133A14;transform:rotate(-.6deg);margin:8px;border-radius:6px}
+.dir-g .hero::before{content:"";position:absolute;top:-14px;left:28px;width:84px;height:26px;background:#FF86B7cc;transform:rotate(-4deg)}
+.dir-g .hero .tag{background:#3A4BFF;color:#FFF9EC;transform:rotate(-2deg);letter-spacing:.04em}
+.dir-g .btn{background:#15133A;color:#FFF9EC;border-radius:4px;box-shadow:0 4px 0 #3A4BFF}
+.dir-g .stages span{background:#FFE24D;border:1.5px solid #15133A;border-radius:999px}
+.dir-g .stages span:nth-child(2){background:#62DDB0}.dir-g .stages span:nth-child(3){background:#FF86B7}.dir-g .stages span:nth-child(4){background:#FFF9EC}
+.dir-g .lk{border-radius:6px}
+.dir-g .lk.d{--m1:#FFF9EC;--m2:#FFE24D;--m3:#15133A}
+.dir-g .parts .p-btn{background:#15133A;border:0;box-shadow:0 4px 0 #3A4BFF;border-radius:4px}
+.dir-g .parts .p-note{box-shadow:0 5px 0 #15133A14;border:1.5px dashed #15133A66}
+.dir-g .parts .p-stamp{border-color:#3A4BFF;color:#3A4BFF}
+.dir-g .parts .p-note::before{background:#62DDB0cc}
+
+/* mark concepts */
+.marks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+/* marks use the E palette on fixed paper tiles, so they look the same in light and dark */
+.mk{background:#FFF9EC;color:#15133A;border:2.5px solid #15133A;box-shadow:4px 4px 0 #15133A;border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:12px;
+  --m1:#15133A;--m2:#FF86B7;--m3:#FFF9EC}
+.mk svg.sm{width:46px;height:46px;padding:7px;background:#3A4BFF;border:2px solid #15133A;border-radius:10px;--m1:#FFF9EC;--m2:#FFE24D;--m3:#3A4BFF}
+.mk .row{display:flex;gap:14px;align-items:center}
+.mk svg{width:72px;height:72px;flex:none}
+.mk h3{font-size:1rem;font-family:"Manrope",sans-serif;font-weight:800;letter-spacing:-.02em}
+.mk p{margin:0;color:#15133Acc;font-size:.86rem;font-family:"Manrope",sans-serif;font-weight:500}
+.mk .n{font-size:.72rem;font-weight:700;color:#15133A99;letter-spacing:.1em;font-family:"Manrope",sans-serif}
+.reco{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px;max-width:70ch}
+.reco p{margin:6px 0 0;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.hero{transition:transform .2s}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="m-stairs" viewBox="0 0 64 64">
+    <rect x="5" y="40" width="12" height="18" rx="3" fill="var(--m1)"/>
+    <rect x="19" y="30" width="12" height="28" rx="3" fill="var(--m1)"/>
+    <rect x="33" y="20" width="12" height="38" rx="3" fill="var(--m1)"/>
+    <rect x="47" y="8" width="12" height="50" rx="3" fill="var(--m2)"/>
+  </symbol>
+  <symbol id="m-path" viewBox="0 0 64 64">
+    <path d="M8 56 H22 V43 H36 V30 H48 V22" fill="none" stroke="var(--m1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="48" cy="12" r="7" fill="var(--m2)"/>
+  </symbol>
+  <symbol id="m-door" viewBox="0 0 64 64">
+    <rect x="6" y="46" width="52" height="12" rx="2" fill="var(--m1)"/>
+    <rect x="14" y="34" width="36" height="12" rx="2" fill="var(--m1)"/>
+    <rect x="22" y="22" width="20" height="12" rx="2" fill="var(--m1)"/>
+    <rect x="28" y="10" width="8" height="12" rx="2" fill="var(--m2)"/>
+    <rect x="26" y="46" width="12" height="12" fill="var(--m3)"/>
+  </symbol>
+  <symbol id="m-arch" viewBox="0 0 64 64">
+    <path d="M10 59 V30 A22 22 0 0 1 54 30 V59 Z" fill="none" stroke="var(--m1)" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M18 52 H27 V43 H36 V34 H46" fill="none" stroke="var(--m2)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="m-dots" viewBox="0 0 64 64">
+    <path d="M12 52 L24 41 L37 29 L50 16" fill="none" stroke="var(--m1)" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+    <circle cx="12" cy="52" r="5" fill="var(--m1)"/>
+    <circle cx="24" cy="41" r="5.5" fill="var(--m1)"/>
+    <circle cx="37" cy="29" r="6" fill="var(--m1)"/>
+    <circle cx="50" cy="16" r="6.5" fill="var(--m2)"/>
+    <circle cx="50" cy="16" r="11" fill="none" stroke="var(--m2)" stroke-width="3"/>
+  </symbol>
+  <symbol id="m-notes" viewBox="0 0 64 64">
+    <rect x="4" y="38" width="20" height="20" rx="4" transform="rotate(-7 14 48)" fill="var(--m1)" opacity=".45"/>
+    <rect x="15" y="27" width="20" height="20" rx="4" transform="rotate(5 25 37)" fill="var(--m1)" opacity=".7"/>
+    <rect x="26" y="15" width="20" height="20" rx="4" transform="rotate(-5 36 25)" fill="var(--m1)"/>
+    <rect x="38" y="4" width="20" height="20" rx="4" transform="rotate(6 48 14)" fill="var(--m2)"/>
+  </symbol>
+</svg>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">AI Design Workflow · brand exploration, round 1</div>
+    <h1>Seven directions for the course brand</h1>
+    <p class="lede">All three are editorial, warm and playful, with no gradients, robots or sparkles. Each one uses only free Google Fonts that support Vietnamese. The sample copy is placeholder, not final wording.</p>
+    <div class="ask">
+      <div><b>What I need back:</b></div>
+      <div>1. Pick a direction (A, B or C), or tell me which pieces to mix.</div>
+      <div>2. Pick one or two logo mark concepts from the grid at the bottom.</div>
+      <div>3. Say what feels off. A one-word reaction per direction is enough.</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">Font test</div>
+      <h2>Manrope, the font on Winnie's program pages</h2>
+      <p>This is the font in the current landing page (loaded from Google Fonts in program-tokens.css). Below it is on each direction's palette, display weight 800 with body at 500. Check the Vietnamese diacritics in "Gom workflow về một mối, dùng AI gọn hơn" before you decide.</p>
+    </div>
+    <div class="mtest">
+      <div class="mt mt-a"><h3>Gom workflow về một mối, dùng AI gọn hơn.</h3><p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p><div class="w"><span style="font-weight:400">400 · Thiết kế, nghiên cứu, ưu tiên, thử nghiệm</span><span style="font-weight:700">700 · Thiết kế, nghiên cứu, ưu tiên, thử nghiệm</span></div></div>
+      <div class="mt mt-b"><h3>Gom workflow về một mối, dùng AI gọn hơn.</h3><p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p><div class="w"><span style="font-weight:400">400 · Thiết kế, nghiên cứu, ưu tiên, thử nghiệm</span><span style="font-weight:700">700 · Thiết kế, nghiên cứu, ưu tiên, thử nghiệm</span></div></div>
+      <div class="mt mt-c"><h3>Gom workflow về một mối, dùng AI gọn hơn.</h3><p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p><div class="w"><span style="font-weight:400">400 · Thiết kế, nghiên cứu, ưu tiên, thử nghiệm</span><span style="font-weight:700">700 · Thiết kế, nghiên cứu, ưu tiên, thử nghiệm</span></div></div>
+    </div>
+  </section>
+
+  <!-- A -->
+  <section class="dir dir-a">
+    <div class="dir-meta"><h2>A · Bậc thang</h2><span>Bold flat blocks, ink outlines, hard shadows. Closest to Stan and Fizzy.</span></div>
+    <div class="spec">
+      <div class="s-left">
+        <div>
+          <div class="lbl">Palette</div>
+          <div class="swatches" style="margin-top:10px">
+            <div class="sw"><i style="background:#1A1633"></i><b>Ink</b><span>#1A1633</span></div>
+            <div class="sw"><i style="background:#FFFDF8"></i><b>Paper</b><span>#FFFDF8</span></div>
+            <div class="sw"><i style="background:#FF6A2B"></i><b>Tangerine</b><span>#FF6A2B</span></div>
+            <div class="sw"><i style="background:#FFC933"></i><b>Sun</b><span>#FFC933</span></div>
+            <div class="sw"><i style="background:#6EC6FF"></i><b>Sky</b><span>#6EC6FF</span></div>
+          </div>
+        </div>
+        <div class="type">
+          <div class="lbl">Type</div>
+          <h3 style="margin-top:10px">Gom workflow về một mối.</h3>
+          <p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p>
+          <div class="fnames">Bricolage Grotesque (display) · Be Vietnam Pro (body)</div>
+        </div>
+        <div class="lockups">
+          <div class="lk l"><svg><use href="#m-stairs"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+          <div class="lk d"><svg><use href="#m-stairs"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="lbl">Page feel</div>
+        <div class="hero">
+          <span class="tag">12 buổi · 6 tuần</span>
+          <h3>Dùng AI gọn hơn, sắc hơn.</h3>
+          <p>Dành cho designer mid và senior muốn gom cách làm về một workflow.</p>
+          <div class="stages"><span>Discover</span><span>Research</span><span>Explore</span><span>Test</span></div>
+          <a class="btn">Giữ chỗ ngay</a>
+        </div>
+        <p class="feel"><b>Feel:</b> confident and loud, like a poster. Most playful of the three on hard edges. Risk: trendy, so it can date quickly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- B -->
+  <section class="dir dir-b">
+    <div class="dir-meta"><h2>B · Xưởng</h2><span>Kraft paper, ink stamp, tape and stitched edges. Closest to HEY and Basecamp.</span></div>
+    <div class="spec">
+      <div class="s-left">
+        <div>
+          <div class="lbl">Palette</div>
+          <div class="swatches" style="margin-top:10px">
+            <div class="sw"><i style="background:#2A211A"></i><b>Ink</b><span>#2A211A</span></div>
+            <div class="sw"><i style="background:#FBF5E6"></i><b>Paper</b><span>#FBF5E6</span></div>
+            <div class="sw"><i style="background:#E7D8BA"></i><b>Kraft</b><span>#E7D8BA</span></div>
+            <div class="sw"><i style="background:#D2402B"></i><b>Stamp red</b><span>#D2402B</span></div>
+            <div class="sw"><i style="background:#234BA8"></i><b>Pen blue</b><span>#234BA8</span></div>
+          </div>
+        </div>
+        <div class="type">
+          <div class="lbl">Type</div>
+          <h3 style="margin-top:10px">Gom workflow về một mối.</h3>
+          <p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p>
+          <div class="fnames">Fraunces (display) · Nunito Sans (body)</div>
+        </div>
+        <div class="lockups">
+          <div class="lk l"><svg><use href="#m-door"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+          <div class="lk d"><svg><use href="#m-door"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="lbl">Page feel</div>
+        <div class="hero">
+          <span class="tag">12 buổi · 6 tuần</span>
+          <h3>Dùng AI gọn hơn, sắc hơn.</h3>
+          <p>Dành cho designer mid và senior muốn gom cách làm về một workflow.</p>
+          <div class="stages"><span>Discover</span><span>Research</span><span>Explore</span><span>Test</span></div>
+          <a class="btn">Giữ chỗ ngay</a>
+        </div>
+        <p class="feel"><b>Feel:</b> a well-used notebook on a workbench. Fits the calm mentor and the practitioner who has done the work. Risk: needs good illustration and photos to avoid looking like a blog.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- C -->
+  <section class="dir dir-c">
+    <div class="dir-meta"><h2>C · Sân chơi</h2><span>Bubbly stickers, big radius, bright primaries. Closest to Fizzy.</span></div>
+    <div class="spec">
+      <div class="s-left">
+        <div>
+          <div class="lbl">Palette</div>
+          <div class="swatches" style="margin-top:10px">
+            <div class="sw"><i style="background:#15133A"></i><b>Ink</b><span>#15133A</span></div>
+            <div class="sw"><i style="background:#FFF9EC"></i><b>Paper</b><span>#FFF9EC</span></div>
+            <div class="sw"><i style="background:#3A4BFF"></i><b>Cobalt</b><span>#3A4BFF</span></div>
+            <div class="sw"><i style="background:#FF86B7"></i><b>Bubblegum</b><span>#FF86B7</span></div>
+            <div class="sw"><i style="background:#FFE24D"></i><b>Lemon</b><span>#FFE24D</span></div>
+            <div class="sw"><i style="background:#62DDB0"></i><b>Mint</b><span>#62DDB0</span></div>
+          </div>
+        </div>
+        <div class="type">
+          <div class="lbl">Type</div>
+          <h3 style="margin-top:10px">Gom workflow về một mối.</h3>
+          <p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p>
+          <div class="fnames">Baloo 2 (display) · Be Vietnam Pro (body)</div>
+        </div>
+        <div class="lockups">
+          <div class="lk l"><svg><use href="#m-notes"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+          <div class="lk d"><svg><use href="#m-notes"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="lbl">Page feel</div>
+        <div class="hero">
+          <span class="tag">12 buổi · 6 tuần</span>
+          <h3>Dùng AI gọn hơn, sắc hơn.</h3>
+          <p>Dành cho designer mid và senior muốn gom cách làm về một workflow.</p>
+          <div class="stages"><span>Discover</span><span>Research</span><span>Explore</span><span>Test</span></div>
+          <a class="btn">Giữ chỗ ngay</a>
+        </div>
+        <p class="feel"><b>Feel:</b> the funniest and friendliest. Risk: the least senior. Could read as a course for beginners, which works against your mid and senior audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- D -->
+  <section class="dir dir-d">
+    <div class="dir-meta"><h2>D · Bộ màu của Winnie</h2><span>Xanh lime tươi, cam đất, vàng mù tạt trên nền trắng và than đen. Font Manrope.</span></div>
+    <div class="spec">
+      <div class="s-left">
+        <div>
+          <div class="lbl">Palette</div>
+          <div class="swatches" style="margin-top:10px">
+            <div class="sw"><i style="background:#16140F"></i><b>Ink</b><span>#16140F</span></div>
+            <div class="sw"><i style="background:#15181C"></i><b>Charcoal</b><span>#15181C</span></div>
+            <div class="sw"><i style="background:#FFFDF7"></i><b>Paper</b><span>#FFFDF7</span></div>
+            <div class="sw"><i style="background:#3FCF6E"></i><b>Lime</b><span>#3FCF6E</span></div>
+            <div class="sw"><i style="background:#D9713F"></i><b>Coral</b><span>#D9713F</span></div>
+            <div class="sw"><i style="background:#E7C468"></i><b>Mustard</b><span>#E7C468</span></div>
+            <div class="sw"><i style="background:#F7D9C4"></i><b>Coral tint</b><span>#F7D9C4</span></div>
+          </div>
+        </div>
+        <div class="type">
+          <div class="lbl">Type</div>
+          <h3 style="margin-top:10px">Gom workflow về một mối.</h3>
+          <p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p>
+          <div class="fnames">Manrope 800 (display) · Manrope 500 (body)</div>
+        </div>
+        <div class="lockups">
+          <div class="lk l"><svg><use href="#m-stairs"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+          <div class="lk d"><svg><use href="#m-stairs"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="lbl">Page feel</div>
+        <div class="hero">
+          <span class="tag">12 buổi · 6 tuần</span>
+          <h3>Dùng AI gọn hơn, sắc hơn.</h3>
+          <p>Dành cho designer mid và senior muốn gom cách làm về một workflow.</p>
+          <div class="stages"><span>Discover</span><span>Research</span><span>Explore</span><span>Test</span></div>
+          <a class="btn">Giữ chỗ ngay</a>
+        </div>
+        <p class="feel"><b>Feel:</b> sạch, tươi, hiện đại. Lime làm điểm nhấn chính, cam và vàng dùng cho chi tiết. Chưa có chất thủ công như B, nhưng có thể thêm sticker hoặc nét vẽ tay sau.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- E -->
+  <section class="dir dir-e">
+    <div class="dir-meta"><h2>E · Mix: chữ Winnie, style Bậc thang + Xưởng, màu Sân chơi</h2><span>Viền mực và bóng cứng của A, băng dính, tem và giấy ghi chú của B, bảng màu tươi của C.</span></div>
+    <div class="spec">
+      <div class="s-left">
+        <div>
+          <div class="lbl">Palette</div>
+          <div class="swatches" style="margin-top:10px">
+            <div class="sw"><i style="background:#15133A"></i><b>Ink</b><span>#15133A</span></div>
+            <div class="sw"><i style="background:#FFF9EC"></i><b>Paper</b><span>#FFF9EC</span></div>
+            <div class="sw"><i style="background:#3A4BFF"></i><b>Cobalt</b><span>#3A4BFF</span></div>
+            <div class="sw"><i style="background:#FF86B7"></i><b>Bubblegum</b><span>#FF86B7</span></div>
+            <div class="sw"><i style="background:#FFE24D"></i><b>Lemon</b><span>#FFE24D</span></div>
+            <div class="sw"><i style="background:#62DDB0"></i><b>Mint</b><span>#62DDB0</span></div>
+          </div>
+        </div>
+        <div class="type">
+          <div class="lbl">Type</div>
+          <h3 style="margin-top:10px">Gom workflow về một mối.</h3>
+          <p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p>
+          <div class="fnames">Manrope 800 (display) · Manrope 500 (body)</div>
+        </div>
+        <div>
+          <div class="lbl">Parts</div>
+          <div class="parts" style="margin-top:12px">
+            <span class="p-btn">Giữ chỗ ngay</span>
+            <span class="p-sticker">Mới</span>
+            <div class="p-stamp"><span>Khóa</span><b>01</b><span>6 tuần</span></div>
+            <div class="p-note">Tuần 3: tổng hợp research, mỗi dòng dẫn về một quote có ID.</div>
+          </div>
+        </div>
+        <div class="lockups">
+          <div class="lk l"><svg><use href="#m-door"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+          <div class="lk d"><svg><use href="#m-door"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="lbl">Page feel</div>
+        <div class="hero">
+          <span class="tag">12 buổi · 6 tuần</span>
+          <h3>Dùng AI gọn hơn, sắc hơn.</h3>
+          <p>Dành cho designer mid và senior muốn gom cách làm về một workflow.</p>
+          <div class="stages"><span>Discover</span><span>Research</span><span>Explore</span><span>Test</span></div>
+          <a class="btn">Giữ chỗ ngay</a>
+        </div>
+        <p class="feel"><b>Feel:</b> vui và tươi nhưng vẫn có chất thủ công. Viền và bóng cứng giữ bố cục chắc, băng dính và tem làm nó ấm hơn. Rủi ro: dễ rối nếu dùng quá nhiều chi tiết một lúc, nên mỗi màn hình chỉ nên có một hai chi tiết thủ công.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- F -->
+  <section class="dir dir-f">
+    <div class="dir-meta"><h2>F · Chữ Winnie, style Bậc thang, màu Sân chơi</h2><span>Khối phẳng, viền mực, bóng cứng, không nghiêng, không băng dính. Gọn và chắc nhất.</span></div>
+    <div class="spec">
+      <div class="s-left">
+        <div>
+          <div class="lbl">Palette</div>
+          <div class="swatches" style="margin-top:10px">
+            <div class="sw"><i style="background:#15133A"></i><b>Ink</b><span>#15133A</span></div>
+            <div class="sw"><i style="background:#FFF9EC"></i><b>Paper</b><span>#FFF9EC</span></div>
+            <div class="sw"><i style="background:#3A4BFF"></i><b>Cobalt</b><span>#3A4BFF</span></div>
+            <div class="sw"><i style="background:#FF86B7"></i><b>Bubblegum</b><span>#FF86B7</span></div>
+            <div class="sw"><i style="background:#FFE24D"></i><b>Lemon</b><span>#FFE24D</span></div>
+            <div class="sw"><i style="background:#62DDB0"></i><b>Mint</b><span>#62DDB0</span></div>
+          </div>
+        </div>
+        <div class="type">
+          <div class="lbl">Type</div>
+          <h3 style="margin-top:10px">Gom workflow về một mối.</h3>
+          <p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p>
+          <div class="fnames">Manrope 800 (display) · Manrope 500 (body)</div>
+        </div>
+        <div>
+          <div class="lbl">Parts</div>
+          <div class="parts" style="margin-top:12px">
+            <span class="p-btn">Giữ chỗ ngay</span>
+            <span class="p-sticker">Mới</span>
+            <div class="p-block"><b>Tuần 3</b>Tổng hợp research, mỗi dòng dẫn về một quote có ID.</div>
+          </div>
+        </div>
+        <div class="lockups">
+          <div class="lk l"><svg><use href="#m-stairs"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+          <div class="lk d"><svg><use href="#m-stairs"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="lbl">Page feel</div>
+        <div class="hero">
+          <span class="tag">12 buổi · 6 tuần</span>
+          <h3>Dùng AI gọn hơn, sắc hơn.</h3>
+          <p>Dành cho designer mid và senior muốn gom cách làm về một workflow.</p>
+          <div class="stages"><span>Discover</span><span>Research</span><span>Explore</span><span>Test</span></div>
+          <a class="btn">Giữ chỗ ngay</a>
+        </div>
+        <p class="feel"><b>Feel:</b> như một tấm poster vui nhưng có kỷ luật. Dễ làm nhất vì chỉ cần viền, bóng và khối màu, và dễ lặp lại trên slide và docs. Rủi ro: kiểu neo-brutalist đang rất phổ biến nên dễ giống nhiều trang khác.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- G -->
+  <section class="dir dir-g">
+    <div class="dir-meta"><h2>G · Chữ Winnie, style Xưởng, màu Sân chơi</h2><span>Giấy, băng dính, tem, viền khâu, hơi nghiêng, bóng mềm. Ấm và có tay nghề nhất.</span></div>
+    <div class="spec">
+      <div class="s-left">
+        <div>
+          <div class="lbl">Palette</div>
+          <div class="swatches" style="margin-top:10px">
+            <div class="sw"><i style="background:#15133A"></i><b>Ink</b><span>#15133A</span></div>
+            <div class="sw"><i style="background:#FFF9EC"></i><b>Paper</b><span>#FFF9EC</span></div>
+            <div class="sw"><i style="background:#3A4BFF"></i><b>Cobalt</b><span>#3A4BFF</span></div>
+            <div class="sw"><i style="background:#FF86B7"></i><b>Bubblegum</b><span>#FF86B7</span></div>
+            <div class="sw"><i style="background:#FFE24D"></i><b>Lemon</b><span>#FFE24D</span></div>
+            <div class="sw"><i style="background:#62DDB0"></i><b>Mint</b><span>#62DDB0</span></div>
+          </div>
+        </div>
+        <div class="type">
+          <div class="lbl">Type</div>
+          <h3 style="margin-top:10px">Gom workflow về một mối.</h3>
+          <p>Mỗi tuần hai buổi 90 phút, bạn dựng dần một workflow dùng được ngay trong dự án thật của mình.</p>
+          <div class="fnames">Manrope 800 (display) · Manrope 500 (body)</div>
+        </div>
+        <div>
+          <div class="lbl">Parts</div>
+          <div class="parts" style="margin-top:12px">
+            <span class="p-btn">Giữ chỗ ngay</span>
+            <div class="p-stamp"><span>Khóa</span><b>01</b><span>6 tuần</span></div>
+            <div class="p-note">Tuần 3: tổng hợp research, mỗi dòng dẫn về một quote có ID.</div>
+          </div>
+        </div>
+        <div class="lockups">
+          <div class="lk l"><svg><use href="#m-notes"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+          <div class="lk d"><svg><use href="#m-notes"/></svg><div class="wm">AI Design<br>Workflow</div></div>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="lbl">Page feel</div>
+        <div class="hero">
+          <span class="tag">12 buổi · 6 tuần</span>
+          <h3>Dùng AI gọn hơn, sắc hơn.</h3>
+          <p>Dành cho designer mid và senior muốn gom cách làm về một workflow.</p>
+          <div class="stages"><span>Discover</span><span>Research</span><span>Explore</span><span>Test</span></div>
+          <a class="btn">Giữ chỗ ngay</a>
+        </div>
+        <p class="feel"><b>Feel:</b> như một cuốn sổ tay có màu, thân thiện và có chiều sâu. Hợp với "mentor điềm tĩnh" hơn F. Rủi ro: cần minh họa và ảnh thật để không thành trang blog, và các chi tiết thủ công tốn công thiết kế hơn.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">Logo marks</div>
+      <h2>Six mark ideas, independent of direction</h2>
+      <p>Each one hints at a level-up through steps or stages. The accent shape marks the top stage, which is where the course ends: a workflow you reuse. Any mark can be recolored for any direction.</p>
+    </div>
+    <div class="marks">
+      <div class="mk"><div class="row"><svg><use href="#m-stairs"/></svg><svg class="sm"><use href="#m-stairs"/></svg></div><span class="n">MARK 1</span><h3>Rising bars</h3><p>Four bars for four stages, the last one highlighted. Reads as stairs and as progress at once.</p></div>
+      <div class="mk"><div class="row"><svg><use href="#m-path"/></svg><svg class="sm"><use href="#m-path"/></svg></div><span class="n">MARK 2</span><h3>Step path</h3><p>One line climbing in steps to a dot. Simplest and most flexible. Works as a divider on pages too.</p></div>
+      <div class="mk"><div class="row"><svg><use href="#m-door"/></svg><svg class="sm"><use href="#m-door"/></svg></div><span class="n">MARK 3</span><h3>Door ziggurat</h3><p>Stepped pyramid with a doorway at the bottom: the open door and the stairs in one shape.</p></div>
+      <div class="mk"><div class="row"><svg><use href="#m-arch"/></svg><svg class="sm"><use href="#m-arch"/></svg></div><span class="n">MARK 4</span><h3>Arch with steps</h3><p>A doorway with stairs inside. Calm and architectural. Reads like a gateway to the next level.</p></div>
+      <div class="mk"><div class="row"><svg><use href="#m-dots"/></svg><svg class="sm"><use href="#m-dots"/></svg></div><span class="n">MARK 5</span><h3>Four stages, one gate</h3><p>Four dots growing along a dotted path, the last one ringed. Ties to the gate at the end of each stage.</p></div>
+      <div class="mk"><div class="row"><svg><use href="#m-notes"/></svg><svg class="sm"><use href="#m-notes"/></svg></div><span class="n">MARK 6</span><h3>Climbing notes</h3><p>Four slightly tilted sticky squares stepping upward. The most tactile and handmade of the six.</p></div>
+    </div>
+  </section>
+
+  <section class="reco">
+    <div class="eyebrow">My lean</div>
+    <p style="color:var(--fg);margin-top:8px"><b>Direction B with mark 3 or 4.</b> It fits "calm senior mentor" and "sharp practitioner" best, and it's the strongest match for editorial, warm and craft. You can borrow A's bold color blocks or C's sticker details for playful moments, so the page doesn't feel too quiet. Your pick decides, though.</p>
+  </section>
+</div>
