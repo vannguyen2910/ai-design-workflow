@@ -56,7 +56,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 .oc .h-main{grid-row:span 2;background:var(--c1);color:#fff;border-radius:30px;padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:380px}
 .oc .h-main h3{font-size:clamp(1.9rem,4.2vw,3rem);text-transform:uppercase;letter-spacing:-.01em;line-height:1.28}
 .oc .h-main h3 em{font-style:normal;color:var(--c2)}
-.oc .h-main .btn{background:var(--c2);color:var(--ink);box-shadow:none;padding:16px 24px;justify-content:center;border-radius:18px}
+.oc .h-main .btn{background:var(--cta,var(--c2));color:var(--ink);box-shadow:none;padding:16px 24px;justify-content:center;border-radius:18px}
 .oc .h-main .lead{opacity:.85}
 .oc .h-a{background:var(--c1);color:var(--on1);border-radius:26px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px}
 .oc .h-a .big{font-size:2rem;white-space:nowrap}
@@ -78,6 +78,8 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 .oc .band .sparkle{position:absolute;right:18px;top:-18px;width:58px;height:58px;color:var(--c3)}
 @media(max-width:860px){.oc .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.oc .h-main{grid-column:span 2;grid-row:auto;min-height:0}.oc .h-ph{grid-row:auto;grid-column:span 2;min-height:260px;border-radius:30px 120px 30px 30px}.oc .band{grid-template-columns:minmax(0,1fr)}}
 
+.oc[style*="--cta"] .nav .btn{background:var(--cta);box-shadow:none}
+.oc[style*="--cta"] .h-main h3 em{color:var(--cta)}
 </style>
 </head>
 <body>
@@ -90,7 +92,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
   <header>
     <a class="back" href="./">← Tất cả các round</a>
     <div class="eyebrow">AI Design Workflow · brand exploration, round 4</div>
-    <h1>Round 4: giữ bố cục C, thử 6 bảng màu mới</h1>
+    <h1>Round 4: giữ bố cục C, thử 6 bảng màu mới và một biến thể</h1>
     <p class="lede">Cùng một layout, cùng chữ, cùng ảnh, chỉ đổi màu, để bạn so được thuần về màu. Có sẵn C gốc ở đầu làm mốc.</p>
     <div class="ask">
       <div><b>Mình cần bạn:</b></div>
@@ -306,6 +308,39 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
     <div class="meta"><h2>6 · Violet</h2><span>Tím, hồng, lilac nhạt</span></div>
     <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#1E0B2E">Ink #1E0B2E</i><i style="--c:#5B21B6">Chính #5B21B6</i><i style="--c:#E9D5FF">Nền sáng #E9D5FF</i><i style="--c:#FF4FA3">Nhấn #FF4FA3</i></div>
     <div class="o oc" style="--c1:#5B21B6;--on1:#fff;--c2:#E9D5FF;--c3:#FF4FA3;--ink:#1E0B2E;--bandh:#5B21B6;--bandem:#BE185D">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="meta"><h2>7 · Violet + xanh lá cho CTA</h2><span>Như Violet, nhưng nút CTA (Bắt đầu học, Đăng ký) đổi sang xanh lime để nổi hẳn lên khỏi tím và hồng</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#1E0B2E">Ink #1E0B2E</i><i style="--c:#5B21B6">Chính #5B21B6</i><i style="--c:#E9D5FF">Nền sáng #E9D5FF</i><i style="--c:#FF4FA3">Nhấn #FF4FA3</i><i style="--c:#D4FF3F">CTA #D4FF3F</i></div>
+    <div class="o oc" style="--c1:#5B21B6;--on1:#fff;--c2:#E9D5FF;--c3:#FF4FA3;--ink:#1E0B2E;--bandh:#5B21B6;--bandem:#BE185D;--cta:#D4FF3F">
       <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
       <div class="hero">
         <div class="h-main">
