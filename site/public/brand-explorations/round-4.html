@@ -80,6 +80,46 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 
 .oc[style*="--cta"] .nav .btn{background:var(--cta);box-shadow:none}
 .oc[style*="--cta"] .h-main h3 em{color:var(--cta)}
+/* ===== A: bento, tangerine / iris / lime ===== */
+.od .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(18px,3vw,36px);align-items:center}
+.od h3{font-size:clamp(2rem,4.6vw,3.2rem)}
+.od h3 em{font-style:normal;background:var(--c3);padding:0 .18em;border-radius:.22em;display:inline-block}
+.od .kick{background:var(--soft)}
+.od .mosaic{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:170px 170px;gap:12px}
+.od .m1{grid-row:span 2;border-radius:999px 999px 28px 28px}
+.od .m2{background:var(--c3);border-radius:28px 100px 28px 28px}
+.od .m3{background-image:url(r3-img/p3.jpg);border-radius:100px 28px 28px 28px}
+.od .m4{grid-column:span 2;background:var(--c1);border-radius:28px 100px 28px 28px;flex-direction:column;justify-content:center;align-items:flex-start;gap:6px;padding:18px 22px}
+.od .m2 .big{font-size:2.6rem}
+.od .m2 .cap{max-width:11ch}
+.od .m4 .big{font-size:2.8rem}
+.od .sec{display:flex;flex-direction:column;gap:16px}
+.od .sec>h4{margin:0;font:800 1.2rem var(--font);letter-spacing:-.03em;text-align:center}
+.od .tri{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.od .tri>div{padding:22px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.od .tri b{display:block;font-size:1.2rem;letter-spacing:-.01em;line-height:1.25}
+.od .tri p{font-size:.84rem;font-weight:500;margin-top:8px;opacity:.85}
+.od .tri .go{align-self:flex-end;background:transparent}
+.od .tri .t1{background:var(--c1);border-radius:30px 30px 30px 110px}
+.od .tri .t2{background:var(--c2);border-radius:90px 30px 30px 30px;color:#fff;flex-direction:column-reverse}
+.od .t2 .go{color:#fff;box-shadow:inset 0 0 0 1.5px #fff}
+.od .tri .t3{background:var(--c3);border-radius:30px 110px 30px 30px}
+.od .t1,.od .tri .t3{color:var(--ink)}
+.od .strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch}
+.od .strip>div{padding:18px 22px;display:flex;align-items:center;gap:14px;background:var(--soft)}
+.od .strip>div:nth-child(1){border-radius:999px}
+.od .strip>div:nth-child(2){border-radius:28px}
+.od .strip>div:nth-child(3){border-radius:28px 999px 999px 28px;padding-right:34px;background:var(--ink);color:var(--paper)}
+.od .strip .big{font-size:2.1rem}
+@media(max-width:760px){.od .hero{grid-template-columns:minmax(0,1fr)}.od .tri,.od .strip{grid-template-columns:minmax(0,1fr)}.od .mosaic{grid-template-rows:150px 150px}}
+
+
+.od{--font:"Manrope",sans-serif;--paper:#FFFFFF;--ink:#14123A;--c1:#FF5CB8;--c2:#4A3FEF;--c3:#DDF247;--soft:#ECEAFF;--lk:#14123A;--s1:#4A3FEF;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8}
+.od .btn.go1{background:var(--c2);color:#fff}
+.od .nav{background:var(--c3);border-radius:999px;padding:8px 8px 8px 18px}
+.od .nav .btn.go1{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);padding:8px 18px}
+.od .m4{color:var(--ink)}
+.od .m2 .big,.od .m4 .big{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -92,7 +132,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
   <header>
     <a class="back" href="./">← Tất cả các round</a>
     <div class="eyebrow">AI Design Workflow · brand exploration, round 4</div>
-    <h1>Round 4: giữ bố cục C, thử 6 bảng màu mới và một biến thể</h1>
+    <h1>Round 4: giữ bố cục C, thử 6 bảng màu mới và hai biến thể</h1>
     <p class="lede">Cùng một layout, cùng chữ, cùng ảnh, chỉ đổi màu, để bạn so được thuần về màu. Có sẵn C gốc ở đầu làm mốc.</p>
     <div class="ask">
       <div><b>Mình cần bạn:</b></div>
@@ -367,6 +407,27 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
           <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
         </div>
         <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="meta"><h2>8 · Hero kiểu A với indigo, chartreuse, hồng</h2><span>Giữ bố cục hero của option A (ô bento: ảnh trong vòm, ô số, ảnh ghi chú) và đổi sang bảng màu của C: chartreuse cho ô "-30%", hồng cho ô "12", indigo cho các nút CTA.</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#14123A">Ink #14123A</i><i style="--c:#4A3FEF">Indigo #4A3FEF</i><i style="--c:#DDF247">Chartreuse #DDF247</i><i style="--c:#FF5CB8">Hồng #FF5CB8</i></div>
+    <div class="o od">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn go1">Đăng ký</a></div>
+      <div class="hero">
+        <div>
+          <span class="kick">Dành cho designer 2+ năm</span>
+          <h3 style="margin-top:16px">Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+          <p class="lead">Học quy trình làm việc thật với AI trên một case xuyên suốt, từ research đến handoff.</p>
+          <div class="cta"><a class="btn go1">Bắt đầu học</a><a class="btn ghost">Xem lộ trình</a></div>
+        </div>
+        <div class="mosaic">
+          <div class="m1 ph" style="background-image:url(r3-img/p4.jpg);background-position:60% 50%"></div>
+          <div class="m2 stack"><span class="cap">Thời gian lặp thiết kế</span><span class="big">-30%</span></div>
+          <div class="m3 ph"></div>
+          <div class="m4 stack"><span class="big">12</span><span class="cap" style="font-size:.9rem">bài thực hành trên Delivery App</span></div>
+        </div>
       </div>
     </div>
   </section>
