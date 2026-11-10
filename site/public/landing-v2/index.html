@@ -168,6 +168,20 @@ body.t-cap .h-text h1,body.t-cap .tagline{text-transform:capitalize}
 .know{margin-top:var(--gap);font-size:.95rem;color:var(--muted)}
 @media(max-width:860px){.out3{grid-template-columns:minmax(0,1fr)}}
 
+/* Bạn mang về: thẻ ink nằm trong khung nội dung, ngăn đoạn trắng dài giữa Chương trình và Hỏi đáp */
+#ket-qua{margin-top:clamp(36px,6vw,72px);padding:0 var(--gutter)}
+#ket-qua .wrap{background:var(--ink);color:#fff;border-radius:var(--r-xl);padding:clamp(28px,5vw,56px);max-width:var(--maxw)}
+#ket-qua .kick{background:#FFFFFF26;color:#fff}
+#ket-qua .sub{color:#FFFFFFB3}
+#ket-qua .out3 li{background:transparent;border-color:#FFFFFF33}
+#ket-qua .out3 li::before{background:var(--chartreuse);color:var(--ink)}
+#ket-qua .out3 b{color:#fff}#ket-qua .out3 p{color:#FFFFFFB3}
+#ket-qua .sub-h{color:#fff}
+#ket-qua .can li{background:#FFFFFF14;color:#fff}
+#ket-qua .can li::before{background:var(--chartreuse);color:var(--ink)}
+#ket-qua .promise{background:var(--indigo)}
+#ket-qua .know{color:#FFFFFFB3}
+#ket-qua .h2 em{color:var(--ink)}
 /* Ví dụ */
 .examples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
 .ex{border-radius:var(--r-md);padding:18px;min-height:120px;display:flex;flex-direction:column;justify-content:flex-end;font-weight:800;line-height:1.3;background:var(--soft)}
