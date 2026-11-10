@@ -1,4 +1,6 @@
-# AI Design Workflow · Brand guideline
+# UX Level Up · Brand guideline
+
+**Tên:** brand là **UX Level Up**. **AI Design Workflow** là tên khóa học đầu tiên của brand. Trên landing page, tên brand ở nav và footer, tên khóa học là tiêu đề chính.
 
 Hướng đã chốt giữa Daphne và Winnie (2026-11-09): **Round 3, phương án C · Táo bạo, indigo, chartreuse, hồng.** Nguồn tham chiếu: `brand-explorations/round-3.html`. Mọi thứ trong thư mục này đi từ đó.
 
