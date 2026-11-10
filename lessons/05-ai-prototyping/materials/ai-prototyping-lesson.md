@@ -9,7 +9,7 @@ level: intermediate
 duration: "90 min"
 date: 2026-10-28
 draft: true
-slides: ""
+slides: "https://claude.ai/artifact/XeNWGZiasHHRgF1Sai5bak"
 previous-session: "Explore Ideas (Lesson 4 và Practice 4)"
 next-session: "Practice 5: Build prototype main flow"
 ---

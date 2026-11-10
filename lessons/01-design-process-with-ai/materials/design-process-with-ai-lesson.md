@@ -9,7 +9,7 @@ level: foundational
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 date: 2026-10-06
 draft: true
-slides: "https://claude.ai/artifact/St1HGVWFHvngrRsdUFb8Xv"
+slides: "https://claude.ai/artifact/Dmc6zgaZrHQYunwHCeCVXa"
 previous-session: ""
 next-session: "Discover the Problem"
 ---

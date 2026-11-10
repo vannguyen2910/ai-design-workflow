@@ -21,6 +21,7 @@ export default defineConfig({
 				{ label: 'Giới thiệu chương trình', slug: 'index' },
 				{ label: 'Landing Page', slug: 'landing' },
 				{ label: 'Lessons', items: lessons },
+					{ label: 'Project brief', slug: 'project/brief' },
 			],
 		}),
 	],

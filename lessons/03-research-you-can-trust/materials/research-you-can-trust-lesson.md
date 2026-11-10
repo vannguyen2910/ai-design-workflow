@@ -9,7 +9,7 @@ level: intermediate
 duration: "90 min"
 date: 2026-10-30
 draft: true
-slides: ""
+slides: "https://claude.ai/artifact/4AFDgey1QNAkFuXdiRGvvu"
 previous-session: "Discover the Problem"
 next-session: "Frame the Problem Worth Solving"
 ---
