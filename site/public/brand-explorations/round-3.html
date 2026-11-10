@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Brand Exploration Round 3</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
 <style>
 /* Layout: neutral review page, then three self-contained options (A, B, C). Each option sets its own palette vars; shapes are shared utilities. */
-:root{--bg:#F6F5F1;--surface:#fff;--fg:#1F1D1A;--muted:#6B675F;--line:#DDDAD2;--f:"Be Vietnam Pro",system-ui,sans-serif}
+:root{--bg:#FFFFFF;--surface:#fff;--fg:#1F1D1A;--muted:#6B675F;--line:#DDDAD2;--f:"Be Vietnam Pro",system-ui,sans-serif}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171613;--surface:#22201C;--fg:#F1EEE7;--muted:#A19C91;--line:#3A372F;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#171613;--surface:#22201C;--fg:#F1EEE7;--muted:#A19C91;--line:#3A372F;color-scheme:dark}
 *{box-sizing:border-box}
@@ -16,7 +16,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f);line-hei
 .wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:64px}
 h1,h2,h3,p{margin:0}
 h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wrap:balance}
-.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.back{display:inline-block;color:var(--muted);font-size:.85rem;font-weight:600;text-decoration:none;margin-bottom:14px}.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .lede{max-width:64ch;color:var(--muted);margin-top:14px}
 .ask{display:grid;gap:6px;margin-top:22px;padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:12px;max-width:64ch}
 .meta{display:flex;flex-direction:column;gap:4px;margin-bottom:14px}
@@ -47,7 +47,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 @media(max-width:760px){.o .links{display:none}}
 
 /* ===== A: bento, tangerine / iris / lime ===== */
-.oa{--paper:#FAF9F6;--ink:#1B1A24;--c1:#FF6A2B;--c2:#8B6CF0;--c3:#C8F25A;--soft:#EDE8FB;--font:"Manrope",sans-serif;--lk:#1B1A24;--s1:#BBA8F5;--s2:#8B6CF0;--s3:#C8F25A;--s4:#FF6A2B}
+.oa{--paper:#FFFFFF;--ink:#1B1A24;--c1:#FF6A2B;--c2:#8B6CF0;--c3:#C8F25A;--soft:#EDE8FB;--font:"Manrope",sans-serif;--lk:#1B1A24;--s1:#BBA8F5;--s2:#8B6CF0;--s3:#C8F25A;--s4:#FF6A2B}
 .oa .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(18px,3vw,36px);align-items:center}
 .oa h3{font-size:clamp(2rem,4.6vw,3.2rem)}
 .oa h3 em{font-style:normal;background:var(--c3);padding:0 .18em;border-radius:.22em;display:inline-block}
@@ -81,7 +81,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 @media(max-width:760px){.oa .hero{grid-template-columns:minmax(0,1fr)}.oa .tri,.oa .strip{grid-template-columns:minmax(0,1fr)}.oa .mosaic{grid-template-rows:150px 150px}}
 
 /* ===== B: journey, coral / cobalt / butter ===== */
-.ob{--paper:#FFFDF8;--ink:#14213D;--c1:#FF6F61;--c2:#2F45E8;--c3:#FFD84D;--soft:#DCE8FF;--font:"Bricolage Grotesque","Manrope",sans-serif;--lk:#14213D;--s1:#9DB8FF;--s2:#2F45E8;--s3:#FFD84D;--s4:#FF6F61}
+.ob{--paper:#FFFFFF;--ink:#14213D;--c1:#FF6F61;--c2:#2F45E8;--c3:#FFD84D;--soft:#DCE8FF;--font:"Bricolage Grotesque","Manrope",sans-serif;--lk:#14213D;--s1:#9DB8FF;--s2:#2F45E8;--s3:#FFD84D;--s4:#FF6F61}
 .ob h3{font-weight:800;font-size:clamp(2.1rem,5vw,3.5rem);letter-spacing:-.02em}
 .ob h3 em{font-style:normal;color:var(--c2)}
 .ob .kick{background:var(--c3)}
@@ -112,14 +112,11 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 .ob .trio figure:nth-child(1) .ph{background-image:url(r3-img/p5.jpg);border-radius:999px 999px 24px 24px}
 .ob .trio figure:nth-child(2) .ph{background-image:url(r3-img/p3.jpg);border-radius:28px;height:190px}
 .ob .trio figure:nth-child(3) .ph{background-image:url(r3-img/p7.jpg);border-radius:110px 24px 110px 24px}
-.ob .trio figcaption{font-weight:700;font-size:.9rem;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
-.ob .trio figcaption i{width:12px;height:12px;border-radius:50%;background:var(--c1);flex:none}
-.ob .trio figure:nth-child(2) figcaption i{background:var(--c2);border-radius:3px}
-.ob .trio figure:nth-child(3) figcaption i{background:var(--c3)}
+.ob .trio figcaption{font-weight:700;font-size:.9rem;letter-spacing:-.01em;text-align:center}
 @media(max-width:760px){.ob .hero{grid-template-columns:minmax(0,1fr)}.ob .path{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}.ob .path::before{display:none}.ob .trio{grid-template-columns:minmax(0,1fr)}}
 
 /* ===== C: bold, indigo / chartreuse / pink ===== */
-.oc{--paper:#FBFAF6;--ink:#14123A;--c1:#4A3FEF;--c2:#DDF247;--c3:#FF5CB8;--soft:#ECEAFF;--font:"Manrope",sans-serif;--lk:#14123A;--s1:#A59FF7;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8}
+.oc{--paper:#FFFFFF;--ink:#14123A;--c1:#4A3FEF;--c2:#DDF247;--c3:#FF5CB8;--soft:#ECEAFF;--font:"Manrope",sans-serif;--lk:#14123A;--s1:#A59FF7;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8}
 .oc .nav{background:var(--c2);border-radius:999px;padding:8px 8px 8px 18px}
 .oc .btn{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);padding:8px 18px}
 .oc .hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.75fr) minmax(0,.9fr);grid-template-rows:auto auto;gap:12px}
@@ -155,6 +152,26 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 .lgc>div.d{background:var(--paperD);color:#fff;--lk:#fff}
 .lgc>div.l{background:var(--paperL);color:var(--lk)}
 .lgc small{display:block;font-size:.72rem;font-weight:600;opacity:.65;letter-spacing:.04em}
+
+/* font test: same H1 in three fonts, each inside a mini hero */
+.fts{display:grid;gap:14px}
+.ft{border-radius:22px;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:clamp(18px,3vw,30px);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(16px,3vw,30px);align-items:center}
+.ft>*{min-width:0}
+.ft .nm{font:700 .72rem var(--f);letter-spacing:.1em;text-transform:uppercase;opacity:.6;margin-bottom:12px}
+.ft h3{font-family:var(--hf);font-weight:var(--hw);font-size:var(--hs);line-height:var(--hl);letter-spacing:var(--hls);margin:0}
+.ft h3 em{font-style:normal;color:var(--em);background:var(--emb,transparent);padding:0 .14em;border-radius:.2em}
+.ft .up{font-family:var(--hf);font-weight:var(--hw);font-size:calc(var(--hs)*.78);line-height:1.35;letter-spacing:.005em;text-transform:uppercase;margin:16px 0 0;opacity:.9}
+.ft p.l{font:500 1rem var(--f);margin:16px 0 0;max-width:42ch;opacity:.8}
+.ft .b{display:inline-block;margin-top:18px;font:800 .9rem var(--f);padding:12px 20px;border-radius:999px;background:var(--ink);color:var(--paper)}
+.ft .vis{position:relative;height:230px}
+.ft .vis i{position:absolute;display:block}
+.ft .ph1{right:0;bottom:0;width:64%;height:100%;background-size:cover;background-position:center;border-radius:999px 999px 24px 24px}
+.ft .sh1{left:0;bottom:0;width:44%;aspect-ratio:1;border-radius:0 100% 0 0}
+.ft .sh2{left:6%;top:6%;width:34%;aspect-ratio:1;border-radius:50%}
+.fa{--hf:"Unbounded",sans-serif;--hw:700;--hs:clamp(1.5rem,3.2vw,2.2rem);--hl:1.3;--hls:-.01em;--paper:#FFFFFF;--ink:#14123A;--em:#14123A;--emb:#DDF247}
+.fb{--hf:"Plus Jakarta Sans",sans-serif;--hw:800;--hs:clamp(2rem,4.6vw,3.2rem);--hl:1.18;--hls:-.02em;--paper:#FFFFFF;--ink:#1B1A24;--em:#1B1A24;--emb:#C8F25A}
+.fc{--hf:"Fraunces",serif;--hw:800;--hs:clamp(2.1rem,4.8vw,3.4rem);--hl:1.12;--hls:-.015em;--paper:#FFFFFF;--ink:#14213D;--em:#2F45E8}
+@media(max-width:700px){.ft{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -165,6 +182,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
 
 <div class="wrap">
   <header>
+  <a class="back" href="./">← Tất cả các round</a>
     <div class="eyebrow">AI Design Workflow · brand exploration, round 3</div>
     <h1>Round 3: sạch, nhiều shape, ảnh xen màu</h1>
     <p class="lede">Nền sáng, mỗi chỗ chỉ 2–3 màu, nhiều shape khác nhau (vòm, viên thuốc, lá, phần tư tròn, tròn) ghép với ảnh thật. Màu mạnh chỉ đặt ở hero và con số. Ba option dùng ba bảng màu mới, mỗi option một cách sắp xếp. Chữ mẫu và số liệu là placeholder; ảnh lấy từ assets/images.</p>
@@ -179,13 +197,13 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
   <!-- logo -->
   <section>
     <div class="meta"><h2>Logo · Bậc thang và chấm đích</h2><span>Bậc thang là các cấp, chấm tròn ở trên cùng là đích. Giữ nguyên hình, chỉ đổi màu chấm theo màu nhấn của từng option (A cam, B coral, C hồng). Trên nền tối, bậc thang đổi sang trắng.</span></div>
-    <div class="lgs"><div class="lgc" style="--s1:#BBA8F5;--s2:#8B6CF0;--s3:#C8F25A;--s4:#FF6A2B;--lk:#1B1A24;--paperL:#FAF9F6;--paperD:#1B1A24;font-family:Manrope,sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>A, nền sáng</small></span></div><div class="d" style="--s4:#FF6A2B"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>A, nền tối</small></span></div></div><div class="lgc" style="--s1:#9DB8FF;--s2:#2F45E8;--s3:#FFD84D;--s4:#FF6F61;--lk:#14213D;--paperL:#FFFDF8;--paperD:#14213D;font-family:'Bricolage Grotesque',sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>B, nền sáng</small></span></div><div class="d" style="--s4:#FF6F61"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>B, nền tối</small></span></div></div><div class="lgc" style="--s1:#A59FF7;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8;--lk:#14123A;--paperL:#FBFAF6;--paperD:#14123A;font-family:Manrope,sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>C, nền sáng</small></span></div><div class="d" style="--s4:#FF5CB8"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>C, nền tối</small></span></div></div></div>
+    <div class="lgs"><div class="lgc" style="--s1:#BBA8F5;--s2:#8B6CF0;--s3:#C8F25A;--s4:#FF6A2B;--lk:#1B1A24;--paperL:#FFFFFF;--paperD:#1B1A24;font-family:Manrope,sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>A, nền sáng</small></span></div><div class="d" style="--s4:#FF6A2B"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>A, nền tối</small></span></div></div><div class="lgc" style="--s1:#9DB8FF;--s2:#2F45E8;--s3:#FFD84D;--s4:#FF6F61;--lk:#14213D;--paperL:#FFFFFF;--paperD:#14213D;font-family:'Bricolage Grotesque',sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>B, nền sáng</small></span></div><div class="d" style="--s4:#FF6F61"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>B, nền tối</small></span></div></div><div class="lgc" style="--s1:#A59FF7;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8;--lk:#14123A;--paperL:#FFFFFF;--paperD:#14123A;font-family:Manrope,sans-serif"><div class="l"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>C, nền sáng</small></span></div><div class="d" style="--s4:#FF5CB8"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><span>AI Design Workflow<small>C, nền tối</small></span></div></div></div>
   </section>
 
   <!-- A -->
   <section>
     <div class="meta"><h2>A · Bento, cam, tím iris, lime</h2><span>Gần ảnh 1 nhất. Lưới ô với góc bo khác nhau, ảnh nằm trong vòm và lá. Chuyên nghiệp nhất, nghịch vừa phải.</span></div>
-    <div class="chips"><i style="--c:#FAF9F6">Paper #FAF9F6</i><i style="--c:#1B1A24">Ink #1B1A24</i><i style="--c:#FF6A2B">Tangerine #FF6A2B</i><i style="--c:#8B6CF0">Iris #8B6CF0</i><i style="--c:#C8F25A">Lime #C8F25A</i></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#1B1A24">Ink #1B1A24</i><i style="--c:#FF6A2B">Tangerine #FF6A2B</i><i style="--c:#8B6CF0">Iris #8B6CF0</i><i style="--c:#C8F25A">Lime #C8F25A</i></div>
     <div class="o oa">
       <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
       <div class="hero">
@@ -221,7 +239,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
   <!-- B -->
   <section>
     <div class="meta"><h2>B · Hành trình, coral, cobalt, butter</h2><span>Ấm và thân thiện hơn. Hero là ảnh trong vòm với các shape chồng nhẹ, rồi lộ trình lên cấp với mỗi nút một hình khác nhau. Chữ Bricolage Grotesque.</span></div>
-    <div class="chips"><i style="--c:#FFFDF8">Paper #FFFDF8</i><i style="--c:#14213D">Ink #14213D</i><i style="--c:#FF6F61">Coral #FF6F61</i><i style="--c:#2F45E8">Cobalt #2F45E8</i><i style="--c:#FFD84D">Butter #FFD84D</i></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#14213D">Ink #14213D</i><i style="--c:#FF6F61">Coral #FF6F61</i><i style="--c:#2F45E8">Cobalt #2F45E8</i><i style="--c:#FFD84D">Butter #FFD84D</i></div>
     <div class="o ob">
       <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
       <div class="hero">
@@ -244,9 +262,9 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
         <div class="node"><div class="sh">4</div><b>Bàn giao</b><span>Handoff và đo kết quả</span></div>
       </div>
       <div class="trio">
-        <figure><div class="ph"></div><figcaption><i></i>Cộng tác với trợ lý AI</figcaption></figure>
-        <figure><div class="ph"></div><figcaption><i></i>Research bằng ghi chú</figcaption></figure>
-        <figure><div class="ph"></div><figcaption><i></i>Thử công cụ trên điện thoại</figcaption></figure>
+        <figure><div class="ph"></div><figcaption>Cộng tác với trợ lý AI</figcaption></figure>
+        <figure><div class="ph"></div><figcaption>Research bằng ghi chú</figcaption></figure>
+        <figure><div class="ph"></div><figcaption>Thử công cụ trên điện thoại</figcaption></figure>
       </div>
     </div>
   </section>
@@ -254,7 +272,7 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
   <!-- C -->
   <section>
     <div class="meta"><h2>C · Táo bạo, indigo, chartreuse, hồng</h2><span>Mượn bố cục ô của ảnh 3: ô indigo lớn, ô nhỏ chartreuse, ảnh trong lá, sao hồng làm điểm nhấn. Có một section chartreuse đậm để làm chỗ gây chú ý.</span></div>
-    <div class="chips"><i style="--c:#FBFAF6">Paper #FBFAF6</i><i style="--c:#14123A">Ink #14123A</i><i style="--c:#4A3FEF">Indigo #4A3FEF</i><i style="--c:#DDF247">Chartreuse #DDF247</i><i style="--c:#FF5CB8">Pink #FF5CB8</i></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#14123A">Ink #14123A</i><i style="--c:#4A3FEF">Indigo #4A3FEF</i><i style="--c:#DDF247">Chartreuse #DDF247</i><i style="--c:#FF5CB8">Pink #FF5CB8</i></div>
     <div class="o oc">
       <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
       <div class="hero">
@@ -283,6 +301,16 @@ h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wr
         </div>
         <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
       </div>
+    </div>
+  </section>
+
+  <!-- font test -->
+  <section>
+    <div class="meta"><h2>Font cho H1 · Unbounded, Plus Jakarta Sans, Fraunces</h2><span>Cùng một H1 trong ba font, mỗi font đặt trong một hero nhỏ với bảng màu hợp nhất. Mỗi card có thêm một dòng chữ hoa để xem dấu tiếng Việt khi viết hoa toàn bộ.</span></div>
+    <div class="fts">
+    <div class="ft fa"><div><div class="nm">Unbounded · đi với bảng màu C</div><h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3><div class="up h3like" style="font-family:var(--hf);font-weight:var(--hw)">Thiết kế với AI, lên cấp mỗi tuần</div><p class="l">Học quy trình làm việc thật với AI trên một case xuyên suốt, từ research đến handoff.</p><span class="b">Bắt đầu học</span></div><div class="vis" role="img" aria-label="Ảnh trong vòm cùng các shape màu"><i class="sh2" style="background:#FF5CB8"></i><i class="sh1" style="background:#4A3FEF"></i><i class="ph1" style="background-image:url(r3-img/p7.jpg);background-position:30% 50%"></i></div></div>
+    <div class="ft fb"><div><div class="nm">Plus Jakarta Sans · đi với bảng màu A</div><h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3><div class="up h3like" style="font-family:var(--hf);font-weight:var(--hw)">Thiết kế với AI, lên cấp mỗi tuần</div><p class="l">Học quy trình làm việc thật với AI trên một case xuyên suốt, từ research đến handoff.</p><span class="b">Bắt đầu học</span></div><div class="vis" role="img" aria-label="Ảnh trong vòm cùng các shape màu"><i class="sh2" style="background:#8B6CF0"></i><i class="sh1" style="background:#FF6A2B"></i><i class="ph1" style="background-image:url(r3-img/p4.jpg);background-position:60% 50%"></i></div></div>
+    <div class="ft fc"><div><div class="nm">Fraunces · đi với bảng màu B</div><h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3><div class="up h3like" style="font-family:var(--hf);font-weight:var(--hw)">Thiết kế với AI, lên cấp mỗi tuần</div><p class="l">Học quy trình làm việc thật với AI trên một case xuyên suốt, từ research đến handoff.</p><span class="b">Bắt đầu học</span></div><div class="vis" role="img" aria-label="Ảnh trong vòm cùng các shape màu"><i class="sh2" style="background:#FFD84D"></i><i class="sh1" style="background:#FF6F61"></i><i class="ph1" style="background-image:url(r3-img/p2.jpg);background-position:62% 20%"></i></div></div>
     </div>
   </section>
 </div>
