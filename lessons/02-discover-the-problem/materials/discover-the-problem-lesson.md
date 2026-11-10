@@ -9,7 +9,7 @@ level: intermediate
 duration: "90 min"
 date: 2026-10-30
 draft: true
-slides: ""
+slides: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
 previous-session: "Your Design Process, with AI"
 next-session: "Turn Research into Insights You Can Trust"
 ---

@@ -9,7 +9,7 @@ level: intermediate
 duration: "90 min"
 date: 2026-11-08
 draft: true
-slides: ""
+slides: "https://claude.ai/artifact/XnVV5JPT8DdVUhCyCKop2v"
 previous-session: "AI Prototyping"
 next-session: "Practice 6: Audit, test and fix your prototype"
 ---
