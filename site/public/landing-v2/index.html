@@ -140,19 +140,15 @@ body.t-cap .h-text h1,body.t-cap .tagline{text-transform:capitalize}
 
 /* Chương trình */
 .levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
-.level{background:var(--indigo);color:#fff;border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:10px;min-height:260px}
-.level small{font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.level{position:relative;background:var(--paper);color:var(--ink);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:10px;min-height:260px}
+.level small{display:inline-flex;align-self:flex-start;background:var(--indigo);color:#fff;border-radius:var(--r-pill);padding:3px 12px;font-weight:800;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}
 .level h3{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;line-height:1.2}
-.level p{font-size:.93rem;opacity:.92}
-.level .out{margin-top:auto;font-size:.85rem;font-weight:700;border-top:1.5px solid #FFFFFF40;padding-top:12px}
-.level .out b{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;opacity:.8;margin-bottom:2px}
-.level:nth-child(2){background:var(--pink);color:var(--ink);border-radius:var(--r-lg) 80px var(--r-lg) var(--r-lg)}
-.level:nth-child(2) .out{border-color:#14123A40}
-.level:nth-child(4){background:var(--ink)}
-.level:nth-child(5){background:var(--chartreuse);color:var(--ink)}
-.level:nth-child(5) .out{border-color:#14123A40}
-.level:nth-child(6){border-radius:var(--r-lg) var(--r-lg) 80px var(--r-lg)}
+.level p{font-size:.93rem;color:var(--muted)}
+.level .out{margin-top:auto;font-size:.85rem;font-weight:700;border-top:1.5px solid var(--line);padding-top:12px}
+.level .out b{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.level:nth-child(3)::after{content:"";position:absolute;right:-14px;top:-16px;width:46px;height:46px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg stroke='%23FF5CB8' stroke-width='13' stroke-linecap='round'%3E%3Cpath d='M50 8V92'/%3E%3Cpath d='M8 50H92'/%3E%3Cpath d='M20 20L80 80'/%3E%3Cpath d='M80 20L20 80'/%3E%3C/g%3E%3C/svg%3E") no-repeat center/contain;transform:rotate(14deg)}
 .rhythm{margin-top:18px;background:var(--soft);border-radius:var(--r-lg);padding:20px 24px;font-size:.98rem}
+@media(max-width:1200px){.level:nth-child(3)::after{right:-4px}}
 @media(max-width:900px){.levels{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.levels{grid-template-columns:minmax(0,1fr)}.level{min-height:0}}
 
@@ -176,9 +172,6 @@ body.t-cap .h-text h1,body.t-cap .tagline{text-transform:capitalize}
 .examples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
 .ex{border-radius:var(--r-md);padding:18px;min-height:120px;display:flex;flex-direction:column;justify-content:flex-end;font-weight:800;line-height:1.3;background:var(--soft)}
 .ex small{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;opacity:.7;margin-bottom:4px}
-.ex:nth-child(2){background:var(--chartreuse)}
-.ex:nth-child(5){background:var(--indigo);color:#fff}
-.ex:nth-child(3){background:var(--pink)}
 @media(max-width:700px){.examples{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* Học phí */
@@ -189,13 +182,12 @@ body.t-cap .h-text h1,body.t-cap .tagline{text-transform:capitalize}
 .price .save{font-weight:700}
 .price ul{margin-top:6px;display:grid;gap:8px;font-size:.95rem}
 .price li{padding-left:26px;position:relative}
-.price li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:12px;border-radius:50%;background:var(--chartreuse)}
-.price .sparkle{right:14px;top:-18px}
+.price li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:12px;border-radius:50%;background:#fff}
 .steps{border:1.5px solid var(--line);border-radius:var(--r-xl);padding:var(--pad)}
 .steps h3,.sched-h{font-size:1.1rem;font-weight:800;margin-bottom:12px}
 .steps ol{display:grid;gap:12px;counter-reset:s}
 .steps li{position:relative;padding-left:44px;counter-increment:s}
-.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--chartreuse);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--soft);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.9rem}
 .steps li b{font-weight:800}
 .policy{margin-top:var(--gap);background:var(--soft);border-radius:var(--r-lg);padding:20px 24px;font-weight:700}
 .policy small{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
@@ -214,12 +206,10 @@ body.t-cap .h-text h1,body.t-cap .tagline{text-transform:capitalize}
 /* Giảng viên */
 .people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
 .person{border-radius:var(--r-xl);padding:var(--pad);display:flex;gap:18px;align-items:flex-start;background:var(--soft)}
-.person:nth-child(2){background:var(--chartreuse)}
 .avatar{flex:none;width:84px;height:84px;background:var(--indigo);color:#fff;font-weight:800;font-size:1.6rem;display:flex;align-items:center;justify-content:center;border-radius:42px 14px 42px 42px}
-.person:nth-child(2) .avatar{background:var(--pink);color:var(--ink);border-radius:14px 42px 42px 42px}
+.person:nth-child(2) .avatar{border-radius:14px 42px 42px 42px}
 .person h3{font-size:1.2rem;font-weight:800}
 .role{font-weight:700;font-size:.9rem;color:var(--muted);margin-bottom:8px}
-.person:nth-child(2) .role{color:var(--ink);opacity:.75}
 .person p{font-size:.95rem}
 .person a{font-weight:800}
 @media(max-width:760px){.people{grid-template-columns:minmax(0,1fr)}}
@@ -421,7 +411,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   <div class="examples">
     <div class="ex"><small>1</small>Knowledge Hub tổng quan</div>
     <div class="ex"><small>2</small>Insights</div>
-    <div class="ex tilt"><small>3</small>Tài liệu</div>
+    <div class="ex"><small>3</small>Tài liệu</div>
     <div class="ex"><small>4</small>Information architecture</div>
     <div class="ex"><small>5</small>User flow</div>
     <div class="ex"><small>6</small>Prototype</div>
@@ -437,7 +427,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
   <div class="fees">
     <div class="price tilt-alt" style="transform:none">
-      <svg class="sparkle" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
       <span class="kick" style="background:#FFFFFF26;color:#fff;align-self:flex-start">Giá Batch 1</span>
       <div class="was">9.000.000đ</div>
       <div class="now">6.000.000đ</div>
