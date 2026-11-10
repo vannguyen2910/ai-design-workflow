@@ -1,0 +1,47 @@
+/*
+ * UX Level Up · design tokens (brand). Khóa học đầu tiên: AI Design Workflow.
+ * Hướng đã chốt: Round 3, phương án C (Táo bạo: indigo, chartreuse, hồng).
+ * Xem guideline.md để biết cách dùng. Chỉ khai báo token ở đây, không có style của thành phần.
+ */
+:root {
+  /* Màu thương hiệu */
+  --paper: #FFFFFF;        /* nền trang */
+  --ink: #14123A;          /* chữ, viền, ô tối */
+  --indigo: #4A3FEF;       /* màu chủ đạo, ô hero lớn */
+  --chartreuse: #DDF247;   /* nhấn mạnh, nút trên nền indigo, thanh nav, band */
+  --pink: #FF5CB8;         /* điểm nhấn nhỏ: sao, chấm đích, một thẻ nghiêng */
+  --soft: #ECEAFF;         /* nền nhạt phụ (nhãn, ô trung tính) */
+  --indigo-light: #A59FF7; /* bậc thang nhạt trong logo, minh họa */
+
+  /* Chữ trên từng nền (đã kiểm tra tương phản) */
+  --on-indigo: #FFFFFF;
+  --on-chartreuse: var(--ink);
+  --on-pink: var(--ink);   /* không dùng chữ trắng trên hồng: tương phản thấp */
+  --on-ink: #FFFFFF;
+  --muted: #5B5880;        /* chữ phụ trên nền trắng, tương phản khoảng 6.7:1 */
+  --line: #14123A1F;       /* viền mảnh */
+
+  /* Font */
+  --font: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --w-body: 500;
+  --w-strong: 700;
+  --w-head: 800;
+
+  /* Bo góc */
+  --r-sm: 12px;
+  --r-md: 18px;
+  --r-lg: 26px;
+  --r-xl: 34px;
+  --r-pill: 999px;
+
+  /* Khoảng cách */
+  --gap: 12px;             /* khoảng cách giữa các ô trong lưới bento */
+  --pad: clamp(18px, 3vw, 34px);
+  --section: clamp(44px, 7vw, 88px);
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --maxw: 1120px;
+
+  /* Độ nghiêng cho điểm nhấn (tối đa 3 phần tử mỗi màn hình) */
+  --tilt: -3deg;
+  --tilt-alt: 2deg;
+}
