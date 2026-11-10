@@ -68,6 +68,17 @@ section{padding:var(--section) 0 0}
 .sv-b div:first-child{padding-left:0;border-left:0}
 .sv-b b{font-size:2.4rem;font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--indigo)}
 .sv-b span{font-weight:700;font-size:1rem}
+/* Vấn đề: một thẻ ink nằm trong khung nội dung, thẳng hàng với phần còn lại */
+#van-de{margin-top:clamp(36px,6vw,72px);padding:0 var(--gutter)}
+#van-de .wrap{background:var(--ink);color:#fff;border-radius:var(--r-xl);padding:clamp(28px,5vw,56px);max-width:var(--maxw)}
+#van-de .kick{background:#FFFFFF26;color:#fff}
+#van-de .card{background:transparent;border-color:#FFFFFF33}
+#van-de .card--tilt{background:var(--indigo);border-color:transparent}
+#van-de .card h3{color:#fff}
+#van-de .card p{color:#FFFFFFB3}
+#van-de .card .n{color:var(--chartreuse)}
+#van-de .h2 em{color:var(--ink)}
+#van-de .closing{color:#fff}
 /* Tạm thời: ?t=cap bật Title Case để so sánh. Mặc định là chữ thường (sentence case). */
 body.t-cap .h-text h1,body.t-cap .tagline{text-transform:capitalize}
 .h-text .lead{margin-top:10px;max-width:46ch;color:var(--muted);font-size:1.1rem}
