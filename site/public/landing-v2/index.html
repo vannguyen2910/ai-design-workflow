@@ -69,7 +69,9 @@ section{padding:var(--section) 0 0}
 .cta-note s{color:var(--muted);font-weight:600;margin-left:6px}
 .policy-line{margin-top:14px;font-size:.85rem;color:var(--muted)}
 .h-art{justify-self:center;width:min(100%,340px);aspect-ratio:1;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center}
-.h-art svg{width:68%;height:68%}
+.h-art{position:relative}
+.h-art>svg:first-child{width:68%;height:68%}
+.h-art .sparkle{width:64px;height:64px;right:6px;top:10px}
 .facts-line{margin-top:34px;padding-top:18px;border-top:1.5px solid var(--line);font-size:.92rem;font-weight:700;color:var(--muted)}
 .sparkle{position:absolute;width:60px;height:60px;color:var(--pink);right:-8px;top:-14px}
 @media(max-width:860px){
@@ -269,7 +271,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
       </div>
       <p class="policy-line">Batch 1 chưa áp dụng hủy và hoàn học phí, kể cả tiền cọc.</p>
     </div>
-    <div class="h-art" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#mk"/></svg></div>
+    <div class="h-art" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#mk"/></svg><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
   </div>
   <p class="facts-line">12 buổi · 6 tuần · thứ 5 học, chủ nhật làm · 5 bạn · project thật của bạn</p>
 </div>
