@@ -58,12 +58,8 @@ section{padding:var(--section) 0 0}
 
 /* Hero: chữ trên nền trắng. Bên phải là thẻ "6 tuần, 6 bậc", ngôi sao hồng lớn đè lên bậc cuối */
 .hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(28px,6vw,72px) 0 8px}
-.eb{margin:0;align-items:center;gap:12px;font-weight:700;font-size:.95rem}
-.eb-c,.eb-d{display:none}
-body.e-c .eb-c{display:inline-flex}
-body.e-d .eb-d{display:inline-flex;background:var(--soft);border-radius:var(--r-pill);padding:6px 14px 6px 10px;font-weight:800;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase}
-.eb-d svg{width:16px;height:16px;color:var(--pink)}
-.stamp{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--ink);background:var(--chartreuse);border-radius:8px;padding:2px 8px;transform:rotate(-3deg);white-space:nowrap}
+.eb{margin:0;display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:.95rem}
+.stamp{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--ink);background:var(--soft);border-radius:8px;padding:2px 8px;transform:rotate(-3deg);white-space:nowrap}
 .h-text h1{font-size:clamp(2.2rem,5.4vw,4rem);text-transform:uppercase;letter-spacing:-.015em;line-height:1.2;font-weight:800;margin-top:18px;text-wrap:balance}
 .h-text h1 em{font-style:normal;background:var(--chartreuse);padding:0 .14em;border-radius:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .sum{margin-top:18px;font-size:1.25rem;font-weight:800;letter-spacing:-.01em}
@@ -72,7 +68,6 @@ body.e-d .eb-d{display:inline-flex;background:var(--soft);border-radius:var(--r-
 .h-cta{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
 .btn--indigo{background:var(--indigo);color:#fff}
 .hprice{display:flex;flex-direction:column;align-items:flex-start;gap:3px;line-height:1.3}
-.hprice .pill{background:var(--chartreuse);border-radius:var(--r-pill);font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:2px 10px}
 .pnow{font-size:.95rem;font-weight:700}.pnow b{font-size:1.3rem;font-weight:800;letter-spacing:-.01em}
 .pnow s{color:var(--muted);font-weight:600;margin-left:6px}
 .pnote{font-size:.82rem;color:var(--muted)}
@@ -84,10 +79,10 @@ body.e-d .eb-d{display:inline-flex;background:var(--soft);border-radius:var(--r-
 .bars i:nth-child(1){height:22%}.bars i:nth-child(2){height:36%}.bars i:nth-child(3){height:50%}.bars i:nth-child(4){height:64%}
 .bars i:nth-child(5){height:80%;background:#CFCBFA;color:var(--ink)}
 .bars i:nth-child(6){height:96%;background:var(--indigo);color:#fff}
-.star-big{position:absolute;right:-16px;top:-32px;width:92px;height:92px;color:var(--pink);pointer-events:none}
+.star-big{position:absolute;right:-26px;top:-40px;width:96px;height:96px;color:var(--pink);pointer-events:none;transform:rotate(16deg) skewX(-10deg) scaleY(.92);transform-origin:center}
 .art-cap{margin-top:10px;font-size:.85rem;color:var(--muted)}
 .sparkle{position:absolute;width:60px;height:60px;color:var(--pink);right:-8px;top:-14px}
-@media(max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}.h-art{max-width:none}.bars{height:150px}}
+@media(max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}.h-art{max-width:none}.bars{height:150px}.star-big{right:-6px;top:-36px;width:84px;height:84px}}
 
 /* Vấn đề */
 .cards4{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
@@ -272,21 +267,17 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <div class="wrap">
   <div class="hero">
     <div class="h-text">
-      <!-- Tạm thời: hai kiểu dòng đầu để so sánh. Dùng ?e=c hoặc ?e=d trên URL. Xóa một kiểu khi đã chọn. -->
-      <p class="eb eb-c"><span class="stamp">Đang tuyển sinh</span>Batch 1 · Khai giảng 10/12/2026</p>
-      <p class="eb eb-d"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>Batch 1 · 10/12/2026</p>
+      <p class="eb"><span class="stamp">Đang tuyển sinh</span>Batch 1 · Khai giảng 10/12/2026</p>
       <h1>Lên cấp cùng AI, <em>từng bậc</em> một.</h1>
       <p class="sum">6 tuần <span>·</span> 12 buổi <span>·</span> lớp 5 bạn</p>
       <p class="lead">Dành cho mid và senior designer. Bạn rời lớp với một workflow thiết kế dùng AI, chạy trên project của chính bạn.</p>
       <div class="h-cta">
         <a class="btn btn--indigo btn--lg" href="#dang-ky">Đăng ký giữ chỗ</a>
         <div class="hprice">
-          <span class="pill">Giá thử nghiệm</span>
           <span class="pnow"><b>6.000.000đ</b> / bạn <s>9.000.000đ</s></span>
-          <span class="pnote">Thanh toán 2 đợt</span>
+          <span class="pnote">Giá thử nghiệm Batch 1 · thanh toán 2 đợt</span>
         </div>
       </div>
-      <p class="policy-line">Batch 1 chưa áp dụng hủy và hoàn học phí, kể cả tiền cọc.</p>
     </div>
     <div class="h-art">
       <h2 class="art-h">6 tuần, 6 bậc</h2>
@@ -544,9 +535,5 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   <span>Winnie Nguyen · Daphne Huynh · Học online, bằng tiếng Việt</span>
 </div></footer>
 
-<script>
-/* Tạm thời: chọn kiểu dòng đầu bằng ?e=c hoặc ?e=d (mặc định c). Xóa script này khi đã chọn. */
-(function(){var e='c';try{var q=new URLSearchParams(location.search).get('e');if(q==='d')e='d'}catch(x){}document.body.classList.add('e-'+e)})();
-</script>
 </body>
 </html>

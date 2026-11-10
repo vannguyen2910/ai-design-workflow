@@ -24,4 +24,4 @@ Các thành phần dưới đây có bản chạy được trong `landing-v2/ind
 2. Hồng chỉ ở dạng điểm nhỏ (sao, chấm, một thẻ). Không dùng làm nền section.
 3. Tối đa ba phần tử nghiêng mỗi màn hình.
 4. Nút chính trong một khối chỉ có một. Nút phụ đi kèm bên cạnh.
-5. Câu chính sách hoàn tiền phải nằm cạnh mọi nút đăng ký, vì Batch 1 không hoàn tiền (xem nội dung ở `learning/landing-content-vi.md`).
+5. Câu chính sách hoàn tiền Batch 1 phải có ở mục học phí, cạnh nút của CTA cuối trang, trong hỏi đáp và trong ô đồng ý của form. Hero không cần nhắc lại, vì Batch 1 không hoàn tiền nên người đọc phải thấy câu này trước khi đóng tiền, không nhất thiết trước khi bấm đăng ký.
