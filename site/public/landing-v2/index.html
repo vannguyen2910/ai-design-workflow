@@ -14,7 +14,7 @@
 <style>
 /* Bản nháp landing page. Nội dung theo learning/landing-content-vi.md. Token màu và font ở ../brand/tokens.css. */
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:84px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-weight:var(--w-body);font-size:1.0625rem;line-height:1.6;-webkit-text-size-adjust:100%}
 img,svg{max-width:100%}
@@ -72,17 +72,17 @@ section{padding:var(--section) 0 0}
 .pnow s{color:var(--muted);font-weight:600;margin-left:6px}
 .pnote{font-size:.82rem;color:var(--muted)}
 .policy-line{margin-top:16px;font-size:.85rem;color:var(--muted)}
-.h-art{border:2px solid var(--ink);border-radius:22px;padding:18px 18px 14px;max-width:420px;width:100%;justify-self:center}
+.h-art{position:relative;border:2px solid var(--ink);border-radius:22px;padding:18px 18px 14px;max-width:420px;width:100%;justify-self:center}
 .art-h{font-size:1rem;font-weight:800;margin-bottom:34px}
-.bars{display:flex;align-items:flex-end;gap:6px;height:190px;position:relative}
+.bars{display:flex;align-items:flex-end;gap:6px;height:190px}
 .bars i{flex:1;border-radius:8px 8px 0 0;font-style:normal;font-size:.72rem;font-weight:800;color:var(--muted);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;background:var(--soft)}
 .bars i:nth-child(1){height:22%}.bars i:nth-child(2){height:36%}.bars i:nth-child(3){height:50%}.bars i:nth-child(4){height:64%}
 .bars i:nth-child(5){height:80%;background:#CFCBFA;color:var(--ink)}
 .bars i:nth-child(6){height:96%;background:var(--indigo);color:#fff}
-.star-big{position:absolute;right:-26px;top:-40px;width:96px;height:96px;color:var(--pink);pointer-events:none;transform:rotate(16deg) skewX(-10deg) scaleY(.92);transform-origin:center}
+.star-big{position:absolute;right:-44px;top:-46px;width:96px;height:96px;color:var(--pink);pointer-events:none;transform:rotate(16deg) skewX(-10deg) scaleY(.92);transform-origin:center}
 .art-cap{margin-top:10px;font-size:.85rem;color:var(--muted)}
 .sparkle{position:absolute;width:60px;height:60px;color:var(--pink);right:-8px;top:-14px}
-@media(max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}.h-art{max-width:none}.bars{height:150px}.star-big{right:-6px;top:-36px;width:84px;height:84px}}
+@media(max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}.h-art{max-width:none}.bars{height:150px}.star-big{right:-16px;top:-34px;width:80px;height:80px}}
 
 /* Vấn đề */
 .cards4{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
