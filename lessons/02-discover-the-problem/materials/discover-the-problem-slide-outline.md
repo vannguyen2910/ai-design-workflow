@@ -2,814 +2,1182 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 32
+slide_count: 40
 duration: "90 min"
 status: draft
-built_deck: ""
-last_synced: 2026-10-30
+built_deck: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
+last_synced: 2026-11-10
 ---
+
+Outline này khớp 1:1 với deck (Slides artifact) tính đến 2026-11-10: mỗi mục là một slide theo thứ tự trình chiếu, kèm id slide, chữ trên slide và speaker notes đúng như trong deck. Khi sửa slide hoặc notes trong deck, cập nhật lại file này.
 
 ## Session metadata
 
-| Field           | Value                                                                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Program         | AI Design Workflow                                                                                                                       |
+| Field           | Value                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------ |
+| Program         | AI Design Workflow                                                                                     |
 | Track / session | Buổi 2 (tuần 1) của series, 90 phút, online, 7 đến 8 designer; sau đó là chuỗi practice ở nhà (khoảng 4 giờ), rồi buổi practice trên lớp |
-| Stage           | Discover                                                                                                                                 |
-| Prior session   | Buổi 1: Your Design Process, with AI                                                                                                     |
-| Next session    | Practice 2                                                                                                                               |
-| Running example | App giao đồ ăn                                                                                                                           |
+| Stage           | Discover                                                                                               |
+| Prior session   | Buổi 1: Your Design Process, with AI                                                                   |
+| Next session    | Practice 2                                                                                             |
+| Running example | App giao đồ ăn (ví dụ assumption: Travel Buddy)                                                        |
 
----
+Bốn phần: (1) Discover và AI, (2) Principles cho AI, (3) Break the brief (scope, assumption, research question), (4) Understand our users. Synthesis, Competitor analysis và activity "Write and challenge" không còn trong buổi này; synthesis học ở Lesson 3.
 
 ## Slides
 
-### COVER
-- Year: 2026 · AI Design Workflow
-- Stage: Discover
-- Title: Khám phá\n*vấn đề*
-- Subtitle: Đặt nguyên tắc trước, rồi phá brief cùng AI
-- Author: AI Design Workflow
-- Credentials:
-  - Senior Product Designer
-  - Master of UX & Service Design
-  - Product & Service Design Educator
-- Right panel photo: Ảnh thật hai người đang trao đổi trước một bảng ghi chú, ánh sáng ấm, gần gũi
-- 🎨 Visual hint: Cover layout, cố định. Panel trái trắng với dòng năm, nhãn stage, title (accent ở dòng 2) và subtitle. Panel phải là ảnh thật với gradient tối, tên và ba dòng credentials ở góc dưới trái.
-
----
-
-### NUMBERED · Agenda
-- Kicker: Lộ trình
-- Title: Nội dung\n*buổi học*
+### 1. COVER
+- Slide: `s01`
 - On-slide:
-  - 01 · Discover và AI
-  - 02 · Design Principles
-  - 03 · Break the brief
-  - 04 · Understand our users
-  - 05 · Synthesis
-- Ví dụ: Không cần. Slide định hướng.
-- Câu hỏi hay gặp: None.
+  - 2026 · UX Level Up
+  - Discover
+  - Khám phá
+  - vấn đề
+  - Hiểu người dùng bằng bằng chứng, không bằng assumption.
+- Hình: cover-lesson2.jpg
 - Speaker notes:
-
-  > Năm phần, mỗi phần kết thúc bằng một câu hỏi bỏ phiếu 30 giây trong chat.
-
-  - Phần nặng nhất là Break the brief và Synthesis, vì cả hai đều chạy tiếp ở nhà
-  - Giữa buổi có một activity viết insight và phản biện chéo
-  - Việc dựng từng file nằm ở chuỗi practice sau buổi, không làm hết trên lớp
-- 🎨 Visual hint: TYPOGRAPHIC. Năm dòng đánh số lớn, số in nghiêng purple, tên phần in ink.
+  > Chào lớp. Buổi này mở stage Discover: bạn học cách kiểm tra một brief trước khi thiết kế. AI soạn nháp, bạn kiểm tra, bạn quyết định.
+  >
+  > Sau buổi học, bạn có thể:
+  > - Chỉ ra Discover nằm ở đâu trong Double Diamond, AI giúp được gì và chưa giúp được gì ở stage này.
+  > - Viết một principle riêng của sản phẩm và giải thích vì sao chuẩn phải đặt trước khi AI chạy.
+  > - Mô tả ba việc của Break the brief (scope, assumption, research question), file mỗi việc tạo ra và phần bạn kiểm tra.
+  > - Giải thích vì sao AI không được đóng vai PO hay user.
+  > - Nêu bốn thói quen của một buổi phỏng vấn tốt và vai trò của AI khi chuẩn bị phỏng vấn.
+  >
+  > Ví dụ xuyên suốt cả buổi: team app giao đồ ăn nhận brief “cải thiện onboarding”. Mỗi bước mình sẽ quay lại ví dụ này.
+  >
+  > Sau buổi học có chuỗi practice ở nhà, làm trên project của bạn. Buổi này chỉ để biết cần làm gì.
+  >
+  > Câu hỏi cho lớp: bạn mong mang gì ra khỏi buổi này để dùng ngay trong project của mình?
 
 ---
 
-### MILESTONE · Ice breaker
-- Num: 5
-- Kicker: Mở đầu
-- Title: Vấn đề hay\n*giải pháp?*
-- Sub: Brief gần nhất bạn nhận nêu vấn đề hay nêu giải pháp?
-- Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Bảng này được dùng lại ở slide Discover
-  - Bài tập buổi 1: project folder và product-and-users đã có chưa, ai chưa xong thì dùng project mẫu
-
-  > Mỗi người nói tên và một câu: brief gần nhất bạn nhận nói "cần giải quyết điều gì", hay nói "cần làm cái gì"?
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; bên dưới hai cột trống "Vấn đề" và "Giải pháp" để ghi.
-
----
-
-### SECTION DIVIDER · Theory
-- Num: 01
-- Kicker: Năm phần
-- Title: Trước khi\n*thiết kế*
-- Sub: Từ brief đến câu hỏi cần trả lời.
-- Ví dụ: Không cần. Slide chuyển phần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Từ ice breaker: phần lớn cột "giải pháp" là brief; phần này đi từ brief sang câu hỏi
-  - Năm phần, mỗi phần kết thúc bằng một câu hỏi ngắn bỏ phiếu bằng chat
-  - Activity 10 phút nằm sau phần synthesis; phần luyện tập dài làm ở nhà trong Practice 2
-
-  > Năm phần, mỗi phần có một ví dụ từ app giao đồ ăn; bắt đầu với việc Discover nằm ở đâu.
-- 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
-
----
-
-### DIAGRAM · Where Discover sits
-- Kicker: Định nghĩa
-- Title: Discover trong *Double Diamond*
+### 2. NUMBERED · Agenda
+- Slide: `s02`
 - On-slide:
-  - Kim cương 1: Discover mở rộng, Define thu hẹp
-  - Kim cương 2: Develop mở rộng, Deliver thu hẹp
-  - Discover: gom điều đã biết, điều user nói và làm, điều thị trường làm
-- Ví dụ: có (app giao đồ ăn, project mẫu của chương trình)
-- Câu hỏi hay gặp:
-  - Discover có phải chỉ là nghiên cứu user không? Không. Nó gồm cả đọc tài liệu product, câu hỏi cho business, xem trải nghiệm hiện tại và xem đối thủ.
+  - Lộ trình
+  - Nội dung
+  - buổi học
+  - 01
+  - AI trong Discover Problem
+  - 02
+  - Principles cho AI
+  - 03
+  - Break the brief
+  - 04
+  - Understand our users
 - Speaker notes:
-
-  > Team app giao đồ ăn nhận brief "cải thiện onboarding". Họ đã có sẵn giải pháp trước khi ai hỏi khách vì sao rời đi.
-
-  - Double Diamond có hai kim cương: một cho vấn đề, một cho giải pháp
-  - Discover là điểm mở rộng đầu tiên: gom thật nhiều trước khi chọn vấn đề đáng giải
-  - Trên sơ đồ Knowledge của buổi này, mọi thứ sau đây nằm trong khoảng mở rộng đó
-  - Cột "giải pháp" ở ice breaker
-
-  > Brief của designer đang nằm ở đâu trên hai kim cương này?
-- 🎨 Visual hint: SCHEMATIC. Hai hình thoi nối nhau, kim cương 1 tô purple, nhãn Discover ở nửa mở rộng; bên dưới ba chip: "đã biết", "user nói và làm", "thị trường làm".
+  > Đây là lộ trình bốn phần. Mỗi phần trả lời một câu hỏi:
+  > - 01 AI trong Discover Problem: Discover nằm ở đâu trong quy trình và AI giúp được gì.
+  > - 02 Principles cho AI: chuẩn nào để AI đối chiếu, ai viết và viết lúc nào.
+  > - 03 Break the brief: ba việc kiểm tra brief là scope, assumption và research question, mỗi việc ra một file.
+  > - 04 Understand our users: từ research question đến cuộc phỏng vấn, chuẩn bị plan và script với AI, chạy thử.
+  >
+  > Thứ tự này đi từ điều quan sát được đến điều cần học: hiểu bối cảnh, đặt chuẩn, kiểm brief, rồi hỏi người thật.
+  >
+  > Cuối buổi có Q&A và slide practice cho chuỗi việc ở nhà.
+  >
+  > Câu hỏi cho lớp: trong bốn phần này, phần nào bạn đang làm nhiều nhất trong công việc hiện tại?
 
 ---
 
-### COMPARE · AI in Discover
-- Kicker: So sánh
-- Title: AI giúp, *designer quyết định*
+### 3. MILESTONE · Ice breaker
+- Slide: `s03`
 - On-slide:
-  - Trái, AI giúp được: đọc nhanh tài liệu, soạn nháp danh sách, gom ghi chú
-  - Phải, designer tự làm: biết điều chưa có, hỏi người thật
-- Ví dụ: bản nháp (AI liệt kê 12 điều đang tin về app giao đồ ăn trong một phút, hai điều không có trong tài liệu)
-- Câu hỏi hay gặp:
-  - AI đọc tài liệu có bỏ sót không? Có; AI lấp chỗ trống bằng điều nghe hợp lý, nên mọi dòng cần một nguồn hoặc nhãn "chưa có nguồn".
+  - Activity
+  - Vấn đề hay
+  - giải pháp?
+  - Brief gần nhất bạn nhận nêu vấn đề hay nêu giải pháp?
 - Speaker notes:
-
-  > Giả sử nhờ AI liệt kê điều team có thể đang tin về app giao đồ ăn. Một phút sau có mười hai dòng, đọc rất hợp lý.
-
-  - Hai trong mười hai dòng không có trong bất kỳ tài liệu nào của project
-  - AI lấp chỗ trống bằng điều nghe hợp lý, không báo là nó đang đoán
-  - Việc AI làm nhanh là soạn nháp rộng; việc chọn dòng nào đáng đưa vào scope vẫn là của designer
-
-  > Designer thường tin danh sách AI đưa ra ngay, hay kiểm tra từng dòng?
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái sage "AI giúp được", cột phải purple "Designer vẫn tự làm"; ở giữa một dòng nhỏ "AI soạn nháp. Designer kiểm tra. Designer quyết định."
+  > Mỗi người nói tên và trả lời câu hỏi trên slide. Câu trả lời được ghi vào hai cột “vấn đề” và “giải pháp”.
+  >
+  > Cách phân loại nhanh:
+  > - Vấn đề: brief nêu điều cần giải quyết, ví dụ “khách mới không đặt lại sau đơn đầu tiên”.
+  > - Giải pháp: brief nêu thứ cần làm, ví dụ “thêm bước onboarding” hay “làm lại màn hình thanh toán”.
+  >
+  > Nếu ai phân vân, hỏi: brief này nói “cần giải quyết điều gì”, hay nói “cần làm cái gì”?
+  >
+  > Bảng này được giữ lại để quay về ở slide Discover.
+  >
+  > Bài tập buổi 1 gồm case folder và product-and-users. Ai chưa xong thì dùng case mẫu.
+  >
+  > Bảng hai cột vừa rồi cho thấy brief thường đến dưới dạng thứ cần làm. Giờ mình vào phần một, Discover trong design process: nó nằm ở đâu và AI giúp được gì ở bước này.
 
 ---
 
-### STATEMENT · Partner, not order-taker
-- Kicker: Lập trường
-- Title: Chọn vấn đề\n*cùng nhau.*
-- On-slide: Phần AI không làm thay được là chọn vấn đề đáng giải và thống nhất thế nào là thành công.
-- Ví dụ: Không cần. Slide kết phần, nhắc lại lập trường đã nêu ở buổi 1.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ở buổi 1: AI làm nhanh nhất bước biến brief thành màn hình
-  - Phần còn lại là chọn vấn đề và định nghĩa thành công cùng product và business
-  - Cần cả hai phía: design mang evidence, product và business mang điều họ biết về vấn đề và ràng buộc
-  - Brief có sẵn là điểm xuất phát tốt để cùng kiểm tra, không phải thứ cần sửa
-
-  > Bỏ phiếu trong chat: A nếu designer thường nhận brief có sẵn, B nếu designer thường được hỏi ý kiến từ đầu.
-- 🎨 Visual hint: TYPOGRAPHIC. Title lớn, một dòng ngắn bên dưới.
-
----
-
-### DIAGRAM · Design Principles
-- Kicker: Khung
-- Title: Hai phần của *bộ chuẩn*
+### 4. SECTION DIVIDER · 01 Discover và AI
+- Slide: `s04`
 - On-slide:
-  - UX principles: 3 đến 5 principle riêng của sản phẩm
-  - Business principles: ràng buộc và ưu tiên của business
-- Ví dụ: bản nháp (business principle của app giao đồ ăn: không tăng tỷ lệ huỷ đơn sau đơn đầu tiên)
-- Câu hỏi hay gặp:
-  - Business principle lấy ở đâu khi không gặp được business? Từ PRD, brief và thông tin công khai của công ty; ghi "assumed" và người cần xác nhận.
-  - Tổ chức chưa có UX principle riêng thì sao? Viết từ một quyết định gần nhất team phải chọn giữa hai hướng đều hợp lệ.
+  - 01
+  - AI trong Discover Problem
+  - Discover và AI
 - Speaker notes:
-
-  > Một designer nhờ AI xem lại màn hình thanh toán. AI trả về mười finding, và chín cái là "làm cho rõ ràng hơn". Chuẩn nào mà rõ ràng hơn?
-
-  - Nếu không có chuẩn viết sẵn, AI đối chiếu với điều nghe hợp lý nói chung
-  - Với chuẩn của project, AI đối chiếu đúng tiêu chí cần: nguyên tắc nào, ràng buộc nào
-  - UX principles: 3 đến 5 principle riêng của sản phẩm (slide kế tiếp)
-  - Business principles: ràng buộc và ưu tiên của business, như mission, brand value, compliance, KPI, guardrail
-
-  > Business của designer có nguyên tắc nào mà thiết kế không được vi phạm?
-- 🎨 Visual hint: SCHEMATIC. Một khung lớn "Design Principles (Standard for AI)" bên trong hai ô: UX principles, Business principles; bên ngoài một mũi tên "AI cross-check" chỉ vào khung.
+  > Cột “giải pháp” ở ice breaker phần lớn là brief. Phần này đi từ brief sang câu hỏi.
+  >
+  > Buổi học có bốn phần: Discover và AI, principles, break the brief, hiểu người dùng.
+  >
+  > Phần đầu tiên trả lời hai câu:
+  > - Discover nằm ở đâu trong Double Diamond và gồm những gì.
+  > - AI làm tốt việc nào ở Discover, và việc nào bạn không giao đi.
+  >
+  > Phần luyện tập dài làm ở nhà, sau buổi học.
+  >
+  > Câu hỏi cho lớp: ở ice breaker, brief nào của bạn nằm ở cột giải pháp, và vấn đề thật phía sau nó có thể là gì?
 
 ---
 
-### NUMBERED · Product principle
-- Kicker: Định nghĩa
-- Title: Principle *riêng* của sản phẩm
+### 5. DIAGRAM · Where Discover sits
+- Slide: `s05`
 - On-slide:
-  - What: principle riêng, chỉ đúng với sản phẩm này, đảo ngược được một quyết định
-  - Why: AI và designer cùng đối chiếu một chuẩn, không dựa vào cảm giác
-  - When: viết trước khi AI chạy, ở Step 1 của practice
-  - Bốn điều: cụ thể, có ưu tiên, có dòng "không có nghĩa là", ít
-- Ví dụ: bản nháp (app giao đồ ăn: "Đổi ý phải dễ hơn cam kết. Không có nghĩa là bỏ bước xác nhận thanh toán.")
-- Câu hỏi hay gặp:
-  - Principle khác design system ở đâu? Design system là thành phần và quy tắc hình thức; principle là cách chọn khi hai hướng đều hợp lệ.
-  - Bao nhiêu principle là đủ? Tối đa 7 cho cả sản phẩm; project của chương trình cần 3 đến 5.
+  - Định nghĩa
+  - Discover trong
+  - Double Diamond
+  - Discover
+  - Define
+  - Develop
+  - Deliver
+  - mở rộng
+  - thu hẹp
+  - Discover bao gồm
+  - Điều đã biết
+  - Điều user nói và làm
+  - Điều thị trường làm
 - Speaker notes:
-
-  > "Đơn giản và dễ dùng" là principle của hầu hết mọi sản phẩm, và không quyết định được gì. Thử hỏi: principle này đã từng đảo ngược quyết định nào của team chưa?
-
-  - What, Why, When: principle riêng là quy tắc chọn khi hai hướng đều hợp lệ; chuẩn chung để AI và designer đối chiếu; viết trước khi AI chạy
-  - Principle riêng cho biết sản phẩm này đánh đổi điều gì khi hai hướng đều hợp lệ
-  - Bốn điều của một principle (nguồn 20, 21): đảo ngược được một quyết định, có thứ tự ưu tiên, có dòng "điều này không có nghĩa là…", và ít
-  - Ví dụ app giao đồ ăn đảo ngược quyết định "không đổi được khung giờ giao sau khi thanh toán"
-  - Principle cũng là rubric cho AI chấm; tiêu chí cần viết quan sát được và chạy thử vài vòng (nguồn 22)
-
-  > Bỏ phiếu trong chat: A nếu designer có thể kể ra một principle riêng của sản phẩm đang làm, B nếu chưa.
-- 🎨 Visual hint: SCHEMATIC. Ba nhãn What, Why, When của "Principle riêng" kèm ví dụ app giao đồ ăn; bên dưới bốn dấu tick cho bốn điều.
+  > Ví dụ: team app giao đồ ăn nhận brief “cải thiện onboarding”. Họ đã có giải pháp trước khi ai hỏi khách vì sao rời đi.
+  >
+  > Double Diamond có hai hình thoi: hình thứ nhất cho vấn đề (Discover rồi Define), hình thứ hai cho giải pháp (Develop rồi Deliver). Mỗi hình mở rộng rồi thu hẹp. Những brief ở cột “giải pháp” của ice breaker là brief nhảy thẳng qua hình thoi thứ nhất.
+  >
+  > Discover là phần mở rộng đầu tiên: gom nhiều thông tin trước khi chọn vấn đề đáng giải. Ba nguồn để gom, như ba ô cuối slide:
+  > - Điều đã biết: tài liệu product, PRD, research cũ của team.
+  > - Điều user nói và làm: phỏng vấn, quan sát, dữ liệu sử dụng.
+  > - Điều thị trường làm: đối thủ và cách người khác giải cùng một việc.
+  >
+  > Hỏi: Discover có phải chỉ là nghiên cứu user không? Không. Nó gồm cả đọc tài liệu product, hỏi business, xem trải nghiệm hiện tại và xem đối thủ.
+  >
+  > Chọn vấn đề đáng giải ở cuối Discover là việc của designer cùng product và business, AI không làm thay.
+  >
+  > Câu hỏi cho lớp: công việc bạn đang làm tuần này nằm ở hình thoi nào, và brief của bạn đã đi qua Discover chưa?
 
 ---
 
-### DIAGRAM · Break the brief
-- Kicker: Tổng quan
-- Title: Scope, rồi *ba hoạt động*
+### 6. LIST · AI in Discover
+- Slide: `s06`
 - On-slide:
-  - Scope: business question và quyết định → bản scope
-  - Challenge assumptions → bản đồ giả định
-  - Research questions → danh sách research question
-  - Competitor analysis → bản phân tích đối thủ
-- Ví dụ: có (app giao đồ ăn, project mẫu của chương trình)
-- Câu hỏi hay gặp:
-  - Phải làm đủ ba hoạt động? Không bắt buộc đủ ngay; competitor analysis là hoạt động đầu tiên có thể làm muộn hơn, ở nhà, các hoạt động còn lại nối nhau nên làm theo thứ tự.
-  - Vì sao research questions đứng sau assumptions? Câu hỏi nghiên cứu xuất phát từ điều chưa biết; assumptions chỉ ra điều đó.
+  - AI làm được gì ở Discover
+  - Discover
+  - AI soạn nháp, bạn kiểm tra
+  - Tạo transcript buổi phỏng vấn và usability test
+  - Dịch và localise transcript research
+  - Tóm tắt một buổi phỏng vấn thành các ý chính
+  - Gắn tag đoạn trích theo codebook có sẵn
+  - Gom ghi chú thành nhóm affinity bản đầu
+  - Tìm lại research cũ của team
+  - Soạn nháp interview guide
+  - Làm sạch và tóm tắt câu trả lời mở trong survey
 - Speaker notes:
-
-  > Team app giao đồ ăn nhận brief "cải thiện onboarding". Break the brief là ba việc làm trước khi chấp nhận brief đó.
-
-  - Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question, liệt kê điều đang tin, rồi mới viết câu hỏi
-  - **Mỗi hoạt động có cùng nhịp: nhắc method, AI soạn nháp theo method, designer kiểm tra và quyết định**
-  - Mỗi hoạt động ra một file trong hub
-  - Self-documentation, bước đưa tài liệu product vào AI để có context, đã làm ở Practice 1; Break the brief bắt đầu từ context pack đó
-  - Hôm nay đi qua từng bước và demo hai hoạt động trên app giao đồ ăn: challenge assumptions, research questions
-  - Competitor analysis chỉ giới thiệu ngắn; designer làm ở nhà với cheat sheet này
-  - Brief là điểm xuất phát tốt; việc ở đây là kiểm tra nó phục vụ đúng vấn đề chưa
-
-  > Trong các bước này, designer đang làm bước nào rồi, dù chưa gọi tên?
-- 🎨 Visual hint: SCHEMATIC. Hộp lớn "Break the brief" ở trên, một ô scope rồi ba ô con nối tiếp theo thứ tự, mỗi ô nối với một ô purple là file output.
+  > Slide này trả lời: ở Discover, AI soạn nháp được những việc nào. Bảy việc trên slide cùng một nhịp: AI soạn nháp, bạn kiểm tra. Ví dụ: AI tóm tắt một buổi phỏng vấn với khách app giao đồ ăn, bạn đối chiếu từng quote với transcript.
+  >
+  > Phần bạn kiểm tra ở từng việc:
+  > - Transcript: kiểm tra lại tên riêng, thuật ngữ và con số.
+  > - Tóm tắt: đối chiếu từng quote với transcript, vì bản tóm tắt hay thêm chi tiết không có thật.
+  > - Tag theo codebook: người xem lại các trường hợp mơ hồ.
+  > - Affinity: AI tìm liên hệ về nghĩa, bạn sắp xếp lại và đặt tên nhóm.
+  > - Interview guide: bạn loại câu hỏi dẫn dắt và sắp xếp theo mức rủi ro.
+  > - Survey: lấy mẫu kiểm tra xem có bỏ sót ý kiến thiểu số không.
+  >
+  > Với việc dịch transcript và tìm lại research cũ của team, bạn cũng mở nguồn gốc ra đối chiếu khi AI trích hoặc dịch.
+  >
+  > AI chưa làm được hai việc: biết điều không có trong tài liệu (nó lấp chỗ trống bằng điều nghe hợp lý) và thay người thật trả lời. Phần lớn danh sách này là ước tính từ catalogue task, chưa phải số đo trên designer Việt Nam.
+  >
+  > Câu hỏi cho lớp: trong bảy việc này, việc nào bạn đang tự làm tay nhiều giờ nhất?
 
 ---
 
-### NUMBERED · Scope questions
-- Kicker: Scope
-- Title: Năm câu hỏi *gửi trước*
+### 7. STATEMENT · Partner stance
+- Slide: `s07`
 - On-slide:
-  - What: bản scope gồm business question, quyết định, outcome, metric, giả định và agreement status
-  - Why: thống nhất thế nào là thành công trước khi thiết kế
-  - When: đầu tiên, trước mọi hoạt động khác của Break the brief
-  - Năm câu: outcome, metric, baseline, ràng buộc, thời hạn, người quyết định
-- Ví dụ: có (app giao đồ ăn, project mẫu của chương trình)
-- Câu hỏi hay gặp:
-  - Câu hỏi vision và mission khác năm câu này thế nào? Vision và mission là câu hỏi cấp cao về lý do sản phẩm tồn tại; năm câu này là câu gửi business để chốt scope.
+  - Lập trường
+  - Chọn vấn đề
+  - cùng nhau.
+  - Phần AI không làm thay được là chọn vấn đề đáng giải và thống nhất thế nào là thành công.
 - Speaker notes:
-
-  > Với app giao đồ ăn, business question là "vì sao khách mới không đặt lại sau đơn đầu tiên, và điều gì giữ họ lại?". Năm câu dưới đây giúp biết thế nào là thành công.
-
-  - What, Why, When: scope là tờ giấy chốt thế nào là thành công; làm trước vì mọi hoạt động sau đều dựa vào nó
-  - Có hai tầng: câu hỏi cấp cao (vision, mission của sản phẩm) và năm câu gửi business
-  - Câu hỏi gửi bằng văn bản, mỗi câu một ý
-  - **Designer nêu business question và quyết định, rồi AI mới soạn năm câu; AI không trả lời thay business**
-  - Câu trả lời nhận được ghi vào scope với trạng thái confirmed; câu chưa có trả lời ghi assumed kèm người cần xác nhận
-  - Hỏi trung tính: "liệt kê những điều có thể giải thích hiện tượng này" tốt hơn "giải thích vì sao giá là nguyên nhân" (nguồn 7)
-
-  > Câu nào trong năm câu này designer chưa từng hỏi business?
-- 🎨 Visual hint: SCHEMATIC. Ba hàng nhãn What, Why, When ở trên; bên dưới một dải năm ô đánh số 01 đến 05 (outcome, metric, baseline, ràng buộc, thời hạn và người quyết định).
+  > Nối từ buổi 1: AI làm nhanh nhất bước biến brief thành màn hình. Phần AI không làm thay được là chọn vấn đề đáng giải và thống nhất thế nào là thành công.
+  >
+  > Việc này cần cả hai phía:
+  > - Design mang evidence.
+  > - Product và business mang điều họ biết về vấn đề, outcome và ràng buộc.
+  >
+  > Lập trường ở đây là partner, không phải người nhận order. Ví dụ: thay vì làm ngay màn hình onboarding, hỏi “vì sao khách mới không đặt lại sau đơn đầu tiên?”.
+  >
+  > Brief có sẵn là điểm xuất phát tốt để cùng kiểm tra. Không phải brief nào cũng cần sửa.
+  >
+  > AI chỉ giúp được khi mình đã biết thế nào là tốt. Vì vậy trước khi cho AI chạy bất cứ thứ gì, mình đặt chuẩn trước. Phần hai là Design Principles.
+  >
+  > Câu hỏi cho lớp: bỏ phiếu trong chat. A nếu bạn thường nhận brief có sẵn, B nếu thường được hỏi ý kiến từ đầu.
 
 ---
 
-### DIAGRAM · Three access levels
-- Kicker: Khung
-- Title: Ba mức *access*
+### 8. SECTION DIVIDER · 02 Principles cho AI
+- Slide: `s08`
 - On-slide:
-  - 1 Full: gặp được PO và business → agreed
-  - 2 Limited: tiếp cận gián tiếp → pending
-  - 3 No access: dựng scope từ PRD và thông tin công khai → not available
-- Ví dụ: bản nháp (designer ở level 2 gửi câu hỏi qua PM kèm ngày cần trả lời; không trả lời thì đi tiếp với assumption đã gắn nhãn)
-- Câu hỏi hay gặp:
-  - Không có access có phải là bất lợi? Có. Quy trình giảm nhẹ chứ không giả vờ vấn đề không tồn tại; scope có nhãn assumption vẫn tốt hơn brief giấu assumption.
+  - 02
+  - Principles cho AI
+  - Đặt chuẩn cho AI trước khi AI chạy
 - Speaker notes:
-
-  > Một designer chỉ nói chuyện được với PM, không gặp được business. Gửi câu hỏi bằng văn bản qua PM kèm một ngày cần trả lời, rồi ghi pending vào scope.
-
-  - Câu hỏi gửi bằng văn bản là đường chính cho mọi mức access; buổi họp chỉ là phần thêm
-  - Level 1: gửi câu hỏi, họp nếu được mời, chia sẻ lại scope nháp, status agreed
-  - Level 2: xin chỉnh sửa thay vì xin họp, status pending cho đến khi có trả lời
-  - Level 3: dựng scope từ PRD, thông tin công khai và dữ liệu nhìn thấy được, ghi mọi outcome và metric là assumed
-  - Access khác nhau
-
-  > Đang ở access level nào với project này?
-- 🎨 Visual hint: SCHEMATIC. Ba cột bậc thang tăng dần, mỗi cột một chip agreement status (agreed, pending, not available).
+  > Phần một cho thấy AI làm được nhiều việc ở Discover, nhưng chọn vấn đề đáng giải vẫn là việc của designer. Muốn kiểm được AI, designer cần một chuẩn để đối chiếu.
+  >
+  > Phần này trả lời ba câu: chuẩn đó là gì, ai viết, và viết lúc nào. Câu trả lời ngắn: designer viết, trước khi AI chạy.
+  >
+  > Câu hỏi cho lớp: khi bạn nhờ AI đánh giá một màn hình, AI đang so với chuẩn nào?
 
 ---
 
-### STATEMENT · AI never plays PO or user
-- Kicker: Quy tắc
-- Title: AI chuẩn bị.\n*Người trả lời.*
-- On-slide: Câu trả lời mô phỏng không phải evidence.
-- Ví dụ: bản nháp (AI đóng vai PO của app giao đồ ăn và trả lời "tỷ lệ đặt đơn thứ hai mục tiêu là 60%", số này không có trong tài liệu nào)
-- Câu hỏi hay gặp:
-  - Dùng AI đóng vai user để tập trước được không? Không trong chương trình này; người trả lời mô phỏng thiên về câu trả lời dễ nghe (nguồn 6).
-- Speaker notes:
-
-  > Một designer nhờ AI đóng vai PO của app giao đồ ăn. Nó trả lời rất tự tin: tỷ lệ đặt đơn thứ hai mục tiêu là sáu mươi phần trăm. Con số này không nằm trong tài liệu nào của team.
-
-  - Các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe (nguồn 6)
-  - Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý
-  - Vì vậy AI chuẩn bị câu hỏi và soạn nháp ghi chú; câu trả lời luôn do người thật đưa ra
-  - Không ai tập trả lời thay PO trong chương trình này
-
-  > Bỏ phiếu trong chat: A nếu designer từng dùng câu trả lời AI như thể là thật, B nếu chưa.
-- 🎨 Visual hint: TYPOGRAPHIC. Title lớn hai dòng; dòng dưới của on-slide nhỏ, màu muted.
-
----
-
-### DIAGRAM · Challenge assumptions
-- Kicker: Minh hoạ
-- Title: Thách thức *assumptions*
+### 9. DEFINITION · AI principles
+- Slide: `s10`
 - On-slide:
-  - What: giả định là điều đang tin chưa có bằng chứng, xếp theo ma trận
-  - Why: biết điều gì phải kiểm chứng trước khi tốn công thiết kế
-  - When: sau scope, trước Research questions
-  - AI giúp: liệt kê giả định, tìm giả định ẩn, hỏi ngược bằng chứng
-- Ví dụ: có (app giao đồ ăn: giá là lý do chính; khách không hiểu cách đổi khung giờ giao; bước thanh toán làm khách ngại cam kết)
-- Câu hỏi hay gặp:
-  - Chưa có research cũ thì pull insight từ đâu? Ghi "chưa có" và để cho phỏng vấn user.
+  - Định nghĩa
+  - AI
+  - What
+  - Quy tắc chọn khi các direction đều hợp lý, principles quyết định chỉ đúng với sản phẩm chúng ta đang thiết kế.
+  - Principle tốt khi cụ thể, có thứ tự ưu tiên.
+  - Why
+  - AI và human cùng đối chiếu một quy luật chuẩn, không dựa vào cảm giác.
+  - “Đơn giản và dễ dùng” đúng với mọi sản phẩm nên không giúp chọn gì.
+  - When
+  - Viết trước khi AI chạy bất kỳ bước nào
+  - Lưu thành file markdown để AI dựa vào.
 - Speaker notes:
-
-  > AI liệt kê ba điều team app giao đồ ăn có thể đang tin: giá là lý do chính, khách không hiểu cách đổi khung giờ giao, bước thanh toán làm khách ngại cam kết.
-
-  - Chỉ điều đầu có trong project mẫu; hai điều sau nghe rất hợp lý nhưng không có nguồn nào: đây là cái bẫy của buổi, điều nghe hợp lý chưa phải điều có evidence
-  - Mục nào không có trong tài liệu thì ghi "chưa có nguồn", không đưa vào danh sách như sự thật
-  - What, Why, When: giả định là điều đang tin chưa có bằng chứng; xếp theo ma trận để biết điều phải kiểm chứng trước. Method: bốn loại giả định (User, Problem, Solution, Business), công thức "chúng tôi tin rằng nhóm người dùng nào sẽ làm gì, vì sao… biết mình đúng khi…", ma trận Importance × Evidence (nguồn 8)
-  - AI liệt kê giả định theo công thức, tìm giả định ẩn, hỏi ngược bằng chứng; designer xếp lên ma trận và sửa ít nhất hai giả định
-  - Chọn ba giả định hàng đầu ở góc top-left (quan trọng cao, bằng chứng thấp); framework cho phép đến năm, lớp chọn ba vì giới hạn thời gian
-  - Nếu team đã có research cũ, kéo insight từ đó vào để xem điều nào đã có evidence, rồi xếp theo mức độ quan trọng so với evidence
-  - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở nhà sau phỏng vấn user; hôm nay chỉ ghi nguồn có sẵn (scope, tài liệu của project) làm bằng chứng
-  - Kết quả vào bản đồ giả định
-
-  > Điều đang tin nào của project designer nghe rất hợp lý nhưng designer chưa từng thấy bằng chứng?
-- 🎨 Visual hint: SCHEMATIC. Cột trái ba nhãn What, Why, When; cột phải danh sách ba assumption, mỗi dòng có chip "có nguồn" (sage) hoặc "chưa có nguồn" (sienna), và một khối nhỏ "existing research" nối vào danh sách bằng mũi tên.
+  > AI chạy rất nhanh và ai cũng dùng được, nên bạn cần một thứ để dựa vào và biết output có đúng hay không. Thứ đó là AI principles, tức chuẩn chung cho AI.
+  >
+  > Ba cột trên slide:
+  > - What: principle là quy tắc chọn khi hai hướng đều hợp lý, và chỉ đúng với sản phẩm này. “Đơn giản và dễ dùng” đúng với gần như mọi sản phẩm nên không giúp chọn gì. “Đổi ý phải dễ hơn cam kết” thì giúp, vì nó đảo ngược được quyết định “không đổi được khung giờ giao sau khi thanh toán”.
+  > - Why: AI và bạn cùng đối chiếu một chuẩn, không dựa vào cảm giác.
+  > - When: viết trước khi AI chạy bất kỳ bước nào, rồi lưu thành file markdown để AI dựa vào.
+  >
+  > Bốn điều của một principle tốt:
+  > - Cụ thể: kiểm được bằng một câu hỏi có hoặc không
+  > - Có thứ tự ưu tiên: nói rõ cái nào thắng khi hai cái va nhau
+  > - Có dòng “không có nghĩa là”: đổi ý dễ hơn không có nghĩa là bỏ bước xác nhận thanh toán
+  > - Ít: ba đến năm cái cho case, tối đa bảy cho cả sản phẩm
+  >
+  > Khác design system: design system là thành phần và quy tắc hình thức, principle là cách chọn khi hai hướng đều hợp lệ.
+  >
+  > Câu hỏi cho lớp: kể một principle riêng của sản phẩm bạn đang làm, nếu chưa có thì bạn sẽ viết gì?
 
 ---
 
-### PROCESS · Research questions
-- Kicker: Minh hoạ
-- Title: Từ assumption *đến câu hỏi*
+### 10. CARDS · Standard cho AI
+- Slide: `s09`
 - On-slide:
-  - What: câu hỏi điều tra được, để xác nhận hoặc bác một giả định
-  - Why: giữ phỏng vấn bám vào điều cần học, không hỏi lan man
-  - When: sau Challenge assumptions, trước research plan và phỏng vấn
-  - AI giúp: soạn câu hỏi kèm quyết định; designer kiểm năm tiêu chí
-- Ví dụ: bản nháp (app giao đồ ăn: từ giả định "khách không hiểu cách đổi khung giờ giao" ra câu hỏi "khách đang làm gì khi cần dời khung giờ giao của đơn đã đặt, và điều gì khiến họ bỏ dở?")
-- Câu hỏi hay gặp:
-  - Research question khác interview question thế nào? Research question là điều nhóm muốn học; interview question là câu hỏi đặt cho người tham gia, viết sau ở bước research plan.
+  - Khung
+  - Standard
+  - cho AI
+  - Design principles
+  - Các quy tắc design riêng của sản phẩm, do bạn và team agree và viết ra
+  - Ví dụ
+  - Be open about your actions and decisions
+  - Help me know what to expect and when
+  - Business principles
+  - Ràng buộc và ưu tiên mà thiết kế không được vi phạm: mission, brand value, compliance, KPI, guardrail.
+  - Re-use information we already have
+  - Ask for what we need, when we need it
 - Speaker notes:
-
-  > Team app giao đồ ăn tin rằng khách không hiểu cách đổi khung giờ giao. Niềm tin này quan trọng, nhưng chưa có bằng chứng. Hãy biến nó thành một câu hỏi.
-
-  - What, Why, When: research question là điều cần học để xác nhận hoặc bác một giả định; làm trước research plan
-  - Chuỗi: giả định, rồi research question, rồi 5 đến 8 interview question; hôm nay dừng ở research question (nguồn 8)
-  - Ba kiểu câu xấu: tìm phản hồi, kiểm tra sở thích, hỏi hành vi giả định; câu xấu của app giao đồ ăn: "khách có thích tính năng đổi khung giờ giao không?"
-  - Câu tốt hơn: "khách đang làm gì khi cần dời khung giờ giao của đơn đã đặt, và điều gì khiến họ bỏ dở?"
-  - Năm tiêu chí tự kiểm: trung tính, hỏi về hành vi hoặc bối cảnh, không quá rộng hay hẹp, gắn một giả định và một quyết định, biết tìm ở đâu
-  - **AI soạn câu hỏi; designer cắt câu có hoặc không, câu dẫn dắt hoặc hỏi sở thích, và kiểm xem còn thiếu câu nào để quyết định được**
-  - Kết quả vào danh sách research question, là đầu vào của research plan và phỏng vấn
-
-  > Giả định hàng đầu của project designer, nếu viết thành một câu hỏi mở, sẽ là câu gì?
-- 🎨 Visual hint: SCHEMATIC. Cột trái ba nhãn What, Why, When; cột phải ba bước ngang theo layout Process, bên dưới một câu "xấu" gạch ngang màu muted và một câu "tốt hơn" màu sage.
+  > Slide trước nói principles là chuẩn để AI đối chiếu. Slide này chia chuẩn thành hai loại, mỗi loại có nguồn riêng.
+  >
+  > Hai loại:
+  > - Design principles: ba đến năm principle riêng của sản phẩm, do bạn và team viết. Ví dụ app giao đồ ăn: đổi ý phải dễ hơn cam kết, không có nghĩa là bỏ bước xác nhận thanh toán.
+  > - Business principles: ràng buộc và ưu tiên của business mà thiết kế không được vi phạm, như mission, brand value, compliance, KPI, guardrail. Ví dụ: không tăng tỷ lệ huỷ đơn sau đơn đầu tiên.
+  >
+  > Các câu tiếng Anh trên slide là ví dụ mẫu để thấy độ dài và giọng viết của một principle.
+  >
+  > Business principle lấy từ business hoặc PRD. Không gặp được business thì lấy từ PRD và thông tin công khai của công ty, ghi “assumed” và ghi người cần xác nhận.
+  >
+  > Hai phần có lúc kéo ngược nhau: đổi ý dễ hơn thì tỷ lệ huỷ đơn có thể tăng. Chỗ đó designer quyết, AI chỉ chỉ ra chỗ xung đột.
+  >
+  > Câu hỏi cho lớp: business của bạn có nguyên tắc nào mà thiết kế không được vi phạm?
 
 ---
 
-### NUMBERED · Competitor analysis
-- Kicker: Phương pháp
-- Title: Competitor analysis, *năm điểm*
+### 11. CARDS · AI with principles
+- Slide: `s14`
 - On-slide:
-  - 01 · Trả lời một giả định, không liệt kê tính năng
-  - 02 · Hai đến bốn đối thủ: trực tiếp và gián tiếp
-  - 03 · Ghi pattern, không ghi ảnh chụp
-  - 04 · AI mô tả trước, designer đối chiếu từng ô
-  - 05 · Cho biết họ làm gì, không cho biết vì sao user chọn
-- Ví dụ: bản nháp (so sánh luồng chọn khung giờ giao của ba app giao đồ ăn đối thủ, AI điền bảng, designer mở ảnh gốc và ghi tỷ lệ ô sai)
-- Câu hỏi hay gặp:
-  - Competitor analysis có cho biết vì sao user chọn đối thủ không? Không; nó chỉ cho biết họ làm gì, kết luận là giả thuyết để hỏi trong phỏng vấn.
-  - Cần cả competitive testing không? Không ở buổi này; testing cho user làm task trên nhiều site, làm sau khi đã có prototype.
+  - AI giúp được
+  - AI làm được gì với
+  - bộ principles
+  - 01
+  - Viết principles
+  - Soạn nháp principle từ research và scope
+  - Chỉ ra hai principle mâu thuẫn nhau
+  - 02
+  - Đối chiếu
+  - Cross-check finding với principle
+  - Designer kiểm lại, vì AI dễ gán sai
+  - 03
+  - Kiểm tra
+  - Chấm output của AI theo rubric từ bộ principles
+  - Chạy thử vài vòng trước khi tin
 - Speaker notes:
-
-  > Một designer nhờ AI điền bảng so sánh ba app đối thủ từ ảnh chụp. Bảng ra rất gọn, nhưng một ô ghi tính năng mà ảnh không hề có.
-
-  - Quét có mục tiêu: mỗi thứ ghi lại gắn với một giả định nó xác nhận hoặc bác
-  - Hai đến bốn đối thủ, có cả gián tiếp (cùng việc cho user, khác loại sản phẩm) và có đối thủ tốt hơn sản phẩm đang xét (nguồn 9)
-  - Một pattern cần thấy ở nhiều nguồn: hai trên ba app đối thủ cho đổi khung giờ giao đến một mốc rõ ràng mới là pattern; một app làm vậy thì chưa
-  - AI mô tả ảnh trước, đánh giá sau; mỗi ô ghi tên file; **bảng gọn tạo cảm giác chắc chắn, nên designer ghi tỷ lệ ô sai sau khi đối chiếu**
-  - Mở ảnh gốc cho hai ba tiêu chí quan trọng nhất; có thể dùng lại bộ nguyên tắc
-  - Đây là review của chuyên gia, không phải testing; mục tiêu là cải thiện thiết kế đang xét, không tuyên bố bên thắng
-  - Phần synthesis ghép phần này với điều user nói và làm; kết quả vào bản phân tích đối thủ
-
-  > Designer đã từng quyết định thiết kế chỉ dựa trên đối thủ chưa?
-- 🎨 Visual hint: SCHEMATIC. Năm hàng đánh số 01 đến 05 theo layout Numbered; bên phải một bảng nhỏ có một ô được khoanh sienna và nhãn "ô sai".
+  > Có principles rồi, AI làm được nhiều việc hơn là chỉ đọc. Slide này trả lời: giao cho AI những việc nào, và giữ lại việc nào.
+  >
+  > Sáu việc gom thành ba nhóm:
+  > - Viết principles: AI soạn nháp từ research và scope, và chỉ ra hai principle mâu thuẫn nhau. Nếu cần, nhờ AI chấm lại theo bốn tiêu chí của một principle tốt. Designer chọn và chốt từng cái
+  > - Đối chiếu: AI cross-check finding với principle, ví dụ finding “khách không tìm thấy nút đổi khung giờ” với principle “đổi ý phải dễ hơn cam kết”. Designer kiểm lại, vì AI dễ gán sai principle cho finding
+  > - Kiểm tra: AI chấm output của chính nó hoặc của AI khác theo rubric viết từ bộ principles. Tiêu chí phải quan sát được, và chạy thử vài vòng trước khi tin
+  >
+  > Lưu ý: AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như “vi phạm nhất quán”, mà không hỏi sự không nhất quán đó có giải một vấn đề thật hay không. Principle giúp AI bám chuẩn, quyết định vẫn là của designer.
+  >
+  > Việc đóng gói bộ principles để dùng lại nằm ở slide kế tiếp.
+  >
+  > Câu hỏi cho lớp: trong sáu việc này, việc nào bạn đang tự làm tay mỗi lần?
 
 ---
 
-### DIAGRAM · Understand our users
-- Kicker: Tổng quan
-- Title: Hiểu *user*
+### 12. DIAGRAM · Từ principles.md thành rules và skill
+- Slide: `s15`
 - On-slide:
-  - Methods: interview (stakeholder, user) và user survey
-  - Research với AI: research plan và facilitation script
-  - Post-interview: transcript hoặc recording, rồi synthesis ở phần tiếp theo
-- Ví dụ: bản nháp (một designer nhờ AI soạn nháp research plan và facilitator script cho ba buổi phỏng vấn khách app giao đồ ăn)
-- Câu hỏi hay gặp:
-  - Tại sao chỉ giới thiệu mà không thực hành? Phỏng vấn user thật và synthesis làm ở nhà trong Practice 2.
+  - Đóng gói
+  - Từ
+  - principles.md
+  - thành rules và skill
+  - Rules file
+  - Luôn nạp ở đầu mỗi bước
+  - Skill
+  - Chỉ nạp khi việc cần đến
+  - Mọi bước research sau
 - Speaker notes:
-
-  > Một designer chuẩn bị ba buổi phỏng vấn khách app giao đồ ăn. Cô nhờ AI soạn nháp research plan và facilitator script, rồi tự sửa câu hỏi cho trung lập.
-
-  - Ba nhánh trên sơ đồ: methods, research với AI, post-interview
-  - Methods: interview khi cần hiểu hành vi và lý do, survey khi đã biết cần hỏi gì và cần con số; survey không thay được phỏng vấn để tìm điều chưa biết
-  - Research với AI: AI soạn nháp plan và script, designer chỉnh và quyết định
-  - Post-interview: lấy transcript hoặc recording, ẩn danh trước khi AI đọc, rồi rút ghi chú có source ID
-  - Đầu vào là research question đã chốt ở slide Research questions
-  - Hôm nay là theory; phỏng vấn user thật và synthesis làm ở nhà trong Practice 2
-
-  > Designer đã từng dùng AI để soạn câu hỏi phỏng vấn chưa, và có sửa lại không?
-- 🎨 Visual hint: SCHEMATIC. Hộp lớn "Understand our users" ở trên, ba nhánh xuống ba ô; nhánh Methods tách thêm Interviews và User survey.
+  > Slide trước cho biết AI làm được gì với principles. Slide này trả lời: làm sao để AI dùng lại bộ principles mà không phải dán lại mỗi lần.
+  >
+  > Hai cách đóng gói, dùng cùng nhau:
+  > - Rules file: ngắn, nạp ở đầu mỗi bước, chứa điều luôn đúng như principle và ràng buộc business. Giữ dưới khoảng 200 dòng và viết đủ cụ thể để kiểm chứng được
+  > - Skill: một thư mục gói một quy trình lặp lại, như “đối chiếu một flow với principles.md”. Tên và mô tả luôn có sẵn, nội dung đầy đủ chỉ nạp khi cần, nên không chiếm chỗ khi không dùng
+  >
+  > Cách chọn: điều luôn đúng thì vào rules file, việc lặp lại nhiều bước thì làm skill.
+  >
+  > Ba lưu ý khi viết: đủ cụ thể để kiểm chứng (“đổi ý phải dễ hơn cam kết” kiểm được, “dễ dùng” thì không), không để hai quy tắc mâu thuẫn nhau, và rà lại định kỳ để bỏ quy tắc đã cũ.
+  >
+  > Rules file là ngữ cảnh cho AI, không phải ràng buộc cứng, nên vẫn kiểm output ở các bước sau.
+  >
+  > Câu hỏi cho lớp: bộ principles của bạn nên là rules luôn nạp, hay skill chỉ nạp khi cần đối chiếu?
 
 ---
 
-### NUMBERED · Interview habits
-- Kicker: Phương pháp
-- Title: Năm thói quen, *một quy tắc*
+### 13. COMPARE · Principles first
+- Slide: `s16`
 - On-slide:
-  - 01 · Hỏi câu mở, mời một câu chuyện
-  - 02 · Đi theo câu chuyện, kể cả ngoài script
-  - 03 · Tò mò như lần đầu nghe
-  - 04 · Nghe nhiều hơn nói, dưới 20% thời gian
-  - 05 · Quan sát, không chỉ nghe
-- Ví dụ: bản nháp (một người phỏng vấn hỏi "có thích tính năng đổi khung giờ giao không?", rồi đổi thành "kể lại lần gần nhất cần dời khung giờ giao của đơn đã đặt")
-- Câu hỏi hay gặp:
-  - Survey có thay được phỏng vấn không? Không; survey cho con số khi đã biết cần hỏi gì, phỏng vấn để tìm điều chưa biết.
+  - Quy tắc
+  - Principles trước,
+  - rồi dùng AI để tiêu chuẩn hoá các research sau này
+  - Chưa có standard
+  - Không có principles
+  - Lần 1: mười finding, chín cái là “làm cho rõ ràng hơn”
+  - Lần 2: một bộ finding khác hẳn
+  - Không ai biết bộ nào đúng
+  - Setup principles.md trước
+  - Có principles
+  - Mỗi finding trỏ về một principle
+  - Chạy lại thì kết quả gần nhau
+  - Kiểm một finding mất vài chục giây
+  - Có chuẩn rồi, dùng nó để kiểm tra chính cái brief. Phần ba: Break the brief
 - Speaker notes:
-
-  > Câu "có thích tính năng đổi khung giờ giao không?" nghe rất tự nhiên, và câu trả lời gần như chắc chắn là "có". Câu "kể lại lần gần nhất cần dời khung giờ giao của đơn đã đặt" cho một câu chuyện.
-
-  - Quy tắc vàng: mục tiêu là hiểu thực tế của user, không phải để user xác nhận ý tưởng của designer
-  - Khi người phỏng vấn bắt đầu trình bày giải pháp hoặc hỏi "có dùng cái này không?", đó không còn là user research
-  - Script là lưới an toàn: điều bất ngờ user nói thường là insight quan trọng nhất
-  - Nói quá khoảng 20% thời gian là dấu hiệu sai; im lặng là có ích
-  - User nói "ổn" nhưng dừng năm giây trước khi bấm: khoảng dừng mới là insight
-  - Phỏng vấn stakeholder cho biết business muốn gì; phỏng vấn user cho biết thực tế của họ
-
-  > Câu hỏi nào trong script phỏng vấn gần nhất của designer là câu đóng, và designer sẽ đổi thành gì?
-- 🎨 Visual hint: SCHEMATIC. Năm hàng đánh số 01 đến 05 theo layout Numbered; bên phải một cặp câu "đóng" gạch ngang màu muted và "mở" màu sage.
+  > Đã có bộ principles và cách đóng gói. Slide này trả lời: vì sao phải viết chuẩn trước rồi mới cho AI chạy.
+  >
+  > Hình dung nhờ AI đánh giá cùng một màn hình thanh toán hai lần, không nạp chuẩn nào. Lần một ra mười finding, chín cái là “làm cho rõ ràng hơn”. Lần hai ra một bộ khác hẳn. Không ai biết bộ nào đúng. Đây là ví dụ minh hoạ, bạn có thể thay bằng lần chạy thật của mình.
+  >
+  > Nạp principles.md trước thì AI so với cùng một chuẩn, kết quả gần nhau giữa các lần. Kiểm một finding chỉ cần hỏi: finding này vi phạm principle nào? Nếu không trỏ được về principle nào, đó mới là ý kiến chung chung. Việc kiểm mất vài chục giây thay vì vài phút.
+  >
+  > Chuẩn này dùng cho mọi research về sau, không chỉ một lần.
+  >
+  > Có bộ nguyên tắc rồi, mình dùng nó để kiểm tra chính cái brief trước khi chấp nhận. Phần ba là Break the brief.
+  >
+  > Câu hỏi cho lớp: principle nào của sản phẩm bạn sẽ dùng để kiểm finding đầu tiên?
 
 ---
 
-### PROCESS · Research plan with AI
-- Kicker: Cách làm
-- Title: Lên plan với AI, *chạy thử*
+### 14. SECTION DIVIDER · 03 Break the brief
+- Slide: `s17`
 - On-slide:
-  - 01 · Research goal và người cần phỏng vấn
-  - 02 · Từ research question đến 5 đến 8 interview question
-  - 03 · Script có nhánh follow-up
-  - 04 · Chạy thử với một đồng nghiệp
-  - 05 · Xin phép: ghi hình, dùng nội bộ, không chia sẻ ra ngoài
-- Ví dụ: bản nháp (AI soạn mười câu từ research question về việc dời khung giờ giao; designer cắt còn năm, đổi hai câu dẫn dắt, thử với một đồng nghiệp rồi mới hẹn khách)
-- Câu hỏi hay gặp:
-  - Có cần xin phép bằng văn bản không? Chương trình dạy mức nghiên cứu nội bộ: nói rõ ba điều trước buổi và xin phép; theo chính sách công ty nếu có quy định riêng.
+  - 03
+  - Break the
+  - Kiểm tra brief trước khi chấp nhận nó
 - Speaker notes:
-
-  > AI soạn cho designer mười câu hỏi từ một research question. Cô cắt còn năm, vì AI lặp ý, rồi đổi hai câu có hướng người trả lời tới đáp án mong muốn.
-
-  - AI giúp rõ nhất ở khâu chuẩn bị: goal, profile người tham gia, câu hỏi lọc, interview question, script
-  - **Designer cắt ít nhất một nửa câu hỏi AI soạn và viết lại câu dẫn dắt**
-  - Nhánh follow-up dạng "nếu user nói X thì hỏi Y" giúp giữ luồng mà không đọc script như đọc bài
-  - Có thể nhờ AI dựng một trang nhỏ từ script (câu hỏi theo thứ tự, ô ghi chú, timer) và dùng lại cho các round sau
-  - Chạy thử là bắt buộc vì AI yếu ở bước thử trước
-  - Người giữ vai moderator; công cụ chỉ giữ cấu trúc
-
-  > Ai là người designer có thể chạy thử câu hỏi trước buổi phỏng vấn thật?
-- 🎨 Visual hint: SCHEMATIC. Năm bước ngang theo layout Process; bước 4 có chấm "người thật", các bước 1 đến 3 có chấm "AI soạn nháp".
+  > Phần hai cho thấy AI làm được nhiều việc ở Discover, nhưng chỉ đáng tin khi có chuẩn. Phần ba dùng chuẩn đó để kiểm tra chính cái brief.
+  >
+  > Brief là điểm xuất phát, chưa phải sự thật. Nó thường là một giải pháp đã được đặt tên (ví dụ “cải thiện onboarding”) thay vì một vấn đề. Phần này đi qua ba việc theo thứ tự:
+  > - Scope: thống nhất thế nào là thành công.
+  > - Challenge assumptions: tách điều đang tin khỏi điều có bằng chứng.
+  > - Research questions: biến điều chưa biết thành câu hỏi điều tra được.
+  >
+  > Mỗi việc ra một file trong hub, để AI đọc được và người khác kiểm tra được.
+  >
+  > Câu hỏi cho lớp: lần gần nhất bạn nhận một brief, bạn đã hỏi lại điều gì?
 
 ---
 
-### PROCESS · From interview to insight
-- Kicker: Quy trình
-- Title: Từ interview đến *insight*
+### 15. DIAGRAM · Ba việc kiểm tra brief
+- Slide: `s18`
 - On-slide:
-  - 01 · Phỏng vấn người thật
-  - 02 · Lấy transcript hoặc recording
-  - 03 · Ẩn danh trước khi AI đọc
-  - 04 · AI synthesis, trả lại insight kèm source ID
-  - 05 · Designer kiểm tra từng insight về ghi chú gốc
-- Ví dụ: bản nháp (một theme "khách không biết đổi khung giờ giao" phải dẫn về ít nhất hai ghi chú có source ID)
-- Câu hỏi hay gặp:
-  - Ẩn danh bằng cách nào? Theo data rules ở buổi 1; chi tiết ở các slide tiếp theo.
+  - Tổng quan
+  - Các việc làm trước
+  - khi nhận brief
+  - Scope
+  - Challenge assumptions
+  - Assumption map
+  - Research questions
 - Speaker notes:
-
-  > Sau ba buổi phỏng vấn, AI báo theme "khách không biết đổi khung giờ giao". Theme này dẫn về ghi chú nào của người nào? Nếu không chỉ ra được ID, theme chưa phải insight.
-
-  - Năm bước, trong đó hai bước do người làm hoàn toàn: phỏng vấn và kiểm tra
-  - Ẩn danh trước khi AI đọc: thay tên bằng mã P1, P2, giữ bảng ánh xạ ở nơi AI không đọc; không nhờ AI ẩn danh sau khi đã dán
-  - AI chỉ làm việc trên ghi chú thật và trả lại kèm source ID, không bịa nguồn, không viết lại bằng lời của nó vì bản tóm tắt dễ bỏ sót (nguồn 10)
-  - Nhờ AI liệt kê điều người tham gia nói mà chưa được đưa vào: đọc danh sách chỉ bắt được điều sai, không bắt được điều thiếu
-  - Gộp vào ghi chú có sẵn theo kiểu đề xuất trước: AI nêu ý nào vào đâu, designer duyệt rồi mới ghi
-  - Các slide tiếp theo đi chi tiết từng bước
-
-  > Insight của designer dẫn về ghi chú gốc nào?
-- 🎨 Visual hint: SCHEMATIC. Năm bước ngang; bước 3 và 5 có chấm "designer làm", bước 4 có chấm "AI".
+  > Ba việc này là cách kiểm tra brief trước khi thiết kế. Ví dụ xuyên suốt: team app giao đồ ăn nhận brief “cải thiện onboarding”.
+  >
+  > Thứ tự đi từ điều quan sát được đến điều cần học:
+  > - Scope chốt business question và thế nào là thành công.
+  > - Challenge assumptions liệt kê điều team đang tin và xếp theo mức cần kiểm chứng.
+  > - Research questions biến giả định hàng đầu thành câu hỏi để hỏi user.
+  >
+  > Mỗi việc cùng một nhịp ba pha: nhắc lại method, AI soạn nháp theo method, designer kiểm tra từng dòng và quyết định. Mỗi việc ra một file trong hub, như hàng chip tím phía dưới slide.
+  >
+  > Mọi việc bắt đầu từ context pack đã dựng ở Practice 1. Hôm nay demo challenge assumptions và research questions. Ba việc nối nhau nên làm theo thứ tự.
+  >
+  > Câu hỏi cho lớp: bạn đang làm bước nào rồi, dù chưa gọi tên?
 
 ---
 
-### NUMBERED · Three rules with the data
-- Kicker: Cách làm
-- Title: Ba quy tắc với dữ liệu
+### 16. NUMBERED · Scope questions
+- Slide: `s19`
 - On-slide:
-  - 01 · Ẩn danh trên máy trước khi đưa cho AI
-  - 02 · Mỗi ghi chú có source ID, ví dụ I01-03
-  - 03 · AI được phép nói unknown
-- Ví dụ: có (project app giao đồ ăn: phỏng vấn 1 không nói gì về giá, I01-01 đến I01-03)
-- Câu hỏi hay gặp:
-  - Ẩn danh có thể nhờ AI làm không? Không; dùng find and replace trên máy, vì nhờ AI nghĩa là đã đưa dữ liệu gốc cho nó.
-  - Source ID đặt thế nào? Theo nguồn và số thứ tự: R01 cho review, F01 cho bài đăng forum, I01-03 cho ghi chú thứ 3 của phỏng vấn 01. Insight có insight ID riêng (IN-01).
-  - Vì sao phải cho AI nói unknown? Nếu không, AI lấp chỗ trống bằng điều nghe hợp lý.
+  - Scope
+  - Năm câu hỏi
+  - cho business
+  - 01
+  - Outcome
+  - 02
+  - Success metric
+  - 03
+  - Baseline
+  - 04
+  - Constraints
+  - 05
+  - Timeline và decider
 - Speaker notes:
-
-  > Hỏi AI một câu về người được phỏng vấn số 1 của app giao đồ ăn: họ nghĩ gì về giá? Ba ghi chú I01-01, I01-02, I01-03 nói về khung giờ giao, huỷ đơn và thời gian chờ, không có chữ nào về giá.
-
-  - Nếu cho phép, AI sẽ viết một câu nghe rất hợp lý về giá, và câu đó không có trong dữ liệu
-  - Vì vậy quy tắc ba: AI được phép nói unknown, và chỉ dùng ghi chú được đưa vào, kèm source ID có thật
-  - Quy tắc một: ẩn danh bằng find and replace trên máy, thay tên bằng P1, P2, trước khi đưa cho AI
-  - Dữ liệu gốc chưa ẩn danh nằm ngoài vùng AI đọc, như đã làm ở buổi 1
-  - Quy tắc hai: mỗi ghi chú có source ID theo nguồn, R cho review, F cho forum, I cho phỏng vấn, để mọi dòng về sau dẫn được về đúng chỗ
-
-  > **Source ID là sợi dây mà cả buổi hôm nay dựa vào.**
-
-  > Hỏi nhanh: designer nghĩ AI sẽ trả lời gì nếu hỏi về giá của người phỏng vấn số 1? Gõ một từ vào chat: unknown hoặc một câu trả lời.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba hàng, số purple.
+  > Scope là tờ giấy chốt thế nào là thành công, nên làm đầu tiên vì mọi việc sau đều dựa vào nó. Ví dụ: business question của app giao đồ ăn là “vì sao khách mới không đặt lại sau đơn đầu tiên, và điều gì giữ họ lại?”.
+  >
+  > Có hai tầng câu hỏi:
+  > - Tầng cao về vision và mission: sản phẩm tồn tại để giải việc gì cho người dùng.
+  > - Tầng gửi business, năm câu như trên slide. Outcome: business muốn đạt kết quả gì. Success metric: đo thành công bằng gì. Baseline: con số hiện tại là bao nhiêu. Constraints: ràng buộc về thời gian, ngân sách, quy định. Timeline và decider: cần khi nào và ai là người quyết.
+  >
+  > Designer nêu business question và quyết định mà câu trả lời sẽ phục vụ, AI soạn năm câu, designer sửa rồi gửi bằng văn bản, mỗi câu một ý để người bận trả lời trong vài dòng. Câu đã có trả lời ghi vào scope là confirmed. Câu chưa có ghi assumed, kèm người cần xác nhận.
+  >
+  > Hỏi trung tính: “liệt kê những điều có thể giải thích hiện tượng này” đáng tin hơn “giải thích vì sao giá là nguyên nhân” (nguồn 7).
+  >
+  > Câu hỏi cho lớp: câu nào trong năm câu này bạn chưa từng hỏi business?
 
 ---
 
-### NUMBERED · Questions about data
-- Kicker: Dữ liệu
-- Title: Bốn câu hỏi về dữ liệu
+### 17. EXAMPLE · Một bản scope
+- Slide: `s20`
 - On-slide:
-  - 01 · Participant đã đồng ý điều gì, có nhắc AI không?
-  - 02 · Công ty có cho phép công cụ này không?
-  - 03 · Công cụ có huấn luyện trên dữ liệu không, đã tắt chưa?
-  - 04 · Đã ẩn danh trên máy chưa?
-- Ví dụ: bản nháp (một designer ở team product dán transcript vào công cụ cá nhân rồi mới biết công cụ có huấn luyện trên dữ liệu)
-- Câu hỏi hay gặp:
-  - Luật Việt Nam nói gì? Luật bảo vệ dữ liệu cá nhân có hiệu lực từ 01/01/2026 lấy sự đồng ý làm trung tâm; chưa đọc toàn văn, nên đây là thói quen chứ không phải tư vấn pháp lý.
-  - Câu nào cũng không biết thì sao? Hỏi lead hoặc bộ phận pháp lý trước khi đưa vào.
-  - Công cụ chạy trên máy có cần hỏi không? Vẫn cần hỏi câu một và hai, vì chúng là về participant và công ty.
+  - Ví dụ
+  - Một bản
+  - Travel Buddy
+- Hình: scope-example.png
 - Speaker notes:
-
-  > Một designer ở team product dán cả transcript phỏng vấn vào một công cụ cá nhân để tóm tắt nhanh. Một tuần sau mới đọc điều khoản và thấy công cụ dùng dữ liệu để huấn luyện.
-
-  - Dữ liệu đã đi rồi và không lấy lại được
-  - Participant chỉ đồng ý cho nghiên cứu, không đồng ý cho việc làm dữ liệu huấn luyện của một công ty khác
-  - Hướng dẫn cho nhà nghiên cứu cùng một ý: câu hỏi chính là công cụ có huấn luyện trên dữ liệu không và có tắt được không
-  - Hỏi thêm thời gian lưu dữ liệu và việc xoá có tới bản sao lưu không
-  - Bốn câu này là thói quen giữ, không phải tư vấn pháp lý
-
-  > **Chỉ cần một câu trả lời là "không biết" thì hỏi lead trước, đừng đoán.**
-
-  > Designer trả lời được bao nhiêu trong bốn câu cho công cụ designer đang dùng? Gõ một con số vào chat.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn hàng, số purple.
+  > Slide trước nói scope gồm những gì. Đây là một bản scope đã viết, từ case Travel Buddy trong hub.
+  >
+  > Đọc trang theo thứ tự:
+  > - Business question viết bằng lời của business, không phải lời designer.
+  > - Outcome và success metric, mỗi cái một dòng.
+  > - Người xác nhận, ngày và trạng thái.
+  >
+  > Trạng thái là “assumed” vì stakeholder trong dự án gốc là giả lập. Khi không gặp được PO và business, scope vẫn viết được, miễn là ghi rõ đây là giả định và nêu người cần xác nhận. Banner “Draft” nhắc nội dung chưa được kiểm chứng. Baseline ghi “none yet”: chưa có số thì không bịa số.
+  >
+  > Tình huống này gần với mức no access ở slide kế. Một scope có nhãn assumed vẫn tốt hơn một brief giấu assumption.
+  >
+  > Câu hỏi cho lớp: trong trang này, dòng nào bạn sẽ hỏi lại đầu tiên?
 
 ---
 
-### DIAGRAM · Checking an insight
-- Kicker: Cách làm
-- Title: Cách kiểm tra insight
+### 18. CARDS · Ba mức access
+- Slide: `s21`
 - On-slide:
-  - Tìm đúng source ID trong bộ ghi chú
-  - Đọc ngữ cảnh quanh ghi chú
-  - Ghi lỗi, rồi sửa theo bản gốc
-- Ví dụ: bản nháp (ghi chú I01-03 bị cắt mất câu cuối "I felt like I had done something wrong")
-- Câu hỏi hay gặp:
-  - Tìm source ID bằng cách nào? Chức năng tìm của editor là đủ, hoặc một đoạn script ngắn.
-  - Nếu AI diễn đạt lại bằng lời khác thì sao? Không có chuỗi để tìm; đó là lý do bước Insight yêu cầu dòng "nguồn này không cho biết gì".
-  - Bao nhiêu lỗi thì chạy lại? Chưa có ngưỡng đã đo; nhiều lỗi ở một bước thì chạy lại bước đó với prompt chặt hơn.
+  - Khung
+  - Ba mức
+  - 1
+  - Full
+  - Gặp được PO và business
+  - 2
+  - Limited
+  - Tiếp cận gián tiếp
+  - 3
+  - No access
+  - Dựng scope từ PRD và thông tin công khai
+  - not available
 - Speaker notes:
-
-  > Ghi chú gốc I01-03 là: The first order was fine, but it said 25 minutes and I was still waiting at 50. I felt like I had done something wrong. Insight của AI dẫn ghi chú này nhưng chỉ nhắc đến chữ still waiting at 50 rồi dừng.
-
-  - Cả câu nghe đúng, nhưng mất câu quan trọng nhất cho onboarding: khách cảm thấy làm sai
-  - Một nghiên cứu trên phỏng vấn thấy việc chọn nội dung dẫn của AI thấp và không đều, và lỗi từ đổi một từ, cắt cụt, đến ghép các đoạn làm đổi nghĩa
-  - Lớp một: tìm đúng source ID, bắt được nguồn bịa
-  - Lớp hai: đọc ngữ cảnh, bắt được ghi chú có thật nhưng bị cắt
-  - Đếm lỗi và ghi lại, để biết có nên chạy lại không
-
-  > **Tìm đúng source ID chỉ bắt được nguồn bịa, không bắt được ý bị diễn đạt lại.**
-
-  > Câu hỏi 30 giây: trong hai lớp kiểm tra, lớp nào bắt được ghi chú bị cắt? Gõ một hoặc hai vào chat.
-- 🎨 Visual hint: SCHEMATIC. Diagram `source-check.html`: flowchart insight từ AI, hai câu hỏi kiểm tra, ghi lỗi và sửa, đếm lỗi để chạy lại hoặc giữ insight.
+  > Scope viết được ở cả ba mức access. Khác nhau là ai trả lời và scope mang trạng thái nào. Câu hỏi gửi bằng văn bản là đường chính cho mọi mức, buổi họp chỉ là phần thêm.
+  > - Full access: gặp được PO và business. Gửi câu hỏi, họp nếu được mời, chia sẻ lại scope nháp. Status agreed.
+  > - Limited access: chỉ tiếp cận gián tiếp, qua lead, PM hoặc account manager. Gửi câu hỏi và danh sách điều đang tin kèm ngày cần trả lời, xin chỉnh sửa thay vì xin họp. Status pending cho đến khi có trả lời.
+  > - No access: dựng scope từ PRD, thông tin công khai và dữ liệu nhìn thấy được, ghi mọi outcome và metric là assumed. Status not available.
+  >
+  > Ví dụ: designer chỉ nói chuyện được với PM. Gửi câu hỏi qua PM kèm một ngày cần trả lời, ghi pending vào scope. Không có trả lời thì đi tiếp với assumption đã gắn nhãn.
+  >
+  > Không có access là vị thế yếu hơn. Quy trình chỉ giảm nhẹ chứ không che đi điều đó.
+  >
+  > Câu hỏi cho lớp: bạn đang ở access level nào với case này?
 
 ---
 
-### DIAGRAM · Three steps with AI
-- Kicker: Quy trình
-- Title: Ba bước với AI
+### 19. STATEMENT · AI chuẩn bị, người thật trả lời
+- Slide: `s22`
 - On-slide:
-  - Decision: designer gọi tên quyết định
-  - Insight: AI đề xuất kèm source ID, designer kiểm tra và viết lại
-  - Challenge: designer phản biện và giữ ý kiến trái chiều
-- Ví dụ: bản nháp (Decision của team app giao đồ ăn: có thiết kế lại bước đổi khung giờ giao hay không)
-- Câu hỏi hay gặp:
-  - Vì sao Decision không nhờ AI? Chỉ designer biết quyết định nào đang chờ; AI sẽ tóm tắt tất cả, không phục vụ quyết định nào.
-  - Có phải chạy đủ ba bước mỗi lần? Không; với việc chỉ tìm một ghi chú thì không cần.
+  - Quy tắc
+  - AI chuẩn bị.
+  - Người thật trả lời.
+  - Câu trả lời mô phỏng (Simulator) không phải evidence.
 - Speaker notes:
-
-  > Team app giao đồ ăn có một quyết định chờ: có thiết kế lại bước đổi khung giờ giao hay không. Nếu không gọi tên quyết định này, AI sẽ tóm tắt cả 24 ghi chú như nhau.
-
-  - Bước một là Decision, designer tự viết, vì chỉ designer biết quyết định nào đang chờ
-  - Bước hai là Insight: AI đề xuất tối đa ba insight, mỗi insight kèm source ID, nguồn (interview, scope hay assumption) và một dòng "nguồn này không cho biết gì"; designer kiểm tra từng source ID, chọn một insight và viết lại bằng lời riêng
-  - Bước ba là Challenge: designer phản biện insight, và giữ lại ý kiến trái chiều
-  - Hai bước đánh dấu màu cam là hai quyết định không giao cho AI (Decision và Challenge)
-
-  > **AI soạn nháp được pattern. Độ tin cậy nằm ở số nguồn dẫn và ý kiến trái chiều designer giữ lại.**
-
-  > Trong ba bước, designer thấy bước nào hay bị bỏ nhất khi làm vội? Gõ số bước vào chat.
-- 🎨 Visual hint: SCHEMATIC. Diagram `three-steps-with-ai.html`: swimlane hai làn (designer, AI), ba cột, hai bước màu cam.
+  > Ba slide trước nói cách hỏi business. Quy tắc chung cho cả phần này: AI chuẩn bị, người thật trả lời.
+  > - AI soạn câu hỏi, soạn nháp ghi chú, gợi ý điều cần hỏi thêm.
+  > - Câu trả lời của PO, business hay user luôn do người thật đưa ra.
+  >
+  > Lý do: các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe (nguồn 6). Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý.
+  >
+  > Ví dụ: bạn nhờ AI đóng vai PO của app giao đồ ăn. Nó trả lời rất tự tin rằng tỷ lệ đặt đơn thứ hai mục tiêu là 60%. Con số này không nằm trong tài liệu nào của team. Nếu ghi nó vào scope như một câu trả lời, mọi bước sau đứng trên một con số bịa.
+  >
+  > Vì thế trong chương trình này không ai tập trả lời thay PO hay user. Câu trả lời mô phỏng (simulator) không phải evidence.
+  >
+  > Câu hỏi cho lớp: bỏ phiếu trong chat. A nếu bạn từng dùng câu trả lời AI như thể là thật, B nếu chưa.
 
 ---
 
-### COMPARE · Who does what
-- Kicker: So sánh
-- Title: AI làm, designer làm
+### 20. DEFINITION · Challenge assumptions
+- Slide: `s27`
 - On-slide:
-  - AI: đề xuất insight kèm source ID, đóng vai người phản biện
-  - Designer: viết Decision, kiểm tra source ID, chọn và viết lại insight
-  - Designer vẫn đọc: một vài transcript trước, ngữ cảnh của mọi ghi chú dùng
-  - Insight là của designer khi đóng AI lại vẫn bảo vệ được insight
-- Ví dụ: bản nháp (hai designer: một người đóng AI lại vẫn giải thích được insight, một người thì không)
-- Câu hỏi hay gặp:
-  - Đọc bao nhiêu transcript là đủ? Chưa có nguồn đo; đề xuất một vài transcript trước khi hỏi AI, cần chạy thử lớp.
-  - Có thể giao AI đọc hết rồi chỉ kiểm tra không? Nghiên cứu cho thấy độ đồng thuận giữa AI và người khi gắn code thấp, nên vẫn cần đọc.
-  - Làm sao biết insight còn của người làm? Đóng AI lại, giải thích insight và chỉ ra ghi chú đỡ nó.
+  - Định nghĩa
+  - Challenge
+  - What
+  - Điều bạn tin về người dùng, vấn đề hoặc sản phẩm mà chưa có bằng chứng.
+  - Why
+  - Brief nào cũng chứa assumption. Vấn đề là những cái bị giấu.
+  - Biết điều gì phải kiểm chứng trước khi tốn công nghiên cứu.
+  - Tránh thiết kế dựa trên điều nghe hợp lý nhưng không có nguồn.
+  - When
+  - Sau khi định hình scope, trước Research questions.
+  - Trước khi thiết kế theo brief
+  - Trước khi cam kết tính năng lớn
+  - Bất đồng ý kiến trong team
 - Speaker notes:
-
-  > Hai designer cùng chạy ba bước trên cùng bộ ghi chú nguồn. Khi stakeholder hỏi vì sao chọn insight này, một người đóng laptop lại vẫn trả lời được, người kia thì mở lại AI để hỏi.
-
-  - Người thứ nhất tự viết Decision, tự viết lại insight, tự phản biện; người thứ hai chỉ duyệt bản AI
-  - Một nghiên cứu so AI với người thấy AI nhanh hơn rất nhiều nhưng độ đồng thuận khi gắn code chỉ 36 đến 47%
-  - Người nhận ra theme tinh tế, mang tính diễn giải tốt hơn, nên vẫn cần đọc
-  - Đầu ra của AI trơn tru nên lỗi khó thấy hơn; đây là suy luận của người soạn, chưa có nguồn đo riêng cho research UX
-  - Cách làm: đọc một vài transcript trước khi hỏi AI, và đọc ngữ cảnh của mọi ghi chú dùng cho insight
-
-  > **Đóng AI lại vẫn giải thích được insight, đó là phép thử insight còn của designer.**
-
-  > Câu hỏi 30 giây: đóng AI lại, có giải thích được insight gần nhất không? Có hoặc không.
-- 🎨 Visual hint: SCHEMATIC. Compare hai cột: AI làm và Designer làm; hàng dưới là phép thử đóng AI lại.
+  > Scope đã chốt thế nào là thành công. Bước tiếp theo kiểm tra điều team đang tin về cách đạt được nó.
+  >
+  > Giả định là điều đang tin về người dùng, vấn đề, giải pháp hoặc business mà chưa có bằng chứng. Ví dụ app giao đồ ăn: “khách bỏ đơn vì không đổi được khung giờ giao”. Brief nào cũng chứa giả định, vấn đề là những cái bị giấu.
+  >
+  > Method theo Assumption Map (nguồn 8):
+  > - Bốn loại giả định: User, Problem, Solution, Business. Slide kế tiếp có ví dụ cho từng loại.
+  > - Công thức: “Chúng ta tin rằng [nhóm người dùng nào] sẽ [làm gì] vì [vì sao]. Chúng ta biết mình đúng khi [tín hiệu].” Slide Travel Buddy phía sau có một ví dụ viết theo công thức này.
+  > - Ma trận Importance × Evidence: giả định quan trọng cao mà bằng chứng thấp là chỗ phải kiểm chứng trước. Chọn ba giả định hàng đầu, vì thời gian của lớp.
+  >
+  > Chia việc: AI liệt kê giả định theo công thức, gắn loại, tìm giả định ẩn và hỏi ngược bằng chứng của từng cái (“dựa vào file nào? Nếu không có, ghi unknown”). Designer tự xếp lên ma trận, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh AI không có, rồi sửa ít nhất hai giả định cho cụ thể với project.
+  >
+  > Ba lúc nên dừng lại kiểm giả định, như cột When trên slide: trước khi thiết kế theo brief, trước khi cam kết một tính năng lớn, và khi team bất đồng ý kiến.
+  >
+  > Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở nhà, sau phỏng vấn.
+  >
+  > Câu hỏi cho lớp: điều đang tin nào của case nghe rất hợp lý nhưng bạn chưa từng thấy bằng chứng?
 
 ---
 
-### NUMBERED · Five things to question
-- Kicker: Kiểm tra
-- Title: Năm điều cần soi
+### 21. CARDS · Bốn loại assumption
+- Slide: `s43`
 - On-slide:
-  - 01 · Phạm vi: insight nói rộng hơn mẫu
-  - 02 · Đồng thuận: ai cũng nói vậy, thật không?
-  - 03 · Sample mix: ai có mặt, ai vắng mặt
-  - 04 · Giải pháp: nhảy sang tính năng
-  - 05 · Cảm xúc: ghi chú mạnh che việc nó hiếm
-- Ví dụ: có (project app giao đồ ăn: điều team tin là giá, so với 24 ghi chú; R06, F07, I02-03, R01)
-- Câu hỏi hay gặp:
-  - Năm điều này lấy từ đâu? Từ cách soi insight khi review; chưa phải kết quả nghiên cứu.
-  - Có cần soi cả năm điều mỗi lần? Không; chọn một hai điều thấy rủi ro nhất với insight đang có.
-  - Sample mix khác phạm vi ở đâu? Phạm vi là insight nói rộng cỡ nào, sample mix là ai thực sự nằm trong mẫu.
+  - Định nghĩa
+  - Bốn loại
+  - User
+  - “Khách mới là người đi làm, hay đặt đồ ăn giờ tan ca.”
+  - Problem
+  - “Khách bỏ đơn vì không đổi được khung giờ giao.”
+  - Solution
+  - “Cho đổi khung giờ sau khi đặt sẽ giữ khách lại.”
+  - Business
+  - “Khách chịu trả thêm phí để chọn khung giờ giao.”
 - Speaker notes:
-
-  > Team app giao đồ ăn đang tin: giá là lý do chính khiến khách rời đi. Trong 24 ghi chú, chỉ R06 và F07 nhắc tới giá, và R06 còn nói giá hơi cao nhưng đồ ăn ngon nên vẫn tiếp tục đặt.
-
-  - Đây là điều một: phạm vi, insight khách rời đi vì giá rộng hơn dữ liệu cho phép
-  - Điều hai là đồng thuận: I02-03 nói thời gian chờ làm phiền hơn phí giao, nên không phải ai cũng nói về giá
-  - Điều ba là sample mix: review nghiêng về người có cảm xúc mạnh, forum là người đã gặp vấn đề, hai người phỏng vấn đều lịch sự
-  - Điều bốn là giải pháp: nhảy sang thêm popup nhắc khung giờ giao thay vì nói nhu cầu
-  - Điều năm là cảm xúc: R01 kể đồ ăn nguội ngoài cửa khi khách ở sân bay, nghe rất mạnh, nhưng chỉ là một review
-
-  > **Soi năm điều này ở bước Challenge, trước khi đưa insight cho ai.**
-
-  > Câu hỏi 30 giây: insight gần nhất designer viết, điều nào trong năm điều này đáng lo nhất? Gõ số vào chat.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, năm hàng, số purple.
+  > Slide trước nói giả định là gì. Một brief thường trộn nhiều loại giả định, và mỗi loại cần cách kiểm chứng khác nhau.
+  > - User: điều bạn tin về người dùng là ai và họ đang ở bối cảnh nào.
+  > - Problem: điều bạn tin về vấn đề, rằng nó có thật và đủ cấp bách.
+  > - Solution: điều bạn tin về giải pháp, rằng nó sẽ hiệu quả.
+  > - Business: điều bạn tin về thị trường, giá hoặc quy định.
+  >
+  > Các câu trên slide là ví dụ minh hoạ cho app giao đồ ăn, chưa phải dữ liệu của case. Khi liệt kê giả định cho dự án thật, gắn loại cho từng cái giúp thấy team đang dồn vào một loại, thường là Solution, và bỏ quên User hay Problem.
+  >
+  > Câu hỏi cho lớp: trong brief gần nhất của bạn, loại giả định nào xuất hiện nhiều nhất, và loại nào bị bỏ quên?
 
 ---
 
-### MILESTONE · Activity: Write and challenge
-- Num: 10
-- Kicker: Activity
-- Title: Viết insight,\n*rồi phản biện*
-- Sub: Viết một insight từ bộ ghi chú nguồn app giao đồ ăn, rồi designer cùng cặp phản biện
-- Ví dụ: Không cần. Activity dùng bộ ghi chú nguồn app giao đồ ăn.
-- Speaker notes:
-
-  > Quyết định đang chờ: có thiết kế lại bước đổi khung giờ giao hay không. Designer có 24 ghi chú và ba phút để viết một insight.
-
-  - Mười phút: ba phút viết một mình, năm phút đổi bài và phản biện, hai phút chia sẻ
-  - Bộ ghi chú nguồn là source-notes.md của project app giao đồ ăn: 24 ghi chú hư cấu từ review, forum và phỏng vấn, đã ẩn danh và có ID
-  - Ba phút đầu không dùng AI: đây là phần designer tự viết, đúng phép thử đóng AI lại
-  - Source ID nào dẫn vào insight phải có thật và khớp với ghi chú gốc, kể cả khi designer viết insight bằng tiếng Việt
-
-  > **Không có source ID thì không tính là một lỗi.**
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
-
----
-
-### PROCESS · How to write and challenge
-- Kicker: Cách làm
-- Title: Cách viết và phản biện insight
+### 22. EXAMPLE · Từ sản phẩm đến assumption
+- Slide: `s45`
 - On-slide:
-  - Viết insight: ai, cần gì, khi nào, quyết định nào
-  - Dẫn ít nhất hai source ID và một dòng "không cho biết gì"
-  - Đổi bài, phản biện bằng bốn câu hỏi
-  - Sửa insight, rồi một cặp chia sẻ lỗi bắt được hay nhất
-- Ví dụ: bản nháp (insight mẫu: "Mọi khách mới thấy đơn giao lâu hơn ước tính trong app và cảm thấy mình đã làm sai", dẫn R05 và I01-03)
-- Câu hỏi hay gặp:
-  - Viết insight bằng tiếng Việt được không? Được; ghi chú dẫn vào giữ nguyên bản tiếng Anh và source ID.
-  - Không tìm ra lỗi thì sao? Hỏi lại bốn câu: ghi chú có đúng không, insight có rộng quá không, ý kiến trái chiều ở đâu, đây là nhu cầu hay tính năng.
-  - Có được hỏi AI không? Không trong activity này; muốn thử thì làm ở nhà trong Practice 2.
+  - Ví dụ
+  - Từ sản phẩm đến
+  - App du lịch
+  - Assumption
+  - Chúng ta tin rằng du khách tin lời khuyên của người đã đến sẽ chính xác hơn mô tả do app viết.
+  - Dấu hiệu
+  - Khách đọc tip của người đã đến trước
+  - Khách lưu địa điểm có tip từ người địa phương
+  - Khách bỏ qua phần mô tả do app viết
+  - Bằng chứng
+  - Chưa có dữ liệu
+  - Quan trọng
+  - Cao
+- Hình: travel-buddy.png
 - Speaker notes:
-
-  > Insight mẫu: mọi khách mới thấy đơn giao lâu hơn ước tính trong app và cảm thấy mình đã làm sai. Dẫn R05 và I01-03. Designer bắt được lỗi nào?
-
-  - Chữ mọi là lỗi phạm vi: hai ghi chú không đủ để nói mọi khách
-  - R05 chỉ nói đơn giao lâu hơn ước tính, không nói cảm giác làm sai; cảm giác đó chỉ có ở I01-03, một người: đó là lỗi cảm xúc
-  - Trong 24 ghi chú không có ai nói thời gian giao đúng như ước tính, nên ý kiến trái chiều ở đây là chưa có; dòng "bộ ghi chú này không cho biết gì" vẫn cần
-  - Bước một: viết insight theo mẫu ai làm hoặc cần gì khi nào, quan trọng với quyết định nào
-  - Bước hai: đổi bài, người nhận mở ghi chú gốc đối chiếu từng chữ
-  - Bốn câu hỏi của người phản biện: ghi chú có đúng không, insight có rộng quá không, ý kiến trái chiều nào bị bỏ, đây là nhu cầu hay tính năng
-
-  > **Mỗi lỗi phải kèm source ID, không thì chưa tính.**
-
-  > Cặp nào đã bắt được lỗi đầu tiên? Gõ vào chat hoặc giơ tay.
-- 🎨 Visual hint: SCHEMATIC. Process bốn bước của activity ngang, bước 3 active.
+  > Đây là một giả định đi từ màn hình sản phẩm ra công thức, trên case app du lịch Travel Buddy.
+  >
+  > Đọc từ màn hình bên trái sang giả định bên phải: bắt đầu bằng một màn hình có thật, nhìn ra điều team đang tin về nó, rồi viết theo công thức. Đây là kiểu giả định về hành vi tin tưởng: khách tin ai hơn.
+  >
+  > Hai ô nhỏ bên dưới là hai thứ cần ghi kèm mỗi giả định:
+  > - Bằng chứng: hiện có gì. Ở đây là chưa có dữ liệu cho thấy khách tin tip hơn mô tả.
+  > - Mức quan trọng: nếu giả định sai thì thiết kế đổ vỡ đến đâu. Ở đây là cao.
+  >
+  > Chính hai thứ này quyết định giả định nằm ở đâu trên bản đồ ở slide kế tiếp. Dấu hiệu trong ví dụ là gợi ý của mình, bạn thay bằng dấu hiệu team thật sự theo dõi được.
+  >
+  > Câu hỏi cho lớp: màn hình nào trong sản phẩm của bạn đang chứa một niềm tin chưa ai kiểm chứng?
 
 ---
 
-### DIAGRAM · The hub
-- Kicker: Tổng quan
-- Title: Những gì vào *hub*
+### 23. DIAGRAM · Assumption map
+- Slide: `s46`
 - On-slide:
-  - bộ nguyên tắc
-  - scope, bản đồ giả định
-  - research questions, bản phân tích đối thủ
-  - research plan, script, transcript đã ẩn danh
-  - insight, mỗi dòng dẫn về source ID
-- Ví dụ: Không cần. Slide tổng hợp file của chuỗi việc ở nhà.
-- Câu hỏi hay gặp:
-  - Hub nằm ở đâu? Trong project folder của designer, private mặc định; xuất bản lên GitHub là tuỳ chọn.
+  - Khung
+  - Assumption
+  - Weak
+  - Evidence
+  - Strong
+  - More
+  - Importance
+  - Less
+  - Quan trọng cao, bằng chứng yếu
+  - Kiểm chứng trước
+  - 01
+  - Quan trọng cao, bằng chứng mạnh
+  - Kiểm chứng sớm
+  - 02
+  - Quan trọng thấp, bằng chứng yếu
+  - Theo dõi sau
+  - 03
+  - Quan trọng thấp, bằng chứng mạnh
+  - An toàn để đi tiếp
+  - 04
 - Speaker notes:
-  - Đây là các file designer mang ra khỏi buổi 2 và chuỗi việc ở nhà
-  - Hub private mặc định, nằm trong project folder; xuất bản là tuỳ chọn
-  - Lesson 3 dùng bộ nguyên tắc và insight của designer làm đầu vào cho persona, journey map và opportunity
-  - Mỗi file có nguồn hoặc nhãn "chưa có nguồn"
-
-  > Designer muốn file nào đầy đủ nhất trước Lesson 3?
-- 🎨 Visual hint: SCHEMATIC. Một hộp "Knowledge Hub" chứa các ô purple nhỏ mang tên file, đúng màu và tên như trên sơ đồ Knowledge.
+  > Bản đồ giả định xếp mỗi giả định theo hai trục: mức quan trọng, và mức bằng chứng đang có.
+  >
+  > Bốn ô, bốn hành động:
+  > - Ô 01, quan trọng cao mà bằng chứng yếu: kiểm chứng trước khi thiết kế. Đây là chỗ chọn ba giả định hàng đầu.
+  > - Ô 02, bằng chứng mạnh nhưng quan trọng cao: kiểm tra nhanh trước khi cam kết.
+  > - Ô 03: theo dõi sau, chưa cần nghiên cứu lúc này.
+  > - Ô 04: an toàn để đi tiếp.
+  >
+  > Designer tự xếp, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh mà AI không có. AI chỉ gợi ý và hỏi ngược bằng chứng.
+  >
+  > Ở slide này bằng chứng yếu nằm bên trái. Một số bản ma trận đảo trục, như ví dụ ở slide kế tiếp, nên luôn đọc nhãn trục trước khi đọc vị trí.
+  >
+  > Câu hỏi cho lớp: giả định nào của case nằm ở ô 01, và vì sao bạn chắc chắn bằng chứng của nó còn yếu?
 
 ---
 
-### MILESTONE · Q&A
-- Num: 5
-- Kicker: Câu hỏi
-- Title: Hỏi\n*và đáp*
-- Sub: Hỏi điều bạn còn vướng.
-- Ví dụ: Không cần. Mỗi người hỏi về project riêng.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Năm phút; hai slide tiếp theo chiếu trong phase này
-  - Câu hỏi gom theo các bước Break the brief và synthesis; câu quá riêng hẹn ở buổi practice trên lớp
-  - Chuỗi việc ở nhà là nơi làm; buổi này chỉ để biết cần làm gì
-
-  > Điều gì designer muốn hỏi trước khi bắt đầu làm ở nhà?
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
-
----
-
-### PRACTICE · Next steps
-- Kicker: Tiếp theo
-- Title: Practice ở nhà
+### 24. EXAMPLE · Ma trận 2x2
+- Slide: `s29`
 - On-slide:
-  - Làm ở nhà, trên project của designer
-  - Ba phần: Break the brief, phỏng vấn user thật, synthesis và hub
-  - Mỗi bước một file; đầu ra bước trước là đầu vào bước sau
-  - Buổi practice trên lớp: làm tiếp phần dang dở, rồi được chấm
-- Ví dụ: Không cần. Slide giao việc.
-- Câu hỏi hay gặp: None.
+  - Ví dụ
+  - Xếp assumptions lên
+  - ma trận 2x2
+  - @ Anh Trương
+- Hình: assumption-matrix-example.png
 - Speaker notes:
-  - Mười một step chia ba phần: Break the brief (nguyên tắc, scope, giả định, research question, đối thủ), phỏng vấn user thật (research plan và script, phỏng vấn, ẩn danh và source ID), synthesis và hub (ba bước, insight lên hub, learning log)
-  - Phỏng vấn cần hẹn lịch và consent, nên bắt đầu hẹn người ngay hôm nay
-  - Ẩn danh transcript trước khi đưa cho AI; dữ liệu gốc ở lại ngoài vùng AI đọc
-  - Buổi practice trên lớp làm tiếp phần chưa xong nếu còn thời gian, rồi chấm; cách chấm chưa quyết, sẽ báo sau
-  - Chuỗi việc kết thúc bằng learning log và một câu reflection; log là file riêng tư và được đọc lại ở buổi cuối
-
-  > Designer sẽ hẹn phỏng vấn ai, và hẹn trong tuần này được không?
-- 🎨 Visual hint: SCHEMATIC. Hai thẻ cạnh nhau: "At home" và "In class", viền ink, mũi tên purple đầu mỗi dòng.
+  > Slide trước nói cách đọc bản đồ giả định. Đây là cách xếp giả định lên ma trận Importance × Evidence, một ví dụ thật từ bạn Anh Trương.
+  >
+  > Đọc ma trận:
+  > - Trục dọc là mức quan trọng, quan trọng hơn ở trên.
+  > - Trục ngang là bằng chứng: strong evidence bên trái, weak evidence bên phải.
+  > - Mỗi sticky là một giả định, màu cho biết mức risk.
+  >
+  > Trên ma trận này, quan trọng cao mà bằng chứng thấp là góc trên bên phải, nên đó là chỗ phải kiểm chứng trước. Chọn ba giả định hàng đầu ở góc đó để đưa vào research question. Một số bản ma trận đảo trục ngang nên góc này nằm bên trái, vì vậy đọc nhãn trục trước khi đọc vị trí.
+  >
+  > Designer tự xếp, AI không xếp thay, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh AI không có.
+  >
+  > Câu hỏi cho lớp: giả định nào của case bạn sẽ đặt vào góc cần kiểm chứng trước?
 
 ---
 
-### END
-- Kicker: Điều mang về
-- Title: AI soạn nháp.\n*Designer quyết định.*
+### 25. DEFINITION · Research question
+- Slide: `s30`
 - On-slide:
-  - Đặt chuẩn trước, rồi mới để AI chạy
-  - Điều AI đưa ra mà không có nguồn thì ghi "chưa có nguồn"
-  - Một insight đáng tin dẫn về ghi chú gốc và giữ ý kiến trái chiều
-- Sign: AI Design Workflow
-- Ví dụ: Không cần. Slide kết thúc.
-- Câu hỏi hay gặp: None.
+  - Định nghĩa
+  - Research
+  - Question
+  - What
+  - Câu hỏi tập trung dẫn dắt điều bạn cần học từ người dùng, gốc từ một assumption.
+  - Không phải câu khảo sát, không bao giờ là có/không.
+  - Research question là điều cần tìm hiểu, interview question là gợi mở để thu thập thông tin.
+  - Why
+  - Giữ phỏng vấn bám vào điều cần học, không lan man.
+  - Neo mọi interview question về một assumption và một quyết định.
+  - When
+  - Sau khi vẽ assumption map và chọn các assumption rủi ro.
+  - Trước khi viết interview guide.
 - Speaker notes:
+  > Đã có ba giả định hàng đầu, bước tiếp theo biến chúng thành câu hỏi điều tra được. Chuỗi là giả định, rồi research question, rồi 5 đến 8 interview question (nguồn 8).
+  >
+  > Ba cột trên slide:
+  > - What: research question là điều nhóm muốn học, gốc từ một assumption. Không phải câu khảo sát, không bao giờ là có/không. Interview question là câu mồi đặt cho người tham gia, viết sau ở bước research plan.
+  > - Why: giữ phỏng vấn bám vào điều cần học, và neo mọi interview question về một assumption và một quyết định.
+  > - When: sau khi vẽ assumption map và chọn assumption rủi ro, trước khi viết interview guide.
+  >
+  > Method cần nhắc:
+  > - Trung tính, hỏi về hành vi, thái độ hoặc bối cảnh, không nói về giải pháp định đưa ra.
+  > - Không quá rộng (“người dùng cảm thấy gì về ngân hàng?”), không quá hẹp (“thích nút xanh hay xanh lá?”).
+  > - Gắn với đúng một giả định và một quyết định, và biết tìm câu trả lời ở đâu: file, desk research, phỏng vấn hay data.
+  >
+  > Ba kiểu câu xấu: tìm phản hồi, kiểm tra sở thích, hỏi hành vi giả định (“có dùng tính năng X không?”).
+  >
+  > AI soạn research question cho từng giả định hàng đầu bằng prompt trung tính. Designer cắt câu dẫn dắt hoặc hỏi sở thích, sửa câu quá rộng hay quá hẹp và chốt danh sách. Đây là đầu vào của research plan và phỏng vấn.
+  >
+  > Câu hỏi cho lớp: giả định hàng đầu của case, nếu viết thành một câu hỏi mở, sẽ là câu gì?
 
-  > Ba điều mang về: chuẩn đặt trước, nguồn cho mọi dòng, và insight có source ID để kiểm.
+---
 
-  - Chuỗi practice ở nhà, rồi buổi practice trên lớp và buổi 3
-  - Nguyên tắc vận hành: AI soạn nháp, designer kiểm tra, designer quyết định
-- 🎨 Visual hint: End layout, nền paper-deeper; title lớn nghiêng, ba dòng takeaway ngắn bên dưới, chữ ký cuối. `[to confirm]` layout End cố định chưa có chỗ cho ba dòng.
+### 26. FORMULA · Viết research question
+- Slide: `s47`
+- On-slide:
+  - Công thức
+  - Viết một
+  - research question
+  - Chúng ta cần hiểu gì về
+  - [hành vi, vấn đề, bối cảnh]
+  - để
+  - [đưa ra quyết định]
+  - ?
+  - Assumption
+  - Khách bỏ đơn vì không đổi được khung giờ giao.
+  - Research question
+  - Khách làm gì và nghĩ gì khi cần dời khung giờ giao, và điều gì khiến họ bỏ dở?
+- Speaker notes:
+  > Research question đi ra từ một giả định. Công thức có hai chỗ trống: điều cần hiểu về hành vi, vấn đề hay bối cảnh, và quyết định mà câu trả lời phục vụ.
+  >
+  > Ví dụ: giả định “khách bỏ đơn vì không đổi được khung giờ giao” trở thành câu hỏi về việc khách làm gì và nghĩ gì ở đúng thời điểm đó. Câu hỏi không chứa sẵn đáp án, và không trả lời được bằng có hoặc không.
+  >
+  > Hai điều cần giữ:
+  > - Hỏi về hành vi và bối cảnh, không hỏi ý kiến.
+  > - Mỗi research question gắn với một giả định và một quyết định.
+  >
+  > AI soạn research question cho từng giả định hàng đầu. Designer cắt câu dẫn dắt, câu hỏi sở thích, và chốt danh sách.
+  >
+  > Câu hỏi cho lớp: giả định hàng đầu của bạn, viết thành câu hỏi theo công thức này sẽ ra sao?
+
+---
+
+### 27. DIAGRAM · Từ assumption đến interview guide
+- Slide: `s48`
+- On-slide:
+  - Khung làm việc
+  - Từ assumption đến
+  - interview guide
+- Hình: assumption-to-guide.png
+- Speaker notes:
+  > Đây là chuỗi nối cả phần này lại: một giả định dẫn đến một research question, và một research question dẫn đến 5 đến 8 interview question.
+  >
+  > Mỗi tầng trả lời một câu khác nhau:
+  > - Assumption là điều bạn tin.
+  > - Research question là điều nhóm cần học để xác nhận hoặc bác giả định đó.
+  > - Interview question là câu mồi đặt cho người tham gia, viết sau ở bước research plan.
+  >
+  > Research question không bao giờ được hỏi thẳng người dùng. Người dùng không cần trả lời câu hỏi của nhóm nghiên cứu, họ kể chuyện của họ, và câu trả lời cho research question nằm trong những câu chuyện đó.
+  >
+  > Nếu một interview question không dẫn về research question nào, đó là câu thừa. Nếu một research question không có assumption phía trên, đó là câu hỏi lan man.
+  >
+  > Câu hỏi cho lớp: bạn có interview question nào trong tay mà không biết nó đang kiểm chứng giả định nào không?
+
+---
+
+### 28. CARDS · AI soạn nháp, bạn kiểm chứng
+- Slide: `s57`
+- On-slide:
+  - AI trong bước này
+  - AI soạn nháp,
+  - bạn kiểm chứng
+  - Assumption
+  - AI
+  - tìm giả định ẩn trong brief, hỏi ngược “dựa vào file nào?”.
+  - Bạn
+  - chấm importance và evidence, chọn 3 giả định.
+  - Cẩn thận:
+  - AI gọi kiến thức chung là “đã có bằng chứng”.
+  - Research question
+  - hỏi “quyết định nào đổi nếu biết câu trả lời?”, chỉ câu có/không.
+  - viết câu này phục vụ quyết định nào.
+  - câu AI thêm nghe hợp lý nhưng không gắn quyết định.
+  - Interview question
+  - soạn nháp guide và nhánh follow-up.
+  - bỏ câu dẫn dắt, chạy thử với một người thật.
+  - AI yếu ở bước thử trước.
+- Speaker notes:
+  > Ba bước vừa học đều có chỗ AI giúp được, và chỗ bạn không giao đi.
+  >
+  > Đọc theo ba cột:
+  > - Assumption: AI tìm giả định brief đang ngầm tin và hỏi ngược bằng chứng. Bạn chấm mức quan trọng và chọn ba giả định.
+  > - Research question: AI hỏi “quyết định nào đổi nếu biết câu trả lời” và chỉ câu có/không. Bạn viết câu này phục vụ quyết định nào.
+  > - Interview question: AI soạn nháp guide và nhánh follow-up. Bạn bỏ câu dẫn dắt và chạy thử với một người thật.
+  >
+  > Hai nguyên tắc áp dụng cho cả ba bước. AI nghiêng theo cách bạn đặt câu hỏi, nên hãy nhờ nó phản biện thay vì hỏi “đúng không?”. Và chỉ cho nó dùng tài liệu bạn đã đưa, thiếu thì ghi unknown, vì nó rất dễ bịa chi tiết nghe hợp lý.
+  >
+  > Bằng chứng cho riêng ba bước này còn mỏng. Điều đã biết chắc là AI soạn câu hỏi rõ nhưng bỏ sót thiên kiến tinh vi và yếu ở bước thử với người thật, nên hai việc cuối cùng luôn về tay bạn.
+  >
+  > Câu hỏi cho lớp: trong ba bước này, bạn sẽ giữ bước nào hoàn toàn cho mình, và vì sao?
+
+---
+
+### 29. COMPARE · Research question weak và strong
+- Slide: `s49`
+- On-slide:
+  - Kỹ thuật
+  - Research question
+  - tốt và chưa tốt
+  - Weak
+  - “Người dùng có thích sản phẩm của mình không?”
+  - “Người dùng muốn tính năng nào?”
+  - “Vì sao người dùng không tin chúng ta?”
+  - Strong
+  - “Khoảnh khắc nào trong lần đặt đầu tiên khiến khách không quay lại, và lúc đó họ tin điều gì?”
+  - “Khách xoay xở thế nào khi cần dời khung giờ giao, và điều đó cho thấy nhu cầu nào chưa được đáp ứng?”
+  - “Khách tìm những tín hiệu nào trước khi bấm đặt?”
+- Speaker notes:
+  > Ba câu weak đều trượt theo cách quen thuộc.
+  > - “Có thích sản phẩm không?” là câu hỏi sở thích, và trả lời có hoặc không.
+  > - “Muốn tính năng nào?” xin người dùng làm việc của designer.
+  > - “Vì sao không tin chúng ta?” đã coi như họ không tin, nên dẫn dắt.
+  >
+  > Ba câu strong hỏi về hành vi và khoảnh khắc cụ thể: họ làm gì, ở lúc nào, tin điều gì. Câu trả lời cho chúng là chuyện thật, không phải ý kiến.
+  >
+  > Phép thử nhanh: câu này trả lời được bằng một chữ có hoặc không không? Nó nói về sản phẩm hay về người dùng? Nó gắn với một giả định không? Nếu một trong ba là có, viết lại.
+  >
+  > Các câu strong là ví dụ minh hoạ cho case app giao đồ ăn.
+  >
+  > Câu hỏi cho lớp: chọn một câu weak bạn từng viết hoặc từng nghe, viết lại thành câu strong.
+
+---
+
+### 30. SECTION DIVIDER · 04 Understand our users
+- Slide: `s34`
+- On-slide:
+  - 04
+  - Understand
+  - our users
+  - Từ research question đến cuộc phỏng vấn
+- Speaker notes:
+  > Slide chuyển phần: Understand our users, từ research question đến cuộc phỏng vấn.
+  >
+  > Phần này đi qua bốn việc:
+  > - User interview là gì và khi nào dùng thay survey.
+  > - Research plan: bốn câu trả lời trước khi viết câu hỏi, và một mẫu một trang.
+  > - Trong buổi phỏng vấn: bốn thói quen, và cách xin câu chuyện rồi hỏi sâu.
+  > - Lên plan với AI và chạy thử trước buổi thật.
+  >
+  > Phần này nối trực tiếp từ phần trước: mỗi interview question phải dẫn về một research question.
+  >
+  > Câu hỏi cho lớp: bạn đã có research question nào để mang vào phỏng vấn chưa?
+
+---
+
+### 31. DEFINITION · User interview
+- Slide: `s51`
+- On-slide:
+  - Định nghĩa
+  - User
+  - What
+  - Cuộc trò chuyện 1:1 về hành vi và niềm tin của người dùng.
+  - Hỏi về trải nghiệm thật, không hỏi ý kiến.
+  - Why
+  - Giải thích điều analytics không giải thích được.
+  - Trigger assumption thành evidence.
+  - Cho thấy lý do đằng sau hành vi, không chỉ con số.
+  - When
+  - Sau khi có research question, trước khi thiết kế giải pháp.
+  - Lặp lại sau mỗi vòng để cập nhật assumption map.
+- Speaker notes:
+  > Có research question rồi, bước tiếp theo là hỏi người thật. Phỏng vấn user là cuộc trò chuyện 1:1 về hành vi và niềm tin của họ.
+  >
+  > - Hỏi về trải nghiệm thật, không hỏi ý kiến.
+  > - Có interview guide, nhưng đi theo câu chuyện của người dùng.
+  > - Mục tiêu là hiểu thực tế của user, không phải để user xác nhận ý tưởng.
+  >
+  > Analytics cho biết khách bỏ ở bước nào. Chỉ phỏng vấn mới cho biết họ đang nghĩ gì ở bước đó. Khi người phỏng vấn bắt đầu trình bày giải pháp hoặc hỏi “có dùng cái này không?”, đó không còn là user research.
+  >
+  > Survey dùng khi đã biết cần hỏi gì và cần con số trên nhiều người. Survey không thay phỏng vấn để tìm điều chưa biết.
+  >
+  > Câu hỏi cho lớp: lần gần nhất bạn nói chuyện với một người dùng thật là khi nào, và bạn đã hỏi gì?
+
+---
+
+### 32. NUMBERED · Research plan
+- Slide: `s52`
+- On-slide:
+  - Chuẩn bị
+  - Research
+  - 01
+  - Người dùng là ai?
+  - Nhóm cần nghiên cứu, mô tả theo hành vi và bối cảnh, không chỉ nhân khẩu học.
+  - 02
+  - Mục tiêu là gì?
+  - Điều cần học để ra quyết định thiết kế, viết thành một câu.
+  - 03
+  - Chỉ số đo là gì?
+  - Dấu hiệu quan sát hoặc đo được cho biết đã có câu trả lời.
+  - 04
+  - Trả lời câu hỏi nào?
+  - Research question dẫn dắt buổi phỏng vấn, và assumption rủi ro nhất cần kiểm chứng trước.
+- Speaker notes:
+  > Trước khi viết câu hỏi, cần một research plan một trang. Plan trả lời bốn câu.
+  > - Người dùng là ai: mô tả theo hành vi và bối cảnh, ví dụ khách đã đặt một đơn và chưa đặt lại, thay vì chỉ tuổi và giới tính.
+  > - Mục tiêu là gì: một câu, điều cần học để ra quyết định thiết kế.
+  > - Chỉ số đo là gì: dấu hiệu cho biết bạn đã có câu trả lời.
+  > - Trả lời câu hỏi nào: research question và giả định rủi ro nhất.
+  >
+  > AI giúp rõ nhất ở khâu chuẩn bị này: gợi ý cách diễn đạt mục tiêu, hỏi ngược “điều gì thay đổi nếu biết câu trả lời”, gợi ý profile và câu hỏi lọc. Designer quyết định mục tiêu, tuyển người thật và xin phép họ.
+  >
+  > Câu hỏi cho lớp: nếu phỏng vấn xong mà không đổi được quyết định thiết kế nào, plan của bạn đang thiếu phần nào?
+
+---
+
+### 33. EXAMPLE · Một trang research plan
+- Slide: `s53`
+- On-slide:
+  - Ví dụ
+  - Một trang
+  - research plan
+- Hình: research-plan-template.png
+- Speaker notes:
+  > Đây là một mẫu research plan một trang. Mình dùng nguyên mẫu này làm ví dụ, bạn không cần chép lại.
+  >
+  > Mẫu có sáu mục, đọc theo số:
+  > - Project overview: dự án này về gì, đang ở giai đoạn nào.
+  > - Research goals: điều cần đạt trong đợt nghiên cứu này.
+  > - Methods: phương pháp nào giúp đạt mục tiêu, và vì sao chọn.
+  > - Research questions: các câu hỏi cần tìm câu trả lời, nối từ assumption ở phần trước.
+  > - Tools: công cụ cần chuẩn bị.
+  > - Recruiting: ai phụ trách, ngân sách, tìm người ở đâu, họ nhận gì.
+  >
+  > Chú ý hai mục dễ bị bỏ quên là Tools và Recruiting. Hỏi sớm sẽ đỡ trễ lịch phỏng vấn.
+  >
+  > Câu hỏi cho lớp: mục nào trong mẫu này bạn sẽ hỏi lại product trước khi đi phỏng vấn?
+
+---
+
+### 34. NUMBERED · Interview fundamentals
+- Slide: `s54`
+- On-slide:
+  - Trong buổi phỏng vấn
+  - Interview
+  - 01
+  - Hỏi câu mở
+  - “Hiện tại bạn làm việc này như thế nào?”, thay vì “Bạn có thích cái này không?”
+  - 02
+  - Đi theo câu chuyện
+  - Gặp điều thú vị thì đào sâu: “Kể mình nghe thêm.”
+  - 03
+  - Tò mò, không dẫn dắt
+  - Không xác nhận assumption. Để câu trả lời làm bạn bất ngờ.
+  - 04
+  - Nghe và quan sát
+  - Im lặng là bình thường. Điều họ làm khác điều họ nói, ghi cả hai.
+  - Quy tắc vàng
+  - Hiểu thế giới của họ, không xác nhận giải pháp của bạn.
+- Speaker notes:
+  > Bốn thói quen của một buổi phỏng vấn tốt, và một quy tắc bao trùm tất cả.
+  > - Hỏi câu mở: “kể lại lần gần nhất…” mời một câu chuyện, còn câu đóng cho dữ liệu không dùng được.
+  > - Đi theo câu chuyện: khi user nói điều bất ngờ, dừng lại và đi theo, kể cả ngoài script. Script là lưới an toàn, không phải khuôn.
+  > - Tò mò như lần đầu, kể cả khi đã nghe năm lần giống nhau.
+  > - Nghe nhiều hơn nói. Người phỏng vấn nói quá khoảng 20% thời gian thì có điều gì đó sai.
+  >
+  > Quan sát cũng là một phần của nghe: user nói “ổn” nhưng dừng năm giây trước khi bấm, thì khoảng dừng mới là insight.
+  >
+  > Nếu cả buổi chỉ đi theo thứ tự câu hỏi thì script đã thành bảng khảo sát. Bạn giữ vai moderator, công cụ chỉ giữ cấu trúc.
+  >
+  > Câu hỏi cho lớp: trong bốn thói quen này, thói quen nào bạn thấy khó giữ nhất khi đang phỏng vấn?
+
+---
+
+### 35. COMPARE · Avoid và probe
+- Slide: `s55`
+- On-slide:
+  - Kỹ thuật
+  - Xin câu chuyện, rồi
+  - hỏi sâu
+  - Avoid
+  - “Bạn có dùng tính năng đổi khung giờ không?”
+  - “Bạn có thấy bước chọn giờ khó hiểu không?”
+  - “Bạn thường đặt đồ ăn bao lâu một lần?”
+  - Probe
+  - “Kể mình nghe lần gần nhất bạn đặt đồ ăn.”
+  - “Sau đó chuyện gì xảy ra?”
+  - “Vì sao điều đó quan trọng với bạn?”
+  - “Bạn có thể chỉ mình xem bạn đã làm thế nào không?”
+- Speaker notes:
+  > Cột trái là ba câu nên tránh, cột phải là bốn câu mồi để xin câu chuyện rồi hỏi sâu.
+  >
+  > Ba câu avoid đều có vấn đề:
+  > - “Có dùng tính năng đổi khung giờ không?” là hành vi giả định, và dẫn người trả lời về tính năng.
+  > - “Có thấy bước chọn giờ khó hiểu không?” đặt sẵn đáp án vào miệng họ.
+  > - “Bao lâu một lần?” là câu đóng, cho con số mà không cho lý do.
+  >
+  > Chuỗi probe đi theo một nhịp: xin một lần cụ thể gần nhất, hỏi chuyện gì xảy ra sau đó, hỏi vì sao nó quan trọng, rồi xin họ chỉ cho xem. Đi theo nhịp này thì câu trả lời là chuyện thật chứ không phải ý kiến.
+  >
+  > Các câu trên là ví dụ minh hoạ cho case app giao đồ ăn.
+  >
+  > Câu hỏi cho lớp: lấy một câu avoid bạn hay hỏi, viết lại thành một câu xin câu chuyện.
+
+---
+
+### 36. PROCESS · Lên plan với AI, chạy thử
+- Slide: `s36`
+- On-slide:
+  - Cách làm
+  - Lên plan với AI,
+  - chạy thử
+  - 01
+  - Prepare research plan
+  - AI
+  - 02
+  - Prepare interview questions
+  - 03
+  - Prepare interview script
+  - 04
+  - Run pilot
+  - You
+  - 05
+  - Recording
+  - (Dùng nội bộ, không chia sẻ ra ngoài)
+- Speaker notes:
+  > Slide trước nói buổi phỏng vấn tốt trông như thế nào. Slide này trả lời: chuẩn bị với AI thế nào, và vì sao phải chạy thử trước khi hẹn người thật.
+  >
+  > Năm bước trên slide:
+  > - Prepare research plan (AI): gợi ý cách diễn đạt goal, profile người tham gia, câu hỏi lọc.
+  > - Prepare interview questions (AI): soạn nháp 8 đến 10 câu mở từ một research question.
+  > - Prepare interview script (AI): lời mở, câu hỏi, nhánh follow-up, lời kết.
+  > - Run pilot (bạn): chạy thử với một đồng nghiệp.
+  > - Recording: ghi hình khi người tham gia đồng ý, dùng nội bộ, không chia sẻ ra ngoài.
+  >
+  > Ví dụ: AI soạn cho designer mười câu hỏi từ research question về việc dời khung giờ giao. Cô cắt còn năm vì AI lặp ý, đổi hai câu có hướng người trả lời tới đáp án mong muốn, thử với một đồng nghiệp rồi mới hẹn khách.
+  >
+  > Designer cắt ít nhất một nửa câu hỏi AI soạn và viết lại câu dẫn dắt. Nhánh follow-up dạng “nếu user nói X thì hỏi Y” giúp giữ luồng mà không đọc script như đọc bài. Có thể nhờ AI dựng một trang nhỏ từ script (câu hỏi theo thứ tự, ô ghi chú, timer) và dùng lại cho các round sau.
+  >
+  > Chạy thử là bắt buộc vì AI yếu ở bước thử trước. Người giữ vai moderator, công cụ chỉ giữ cấu trúc.
+  >
+  > Hỏi: có cần xin phép bằng văn bản không? Chương trình dạy mức nghiên cứu nội bộ: nói rõ ba điều trước buổi (ghi hình, dùng nội bộ, không chia sẻ ra ngoài) và xin phép. Người từ chối ghi hình thì ghi chú tay. Theo chính sách công ty nếu có quy định riêng.
+  >
+  > Phỏng vấn xong, bạn sẽ có ghi chú và recording. Cách biến chúng thành insight là chủ đề của Lesson 3. Trước đó, những gì bạn tạo hôm nay đi vào hub.
+  >
+  > Câu hỏi cho lớp: bạn có thể chạy thử câu hỏi với ai trước buổi phỏng vấn thật?
+
+---
+
+### 37. DIAGRAM · Những gì vào hub
+- Slide: `s39`
+- On-slide:
+  - Tổng quan
+  - Những gì vào
+  - Knowledge Hub
+  - Principles
+  - Design Principles
+  - Scope
+  - Break the brief
+  - Assumption map
+  - Research questions
+- Speaker notes:
+  > Đây là bốn file mang ra khỏi buổi 2 vào hub, và là đầu vào của chuỗi việc ở nhà:
+  > - Principles: bộ nguyên tắc design và business, viết trước khi AI chạy.
+  > - Scope: business question, outcome, metric và agreement status.
+  > - Assumption map: ba giả định hàng đầu và mức bằng chứng của chúng.
+  > - Research questions: câu hỏi điều tra được, mỗi câu gắn với một giả định và một quyết định.
+  >
+  > Mỗi file có nguồn hoặc nhãn “chưa có nguồn”. Điều gì chưa kiểm chứng thì ghi rõ, để người sau không coi giả định là sự thật.
+  >
+  > Hub private mặc định, nằm trong case folder. Xuất bản lên GitHub là tuỳ chọn.
+  >
+  > Lesson 3 bắt đầu từ các file này. Phần từ ghi chú phỏng vấn đến insight (synthesis) được học ở Lesson 3.
+  >
+  > Hỏi: hub nằm ở đâu? Trong case folder của bạn, private mặc định.
+  >
+  > Câu hỏi cho lớp: bạn muốn file nào đầy đủ nhất trước Lesson 3?
+
+---
+
+### 38. MILESTONE · Q&A
+- Slide: `s40`
+- On-slide:
+  - Q&A
+  - Bạn muốn hỏi về
+  - Break the brief
+  - Phỏng vấn user thật
+- Speaker notes:
+  > Năm phút. Hai slide tiếp theo là practice và takeaway.
+  >
+  > Câu hỏi gom theo hai nhóm trên slide: Break the brief, và phỏng vấn user thật. Câu quá riêng hẹn ở buổi practice trên lớp.
+  >
+  > Nếu lớp im, gợi hai câu hay gặp:
+  > - Không gặp được business thì scope viết thế nào? Ghi mọi outcome và metric là assumed, nêu người cần xác nhận.
+  > - Chưa tiếp cận được user thật thì sao? Dùng project mẫu app giao đồ ăn.
+  >
+  > Chuỗi việc ở nhà là nơi làm. Buổi này chỉ để biết cần làm gì.
+  >
+  > Câu hỏi cho lớp: điều gì bạn muốn hỏi trước khi bắt đầu làm ở nhà?
+
+---
+
+### 39. PRACTICE · Next steps
+- Slide: `s41`
+- On-slide:
+  - Practice
+  - Understand your users
+  - Break the brief
+  - Thiết lập nguyên tắc
+  - Scope
+  - Liệt kê assumptions
+  - Research question
+  - Phỏng vấn user thật
+  - Research plan và script
+  - User interview
+- Speaker notes:
+  > Bảy step ở nhà chia hai phần, mỗi step ra một file:
+  > - Break the brief: thiết lập nguyên tắc, scope, liệt kê assumptions, research question.
+  > - Phỏng vấn user thật: research plan và script, phỏng vấn, rồi ẩn danh transcript.
+  >
+  > Phỏng vấn cần hẹn lịch và consent, nên bắt đầu hẹn người ngay hôm nay.
+  >
+  > Ẩn danh transcript trước khi đưa cho AI. Dữ liệu gốc ở lại ngoài vùng AI đọc.
+  >
+  > Buổi practice trên lớp làm tiếp phần chưa xong nếu còn thời gian, rồi chấm. Cách chấm chưa quyết, sẽ báo sau.
+  >
+  > Phần từ ghi chú phỏng vấn đến insight (synthesis) học ở Lesson 3.
+  >
+  > Câu hỏi cho lớp: bạn sẽ hẹn phỏng vấn ai, và hẹn trong tuần này được không?
+
+---
+
+### 40. END · Takeaway
+- Slide: `s42`
+- On-slide:
+  - Takeaway
+  - Đặt chuẩn trước, kiểm brief, truy mọi thứ về gốc.
+  - WINNIE NGUYEN
+- Speaker notes:
+  > Ba điều mang về: đặt chuẩn trước, kiểm tra brief trước khi nhận, và mọi thứ truy được về gốc: interview question truy về research question, research question truy về giả định.
+  >
+  > Ba điều này đi đúng thứ tự buổi học: nguyên tắc, brief, rồi phỏng vấn.
+  >
+  > Tiếp theo là chuỗi practice ở nhà, rồi buổi practice trên lớp và buổi 3.
+  >
+  > Nguyên tắc vận hành: AI soạn nháp, designer kiểm tra, designer quyết định.
+
+---
+
+## Đã bỏ khỏi bản trước (2026-10-30)
+
+Bản cũ lưu ở `_archive/discover-the-problem-slide-outline-pre-deck-sync-2026-11-10.md`.
+
+- Phần 5 Synthesis (ba quy tắc với dữ liệu, bốn câu hỏi trước khi gửi dữ liệu cho AI, kiểm một insight, ba bước, năm điều khiến insight nghe mạnh hơn thật, challenge giữ ý kiến trái chiều): chuyển sang Lesson 3.
+- Competitor analysis: bỏ khỏi buổi này, không còn trong Break the brief.
+- Activity "Write and challenge" và slide hướng dẫn: bỏ.
