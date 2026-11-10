@@ -220,8 +220,9 @@ section{padding:var(--section) 0 0}
 .person{border-radius:var(--r-xl);padding:var(--pad);display:flex;gap:18px;align-items:flex-start;background:var(--soft)}
 .avatar{flex:none;width:96px;height:96px;background:var(--indigo);color:#fff;font-weight:800;font-size:1.6rem;display:flex;align-items:center;justify-content:center;border-radius:42px 14px 42px 42px}
 .person:nth-child(2) .avatar{border-radius:14px 42px 42px 42px}
-.avatar.photo{overflow:hidden;background:var(--soft)}
+.person .avatar.photo{overflow:hidden;background:var(--soft);border-radius:50%}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.avatar img[src$="daphne.png"]{transform:scale(1.1)}
 .person h3{font-size:1.2rem;font-weight:800}
 .role{font-weight:700;font-size:.9rem;color:var(--muted);margin-bottom:8px}
 .person p{font-size:.95rem}
@@ -491,7 +492,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
   <div class="people">
     <div class="person"><div class="avatar photo"><img src="img/winnie.jpg" alt="Winnie Nguyen" width="96" height="96"></div><div><h3>Winnie Nguyen</h3><div class="role">Giảng viên · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p></div></div>
-    <div class="person"><div class="avatar" aria-hidden="true">D</div><div><h3>Daphne Huynh</h3><div class="role">Co-founder, lo vận hành</div><p>Daphne lo vận hành khóa: đăng ký, liên hệ học viên, lịch học và ghi hình. Daphne cũng là Co-founder của Breaking into Product Management (BPM). <a href="https://www.linkedin.com/in/daphne-huynh/" rel="noopener">LinkedIn</a> <span class="draft">ảnh và giới thiệu: điền sau</span></p></div></div>
+    <div class="person"><div class="avatar photo"><img src="img/daphne.png" alt="Daphne Huynh" width="96" height="96"></div><div><h3>Daphne Huynh</h3><div class="role">Co-founder, lo vận hành</div><p>Daphne lo vận hành khóa: đăng ký, liên hệ học viên, lịch học và ghi hình. Daphne cũng là Co-founder của Breaking into Product Management (BPM). <a href="https://www.linkedin.com/in/daphne-huynh/" rel="noopener">LinkedIn</a> <span class="draft">giới thiệu: điền sau</span></p></div></div>
   </div>
 
   <h3 class="sub-h">Mentee của Winnie nói gì</h3>
