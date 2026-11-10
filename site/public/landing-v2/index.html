@@ -79,8 +79,6 @@ section{padding:var(--section) 0 0}
 #van-de .card .n{color:var(--chartreuse)}
 #van-de .h2 em{color:var(--ink)}
 #van-de .closing{color:#fff}
-/* Tạm thời: ?t=cap bật Title Case để so sánh. Mặc định là chữ thường (sentence case). */
-body.t-cap .h-text h1,body.t-cap .tagline{text-transform:capitalize}
 .h-text .lead{margin-top:10px;max-width:46ch;color:var(--muted);font-size:1.1rem}
 .h-cta{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
 .btn--indigo{background:var(--indigo);color:#fff}
@@ -556,9 +554,5 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   <span>Winnie Nguyen · Daphne Huynh · Học online, bằng tiếng Việt</span>
 </div></footer>
 
-<script>
-/* Tạm thời: ?t=cap để so sánh Title Case. Xóa script và CSS .t-cap khi đã chọn. */
-(function(){try{if(new URLSearchParams(location.search).get('t')==='cap')document.body.classList.add('t-cap')}catch(x){}})();
-</script>
 </body>
 </html>
