@@ -140,7 +140,7 @@ last_synced: 2026-10-30
   - 02: một nửa designer được khảo sát đã ship code do AI tạo; buổi 7 đến 9; khoá không biến designer thành engineer, designer chỉ đạo AI coding tool và kiểm tra những gì nó đã làm
   - 03: **nói thẳng** khoá này dạy cách dùng AI để làm việc, không dạy thiết kế sản phẩm AI; bằng chứng về tăng trưởng ở mức yếu
   - Mỗi hướng có một slide chi tiết ở Appendix; mở khi designer hỏi
-  - **Câu A/B 30 giây:** bỏ phiếu trong chat, designer nghiêng về hướng 01, 02 hay 03? Designer ghi lại hai dòng vào `_personal/my-direction.md` ở Practice 1
+  - **Câu A/B 30 giây:** bỏ phiếu trong chat, designer nghiêng về hướng 01, 02 hay 03?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn mục, số purple; dòng 04 dùng màu ochre để nhấn giới hạn của khoá.
 
 ---
@@ -723,19 +723,16 @@ last_synced: 2026-10-30
   - Practice 1: làm ở nhà, khoảng bốn giờ, trên project của designer
   - Chuỗi việc: folder, context, self-documentation, một instruction
   - Tuỳ chọn: push lên Git và bật trang live
-  - Cuối chuỗi: hai dòng hướng nghề, ba dòng learning log
   - Buổi practice trên lớp: làm tiếp, rồi được chấm
 - Ví dụ: có (instruction "năm điều AI cần biết mà file không có", chạy trên file đã lưu)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Một chuỗi bảy bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo); ba phút rưỡi cho slide này, và chiếu luôn slide tham khảo "Seven steps" ở Appendix vì đây là lần duy nhất designer thấy đủ bảy bước; xong trước buổi practice trên lớp vì các buổi sau làm trên chính folder này
-  - Bảy bước nằm ở phần Practice 1 reference sau slide END: tạo project từ `my-project`, đưa context về product cho AI, để AI tự ghi tài liệu cho folder, chạy một instruction với file đã lưu, ghi hai đến ba dòng vào `my-direction.md`, tuỳ chọn push lên Git và bật trang live, rồi viết learning log
+  - Một chuỗi sáu bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo); ba phút rưỡi cho slide này, và chiếu luôn slide tham khảo "Six steps" ở Appendix vì đây là lần duy nhất designer thấy đủ sáu bước; xong trước buổi practice trên lớp vì các buổi sau làm trên chính folder này
+  - Sáu bước nằm ở phần Practice 1 reference sau slide END: tạo repo và project folder, viết data rules, viết product context, để AI soạn README cho folder, chạy một instruction với file đã lưu, tuỳ chọn push lên Git và bật trang live
   - Output của chuỗi là một ready-folder với context; hai bước Git và trang live không bắt buộc
-  - `my-direction.md`: hướng nghiêng về trong ba hướng đi, lý do, một kỹ năng muốn xây; file xem lại ở buổi 12
-  - `learning-log.md`: ba dòng về điều đã làm, phản hồi nhận được và điều sẽ đổi, kèm một câu reflection; cuối khoá designer đọc lại để tìm điều lặp lại
   - **Chưa dán tài liệu thật của project vào AI tool trước khi viết data rules**; ai chưa viết xong Activity thì dùng project mẫu để thử
   - Buổi practice trên lớp: làm tiếp phần chưa xong nếu còn thời gian, rồi chấm; cách chấm chưa quyết, sẽ báo sau
-  - Đây là folder dự án của designer, không phải bài nộp; nhắc tải workspace template (ZIP) trước nếu chưa có
+  - Đây là folder dự án của designer, không phải bài nộp; nhắc tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có
 - 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Dựng project folder" kèm bốn dòng ngắn bên dưới.
 
 ---
@@ -949,41 +946,39 @@ last_synced: 2026-10-30
 - Title: Dựng\nproject folder
 - Sub: Dựng project folder, làm ở nhà.
 - Speaker notes:
-  - Slide tham khảo của Practice 1 (khoảng bốn giờ, ước lượng chưa đo), không chiếu trên lớp; bảy bước ở slide kế tiếp
-  - Ai mà công ty cấm AI tool, hoặc project quá nhạy cảm, dùng project mẫu của khoá cho bước bốn
+  - Slide tham khảo của Practice 1 (khoảng bốn giờ, ước lượng chưa đo), không chiếu trên lớp; sáu bước ở slide kế tiếp
+  - Ai mà công ty cấm AI tool, hoặc project quá nhạy cảm, dùng project mẫu của khoá cho bước năm
   - **Ai gõ lại tóm tắt project từ trí nhớ: chỉ họ về file**
   - Ai thấy bảng và link hiển thị thô: mở cả folder project trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
 
-### PROCESS · Seven steps
+### PROCESS · Six steps
 - Kicker: Practice 1
-- Title: Bảy bước,\n*một folder*
+- Title: Sáu bước,\n*một folder*
 - On-slide:
-  - 01 · Lấy project folder từ template và đặt tên
-  - 02 · Đưa context về product cho AI
-  - 03 · Để AI ghi tài liệu cho folder, designer kiểm tra
-  - 04 · Chạy một instruction với một file đã lưu
-  - 05 · Viết hai dòng vào my-direction.md
+  - 01 · Tạo repo trống và project folder của riêng bạn
+  - 02 · Viết data rules
+  - 03 · Viết product context
+  - 04 · Để AI soạn README cho folder, designer kiểm tra
+  - 05 · Chạy một instruction với một file đã lưu
   - 06 · Tuỳ chọn: push lên Git, bật trang live
-  - 07 · Ghi learning log
 - Speaker notes:
-  - Thời gian là ước lượng chưa đo, tổng khoảng bốn giờ gồm cả bước tuỳ chọn
-  - 01: khoảng mười lăm phút, tải template, nhờ AI tool tạo project bằng `new-project.py` và đối chiếu với layout chuẩn
-  - 02: khoảng bốn mươi lăm phút, viết `product-and-users.md` đã ẩn danh, cộng với `data-rules.md` từ Activity
-  - 03: khoảng bốn mươi lăm phút, AI đọc folder rồi viết `README.md` và rules file (`AGENTS.md`); designer kiểm tra từng dòng, vì rules file là luật AI sẽ đọc ở mọi buổi sau
-  - 04: khoảng ba mươi phút, đính kèm file product, hỏi còn thiếu gì, rồi đọc câu trả lời có phản biện
-  - 05: mười phút, hai đến ba dòng vào `_personal/my-direction.md`: hướng nghiêng về, lý do, một kỹ năng muốn xây
-  - 06: tuỳ chọn, khoảng một giờ, chỉ cho ai muốn chia sẻ hub; repo Private, và chỉ bật trang live khi project được phép công khai; output chính không phụ thuộc vào bước này
-  - 07: năm phút, ba dòng và một câu reflection vào `_personal/learning-log.md`
-  - Instruction của bước bốn nằm ở slide kế tiếp
-- 🎨 Visual hint: SCHEMATIC. Process track bảy bước, bước bốn được tô purple, bước sáu nét đứt vì tuỳ chọn.
+  - Tổng khoảng bốn giờ gồm cả bước tuỳ chọn (ước lượng, chưa đo)
+  - 01: tạo repo trống trên GitHub, clone về, mở trong AI coding tool; designer tự chọn cách tổ chức folder
+  - 02: ba dòng bằng lời của designer, viết trước khi đưa bất kỳ thứ gì cho AI
+  - 03: nửa trang về sản phẩm, người dùng và job chính, đã ẩn danh; gửi cây folder và file này cho giảng viên để nhận feedback sớm
+  - 04: AI đọc folder rồi viết `README.md`; designer kiểm tra từng dòng và giữ chữ "unknown" ở chỗ chưa biết
+  - 05: đính kèm file product, hỏi còn thiếu gì, đối chiếu với một câu hỏi mơ hồ, rồi đọc câu trả lời có phản biện
+  - 06: tuỳ chọn, chỉ cho ai muốn chia sẻ hub; gói miễn phí chỉ bật trang live cho repo Public, nên chỉ làm khi folder chỉ có dữ liệu giả; output chính không phụ thuộc vào bước này
+  - Instruction của bước năm nằm ở slide kế tiếp
+- 🎨 Visual hint: SCHEMATIC. Process track sáu bước, bước năm được tô purple, bước sáu nét đứt vì tuỳ chọn.
 
 ---
 
 ### STATEMENT · The instruction to run
-- Kicker: Bước 4
+- Kicker: Bước 5
 - Title: Còn *thiếu gì?*
 - On-slide: "Chỉ dùng file này. Liệt kê năm điều cần biết mà KHÔNG có trong đó. Không đoán. Nếu chưa rõ, nói 'unknown'. Chỉ trả về danh sách."
 - Speaker notes:
