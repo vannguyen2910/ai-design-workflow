@@ -1,33 +1,51 @@
 ---
 // Lesson pages: the card name is the title, the lesson name sits above it as a link back to the lesson.
-import { listLessons } from '../../scripts/lessons.mjs';
+import { listBatches, listLessons, youtubeEmbed } from '../../scripts/lessons.mjs';
 
 const { id, entry } = Astro.locals.starlightRoute;
-const m = id.match(/^lessons\/([^/]+)\/(lesson|practice|overview)$/);
+const m = id.match(/^lessons\/([^/]+)\/(lesson|practice|reference|overview)$/);
 const lesson = m && listLessons().find((l) => l.slug === m[1]);
 const kind = m?.[2];
-const CARD = { lesson: 'Lý thuyết', practice: 'Thực hành', overview: `Lesson ${lesson?.num}` };
+const CARD = { lesson: 'Lý thuyết', practice: 'Thực hành', reference: 'Tài liệu tham khảo', overview: `Lesson ${lesson?.num}` };
 const title = lesson ? CARD[kind] : entry.data.title;
-const overview = lesson && `${import.meta.env.BASE_URL.replace(/\/$/, '')}/lessons/${lesson.slug}/overview/`;
+// playback pages (classes/<batch>/playback/<lesson>) show the class video and slides under the title
+const playback = /^classes\/[^/]+\/playback\//.test(id);
+const { video, slides } = entry.data;
+const embed = youtubeEmbed(video);
+// every page inside a section gets the same breadcrumb: section › parent. The parent is a link unless this page is the parent.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const c = id.match(/^classes\/([^/]+)(\/.+)?$/);
+const batch = c && listBatches().find((b) => b.slug === c[1]);
+const crumb = lesson
+	? { section: 'Lessons', label: kind === 'overview' ? `Lesson ${lesson.num}` : `Lesson ${lesson.num} · ${lesson.lesson.title}`, href: kind !== 'overview' && `${base}/lessons/${lesson.slug}/overview/` }
+	: batch && { section: 'Classes', label: batch.label, href: c[2] && `${base}/classes/${batch.slug}/` };
 ---
 
 {
-	lesson && (
+	crumb && (
 		<nav class="crumbs" aria-label="Breadcrumb">
-			<span>Lessons</span>
+			<span>{crumb.section}</span>
 			<span aria-hidden="true">›</span>
-			{kind === 'overview' ? (
-				<span aria-current="page">Lesson {lesson.num}</span>
-			) : (
-				<a href={overview}>
-					Lesson {lesson.num} · {lesson.lesson.title}
-				</a>
-			)}
+			{crumb.href ? <a href={crumb.href}>{crumb.label}</a> : <span aria-current="page">{crumb.label}</span>}
 		</nav>
 	)
 }
 <h1 id="_top">{title}</h1>
 {lesson && kind === 'overview' && <p class="lesson-name">{lesson.lesson.title}</p>}
+{
+	playback && (
+		<div class="playback">
+			{embed ? (
+				<iframe class="playback__video" src={embed} title="Video buổi học" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy" />
+			) : video ? (
+				<a href={video} target="_blank" rel="noopener">Xem video buổi học ↗</a>
+			) : (
+				<p class="lesson-name">Chưa có video.</p>
+			)}
+			{slides && <a href={slides} target="_blank" rel="noopener">Slides của buổi này ↗</a>}
+		</div>
+	)
+}
 
 <style>
 	h1 {
@@ -51,6 +69,17 @@ const overview = lesson && `${import.meta.env.BASE_URL.replace(/\/$/, '')}/lesso
 	}
 	.crumbs a:hover {
 		text-decoration: underline;
+	}
+	.playback {
+		display: grid;
+		gap: 0.75rem;
+		margin-top: 1rem;
+	}
+	.playback__video {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		border: 0;
+		border-radius: 16px;
 	}
 	.lesson-name {
 		margin: 0.25rem 0 0;

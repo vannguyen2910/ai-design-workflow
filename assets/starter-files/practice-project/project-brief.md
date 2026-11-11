@@ -1,9 +1,7 @@
 ---
-title: Đề bài practice
+title: "Project brief: Chia tiền nhóm đi chơi"
 description: Đề tài 6 tuần, một project xuyên suốt
 ---
-# Chia tiền nhóm đi chơi
-
 **Problem statement:** 
 
 Khi cả nhóm đi chơi chung, mỗi người ứng tiền một ít cho ăn uống, xe, phòng nghỉ và vé, nhưng hiếm khi ai ghi lại. Đến cuối chuyến, việc tính xem ai đã trả gì và ai còn nợ ai thường mất nhiều thời gian và dễ gây bất đồng. Một cách làm giúp ghi chi tiêu ngay khi phát sinh, chia tiền minh bạch và chốt nợ nhanh sẽ giảm việc tính toán này, và giữ không khí của chuyến đi. Giải pháp cần đơn giản, dễ dùng khi đang đi, và giữ được sự riêng tư của từng người.

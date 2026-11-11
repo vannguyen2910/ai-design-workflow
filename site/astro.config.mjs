@@ -1,11 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { listLessons } from './scripts/lessons.mjs';
+import { listBatches, listLessons } from './scripts/lessons.mjs';
 import remarkLinks from './scripts/remark-links.mjs';
 
 // one sidebar entry per lesson folder: lessons/NN-slug/ -> "Lesson N" -> its overview page
 const lessons = listLessons().map((l) => ({ label: `Lesson ${l.num}`, slug: `lessons/${l.slug}/overview` }));
+// one link per batch, newest first; playback and mentees are sections of the batch page, not sidebar entries
+const classes = listBatches().map((b) => ({ label: b.label, slug: `classes/${b.slug}` }));
 
 export default defineConfig({
 	site: 'https://vannguyen2910.github.io',
@@ -19,9 +21,9 @@ export default defineConfig({
 				routeMiddleware: './src/routeData.ts',
 			sidebar: [
 				{ label: 'Giới thiệu chương trình', slug: 'index' },
-				{ label: 'Landing Page', slug: 'landing' },
 				{ label: 'Lessons', items: lessons },
 					{ label: 'Project brief', slug: 'project/brief' },
+				{ label: 'Classes', items: classes },
 			],
 		}),
 	],
