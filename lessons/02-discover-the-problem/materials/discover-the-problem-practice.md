@@ -1,6 +1,6 @@
 ---
 title: "Discover Your Project"
-summary: "Chuỗi việc ở nhà: bộ nguyên tắc, Break the brief và phỏng vấn user thật."
+summary: "Chuỗi việc ở nhà: Break the brief (nguyên tắc, scope, assumption, research question, đưa lên hub) và phỏng vấn user thật."
 type: practice
 program: ai-design-workflow
 lesson: discover-the-problem
@@ -9,19 +9,22 @@ draft: true
 
 ## Goal
 
-Làm một project của bạn đi qua stage Discover: từ bộ nguyên tắc và Break the brief đến phỏng vấn user thật. Mỗi step cho ra một file. Các file này là đầu vào cho Lesson 3, nơi bạn biến ghi chú phỏng vấn thành insight.
+Làm một project của bạn đi qua stage Discover: từ bộ nguyên tắc và Break the brief đến phỏng vấn user thật. Mỗi step cho ra một file. Các file này là đầu vào cho Lesson 3, nơi bạn biến transcript thành insight.
 
-## Tổng quan 7 step
+Hai phần của practice này đúng theo slide Practice của Lesson 2: **Break the brief** và **Phỏng vấn user thật**.
+
+## Tổng quan 8 step
 
 | Phần | Step | Việc | File ra |
 |---|---|---|---|
-| **A. Break the brief** | 1 | Viết bộ nguyên tắc | `principles.md` |
+| **A. Break the brief** | 1 | Thiết lập nguyên tắc thiết kế và product | `principles.md` |
 | | 2 | Chốt business question và scope | `research-questions.md` (phần scope) |
-| | 3 | Thách thức các giả định | `assumption.md` |
-| | 4 | Viết research question | `research-questions.md` (phần câu hỏi) |
-| **B. Phỏng vấn** | 5 | Chuẩn bị research plan và script | `research-plan.md`, `interview-script.md` |
-| | 6 | Phỏng vấn user thật | transcript gốc |
-| | 7 | Ẩn danh và gắn source ID | transcript đã ẩn danh |
+| | 3 | Liệt kê assumptions | `assumption.md` |
+| | 4 | Liệt kê research questions | `research-questions.md` (phần câu hỏi) |
+| | 5 | Add work lên hub của bạn | các file trên, trong hub |
+| **B. Phỏng vấn user thật** | 6 | Chuẩn bị research plan và interview script | `research-plan.md`, `interview-script.md` |
+| | 7 | Phỏng vấn ít nhất 2 user thật | transcript gốc |
+| | 8 | Lấy raw transcript, ẩn danh và gắn source ID | transcript đã ẩn danh |
 
 ## Before you start
 
@@ -44,7 +47,7 @@ Làm một project của bạn đi qua stage Discover: từ bộ nguyên tắc v
 
 ## Phần A · Break the brief
 
-### Step 1 · Viết bộ nguyên tắc
+### Step 1 · Thiết lập nguyên tắc thiết kế và product
 
 **Ai làm:** bạn.
 
@@ -72,7 +75,7 @@ Làm một project của bạn đi qua stage Discover: từ bộ nguyên tắc v
 **Xong khi:** scope có business question, quyết định, outcome, metric và agreement status.
 **File:** `research-questions.md` (phần scope, ở đầu file)
 
-### Step 3 · Thách thức các giả định
+### Step 3 · Liệt kê assumptions
 
 **Ai làm:** AI soạn nháp, bạn kiểm tra và quyết định.
 
@@ -83,7 +86,7 @@ Làm một project của bạn đi qua stage Discover: từ bộ nguyên tắc v
 **Xong khi:** mỗi mục có nguồn hoặc nhãn "chưa có nguồn", và ba giả định hàng đầu được đánh dấu.
 **File:** `assumption.md`
 
-### Step 4 · Viết research question
+### Step 4 · Liệt kê research questions
 
 **Ai làm:** AI soạn nháp, bạn kiểm tra và quyết định.
 
@@ -99,9 +102,19 @@ Làm một project của bạn đi qua stage Discover: từ bộ nguyên tắc v
 **Xong khi:** mỗi research question gắn với một giả định, một quyết định và nơi tìm câu trả lời.
 **File:** `research-questions.md` (phần câu hỏi, dưới phần scope)
 
+### Step 5 · Add work lên hub của bạn
+
+**Ai làm:** bạn.
+
+1. Đưa `principles.md`, `research-questions.md` và `assumption.md` vào đúng chỗ trong project folder (hub) của bạn từ Practice 1.
+2. Commit lên Git. Nếu đã bật trang live thì mở link kiểm tra các file hiển thị đúng.
+3. Đây là thói quen của cả chương trình: mỗi practice xong phần nào, phần đó nằm trong hub, không nằm rải rác trong chat hay desktop.
+
+**Xong khi:** ba file của Phần A nằm trong hub và đã commit.
+
 ## Phần B · Phỏng vấn user thật
 
-### Step 5 · Chuẩn bị research plan và script
+### Step 6 · Chuẩn bị research plan và interview script
 
 **Ai làm:** AI soạn nháp, bạn kiểm tra và quyết định.
 
@@ -117,7 +130,7 @@ Tuỳ chọn: nhờ AI dựng một trang nhỏ từ script (câu hỏi theo th�
 **Xong khi:** có goal, profile, 5 đến 8 câu hỏi, script đã chạy thử, và người tham gia đã đồng ý.
 **File:** `research-plan.md`, `interview-script.md`
 
-### Step 6 · Phỏng vấn user thật
+### Step 7 · Phỏng vấn ít nhất 2 user thật
 
 **Ai làm:** bạn. Không dùng AI trong buổi phỏng vấn.
 
@@ -132,12 +145,14 @@ Quy tắc vàng: hiểu thế giới của họ, không xác nhận giải pháp
 
 Script là lưới an toàn, không phải khuôn. Nếu cả buổi chỉ đi theo thứ tự câu hỏi thì đó là bảng khảo sát.
 
-**Xong khi:** có transcript hoặc ghi chú của mỗi buổi. Lưu bản gốc vào `work/sources/_raw-private/`, ngoài vùng AI đọc.
+**Xong khi:** có transcript hoặc ghi chú của mỗi buổi.
 **File:** transcript gốc
 
-### Step 7 · Ẩn danh và gắn source ID
+### Step 8 · Lấy raw transcript, ẩn danh và gắn source ID
 
 **Ai làm:** bạn.
+
+Nhớ lấy raw transcript của từng buổi ngay sau phỏng vấn (bản ghi hình, bản gỡ băng hoặc ghi chú tay). Lưu bản gốc vào `work/sources/_raw-private/`, ngoài vùng AI đọc. Đây là đầu vào bắt buộc của Lesson 3.
 
 1. **Trả lời bốn câu hỏi** trước khi đưa dữ liệu cho AI. Câu nào "không biết" thì hỏi lead hoặc bộ phận pháp lý trước.
    - Người tham gia đã đồng ý điều gì, có nhắc việc dùng AI không?
@@ -158,8 +173,9 @@ Script là lưới an toàn, không phải khuôn. Nếu cả buổi chỉ đi t
 - [ ] `principles.md`
 - [ ] `research-questions.md` (scope và câu hỏi)
 - [ ] `assumption.md` (có ba giả định hàng đầu)
+- [ ] Ba file trên đã nằm trong hub và commit
 - [ ] `research-plan.md` và `interview-script.md`
-- [ ] Transcript đã ẩn danh, có source ID
+- [ ] Transcript gốc trong `work/sources/_raw-private/`, bản ẩn danh có source ID trong `work/sources/anonymised/`
 
 Xem hình dạng các file này khi đã nằm trong hub ở [Outcome Examples](../../../examples/outcome-examples/README.md).
 
@@ -167,17 +183,17 @@ Xem hình dạng các file này khi đã nằm trong hub ở [Outcome Examples](
 
 - [ ] Mỗi UX principle riêng có dòng "điều này không có nghĩa là…" và một quyết định nó đảo ngược.
 - [ ] Project có một business question, tách khỏi giải pháp trong brief.
-- [ ] Mọi dòng AI soạn ở Step 3, 4 và 5 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
+- [ ] Mọi dòng AI soạn ở Step 3, 4 và 6 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
 - [ ] Mỗi interview question dẫn về một research question, và mỗi research question dẫn về một giả định.
 - [ ] Dữ liệu gốc chưa ẩn danh không nằm trong vùng AI đọc.
 
-Xong cả 7 step thì mang các file này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
+Xong cả 8 step thì mang các file này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
 
 ## If you get stuck
 
 - **Không tiếp cận được business:** dựng scope từ PRD hoặc brief, thông tin công khai và dữ liệu nhìn thấy được. Ghi mọi outcome và metric là "assumed", agreement status là "not available".
 - **Chưa có research cũ để kéo insight:** ghi "chưa có" ở `assumption.md` và để phần đó cho phỏng vấn.
-- **Chưa phỏng vấn được user thật, hoặc project quá nhạy cảm:** làm Step 1 đến 5 trên project của bạn, rồi dùng project mẫu app giao đồ ăn ([case card](../../../assets/starter-files/course-case/case-card.md)) cho phần phỏng vấn và làm lại với dữ liệu của bạn khi có. Bộ ghi chú nguồn mẫu dùng ở Lesson 3.
+- **Chưa phỏng vấn được user thật, hoặc project quá nhạy cảm:** làm Step 1 đến 6 trên project của bạn, rồi dùng project mẫu app giao đồ ăn ([case card](../../../assets/starter-files/course-case/case-card.md)) cho phần phỏng vấn và làm lại với dữ liệu của bạn khi có. Bộ ghi chú nguồn mẫu dùng ở Lesson 3.
 - **Không rõ người tham gia đã đồng ý gì, hoặc công cụ có huấn luyện trên dữ liệu không:** dừng lại, hỏi lead. Đừng đưa transcript cho AI.
-- **Không làm hết được:** làm Step 1 đến 4 trước, rồi Step 5 đến 7 khi đã hẹn được người phỏng vấn.
+- **Không làm hết được:** làm Step 1 đến 5 trước, rồi Step 6 đến 8 khi đã hẹn được người phỏng vấn.
 - **AI đưa ra điều nghe hợp lý nhưng không có trong tài liệu:** ghi "chưa có nguồn", không đưa vào như một sự thật.
