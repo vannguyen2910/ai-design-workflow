@@ -15,7 +15,7 @@ next-session: "AI Prototyping"
 ---
 Lesson 3 dừng ở một map đi từ Goal hoặc Problem xuống Opportunity, và mỗi opportunity dẫn về insight ID. Buổi này kéo dài chính map đó xuống Solution. Từ solution, bạn đi tiếp đến một concept vẽ được ra giấy, rồi đến user flow và process map cho hướng đã chọn.
 
-> **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** Bạn nghĩ solution trước, AI mở rộng sau. Bảng được kiểm tra trước, diagram vẽ sau.
+> **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** Bạn nghĩ solution trước, AI mở rộng sau. Flow narrative được kiểm tra trước, diagram vẽ sau.
 
 ## Nội dung buổi học
 
@@ -33,7 +33,7 @@ Xem cấu trúc 90 phút trong [lesson-structure.html](../assets/lesson-structur
 2. Viết solution thành câu How Might We, giữ nguyên user need và không biến nó thành tính năng
 3. Sinh solution theo thứ tự bạn nghĩ trước, AI sau, và đánh dấu là hypothesis những solution AI đề xuất mà không gắn được với opportunity nào
 4. Vẽ một concept sketch gồm khoảnh khắc chính, nhãn thành phần, ghi chú ý đồ và một câu "This works because..."
-5. Dựng user flow cho một task từ bảng đã kiểm tra, rồi mở rộng thành process map bằng các lane phía sau
+5. Dựng user flow cho một task từ flow narrative đã kiểm tra, rồi mở rộng thành process map bằng các lane phía sau
 6. Nêu khi nào một quy trình user flow hoặc process map đã đủ ổn để package thành skill
 
 ---
@@ -143,24 +143,26 @@ Bạn làm concept sketch cho project của mình ở bài tập về nhà.
 | **What** | Đường đi của một người dùng qua các bước để hoàn thành một task, gồm quyết định, nhánh lỗi và điểm kết |
 | **Why** | Thấy flow bị đứt ở đâu trước khi dựng màn hình, và cho AI biết thứ tự các màn, điểm bắt đầu và điểm kết thúc |
 | **When** | Sau khi chọn concept, trước prototype. Không cần khi thay đổi chỉ nằm trong một màn hình |
-| **How with AI** | AI biến ghi chú walkthrough thành bảng, tìm friction so với mục tiêu và đề xuất ít nhất ba cấu trúc khác cho bước tệ nhất |
-| **AI không làm** | Vẽ diagram trước khi bảng được kiểm tra |
+| **How with AI** | AI biến ghi chú walkthrough thành flow narrative, tìm friction so với mục tiêu và đề xuất ít nhất ba cấu trúc khác cho bước tệ nhất |
+| **AI không làm** | Vẽ diagram trước khi flow narrative được kiểm tra |
+
+**Flow narrative.** Flow narrative là bản kể lại flow bằng chữ, viết thành bảng từng bước: mỗi hàng một bước, gồm bước, người làm, điều xảy ra và nguồn ghi chú. Đây không phải thuật ngữ chuẩn của ngành, mà là tên dùng trong buổi này. Chưa biết nguồn thì ghi unknown, không đoán. Flow narrative chưa phải diagram: nó là bản để kiểm tra với sản phẩm thật, và là đầu vào để AI vẽ diagram. AI chỉ vẽ những gì có trong đó. *Ví dụ trong Delivery App:* hàng "Kiểm tra cut-off | App | Qua cut-off thì báo không đổi được | Ghi chú team".
 
 **Task flow và user flow.** Task flow là chuỗi tuyến tính của đường đi dự kiến, không có nhánh lỗi, dùng để thống nhất phạm vi. User flow có đủ nhánh, lỗi và điểm kết, dùng trước khi dựng prototype. Bạn vẽ task flow trước rồi mới mở rộng thành user flow. *Ví dụ trong Delivery App:* task flow "đổi khung giờ giao của đơn đã đặt" có bốn bước, còn user flow thêm nhánh "đã qua cut-off" và "lỗi thanh toán".
 
-**Vì sao AI không được vẽ trước.** AI vẽ ra một flow gọn từ mô tả một dòng, và người xem không còn phân biệt được đâu là thật. *Ví dụ trong Delivery App:* AI vẽ flow đổi khung giờ giao có sáu bước, còn sản phẩm thật có bảy vì có thêm bước xác nhận cut-off. Vì vậy quy trình đi theo bảng trước, diagram sau:
+**Vì sao AI không được vẽ trước.** AI vẽ ra một flow gọn từ mô tả một dòng, và người xem không còn phân biệt được đâu là thật. *Ví dụ trong Delivery App:* AI vẽ flow đổi khung giờ giao có sáu bước, còn sản phẩm thật có bảy vì có thêm bước xác nhận cut-off. Vì vậy quy trình đi theo flow narrative trước, diagram sau:
 
 1. Bạn thu thập ghi chú walkthrough.
-2. AI soạn nháp bảng.
-3. Bạn kiểm tra bảng với sản phẩm thật.
-4. AI phân tích bảng đã kiểm tra.
+2. AI soạn nháp flow narrative.
+3. Bạn kiểm tra flow narrative với sản phẩm thật.
+4. AI phân tích flow narrative đã kiểm tra.
 5. Bạn chọn fix và quyết định.
-6. AI soạn code diagram từ bảng.
-7. Bạn đối chiếu diagram với bảng.
+6. AI soạn code diagram từ flow narrative.
+7. Bạn đối chiếu diagram với flow narrative.
 
-Bảng là nguồn chuẩn, diagram chỉ là cách nhìn bảng. Có ba gate: bảng khớp sản phẩm thật, fix bảo vệ được, và diagram khớp bảng.
+Flow narrative là nguồn chuẩn, diagram chỉ là cách nhìn nó. Có ba gate: flow narrative khớp sản phẩm thật, fix bảo vệ được, và diagram khớp flow narrative.
 
-Xem bốn bước từ bảng sang diagram, với ba gate, ở [flow-to-map.html](../assets/flow-to-map.html).
+Xem bốn bước từ flow narrative sang diagram, với ba gate, ở [flow-to-map.html](../assets/flow-to-map.html).
 
 ### 4.2 Process map: zoom out
 
@@ -172,11 +174,32 @@ Xem bốn bước từ bảng sang diagram, với ba gate, ở [flow-to-map.html
 | **How with AI** | AI đặt các bước vào lane, đánh dấu chuyển giao và chờ, và liệt kê câu hỏi cần hỏi team thay vì đoán |
 | **AI không làm** | Đoán điều xảy ra phía sau khi bạn chưa có nguồn |
 
-Process map dùng lại bảng đã kiểm tra của user flow, thêm ba cột (lane, chuyển giao, chờ) cùng các sự kiện back-stage, mỗi sự kiện có nguồn (thành viên team, tài liệu hoặc engineering). Điều chưa biết thì ghi unknown và đổi thành câu hỏi cho team.
+Process map dùng lại flow narrative đã kiểm tra của user flow, thêm ba cột (lane, chuyển giao, chờ) cùng các sự kiện back-stage, mỗi sự kiện có nguồn (thành viên team, tài liệu hoặc engineering). Điều chưa biết thì ghi unknown và đổi thành câu hỏi cho team.
 
 **Ví dụ.** Đặt và giao một đơn đồ ăn, với bốn lane: Khách, App, Nhà hàng, Shipper. Bước khách chọn món nằm ở lane Khách, bước nhà hàng xác nhận nằm ở lane Nhà hàng. Chỗ chuyển giao từ nhà hàng sang shipper là nơi dễ phải chờ.
 
 **Nối với phần đầu.** Mỗi thay đổi trên process map đề xuất phải trả lời một pain point có thật. AI dễ vẽ ra một tương lai trơn tru không có thật. Bạn kiểm tra từng thay đổi với pain point, và kiểm tra các phụ thuộc với người sở hữu chúng.
+
+
+### 4.3 One source, many views
+
+| | |
+|---|---|
+| **What** | Flow narrative là nguồn dữ liệu duy nhất. User flow và process map là các cách nhìn (view) do agent vẽ thành HTML từ nó |
+| **Why** | Đổi cách hiển thị mà không đổi dữ liệu. Khi dữ liệu đổi thì mọi view đổi theo, không ai phải sửa tay từng diagram |
+| **When** | Khi cùng một flow cần hiển thị theo nhiều cách (user flow cho prototype, process map cho team phía sau), hoặc khi flow còn thay đổi nhiều |
+| **How with AI** | Bạn đặt một quy tắc cho agent: không sửa HTML trực tiếp. Muốn đổi, sửa flow narrative rồi cho agent chạy lại |
+| **AI không làm** | Sửa diagram mà không sửa flow narrative, hoặc thêm vào diagram một bước không có trong flow narrative |
+
+**Hai kiểu thay đổi.** Đổi nội dung là sửa một hàng trong flow narrative, rồi chạy lại: cả user flow và process map cùng đổi theo. Đổi cách hiển thị là yêu cầu agent đổi thứ tự lane, gộp hoặc tách giai đoạn, hoặc chuyển từ user flow sang process map, còn flow narrative giữ nguyên. Nếu sửa tay trên HTML thì lần chạy sau sẽ mất thay đổi đó, và diagram không còn khớp flow narrative.
+
+**Quy tắc cho agent.** Ví dụ cách viết:
+
+> Nguồn dữ liệu là file flow narrative. Không sửa file HTML trực tiếp. Khi cần đổi nội dung, sửa flow narrative trước rồi vẽ lại HTML. Mỗi bước trên diagram phải có một hàng trong flow narrative. Hàng có nguồn unknown thì tô cam và ghi "no source yet".
+
+*Ví dụ trong Travel Buddy:* flow narrative có các cột #, Step, Who, What happens, Planned solution, Source. Process map HTML lấy cột Who làm lane (Traveler, Travel Buddy, Local, Companion hoặc Contact), cột Planned solution thành dòng nhỏ dưới mỗi bước, và hàng 4 "Signs up" có nguồn unknown nên hiện thành ô cam. Xem hai file mẫu ở [Flow Narrative.png](../assets/Flow%20Narrative.png) và [process-map.html](../assets/process-map.html).
+
+Quy tắc này là một phần của skill ở phần 5: một skill tốt giữ nguồn ở một chỗ và để agent tự vẽ lại các view.
 
 ---
 
@@ -185,11 +208,11 @@ Process map dùng lại bảng đã kiểm tra của user flow, thêm ba cột (
 Khi quy trình user flow và process map đã chạy ổn, bạn đóng gói nó:
 
 1. Viết quy trình thành skill: ai làm (bạn hay AI), đầu vào, đầu ra, và check nào phải qua.
-2. Giữ nguyên các gate: bảng khớp sản phẩm thật, fix bảo vệ được, diagram khớp bảng.
+2. Giữ nguyên các gate: flow narrative khớp sản phẩm thật, fix bảo vệ được, diagram khớp flow narrative.
 3. Gắn skill cho một agent để agent chạy đúng quy trình này mỗi lần cần.
 4. Đặt skill và file output vào Knowledge Hub của project để buổi sau dùng lại.
 
-Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai task khác nhau, và phần bạn kiểm tra đã được ghi rõ. Đóng gói quá sớm là đóng gói luôn cả lỗi. Skill không thay được bước kiểm tra bảng và bước quyết định fix. *Ví dụ trong Delivery App:* skill "user flow và process map" chạy lần một với task đổi khung giờ giao, lần hai với task huỷ đơn, rồi mới được đóng gói.
+Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai task khác nhau, và phần bạn kiểm tra đã được ghi rõ. Đóng gói quá sớm là đóng gói luôn cả lỗi. Skill không thay được bước kiểm tra flow narrative và bước quyết định fix. *Ví dụ trong Delivery App:* skill "user flow và process map" chạy lần một với task đổi khung giờ giao, lần hai với task huỷ đơn, rồi mới được đóng gói.
 
 ---
 
@@ -201,7 +224,7 @@ Khi quy trình user flow và process map đã chạy ổn, bạn đóng gói nó
 | Hỏi AI trước | Ý số một của bạn là ý của AI | Viết solution của mình trước, rồi mới hỏi |
 | Solution không có opportunity | Phía trên solution không có opportunity nào | Tìm opportunity phù hợp, hoặc ghi hypothesis |
 | Sketch quá đẹp | Mất thời gian vẽ, không ghi nhãn | Giữ sketch thô và ghi nhãn mọi thành phần |
-| Vẽ flow trước khi có bảng | Diagram không có nguồn | Quay lại bảng và kiểm tra với sản phẩm thật |
+| Vẽ flow trước khi có flow narrative | Diagram không có nguồn | Quay lại flow narrative và kiểm tra với sản phẩm thật |
 | Process map toàn là đoán | Lane back-stage không có nguồn | Ghi unknown và hỏi team |
 
 ---

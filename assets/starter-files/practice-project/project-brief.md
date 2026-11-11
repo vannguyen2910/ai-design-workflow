@@ -36,13 +36,6 @@ Bạn tự chọn nhóm người dùng và giải pháp. Người dùng có th�
 | 6    | Test with real users   | Practice 6 | Audit prototype cùng AI, test với 3 đến 5 người thật, sửa đúng layer, và đóng gói handoff.                                                            |
 Chi tiết từng bước nằm trong file practice của từng lesson. Bảng trên chỉ cho bạn thấy đề tài của mình ở mỗi tuần.
 
-## Tự kiểm tra trước khi nộp
-
-- Mỗi file dẫn về bằng chứng: source ID, insight ID, hoặc timestamp, tùy tuần.
-- Mỗi quyết định đề lý do, kể cả khi bạn quyết định không làm điều đó.
-- Điều bạn chưa biết thì ghi là chưa biết, không đoán.
-- Prototype chạy được trên trình duyệt, và bạn đã tự mở để kiểm tra.
-
 ## Kết quả cuối cùng
 
 Sau tuần 6, folder project của bạn có đủ các file trong bảng trên, một prototype đã sửa, và gói handoff cho người sẽ triển khai sản phẩm. 
