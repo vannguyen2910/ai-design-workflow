@@ -18,12 +18,15 @@ html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:84px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-weight:var(--w-body);font-size:1.0625rem;line-height:1.6;-webkit-text-size-adjust:100%}
 img,svg{max-width:100%}
-h1,h2,h3,p,ul,ol,dl{margin:0}
+h1,h2,h3,p,ul,ol,dl,blockquote{margin:0}
 ul,ol{padding:0;list-style:none}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
 .wrap{width:100%;max-width:calc(var(--maxw) + 2*var(--gutter));margin:0 auto;padding:0 var(--gutter)}
 section{padding:var(--section) 0 0}
+/* Thang chữ cho các phần đã chỉnh (Giải pháp trở xuống): nhỏ 15px, phụ 13px, nhãn 11.5px; tiêu đề thẻ 18px, tiêu đề mục con 20px */
+:root{--fs-sm:.9375rem;--fs-xs:.8125rem;--fs-label:.72rem;--fs-h4:1.125rem;--fs-h3:1.25rem}
+.label{display:block;font-size:var(--fs-label);letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--muted)}
 .tilt{transform:rotate(var(--tilt))}
 .tilt-alt{transform:rotate(var(--tilt-alt))}
 
@@ -57,6 +60,7 @@ section{padding:var(--section) 0 0}
 .hero{position:relative;padding:clamp(28px,6vw,72px) 0 8px}
 .eb{margin:0;display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:.95rem}
 .stamp{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--ink);background:var(--soft);border-radius:8px;padding:2px 8px;transform:rotate(-3deg);white-space:nowrap}
+.stamp--plain{background:transparent;transform:none;border-color:var(--line);color:var(--muted)}
 .hero h1{font-size:clamp(2.2rem,5.2vw,3.8rem);letter-spacing:-.02em;line-height:1.12;font-weight:800;margin-top:0;text-wrap:balance}
 .tagline{margin-top:16px;font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:800;letter-spacing:-.015em;line-height:1.35;max-width:40ch;text-wrap:balance}
 .tagline em{font-style:normal;background:var(--chartreuse);padding:0 .14em;border-radius:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
@@ -106,17 +110,18 @@ section{padding:var(--section) 0 0}
 @media(max-width:860px){.cards4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.cards4{grid-template-columns:minmax(0,1fr)}}
 
-/* Dành cho ai */
+/* Dành cho ai: cột "dành cho bạn" nền indigo, cột "chưa hợp" viền mảnh */
 .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
 .col{border-radius:var(--r-xl);padding:var(--pad)}
-.col h3{font-size:1.15rem;font-weight:800;margin-bottom:14px}
+.col h3{font-size:var(--fs-h4);font-weight:800;margin-bottom:14px}
 .col li{padding:10px 0 10px 30px;position:relative;border-top:1.5px solid #14123A1A}
 .col li:first-child{border-top:0}
 .col li::before{content:"";position:absolute;left:0;top:17px;width:16px;height:16px;border-radius:50%}
-.col--yes{background:var(--soft)}
-.col--yes li::before{background:var(--indigo)}
+.col--yes{background:var(--indigo);color:#fff}
+.col--yes li{border-top-color:#FFFFFF26}
+.col--yes li::before{background:var(--chartreuse)}
 .col--no{border:1.5px solid var(--line)}
-.col--no li::before{background:transparent;box-shadow:inset 0 0 0 2.5px var(--muted)}
+.col--no li::before{box-shadow:inset 0 0 0 2.5px var(--muted)}
 @media(max-width:760px){.two{grid-template-columns:minmax(0,1fr)}}
 
 /* Band số liệu */
@@ -158,125 +163,85 @@ section{padding:var(--section) 0 0}
 .tl li.end > div:last-child{grid-column:span 2}
 @media(max-width:760px){.tl li{grid-template-columns:minmax(0,1fr);gap:10px;padding:22px 0 22px 40px}.tl li.end > div:last-child{grid-column:auto}}
 
-/* Học xong có gì */
-.out3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);counter-reset:o}
-.out3 li{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px;counter-increment:o}
-.out3 li::before{content:counter(o);display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--indigo);color:#fff;font-weight:800;margin-bottom:12px}
-.out3 b{display:block;font-size:1.1rem;font-weight:800;line-height:1.3;margin-bottom:6px}
-.out3 p{font-size:.95rem;color:var(--muted)}
-.promise{margin-top:var(--gap);background:var(--ink);color:#fff;border-radius:var(--r-xl);padding:var(--pad)}
-.promise h3{font-size:1.1rem;font-weight:800;color:var(--chartreuse);margin-bottom:8px}
-.promise p{max-width:70ch}
-.can{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap);counter-reset:c;margin-top:12px}
-.can li{counter-increment:c;background:var(--soft);border-radius:var(--r-md);padding:16px 18px 16px 58px;position:relative;font-size:.97rem}
-.can li::before{content:counter(c);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--indigo);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.9rem}
-@media(max-width:760px){.can{grid-template-columns:minmax(0,1fr)}}
-.know{margin-top:var(--gap);font-size:.95rem;color:var(--muted)}
+/* Giải pháp: khối nền soft, để vấn đề (ink) và giải pháp tách nhau rõ */
+#ket-qua{padding:var(--section) var(--gutter) 0}
+#ket-qua .wrap{background:var(--soft);border-radius:var(--r-xl);padding:clamp(28px,5vw,56px);max-width:var(--maxw)}
+#ket-qua .kick{background:var(--paper)}
+#ket-qua .sub{color:var(--ink)}
+#ket-qua .h2{max-width:none}
+.out3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+.out3 li{background:var(--paper);border-radius:var(--r-lg);padding:22px;display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0}
+.out3 li::before{content:"";width:36px;height:5px;border-radius:3px;background:var(--indigo);margin-bottom:16px}
+.out3 b{font-size:var(--fs-h4);font-weight:800;line-height:1.3;margin-bottom:8px}
+.out3 p{font-size:var(--fs-sm);color:var(--muted)}
 @media(max-width:860px){.out3{grid-template-columns:minmax(0,1fr)}}
-
-/* Bạn mang về: thẻ ink nằm trong khung nội dung, ngăn đoạn trắng dài giữa Chương trình và Hỏi đáp */
-#ket-qua{margin-top:clamp(36px,6vw,72px);padding:0 var(--gutter)}
-#ket-qua .wrap{background:var(--ink);color:#fff;border-radius:var(--r-xl);padding:clamp(28px,5vw,56px);max-width:var(--maxw)}
-#ket-qua .kick{background:#FFFFFF26;color:#fff}
-#ket-qua .sub{color:#FFFFFFB3}
-#ket-qua .out3 li{background:transparent;border-color:#FFFFFF33}
-#ket-qua .out3 li::before{background:var(--chartreuse);color:var(--ink)}
-#ket-qua .out3 b{color:#fff}#ket-qua .out3 p{color:#FFFFFFB3}
-#ket-qua .sub-h{color:#fff}
-#ket-qua .can li{background:#FFFFFF14;color:#fff}
-#ket-qua .can li::before{background:var(--chartreuse);color:var(--ink)}
-#ket-qua .promise{background:var(--indigo)}
-#ket-qua .know{color:#FFFFFFB3}
-#ket-qua .h2 em{color:var(--ink)}
+.can-h{margin-top:clamp(28px,4vw,40px)}
+.can{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(20px,4vw,48px);margin-top:10px}
+.can li{position:relative;padding:12px 0 12px 34px;border-top:1.5px solid #14123A1A;font-size:var(--fs-sm)}
+.can li::before{content:"";position:absolute;left:0;top:14px;width:22px;height:22px;border-radius:50%;background:var(--indigo) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6.5 12.5l3.5 3.5 7.5-8' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+@media(max-width:760px){.can{grid-template-columns:minmax(0,1fr)}}
 /* Ví dụ */
 
-/* Học phí */
-.fees{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(18px,3vw,40px);align-items:start}
-.price .now span{font-size:1rem;font-weight:700;color:#fff;letter-spacing:0}
-.price .btn{margin-top:10px;align-self:stretch}
-.after{display:grid}
-.after > div{padding:18px 0;border-top:1.5px solid var(--line)}
-.after > div:first-child{border-top:0;padding-top:4px}
-.after small,.sched3 small{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--muted);margin-bottom:6px}
-.after p{font-size:.97rem}
-.after a{font-weight:800;color:var(--indigo);text-underline-offset:4px}
-.sched3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,36px)}
+/* Lịch học: thẻ batch dùng chung lưới 3 cột với hàng thông tin phía trên */
+.sched3,.batches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,36px)}
 .sched3 > div{border-top:2px solid var(--ink);padding-top:14px}
-.sched3 b{display:block;font-size:1.1rem;font-weight:800;line-height:1.3;margin-bottom:8px}
-.sched3 li{position:relative;padding-left:18px;font-size:.95rem;color:var(--muted)}
+.sched3 .label{margin-bottom:6px}
+.sched3 b{display:block;font-size:var(--fs-h4);font-weight:800;line-height:1.3;margin-bottom:8px}
+.sched3 li{position:relative;padding-left:18px;font-size:var(--fs-sm);color:var(--muted)}
 .sched3 li::before{content:"";position:absolute;left:0;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--indigo)}
-.batches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap);margin-top:clamp(24px,3vw,36px);max-width:760px}
+.batches{margin-top:clamp(24px,3vw,36px)}
 .batch{border:1.5px solid var(--line);border-radius:var(--r-lg);padding:18px 22px}
 .batch.on{background:var(--soft);border-color:var(--indigo)}
-.batch .bt{display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:800;font-size:.9rem}
-.batch .bt i{font-style:normal;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;border-radius:var(--r-pill);padding:3px 10px;box-shadow:inset 0 0 0 1.5px var(--ink)}
-.batch.on .bt i{background:var(--indigo);color:#fff;box-shadow:none}
+.batch .bt{display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:800;font-size:var(--fs-sm)}
 .batch b{display:block;font-size:clamp(1.6rem,3vw,2rem);font-weight:800;letter-spacing:-.02em;margin-top:10px;line-height:1.1}
-.batch p{font-size:.9rem;color:var(--muted)}
-.sched-note{margin-top:14px;font-size:.9rem;color:var(--muted);max-width:760px}
-@media(max-width:760px){.sched3{grid-template-columns:minmax(0,1fr)}}
+.batch p{font-size:var(--fs-sm);color:var(--muted)}
+.sched-note{margin-top:14px;font-size:var(--fs-sm);color:var(--muted);max-width:70ch}
+@media(max-width:760px){.sched3{grid-template-columns:minmax(0,1fr)}.batches{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}}
 @media(max-width:480px){.batches{grid-template-columns:minmax(0,1fr)}}
-.price{background:var(--indigo);color:#fff;border-radius:var(--r-xl);padding:var(--pad);display:flex;flex-direction:column;gap:12px;position:relative}
+
+/* Học phí: một thẻ giá trải ngang. Giá bên trái, nút bên phải, dòng "Sau khi đăng ký" ở đáy thẻ */
+.price{background:var(--indigo);color:#fff;border-radius:var(--r-xl);padding:clamp(24px,4vw,44px);display:grid;gap:clamp(20px,3vw,28px)}
+.p-main{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px}
+.p-info{display:grid;gap:10px;justify-items:start}
+.p-tag{background:#FFFFFF26;color:#fff;margin-bottom:6px}
 .price .was{text-decoration:line-through;opacity:.8;font-weight:700}
 .price .now{font-size:clamp(2.6rem,6vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--chartreuse)}
-.price .save{font-weight:700}
-.price ul{margin-top:6px;display:grid;gap:8px;font-size:.95rem}
+.price .now span{font-size:1rem;font-weight:700;color:#fff;letter-spacing:0}
+.price ul{margin-top:4px;font-size:var(--fs-sm)}
 .price li{padding-left:26px;position:relative}
-.price li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:12px;border-radius:50%;background:#fff}
-.steps{border:1.5px solid var(--line);border-radius:var(--r-xl);padding:var(--pad)}
-.steps h3,.sched-h{font-size:1.1rem;font-weight:800;margin-bottom:12px}
-.steps ol{display:grid;gap:12px;counter-reset:s}
-.steps li{position:relative;padding-left:44px;counter-increment:s}
-.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--soft);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.9rem}
-.steps li b{font-weight:800}
-.policy{margin-top:var(--gap);background:var(--soft);border-radius:var(--r-lg);padding:20px 24px;font-weight:700}
-.policy small{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.sched-wrap{margin-top:28px}
-.scroll{overflow-x:auto;border-radius:var(--r-md);border:1.5px solid var(--line);-webkit-overflow-scrolling:touch}
-.sched{width:100%;min-width:480px;border-collapse:collapse;font-size:.95rem}
-.sched th,.sched td{text-align:left;padding:12px 16px;border-top:1.5px solid #14123A14;vertical-align:top}
-.sched thead th{border-top:0;background:var(--ink);color:#fff;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
-.sched td:first-child{font-weight:800}
-.moved{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:var(--chartreuse);padding:1px 8px;border-radius:var(--r-pill);margin-left:6px}
-.facts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-.facts span{background:var(--soft);border-radius:var(--r-pill);padding:6px 14px;font-weight:700;font-size:.9rem}
-.note{margin-top:12px;font-size:.9rem;color:var(--muted)}
-@media(max-width:860px){.fees{grid-template-columns:minmax(0,1fr)}}
+.price li::before{content:"";position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:#fff}
+.price .btn{min-width:260px}
+.p-after{padding-top:clamp(16px,2.5vw,22px);border-top:1.5px solid #FFFFFF33;font-size:var(--fs-sm)}
+.p-after .label{color:#FFFFFFB3;margin-bottom:4px}
+.p-after a{color:var(--chartreuse);font-weight:800;text-underline-offset:4px}
+@media(max-width:560px){.price .btn{width:100%;min-width:0}}
 
+.sub-h{font-size:var(--fs-h3);font-weight:800;line-height:1.3}
 /* Giảng viên */
-.people{display:grid;grid-template-columns:minmax(0,760px);gap:var(--gap)}
-.person{border-radius:var(--r-xl);padding:var(--pad);display:flex;gap:18px;align-items:flex-start;background:var(--soft)}
-.avatar{flex:none;width:96px;height:96px;background:var(--indigo);color:#fff;font-weight:800;font-size:1.6rem;display:flex;align-items:center;justify-content:center;border-radius:42px 14px 42px 42px}
-.person:nth-child(2) .avatar{border-radius:14px 42px 42px 42px}
-.person .avatar.photo{overflow:hidden;background:var(--soft);border-radius:50%}
+.person{border-radius:var(--r-xl);padding:var(--pad);display:flex;gap:clamp(18px,3vw,32px);align-items:flex-start;background:var(--soft)}
+.avatar{flex:none;width:112px;height:112px;border-radius:50%;overflow:hidden;background:var(--soft)}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-.avatar img[src$="daphne.png"]{transform:scale(1.22)}
-.person h3{font-size:1.2rem;font-weight:800}
-.role{font-weight:700;font-size:.9rem;color:var(--muted);margin-bottom:8px}
-.person p{font-size:.95rem}
-.person a{font-weight:800}
-.person a.li{display:inline-block;margin-top:10px;font-size:.92rem;color:var(--indigo);text-underline-offset:4px}
-@media(max-width:760px){.people{grid-template-columns:minmax(0,1fr)}}
-.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);margin-top:var(--gap)}
-.quote{border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:12px;font-size:.95rem}
-.quote cite{font-style:normal;font-weight:800;font-size:.88rem;margin-top:auto}
-.quote cite span{display:block;font-weight:600;color:var(--muted);font-size:.8rem}
-.sub-h{font-size:1.1rem;font-weight:800;margin:34px 0 4px}
+.person h3{font-size:var(--fs-h3);font-weight:800}
+.role{font-weight:700;font-size:var(--fs-sm);color:var(--muted);margin-bottom:8px}
+.person p{max-width:72ch}
+.person a.li{display:inline-block;margin-top:10px;font-size:var(--fs-sm);font-weight:800;color:var(--indigo);text-underline-offset:4px}
+@media(max-width:560px){.person{flex-direction:column}.avatar{width:88px;height:88px}}
+.quotes-h{margin-top:clamp(28px,4vw,40px)}
+.note{margin-top:4px;font-size:var(--fs-sm);color:var(--muted)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);margin-top:16px}
+.quote{border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:12px;font-size:var(--fs-sm)}
+.quote cite{font-style:normal;font-weight:800;margin-top:auto}
+.quote cite span{display:block;font-weight:600;color:var(--muted);font-size:var(--fs-xs)}
 @media(max-width:900px){.quotes{grid-template-columns:minmax(0,1fr)}}
 
 /* Hỏi đáp */
 
-/* CTA cuối */
-.final{background:var(--indigo);color:#fff;border-radius:var(--r-xl);padding:clamp(24px,5vw,56px);position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:center}
+/* CTA cuối: nền ink để khác thẻ giá indigo ở mục Học phí */
+.final{background:var(--ink);color:#fff;border-radius:var(--r-xl);padding:clamp(28px,5vw,56px);position:relative;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:end}
 .final h2{font-size:clamp(1.8rem,4.4vw,3rem);text-transform:uppercase;letter-spacing:-.01em;line-height:1.25;font-weight:800;text-wrap:balance}
 .final h2 em{font-style:normal;color:var(--chartreuse)}
-.final p{margin-top:14px;opacity:.92;max-width:48ch}
+.final p{opacity:.85;max-width:48ch}
 .final .btn{margin-top:20px}
-.final .policy{background:#FFFFFF1F;color:#fff;margin-top:14px;font-size:.9rem}
-.final .policy small{color:#FFFFFFB3}
-.final ol{display:grid;gap:12px;counter-reset:f;background:var(--paper);color:var(--ink);border-radius:var(--r-lg);padding:22px}
-.final ol li{position:relative;padding-left:42px;counter-increment:f;font-size:.95rem}
-.final ol li::before{content:counter(f);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--chartreuse);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.9rem}
 .final .sparkle{right:26px;top:-22px;width:72px;height:72px}
 @media(max-width:860px){.final{grid-template-columns:minmax(0,1fr)}}
 
@@ -387,15 +352,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <section id="ket-qua"><div class="wrap">
   <div class="head">
     <span class="kick">Giải pháp</span>
-    <h2 class="h2">Khóa học giúp bạn giải quyết vấn đề bằng <em>một design&nbsp;workflow</em> hoàn chỉnh với&nbsp;AI.</h2>
-    <p class="sub">Một workflow bắt đầu từ business question và user problem, không phải từ UI. Context và insight tích lũy ở một chỗ, bước sau đọc lại từ bước trước. Quyết định nào cũng truy được về nguồn, nên bạn kiểm tra được output của AI. Và cuối khóa, bạn có một project để showcase cho nhà tuyển dụng.</p>
+    <h2 class="h2">Khóa học giúp bạn giải quyết vấn đề<br> bằng một <em>design workflow hoàn chỉnh với&nbsp;AI</em></h2>
+    <p class="sub">Một workflow bắt đầu từ business question và user problem, không phải từ UI.</p>
   </div>
   <ol class="out3">
-    <li><b>Một workflow end-to-end, lặp lại được</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra. Bước nào đã chạy ổn, bạn đóng gói thành skill và agent để AI chạy lại đúng quy trình đó ở project sau. Phần kiểm tra vẫn do bạn làm.</p></li>
-    <li><b>Một Knowledge Hub</b><p>Phần làm cho workflow tích lũy: mọi insight, quyết định và tài liệu ở một chỗ, truy ngược được về nguồn. Bước sau dùng lại output của bước trước, không phải bắt đầu lại. Hub nằm trong project folder của bạn, riêng tư mặc định, và bạn tự quyết phần nào công khai.</p></li>
-    <li><b>Một project đã chạy qua workflow đó</b><p>Có bằng chứng, có quyết định, có kết quả từ người dùng thật, và một bài trình bày project để cho team hay nhà tuyển dụng thấy cách bạn làm việc với AI.</p></li>
+    <li><b>Một workflow end-to-end, lặp lại được</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra.</p></li>
+    <li><b>Một Knowledge Hub</b><p>Phần làm cho workflow tích lũy: mọi insight, quyết định và tài liệu ở một chỗ, truy ngược được về nguồn. Hub nằm trong project folder của bạn, riêng tư mặc định, và bạn tự quyết phần nào công khai.</p></li>
+    <li><b>Một project đã chạy qua workflow đó</b><p>Có bằng chứng, có quyết định, có kết quả từ người dùng thật.</p></li>
   </ol>
-  <h3 class="sub-h" style="margin-top:34px">Học xong, bạn có thể</h3>
+  <h3 class="sub-h can-h">Học xong, bạn có thể</h3>
   <ol class="can">
     <li>Dùng lại workflow này cho project tiếp theo nhờ các skill và agent đã đóng gói, và chỉnh nó khi cần, vì bạn hiểu vì sao mỗi bước nằm ở đó.</li>
     <li>Kiểm tra output của AI: truy từng insight về quote gốc, từng decision về evidence, và ghi rõ điều nào đã xác nhận, điều nào chỉ là giả định.</li>
@@ -465,16 +430,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <section id="lich-hoc"><div class="wrap">
   <div class="head">
     <span class="kick">Lịch học</span>
-    <h2 class="h2">Lịch khai giảng và <em>thời gian học</em>.</h2>
+    <h2 class="h2">Lịch khai giảng và thời gian học</h2>
   </div>
   <div class="sched3">
-    <div><small>Số buổi</small><b>12 buổi trong 6 tuần</b><ul><li>6 buổi theory, thứ 5</li><li>6 buổi practice, chủ nhật</li></ul></div>
-    <div><small>Lịch hàng tuần</small><b>2 buổi/tuần, online qua Zoom</b><ul><li>Thứ 5: 19:30–21:00</li><li>Chủ nhật: 14:00–15:30</li></ul></div>
-    <div><small>Sĩ số</small><b>Batch 1 chỉ tuyển sinh 5 bạn</b><ul><li>Mọi buổi đều có ghi hình</li></ul></div>
+    <div><span class="label">Số buổi</span><b>12 buổi trong 6 tuần</b><ul><li>6 buổi theory, thứ 5</li><li>6 buổi practice, chủ nhật</li></ul></div>
+    <div><span class="label">Lịch hàng tuần</span><b>2 buổi/tuần, online qua Zoom</b><ul><li>Thứ 5: 19:30–21:00</li><li>Chủ nhật: 14:00–15:30</li><li>Mọi buổi đều có ghi hình</li></ul></div>
+    <div><span class="label">Sĩ số</span><b>Batch 1 chỉ tuyển sinh 5 bạn</b><ul><li>Đủ 5 bạn là dừng nhận đăng ký, bạn đăng ký sau vào Batch 2</li></ul></div>
   </div>
   <div class="batches">
-    <div class="batch on"><div class="bt"><span>Batch 1</span><i>Đang tuyển sinh</i></div><b>10/12/2026</b><p>Khai giảng</p></div>
-    <div class="batch"><div class="bt"><span>Batch 2</span><i>Sắp mở</i></div><b>Tháng 3/2027</b><p>Dự kiến</p></div>
+    <div class="batch on"><div class="bt"><span>Batch 1</span><span class="stamp">Đang tuyển sinh</span></div><b>10/12/2026</b><p>Khai giảng</p></div>
+    <div class="batch"><div class="bt"><span>Batch 2</span><span class="stamp stamp--plain">Sắp mở</span></div><b>Tháng 3/2027</b><p>Dự kiến</p></div>
   </div>
   <p class="sched-note">Tuần 3 và 4, buổi theory dời sang thứ 4 (23/12 và 30/12) để tránh Giáng sinh và giao thừa, giữ giờ 19:30–21:00.</p>
 </div></section>
@@ -482,21 +447,21 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <!-- 9. Học phí -->
 <section id="hoc-phi"><div class="wrap">
   <div class="head">
-    <span class="kick kick--lime">Học phí</span>
+    <span class="kick">Học phí</span>
   </div>
-  <div class="fees">
-    <div class="price">
-      <span class="kick" style="background:#FFFFFF26;color:#fff;align-self:flex-start">Giá thử nghiệm cho Batch 1</span>
-      <div class="was">9.000.000đ</div>
-      <div class="now">6.000.000đ <span>/ bạn</span></div>
-      <ul>
-        <li>Hỗ trợ thanh toán 2 đợt (hoàn tất trước khai giảng)</li>
-      </ul>
+  <div class="price">
+    <div class="p-main">
+      <div class="p-info">
+        <span class="kick p-tag">Giá thử nghiệm cho Batch 1</span>
+        <div class="was">9.000.000đ</div>
+        <div class="now">6.000.000đ <span>/ bạn</span></div>
+        <ul>
+          <li>Hỗ trợ thanh toán 2 đợt (hoàn tất trước khai giảng)</li>
+        </ul>
+      </div>
       <a class="btn btn--lime btn--lg" href="#dang-ky">Đăng ký giữ chỗ</a>
     </div>
-    <div class="after">
-      <div><small>Sau khi đăng ký</small><p>Team mình sẽ liên hệ qua <a href="https://www.linkedin.com/in/daphne-huynh/" target="_blank" rel="noopener">LinkedIn</a> trong vòng 24h để tư vấn và hướng dẫn next steps.</p></div>
-    </div>
+    <p class="p-after"><span class="label">Sau khi đăng ký</span>Team mình (Daphne) sẽ liên hệ qua <a href="https://www.linkedin.com/in/daphne-huynh/" target="_blank" rel="noopener">LinkedIn</a> trong vòng 24h để tư vấn và hướng dẫn next steps.</p>
   </div>
 </div></section>
 
@@ -505,16 +470,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   <div class="head">
     <span class="kick">Mentor</span>
   </div>
-  <div class="people">
-    <div class="person"><div class="avatar photo"><img src="img/winnie.jpg" alt="Winnie Nguyen" width="96" height="96"></div><div><h3>Winnie Nguyen</h3><div class="role">Giảng viên · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p><a class="li" href="https://www.linkedin.com/in/winnienguyen2910/" target="_blank" rel="noopener">LinkedIn của Winnie →</a></div></div>
-  </div>
+  <div class="person"><div class="avatar photo"><img src="img/winnie.jpg" alt="Winnie Nguyen" width="96" height="96"></div><div><h3>Winnie Nguyen</h3><div class="role">Giảng viên · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p><a class="li" href="https://www.linkedin.com/in/winnienguyen2910/" target="_blank" rel="noopener">LinkedIn của Winnie →</a></div></div>
 
-  <h3 class="sub-h">Mentee của Winnie nói gì</h3>
-  <p class="note" style="margin-top:0">Đây là đánh giá công khai trên ADPList về mentoring 1:1 với Winnie, chưa phải đánh giá về khóa này.</p>
+  <h3 class="sub-h quotes-h">Mentee của Winnie nói gì</h3>
+  <p class="note">Đây là đánh giá công khai trên ADPList về mentoring 1:1 với Winnie, chưa phải đánh giá về khóa này.</p>
   <div class="quotes">
-    <blockquote class="quote" style="margin:0"><p>"My first session with Winnie was really amazing. She is such a structural mentor who gives the whole picture and easy to comprehend at the same time."</p><cite>Đạt Nguyễn Hoàng Hữu<span>Product Designer, ChoTot (Carousell) · 09/06/2026</span></cite></blockquote>
-    <blockquote class="quote" style="margin:0"><p>"Winnie is super nice and professional! She gave me insightful suggestions and clear direction, which really helped me reflect on how to improve. She also shared lots of helpful resources that will definitely support me in growing my skillset. I truly appreciate her time and generosity—highly recommended!"</p><cite>Wendy Lin<span>UX/UI Designer, freelance · 12/07/2025</span></cite></blockquote>
-    <blockquote class="quote" style="margin:0"><p>"My mentoring sessions with C Winnie were filled with positive energy and genuine inspiration. She created an encouraging atmosphere where learning felt both joyful and insightful. …"</p><cite>William Nguyen<span>Product Designer, CDG Group · 11/10/2025</span></cite></blockquote>
+    <blockquote class="quote"><p>"My first session with Winnie was really amazing. She is such a structural mentor who gives the whole picture and easy to comprehend at the same time."</p><cite>Đạt Nguyễn Hoàng Hữu<span>Product Designer, ChoTot (Carousell) · 09/06/2026</span></cite></blockquote>
+    <blockquote class="quote"><p>"Winnie is super nice and professional! She gave me insightful suggestions and clear direction, which really helped me reflect on how to improve. She also shared lots of helpful resources that will definitely support me in growing my skillset. I truly appreciate her time and generosity—highly recommended!"</p><cite>Wendy Lin<span>UX/UI Designer, freelance · 12/07/2025</span></cite></blockquote>
+    <blockquote class="quote"><p>"My mentoring sessions with C Winnie were filled with positive energy and genuine inspiration. She created an encouraging atmosphere where learning felt both joyful and insightful. …"</p><cite>William Nguyen<span>Product Designer, CDG Group · 11/10/2025</span></cite></blockquote>
   </div>
 </div></section>
 
@@ -522,19 +485,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <section id="dang-ky"><div class="wrap">
   <div class="final">
     <svg class="sparkle" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+    <h2>Sẵn sàng có một workflow thiết kế <em>dùng AI</em> của riêng bạn?</h2>
     <div>
-      <h2>Sẵn sàng có một workflow thiết kế <em>dùng AI</em> của riêng bạn?</h2>
       <p>Batch 1 khai giảng 10/12/2026, tối đa 5 chỗ, giá 6.000.000đ trong giai đoạn thử nghiệm.</p>
       <!-- Thay href bằng link Google Form sau khi chạy learning/landing-registration-form.gs -->
       <a class="btn btn--lime btn--lg" href="#dang-ky" id="register">Đăng ký giữ chỗ</a>
     </div>
-    <ol>
-      <li>Điền biểu mẫu.</li>
-      <li>Daphne liên hệ qua LinkedIn trong 24 giờ làm việc để xác nhận chỗ và gửi thông tin chuyển khoản.</li>
-      <li>Bạn đóng đợt 1 (cọc 3.000.000đ) trong 48 giờ kể từ lúc nhận thông tin chuyển khoản. Chỗ chỉ được giữ khi đã nhận cọc.</li>
-      <li>Bạn đóng đợt 2 (3.000.000đ còn lại) trước 06/12/2026.</li>
-      <li>Mình gửi hướng dẫn chuẩn bị trước buổi đầu tiên (thứ 5, 10/12).</li>
-    </ol>
   </div>
 </div></section>
 
