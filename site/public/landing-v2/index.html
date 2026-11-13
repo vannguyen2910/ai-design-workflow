@@ -106,8 +106,6 @@ section{padding:var(--section) 0 0}
 .card p{font-size:.95rem;color:var(--muted)}
 .card--tilt{background:var(--soft);border-color:transparent}
 .closing{margin-top:22px;font-size:1.2rem;font-weight:800;line-height:1.35;max-width:46ch}
-.bridge{margin-top:clamp(28px,4vw,44px);max-width:40ch}
-.bridge-sub{max-width:70ch;font-size:1.08rem}
 @media(max-width:860px){.cards4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.cards4{grid-template-columns:minmax(0,1fr)}}
 
@@ -187,6 +185,7 @@ section{padding:var(--section) 0 0}
 #ket-qua .out3 li{background:transparent;border-color:#FFFFFF33}
 #ket-qua .out3 li::before{background:var(--chartreuse);color:var(--ink)}
 #ket-qua .out3 b{color:#fff}#ket-qua .out3 p{color:#FFFFFFB3}
+#ket-qua .out3 p.rule{margin-top:12px;padding-top:12px;border-top:1.5px solid #FFFFFF33;color:var(--chartreuse);font-weight:800}
 #ket-qua .sub-h{color:#fff}
 #ket-qua .can li{background:#FFFFFF14;color:#fff}
 #ket-qua .can li::before{background:var(--chartreuse);color:var(--ink)}
@@ -361,21 +360,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
 </div></section>
 
-<!-- 3b. Câu nối: vấn đề → bạn mang về -->
-<section id="cau-noi" style="padding-top:0"><div class="wrap">
-  <p class="h2 bridge">Khóa học giúp bạn giải quyết vấn đề bằng <em>một&nbsp;workflow hoàn&nbsp;chỉnh với&nbsp;AI</em>, thay vì từng chat&nbsp;một.</p>
-  <p class="sub bridge-sub">Context và insight tích lũy ở một chỗ, bước sau đọc lại từ bước trước. Quyết định nào cũng truy được về nguồn, nên bạn kiểm tra được AI. Bạn bắt đầu từ business question, không phải từ UI. Và cuối khóa, bạn có một project để chỉ vào.</p>
-</div></section>
-
 <!-- 4. Bạn mang về -->
 <section id="ket-qua"><div class="wrap">
   <div class="head">
     <span class="kick">Bạn mang về</span>
-    <h2 class="h2">Kết thúc khóa, bạn mang về <em>một design workflow</em> end-to-end dùng AI.</h2>
-    <p class="sub">Mỗi bước theo cùng một nguyên tắc: AI soạn nháp. Bạn kiểm tra. Bạn quyết định.</p>
+    <h2 class="h2">Khóa học giúp bạn giải quyết vấn đề bằng <em>một design&nbsp;workflow</em> hoàn chỉnh với&nbsp;AI.</h2>
+    <p class="sub">Context và insight tích lũy ở một chỗ, bước sau đọc lại từ bước trước. Quyết định nào cũng truy được về nguồn, nên bạn kiểm tra được AI. Bạn bắt đầu từ business question, không phải từ UI. Và cuối khóa, bạn có một project để chỉ vào.</p>
   </div>
   <ol class="out3">
-    <li><b>Một workflow end-to-end, lặp lại được</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra. Bước nào đã chạy ổn, bạn đóng gói thành skill và agent để AI chạy lại đúng quy trình đó ở project sau. Phần kiểm tra vẫn do bạn làm.</p></li>
+    <li><b>Một workflow end-to-end, lặp lại được</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra. Bước nào đã chạy ổn, bạn đóng gói thành skill và agent để AI chạy lại đúng quy trình đó ở project sau. Phần kiểm tra vẫn do bạn làm.</p><p class="rule">Mỗi bước theo cùng một nguyên tắc: AI soạn nháp. Bạn kiểm tra. Bạn quyết định.</p></li>
     <li><b>Một Knowledge Hub</b><p>Phần làm cho workflow tích lũy: mọi insight, quyết định và tài liệu ở một chỗ, truy ngược được về nguồn. Bước sau dùng lại output của bước trước, không phải bắt đầu lại. Hub nằm trong project folder của bạn, riêng tư mặc định, và bạn tự quyết phần nào công khai.</p></li>
     <li><b>Một project đã chạy qua workflow đó</b><p>Có bằng chứng, có quyết định, có kết quả từ người dùng thật, và một bài trình bày project để cho team hay nhà tuyển dụng thấy cách bạn làm việc với AI.</p></li>
   </ol>
