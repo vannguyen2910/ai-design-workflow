@@ -28,9 +28,6 @@ section{padding:var(--section) 0 0}
 .tilt-alt{transform:rotate(var(--tilt-alt))}
 
 /* Chip nháp: xóa trước khi đăng */
-.draft{display:inline-block;vertical-align:middle;margin-left:8px;font-size:.68rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 9px;border-radius:var(--r-pill);background:var(--pink);color:var(--ink);line-height:1.5}
-.draftbar{background:var(--soft);color:var(--ink);font-size:.8rem;font-weight:600;text-align:center;padding:6px var(--gutter)}
-.draftbar b{background:var(--pink);color:var(--ink);border-radius:var(--r-pill);padding:1px 8px;margin-right:6px;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase}
 
 /* Nav */
 .navwrap{position:sticky;top:0;z-index:20;padding:10px var(--gutter) 0;background:linear-gradient(var(--paper) 70%,transparent)}
@@ -192,10 +189,6 @@ section{padding:var(--section) 0 0}
 #ket-qua .know{color:#FFFFFFB3}
 #ket-qua .h2 em{color:var(--ink)}
 /* Ví dụ */
-.examples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
-.ex{border-radius:var(--r-md);padding:18px;min-height:120px;display:flex;flex-direction:column;justify-content:flex-end;font-weight:800;line-height:1.3;background:var(--soft)}
-.ex small{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;opacity:.7;margin-bottom:4px}
-@media(max-width:700px){.examples{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* Học phí */
 .fees{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(18px,3vw,40px);align-items:start}
@@ -302,6 +295,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 .toc a[aria-current]{color:var(--ink);background:var(--chartreuse)}
 }
 @media(min-width:1440px) and (prefers-reduced-motion:reduce){.toc{transition:none}}
+.ex-big{aspect-ratio:16/9;border-radius:var(--r-xl);background:var(--soft);border:2px dashed var(--indigo-light);display:flex;align-items:center;justify-content:center}
+.ex-big span{font-weight:800;color:var(--indigo);font-size:clamp(1rem,2vw,1.3rem)}
 </style>
 </head>
 <body>
@@ -310,7 +305,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <symbol id="mk" viewBox="0 0 100 100"><path d="M10 90H30V70H50V50H70V34" fill="none" stroke="#14123A" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="70" cy="17" r="12" fill="#FF5CB8"/></symbol>
 </defs></svg>
 
-<div class="draftbar"><b>Bản nháp</b>Chưa đăng. Chip hồng là chỗ cần xác nhận hoặc điền thêm. Tên brand trên nav là "UX Level Up".</div>
 
 <div class="navwrap">
   <nav class="nav" aria-label="Chính">
@@ -417,16 +411,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   <div class="head">
     <span class="kick">Thành phẩm</span>
     <h2 class="h2">Một project hoàn chỉnh trông thế này.</h2>
-    <p class="sub">Trích từ project mẫu Travel Buddy, làm theo đúng workflow của khóa. <span class="draft">ảnh sẽ thêm sau</span> <span class="draft">project mẫu: Travel Buddy, Chia tiền nhóm hay Delivery App? xác nhận</span></p>
+    <p class="sub">Trích từ project mẫu Travel Buddy, làm theo đúng workflow của khóa.</p>
   </div>
-  <div class="examples">
-    <div class="ex"><small>1</small>Knowledge Hub tổng quan</div>
-    <div class="ex"><small>2</small>Insights</div>
-    <div class="ex"><small>3</small>Tài liệu</div>
-    <div class="ex"><small>4</small>Information architecture</div>
-    <div class="ex"><small>5</small>User flow</div>
-    <div class="ex"><small>6</small>Prototype</div>
-  </div>
+  <div class="ex-big" role="img" aria-label="Ảnh thành phẩm"><span>Ảnh thành phẩm</span></div>
 </div></section>
 
 <!-- 6. Chương trình -->
@@ -487,7 +474,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
   <div class="batches">
     <div class="batch on"><div class="bt"><span>Batch 1</span><i>Đang tuyển sinh</i></div><b>10/12/2026</b><p>Khai giảng</p></div>
-    <div class="batch"><div class="bt"><span>Batch 2</span><i>Sắp mở</i></div><b>Tháng 3/2027</b><p>Dự kiến <span class="draft">chưa có ngày chính thức</span></p></div>
+    <div class="batch"><div class="bt"><span>Batch 2</span><i>Sắp mở</i></div><b>Tháng 3/2027</b><p>Dự kiến</p></div>
   </div>
   <p class="sched-note">Tuần 3 và 4, buổi theory dời sang thứ 4 (23/12 và 30/12) để tránh Giáng sinh và giao thừa, giữ giờ 19:30–21:00.</p>
 </div></section>
@@ -539,7 +526,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
       <h2>Sẵn sàng có một workflow thiết kế <em>dùng AI</em> của riêng bạn?</h2>
       <p>Batch 1 khai giảng 10/12/2026, tối đa 5 chỗ, giá 6.000.000đ trong giai đoạn thử nghiệm.</p>
       <!-- Thay href bằng link Google Form sau khi chạy learning/landing-registration-form.gs -->
-      <a class="btn btn--lime btn--lg" href="#dang-ky" id="register">Đăng ký giữ chỗ</a> <span class="draft">link form: điền sau</span>
+      <a class="btn btn--lime btn--lg" href="#dang-ky" id="register">Đăng ký giữ chỗ</a>
     </div>
     <ol>
       <li>Điền biểu mẫu.</li>
