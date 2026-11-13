@@ -198,7 +198,31 @@ section{padding:var(--section) 0 0}
 @media(max-width:700px){.examples{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* Học phí */
-.fees{display:grid;grid-template-columns:minmax(0,620px);gap:var(--gap);align-items:stretch}
+.fees{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(18px,3vw,40px);align-items:start}
+.price .now span{font-size:1rem;font-weight:700;color:#fff;letter-spacing:0}
+.price .btn{margin-top:10px;align-self:stretch}
+.after{display:grid}
+.after > div{padding:18px 0;border-top:1.5px solid var(--line)}
+.after > div:first-child{border-top:0;padding-top:4px}
+.after small,.sched3 small{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--muted);margin-bottom:6px}
+.after p{font-size:.97rem}
+.after a{font-weight:800;color:var(--indigo);text-underline-offset:4px}
+.sched3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,36px)}
+.sched3 > div{border-top:2px solid var(--ink);padding-top:14px}
+.sched3 b{display:block;font-size:1.1rem;font-weight:800;line-height:1.3;margin-bottom:8px}
+.sched3 li{position:relative;padding-left:18px;font-size:.95rem;color:var(--muted)}
+.sched3 li::before{content:"";position:absolute;left:0;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--indigo)}
+.batches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap);margin-top:clamp(24px,3vw,36px);max-width:760px}
+.batch{border:1.5px solid var(--line);border-radius:var(--r-lg);padding:18px 22px}
+.batch.on{background:var(--soft);border-color:var(--indigo)}
+.batch .bt{display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:800;font-size:.9rem}
+.batch .bt i{font-style:normal;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;border-radius:var(--r-pill);padding:3px 10px;box-shadow:inset 0 0 0 1.5px var(--ink)}
+.batch.on .bt i{background:var(--indigo);color:#fff;box-shadow:none}
+.batch b{display:block;font-size:clamp(1.6rem,3vw,2rem);font-weight:800;letter-spacing:-.02em;margin-top:10px;line-height:1.1}
+.batch p{font-size:.9rem;color:var(--muted)}
+.sched-note{margin-top:14px;font-size:.9rem;color:var(--muted);max-width:760px}
+@media(max-width:760px){.sched3{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:480px){.batches{grid-template-columns:minmax(0,1fr)}}
 .price{background:var(--indigo);color:#fff;border-radius:var(--r-xl);padding:var(--pad);display:flex;flex-direction:column;gap:12px;position:relative}
 .price .was{text-decoration:line-through;opacity:.8;font-weight:700}
 .price .now{font-size:clamp(2.6rem,6vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--chartreuse)}
@@ -287,7 +311,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
     <a class="logo" href="#top"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mk"/></svg>UX Level Up</a>
     <div class="links">
       <a href="#chuong-trinh">Chương trình</a>
-      <a href="#lich-hoc-phi">Lịch &amp; học phí</a>
+      <a href="#lich-hoc">Lịch học</a>
+      <a href="#hoc-phi">Học phí</a>
       <a href="#giang-vien">Giảng viên</a>
       <a href="#hoi-dap">Hỏi đáp</a>
     </div>
@@ -444,28 +469,47 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
 </div></section>
 
-<!-- 8. Lịch học và học phí -->
-<section id="lich-hoc-phi"><div class="wrap">
+<!-- 8. Lịch học -->
+<section id="lich-hoc"><div class="wrap">
   <div class="head">
-    <span class="kick kick--lime">Lịch học và học phí</span>
+    <span class="kick">Lịch học</span>
+    <h2 class="h2">Lịch khai giảng và <em>thời gian học</em>.</h2>
+  </div>
+  <div class="sched3">
+    <div><small>Số buổi</small><b>12 buổi trong 6 tuần</b><ul><li>6 buổi theory, thứ 5</li><li>6 buổi practice, chủ nhật</li></ul></div>
+    <div><small>Lịch hàng tuần</small><b>2 buổi/tuần, online qua Zoom</b><ul><li>Thứ 5: 19:30–21:00</li><li>Chủ nhật: 14:00–15:30</li></ul></div>
+    <div><small>Sĩ số</small><b>Batch 1 chỉ tuyển sinh 5 bạn</b><ul><li>Mọi buổi đều có ghi hình</li></ul></div>
+  </div>
+  <div class="batches">
+    <div class="batch on"><div class="bt"><span>Batch 1</span><i>Đang tuyển sinh</i></div><b>10/12/2026</b><p>Khai giảng</p></div>
+    <div class="batch"><div class="bt"><span>Batch 2</span><i>Sắp mở</i></div><b>Tháng 3/2027</b><p>Dự kiến <span class="draft">chưa có ngày chính thức</span></p></div>
+  </div>
+  <p class="sched-note">Tuần 3 và 4, buổi theory dời sang thứ 4 (23/12 và 30/12) để tránh Giáng sinh và giao thừa, giữ giờ 19:30–21:00.</p>
+</div></section>
+
+<!-- 9. Học phí -->
+<section id="hoc-phi"><div class="wrap">
+  <div class="head">
+    <span class="kick kick--lime">Học phí</span>
     <h2 class="h2">Batch 1 là giai đoạn thử nghiệm: <em>lớp nhỏ</em>, giá khuyến mãi.</h2>
-    <p class="sub">Tối đa 5 bạn, giá khuyến mãi 6.000.000đ. Đủ 5 bạn đã cọc là mình dừng nhận, các bạn đăng ký sau sẽ vào Batch 2.</p>
   </div>
   <div class="fees">
-    <div class="price tilt-alt" style="transform:none">
-      <span class="kick" style="background:#FFFFFF26;color:#fff;align-self:flex-start">Giá Batch 1</span>
+    <div class="price">
+      <span class="kick" style="background:#FFFFFF26;color:#fff;align-self:flex-start">Học phí trọn khóa</span>
       <div class="was">9.000.000đ</div>
-      <div class="now">6.000.000đ</div>
+      <div class="now">6.000.000đ <span>/ bạn</span></div>
       <ul>
-        <li>Đủ 12 buổi, học nhóm tối đa 5 bạn.</li>
-        <li>Lớp nhỏ nên được coaching sát. Review chéo với các bạn cùng lớp.</li>
-        <li>Xem lại ghi hình các buổi, không giới hạn.</li>
+        <li>Hỗ trợ thanh toán 2 đợt (hoàn tất trước khai giảng)</li>
       </ul>
+      <a class="btn btn--lime btn--lg" href="#dang-ky">Đăng ký giữ chỗ</a>
+    </div>
+    <div class="after">
+      <div><small>Sau khi đăng ký</small><p>Team mình sẽ liên hệ qua <a href="https://www.linkedin.com/in/daphne-huynh/" target="_blank" rel="noopener">LinkedIn</a> trong vòng 24h để tư vấn và hướng dẫn next steps.</p></div>
     </div>
   </div>
 </div></section>
 
-<!-- 9. Giảng viên -->
+<!-- 10. Giảng viên -->
 <section id="giang-vien"><div class="wrap">
   <div class="head">
     <span class="kick">Mentor</span>
@@ -484,7 +528,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
 </div></section>
 
-<!-- 10. Hỏi đáp -->
+<!-- 11. Hỏi đáp -->
 <section id="hoi-dap"><div class="wrap">
   <div class="head">
     <span class="kick">Hỏi đáp</span>
@@ -504,7 +548,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
 </div></section>
 
-<!-- 11. CTA cuối -->
+<!-- 12. CTA cuối -->
 <section id="dang-ky"><div class="wrap">
   <div class="final">
     <svg class="sparkle" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
