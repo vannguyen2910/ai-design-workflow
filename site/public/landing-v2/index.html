@@ -271,14 +271,6 @@ section{padding:var(--section) 0 0}
 @media(max-width:900px){.quotes{grid-template-columns:minmax(0,1fr)}}
 
 /* Hỏi đáp */
-.faq{display:grid;gap:10px;max-width:820px}
-.faq details{border:1.5px solid var(--line);border-radius:var(--r-md);background:var(--paper)}
-.faq summary{cursor:pointer;list-style:none;font-weight:800;padding:16px 56px 16px 20px;position:relative;line-height:1.4;min-height:44px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"";position:absolute;right:16px;top:50%;width:28px;height:28px;margin-top:-14px;border-radius:50%;background:var(--chartreuse) no-repeat center/12px;background-image:linear-gradient(var(--ink),var(--ink)),linear-gradient(var(--ink),var(--ink));background-size:12px 2.5px,2.5px 12px}
-.faq details[open] summary::after{background-size:12px 2.5px,0 0}
-.faq details[open]{background:var(--soft);border-color:transparent}
-.faq .ans{padding:0 20px 18px;max-width:68ch}
 
 /* CTA cuối */
 .final{background:var(--indigo);color:#fff;border-radius:var(--r-xl);padding:clamp(24px,5vw,56px);position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:center}
@@ -314,7 +306,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
       <a href="#lich-hoc">Lịch học</a>
       <a href="#hoc-phi">Học phí</a>
       <a href="#giang-vien">Giảng viên</a>
-      <a href="#hoi-dap">Hỏi đáp</a>
     </div>
     <a class="btn" href="#dang-ky">Đăng ký</a>
   </nav>
@@ -428,8 +419,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <section id="chuong-trinh"><div class="wrap">
   <div class="head">
     <span class="kick">Giáo trình khóa học</span>
-    <h2 class="h2">Sáu tuần, mỗi tuần <em>một bậc</em>. Học một buổi, làm một buổi.</h2>
-    <p class="sub">Thứ 5 học khái niệm, chủ nhật làm trên project của bạn với coaching. Mỗi buổi 90 phút, bài về nhà dưới 20 phút.</p>
+    <h2 class="h2">6 tuần - 12 buổi</h2>
+    <p class="sub">Xen kẽ Lý thuyết &amp; Thực hành</p>
   </div>
   <ol class="tl">
     <li><div class="wk"><small>Tuần 1</small><span>Foundation</span></div><div><h3>Quy trình thiết kế với AI</h3><p>Nghề đang đi đâu. AI giúp được gì ở từng stage và còn yếu ở đâu. Dữ liệu nào an toàn để đưa cho AI.</p></div><div class="out"><b>Cuối tuần bạn có</b>Project folder, quy tắc dữ liệu riêng, Knowledge Hub bắt đầu, ghi chú hướng đi nghề của bạn</div></li>
@@ -491,11 +482,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <section id="hoc-phi"><div class="wrap">
   <div class="head">
     <span class="kick kick--lime">Học phí</span>
-    <h2 class="h2">Batch 1 là giai đoạn thử nghiệm: <em>lớp nhỏ</em>, giá khuyến mãi.</h2>
   </div>
   <div class="fees">
     <div class="price">
-      <span class="kick" style="background:#FFFFFF26;color:#fff;align-self:flex-start">Học phí trọn khóa</span>
+      <span class="kick" style="background:#FFFFFF26;color:#fff;align-self:flex-start">Giá thử nghiệm cho Batch 1</span>
       <div class="was">9.000.000đ</div>
       <div class="now">6.000.000đ <span>/ bạn</span></div>
       <ul>
@@ -528,27 +518,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
 </div></section>
 
-<!-- 11. Hỏi đáp -->
-<section id="hoi-dap"><div class="wrap">
-  <div class="head">
-    <span class="kick">Hỏi đáp</span>
-    <h2 class="h2">Những câu bạn hay hỏi.</h2>
-  </div>
-  <div class="faq">
-    <details><summary>Mình chưa biết code. Học được không?</summary><div class="ans">Được. AI coding tool dựng prototype, bạn chỉ đạo và kiểm tra những gì nó thay đổi.</div></details>
-    <details><summary>Vì sao tối đa 5 bạn?</summary><div class="ans">Batch 1 là lớp đầu tiên, nên mình giữ lớp nhỏ để coaching sát từng bạn và nhận phản hồi để hoàn thiện khóa. Lớp nhỏ cũng giúp mỗi bạn có thời gian làm trên project của mình ở buổi practice.</div></details>
-    <details><summary>Học phí 6 triệu có kéo dài không?</summary><div class="ans">Đây là giá khuyến mãi cho giai đoạn thử nghiệm của Batch 1, khi lớp còn nhỏ chỉ 5 bạn. Các batch sau có thể theo giá gốc. <span class="draft">giá batch sau: điền sau</span></div></details>
-    <details><summary>Mình dùng project của công ty thì có an toàn không?</summary><div class="ans">Tuần 1 dành riêng cho việc này. Bạn học ba loại tài liệu (an toàn, nên hỏi trước, không đưa vào tool công khai), bốn thói quen, và tự viết quy tắc dữ liệu cho project của mình. Tài liệu bảo mật được ẩn danh trước khi dùng.</div></details>
-    <details><summary>Cần chuẩn bị gì trước khi học?</summary><div class="ans">Một project thật (hoặc chọn project mẫu), một AI chat tool, và từ tuần 5 một AI coding tool. <span class="draft">danh sách tool và chi phí: chờ quyết</span></div></details>
-    <details><summary>Mỗi tuần mất bao nhiêu thời gian?</summary><div class="ans">Hai buổi 90 phút (thứ 5 và chủ nhật), cộng bài về nhà dưới 20 phút. Trước mỗi buổi practice, Winnie xem sơ qua bài của bạn. <span class="draft">tổng giờ mỗi tuần: xác nhận</span> <span class="draft">bài nộp là gì: xác nhận</span></div></details>
-    <details><summary>Nếu mình lỡ một buổi?</summary><div class="ans">Mọi buổi đều được ghi hình, bạn xem lại không giới hạn thời gian. Ghi hình chỉ dành cho học viên của khóa. Nếu bạn lỡ buổi practice (chủ nhật) thì không bù sau, bạn xem lại ghi hình.</div></details>
-    <details><summary>Có hủy hoặc hoàn tiền được không?</summary><div class="ans">Batch 1 là lớp thử nghiệm nên chưa áp dụng hủy và hoàn học phí, kể cả tiền cọc. Nếu mình hủy hoặc dời lớp, mình hoàn 100%. Từ Batch 2: hủy trước khai giảng ít nhất 2 tuần thì hoàn 100%, và có thể bảo lưu tối đa 2 lần.</div></details>
-    <details><summary>Nếu chưa đủ 5 bạn thì sao?</summary><div class="ans">Batch 1 vẫn chạy với số bạn đã đăng ký. Lịch học và nội dung không đổi.</div></details>
-    <details><summary>Khác gì các khóa dạy prompt hay dạy tool?</summary><div class="ans">Khóa này không dạy mẹo prompt hay một tool cụ thể. Bạn học một quy trình: mỗi bước có output rõ ràng, có bước kiểm tra, và truy ngược được về nguồn. Tool thay đổi, quy trình thì dùng lại được.</div></details>
-  </div>
-</div></section>
-
-<!-- 12. CTA cuối -->
+<!-- 11. CTA cuối -->
 <section id="dang-ky"><div class="wrap">
   <div class="final">
     <svg class="sparkle" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
