@@ -262,6 +262,7 @@ section{padding:var(--section) 0 0}
 .role{font-weight:700;font-size:.9rem;color:var(--muted);margin-bottom:8px}
 .person p{font-size:.95rem}
 .person a{font-weight:800}
+.person a.li{display:inline-block;margin-top:10px;font-size:.92rem;color:var(--indigo);text-underline-offset:4px}
 @media(max-width:760px){.people{grid-template-columns:minmax(0,1fr)}}
 .quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);margin-top:var(--gap)}
 .quote{border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:12px;font-size:.95rem}
@@ -349,7 +350,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
 </div>
 
-<!-- 2. Vì sao lúc này -->
+<!-- 2. Hiện trạng ngành -->
 <section id="vi-sao"><div class="wrap">
   <div class="band">
     <h2>AI làm phần build rẻ đi. Giá trị chuyển sang chọn đúng vấn đề.</h2>
@@ -518,7 +519,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
     <span class="kick">Mentor</span>
   </div>
   <div class="people">
-    <div class="person"><div class="avatar photo"><img src="img/winnie.jpg" alt="Winnie Nguyen" width="96" height="96"></div><div><h3>Winnie Nguyen</h3><div class="role">Giảng viên · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p></div></div>
+    <div class="person"><div class="avatar photo"><img src="img/winnie.jpg" alt="Winnie Nguyen" width="96" height="96"></div><div><h3>Winnie Nguyen</h3><div class="role">Giảng viên · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p><a class="li" href="https://www.linkedin.com/in/winnienguyen2910/" target="_blank" rel="noopener">LinkedIn của Winnie →</a></div></div>
   </div>
 
   <h3 class="sub-h">Mentee của Winnie nói gì</h3>
@@ -558,10 +559,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   <span>Winnie Nguyen · Daphne Huynh · Học online, bằng tiếng Việt</span>
 </div></footer>
 
-<nav class="toc" aria-label="Mục lục"><small>Mục lục</small><ol><li><a href="#vi-sao">Vì sao lúc này</a></li><li><a href="#van-de">Vấn đề</a></li><li><a href="#ket-qua">Giải pháp</a></li><li><a href="#vi-du">Thành phẩm</a></li><li><a href="#chuong-trinh">Giáo trình khóa học</a></li><li><a href="#danh-cho-ai">Dành cho ai</a></li><li><a href="#lich-hoc">Lịch học</a></li><li><a href="#hoc-phi">Học phí</a></li><li><a href="#giang-vien">Mentor</a></li><li><a href="#dang-ky">Đăng ký</a></li></ol></nav>
+<nav class="toc" aria-label="Mục lục"><small>Mục lục</small><ol><li><a href="#vi-sao">Hiện trạng ngành</a></li><li><a href="#van-de">Vấn đề</a></li><li><a href="#ket-qua">Giải pháp</a></li><li><a href="#vi-du">Thành phẩm</a></li><li><a href="#chuong-trinh">Giáo trình khóa học</a></li><li><a href="#danh-cho-ai">Dành cho ai</a></li><li><a href="#lich-hoc">Lịch học</a></li><li><a href="#hoc-phi">Học phí</a></li><li><a href="#giang-vien">Mentor</a></li><li><a href="#dang-ky">Đăng ký</a></li></ol></nav>
 <script>
 (()=>{const toc=document.querySelector('.toc');if(!toc)return;const links=[...toc.querySelectorAll('a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
-const upd=()=>{toc.classList.toggle('on',scrollY>innerHeight*.6);let cur=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});links.forEach((a,i)=>a.toggleAttribute('aria-current',i===cur))};
+const upd=()=>{toc.classList.toggle('on',scrollY>innerHeight*.35);let cur=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});links.forEach((a,i)=>a.toggleAttribute('aria-current',i===cur))};
 addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd()})();
 </script>
 </body>
