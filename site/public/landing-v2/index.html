@@ -56,14 +56,17 @@ section{padding:var(--section) 0 0}
 .sub{margin-top:14px;max-width:62ch;color:var(--muted)}
 .head{margin-bottom:28px}
 
-/* Hero: chữ trên nền trắng. Bên phải là thẻ "6 tuần, 6 bậc", ngôi sao hồng lớn đè lên bậc cuối */
-.hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(28px,6vw,72px) 0 8px}
+/* Hero: tiêu đề lớn, bên dưới chia hai cột (đoạn phụ và nút bên trái, thông tin batch bên phải). Một ngôi sao hồng làm điểm nhấn */
+.hero{position:relative;padding:clamp(28px,6vw,72px) 0 8px}
 .eb{margin:0;display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:.95rem}
 .stamp{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--ink);background:var(--soft);border-radius:8px;padding:2px 8px;transform:rotate(-3deg);white-space:nowrap}
-.h-text h1{font-size:clamp(2.2rem,5.2vw,3.8rem);letter-spacing:-.02em;line-height:1.12;font-weight:800;margin-top:18px;text-wrap:balance}
-.tagline{margin-top:16px;font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:800;letter-spacing:-.015em;line-height:1.35;max-width:26ch;text-wrap:balance}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.8rem);letter-spacing:-.02em;line-height:1.12;font-weight:800;margin-top:0;text-wrap:balance}
+.tagline{margin-top:16px;font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:800;letter-spacing:-.015em;line-height:1.35;max-width:40ch;text-wrap:balance}
 .tagline em{font-style:normal;background:var(--chartreuse);padding:0 .14em;border-radius:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
-.sv-b{display:flex;gap:0;margin-top:20px}
+.h-row{margin-top:40px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-areas:"lead info" "cta info";gap:24px clamp(28px,6vw,80px);align-items:start}
+.h-row .lead{grid-area:lead;margin:0}
+.h-info{grid-area:info;align-self:stretch;justify-content:flex-end;display:flex;flex-direction:column;align-items:flex-start;gap:22px;padding-left:clamp(20px,4vw,56px);border-left:1.5px solid var(--line)}
+.sv-b{display:flex;gap:0}
 .sv-b div{display:flex;align-items:baseline;gap:6px;padding:0 22px;border-left:2px solid var(--line)}
 .sv-b div:first-child{padding-left:0;border-left:0}
 .sv-b b{font-size:2.4rem;font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--indigo)}
@@ -77,28 +80,23 @@ section{padding:var(--section) 0 0}
 #van-de .card h3{color:#fff}
 #van-de .card p{color:#FFFFFFB3}
 #van-de .card .n{color:var(--chartreuse)}
-#van-de .h2 em{color:var(--ink)}
+#van-de .h2 em{color:var(--ink);white-space:nowrap}
+#van-de .h2{max-width:34ch}
+#van-de .cards4{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:560px){#van-de .cards4{grid-template-columns:minmax(0,1fr)}}
 #van-de .closing{color:#fff}
-.h-text .lead{margin-top:10px;max-width:46ch;color:var(--muted);font-size:1.1rem}
-.h-cta{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.hero .lead{max-width:46ch;color:var(--muted);font-size:1.1rem}
+.h-cta{grid-area:cta;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
 .btn--indigo{background:var(--indigo);color:#fff}
 .hprice{display:flex;flex-direction:column;align-items:flex-start;gap:3px;line-height:1.3}
 .pnow{font-size:.95rem;font-weight:700}.pnow b{font-size:1.3rem;font-weight:800;letter-spacing:-.01em}
 .pnow s{color:var(--muted);font-weight:600;margin-left:6px}
 .pnote{font-size:.82rem;color:var(--muted)}
 .policy-line{margin-top:16px;font-size:.85rem;color:var(--muted)}
-.h-art{position:relative;border:2px solid var(--ink);border-radius:22px;padding:18px 18px 14px;max-width:420px;width:100%;justify-self:center}
-.art-h{font-size:1rem;font-weight:800;margin-bottom:34px}
-.bars{display:flex;align-items:flex-end;gap:6px;height:190px}
-.bars i{flex:1;border-radius:8px 8px 0 0;font-style:normal;font-size:.72rem;font-weight:800;color:var(--muted);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;background:var(--soft)}
-.bars i:nth-child(1){height:22%}.bars i:nth-child(2){height:36%}.bars i:nth-child(3){height:50%}.bars i:nth-child(4){height:64%}
-.bars i:nth-child(5){height:80%;background:#CFCBFA;color:var(--ink)}
-.bars i:nth-child(6){height:96%;background:var(--indigo);color:#fff}
-.star-big{position:absolute;right:-44px;top:-46px;width:96px;height:96px;color:var(--pink);pointer-events:none;transform:rotate(16deg) skewX(-10deg) scaleY(.92);transform-origin:center}
-.art-cap{margin-top:10px;font-size:.85rem;color:var(--muted)}
+.star-big{position:absolute;right:10px;top:clamp(20px,4vw,56px);width:96px;height:96px;color:var(--pink);pointer-events:none;transform:rotate(16deg) skewX(-10deg) scaleY(.92);transform-origin:center}
 .sparkle{position:absolute;width:60px;height:60px;color:var(--pink);right:-8px;top:-14px}
-@media(max-width:1200px){.star-big{right:2px;top:-40px}}
-@media(max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}.h-art{max-width:none}.bars{height:150px}.star-big{right:-4px;top:-34px;width:76px;height:76px}}
+@media(max-width:860px){.h-row{grid-template-columns:minmax(0,1fr);grid-template-areas:"lead" "info" "cta"}.h-info{padding-left:0;border-left:0}.star-big{width:72px;height:72px}}
+@media(max-width:600px){.star-big{display:none}}
 
 /* Vấn đề */
 .cards4{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
@@ -108,6 +106,7 @@ section{padding:var(--section) 0 0}
 .card p{font-size:.95rem;color:var(--muted)}
 .card--tilt{background:var(--soft);border-color:transparent}
 .closing{margin-top:22px;font-size:1.2rem;font-weight:800;line-height:1.35;max-width:46ch}
+.bridge{margin-top:clamp(28px,4vw,44px);max-width:none}
 @media(max-width:860px){.cards4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.cards4{grid-template-columns:minmax(0,1fr)}}
 
@@ -125,30 +124,43 @@ section{padding:var(--section) 0 0}
 @media(max-width:760px){.two{grid-template-columns:minmax(0,1fr)}}
 
 /* Band số liệu */
-.band{background:var(--chartreuse);border-radius:var(--r-xl);padding:var(--pad);position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(18px,3vw,36px);align-items:center}
-.band h2{font-size:clamp(1.6rem,3.6vw,2.4rem);text-transform:uppercase;letter-spacing:-.01em;line-height:1.25;color:var(--indigo);font-weight:800;text-wrap:balance}
+.band{background:var(--chartreuse);border-radius:var(--r-xl);padding:var(--pad);position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(18px,3vw,28px)}
+.band h2{font-size:clamp(1.6rem,3.6vw,2.4rem);text-transform:uppercase;letter-spacing:-.01em;line-height:1.25;color:var(--indigo);font-weight:800;text-wrap:balance;max-width:24ch}
 .band .sparkle{right:22px;top:-20px;width:60px;height:60px}
+.groups{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,1.1fr);gap:var(--gap);align-items:stretch}
+.grp{display:flex;flex-direction:column}
+.grp h3{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;margin-bottom:10px}
+.grp .stats{flex:1}
 .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
-.stat{background:var(--paper);border-radius:var(--r-md);padding:16px}
+.grp--to .stats{grid-template-columns:minmax(0,1fr)}
+.stat{background:var(--paper);border-radius:var(--r-md);padding:16px;display:flex;flex-direction:column}
 .stat .big{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--indigo)}
-.stat p{font-size:.88rem;font-weight:600;line-height:1.4;margin-top:8px}
-.src{grid-column:1/-1;font-size:.78rem;font-weight:600;opacity:.8}
-@media(max-width:860px){.band{grid-template-columns:minmax(0,1fr)}}
-@media(max-width:560px){.stats{grid-template-columns:minmax(0,1fr)}}
+.stat p{font-size:.88rem;font-weight:600;line-height:1.4;margin:8px 0 12px}
+.stat .so{margin-top:auto;padding-top:10px;border-top:1.5px solid #14123A1A;font-size:.86rem;font-weight:800;line-height:1.4;color:var(--indigo)}
+.grp--to .stat{background:var(--indigo);color:#fff}
+.grp--to .stat .big,.grp--to .stat .so{color:var(--chartreuse)}
+.grp--to .stat .so{border-top-color:#FFFFFF33}
+.src{font-size:.78rem;font-weight:600;opacity:.8}
+@media(max-width:860px){.groups{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:560px){.stats{grid-template-columns:minmax(0,1fr)}.band h2{padding-right:40px}}
 
 /* Chương trình */
-.levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
-.level{position:relative;background:var(--paper);color:var(--ink);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:10px;min-height:260px}
-.level small{display:inline-flex;align-self:flex-start;background:var(--indigo);color:#fff;border-radius:var(--r-pill);padding:3px 12px;font-weight:800;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}
-.level h3{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;line-height:1.2}
-.level p{font-size:.93rem;color:var(--muted)}
-.level .out{margin-top:auto;font-size:.85rem;font-weight:700;border-top:1.5px solid var(--line);padding-top:12px}
-.level .out b{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
-.level:nth-child(3)::after{content:"";position:absolute;right:-14px;top:-16px;width:46px;height:46px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg stroke='%23FF5CB8' stroke-width='13' stroke-linecap='round'%3E%3Cpath d='M50 8V92'/%3E%3Cpath d='M8 50H92'/%3E%3Cpath d='M20 20L80 80'/%3E%3Cpath d='M80 20L20 80'/%3E%3C/g%3E%3C/svg%3E") no-repeat center/contain;transform:rotate(14deg)}
-.rhythm{margin-top:18px;background:var(--soft);border-radius:var(--r-lg);padding:20px 24px;font-size:.98rem}
-@media(max-width:1200px){.level:nth-child(3)::after{right:-4px}}
-@media(max-width:900px){.levels{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.levels{grid-template-columns:minmax(0,1fr)}.level{min-height:0}}
+.tl{position:relative;border-bottom:1.5px solid var(--line)}
+.tl li{position:relative;display:grid;grid-template-columns:150px minmax(0,1fr) minmax(0,300px);gap:clamp(14px,2.4vw,32px);padding:24px 0 24px 46px;border-top:1.5px solid var(--line)}
+.tl li::before{content:"";position:absolute;left:3px;top:29px;width:18px;height:18px;border-radius:50%;background:var(--indigo);box-shadow:0 0 0 4px var(--paper);z-index:1}
+.tl li::after{content:"";position:absolute;left:11px;top:0;bottom:0;width:2px;background:var(--indigo-light)}
+.tl li:first-child::after{top:38px}
+.tl li:last-child::after{bottom:auto;height:38px}
+.tl .wk small{display:inline-flex;background:var(--indigo);color:#fff;border-radius:var(--r-pill);padding:3px 12px;font-weight:800;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.tl .wk span{display:block;margin-top:8px;font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tl h3{font-size:1.2rem;font-weight:800;letter-spacing:-.01em;line-height:1.25;margin-bottom:6px}
+.tl p{font-size:.95rem;color:var(--muted)}
+.tl .out{align-self:start;background:var(--soft);border-radius:var(--r-md);padding:14px 16px;font-size:.88rem;font-weight:700;line-height:1.5}
+.tl .out b{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.tl li.end::before{background:var(--chartreuse);box-shadow:0 0 0 4px var(--paper),0 0 0 5.5px var(--ink)}
+.tl li.end .wk small{background:var(--chartreuse);color:var(--ink)}
+.tl li.end > div:last-child{grid-column:span 2}
+@media(max-width:760px){.tl li{grid-template-columns:minmax(0,1fr);gap:10px;padding:22px 0 22px 40px}.tl li.end > div:last-child{grid-column:auto}}
 
 /* Học xong có gì */
 .out3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);counter-reset:o}
@@ -187,7 +199,7 @@ section{padding:var(--section) 0 0}
 @media(max-width:700px){.examples{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* Học phí */
-.fees{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--gap);align-items:stretch}
+.fees{display:grid;grid-template-columns:minmax(0,620px);gap:var(--gap);align-items:stretch}
 .price{background:var(--indigo);color:#fff;border-radius:var(--r-xl);padding:var(--pad);display:flex;flex-direction:column;gap:12px;position:relative}
 .price .was{text-decoration:line-through;opacity:.8;font-weight:700}
 .price .now{font-size:clamp(2.6rem,6vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--chartreuse)}
@@ -216,7 +228,7 @@ section{padding:var(--section) 0 0}
 @media(max-width:860px){.fees{grid-template-columns:minmax(0,1fr)}}
 
 /* Giảng viên */
-.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.people{display:grid;grid-template-columns:minmax(0,760px);gap:var(--gap)}
 .person{border-radius:var(--r-xl);padding:var(--pad);display:flex;gap:18px;align-items:flex-start;background:var(--soft)}
 .avatar{flex:none;width:96px;height:96px;background:var(--indigo);color:#fff;font-weight:800;font-size:1.6rem;display:flex;align-items:center;justify-content:center;border-radius:42px 14px 42px 42px}
 .person:nth-child(2) .avatar{border-radius:14px 42px 42px 42px}
@@ -289,51 +301,133 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 <!-- 1. Hero -->
 <div class="wrap">
   <div class="hero">
-    <div class="h-text">
-      <p class="eb"><span class="stamp">Đang tuyển sinh</span>Batch 1 · Khai giảng 10/12/2026</p>
-      <h1>Khoá học AI Design Workflow</h1>
-      <p class="tagline"><em>Level up</em> cách vận hành một design workflow với AI</p>
-      <div class="sv-b"><div><b>6</b><span>tuần</span></div><div><b>12</b><span>buổi</span></div><div><b>5</b><span>bạn</span></div></div>
-      <p class="lead">Dành cho mid và senior designer. Bạn rời lớp với một workflow thiết kế dùng AI, chạy trên project của chính bạn.</p>
+    <svg class="star-big" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+    <h1>Khoá học AI Design Workflow</h1>
+    <p class="tagline"><em>Level up</em> cách vận hành một design workflow với AI</p>
+    <div class="h-row">
+      <p class="lead">Dành cho mid và senior designer. Bạn rời lớp với một workflow thiết kế dùng AI, tích lũy qua từng bước và chạy trên project của chính bạn.</p>
+      <div class="h-info">
+        <p class="eb">Batch 1 · Khai giảng 10/12/2026<span class="stamp">Đang tuyển sinh</span></p>
+        <div class="sv-b"><div><b>6</b><span>tuần</span></div><div><b>12</b><span>buổi</span></div><div><b>5</b><span>bạn / lớp</span></div></div>
+      </div>
       <div class="h-cta">
         <a class="btn btn--indigo btn--lg" href="#dang-ky">Đăng ký giữ chỗ</a>
         <div class="hprice">
           <span class="pnow"><b>6.000.000đ</b> / bạn <s>9.000.000đ</s></span>
-          <span class="pnote">Giá thử nghiệm Batch 1 · thanh toán 2 đợt</span>
+          <span class="pnote">Giá thử nghiệm Batch 1 · có thể thanh toán 2 đợt</span>
         </div>
       </div>
-    </div>
-    <div class="h-art">
-      <h2 class="art-h">6 tuần, 6 bậc</h2>
-      <div class="bars" aria-label="Sáu tuần, mỗi tuần một bậc"><i>T1</i><i>T2</i><i>T3</i><i>T4</i><i>T5</i><i>T6</i><svg class="star-big" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg></div>
-      <p class="art-cap">Mỗi tuần một bậc, đến prototype đã test.</p>
     </div>
   </div>
 </div>
 
-<!-- 2. Vấn đề -->
+<!-- 2. Vì sao lúc này -->
+<section id="vi-sao"><div class="wrap">
+  <div class="band">
+    <h2>AI làm phần build rẻ đi. Giá trị chuyển sang chọn đúng vấn đề.</h2>
+    <svg class="sparkle" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+    <div class="groups">
+      <div class="grp">
+        <h3>Build rẻ đi</h3>
+        <div class="stats">
+          <div class="stat"><div class="big">91%</div><p>designer dùng AI cho công việc design ít nhất mỗi tuần, tăng từ 54% một năm trước.</p><div class="so">→ Dùng AI để làm ra screen không còn là lợi thế riêng của ai.</div></div>
+          <div class="stat"><div class="big">43%</div><p>nói công ty của họ kỳ vọng designer làm ra prototype chạy được.</p><div class="so">→ Làm ra prototype đã thành yêu cầu tối thiểu, không còn là điểm cộng.</div></div>
+          <div class="stat"><div class="big">40%</div><p>nói PM và engineer làm nhiều việc design hơn trước.</p><div class="so">→ Người không phải designer cũng làm ra được giao diện.</div></div>
+        </div>
+      </div>
+      <div class="grp grp--to">
+        <h3>Giá trị chuyển sang</h3>
+        <div class="stats">
+          <div class="stat"><div class="big">36%</div><p>nói project giờ bắt đầu từ prototype, không còn bắt đầu từ brief.</p><div class="so">→ Không còn brief định sẵn vấn đề. Designer cần tự hiểu đúng vấn đề trước khi build.</div></div>
+        </div>
+      </div>
+    </div>
+    <p class="src">Nguồn: <i>AI in Design 2026</i>, Designer Fund và Foundation Capital. Khảo sát 906 designer ở hơn 60 nước, tự báo cáo. Số 43% và 36% theo bài tóm tắt của Foundation Capital.</p>
+  </div>
+</div></section>
+
+<!-- 3. Vấn đề -->
 <section id="van-de"><div class="wrap">
   <div class="head">
     <span class="kick">Vấn đề</span>
-    <h2 class="h2">Dùng AI thì dễ. <em>Tin được</em> kết quả AI trả về mới là phần khó.</h2>
+    <h2 class="h2">Bạn có đang dùng AI <em>từng chat một</em>, rời&nbsp;rạc, và thiếu tích&nbsp;lũy?</h2>
   </div>
   <div class="cards4">
-    <div class="card"><span class="n">1</span><h3>Mỗi lần lại bắt đầu từ đầu</h3><p>Bạn dùng AI chỗ này chỗ kia, nhưng task nào cũng làm lại từ số không. Kết quả của bước trước không đi tiếp sang bước sau.</p></div>
-    <div class="card card--tilt tilt"><span class="n">2</span><h3>Nghe rất tự tin, nhưng không biết đúng đến đâu</h3><p>Bản tóm tắt của AI trôi chảy. Bạn không chắc phần nào đúng và không truy ngược được về nguồn.</p></div>
-    <div class="card"><span class="n">3</span><h3>Không giải thích được quyết định</h3><p>Khi stakeholder hỏi "sao lại thiết kế thế này?", câu trả lời nằm rải rác trong các cuộc chat và file.</p></div>
-    <div class="card"><span class="n">4</span><h3>Đứng nhầm chỗ</h3><p>Nếu chỉ đợi PRD rồi biến nó thành screen, bạn đang đứng đúng chỗ AI làm nhanh nhất. Làm cùng business từ đầu mới là phần AI không thay được.</p></div>
-    <div class="card"><span class="n">5</span><h3>Hướng đi chưa rõ</h3><p>Ranh giới giữa design, product và engineering đang dịch chuyển, nên khó biết mình cần củng cố phần nào.</p></div>
-    <div class="card card--tilt tilt-alt"><span class="n">6</span><h3>Thiếu sản phẩm chứng minh</h3><p>Học xong một khóa về AI mà không có project, hub hay portfolio nào cho thấy cách bạn làm việc cùng AI.</p></div>
+    <div class="card"><span class="n">1</span><h3>Chat mới, lại giải thích từ đầu</h3><p>Bối cảnh, mục tiêu, tài liệu, lần nào cũng nhập lại. Insight của bước này không đi sang bước sau.</p></div>
+    <div class="card card--tilt tilt"><span class="n">2</span><h3>Có người hỏi "sao lại thiết kế thế này?"</h3><p>Lý do nằm rải rác trong chat và file. AI tóm tắt rất trôi chảy, nhưng bạn không chắc phần nào đúng và không truy được về nguồn.</p></div>
+    <div class="card card--tilt tilt-alt"><span class="n">3</span><h3>Nhận brief có sẵn, rồi vẽ screen</h3><p>Requirement đã chốt trước khi bạn được hỏi. Phần việc còn lại là biến nó thành screen, đúng phần AI đang làm được ngày càng nhiều.</p></div>
+    <div class="card"><span class="n">4</span><h3>Không có gì để chứng minh</h3><p>Khi team, sếp hay nhà tuyển dụng hỏi bạn làm việc với AI thế nào, bạn chưa có project nào để chỉ vào.</p></div>
   </div>
-  <p class="closing">AI không thay designer. Designer có workflow rõ ràng với AI sẽ đi nhanh hơn người không có.</p>
 </div></section>
 
-<!-- 3. Dành cho ai -->
+<!-- 3b. Câu nối: vấn đề → bạn mang về -->
+<section id="cau-noi" style="padding-top:0"><div class="wrap">
+  <p class="h2 bridge">Một workflow <em>bắt đầu từ business question</em> và tích lũy mọi insight, quyết định ở một chỗ, truy được về nguồn. Nhờ vậy bạn kiểm tra được AI và giải thích được từng quyết định.</p>
+</div></section>
+
+<!-- 4. Bạn mang về -->
+<section id="ket-qua"><div class="wrap">
+  <div class="head">
+    <span class="kick">Bạn mang về</span>
+    <h2 class="h2">Kết thúc khóa, bạn mang về <em>một design workflow</em> end-to-end dùng AI.</h2>
+    <p class="sub">Mỗi bước theo cùng một nguyên tắc: AI soạn nháp. Bạn kiểm tra. Bạn quyết định.</p>
+  </div>
+  <ol class="out3">
+    <li><b>Một workflow end-to-end, lặp lại được</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra. Bước nào đã chạy ổn, bạn đóng gói thành skill và agent để AI chạy lại đúng quy trình đó ở project sau. Phần kiểm tra vẫn do bạn làm.</p></li>
+    <li><b>Một Knowledge Hub</b><p>Phần làm cho workflow tích lũy: mọi insight, quyết định và tài liệu ở một chỗ, truy ngược được về nguồn. Bước sau dùng lại output của bước trước, không phải bắt đầu lại. Hub nằm trong project folder của bạn, riêng tư mặc định, và bạn tự quyết phần nào công khai.</p></li>
+    <li><b>Một project đã chạy qua workflow đó</b><p>Có bằng chứng, có quyết định, có kết quả từ người dùng thật, và một bài trình bày project để cho team hay nhà tuyển dụng thấy cách bạn làm việc với AI.</p></li>
+  </ol>
+  <h3 class="sub-h" style="margin-top:34px">Học xong, bạn có thể</h3>
+  <ol class="can">
+    <li>Dùng lại workflow này cho project tiếp theo nhờ các skill và agent đã đóng gói, và chỉnh nó khi cần, vì bạn hiểu vì sao mỗi bước nằm ở đó.</li>
+    <li>Kiểm tra output của AI: truy từng insight về quote gốc, từng decision về evidence, và ghi rõ điều nào đã xác nhận, điều nào chỉ là giả định.</li>
+    <li>Dùng AI an toàn: biết dữ liệu nào đưa được, dữ liệu nào cần hỏi trước, dữ liệu nào không đưa vào công cụ công khai.</li>
+    <li>Làm việc như một partner của product và business: bắt đầu từ business question, thống nhất outcome và cách đo trước khi thiết kế.</li>
+    <li>Dựng prototype chạy được bằng AI coding tool, test với người dùng thật và sửa theo finding, mà không phải tự viết code.</li>
+    <li>Trình bày project cùng evidence, decision và trade-off.</li>
+  </ol>
+</div></section>
+
+<!-- 5. Ví dụ -->
+<section id="vi-du"><div class="wrap">
+  <div class="head">
+    <span class="kick">Ví dụ kết quả</span>
+    <h2 class="h2">Một project hoàn chỉnh trông thế này.</h2>
+    <p class="sub">Trích từ project mẫu Travel Buddy, làm theo đúng workflow của khóa. <span class="draft">ảnh sẽ thêm sau</span> <span class="draft">project mẫu: Travel Buddy, Chia tiền nhóm hay Delivery App? xác nhận</span></p>
+  </div>
+  <div class="examples">
+    <div class="ex"><small>1</small>Knowledge Hub tổng quan</div>
+    <div class="ex"><small>2</small>Insights</div>
+    <div class="ex"><small>3</small>Tài liệu</div>
+    <div class="ex"><small>4</small>Information architecture</div>
+    <div class="ex"><small>5</small>User flow</div>
+    <div class="ex"><small>6</small>Prototype</div>
+  </div>
+</div></section>
+
+<!-- 6. Chương trình -->
+<section id="chuong-trinh"><div class="wrap">
+  <div class="head">
+    <span class="kick">Chương trình</span>
+    <h2 class="h2">Sáu tuần, mỗi tuần <em>một bậc</em>. Học một buổi, làm một buổi.</h2>
+    <p class="sub">Thứ 5 học khái niệm, chủ nhật làm trên project của bạn với coaching. Mỗi buổi 90 phút, bài về nhà dưới 20 phút.</p>
+  </div>
+  <ol class="tl">
+    <li><div class="wk"><small>Tuần 1</small><span>Foundation</span></div><div><h3>Quy trình thiết kế với AI</h3><p>Nghề đang đi đâu. AI giúp được gì ở từng stage và còn yếu ở đâu. Dữ liệu nào an toàn để đưa cho AI.</p></div><div class="out"><b>Cuối tuần bạn có</b>Project folder, quy tắc dữ liệu riêng, Knowledge Hub bắt đầu, ghi chú hướng đi nghề của bạn</div></li>
+    <li><div class="wk"><small>Tuần 2</small><span>Discover</span></div><div><h3>Hiểu vấn đề</h3><p>Bắt đầu từ business question, không phải từ brief có sẵn. Tách điều đã xác nhận khỏi giả định. Chuẩn bị phỏng vấn người dùng.</p></div><div class="out"><b>Cuối tuần bạn có</b>Design principles để AI đối chiếu, câu hỏi nghiên cứu, danh sách giả định, phân tích đối thủ</div></li>
+    <li><div class="wk"><small>Tuần 3</small><span>Discover và Define</span></div><div><h3>Insight đáng tin</h3><p>Tổng hợp quote cùng AI mà vẫn giữ nguyên văn. Persona, journey map, opportunity: mỗi dòng dẫn về một quote có ID. Đóng gói bước tổng hợp thành agent để dùng lại.</p></div><div class="out"><b>Cuối tuần bạn có</b>Evidence pack và problem brief</div></li>
+    <li><div class="wk"><small>Tuần 4</small><span>Define và Develop</span></div><div><h3>Khám phá ý tưởng</h3><p>Từ opportunity đến solution: viết How might we, bạn nghĩ trước rồi AI mở rộng. Concept sketch trên giấy, rồi user flow và process map. Đóng gói quy trình thành skill.</p></div><div class="out"><b>Cuối tuần bạn có</b>Ba hướng khác nhau thật sự, một hướng đã chọn có lý do, user flow và process map</div></li>
+    <li><div class="wk"><small>Tuần 5</small><span>Develop</span></div><div><h3>AI prototyping</h3><p>Viết design system notes, rules file và skill để AI dựng đúng design system của bạn mỗi lần. Dựng luồng chính từng màn hình. Kiểm tra những gì AI thật sự đã sửa.</p></div><div class="out"><b>Cuối tuần bạn có</b>Prototype dựng theo design system của bạn, sẵn sàng đem đi test</div></li>
+    <li><div class="wk"><small>Tuần 6</small><span>Test</span></div><div><h3>Test với người dùng thật</h3><p>UX audit, metrics, test plan, phân tích kết quả. Vì sao người dùng do AI mô phỏng không thay được người dùng thật.</p></div><div class="out"><b>Cuối tuần bạn có</b>Prototype đã test và sửa theo finding, bài trình bày project, Knowledge Hub đầy đủ</div></li>
+    <li class="end"><div class="wk"><small>Buổi 12</small><span>Wrap-up</span></div><div><h3>Reflection và wrap-up</h3><p>Trình bày project, quyết định phần workflow nào giữ, chỉnh hoặc bỏ, và xem lại hướng đi nghề bạn viết ở tuần 1.</p></div></li>
+  </ol>
+</div></section>
+
+<!-- 7. Dành cho ai -->
 <section id="danh-cho-ai"><div class="wrap">
   <div class="head">
     <span class="kick">Dành cho ai</span>
-    <h2 class="h2">Khóa này hợp với bạn nếu…</h2>
-    <p class="sub">Khóa này dạy cách vận hành một workflow có AI. Không dạy mẹo viết prompt, không gắn với công cụ nào, và không dạy thiết kế sản phẩm AI.</p>
+    <h2 class="h2">Khóa này có hợp với bạn không?</h2>
   </div>
   <div class="two">
     <div class="col col--yes">
@@ -356,131 +450,24 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
 </div></section>
 
-<!-- 4. Vì sao lúc này -->
-<section id="vi-sao"><div class="wrap">
-  <div class="band">
-    <h2>AI đã có mặt ở khắp nơi trong công việc thiết kế.</h2>
-    <svg class="sparkle" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
-    <div class="stats">
-      <div class="stat"><div class="big">91%</div><p>designer dùng AI cho công việc design ít nhất mỗi tuần, tăng từ 54% một năm trước.</p></div>
-      <div class="stat"><div class="big">1/2</div><p>số designer được khảo sát đã đưa code do AI tạo ra lên production.</p></div>
-      <div class="stat"><div class="big">40%</div><p>nói PM và engineer làm nhiều việc design hơn trước.</p></div>
-    </div>
-    <p class="src">Nguồn: <i>AI in Design 2026</i>, Designer Fund và Foundation Capital. Khảo sát 906 designer ở hơn 60 nước, tự báo cáo.</p>
-  </div>
-</div></section>
-
-<!-- 5. Chương trình -->
-<section id="chuong-trinh"><div class="wrap">
-  <div class="head">
-    <span class="kick">Chương trình</span>
-    <h2 class="h2">Sáu tuần, mỗi tuần <em>một bậc</em>. Học một buổi, làm một buổi.</h2>
-    <p class="sub">Mỗi tuần: buổi theory 90 phút (khái niệm, activity ngắn), rồi buổi practice 90 phút (làm trên project của bạn, có coaching). Bài về nhà dưới 20 phút.</p>
-  </div>
-  <div class="levels">
-    <article class="level"><small>Tuần 1 · Foundation</small><h3>Quy trình thiết kế với AI</h3><p>Nghề đang đi đâu. AI giúp được gì ở từng stage và còn yếu ở đâu. Dữ liệu nào an toàn để đưa cho AI.</p><div class="out"><b>Cuối tuần bạn có</b>Project folder, quy tắc dữ liệu riêng, Knowledge Hub bắt đầu</div></article>
-    <article class="level"><small>Tuần 2 · Discover</small><h3>Hiểu vấn đề</h3><p>Bắt đầu từ business question, không phải từ brief có sẵn. Tách điều đã xác nhận khỏi giả định. Chuẩn bị phỏng vấn người dùng.</p><div class="out"><b>Cuối tuần bạn có</b>Câu hỏi nghiên cứu, danh sách giả định, phân tích đối thủ</div></article>
-    <article class="level"><small>Tuần 3 · Discover và Define</small><h3>Insight đáng tin</h3><p>Tổng hợp quote cùng AI mà vẫn giữ nguyên văn. Persona, journey map, opportunity: mỗi dòng dẫn về một quote có ID.</p><div class="out"><b>Cuối tuần bạn có</b>Evidence pack và problem brief</div></article>
-    <article class="level"><small>Tuần 4 · Define và Develop</small><h3>Khám phá ý tưởng</h3><p>Hypothesis, How might we, sketch giấy rồi mới đến AI. Chọn hướng và ghi lại lý do.</p><div class="out"><b>Cuối tuần bạn có</b>Một hướng đã chọn và user flow</div></article>
-    <article class="level"><small>Tuần 5 · Develop</small><h3>AI prototyping</h3><p>Viết design system notes và rules file để AI đọc được. Dựng luồng chính từng màn hình. Kiểm tra những gì AI thật sự đã sửa.</p><div class="out"><b>Cuối tuần bạn có</b>Prototype sẵn sàng đem đi test</div></article>
-    <article class="level"><small>Tuần 6 · Test</small><h3>Test với người dùng thật</h3><p>UX audit, metrics, test plan, phân tích kết quả. Vì sao người dùng do AI mô phỏng không thay được người dùng thật.</p><div class="out"><b>Cuối tuần bạn có</b>Prototype đã test và Knowledge Hub đầy đủ</div></article>
-  </div>
-  <p class="rhythm"><b>Buổi 12 (reflection và wrap-up):</b> xem lại project, quyết định phần workflow nào giữ, chỉnh hoặc bỏ, và xem lại hướng đi nghề bạn viết ở tuần 1.</p>
-</div></section>
-
-<!-- 6. Học xong có gì -->
-<section id="ket-qua"><div class="wrap">
-  <div class="head">
-    <span class="kick">Bạn mang về</span>
-    <h2 class="h2">Output của khóa là <em>một workflow</em> thiết kế end-to-end dùng AI.</h2>
-    <p class="sub">Mọi thứ khác trong khóa phục vụ output này.</p>
-  </div>
-  <ol class="out3">
-    <li><b>Một workflow end-to-end, lặp lại được</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra.</p></li>
-    <li><b>Một Knowledge Hub</b><p>Mọi insight, quyết định và tài liệu ở một chỗ, truy ngược được về nguồn. Hub riêng tư mặc định, nằm trong project folder của bạn.</p></li>
-    <li><b>Một project đã chạy qua workflow đó</b><p>Có bằng chứng, có quyết định, có kết quả từ người dùng thật.</p></li>
-  </ol>
-  <h3 class="sub-h" style="margin-top:34px">Học xong, bạn có thể</h3>
-  <ol class="can">
-    <li>Chạy một workflow thiết kế có AI từ business question đến prototype đã test trên project của chính mình, và giải thích vì sao mỗi bước nằm ở đó.</li>
-    <li>Kiểm tra output của AI: truy từng insight về quote gốc, từng decision về evidence, và ghi rõ điều nào đã xác nhận, điều nào chỉ là giả định.</li>
-    <li>Dùng AI an toàn: biết dữ liệu nào đưa được, dữ liệu nào cần hỏi trước, dữ liệu nào không bao giờ đưa vào công cụ công khai.</li>
-    <li>Làm việc như một partner của product và business: bắt đầu từ business question, thống nhất outcome trước khi thiết kế.</li>
-    <li>Dựng prototype chạy được bằng AI coding tool, test với người dùng thật và sửa theo finding, mà không phải tự viết code.</li>
-    <li>Trình bày project cùng evidence, decision và trade-off, và đánh giá phần nào của workflow nên giữ, chỉnh hay bỏ.</li>
-  </ol>
-  <div class="promise">
-    <h3>Mình cam kết điều gì, và không cam kết điều gì</h3>
-    <p>Khóa này không cam kết kết quả nghề nghiệp như tăng lương hay đổi việc, vì kết quả đó còn phụ thuộc nhiều thứ ngoài lớp học. Điều khóa cam kết là output: khi kết thúc, bạn có một workflow thiết kế end-to-end dùng AI đã chạy trên project của mình, và bạn giải thích được từng bước của nó.</p>
-  </div>
-  <p class="know"><b>Cách bạn biết mình tiến bộ:</b> giải thích được khái niệm bằng lời của mình (Know), có một file thật trong project folder (Do), trình bày và nhận review chéo (Show).</p>
-</div></section>
-
-<!-- 7. Ví dụ -->
-<section id="vi-du"><div class="wrap">
-  <div class="head">
-    <span class="kick">Ví dụ kết quả</span>
-    <h2 class="h2">Một project hoàn chỉnh trông thế này.</h2>
-    <p class="sub">Trích từ project mẫu Travel Buddy, làm theo đúng workflow của khóa. <span class="draft">ảnh sẽ thêm sau</span></p>
-  </div>
-  <div class="examples">
-    <div class="ex"><small>1</small>Knowledge Hub tổng quan</div>
-    <div class="ex"><small>2</small>Insights</div>
-    <div class="ex"><small>3</small>Tài liệu</div>
-    <div class="ex"><small>4</small>Information architecture</div>
-    <div class="ex"><small>5</small>User flow</div>
-    <div class="ex"><small>6</small>Prototype</div>
-  </div>
-</div></section>
-
 <!-- 8. Lịch học và học phí -->
 <section id="lich-hoc-phi"><div class="wrap">
   <div class="head">
     <span class="kick kick--lime">Lịch học và học phí</span>
     <h2 class="h2">Batch 1 là giai đoạn thử nghiệm: <em>lớp nhỏ</em>, giá khuyến mãi.</h2>
-    <p class="sub">Tối đa 5 bạn, giá khuyến mãi 6.000.000đ. Đủ 5 bạn là mình dừng nhận đăng ký, các bạn đăng ký sau sẽ vào Batch 2.</p>
+    <p class="sub">Tối đa 5 bạn, giá khuyến mãi 6.000.000đ. Đủ 5 bạn đã cọc là mình dừng nhận, các bạn đăng ký sau sẽ vào Batch 2.</p>
   </div>
   <div class="fees">
     <div class="price tilt-alt" style="transform:none">
       <span class="kick" style="background:#FFFFFF26;color:#fff;align-self:flex-start">Giá Batch 1</span>
       <div class="was">9.000.000đ</div>
       <div class="now">6.000.000đ</div>
-      <div class="save">Khuyến mãi giai đoạn thử nghiệm, tiết kiệm 3.000.000đ</div>
       <ul>
-        <li>Tối đa 5 bạn. Đủ 5 bạn đã cọc là dừng nhận.</li>
-        <li>Đủ 12 buổi, học nhóm 5 bạn.</li>
-        <li>Lớp nhỏ nên được coaching sát. Review chéo với 4 bạn còn lại.</li>
+        <li>Đủ 12 buổi, học nhóm tối đa 5 bạn.</li>
+        <li>Lớp nhỏ nên được coaching sát. Review chéo với các bạn cùng lớp.</li>
         <li>Xem lại ghi hình các buổi, không giới hạn.</li>
       </ul>
     </div>
-    <div class="steps">
-      <h3>Thanh toán 2 đợt, mỗi đợt 3.000.000đ</h3>
-      <ol>
-        <li><b>Đợt 1 (cọc):</b> đóng trong 48 giờ kể từ lúc đăng ký. Chỗ chỉ được giữ khi mình đã nhận cọc.</li>
-        <li><b>Đợt 2:</b> đóng phần còn lại trước 06/12/2026.</li>
-        <li>Chuyển khoản VND. Daphne gửi thông tin chuyển khoản khi tư vấn qua LinkedIn.</li>
-      </ol>
-    </div>
-  </div>
-  <div class="policy"><small>Chính sách Batch 1</small>Batch 1 là lớp thử nghiệm nên chưa áp dụng hủy và hoàn học phí, kể cả tiền cọc. Nếu mình hủy hoặc dời lớp, mình hoàn 100%.</div>
-
-  <div class="sched-wrap">
-    <h3 class="sched-h">Lịch học</h3>
-    <div class="facts"><span>Online qua Zoom</span><span>Tiếng Việt, giờ Việt Nam</span><span>Thứ 5: 19:30 đến 21:00 (theory)</span><span>Chủ nhật: 14:00 đến 15:30 (practice)</span><span>100% buổi có ghi hình</span></div>
-    <div class="scroll">
-      <table class="sched">
-        <thead><tr><th>Tuần</th><th>Theory</th><th>Practice (chủ nhật)</th></tr></thead>
-        <tbody>
-          <tr><td>1</td><td>Thứ 5, 10/12 · khai giảng</td><td>13/12</td></tr>
-          <tr><td>2</td><td>Thứ 5, 17/12</td><td>20/12</td></tr>
-          <tr><td>3</td><td>Thứ 4, 23/12 <span class="moved">dời, tránh Giáng sinh</span></td><td>27/12</td></tr>
-          <tr><td>4</td><td>Thứ 4, 30/12 <span class="moved">dời, tránh giao thừa</span></td><td>03/01/2027</td></tr>
-          <tr><td>5</td><td>Thứ 5, 07/01</td><td>10/01</td></tr>
-          <tr><td>6</td><td>Thứ 5, 14/01</td><td>17/01 · buổi 12, wrap-up</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note">Hai buổi theory dời sang thứ 4 vẫn giữ giờ 19:30 đến 21:00. Tuần 6 có một ngày test với người dùng thật, nên bạn nên tìm participant từ tuần 4 hoặc 5. Batch 2 dự kiến đầu tháng 3/2027. <span class="draft">chưa có ngày chính thức</span></p>
   </div>
 </div></section>
 
@@ -492,7 +479,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   </div>
   <div class="people">
     <div class="person"><div class="avatar photo"><img src="img/winnie.jpg" alt="Winnie Nguyen" width="96" height="96"></div><div><h3>Winnie Nguyen</h3><div class="role">Giảng viên · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p></div></div>
-    <div class="person"><div class="avatar photo"><img src="img/daphne.png" alt="Daphne Huynh" width="96" height="96"></div><div><h3>Daphne Huynh</h3><div class="role">Co-founder, lo vận hành</div><p>Daphne lo vận hành khóa: đăng ký, liên hệ học viên, lịch học và ghi hình. Daphne cũng là Co-founder của Breaking into Product Management (BPM). <a href="https://www.linkedin.com/in/daphne-huynh/" rel="noopener">LinkedIn</a> <span class="draft">giới thiệu: điền sau</span></p></div></div>
   </div>
 
   <h3 class="sub-h">Mentee của Winnie nói gì</h3>
@@ -516,16 +502,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
     <details><summary>Học phí 6 triệu có kéo dài không?</summary><div class="ans">Đây là giá khuyến mãi cho giai đoạn thử nghiệm của Batch 1, khi lớp còn nhỏ chỉ 5 bạn. Các batch sau có thể theo giá gốc. <span class="draft">giá batch sau: điền sau</span></div></details>
     <details><summary>Mình dùng project của công ty thì có an toàn không?</summary><div class="ans">Tuần 1 dành riêng cho việc này. Bạn học ba loại tài liệu (an toàn, nên hỏi trước, không đưa vào tool công khai), bốn thói quen, và tự viết quy tắc dữ liệu cho project của mình. Tài liệu bảo mật được ẩn danh trước khi dùng.</div></details>
     <details><summary>Cần chuẩn bị gì trước khi học?</summary><div class="ans">Một project thật (hoặc chọn project mẫu), một AI chat tool, và từ tuần 5 một AI coding tool. <span class="draft">danh sách tool và chi phí: chờ quyết</span></div></details>
-    <details><summary>Mỗi tuần mất bao nhiêu thời gian?</summary><div class="ans">Hai buổi 90 phút (thứ 5 và chủ nhật), cộng bài về nhà dưới 20 phút. <span class="draft">tổng giờ mỗi tuần: xác nhận</span></div></details>
-    <details><summary>Nếu mình lỡ một buổi?</summary><div class="ans">Mọi buổi đều được ghi hình, bạn xem lại không giới hạn thời gian. Trước mỗi buổi practice, Winnie xem sơ qua bài của bạn. Nếu bạn lỡ buổi practice (chủ nhật) thì không bù sau, bạn xem lại ghi hình. <span class="draft">bài nộp là gì: xác nhận</span></div></details>
-    <details><summary>Mình có được xem lại ghi hình không?</summary><div class="ans">Có. Mọi buổi học được ghi hình, và học viên xem lại không giới hạn thời gian. Ghi hình chỉ dành cho học viên của khóa.</div></details>
+    <details><summary>Mỗi tuần mất bao nhiêu thời gian?</summary><div class="ans">Hai buổi 90 phút (thứ 5 và chủ nhật), cộng bài về nhà dưới 20 phút. Trước mỗi buổi practice, Winnie xem sơ qua bài của bạn. <span class="draft">tổng giờ mỗi tuần: xác nhận</span> <span class="draft">bài nộp là gì: xác nhận</span></div></details>
+    <details><summary>Nếu mình lỡ một buổi?</summary><div class="ans">Mọi buổi đều được ghi hình, bạn xem lại không giới hạn thời gian. Ghi hình chỉ dành cho học viên của khóa. Nếu bạn lỡ buổi practice (chủ nhật) thì không bù sau, bạn xem lại ghi hình.</div></details>
     <details><summary>Có hủy hoặc hoàn tiền được không?</summary><div class="ans">Batch 1 là lớp thử nghiệm nên chưa áp dụng hủy và hoàn học phí, kể cả tiền cọc. Nếu mình hủy hoặc dời lớp, mình hoàn 100%. Từ Batch 2: hủy trước khai giảng ít nhất 2 tuần thì hoàn 100%, và có thể bảo lưu tối đa 2 lần.</div></details>
     <details><summary>Nếu chưa đủ 5 bạn thì sao?</summary><div class="ans">Batch 1 vẫn chạy với số bạn đã đăng ký. Lịch học và nội dung không đổi.</div></details>
-    <details><summary>Nếu mình đăng ký sau khi đủ 5 bạn thì sao?</summary><div class="ans">Mình dừng nhận đăng ký Batch 1 khi đủ 5 bạn. Bạn đăng ký sau sẽ được ghi danh vào Batch 2, dự kiến đầu tháng 3/2027. <span class="draft">chưa có ngày chính thức</span></div></details>
-    <details><summary>Thanh toán thế nào?</summary><div class="ans">Hai đợt, mỗi đợt 3.000.000đ. Đợt 1 là tiền cọc, đóng trong 48 giờ kể từ lúc bạn đăng ký. Đợt 2 đóng phần còn lại trước 06/12/2026. Chuyển khoản VND. Daphne gửi thông tin chuyển khoản khi tư vấn qua LinkedIn. Chỗ chỉ được giữ khi mình đã nhận cọc.</div></details>
-    <details><summary>Ai vận hành khóa?</summary><div class="ans">Winnie là giảng viên. Daphne là Co-founder, lo vận hành và sẽ liên hệ bạn qua LinkedIn trong 24 giờ làm việc sau khi bạn đăng ký.</div></details>
     <details><summary>Khác gì các khóa dạy prompt hay dạy tool?</summary><div class="ans">Khóa này không dạy mẹo prompt hay một tool cụ thể. Bạn học một quy trình: mỗi bước có output rõ ràng, có bước kiểm tra, và truy ngược được về nguồn. Tool thay đổi, quy trình thì dùng lại được.</div></details>
-    <details><summary>AI có thay designer không?</summary><div class="ans">AI không thay designer, nhưng designer có workflow rõ ràng với AI sẽ đi nhanh hơn người không có. Khóa này giúp bạn xây workflow đó.</div></details>
   </div>
 </div></section>
 
@@ -543,7 +524,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
     <ol>
       <li>Điền biểu mẫu.</li>
       <li>Daphne liên hệ qua LinkedIn trong 24 giờ làm việc để xác nhận chỗ và gửi thông tin chuyển khoản.</li>
-      <li>Bạn đóng đợt 1 (cọc 3.000.000đ) trong 48 giờ kể từ lúc đăng ký. Chỗ chỉ được giữ khi đã nhận cọc.</li>
+      <li>Bạn đóng đợt 1 (cọc 3.000.000đ) trong 48 giờ kể từ lúc nhận thông tin chuyển khoản. Chỗ chỉ được giữ khi đã nhận cọc.</li>
       <li>Bạn đóng đợt 2 (3.000.000đ còn lại) trước 06/12/2026.</li>
       <li>Mình gửi hướng dẫn chuẩn bị trước buổi đầu tiên (thứ 5, 10/12).</li>
     </ol>
