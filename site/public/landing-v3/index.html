@@ -33,8 +33,10 @@ section{padding:var(--section) 0 0}
 /* Chip nháp: xóa trước khi đăng */
 
 /* Thanh trên cùng: chỉ logo và nút Đăng ký */
-.navwrap{position:sticky;top:0;z-index:20;padding:10px var(--gutter) 0;background:linear-gradient(var(--paper) 70%,transparent)}
-.nav{max-width:var(--maxw);margin:0 auto;background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--line);border-radius:var(--r-pill);padding:8px 8px 8px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.navwrap{position:sticky;top:0;z-index:20;padding:0 var(--gutter);background:var(--paper);transition:box-shadow .2s}
+.navwrap.is-scrolled{box-shadow:0 1px 0 var(--line),0 6px 16px -10px #14123A33}
+.nav{max-width:var(--maxw);margin:0 auto;padding:12px 0;display:flex;align-items:center;justify-content:space-between;gap:14px}
+@media (prefers-reduced-motion:reduce){.navwrap{transition:none}}
 .logo{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:-.01em;text-decoration:none;font-size:1rem;white-space:nowrap}
 .logo svg{width:32px;height:32px;flex:none}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;font:800 .95rem var(--font);padding:10px 22px;border-radius:var(--r-pill);border:0;background:var(--ink);color:#fff;text-decoration:none;cursor:pointer;text-align:center}
@@ -53,7 +55,7 @@ section{padding:var(--section) 0 0}
 .head{margin-bottom:28px}
 
 /* Hero: tiêu đề lớn, bên dưới chia hai cột (đoạn phụ và nút bên trái, thông tin batch bên phải). Một ngôi sao hồng làm điểm nhấn */
-.hero{position:relative;padding:clamp(28px,6vw,72px) 0 8px}
+.hero{position:relative;padding:clamp(48px,6vw,72px) 0 8px}
 .eb{margin:0;display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:.95rem}
 .stamp{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--ink);background:var(--soft);border-radius:8px;padding:2px 8px;transform:rotate(-3deg);white-space:nowrap}
 .stamp--plain{background:transparent;transform:none;border-color:var(--line);color:var(--muted)}
@@ -493,6 +495,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 
 <nav class="toc" aria-label="Mục lục"><small>Mục lục</small><ol><li><a href="#vi-sao">Hiện trạng ngành</a></li><li><a href="#van-de">Vấn đề</a></li><li><a href="#ket-qua">Giải pháp</a></li><li><a href="#vi-du">Thành phẩm</a></li><li><a href="#chuong-trinh">Giáo trình khóa học</a></li><li><a href="#danh-cho-ai">Dành cho ai</a></li><li><a href="#lich-hoc">Lịch học</a></li><li><a href="#hoc-phi">Học phí</a></li><li><a href="#giang-vien">Mentor</a></li><li><a href="#dang-ky">Đăng ký</a></li></ol></nav>
 <script>
+(()=>{const n=document.querySelector('.navwrap');if(!n)return;const u=()=>n.classList.toggle('is-scrolled',scrollY>8);addEventListener('scroll',u,{passive:true});u()})();
 (()=>{const toc=document.querySelector('.toc');if(!toc)return;const links=[...toc.querySelectorAll('a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
 const upd=()=>{toc.classList.toggle('on',scrollY>innerHeight*.35);let cur=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});links.forEach((a,i)=>a.toggleAttribute('aria-current',i===cur))};
 addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd()})();
