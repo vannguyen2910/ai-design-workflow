@@ -288,6 +288,19 @@ section{padding:var(--section) 0 0}
 
 footer{padding:48px 0 56px;font-size:.88rem;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
+
+/* Mục lục: dính bên phải, chỉ hiện trên màn hình rộng */
+.toc{display:none}
+@media(min-width:1440px){
+.toc{display:block;position:fixed;z-index:15;top:50%;right:16px;width:min(180px,calc((100vw - var(--maxw))/2 - 32px));transform:translateY(-50%);background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-md);padding:14px 12px 10px;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
+.toc.on{opacity:1;visibility:visible}
+.toc small{display:block;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--muted);margin:0 0 6px 8px}
+.toc ol{display:grid;gap:1px}
+.toc a{display:block;padding:5px 8px;border-radius:8px;font-size:.78rem;font-weight:700;line-height:1.3;color:var(--muted);text-decoration:none}
+.toc a:hover{color:var(--ink);background:var(--soft)}
+.toc a[aria-current]{color:var(--ink);background:var(--chartreuse)}
+}
+@media(min-width:1440px) and (prefers-reduced-motion:reduce){.toc{transition:none}}
 </style>
 </head>
 <body>
@@ -545,5 +558,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
   <span>Winnie Nguyen · Daphne Huynh · Học online, bằng tiếng Việt</span>
 </div></footer>
 
+<nav class="toc" aria-label="Mục lục"><small>Mục lục</small><ol><li><a href="#vi-sao">Vì sao lúc này</a></li><li><a href="#van-de">Vấn đề</a></li><li><a href="#ket-qua">Giải pháp</a></li><li><a href="#vi-du">Thành phẩm</a></li><li><a href="#chuong-trinh">Giáo trình khóa học</a></li><li><a href="#danh-cho-ai">Dành cho ai</a></li><li><a href="#lich-hoc">Lịch học</a></li><li><a href="#hoc-phi">Học phí</a></li><li><a href="#giang-vien">Mentor</a></li><li><a href="#dang-ky">Đăng ký</a></li></ol></nav>
+<script>
+(()=>{const toc=document.querySelector('.toc');if(!toc)return;const links=[...toc.querySelectorAll('a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+const upd=()=>{toc.classList.toggle('on',scrollY>innerHeight*.6);let cur=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});links.forEach((a,i)=>a.toggleAttribute('aria-current',i===cur))};
+addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd()})();
+</script>
 </body>
 </html>
