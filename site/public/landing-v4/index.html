@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>AI Design Workflow · UX Level Up</title>
+<meta name="description" content="Khóa 12 buổi trong 6 tuần cho mid và senior designer: xây một workflow thiết kế end-to-end dùng AI trên project thật của bạn. Batch 1 chỉ có 5 bạn.">
+<link rel="icon" href="../brand/logo/mark-app.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0&display=block">
+<link rel="stylesheet" href="../brand/tokens.css">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+/* Landing v4: xen kẽ nền trắng (chủ đạo) với vài khối nền đậm, ít box lồng box, chuyển động nhẹ, mở dần thông tin (progressive disclosure). Token ở ../brand/tokens.css. */
+:root{--section:clamp(72px,11vw,150px);--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-weight:var(--w-body);font-size:1.0625rem;line-height:1.65;-webkit-text-size-adjust:100%;overflow-x:clip}
+img,svg{max-width:100%}
+h1,h2,h3,p,ul,ol,dl,blockquote,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:calc(var(--maxw) + 2*var(--gutter));margin:0 auto;padding:0 var(--gutter)}
+section{padding:var(--section) 0 0}
+.ms{font-family:"Material Symbols Rounded";font-weight:300;font-style:normal;font-size:1.5em;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;font-variation-settings:"FILL" 0,"wght" 300,"GRAD" 0,"opsz" 24;-webkit-font-smoothing:antialiased;flex:none;visibility:hidden}
+.ms-ok .ms{visibility:visible}
+
+/* Nút, nhãn, tiêu đề */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;font:800 .98rem var(--font);padding:12px 26px;border-radius:var(--r-pill);border:0;background:var(--ink);color:#fff;text-decoration:none;cursor:pointer;transition:transform .3s var(--ease),filter .2s}
+.btn .ms{font-size:1.25em;transition:transform .3s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover .ms{transform:translateX(4px)}
+.btn--lime{background:var(--chartreuse);color:var(--ink)}
+.btn--lg{min-height:56px;padding:16px 32px;font-size:1.05rem}
+.kick{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.h2{font-size:clamp(2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-top:18px;text-wrap:balance}
+.h2 em,.mark{font-style:normal;background:linear-gradient(transparent 58%,var(--chartreuse) 58%);padding:0 .06em}
+.sub{margin-top:18px;max-width:58ch;color:var(--muted);font-size:1.1rem}
+.dark{color:#fff}
+.dark .kick{color:#ffffffb3}
+.dark .sub{color:#ffffffb3}
+.dark .h2 em{background:none;color:var(--chartreuse)}
+
+/* Nav: trong suốt trên hero, đặc khi cuộn */
+.navwrap{position:fixed;inset:0 0 auto 0;z-index:30;padding:0 var(--gutter);color:#fff;transition:background .3s,color .3s,box-shadow .3s}
+.navwrap.is-scrolled{background:#ffffffee;backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav{max-width:var(--maxw);margin:0 auto;padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:-.01em;text-decoration:none;white-space:nowrap}
+.logo svg{width:34px;height:34px;flex:none}
+.nav .btn{min-height:42px;padding:8px 22px;background:var(--chartreuse);color:var(--ink)}
+.navwrap.is-scrolled .btn{background:var(--ink);color:#fff}
+
+/* HERO: gần trọn màn hình đầu, nền indigo, cầu thang = workflow */
+.hero{position:relative;min-height:100svh;background:var(--indigo);color:#fff;border-radius:0 0 calc(32px + var(--p,0)*72px) calc(32px + var(--p,0)*72px);transform:scale(calc(1 - var(--p,0)*.05));transform-origin:50% 0;overflow:hidden;display:flex;align-items:center;padding:112px 0 72px;z-index:1;will-change:transform}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,5vw,72px);align-items:center}
+.hero-copy{transform:translateY(calc(var(--p,0)*-40px));opacity:calc(1 - var(--p,0)*.9)}
+.eb{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--chartreuse)}
+.eb i{width:9px;height:9px;border-radius:50%;background:var(--chartreuse);animation:pulse 1.8s infinite}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.2rem);font-weight:800;letter-spacing:-.035em;line-height:1.02;margin-top:20px;text-wrap:balance}
+.hero h1 .hl{color:var(--chartreuse)}
+.tagline{margin-top:22px;font-size:clamp(1.15rem,2vw,1.5rem);font-weight:700;line-height:1.4;max-width:30ch;color:#ffffffe6}
+.lead{margin-top:14px;max-width:44ch;color:#ffffffb3}
+.h-cta{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px}
+.hprice{display:flex;flex-direction:column;line-height:1.35;font-size:.9rem;color:#ffffffb3}
+.hprice b{font-size:1.35rem;color:#fff;letter-spacing:-.01em}
+.hprice s{margin-left:6px}
+.stats3{margin-top:44px;display:flex;gap:clamp(20px,4vw,48px)}
+.stats3 div{display:flex;flex-direction:column}
+.stats3 b{font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.04em;line-height:1}
+.stats3 span{font-size:.85rem;color:#ffffffb3;font-weight:700;margin-top:4px}
+.hero-art{position:relative;aspect-ratio:560/520;width:100%;max-width:560px;justify-self:end;transform:translateY(calc(var(--p,0)*60px))}
+.stairs{width:100%;height:100%;overflow:visible}
+.stairs .line{fill:none;stroke:var(--chartreuse);stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s .5s var(--ease) forwards}
+.stairs .pill{opacity:0;transform-box:fill-box;transform-origin:center;animation:pop .6s var(--ease) forwards}
+.stairs .pill rect{fill:#fff}
+.stairs .pill text{font:800 21px Manrope,sans-serif;fill:var(--ink)}
+.stairs .dot{fill:var(--pink);transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .7s 2s var(--ease) forwards}
+.stairs .dot-t{font:800 19px Manrope,sans-serif;fill:var(--ink);opacity:0;animation:pop .7s 2.1s var(--ease) forwards}
+.stk{position:absolute;z-index:3;font-weight:800;font-size:.9rem;padding:10px 18px;border-radius:var(--r-pill);color:var(--ink);box-shadow:0 14px 30px -12px #0006;animation:bob 5s ease-in-out infinite;white-space:nowrap}
+.stk--pink{background:var(--pink);top:2%;left:-2%;--r:-7deg}
+.stk--lime{background:var(--chartreuse);bottom:6%;right:2%;--r:5deg;animation-delay:-2s}
+.bgstar{position:absolute;color:#ffffff1f;pointer-events:none;animation:spin 40s linear infinite}
+.bgstar--a{width:420px;height:420px;right:-120px;top:-100px}
+.bgstar--b{width:240px;height:240px;left:-80px;bottom:-60px;animation-direction:reverse}
+.scrollhint{position:absolute;left:50%;bottom:22px;z-index:3;transform:translateX(-50%);color:#ffffffb3;animation:bob2 2s ease-in-out infinite}
+@media(max-width:900px){.hero{padding-top:96px}.hero .wrap{grid-template-columns:minmax(0,1fr)}.hero-art{max-width:380px;justify-self:center}.scrollhint{display:none}}
+
+/* Băng chữ chạy */
+.marquee{overflow:hidden;padding:clamp(28px,5vw,56px) 0 0;white-space:nowrap}
+.marquee-in{display:inline-flex;gap:32px;animation:mq 38s linear infinite;font-size:clamp(3rem,9vw,7rem);font-weight:800;letter-spacing:-.04em;line-height:1.1;-webkit-text-stroke:4px var(--ink);paint-order:stroke fill;color:var(--paper)}
+.marquee-in span:nth-child(even){color:var(--ink);-webkit-text-stroke:0}
+.marquee-in svg:nth-of-type(even){color:var(--indigo)}
+.marquee-in svg{width:.6em;height:.6em;color:var(--pink);align-self:center;flex:none}
+
+/* Reveal khi cuộn */
+.js .rv{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--d,0)*90ms)}
+.js .rv.in{opacity:1;transform:none}
+
+/* Hiện trạng ngành: tách đôi, tiêu đề dính bên trái, số lớn bên phải, mọi thứ trên nền trắng */
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.split-l{position:sticky;top:110px}
+.src{margin-top:28px;font-size:.8rem;color:var(--muted);max-width:44ch}
+.fact{padding:clamp(22px,3vw,36px) 0;border-top:1.5px solid var(--line)}
+.fact:first-child{border-top:0;padding-top:0}
+.fact-row{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:8px clamp(18px,3vw,36px);align-items:center}
+.big{font-size:clamp(3.4rem,8vw,6rem);font-weight:800;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums}
+.big.to{color:var(--indigo)}
+.fact-row p{font-weight:600;max-width:34ch}
+.more-btn{margin-top:14px;display:inline-flex;align-items:center;gap:6px;cursor:pointer;font:800 .88rem var(--font);color:var(--ink);list-style:none;border-bottom:2px solid var(--chartreuse);padding-bottom:2px}
+.more-btn::-webkit-details-marker{display:none}
+.more-btn .ms{font-size:1.2em;transition:transform .3s var(--ease)}
+details[open]>.more-btn .ms{transform:rotate(45deg)}
+.fact details p{margin-top:12px;color:var(--muted);max-width:52ch;animation:fade .5s var(--ease)}
+.fact--to .tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;color:var(--muted)}
+@media(max-width:860px){.split{grid-template-columns:minmax(0,1fr)}.split-l{position:static}.fact-row{grid-template-columns:minmax(0,1fr)}}
+
+/* Vấn đề: một cột, accordion */
+.narrow{max-width:860px;margin:0 auto}
+.acc{margin-top:44px;border-bottom:1.5px solid var(--line)}
+.acc details{border-top:1.5px solid var(--line)}
+.acc summary{display:flex;align-items:center;gap:clamp(14px,3vw,28px);padding:clamp(20px,3vw,32px) 0;cursor:pointer;list-style:none;font-size:clamp(1.2rem,2.5vw,1.75rem);font-weight:800;letter-spacing:-.02em;line-height:1.25}
+.acc summary::-webkit-details-marker{display:none}
+.acc .n{font-size:.9rem;font-weight:800;color:var(--muted);width:2ch;flex:none;letter-spacing:0}
+.acc .t{flex:1}
+.acc .pm{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;transition:background .3s,transform .4s var(--ease)}
+.acc details[open] .pm{background:var(--chartreuse);border-color:var(--chartreuse);transform:rotate(45deg)}
+.acc summary:hover .pm{background:var(--chartreuse);border-color:var(--chartreuse)}
+.acc .ans{padding:0 0 clamp(22px,3vw,34px) calc(2ch + clamp(14px,3vw,28px));color:var(--muted);max-width:62ch;animation:fade .5s var(--ease)}
+.closing{margin-top:36px;font-size:1.2rem;font-weight:800;color:var(--ink)}
+
+/* Giải pháp: nền trắng, 3 cột có icon line */
+.cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,56px);margin-top:56px}
+.col3 .ico{width:64px;height:64px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-size:1rem;margin-bottom:22px;transition:background .3s,transform .5s var(--ease)}
+.col3 .ico .ms{font-size:2rem}
+.col3:hover .ico{background:var(--chartreuse);border-color:var(--chartreuse);transform:rotate(-8deg) scale(1.06)}
+.col3 b{display:block;font-size:1.3rem;font-weight:800;line-height:1.3;letter-spacing:-.01em;margin-bottom:10px}
+.col3 p{color:var(--muted);font-size:.98rem}
+.can-h{margin-top:clamp(64px,8vw,112px);font-size:1.5rem;font-weight:800;letter-spacing:-.015em}
+.can{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(28px,5vw,72px);margin-top:12px}
+.can li,.can-more li{display:flex;gap:16px;padding:20px 0;border-top:1.5px solid var(--line);font-size:.98rem}
+.can .ms,.can-more .ms{font-size:1.9rem;margin-top:-2px}
+.can-more{margin-top:0}
+.can-more .can{margin-top:0}
+.can-wrap details>summary{margin-top:22px}
+@media(max-width:860px){.cols3,.can{grid-template-columns:minmax(0,1fr)}}
+
+/* Thành phẩm: dải showcase, cuộn dọc thì dải trượt ngang (kiểu serko.ai) */
+.show{position:relative;height:calc(100svh + 420svh);margin-top:var(--section);background:#fff}
+.stage{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;background:radial-gradient(90% 55% at 50% 108%,#ff8fcf 0%,#ffd1ea 28%,#eef9a8 55%,#fff 80%)}
+.show-head{padding-top:clamp(72px,10vh,110px);text-align:center;position:relative;z-index:2}
+.show-head .kick{justify-content:center}
+.show-head .h2{margin:12px auto 0;max-width:20ch;font-size:clamp(1.8rem,4.2vw,3.1rem)}
+.show-head .sub{margin:10px auto 0;font-size:1rem}
+.rail{--ch:clamp(200px,44svh,440px);--cw:min(calc(var(--ch)*1.6),82vw);flex:1;display:flex;align-items:center;position:relative}
+.track{display:flex;gap:clamp(18px,3vw,40px);padding-left:calc(50vw - var(--cw)/2);padding-right:calc(50vw - var(--cw)/2);will-change:transform}
+.shot{flex:none;width:var(--cw);height:var(--ch);border-radius:22px;overflow:hidden;background:#fff;border:0;padding:0;cursor:zoom-in;box-shadow:0 30px 60px -24px #14123a66,0 0 0 1px #14123a14;transition:box-shadow .3s;will-change:transform,opacity;position:relative}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block}
+.shot:hover{box-shadow:0 36px 70px -20px #14123a88,0 0 0 1px #14123a14}
+.cap{position:relative;z-index:2;display:flex;justify-content:center;padding:0 var(--gutter) clamp(22px,4vh,40px)}
+.cap-in{display:flex;align-items:center;gap:clamp(14px,3vw,28px);background:#fff;border-radius:var(--r-pill);padding:12px clamp(18px,3vw,30px);box-shadow:0 12px 30px -14px #14123a55;max-width:min(720px,100%)}
+.cap-n{font-weight:800;font-size:.8rem;color:var(--muted);letter-spacing:.06em;white-space:nowrap}
+.cap-t{display:grid;gap:0;line-height:1.35}
+.cap-t b{font-weight:800}
+.cap-t span{font-size:.9rem;color:var(--muted)}
+.cap-bar{width:clamp(40px,8vw,90px);height:4px;border-radius:4px;background:var(--line);overflow:hidden;flex:none}
+.cap-bar i{display:block;height:100%;width:100%;background:var(--ink);transform-origin:left;transform:scaleX(0)}
+.lb{border:0;padding:0;background:transparent;max-width:min(96vw,1400px);max-height:92vh;overflow:visible}
+.lb::backdrop{background:#14123Ad9}
+.lb img{display:block;max-width:100%;max-height:88vh;border-radius:18px;background:#fff}
+.reg{border:0;padding:0;background:#fff;color:var(--ink);width:min(92vw,480px);border-radius:var(--r-xl);box-shadow:0 40px 80px -20px #14123a99}
+.reg::backdrop{background:#14123Ad9}
+.reg-in{padding:clamp(26px,5vw,40px);position:relative}
+.reg-x{position:absolute;right:16px;top:16px;border:0;background:var(--soft);color:var(--ink);width:40px;height:40px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.reg h2{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;line-height:1.15;padding-right:44px}
+.reg p.s{margin-top:8px;color:var(--muted);font-size:.95rem;line-height:1.5}
+.reg form{margin-top:22px;display:grid;gap:16px}
+.reg label{display:grid;gap:6px;font-weight:800;font-size:.85rem}
+.reg input{font:500 1rem var(--font);color:var(--ink);padding:14px 16px;border:1.5px solid var(--line);border-radius:var(--r-md);background:#fff;min-height:50px}
+.reg input:focus{outline:0;border-color:var(--indigo);box-shadow:0 0 0 3px #4A3FEF33}
+.reg .btn{width:100%;margin-top:6px}
+.reg .btn[disabled]{opacity:.6;cursor:wait}
+.reg .err{color:#C0264B;font-size:.88rem;font-weight:700;min-height:1.2em}
+.reg .ok{display:none;text-align:center;padding:20px 0 6px}
+.reg .ok .ms{font-size:3rem;color:var(--indigo)}
+.reg.sent form,.reg.sent .head-r{display:none}
+.reg.sent .ok{display:block}
+.lb button{position:absolute;right:-6px;top:-54px;border:0;background:var(--chartreuse);color:var(--ink);width:44px;height:44px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+@media(max-width:700px){.cap-bar{display:none}.cap-n{display:none}}
+@media(prefers-reduced-motion:reduce){.show{height:auto}.stage{position:static;height:auto;padding-bottom:20px}.rail{overflow-x:auto;padding:30px 0}.track{padding-left:var(--gutter);padding-right:var(--gutter)}.cap{display:none}}
+
+/* Giáo trình: nền ink, đường cong nối các tuần, thẻ màu, bấm mới mở chi tiết */
+.dark-band{background:var(--ink);color:#fff;margin-top:var(--section);padding:var(--section) 0;border-radius:clamp(32px,6vw,80px);overflow:hidden}
+.dark-band .head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px}
+.arrows{display:flex;gap:10px}
+.arrows button{width:52px;height:52px;border-radius:50%;border:1.5px solid #ffffff55;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s}
+.arrows button:hover{background:var(--chartreuse);color:var(--ink);border-color:var(--chartreuse)}
+.route{margin-top:48px;overflow-x:auto;scrollbar-width:none;cursor:grab;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.route::-webkit-scrollbar{display:none}
+.route.drag{cursor:grabbing;scroll-snap-type:none}
+.route-in{position:relative;display:flex;gap:28px;align-items:flex-start;width:max-content;padding:60px max(var(--gutter),calc((100vw - var(--maxw))/2)) 80px}
+.route-line{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.route-line path{fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s var(--ease);vector-effect:non-scaling-stroke}
+.route.in .route-line path{stroke-dashoffset:0}
+.wk{position:relative;z-index:1;flex:none;width:300px;border-radius:var(--r-lg);padding:26px;scroll-snap-align:center;color:var(--ink);transition:transform .5s var(--ease);user-select:none}
+.wk:nth-child(1){background:var(--chartreuse);transform:rotate(-2deg)}
+.wk:nth-child(2){background:#fff;margin-top:70px;transform:rotate(1.5deg)}
+.wk:nth-child(3){background:var(--pink);margin-top:10px;transform:rotate(-1.5deg)}
+.wk:nth-child(4){background:var(--indigo);color:#fff;margin-top:80px;transform:rotate(2deg)}
+.wk:nth-child(5){background:var(--chartreuse);margin-top:20px;transform:rotate(-2deg)}
+.wk:nth-child(6){background:#fff;margin-top:70px;transform:rotate(1.5deg)}
+.wk:nth-child(7){background:var(--pink);margin-top:10px;transform:rotate(-1.5deg)}
+.route-wrap{position:relative}
+.route-wrap::after{content:"";position:absolute;top:0;right:0;bottom:60px;width:clamp(48px,10vw,140px);background:linear-gradient(90deg,#14123a00,var(--ink));pointer-events:none;transition:opacity .4s}
+.route-wrap.end::after{opacity:0}
+.route-hint{display:flex;align-items:center;gap:20px;padding:0 var(--gutter);max-width:var(--maxw);margin:0 auto;box-sizing:content-box}
+.route-hint .bar{flex:1;height:4px;border-radius:4px;background:#ffffff26;overflow:hidden}
+.route-hint .bar i{display:block;height:100%;width:20%;background:var(--chartreuse);border-radius:4px;transform-origin:left}
+.route-hint .arrows button{width:48px;height:48px}
+.route-hint .drag{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.88rem;color:var(--chartreuse);transition:opacity .4s}
+.route-hint .drag .ms{animation:nudge 1.4s var(--ease) infinite}
+.route-wrap.moved .drag{opacity:0}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(7px)}}
+@media (prefers-reduced-motion:reduce){.route-hint .drag .ms{animation:none}}
+.wk{cursor:pointer}
+.wk:hover{transform:rotate(0) translateY(-6px)}
+.wk .top{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.wk .top span:last-child{opacity:.75}
+.wk h3{margin-top:70px;font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.wk details{margin-top:18px}
+.wk .more-btn{border-bottom-color:currentColor}
+.wk .d{margin-top:14px;font-size:.93rem;line-height:1.55;animation:fade .5s var(--ease)}
+.wk .out{margin-top:14px;padding-top:14px;border-top:1.5px solid #14123a33;font-size:.88rem;font-weight:700;line-height:1.5}
+.wk:nth-child(4) .out{border-top-color:#ffffff44}
+.wk .out b{display:block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-bottom:4px}
+
+/* Dành cho ai: một khối đậm, một cột nhẹ */
+.two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,6vw,88px);margin-top:56px;align-items:start}
+.col--yes{background:var(--indigo);color:#fff;border-radius:var(--r-xl);padding:clamp(26px,4vw,48px)}
+.col h3{font-size:1.35rem;font-weight:800;letter-spacing:-.01em;margin-bottom:14px}
+.col li{display:flex;align-items:center;gap:16px;padding:18px 0;border-top:1.5px solid var(--line)}
+.col li .ms{font-size:1.9rem;flex:none}
+.col--yes li{border-top-color:#ffffff33}
+.col--yes li .ms{color:var(--chartreuse)}
+.col--yes li:first-of-type{border-top:0}
+.col--no{padding:clamp(26px,4vw,48px)}
+.col--no h3{color:var(--muted)}
+.col--no li{color:var(--muted)}
+.col--no li:first-of-type{border-top:0}
+@media(max-width:860px){.two{grid-template-columns:minmax(0,1fr)}}
+
+/* Lịch học: trắng, rộng rãi */
+.sched3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,5vw,64px);margin-top:56px}
+.sched3>div{border-top:2px solid var(--ink);padding-top:18px}
+.label{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--muted);margin-bottom:8px}
+.sched3 b{display:block;font-size:1.25rem;font-weight:800;line-height:1.3;margin-bottom:12px;letter-spacing:-.01em}
+.sched3 li{display:flex;gap:10px;font-size:.96rem;color:var(--muted);padding:3px 0}
+.sched3 li .ms{font-size:1.3rem;color:var(--ink)}
+.batches{display:flex;flex-wrap:wrap;gap:20px clamp(32px,8vw,120px);margin-top:clamp(44px,6vw,72px)}
+.batch .bt{display:flex;align-items:center;gap:12px;font-weight:800;font-size:.9rem}
+.batch b{display:block;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.04em;line-height:1.1;margin-top:6px}
+.batch p{color:var(--muted)}
+.batch.off b{color:#14123a55}
+.stamp{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:var(--r-pill);padding:4px 12px;background:var(--chartreuse)}
+.stamp--plain{background:transparent;box-shadow:inset 0 0 0 1.5px var(--line);color:var(--muted)}
+.sched-note{margin-top:28px;color:var(--muted);font-size:.95rem;max-width:70ch}
+.sched-note summary{display:inline-flex}
+@media(max-width:860px){.sched3{grid-template-columns:minmax(0,1fr)}}
+
+/* Học phí: một dải chartreuse toàn chiều ngang */
+.fee{background:var(--chartreuse);margin-top:var(--section);padding:var(--section) 0;color:var(--ink)}
+.fee-in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px clamp(32px,6vw,96px);align-items:end}
+.fee .kick{color:var(--ink)}
+.fee .was{margin-top:18px;text-decoration:line-through;font-weight:700;font-size:1.2rem;opacity:.7}
+.fee .now{font-size:clamp(3.6rem,10vw,8rem);font-weight:800;letter-spacing:-.05em;line-height:1}
+.fee .now span{font-size:1.2rem;font-weight:700;letter-spacing:0}
+.fee .tags{margin-top:16px;display:flex;align-items:center;gap:10px;font-weight:700}
+.fee .btn{background:var(--ink);color:#fff}
+.fee .after{margin-top:44px;padding-top:20px;border-top:2px solid #14123a33;max-width:62ch;font-size:.96rem}
+.fee .after a{font-weight:800;text-underline-offset:4px}
+@media(max-width:760px){.fee-in{grid-template-columns:minmax(0,1fr)}.fee .btn{width:100%}}
+
+/* Mentor: flip card, quote hiện sẵn bên dưới */
+.flips{display:grid;grid-template-columns:repeat(2,minmax(0,360px));gap:clamp(20px,4vw,48px);margin-top:56px}
+.flip{perspective:1400px;aspect-ratio:3/4;cursor:pointer;outline-offset:6px;border-radius:var(--r-xl)}
+.flip-in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s var(--ease)}
+.face{position:absolute;inset:0;border-radius:var(--r-xl);overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.front{background:var(--pink)}
+.flip:nth-child(2) .front{background:var(--chartreuse)}
+.front img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.front::after{content:"";position:absolute;inset:auto 0 0 0;height:48%;background:linear-gradient(transparent,#14123aea)}
+.front .who{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;color:#fff}
+.front .who h3{font-size:1.65rem;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.front .who span{font-size:.92rem;opacity:.9}
+.front .flipchip{position:absolute;z-index:2;top:16px;right:16px;width:44px;height:44px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;transition:transform .5s var(--ease)}
+.flip:hover .flipchip{transform:rotate(180deg)}
+.back{transform:rotateY(180deg);background:var(--indigo);color:#fff;padding:clamp(24px,3vw,34px);display:flex;flex-direction:column;justify-content:center;gap:12px;visibility:hidden;transition:visibility 0s .4s}
+.flip:nth-child(2) .back{background:var(--ink)}
+.back h3{font-size:1.5rem;font-weight:800;letter-spacing:-.02em}
+.back .role{font-weight:700;font-size:.9rem;color:var(--chartreuse)}
+.back p{font-size:.95rem;line-height:1.6;color:#ffffffe0}
+.back a{display:inline-flex;align-items:center;gap:6px;font-weight:800;color:var(--chartreuse);text-underline-offset:4px;margin-top:4px}
+.front{visibility:visible}
+@media(hover:hover){.flip:hover .flip-in{transform:rotateY(180deg)}.flip:hover .back{visibility:visible;transition-delay:0s}.flip:hover .front{visibility:hidden;transition:visibility 0s .4s}}
+.flip.on .flip-in,.flip:focus-within .flip-in{transform:rotateY(180deg)}
+.flip.on .back,.flip:focus-within .back{visibility:visible;transition-delay:0s}
+.flip.on .front,.flip:focus-within .front{visibility:hidden;transition:visibility 0s .4s}
+.quotes-h{margin-top:clamp(64px,9vw,112px);font-size:1.5rem;font-weight:800;letter-spacing:-.015em}
+.note{margin-top:6px;font-size:.92rem;color:var(--muted)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,56px);margin-top:32px}
+.quote{display:flex;flex-direction:column;gap:18px;position:relative;padding-top:48px}
+.quote::before{content:"“";position:absolute;top:-6px;left:-2px;font-size:5rem;line-height:1;font-weight:800;color:var(--pink)}
+.quote p{font-size:1.02rem;line-height:1.65}
+.quote cite{font-style:normal;font-weight:800;margin-top:auto}
+.quote cite span{display:block;font-weight:600;color:var(--muted);font-size:.84rem}
+@media(max-width:900px){.quotes{grid-template-columns:minmax(0,1fr)}.flips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.flips{grid-template-columns:minmax(0,1fr);max-width:340px}}
+
+/* CTA cuối */
+.final{position:relative;background:var(--ink);color:#fff;margin-top:var(--section);padding:var(--section) 0;border-radius:clamp(32px,6vw,80px) clamp(32px,6vw,80px) 0 0;overflow:hidden;text-align:center}
+.final h2{font-size:clamp(2.4rem,7vw,5.8rem);font-weight:800;letter-spacing:-.04em;line-height:1.02;text-wrap:balance;max-width:16ch;margin:0 auto}
+.final h2 em{font-style:normal;color:var(--chartreuse)}
+.final p{margin:26px auto 0;max-width:44ch;color:#ffffffb3}
+.final .btn{margin-top:34px}
+.final .bgstar{color:#ffffff14}
+.final .bgstar--a{right:-100px;top:-80px}
+.final .bgstar--b{left:-60px;bottom:-40px}
+footer{background:var(--ink);color:#ffffff99;padding:0 0 44px;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding-top:28px;border-top:1px solid #ffffff22}
+footer .logo{color:#fff}
+
+/* Mục lục: chấm nhỏ bên phải, rê chuột mới hiện chữ */
+.toc{display:none}
+@media(min-width:900px){
+.toc{display:block;position:fixed;z-index:25;top:50%;right:18px;transform:translateY(-50%);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.toc.on{opacity:1;visibility:visible}
+.toc ol{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.toc a{display:flex;align-items:center;gap:10px;padding:6px 4px;text-decoration:none;font-size:.78rem;font-weight:800;color:var(--ink)}
+.toc a span{background:#fff;padding:3px 10px;border-radius:var(--r-pill);box-shadow:0 4px 14px -6px #14123a66;opacity:0;transform:translateX(8px);transition:opacity .25s,transform .3s var(--ease);pointer-events:none;white-space:nowrap}
+.toc a i{width:9px;height:9px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 2px #fff,0 0 0 3px #14123a40;transition:transform .3s var(--ease),background .3s,width .3s}
+.toc:hover a span,.toc a:focus-visible span{opacity:1;transform:none}
+.toc a[aria-current] i{background:var(--pink);width:9px;transform:scale(1.7)}
+.toc a[aria-current] span{opacity:1;transform:none}
+.toc:not(:hover) a:not([aria-current]) span{opacity:0}
+}
+
+@keyframes up{to{transform:none}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(var(--r,0))}50%{transform:translateY(-10px) rotate(calc(var(--r,0) + 2deg))}}
+@keyframes bob2{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes fade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #ddf24780}50%{box-shadow:0 0 0 8px #ddf24700}}
+.js .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
+.js .w>span{display:inline-block;transform:translateY(112%);animation:up .9s var(--ease) forwards;animation-delay:calc(var(--i)*70ms + 120ms)}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation-duration:.001ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+.js .rv{opacity:1;transform:none}
+.marquee-in{animation:none}
+.hero{transform:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="sh-circle" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="currentColor"/></symbol>
+<symbol id="sh-tri" viewBox="0 0 100 100"><path d="M50 14L88 82H12Z" fill="currentColor" stroke="currentColor" stroke-width="12" stroke-linejoin="round"/></symbol>
+<symbol id="sh-square" viewBox="0 0 100 100"><rect x="18" y="18" width="64" height="64" rx="10" fill="currentColor" transform="rotate(45 50 50)"/></symbol>
+<symbol id="sh-plus" viewBox="0 0 100 100"><g stroke="currentColor" stroke-width="22" stroke-linecap="round"><path d="M50 18V82"/><path d="M18 50H82"/></g></symbol>
+<symbol id="star" viewBox="0 0 100 100"><g stroke="currentColor" stroke-width="13" stroke-linecap="round"><path d="M50 8V92"/><path d="M8 50H92"/><path d="M20 20L80 80"/><path d="M80 20L20 80"/></g></symbol>
+<symbol id="mk" viewBox="0 0 100 100"><path d="M10 90H30V70H50V50H70V34" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="70" cy="17" r="12" fill="#FF5CB8"/></symbol>
+</defs></svg>
+
+<div class="navwrap" id="nav">
+  <nav class="nav" aria-label="Chính">
+    <a class="logo" href="#top"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mk"/></svg>UX Level Up</a>
+    <a class="btn" href="#dang-ky">Đăng ký</a>
+  </nav>
+</div>
+
+<main id="top">
+
+<!-- 1. Hero -->
+<header class="hero" id="hero">
+  <svg class="bgstar bgstar--a" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="bgstar bgstar--b" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eb"><i></i>Batch 1 · Khai giảng 10/12/2026</p>
+      <h1 data-split>Khoá học <span class="hl">AI Design Workflow</span></h1>
+      <p class="tagline">Level up cách vận hành một design workflow với AI</p>
+      <p class="lead">Dành cho mid và senior designer. Bạn rời lớp với một workflow thiết kế dùng AI, tích lũy qua từng bước và chạy trên project của chính bạn.</p>
+      <div class="h-cta">
+        <a class="btn btn--lime btn--lg" href="#dang-ky">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
+        <div class="hprice"><span><b>6.000.000đ</b> / bạn <s>9.000.000đ</s></span><span>Giá thử nghiệm Batch 1 · thanh toán 2 đợt</span></div>
+      </div>
+      <div class="stats3"><div><b>6</b><span>tuần</span></div><div><b>12</b><span>buổi</span></div><div><b>5</b><span>bạn / lớp</span></div></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg class="stairs" viewBox="0 0 560 520">
+        <path class="line" pathLength="1" d="M40 470H170V360H300V250H430V120"/>
+        <g class="pill" style="animation-delay:.9s"><rect x="28" y="396" width="140" height="44" rx="22"/><text x="98" y="426" text-anchor="middle">Discover</text></g>
+        <g class="pill" style="animation-delay:1.2s"><rect x="155" y="286" width="120" height="44" rx="22"/><text x="215" y="316" text-anchor="middle">Define</text></g>
+        <g class="pill" style="animation-delay:1.5s"><rect x="275" y="176" width="130" height="44" rx="22"/><text x="340" y="206" text-anchor="middle">Develop</text></g>
+        <g class="pill" style="animation-delay:1.8s"><rect x="466" y="150" width="90" height="44" rx="22"/><text x="511" y="180" text-anchor="middle">Test</text></g>
+        <circle class="dot" cx="430" cy="62" r="56"/>
+        <text class="dot-t" x="430" y="69" text-anchor="middle">Deliver</text>
+      </svg>
+      <span class="stk stk--pink">Cùng project thật của bạn</span>
+      <span class="stk stk--lime">AI Design Workflow</span>
+    </div>
+  </div>
+  <a class="scrollhint" href="#vi-sao" aria-label="Cuộn xuống"><span class="ms" style="font-size:2rem">keyboard_arrow_down</span></a>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-in">
+  <span>Discover</span><svg viewBox="0 0 100 100"><use href="#star"/></svg><span>Define</span><svg viewBox="0 0 100 100"><use href="#sh-circle"/></svg><span>Develop</span><svg viewBox="0 0 100 100"><use href="#sh-tri"/></svg><span>Test</span><svg viewBox="0 0 100 100"><use href="#sh-square"/></svg><span>Deliver</span><svg viewBox="0 0 100 100"><use href="#sh-plus"/></svg>
+  <span>Discover</span><svg viewBox="0 0 100 100"><use href="#star"/></svg><span>Define</span><svg viewBox="0 0 100 100"><use href="#sh-circle"/></svg><span>Develop</span><svg viewBox="0 0 100 100"><use href="#sh-tri"/></svg><span>Test</span><svg viewBox="0 0 100 100"><use href="#sh-square"/></svg><span>Deliver</span><svg viewBox="0 0 100 100"><use href="#sh-plus"/></svg>
+</div></div>
+
+<!-- 2. Hiện trạng ngành -->
+<section id="vi-sao"><div class="wrap split">
+  <div class="split-l rv">
+    <span class="kick">Hiện trạng ngành</span>
+    <h2 class="h2">AI làm phần build rẻ đi. Giá trị chuyển sang <em>chọn đúng vấn đề.</em></h2>
+    <p class="src">Nguồn: <i>AI in Design 2026</i>, Designer Fund và Foundation Capital. Khảo sát 906 designer ở hơn 60 nước, tự báo cáo. Số 43% và 36% theo bài tóm tắt của Foundation Capital.</p>
+  </div>
+  <div>
+    <div class="fact rv"><div class="fact-row"><div class="big" data-count="91" data-suf="%">91%</div><p>designer dùng AI cho công việc design ít nhất mỗi tuần, tăng từ 54% một năm trước.</p></div>
+      <details><summary class="more-btn">Điều này nghĩa là gì <span class="ms">add</span></summary><p>Dùng AI để làm ra screen không còn là lợi thế riêng của ai.</p></details></div>
+    <div class="fact rv"><div class="fact-row"><div class="big" data-count="43" data-suf="%">43%</div><p>nói công ty của họ kỳ vọng designer làm ra prototype chạy được.</p></div>
+      <details><summary class="more-btn">Điều này nghĩa là gì <span class="ms">add</span></summary><p>Làm ra prototype đã thành yêu cầu tối thiểu, không còn là điểm cộng.</p></details></div>
+    <div class="fact rv"><div class="fact-row"><div class="big" data-count="40" data-suf="%">40%</div><p>nói PM và engineer làm nhiều việc design hơn trước.</p></div>
+      <details><summary class="more-btn">Điều này nghĩa là gì <span class="ms">add</span></summary><p>Người không phải designer cũng làm ra được giao diện.</p></details></div>
+    <div class="fact fact--to rv"><span class="tag">Giá trị chuyển sang</span><div class="fact-row"><div class="big to" data-count="36" data-suf="%">36%</div><p>nói project giờ bắt đầu từ prototype, không còn bắt đầu từ brief.</p></div>
+      <details open><summary class="more-btn">Điều này nghĩa là gì <span class="ms">add</span></summary><p>Không còn brief định sẵn vấn đề. Designer cần tự hiểu đúng vấn đề trước khi build.</p></details></div>
+  </div>
+</div></section>
+
+<!-- 3. Vấn đề -->
+<section id="van-de"><div class="wrap narrow">
+  <div class="rv">
+    <span class="kick">Vấn đề</span>
+    <h2 class="h2">Bạn có đang dùng AI từng&nbsp;chat&nbsp;một, <em>rời&nbsp;rạc, thiếu&nbsp;tích&nbsp;lũy</em>?</h2>
+  </div>
+  <div class="acc rv">
+    <details name="vd" open><summary><span class="n">01</span><span class="t">Chat mới, context mới, lại giải thích từ đầu</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Bối cảnh, mục tiêu, tài liệu, lần nào cũng nhập lại. Insight của bước này không đi sang bước sau.</p></details>
+    <details name="vd"><summary><span class="n">02</span><span class="t">Có người hỏi "sao lại thiết kế thế này?"</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Lý do nằm rải rác trong chat và file. AI tóm tắt rất trôi chảy, nhưng bạn không chắc phần nào đúng và không truy được về nguồn.</p></details>
+    <details name="vd"><summary><span class="n">03</span><span class="t">AI mạnh lên, nhưng vai trò của bạn chưa đuổi kịp</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Bạn chỉ nhận brief rồi dùng AI để làm UI theo yêu cầu. Trong khi bạn có thể own nhiều hơn thế: giải vấn đề nào, chọn hướng nào, thế nào là thành công.</p></details>
+    <details name="vd"><summary><span class="n">04</span><span class="t">Không có gì để chứng minh với nhà tuyển dụng</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Khi team, sếp hay nhà tuyển dụng hỏi bạn làm việc với AI thế nào, bạn chưa có project nào để chỉ vào.</p></details>
+  </div>
+</div></section>
+
+<!-- 4. Giải pháp -->
+<section id="ket-qua"><div class="wrap">
+  <div class="rv">
+    <span class="kick">Giải pháp</span>
+    <h2 class="h2" style="max-width:22ch">Giải quyết vấn đề bằng một <em>design workflow hoàn chỉnh với&nbsp;AI</em></h2>
+    <p class="sub">Một workflow bắt đầu từ business question và user problem, không phải từ UI.</p>
+  </div>
+  <div class="cols3">
+    <div class="col3 rv"><div class="ico"><span class="ms">route</span></div><b>Một workflow end-to-end, lặp lại được</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra.</p></div>
+    <div class="col3 rv" style="--d:1"><div class="ico"><span class="ms">hub</span></div><b>Một Knowledge Hub</b><p>Phần làm cho workflow tích lũy: mọi insight, quyết định và tài liệu ở một chỗ, truy ngược được về nguồn. Hub nằm trong project folder của bạn, riêng tư mặc định, và bạn tự quyết phần nào công khai.</p></div>
+    <div class="col3 rv" style="--d:2"><div class="ico"><span class="ms">rocket_launch</span></div><b>Một project đã chạy qua workflow đó</b><p>Có bằng chứng, có quyết định, có kết quả từ người dùng thật.</p></div>
+  </div>
+  <div class="can-wrap">
+    <h3 class="can-h rv">Học xong, bạn có thể</h3>
+    <ul class="can rv" style="margin-top:12px">
+      <li><span class="ms">eco</span><span>Dùng lại workflow này cho project tiếp theo nhờ các skill và agent đã đóng gói, và chỉnh nó khi cần, vì bạn hiểu vì sao mỗi bước nằm ở đó.</span></li>
+      <li><span class="ms">psychiatry</span><span>Kiểm tra output của AI: truy từng insight về quote gốc, từng decision về evidence, và ghi rõ điều nào đã xác nhận, điều nào chỉ là giả định.</span></li>
+      <li><span class="ms">shield_with_heart</span><span>Dùng AI an toàn: biết dữ liệu nào đưa được, dữ liệu nào cần hỏi trước, dữ liệu nào không đưa vào công cụ công khai.</span></li>
+    </ul>
+    <details>
+      <summary class="more-btn">Xem thêm 3 điều nữa <span class="ms">add</span></summary>
+      <ul class="can can-more2" style="margin-top:0">
+        <li><span class="ms">handshake</span><span>Làm việc như một partner của product và business: bắt đầu từ business question, thống nhất outcome và cách đo trước khi thiết kế.</span></li>
+        <li><span class="ms">rocket_launch</span><span>Dựng prototype chạy được bằng AI coding tool, test với người dùng thật và sửa theo finding, mà không phải tự viết code.</span></li>
+        <li><span class="ms">local_florist</span><span>Trình bày project cùng evidence, decision và trade-off.</span></li>
+      </ul>
+    </details>
+  </div>
+</div></section>
+
+<!-- 5. Thành phẩm: dải showcase -->
+<section id="vi-du" class="show" style="padding:0" aria-label="Thành phẩm">
+  <div class="stage">
+    <div class="show-head">
+      <span class="kick">Thành phẩm</span>
+      <h2 class="h2">Một project hoàn chỉnh trông thế này.</h2>
+      <p class="sub">Hãy tự do sáng tạo cho workflow của chính bạn hoặc team của bạn.</p>
+    </div>
+    <div class="rail"><div class="track" id="track">
+      <button class="shot" data-t="Central Hub" data-c="Tổng quan project: số liệu, gate và cảnh báo thiếu bằng chứng."><img src="img/knowledge-hub-overview.webp" alt="Central Hub" loading="lazy"></button>
+      <button class="shot" data-t="Insights Page" data-c="Mọi insight truy ngược được về quote gốc."><img src="img/knowledge-hub-insights.webp" alt="Insights Page" loading="lazy"></button>
+      <button class="shot" data-t="Journey Map" data-c="Hành trình người dùng, mỗi giai đoạn gắn opportunity và KPI."><img src="img/journey-map.png" alt="Journey Map" loading="lazy"></button>
+      <button class="shot" data-t="Opportunity Map" data-c="Từ vấn đề đến năm cơ hội và những giả thuyết cần test."><img src="img/opportunity-map.png" alt="Opportunity Map" loading="lazy"></button>
+      <button class="shot" data-t="Process Map" data-c="Luồng đi của một chuyến đi, chia theo từng vai trò."><img src="img/process-map.png" alt="Process Map" loading="lazy"></button>
+      <button class="shot" data-t="AI Prototype" data-c="Prototype chạy được, dựng bằng AI theo design system."><img src="img/prototype-welcome-screen.webp" alt="AI Prototype" loading="lazy"></button>
+      <button class="shot" data-t="UX Audit" data-c="11 vấn đề chấm theo mức độ, gắn vào từng màn hình."><img src="img/ux-audit.png" alt="UX Audit" loading="lazy"></button>
+    </div></div>
+    <div class="cap"><div class="cap-in"><span class="cap-n" id="capn">01 / 07</span><div class="cap-t"><b id="capt">Central Hub</b><span id="capc">Tổng quan project</span></div><div class="cap-bar"><i id="capbar"></i></div></div></div>
+  </div>
+</section>
+<dialog class="reg" id="reg"><div class="reg-in">
+  <button class="reg-x" id="regx" aria-label="Đóng"><span class="ms">close</span></button>
+  <div class="head-r"><h2>Đăng ký giữ chỗ Batch 1</h2><p class="s">Khai giảng 10/12/2026, tối đa 5 chỗ. Team mình sẽ liên hệ qua LinkedIn trong 24 giờ.</p></div>
+  <form id="regf" novalidate>
+    <label>Họ và tên<input name="name" autocomplete="name" required></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+    <label>LinkedIn link<input name="linkedin" type="url" placeholder="https://www.linkedin.com/in/..." required></label>
+    <div class="err" id="rege" role="alert"></div>
+    <button class="btn btn--lime btn--lg" type="submit">Gửi đăng ký</button>
+  </form>
+  <div class="ok"><span class="ms">check_circle</span><h2 style="padding:0">Đã nhận đăng ký</h2><p class="s">Cảm ơn bạn. Team mình sẽ liên hệ qua LinkedIn trong 24 giờ.</p></div>
+</div></dialog>
+<dialog class="lb" id="lb"><button aria-label="Đóng" id="lbx"><span class="ms">close</span></button><img alt="" id="lbi"></dialog>
+
+<!-- 6. Giáo trình -->
+<section id="chuong-trinh" style="padding:0"><div class="dark-band">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv dark">
+        <span class="kick">Giáo trình khóa học</span>
+        <h2 class="h2">6 tuần, 12 buổi</h2>
+        <p class="sub">Xen kẽ lý thuyết và thực hành</p>
+      </div>
+    </div>
+  </div>
+  <div class="route-wrap"><div class="route" id="route"><div class="route-in">
+    <svg class="route-line" viewBox="0 0 2400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 230 C 200 80, 330 80, 520 220 S 840 400, 1060 230 S 1380 70, 1600 220 S 1960 400, 2160 240 S 2330 130, 2400 190"/></svg>
+    <article class="wk"><div class="top"><span>Tuần 1</span><span>Foundation</span></div><h3>Quy trình thiết kế với AI</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Nghề đang đi đâu. AI giúp được gì ở từng stage và còn yếu ở đâu. Dữ liệu nào an toàn để đưa cho AI.</p><div class="out"><b>Cuối tuần bạn có</b>Project folder, quy tắc dữ liệu riêng, Knowledge Hub bắt đầu, ghi chú hướng đi nghề của bạn</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 2</span><span>Discover</span></div><h3>Hiểu vấn đề</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Bắt đầu từ business question, không phải từ brief có sẵn. Tách điều đã xác nhận khỏi giả định. Chuẩn bị phỏng vấn người dùng.</p><div class="out"><b>Cuối tuần bạn có</b>Design principles để AI đối chiếu, câu hỏi nghiên cứu, danh sách giả định, phân tích đối thủ</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 3</span><span>Discover · Define</span></div><h3>Insight đáng tin</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Tổng hợp quote cùng AI mà vẫn giữ nguyên văn. Persona, journey map, opportunity: mỗi dòng dẫn về một quote có ID. Đóng gói bước tổng hợp thành agent để dùng lại.</p><div class="out"><b>Cuối tuần bạn có</b>Evidence pack và problem brief</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 4</span><span>Define · Develop</span></div><h3>Khám phá ý tưởng</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Từ opportunity đến solution: viết How might we, bạn nghĩ trước rồi AI mở rộng. Concept sketch trên giấy, rồi user flow và process map. Đóng gói quy trình thành skill.</p><div class="out"><b>Cuối tuần bạn có</b>Ba hướng khác nhau thật sự, một hướng đã chọn có lý do, user flow và process map</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 5</span><span>Develop</span></div><h3>AI prototyping</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Viết design system notes, rules file và skill để AI dựng đúng design system của bạn mỗi lần. Dựng luồng chính từng màn hình. Kiểm tra những gì AI thật sự đã sửa.</p><div class="out"><b>Cuối tuần bạn có</b>Prototype dựng theo design system của bạn, sẵn sàng đem đi test</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 6</span><span>Test</span></div><h3>Test với người dùng thật</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">UX audit, metrics, test plan, phân tích kết quả. Vì sao người dùng do AI mô phỏng không thay được người dùng thật.</p><div class="out"><b>Cuối tuần bạn có</b>Prototype đã test và sửa theo finding, bài trình bày project, Knowledge Hub đầy đủ</div></details></article>
+    <article class="wk"><div class="top"><span>Buổi 12</span><span>Wrap-up</span></div><h3>Reflection và wrap-up</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Trình bày project, quyết định phần workflow nào giữ, chỉnh hoặc bỏ, và xem lại hướng đi nghề bạn viết ở tuần 1.</p></details></article>
+  </div></div>
+  <div class="route-hint"><span class="bar"><i id="rbar"></i></span><div class="arrows"><button id="prev" aria-label="Trước"><span class="ms">arrow_back</span></button><button id="next" aria-label="Sau"><span class="ms">arrow_forward</span></button></div></div>
+  </div>
+</div></section>
+
+<!-- 7. Dành cho ai -->
+<section id="danh-cho-ai"><div class="wrap">
+  <div class="rv">
+    <span class="kick">Dành cho ai</span>
+    <h2 class="h2">Khóa này có hợp với bạn không?</h2>
+  </div>
+  <div class="two">
+    <div class="col col--yes rv">
+      <h3>Khóa học này dành cho bạn nếu</h3>
+      <ul>
+        <li><span class="ms">local_florist</span><span>Bạn là UI/UX hoặc product designer mức mid hoặc senior, nền tảng thiết kế đã vững.</span></li>
+        <li><span class="ms">local_florist</span><span>Bạn muốn tham gia sớm hơn và cùng định hình requirement, không chỉ nhận nó.</span></li>
+        <li><span class="ms">local_florist</span><span>Bạn có một project thật để làm. Nếu chưa có, mình cung cấp project mẫu.</span></li>
+        <li><span class="ms">local_florist</span><span>Bạn không cần biết code. AI coding tool dựng prototype, bạn chỉ đạo và kiểm tra.</span></li>
+      </ul>
+    </div>
+    <div class="col col--no rv" style="--d:1">
+      <h3>Khóa học này chưa hợp nếu</h3>
+      <ul>
+        <li><span class="ms">do_not_disturb_on</span><span>Bạn mới bắt đầu học thiết kế và chưa có kinh nghiệm làm project thật.</span></li>
+        <li><span class="ms">do_not_disturb_on</span><span>Bạn muốn học mẹo viết prompt hoặc một tool cụ thể. Khóa này dạy quy trình, không dạy tool.</span></li>
+        <li><span class="ms">do_not_disturb_on</span><span>Bạn muốn học thiết kế sản phẩm AI. Khóa này dạy cách dùng AI trong công việc thiết kế của bạn.</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- 8. Lịch học -->
+<section id="lich-hoc"><div class="wrap">
+  <div class="rv">
+    <span class="kick">Lịch học</span>
+    <h2 class="h2">Lịch khai giảng và thời gian học</h2>
+  </div>
+  <div class="sched3">
+    <div class="rv"><span class="label">Số buổi</span><b>12 buổi trong 6 tuần</b><ul><li><span class="ms">menu_book</span>6 buổi theory, thứ 5</li><li><span class="ms">edit_note</span>6 buổi practice, chủ nhật</li></ul></div>
+    <div class="rv" style="--d:1"><span class="label">Lịch hàng tuần</span><b>2 buổi/tuần, online qua Zoom</b><ul><li><span class="ms">schedule</span>Thứ 5: 19:30–21:00</li><li><span class="ms">schedule</span>Chủ nhật: 14:00–15:30</li><li><span class="ms">videocam</span>Mọi buổi đều có ghi hình</li></ul></div>
+    <div class="rv" style="--d:2"><span class="label">Sĩ số</span><b>Batch 1 chỉ tuyển sinh 5 bạn</b><ul><li><span class="ms">group</span>Đủ 5 bạn là dừng nhận đăng ký, bạn đăng ký sau vào Batch 2</li></ul></div>
+  </div>
+  <div class="batches rv">
+    <div class="batch"><div class="bt"><span>Batch 1</span><span class="stamp">Đang tuyển sinh</span></div><b>10/12/2026</b><p>Khai giảng</p></div>
+    <div class="batch off"><div class="bt"><span>Batch 2</span><span class="stamp stamp--plain">Sắp mở</span></div><b>Tháng 3/2027</b><p>Dự kiến</p></div>
+  </div>
+  <details class="sched-note rv"><summary class="more-btn">Lưu ý về lịch tuần 3 và 4 <span class="ms">add</span></summary><p>Tuần 3 và 4, buổi theory dời sang thứ 4 (23/12 và 30/12) để tránh Giáng sinh và giao thừa, giữ giờ 19:30–21:00.</p></details>
+</div></section>
+
+<!-- 9. Học phí -->
+<section id="hoc-phi" class="fee" style="padding-top:var(--section)"><div class="wrap">
+  <div class="fee-in rv">
+    <div>
+      <span class="kick">Học phí</span>
+      <div class="was">9.000.000đ</div>
+      <div class="now">6.000.000đ <span>/ bạn</span></div>
+      <p class="tags"><span class="ms">event_available</span>Giá thử nghiệm cho Batch 1 · hỗ trợ thanh toán 2 đợt, hoàn tất trước khai giảng</p>
+    </div>
+    <a class="btn btn--lg" href="#dang-ky">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
+  </div>
+  <p class="after rv"><span class="label" style="color:inherit;opacity:.7">Sau khi đăng ký</span>Team mình (Daphne) sẽ liên hệ qua <a href="https://www.linkedin.com/in/daphne-huynh/" target="_blank" rel="noopener">LinkedIn</a> trong vòng 24h để tư vấn và hướng dẫn next steps.</p>
+</div></section>
+
+<!-- 10. Mentor -->
+<section id="giang-vien"><div class="wrap">
+  <div class="rv">
+    <span class="kick">Mentor</span>
+    <h2 class="h2">Mentor đồng hành cùng bạn</h2>
+  </div>
+  <div class="flips">
+    <article class="flip rv" tabindex="0" role="button" aria-label="Winnie Nguyen, lật thẻ để xem thông tin"><div class="flip-in">
+      <div class="face front"><img src="img/winnie.jpg" alt="Winnie Nguyen"><div class="who"><h3>Winnie Nguyen</h3><span>Giảng viên · UX Product Design Educator</span></div></div>
+      <div class="face back"><h3>Winnie Nguyen</h3><div class="role">Giảng viên · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p><a href="https://www.linkedin.com/in/winnienguyen2910/" target="_blank" rel="noopener">LinkedIn của Winnie <span class="ms">arrow_outward</span></a></div>
+    </div></article>
+    <article class="flip rv" style="--d:1" tabindex="0" role="button" aria-label="Daphne Huynh, lật thẻ để xem thông tin"><div class="flip-in">
+      <div class="face front"><img src="img/daphne.png" alt="Daphne Huynh"><div class="who"><h3>Daphne Huynh</h3><span>Co-founder · Vận hành khóa</span></div></div>
+      <div class="face back"><h3>Daphne Huynh</h3><div class="role">Co-founder, lo vận hành</div><p>Daphne lo vận hành khóa: đăng ký, liên hệ học viên, lịch học và ghi hình. Daphne cũng là Co-founder của Breaking into Product Management (BPM). Sau khi bạn đăng ký, Daphne sẽ liên hệ qua LinkedIn trong vòng 24h.</p><a href="https://www.linkedin.com/in/daphne-huynh/" target="_blank" rel="noopener">LinkedIn của Daphne <span class="ms">arrow_outward</span></a></div>
+    </div></article>
+  </div>
+
+  <h3 class="quotes-h rv">Mentee của Winnie nói gì</h3>
+  <p class="note rv">Đây là đánh giá công khai trên ADPList về mentoring 1:1 với Winnie, chưa phải đánh giá về khóa này.</p>
+  <div class="quotes">
+    <blockquote class="quote rv"><p>"My first session with Winnie was really amazing. She is such a structural mentor who gives the whole picture and easy to comprehend at the same time."</p><cite>Đạt Nguyễn Hoàng Hữu<span>Product Designer, ChoTot (Carousell) · 09/06/2026</span></cite></blockquote>
+    <blockquote class="quote rv" style="--d:1"><p>"Winnie is super nice and professional! She gave me insightful suggestions and clear direction, which really helped me reflect on how to improve. She also shared lots of helpful resources that will definitely support me in growing my skillset. I truly appreciate her time and generosity—highly recommended!"</p><cite>Wendy Lin<span>UX/UI Designer, freelance · 12/07/2025</span></cite></blockquote>
+    <blockquote class="quote rv" style="--d:2"><p>"My mentoring sessions with C Winnie were filled with positive energy and genuine inspiration. She created an encouraging atmosphere where learning felt both joyful and insightful. …"</p><cite>William Nguyen<span>Product Designer, CDG Group · 11/10/2025</span></cite></blockquote>
+  </div>
+</div></section>
+
+<!-- 11. CTA cuối -->
+<section id="dang-ky" class="final" style="padding-top:var(--section)">
+  <svg class="bgstar bgstar--a" viewBox="0 0 100 100" aria-hidden="true" style="width:360px;height:360px"><use href="#star"/></svg>
+  <svg class="bgstar bgstar--b" viewBox="0 0 100 100" aria-hidden="true" style="width:220px;height:220px"><use href="#star"/></svg>
+  <div class="wrap" style="position:relative;z-index:1">
+    <h2 class="rv">Sẵn sàng có một workflow thiết kế <em>dùng AI</em> của riêng bạn?</h2>
+    <p class="rv">Batch 1 khai giảng 10/12/2026, tối đa 5 chỗ, giá 6.000.000đ trong giai đoạn thử nghiệm.</p>
+    <a class="btn btn--lime btn--lg rv" href="#dang-ky" id="register">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+  <a class="logo" href="#top"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mk"/></svg>UX Level Up</a>
+  <span>© 2026 UX Level Up. All rights reserved.</span>
+</div></footer>
+
+<nav class="toc" id="toc" aria-label="Mục lục"><ol>
+  <li><a href="#vi-sao"><span>Hiện trạng ngành</span><i></i></a></li>
+  <li><a href="#van-de"><span>Vấn đề</span><i></i></a></li>
+  <li><a href="#ket-qua"><span>Giải pháp</span><i></i></a></li>
+  <li><a href="#vi-du"><span>Thành phẩm</span><i></i></a></li>
+  <li><a href="#chuong-trinh"><span>Giáo trình</span><i></i></a></li>
+  <li><a href="#danh-cho-ai"><span>Dành cho ai</span><i></i></a></li>
+  <li><a href="#lich-hoc"><span>Lịch học</span><i></i></a></li>
+  <li><a href="#hoc-phi"><span>Học phí</span><i></i></a></li>
+  <li><a href="#giang-vien"><span>Mentor</span><i></i></a></li>
+  <li><a href="#dang-ky"><span>Đăng ký</span><i></i></a></li>
+</ol></nav>
+
+<script>
+(()=>{
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// Icon font: chỉ hiện khi đã tải xong, tránh lộ tên icon
+if(document.fonts&&document.fonts.load){document.fonts.load('24px "Material Symbols Rounded"').then(()=>document.documentElement.classList.add('ms-ok'),()=>{});setTimeout(()=>{document.fonts.check('24px "Material Symbols Rounded"')&&document.documentElement.classList.add('ms-ok')},2500)}
+
+// Tách chữ hero để hiện từng từ
+$$('[data-split]').forEach(el=>{let i=0;(function walk(n){[...n.childNodes].forEach(c=>{if(c.nodeType===3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){f.append(' ');return}const w=document.createElement('span');w.className='w';const s=document.createElement('span');s.style.setProperty('--i',i++);s.textContent=t;w.append(s);f.append(w)});c.replaceWith(f)}else if(c.nodeType===1)walk(c)})})(el)});
+
+// Nav, hero, mục lục
+const nav=$('#nav'),hero=$('#hero'),toc=$('#toc'),tl=$$('a',toc),secs=tl.map(a=>$(a.getAttribute('href')));
+function onScroll(){
+  const y=scrollY;nav.classList.toggle('is-scrolled',y>40);
+  hero.style.setProperty('--p',clamp(y/innerHeight,0,1).toFixed(3));
+  toc.classList.toggle('on',y>innerHeight*.5);
+  let cur=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.45)cur=i});
+  tl.forEach((a,i)=>a.toggleAttribute('aria-current',i===cur));
+  showUpd();
+}
+
+// Reveal + đếm số + vẽ đường
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');io.unobserve(t);
+  $$('[data-count]',t).forEach(count);if(t.matches('[data-count]'))count(t)}),{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+$$('.rv,#route').forEach(el=>io.observe(el));
+function count(el){if(el._c)return;el._c=1;const to=+el.dataset.count,suf=el.dataset.suf||'';if(reduce){el.textContent=to+suf;return}const t0=performance.now();(function f(t){const p=clamp((t-t0)/1400,0,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(f)})(t0)}
+
+// Sticker nghiêng theo chuột (parallax nhẹ)
+const art=$('.hero-art');
+if(art&&!reduce&&matchMedia('(hover:hover)').matches)hero.addEventListener('pointermove',e=>{const x=(e.clientX/innerWidth-.5),y=(e.clientY/innerHeight-.5);$$('.stk',art).forEach((s,i)=>{s.style.translate=`${x*(i?-34:34)}px ${y*(i?-24:24)}px`});$('.stairs',art).style.transform=`translate(${x*-14}px,${y*-10}px)`});
+
+// Showcase: cuộn dọc → dải ảnh trượt ngang, ảnh giữa phóng to
+const show=$('#vi-du'),track=$('#track'),shots=$$('.shot',track),N=shots.length;
+const capn=$('#capn'),capt=$('#capt'),capc=$('#capc'),capbar=$('#capbar');let lastIdx=-1;
+function showUpd(){
+  if(reduce||!show)return;
+  const r=show.getBoundingClientRect(),total=show.offsetHeight-innerHeight;
+  if(r.bottom<-200||r.top>innerHeight+200)return;
+  const p=clamp(-r.top/total,0,1),f=p*(N-1),step=shots[0].offsetWidth+parseFloat(getComputedStyle(track).columnGap||0);
+  track.style.transform=`translateX(${-f*step}px)`;
+  shots.forEach((s,i)=>{const d=i-f,a=Math.abs(d);s.style.transform=`translateY(${Math.min(a,1.5)*18}px) rotate(${clamp(d,-2,2)*1.4}deg) scale(${1-Math.min(a,1)*.16})`;s.style.opacity=1-Math.min(a,1.6)*.38});
+  const idx=Math.round(f);
+  if(idx!==lastIdx){lastIdx=idx;const s=shots[idx];capn.textContent=String(idx+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');capt.textContent=s.dataset.t;capc.textContent=s.dataset.c}
+  capbar.style.transform=`scaleX(${p})`;
+}
+// Lightbox
+const lb=$('#lb'),lbi=$('#lbi');
+shots.forEach(s=>s.addEventListener('click',()=>{lbi.src=$('img',s).src;lbi.alt=s.dataset.t;lb.showModal()}));
+// Nơi nhận form: dán URL Google Apps Script web app hoặc Formspree vào đây
+const REG_ENDPOINT='';
+const reg=$('#reg'),regf=$('#regf'),rege=$('#rege');
+$$('a.btn[href="#dang-ky"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();reg.classList.remove('sent');rege.textContent='';reg.showModal()}));
+$('#regx').addEventListener('click',()=>reg.close());reg.addEventListener('click',e=>{if(e.target===reg)reg.close()});
+regf.addEventListener('submit',async e=>{e.preventDefault();const b=regf.querySelector('button[type=submit]');
+ const bad=[...regf.elements].find(i=>i.name&&(!i.checkValidity()||!i.value.trim()));
+ if(bad){rege.textContent={name:'Bạn điền họ và tên nhé.',email:'Email chưa đúng.',linkedin:'LinkedIn link chưa đúng, ví dụ https://www.linkedin.com/in/ten-ban'}[bad.name];bad.focus();return}
+ if(!REG_ENDPOINT){rege.textContent='Form chưa được kết nối nơi nhận, chưa gửi được.';return}
+ b.disabled=true;rege.textContent='';
+ try{await fetch(REG_ENDPOINT,{method:'POST',mode:'no-cors',body:new FormData(regf)});reg.classList.add('sent');regf.reset()}
+ catch{rege.textContent='Gửi chưa được, bạn thử lại nhé.'}
+ b.disabled=false});
+$('#lbx').addEventListener('click',()=>lb.close());lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
+
+// Giáo trình: kéo ngang + nút
+const route=$('#route');let down=false,sx=0,sl=0,moved=0;
+route.addEventListener('pointerdown',e=>{if(e.target.closest('summary'))return;down=true;moved=0;sx=e.clientX;sl=route.scrollLeft});
+addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-sx;if(Math.abs(dx)>4){moved=1;route.classList.add('drag')}route.scrollLeft=sl-dx});
+addEventListener('pointerup',()=>{down=false;route.classList.remove('drag')});
+$$('.wk',route).forEach(w=>w.addEventListener('click',e=>{if(moved||e.target.closest('summary'))return;const d=$('details',w);d.open=!d.open}));
+const rw=$('.route-wrap'),rbar=$('#rbar');const upd=()=>{const m=route.scrollWidth-route.clientWidth,p=m>0?route.scrollLeft/m:1;rbar.style.width=(route.clientWidth/route.scrollWidth*100+p*(100-route.clientWidth/route.scrollWidth*100))+'%';rw.classList.toggle('end',p>.97);if(route.scrollLeft>40)rw.classList.add('moved')};route.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+const stepW=()=>$('.wk',route).offsetWidth+28;
+$('#prev').addEventListener('click',()=>route.scrollBy({left:-stepW()*1.5,behavior:'smooth'}));
+$('#next').addEventListener('click',()=>route.scrollBy({left:stepW()*1.5,behavior:'smooth'}));
+
+// Flip card: chạm để lật trên thiết bị cảm ứng, Enter/Space trên bàn phím
+$$('.flip').forEach(f=>{f.addEventListener('click',e=>{if(e.target.closest('a'))return;f.classList.toggle('on')});f.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();f.classList.toggle('on')}})});
+
+addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();
+})();
+</script>
+</body>
+</html>
