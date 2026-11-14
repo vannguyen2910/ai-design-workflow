@@ -219,6 +219,7 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .route-hint{display:flex;align-items:center;gap:20px;padding:0 var(--gutter);max-width:var(--maxw);margin:0 auto;box-sizing:content-box}
 .route-hint .bar{flex:1;height:4px;border-radius:4px;background:#ffffff26;overflow:hidden}
 .route-hint .bar i{display:block;height:100%;width:20%;background:var(--chartreuse);border-radius:4px;transform-origin:left}
+.route-hint .arrows button{width:48px;height:48px}
 .route-hint .drag{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.88rem;color:var(--chartreuse);transition:opacity .4s}
 .route-hint .drag .ms{animation:nudge 1.4s var(--ease) infinite}
 .route-wrap.moved .drag{opacity:0}
@@ -529,7 +530,6 @@ html{scroll-behavior:auto}
         <h2 class="h2">6 tuần, 12 buổi</h2>
         <p class="sub">Xen kẽ lý thuyết và thực hành</p>
       </div>
-      <div class="arrows"><button id="prev" aria-label="Trước"><span class="ms">arrow_back</span></button><button id="next" aria-label="Sau"><span class="ms">arrow_forward</span></button></div>
     </div>
   </div>
   <div class="route-wrap"><div class="route" id="route"><div class="route-in">
@@ -542,7 +542,7 @@ html{scroll-behavior:auto}
     <article class="wk"><div class="top"><span>Tuần 6</span><span>Test</span></div><h3>Test với người dùng thật</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">UX audit, metrics, test plan, phân tích kết quả. Vì sao người dùng do AI mô phỏng không thay được người dùng thật.</p><div class="out"><b>Cuối tuần bạn có</b>Prototype đã test và sửa theo finding, bài trình bày project, Knowledge Hub đầy đủ</div></details></article>
     <article class="wk"><div class="top"><span>Buổi 12</span><span>Wrap-up</span></div><h3>Reflection và wrap-up</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Trình bày project, quyết định phần workflow nào giữ, chỉnh hoặc bỏ, và xem lại hướng đi nghề bạn viết ở tuần 1.</p></details></article>
   </div></div>
-  <div class="route-hint"><span class="bar"><i id="rbar"></i></span><span class="drag" id="rhint">Kéo ngang <span class="ms">arrow_forward</span></span></div>
+  <div class="route-hint"><span class="bar"><i id="rbar"></i></span><div class="arrows"><button id="prev" aria-label="Trước"><span class="ms">arrow_back</span></button><button id="next" aria-label="Sau"><span class="ms">arrow_forward</span></button></div></div>
   </div>
 </div></section>
 
