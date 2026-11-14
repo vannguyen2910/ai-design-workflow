@@ -198,7 +198,7 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .arrows{display:flex;gap:10px}
 .arrows button{width:52px;height:52px;border-radius:50%;border:1.5px solid #ffffff55;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s}
 .arrows button:hover{background:var(--chartreuse);color:var(--ink);border-color:var(--chartreuse)}
-.route{margin-top:48px;overflow-x:auto;scrollbar-width:none;cursor:grab;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.route{margin-top:48px;overflow-x:auto;scrollbar-width:none;cursor:grab;scroll-snap-type:x proximity;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
 .route::-webkit-scrollbar{display:none}
 .route.drag{cursor:grabbing;scroll-snap-type:none}
 .route-in{position:relative;display:flex;gap:28px;align-items:flex-start;width:max-content;padding:60px max(var(--gutter),calc((100vw - var(--maxw))/2)) 80px}
@@ -226,7 +226,7 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(7px)}}
 @media (prefers-reduced-motion:reduce){.route-hint .drag .ms{animation:none}}
 .wk{cursor:pointer}
-.wk:hover{transform:rotate(0) translateY(-6px)}
+@media(hover:hover){.wk:hover{transform:rotate(0) translateY(-6px)}}
 .wk .top{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 .wk .top span:last-child{opacity:.75}
 .wk h3{margin-top:70px;font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.2}
@@ -729,9 +729,9 @@ $('#lbx').addEventListener('click',()=>lb.close());lb.addEventListener('click',e
 
 // Giáo trình: kéo ngang + nút
 const route=$('#route');let down=false,sx=0,sl=0,moved=0;
-route.addEventListener('pointerdown',e=>{if(e.target.closest('summary'))return;down=true;moved=0;sx=e.clientX;sl=route.scrollLeft});
+route.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.target.closest('summary'))return;down=true;moved=0;sx=e.clientX;sl=route.scrollLeft});
 addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-sx;if(Math.abs(dx)>4){moved=1;route.classList.add('drag')}route.scrollLeft=sl-dx});
-addEventListener('pointerup',()=>{down=false;route.classList.remove('drag')});
+['pointerup','pointercancel'].forEach(t=>addEventListener(t,()=>{down=false;route.classList.remove('drag')}));
 $$('.wk',route).forEach(w=>w.addEventListener('click',e=>{if(moved||e.target.closest('summary'))return;const d=$('details',w);d.open=!d.open}));
 const rw=$('.route-wrap'),rbar=$('#rbar');const upd=()=>{const m=route.scrollWidth-route.clientWidth,p=m>0?route.scrollLeft/m:1;rbar.style.width=(route.clientWidth/route.scrollWidth*100+p*(100-route.clientWidth/route.scrollWidth*100))+'%';rw.classList.toggle('end',p>.97);if(route.scrollLeft>40)rw.classList.add('moved')};route.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
 const stepW=()=>$('.wk',route).offsetWidth+28;
