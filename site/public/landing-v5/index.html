@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
 <title>AI Design Workflow · UX Level Up</title>
-<meta name="description" content="Khóa 12 buổi trong 6 tuần cho mid và senior designer: xây một workflow thiết kế end-to-end dùng AI trên project thật của bạn. Batch 1 chỉ có 5 bạn.">
+<meta name="description" content="Khóa 12 buổi trong 7 tuần cho các bạn đã có 2-3 năm làm trong team Product (PM, PD, BA, etc.): xây một workflow thiết kế end-to-end dùng AI trên một project trọn vẹn. Batch 1 chỉ có 5 bạn.">
 <link rel="icon" href="../brand/logo/mark-app.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,7 +114,7 @@ section{padding:var(--section) 0 0}
 .more-btn::-webkit-details-marker{display:none}
 .more-btn .ms{font-size:1.2em;transition:transform .3s var(--ease)}
 details[open]>.more-btn .ms{transform:rotate(45deg)}
-.fact details p{margin-top:12px;color:var(--muted);max-width:52ch;animation:fade .5s var(--ease)}
+.fact-note{margin-top:12px;color:var(--muted);max-width:52ch}
 .fact--to .tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;color:var(--muted)}
 @media(max-width:860px){.split{grid-template-columns:minmax(0,1fr)}.split-l{position:static}.fact-row{grid-template-columns:minmax(0,1fr)}}
 
@@ -177,23 +177,6 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .lb{border:0;padding:0;background:transparent;max-width:min(96vw,1400px);max-height:92vh;overflow:visible}
 .lb::backdrop{background:#14123Ad9}
 .lb img{display:block;max-width:100%;max-height:88vh;border-radius:18px;background:#fff}
-.reg{border:0;padding:0;background:#fff;color:var(--ink);width:min(92vw,480px);border-radius:var(--r-xl);box-shadow:0 40px 80px -20px #14123a99}
-.reg::backdrop{background:#14123Ad9}
-.reg-in{padding:clamp(26px,5vw,40px);position:relative}
-.reg-x{position:absolute;right:16px;top:16px;border:0;background:var(--soft);color:var(--ink);width:40px;height:40px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
-.reg h2{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;line-height:1.15;padding-right:44px}
-.reg p.s{margin-top:8px;color:var(--muted);font-size:.95rem;line-height:1.5}
-.reg form{margin-top:22px;display:grid;gap:16px}
-.reg label{display:grid;gap:6px;font-weight:800;font-size:.85rem}
-.reg input{font:500 1rem var(--font);color:var(--ink);padding:14px 16px;border:1.5px solid var(--line);border-radius:var(--r-md);background:#fff;min-height:50px}
-.reg input:focus{outline:0;border-color:var(--indigo);box-shadow:0 0 0 3px #4A3FEF33}
-.reg .btn{width:100%;margin-top:6px}
-.reg .btn[disabled]{opacity:.6;cursor:wait}
-.reg .err{color:#C0264B;font-size:.88rem;font-weight:700;min-height:1.2em}
-.reg .ok{display:none;text-align:center;padding:20px 0 6px}
-.reg .ok .ms{font-size:3rem;color:var(--indigo)}
-.reg.sent form,.reg.sent .head-r{display:none}
-.reg.sent .ok{display:block}
 .lb button{position:absolute;right:-6px;top:-54px;border:0;background:var(--chartreuse);color:var(--ink);width:44px;height:44px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
 @media(max-width:700px){.cap-bar{display:none}.cap-n{display:none}}
 @media(prefers-reduced-motion:reduce){.shot{transition:none}}
@@ -291,15 +274,13 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 @media(max-width:760px){.fee-in{grid-template-columns:minmax(0,1fr)}.fee .btn{width:100%}}
 
 /* Mentor: flip card, quote hiện sẵn bên dưới */
-.flips{display:grid;grid-template-columns:repeat(2,minmax(0,360px));gap:clamp(20px,4vw,48px);margin-top:56px}
-.flip{perspective:1400px;aspect-ratio:3/4;cursor:pointer;outline-offset:6px;border-radius:var(--r-xl)}
+.flips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,4vw,48px);margin-top:56px}
+.flip{perspective:1400px;aspect-ratio:1/1;cursor:pointer;outline-offset:6px;border-radius:var(--r-xl)}
 .flip-in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s var(--ease)}
 .face{position:absolute;inset:0;border-radius:var(--r-xl);overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
-.front{background:var(--pink)}
-.flip:nth-child(2) .front{background:var(--chartreuse)}
-.front img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-.front::after{content:"";position:absolute;inset:auto 0 0 0;height:48%;background:linear-gradient(transparent,#14123aea)}
-.front .who{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;color:#fff}
+.front{background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(20px,6%,36px);padding:24px}
+.front img{display:block;width:56%;height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;box-shadow:0 0 0 6px #fff}
+.front .who{color:#fff;text-align:center}
 .front .who h3{font-size:1.65rem;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .front .who span{font-size:.92rem;opacity:.9}
 .front .flipchip{position:absolute;z-index:2;top:16px;right:16px;width:44px;height:44px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;transition:transform .5s var(--ease)}
@@ -323,7 +304,7 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .quote p{font-size:1.02rem;line-height:1.65}
 .quote cite{font-style:normal;font-weight:800;margin-top:auto}
 .quote cite span{display:block;font-weight:600;color:var(--muted);font-size:.84rem}
-@media(max-width:900px){.quotes{grid-template-columns:minmax(0,1fr)}.flips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.quotes{grid-template-columns:minmax(0,1fr)}.flip{aspect-ratio:3/4}}
 @media(max-width:560px){.flips{grid-template-columns:minmax(0,1fr);max-width:340px}}
 
 /* CTA cuối */
@@ -387,7 +368,7 @@ html{scroll-behavior:auto}
 <div class="navwrap" id="nav">
   <nav class="nav" aria-label="Chính">
     <a class="logo" href="#top"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mk"/></svg>UX Level Up</a>
-    <a class="btn" href="#dang-ky">Đăng ký</a>
+    <a class="btn" href="https://forms.gle/r3v8ZwKAqRNNuh8N6" target="_blank" rel="noopener">Đăng ký</a>
   </nav>
 </div>
 
@@ -402,12 +383,12 @@ html{scroll-behavior:auto}
       <p class="eb"><i></i>Batch 1 · Khai giảng 10/12/2026</p>
       <h1 data-split>Khoá học <span class="hl">AI Design Workflow</span></h1>
       <p class="tagline">Level up cách vận hành một design workflow với AI</p>
-      <p class="lead">Dành cho mid và senior designer. Bạn rời lớp với một workflow thiết kế dùng AI, tích lũy qua từng bước và chạy trên project của chính bạn.</p>
+      <p class="lead">Dành cho các bạn đã có 2-3 năm làm trong team Product (PM, PD, BA, etc.). Bạn tốt nghiệp với một workflow thiết kế dùng AI, tích lũy qua từng bước và chạy trọn vẹn trên một project từ đầu đến cuối.</p>
       <div class="h-cta">
-        <a class="btn btn--lime btn--lg" href="#dang-ky">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
-        <div class="hprice"><span><b>6.000.000đ</b> / bạn <s>9.000.000đ</s></span><span>Giá thử nghiệm Batch 1 · thanh toán 2 đợt</span></div>
+        <a class="btn btn--lime btn--lg" href="https://forms.gle/r3v8ZwKAqRNNuh8N6" target="_blank" rel="noopener">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
+        <div class="hprice"><span><b>6.000.000đ</b> / bạn <s>9.000.000đ</s></span><span>Giá thử nghiệm Batch 1 · có thể thanh toán 2 đợt</span></div>
       </div>
-      <div class="stats3"><div><b>6</b><span>tuần</span></div><div><b>12</b><span>buổi</span></div><div><b>5</b><span>bạn / lớp</span></div></div>
+      <div class="stats3"><div><b>7</b><span>tuần</span></div><div><b>12</b><span>buổi</span></div><div><b>5</b><span>bạn / lớp</span></div></div>
     </div>
     <div class="hero-art" aria-hidden="true">
       <svg class="stairs" viewBox="0 0 560 520">
@@ -435,18 +416,18 @@ html{scroll-behavior:auto}
 <section id="vi-sao"><div class="wrap split">
   <div class="split-l rv">
     <span class="kick">Hiện trạng ngành</span>
-    <h2 class="h2">AI làm phần build rẻ đi. Giá trị chuyển sang <em>chọn đúng vấn đề.</em></h2>
+    <h2 class="h2">AI làm mờ ranh giới giữa các vai trò. Dùng AI thì dễ, <em>nhưng bao nhiêu % output đáng tin cậy?</em></h2>
     <p class="src">Nguồn: <i>AI in Design 2026</i>, Designer Fund và Foundation Capital. Khảo sát 906 designer ở hơn 60 nước, tự báo cáo. Số 43% và 36% theo bài tóm tắt của Foundation Capital.</p>
   </div>
   <div>
     <div class="fact rv"><div class="fact-row"><div class="big" data-count="91" data-suf="%">91%</div><p>designer dùng AI cho công việc design ít nhất mỗi tuần, tăng từ 54% một năm trước.</p></div>
-      <details><summary class="more-btn">Điều này nghĩa là gì <span class="ms">add</span></summary><p>Dùng AI để làm ra screen không còn là lợi thế riêng của ai.</p></details></div>
+      <p class="fact-note">Dùng AI để làm ra screen không còn là lợi thế riêng của ai.</p></div>
     <div class="fact rv"><div class="fact-row"><div class="big" data-count="43" data-suf="%">43%</div><p>nói công ty của họ kỳ vọng designer làm ra prototype chạy được.</p></div>
-      <details><summary class="more-btn">Điều này nghĩa là gì <span class="ms">add</span></summary><p>Làm ra prototype đã thành yêu cầu tối thiểu, không còn là điểm cộng.</p></details></div>
+      <p class="fact-note">Làm ra prototype đã thành yêu cầu tối thiểu, không còn là điểm cộng.</p></div>
     <div class="fact rv"><div class="fact-row"><div class="big" data-count="40" data-suf="%">40%</div><p>nói PM và engineer làm nhiều việc design hơn trước.</p></div>
-      <details><summary class="more-btn">Điều này nghĩa là gì <span class="ms">add</span></summary><p>Người không phải designer cũng làm ra được giao diện.</p></details></div>
+      <p class="fact-note">Người không phải designer cũng làm ra được giao diện.</p></div>
     <div class="fact fact--to rv"><span class="tag">Giá trị chuyển sang</span><div class="fact-row"><div class="big to" data-count="36" data-suf="%">36%</div><p>nói project giờ bắt đầu từ prototype, không còn bắt đầu từ brief.</p></div>
-      <details open><summary class="more-btn">Điều này nghĩa là gì <span class="ms">add</span></summary><p>Không còn brief định sẵn vấn đề. Designer cần tự hiểu đúng vấn đề trước khi build.</p></details></div>
+      <p class="fact-note">Không còn brief định sẵn vấn đề. Designer cần tự hiểu đúng vấn đề trước khi build.</p></div>
   </div>
 </div></section>
 
@@ -457,10 +438,11 @@ html{scroll-behavior:auto}
     <h2 class="h2">Bạn có đang dùng AI từng&nbsp;chat&nbsp;một, <em>rời&nbsp;rạc, thiếu&nbsp;tích&nbsp;lũy</em>?</h2>
   </div>
   <div class="acc rv">
-    <details name="vd" open><summary><span class="n">01</span><span class="t">Chat mới, context mới, lại giải thích từ đầu</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Bối cảnh, mục tiêu, tài liệu, lần nào cũng nhập lại. Insight của bước này không đi sang bước sau.</p></details>
-    <details name="vd"><summary><span class="n">02</span><span class="t">Có người hỏi "sao lại thiết kế thế này?"</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Lý do nằm rải rác trong chat và file. AI tóm tắt rất trôi chảy, nhưng bạn không chắc phần nào đúng và không truy được về nguồn.</p></details>
-    <details name="vd"><summary><span class="n">03</span><span class="t">AI mạnh lên, nhưng vai trò của bạn chưa đuổi kịp</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Bạn chỉ nhận brief rồi dùng AI để làm UI theo yêu cầu. Trong khi bạn có thể own nhiều hơn thế: giải vấn đề nào, chọn hướng nào, thế nào là thành công.</p></details>
-    <details name="vd"><summary><span class="n">04</span><span class="t">Không có gì để chứng minh với nhà tuyển dụng</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Khi team, sếp hay nhà tuyển dụng hỏi bạn làm việc với AI thế nào, bạn chưa có project nào để chỉ vào.</p></details>
+    <details name="vd" open><summary><span class="n">01</span><span class="t">Chat mới, context mới, bạn phải giải thích từ đầu</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Bối cảnh, mục tiêu, tài liệu, etc. cứ mỗi lần làm một dự án hoặc tasks mới bạn cần phải nhập lại. Insight từ những dự án và tasks khác nhau bị mắc kẹt trong các khung chat AI, và không tích luỹ được sang bước tiếp theo.</p></details>
+    <details name="vd"><summary><span class="n">02</span><span class="t">Ai đó hỏi bạn "lý do đằng sau quyết định/thiết kế này là gì?"</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Lý do nằm rải rác trong nhiều chat và files khác nhau. AI có thể tóm tắt hoặc bịa thông tin, bạn không chắc phần nào đúng và không truy được về nguồn gốc thông tin.</p></details>
+    <details name="vd"><summary><span class="n">03</span><span class="t">AI mạnh lên, nhưng vai trò của bạn chưa đuổi kịp</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Bạn chỉ nhận brief rồi dùng AI để tạo output/UI theo yêu cầu. Trong khi bạn có thể own nhiều hơn thế: giải quyết vấn đề nào, chọn hướng giải pháp nào, thế nào là thành công, etc.</p></details>
+    <details name="vd"><summary><span class="n">04</span><span class="t">Không có gì để chứng minh với nhà tuyển dụng</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Khi team, sếp hay nhà tuyển dụng hỏi bạn làm việc với AI thế nào, bạn chưa có project nào để chứng minh.</p></details>
+    <details name="vd"><summary><span class="n">05</span><span class="t">Mỗi người một AI riêng lẻ, team thiếu workflow chung</span><span class="pm"><span class="ms">add</span></span></summary><p class="ans">Cách dùng AI của bạn mang tính cá nhân: mỗi người một tài khoản, một cách hỏi, một kho chat riêng. Khi muốn áp dụng cho cả team hay cả công ty, context, kết quả và cách kiểm tra chưa được chia sẻ và dùng lại giữa mọi người.</p></details>
   </div>
 </div></section>
 
@@ -468,23 +450,23 @@ html{scroll-behavior:auto}
 <section id="ket-qua"><div class="wrap">
   <div class="rv">
     <span class="kick">Giải pháp</span>
-    <h2 class="h2" style="max-width:22ch">Giải quyết vấn đề bằng một <em>design workflow hoàn chỉnh với&nbsp;AI</em></h2>
+    <h2 class="h2" style="max-width:22ch">Khoá học giúp bạn giải quyết vấn đề bằng một <em>design workflow hoàn chỉnh với&nbsp;AI</em></h2>
     <p class="sub">Một workflow bắt đầu từ business question và user problem, không phải từ UI.</p>
   </div>
   <div class="cols3">
-    <div class="col3 rv"><div class="ico"><span class="ms">route</span></div><b>Một workflow end-to-end, lặp lại được</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra.</p></div>
-    <div class="col3 rv" style="--d:1"><div class="ico"><span class="ms">hub</span></div><b>Một Knowledge Hub</b><p>Phần làm cho workflow tích lũy: mọi insight, quyết định và tài liệu ở một chỗ, truy ngược được về nguồn. Hub nằm trong project folder của bạn, riêng tư mặc định, và bạn tự quyết phần nào công khai.</p></div>
-    <div class="col3 rv" style="--d:2"><div class="ico"><span class="ms">rocket_launch</span></div><b>Một project đã chạy qua workflow đó</b><p>Có bằng chứng, có quyết định, có kết quả từ người dùng thật.</p></div>
+    <div class="col3 rv"><div class="ico"><span class="ms">route</span></div><b>Một workflow end-to-end, có thể tái sử dụng</b><p>Từ business question đến prototype đã test. Output của mỗi bước là input của bước sau, và mỗi output đều qua một bước kiểm tra.</p></div>
+    <div class="col3 rv" style="--d:1"><div class="ico"><span class="ms">hub</span></div><b>Một Knowledge Hub</b><p>Phần làm cho workflow tích lũy: mọi insight, quyết định và tài liệu được tập trung một chỗ, giúp bạn dễ truy ngược được về nguồn. Hub nằm trong project folder của bạn, quyền quyết định giữ riêng tư hoặc chia sẻ những gì với ai là ở bạn.</p></div>
+    <div class="col3 rv" style="--d:2"><div class="ico"><span class="ms">rocket_launch</span></div><b>Một project thử nghiệm trên workflow đó</b><p>Workflow được dùng để test dự án thật, có bằng chứng, có quyết định, có kết quả từ người dùng thật.</p></div>
   </div>
   <div class="can-wrap">
     <h3 class="can-h rv">Học xong, bạn có thể</h3>
     <ul class="can rv" style="margin-top:12px">
-      <li><span class="ms">eco</span><span>Dùng lại workflow cho project tiếp theo và chỉnh nó khi cần.</span></li>
-      <li><span class="ms">psychiatry</span><span>Kiểm tra output của AI: truy insight về quote gốc, decision về evidence.</span></li>
-      <li><span class="ms">shield_with_heart</span><span>Dùng AI an toàn: biết dữ liệu nào đưa được, dữ liệu nào không.</span></li>
+      <li><span class="ms">eco</span><span>Dùng lại workflow cho tất cả những project trong tương lai và có khung sườn để điều chỉnh theo nhu cầu.</span></li>
+      <li><span class="ms">psychiatry</span><span>Kiểm tra được output của AI: truy được insight về quote gốc của users, truy được quyết định về evidence.</span></li>
+      <li><span class="ms">shield_with_heart</span><span>Dùng AI an toàn: biết dữ liệu nào đáng tin cậy, dữ liệu nào không.</span></li>
       <li><span class="ms">handshake</span><span>Làm việc như partner của product và business, bắt đầu từ business question.</span></li>
       <li><span class="ms">rocket_launch</span><span>Dựng prototype bằng AI coding tool, test với người dùng thật, không cần tự viết code.</span></li>
-      <li><span class="ms">local_florist</span><span>Trình bày project cùng evidence, decision và trade-off.</span></li>
+      <li><span class="ms">local_florist</span><span>Trình bày và showcase được project cùng evidence, decision và trade-off.</span></li>
     </ul>
   </div>
 </div></section>
@@ -509,18 +491,6 @@ html{scroll-behavior:auto}
     <div class="cap"><div class="cap-in"><span class="cap-n" id="capn">01 / 07</span><div class="cap-t"><b id="capt">Central Hub</b><span id="capc">Tổng quan project</span></div><div class="cap-bar"><i id="capbar"></i></div></div><div class="cap-btns"><button class="cap-btn" id="sprev" aria-label="Trước"><span class="ms">arrow_back</span></button><button class="cap-btn" id="snext" aria-label="Sau"><span class="ms">arrow_forward</span></button></div></div>
   </div>
 </section>
-<dialog class="reg" id="reg"><div class="reg-in">
-  <button class="reg-x" id="regx" aria-label="Đóng"><span class="ms">close</span></button>
-  <div class="head-r"><h2>Đăng ký giữ chỗ Batch 1</h2><p class="s">Khai giảng 10/12/2026, tối đa 5 chỗ. Team mình sẽ liên hệ qua LinkedIn trong 24 giờ.</p></div>
-  <form id="regf" novalidate>
-    <label>Họ và tên<input name="name" autocomplete="name" required></label>
-    <label>Email<input name="email" type="email" autocomplete="email" required></label>
-    <label>LinkedIn link<input name="linkedin" type="url" placeholder="https://www.linkedin.com/in/..." required></label>
-    <div class="err" id="rege" role="alert"></div>
-    <button class="btn btn--lime btn--lg" type="submit">Gửi đăng ký</button>
-  </form>
-  <div class="ok"><span class="ms">check_circle</span><h2 style="padding:0">Đã nhận đăng ký</h2><p class="s">Cảm ơn bạn. Team mình sẽ liên hệ qua LinkedIn trong 24 giờ.</p></div>
-</div></dialog>
 <dialog class="lb" id="lb"><button aria-label="Đóng" id="lbx"><span class="ms">close</span></button><img alt="" id="lbi"></dialog>
 
 <!-- 6. Giáo trình -->
@@ -529,7 +499,7 @@ html{scroll-behavior:auto}
     <div class="head">
       <div class="rv dark">
         <span class="kick">Giáo trình khóa học</span>
-        <h2 class="h2">6 tuần, 12 buổi</h2>
+        <h2 class="h2">7 tuần, 12 buổi</h2>
         <p class="sub">Xen kẽ lý thuyết và thực hành</p>
       </div>
     </div>
@@ -558,9 +528,9 @@ html{scroll-behavior:auto}
     <div class="col col--yes rv">
       <h3>Khóa học này dành cho bạn nếu</h3>
       <ul>
-        <li><span class="ms">local_florist</span><span>Bạn là UI/UX hoặc product designer mức mid hoặc senior, nền tảng thiết kế đã vững.</span></li>
+        <li><span class="ms">local_florist</span><span>Bạn đã có 2-3 năm làm trong team Product (PM, PD, BA, etc.).</span></li>
         <li><span class="ms">local_florist</span><span>Bạn muốn tham gia sớm hơn và cùng định hình requirement, không chỉ nhận nó.</span></li>
-        <li><span class="ms">local_florist</span><span>Bạn có một project thật để làm. Nếu chưa có, mình cung cấp project mẫu.</span></li>
+        <li><span class="ms">local_florist</span><span>Bạn muốn thực hành trọn một project, từ business question đến prototype đã test. Project do khóa giao sẵn, bạn không cần tự chuẩn bị.</span></li>
         <li><span class="ms">local_florist</span><span>Bạn không cần biết code. AI coding tool dựng prototype, bạn chỉ đạo và kiểm tra.</span></li>
       </ul>
     </div>
@@ -582,9 +552,9 @@ html{scroll-behavior:auto}
     <h2 class="h2">Lịch khai giảng và thời gian học</h2>
   </div>
   <div class="sched3">
-    <div class="rv"><span class="label">Số buổi</span><b>12 buổi trong 6 tuần</b><ul><li><span class="ms">menu_book</span>6 buổi theory, thứ 5</li><li><span class="ms">edit_note</span>6 buổi practice, chủ nhật</li></ul></div>
+    <div class="rv"><span class="label">Số buổi</span><b>12 buổi trong 7 tuần</b><ul><li><span class="ms">menu_book</span>6 buổi theory, thứ 5</li><li><span class="ms">edit_note</span>6 buổi practice, chủ nhật</li></ul></div>
     <div class="rv" style="--d:1"><span class="label">Lịch hàng tuần</span><b>2 buổi/tuần, online qua Zoom</b><ul><li><span class="ms">schedule</span>Thứ 5: 19:30–21:00</li><li><span class="ms">schedule</span>Chủ nhật: 14:00–15:30</li><li><span class="ms">videocam</span>Mọi buổi đều có ghi hình</li></ul></div>
-    <div class="rv" style="--d:2"><span class="label">Sĩ số</span><b>Batch 1 chỉ tuyển sinh 5 bạn</b><ul><li><span class="ms">group</span>Đủ 5 bạn là dừng nhận đăng ký, bạn đăng ký sau vào Batch 2</li></ul></div>
+    <div class="rv" style="--d:2"><span class="label">Sĩ số</span><b>Batch 1 chỉ tuyển sinh 5 bạn</b><ul><li><span class="ms">group</span>Tụi mình tuyển sinh first come first serve, các bạn đăng ký sau sẽ được tự động ghi danh vào Batch 2.</li></ul></div>
   </div>
   <div class="batches rv">
     <div class="batch"><div class="bt"><span>Batch 1</span><span class="stamp">Đang tuyển sinh</span></div><b>10/12/2026</b><p>Khai giảng</p></div>
@@ -602,25 +572,25 @@ html{scroll-behavior:auto}
       <div class="now">6.000.000đ <span>/ bạn</span></div>
       <p class="tags"><span class="ms">event_available</span>Giá thử nghiệm cho Batch 1 · hỗ trợ thanh toán 2 đợt, hoàn tất trước khai giảng</p>
     </div>
-    <a class="btn btn--lg" href="#dang-ky">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
+    <a class="btn btn--lg" href="https://forms.gle/r3v8ZwKAqRNNuh8N6" target="_blank" rel="noopener">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
   </div>
   <p class="after rv"><span class="label" style="color:inherit;opacity:.7">Sau khi đăng ký</span>Team mình (Daphne) sẽ liên hệ qua <a href="https://www.linkedin.com/in/daphne-huynh/" target="_blank" rel="noopener">LinkedIn</a> trong vòng 24h để tư vấn và hướng dẫn next steps.</p>
 </div></section>
 
-<!-- 10. Mentor -->
+<!-- 10. Đội ngũ -->
 <section id="giang-vien"><div class="wrap">
   <div class="rv">
-    <span class="kick">Mentor</span>
-    <h2 class="h2">Mentor đồng hành cùng bạn</h2>
+    <span class="kick">Đội ngũ</span>
+    <h2 class="h2">Đội ngũ đồng hành cùng bạn</h2>
   </div>
   <div class="flips">
     <article class="flip rv" tabindex="0" role="button" aria-label="Winnie Nguyen, lật thẻ để xem thông tin"><div class="flip-in">
-      <div class="face front"><img src="img/winnie.jpg" alt="Winnie Nguyen"><div class="who"><h3>Winnie Nguyen</h3><span>Giảng viên · UX Product Design Educator</span></div></div>
-      <div class="face back"><h3>Winnie Nguyen</h3><div class="role">Giảng viên · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p><a href="https://www.linkedin.com/in/winnienguyen2910/" target="_blank" rel="noopener">LinkedIn của Winnie <span class="ms">arrow_outward</span></a></div>
+      <div class="face front"><img src="img/team-winnie.jpg" alt="Winnie Nguyen"><div class="who"><h3>Winnie Nguyen</h3><span>Mentor · UX Product Design Educator</span></div></div>
+      <div class="face back"><h3>Winnie Nguyen</h3><div class="role">Mentor · UX Product Design Educator</div><p>Product Designer hơn 10 năm kinh nghiệm, Thạc sĩ UX &amp; Service Design, đã mentor hơn 50 designer qua ADPList và các chương trình đào tạo riêng. Winnie nhận ra designer không thiếu kỹ năng, thứ thiếu là một quy trình rõ ràng để biến kỹ năng thành kết quả.</p><a href="https://www.linkedin.com/in/winnienguyen2910/" target="_blank" rel="noopener">LinkedIn của Winnie <span class="ms">arrow_outward</span></a></div>
     </div></article>
     <article class="flip rv" style="--d:1" tabindex="0" role="button" aria-label="Daphne Huynh, lật thẻ để xem thông tin"><div class="flip-in">
-      <div class="face front"><img src="img/daphne.png" alt="Daphne Huynh"><div class="who"><h3>Daphne Huynh</h3><span>Co-founder · Vận hành khóa</span></div></div>
-      <div class="face back"><h3>Daphne Huynh</h3><div class="role">Co-founder, lo vận hành</div><p>Daphne lo vận hành khóa: đăng ký, liên hệ học viên, lịch học và ghi hình. Daphne cũng là Co-founder của Breaking into Product Management (BPM). Sau khi bạn đăng ký, Daphne sẽ liên hệ qua LinkedIn trong vòng 24h.</p><a href="https://www.linkedin.com/in/daphne-huynh/" target="_blank" rel="noopener">LinkedIn của Daphne <span class="ms">arrow_outward</span></a></div>
+      <div class="face front"><img src="img/team-daphne.jpg" alt="Daphne Huynh"><div class="who"><h3>Daphne Huynh</h3><span>Operations · Hỗ trợ vận hành cho khoá học</span></div></div>
+      <div class="face back"><h3>Daphne Huynh</h3><div class="role">Operations · Product Marketing @ Holistics, Co-founder @ Breaking into Product Management</div><p>Gia nhập ngành Product từ năm 2018 ở nhiều vai trò khác nhau từ Ops, GTM/Marketing, đến Product qua nhiều kiểu sản phẩm và công ty từ startups đến unicorn. Vận hành và là mentor tại Breaking into Product Management từ 2024, mentor hơn 400 bạn gia nhập ngành quản lý sản phẩm.</p><a href="https://www.linkedin.com/in/daphne-huynh/" target="_blank" rel="noopener">LinkedIn của Daphne <span class="ms">arrow_outward</span></a></div>
     </div></article>
   </div>
 
@@ -640,7 +610,7 @@ html{scroll-behavior:auto}
   <div class="wrap" style="position:relative;z-index:1">
     <h2 class="rv">Sẵn sàng có một workflow thiết kế <em>dùng AI</em> của riêng bạn?</h2>
     <p class="rv">Batch 1 khai giảng 10/12/2026, tối đa 5 chỗ, giá 6.000.000đ trong giai đoạn thử nghiệm.</p>
-    <a class="btn btn--lime btn--lg rv" href="#dang-ky" id="register">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
+    <a class="btn btn--lime btn--lg rv" href="https://forms.gle/r3v8ZwKAqRNNuh8N6" target="_blank" rel="noopener" id="register">Đăng ký giữ chỗ <span class="ms">arrow_forward</span></a>
   </div>
 </section>
 
@@ -660,7 +630,7 @@ html{scroll-behavior:auto}
   <li><a href="#danh-cho-ai"><span>Dành cho ai</span><i></i></a></li>
   <li><a href="#lich-hoc"><span>Lịch học</span><i></i></a></li>
   <li><a href="#hoc-phi"><span>Học phí</span><i></i></a></li>
-  <li><a href="#giang-vien"><span>Mentor</span><i></i></a></li>
+  <li><a href="#giang-vien"><span>Đội ngũ</span><i></i></a></li>
   <li><a href="#dang-ky"><span>Đăng ký</span><i></i></a></li>
 </ol></nav>
 
@@ -717,19 +687,6 @@ $('#snext').addEventListener('click',()=>rail.scrollBy({left:sstep(),behavior:'s
 // Lightbox
 const lb=$('#lb'),lbi=$('#lbi');
 shots.forEach(s=>s.addEventListener('click',()=>{if(smoved)return;lbi.src=$('img',s).src;lbi.alt=s.dataset.t;lb.showModal()}));
-// Nơi nhận form: dán URL Google Apps Script web app hoặc Formspree vào đây
-const REG_ENDPOINT='';
-const reg=$('#reg'),regf=$('#regf'),rege=$('#rege');
-$$('a.btn[href="#dang-ky"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();reg.classList.remove('sent');rege.textContent='';reg.showModal()}));
-$('#regx').addEventListener('click',()=>reg.close());reg.addEventListener('click',e=>{if(e.target===reg)reg.close()});
-regf.addEventListener('submit',async e=>{e.preventDefault();const b=regf.querySelector('button[type=submit]');
- const bad=[...regf.elements].find(i=>i.name&&(!i.checkValidity()||!i.value.trim()));
- if(bad){rege.textContent={name:'Bạn điền họ và tên nhé.',email:'Email chưa đúng.',linkedin:'LinkedIn link chưa đúng, ví dụ https://www.linkedin.com/in/ten-ban'}[bad.name];bad.focus();return}
- if(!REG_ENDPOINT){rege.textContent='Form chưa được kết nối nơi nhận, chưa gửi được.';return}
- b.disabled=true;rege.textContent='';
- try{await fetch(REG_ENDPOINT,{method:'POST',mode:'no-cors',body:new FormData(regf)});reg.classList.add('sent');regf.reset()}
- catch{rege.textContent='Gửi chưa được, bạn thử lại nhé.'}
- b.disabled=false});
 $('#lbx').addEventListener('click',()=>lb.close());lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
 
 // Giáo trình: kéo ngang + nút
