@@ -141,26 +141,32 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .col3 p{color:var(--muted);font-size:.98rem}
 .can-h{margin-top:clamp(64px,8vw,112px);font-size:1.5rem;font-weight:800;letter-spacing:-.015em}
 .can{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(28px,5vw,72px);margin-top:12px}
-.can li,.can-more li{display:flex;gap:16px;padding:20px 0;border-top:1.5px solid var(--line);font-size:.98rem}
-.can .ms,.can-more .ms{font-size:1.9rem;margin-top:-2px}
+.can li,.can-more li{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1.5px solid var(--line);font-size:.98rem}
+.can .ms,.can-more .ms{font-size:1.9rem;flex:none}
 .can-more{margin-top:0}
 .can-more .can{margin-top:0}
 .can-wrap details>summary{margin-top:22px}
 @media(max-width:860px){.cols3,.can{grid-template-columns:minmax(0,1fr)}}
 
-/* Thành phẩm: dải showcase, cuộn dọc thì dải trượt ngang (kiểu serko.ai) */
-.show{position:relative;height:calc(100svh + 420svh);margin-top:var(--section);background:#fff}
-.stage{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;background:radial-gradient(90% 55% at 50% 108%,#ff8fcf 0%,#ffd1ea 28%,#eef9a8 55%,#fff 80%)}
-.show-head{padding-top:clamp(72px,10vh,110px);text-align:center;position:relative;z-index:2}
+/* Thành phẩm: dải ảnh cuộn ngang như giáo trình, cuộn dọc thì đi tiếp mục sau */
+.show{position:relative;margin-top:var(--section);background:#fff}
+.stage{position:relative;overflow:hidden;display:flex;flex-direction:column;padding-bottom:clamp(28px,5vh,56px);background:radial-gradient(90% 55% at 50% 108%,#ff8fcf 0%,#ffd1ea 28%,#eef9a8 55%,#fff 80%)}
+.show-head{padding-top:clamp(56px,8vh,96px);text-align:center;position:relative;z-index:2}
 .show-head .kick{justify-content:center}
 .show-head .h2{margin:12px auto 0;max-width:20ch;font-size:clamp(1.8rem,4.2vw,3.1rem)}
 .show-head .sub{margin:10px auto 0;font-size:1rem}
-.rail{--ch:clamp(200px,44svh,440px);--cw:min(calc(var(--ch)*1.6),82vw);flex:1;display:flex;align-items:center;position:relative}
-.track{display:flex;gap:clamp(18px,3vw,40px);padding-left:calc(50vw - var(--cw)/2);padding-right:calc(50vw - var(--cw)/2);will-change:transform}
-.shot{flex:none;width:var(--cw);height:var(--ch);border-radius:22px;overflow:hidden;background:#fff;border:0;padding:0;cursor:zoom-in;box-shadow:0 30px 60px -24px #14123a66,0 0 0 1px #14123a14;transition:box-shadow .3s;will-change:transform,opacity;position:relative}
-.shot img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block}
+.rail{--ch:clamp(200px,44svh,440px);--cw:min(calc(var(--ch)*1.6),82vw);margin-top:clamp(28px,5vh,56px);overflow-x:auto;scrollbar-width:none;cursor:grab;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;padding:34px 0 44px}
+.rail::-webkit-scrollbar{display:none}
+.rail.drag{cursor:grabbing;scroll-snap-type:none}
+.track{display:flex;gap:clamp(18px,3vw,40px);width:max-content;padding-left:calc(50vw - var(--cw)/2);padding-right:calc(50vw - var(--cw)/2)}
+.shot{flex:none;width:var(--cw);height:var(--ch);border-radius:22px;overflow:hidden;background:#fff;border:0;padding:0;cursor:zoom-in;scroll-snap-align:center;box-shadow:0 30px 60px -24px #14123a66,0 0 0 1px #14123a14;transition:box-shadow .3s,transform .5s var(--ease),opacity .5s;transform:scale(.92);opacity:.7;position:relative}
+.shot.on{transform:none;opacity:1}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block;user-select:none;-webkit-user-drag:none}
 .shot:hover{box-shadow:0 36px 70px -20px #14123a88,0 0 0 1px #14123a14}
-.cap{position:relative;z-index:2;display:flex;justify-content:center;padding:0 var(--gutter) clamp(22px,4vh,40px)}
+.cap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:16px;padding:0 var(--gutter)}
+.cap-btns{display:flex;gap:12px}
+.cap-btn{flex:none;width:48px;height:48px;border-radius:50%;border:1.5px solid #14123a40;background:#fff;color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s}
+.cap-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 .cap-in{display:flex;align-items:center;gap:clamp(14px,3vw,28px);background:#fff;border-radius:var(--r-pill);padding:12px clamp(18px,3vw,30px);box-shadow:0 12px 30px -14px #14123a55;max-width:min(720px,100%)}
 .cap-n{font-weight:800;font-size:.8rem;color:var(--muted);letter-spacing:.06em;white-space:nowrap}
 .cap-t{display:grid;gap:0;line-height:1.35}
@@ -190,7 +196,7 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .reg.sent .ok{display:block}
 .lb button{position:absolute;right:-6px;top:-54px;border:0;background:var(--chartreuse);color:var(--ink);width:44px;height:44px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
 @media(max-width:700px){.cap-bar{display:none}.cap-n{display:none}}
-@media(prefers-reduced-motion:reduce){.show{height:auto}.stage{position:static;height:auto;padding-bottom:20px}.rail{overflow-x:auto;padding:30px 0}.track{padding-left:var(--gutter);padding-right:var(--gutter)}.cap{display:none}}
+@media(prefers-reduced-motion:reduce){.shot{transition:none}}
 
 /* Giáo trình: nền ink, đường cong nối các tuần, thẻ màu, bấm mới mở chi tiết */
 .dark-band{background:var(--ink);color:#fff;margin-top:var(--section);padding:var(--section) 0;border-radius:clamp(32px,6vw,80px);overflow:hidden}
@@ -198,7 +204,7 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .arrows{display:flex;gap:10px}
 .arrows button{width:52px;height:52px;border-radius:50%;border:1.5px solid #ffffff55;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s}
 .arrows button:hover{background:var(--chartreuse);color:var(--ink);border-color:var(--chartreuse)}
-.route{margin-top:48px;overflow-x:auto;scrollbar-width:none;cursor:grab;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.route{margin-top:48px;overflow-x:auto;scrollbar-width:none;cursor:grab;scroll-snap-type:x proximity;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
 .route::-webkit-scrollbar{display:none}
 .route.drag{cursor:grabbing;scroll-snap-type:none}
 .route-in{position:relative;display:flex;gap:28px;align-items:flex-start;width:max-content;padding:60px max(var(--gutter),calc((100vw - var(--maxw))/2)) 80px}
@@ -216,9 +222,10 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .route-wrap{position:relative}
 .route-wrap::after{content:"";position:absolute;top:0;right:0;bottom:60px;width:clamp(48px,10vw,140px);background:linear-gradient(90deg,#14123a00,var(--ink));pointer-events:none;transition:opacity .4s}
 .route-wrap.end::after{opacity:0}
-.route-hint{display:flex;align-items:center;gap:20px;padding:0 var(--gutter);max-width:var(--maxw);margin:0 auto;box-sizing:content-box}
-.route-hint .bar{flex:1;height:4px;border-radius:4px;background:#ffffff26;overflow:hidden}
+.route-hint{display:flex;flex-direction:column;align-items:center;gap:22px;padding:0 var(--gutter);max-width:var(--maxw);margin:0 auto;box-sizing:content-box}
+.route-hint .bar{align-self:stretch;height:4px;border-radius:4px;background:#ffffff26;overflow:hidden}
 .route-hint .bar i{display:block;height:100%;width:20%;background:var(--chartreuse);border-radius:4px;transform-origin:left}
+.route-hint .arrows{gap:12px}
 .route-hint .arrows button{width:48px;height:48px}
 .route-hint .drag{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.88rem;color:var(--chartreuse);transition:opacity .4s}
 .route-hint .drag .ms{animation:nudge 1.4s var(--ease) infinite}
@@ -226,7 +233,7 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(7px)}}
 @media (prefers-reduced-motion:reduce){.route-hint .drag .ms{animation:none}}
 .wk{cursor:pointer}
-.wk:hover{transform:rotate(0) translateY(-6px)}
+@media(hover:hover){.wk:hover{transform:rotate(0) translateY(-6px)}}
 .wk .top{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 .wk .top span:last-child{opacity:.75}
 .wk h3{margin-top:70px;font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.2}
@@ -405,14 +412,14 @@ html{scroll-behavior:auto}
     <div class="hero-art" aria-hidden="true">
       <svg class="stairs" viewBox="0 0 560 520">
         <path class="line" pathLength="1" d="M40 470H170V360H300V250H430V120"/>
-        <g class="pill" style="animation-delay:.9s"><rect x="28" y="396" width="140" height="44" rx="22"/><text x="98" y="426" text-anchor="middle">Discover</text></g>
+        <g class="pill" style="animation-delay:.9s"><rect x="6" y="396" width="140" height="44" rx="22"/><text x="76" y="426" text-anchor="middle">Discover</text></g>
         <g class="pill" style="animation-delay:1.2s"><rect x="155" y="286" width="120" height="44" rx="22"/><text x="215" y="316" text-anchor="middle">Define</text></g>
         <g class="pill" style="animation-delay:1.5s"><rect x="275" y="176" width="130" height="44" rx="22"/><text x="340" y="206" text-anchor="middle">Develop</text></g>
         <g class="pill" style="animation-delay:1.8s"><rect x="466" y="150" width="90" height="44" rx="22"/><text x="511" y="180" text-anchor="middle">Test</text></g>
         <circle class="dot" cx="430" cy="62" r="56"/>
         <text class="dot-t" x="430" y="69" text-anchor="middle">Deliver</text>
       </svg>
-      <span class="stk stk--pink">Cùng project thật của bạn</span>
+      <span class="stk stk--pink">Product Design Process</span>
       <span class="stk stk--lime">AI Design Workflow</span>
     </div>
   </div>
@@ -472,18 +479,13 @@ html{scroll-behavior:auto}
   <div class="can-wrap">
     <h3 class="can-h rv">Học xong, bạn có thể</h3>
     <ul class="can rv" style="margin-top:12px">
-      <li><span class="ms">eco</span><span>Dùng lại workflow này cho project tiếp theo nhờ các skill và agent đã đóng gói, và chỉnh nó khi cần, vì bạn hiểu vì sao mỗi bước nằm ở đó.</span></li>
-      <li><span class="ms">psychiatry</span><span>Kiểm tra output của AI: truy từng insight về quote gốc, từng decision về evidence, và ghi rõ điều nào đã xác nhận, điều nào chỉ là giả định.</span></li>
-      <li><span class="ms">shield_with_heart</span><span>Dùng AI an toàn: biết dữ liệu nào đưa được, dữ liệu nào cần hỏi trước, dữ liệu nào không đưa vào công cụ công khai.</span></li>
+      <li><span class="ms">eco</span><span>Dùng lại workflow cho project tiếp theo và chỉnh nó khi cần.</span></li>
+      <li><span class="ms">psychiatry</span><span>Kiểm tra output của AI: truy insight về quote gốc, decision về evidence.</span></li>
+      <li><span class="ms">shield_with_heart</span><span>Dùng AI an toàn: biết dữ liệu nào đưa được, dữ liệu nào không.</span></li>
+      <li><span class="ms">handshake</span><span>Làm việc như partner của product và business, bắt đầu từ business question.</span></li>
+      <li><span class="ms">rocket_launch</span><span>Dựng prototype bằng AI coding tool, test với người dùng thật, không cần tự viết code.</span></li>
+      <li><span class="ms">local_florist</span><span>Trình bày project cùng evidence, decision và trade-off.</span></li>
     </ul>
-    <details>
-      <summary class="more-btn">Xem thêm 3 điều nữa <span class="ms">add</span></summary>
-      <ul class="can can-more2" style="margin-top:0">
-        <li><span class="ms">handshake</span><span>Làm việc như một partner của product và business: bắt đầu từ business question, thống nhất outcome và cách đo trước khi thiết kế.</span></li>
-        <li><span class="ms">rocket_launch</span><span>Dựng prototype chạy được bằng AI coding tool, test với người dùng thật và sửa theo finding, mà không phải tự viết code.</span></li>
-        <li><span class="ms">local_florist</span><span>Trình bày project cùng evidence, decision và trade-off.</span></li>
-      </ul>
-    </details>
   </div>
 </div></section>
 
@@ -502,9 +504,9 @@ html{scroll-behavior:auto}
       <button class="shot" data-t="Opportunity Map" data-c="Từ vấn đề đến năm cơ hội và những giả thuyết cần test."><img src="img/opportunity-map.png" alt="Opportunity Map" loading="lazy"></button>
       <button class="shot" data-t="Process Map" data-c="Luồng đi của một chuyến đi, chia theo từng vai trò."><img src="img/process-map.png" alt="Process Map" loading="lazy"></button>
       <button class="shot" data-t="AI Prototype" data-c="Prototype chạy được, dựng bằng AI theo design system."><img src="img/prototype-welcome-screen.webp" alt="AI Prototype" loading="lazy"></button>
-      <button class="shot" data-t="UX Audit" data-c="11 vấn đề chấm theo mức độ, gắn vào từng màn hình."><img src="img/ux-audit.png" alt="UX Audit" loading="lazy"></button>
+      <button class="shot" data-t="UX Audit" data-c="Đánh giá solution hoặc bản đã build theo các principles."><img src="img/ux-audit.png" alt="UX Audit" loading="lazy"></button>
     </div></div>
-    <div class="cap"><div class="cap-in"><span class="cap-n" id="capn">01 / 07</span><div class="cap-t"><b id="capt">Central Hub</b><span id="capc">Tổng quan project</span></div><div class="cap-bar"><i id="capbar"></i></div></div></div>
+    <div class="cap"><div class="cap-in"><span class="cap-n" id="capn">01 / 07</span><div class="cap-t"><b id="capt">Central Hub</b><span id="capc">Tổng quan project</span></div><div class="cap-bar"><i id="capbar"></i></div></div><div class="cap-btns"><button class="cap-btn" id="sprev" aria-label="Trước"><span class="ms">arrow_back</span></button><button class="cap-btn" id="snext" aria-label="Sau"><span class="ms">arrow_forward</span></button></div></div>
   </div>
 </section>
 <dialog class="reg" id="reg"><div class="reg-in">
@@ -682,7 +684,6 @@ function onScroll(){
   toc.classList.toggle('on',y>innerHeight*.5);
   let cur=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.45)cur=i});
   tl.forEach((a,i)=>a.toggleAttribute('aria-current',i===cur));
-  showUpd();
 }
 
 // Reveal + đếm số + vẽ đường
@@ -695,23 +696,27 @@ function count(el){if(el._c)return;el._c=1;const to=+el.dataset.count,suf=el.dat
 const art=$('.hero-art');
 if(art&&!reduce&&matchMedia('(hover:hover)').matches)hero.addEventListener('pointermove',e=>{const x=(e.clientX/innerWidth-.5),y=(e.clientY/innerHeight-.5);$$('.stk',art).forEach((s,i)=>{s.style.translate=`${x*(i?-34:34)}px ${y*(i?-24:24)}px`});$('.stairs',art).style.transform=`translate(${x*-14}px,${y*-10}px)`});
 
-// Showcase: cuộn dọc → dải ảnh trượt ngang, ảnh giữa phóng to
-const show=$('#vi-du'),track=$('#track'),shots=$$('.shot',track),N=shots.length;
+// Showcase: dải ảnh cuộn ngang, ảnh gần giữa là ảnh đang xem
+const show=$('#vi-du'),rail=$('.rail',show),track=$('#track'),shots=$$('.shot',track),N=shots.length;
 const capn=$('#capn'),capt=$('#capt'),capc=$('#capc'),capbar=$('#capbar');let lastIdx=-1;
 function showUpd(){
-  if(reduce||!show)return;
-  const r=show.getBoundingClientRect(),total=show.offsetHeight-innerHeight;
-  if(r.bottom<-200||r.top>innerHeight+200)return;
-  const p=clamp(-r.top/total,0,1),f=p*(N-1),step=shots[0].offsetWidth+parseFloat(getComputedStyle(track).columnGap||0);
-  track.style.transform=`translateX(${-f*step}px)`;
-  shots.forEach((s,i)=>{const d=i-f,a=Math.abs(d);s.style.transform=`translateY(${Math.min(a,1.5)*18}px) rotate(${clamp(d,-2,2)*1.4}deg) scale(${1-Math.min(a,1)*.16})`;s.style.opacity=1-Math.min(a,1.6)*.38});
-  const idx=Math.round(f);
-  if(idx!==lastIdx){lastIdx=idx;const s=shots[idx];capn.textContent=String(idx+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');capt.textContent=s.dataset.t;capc.textContent=s.dataset.c}
+  const m=rail.scrollWidth-rail.clientWidth,p=m>0?rail.scrollLeft/m:0,idx=clamp(Math.round(p*(N-1)),0,N-1);
   capbar.style.transform=`scaleX(${p})`;
+  if(idx===lastIdx)return;lastIdx=idx;
+  shots.forEach((s,i)=>s.classList.toggle('on',i===idx));
+  capn.textContent=String(idx+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');capt.textContent=shots[idx].dataset.t;capc.textContent=shots[idx].dataset.c;
 }
+rail.addEventListener('scroll',showUpd,{passive:true});addEventListener('resize',showUpd);showUpd();
+let rdrag=false,rx0=0,rl0=0,smoved=0;
+rail.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;rdrag=true;smoved=0;rx0=e.clientX;rl0=rail.scrollLeft});
+addEventListener('pointermove',e=>{if(!rdrag)return;const dx=e.clientX-rx0;if(Math.abs(dx)>4){smoved=1;rail.classList.add('drag')}rail.scrollLeft=rl0-dx});
+['pointerup','pointercancel'].forEach(t=>addEventListener(t,()=>{rdrag=false;rail.classList.remove('drag')}));
+const sstep=()=>shots[0].offsetWidth+parseFloat(getComputedStyle(track).columnGap||0);
+$('#sprev').addEventListener('click',()=>rail.scrollBy({left:-sstep(),behavior:'smooth'}));
+$('#snext').addEventListener('click',()=>rail.scrollBy({left:sstep(),behavior:'smooth'}));
 // Lightbox
 const lb=$('#lb'),lbi=$('#lbi');
-shots.forEach(s=>s.addEventListener('click',()=>{lbi.src=$('img',s).src;lbi.alt=s.dataset.t;lb.showModal()}));
+shots.forEach(s=>s.addEventListener('click',()=>{if(smoved)return;lbi.src=$('img',s).src;lbi.alt=s.dataset.t;lb.showModal()}));
 // Nơi nhận form: dán URL Google Apps Script web app hoặc Formspree vào đây
 const REG_ENDPOINT='';
 const reg=$('#reg'),regf=$('#regf'),rege=$('#rege');
@@ -729,9 +734,9 @@ $('#lbx').addEventListener('click',()=>lb.close());lb.addEventListener('click',e
 
 // Giáo trình: kéo ngang + nút
 const route=$('#route');let down=false,sx=0,sl=0,moved=0;
-route.addEventListener('pointerdown',e=>{if(e.target.closest('summary'))return;down=true;moved=0;sx=e.clientX;sl=route.scrollLeft});
+route.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.target.closest('summary'))return;down=true;moved=0;sx=e.clientX;sl=route.scrollLeft});
 addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-sx;if(Math.abs(dx)>4){moved=1;route.classList.add('drag')}route.scrollLeft=sl-dx});
-addEventListener('pointerup',()=>{down=false;route.classList.remove('drag')});
+['pointerup','pointercancel'].forEach(t=>addEventListener(t,()=>{down=false;route.classList.remove('drag')}));
 $$('.wk',route).forEach(w=>w.addEventListener('click',e=>{if(moved||e.target.closest('summary'))return;const d=$('details',w);d.open=!d.open}));
 const rw=$('.route-wrap'),rbar=$('#rbar');const upd=()=>{const m=route.scrollWidth-route.clientWidth,p=m>0?route.scrollLeft/m:1;rbar.style.width=(route.clientWidth/route.scrollWidth*100+p*(100-route.clientWidth/route.scrollWidth*100))+'%';rw.classList.toggle('end',p>.97);if(route.scrollLeft>40)rw.classList.add('moved')};route.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
 const stepW=()=>$('.wk',route).offsetWidth+28;
