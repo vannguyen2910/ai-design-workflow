@@ -3,3 +3,4 @@
 lessons/*/materials/*-overview.mdx
 classes/*/generated/
 site/.sync-state.json
+.gstack/
