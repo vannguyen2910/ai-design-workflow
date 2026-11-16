@@ -285,6 +285,14 @@ Insight hub là một phần của Knowledge Hub của project (thư mục `insi
 - Cập nhật khi có evidence mới thay vì thêm bản trùng.
 - Có người chăm sóc hub (với người làm một mình, chính là bạn).
 
+**Từ ghi chú đến card trên hub.** Page Insights của hub không do AI gõ cả trang; nó được build từ các card, mỗi file một card có ID trong thư mục `insights/`. AI làm card, script dựng page. Decision, Insight, Challenge và Opportunity đều là card: decision là decision card, insight là evidence hoặc finding card, challenge là ghi chú mâu thuẫn trên card insight (không gộp, không xoá), opportunity là opportunity card; quan hệ giữa chúng là các ID. Ba bước, theo workflow `add-insights` của workspace:
+
+1. AI đề xuất một bảng, chưa tạo file. Mỗi dòng có nguồn, loại card, quan hệ tới card đã có, và đánh dấu củng cố, mâu thuẫn hay mới.
+2. Bạn duyệt: giữ, sửa hoặc cắt từng dòng. Decision và thứ hạng do bạn quyết, AI không tự đặt decision thành accepted.
+3. AI tạo card bằng lệnh, rồi chạy kiểm tra để bắt card thiếu liên kết hoặc ID không tồn tại.
+
+Mỗi người có workflow riêng (Notion, Obsidian, Figma, thư mục md). Ba điều giữ nguyên bất kể công cụ: mỗi mục một card có ID, AI đề xuất rồi bạn duyệt, có bước kiểm cuối. Đây là cách làm của khoá; chưa có nguồn ngoài so sánh với cách khác.
+
 **AI chạy xuyên cả bốn bước.** Insight là input đã kiểm tra, có ID; từ đây mỗi output của AI là một file markdown, mỗi dòng mang insight ID. Persona: AI gom theme và soạn dòng, bạn đối chiếu từng dòng với insight ID. Journey map: AI đề xuất bước còn thiếu và điền ô từ insight, bạn ghi assumption ở ô không có insight. Opportunity: AI viết lại sticky thành user need, bạn chạy test ba giải pháp rồi chọn. Tag trong hub lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc.
 
 ---

@@ -2,7 +2,7 @@
 title: "Research You Can Trust"
 lesson_file: "research-you-can-trust-lesson.md"
 level: ""
-slide_count: 63
+slide_count: 64
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/4AFDgey1QNAkFuXdiRGvvu"
@@ -697,6 +697,25 @@ last_synced: 2026-11-16
   - Atomic research ghi nhận thói quen kiểm tra repository trước là việc ngăn làm lại; nguồn là blog của agency
   - AI giúp được ở đâu với hub
 - 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
+
+---
+
+### NUMBERED · Từ ghi chú đến card trên hub
+- Kicker: Leverage AI
+- Title: Từ ghi chú\n*đến card trên hub*
+- On-slide:
+  - 01 AI đề xuất: một bảng, chưa tạo file; mỗi dòng có nguồn, loại card, quan hệ, củng cố hay mâu thuẫn hay mới
+  - 02 Bạn duyệt: giữ, sửa hoặc cắt; decision và thứ hạng do bạn quyết
+  - 03 AI tạo card, rồi kiểm: mỗi mục một file có ID, chạy kiểm tra liên kết và ID
+  - Page do script dựng từ các card; Decision, Insight, Challenge, Opportunity đều là card có ID
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Hai slide trước cho thấy hub trông thế nào; slide này trả lời làm sao có các card đó bằng AI mà vẫn tin được.
+  - Page không do AI gõ cả trang, do script dựng từ các card; ba bước add-insights; bốn thứ là card; ba điều bất biến cho mọi workflow.
+
+  > workflow hiện tại của bạn có bước duyệt giữa AI đề xuất và lúc ghi vào hub không?
+- 🎨 Visual hint: Ba bước ngang, icon line-art (bảng, dấu tick, chồng card), mũi tên nối, không card viền.
 
 ---
 
