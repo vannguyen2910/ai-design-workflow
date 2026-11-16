@@ -903,7 +903,11 @@ last_synced: 2026-11-16
     - Transcript đã ẩn danh là nguồn gốc (raw source), bạn không sửa nó
     - Bạn cắt nó thành source notes: mỗi note một ý, một ID, giữ nguyên lời người nói
     - Mỗi note một dòng, dạng ID | text. Định dạng này cố định để chương trình đọc được, còn folder bạn sắp xếp thế nào cũng được
-  - Ví dụ: I01-03 là note thứ 3 của buổi phỏng vấn 1. Ba note trên slide lấy từ bộ mẫu Delivery App. Bộ mẫu có 24 note: R01 đến R10 là review, F01 đến F08 là bài trên forum, I01-01 đến I02-03 là trích từ hai buổi phỏng vấn.
+  - Ba note trên slide lấy từ bộ mẫu Delivery App. Bộ mẫu có 24 note, và chữ cái đầu của ID cho biết note đến từ loại nguồn nào:
+    - R (review): review của khách trên app store, R01 đến R10. Khách tự viết, ngắn, không ai hỏi thêm.
+    - F (forum): bài đăng của khách trên forum người dùng, F01 đến F08. Thường kể lại một tình huống hoặc hỏi nhờ người khác.
+    - I (interview): trích từ hai buổi phỏng vấn, I01-01 đến I02-03. Số sau chữ I là buổi phỏng vấn và thứ tự note, nên I01-03 là note thứ 3 của buổi 1.
+  - Khác nhau ở chỗ: R và F là điều khách tự nói, bạn không hỏi thêm được. I là buổi bạn trực tiếp hỏi và hỏi sâu được, nhưng mẫu chỉ có hai buổi. Vì vậy một insight dựa trên cả ba loại nguồn đáng tin hơn một insight chỉ dựa trên một loại.
   - Chưa phỏng vấn được hai người thì dùng các note phỏng vấn mẫu, và ghi rõ trong hub đó là dữ liệu mẫu.
 
   > Câu nào trong transcript đầu tiên của bạn sẽ thành note I01-01?
