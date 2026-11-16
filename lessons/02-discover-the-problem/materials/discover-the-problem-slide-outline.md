@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 51
+slide_count: 54
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
@@ -18,7 +18,7 @@ last_synced: 2026-11-16
 | Stage           | Discover                                                                                                                                 |
 | Prior session   | Buổi 1: Your Design Process, with AI                                                                                                     |
 | Next session    | Practice 2                                                                                                                               |
-| Timing note      | Bốn slide ingest và blind synthesis thêm khoảng 10 phút. Bốn slide move của Break the brief thay ba slide method (four types, from product to assumption, weak and strong), nên thêm khoảng 6 phút nữa; cần bớt khoảng 16 phút ở principles, Q&A hoặc ví dụ, và Winnie quyết định bớt chỗ nào |
+| Timing note      | Ingest và blind synthesis thêm khoảng 10 phút, bốn slide move của Break the brief thêm khoảng 6 phút. Đã bớt khoảng 16 phút ở Understand our users: sáu slide nền tảng phỏng vấn (User interview, Research plan, một trang research plan, Interview fundamentals, Avoid and probe, Pilot with a colleague) và ba slide method recap của Break the brief chuyển sang Appendix, không xoá. Lớp cần ôn thì mở lại từ Appendix |
 | Running example | App giao đồ ăn                                                                                                                           |
 
 ---
@@ -69,7 +69,7 @@ last_synced: 2026-11-16
     - 01 AI trong Discover Problem: Discover nằm ở đâu trong quy trình và AI giúp được gì.
     - 02 Principles cho AI: chuẩn nào để AI đối chiếu, ai viết và viết lúc nào.
     - 03 Break the brief: ba việc kiểm tra brief là scope, assumption và research question, mỗi việc ra một file.
-    - 04 Understand our users: từ research question đến cuộc phỏng vấn, chuẩn bị plan và script với AI, chạy thử, quy tắc dữ liệu.
+    - 04 Understand our users: từ research question đến câu hỏi phỏng vấn, chuẩn bị plan và script với AI, quy tắc dữ liệu. Nền tảng phỏng vấn nằm ở Appendix.
     - 05 Ingest vào hub: biến transcript thành source notes có ID, kiểm quote bằng chương trình, và xem một hypothesis trong prompt làm AI nói gì.
   - Thứ tự này đi từ điều quan sát được đến điều cần học: hiểu bối cảnh, đặt chuẩn, kiểm brief, rồi hỏi người thật.
   - Cuối buổi có Q&A và slide practice cho chuỗi việc ở nhà.
@@ -722,83 +722,15 @@ last_synced: 2026-11-16
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Slide chuyển phần: Understand our users, từ research question đến cuộc phỏng vấn.
-  - Phần này đi qua bốn việc, theo thứ tự trên slide:
-    - User interview là gì và khi nào dùng thay survey.
-    - Research plan: bốn câu trả lời trước khi viết câu hỏi, một mẫu một trang, và cách tách một research question thành câu hỏi phỏng vấn.
-    - Lên plan với AI, rồi bốn thói quen trong buổi phỏng vấn và cách xin câu chuyện rồi hỏi sâu.
-    - Chạy thử trước buổi thật, và quy tắc dữ liệu trước khi đưa transcript cho AI.
+  - Phần này đi qua ba việc:
+    - Tách một research question thành câu hỏi phỏng vấn.
+    - Lên plan và script với AI.
+    - Quy tắc dữ liệu trước khi đưa transcript cho AI, và việc AI soạn, bạn kiểm tra.
+  - Nền tảng phỏng vấn (user interview, research plan, thói quen khi phỏng vấn, chạy thử) nằm ở Appendix, dùng khi lớp cần ôn.
   - Phần này nối trực tiếp từ phần trước: mỗi interview question phải dẫn về một research question.
 
   > Bạn đã có research question nào để mang vào phỏng vấn chưa?
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
-
----
-
-### NUMBERED · User interview
-- Kicker: Định nghĩa
-- Title: User\n*interview*
-- On-slide:
-  - What: cuộc trò chuyện 1:1 về hành vi và niềm tin của người dùng; hỏi về trải nghiệm thật, không hỏi ý kiến
-  - Why: giải thích điều analytics không giải thích được; biến assumption thành evidence; cho thấy lý do đằng sau hành vi, không chỉ con số
-  - When: sau khi có research question, trước khi thiết kế giải pháp; lặp lại sau mỗi vòng để cập nhật assumption map
-- Ví dụ: Không cần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Có research question rồi, bước tiếp theo là hỏi người thật. Phỏng vấn user là cuộc trò chuyện 1:1 về hành vi và niềm tin của họ.
-    - Hỏi về trải nghiệm thật, không hỏi ý kiến.
-    - Có interview guide, nhưng đi theo câu chuyện của người dùng.
-    - Mục tiêu là hiểu thực tế của user, không phải để user xác nhận ý tưởng.
-  - Analytics cho biết khách bỏ ở bước nào. Chỉ phỏng vấn mới cho biết họ đang nghĩ gì ở bước đó. Khi người phỏng vấn bắt đầu trình bày giải pháp hoặc hỏi “có dùng cái này không?”, đó không còn là user research.
-  - Survey dùng khi đã biết cần hỏi gì và cần con số trên nhiều người. Survey không thay phỏng vấn để tìm điều chưa biết.
-
-  > Lần gần nhất bạn nói chuyện với một người dùng thật là khi nào, và bạn đã hỏi gì?
-- 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; kicker Định nghĩa, tiêu đề có accent ở dòng 2.
-
----
-
-### NUMBERED · Research plan
-- Kicker: Chuẩn bị
-- Title: Research *plan*
-- On-slide:
-  - 01 · Người dùng là ai? Mô tả theo hành vi và bối cảnh, không chỉ nhân khẩu học
-  - 02 · Mục tiêu là gì? Điều cần học để ra quyết định thiết kế, viết thành một câu
-  - 03 · Chỉ số đo là gì? Dấu hiệu quan sát hoặc đo được cho biết đã có câu trả lời
-  - 04 · Trả lời câu hỏi nào? Research question dẫn dắt buổi phỏng vấn và assumption rủi ro nhất
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Trước khi viết câu hỏi, cần một research plan một trang. Plan trả lời bốn câu.
-    - Người dùng là ai: mô tả theo hành vi và bối cảnh, ví dụ khách đã đặt một đơn và chưa đặt lại, thay vì chỉ tuổi và giới tính.
-    - Mục tiêu là gì: một câu, điều cần học để ra quyết định thiết kế.
-    - Chỉ số đo là gì: dấu hiệu cho biết bạn đã có câu trả lời.
-    - Trả lời câu hỏi nào: research question và giả định rủi ro nhất.
-  - AI giúp rõ nhất ở khâu chuẩn bị này: gợi ý cách diễn đạt mục tiêu, hỏi ngược “điều gì thay đổi nếu biết câu trả lời”, gợi ý profile và câu hỏi lọc. Designer quyết định mục tiêu, tuyển người thật và xin phép họ.
-
-  > Nếu phỏng vấn xong mà không đổi được quyết định thiết kế nào, plan của bạn đang thiếu phần nào?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
-
----
-
-### IMAGE · A one-page research plan
-- Kicker: Ví dụ
-- Title: Một trang *research plan*
-- On-slide:
-  - Ảnh mẫu research plan một trang, sáu mục: project overview, research goals, methods, research questions, tools, recruiting
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Đây là một mẫu research plan một trang. Mình dùng nguyên mẫu này làm ví dụ, bạn không cần chép lại.
-  - Mẫu có sáu mục, đọc theo số:
-    - Project overview: dự án này về gì, đang ở giai đoạn nào.
-    - Research goals: điều cần đạt trong đợt nghiên cứu này.
-    - Methods: phương pháp nào giúp đạt mục tiêu, và vì sao chọn.
-    - Research questions: các câu hỏi cần tìm câu trả lời, nối từ assumption ở phần trước.
-    - Tools: công cụ cần chuẩn bị.
-    - Recruiting: ai phụ trách, ngân sách, tìm người ở đâu, họ nhận gì.
-  - Chú ý hai mục dễ bị bỏ quên là Tools và Recruiting. Hỏi sớm sẽ đỡ trễ lịch phỏng vấn.
-
-  > Mục nào trong mẫu này bạn sẽ hỏi lại product trước khi đi phỏng vấn?
-- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
 
 ---
 
@@ -846,77 +778,6 @@ last_synced: 2026-11-16
   - Cả ba bước đều ra bản nháp. Bạn giữ vai moderator, công cụ chỉ giữ cấu trúc.
 
   > Trong ba bước, bước nào bạn đang làm tay lâu nhất?
-- 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô purple.
-
----
-
-### NUMBERED · Interview fundamentals
-- Kicker: Trong buổi phỏng vấn
-- Title: Interview *fundamentals*
-- On-slide:
-  - 01 · Hỏi câu mở
-  - 02 · Đi theo câu chuyện
-  - 03 · Tò mò, không dẫn dắt
-  - 04 · Nghe và quan sát
-  - Quy tắc vàng: hiểu thế giới của họ, không xác nhận giải pháp của bạn
-- Ví dụ: Không cần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Bốn thói quen của một buổi phỏng vấn tốt, và một quy tắc bao trùm tất cả.
-    - Hỏi câu mở: “kể lại lần gần nhất…” mời một câu chuyện, còn câu đóng cho dữ liệu không dùng được.
-    - Đi theo câu chuyện: khi user nói điều bất ngờ, dừng lại và đi theo, kể cả ngoài script. Script là lưới an toàn, không phải khuôn.
-    - Tò mò như lần đầu, kể cả khi đã nghe năm lần giống nhau.
-    - Nghe nhiều hơn nói. Người phỏng vấn nói quá khoảng 20% thời gian thì có điều gì đó sai.
-  - Quan sát cũng là một phần của nghe: user nói “ổn” nhưng dừng năm giây trước khi bấm, thì khoảng dừng mới là insight.
-  - Nếu cả buổi chỉ đi theo thứ tự câu hỏi thì script đã thành bảng khảo sát. Bạn giữ vai moderator, công cụ chỉ giữ cấu trúc.
-
-  > Trong bốn thói quen này, thói quen nào bạn thấy khó giữ nhất khi đang phỏng vấn?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
-
----
-
-### COMPARE · Avoid and probe
-- Kicker: Kỹ thuật
-- Title: Xin câu chuyện, rồi *hỏi sâu*
-- On-slide:
-  - Trái, Avoid: hành vi giả định, câu đặt sẵn đáp án, câu đóng cho con số
-  - Phải, Probe: "Kể mình nghe lần gần nhất bạn đặt đồ ăn."; "Sau đó chuyện gì xảy ra?"; "Vì sao điều đó quan trọng với bạn?"; "Bạn có thể chỉ mình xem bạn đã làm thế nào không?"
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Cột trái là ba câu nên tránh, cột phải là bốn câu mồi để xin câu chuyện rồi hỏi sâu.
-  - Ba câu avoid đều có vấn đề:
-    - “Có dùng tính năng đổi khung giờ không?” là hành vi giả định, và dẫn người trả lời về tính năng.
-    - “Có thấy bước chọn giờ khó hiểu không?” đặt sẵn đáp án vào miệng họ.
-    - “Bao lâu một lần?” là câu đóng, cho con số mà không cho lý do.
-  - Chuỗi probe đi theo một nhịp: xin một lần cụ thể gần nhất, hỏi chuyện gì xảy ra sau đó, hỏi vì sao nó quan trọng, rồi xin họ chỉ cho xem. Đi theo nhịp này thì câu trả lời là chuyện thật chứ không phải ý kiến.
-  - Các câu trên là ví dụ minh hoạ cho case app giao đồ ăn.
-
-  > Lấy một câu avoid bạn hay hỏi, viết lại thành một câu xin câu chuyện.
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
-
----
-
-### PROCESS · Pilot with a colleague
-- Kicker: Trước khi hẹn người thật
-- Title: Chạy thử *với đồng nghiệp*
-- On-slide:
-  - 01 · AI soạn mười câu từ một research question, kèm nhánh follow-up
-  - 02 · Bạn cắt còn năm: bỏ câu lặp ý, sửa câu dẫn dắt
-  - 03 · Thử với đồng nghiệp: hỏi thử, nghe lại, sửa trước khi hẹn khách
-  - Trước buổi thật: nói rõ ba điều và xin phép (ghi hình, dùng nội bộ, không chia sẻ ra ngoài)
-- Ví dụ: Không cần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Slide trước nói AI giúp soạn plan, câu hỏi và script. Slide này trả lời: vì sao phải chạy thử trước khi hẹn người thật, và nói gì với người tham gia.
-  - Ba bước:
-    - AI soạn mười câu từ một research question, kèm nhánh follow-up “nếu user nói X thì hỏi Y”.
-    - Bạn cắt còn năm: bỏ câu lặp ý, đổi những câu có hướng người trả lời tới đáp án mong muốn.
-    - Thử với một đồng nghiệp: nghe họ trả lời, ghi chỗ họ khựng lại hoặc hiểu sai câu hỏi, rồi sửa guide.
-  - Chạy thử là bắt buộc vì AI yếu ở bước thử với người thật. Người giữ vai moderator, công cụ chỉ giữ cấu trúc. Thử xong mới hẹn khách thật, vì khách thật chỉ có một lần.
-  - Consent: trước buổi thật nói rõ ba điều, ghi hình, dùng nội bộ và không chia sẻ ra ngoài, rồi xin phép. Người từ chối ghi hình thì ghi chú tay. Nếu công ty có chính sách riêng thì theo chính sách đó.
-
-  > Bạn có thể chạy thử câu hỏi với ai trước buổi phỏng vấn thật?
 - 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô purple.
 
 ---
@@ -1172,7 +1033,7 @@ last_synced: 2026-11-16
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Phần phụ lục, ngoài 90 phút của buổi. Dùng khi còn thời gian hoặc khi lớp hỏi thêm.
-  - Hiện có một chủ đề: competitor analysis, gồm method và một ví dụ từ case Travel Buddy.
+  - Ba chủ đề: competitor analysis, nền tảng phỏng vấn, và method recap của Break the brief.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
 
 ---
@@ -1219,3 +1080,208 @@ last_synced: 2026-11-16
 - 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
 
 ---
+
+---
+
+### NUMBERED · User interview
+- Kicker: Định nghĩa
+- Title: User\n*interview*
+- On-slide:
+  - What: cuộc trò chuyện 1:1 về hành vi và niềm tin của người dùng; hỏi về trải nghiệm thật, không hỏi ý kiến
+  - Why: giải thích điều analytics không giải thích được; biến assumption thành evidence; cho thấy lý do đằng sau hành vi, không chỉ con số
+  - When: sau khi có research question, trước khi thiết kế giải pháp; lặp lại sau mỗi vòng để cập nhật assumption map
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Có research question rồi, bước tiếp theo là hỏi người thật. Phỏng vấn user là cuộc trò chuyện 1:1 về hành vi và niềm tin của họ.
+    - Hỏi về trải nghiệm thật, không hỏi ý kiến.
+    - Có interview guide, nhưng đi theo câu chuyện của người dùng.
+    - Mục tiêu là hiểu thực tế của user, không phải để user xác nhận ý tưởng.
+  - Analytics cho biết khách bỏ ở bước nào. Chỉ phỏng vấn mới cho biết họ đang nghĩ gì ở bước đó. Khi người phỏng vấn bắt đầu trình bày giải pháp hoặc hỏi “có dùng cái này không?”, đó không còn là user research.
+  - Survey dùng khi đã biết cần hỏi gì và cần con số trên nhiều người. Survey không thay phỏng vấn để tìm điều chưa biết.
+
+  > Lần gần nhất bạn nói chuyện với một người dùng thật là khi nào, và bạn đã hỏi gì?
+- 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; kicker Định nghĩa, tiêu đề có accent ở dòng 2.
+
+---
+
+### NUMBERED · Research plan
+- Kicker: Chuẩn bị
+- Title: Research *plan*
+- On-slide:
+  - 01 · Người dùng là ai? Mô tả theo hành vi và bối cảnh, không chỉ nhân khẩu học
+  - 02 · Mục tiêu là gì? Điều cần học để ra quyết định thiết kế, viết thành một câu
+  - 03 · Chỉ số đo là gì? Dấu hiệu quan sát hoặc đo được cho biết đã có câu trả lời
+  - 04 · Trả lời câu hỏi nào? Research question dẫn dắt buổi phỏng vấn và assumption rủi ro nhất
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Trước khi viết câu hỏi, cần một research plan một trang. Plan trả lời bốn câu.
+    - Người dùng là ai: mô tả theo hành vi và bối cảnh, ví dụ khách đã đặt một đơn và chưa đặt lại, thay vì chỉ tuổi và giới tính.
+    - Mục tiêu là gì: một câu, điều cần học để ra quyết định thiết kế.
+    - Chỉ số đo là gì: dấu hiệu cho biết bạn đã có câu trả lời.
+    - Trả lời câu hỏi nào: research question và giả định rủi ro nhất.
+  - AI giúp rõ nhất ở khâu chuẩn bị này: gợi ý cách diễn đạt mục tiêu, hỏi ngược “điều gì thay đổi nếu biết câu trả lời”, gợi ý profile và câu hỏi lọc. Designer quyết định mục tiêu, tuyển người thật và xin phép họ.
+
+  > Nếu phỏng vấn xong mà không đổi được quyết định thiết kế nào, plan của bạn đang thiếu phần nào?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+
+---
+
+### IMAGE · A one-page research plan
+- Kicker: Ví dụ
+- Title: Một trang *research plan*
+- On-slide:
+  - Ảnh mẫu research plan một trang, sáu mục: project overview, research goals, methods, research questions, tools, recruiting
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đây là một mẫu research plan một trang. Mình dùng nguyên mẫu này làm ví dụ, bạn không cần chép lại.
+  - Mẫu có sáu mục, đọc theo số:
+    - Project overview: dự án này về gì, đang ở giai đoạn nào.
+    - Research goals: điều cần đạt trong đợt nghiên cứu này.
+    - Methods: phương pháp nào giúp đạt mục tiêu, và vì sao chọn.
+    - Research questions: các câu hỏi cần tìm câu trả lời, nối từ assumption ở phần trước.
+    - Tools: công cụ cần chuẩn bị.
+    - Recruiting: ai phụ trách, ngân sách, tìm người ở đâu, họ nhận gì.
+  - Chú ý hai mục dễ bị bỏ quên là Tools và Recruiting. Hỏi sớm sẽ đỡ trễ lịch phỏng vấn.
+
+  > Mục nào trong mẫu này bạn sẽ hỏi lại product trước khi đi phỏng vấn?
+- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
+
+---
+
+### NUMBERED · Interview fundamentals
+- Kicker: Trong buổi phỏng vấn
+- Title: Interview *fundamentals*
+- On-slide:
+  - 01 · Hỏi câu mở
+  - 02 · Đi theo câu chuyện
+  - 03 · Tò mò, không dẫn dắt
+  - 04 · Nghe và quan sát
+  - Quy tắc vàng: hiểu thế giới của họ, không xác nhận giải pháp của bạn
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Bốn thói quen của một buổi phỏng vấn tốt, và một quy tắc bao trùm tất cả.
+    - Hỏi câu mở: “kể lại lần gần nhất…” mời một câu chuyện, còn câu đóng cho dữ liệu không dùng được.
+    - Đi theo câu chuyện: khi user nói điều bất ngờ, dừng lại và đi theo, kể cả ngoài script. Script là lưới an toàn, không phải khuôn.
+    - Tò mò như lần đầu, kể cả khi đã nghe năm lần giống nhau.
+    - Nghe nhiều hơn nói. Người phỏng vấn nói quá khoảng 20% thời gian thì có điều gì đó sai.
+  - Quan sát cũng là một phần của nghe: user nói “ổn” nhưng dừng năm giây trước khi bấm, thì khoảng dừng mới là insight.
+  - Nếu cả buổi chỉ đi theo thứ tự câu hỏi thì script đã thành bảng khảo sát. Bạn giữ vai moderator, công cụ chỉ giữ cấu trúc.
+
+  > Trong bốn thói quen này, thói quen nào bạn thấy khó giữ nhất khi đang phỏng vấn?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+
+---
+
+### COMPARE · Avoid and probe
+- Kicker: Kỹ thuật
+- Title: Xin câu chuyện, rồi *hỏi sâu*
+- On-slide:
+  - Trái, Avoid: hành vi giả định, câu đặt sẵn đáp án, câu đóng cho con số
+  - Phải, Probe: "Kể mình nghe lần gần nhất bạn đặt đồ ăn."; "Sau đó chuyện gì xảy ra?"; "Vì sao điều đó quan trọng với bạn?"; "Bạn có thể chỉ mình xem bạn đã làm thế nào không?"
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Cột trái là ba câu nên tránh, cột phải là bốn câu mồi để xin câu chuyện rồi hỏi sâu.
+  - Ba câu avoid đều có vấn đề:
+    - “Có dùng tính năng đổi khung giờ không?” là hành vi giả định, và dẫn người trả lời về tính năng.
+    - “Có thấy bước chọn giờ khó hiểu không?” đặt sẵn đáp án vào miệng họ.
+    - “Bao lâu một lần?” là câu đóng, cho con số mà không cho lý do.
+  - Chuỗi probe đi theo một nhịp: xin một lần cụ thể gần nhất, hỏi chuyện gì xảy ra sau đó, hỏi vì sao nó quan trọng, rồi xin họ chỉ cho xem. Đi theo nhịp này thì câu trả lời là chuyện thật chứ không phải ý kiến.
+  - Các câu trên là ví dụ minh hoạ cho case app giao đồ ăn.
+
+  > Lấy một câu avoid bạn hay hỏi, viết lại thành một câu xin câu chuyện.
+- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
+
+---
+
+### PROCESS · Pilot with a colleague
+- Kicker: Trước khi hẹn người thật
+- Title: Chạy thử *với đồng nghiệp*
+- On-slide:
+  - 01 · AI soạn mười câu từ một research question, kèm nhánh follow-up
+  - 02 · Bạn cắt còn năm: bỏ câu lặp ý, sửa câu dẫn dắt
+  - 03 · Thử với đồng nghiệp: hỏi thử, nghe lại, sửa trước khi hẹn khách
+  - Trước buổi thật: nói rõ ba điều và xin phép (ghi hình, dùng nội bộ, không chia sẻ ra ngoài)
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói AI giúp soạn plan, câu hỏi và script. Slide này trả lời: vì sao phải chạy thử trước khi hẹn người thật, và nói gì với người tham gia.
+  - Ba bước:
+    - AI soạn mười câu từ một research question, kèm nhánh follow-up “nếu user nói X thì hỏi Y”.
+    - Bạn cắt còn năm: bỏ câu lặp ý, đổi những câu có hướng người trả lời tới đáp án mong muốn.
+    - Thử với một đồng nghiệp: nghe họ trả lời, ghi chỗ họ khựng lại hoặc hiểu sai câu hỏi, rồi sửa guide.
+  - Chạy thử là bắt buộc vì AI yếu ở bước thử với người thật. Người giữ vai moderator, công cụ chỉ giữ cấu trúc. Thử xong mới hẹn khách thật, vì khách thật chỉ có một lần.
+  - Consent: trước buổi thật nói rõ ba điều, ghi hình, dùng nội bộ và không chia sẻ ra ngoài, rồi xin phép. Người từ chối ghi hình thì ghi chú tay. Nếu công ty có chính sách riêng thì theo chính sách đó.
+
+  > Bạn có thể chạy thử câu hỏi với ai trước buổi phỏng vấn thật?
+- 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô purple.
+
+---
+
+### NUMBERED · Four assumption types
+- Kicker: Định nghĩa
+- Title: Bốn loại *assumption*
+- On-slide:
+  - User: "Khách mới là người đi làm, hay đặt đồ ăn giờ tan ca."
+  - Problem: "Khách bỏ đơn vì không đổi được khung giờ giao."
+  - Solution: "Cho đổi khung giờ sau khi đặt sẽ giữ khách lại."
+  - Business: "Khách chịu trả thêm phí để chọn khung giờ giao."
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói giả định là gì. Một brief thường trộn nhiều loại giả định, và mỗi loại cần cách kiểm chứng khác nhau.
+    - User: điều bạn tin về người dùng là ai và họ đang ở bối cảnh nào.
+    - Problem: điều bạn tin về vấn đề, rằng nó có thật và đủ cấp bách.
+    - Solution: điều bạn tin về giải pháp, rằng nó sẽ hiệu quả.
+    - Business: điều bạn tin về thị trường, giá hoặc quy định.
+  - Các câu trên slide là ví dụ minh hoạ cho app giao đồ ăn, chưa phải dữ liệu của case. Khi liệt kê giả định cho dự án thật, gắn loại cho từng cái giúp thấy team đang dồn vào một loại, thường là Solution, và bỏ quên User hay Problem.
+
+  > Trong brief gần nhất của bạn, loại giả định nào xuất hiện nhiều nhất, và loại nào bị bỏ quên?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+
+---
+
+### IMAGE · From product to assumption
+- Kicker: Ví dụ
+- Title: Từ sản phẩm đến *assumption*
+- On-slide:
+  - Ảnh màn hình sản phẩm Travel Buddy và giả định rút ra từ màn hình đó
+  - Hai ô kèm theo: bằng chứng (chưa có dữ liệu) và mức quan trọng (cao)
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đây là một giả định đi từ màn hình sản phẩm ra công thức, trên case app du lịch Travel Buddy.
+  - Đọc từ màn hình bên trái sang giả định bên phải: bắt đầu bằng một màn hình có thật, nhìn ra điều team đang tin về nó, rồi viết theo công thức. Đây là kiểu giả định về hành vi tin tưởng: khách tin ai hơn.
+  - Hai ô nhỏ bên dưới là hai thứ cần ghi kèm mỗi giả định:
+    - Bằng chứng: hiện có gì. Ở đây là chưa có dữ liệu cho thấy khách tin tip hơn mô tả.
+    - Mức quan trọng: nếu giả định sai thì thiết kế đổ vỡ đến đâu. Ở đây là cao.
+  - Chính hai thứ này quyết định giả định nằm ở đâu trên bản đồ ở slide kế tiếp. Dấu hiệu trong ví dụ là gợi ý của mình, bạn thay bằng dấu hiệu team thật sự theo dõi được.
+
+  > Màn hình nào trong sản phẩm của bạn đang chứa một niềm tin chưa ai kiểm chứng?
+- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
+
+---
+
+### COMPARE · Weak and strong research questions
+- Kicker: Kỹ thuật
+- Title: Research question *tốt và chưa tốt*
+- On-slide:
+  - Trái, Weak: "Người dùng có thích sản phẩm của mình không?"; "Người dùng muốn tính năng nào?"; "Vì sao người dùng không tin chúng ta?"
+  - Phải, Strong: "Khoảnh khắc nào trong lần đặt đầu tiên khiến khách không quay lại, và lúc đó họ tin điều gì?"; "Khách xoay xở thế nào khi cần dời khung giờ giao, và điều đó cho thấy nhu cầu nào chưa được đáp ứng?"; "Khách tìm những tín hiệu nào trước khi bấm đặt?"
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ba câu weak đều trượt theo cách quen thuộc.
+    - “Có thích sản phẩm không?” là câu hỏi sở thích, và trả lời có hoặc không.
+    - “Muốn tính năng nào?” xin người dùng làm việc của designer.
+    - “Vì sao không tin chúng ta?” đã coi như họ không tin, nên dẫn dắt.
+  - Ba câu strong hỏi về hành vi và khoảnh khắc cụ thể: họ làm gì, ở lúc nào, tin điều gì. Câu trả lời cho chúng là chuyện thật, không phải ý kiến.
+  - Phép thử nhanh: câu này trả lời được bằng một chữ có hoặc không không? Nó nói về sản phẩm hay về người dùng? Nó gắn với một giả định không? Nếu một trong ba là có, viết lại.
+  - Các câu strong là ví dụ minh hoạ cho case app giao đồ ăn.
+
+  > Chọn một câu weak bạn từng viết hoặc từng nghe, viết lại thành câu strong.
+- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
