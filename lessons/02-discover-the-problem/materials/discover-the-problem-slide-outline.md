@@ -613,7 +613,7 @@ last_synced: 2026-11-16
   - Giới hạn: quote có thật chưa chắc ủng hộ đúng assumption. AI từng xếp cùng một ghi chú vào hai assumption khác nhau. Ghi chú cũng không đánh dấu khách mới hay khách cũ. Bạn đọc từng ghi chú trước khi tính.
 
   > Assumption nào của bạn sẽ ra “chưa có nguồn”?
-- 🎨 Visual hint: COMPARE. Bảng bốn cột nền trắng; cột Evidence là chip viền: mạnh viền tím đậm, yếu viền ink, chưa có viền nét đứt. Hình line-art nhỏ ở góc phải tiêu đề.
+- 🎨 Visual hint: COMPARE. Bảng bốn cột nền trắng (Assumption, Supports, Contradicts, Evidence); cột Evidence là chip viền: strong viền tím đậm, weak viền ink, none viền nét đứt. Hình line-art nhỏ ở góc phải tiêu đề.
 
 ---
 
