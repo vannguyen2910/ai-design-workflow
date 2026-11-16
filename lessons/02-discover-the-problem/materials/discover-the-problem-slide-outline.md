@@ -940,10 +940,10 @@ last_synced: 2026-11-16
 - Kicker: Blind synthesis
 - Title: Cùng một bộ note,\n*hai câu hỏi*
 - On-slide:
-  - Dữ liệu: 24 note mẫu của Delivery App. Câu hỏi: vì sao khách mới không đặt lại sau đơn đầu tiên?
-  - Lần 1, chỉ có câu hỏi: giá chỉ là một dòng ghi chú
-  - Lần 2, thêm “Team tin rằng giá là lý do chính”: giá được nói đầu tiên
-  - Hypothesis làm AI nói về giá trước, nhưng không đảo kết luận
+  - Dữ liệu: 24 note mẫu của Delivery App. Hỏi: vì sao khách mới không đặt lại?
+  - Lần 1, không hypothesis, chỉ có câu hỏi: giá nằm ở cuối bài
+  - Lần 2, thêm “Team tin giá là lý do chính”: giá được nói đầu tiên
+  - Hypothesis không đổi kết luận, nhưng làm AI nói về giá trước
 - Ví dụ: có (bộ 24 note, hai lần chạy)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -958,7 +958,7 @@ last_synced: 2026-11-16
   - Vì vậy hãy mang về cách làm, không mang về kết luận: chạy một lần không có hypothesis, một lần có, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn.
 
   > Hypothesis nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?
-- 🎨 Visual hint: COMPARE. Hai card nền trắng cạnh nhau, mỗi card có prompt, đường kẻ rồi kết quả; card lần 2 viền tím; một dòng kết luận bên dưới.
+- 🎨 Visual hint: COMPARE. Hai card nền trắng cùng cấu trúc và cùng chiều cao: nhãn, prompt một dòng, đường kẻ, tiêu đề một dòng, một câu; card lần 2 viền tím.
 ---
 
 ## 7. Hub, Q&A, practice and close
