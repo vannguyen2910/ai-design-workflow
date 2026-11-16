@@ -912,8 +912,8 @@ last_synced: 2026-11-16
 - On-slide:
   - Note F04: “I cancelled my order and still got charged.”
   - Quote AI trích: “still got billed”
-  - Không đạt: khác một chữ
-  - Chương trình so khớp, không nhờ một AI khác duyệt
+  - Chương trình báo: không đạt, khác một chữ
+  - Chương trình so từng quote với note, không nhờ một AI khác duyệt giúp
 - Ví dụ: có (note F04, một chữ bị đổi)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -928,7 +928,7 @@ last_synced: 2026-11-16
   - Phép kiểm chứng minh quote có thật trong note. Nó không chứng minh insight đúng, và không chứng minh note phản ánh đúng transcript.
 
   > Quote nào trong các insight gần nhất AI đưa bạn, bạn chưa từng đối chiếu với nguồn?
-- 🎨 Visual hint: COMPARE. Hai card với mũi tên so khớp; chữ khác nhau được gạch chân tím; một card viền tím “Không đạt” bên dưới.
+- 🎨 Visual hint: COMPARE. Một card nền trắng, ba hàng căn trái: note gốc, quote AI trích, kết quả; chữ khác nhau được gạch chân ink; chỉ tiêu đề có accent tím.
 
 ---
 
