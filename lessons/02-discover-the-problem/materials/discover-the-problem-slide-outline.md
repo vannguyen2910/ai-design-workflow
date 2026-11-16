@@ -938,7 +938,7 @@ last_synced: 2026-11-16
 
 ### COMPARE · Blind and primed
 - Kicker: Blind synthesis
-- Title: Cùng 24 note,\n*hai câu hỏi*
+- Title: Cùng một bộ note,\n*hai câu hỏi*
 - On-slide:
   - Dữ liệu: 24 note mẫu của Delivery App. Câu hỏi: vì sao khách mới không đặt lại sau đơn đầu tiên?
   - Lần 1, chỉ có câu hỏi: giá chỉ là một dòng ghi chú
