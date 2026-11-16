@@ -2,11 +2,11 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 36
+slide_count: 40
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
-last_synced: 2026-10-30
+last_synced: 2026-11-16
 ---
 
 ## Session metadata
@@ -18,6 +18,7 @@ last_synced: 2026-10-30
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
+| Timing note | Bốn slide hub mới (ba lớp, ba quy tắc, một hub một chức năng, ID chung) thêm khoảng 10 phút; cần bớt tương ứng ở phần nghề (T1), hỏi đáp cuối buổi hoặc slide ví dụ trước khi dạy, và Winnie quyết định bớt chỗ nào |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
@@ -555,7 +556,53 @@ last_synced: 2026-10-30
 
 ---
 
-## 5. Project folder and Knowledge Hub (T5)
+## 5. The hub (T5)
+
+---
+
+### DIAGRAM · Three layers
+- Kicker: Ba lớp
+- Title: Ba lớp\n*của hub*
+- On-slide:
+  - Raw sources: thứ bạn thu được, không ai sửa
+  - Wiki: thứ rút ra, AI soạn nháp, bạn kiểm tra
+  - Schema: quy ước làm việc, AI đọc đầu tiên
+- Ví dụ: có (một source note, một insight và file AGENTS.md của project mẫu)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Mỗi cuộc chat AI mới bắt đầu từ trống. Hub là cách để AI không phải bắt đầu lại.
+
+  - Andrej Karpathy mô tả ý này vào tháng 4 năm 2026: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi; lý do ông nêu là người ta bỏ wiki vì công bảo trì, còn AI không ngại cập nhật liên kết
+  - Raw sources: transcript đã ẩn danh, review, tài liệu của team; designer đưa vào, không ai sửa
+  - Wiki: source notes, insight, opportunity, decision; mỗi mục một file Markdown nối với nhau; AI soạn nháp, designer kiểm tra
+  - Schema: một file ngắn cho AI biết đọc gì trước và quy tắc nào cứng; trong khoá là `AGENTS.md`
+  - Hai file giúp tìm đường: index (`README.md`) cho biết hub có gì, log (`project-log.md`) ghi mỗi lần đưa nguồn vào hoặc đổi quyết định
+  - Chỉ vào ba file của project mẫu, một phút
+
+  > Trong project của bạn, thứ nào nên là raw source?
+- 🎨 Visual hint: SCHEMATIC. Ba tầng xếp chồng: raw sources ở dưới (ink), wiki ở giữa (trắng), schema ở trên (purple). Mũi tên "AI đọc" đi từ schema xuống; mũi tên "AI ghi" chỉ vào wiki và không có mũi tên ghi vào raw.
+
+---
+
+### NUMBERED · Three rules
+- Kicker: Ba quy tắc
+- Title: Ba quy tắc\n*giữ hub đáng tin*
+- On-slide:
+  - 01 · AI không bao giờ sửa raw sources
+  - 02 · Mỗi note có một ID
+  - 03 · Quote phải nguyên văn
+- Ví dụ: có (note `I01-03`, và một quote AI viết lại nghe hay hơn quote thật)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Quy tắc 1: nếu bản tóm tắt sai thì vẫn còn nguồn để đối chiếu; nghiên cứu về dùng AI cho UX research cho thấy researcher ít tin kết quả AI vì không truy được về dữ liệu gốc
+  - Quy tắc 2: ID `I01-03` là ghi chú 3 của phỏng vấn 1; một insight chỉ ra được nó dựa vào note nào
+  - Quy tắc 3: người thật nói câu dở dang, còn quote AI viết lại nghe tự nhiên hơn nên khó bắt; buổi 2 dạy cách kiểm điều này bằng chương trình
+  - Ba quy tắc nằm trong `AGENTS.md`; designer viết lại bằng lời của mình ở Practice 1, bước 4
+  - Một bình luận dưới bài của Karpathy báo truy vấn chỉ qua wiki kém hơn khi có tài liệu gốc; số tự báo cáo, chưa kiểm chứng, và đó là lý do quy tắc 1 tồn tại
+
+  > Quy tắc nào bạn dễ vi phạm nhất khi làm việc gấp?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba cột; số purple, một dòng ví dụ nhỏ dưới mỗi cột.
 
 ---
 
@@ -568,15 +615,15 @@ last_synced: 2026-10-30
 - Speaker notes:
   - Folder local nằm trên máy của designer, không phải file design trên server hay tài liệu cloud
   - AI coding tool mở cả folder làm project của nó và đọc mọi thứ bên trong; folder đồng bộ cloud có thể gặp lỗi giữa chừng khi đang ghi
-  - Cây folder: trang chủ `index.html` của hub (bấm đúp là mở bằng trình duyệt), file luật `AGENTS.md` và folder `context/` trước, rồi `work/` (những gì làm ra) và `insights/` (những gì học được, các decision)
+  - Cây folder minh hoạ: trang chủ `index.html` của hub (bấm đúp là mở bằng trình duyệt), file schema `AGENTS.md` và folder `context/` trước, rồi `work/` (những gì làm ra) và `insights/` (những gì học được, các decision)
   - `AGENTS.md` là file tool tự đọc khi mở folder, nên các quy tắc không phụ thuộc vào việc designer nhớ dán lại; skill nằm ở `toolkit/skills/` (gốc workspace, dùng chung cho mọi project) và ghi rõ mỗi bước ai làm, đọc file nào, ghi vào đâu
-  - Dữ liệu gốc nằm trong `_raw-private/`, không lên GitHub; AI chỉ đọc bản đã ẩn danh trong `anonymised/`. Ghi chú riêng nằm trong `_personal/`, ngoài context pack
+  - Dữ liệu gốc nằm trong `_raw-private/`, không lên GitHub; AI chỉ đọc bản đã ẩn danh trong `anonymised/`
   - Mỗi folder một vai: `context/` là thứ đưa vào đầu tiên ở mọi bước, `work/` là những gì làm ra, `insights/` là những gì học được và các decision
-  - Layout khác vẫn ổn cho project riêng của designer; ở đây dùng layout này
+  - Đây là một ví dụ; designer tự sắp xếp folder, miễn mỗi lớp của hub có chỗ riêng và `AGENTS.md` ghi rõ chỗ đó
   - Hai loại file, trong một hơi: Markdown (`.md`) là plain text designer làm việc trong đó và AI tool xử lý ổn định, hub cũng là Markdown và xem được trên GitHub hoặc VS Code; HTML chỉ còn ở prototype
   - Hai phút cho slide này; chỉ chỉ ra bốn chỗ: `AGENTS.md`, `context/`, `work/` và `insights/`; phần còn lại là Practice 1 ở nhà
   - Buổi này không dựng folder trên lớp; mọi người dựng ở nhà trong Practice 1
-- 🎨 Visual hint: SCHEMATIC. Một cây folder gọn, `AGENTS.md` và folder context được tô purple, folder hub màu ink; `_raw-private` và `_personal` có biểu tượng khoá.
+- 🎨 Visual hint: SCHEMATIC. Một cây folder gọn, `AGENTS.md` và folder context được tô purple, folder hub màu ink; `_raw-private` có biểu tượng khoá.
 
 ---
 
@@ -609,7 +656,53 @@ last_synced: 2026-10-30
 
 ---
 
-## 6. Data safety (T6) and Activity
+## 6. One hub or many (T6)
+
+---
+
+### DIAGRAM · One hub per function
+- Kicker: Nhiều hub
+- Title: Một chức năng,\n*một hub*
+- On-slide: Business, technical và design mỗi bên giữ một hub. AI nối ba hub bằng ID chung.
+- Ví dụ: bản nháp (mục tiêu business, opportunity, decision và ràng buộc kỹ thuật của app giao đồ ăn)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Một số công ty lớn đang thử hướng này. Đây là pattern, chưa phải chuẩn.
+
+  - Mỗi chức năng sở hữu một loại dữ liệu và có người chịu trách nhiệm: business giữ mục tiêu và metric, technical giữ ràng buộc và kiến trúc, design giữ insight và decision
+  - Gộp hết vào một hub thì không ai là chủ của từng phần; cùng nguyên tắc với data mesh: mỗi miền tự chủ, chỉ một bộ chuẩn chung rất nhỏ
+  - AI là lớp nối: lấy dữ liệu liên quan và đối chiếu giữa ba hub
+  - Phần này là lý thuyết, không có bài tập; hub của designer là một trong ba nhánh
+
+  > Ở chỗ bạn làm, ai đang giữ mục tiêu business và ai giữ ràng buộc kỹ thuật?
+- 🎨 Visual hint: SCHEMATIC. Ba hub ba màu nhạt xếp ngang, một đường mảnh nối ba hub ở giữa, nhãn "ID chung".
+
+---
+
+### PROCESS · The shared ID thread
+- Kicker: Sợi dây nối
+- Title: ID chung\n*nối các hub*
+- On-slide:
+  - 01 · Mục tiêu business có ID
+  - 02 · Opportunity trỏ về mục tiêu
+  - 03 · Decision trỏ về opportunity
+  - 04 · Ràng buộc kỹ thuật và test trỏ về decision
+- Ví dụ: bản nháp (chuỗi cho quyết định hiện giờ chốt trước khi thanh toán của app giao đồ ăn)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Mỗi mục mang ID và nêu ID của mục nó dựa vào, nên AI đi được từ test ngược về mục tiêu business qua cả ba hub
+  - Hub của designer đã dùng ý này ở quy mô nhỏ: source ID như `I01-03`, insight ID như `IN-01`
+  - Ba quy tắc cho ID: không đổi, không dùng lại, mỗi chức năng một tiền tố để không trùng; BIZ, DES, TEC chỉ là tiền tố minh hoạ, không phải chuẩn
+  - Các hub cần thêm một bộ field chung rất nhỏ như owner, status, version
+  - Hai rủi ro: hai hub cùng ID nhưng khác cấu trúc thì phép nối sai mà không báo lỗi; và AI nối nhanh nhưng designer vẫn mở cả hai nguồn để kiểm tra
+
+  > Mục nào trong project của bạn nên có ID trước?
+- 🎨 Visual hint: SCHEMATIC. Process track bốn bước nối ngang qua ba hub; bước hai và ba trong hub design được tô purple.
+
+---
+
+## 7. Data safety (T7) and Activity
 
 ---
 
@@ -696,7 +789,7 @@ last_synced: 2026-10-30
 
 ---
 
-## 7. Questions and close
+## 8. Questions and close
 
 ---
 
@@ -961,7 +1054,7 @@ last_synced: 2026-10-30
   - 01 · Tạo repo trống và project folder của riêng bạn
   - 02 · Viết data rules
   - 03 · Viết product context
-  - 04 · Để AI soạn README cho folder, designer kiểm tra
+  - 04 · Để AI soạn README và AGENTS.md, designer kiểm tra
   - 05 · Chạy một instruction với một file đã lưu
   - 06 · Tuỳ chọn: push lên Git, bật trang live
 - Speaker notes:
@@ -969,7 +1062,7 @@ last_synced: 2026-10-30
   - 01: tạo repo trống trên GitHub, clone về, mở trong AI coding tool; designer tự chọn cách tổ chức folder
   - 02: ba dòng bằng lời của designer, viết trước khi đưa bất kỳ thứ gì cho AI
   - 03: nửa trang về sản phẩm, người dùng và job chính, đã ẩn danh; gửi cây folder và file này cho giảng viên để nhận feedback sớm
-  - 04: AI đọc folder rồi viết `README.md`; designer kiểm tra từng dòng và giữ chữ "unknown" ở chỗ chưa biết
+  - 04: AI đọc folder rồi viết `README.md` và `AGENTS.md` ngắn; designer kiểm tra từng dòng, giữ chữ "unknown" ở chỗ chưa biết, và viết lại ba quy tắc của hub bằng lời của mình
   - 05: đính kèm file product, hỏi còn thiếu gì, đối chiếu với một câu hỏi mơ hồ, rồi đọc câu trả lời có phản biện
   - 06: tuỳ chọn, chỉ cho ai muốn chia sẻ hub; gói miễn phí chỉ bật trang live cho repo Public, nên chỉ làm khi folder chỉ có dữ liệu giả; output chính không phụ thuộc vào bước này
   - Instruction của bước năm nằm ở slide kế tiếp
