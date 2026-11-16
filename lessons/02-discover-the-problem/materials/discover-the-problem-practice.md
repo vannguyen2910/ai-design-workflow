@@ -1,6 +1,6 @@
 ---
 title: "Discover Your Project"
-summary: "Chuỗi việc ở nhà: principles, scope, assumption và research question, rồi chuẩn bị và phỏng vấn user thật."
+summary: "Chuỗi việc ở nhà: principles, scope, assumption và research question, chuẩn bị và phỏng vấn user thật, rồi đưa transcript vào hub thành source notes đã kiểm quote."
 type: practice
 program: ai-design-workflow
 lesson: discover-the-problem
@@ -9,7 +9,7 @@ draft: true
 
 ## Goal
 
-Đưa project của khoá đi qua stage Discover, đến trước bước synthesis. Cuối bài bạn có bộ principles, scope, ba assumption hàng đầu, các research question, và transcript đã ẩn danh của ít nhất hai buổi phỏng vấn người thật. Từ Lesson 3, bạn rút insight từ chính các transcript này.
+Đưa project của khoá đi qua stage Discover, đến trước bước synthesis. Cuối bài bạn có bộ principles, scope, ba assumption hàng đầu, các research question, transcript đã ẩn danh của ít nhất hai buổi phỏng vấn người thật, và source notes có ID với quote đã kiểm bằng chương trình. Từ Lesson 3, bạn rút insight từ chính các source notes này.
 
 Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết định đặt chúng ở đâu và đặt tên thế nào trong folder của mình.
 
@@ -89,7 +89,24 @@ Script là lưới an toàn, không phải khuôn.
 - Lưu bản gốc có tên thật ở ngoài chỗ AI đọc.
 - Trước khi đưa dữ liệu cho AI, trả lời bốn câu: người tham gia đã đồng ý gì, gồm cả việc dùng AI không; công cụ có huấn luyện trên dữ liệu bạn tải lên không và lưu bao lâu; đã ẩn danh trên máy chưa; bản gốc có nằm ngoài chỗ AI đọc không.
 - **Ẩn danh trên máy** bằng find and replace: tên thành P1, P2; bỏ số điện thoại, email, địa chỉ. Không nhờ AI ẩn danh sau khi đã dán, vì khi đó dữ liệu đã bị gửi đi.
-- Lưu bản đã ẩn danh. Đây là input cho Lesson 3.
+- Lưu bản đã ẩn danh. Đây là input cho Step 9.
+
+## Phần C · Ingest vào hub
+
+### Step 9 · Ingest: transcript thành source notes · AI soạn nháp, bạn kiểm tra
+
+1. **Cắt.** Cắt mỗi transcript đã ẩn danh thành source notes: mỗi note một ý, giữ nguyên lời người nói, mỗi note một ID dạng `I01-03` (phỏng vấn 01, note 03). Lưu mỗi note một dòng, dạng `ID | text`. Định dạng này cố định để chương trình đọc được; chỗ lưu file do bạn chọn. Không sửa transcript đã ẩn danh.
+2. **Trích.** Đưa AI chat tool các note đã ẩn danh và dùng instruction sau. Đây chỉ để có thứ để kiểm; tổng hợp đầy đủ nằm ở Lesson 3.
+
+   > Chỉ dùng các ghi chú dưới đây. Đề xuất tối đa ba insight. Với mỗi insight, trả về một dòng có dạng `insight | note ID | một quote nguyên văn từ note đó`. Không diễn giải lại quote. Nếu không có quote phù hợp, ghi "unknown".
+
+   Lưu kết quả thành file citations, mỗi insight một dòng.
+3. **Kiểm.** Đưa AI coding tool instruction trong [check-quotes-instruction.md](../../../assets/starter-files/course-case/check-quotes-instruction.md), kèm đường dẫn tới file source notes và file citations. Script in ra từng dòng đạt hay không đạt.
+4. **Sửa.** Với mỗi dòng không đạt: mở note được trích, so với quote, rồi sửa quote cho đúng hoặc hỏi lại AI chat tool kèm danh sách dòng không đạt. Chạy lại cho tới khi không còn dòng không đạt. Sau đó đọc lại đoạn gốc trong transcript của insight bạn thấy quan trọng nhất, vì phép kiểm chỉ cho biết quote có thật trong note, không cho biết insight đúng hay không.
+
+- Đưa source notes và kết quả kiểm lên hub, ở chỗ bạn và AI tìm lại được.
+- Chưa phỏng vấn được 2 người: dùng các note phỏng vấn mẫu (I01-01 đến I02-03) trong [bộ source notes mẫu](../../../assets/starter-files/course-case/source-notes.md), và ghi rõ trong hub đây là dữ liệu mẫu.
+- Lesson 3 có một bước chạy blind synthesis trên chính các note này, nên giữ file source notes gọn và có ID.
 
 ## Output
 
@@ -99,20 +116,23 @@ Script là lưới an toàn, không phải khuôn.
 - Research question
 - Research plan và script
 - Transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn
+- Source notes có ID (`ID | text`) và kết quả kiểm quote không còn dòng không đạt
 
 ## Self-check
 
 - [ ] Mỗi principle riêng có dòng "điều này không có nghĩa là…" và một quyết định nó đảo ngược.
 - [ ] Project có một business question tách khỏi giải pháp.
-- [ ] Mọi dòng AI soạn ở Step 3, 4 và 6 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
+- [ ] Mọi dòng AI soạn ở Step 3, 4, 6 và 9 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
 - [ ] Mỗi research question gắn với một assumption và một quyết định.
 - [ ] Bản gốc chưa ẩn danh không nằm ở chỗ AI đọc.
+- [ ] Lần kiểm quote cuối không còn dòng không đạt.
+- [ ] Bạn đã đọc lại đoạn gốc trong transcript của ít nhất một insight.
 
 Xong thì mang các output này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
 
 ## If you get stuck
 
 - **Không gặp được business:** ghi mọi outcome và metric là "assumed", kèm người cần xác nhận. Đừng nhờ AI đóng vai PO.
-- **Chưa hẹn được người phỏng vấn đúng nhóm:** nhờ người quen có thói quen liên quan đến project, và ghi rõ đây là giới hạn của mẫu. Chưa có ghi chú phỏng vấn thì làm Step 1 đến 6 trước.
+- **Chưa hẹn được người phỏng vấn đúng nhóm:** nhờ người quen có thói quen liên quan đến project, và ghi rõ đây là giới hạn của mẫu. Chưa có ghi chú phỏng vấn thì làm Step 1 đến 6 trước, và dùng note mẫu cho Step 9.
 - **AI đưa điều nghe hợp lý nhưng không có trong tài liệu:** ghi "chưa có nguồn", không đưa vào như một sự thật.
 - **Không làm hết được:** làm Step 1 đến 4 trước và hẹn người phỏng vấn sớm, vì lịch hẹn là phần khó kiểm soát nhất.
