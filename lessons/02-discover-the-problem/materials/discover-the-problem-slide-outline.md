@@ -383,28 +383,28 @@ last_synced: 2026-11-16
 
 ---
 
-### PROCESS · Move 1: brief to problem
-- Kicker: AI move
-- Title: Move 1: brief thành\n*vấn đề*
+### COMPARE · Move 1: brief to problem
+- Kicker: AI move 1
+- Title: Brief thành\n*vấn đề*
 - On-slide:
-  - 01 · AI phân loại từng dòng brief
-  - 02 · AI viết dòng giải pháp thành câu vấn đề
-  - 03 · AI nêu giả định ngầm
-  - 04 · Bạn kiểm tra bản nào đổi nghĩa
+  - Brief viết: “Thêm onboarding bốn bước”
+  - AI viết lại thành vấn đề: “Khách mới chưa hiểu app hoạt động thế nào”
+  - Giả định ngầm: khách rời đi vì không hiểu app, chứ không phải vì giá
+  - Bạn đọc từng bản viết lại xem nghĩa có bị đổi không
 - Ví dụ: có (brief mẫu của Delivery App, dòng B03 và B09)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần method đã nói brief thường là một giải pháp. Slide này cho AI làm phần việc tách đó.
-  - Đưa AI từng dòng brief có ID. Bốn việc:
-    - AI phân loại mỗi dòng: mục tiêu, vấn đề, giải pháp, assumption hay ràng buộc.
-    - AI viết mỗi dòng giải pháp thành một câu vấn đề không nhắc giải pháp. "Thêm onboarding bốn bước" thành "khách mới chưa hiểu app hoạt động thế nào".
-    - AI nêu điều giải pháp đang ngầm giả định: nguyên nhân là "không hiểu app", không phải giá.
-    - Bạn kiểm tra bản viết lại có đổi nghĩa không, rồi viết scope theo câu vấn đề.
-  - Trên brief mẫu, AI còn tách được dòng gộp hai ý (B09), chỉ ra B02 và B07 nói ngược nhau về giá, và nhận ra cả hai giải pháp không đụng vào nguyên nhân brief nêu, vì giá bị khoá.
-  - Đây là cách làm của khoá, thử trên một brief mẫu có chủ ý chứa mâu thuẫn. Brief thật ít rõ như vậy.
+  - Phần method đã nói brief thường là một giải pháp đội lốt vấn đề. Slide này nhờ AI tách chúng ra.
+  - Bạn đưa AI từng dòng brief, mỗi dòng có ID. Bốn việc:
+    - AI xếp mỗi dòng vào một loại: mục tiêu, vấn đề, giải pháp, assumption hoặc ràng buộc
+    - AI viết lại dòng giải pháp thành câu vấn đề, không nhắc đến giải pháp. “Thêm onboarding bốn bước” thành “khách mới chưa hiểu app hoạt động thế nào”
+    - AI chỉ ra điều giải pháp đang ngầm tin. Ở đây là khách rời đi vì không hiểu app, chứ không phải vì giá
+    - Bạn đọc từng bản viết lại, xem nghĩa có bị đổi không, rồi viết scope theo câu vấn đề
+  - Trên brief mẫu, AI còn làm được ba việc: tách một dòng đang gộp hai ý, chỉ ra hai dòng nói ngược nhau về giá, và nhận ra cả hai giải pháp đều không đụng đến nguyên nhân brief nêu, vì giá đang bị khoá.
+  - Đây là cách làm của khoá, thử trên một brief mẫu có chủ ý chứa mâu thuẫn. Brief thật thường ít rõ ràng hơn.
 
-  > Dòng nào trong brief của bạn là giải pháp mặc áo vấn đề?
-- 🎨 Visual hint: SCHEMATIC. Process track bốn bước; bước ba (giả định ngầm) tô purple.
+  > Dòng nào trong brief của bạn là giải pháp đội lốt vấn đề?
+- 🎨 Visual hint: COMPARE. Hai card trước và sau với mũi tên ở giữa; card sau nền ink; một dải giả định ngầm bên dưới.
 
 ---
 
@@ -495,24 +495,27 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 2: challenge the scope
-- Kicker: AI move
-- Title: Move 2: phản biện\n*scope*
+### NUMBERED · Move 2: challenge the scope
+- Kicker: AI move 2
+- Title: Phản biện\n*scope*
 - On-slide:
-  - Không làm: đóng vai PO, trả lời thay business
-  - Làm: năm cách scope có thể sai, ai phản đối, dấu hiệu sớm
-  - Làm: một câu hỏi cho người thật, một cách metric bị lách
-  - Bạn chọn câu đáng hỏi
+  - 01 · “Khách mới” chưa có định nghĩa
+  - 02 · Scope còn pending mà đã chốt việc sáu tuần
+  - 03 · Guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy
+  - Mỗi dòng kèm một câu hỏi cho người thật
 - Ví dụ: có (scope mẫu của Delivery App)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói AI chuẩn bị, người trả lời. Slide này là phiên bản mạnh của việc chuẩn bị: nhờ AI tìm chỗ scope yếu.
-  - Đưa AI bản scope nháp, nhờ nó đóng vai người phản biện, không đóng vai PO. Với mỗi cách scope có thể sai: ai sẽ phản đối, dấu hiệu sớm, một câu hỏi cho người thật.
-  - Trên scope mẫu, AI chỉ ra "khách mới" chưa được định nghĩa, scope còn pending mà đã chốt việc sáu tuần, và guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy.
-  - Đây là danh sách giả thuyết để hỏi người thật. AI không biết "khách mới" của công ty bạn nghĩa là gì. Bạn chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
+  - Move 1 giúp bạn viết scope theo vấn đề. Move 2 hỏi ngược lại: scope này có thể sai ở đâu?
+  - Bạn đưa AI bản scope nháp và nhờ nó đóng vai người phản biện, không đóng vai PO. Với mỗi chỗ scope có thể sai, AI nêu ai sẽ phản đối, dấu hiệu sớm, và một câu hỏi cho người thật.
+  - Trên scope mẫu, AI chỉ ra ba chỗ:
+    - “Khách mới” chưa có định nghĩa
+    - Scope còn pending mà đã chốt việc sáu tuần
+    - Guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy
+  - Đây là danh sách giả thuyết để đem đi hỏi, chưa phải sự thật về business. AI không biết “khách mới” ở công ty bạn nghĩa là gì. Bạn chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
 
-  > Câu hỏi nào trong scope của bạn mà người phản đối chắc chắn sẽ hỏi trước?
-- 🎨 Visual hint: COMPARE. Hai card: "AI không làm" (đóng vai PO) và "AI làm" (phản biện); card sau tô purple.
+  > Câu hỏi nào về scope của bạn mà người phản đối chắc chắn sẽ hỏi trước?
+- 🎨 Visual hint: NUMBERED. Ba hàng ngang: số vàng trên nền ink, chỗ scope dễ sai, câu hỏi cho người thật trên nền tím nhạt.
 
 ---
 
@@ -541,53 +544,52 @@ last_synced: 2026-11-16
 
 ---
 
-### PROCESS · Move 3: mine assumptions
-- Kicker: AI move
-- Title: Move 3: đào *assumption*\ntừ tài liệu
+### DIAGRAM · Move 3: mine assumptions
+- Kicker: AI move 3
+- Title: Đào assumption\n*từ tài liệu*
 - On-slide:
-  - 01 · Đưa AI brief, PRD, research cũ có ID
-  - 02 · AI trả: assumption, line ID, quote nguyên văn
-  - 03 · Chương trình kiểm quote
-  - 04 · Bạn lọc và xếp lên ma trận
-- Ví dụ: có (brief mẫu: 18 dòng, 17 đạt)
+  - Bảng ba dòng: assumption, line ID, quote nguyên văn
+  - Dòng thứ ba không đạt: quote chỉ nằm trong B06
+  - 17/18 dòng đạt, dòng hỏng bị chương trình bắt được
+- Ví dụ: có (brief mẫu: 18 dòng, 17 dòng đạt)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói AI phản biện scope. Slide này đào giả định từ chính tài liệu.
-  - Giả định nguy hiểm nhất thường nằm sau câu về giải pháp: "onboarding sẽ giữ chân khách" ngầm nói khách rời đi vì không hiểu app.
+  - Move 2 cho bạn bản scope. Move 3 tìm xem brief còn đang tin điều gì mà chưa nói ra.
+  - Giả định nguy hiểm nhất thường nằm sau câu về giải pháp. “Onboarding sẽ giữ chân khách” ngầm nói rằng khách rời đi vì không hiểu app.
   - Bốn bước:
-    - Đưa AI brief, PRD hoặc research cũ, mỗi dòng có ID.
-    - AI trả mỗi assumption một dòng: assumption, line ID, quote chép nguyên văn. Đây là định dạng citation của phần Ingest.
-    - Chạy phép kiểm quote. Trên brief mẫu, 17 trong 18 dòng đạt; dòng hỏng là một assumption trích hai dòng nhưng quote chỉ có ở một.
-    - Bạn bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
-  - Chương trình chỉ chứng minh quote có thật. Mức quan trọng là việc của bạn.
+    - Đưa AI brief, PRD hoặc research cũ, mỗi dòng có ID
+    - AI trả mỗi assumption một dòng gồm assumption, line ID và quote chép nguyên văn. Đây là định dạng citation của phần Ingest
+    - Chạy phép kiểm quote bằng chương trình. Trên brief mẫu có 17 trong 18 dòng đạt. Dòng hỏng trích hai dòng brief, nhưng quote chỉ nằm ở một dòng
+    - Bạn bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận
+  - Chương trình chỉ chứng minh quote có thật. Mức quan trọng của từng assumption vẫn do bạn quyết.
 
-  > Tài liệu nào của project bạn chưa từng bị đọc tìm giả định?
-- 🎨 Visual hint: SCHEMATIC. Process track bốn bước; bước ba (kiểm quote) tô purple.
+  > Tài liệu nào trong project của bạn chưa từng được đọc để tìm giả định?
+- 🎨 Visual hint: DIAGRAM. Một panel ink kiểu terminal với ba dòng, dòng hỏng viền vàng; số 17/18 lớn màu tím bên dưới.
 
 ---
 
 ### COMPARE · Move 4: audit the evidence
-- Kicker: AI move
-- Title: Move 4: kiểm evidence\ntrong *hub*
+- Kicker: AI move 4
+- Title: Kiểm evidence\n*trong hub*
 - On-slide:
-  - A4 khung giờ giao: 4 ghi chú ủng hộ, mạnh
-  - A1 giá: 1 ủng hộ, 1 đi ngược, yếu
-  - A3 nhắc sau 7 ngày: chưa có nguồn
-  - Bạn đọc từng ghi chú trước khi tính
+  - Khung giờ giao: R01, R02, F01, F02 ủng hộ, evidence mạnh
+  - Giá là lý do chính: F07 ủng hộ, R06 đi ngược, evidence yếu
+  - Nhắc đặt lại sau 7 ngày: chưa có nguồn
+  - Không có nguồn thì ghi “chưa có nguồn”
 - Ví dụ: có (assumption mẫu và 18 ghi chú R và F)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước ra danh sách assumption. Slide này hỏi: hub đã có gì để ủng hộ hay bác từng cái.
-  - Với mỗi assumption, AI tìm ghi chú ủng hộ và ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn. Không có thì ghi đúng cụm "chưa có nguồn".
-  - Kết quả trên bộ mẫu:
-  - - Khung giờ giao: bốn ghi chú ủng hộ, mạnh
-  - - Giá là lý do chính: F07 ủng hộ, R06 đi ngược, yếu
-  - - Nhắc sau 7 ngày: chưa có nguồn
-  - Đây là cột Evidence của ma trận, có ID thay cho cảm giác. Hub trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: việc cần làm là phỏng vấn.
-  - Giới hạn: quote có thật chưa chắc ủng hộ đúng assumption (AI xếp F01 vào hai assumption khác nhau), và ghi chú không đánh dấu khách mới hay cũ. Bạn đọc từng ghi chú trước khi tính.
+  - Move 3 ra danh sách assumption. Move 4 hỏi: trong hub đã có gì để ủng hộ hoặc bác từng cái?
+  - Với mỗi assumption, AI tìm ghi chú ủng hộ và ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn. Không tìm thấy thì ghi đúng cụm “chưa có nguồn”.
+  - Kết quả trên 18 ghi chú mẫu (review và diễn đàn):
+    - Khung giờ giao: bốn ghi chú ủng hộ, evidence mạnh
+    - Giá là lý do chính: F07 ủng hộ, R06 đi ngược, evidence yếu
+    - Nhắc đặt lại sau 7 ngày: chưa có nguồn
+  - Đây chính là cột Evidence của ma trận ở slide sau, có ID thay cho cảm giác. Hub còn trống thì mọi dòng đều là “chưa có nguồn”. Kết quả đó đúng, và nó cho biết việc cần làm là đi phỏng vấn.
+  - Giới hạn: quote có thật chưa chắc ủng hộ đúng assumption. AI từng xếp cùng một ghi chú vào hai assumption khác nhau. Ghi chú cũng không đánh dấu khách mới hay khách cũ. Bạn đọc từng ghi chú trước khi tính.
 
-  > Assumption nào của bạn sẽ ra "chưa có nguồn"?
-- 🎨 Visual hint: COMPARE. Bảng ba hàng: assumption, ủng hộ, đi ngược; hàng "chưa có nguồn" tô purple.
+  > Assumption nào của bạn sẽ ra “chưa có nguồn”?
+- 🎨 Visual hint: COMPARE. Bảng bốn cột; cột Evidence là chip: mạnh tím đậm, yếu tím nhạt, chưa có vàng.
 
 ---
 
@@ -861,49 +863,48 @@ last_synced: 2026-11-16
 - Kicker: Ingest
 - Title: Từ transcript\n*đến source notes*
 - On-slide:
-  - Transcript đã ẩn danh: không sửa
-  - Source notes: một ý, một ID, một dòng
-  - Dạng `ID | text`, ví dụ `I01-03`
-- Ví dụ: có (hai note của app giao đồ ăn: R03 và I01-01)
+  - Transcript đã ẩn danh: nguồn gốc, không ai sửa
+  - Source notes: R03, F04, I01-01 dạng ID | text
+  - Mỗi note một ý, một ID, một dòng, giữ nguyên lời người nói
+- Ví dụ: có (ba note từ bộ mẫu Delivery App)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói phần này làm gì. Slide này trả lời: ingest một transcript trông như thế nào.
-  - Ingest là đưa một nguồn vào hub thành dạng AI dùng được và bạn kiểm tra được.
-  - Ba việc, theo thứ tự trên slide:
-    - Transcript đã ẩn danh là raw source: bạn không sửa nó.
-    - Bạn cắt nó thành source notes: mỗi note một ý, giữ nguyên lời người nói, mỗi note một ID.
-    - Mỗi note một dòng, dạng `ID | text`. Định dạng này cố định để chương trình đọc được; folder bạn sắp xếp tuỳ ý.
-  - Ví dụ: `I01-03` là ghi chú 3 của phỏng vấn 1. Bộ mẫu của app giao đồ ăn có 24 note: R01 đến R10 là review, F01 đến F08 là bài trên forum, I01-01 đến I02-03 là trích từ hai buổi phỏng vấn.
+  - Slide trước nói phần này làm gì. Slide này cho thấy ingest một transcript trông như thế nào.
+  - Ingest là đưa một nguồn vào hub, thành dạng AI dùng được và bạn kiểm tra được. Ba việc theo thứ tự trên slide:
+    - Transcript đã ẩn danh là nguồn gốc (raw source), bạn không sửa nó
+    - Bạn cắt nó thành source notes: mỗi note một ý, một ID, giữ nguyên lời người nói
+    - Mỗi note một dòng, dạng ID | text. Định dạng này cố định để chương trình đọc được, còn folder bạn sắp xếp thế nào cũng được
+  - Ví dụ: I01-03 là note thứ 3 của buổi phỏng vấn 1. Ba note trên slide lấy từ bộ mẫu Delivery App. Bộ mẫu có 24 note: R01 đến R10 là review, F01 đến F08 là bài trên forum, I01-01 đến I02-03 là trích từ hai buổi phỏng vấn.
   - Chưa phỏng vấn được hai người thì dùng các note phỏng vấn mẫu, và ghi rõ trong hub đó là dữ liệu mẫu.
 
-  > Transcript đầu tiên của bạn, câu nào bạn sẽ cắt thành note I01-01?
-- 🎨 Visual hint: SCHEMATIC. Bên trái một khối transcript, mũi tên sang bên phải là ba dòng note có ID in purple.
+  > Câu nào trong transcript đầu tiên của bạn sẽ thành note I01-01?
+- 🎨 Visual hint: DIAGRAM. Hai card: transcript bên trái, source notes nền ink bên phải với ba dòng mono.
 
 ---
 
-### PROCESS · The machine check
+### COMPARE · The machine check
 - Kicker: Kiểm quote
 - Title: Kiểm quote\n*bằng chương trình*
 - On-slide:
-  - 01 · AI trả về: insight, note ID, một quote nguyên văn
-  - 02 · AI coding tool viết script so khớp
-  - 03 · Script báo từng dòng đạt hay không đạt
-  - 04 · Bạn sửa dòng không đạt, rồi đọc lại đoạn gốc
-- Ví dụ: có (một dòng bị đổi một chữ: "got charged" thành "got billed" ở note F04)
+  - Note F04: “I cancelled my order and still got charged.”
+  - Quote AI trích: “still got billed”
+  - Không đạt: khác một chữ
+  - Chương trình so khớp, không nhờ một AI khác duyệt
+- Ví dụ: có (note F04, một chữ bị đổi)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước cắt transcript thành note. Slide này trả lời: làm sao biết quote AI trích là thật.
+  - Slide trước cắt transcript thành note. Slide này trả lời: làm sao biết quote AI trích là thật?
   - Bốn bước:
-    - AI chat tool trả về mỗi insight thành một dòng: insight, note ID, một quote nguyên văn.
-    - AI coding tool viết một script nhỏ: với mỗi dòng, kiểm quote có nằm trong note được trích không. Script bỏ qua khác biệt khoảng trắng, chữ hoa chữ thường và kiểu dấu ngoặc, nhưng không bỏ qua khác biệt về chữ.
-    - Script in từng dòng đạt hay không đạt, kèm lý do ngắn.
-    - Bạn sửa dòng không đạt, rồi đọc lại đoạn gốc cho insight quan trọng nhất.
-  - Đây là phép so khớp chuỗi do chương trình làm, không phải một AI khác đánh giá. Lý do là suy luận của chương trình: một AI duyệt giúp có thể bỏ qua quote bịa theo cùng cách AI đầu đã bịa ra nó.
-  - Chương trình đã thử trên 24 note mẫu và bốn dòng citations: dòng đổi một chữ báo không đạt, dòng chỉ khác khoảng trắng thì đạt.
+    - AI chat tool trả mỗi insight thành một dòng gồm insight, note ID và một quote chép nguyên văn
+    - AI coding tool viết một script nhỏ, so từng quote với note được trích. Script bỏ qua khác biệt khoảng trắng, chữ hoa chữ thường và kiểu dấu ngoặc, nhưng không bỏ qua khác biệt về chữ
+    - Script báo từng dòng đạt hay không đạt, kèm lý do ngắn
+    - Bạn sửa dòng hỏng, rồi đọc lại đoạn gốc của insight quan trọng nhất
+  - Việc so khớp do chương trình làm, không nhờ một AI khác duyệt. Lý do: một AI duyệt giúp có thể bỏ qua quote bịa theo đúng cách AI đầu đã bịa ra nó.
+  - Ví dụ trên slide: note F04 ghi “still got charged”. Quote “still got billed” khác một chữ nên báo không đạt. Chương trình đã thử trên 24 note mẫu và bốn dòng citations: dòng đổi một chữ báo không đạt, dòng chỉ khác khoảng trắng vẫn đạt.
   - Phép kiểm chứng minh quote có thật trong note. Nó không chứng minh insight đúng, và không chứng minh note phản ánh đúng transcript.
 
   > Quote nào trong các insight gần nhất AI đưa bạn, bạn chưa từng đối chiếu với nguồn?
-- 🎨 Visual hint: SCHEMATIC. Process track bốn bước; bước ba (kết quả đạt hoặc không đạt) được tô purple.
+- 🎨 Visual hint: COMPARE. Hai card với mũi tên so khớp; chữ khác nhau được tô; một dải ink “Không đạt” bên dưới.
 
 ---
 
@@ -911,24 +912,24 @@ last_synced: 2026-11-16
 - Kicker: Blind synthesis
 - Title: Cùng 24 note,\n*hai câu hỏi*
 - On-slide:
-  - Lần 1, không hypothesis: giá chỉ là một dòng "Lưu ý" ở cuối
-  - Lần 2, có hypothesis "giá là lý do chính": câu đầu tiên là về giá, và vẫn kết luận giá không phải lý do chính
-  - AI không đồng ý với hypothesis, nhưng hypothesis đổi thứ AI nói trước
-- Ví dụ: có (hai kết quả đã lưu, trong `blind-synthesis.md`)
+  - Lần 1, không hypothesis: giá chỉ nằm ở cuối
+  - Lần 2, “giá là lý do chính”: giá được nói đầu tiên
+  - Hypothesis làm AI nói giá trước, nhưng không đảo kết luận
+- Ví dụ: có (bộ 24 note, hai lần chạy)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước kiểm quote. Slide này trả lời: một hypothesis trong prompt đổi gì ở câu trả lời của AI.
-  - Hai lần hỏi, hai phiên riêng, cùng 24 note, cùng câu hỏi. Lần 2 chỉ thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi."
+  - Slide trước kiểm quote. Slide này trả lời: một hypothesis trong prompt làm câu trả lời của AI đổi thế nào?
+  - Mình hỏi hai lần, ở hai phiên riêng, cùng 24 note và cùng một câu hỏi. Lần 2 chỉ thêm câu đầu: “Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi.”
   - Bộ mẫu có sẵn hypothesis này: chỉ R06 và F07 nhắc đến giá, còn I02-03 nói thời gian chờ làm khách phiền hơn giá.
-  - Kết quả đã lưu, đọc theo hai cột:
-    - Lần 1: bốn lý do chính là khung giờ bị chốt, huỷ đơn khó tìm, thời gian giao quá lạc quan, đơn đầu thiếu phản hồi. Giá chỉ là một dòng ở phần "Lưu ý".
-    - Lần 2: cùng bốn lý do, nhưng câu đầu tiên của câu trả lời là về giá, và có một đoạn riêng về giá ở cuối, nhắc thêm I02-03.
-  - Điều này cho thấy: hypothesis không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ.
-  - Điều này không cho thấy: AI đồng ý với hypothesis. Chương trình cũng thử hai prompt mạnh hơn ("tóm tắt các bằng chứng trong ghi chú cho thấy điều đó", "soạn ba điểm mạnh nhất từ các ghi chú để ủng hộ đề xuất" giảm phí giao); cả hai lần AI đều nói các note không đủ ủng hộ. Đó là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ.
-  - Vì vậy mang về phương pháp, không mang về kết luận: chạy lần đầu không hypothesis, chạy lần hai có hypothesis, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn.
+  - Kết quả đã lưu trong blind-synthesis.md:
+    - Lần 1: bốn lý do chính là khung giờ bị chốt, hủy đơn khó tìm, thời gian giao quá lạc quan và đơn đầu thiếu phản hồi. Giá chỉ là một dòng ở phần “Lưu ý”
+    - Lần 2: vẫn bốn lý do đó, nhưng câu đầu tiên là về giá, và cuối bài có thêm một đoạn riêng về giá, nhắc cả I02-03
+  - Hypothesis không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ.
+  - Kết quả này không cho thấy AI đồng ý với hypothesis. Mình cũng thử hai prompt mạnh hơn: một prompt đòi tóm tắt bằng chứng ủng hộ, một prompt đòi soạn ba điểm mạnh nhất cho đề xuất giảm phí giao. Cả hai lần AI đều nói các note không đủ ủng hộ. Đó là hành vi của một mô hình, ở một thời điểm, trên bộ dữ liệu nhỏ có sẵn mâu thuẫn rõ.
+  - Vì vậy hãy mang về cách làm, không mang về kết luận: chạy một lần không có hypothesis, một lần có, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn.
 
   > Hypothesis nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng; dòng về giá được tô purple ở cả hai cột.
+- 🎨 Visual hint: COMPARE. Hai card cạnh nhau, card lần 2 nền ink; một dòng kết luận bên dưới.
 
 ---
 
