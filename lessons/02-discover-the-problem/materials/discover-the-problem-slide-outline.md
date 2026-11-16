@@ -916,9 +916,10 @@ last_synced: 2026-11-16
 - Title: Kiểm quote\n*bằng chương trình*
 - On-slide:
   - Ví dụ từ bộ mẫu Delivery App: AI trích một quote từ note F04
-  - Insight AI viết: khách bị tính tiền dù đã hủy đơn
-  - Quote AI trích: “still got billed”. Note F04 thật: “I cancelled my order and still got charged.”
-  - Chương trình báo: không đạt, khác một chữ
+  - AI insight: khách bị tính tiền dù đã hủy đơn
+  - AI quote from F04: “still got billed”. Actual note F04: “I cancelled my order and still got charged.”
+  - Program result: không đạt, khác một chữ
+  - Chương trình so từng quote với note, không nhờ một AI khác duyệt giúp
 - Ví dụ: có (note F04, một chữ bị đổi)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
