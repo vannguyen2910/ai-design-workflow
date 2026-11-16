@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 51
+slide_count: 47
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
@@ -18,7 +18,7 @@ last_synced: 2026-11-16
 | Stage           | Discover                                                                                                                                 |
 | Prior session   | Buổi 1: Your Design Process, with AI                                                                                                     |
 | Next session    | Practice 2                                                                                                                               |
-| Timing note      | Bốn slide ingest và blind synthesis thêm khoảng 10 phút. Bốn slide move của Break the brief thay ba slide method (four types, from product to assumption, weak and strong), nên thêm khoảng 6 phút nữa; cần bớt khoảng 16 phút ở principles, Q&A hoặc ví dụ, và Winnie quyết định bớt chỗ nào |
+| Timing note      | Ingest và blind synthesis thêm khoảng 10 phút, bốn slide move của Break the brief thêm khoảng 6 phút. Đã bớt khoảng 14 phút: ba slide principles (Principles first, Two kinds of standard, What AI does with principles; nội dung gộp vào notes của hai slide còn lại) và slide Q&A (câu hỏi hẹn ở buổi practice trên lớp). Còn dư khoảng 2 phút; có thể rút ở các câu hỏi cho lớp |
 | Running example | App giao đồ ăn                                                                                                                           |
 
 ---
@@ -72,7 +72,7 @@ last_synced: 2026-11-16
     - 04 Understand our users: từ research question đến cuộc phỏng vấn, chuẩn bị plan và script với AI, chạy thử, quy tắc dữ liệu.
     - 05 Ingest vào hub: biến transcript thành source notes có ID, kiểm quote bằng chương trình, và xem một hypothesis trong prompt làm AI nói gì.
   - Thứ tự này đi từ điều quan sát được đến điều cần học: hiểu bối cảnh, đặt chuẩn, kiểm brief, rồi hỏi người thật.
-  - Cuối buổi có Q&A và slide practice cho chuỗi việc ở nhà.
+  - Cuối buổi là slide practice cho chuỗi việc ở nhà. Câu hỏi riêng hẹn ở buổi practice trên lớp.
 
   > Trong năm phần này, phần nào bạn đang làm nhiều nhất trong công việc hiện tại?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
@@ -219,26 +219,6 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Principles first
-- Kicker: Quy tắc
-- Title: Principles trước,\n*rồi dùng AI để tiêu chuẩn hoá các research sau này*
-- On-slide:
-  - Trái, Không có principles: lần 1 mười finding, chín cái là "làm cho rõ ràng hơn"; lần 2 một bộ finding khác hẳn; không ai biết bộ nào đúng
-  - Phải, Có principles: mỗi finding trỏ về một principle; chạy lại thì kết quả gần nhau; kiểm một finding mất vài chục giây
-  - Cuối slide: Có chuẩn rồi, dùng nó để kiểm tra chính cái brief. Phần ba: Break the brief
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Slide trước nói designer viết chuẩn trước khi AI chạy. Slide này trả lời: vì sao phải viết chuẩn trước rồi mới cho AI chạy.
-  - Hình dung nhờ AI đánh giá cùng một màn hình thanh toán hai lần, không nạp chuẩn nào. Lần một ra mười finding, chín cái là “làm cho rõ ràng hơn”. Lần hai ra một bộ khác hẳn. Không ai biết bộ nào đúng. Đây là ví dụ minh hoạ, bạn có thể thay bằng lần chạy thật của mình.
-  - Nạp principles.md trước thì AI so với cùng một chuẩn, kết quả gần nhau giữa các lần. Kiểm một finding chỉ cần hỏi: finding này vi phạm principle nào? Nếu không trỏ được về principle nào, đó mới là ý kiến chung chung. Việc kiểm mất vài chục giây thay vì vài phút.
-  - Chuẩn này dùng cho mọi research về sau, không chỉ một lần.
-
-  > Principle nào của sản phẩm bạn sẽ dùng để kiểm finding đầu tiên?
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
-
----
-
 ### NUMBERED · AI principles
 - Kicker: Định nghĩa
 - Title: AI\n*principles*
@@ -260,55 +240,14 @@ last_synced: 2026-11-16
     - Có dòng “không có nghĩa là”: đổi ý dễ hơn không có nghĩa là bỏ bước xác nhận thanh toán
     - Ít: ba đến năm cái cho case, tối đa bảy cho cả sản phẩm
   - Khác design system: design system là thành phần và quy tắc hình thức, principle là cách chọn khi hai hướng đều hợp lệ.
+  - Hai loại chuẩn:
+    - Design principles: ba đến năm principle riêng của sản phẩm, do bạn và team viết.
+    - Business principles: ràng buộc và ưu tiên mà thiết kế không được vi phạm (mission, brand value, compliance, KPI, guardrail), lấy từ business hoặc PRD. Không gặp được business thì ghi “assumed” và người cần xác nhận.
+    - Hai loại có lúc kéo ngược nhau: đổi ý dễ hơn thì tỷ lệ huỷ đơn có thể tăng. Chỗ đó designer quyết, AI chỉ ra chỗ xung đột.
+  - Vì sao viết chuẩn trước: nhờ AI đánh giá cùng một màn hình thanh toán hai lần mà không nạp chuẩn nào, bạn nhận hai bộ finding khác hẳn nhau và không biết bộ nào đúng (ví dụ minh hoạ). Nạp principles.md trước thì kết quả gần nhau, và kiểm một finding chỉ cần hỏi nó vi phạm principle nào.
 
   > Kể một principle riêng của sản phẩm bạn đang làm, nếu chưa có thì bạn sẽ viết gì?
 - 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; kicker Định nghĩa, tiêu đề có accent ở dòng 2.
-
----
-
-### COMPARE · Two kinds of standard
-- Kicker: Khung
-- Title: *Standard* cho AI
-- On-slide:
-  - Trái, Design principles: các quy tắc design riêng của sản phẩm, do bạn và team agree và viết ra
-  - Phải, Business principles: ràng buộc và ưu tiên mà thiết kế không được vi phạm (mission, brand value, compliance, KPI, guardrail)
-  - Mỗi card có hai ví dụ mẫu bằng tiếng Anh
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Slide trước nói principles là chuẩn để AI đối chiếu. Slide này chia chuẩn thành hai loại, mỗi loại có nguồn riêng.
-  - Hai loại:
-    - Design principles: ba đến năm principle riêng của sản phẩm, do bạn và team viết. Ví dụ app giao đồ ăn: đổi ý phải dễ hơn cam kết, không có nghĩa là bỏ bước xác nhận thanh toán.
-    - Business principles: ràng buộc và ưu tiên của business mà thiết kế không được vi phạm, như mission, brand value, compliance, KPI, guardrail. Ví dụ: không tăng tỷ lệ huỷ đơn sau đơn đầu tiên.
-  - Các câu tiếng Anh trên slide là ví dụ mẫu để thấy độ dài và giọng viết của một principle.
-  - Business principle lấy từ business hoặc PRD. Không gặp được business thì lấy từ PRD và thông tin công khai của công ty, ghi “assumed” và ghi người cần xác nhận.
-  - Hai phần có lúc kéo ngược nhau: đổi ý dễ hơn thì tỷ lệ huỷ đơn có thể tăng. Chỗ đó designer quyết, AI chỉ chỉ ra chỗ xung đột.
-
-  > Business của bạn có nguyên tắc nào mà thiết kế không được vi phạm?
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
-
----
-
-### NUMBERED · What AI does with principles
-- Kicker: AI giúp được
-- Title: AI làm được gì với *bộ principles*
-- On-slide:
-  - 01 · Viết principles: soạn nháp từ research và scope; chỉ ra hai principle mâu thuẫn nhau
-  - 02 · Đối chiếu: cross-check finding với principle; designer kiểm lại vì AI dễ gán sai
-  - 03 · Kiểm tra: chấm output theo rubric từ bộ principles; chạy thử vài vòng trước khi tin
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Có principles rồi, AI làm được nhiều việc hơn là chỉ đọc. Slide này trả lời: giao cho AI những việc nào, và giữ lại việc nào.
-  - Sáu việc gom thành ba nhóm:
-    - Viết principles: AI soạn nháp từ research và scope, và chỉ ra hai principle mâu thuẫn nhau. Nếu cần, nhờ AI chấm lại theo bốn tiêu chí của một principle tốt. Designer chọn và chốt từng cái
-    - Đối chiếu: AI cross-check finding với principle, ví dụ finding “khách không tìm thấy nút đổi khung giờ” với principle “đổi ý phải dễ hơn cam kết”. Designer kiểm lại, vì AI dễ gán sai principle cho finding
-    - Kiểm tra: AI chấm output của chính nó hoặc của AI khác theo rubric viết từ bộ principles. Tiêu chí phải quan sát được, và chạy thử vài vòng trước khi tin
-  - Lưu ý: AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như “vi phạm nhất quán”, mà không hỏi sự không nhất quán đó có giải một vấn đề thật hay không. Principle giúp AI bám chuẩn, quyết định vẫn là của designer.
-  - Việc đóng gói bộ principles để dùng lại nằm ở slide kế tiếp.
-
-  > Trong sáu việc này, việc nào bạn đang tự làm tay mỗi lần?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
 
@@ -328,6 +267,7 @@ last_synced: 2026-11-16
   - Ba lưu ý khi viết: đủ cụ thể để kiểm chứng (“đổi ý phải dễ hơn cam kết” kiểm được, “dễ dùng” thì không), không để hai quy tắc mâu thuẫn nhau, và rà lại định kỳ để bỏ quy tắc đã cũ.
   - Rules file là ngữ cảnh cho AI, không phải ràng buộc cứng, nên vẫn kiểm output ở các bước sau.
   - Có bộ nguyên tắc rồi, mình dùng nó để kiểm tra chính cái brief trước khi chấp nhận. Phần ba là Break the brief.
+  - AI làm được gì với bộ principles: soạn nháp principle từ research và scope và chỉ ra hai principle mâu thuẫn; đối chiếu finding với principle (designer kiểm lại, vì AI dễ gán sai principle); chấm output theo rubric viết từ principles, chạy thử vài vòng trước khi tin. Principle giúp AI bám chuẩn, quyết định vẫn là của designer.
 
   > Bộ principles của bạn nên là rules luôn nạp, hay skill chỉ nạp khi cần đối chiếu?
 - 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
@@ -1071,7 +1011,7 @@ last_synced: 2026-11-16
 
 ---
 
-## 7. Hub, Q&A, practice and close
+## 7. Hub, practice and close
 
 ---
 
@@ -1096,25 +1036,6 @@ last_synced: 2026-11-16
 
   > Bạn muốn file nào đầy đủ nhất trước Lesson 3?
 - 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
-
----
-
-### Q&A · Q&A
-- Title: Q&A
-- On-slide:
-  - Bạn muốn hỏi về: Break the brief · Phỏng vấn user thật
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Năm phút. Hai slide tiếp theo là practice và takeaway.
-  - Câu hỏi gom theo hai nhóm trên slide: Break the brief, và phỏng vấn user thật. Câu quá riêng hẹn ở buổi practice trên lớp.
-  - Nếu lớp im, gợi hai câu hay gặp:
-    - Không gặp được business thì scope viết thế nào? Ghi mọi outcome và metric là assumed, nêu người cần xác nhận.
-    - Chưa tiếp cận được user thật thì sao? Dùng project mẫu app giao đồ ăn.
-  - Chuỗi việc ở nhà là nơi làm. Buổi này chỉ để biết cần làm gì.
-
-  > Điều gì bạn muốn hỏi trước khi bắt đầu làm ở nhà?
-- 🎨 Visual hint: TWO CARDS. Nửa vàng với tiêu đề Q&A, và các card chủ đề cần hỏi.
 
 ---
 
