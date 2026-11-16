@@ -411,7 +411,8 @@ last_synced: 2026-11-16
 - Kicker: AI move 1
 - Title: Brief thành\n*vấn đề*
 - On-slide:
-  - Brief viết: “Thêm onboarding bốn bước”
+  - Ví dụ từ brief mẫu của Delivery App (dòng B03)
+  - Brief ghi: “Thêm onboarding bốn bước”
   - AI viết lại thành vấn đề: “Khách mới chưa hiểu app hoạt động thế nào”
   - Giả định ngầm: khách rời đi vì không hiểu app, chứ không phải vì giá
   - Bạn đọc từng bản viết lại xem nghĩa có bị đổi không
@@ -523,6 +524,7 @@ last_synced: 2026-11-16
 - Kicker: AI move 2
 - Title: Phản biện\n*scope*
 - On-slide:
+  - Ví dụ: AI phản biện bản scope mẫu của Delivery App
   - 01 · “Khách mới” chưa có định nghĩa
   - 02 · Scope còn pending mà đã chốt việc sáu tuần
   - 03 · Guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy
@@ -572,6 +574,7 @@ last_synced: 2026-11-16
 - Kicker: AI move 3
 - Title: Đào assumption\n*từ tài liệu*
 - On-slide:
+  - Ví dụ: brief mẫu của Delivery App, 10 dòng từ B01 đến B10
   - Bảng ba dòng: assumption, line ID, quote nguyên văn
   - Dòng thứ ba không đạt: quote chỉ nằm trong B06
   - 17/18 dòng đạt, dòng hỏng bị chương trình bắt được
@@ -596,6 +599,7 @@ last_synced: 2026-11-16
 - Kicker: AI move 4
 - Title: Kiểm evidence\n*trong hub*
 - On-slide:
+  - Ví dụ: 18 ghi chú mẫu của Delivery App (review và bài trên forum)
   - Khung giờ giao: R01, R02, F01, F02 ủng hộ, evidence mạnh
   - Giá là lý do chính: F07 ủng hộ, R06 đi ngược, evidence yếu
   - Nhắc đặt lại sau 7 ngày: no source yet
