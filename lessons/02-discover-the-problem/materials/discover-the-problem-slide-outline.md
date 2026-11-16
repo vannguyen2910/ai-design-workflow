@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 54
+slide_count: 55
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
@@ -18,7 +18,7 @@ last_synced: 2026-11-16
 | Stage           | Discover                                                                                                                                 |
 | Prior session   | Buổi 1: Your Design Process, with AI                                                                                                     |
 | Next session    | Practice 2                                                                                                                               |
-| Timing note      | Ingest và blind synthesis thêm khoảng 10 phút, bốn slide move của Break the brief thêm khoảng 6 phút. Đã bớt khoảng 16 phút ở Understand our users: sáu slide nền tảng phỏng vấn (User interview, Research plan, một trang research plan, Interview fundamentals, Avoid and probe, Pilot with a colleague) và ba slide method recap của Break the brief chuyển sang Appendix, không xoá. Lớp cần ôn thì mở lại từ Appendix |
+| Timing note      | Ingest và blind synthesis thêm khoảng 10 phút, năm slide move của Break the brief (một sơ đồ chuỗi và bốn move) thêm khoảng 8 phút. Đã bớt khoảng 16 phút ở Understand our users: sáu slide nền tảng phỏng vấn (User interview, Research plan, một trang research plan, Interview fundamentals, Avoid and probe, Pilot with a colleague) và ba slide method recap của Break the brief chuyển sang Appendix, không xoá. Lớp cần ôn thì mở lại từ Appendix |
 | Running example | App giao đồ ăn                                                                                                                           |
 
 ---
@@ -383,6 +383,30 @@ last_synced: 2026-11-16
 
 ---
 
+### DIAGRAM · Four moves in a chain
+- Kicker: Tổng quan
+- Title: Bốn move,\n*một chuỗi*
+- On-slide:
+  - Brief của business đi qua Move 1, 2, 3, 4 rồi ra research question
+  - Mỗi move ra một thứ lưu vào hub: câu vấn đề, việc cần xác nhận, assumption kèm quote, evidence kèm ID
+  - Mỗi thứ là đầu vào của move sau
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Phần method đã nói ba việc của Break the brief. Slide này cho thấy bốn move của AI nằm ở đâu trong chuỗi đó.
+  - Đọc từ trái sang phải:
+    - Move 1 biến brief thành câu vấn đề.
+    - Move 2 phản biện scope viết theo vấn đề đó.
+    - Move 3 đào những giả định brief đang tin ngầm.
+    - Move 4 tìm trong hub xem mỗi giả định đã có nguồn chưa.
+  - Mỗi move ra một thứ bạn lưu vào hub, và thứ đó là đầu vào của move sau. Move 3 và Move 4 dùng lại phép kiểm quote của phần Ingest.
+  - Cuối chuỗi là research question, đầu vào của phần phỏng vấn.
+
+  > Move nào trong bốn move này bạn đang làm tay nhiều nhất?
+- 🎨 Visual hint: DIAGRAM. Bốn box line-art nối bằng mũi tên ngang, box Move 3 viền tím; brief đi vào từ trên, research question đi ra ở dưới.
+
+---
+
 ### COMPARE · Move 1: brief to problem
 - Kicker: AI move 1
 - Title: Brief thành\n*vấn đề*
@@ -404,7 +428,7 @@ last_synced: 2026-11-16
   - Đây là cách làm của khoá, thử trên một brief mẫu có chủ ý chứa mâu thuẫn. Brief thật thường ít rõ ràng hơn.
 
   > Dòng nào trong brief của bạn là giải pháp đội lốt vấn đề?
-- 🎨 Visual hint: COMPARE. Hai card line-art nền trắng trước và sau với mũi tên ở giữa; card sau viền tím; một card giả định ngầm bên dưới.
+- 🎨 Visual hint: COMPARE. Hai card line-art nền trắng trước và sau với mũi tên ở giữa; card sau viền tím; một card giả định ngầm bên dưới. Hình line-art nhỏ ở góc phải tiêu đề.
 
 ---
 
@@ -515,7 +539,7 @@ last_synced: 2026-11-16
   - Đây là danh sách giả thuyết để đem đi hỏi, chưa phải sự thật về business. AI không biết “khách mới” ở công ty bạn nghĩa là gì. Bạn chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
 
   > Câu hỏi nào về scope của bạn mà người phản đối chắc chắn sẽ hỏi trước?
-- 🎨 Visual hint: NUMBERED. Ba hàng ngang nền trắng viền ink: số tím, chỗ scope dễ sai, câu hỏi cho người thật; ngăn cách bằng đường kẻ.
+- 🎨 Visual hint: NUMBERED. Ba hàng ngang nền trắng viền ink: số tím, chỗ scope dễ sai, câu hỏi cho người thật; ngăn cách bằng đường kẻ. Hình line-art nhỏ ở góc phải tiêu đề.
 
 ---
 
@@ -564,7 +588,7 @@ last_synced: 2026-11-16
   - Chương trình chỉ chứng minh quote có thật. Mức quan trọng của từng assumption vẫn do bạn quyết.
 
   > Tài liệu nào trong project của bạn chưa từng được đọc để tìm giả định?
-- 🎨 Visual hint: DIAGRAM. Một card nền trắng với ba dòng, icon check và cancel line-art, dòng hỏng viền tím; số 17/18 lớn màu tím bên dưới.
+- 🎨 Visual hint: DIAGRAM. Một card nền trắng với ba dòng, icon check và cancel line-art, dòng hỏng viền tím; số 17/18 lớn màu tím bên dưới. Hình line-art nhỏ ở góc phải tiêu đề.
 
 ---
 
@@ -589,7 +613,7 @@ last_synced: 2026-11-16
   - Giới hạn: quote có thật chưa chắc ủng hộ đúng assumption. AI từng xếp cùng một ghi chú vào hai assumption khác nhau. Ghi chú cũng không đánh dấu khách mới hay khách cũ. Bạn đọc từng ghi chú trước khi tính.
 
   > Assumption nào của bạn sẽ ra “chưa có nguồn”?
-- 🎨 Visual hint: COMPARE. Bảng bốn cột nền trắng; cột Evidence là chip viền: mạnh viền tím đậm, yếu viền ink, chưa có viền nét đứt.
+- 🎨 Visual hint: COMPARE. Bảng bốn cột nền trắng; cột Evidence là chip viền: mạnh viền tím đậm, yếu viền ink, chưa có viền nét đứt. Hình line-art nhỏ ở góc phải tiêu đề.
 
 ---
 
