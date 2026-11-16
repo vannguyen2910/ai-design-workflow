@@ -1,7 +1,7 @@
 ---
 title: "Turn Research into Insights You Can Trust"
-summary: "Biến transcript thành insight đã kiểm tra, rồi persona, journey map và opportunity, mỗi dòng truy được về insight ID."
-subtitle: "Turn transcripts into checked insights, then persona, journey map and opportunity with AI, and keep every line traceable to an insight ID"
+summary: "Biến source notes thành insight đã kiểm tra, rồi persona, journey map và opportunity, mỗi dòng truy được về insight ID."
+subtitle: "Turn source notes into checked insights, then persona, journey map and opportunity with AI, and keep every line traceable to an insight ID"
 type: lesson
 program: ai-design-workflow
 tags: [discover, define, synthesis, persona, journey-map, opportunity, insight-hub, evidence, ai-workflow]
@@ -13,13 +13,13 @@ slides: "https://claude.ai/artifact/4AFDgey1QNAkFuXdiRGvvu"
 previous-session: "Discover the Problem"
 next-session: "Frame the Problem Worth Solving"
 ---
-Sau Lesson 2, bạn có transcript đã ẩn danh của các buổi phỏng vấn. Buổi này đi từ transcript đến insight đã kiểm tra (synthesis), rồi dựng persona, customer journey map và opportunity mà mỗi dòng truy được về insight ID. Bộ principles vừa là ràng buộc trong prompt, vừa là phép kiểm tra của bạn. Cuối cùng bạn đưa insight đã kiểm tra vào insight hub.
+Sau Lesson 2, bạn có source notes có ID, cắt từ transcript đã ẩn danh của các buổi phỏng vấn, và mọi quote đã qua phép kiểm tra bằng chương trình. Buổi này đi từ source notes đến insight đã kiểm tra (synthesis), rồi dựng persona, customer journey map và opportunity mà mỗi dòng truy được về insight ID. Bộ principles vừa là ràng buộc trong prompt, vừa là phép kiểm tra của bạn. Cuối cùng bạn đưa insight đã kiểm tra vào insight hub.
 
 > **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** Một insight hay một persona đọc thuyết phục chưa chắc có dữ liệu đứng sau. Dòng nào không truy được về insight ID thì xoá hoặc ghi unknown.
 
 ## Nội dung buổi học
 
-1. Synthesis: từ transcript đến một insight đã kiểm tra
+1. Synthesis: từ source notes đến một insight đã kiểm tra
 2. Persona
 3. Journey map
 4. Opportunity
@@ -31,7 +31,7 @@ Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và
 
 ## Sau buổi học, bạn có thể
 
-1. Cắt transcript đã ẩn danh thành source notes có source ID, rồi chạy ba bước Decision, Insight, Challenge
+1. Chạy blind synthesis trên source notes của bạn (đã cắt ở Lesson 2), rồi chạy ba bước Decision, Insight, Challenge
 2. Kiểm tra từng insight AI trả lại bằng hai lớp (source ID có thật, ngữ cảnh còn nguyên), và giữ ý kiến trái chiều cùng trang với insight
 3. Dựng persona, journey map hoặc opportunity từ insight đã kiểm tra, mỗi dòng dẫn về insight ID, và đánh dấu ô chưa có insight làm căn cứ là assumption
 4. Phân biệt persona dựng từ insight với persona AI tự sinh, và chỉ ra dòng không có insight nào làm căn cứ
@@ -41,24 +41,27 @@ Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và
 
 ---
 
-## 1. Synthesis: from transcript to an insight you can trust
+## 1. Synthesis: from source notes to an insight you can trust
 
-Bạn đang cầm transcript của các buổi phỏng vấn ở Lesson 2. Synthesis biến chúng thành một insight mà mỗi dòng dẫn về source ID và nói rõ nguồn là phỏng vấn, scope hay assumption. Persona, journey map và opportunity đều dựng từ insight, nên nếu insight chưa qua Challenge thì mọi thứ phía sau chưa được kiểm tra.
+Bạn đang cầm source notes của các buổi phỏng vấn ở Lesson 2. Synthesis biến chúng thành một insight mà mỗi dòng dẫn về source ID và nói rõ nguồn là phỏng vấn, scope hay assumption. Persona, journey map và opportunity đều dựng từ insight, nên nếu insight chưa qua Challenge thì mọi thứ phía sau chưa được kiểm tra.
 
 | Bạn mang từ Lesson 2 | Nội dung |
 |---|---|
+| Source notes | Cắt từ transcript đã ẩn danh: mỗi note một ý, một ID, dạng `ID | text`; mọi quote AI trích đã qua phép kiểm tra bằng chương trình (Lesson 2, mục 5) |
 | Transcript | Đã ẩn danh trên máy bằng participant code; dữ liệu gốc nằm ngoài vùng AI đọc |
 | Bốn câu hỏi về dữ liệu | Participant đã đồng ý gì, công cụ có học từ dữ liệu không, đã ẩn danh trên máy chưa, bản gốc nằm ngoài vùng AI đọc chưa (Lesson 2, mục 4.3) |
 | Bộ principles, scope, assumption map, research question | Làm ràng buộc trong prompt và làm phép kiểm tra của bạn |
-| Còn thiếu | Insight đã kiểm tra: hôm nay đi từ transcript đến đó bằng ba bước |
+| Còn thiếu | Insight đã kiểm tra: hôm nay đi từ source notes đến đó bằng ba bước |
 
-### 1.1 From transcript to source notes
+### 1.1 From source notes to blind synthesis
 
-Bước đầu tiên, trước khi nhờ AI làm bất cứ việc gì, là cắt transcript đã ẩn danh thành các source notes ngắn:
+Việc cắt transcript thành source notes đã làm ở Lesson 2, mục 5. Bước đầu tiên hôm nay, trước khi nhờ AI rút insight, là rà lại bộ source notes của bạn:
 
-- Mỗi ghi chú **một ý và một ID**. Ví dụ `I01-01` là ghi chú đầu của phỏng vấn số 1.
-- Ghi điều người đó nói và làm, không thêm diễn giải của bạn. Người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra thì ghi đúng hành động đó, chưa kết luận "khách vội". Kết luận là việc của các bước sau.
+- Mỗi ghi chú **một ý và một ID**. Ví dụ `I01-01` là ghi chú đầu của phỏng vấn số 1. Thiếu ghi chú nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng `ID | text`, đặt ID mới và không dùng lại ID cũ.
+- Ghi chú ghi điều người đó nói và làm, không thêm diễn giải của bạn. Người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra thì ghi đúng hành động đó, chưa kết luận "khách vội". Kết luận là việc của các bước sau.
 - Ghi chú giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
+
+Rồi chạy **blind synthesis** trên chính các note này, như đã xem ở Lesson 2, mục 6: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích. Ở Lesson 2 bạn thấy hypothesis đổi thứ AI nói trước; ở đây bạn xem điều đó có xảy ra với dữ liệu của bạn không.
 
 Mọi insight ở các bước sau phải dẫn về một ID như vậy. Ghi chú không có ID thì không có chỗ đứng.
 
@@ -84,7 +87,7 @@ Cả ba bước bắt đầu từ cùng một bộ source notes đã ẩn danh v
 
 Mỗi insight AI trả lại được kiểm tra hai lớp (xem [source-check.html](../assets/source-check.html)):
 
-1. **Tìm đúng source ID trong source notes**, vì ID không có trong bộ source notes là nguồn bịa.
+1. **Tìm đúng source ID trong source notes**, vì ID không có trong bộ source notes là nguồn bịa. Lớp này chạy được bằng chương trình kiểm quote của Lesson 2: đưa file insight dạng `insight | note IDs | quote` cho script, dòng nào ID không tồn tại hoặc quote không có trong note sẽ báo không đạt.
 2. **Đọc ngữ cảnh quanh ghi chú**, vì ghi chú có thật nhưng bị cắt hoặc ghép làm đổi nghĩa vẫn là lỗi.
 
 Một nghiên cứu về mô hình ngôn ngữ trên phỏng vấn ở Kenya thấy việc chọn nội dung dẫn từ phỏng vấn "thấp và không đều", và lỗi bịa kéo dài từ đổi một từ, cắt cụt, đến ghép các đoạn làm đổi nghĩa. Tìm đúng source ID bắt được nguồn bịa nhưng không bắt được ý bị diễn đạt lại bằng lời khác. Lớp bảo vệ cho trường hợp này là dòng "nguồn này không cho biết điều gì" ở bước Insight (1.3).

@@ -23,7 +23,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 ## Before you start
 
 - Bạn đã học [Lesson 3](research-you-can-trust-lesson.md).
-- Bạn có transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn từ Practice 2, cùng bộ principles, scope, research question và assumption map.
+- Bạn có source notes có ID đã qua phép kiểm tra quote, cắt từ transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn ở Practice 2 (Step 9), cùng bộ principles, scope, research question và assumption map.
 - Chưa phỏng vấn được ai: dùng [bộ source notes mẫu](../../../assets/starter-files/course-case/source-notes.md) và [bộ insight mẫu](../../../assets/starter-files/course-case/insight-set.md) để làm thử, rồi làm lại với dữ liệu của bạn khi có.
 
 ## Phần A · Synthesis

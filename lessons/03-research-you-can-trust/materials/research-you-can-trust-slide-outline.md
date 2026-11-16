@@ -81,12 +81,12 @@ last_synced: 2026-11-11
 
 ### DIAGRAM · From transcript to insight
 - Kicker: Recap
-- Title: Từ transcript\n*đến insight*
+- Title: Từ source notes\n*đến insight*
 - On-slide:
-  - Từ transcript
+  - Từ source notes
   - đến insight
-  - Transcript
-  - đã ẩn danh, mỗi ghi chú có source ID
+  - Source notes
+  - từ Lesson 2: mỗi ghi chú một ý, một source ID, quote đã kiểm tra bằng chương trình
   - Quy tắc
   - bốn câu hỏi về dữ liệu trước khi đưa cho AI (Lesson 2)
   - Hôm nay
@@ -98,15 +98,15 @@ last_synced: 2026-11-11
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ở Lesson 2 bạn đã đi từ brief đến phỏng vấn người thật. Bây giờ trong tay bạn là transcript của các buổi phỏng vấn đó.
+  - Ở Lesson 2 bạn đã đi từ brief đến phỏng vấn người thật, rồi cắt transcript thành source notes và kiểm tra quote bằng chương trình. Bây giờ trong tay bạn là bộ source notes của các buổi phỏng vấn đó.
   - Ba thứ bạn có và một thứ bạn cần:
-    - Transcript đã ẩn danh bằng participant code, dữ liệu gốc nằm ngoài vùng AI đọc.
+    - Source notes có source ID, cắt từ transcript đã ẩn danh bằng participant code. Dữ liệu gốc nằm ngoài vùng AI đọc.
     - Bốn câu hỏi về dữ liệu trước khi đưa cho AI: participant đã đồng ý gì, công ty cho phép công cụ nào, công cụ có học từ dữ liệu không, đã ẩn danh trên máy chưa.
     - Bộ nguyên tắc cho AI và scope, assumption, research question từ các buổi trước.
-    - Còn thiếu: insight đã kiểm tra. Hôm nay đi từ transcript đến đó bằng ba bước, Decision, Insight, Challenge.
+    - Còn thiếu: insight đã kiểm tra. Hôm nay đi từ source notes đến đó bằng ba bước, Decision, Insight, Challenge.
   - Persona, journey map và opportunity đều dựng từ insight. Nếu insight chưa qua Challenge thì mọi thứ phía sau chưa kiểm tra, nên mình bắt đầu từ synthesis.
 
-  > Bạn đã ẩn danh transcript của mình chưa? Có hoặc không, gõ vào chat.
+  > Bạn đã có source notes có ID từ Lesson 2 chưa? Có hoặc không, gõ vào chat.
 - 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
 
 ---
@@ -128,8 +128,8 @@ last_synced: 2026-11-11
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đây là bản đồ cả buổi: từ transcript đến insight hub.
-  - Synthesis là bước đầu, biến transcript thành insight đã kiểm tra. Từ đó ba phần cùng điền một câu insight: persona điền chỗ “ai”, journey map chỗ “khi nào”, opportunity chỗ “quyết định nào”. Insight hub là nơi lưu để lần sau tìm trước khi hỏi lại.
+  - Đây là bản đồ cả buổi: từ source notes đến insight hub.
+  - Synthesis là bước đầu, biến source notes thành insight đã kiểm tra. Từ đó ba phần cùng điền một câu insight: persona điền chỗ “ai”, journey map chỗ “khi nào”, opportunity chỗ “quyết định nào”. Insight hub là nơi lưu để lần sau tìm trước khi hỏi lại.
   - Mỗi bước dùng đầu ra của bước trước, nên một opportunity truy ngược được qua journey map và persona về insight, rồi về source ID trong transcript.
   - Thanh vàng ở dưới là insight ID, sợi dây nối cả chuỗi. Bộ nguyên tắc áp lên mọi bước.
   - Đây là cách hiểu của chương trình, chưa phải kết quả nghiên cứu.
@@ -150,7 +150,7 @@ last_synced: 2026-11-11
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần 1: synthesis, từ transcript đến một insight đã kiểm tra
+  - Phần 1: synthesis, từ source notes đến một insight đã kiểm tra
   - Mọi insight phải dẫn về một source ID
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
 
@@ -158,11 +158,11 @@ last_synced: 2026-11-11
 
 ### PROCESS · From transcript to source notes
 - Kicker: Bước 1
-- Title: Từ transcript *đến ghi chú nguồn*
+- Title: Bắt đầu từ *ghi chú nguồn của bạn*
 - On-slide:
-  - Transcript
+  - Source notes từ Lesson 2
   - Buổi phỏng vấn P1
-  - Đã ẩn danh trên máy, dữ liệu gốc nằm ngoài vùng AI đọc.
+  - Đã cắt và kiểm tra quote ở Lesson 2. Thiếu note nào thì cắt thêm từ transcript đã ẩn danh.
   - I01-01
   - Đặt vào Chủ nhật, chạm vào khung giờ đầu tiên hiện ra.
   - I01-02
@@ -174,16 +174,17 @@ last_synced: 2026-11-11
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Bạn đang cầm transcript. Slide này trả lời: bước đầu tiên biến nó thành gì, trước khi nhờ AI làm bất cứ việc gì.
-  - Từ một transcript đã ẩn danh, bạn cắt thành các ghi chú nguồn ngắn:
-    - Mỗi ghi chú một ý và một ID, ví dụ I01-01 là ghi chú đầu của người phỏng vấn số 1.
+  - Bạn đã cắt transcript thành ghi chú nguồn và kiểm tra quote ở Lesson 2. Slide này trả lời: bước đầu tiên hôm nay là gì, trước khi nhờ AI rút insight.
+  - Rà lại bộ ghi chú nguồn của bạn:
+    - Mỗi ghi chú một ý và một ID, ví dụ I01-01 là ghi chú đầu của người phỏng vấn số 1. Thiếu note nào thì cắt thêm từ transcript đã ẩn danh, đặt ID mới và không dùng lại ID cũ.
     - Ghi điều người đó nói và làm, không thêm diễn giải của bạn.
     - Ghi chú giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
+  - Rồi chạy blind synthesis trên chính các note này, như đã xem ở Lesson 2: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích.
   - Ví dụ với app giao đồ ăn: người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra. Ghi chú ghi đúng hành động đó, chưa kết luận “khách vội”. Kết luận là việc của các bước sau.
   - Hình bên chỉ là ví dụ minh hoạ cấu trúc ghi chú. Dữ liệu gốc có tên thật nằm ngoài vùng AI đọc; AI chỉ thấy bản đã gắn participant code P1, P2 và source ID, theo quy tắc dữ liệu ở Lesson 2.
   - Mọi insight ở các bước sau phải dẫn về một ID như vậy. Ghi chú không có ID thì không có chỗ đứng.
 
-  > Transcript gần nhất của bạn đã được cắt thành ghi chú có ID chưa?
+  > Bộ ghi chú nguồn của bạn còn thiếu note nào mà bạn nhớ người phỏng vấn đã nói?
 - 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô ink hoặc purple.
 
 ---
@@ -1117,8 +1118,8 @@ last_synced: 2026-11-11
 - Kicker: Practice
 - Title: Từ transcript *đến opportunity*
 - On-slide:
-  - Synthesis từ transcript
-  - Ghi chú nguồn có source ID từ transcript đã ẩn danh
+  - Synthesis từ source notes
+  - Ghi chú nguồn có source ID từ Lesson 2, và blind synthesis trên note của bạn
   - Chạy Decision, Insight, Challenge
   - Đưa các finding lên Hub
   - Persona, journey map, opportunity
@@ -1128,13 +1129,13 @@ last_synced: 2026-11-11
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Hôm nay đã đi từ transcript đến insight rồi đến ba đầu ra; ở nhà bạn chạy đúng chuỗi đó trên transcript của project mình
-  - Đầu vào là transcript đã ẩn danh từ Practice 2 và bộ nguyên tắc. Làm synthesis trước: ghi chú nguồn có source ID, rồi Decision, Insight, Challenge. Sau đó mới dựng persona, journey map, opportunity, mỗi dòng dẫn về insight ID
+  - Đầu vào là source notes từ Practice 2 và bộ nguyên tắc. Làm synthesis trước: rà ghi chú nguồn có source ID và chạy blind synthesis, rồi Decision, Insight, Challenge. Sau đó mới dựng persona, journey map, opportunity, mỗi dòng dẫn về insight ID
   - Kết quả là evidence pack và problem brief: một trang cho lead và một entry đóng góp vào insight hub
   - Output của các buổi trước là input của chuỗi này: scope và research question cho Decision, giả định để insight xác nhận hoặc bác, UX audit và competitor analysis làm giả thuyết
   - Bấm giờ từng bước; đây là cách designer tự trả lời câu hỏi tiết kiệm bao nhiêu thời gian
   - Buổi practice trên lớp làm tiếp phần chưa xong, rồi chấm; cách chấm chưa quyết, sẽ báo sau
 
-  > Ai chưa ẩn danh transcript hoặc chưa có ghi chú nguồn, hãy nhắn cho người hướng dẫn hôm nay
+  > Ai chưa có ghi chú nguồn từ Practice 2, hãy nhắn cho người hướng dẫn hôm nay
 - 🎨 Visual hint: TWO CARDS. Hai card viền ink, mỗi card một nhóm bước với các gạch đầu dòng chấm purple.
 
 ---
