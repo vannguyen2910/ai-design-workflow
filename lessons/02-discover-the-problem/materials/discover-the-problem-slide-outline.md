@@ -404,7 +404,7 @@ last_synced: 2026-11-16
   - Đây là cách làm của khoá, thử trên một brief mẫu có chủ ý chứa mâu thuẫn. Brief thật thường ít rõ ràng hơn.
 
   > Dòng nào trong brief của bạn là giải pháp đội lốt vấn đề?
-- 🎨 Visual hint: COMPARE. Hai card trước và sau với mũi tên ở giữa; card sau nền ink; một dải giả định ngầm bên dưới.
+- 🎨 Visual hint: COMPARE. Hai card line-art nền trắng trước và sau với mũi tên ở giữa; card sau viền tím; một card giả định ngầm bên dưới.
 
 ---
 
@@ -515,7 +515,7 @@ last_synced: 2026-11-16
   - Đây là danh sách giả thuyết để đem đi hỏi, chưa phải sự thật về business. AI không biết “khách mới” ở công ty bạn nghĩa là gì. Bạn chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
 
   > Câu hỏi nào về scope của bạn mà người phản đối chắc chắn sẽ hỏi trước?
-- 🎨 Visual hint: NUMBERED. Ba hàng ngang: số vàng trên nền ink, chỗ scope dễ sai, câu hỏi cho người thật trên nền tím nhạt.
+- 🎨 Visual hint: NUMBERED. Ba hàng ngang nền trắng viền ink: số tím, chỗ scope dễ sai, câu hỏi cho người thật; ngăn cách bằng đường kẻ.
 
 ---
 
@@ -564,7 +564,7 @@ last_synced: 2026-11-16
   - Chương trình chỉ chứng minh quote có thật. Mức quan trọng của từng assumption vẫn do bạn quyết.
 
   > Tài liệu nào trong project của bạn chưa từng được đọc để tìm giả định?
-- 🎨 Visual hint: DIAGRAM. Một panel ink kiểu terminal với ba dòng, dòng hỏng viền vàng; số 17/18 lớn màu tím bên dưới.
+- 🎨 Visual hint: DIAGRAM. Một card nền trắng với ba dòng, icon check và cancel line-art, dòng hỏng viền tím; số 17/18 lớn màu tím bên dưới.
 
 ---
 
@@ -589,7 +589,7 @@ last_synced: 2026-11-16
   - Giới hạn: quote có thật chưa chắc ủng hộ đúng assumption. AI từng xếp cùng một ghi chú vào hai assumption khác nhau. Ghi chú cũng không đánh dấu khách mới hay khách cũ. Bạn đọc từng ghi chú trước khi tính.
 
   > Assumption nào của bạn sẽ ra “chưa có nguồn”?
-- 🎨 Visual hint: COMPARE. Bảng bốn cột; cột Evidence là chip: mạnh tím đậm, yếu tím nhạt, chưa có vàng.
+- 🎨 Visual hint: COMPARE. Bảng bốn cột nền trắng; cột Evidence là chip viền: mạnh viền tím đậm, yếu viền ink, chưa có viền nét đứt.
 
 ---
 
@@ -878,7 +878,7 @@ last_synced: 2026-11-16
   - Chưa phỏng vấn được hai người thì dùng các note phỏng vấn mẫu, và ghi rõ trong hub đó là dữ liệu mẫu.
 
   > Câu nào trong transcript đầu tiên của bạn sẽ thành note I01-01?
-- 🎨 Visual hint: DIAGRAM. Hai card: transcript bên trái, source notes nền ink bên phải với ba dòng mono.
+- 🎨 Visual hint: DIAGRAM. Hai card nền trắng: transcript bên trái, source notes viền tím bên phải với ba dòng mono.
 
 ---
 
@@ -904,7 +904,7 @@ last_synced: 2026-11-16
   - Phép kiểm chứng minh quote có thật trong note. Nó không chứng minh insight đúng, và không chứng minh note phản ánh đúng transcript.
 
   > Quote nào trong các insight gần nhất AI đưa bạn, bạn chưa từng đối chiếu với nguồn?
-- 🎨 Visual hint: COMPARE. Hai card với mũi tên so khớp; chữ khác nhau được tô; một dải ink “Không đạt” bên dưới.
+- 🎨 Visual hint: COMPARE. Hai card với mũi tên so khớp; chữ khác nhau được gạch chân tím; một card viền tím “Không đạt” bên dưới.
 
 ---
 
@@ -929,7 +929,7 @@ last_synced: 2026-11-16
   - Vì vậy hãy mang về cách làm, không mang về kết luận: chạy một lần không có hypothesis, một lần có, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn.
 
   > Hypothesis nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?
-- 🎨 Visual hint: COMPARE. Hai card cạnh nhau, card lần 2 nền ink; một dòng kết luận bên dưới.
+- 🎨 Visual hint: COMPARE. Hai card nền trắng cạnh nhau, card lần 2 viền tím; một dòng kết luận bên dưới.
 
 ---
 
