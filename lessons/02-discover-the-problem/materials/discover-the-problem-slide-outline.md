@@ -890,6 +890,7 @@ last_synced: 2026-11-16
   - Transcript đã ẩn danh: nguồn gốc, không ai sửa
   - Source notes: R03, F04, I01-01 dạng ID | text
   - Mỗi note một ý, một ID, một dòng, giữ nguyên lời người nói
+  - Ví dụ lấy từ bộ mẫu Delivery App: R là review, F là bài trên forum, I01-01 là note 1 của buổi phỏng vấn 1
 - Ví dụ: có (ba note từ bộ mẫu Delivery App)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -910,10 +911,10 @@ last_synced: 2026-11-16
 - Kicker: Kiểm quote
 - Title: Kiểm quote\n*bằng chương trình*
 - On-slide:
-  - Note F04: “I cancelled my order and still got charged.”
-  - Quote AI trích: “still got billed”
+  - Ví dụ từ bộ mẫu Delivery App: AI trích một quote từ note F04
+  - Insight AI viết: khách bị tính tiền dù đã hủy đơn
+  - Quote AI trích: “still got billed”. Note F04 thật: “I cancelled my order and still got charged.”
   - Chương trình báo: không đạt, khác một chữ
-  - Chương trình so từng quote với note, không nhờ một AI khác duyệt giúp
 - Ví dụ: có (note F04, một chữ bị đổi)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -924,26 +925,26 @@ last_synced: 2026-11-16
     - Script báo từng dòng đạt hay không đạt, kèm lý do ngắn
     - Bạn sửa dòng hỏng, rồi đọc lại đoạn gốc của insight quan trọng nhất
   - Việc so khớp do chương trình làm, không nhờ một AI khác duyệt. Lý do: một AI duyệt giúp có thể bỏ qua quote bịa theo đúng cách AI đầu đã bịa ra nó.
-  - Ví dụ trên slide: note F04 ghi “still got charged”. Quote “still got billed” khác một chữ nên báo không đạt. Chương trình đã thử trên 24 note mẫu và bốn dòng citations: dòng đổi một chữ báo không đạt, dòng chỉ khác khoảng trắng vẫn đạt.
+  - Ví dụ trên slide lấy từ bộ mẫu Delivery App: AI viết insight “Khách bị tính tiền dù đã hủy đơn” và trích note F04 với quote “still got billed”. Note F04 thật ghi “still got charged”, nên quote khác một chữ và báo không đạt. Chương trình đã thử trên 24 note mẫu và bốn dòng citations: dòng đổi một chữ báo không đạt, dòng chỉ khác khoảng trắng vẫn đạt.
   - Phép kiểm chứng minh quote có thật trong note. Nó không chứng minh insight đúng, và không chứng minh note phản ánh đúng transcript.
 
   > Quote nào trong các insight gần nhất AI đưa bạn, bạn chưa từng đối chiếu với nguồn?
-- 🎨 Visual hint: COMPARE. Một card nền trắng, ba hàng căn trái: note gốc, quote AI trích, kết quả; chữ khác nhau được gạch chân ink; chỉ tiêu đề có accent tím.
-
+- 🎨 Visual hint: COMPARE. Một card nền trắng, bốn hàng căn trái: insight, quote AI trích, note thật, kết quả; chữ khác nhau được gạch chân ink; chỉ tiêu đề có accent tím.
 ---
 
 ### COMPARE · Blind and primed
 - Kicker: Blind synthesis
 - Title: Cùng 24 note,\n*hai câu hỏi*
 - On-slide:
-  - Lần 1, không hypothesis: giá chỉ nằm ở cuối
-  - Lần 2, “giá là lý do chính”: giá được nói đầu tiên
-  - Hypothesis làm AI nói giá trước, nhưng không đảo kết luận
+  - Dữ liệu: 24 note mẫu của Delivery App. Câu hỏi: vì sao khách mới không đặt lại sau đơn đầu tiên?
+  - Lần 1, chỉ có câu hỏi: giá chỉ là một dòng ghi chú
+  - Lần 2, thêm “Team tin rằng giá là lý do chính”: giá được nói đầu tiên
+  - Hypothesis làm AI nói về giá trước, nhưng không đảo kết luận
 - Ví dụ: có (bộ 24 note, hai lần chạy)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Slide trước kiểm quote. Slide này trả lời: một hypothesis trong prompt làm câu trả lời của AI đổi thế nào?
-  - Mình hỏi hai lần, ở hai phiên riêng, cùng 24 note và cùng một câu hỏi. Lần 2 chỉ thêm câu đầu: “Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi.”
+  - Dữ liệu là 24 note mẫu của Delivery App. Câu hỏi: vì sao khách mới không đặt lại sau đơn đầu tiên? Mình hỏi hai lần, ở hai phiên riêng, cùng 24 note và cùng một câu hỏi. Lần 2 chỉ thêm câu đầu: “Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi.”
   - Bộ mẫu có sẵn hypothesis này: chỉ R06 và F07 nhắc đến giá, còn I02-03 nói thời gian chờ làm khách phiền hơn giá.
   - Kết quả đã lưu trong blind-synthesis.md:
     - Lần 1: bốn lý do chính là khung giờ bị chốt, hủy đơn khó tìm, thời gian giao quá lạc quan và đơn đầu thiếu phản hồi. Giá chỉ là một dòng ở phần “Lưu ý”
@@ -953,8 +954,7 @@ last_synced: 2026-11-16
   - Vì vậy hãy mang về cách làm, không mang về kết luận: chạy một lần không có hypothesis, một lần có, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn.
 
   > Hypothesis nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?
-- 🎨 Visual hint: COMPARE. Hai card nền trắng cạnh nhau, card lần 2 viền tím; một dòng kết luận bên dưới.
-
+- 🎨 Visual hint: COMPARE. Hai card nền trắng cạnh nhau, mỗi card có prompt, đường kẻ rồi kết quả; card lần 2 viền tím; một dòng kết luận bên dưới.
 ---
 
 ## 7. Hub, Q&A, practice and close
