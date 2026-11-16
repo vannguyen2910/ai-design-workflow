@@ -45,8 +45,6 @@ last_synced: 2026-11-16
 - Kicker: Lộ trình
 - Title: Nội dung\n*buổi học*
 - On-slide:
-  - Nội dung
-  - buổi học
   - Synthesis
   - Persona
   - Journey map
@@ -63,7 +61,7 @@ last_synced: 2026-11-16
 ### MILESTONE · Ice breaker
 - Title: Ice Breaker
 - On-slide:
-  - Kể về một lần bạn tin một insight, rồi mới thấy nó sai.
+  - Kể về một lần AI giúp cho bạn synthesis một vấn đề nào đó, bạn đã làm việc với AI như thế nào?
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -82,18 +80,14 @@ last_synced: 2026-11-16
 - Kicker: Recap
 - Title: Từ source notes\n*đến insight*
 - On-slide:
-  - Từ source notes
-  - đến insight
   - Source notes
-  - từ Lesson 2: mỗi ghi chú một ý, một source ID, quote đã kiểm tra bằng chương trình
+  - Mỗi ghi chú từ research là một ID, quote đã kiểm tra
   - Quy tắc
-  - bốn câu hỏi về dữ liệu trước khi đưa cho AI (Lesson 2)
+  - Các principles and câu hỏi về dữ liệu trước khi đưa cho AI
   - Hôm nay
   - Decision, Insight, Challenge
-  - Đích
+  - Outcome
   - insight đã kiểm tra, rồi mới dựng persona, journey map, opportunity
-  - Decision
-  - Insight
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -103,17 +97,17 @@ last_synced: 2026-11-16
     - Bốn câu hỏi về dữ liệu trước khi đưa cho AI: participant đã đồng ý gì, công ty cho phép công cụ nào, công cụ có học từ dữ liệu không, đã ẩn danh trên máy chưa.
     - Bộ nguyên tắc cho AI và scope, assumption, research question từ các buổi trước.
     - Còn thiếu: insight đã kiểm tra. Hôm nay đi từ source notes đến đó bằng ba bước, Decision, Insight, Challenge.
-  - Bộ source notes còn thiếu note nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng ID | text, đặt ID mới và không dùng lại ID cũ. Việc chạy blind synthesis trên note của bạn nằm ở practice, Step 1. Slide cách set up note ở Lesson 2 được chuyển xuống Appendix, dùng khi lớp cần ôn.
   - Persona, journey map và opportunity đều dựng từ insight. Nếu insight chưa qua Challenge thì mọi thứ phía sau chưa kiểm tra, nên mình bắt đầu từ synthesis.
+  - Bộ source notes còn thiếu note nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng ID | text, đặt ID mới và không dùng lại ID cũ. Việc chạy blind synthesis trên note của bạn nằm ở practice, Step 1. Slide cách set up note ở Lesson 2 được chuyển xuống Appendix, dùng khi lớp cần ôn.
 
-  > Bạn đã có source notes có ID từ Lesson 2 chưa? Có hoặc không, gõ vào chat.
+  > bạn đã có source notes có ID từ Lesson 2 chưa? Có hoặc không, gõ vào chat.
 - 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
 
 ---
 
 ### DIAGRAM · Map of the session
 - Kicker: Bản đồ
-- Title: Từ transcript đến *insight hub*
+- Title: Từ source notes đến *insight hub*
 - On-slide:
   - Bước đầu
   - Ba đầu ra từ insight
@@ -193,32 +187,35 @@ last_synced: 2026-11-16
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Có ghi chú nguồn rồi, câu hỏi tiếp theo: ai làm gì để ra được một insight. Slide này trả lời bằng ba bước.
+  - Ba bước, mỗi bước có người làm khác nhau, và cả ba bắt đầu từ cùng bộ ghi chú nguồn đã ẩn danh, có source ID.
   - Ba thuật ngữ, hiểu trong buổi này như sau:
-    - Decision: quyết định cụ thể mà team phải đưa ra và đang chờ research trả lời, ví dụ “có nên thêm bước đổi khung giờ sau thanh toán không”. Không phải kết luận của nghiên cứu, và không phải mục tiêu chung chung.
-    - Insight: một phát hiện đã kiểm tra về người dùng, viết thành một câu theo mẫu, có source ID dẫn về nguồn và trả lời cho một Decision. Không phải bản tóm tắt, cũng không phải một câu trích dẫn.
-    - Challenge: bước bạn tự phản biện insight trước khi tin nó: tìm chỗ insight nói rộng hơn dữ liệu, source ID bị dẫn sai, cách giải thích khác, dữ liệu mâu thuẫn hoặc bị bỏ ra. Kết quả và ý kiến trái chiều được giữ cùng trang với insight.
-  - Ba bước, mỗi bước có người làm khác nhau:
-    - Decision: bạn tự viết quyết định đang chờ câu trả lời, ví dụ “có nên thêm bước đổi khung giờ sau thanh toán không”. Chỉ bạn biết quyết định nào đang chờ, nên AI không viết hộ bước này.
-    - Insight: AI nhóm ghi chú thành tối đa ba insight theo mẫu “[ai] làm hoặc cần [gì] khi [bối cảnh], và điều này quan trọng với quyết định [nào]”. Mỗi insight kèm source ID, số người nói và một dòng “nguồn này không cho biết điều gì”. Bạn mở từng source ID, chọn một insight và viết lại bằng lời của mình.
-    - Challenge: bạn tấn công insight, còn AI đóng vai người phản biện. Chi tiết ở hai slide sau.
+    - Decision: quyết định cụ thể mà team phải đưa ra và đang chờ research trả lời, ví dụ “có nên thêm bước đổi khung giờ sau thanh toán không”.
+  - Không phải kết luận của nghiên cứu, và không phải mục tiêu chung chung
+  - - Insight: một phát hiện đã kiểm tra về người dùng, viết thành một câu theo mẫu, có source ID dẫn về nguồn và trả lời cho một Decision.
+  - Không phải bản tóm tắt, cũng không phải một câu trích dẫn
+  - - Challenge: bước bạn tự phản biện insight trước khi tin nó: tìm chỗ insight nói rộng hơn dữ liệu, source ID bị dẫn sai, cách giải thích khác, dữ liệu mâu thuẫn hoặc bị bỏ ra.
+  - Kết quả và ý kiến trái chiều được giữ cùng trang với insight
+  - Ba bước:
+    - Decision: bạn tự viết quyết định đang chờ câu trả lời, ví dụ “có nên thêm bước đổi khung giờ sau thanh toán không”. Chỉ bạn biết quyết định nào đang chờ, nên AI không viết hộ bước này
+    - Insight: AI nhóm ghi chú thành tối đa ba insight theo mẫu “[ai] làm hoặc cần [gì] khi [bối cảnh], và điều này quan trọng với quyết định [nào]”. Mỗi insight kèm source ID, số người nói và một dòng “nguồn này không cho biết điều gì”. Bạn mở từng source ID, chọn một insight và viết lại bằng lời của mình
+    - Challenge: bạn tấn công insight, AI đóng vai người phản biện. Chi tiết ở các slide sau
   - Ở bước Insight, nhờ AI liệt kê thêm điều người tham gia đã nói mà chưa được đưa vào insight nào. Đọc danh sách chỉ bắt được điều viết sai, không bắt được điều bị bỏ sót.
   - Insight mới gộp vào ghi chú có sẵn theo cách đề xuất trước: AI nói ý nào vào đâu, bạn duyệt rồi mới ghi, chỉ thêm vào cuối và giữ một bản sao trước.
 
-  > Viết Decision cho project của bạn trong một câu, dán vào chat.
+  > quyết định nào đang chờ câu trả lời trong project của bạn?
 - 🎨 Visual hint: Đường thời gian ngang, ba điểm tròn nối nhau, số 01 đến 03, tên bước và mô tả; không card viền; dòng cuối dưới một đường kẻ.
 
 ---
 
 ### NUMBERED · Two layers of checking
 - Kicker: Kiểm tra
-- Title: Kiểm tra một insight, *hai lớp*
+- Title: Kiểm tra một insight
 - On-slide:
   - Tìm đúng source ID
   - ID không có trong bộ ghi chú là nguồn bịa. Bắt được ngay.
   - Đọc ngữ cảnh quanh ghi chú
   - Ghi chú có thật nhưng bị cắt hoặc ghép vẫn làm đổi nghĩa.
-  - Ví dụ trong bộ ghi chú
+  - Ví dụ
   - I01-03 bị cắt: đọc câu trước và sau thì ý đã khác.
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
@@ -231,7 +228,7 @@ last_synced: 2026-11-16
   - Giới hạn: tìm đúng source ID không bắt được trường hợp AI diễn đạt lại ý bằng lời khác. Lớp bảo vệ cho trường hợp đó là dòng “nguồn này không cho biết điều gì” ở bước Insight.
   - Một nghiên cứu về mô hình ngôn ngữ trên phỏng vấn ở Kenya thấy việc chọn nội dung dẫn từ phỏng vấn thấp và không đều, và lỗi bịa kéo dài từ đổi một từ, cắt cụt đến ghép đoạn làm đổi nghĩa. Mẫu nhỏ, nên coi đây là cảnh báo, không phải con số để dẫn.
 
-  > Lần gần nhất bạn mở ghi chú gốc để kiểm một câu AI trích là khi nào?
+  > lần gần nhất bạn mở ghi chú gốc để kiểm một câu AI trích là khi nào?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
@@ -240,14 +237,13 @@ last_synced: 2026-11-16
 - Kicker: Vai trò của bạn
 - Title: Bạn vẫn *đọc research*
 - On-slide:
+  - Phép thử
+  - Đóng AI lại. Insight còn của bạn không?
+  - Giải thích được insight và chỉ ra source ID nào đỡ nó. Chưa làm được thì insight đó chưa phải của bạn.
   - Đọc vài transcript trước khi hỏi AI
   - Để biết giọng và ngữ cảnh, không chỉ xem bản tóm tắt.
   - Đọc ngữ cảnh gốc
   - Mọi ghi chú nguồn dùng cho insight đều mở ra đọc.
-  - Phép thử: insight có còn của bạn?
-  - Đóng AI lại. Giải thích được insight và chỉ ra source ID nào đỡ nó.
-  - Chưa làm được
-  - Thì insight đó chưa phải của bạn.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -255,30 +251,29 @@ last_synced: 2026-11-16
   - Câu trả lời cho câu đầu là có:
     - Đọc trực tiếp một vài transcript trước khi hỏi AI, để biết giọng và ngữ cảnh.
     - Đọc ngữ cảnh gốc của mọi ghi chú dùng cho insight.
-  - Một nghiên cứu so hai công cụ AI chat với người phân tích theme trên 40 tin nhắn SMS cho thấy AI nhanh hơn rất nhiều, nhưng độ đồng thuận khi gắn code chỉ khoảng 36 đến 47%, và người nhận ra theme tinh tế tốt hơn. Đầu ra của AI trơn tru nên lỗi khó thấy hơn. Chưa có số đo riêng cho research UX, và chưa phải số đo trên designer Việt Nam.
-  - Câu hỏi sau: insight còn của bạn không. Tính “của bạn” xác định bằng ba việc trùng với ba bước: tự viết Decision, tự viết lại Insight, tự phản biện ở Challenge. Phép thử: đóng AI lại, giải thích insight và chỉ ra source ID nào đỡ nó. Chưa làm được thì chưa phải của bạn.
+  - Một nghiên cứu so hai công cụ AI chat với người phân tích theme trên 40 tin nhắn SMS cho thấy AI nhanh hơn rất nhiều, nhưng độ đồng thuận khi gắn theme/tag chỉ khoảng 36 đến 47%, và người nhận ra theme tinh tế tốt hơn.
+  - Đầu ra của AI trơn tru nên lỗi khó thấy hơn. Chưa có số đo riêng cho research UX, và chưa phải số đo trên designer Việt Nam.
+  - Phép thử: đóng AI lại, giải thích insight và chỉ ra source ID nào đỡ nó. Chưa làm được thì chưa phải của bạn.
 
-  > Đóng AI lại, nói với bạn bên cạnh insight hàng đầu của mình và source ID nào đỡ nó.
+  > đóng AI lại, nói với bạn bên cạnh insight hàng đầu của mình và source ID nào đỡ nó.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
 
 ### NUMBERED · Challenge: five questions
 - Kicker: Challenge
-- Title: Challenge: *năm câu phản biện*
+- Title: Năm câu *phản biện insight*
 - On-slide:
   - Nói rộng chỗ nào
   - Bao nhiêu người nói, và ai?
   - Source ID nào sai
   - Có thể bị dẫn sai hoặc hiểu sai.
-  - Ba cách giải thích khác
-  - Cho cùng một dữ liệu.
+  - Các cách giải thích khác
+  - Cùng dữ liệu này còn giải thích được bằng lý do nào khác? Ví dụ: khách hủy vì giao trễ, hay vì chọn nhầm khung giờ?
   - Dữ liệu nào bị bỏ
   - Mâu thuẫn hoặc bị bỏ ra ngoài.
   - Dữ liệu nào làm sai
   - Dữ liệu mới nào sẽ làm insight này sai?
-  - Quy tắc
-  - Ý kiến trái chiều đặt cùng trang với insight, không để ở phụ lục.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -286,20 +281,20 @@ last_synced: 2026-11-16
   - Năm câu phản biện:
     - Insight nói rộng hơn dữ liệu ở chỗ nào: bao nhiêu người nói, và ai.
     - Source ID nào có thể bị dẫn sai hoặc hiểu sai.
-    - Ba cách giải thích khác cho cùng dữ liệu là gì.
+    - Ba cách giải thích khác cho cùng dữ liệu là gì. Ví dụ insight nói khách hủy đơn vì khung giờ giao không rõ: có thể họ hủy vì giao trễ, vì chọn nhầm khung giờ, hoặc vì hết khuyến mãi. Nhờ AI nêu ba cách, rồi bạn xem nguồn nào loại được cách nào.
     - Dữ liệu nào mâu thuẫn hoặc bị bỏ ra ngoài.
     - Dữ liệu mới nào sẽ làm insight này sai.
   - Nhờ AI đóng vai người phản biện, nhưng bạn viết câu trả lời và ghi điều gì làm bạn đổi ý.
   - Ý kiến trái chiều đặt cùng trang với insight, không để ở phụ lục. Không ai đọc phụ lục, và insight sẽ trông chắc hơn thực tế.
 
-  > Chọn một trong năm câu và trả lời cho insight hàng đầu của bạn, gõ một dòng vào chat.
+  > chọn một trong năm câu và trả lời cho insight hàng đầu của bạn, gõ một dòng vào chat.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
 
 ### COMPARE · AI flattens minority views
 - Kicker: Ý kiến trái chiều
-- Title: AI làm phẳng *ý kiến thiểu số*
+- Title: AI làm lu mờ *ý kiến thiểu số*
 - On-slide:
   - Lời người tham gia
   - “ableism”
@@ -312,30 +307,42 @@ last_synced: 2026-11-16
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Challenge nhắc đến ý kiến trái chiều. Slide này trả lời: vì sao nó hay bị mất khi nhờ AI tóm tắt, và làm gì.
+  - Challenge nhắc đến ý kiến trái chiều.
+  - Slide này trả lời: vì sao nó hay bị mất khi nhờ AI tóm tắt, và làm gì.
   - Hai phát hiện từ nghiên cứu, mẫu nhỏ nên coi là cảnh báo:
     - Nghiên cứu mô phỏng ý kiến bằng LLM trên khảo sát chính trị Mỹ báo cáo ý kiến thiểu số bị thu hẹp (homogenization) và độ chính xác không giữ khi đổi mức gộp nhóm.
-    - Nghiên cứu so người và LLM trên 31 phỏng vấn sinh viên khuyết tật thấy độ khớp theme thấp. LLM thay cách nói cá nhân bằng cách nói khái quát, ví dụ “ableism” thành “discrimination”. Tác giả gọi là semantic sanitisation. Mẫu có một mô hình và một người mã hoá.
-  - Hiểu đơn giản: bản tóm tắt nghe gọn và mượt, nhưng chỗ người ít nói nhất, thường là chỗ khác biệt nhất, bị làm phẳng.
+  - - Nghiên cứu so người và LLM trên 31 phỏng vấn sinh viên khuyết tật thấy độ khớp theme thấp. LLM thay cách nói cá nhân bằng cách nói khái quát, ví dụ “ableism” thành “discrimination”. Tác giả gọi là semantic sanitisation. Mẫu có một mô hình và một người mã hoá.
+  - Hiểu đơn giản: bản tóm tắt nghe gọn và mượt, nhưng chỗ người ít nói nhất, thường là chỗ khác biệt nhất, bị AI làm cho phẳng và bị lu mờ
   - Cách làm:
     - Đặt ý kiến trái chiều cùng trang với insight, không ở phụ lục.
     - Khi mẫu có nhóm khác biệt rõ, phân tích riêng từng nhóm trước khi gộp.
     - Ghi sample mix.
   - Có insight đã kiểm tra rồi, mình dựng persona từ chúng. Phần hai là Persona.
 
-  > Trong dữ liệu của bạn, ai là người nói ít nhất, và AI đã tóm tắt họ thế nào?
+  > trong dữ liệu của bạn, ai là người nói ít nhất, và AI đã tóm tắt họ thế nào?
 - 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
 
 ---
 
 ### NUMBERED · Six moves, three levels
 - Kicker: Tổng quan
-- Title: Sáu AI move,\n*ba mức cơ sở*
+- Title: Sáu AI move, *ba mức cơ sở*
 - On-slide:
-  - Sáu move chia theo Persona, Journey, Opportunity
-  - Principle supported: có nghiên cứu hoặc nguồn practitioner đỡ nguyên lý phía sau
-  - Untested: chưa tìm thấy nguồn
-  - Không move nào là best practice đã kiểm chứng
+  - Move
+  - Mục
+  - Mức cơ sở
+  - Soát nguồn từng dòng
+  - Persona
+  - ● Principle supported
+  - Gom nhóm, blind rồi primed
+  - Dựng map không persona, rồi so
+  - Journey
+  - ○ Untested
+  - Soát đường cảm xúc
+  - Bắt câu dạng giải pháp
+  - Opportunity
+  - Thử ba giải pháp
+  - Cả sáu là cách làm của khoá, thử một lần trên bộ mẫu. Không move nào là best practice đã kiểm chứng.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -343,7 +350,7 @@ last_synced: 2026-11-16
   - Mỗi move có một mức cơ sở:
     - Principle supported: có nghiên cứu hoặc nguồn practitioner đỡ nguyên lý phía sau. Move vẫn là cách làm của khoá, chưa được đo riêng
     - Untested: chưa tìm thấy nguồn nào, coi là ý tưởng để bạn tự thử
-  - Move yếu nhất về cơ sở là move 3 (dựng map không persona). Move 4 và 6 có nguồn ở phần cảnh báo, không phải ở chính move.
+  - Move yếu nhất về cơ sở là dựng map không persona. Hai move soát đường cảm xúc và thử ba giải pháp có nguồn ở phần cảnh báo, không phải ở chính move.
   - Mình chỉ đọc phần tóm tắt của các nguồn, nhiều nguồn là preprint hoặc bài của practitioner. Hãy kiểm lại trước khi trích. Dữ liệu mẫu và kết quả đã lưu nằm ở define-moves.md.
 
   > Move nào bạn đã làm tay mà chưa kiểm tra lại?
@@ -372,7 +379,6 @@ last_synced: 2026-11-16
 - Kicker: Định nghĩa
 - Title: Persona\n*là gì?*
 - On-slide:
-  - là gì?
   - WHAT
   - Nhóm người dùng có cùng hành vi, mục tiêu và kỳ vọng trong một tình huống, dựng từ dữ liệu research
   - Không phải một người điển hình, cũng không phải một nhóm nhân khẩu học
@@ -412,8 +418,18 @@ last_synced: 2026-11-16
   - Gom theo hành vi
   - Nhóm hành vi
   - mục tiêu, hành vi, kỳ vọng
-  - dựng từ A, B, C, D
   - Ý kiến trái chiều đi kèm
+  - Persona: mỗi dòng dẫn về insight ID
+  - Goals
+  - A · B
+  - Frustration
+  - C
+  - Expectation
+  - B · D
+  - Motivation
+  - A · C
+  - Không có insight
+  - 3 · xoá hoặc ghi unknown
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -449,16 +465,26 @@ last_synced: 2026-11-16
 
 ### NUMBERED · AI helps build a persona
 - Kicker: Leverage AI
-- Title: AI giúp\n*dựng persona*
+- Title: AI giúp *dựng persona*
 - On-slide:
-  - Bạn chuẩn bị: Insight đã kiểm tra; Mỗi insight có ID
-  - AI soạn nháp: Gom theme thành tối đa 3 nhóm hành vi; Soạn mô tả vào file md, mỗi dòng kèm insight ID
-  - Bạn kiểm tra: Đối chiếu từng dòng với insight ID; Dòng không có insight thì xoá hoặc ghi unknown
+  - Bạn chuẩn bị
+  - Insight đã kiểm tra
+  - Mỗi insight có ID
+  - AI soạn nháp
+  - Gom theme thành tối đa 3 nhóm hành vi
+  - Soạn mô tả vào file md, mỗi dòng kèm insight ID
+  - Bạn kiểm tra
+  - Đối chiếu từng dòng với insight ID
+  - Dòng không có insight thì xoá hoặc ghi unknown
   - AI không tự sinh persona từ kiến thức chung.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Bạn chuẩn bị insight đã kiểm tra; AI gom theme thành tối đa ba nhóm hành vi và soạn mô tả vào file md, mỗi dòng kèm insight ID; bạn đối chiếu từng dòng, dòng không có insight thì xoá hoặc ghi unknown
+  - Quay lại sơ đồ vừa rồi: bạn làm trước, AI chỉ gom theme và soạn dòng, bạn kiểm tra sau
+  - Ba bước:
+    - Bạn chuẩn bị: insight đã kiểm tra, mỗi insight có ID
+    - AI soạn nháp: gom theme thành tối đa ba nhóm hành vi và soạn mô tả vào file md, mỗi dòng kèm insight ID
+    - Bạn kiểm tra: đối chiếu từng dòng với insight ID; dòng không có insight thì xoá hoặc ghi unknown
   - AI không tự sinh persona từ kiến thức chung
 
   > dòng nào trong persona của bạn bạn chưa mở insight ra đọc?
@@ -468,11 +494,25 @@ last_synced: 2026-11-16
 
 ### TABLE · Move 1: audit the persona
 - Kicker: AI move · Persona
-- Title: Soát nguồn\n*từng dòng*
+- Title: Soát nguồn *từng dòng*
 - On-slide:
-  - Ví dụ: persona nháp 6 dòng của Delivery App
-  - Dòng bịa: assumption. Dòng đi ngược dữ liệu: against IN-04
-  - Bạn xoá hoặc sửa các dòng đó
+  - Ví dụ: persona nháp 6 dòng của Delivery App.
+  - Persona line
+  - Insight
+  - Verdict
+  - L2 · 28 đến 35 tuổi, nhà thành phố
+  - không có
+  - ○ assumption
+  - L4 · bỏ đi vì phí giao đắt
+  - IN-04
+  - ● against
+  - L6 · hào hứng thử món mới
+  - IN-05
+  - ● partly
+  - L5 · muốn hủy mà không tìm được
+  - IN-02, IN-09
+  - ● supports
+  - ID có thật chưa chứng minh insight đỡ đúng dòng. Bạn vẫn mở insight để đọc.
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -491,11 +531,14 @@ last_synced: 2026-11-16
 
 ### COMPARE · Move 2: blind and primed grouping
 - Kicker: AI move · Persona
-- Title: Gom nhóm hành vi,\n*blind rồi primed*
+- Title: Gom nhóm hành vi, *blind rồi primed*
 - On-slide:
-  - Lần blind: chỉ yêu cầu gom nhóm
-  - Lần primed: thêm “team tin khách mới nhạy cảm về giá”
-  - Hypothesis đổi thứ AI nói trước, chưa đổi nhóm
+  - Ví dụ: chín insight của Delivery App, chạy hai lần.
+  - Blind
+  - Ba nhóm: khung giờ và hủy đơn, kỳ vọng thời gian giao, món ăn. Giá chỉ là một insight yếu.
+  - Primed
+  - Vẫn ba nhóm đó, nhưng giá được nói đầu tiên rồi bị bác bằng IN-04.
+  - Hypothesis không đổi nhóm, nhưng đổi thứ AI nói trước. Nhóm nào xuất hiện cả hai lần thì đáng tin hơn.
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -530,8 +573,6 @@ last_synced: 2026-11-16
 - Kicker: Định nghĩa
 - Title: Journey map\n*là gì?*
 - On-slide:
-  - Journey map
-  - là gì?
   - WHAT
   - Bản đồ các bước một persona đi qua để đạt một mục tiêu.
   - Mỗi bước có hành động, suy nghĩ, cảm xúc và chỗ đau.
@@ -573,6 +614,8 @@ last_synced: 2026-11-16
   - Mỗi stage sẽ có insights và cả assumptions
   - IN-01
   - assumption
+  - IN-03
+  - IN-02
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -586,12 +629,15 @@ last_synced: 2026-11-16
 ---
 
 ### COMPARE · Move 3: map with and without persona
-- Kicker: AI move · Journey map
-- Title: Dựng map\n*không cần persona*
+- Kicker: AI move
+- Title: Dựng map *không cần persona*
 - On-slide:
-  - Dựng journey map hai lần: chỉ từ insight, và từ insight cộng persona
-  - Ô nào chỉ có ở bản có persona thì kiểm tra căn cứ
-  - Mức cơ sở: untested
+  - Ví dụ: năm giai đoạn từ chọn món đến nhận hàng.
+  - Không persona
+  - Nhiều ô ghi đúng chữ assumption.
+  - Có persona
+  - Gần như kín, nhưng IN-05 chỉ đỡ một phần ô chọn món.
+  - Ô chỉ có ở bản có persona: persona đang kéo AI điền quá tay?
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -607,18 +653,31 @@ last_synced: 2026-11-16
 
 ### NUMBERED · AI helps draw a journey map
 - Kicker: Leverage AI
-- Title: AI giúp\n*vẽ journey map*
+- Title: AI giúp *vẽ journey map*
 - On-slide:
-  - Bạn chuẩn bị: Chốt journey nào, actor nào, map phục vụ quyết định nào; Đưa dữ liệu đã có: research cũ, ticket, analytics; Tự liệt kê các giai đoạn
-  - AI soạn nháp: Gom dữ liệu thành source notes có ID; Đề xuất bước còn thiếu, nhóm thành giai đoạn; Điền hành động, pain point, cảm xúc từ insight, mỗi ô kèm insight ID
-  - Bạn kiểm tra: Ô không có dữ liệu thì ghi assumption; Team review để chọn chỗ cần research thêm; Khi ổn mới vẽ thành hình
+  - Bạn chuẩn bị
+  - Chốt journey nào, actor nào, map phục vụ quyết định nào
+  - Đưa dữ liệu đã có: research cũ, ticket, analytics
+  - Tự liệt kê các giai đoạn
+  - AI soạn nháp
+  - Gom dữ liệu thành source notes có ID
+  - Đề xuất bước còn thiếu, nhóm thành giai đoạn
+  - Điền hành động, pain point, cảm xúc từ insight, mỗi ô kèm insight ID
+  - Bạn kiểm tra
+  - Ô không có dữ liệu thì ghi assumption
+  - Team review để chọn chỗ cần research thêm
+  - Khi ổn mới vẽ thành hình
   - Bản nháp là proto-journey: ghi lại giả định, cần kiểm lại với người dùng thật.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ba bước gom từ sáu bước của các nguồn practitioner (NN/g, Smaply...): chốt phạm vi, gom dữ liệu, dựng bản nháp giả thuyết, điền từng giai đoạn, tìm ô trống, team review
-  - Định dạng bản nháp: md hoặc bảng, miễn mỗi ô có insight ID hoặc assumption
-  - Mình chỉ đọc phần tóm tắt các nguồn; chưa có nghiên cứu đo journey map do AI dựng
+  - Slide trước nói AI giúp gì ở từng bước. Slide này trả lời: nếu đã có insight, dựng journey map theo quy trình nào.
+  - Ba bước chính, gom từ sáu bước của các nguồn practitioner (NN/g, Smaply và vài nguồn khác):
+    - Bạn chuẩn bị: chốt phạm vi (journey nào, actor nào, map phục vụ quyết định nào), đưa dữ liệu đã có (research cũ, support ticket, analytics), tự liệt kê các giai đoạn
+    - AI soạn nháp: gom dữ liệu thành source notes có ID như bước ingest ở Lesson 2, đề xuất bước còn thiếu và nhóm thành giai đoạn, rồi điền mục tiêu, hành động, touchpoint, pain point, cảm xúc từ insight, mỗi ô kèm insight ID
+    - Bạn kiểm tra: ô không có dữ liệu ghi assumption, không coi là finding (làm ở practice: nhờ AI liệt kê ô thiếu insight và đề xuất câu hỏi phỏng vấn); team review chọn chỗ cần research thêm; khi ổn mới vẽ thành hình để showcase
+  - Bản nháp này giống một proto-journey: low-fi, ghi lại giả định của team. Nhiều nguồn nói map chỉ dựa dữ liệu nội bộ thì yếu hơn, nên cần kiểm lại với người dùng thật. Mình chỉ đọc phần tóm tắt của các nguồn, chưa có nghiên cứu đo journey map do AI dựng.
+  - Định dạng bản nháp: file md hoặc bảng đều được, miễn mỗi ô có insight ID hoặc ghi assumption. Khoá dùng md vì script kiểm ID đọc được; nếu làm bằng bảng thì chuyển về dạng “dòng | insight ID” trước khi chạy script
 
   > bước nào bạn thường bỏ qua khi dựng journey map?
 - 🎨 Visual hint: Ba bước ngang, icon line-art (người, robot, dấu tick), mũi tên nối, gạch đầu dòng một ý một dòng, không số và không card viền.
@@ -626,12 +685,28 @@ last_synced: 2026-11-16
 ---
 
 ### TABLE · Move 4: audit the emotion line
-- Kicker: AI move · Journey map
-- Title: Soát\n*đường cảm xúc*
+- Kicker: AI move
+- Title: Soát *đường cảm xúc*
 - On-slide:
-  - Mỗi ô cảm xúc có một đến hai quote ủng hộ hoặc đi ngược
-  - Chạy kiểm quote bằng chương trình
-  - Quote có thật nhưng AI vẫn có thể xếp sai chỗ
+  - Ví dụ: 24 ghi chú gốc của Delivery App.
+  - Giai đoạn · cảm xúc
+  - Note
+  - Quote
+  - Verdict
+  - Chọn món · Tốt
+  - R07
+  - “I love how many restaurants there are.”
+  - ● supports
+  - F07
+  - “Too pricey for what it is.”
+  - ○ misfiled
+  - Chờ giao · Tệ
+  - I01-03
+  - “I was still waiting at 60.”
+  - Nhận hàng · Tệ
+  - R01
+  - “the food went cold at the door.”
+  - Cả tám quote qua kiểm quote bằng chương trình. F07 vẫn bị xếp sai chỗ: nó nói về giá, không nói về cảm xúc lúc chọn món.
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -662,7 +737,7 @@ last_synced: 2026-11-16
   - Hình rất dày nên đọc cấu trúc, không đọc từng chữ. Bản gốc là một trang HTML mở được trong trình duyệt. Hình minh hoạ, không phải dữ liệu của project app giao đồ ăn.
   - Đọc đường cảm xúc của bản đồ như vậy thế nào
 
-  > Ô nào trong bản đồ này bạn sẽ mở insight gốc ra kiểm trước?
+  > ô nào trong bản đồ này bạn sẽ mở insight gốc ra kiểm trước?
 - 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
 
 ---
@@ -690,7 +765,6 @@ last_synced: 2026-11-16
 - Kicker: Định nghĩa
 - Title: Opportunity\n*là gì?*
 - On-slide:
-  - là gì?
   - WHAT
   - Nhu cầu hoặc khó khăn của người dùng đáng giải, viết như vấn đề của khách hàng chứ không phải tính năng.
   - Mỗi cái có evidence và được xếp thứ tự.
@@ -719,11 +793,31 @@ last_synced: 2026-11-16
 
 ### TABLE · Move 5: catch solutions disguised as needs
 - Kicker: AI move · Opportunity
-- Title: Bắt câu\n*dạng giải pháp*
+- Title: Bắt câu *dạng giải pháp*
 - On-slide:
-  - Gắn nhãn need hoặc solution cho từng dòng
-  - Viết lại dòng solution thành user need, kèm insight ID hoặc assumption
-  - Mức cơ sở: principle supported (practitioner)
+  - Ví dụ: năm opportunity nháp của Delivery App.
+  - ID
+  - Dòng của team
+  - Nhãn
+  - Viết lại, căn cứ
+  - O1
+  - Thêm nút hủy nổi bật
+  - ○ solution
+  - IN-02
+  - O2
+  - Khó chọn giờ vì không biết là cuối cùng
+  - ● need
+  - IN-01
+  - O3
+  - Gửi thông báo đẩy khi trễ
+  - assumption
+  - O4
+  - Khó theo dõi đơn vì ước tính lạc quan
+  - IN-03
+  - O5
+  - Làm lại màn hình chọn giờ
+  - trùng O2
+  - Giải pháp được viết lại thành need, kèm insight ID hoặc assumption.
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -743,11 +837,23 @@ last_synced: 2026-11-16
 
 ### COMPARE · Move 6: three solutions for one need
 - Kicker: AI move · Opportunity
-- Title: Thử ba\n*giải pháp*
+- Title: Thử ba *giải pháp*
 - On-slide:
-  - Một need, ba giải pháp khác nhau về bản chất
-  - Mỗi giải pháp kèm assumption mới
-  - Need còn đúng nếu bỏ cả ba giải pháp
+  - Ví dụ: need khung giờ giao của Delivery App.
+  - Need
+  - Khách mới khó chọn khung giờ giao vì không biết giờ đó là cuối cùng.
+  - Giải pháp
+  - Hiển thị
+  - Thêm assumption
+  - Khách đọc và hiểu nhãn “khung giờ cuối”.
+  - Thời điểm chọn giờ là lúc cần biết.
+  - Quy trình
+  - Nhà hàng và shipper chịu được việc dời giờ.
+  - Khách nhớ dùng tính năng đổi giờ.
+  - Chủ động
+  - Khách bật thông báo và đọc kịp.
+  - Gốc vấn đề là đồ nguội, không phải chọn giờ.
+  - Need vẫn đúng khi bỏ cả ba. Đây là phép thử need đứng độc lập, không phải bước chọn giải pháp.
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -764,16 +870,26 @@ last_synced: 2026-11-16
 
 ### NUMBERED · AI helps write opportunities
 - Kicker: Leverage AI
-- Title: AI giúp\n*viết opportunity*
+- Title: AI giúp *viết opportunity*
 - On-slide:
-  - Bạn chuẩn bị: Insight đã kiểm tra; Điểm đau từ journey map
-  - AI soạn nháp: Viết theo mẫu: người dùng gặp khó khi tình huống vì lý do; Cấm nhắc tính năng; Ra file md, mỗi dòng kèm insight ID
-  - Bạn kiểm tra: Nhu cầu hay giải pháp?; Có insight ID chưa?; Xếp theo severity, context, reach
+  - Bạn chuẩn bị
+  - Insight đã kiểm tra
+  - Selected pains từ journey map
+  - AI soạn nháp
+  - Viết theo mẫu: người dùng gặp khó khi tình huống vì lý do
+  - Cấm nhắc tính năng
+  - Ra file md, mỗi dòng kèm insight ID
+  - Bạn kiểm tra
+  - Nhu cầu hay giải pháp?
+  - Có insight ID chưa?
+  - Xếp theo severity, context, reach
   - AI không quyết định opportunity nào đáng giải.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - AI viết theo mẫu và bị cấm nhắc tính năng; bạn kiểm tra: nhu cầu hay giải pháp, có insight ID chưa, xếp theo severity, context và reach
+  - AI viết theo mẫu: người dùng gặp khó khi tình huống vì lý do, và bị cấm nhắc tính năng
+  - Ba bước: bạn chuẩn bị insight đã kiểm tra và điểm đau từ journey map;
+  - AI soạn nháp ra file md, mỗi dòng kèm insight ID; bạn kiểm tra ba điều: nhu cầu hay giải pháp, có insight ID chưa, xếp theo severity, context và reach
   - AI không quyết định opportunity nào đáng giải
 
   > opportunity nào của team bạn thật ra là một tính năng?
@@ -820,8 +936,6 @@ last_synced: 2026-11-16
 - Kicker: Định nghĩa
 - Title: Insight hub\n*là gì?*
 - On-slide:
-  - Insight hub
-  - là gì?
   - WHAT
   - Nơi lưu insight đã kiểm tra, mỗi insight có ID, evidence, ngày và tag.
   - Là thư mục insights trong Knowledge Hub của project, không phải công cụ riêng.
@@ -852,8 +966,6 @@ last_synced: 2026-11-16
 - Kicker: Thói quen
 - Title: Tìm trước\n*khi hỏi lại*
 - On-slide:
-  - Tìm trước
-  - khi hỏi lại
   - Câu hỏi mới, rồi tìm trong hub
   - Đã có thì dùng lại; chưa có thì research phần còn thiếu
   - Kiểm tra, rồi đóng góp vào hub
@@ -879,15 +991,19 @@ last_synced: 2026-11-16
 
 ### IMAGE · Insight hub: list of cards
 - Kicker: Ví dụ
-- Title: Insight hub\n*là danh sách card có ID*
+- Title: Insight hub\nlà danh sách\ncard có ID
 - On-slide:
   - Ảnh trang Insights của hub Travel Buddy: 39 mục chia theo loại, ô tìm theo ID hoặc tên, ba chế độ xem Cards, Tree, Matrix
 - Ví dụ: Có.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Hub của project demo Travel Buddy, không phải Delivery App
-  - 39 mục chia theo opportunity, hypothesis, metric, decision, evidence, finding
-  - Hypothesis chưa có evidence từ người dùng thật được đánh dấu cảnh báo
+  - Slide trước nói insight hub là gì. Đây là một hub thật trông thế nào: hub của project demo Travel Buddy, không phải project app giao đồ ăn.
+  - Đọc từ trên xuống:
+    - 39 mục, chia theo loại: opportunity, hypothesis, metric, decision, evidence, finding, mỗi loại một tab kèm số lượng
+    - Ô tìm theo ID hoặc tên, và ba cách xem: Cards, Tree, Matrix
+    - Mỗi card có ID và loại, ví dụ Opportunity 1 hoặc Hypothesis 1, kèm tiêu đề và số hypothesis phía dưới
+    - Hypothesis chưa có evidence từ người dùng thật được đánh dấu bằng biểu tượng cảnh báo
+  - Mỗi mục là một file trong thư mục insights, nên tìm lại bằng ID thay vì nhớ.
 
   > nếu hub của bạn có ba mươi chín mục, bạn sẽ tìm theo ID, theo tên hay theo loại trước?
 - 🎨 Visual hint: Chữ trái, ảnh phải có viền.
@@ -896,15 +1012,19 @@ last_synced: 2026-11-16
 
 ### IMAGE · Insight hub: one finding
 - Kicker: Ví dụ
-- Title: Một finding\ntruy về user need
+- Title: Một finding\ntruy về\nuser need
 - On-slide:
   - Ảnh trang finding F2: cảnh báo mức nghiêm trọng, các đường từ Opportunity qua Hypothesis và Evidence tới Finding, bảng thông tin
 - Ví dụ: Có.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Mỗi liên kết là một ID bấm được
-  - Đường truy về user need cho biết finding sinh ra từ đâu
-  - Finding mức 4 chưa xử lý chặn handoff
+  - Slide trước là danh sách. Đây là bên trong một card: một finding trong hub Travel Buddy.
+  - Đọc từ trên xuống:
+    - Tiêu đề nói thẳng điều tìm thấy: màn hình chia sẻ nhật ký chỉ có danh sách cố định ba người, không tìm hay mời theo tên được
+    - Dải cảnh báo: finding mức nghiêm trọng 4 chưa xử lý, chặn bước handoff
+    - Phần "From the user need": các đường đi từ opportunity qua hypothesis và evidence tới finding này, nên bạn biết finding sinh ra từ nhu cầu nào
+    - Bảng thông tin: khu vực, mức nghiêm trọng, tìm thấy ở evidence nào, ảnh hưởng quyết định nào, trạng thái xử lý
+  - Mỗi liên kết là một ID bấm được, đó là lý do insight có ID.
 
   > nếu không có đường truy về nhu cầu, finding này còn đáng ưu tiên không?
 - 🎨 Visual hint: Chữ trái, ảnh phải có viền.
@@ -913,17 +1033,34 @@ last_synced: 2026-11-16
 
 ### NUMBERED · Từ ghi chú đến card trên hub
 - Kicker: Leverage AI
-- Title: Từ ghi chú\n*đến card trên hub*
+- Title: Từ ghi chú *đến card trên hub*
 - On-slide:
-  - 01 AI đề xuất: một bảng, chưa tạo file; mỗi dòng có nguồn, loại card, quan hệ, củng cố hay mâu thuẫn hay mới
-  - 02 Bạn duyệt: giữ, sửa hoặc cắt; decision và thứ hạng do bạn quyết
-  - 03 AI tạo card, rồi kiểm: mỗi mục một file có ID, chạy kiểm tra liên kết và ID
-  - Page do script dựng từ các card; Decision, Insight, Challenge, Opportunity đều là card có ID
+  - AI đề xuất
+  - Đề xuất vào một file md, chưa tạo card
+  - Mỗi dòng có nguồn và loại card
+  - Ghi quan hệ tới card đã có
+  - Đánh dấu củng cố, mâu thuẫn hay mới
+  - Bạn duyệt
+  - Giữ, sửa hoặc cắt từng dòng
+  - Decision và thứ hạng do bạn quyết
+  - AI không tự đặt
+  - AI tạo card, rồi kiểm
+  - Mỗi mục một file card có ID, tạo bằng lệnh
+  - Chạy kiểm tra liên kết
+  - Bắt ID không tồn tại
+  - Page do script dựng từ các card. Decision, Insight, Challenge và Opportunity đều là card có ID.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Hai slide trước cho thấy hub trông thế nào; slide này trả lời làm sao có các card đó bằng AI mà vẫn tin được.
-  - Page không do AI gõ cả trang, do script dựng từ các card; ba bước add-insights; bốn thứ là card; ba điều bất biến cho mọi workflow.
+  - Hai slide trước cho thấy hub trông thế nào. Slide này trả lời: làm sao có được các card đó bằng AI mà vẫn tin được.
+  - Page Insights không do AI gõ cả trang. Nó do script dựng từ mỗi file một card trong thư mục insights. AI chỉ làm card, script dựng page.
+  - Ba bước:
+    - AI đề xuất vào một file md (một bảng), chưa tạo card. Mỗi dòng có nguồn, loại card, quan hệ tới card đã có (tests, serves, found_in), và đánh dấu củng cố, mâu thuẫn hay mới
+    - Bạn duyệt: giữ, sửa hoặc cắt. Decision và thứ hạng do bạn quyết, AI không tự đặt decision thành accepted
+    - AI tạo card bằng lệnh, rồi chạy kiểm tra để bắt card thiếu liên kết hoặc ID không tồn tại
+  - Bốn thứ bạn hay gom vào một chỗ đều là card: Decision là decision card, Insight là evidence hoặc finding card, Challenge là ghi chú mâu thuẫn trên card insight (không gộp, không xoá), Opportunity là opportunity card.
+  - Mỗi người có workflow riêng (Notion, Obsidian, Figma, thư mục md). Ba điều giữ nguyên bất kể công cụ: mỗi mục một card có ID, AI đề xuất rồi bạn duyệt, có bước kiểm cuối.
+  - Đây là cách làm của khoá, chưa có nguồn ngoài so sánh với cách khác.
 
   > workflow hiện tại của bạn có bước duyệt giữa AI đề xuất và lúc ghi vào hub không?
 - 🎨 Visual hint: Ba bước ngang, icon line-art (bảng, dấu tick, chồng card), mũi tên nối, không card viền.
@@ -946,6 +1083,10 @@ last_synced: 2026-11-16
   - Đối chiếu từng dòng với insight ID.
   - Journey map
   - Đề xuất bước còn thiếu, điền ô từ insight.
+  - Ô không có insight thì ghi assumption.
+  - Opportunity
+  - Viết lại sticky thành nhu cầu.
+  - Chạy test ba giải pháp, rồi chọn.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
