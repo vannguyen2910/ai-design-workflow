@@ -184,11 +184,11 @@ last_synced: 2026-11-16
 - Title: Decision, Insight, *Challenge*
 - On-slide:
   - Decision
-  - Bạn gọi tên quyết định mà nghiên cứu này phục vụ, trước khi AI tóm tắt.
+  - Quyết định cụ thể mà team phải đưa ra và đang chờ research trả lời.
   - Insight
-  - AI đề xuất tối đa 3 insight, mỗi cái kèm source ID và dòng “nguồn này không cho biết điều gì”. Bạn chọn một và viết lại.
+  - Một phát hiện đã kiểm tra về người dùng, có source ID dẫn về nguồn và trả lời cho một Decision.
   - Challenge
-  - Bạn tấn công insight, AI đóng vai người phản biện. Giữ ý kiến trái chiều.
+  - Bước tự phản biện insight trước khi tin nó. Ý kiến trái chiều được giữ cùng trang với insight.
   - Cả ba bước bắt đầu từ cùng một đầu vào: bộ ghi chú nguồn đã ẩn danh, có source ID.
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
