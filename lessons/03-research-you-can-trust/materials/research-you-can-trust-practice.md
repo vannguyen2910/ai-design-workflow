@@ -79,8 +79,8 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 - **Bạn kiểm tra:** ô nào không có insight thì ghi "assumption". Đếm tỷ lệ ô assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp. Bản nháp là một proto-journey; để team review chọn chỗ cần research thêm rồi mới vẽ thành hình. Lưu bản nháp là file md hoặc bảng, miễn mỗi ô có insight ID hoặc assumption. Hỏi AI insight nào nằm ở điểm thấp nhất của đường cảm xúc. Mỗi pain một insight ID; không có thì xoá hoặc ghi assumption.
 
 - **AI move 3, dựng map không persona rồi so:** dựng journey map hai lần, một lần chỉ từ insight, một lần từ insight cộng persona. Ô nào chỉ có ở bản có persona thì kiểm tra xem insight ID gắn vào có thật sự nói điều ô đó ghi không.
-- **AI move 4, tìm ô thiếu insight:** nhờ AI liệt kê ô không có insight hoặc có ID nhưng insight không nói điều đó, đếm tỷ lệ, và đề xuất câu hỏi phỏng vấn mở về hành vi quá khứ cho từng ô thiếu. Chọn một cách đếm và dùng nhất quán.
-- **AI move 5, soát đường cảm xúc:** với mỗi ô cảm xúc có nội dung, nhờ AI tìm ghi chú gốc ủng hộ hoặc đi ngược, trả quote nguyên văn. Chạy chương trình kiểm quote của Practice 2 trên kết quả, rồi tự đọc từng ghi chú: quote có thật nhưng AI vẫn có thể xếp nhầm chỗ.
+- **Tìm ô thiếu insight (bước thêm, không phải AI move trên lớp):** nhờ AI liệt kê ô không có insight hoặc có ID nhưng insight không nói điều đó, đếm tỷ lệ, và đề xuất câu hỏi phỏng vấn mở về hành vi quá khứ cho từng ô thiếu. Chọn một cách đếm và dùng nhất quán.
+- **AI move 4, soát đường cảm xúc:** với mỗi ô cảm xúc có nội dung, nhờ AI tìm ghi chú gốc ủng hộ hoặc đi ngược, trả quote nguyên văn. Chạy chương trình kiểm quote của Practice 2 trên kết quả, rồi tự đọc từng ghi chú: quote có thật nhưng AI vẫn có thể xếp nhầm chỗ.
 
 ### Step 6 · Opportunity · AI soạn nháp, bạn kiểm tra và quyết định
 
@@ -89,8 +89,8 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 3. **Reframing** nhánh mạnh nhất (không reframe tất cả): mục tiêu này của ai và nếu sai thì sao; ai đã thành công và khác ở điểm nào; khung này bỏ ngoài điều gì. Ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
 4. **Chấm rồi chọn:** sizing, importance, company fit, market position. Xếp thứ tự theo severity, context và reach, không theo số lần được nhắc. Ghi opportunity bị loại kèm lý do. Mỗi opportunity có insight ID và một câu nêu mẫu không cho biết điều gì.
 
-5. **AI move 6, bắt câu dạng giải pháp:** đưa AI danh sách opportunity nháp của team. Nhờ nó gắn nhãn need hoặc giải pháp, và viết lại dòng giải pháp thành user need kèm insight ID hoặc assumption. Bạn kiểm tra bản viết lại có đổi nghĩa không.
-6. **AI move 7, thử ba giải pháp:** với opportunity ưu tiên cao nhất, nhờ AI đề xuất ba giải pháp khác nhau về bản chất và nêu assumption mà mỗi giải pháp thêm vào. Rồi hỏi: need còn đúng nếu bỏ cả ba không? Đây là phép thử need đứng độc lập, không phải bước chọn giải pháp.
+5. **AI move 5, bắt câu dạng giải pháp:** đưa AI danh sách opportunity nháp của team. Nhờ nó gắn nhãn need hoặc giải pháp, và viết lại dòng giải pháp thành user need kèm insight ID hoặc assumption. Bạn kiểm tra bản viết lại có đổi nghĩa không.
+6. **AI move 6, thử ba giải pháp:** với opportunity ưu tiên cao nhất, nhờ AI đề xuất ba giải pháp khác nhau về bản chất và nêu assumption mà mỗi giải pháp thêm vào. Rồi hỏi: need còn đúng nếu bỏ cả ba không? Đây là phép thử need đứng độc lập, không phải bước chọn giải pháp.
 
 ### Step 7 · Kiểm truy vết bằng chương trình
 
@@ -123,7 +123,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 - Assumption map đã cập nhật
 - Persona, journey map, opportunity đã xếp hạng
 - Một trang cho lead (bản đầu problem brief)
-- Kết quả bảy AI move và kết quả kiểm truy vết
+- Kết quả sáu AI move và kết quả kiểm truy vết
 - Một skill chạy cả chuỗi
 - Các entry đã đưa lên hub, và bảng giờ từng step
 
@@ -134,14 +134,14 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 - [ ] Bạn đã mở source ID và đọc ngữ cảnh của mọi ghi chú dùng cho insight.
 - [ ] Mỗi opportunity viết như một user need, được xếp theo severity, context và reach.
 - [ ] Bạn đóng AI lại vẫn giải thích được insight của mình.
-- [ ] Bạn đã chạy bảy AI move và ghi move nào bắt được lỗi thật, move nào chỉ nghe hợp lý.
+- [ ] Bạn đã chạy sáu AI move và ghi move nào bắt được lỗi thật, move nào chỉ nghe hợp lý.
 - [ ] Lần kiểm truy vết cuối không còn dòng không đạt.
 
 Xong thì mang các output này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
 
 ## If you get stuck
 
-- **Chưa có dữ liệu để thử bảy move:** dùng `insights-plain.txt`, `persona-draft-plain.txt`, `journey-map-draft.md` và `opportunities-draft-plain.txt` trong course case, cùng prompt ở `define-moves.md`.
+- **Chưa có dữ liệu để thử sáu move:** dùng `insights-plain.txt`, `persona-draft-plain.txt`, `journey-map-draft.md` và `opportunities-draft-plain.txt` trong course case, cùng prompt ở `define-moves.md`.
 - **Chưa có transcript từ Practice 2:** làm thử bằng bộ source notes và bộ insight mẫu ở trên, rồi làm lại với transcript của bạn khi có.
 - **Ít insight (dưới khoảng 5) hoặc chỉ một người phỏng vấn đứng sau:** gọi persona là assumption, ghi rõ số người, và dành thêm sức cho Step 2.
 - **AI đưa ra điều nghe hợp lý nhưng không có insight nào làm căn cứ:** ghi "chưa có nguồn" hoặc "unknown", không đưa vào như một sự thật.

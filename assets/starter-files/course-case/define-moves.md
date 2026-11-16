@@ -1,6 +1,6 @@
-# Bảy AI move của Lesson 3: Delivery App (fictional)
+# Sáu AI move của Lesson 3: Delivery App (fictional)
 
-Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Bảy prompt chạy trên dữ liệu mẫu:
+Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prompt chạy trên dữ liệu mẫu:
 
 - `insights-plain.txt`: chín insight có ID (IN-01 đến IN-09), dạng `ID | text`.
 - `persona-draft-plain.txt`: sáu dòng persona nháp (L1 đến L6), dạng `ID | text`. Dòng L2 bịa, dòng L4 đi ngược dữ liệu.
@@ -72,7 +72,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 **Điều cần thấy khi so:** bản có persona điền thêm ô "chọn món" và gắn IN-05, nhưng IN-05 chỉ nói khách đánh giá cao sự đa dạng và chất lượng món, chưa nói họ duyệt menu hay thấy vui ở bước đó. Persona kéo AI điền quá tay, và insight ID gắn vào vẫn trông hợp lý. Bản không persona thật hơn nhưng trống hơn.
 
-### Move 4: Tìm ô thiếu insight
+### Bước thêm (không phải move trên lớp): Tìm ô thiếu insight
 
 **Prompt**
 
@@ -87,7 +87,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 **Giới hạn:** AI tự nêu mức "căn cứ không khớp" ở các ô sát ranh giới là đánh giá của nó, có thể chặt hoặc lỏng hơn bạn. Hai cách tính tỷ lệ ra hai con số khác nhau, nên bạn chọn một cách và dùng nhất quán.
 
-### Move 5: Soát đường cảm xúc
+### Move 4: Soát đường cảm xúc
 
 **Prompt**
 
@@ -105,7 +105,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 ## Opportunity
 
-### Move 6: Bắt câu dạng giải pháp
+### Move 5: Bắt câu dạng giải pháp
 
 **Prompt**
 
@@ -123,7 +123,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 AI tự nhận ra O5 viết lại trùng với O2, nên hai dòng là một need.
 
-### Move 7: Thử ba giải pháp
+### Move 6: Thử ba giải pháp
 
 **Prompt**
 

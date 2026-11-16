@@ -324,26 +324,26 @@ last_synced: 2026-11-16
 
 ---
 
-### NUMBERED · Seven moves, three levels
+### NUMBERED · Six moves, three levels
 - Kicker: Tổng quan
-- Title: Bảy AI move,\n*ba mức cơ sở*
+- Title: Sáu AI move,\n*ba mức cơ sở*
 - On-slide:
-  - Bảy move chia theo Persona, Journey, Opportunity
+  - Sáu move chia theo Persona, Journey, Opportunity
   - Principle supported: có nghiên cứu hoặc nguồn practitioner đỡ nguyên lý phía sau
   - Untested: chưa tìm thấy nguồn
   - Không move nào là best practice đã kiểm chứng
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần method của persona, journey map và opportunity bạn đã biết, nên buổi này dành cho bảy AI move: việc AI làm tốt hơn người ở từng bước, kèm phần bạn kiểm tra.
+  - Phần method của persona, journey map và opportunity bạn đã biết, nên buổi này dành cho sáu AI move: việc AI làm tốt hơn người ở từng bước, kèm phần bạn kiểm tra.
   - Mỗi move có một mức cơ sở:
     - Principle supported: có nghiên cứu hoặc nguồn practitioner đỡ nguyên lý phía sau. Move vẫn là cách làm của khoá, chưa được đo riêng
     - Untested: chưa tìm thấy nguồn nào, coi là ý tưởng để bạn tự thử
-  - Move 3 và 4 là hai move yếu nhất về cơ sở. Move 5 và 7 có nguồn ở phần cảnh báo, không phải ở chính move.
+  - Move yếu nhất về cơ sở là move 3 (dựng map không persona). Move 4 và 6 có nguồn ở phần cảnh báo, không phải ở chính move.
   - Mình chỉ đọc phần tóm tắt của các nguồn, nhiều nguồn là preprint hoặc bài của practitioner. Hãy kiểm lại trước khi trích. Dữ liệu mẫu và kết quả đã lưu nằm ở define-moves.md.
 
   > Move nào bạn đã làm tay mà chưa kiểm tra lại?
-- 🎨 Visual hint: TABLE. Bảng bảy hàng: số, move, mục, chip mức cơ sở (tím viền đậm cho Principle supported, nét đứt cho Untested).
+- 🎨 Visual hint: TABLE. Bảng sáu hàng: số, move, mục, chip mức cơ sở (tím viền đậm cho Principle supported, nét đứt cho Untested).
 
 ---
 
@@ -472,7 +472,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói bảy move. Move 1 trả lời: persona nháp có dòng nào không có nguồn?
+  - Slide trước nói sáu move. Move 1 trả lời: persona nháp có dòng nào không có nguồn?
   - Bạn đưa AI persona nháp (mỗi dòng một ID) và các insight đã kiểm tra, rồi nhờ trả mỗi dòng một nhận định: ủng hộ, đi ngược hoặc assumption. Trên bộ mẫu:
     - L2 (28 đến 35 tuổi, nhà thành phố) không insight nào nói: assumption
     - L4 (bỏ đi vì phí giao đắt) đi ngược IN-04, insight nói giá không phải lý do chính
@@ -621,7 +621,7 @@ last_synced: 2026-11-16
 
 ---
 
-### TABLE · Move 5: audit the emotion line
+### TABLE · Move 4: audit the emotion line
 - Kicker: AI move · Journey map
 - Title: Soát\n*đường cảm xúc*
 - On-slide:
@@ -631,7 +631,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 5 hỏi: đường cảm xúc của journey map dựa trên lời khách hay trên cảm giác của AI?
+  - Move 4 hỏi: đường cảm xúc của journey map dựa trên lời khách hay trên cảm giác của AI?
   - Bạn nhờ AI tìm cho mỗi ô cảm xúc có nội dung một đến hai ghi chú gốc ủng hộ hoặc đi ngược, trả quote nguyên văn. Rồi chạy chương trình kiểm quote của Lesson 2 trên kết quả. Trên bộ mẫu, cả tám quote đạt.
   - Nhưng AI xếp F07 (than đắt) vào “đi ngược” cảm xúc Tốt ở bước chọn món, trong khi F07 nói về giá, không nói về cảm xúc lúc chọn món. Chương trình chỉ chứng minh quote có thật; nhãn đúng hay sai là việc bạn đọc.
   - Mức cơ sở: principle supported, ở phần cảnh báo. Một nghiên cứu về gắn sentiment trên dữ liệu y tế thấy AI và người chỉ khớp ở mức vừa và AI hay gắn theo chữ, không theo ý nghĩa diễn giải (JMIR 2026). Điều này ủng hộ việc kiểm lại, không ủng hộ riêng move này.
@@ -713,7 +713,7 @@ last_synced: 2026-11-16
 
 ---
 
-### TABLE · Move 6: catch solutions disguised as needs
+### TABLE · Move 5: catch solutions disguised as needs
 - Kicker: AI move · Opportunity
 - Title: Bắt câu\n*dạng giải pháp*
 - On-slide:
@@ -723,7 +723,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 6 bắt phản xạ quen thuộc: viết giải pháp rồi gọi nó là opportunity.
+  - Move 5 bắt phản xạ quen thuộc: viết giải pháp rồi gọi nó là opportunity.
   - Bạn đưa AI danh sách opportunity nháp của team và các insight. Nó gắn nhãn từng dòng là need hoặc giải pháp, rồi viết lại dòng giải pháp thành user need theo mẫu “[người dùng] gặp khó khi [tình huống] vì [lý do]”, kèm insight ID hoặc assumption.
   - Trên bộ mẫu AI gắn nhãn đúng cả năm dòng:
     - O1, O3, O5 là giải pháp
@@ -737,7 +737,7 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 7: three solutions for one need
+### COMPARE · Move 6: three solutions for one need
 - Kicker: AI move · Opportunity
 - Title: Thử ba\n*giải pháp*
 - On-slide:
@@ -747,7 +747,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 7 kiểm tra một điều: need của bạn có đứng độc lập khỏi giải pháp không?
+  - Move 6 kiểm tra một điều: need của bạn có đứng độc lập khỏi giải pháp không?
   - Với need “khách mới gặp khó khi chọn khung giờ giao vì không biết giờ đó là cuối cùng”, bạn nhờ AI đề xuất ba giải pháp khác nhau về bản chất, nêu assumption mới mà mỗi giải pháp thêm vào, rồi trả lời: need còn đúng nếu bỏ cả ba không?
   - Trên bộ mẫu AI đưa ba giải pháp thật sự khác nhau và kết luận need vẫn đúng. Nó còn nói cách diễn đạt need hiện tại đã ngầm gợi giải pháp 1. Ba giải pháp suy ra từ một insight, chưa có dữ liệu để xếp hạng.
   - Nhờ thêm “các hướng khác nhau về bản chất”, vì AI có xu hướng đưa ý giống nhau.
@@ -1545,7 +1545,7 @@ last_synced: 2026-11-16
 
 ---
 
-### DIAGRAM · Move 4: cells without insight
+### DIAGRAM · Extra: cells without insight
 - Status: Không có trong deck hiện tại, giữ ở đây để dùng lại.
 - Kicker: AI move · Journey map
 - Title: Tìm ô\n*thiếu insight*
@@ -1556,7 +1556,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 4 biến journey map thành danh sách việc cần hỏi ở buổi phỏng vấn sau.
+  - Bước này biến journey map thành danh sách việc cần hỏi ở buổi phỏng vấn sau.
   - Bạn đưa AI journey map nháp và các insight. Nó liệt kê ô không có insight hoặc có ID nhưng insight không nói điều đó, đếm tỷ lệ, và đề xuất câu hỏi phỏng vấn mở về hành vi quá khứ cho từng ô thiếu.
   - Trên bộ mẫu:
     - Hai ô lệch căn cứ: chọn món/hành động và nhận hàng/cảm xúc
