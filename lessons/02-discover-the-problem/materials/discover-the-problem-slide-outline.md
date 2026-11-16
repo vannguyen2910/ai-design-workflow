@@ -891,10 +891,9 @@ last_synced: 2026-11-16
 - Kicker: Ingest
 - Title: Từ transcript\n*đến source notes*
 - On-slide:
-  - Transcript đã ẩn danh: nguồn gốc, không ai sửa
-  - Source notes: R03, F04, I01-01 dạng ID | text
+  - Transcript đã ẩn danh: nguồn gốc (raw source) của buổi phỏng vấn, không ai sửa
+  - Source notes: những ý nhỏ cắt ra từ nguồn gốc, mỗi ý một dòng và một ID (R03, F04, I01-01)
   - Mỗi note một dòng, dạng ID | text, và giữ nguyên lời người nói
-  - Ví dụ lấy từ bộ mẫu Delivery App. R là review, F là bài trên forum, I01-01 là note 1 của buổi phỏng vấn 1
 - Ví dụ: có (ba note từ bộ mẫu Delivery App)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -911,7 +910,7 @@ last_synced: 2026-11-16
   - Slide sau nói cách bạn set up note từ transcript của chính mình.
 
   > Bạn đã có nguồn nào ngoài phỏng vấn, như review hay bài trên forum, để thêm vào hub?
-- 🎨 Visual hint: DIAGRAM. Hai card nền trắng: transcript bên trái, source notes viền tím bên phải với ba dòng mono.
+- 🎨 Visual hint: DIAGRAM. Hai card nền trắng cùng rộng: transcript bên trái, source notes viền tím bên phải với một dòng định nghĩa và ba dòng mono.
 
 ---
 
