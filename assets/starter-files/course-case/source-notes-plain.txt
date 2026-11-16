@@ -1,0 +1,24 @@
+R01 | I picked a delivery time slot without realising it could not be changed after payment. The order arrived while I was in a meeting and the food went cold at the door.
+R02 | The time slot picker is confusing. It shows 7 pm but the courier came at 6:15. I still do not know which one I chose.
+R03 | I could not find how to cancel an order anywhere. In the end I messaged support and waited an hour.
+R04 | Cancelling is hidden in the order details under 'Help'. Nobody would look there. I got charged for food I did not want.
+R05 | The app says 25 to 30 minutes. It took me over an hour. Not a quick weeknight dinner.
+R06 | A bit expensive with the delivery fee, but the food is good so I keep ordering.
+R07 | I love how many restaurants there are. I have tried dishes I would never have found.
+R08 | The food quality is great and the portions are generous.
+R09 | Great app!!! Five stars.
+R10 | The restaurant forgot half my order and the burger came cold. The app itself was fine, but I will not order from that place again.
+F01 | My first order arrived at a time nobody was home. The app lets you choose a time slot but it never said the choice was final. Anyone else caught out?
+F02 | Is there any way to change my delivery slot? The app says the cut-off was five minutes ago, but I never saw a cut-off anywhere when I ordered.
+F03 | How do you cancel? I have looked everywhere. The cancel button only shows up for a few minutes after payment, I think.
+F04 | I cancelled my order and still got charged. Support said cancelling had to happen before the restaurant accepted it. That was not written on the cancel screen.
+F05 | The 25-minute estimate is really 50 when it rains. The live map helps but the estimates are optimistic.
+F06 | Ordering for the first time is stressful. I could not tell whether the order had gone through or when it would arrive.
+F07 | Too pricey for what it is. I can pick up the same meal for half at the restaurant.
+F08 | The vegetarian options are really good. Better than I expected from a delivery app.
+I01-01 | I ordered at lunch and just tapped the first time slot it showed. I did not think about whether I would be at my desk. It arrived when I was in a meeting and I felt silly.
+I01-02 | I wanted to cancel because my plans changed. I went through the whole order screen and could not find it. Eventually I messaged support.
+I01-03 | The estimate said 30 minutes and I was still waiting at 60. I felt like I had done something wrong.
+I02-01 | When I picked the delivery time, I assumed I could change it later like in other apps. I only learned it was locked when I tried.
+I02-02 | I thought cancelling would be easy. It is not obvious. I would rather the app told me the deadline before it charges me.
+I02-03 | Honestly, the waiting time bothered me more than the price. After a long day I do not want to wait an hour for dinner.

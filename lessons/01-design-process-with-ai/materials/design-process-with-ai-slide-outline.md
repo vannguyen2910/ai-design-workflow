@@ -2,11 +2,11 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 36
+slide_count: 40
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
-last_synced: 2026-10-30
+last_synced: 2026-11-16
 ---
 
 ## Session metadata
@@ -18,6 +18,7 @@ last_synced: 2026-10-30
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
+| Timing note | Bốn slide hub mới (ba lớp, ba quy tắc, một hub một chức năng, ID chung) thêm khoảng 10 phút; phần nghề (T1) giữ nguyên theo quyết định của Winnie (2026-11-16); cần bớt tương ứng ở hỏi đáp cuối buổi, các slide ví dụ hoặc phần agent trước khi dạy, và Winnie quyết định bớt chỗ nào |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
@@ -140,7 +141,7 @@ last_synced: 2026-10-30
   - 02: một nửa designer được khảo sát đã ship code do AI tạo; buổi 7 đến 9; khoá không biến designer thành engineer, designer chỉ đạo AI coding tool và kiểm tra những gì nó đã làm
   - 03: **nói thẳng** khoá này dạy cách dùng AI để làm việc, không dạy thiết kế sản phẩm AI; bằng chứng về tăng trưởng ở mức yếu
   - Mỗi hướng có một slide chi tiết ở Appendix; mở khi designer hỏi
-  - **Câu A/B 30 giây:** bỏ phiếu trong chat, designer nghiêng về hướng 01, 02 hay 03? Designer ghi lại hai dòng vào `_personal/my-direction.md` ở Practice 1
+  - **Câu A/B 30 giây:** bỏ phiếu trong chat, designer nghiêng về hướng 01, 02 hay 03?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn mục, số purple; dòng 04 dùng màu ochre để nhấn giới hạn của khoá.
 
 ---
@@ -555,7 +556,53 @@ last_synced: 2026-10-30
 
 ---
 
-## 5. Project folder and Knowledge Hub (T5)
+## 5. The hub (T5)
+
+---
+
+### DIAGRAM · Three layers
+- Kicker: Ba lớp
+- Title: Ba lớp\n*của hub*
+- On-slide:
+  - Raw sources: thứ bạn thu được, không ai sửa
+  - Wiki: thứ rút ra, AI soạn nháp, bạn kiểm tra
+  - Schema: quy ước làm việc, AI đọc đầu tiên
+- Ví dụ: có (một source note, một insight và file AGENTS.md của project mẫu)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Mỗi cuộc chat AI mới bắt đầu từ trống. Hub là cách để AI không phải bắt đầu lại.
+
+  - Andrej Karpathy mô tả ý này vào tháng 4 năm 2026: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi; lý do ông nêu là người ta bỏ wiki vì công bảo trì, còn AI không ngại cập nhật liên kết
+  - Raw sources: transcript đã ẩn danh, review, tài liệu của team; designer đưa vào, không ai sửa
+  - Wiki: source notes, insight, opportunity, decision; mỗi mục một file Markdown nối với nhau; AI soạn nháp, designer kiểm tra
+  - Schema: một file ngắn cho AI biết đọc gì trước và quy tắc nào cứng; trong khoá là `AGENTS.md`
+  - Hai file giúp tìm đường: index (`README.md`) cho biết hub có gì, log (`project-log.md`) ghi mỗi lần đưa nguồn vào hoặc đổi quyết định
+  - Chỉ vào ba file của project mẫu, một phút
+
+  > Trong project của bạn, thứ nào nên là raw source?
+- 🎨 Visual hint: SCHEMATIC. Ba tầng xếp chồng: raw sources ở dưới (ink), wiki ở giữa (trắng), schema ở trên (purple). Mũi tên "AI đọc" đi từ schema xuống; mũi tên "AI ghi" chỉ vào wiki và không có mũi tên ghi vào raw.
+
+---
+
+### NUMBERED · Three rules
+- Kicker: Ba quy tắc
+- Title: Ba quy tắc\n*giữ hub đáng tin*
+- On-slide:
+  - 01 · AI không bao giờ sửa raw sources
+  - 02 · Mỗi note có một ID
+  - 03 · Quote phải nguyên văn
+- Ví dụ: có (note `I01-03`, và một quote AI viết lại nghe hay hơn quote thật)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Quy tắc 1: nếu bản tóm tắt sai thì vẫn còn nguồn để đối chiếu; nghiên cứu về dùng AI cho UX research cho thấy researcher ít tin kết quả AI vì không truy được về dữ liệu gốc
+  - Quy tắc 2: ID `I01-03` là ghi chú 3 của phỏng vấn 1; một insight chỉ ra được nó dựa vào note nào
+  - Quy tắc 3: người thật nói câu dở dang, còn quote AI viết lại nghe tự nhiên hơn nên khó bắt; buổi 2 dạy cách kiểm điều này bằng chương trình
+  - Ba quy tắc nằm trong `AGENTS.md`; designer viết lại bằng lời của mình ở Practice 1, bước 4
+  - Một bình luận dưới bài của Karpathy báo truy vấn chỉ qua wiki kém hơn khi có tài liệu gốc; số tự báo cáo, chưa kiểm chứng, và đó là lý do quy tắc 1 tồn tại
+
+  > Quy tắc nào bạn dễ vi phạm nhất khi làm việc gấp?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba cột; số purple, một dòng ví dụ nhỏ dưới mỗi cột.
 
 ---
 
@@ -568,15 +615,15 @@ last_synced: 2026-10-30
 - Speaker notes:
   - Folder local nằm trên máy của designer, không phải file design trên server hay tài liệu cloud
   - AI coding tool mở cả folder làm project của nó và đọc mọi thứ bên trong; folder đồng bộ cloud có thể gặp lỗi giữa chừng khi đang ghi
-  - Cây folder: trang chủ `index.html` của hub (bấm đúp là mở bằng trình duyệt), file luật `AGENTS.md` và folder `context/` trước, rồi `work/` (những gì làm ra) và `insights/` (những gì học được, các decision)
+  - Cây folder minh hoạ: trang chủ `index.html` của hub (bấm đúp là mở bằng trình duyệt), file schema `AGENTS.md` và folder `context/` trước, rồi `work/` (những gì làm ra) và `insights/` (những gì học được, các decision)
   - `AGENTS.md` là file tool tự đọc khi mở folder, nên các quy tắc không phụ thuộc vào việc designer nhớ dán lại; skill nằm ở `toolkit/skills/` (gốc workspace, dùng chung cho mọi project) và ghi rõ mỗi bước ai làm, đọc file nào, ghi vào đâu
-  - Dữ liệu gốc nằm trong `_raw-private/`, không lên GitHub; AI chỉ đọc bản đã ẩn danh trong `anonymised/`. Ghi chú riêng nằm trong `_personal/`, ngoài context pack
+  - Dữ liệu gốc nằm trong `_raw-private/`, không lên GitHub; AI chỉ đọc bản đã ẩn danh trong `anonymised/`
   - Mỗi folder một vai: `context/` là thứ đưa vào đầu tiên ở mọi bước, `work/` là những gì làm ra, `insights/` là những gì học được và các decision
-  - Layout khác vẫn ổn cho project riêng của designer; ở đây dùng layout này
+  - Đây là một ví dụ; designer tự sắp xếp folder, miễn mỗi lớp của hub có chỗ riêng và `AGENTS.md` ghi rõ chỗ đó
   - Hai loại file, trong một hơi: Markdown (`.md`) là plain text designer làm việc trong đó và AI tool xử lý ổn định, hub cũng là Markdown và xem được trên GitHub hoặc VS Code; HTML chỉ còn ở prototype
   - Hai phút cho slide này; chỉ chỉ ra bốn chỗ: `AGENTS.md`, `context/`, `work/` và `insights/`; phần còn lại là Practice 1 ở nhà
   - Buổi này không dựng folder trên lớp; mọi người dựng ở nhà trong Practice 1
-- 🎨 Visual hint: SCHEMATIC. Một cây folder gọn, `AGENTS.md` và folder context được tô purple, folder hub màu ink; `_raw-private` và `_personal` có biểu tượng khoá.
+- 🎨 Visual hint: SCHEMATIC. Một cây folder gọn, `AGENTS.md` và folder context được tô purple, folder hub màu ink; `_raw-private` có biểu tượng khoá.
 
 ---
 
@@ -609,7 +656,53 @@ last_synced: 2026-10-30
 
 ---
 
-## 6. Data safety (T6) and Activity
+## 6. One hub or many (T6)
+
+---
+
+### DIAGRAM · One hub per function
+- Kicker: Nhiều hub
+- Title: Một chức năng,\n*một hub*
+- On-slide: Business, technical và design mỗi bên giữ một hub. AI nối ba hub bằng ID chung.
+- Ví dụ: bản nháp (mục tiêu business, opportunity, decision và ràng buộc kỹ thuật của app giao đồ ăn)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Một số công ty lớn đang thử hướng này. Đây là pattern, chưa phải chuẩn.
+
+  - Mỗi chức năng sở hữu một loại dữ liệu và có người chịu trách nhiệm: business giữ mục tiêu và metric, technical giữ ràng buộc và kiến trúc, design giữ insight và decision
+  - Gộp hết vào một hub thì không ai là chủ của từng phần; cùng nguyên tắc với data mesh: mỗi miền tự chủ, chỉ một bộ chuẩn chung rất nhỏ
+  - AI là lớp nối: lấy dữ liệu liên quan và đối chiếu giữa ba hub
+  - Phần này là lý thuyết, không có bài tập; hub của designer là một trong ba nhánh
+
+  > Ở chỗ bạn làm, ai đang giữ mục tiêu business và ai giữ ràng buộc kỹ thuật?
+- 🎨 Visual hint: SCHEMATIC. Ba hub ba màu nhạt xếp ngang, một đường mảnh nối ba hub ở giữa, nhãn "ID chung".
+
+---
+
+### PROCESS · The shared ID thread
+- Kicker: Sợi dây nối
+- Title: ID chung\n*nối các hub*
+- On-slide:
+  - 01 · Mục tiêu business có ID
+  - 02 · Opportunity trỏ về mục tiêu
+  - 03 · Decision trỏ về opportunity
+  - 04 · Ràng buộc kỹ thuật và test trỏ về decision
+- Ví dụ: bản nháp (chuỗi cho quyết định hiện giờ chốt trước khi thanh toán của app giao đồ ăn)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Mỗi mục mang ID và nêu ID của mục nó dựa vào, nên AI đi được từ test ngược về mục tiêu business qua cả ba hub
+  - Hub của designer đã dùng ý này ở quy mô nhỏ: source ID như `I01-03`, insight ID như `IN-01`
+  - Ba quy tắc cho ID: không đổi, không dùng lại, mỗi chức năng một tiền tố để không trùng; BIZ, DES, TEC chỉ là tiền tố minh hoạ, không phải chuẩn
+  - Các hub cần thêm một bộ field chung rất nhỏ như owner, status, version
+  - Hai rủi ro: hai hub cùng ID nhưng khác cấu trúc thì phép nối sai mà không báo lỗi; và AI nối nhanh nhưng designer vẫn mở cả hai nguồn để kiểm tra
+
+  > Mục nào trong project của bạn nên có ID trước?
+- 🎨 Visual hint: SCHEMATIC. Process track bốn bước nối ngang qua ba hub; bước hai và ba trong hub design được tô purple.
+
+---
+
+## 7. Data safety (T7) and Activity
 
 ---
 
@@ -696,7 +789,7 @@ last_synced: 2026-10-30
 
 ---
 
-## 7. Questions and close
+## 8. Questions and close
 
 ---
 
@@ -723,19 +816,16 @@ last_synced: 2026-10-30
   - Practice 1: làm ở nhà, khoảng bốn giờ, trên project của designer
   - Chuỗi việc: folder, context, self-documentation, một instruction
   - Tuỳ chọn: push lên Git và bật trang live
-  - Cuối chuỗi: hai dòng hướng nghề, ba dòng learning log
   - Buổi practice trên lớp: làm tiếp, rồi được chấm
 - Ví dụ: có (instruction "năm điều AI cần biết mà file không có", chạy trên file đã lưu)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Một chuỗi bảy bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo); ba phút rưỡi cho slide này, và chiếu luôn slide tham khảo "Seven steps" ở Appendix vì đây là lần duy nhất designer thấy đủ bảy bước; xong trước buổi practice trên lớp vì các buổi sau làm trên chính folder này
-  - Bảy bước nằm ở phần Practice 1 reference sau slide END: tạo project từ `my-project`, đưa context về product cho AI, để AI tự ghi tài liệu cho folder, chạy một instruction với file đã lưu, ghi hai đến ba dòng vào `my-direction.md`, tuỳ chọn push lên Git và bật trang live, rồi viết learning log
+  - Một chuỗi sáu bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo); ba phút rưỡi cho slide này, và chiếu luôn slide tham khảo "Six steps" ở Appendix vì đây là lần duy nhất designer thấy đủ sáu bước; xong trước buổi practice trên lớp vì các buổi sau làm trên chính folder này
+  - Sáu bước nằm ở phần Practice 1 reference sau slide END: tạo repo và project folder, viết data rules, viết product context, để AI soạn README cho folder, chạy một instruction với file đã lưu, tuỳ chọn push lên Git và bật trang live
   - Output của chuỗi là một ready-folder với context; hai bước Git và trang live không bắt buộc
-  - `my-direction.md`: hướng nghiêng về trong ba hướng đi, lý do, một kỹ năng muốn xây; file xem lại ở buổi 12
-  - `learning-log.md`: ba dòng về điều đã làm, phản hồi nhận được và điều sẽ đổi, kèm một câu reflection; cuối khoá designer đọc lại để tìm điều lặp lại
   - **Chưa dán tài liệu thật của project vào AI tool trước khi viết data rules**; ai chưa viết xong Activity thì dùng project mẫu để thử
   - Buổi practice trên lớp: làm tiếp phần chưa xong nếu còn thời gian, rồi chấm; cách chấm chưa quyết, sẽ báo sau
-  - Đây là folder dự án của designer, không phải bài nộp; nhắc tải workspace template (ZIP) trước nếu chưa có
+  - Đây là folder dự án của designer, không phải bài nộp; nhắc tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có
 - 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Dựng project folder" kèm bốn dòng ngắn bên dưới.
 
 ---
@@ -949,41 +1039,39 @@ last_synced: 2026-10-30
 - Title: Dựng\nproject folder
 - Sub: Dựng project folder, làm ở nhà.
 - Speaker notes:
-  - Slide tham khảo của Practice 1 (khoảng bốn giờ, ước lượng chưa đo), không chiếu trên lớp; bảy bước ở slide kế tiếp
-  - Ai mà công ty cấm AI tool, hoặc project quá nhạy cảm, dùng project mẫu của khoá cho bước bốn
+  - Slide tham khảo của Practice 1 (khoảng bốn giờ, ước lượng chưa đo), không chiếu trên lớp; sáu bước ở slide kế tiếp
+  - Ai mà công ty cấm AI tool, hoặc project quá nhạy cảm, dùng project mẫu của khoá cho bước năm
   - **Ai gõ lại tóm tắt project từ trí nhớ: chỉ họ về file**
   - Ai thấy bảng và link hiển thị thô: mở cả folder project trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
 
-### PROCESS · Seven steps
+### PROCESS · Six steps
 - Kicker: Practice 1
-- Title: Bảy bước,\n*một folder*
+- Title: Sáu bước,\n*một folder*
 - On-slide:
-  - 01 · Lấy project folder từ template và đặt tên
-  - 02 · Đưa context về product cho AI
-  - 03 · Để AI ghi tài liệu cho folder, designer kiểm tra
-  - 04 · Chạy một instruction với một file đã lưu
-  - 05 · Viết hai dòng vào my-direction.md
+  - 01 · Tạo repo trống và project folder của riêng bạn
+  - 02 · Viết data rules
+  - 03 · Viết product context
+  - 04 · Để AI soạn README và AGENTS.md, designer kiểm tra
+  - 05 · Chạy một instruction với một file đã lưu
   - 06 · Tuỳ chọn: push lên Git, bật trang live
-  - 07 · Ghi learning log
 - Speaker notes:
-  - Thời gian là ước lượng chưa đo, tổng khoảng bốn giờ gồm cả bước tuỳ chọn
-  - 01: khoảng mười lăm phút, tải template, nhờ AI tool tạo project bằng `new-project.py` và đối chiếu với layout chuẩn
-  - 02: khoảng bốn mươi lăm phút, viết `product-and-users.md` đã ẩn danh, cộng với `data-rules.md` từ Activity
-  - 03: khoảng bốn mươi lăm phút, AI đọc folder rồi viết `README.md` và rules file (`AGENTS.md`); designer kiểm tra từng dòng, vì rules file là luật AI sẽ đọc ở mọi buổi sau
-  - 04: khoảng ba mươi phút, đính kèm file product, hỏi còn thiếu gì, rồi đọc câu trả lời có phản biện
-  - 05: mười phút, hai đến ba dòng vào `_personal/my-direction.md`: hướng nghiêng về, lý do, một kỹ năng muốn xây
-  - 06: tuỳ chọn, khoảng một giờ, chỉ cho ai muốn chia sẻ hub; repo Private, và chỉ bật trang live khi project được phép công khai; output chính không phụ thuộc vào bước này
-  - 07: năm phút, ba dòng và một câu reflection vào `_personal/learning-log.md`
-  - Instruction của bước bốn nằm ở slide kế tiếp
-- 🎨 Visual hint: SCHEMATIC. Process track bảy bước, bước bốn được tô purple, bước sáu nét đứt vì tuỳ chọn.
+  - Tổng khoảng bốn giờ gồm cả bước tuỳ chọn (ước lượng, chưa đo)
+  - 01: tạo repo trống trên GitHub, clone về, mở trong AI coding tool; designer tự chọn cách tổ chức folder
+  - 02: ba dòng bằng lời của designer, viết trước khi đưa bất kỳ thứ gì cho AI
+  - 03: nửa trang về sản phẩm, người dùng và job chính, đã ẩn danh; gửi cây folder và file này cho giảng viên để nhận feedback sớm
+  - 04: AI đọc folder rồi viết `README.md` và `AGENTS.md` ngắn; designer kiểm tra từng dòng, giữ chữ "unknown" ở chỗ chưa biết, và viết lại ba quy tắc của hub bằng lời của mình
+  - 05: đính kèm file product, hỏi còn thiếu gì, đối chiếu với một câu hỏi mơ hồ, rồi đọc câu trả lời có phản biện
+  - 06: tuỳ chọn, chỉ cho ai muốn chia sẻ hub; gói miễn phí chỉ bật trang live cho repo Public, nên chỉ làm khi folder chỉ có dữ liệu giả; output chính không phụ thuộc vào bước này
+  - Instruction của bước năm nằm ở slide kế tiếp
+- 🎨 Visual hint: SCHEMATIC. Process track sáu bước, bước năm được tô purple, bước sáu nét đứt vì tuỳ chọn.
 
 ---
 
 ### STATEMENT · The instruction to run
-- Kicker: Bước 4
+- Kicker: Bước 5
 - Title: Còn *thiếu gì?*
 - On-slide: "Chỉ dùng file này. Liệt kê năm điều cần biết mà KHÔNG có trong đó. Không đoán. Nếu chưa rõ, nói 'unknown'. Chỉ trả về danh sách."
 - Speaker notes:
