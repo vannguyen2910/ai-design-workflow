@@ -1,9 +1,12 @@
 import unittest
 
+import os
+
 from check_quotes import check_rows, parse_notes
 from fixtures import NOTES_TEXT
 
 NOTES = parse_notes(NOTES_TEXT)
+SAMPLE = os.path.join(os.path.dirname(__file__), "..", "..", "assets", "starter-files", "course-case", "source-notes-plain.txt")
 
 
 def one(ids, quote):
@@ -39,6 +42,33 @@ class QuoteCheck(unittest.TestCase):
         with self.assertRaises(ValueError) as cm:
             parse_notes("R03 | one\nR03 | two\n")
         self.assertIn("R03", str(cm.exception))
+
+    def test_pass_quote_wrapped_in_quotation_marks(self):
+        self.assertEqual(one(["R09"], '"Great app!!! Five stars."').status, "pass")
+        self.assertEqual(one(["R09"], "\u201cGreat app!!! Five stars.\u201d").status, "pass")
+
+    def test_fail_empty_quote(self):
+        r = one(["R09"], "  ")
+        self.assertEqual(r.status, "fail")
+        self.assertIn("empty quote", r.reason)
+
+    def test_fail_no_note_ids(self):
+        r = one([], "Great app!!!")
+        self.assertEqual(r.status, "fail")
+        self.assertIn("no note ID", r.reason)
+
+    def test_sample_notes_four_rows(self):
+        text = open(SAMPLE, encoding="utf-8").read()
+        notes = parse_notes(text)
+        self.assertEqual(len(notes), 24)
+        rows = [
+            ("a", ["R03"], "I could not find how to cancel an order anywhere"),
+            ("b", ["F04"], "I cancelled my order and still got billed."),
+            ("c", ["I01-01"], "I ordered at lunch and just tapped   the first time slot it showed"),
+            ("d", ["R09"], "Great app!!! Five stars."),
+        ]
+        got = [r.status for r in check_rows(notes, rows)]
+        self.assertEqual(got, ["pass", "fail", "pass", "pass"])
 
 
 if __name__ == "__main__":

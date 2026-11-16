@@ -150,7 +150,7 @@ Tầng gửi business có năm câu: outcome, success metric, baseline, ràng bu
 
 **AI không đóng vai PO hay user.** Các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe. Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý. AI chuẩn bị câu hỏi và soạn nháp ghi chú, còn câu trả lời luôn do người thật đưa ra.
 
-**Hỏi trung tính.** Câu nêu sẵn hypothesis làm AI nghiêng theo người hỏi. "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân". Mục 6 cho thấy chính xác nghiêng theo kiểu nào.
+**Hỏi trung tính.** Câu nêu sẵn hypothesis có thể làm AI nghiêng theo người hỏi, hoặc ít nhất đổi thứ AI nói trước (xem mục 6). "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân". Mục 6 cho thấy chính xác nghiêng theo kiểu nào.
 
 | Access level | Tình huống | Bạn làm gì | Agreement status |
 |---|---|---|---|
@@ -252,7 +252,7 @@ Transcript đã ẩn danh là **raw source**; bạn không sửa nó. Từ đó 
 - mỗi note một ID, ví dụ `I01-03` là ghi chú 3 của phỏng vấn 1;
 - mỗi note một dòng, dạng `ID | text`.
 
-Định dạng này cố định và rất nhỏ để chương trình đọc được. Cách bạn sắp xếp folder vẫn tuỳ bạn. Bộ mẫu của Delivery App có 24 note: R01 đến R10 là review, F01 đến F08 là bài trên forum, I01-01 đến I02-03 là trích từ hai buổi phỏng vấn.
+Bạn cắt note, hoặc nhờ AI cắt rồi so từng note với transcript, vì AI có thể diễn giải lại lời người nói. Định dạng này cố định và rất nhỏ để chương trình đọc được. Cách bạn sắp xếp folder vẫn tuỳ bạn. Bộ mẫu của Delivery App có 24 note: R01 đến R10 là review, F01 đến F08 là bài trên forum, I01-01 đến I02-03 là trích từ hai buổi phỏng vấn.
 
 ### 5.2 Quotes must be word for word
 
@@ -266,7 +266,9 @@ Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script đ�
 
 Đây là phép so khớp chuỗi do chương trình làm, không phải một AI khác đánh giá. Lý do: một AI duyệt giúp có thể bỏ qua một quote bịa theo cùng cách AI đầu tiên đã bịa ra nó. Đây là suy luận của chương trình, không phải kết quả đo.
 
-Chương trình đã thử instruction này trên 24 note mẫu cùng bốn dòng citations: dòng bị đổi một chữ báo không đạt, dòng chỉ khác khoảng trắng thì đạt. Khi file notes thiếu ID, trùng ID hoặc có note trống, script dừng và nêu dòng nào.
+Chương trình đã thử instruction này trên 24 note mẫu cùng bốn dòng citations (bộ test của script mẫu có đúng bốn dòng này): dòng bị đổi một chữ báo không đạt, dòng chỉ khác khoảng trắng thì đạt. Khi file notes thiếu ID, trùng ID hoặc có note trống, script dừng và nêu dòng nào.
+
+Hai buổi phỏng vấn cho khoảng 10 đến 20 note, và thế là đủ: phép kiểm kiểm quote do AI đưa ra, không kiểm số lượng note của bạn.
 
 **Phép kiểm này chứng minh:** quote có thật trong note được trích.
 
@@ -295,7 +297,7 @@ Hypothesis không đảo kết luận, nhưng đổi thứ AI nói trước và 
 
 ### 6.3 What the runs do not show
 
-Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: một prompt đòi AI "tóm tắt bằng chứng cho thấy điều đó", và một prompt đòi soạn "ba điểm mạnh nhất để ủng hộ đề xuất giảm phí giao". Cả hai lần AI đều nói các note không đủ ủng hộ và chỉ ra R06 và I02-03 đi ngược lại. Vậy bộ mẫu này **không** cho thấy AI đồng ý với hypothesis.
+Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: một prompt đòi AI "tóm tắt các bằng chứng trong ghi chú cho thấy điều đó", và một prompt đòi soạn "ba điểm mạnh nhất từ các ghi chú để ủng hộ đề xuất" giảm phí giao. Cả hai prompt và kết quả đã lưu nằm trong `blind-synthesis.md`. Cả hai lần AI đều nói các note không đủ ủng hộ và chỉ ra R06 và I02-03 đi ngược lại. Vậy bộ mẫu này **không** cho thấy AI đồng ý với hypothesis.
 
 Đây là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác. Vì vậy bạn không rút ra "AI không bị hypothesis ảnh hưởng", mà rút ra phương pháp:
 

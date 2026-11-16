@@ -95,17 +95,17 @@ Script là lưới an toàn, không phải khuôn.
 
 ### Step 9 · Ingest: transcript thành source notes · AI soạn nháp, bạn kiểm tra
 
-1. **Cắt.** Cắt mỗi transcript đã ẩn danh thành source notes: mỗi note một ý, giữ nguyên lời người nói, mỗi note một ID dạng `I01-03` (phỏng vấn 01, note 03). Lưu mỗi note một dòng, dạng `ID | text`. Định dạng này cố định để chương trình đọc được; chỗ lưu file do bạn chọn. Không sửa transcript đã ẩn danh.
+1. **Cắt.** Bạn cắt mỗi transcript đã ẩn danh thành source notes (nếu nhờ AI cắt giúp, hãy so từng note với transcript, vì AI có thể diễn giải lại lời người nói): mỗi note một ý, giữ nguyên lời người nói, mỗi note một ID dạng `I01-03` (phỏng vấn 01, note 03). Lưu mỗi note một dòng, dạng `ID | text`. Định dạng này cố định để chương trình đọc được; chỗ lưu file do bạn chọn. Hai buổi phỏng vấn cho khoảng 10 đến 20 note, và thế là đủ: phép kiểm ở bước 3 kiểm quote do AI đưa ra, không kiểm số lượng note của bạn. Không sửa transcript đã ẩn danh.
 2. **Trích.** Đưa AI chat tool các note đã ẩn danh và dùng instruction sau. Đây chỉ để có thứ để kiểm; tổng hợp đầy đủ nằm ở Lesson 3.
 
    > Chỉ dùng các ghi chú dưới đây. Đề xuất tối đa ba insight. Với mỗi insight, trả về một dòng có dạng `insight | note ID | một quote nguyên văn từ note đó`. Không diễn giải lại quote. Nếu không có quote phù hợp, ghi "unknown".
 
    Lưu kết quả thành file citations, mỗi insight một dòng.
 3. **Kiểm.** Đưa AI coding tool instruction trong [check-quotes-instruction.md](../../../assets/starter-files/course-case/check-quotes-instruction.md), kèm đường dẫn tới file source notes và file citations. Script in ra từng dòng đạt hay không đạt.
-4. **Sửa.** Với mỗi dòng không đạt: mở note được trích, so với quote, rồi sửa quote cho đúng hoặc hỏi lại AI chat tool kèm danh sách dòng không đạt. Chạy lại cho tới khi không còn dòng không đạt. Sau đó đọc lại đoạn gốc trong transcript của insight bạn thấy quan trọng nhất, vì phép kiểm chỉ cho biết quote có thật trong note, không cho biết insight đúng hay không.
+4. **Sửa.** Với mỗi dòng không đạt: mở note được trích, so với quote, rồi sửa quote cho đúng hoặc hỏi lại AI chat tool kèm danh sách dòng không đạt. Dòng AI ghi "unknown" vì không có quote phù hợp cũng báo không đạt: bỏ dòng đó khỏi file citations, đừng ép AI tìm một quote. Chạy lại cho tới khi không còn dòng không đạt. Sau đó đọc lại đoạn gốc trong transcript của insight bạn thấy quan trọng nhất, vì phép kiểm chỉ cho biết quote có thật trong note, không cho biết insight đúng hay không.
 
 - Đưa source notes và kết quả kiểm lên hub, ở chỗ bạn và AI tìm lại được.
-- Chưa phỏng vấn được 2 người: dùng các note phỏng vấn mẫu (I01-01 đến I02-03) trong [bộ source notes mẫu](../../../assets/starter-files/course-case/source-notes.md), và ghi rõ trong hub đây là dữ liệu mẫu.
+- Chưa phỏng vấn được 2 người: dùng các note phỏng vấn mẫu (I01-01 đến I02-03) trong [file source notes mẫu dạng `ID | text`](../../../assets/starter-files/course-case/source-notes-plain.txt), và ghi rõ trong hub đây là dữ liệu mẫu.
 - Lesson 3 có một bước chạy blind synthesis trên chính các note này, nên giữ file source notes gọn và có ID.
 
 ## Output

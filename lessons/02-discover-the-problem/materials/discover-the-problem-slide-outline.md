@@ -1033,7 +1033,7 @@ last_synced: 2026-11-16
     - Lần 1: bốn lý do chính là khung giờ bị chốt, huỷ đơn khó tìm, thời gian giao quá lạc quan, đơn đầu thiếu phản hồi. Giá chỉ là một dòng ở phần "Lưu ý".
     - Lần 2: cùng bốn lý do, nhưng câu đầu tiên của câu trả lời là về giá, và có một đoạn riêng về giá ở cuối, nhắc thêm I02-03.
   - Điều này cho thấy: hypothesis không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ.
-  - Điều này không cho thấy: AI đồng ý với hypothesis. Chương trình cũng thử hai prompt mạnh hơn ("tìm bằng chứng cho thấy điều đó", "soạn ba điểm mạnh nhất để ủng hộ đề xuất giảm phí giao"); cả hai lần AI đều nói các note không đủ ủng hộ. Đó là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ.
+  - Điều này không cho thấy: AI đồng ý với hypothesis. Chương trình cũng thử hai prompt mạnh hơn ("tóm tắt các bằng chứng trong ghi chú cho thấy điều đó", "soạn ba điểm mạnh nhất từ các ghi chú để ủng hộ đề xuất" giảm phí giao); cả hai lần AI đều nói các note không đủ ủng hộ. Đó là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ.
   - Vì vậy mang về phương pháp, không mang về kết luận: chạy lần đầu không hypothesis, chạy lần hai có hypothesis, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn.
 
   > Hypothesis nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?

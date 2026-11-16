@@ -7,9 +7,9 @@ Dùng trong Practice 2, Step 9. Đưa đoạn dưới cho AI coding tool, kèm �
 > - File **source notes**: mỗi dòng có dạng `ID | text`, ví dụ `I01-03 | Nội dung ghi chú`.
 > - File **citations**: mỗi dòng có dạng `insight | note IDs | quote`. Các note ID cách nhau bằng dấu phẩy.
 >
-> Viết một script nhỏ và chạy nó. Với mỗi dòng citations, kiểm tra quote có nằm nguyên văn trong từng note được trích hay không. Bỏ qua khác biệt về khoảng trắng, xuống dòng, chữ hoa chữ thường và kiểu dấu ngoặc (thẳng hay cong). Không bỏ qua khác biệt về chữ.
+> Viết một script nhỏ và chạy nó. Với mỗi dòng citations, kiểm tra quote có nằm nguyên văn trong từng note được trích hay không. Bỏ qua khác biệt về khoảng trắng, xuống dòng, chữ hoa chữ thường và kiểu dấu ngoặc (thẳng hay cong). Không bỏ qua khác biệt về chữ. Nếu quote được bọc trong dấu ngoặc kép thì bỏ cặp dấu ngoài cùng trước khi so.
 >
-> In ra từng dòng citations là đạt hay không đạt. Với dòng không đạt, ghi lý do ngắn: note ID không tồn tại, hoặc quote không có trong note nào.
+> In ra từng dòng citations là đạt hay không đạt. Với dòng không đạt, ghi lý do ngắn: note ID không tồn tại, quote không có trong một trong các note được trích, quote trống, hoặc dòng không có note ID.
 >
 > Nếu file source notes có dòng thiếu ID, thiếu nội dung hoặc trùng ID, dừng lại và nói rõ dòng nào. Không sửa hai file đầu vào. Việc so khớp do script làm, không nhờ AI đánh giá.
 

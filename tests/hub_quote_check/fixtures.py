@@ -1,4 +1,4 @@
-# Notes copied from assets/starter-files/course-case/source-notes.md, one per row as "ID | text".
+# Notes R03, F04, I01-01 and R09 are copied from assets/starter-files/course-case/source-notes.md; X01 is invented for the apostrophe test. One per row as "ID | text".
 NOTES_TEXT = """\
 R03 | I could not find how to cancel an order anywhere. In the end I messaged support and waited an hour.
 F04 | I cancelled my order and still got charged. Support said cancelling had to happen before the restaurant accepted it. That was not written on the cancel screen.
