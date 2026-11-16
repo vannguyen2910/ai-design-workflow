@@ -28,7 +28,7 @@ Buổi này trả lời sáu câu hỏi: nghề đang đổi hướng thế nào
 
 ## Sau buổi học, bạn có thể
 
-1. Mô tả ba hướng đi nghề nghiệp (strategic designer, design builder, AI product designer), bằng chứng và giới hạn của chúng, và chọn hướng nghiêng về
+1. Mô tả ba hướng đi nghề nghiệp (strategic designer, design builder, AI product designer), evidence và giới hạn của chúng, và chọn hướng nghiêng về
 2. Nêu, với mỗi stage trong bốn stage, phần AI giúp được và phần bạn vẫn tự làm
 3. Giải thích bốn khái niệm: context, grounding, hallucination, và AI-assisted so với AI-generated
 4. Nêu hai loại task AI làm tốt và hai loại còn yếu, rồi đánh giá một workflow có đáng automate hay chưa bằng ba câu hỏi
@@ -68,11 +68,11 @@ Hai nhận định dưới đây là **suy luận**, không phải kết quả �
 
 ## 2. Career directions
 
-Ba hướng đi không loại trừ nhau, mô tả xu hướng chứ không phải bảo đảm. Mức bằng chứng ghi kèm để bạn cân nhắc.
+Ba hướng đi không loại trừ nhau, mô tả xu hướng chứ không phải bảo đảm. Mức evidence ghi kèm để bạn cân nhắc.
 
-| Hướng | Công việc chính | Kỹ năng trọng tâm | Bằng chứng và giới hạn | Chương trình hỗ trợ |
+| Hướng | Công việc chính | Kỹ năng trọng tâm | Evidence và giới hạn | Chương trình hỗ trợ |
 |---|---|---|---|---|
-| **Strategic designer** (senior generalist) | Cùng product và business chọn vấn đề đáng giải | Research, framing, stakeholder management, judgment | Vị trí senior và generalist phục hồi nhanh hơn (NN/g); nhóm có kinh nghiệm ổn định (Stanford). **Mức vừa** | Buổi 3 đến 8 (Discover, Define); hub làm bằng chứng cho lập luận |
+| **Strategic designer** (senior generalist) | Cùng product và business chọn vấn đề đáng giải | Research, framing, stakeholder management, judgment | Vị trí senior và generalist phục hồi nhanh hơn (NN/g); nhóm có kinh nghiệm ổn định (Stanford). **Mức vừa** | Buổi 3 đến 8 (Discover, Define); hub làm evidence cho lập luận |
 | **Design builder** (design engineer) | Dựng prototype chạy được và đưa lên production bằng AI coding tool | Design system, kiểm tra file AI đã sửa, đọc output | Một nửa designer được khảo sát đã đưa code do AI tạo lên production. **Mức vừa** về xu hướng; số liệu tuyển dụng yếu | Buổi 9 và 10 (AI Prototyping) |
 | **AI product designer** | Thiết kế sản phẩm có AI bên trong: hành vi, ranh giới, lỗi, niềm tin | Hiểu hallucination và grounding, đánh giá output, conversation design | NN/g nêu đây là chuyên môn đang lên; số liệu tăng trưởng chưa đáng tin. **Mức yếu** | **Chỉ nền tảng.** Chương trình dạy dùng AI để làm việc, không dạy thiết kế sản phẩm AI |
 
@@ -91,7 +91,7 @@ Double Diamond gồm bốn stage; output của stage này là input của stage 
 | **Discover** | Mở rộng: hiểu người dùng và bối cảnh | Evidence, research thô |
 | **Define** | Thu hẹp: diễn giải các phát hiện | Insight, opportunity, design challenge |
 | **Develop** | Mở rộng rồi thu hẹp: brainstorm, select, prototype | Một hướng đã chọn và một prototype |
-| **Deliver** | Thu hẹp: test và bàn giao | Findings, handoff pack, measurement plan |
+| **Deliver** | Thu hẹp: test và handoff | Findings, handoff pack, measurement plan |
 
 ```mermaid
 flowchart LR
@@ -132,7 +132,7 @@ Mục 3.2 trả lời AI giúp được ở đâu. Mục này cho biết giới 
 | Một công việc freelance trọn vẹn | Agent tốt nhất tự hoàn thành khoảng 2,5% dự án khi ra mắt; bảng xếp hạng ngày 22/10/2026 có mô hình đứng đầu trên 21% | Scale AI và CAIS, Remote Labor Index, 2025 và 2026 |
 | Tổng hợp nghiên cứu UX | Phiên âm và tóm tắt hữu ích nhưng cần kiểm lại; code và nhóm dữ liệu do AI tạo chỉ nên coi là bản đầu vì có thể bỏ sót và nhóm hời hợt | Nielsen Norman Group, 2024 |
 
-**Suy luận của chương trình.** AI mạnh ở task có giới hạn rõ, đầu ra kiểm tra được nhanh và gần với viết, tóm tắt hoặc dựng bản đầu. AI yếu hơn ở task dài, nhiều bước, cần phán đoán hoặc bối cảnh chỉ người trong team biết. Hai điểm đáng nhấn:
+**Suy luận của chương trình.** AI mạnh ở task có giới hạn rõ, output kiểm tra được nhanh và gần với viết, tóm tắt hoặc dựng bản đầu. AI yếu hơn ở task dài, nhiều bước, cần phán đoán hoặc bối cảnh chỉ người trong team biết. Hai điểm đáng nhấn:
 
 - **Kết quả yếu thường trông ổn.** Khảo sát 1.150 desk worker toàn thời gian ở Mỹ (BetterUp Labs và Stanford Social Media Lab): 40% nhận sản phẩm AI trông như đã xong nhưng thiếu nội dung trong tháng qua, mỗi lần mất trung bình khoảng hai giờ xử lý.
 - **Người có kinh nghiệm không tự động nhanh hơn.** Developer ở nghiên cứu METR chậm hơn 19% dù tự cảm thấy nhanh hơn khoảng 20%. Đây là kết quả đầu 2025; METR nay ghi các kết quả này đã cũ.
@@ -148,7 +148,7 @@ Trước khi hỏi AI giúp được ở đâu, cần hỏi workflow này có đ
 - Báo cáo DORA 2025 (khảo sát gần 5.000 người làm công nghệ) mô tả AI như một bộ khuếch đại: throughput tăng, độ bất ổn cũng tăng, và AI phóng đại cả điểm mạnh lẫn điểm yếu của team. Số liệu đến từ phát triển phần mềm.
 - Từ 1990, Michael Hammer lập luận rằng dùng công nghệ để làm nhanh quy trình cũ không tạo ra bước nhảy; phần việc không tạo giá trị nên được bỏ.
 
-**Suy luận của chương trình.** Khi AI làm đầu ra rẻ đi, chi phí chuyển sang bước kiểm tra. Workflow thiếu mục tiêu rõ hoặc thiếu gate sẽ chuyển lỗi sang stage sau nhanh hơn. Với designer, đây là suy luận từ hai nguồn trên, không phải kết quả đo trên công việc design.
+**Suy luận của chương trình.** Khi AI làm output rẻ đi, chi phí chuyển sang bước kiểm tra. Workflow thiếu mục tiêu rõ hoặc thiếu gate sẽ chuyển lỗi sang stage sau nhanh hơn. Với designer, đây là suy luận từ hai nguồn trên, không phải kết quả đo trên công việc design.
 
 ![Software trước và sau AI: trước AI, nút thắt nằm ở implementation; sau AI, implementation nở ra còn verification vẫn là ống hẹp](../assets/software-before-after-ai.webp)
 
@@ -158,7 +158,7 @@ Trước khi hỏi AI giúp được ở đâu, cần hỏi workflow này có đ
 
 1. Workflow này nhằm đạt điều gì, và thế nào là kết quả tốt, trong một câu?
 2. Khi làm tay, workflow cho kết quả ổn định không?
-3. Ai kiểm tra đầu ra, và dựa trên cái gì?
+3. Ai kiểm tra output, và dựa trên cái gì?
 
 Trả lời "không" ở câu 1 hoặc 2: sửa hoặc bỏ workflow trước. Trả lời "không" ở câu 3: thêm một gate và một người chịu trách nhiệm. Checklist đầy đủ tám câu nằm ở handout `before-you-automate.md`, gửi riêng sau buổi học.
 
@@ -174,7 +174,7 @@ Bạn đã dùng AI hằng tuần nên phần này không đọc định nghĩa 
 |---|---|---|
 | **Context** | Mọi thứ AI nhìn thấy tại thời điểm đó: instruction, text đã dán, file đính kèm, các tin nhắn trước. Tài liệu dài và lộn xộn làm kết quả kém chính xác | Đưa đúng tài liệu, chỉ những phần một bước cần; AI không biết gì khác về project |
 | **Grounding** | Gắn câu trả lời với tài liệu được cung cấp, không dựa vào kiến thức chung của AI | "Chỉ dùng tài liệu bên dưới. Mỗi ý lấy từ đâu?" |
-| **Hallucination** | Câu trả lời tự tin nhưng bịa: một đối thủ không tồn tại, một câu quote chưa ai nói | Yêu cầu nguồn cho từng ý; cho phép AI trả lời "unknown" |
+| **Hallucination** | Câu trả lời tự tin nhưng bịa: một competitor không tồn tại, một câu quote chưa ai nói | Yêu cầu nguồn cho từng ý; cho phép AI trả lời "unknown" |
 | **AI-assisted so với AI-generated** | AI-generated: AI quyết định. AI-assisted: bạn quyết định, AI soạn nháp và lắp ráp | AI soạn nháp. Bạn kiểm tra. Bạn quyết định |
 
 ### 4.1b Six reference terms
@@ -224,18 +224,18 @@ Mục này giới thiệu ở mức khái niệm. Bạn chưa dựng đội tron
 
 ![Double Diamond với hai agent cho mỗi phase: Discover có Desk research agent và Interview agent, Define có Synthesis agent và Framing agent, Develop có Ideation agent và Prototype agent, Deliver có Test agent và Handoff agent; tất cả cùng ghi vào một Design memory, và designer duyệt ở mỗi mũi tên REVIEW](../assets/designer-agents-double-diamond.png)
 
-*Cấu trúc theo các nghiên cứu đã công bố (LacAIDes, MAUX); tên và phạm vi agent là của chương trình.* Bảng dưới minh hoạ trên Delivery App.
+*Cấu trúc theo các nghiên cứu đã công bố (LacAIDes, MAUX); tên và scope agent là của chương trình.* Bảng dưới minh hoạ trên Delivery App.
 
 | Phase | Agent | Ví dụ output | Bạn vẫn tự làm |
 |---|---|---|---|
-| Discover | 01 Desk research agent | Dữ kiện từ review công khai và đối thủ, kèm nguồn | Chọn research questions; đối chiếu với nguồn gốc |
+| Discover | 01 Desk research agent | Dữ kiện từ review công khai và competitor, kèm nguồn | Chọn research questions; đối chiếu với nguồn gốc |
 | Discover | 02 Interview agent | Interview guide và bản tóm tắt transcript | Gặp người thật; kiểm tra tóm tắt với ghi chú gốc |
 | Define | 03 Synthesis agent | Theme, cluster và insight nháp | Chọn theme nào quan trọng |
 | Define | 04 Framing agent | Problem statement và câu How Might We nháp | Thống nhất design challenge với product và business |
 | Develop | 05 Ideation agent | Concept, biến thể và trade-off | Chọn hướng và ghi lý do |
 | Develop | 06 Prototype agent | Flow, màn hình và prototype bản đầu | Kiểm tra với design system và user need |
 | Deliver | 07 Test agent | Test plan, script và bản nháp findings | Chạy session với người dùng thật; xếp findings theo mức độ quan trọng |
-| Deliver | 08 Handoff agent | Handoff spec và kế hoạch đo | Duyệt trước khi bàn giao |
+| Deliver | 08 Handoff agent | Handoff spec và kế hoạch đo | Duyệt trước khi handoff |
 
 Hai vai không giao cho AI: người dùng thật và người phía product và business (xem 3.2). Không có agent nào duyệt thay bạn, vì một agent duyệt cũng có thể sai.
 
@@ -259,7 +259,7 @@ Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói
 
 | Nhóm | Ví dụ | Quy tắc |
 |---|---|---|
-| **Safe**: thông tin công khai, suy nghĩ riêng, project hư cấu | Trang phí giao công khai của đối thủ; project mẫu của chương trình | Dùng được với bất kỳ tool nào đã chấp nhận |
+| **Safe**: thông tin công khai, suy nghĩ riêng, project hư cấu | Trang phí giao công khai của competitor; project mẫu của chương trình | Dùng được với bất kỳ tool nào đã chấp nhận |
 | **Ask first**: nội bộ nhưng không nhạy cảm | Ghi chú quy trình nội bộ; tóm tắt research chưa công bố, không có tên người | Chỉ dùng trong tool mà công ty đã duyệt |
 | **Never in a public tool**: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA | Transcript phỏng vấn có tên; danh sách khách hàng; spec chưa phát hành; ảnh chụp admin dashboard đang chạy thật | Không dán. Ẩn danh trước, dùng tool đã được duyệt, hoặc để ngoài |
 
@@ -326,5 +326,5 @@ Mọi output đi vào **Knowledge Hub**: một folder Markdown trong project fol
 
 - **Thiên lệch của dữ liệu train.** AI tool phản ánh pattern trong dữ liệu train, vốn nghiêng về phương Tây và tiếng Anh. Với người dùng Việt Nam hoặc Đông Nam Á, cần đối chiếu gợi ý với mental model của người dùng, không chỉ xem output có thuyết phục hay không.
 - **Dữ liệu đưa vào có thể bị lưu lại.** Áp dụng data rules ở mỗi lần dùng.
-- **Giới hạn của bằng chứng.** Bằng chứng nghề nghiệp xem 1.3; các hướng đi ở mục 2 là xu hướng, không phải dự báo cá nhân. Số liệu về năng lực AI (3.4) đến từ nghiên cứu trên những mô hình tại thời điểm đó và đổi nhanh; bằng chứng về AI như bộ khuếch đại (3.5) đến từ phát triển phần mềm, áp vào design là suy luận.
+- **Giới hạn của evidence.** Evidence nghề nghiệp xem 1.3; các hướng đi ở mục 2 là xu hướng, không phải dự báo cá nhân. Số liệu về năng lực AI (3.4) đến từ nghiên cứu trên những mô hình tại thời điểm đó và đổi nhanh; evidence về AI như bộ khuếch đại (3.5) đến từ phát triển phần mềm, áp vào design là suy luận.
 - **Giới hạn của chương trình.** Chương trình không dạy thiết kế sản phẩm AI. Cách chia agent ở 4.4 là phương pháp của chương trình, chưa có nguồn đo hiệu quả.

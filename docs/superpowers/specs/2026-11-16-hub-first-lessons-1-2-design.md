@@ -1,6 +1,6 @@
 # Hub-first redesign of Lessons 1 and 2
 
-Date: 2026-11-16. Status: draft for approval. Scope: Lesson 1 and Lesson 2 only. Lessons 3 to 6 follow the same method later, one at a time.
+Date: 2026-11-16. Status: approved. Scope: Lesson 1 and Lesson 2 only. Lessons 3 to 6 follow the same method later, one at a time.
 
 ## Intent and why
 
@@ -130,10 +130,12 @@ These settle questions a builder would otherwise have had to guess. Winnie can o
 - The wording of the quote-check instruction and the script it produces (a string comparison that ignores differences in whitespace and quotation marks).
 - Whether the multi-hub section is one slide or two.
 
-## Open items for Winnie
+## Decisions and open items
 
-- Lesson 1 still contains a theory section "Career directions" and a learning objective about it, although the practice step was removed. Keep it as theory, or cut it as part of the shortening? This document assumes cut; say if you want it kept.
+- Decided by Winnie on 2026-11-16: keep the "Career directions" theory section and its learning objective in Lesson 1 as theory only (no practice step). The "about one third shorter" target applies to the other basic sections.
 - Whether the blind synthesis demo should also appear as an optional hands-on step later (this document says no).
+
+Status: approved by Winnie on 2026-11-16.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 ---
-title: "From Insight to Opportunity"
-summary: "Chuỗi việc ở nhà: từ bộ nguyên tắc và insight của Practice 2 đến persona, journey map, opportunity, trang cho lead và bản đầu của problem brief."
+title: "From Transcript to Opportunity"
+summary: "Chuỗi việc ở nhà: từ transcript đã ẩn danh đến insight đã kiểm tra, rồi persona, journey map, opportunity và một trang cho lead."
 type: practice
 program: ai-design-workflow
 lesson: research-you-can-trust
@@ -9,189 +9,113 @@ draft: true
 
 ## Goal
 
-Đi tiếp từ bộ nguyên tắc và insight bạn đã có ở Practice 2: biến chúng thành persona, journey map và opportunity mà mỗi dòng dẫn về insight ID. Cuối chuỗi bạn có thêm trạng thái mới của các giả định, một trang cho lead, một entry trong insight hub và bản đầu của problem brief. Các file này là đầu vào cho Lesson 4 (hypothesis, How might we, chọn hướng).
+Đi từ transcript đến opportunity trên project của khoá. Cuối bài bạn có source notes có source ID, một insight đã kiểm tra và phản biện, persona, journey map, opportunity đã xếp hạng, và một trang cho lead. Mỗi dòng của các output này dẫn về một insight ID. Đây là input cho Lesson 4 (hypothesis, How might we, chọn hướng).
 
-Practice này **không làm lại** việc ở Practice 2: bạn không rút insight từ ghi chú nguồn, không ẩn danh transcript và không viết lại insight từ đầu.
-
-## Tổng quan 8 step
-
-| Step | Việc | File ra |
-|---|---|---|
-| 1 | Build persona | `work/personas.md` |
-| 2 | Build journey map | `work/journey-map.md` |
-| 3 | Build opportunity | `work/frame-opportunity.md` |
-| 4 | Challenge và cập nhật giả định | `work/user-voice-synthesis.md` (mục Challenge), `assumption.md` |
-| 5 | Một trang cho lead | `work/lead-summary.md` |
-| 6 | Đưa opportunity lên hub | `insights/opportunities/O1.md` |
-| 7 | Bắt đầu problem brief | `work/problem-brief.md` |
-| 8 | Learning log và reflection | `_personal/learning-log.md` |
-
-## Before you start
-
-**Từ Practice 2, bạn cần có:**
-
-- [ ] **Insight** đã qua ba bước (Decision, Insight, Challenge), kèm insight ID và source ID, trong `work/user-voice-synthesis.md`.
-- [ ] **Bộ nguyên tắc** `principles.md` từ Practice 2: bạn dùng nó làm ràng buộc trong prompt và làm phép kiểm tra.
-- [ ] **Insight entry** trong `insights/evidence/` (ví dụ `E1.md`).
-- [ ] Transcript đã ẩn danh trong `work/sources/anonymised/`, để mở lại ghi chú gốc theo source ID khi cần.
-- [ ] `assumption.md` với ba giả định hàng đầu và trạng thái đã cập nhật.
-
-**Các file khác sẽ dùng:**
-
-| File | Từ đâu | Dùng ở step |
-|---|---|---|
-| `context/product-and-users.md` | Practice 1 | 1 (persona) |
-| `research-questions.md` (scope và câu hỏi) | Practice 2 | 7 (outcome, metric) |
-| `competitor-analysis.md` (pattern) | Practice 2 | 1 và 2 (giả thuyết cần insight xác nhận) |
-| `principles.md` | Practice 2 | 1 đến 3 (làm chuẩn kiểm tra), 7 |
-
-- [ ] Có một AI chat tool đã được công ty cho phép.
-
-File nào chưa có thì ghi "chưa có" ở đầu `work/user-voice-synthesis.md` và làm tiếp từ thông tin bạn biết. Ba thứ không nên thiếu là insight, `principles.md` và `assumption.md`.
-
-## Cách làm mọi step
+Bạn tự quyết định lưu từng output ở đâu và đặt tên thế nào trong folder của mình.
 
 **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.**
 
-- Chỉ đưa AI insight đã kiểm tra, `principles.md` và các file bạn đã kiểm tra. Yêu cầu AI chỉ dùng những gì bạn đưa, tuân theo bộ nguyên tắc, trả lại kèm insight ID có thật, và được nói "unknown".
-- Điều từ `competitor-analysis.md` là **giả thuyết cần insight xác nhận**, không phải bằng chứng về người dùng.
-- Mỗi dòng dẫn về insight ID. Ô nào chưa có insight thì ghi "assumption".
-- **Ghi giờ bắt đầu và kết thúc** mỗi step vào bảng ở cuối `work/user-voice-synthesis.md`, để tự đo AI giúp tiết kiệm bao nhiêu thời gian.
-- Prompt mẫu: persona, journey map, opportunity ở [Lesson 3](research-you-can-trust-lesson.md) mục 8; prompt phản biện ở [Lesson 2](../../02-discover-the-problem/materials/discover-the-problem-lesson.md) mục 8.
-- Tên file là gợi ý theo workspace template. Bạn có thể đặt tên khác, miễn mỗi step có một đầu ra lưu lại được.
+- Chỉ đưa AI những gì bạn đã kiểm tra: source notes đã ẩn danh, bộ principles, insight. Yêu cầu AI chỉ dùng những gì bạn đưa, trả lại kèm ID có thật, và được nói "unknown".
+- Mỗi output của AI là một file markdown, mỗi dòng mang một ID. Dòng nào chưa có insight làm căn cứ thì ghi "assumption", không điền cho đẹp.
+- Pattern từ competitor analysis hay UX audit (nếu bạn đã làm) chỉ là **giả thuyết cần insight xác nhận**, không phải evidence về người dùng.
+- Ghi giờ bắt đầu và kết thúc mỗi step, để tự đo AI giúp tiết kiệm bao nhiêu thời gian.
 
----
+## Before you start
 
-### Step 1 · Build persona
+- Bạn đã học [Lesson 3](research-you-can-trust-lesson.md).
+- Bạn có transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn từ Practice 2, cùng bộ principles, scope, research question và assumption map.
+- Chưa phỏng vấn được ai: dùng [bộ source notes mẫu](../../../assets/starter-files/course-case/source-notes.md) và [bộ insight mẫu](../../../assets/starter-files/course-case/insight-set.md) để làm thử, rồi làm lại với dữ liệu của bạn khi có.
 
-**Ai làm:** AI soạn nháp, bạn kiểm tra.
+## Phần A · Synthesis
 
-1. Đọc lại insight, insight ID và source ID ở `work/user-voice-synthesis.md`, và đọc lại `competitor-analysis.md` để biết giả thuyết nào còn chờ insight xác nhận.
-2. **AI soạn nháp:** gom insight đã kiểm tra, cùng `context/product-and-users.md` và `principles.md`, thành tối đa 3 nhóm hành vi và viết mô tả; mỗi dòng kèm insight ID.
-3. **Bạn kiểm tra:** dòng nào không có insight thì xoá hoặc ghi "unknown". Kiểm lại với `principles.md`. Insight nào chưa mở source ID ở Practice 2 thì mở source ID và đọc ngữ cảnh trước khi dùng.
-4. Ghi số người và số insight mà persona dựa vào.
+### Step 1 · Source notes có source ID
 
-**Xong khi:** mỗi dòng của persona có insight ID, và file ghi rõ persona dựa trên bao nhiêu người, bao nhiêu insight.
-**File:** `work/personas.md`
+- Cắt mỗi transcript đã ẩn danh thành các ghi chú ngắn: **mỗi ghi chú một ý, một ID**. Ví dụ `I01-03` là ghi chú thứ 3 của phỏng vấn 01.
+- Ghi điều người đó nói và làm, không thêm diễn giải của bạn. Giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
+- Dữ liệu gốc có tên thật vẫn ở ngoài chỗ AI đọc. AI chỉ thấy bản đã gắn P1, P2 và source ID.
 
-### Step 2 · Build journey map
+### Step 2 · Decision, Insight, Challenge
 
-**Ai làm:** bạn liệt kê trước, rồi AI soạn nháp, bạn kiểm tra.
+Đọc trực tiếp vài transcript trước khi hỏi AI, để biết giọng và ngữ cảnh.
 
-1. **Bạn liệt kê** các giai đoạn của persona, bắt đầu từ một flow chính của persona.
-2. **AI soạn nháp:** đề xuất bước còn thiếu và điền hành động, cảm xúc, chỗ đau từ insight. Pattern từ competitor analysis ở Practice 2 chỉ được đưa vào ô có insight xác nhận.
-3. **Bạn kiểm tra:** mỗi ô có insight ID; ô nào không có thì ghi "assumption". Đếm tỷ lệ ô assumption.
+1. **Decision (bạn tự viết):** một đến ba quyết định mà nghiên cứu này phục vụ, lấy từ scope và research question. Không nhờ AI viết hộ, vì chỉ bạn biết quyết định nào đang chờ.
+2. **Insight (AI soạn nháp, bạn kiểm tra):**
+   - AI đề xuất tối đa 3 insight theo mẫu *"[Ai] làm hoặc cần [gì] khi [bối cảnh], và điều này quan trọng với quyết định [nào]"*. Mỗi insight kèm source ID, số người nói và một dòng "nguồn này không cho biết điều gì". Nhờ AI liệt kê thêm điều người tham gia đã nói mà chưa được đưa vào insight nào.
+   - **Kiểm tra hai lớp:** tìm đúng source ID trong bộ source notes (ID không có là nguồn bịa), rồi đọc ngữ cảnh quanh ghi chú (ghi chú có thật nhưng bị cắt hoặc ghép vẫn làm đổi nghĩa).
+   - Chọn một insight và viết lại bằng lời của bạn.
+3. **Challenge (bạn quyết định, AI đóng vai người phản biện):** trả lời năm câu cho insight đó:
+   - Chỗ nào insight nói rộng hơn dữ liệu (bao nhiêu người nói, và ai)?
+   - Source ID nào có thể bị dẫn sai hoặc hiểu sai?
+   - Ba cách giải thích khác cho cùng dữ liệu là gì?
+   - Dữ liệu nào mâu thuẫn hoặc bị bỏ ra ngoài?
+   - Dữ liệu mới nào sẽ làm insight này sai?
 
-**Xong khi:** mỗi ô có insight ID hoặc nhãn "assumption", và bạn biết tỷ lệ ô assumption.
-**File:** `work/journey-map.md`
+   Soi thêm năm điều khiến insight nghe mạnh hơn thực tế: scope, sự đồng thuận, sample mix, nhảy sang giải pháp, và cảm xúc che việc ghi chú hiếm. Ghi **điều gì làm bạn đổi ý**. Giữ ý kiến trái chiều **cùng trang** với insight, không để ở phụ lục. Mẫu có nhóm khác biệt rõ thì phân tích riêng từng nhóm trước khi gộp, và ghi sample mix.
+4. **Phép thử:** đóng AI lại. Bạn có giải thích được insight và chỉ ra source ID nào đỡ nó không? Chưa thì insight chưa phải của bạn.
+5. Cập nhật assumption map: mỗi assumption hàng đầu là Confirmed, Unconfirmed hay Unknown, kèm source ID.
 
-### Step 3 · Build opportunity
+### Step 3 · Đưa insight lên hub
 
-**Ai làm:** AI soạn nháp, bạn kiểm tra và quyết định.
+- Tìm trong hub trước, để không thêm bản trùng. Chưa có thì thêm một entry cho insight đã qua Challenge: insight ID, source ID dẫn về, ngày, mức mạnh của evidence, tag, điều dữ liệu không cho biết và ý kiến trái chiều.
+- Tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc. AI có thể gợi ý entry liên quan và tag; chỉ nhận entry có ID, và bạn duyệt trước khi thêm. AI không tự thêm insight vào hub.
 
-1. **AI soạn nháp:** viết opportunity từ các chỗ đau trên journey map theo mẫu *"[Người dùng] gặp khó khi [tình huống] vì [lý do]"*, không nhắc tính năng.
-2. **Bạn kiểm tra:** mỗi opportunity là nhu cầu hay giải pháp? Có insight ID chưa?
-3. **Bạn xếp hạng** theo severity (hậu quả), context và reach, không theo số lần được nhắc.
-4. Thêm một câu nêu mẫu không cho biết điều gì.
+## Phần B · Persona, journey map, opportunity
 
-**Xong khi:** mỗi opportunity viết như một nhu cầu, có insight ID, và đã được xếp hạng.
-**File:** `work/frame-opportunity.md`
+### Step 4 · Persona · AI soạn nháp, bạn kiểm tra
 
-### Step 4 · Challenge và cập nhật giả định
+- **AI soạn nháp:** gom insight đã kiểm tra thành tối đa 3 nhóm hành vi (theo hành vi, không theo tuổi hay nghề) và soạn từng dòng: goals, frustration, expectation, motivation. Mỗi dòng kèm insight ID.
+- **Bạn kiểm tra:** đánh dấu từng dòng có insight ID hay không; mở source ID và đối chiếu từng chữ. Dòng không có insight thì xoá hoặc ghi "unknown"; dòng insight nói ngược thì sửa theo insight. Giữ ý kiến trái chiều cùng nhóm, không làm phẳng.
+- Persona AI tự sinh từ dữ liệu internet chỉ là bản nháp giả định, không phải evidence.
 
-**Ai làm:** bạn, AI đóng vai người phản biện. Người hướng dẫn quan sát bước này ở buổi practice trên lớp, vì đây là chỗ dễ để AI viết hộ kết luận.
+### Step 5 · Journey map · bạn liệt kê, AI soạn nháp, bạn kiểm tra
 
-1. **Chọn một insight quan trọng nhất** từ persona, journey map hoặc opportunity (một insight mới, không phải insight của Practice 2) và viết lại bằng lời của bạn.
-2. **Nhờ AI phản biện:** chỗ nói quá, insight ID có thể sai, ba cách giải thích khác, điều bị bỏ, dữ liệu mới nào làm insight sai. Chỉ chấp nhận điều AI chỉ ra bằng insight ID hoặc source ID có thật.
-3. **Bạn quyết định:** ghi ý kiến trái chiều giữ lại, cùng trang với insight, và điều gì khiến bạn đổi ý.
-4. **Cập nhật `assumption.md`:** mỗi giả định hàng đầu là Confirmed, Unconfirmed hay Unknown, kèm insight ID. Persona, journey map và opportunity có thể đổi trạng thái so với Practice 2. Đây là đầu vào cho hypothesis ở Lesson 4.
+- **Bạn liệt kê** các giai đoạn của persona trước, bắt đầu từ một flow chính.
+- **AI soạn nháp:** đề xuất bước còn thiếu và điền actions, cảm xúc, pain, insight ID từ insight của bạn. Đưa persona và insight vào, để AI không điền theo một nhóm người dùng chung chung.
+- **Bạn kiểm tra:** ô nào không có insight thì ghi "assumption". Đếm tỷ lệ ô assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp. Hỏi AI insight nào nằm ở điểm thấp nhất của đường cảm xúc. Mỗi pain một insight ID; không có thì xoá hoặc ghi assumption.
 
-**Phép thử:** đóng AI lại. Bạn có giải thích được insight và chỉ ra insight ID nào làm căn cứ cho nó không?
+### Step 6 · Opportunity · AI soạn nháp, bạn kiểm tra và quyết định
 
-**Xong khi:** insight có một dòng nêu điều dữ liệu không cho biết, có ít nhất một ý kiến trái chiều, và `assumption.md` đã cập nhật.
-**File:** `work/user-voice-synthesis.md` (mục Challenge), `assumption.md`
+1. **Chọn root outcome** của cây opportunity: một hành vi bạn muốn thấy ở người dùng, ví dụ "nhiều khách mới đặt lại sau đơn đầu tiên", và team cùng cam kết. Root outcome không phải một con số ("tăng 15%"), không phải một giải pháp ("ra mắt màn hình mới"), và không phải một câu không kiểm chứng được ("cải thiện trải nghiệm").
+2. **Từ pain thành user need.** Tìm điểm thấp nhất và các pain quanh nó trên journey map, viết lại thành user need theo mẫu *"[Người dùng] gặp khó khi [tình huống] vì [lý do]"*, không nhắc tính năng. Chạy **test ba giải pháp**: kể được ba cách khác nhau để thoả user need thì nó là user need; chỉ có một cách thì nó là giải pháp. Nhiều dòng sẽ không qua test, nâng từng dòng lên một mức là việc cần làm.
+3. **Reframing** nhánh mạnh nhất (không reframe tất cả): mục tiêu này của ai và nếu sai thì sao; ai đã thành công và khác ở điểm nào; khung này bỏ ngoài điều gì. Ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
+4. **Chấm rồi chọn:** sizing, importance, company fit, market position. Xếp thứ tự theo severity, context và reach, không theo số lần được nhắc. Ghi opportunity bị loại kèm lý do. Mỗi opportunity có insight ID và một câu nêu mẫu không cho biết điều gì.
 
-### Step 5 · Một trang cho lead
+### Step 7 · Một trang cho lead và đưa lên hub
 
-**Ai làm:** bạn. Có thể nhờ AI soạn khung, bạn viết lại.
-
-Một trang gồm:
-
-- quyết định và insight của bạn;
-- evidence: bao nhiêu người, bao nhiêu insight, các insight ID;
-- điều dữ liệu không cho biết, và ý kiến trái chiều đã giữ;
-- trạng thái các giả định;
-- việc AI đã làm và bạn đã kiểm tra (kèm số lỗi đếm được);
-- việc tiếp theo đề xuất.
-
-Đưa cho một bạn cùng lớp hoặc đồng nghiệp đọc và xin một phản hồi.
-
-**Xong khi:** người đọc hiểu được insight và biết nó dựa trên bao nhiêu người, không cần hỏi lại.
-**File:** `work/lead-summary.md`
-
-### Step 6 · Đưa opportunity lên hub
-
-**Ai làm:** bạn.
-
-1. Copy `insights/_templates/_template-opportunity.md` vào `insights/opportunities/`.
-2. Đặt tên theo mã tiếp theo (ví dụ `O1.md`) cho opportunity xếp hạng cao nhất.
-3. Điền evidence bằng insight ID, và nối về insight entry ở Practice 2.
-
-**Xong khi:** mỗi dòng evidence trong entry dẫn về một insight ID.
-**File:** `insights/opportunities/O1.md`
-
-### Step 7 · Bắt đầu problem brief
-
-**Ai làm:** bạn.
-
-1. Lấy outcome và success metric từ `research-questions.md`.
-2. Lấy opportunity đã xếp hạng ở Step 3 và severity trong `principles.md`.
-3. Viết bản đầu của brief. Phần còn lại hoàn thiện ở bước sau của chương trình.
-
-**Xong khi:** brief có business question, outcome, metric và opportunity ưu tiên, mỗi thứ dẫn về file nguồn.
-**File:** `work/problem-brief.md`
-
-### Step 8 · Learning log và reflection
-
-**Ai làm:** bạn.
-
-1. Mở `_personal/learning-log.md` (file riêng tư, không đưa cho AI tool) và thêm một mục, ba dòng:
-   - bạn đã làm gì;
-   - phản hồi nào bạn nhận được (từ bạn cùng lớp, người hướng dẫn hoặc số lỗi AI bạn đếm được);
-   - lần sau bạn đổi gì.
-2. Trả lời một câu ngay dưới mục vừa thêm: phản hồi nào làm bạn đổi cách nghĩ?
-
-**File:** `_personal/learning-log.md`
-
----
+- **Một trang cho lead**, người đọc hiểu mà không cần hỏi lại:
+  - quyết định và insight của bạn;
+  - evidence: bao nhiêu người, bao nhiêu insight, các insight ID;
+  - điều dữ liệu không cho biết, và ý kiến trái chiều đã giữ;
+  - trạng thái các assumption;
+  - việc AI đã làm và bạn đã kiểm tra (kèm số lỗi đếm được);
+  - việc tiếp theo đề xuất.
+- Thêm vào trang đó business question, outcome, success metric và opportunity ưu tiên, mỗi thứ dẫn về nguồn. Đây là bản đầu problem brief, phần còn lại hoàn thiện ở bước sau của chương trình.
+- Đưa persona, journey map và opportunity vào hub của bạn, cùng insight entry ở Step 3.
+- Đưa trang cho một bạn cùng lớp hoặc người quen đọc và xin một phản hồi.
 
 ## Output
 
-- [ ] `work/personas.md`
-- [ ] `work/journey-map.md`
-- [ ] `work/frame-opportunity.md`
-- [ ] `work/user-voice-synthesis.md` (mục Challenge và bảng giờ từng step)
-- [ ] `assumption.md` (đã cập nhật trạng thái ba giả định hàng đầu)
-- [ ] `work/lead-summary.md`
-- [ ] `insights/opportunities/O1.md`
-- [ ] `work/problem-brief.md` (bản đầu)
-- [ ] `_personal/learning-log.md` (một mục mới và câu reflection)
+- Source notes có source ID
+- Insight đã kiểm tra, kèm Decision, Challenge và ý kiến trái chiều
+- Assumption map đã cập nhật
+- Persona, journey map, opportunity đã xếp hạng
+- Một trang cho lead (bản đầu problem brief)
+- Các entry đã đưa lên hub, và bảng giờ từng step
 
 ## Self-check
 
 - [ ] Mỗi dòng của persona, journey map và opportunity truy được về insight ID; ô chưa có insight ghi "assumption".
-- [ ] Mỗi opportunity viết như một nhu cầu, được xếp theo severity, context và reach.
-- [ ] Insight bạn chọn ở Step 4 có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều.
-- [ ] `assumption.md` ghi rõ giả định nào được ủng hộ, bị bác hay vẫn unknown, kèm insight ID.
-- [ ] Bạn đã dùng lại các file từ Practice 1 và 2, và ghi giờ từng step.
+- [ ] Insight có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều cùng trang.
+- [ ] Bạn đã mở source ID và đọc ngữ cảnh của mọi ghi chú dùng cho insight.
+- [ ] Mỗi opportunity viết như một user need, được xếp theo severity, context và reach.
+- [ ] Bạn đóng AI lại vẫn giải thích được insight của mình.
 
-Xong cả 8 step thì mang các file này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
+Xong thì mang các output này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
 
 ## If you get stuck
 
-- **Chưa có insight từ Practice 2:** quay lại Step 9 của Practice 2. Chưa phỏng vấn được ai thì dùng bộ insight [app giao đồ ăn](../../../assets/starter-files/course-case/insight-set.md) (chín insight đã có ID, dẫn về `source-notes.md`) và [project mẫu](../../../assets/starter-files/course-case/case-card.md), rồi làm lại với insight của bạn khi có.
-- **Thiếu file từ Practice 1 hoặc 2:** ghi "chưa có" ở đầu `work/user-voice-synthesis.md` và bỏ phần đối chiếu liên quan.
-- **Công ty không cho dùng AI tool, hoặc không rõ công cụ có huấn luyện trên dữ liệu:** dừng lại, hỏi lead. Bạn vẫn làm được bản tay trên insight, rồi so với bản AI khi có công cụ được phép.
+- **Chưa có transcript từ Practice 2:** làm thử bằng bộ source notes và bộ insight mẫu ở trên, rồi làm lại với transcript của bạn khi có.
+- **Ít insight (dưới khoảng 5) hoặc chỉ một người phỏng vấn đứng sau:** gọi persona là assumption, ghi rõ số người, và dành thêm sức cho Step 2.
 - **AI đưa ra điều nghe hợp lý nhưng không có insight nào làm căn cứ:** ghi "chưa có nguồn" hoặc "unknown", không đưa vào như một sự thật.
-- **Ít insight (dưới khoảng 5) hoặc chỉ một người phỏng vấn đứng sau:** gọi persona là giả định, ghi rõ số người trong file, và dành thêm sức cho Step 4.
-- **Không làm hết được:** làm Step 1 đến 4 trước, giữ lại Step 8. Step 5 đến 7 làm sau.
+- **AI trả lại source ID không có trong bộ source notes:** đó là nguồn bịa. Bỏ nó và đếm vào số lỗi.
+- **Không làm hết được:** làm Step 1 đến 3 trước, rồi persona và journey map. Opportunity và trang cho lead làm sau.

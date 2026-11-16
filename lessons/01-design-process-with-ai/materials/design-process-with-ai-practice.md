@@ -19,7 +19,7 @@ Cách sắp xếp folder do bạn quyết định. Layout ở Lesson 1 chỉ đ�
 ## Before you start
 
 - Bạn đã học [Lesson 1](design-process-with-ai-lesson.md) và đọc [project brief](../../../assets/starter-files/practice-project/project-brief.md).
-- Một tài khoản GitHub, GitHub Desktop (tải ở [desktop.github.com](https://desktop.github.com)) và một AI coding tool đã được công ty cho phép.
+- Một tài khoản GitHub, GitHub Desktop (tải ở [desktop.github.com](https://desktop.github.com)) và một AI coding tool.
 - Folder đặt trong `Documents`, không đặt trong Google Drive, iCloud, OneDrive hay Dropbox: folder đồng bộ cloud có thể làm hỏng file khi AI đang ghi.
 - Chưa đưa tài liệu nào cho AI trước khi viết xong data rules (Step 2). Chỉ dùng dữ liệu giả hoặc đã ẩn danh.
 
@@ -36,8 +36,7 @@ Cách sắp xếp folder do bạn quyết định. Layout ở Lesson 1 chỉ đ�
 Làm trước khi đưa bất kỳ thứ gì cho AI.
 
 - Viết ba dòng bằng lời của bạn: được dán gì vào AI tool, sẽ không dán gì, và dùng tool nào cho việc gì.
-- Nhớ ba lúc cần dừng lại:
-  - **Trước khi dán tài liệu vào AI tool:** kiểm tra chính sách AI của công ty. Còn phân vân thì đừng dán.
+- Nhớ hai lúc cần dừng lại:
   - **Trước khi AI nhìn thấy quote của người thật:** ẩn danh bằng find and replace trên máy bạn (tên thành P1, P2; bỏ công ty, số điện thoại, email). Không nhờ AI làm việc này, vì khi đó dữ liệu đã bị gửi đi.
   - **Trước khi kết nối connector:** connector đọc được file trong folder, nên giữ file confidential ở ngoài folder.
 
@@ -92,5 +91,4 @@ Chỉ làm khi folder của bạn chỉ có dữ liệu giả. Gói GitHub miễ
 ## If you get stuck
 
 - **Chưa biết viết gì ở product context:** viết từ những gì bạn tự biết về người dùng và tình huống, và ghi "chưa biết" ở chỗ bạn đoán. Lesson 2 sẽ thay phần đoán bằng phỏng vấn.
-- **Công ty không cho dùng AI tool trên máy làm việc:** dùng máy cá nhân với dữ liệu giả hoặc đã ẩn danh.
 - **Trang live báo 404:** đợi thêm hai phút, rồi kiểm tra lại branch **main** và folder **/(root)**.
