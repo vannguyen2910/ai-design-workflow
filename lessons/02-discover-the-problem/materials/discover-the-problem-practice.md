@@ -35,17 +35,21 @@ Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết đ�
 
 *Ví dụ:* "Đổi ý phải dễ hơn cam kết. Không có nghĩa là bỏ bước xác nhận thanh toán."
 
-### Step 2 · Business question và scope
+### Step 2 · Business question và scope · AI soạn nháp, bạn kiểm tra
 
+- **Move 1, brief thành vấn đề:** đưa AI brief của project, mỗi dòng có ID (`B01 | ...`). Nhờ AI phân loại từng dòng (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc) và viết lại mỗi dòng giải pháp thành một câu vấn đề, kèm điều giải pháp đó đang ngầm giả định. Bạn kiểm tra bản viết lại có đổi nghĩa không.
 - **Bạn viết:** một business question tách khỏi giải pháp, và quyết định mà câu trả lời sẽ phục vụ.
 - **AI soạn nháp:** năm câu hỏi cho business, mỗi câu một ý: outcome, success metric, baseline, constraints, timeline và người quyết định.
 - **Bạn kiểm tra:** sửa câu cho trung lập, rồi ghi vào scope. Câu đã có trả lời là "confirmed". Câu chưa có thì ghi "assumed" kèm người cần xác nhận. Không nhờ AI trả lời thay.
+- **Move 4, phản biện scope:** đưa AI bản scope nháp, nhờ nó đóng vai người phản biện (không đóng vai PO): năm cách scope có thể sai, ai phản đối, dấu hiệu sớm, một câu hỏi cho người thật, và một cách metric bị lách. Chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
 
 ### Step 3 · Challenge assumptions · AI soạn nháp, bạn kiểm tra
 
-- **AI soạn nháp:** đưa AI scope và product context. Nhờ AI liệt kê assumption của brief, gắn loại (User, Problem, Solution, Business), và với mỗi assumption hỏi ngược "dựa vào file nào?".
-- **Bạn kiểm tra:** sửa ít nhất hai assumption cho cụ thể hơn, bỏ assumption quá chung. AI hay gọi kiến thức chung là "đã có evidence": chưa có file nguồn thì ghi "chưa có nguồn".
-- **Bạn xếp** các assumption lên assumption map theo hai trục mức quan trọng và mức evidence. Đọc nhãn trục trước khi đọc vị trí. Chọn **ba assumption hàng đầu**: quan trọng cao, evidence yếu.
+- **Move 2, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh, mỗi dòng có ID). Nhờ AI trả mỗi assumption một dòng `assumption | line IDs | quote`, với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
+- **Bạn lọc:** bỏ dòng trùng và dòng chỉ là sự kiện. Sửa ít nhất hai assumption cho cụ thể hơn.
+- **Move 3, kiểm evidence trong hub:** đưa AI danh sách assumption còn lại và các ghi chú đang có trong hub (review, ticket, analytics, research cũ; hub trống thì để trống). Nhờ AI tìm ghi chú ủng hộ và ghi chú đi ngược, kèm ID và quote nguyên văn, và ghi "chưa có nguồn" khi không có.
+- **Bạn kiểm tra:** đọc từng ghi chú AI trích có thật sự ủng hộ assumption đó không. AI hay gọi kiến thức chung là "đã có evidence": chưa có file nguồn thì ghi "chưa có nguồn".
+- **Bạn xếp** các assumption lên assumption map theo hai trục mức quan trọng và mức evidence (số ghi chú ủng hộ và đi ngược, kèm ID). Đọc nhãn trục trước khi đọc vị trí. Chọn **ba assumption hàng đầu**: quan trọng cao, evidence yếu.
 
 ### Step 4 · Research questions · AI soạn nháp, bạn kiểm tra
 
@@ -112,7 +116,7 @@ Script là lưới an toàn, không phải khuôn.
 
 - Bộ principles (design và business)
 - Scope: business question, quyết định, outcome, metric, trạng thái confirmed hoặc assumed
-- Assumption map với ba assumption hàng đầu
+- Assumption map với ba assumption hàng đầu, mỗi assumption có evidence kèm note ID hoặc "chưa có nguồn"
 - Research question
 - Research plan và script
 - Transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn
@@ -122,7 +126,8 @@ Script là lưới an toàn, không phải khuôn.
 
 - [ ] Mỗi principle riêng có dòng "điều này không có nghĩa là…" và một quyết định nó đảo ngược.
 - [ ] Project có một business question tách khỏi giải pháp.
-- [ ] Mọi dòng AI soạn ở Step 3, 4, 6 và 9 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
+- [ ] Bạn đã chạy bốn move của Break the brief (Step 2 và 3) và mở từng dòng AI trích để kiểm.
+- [ ] Mọi dòng AI soạn ở Step 2, 3, 4, 6 và 9 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
 - [ ] Mỗi research question gắn với một assumption và một quyết định.
 - [ ] Bản gốc chưa ẩn danh không nằm ở chỗ AI đọc.
 - [ ] Lần kiểm quote cuối không còn dòng không đạt.
@@ -134,5 +139,6 @@ Xong thì mang các output này tới buổi practice trên lớp: bạn làm ti
 
 - **Không gặp được business:** ghi mọi outcome và metric là "assumed", kèm người cần xác nhận. Đừng nhờ AI đóng vai PO.
 - **Chưa hẹn được người phỏng vấn đúng nhóm:** nhờ người quen có thói quen liên quan đến project, và ghi rõ đây là giới hạn của mẫu. Chưa có ghi chú phỏng vấn thì làm Step 1 đến 6 trước, và dùng note mẫu cho Step 9.
+- **Chưa có brief hay tài liệu để thử bốn move:** dùng brief mẫu `brief-notes-plain.txt` và các ghi chú R và F trong `source-notes-plain.txt` của course case, cùng prompt trong `break-the-brief-moves.md`.
 - **AI đưa điều nghe hợp lý nhưng không có trong tài liệu:** ghi "chưa có nguồn", không đưa vào như một sự thật.
 - **Không làm hết được:** làm Step 1 đến 4 trước và hẹn người phỏng vấn sớm, vì lịch hẹn là phần khó kiểm soát nhất.

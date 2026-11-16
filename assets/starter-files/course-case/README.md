@@ -15,4 +15,6 @@ Use it when:
 | `insight-set.md` | Week 3 | Nine fictional insights with insight IDs, source type and strength; the input for persona, journey map and opportunity |
 | `persona-ai-draft.md` | Week 3 activity | A six-line persona an AI might write; some lines have an insight behind them, some do not. Answer key inside, instructor only |
 | `competitors/` | Week 2 demo | Three fictional competitor pages |
+| `brief-notes-plain.txt` | Week 2, Break the brief | 10 dòng brief của business dạng `ID | text` (B01 đến B10), có giả định ngầm và hai chỗ mâu thuẫn |
+| `break-the-brief-moves.md` | Week 2, Break the brief | Prompt và kết quả đã lưu của bốn move AI trên brief mẫu, kèm giới hạn |
 | `source-notes-answer-key.md` | Instructor only | The intended themes, the traps, and what a good answer looks like. **Do not share with students before the exercise** |

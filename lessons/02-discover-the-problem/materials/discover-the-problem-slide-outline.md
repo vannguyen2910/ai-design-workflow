@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 50
+slide_count: 51
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
@@ -18,7 +18,7 @@ last_synced: 2026-11-16
 | Stage           | Discover                                                                                                                                 |
 | Prior session   | Buổi 1: Your Design Process, with AI                                                                                                     |
 | Next session    | Practice 2                                                                                                                               |
-| Timing note      | Bốn slide mới về ingest và blind synthesis thêm khoảng 10 phút; cần bớt tương ứng ở các phần principles và Break the brief hoặc ở Q&A, và Winnie quyết định bớt chỗ nào |
+| Timing note      | Bốn slide ingest và blind synthesis thêm khoảng 10 phút. Bốn slide move của Break the brief thay ba slide method (four types, from product to assumption, weak and strong), nên thêm khoảng 6 phút nữa; cần bớt khoảng 16 phút ở principles, Q&A hoặc ví dụ, và Winnie quyết định bớt chỗ nào |
 | Running example | App giao đồ ăn                                                                                                                           |
 
 ---
@@ -383,6 +383,31 @@ last_synced: 2026-11-16
 
 ---
 
+### PROCESS · Move 1: brief to problem
+- Kicker: AI move
+- Title: Move 1: brief thành\n*vấn đề*
+- On-slide:
+  - 01 · AI phân loại từng dòng brief
+  - 02 · AI viết dòng giải pháp thành câu vấn đề
+  - 03 · AI nêu giả định ngầm
+  - 04 · Bạn kiểm tra bản nào đổi nghĩa
+- Ví dụ: có (brief mẫu của Delivery App, dòng B03 và B09)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Phần method đã nói brief thường là một giải pháp. Slide này cho AI làm phần việc tách đó.
+  - Đưa AI từng dòng brief có ID. Bốn việc:
+    - AI phân loại mỗi dòng: mục tiêu, vấn đề, giải pháp, assumption hay ràng buộc.
+    - AI viết mỗi dòng giải pháp thành một câu vấn đề không nhắc giải pháp. "Thêm onboarding bốn bước" thành "khách mới chưa hiểu app hoạt động thế nào".
+    - AI nêu điều giải pháp đang ngầm giả định: nguyên nhân là "không hiểu app", không phải giá.
+    - Bạn kiểm tra bản viết lại có đổi nghĩa không, rồi viết scope theo câu vấn đề.
+  - Trên brief mẫu, AI còn tách được dòng gộp hai ý (B09), chỉ ra B02 và B07 nói ngược nhau về giá, và nhận ra cả hai giải pháp không đụng vào nguyên nhân brief nêu, vì giá bị khoá.
+  - Đây là cách làm của khoá, thử trên một brief mẫu có chủ ý chứa mâu thuẫn. Brief thật ít rõ như vậy.
+
+  > Dòng nào trong brief của bạn là giải pháp mặc áo vấn đề?
+- 🎨 Visual hint: SCHEMATIC. Process track bốn bước; bước ba (giả định ngầm) tô purple.
+
+---
+
 ### NUMBERED · Five questions for business
 - Kicker: Scope
 - Title: Năm câu hỏi *cho business*
@@ -470,6 +495,27 @@ last_synced: 2026-11-16
 
 ---
 
+### COMPARE · Move 4: challenge the scope
+- Kicker: AI move
+- Title: Move 4: phản biện\n*scope*
+- On-slide:
+  - Không làm: đóng vai PO, trả lời thay business
+  - Làm: năm cách scope có thể sai, ai phản đối, dấu hiệu sớm
+  - Làm: một câu hỏi cho người thật, một cách metric bị lách
+  - Bạn chọn câu đáng hỏi
+- Ví dụ: có (scope mẫu của Delivery App)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói AI chuẩn bị, người trả lời. Slide này là phiên bản mạnh của việc chuẩn bị: nhờ AI tìm chỗ scope yếu.
+  - Đưa AI bản scope nháp, nhờ nó đóng vai người phản biện, không đóng vai PO. Với mỗi cách scope có thể sai: ai sẽ phản đối, dấu hiệu sớm, một câu hỏi cho người thật.
+  - Trên scope mẫu, AI chỉ ra "khách mới" chưa được định nghĩa, scope còn pending mà đã chốt việc sáu tuần, và guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy.
+  - Đây là danh sách giả thuyết để hỏi người thật. AI không biết "khách mới" của công ty bạn nghĩa là gì. Bạn chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
+
+  > Câu hỏi nào trong scope của bạn mà người phản đối chắc chắn sẽ hỏi trước?
+- 🎨 Visual hint: COMPARE. Hai card: "AI không làm" (đóng vai PO) và "AI làm" (phản biện); card sau tô purple.
+
+---
+
 ### NUMBERED · Challenge assumptions
 - Kicker: Định nghĩa
 - Title: Challenge\n*assumptions*
@@ -483,8 +529,8 @@ last_synced: 2026-11-16
   - Scope đã chốt thế nào là thành công. Bước tiếp theo kiểm tra điều team đang tin về cách đạt được nó.
   - Giả định là điều đang tin về người dùng, vấn đề, giải pháp hoặc business mà chưa có bằng chứng. Ví dụ app giao đồ ăn: “khách bỏ đơn vì không đổi được khung giờ giao”. Brief nào cũng chứa giả định, vấn đề là những cái bị giấu.
   - Method theo Assumption Map (nguồn 8):
-    - Bốn loại giả định: User, Problem, Solution, Business. Slide kế tiếp có ví dụ cho từng loại.
-    - Công thức: “Chúng ta tin rằng [nhóm người dùng nào] sẽ [làm gì] vì [vì sao]. Chúng ta biết mình đúng khi [tín hiệu].” Slide Travel Buddy phía sau có một ví dụ viết theo công thức này.
+    - Bốn loại giả định: User (khách mới 25 đến 40 tuổi), Problem (giá là lý do chính), Solution (onboarding sẽ giữ chân khách), Business (tăng được 9 điểm phần trăm trong một quý).
+    - Công thức: “Chúng ta tin rằng [nhóm người dùng nào] sẽ [làm gì] vì [vì sao]. Chúng ta biết mình đúng khi [tín hiệu].”
     - Ma trận Importance × Evidence: giả định quan trọng cao mà bằng chứng thấp là chỗ phải kiểm chứng trước. Chọn ba giả định hàng đầu, vì thời gian của lớp.
   - Chia việc: AI liệt kê giả định theo công thức, gắn loại, tìm giả định ẩn và hỏi ngược bằng chứng của từng cái (“dựa vào file nào? Nếu không có, ghi unknown”). Designer tự xếp lên ma trận, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh AI không có, rồi sửa ít nhất hai giả định cho cụ thể với project.
   - Ba lúc nên dừng lại kiểm giả định, như cột When trên slide: trước khi thiết kế theo brief, trước khi cam kết một tính năng lớn, và khi team bất đồng ý kiến.
@@ -495,47 +541,53 @@ last_synced: 2026-11-16
 
 ---
 
-### NUMBERED · Four assumption types
-- Kicker: Định nghĩa
-- Title: Bốn loại *assumption*
+### PROCESS · Move 2: mine assumptions
+- Kicker: AI move
+- Title: Move 2: đào *assumption*\ntừ tài liệu
 - On-slide:
-  - User: "Khách mới là người đi làm, hay đặt đồ ăn giờ tan ca."
-  - Problem: "Khách bỏ đơn vì không đổi được khung giờ giao."
-  - Solution: "Cho đổi khung giờ sau khi đặt sẽ giữ khách lại."
-  - Business: "Khách chịu trả thêm phí để chọn khung giờ giao."
-- Ví dụ: có (xem speaker notes)
+  - 01 · Đưa AI brief, PRD, research cũ có ID
+  - 02 · AI trả: assumption, line ID, quote nguyên văn
+  - 03 · Chương trình kiểm quote
+  - 04 · Bạn lọc và xếp lên ma trận
+- Ví dụ: có (brief mẫu: 18 dòng, 17 đạt)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói giả định là gì. Một brief thường trộn nhiều loại giả định, và mỗi loại cần cách kiểm chứng khác nhau.
-    - User: điều bạn tin về người dùng là ai và họ đang ở bối cảnh nào.
-    - Problem: điều bạn tin về vấn đề, rằng nó có thật và đủ cấp bách.
-    - Solution: điều bạn tin về giải pháp, rằng nó sẽ hiệu quả.
-    - Business: điều bạn tin về thị trường, giá hoặc quy định.
-  - Các câu trên slide là ví dụ minh hoạ cho app giao đồ ăn, chưa phải dữ liệu của case. Khi liệt kê giả định cho dự án thật, gắn loại cho từng cái giúp thấy team đang dồn vào một loại, thường là Solution, và bỏ quên User hay Problem.
+  - Slide trước nói AI phản biện scope. Slide này đào giả định từ chính tài liệu.
+  - Giả định nguy hiểm nhất thường nằm sau câu về giải pháp: "onboarding sẽ giữ chân khách" ngầm nói khách rời đi vì không hiểu app.
+  - Bốn bước:
+    - Đưa AI brief, PRD hoặc research cũ, mỗi dòng có ID.
+    - AI trả mỗi assumption một dòng: assumption, line ID, quote chép nguyên văn. Đây là định dạng citation của phần Ingest.
+    - Chạy phép kiểm quote. Trên brief mẫu, 17 trong 18 dòng đạt; dòng hỏng là một assumption trích hai dòng nhưng quote chỉ có ở một.
+    - Bạn bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
+  - Chương trình chỉ chứng minh quote có thật. Mức quan trọng là việc của bạn.
 
-  > Trong brief gần nhất của bạn, loại giả định nào xuất hiện nhiều nhất, và loại nào bị bỏ quên?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+  > Tài liệu nào của project bạn chưa từng bị đọc tìm giả định?
+- 🎨 Visual hint: SCHEMATIC. Process track bốn bước; bước ba (kiểm quote) tô purple.
 
 ---
 
-### IMAGE · From product to assumption
-- Kicker: Ví dụ
-- Title: Từ sản phẩm đến *assumption*
+### COMPARE · Move 3: audit the evidence
+- Kicker: AI move
+- Title: Move 3: kiểm evidence\ntrong *hub*
 - On-slide:
-  - Ảnh màn hình sản phẩm Travel Buddy và giả định rút ra từ màn hình đó
-  - Hai ô kèm theo: bằng chứng (chưa có dữ liệu) và mức quan trọng (cao)
-- Ví dụ: có (xem speaker notes)
+  - A4 khung giờ giao: 4 ghi chú ủng hộ, mạnh
+  - A1 giá: 1 ủng hộ, 1 đi ngược, yếu
+  - A3 nhắc sau 7 ngày: chưa có nguồn
+  - Bạn đọc từng ghi chú trước khi tính
+- Ví dụ: có (assumption mẫu và 18 ghi chú R và F)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đây là một giả định đi từ màn hình sản phẩm ra công thức, trên case app du lịch Travel Buddy.
-  - Đọc từ màn hình bên trái sang giả định bên phải: bắt đầu bằng một màn hình có thật, nhìn ra điều team đang tin về nó, rồi viết theo công thức. Đây là kiểu giả định về hành vi tin tưởng: khách tin ai hơn.
-  - Hai ô nhỏ bên dưới là hai thứ cần ghi kèm mỗi giả định:
-    - Bằng chứng: hiện có gì. Ở đây là chưa có dữ liệu cho thấy khách tin tip hơn mô tả.
-    - Mức quan trọng: nếu giả định sai thì thiết kế đổ vỡ đến đâu. Ở đây là cao.
-  - Chính hai thứ này quyết định giả định nằm ở đâu trên bản đồ ở slide kế tiếp. Dấu hiệu trong ví dụ là gợi ý của mình, bạn thay bằng dấu hiệu team thật sự theo dõi được.
+  - Slide trước ra danh sách assumption. Slide này hỏi: hub đã có gì để ủng hộ hay bác từng cái.
+  - Với mỗi assumption, AI tìm ghi chú ủng hộ và ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn. Không có thì ghi đúng cụm "chưa có nguồn".
+  - Kết quả trên bộ mẫu:
+  - - Khung giờ giao: bốn ghi chú ủng hộ, mạnh
+  - - Giá là lý do chính: F07 ủng hộ, R06 đi ngược, yếu
+  - - Nhắc sau 7 ngày: chưa có nguồn
+  - Đây là cột Evidence của ma trận, có ID thay cho cảm giác. Hub trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: việc cần làm là phỏng vấn.
+  - Giới hạn: quote có thật chưa chắc ủng hộ đúng assumption (AI xếp F01 vào hai assumption khác nhau), và ghi chú không đánh dấu khách mới hay cũ. Bạn đọc từng ghi chú trước khi tính.
 
-  > Màn hình nào trong sản phẩm của bạn đang chứa một niềm tin chưa ai kiểm chứng?
-- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
+  > Assumption nào của bạn sẽ ra "chưa có nguồn"?
+- 🎨 Visual hint: COMPARE. Bảng ba hàng: assumption, ủng hộ, đi ngược; hàng "chưa có nguồn" tô purple.
 
 ---
 
@@ -631,28 +683,6 @@ last_synced: 2026-11-16
 
   > Giả định hàng đầu của bạn, viết thành câu hỏi theo công thức này sẽ ra sao?
 - 🎨 Visual hint: TYPOGRAPHIC. Công thức lớn ở giữa, hai chỗ trống đánh dấu bằng ngoặc vuông; ví dụ bên dưới.
-
----
-
-### COMPARE · Weak and strong research questions
-- Kicker: Kỹ thuật
-- Title: Research question *tốt và chưa tốt*
-- On-slide:
-  - Trái, Weak: "Người dùng có thích sản phẩm của mình không?"; "Người dùng muốn tính năng nào?"; "Vì sao người dùng không tin chúng ta?"
-  - Phải, Strong: "Khoảnh khắc nào trong lần đặt đầu tiên khiến khách không quay lại, và lúc đó họ tin điều gì?"; "Khách xoay xở thế nào khi cần dời khung giờ giao, và điều đó cho thấy nhu cầu nào chưa được đáp ứng?"; "Khách tìm những tín hiệu nào trước khi bấm đặt?"
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ba câu weak đều trượt theo cách quen thuộc.
-    - “Có thích sản phẩm không?” là câu hỏi sở thích, và trả lời có hoặc không.
-    - “Muốn tính năng nào?” xin người dùng làm việc của designer.
-    - “Vì sao không tin chúng ta?” đã coi như họ không tin, nên dẫn dắt.
-  - Ba câu strong hỏi về hành vi và khoảnh khắc cụ thể: họ làm gì, ở lúc nào, tin điều gì. Câu trả lời cho chúng là chuyện thật, không phải ý kiến.
-  - Phép thử nhanh: câu này trả lời được bằng một chữ có hoặc không không? Nó nói về sản phẩm hay về người dùng? Nó gắn với một giả định không? Nếu một trong ba là có, viết lại.
-  - Các câu strong là ví dụ minh hoạ cho case app giao đồ ăn.
-
-  > Chọn một câu weak bạn từng viết hoặc từng nghe, viết lại thành câu strong.
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
 
 ---
 
