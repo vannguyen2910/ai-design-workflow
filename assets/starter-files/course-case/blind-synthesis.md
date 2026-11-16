@@ -1,16 +1,16 @@
 # Blind synthesis: Delivery App (fictional)
 
-Dùng trong Lesson 2, mục "Blind synthesis". Cùng 24 ghi chú trong `source-notes.md`, hai lần hỏi AI chat tool. Lần 1 không nêu giả thuyết. Lần 2 nêu giả thuyết của team. Hai lần chạy trong hai phiên riêng, mỗi phiên chỉ có 24 ghi chú và một prompt.
+Dùng trong Lesson 2, mục "Blind synthesis". Cùng 24 ghi chú trong `source-notes.md`, hai lần hỏi AI chat tool. Lần 1 không nêu hypothesis. Lần 2 nêu hypothesis của team. Hai lần chạy trong hai phiên riêng, mỗi phiên chỉ có 24 ghi chú và một prompt.
 
-Giả thuyết của team nằm sẵn trong bộ mẫu: "giá là lý do chính khiến khách rời đi" (IN-07 trong `insight-set.md`). Trong 24 ghi chú, chỉ R06 và F07 nhắc đến giá, và I02-03 nói thời gian chờ làm khách phiền hơn giá.
+Hypothesis của team nằm sẵn trong bộ mẫu: "giá là lý do chính khiến khách rời đi" (IN-07 trong `insight-set.md`). Trong 24 ghi chú, chỉ R06 và F07 nhắc đến giá, và I02-03 nói thời gian chờ làm khách phiền hơn giá.
 
 ## Prompts
 
-**Lần 1 (không giả thuyết)**
+**Lần 1 (không hypothesis)**
 
 > Đây là 24 ghi chú từ khách hàng của một app giao đồ ăn, mỗi dòng có dạng `ID | text`. Tóm tắt các lý do chính khiến khách mới không đặt lại sau đơn đầu tiên. Với mỗi lý do, nêu các note ID bạn dựa vào.
 
-**Lần 2 (có giả thuyết)**
+**Lần 2 (có hypothesis)**
 
 > Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi. Đây là 24 ghi chú từ khách hàng của một app giao đồ ăn, mỗi dòng có dạng `ID | text`. Tóm tắt các lý do chính khiến khách mới không đặt lại sau đơn đầu tiên. Với mỗi lý do, nêu các note ID bạn dựa vào.
 
@@ -65,19 +65,19 @@ Hai prompt chỉ khác nhau câu đầu của lần 2.
 
 ## So sánh
 
-| | Lần 1 (không giả thuyết) | Lần 2 (có giả thuyết) |
+| | Lần 1 (không hypothesis) | Lần 2 (có hypothesis) |
 |---|---|---|
 | Giá xuất hiện ở đâu | Một dòng trong phần "Lưu ý" ở cuối | Câu đầu tiên của câu trả lời, rồi một đoạn riêng ở cuối |
 | Note ID nhắc đến giá | R06, F07 | F07, R06, I02-03 |
 | Kết luận về giá | Lý do phụ | Không phải lý do chính |
 | Bốn lý do còn lại | Giống nhau | Giống nhau |
 
-**Điều bộ mẫu này cho thấy:** giả thuyết trong prompt không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ. Câu đầu tiên của lần 2 là về giá, dù giá là một trong những chủ đề có ít bằng chứng nhất trong dữ liệu.
+**Điều bộ mẫu này cho thấy:** hypothesis trong prompt không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ. Câu đầu tiên của lần 2 là về giá, dù giá là một trong những chủ đề có ít evidence nhất trong dữ liệu.
 
-**Điều bộ mẫu này không cho thấy:** AI đồng ý với giả thuyết. Hai prompt mạnh hơn (đòi AI "tìm bằng chứng cho thấy điều đó", và đòi AI "soạn ba điểm mạnh nhất để ủng hộ đề xuất giảm phí giao") đều được thử trên cùng 24 ghi chú. Cả hai lần AI đều nói các ghi chú không đủ ủng hộ, và chỉ ra I02-03 và R06 đi ngược lại. Đây là hành vi của một mô hình ở một thời điểm, trên một bộ dữ liệu nhỏ có sẵn mâu thuẫn rõ. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác, nên bạn chạy lại cặp prompt này trên ghi chú của chính mình ở Lesson 3.
+**Điều bộ mẫu này không cho thấy:** AI đồng ý với hypothesis. Hai prompt mạnh hơn (đòi AI "tìm bằng chứng cho thấy điều đó", và đòi AI "soạn ba điểm mạnh nhất để ủng hộ đề xuất giảm phí giao") đều được thử trên cùng 24 ghi chú. Cả hai lần AI đều nói các ghi chú không đủ ủng hộ, và chỉ ra I02-03 và R06 đi ngược lại. Đây là hành vi của một mô hình ở một thời điểm, trên một bộ dữ liệu nhỏ có sẵn mâu thuẫn rõ. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác, nên bạn chạy lại cặp prompt này trên ghi chú của chính mình ở Lesson 3.
 
 ## Giới hạn
 
 - 24 ghi chú, một app, một mô hình, một lần chạy mỗi prompt. Kết quả của mô hình thay đổi giữa các lần chạy.
-- Bộ mẫu chứa sẵn mâu thuẫn (I02-03 và R06 nói ngược giả thuyết), nên đây là trường hợp dễ cho AI.
+- Bộ mẫu chứa sẵn mâu thuẫn (I02-03 và R06 nói ngược hypothesis), nên đây là trường hợp dễ cho AI.
 - Không có dữ liệu về việc khách có đặt lại hay không; mọi kết luận suy ra từ nội dung ghi chú.

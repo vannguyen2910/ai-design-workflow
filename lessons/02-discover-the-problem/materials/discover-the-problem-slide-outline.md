@@ -70,7 +70,7 @@ last_synced: 2026-11-16
     - 02 Principles cho AI: chuẩn nào để AI đối chiếu, ai viết và viết lúc nào.
     - 03 Break the brief: ba việc kiểm tra brief là scope, assumption và research question, mỗi việc ra một file.
     - 04 Understand our users: từ research question đến cuộc phỏng vấn, chuẩn bị plan và script với AI, chạy thử, quy tắc dữ liệu.
-    - 05 Ingest vào hub: biến transcript thành source notes có ID, kiểm quote bằng chương trình, và xem một giả thuyết trong prompt làm AI nói gì.
+    - 05 Ingest vào hub: biến transcript thành source notes có ID, kiểm quote bằng chương trình, và xem một hypothesis trong prompt làm AI nói gì.
   - Thứ tự này đi từ điều quan sát được đến điều cần học: hiểu bối cảnh, đặt chuẩn, kiểm brief, rồi hỏi người thật.
   - Cuối buổi có Q&A và slide practice cho chuỗi việc ở nhà.
 
@@ -958,7 +958,7 @@ last_synced: 2026-11-16
   - Phần này đi qua ba việc:
     - Cắt transcript thành source notes có ID.
     - Kiểm quote bằng chương trình, không bằng một AI khác.
-    - Blind synthesis: cùng dữ liệu, hỏi hai cách, xem giả thuyết trong prompt làm AI nói gì.
+    - Blind synthesis: cùng dữ liệu, hỏi hai cách, xem hypothesis trong prompt làm AI nói gì.
   - Phần này nối từ phần trước: sau phỏng vấn bạn có transcript, và ba quy tắc của buổi 1 (raw không bị sửa, mỗi note một ID, quote nguyên văn) áp dụng ở đây lần đầu.
 
   > Bạn sẽ có bao nhiêu transcript trước buổi practice trên lớp?
@@ -1020,23 +1020,23 @@ last_synced: 2026-11-16
 - Kicker: Blind synthesis
 - Title: Cùng 24 note,\n*hai câu hỏi*
 - On-slide:
-  - Lần 1, không giả thuyết: giá chỉ là một dòng "Lưu ý" ở cuối
-  - Lần 2, có giả thuyết "giá là lý do chính": câu đầu tiên là về giá, và vẫn kết luận giá không phải lý do chính
-  - AI không đồng ý với giả thuyết, nhưng giả thuyết đổi thứ AI nói trước
+  - Lần 1, không hypothesis: giá chỉ là một dòng "Lưu ý" ở cuối
+  - Lần 2, có hypothesis "giá là lý do chính": câu đầu tiên là về giá, và vẫn kết luận giá không phải lý do chính
+  - AI không đồng ý với hypothesis, nhưng hypothesis đổi thứ AI nói trước
 - Ví dụ: có (hai kết quả đã lưu, trong `blind-synthesis.md`)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước kiểm quote. Slide này trả lời: một giả thuyết trong prompt đổi gì ở câu trả lời của AI.
+  - Slide trước kiểm quote. Slide này trả lời: một hypothesis trong prompt đổi gì ở câu trả lời của AI.
   - Hai lần hỏi, hai phiên riêng, cùng 24 note, cùng câu hỏi. Lần 2 chỉ thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi."
-  - Bộ mẫu có sẵn giả thuyết này: chỉ R06 và F07 nhắc đến giá, còn I02-03 nói thời gian chờ làm khách phiền hơn giá.
+  - Bộ mẫu có sẵn hypothesis này: chỉ R06 và F07 nhắc đến giá, còn I02-03 nói thời gian chờ làm khách phiền hơn giá.
   - Kết quả đã lưu, đọc theo hai cột:
     - Lần 1: bốn lý do chính là khung giờ bị chốt, huỷ đơn khó tìm, thời gian giao quá lạc quan, đơn đầu thiếu phản hồi. Giá chỉ là một dòng ở phần "Lưu ý".
     - Lần 2: cùng bốn lý do, nhưng câu đầu tiên của câu trả lời là về giá, và có một đoạn riêng về giá ở cuối, nhắc thêm I02-03.
-  - Điều này cho thấy: giả thuyết không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ.
-  - Điều này không cho thấy: AI đồng ý với giả thuyết. Chương trình cũng thử hai prompt mạnh hơn ("tìm bằng chứng cho thấy điều đó", "soạn ba điểm mạnh nhất để ủng hộ đề xuất giảm phí giao"); cả hai lần AI đều nói các note không đủ ủng hộ. Đó là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ.
-  - Vì vậy mang về phương pháp, không mang về kết luận: chạy lần đầu không giả thuyết, chạy lần hai có giả thuyết, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn.
+  - Điều này cho thấy: hypothesis không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ.
+  - Điều này không cho thấy: AI đồng ý với hypothesis. Chương trình cũng thử hai prompt mạnh hơn ("tìm bằng chứng cho thấy điều đó", "soạn ba điểm mạnh nhất để ủng hộ đề xuất giảm phí giao"); cả hai lần AI đều nói các note không đủ ủng hộ. Đó là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ.
+  - Vì vậy mang về phương pháp, không mang về kết luận: chạy lần đầu không hypothesis, chạy lần hai có hypothesis, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn.
 
-  > Giả thuyết nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?
+  > Hypothesis nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?
 - 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng; dòng về giá được tô purple ở cả hai cột.
 
 ---
@@ -1153,18 +1153,18 @@ last_synced: 2026-11-16
 - On-slide:
   - What: hai đến bốn đối thủ, trực tiếp và gián tiếp; ghi pattern, không ghi ảnh chụp
   - Why: trả lời một giả định, không liệt kê tính năng; chỉ cho biết họ làm gì, không cho biết vì sao user chọn họ
-  - When: sau Research questions, khi cần thêm giả thuyết; AI mô tả trước, designer đối chiếu
+  - When: sau Research questions, khi cần thêm hypothesis; AI mô tả trước, designer đối chiếu
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Phụ lục, ngoài 90 phút của buổi. Dùng khi có thêm thời gian, hoặc khi lớp hỏi về đối thủ.
-  - Research question đã rõ, việc thêm là xem đối thủ đang làm gì để có thêm giả thuyết. Năm điều cần nắm:
+  - Research question đã rõ, việc thêm là xem đối thủ đang làm gì để có thêm hypothesis. Năm điều cần nắm:
     - Mục đích là trả lời một giả định, không liệt kê đối thủ có gì. Mỗi thứ ghi lại gắn với một giả định nó xác nhận hoặc bác.
     - Chọn hai đến bốn đối thủ, trộn trực tiếp và gián tiếp (khác loại sản phẩm nhưng cùng việc cho user), gồm cả đối thủ tốt hơn sản phẩm đang xét.
     - Ghi pattern, không ghi ảnh chụp. Pattern có giá trị khi thấy ở nhiều nguồn.
     - AI mô tả trước, đánh giá sau, designer đối chiếu với ảnh gốc. Chốt phạm vi trước: một journey, tối đa sáu tiêu chí.
     - Giới hạn: chỉ cho biết đối thủ làm gì, không cho biết user vì sao chọn họ. Đây là competitive review của chuyên gia, khác competitive testing với user.
-  - Kết luận là giả thuyết để hỏi trong phỏng vấn. Testing làm sau, khi đã có prototype.
+  - Kết luận là hypothesis để hỏi trong phỏng vấn. Testing làm sau, khi đã có prototype.
 
   > Bạn đã từng quyết định thiết kế chỉ dựa trên đối thủ chưa?
 - 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; kicker Định nghĩa, tiêu đề có accent ở dòng 2.

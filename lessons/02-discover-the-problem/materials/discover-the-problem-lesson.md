@@ -24,7 +24,7 @@ Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học
 3. Break the brief: scope, assumption và research question
 4. Understand our users: research plan, script, buổi phỏng vấn và quy tắc dữ liệu
 5. Ingest: từ transcript đến source notes, và kiểm quote bằng chương trình
-6. Blind synthesis: giả thuyết trong prompt làm AI nói gì
+6. Blind synthesis: hypothesis trong prompt làm AI nói gì
 7. Những gì vào hub sau buổi này
 8. Ví dụ xuyên suốt với Delivery App
 
@@ -39,7 +39,7 @@ Phụ lục, ngoài 90 phút: competitor analysis.
 5. Nêu bốn thói quen của một buổi phỏng vấn tốt, vai trò của AI khi chuẩn bị phỏng vấn, và bốn câu hỏi trước khi đưa dữ liệu phỏng vấn cho AI
 6. Cắt một transcript đã ẩn danh thành source notes có ID, và giải thích vì sao quote phải nguyên văn
 7. Giải thích một phép kiểm quote bằng chương trình chứng minh gì và không chứng minh gì
-8. Mô tả blind synthesis cho thấy gì về cách một giả thuyết trong prompt ảnh hưởng đến câu trả lời của AI
+8. Mô tả blind synthesis cho thấy gì về cách một hypothesis trong prompt ảnh hưởng đến câu trả lời của AI
 
 ---
 
@@ -150,7 +150,7 @@ Tầng gửi business có năm câu: outcome, success metric, baseline, ràng bu
 
 **AI không đóng vai PO hay user.** Các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe. Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý. AI chuẩn bị câu hỏi và soạn nháp ghi chú, còn câu trả lời luôn do người thật đưa ra.
 
-**Hỏi trung tính.** Câu nêu sẵn giả thuyết làm AI nghiêng theo người hỏi. "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân". Mục 6 cho thấy chính xác nghiêng theo kiểu nào.
+**Hỏi trung tính.** Câu nêu sẵn hypothesis làm AI nghiêng theo người hỏi. "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân". Mục 6 cho thấy chính xác nghiêng theo kiểu nào.
 
 | Access level | Tình huống | Bạn làm gì | Agreement status |
 |---|---|---|---|
@@ -256,7 +256,7 @@ Transcript đã ẩn danh là **raw source**; bạn không sửa nó. Từ đó 
 
 ### 5.2 Quotes must be word for word
 
-AI tóm tắt rất trơn. Khi bạn nhờ AI rút insight, nó trả về insight kèm quote. Các hướng dẫn thực hành về tổng hợp research bằng AI cảnh báo hai lỗi: quote bịa nghe hay hơn quote thật, vì người thật nói câu dở dang; và insight dựa vào một ý của vài người nhưng được trình bày như xu hướng chính. Các hướng dẫn này chủ yếu do bên bán công cụ viết, nên là kinh nghiệm thực hành, chưa phải bằng chứng đã kiểm. Một nghiên cứu tổng quan về UX researcher cũng cho thấy họ ít tin kết quả AI vì không truy được về dữ liệu gốc.
+AI tóm tắt rất trơn. Khi bạn nhờ AI rút insight, nó trả về insight kèm quote. Các hướng dẫn thực hành về tổng hợp research bằng AI cảnh báo hai lỗi: quote bịa nghe hay hơn quote thật, vì người thật nói câu dở dang; và insight dựa vào một ý của vài người nhưng được trình bày như xu hướng chính. Các hướng dẫn này chủ yếu do bên bán công cụ viết, nên là kinh nghiệm thực hành, chưa phải evidence đã kiểm. Một nghiên cứu tổng quan về UX researcher cũng cho thấy họ ít tin kết quả AI vì không truy được về dữ liệu gốc.
 
 Vì vậy bạn yêu cầu AI trả về mỗi insight dưới dạng một dòng `insight | note IDs | một quote nguyên văn`. Dạng này kiểm được, còn một đoạn văn trơn thì không.
 
@@ -278,29 +278,29 @@ Chương trình đã thử instruction này trên 24 note mẫu cùng bốn dòn
 
 ### 6.1 The setup
 
-Cùng 24 note mẫu của Delivery App, hai lần hỏi AI trong hai phiên riêng. Lần 1 không nêu giả thuyết. Lần 2 thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi." Hai lần có cùng câu hỏi, cùng dữ liệu, cùng yêu cầu nêu note ID. Prompt và kết quả đầy đủ nằm ở `assets/starter-files/course-case/blind-synthesis.md`.
+Cùng 24 note mẫu của Delivery App, hai lần hỏi AI trong hai phiên riêng. Lần 1 không nêu hypothesis. Lần 2 thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi." Hai lần có cùng câu hỏi, cùng dữ liệu, cùng yêu cầu nêu note ID. Prompt và kết quả đầy đủ nằm ở `assets/starter-files/course-case/blind-synthesis.md`.
 
-Bộ mẫu chứa sẵn giả thuyết này: chỉ R06 và F07 nhắc đến giá, còn I02-03 nói thời gian chờ làm khách phiền hơn giá.
+Bộ mẫu chứa sẵn hypothesis này: chỉ R06 và F07 nhắc đến giá, còn I02-03 nói thời gian chờ làm khách phiền hơn giá.
 
 ### 6.2 What the runs show
 
-| | Lần 1 (không giả thuyết) | Lần 2 (có giả thuyết) |
+| | Lần 1 (không hypothesis) | Lần 2 (có hypothesis) |
 |---|---|---|
 | Giá xuất hiện ở đâu | Một dòng trong phần "Lưu ý" ở cuối | Câu đầu tiên của câu trả lời, rồi một đoạn riêng ở cuối |
 | Note ID nhắc đến giá | R06, F07 | F07, R06, I02-03 |
 | Kết luận về giá | Lý do phụ | Không phải lý do chính |
 | Bốn lý do còn lại | Giống nhau | Giống nhau |
 
-Giả thuyết không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ. Câu đầu tiên của lần 2 là về giá, dù giá là một trong những chủ đề có ít bằng chứng nhất trong dữ liệu.
+Hypothesis không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ. Câu đầu tiên của lần 2 là về giá, dù giá là một trong những chủ đề có ít evidence nhất trong dữ liệu.
 
 ### 6.3 What the runs do not show
 
-Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: một prompt đòi AI "tóm tắt bằng chứng cho thấy điều đó", và một prompt đòi soạn "ba điểm mạnh nhất để ủng hộ đề xuất giảm phí giao". Cả hai lần AI đều nói các note không đủ ủng hộ và chỉ ra R06 và I02-03 đi ngược lại. Vậy bộ mẫu này **không** cho thấy AI đồng ý với giả thuyết.
+Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: một prompt đòi AI "tóm tắt bằng chứng cho thấy điều đó", và một prompt đòi soạn "ba điểm mạnh nhất để ủng hộ đề xuất giảm phí giao". Cả hai lần AI đều nói các note không đủ ủng hộ và chỉ ra R06 và I02-03 đi ngược lại. Vậy bộ mẫu này **không** cho thấy AI đồng ý với hypothesis.
 
-Đây là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác. Vì vậy bạn không rút ra "AI không bị giả thuyết ảnh hưởng", mà rút ra phương pháp:
+Đây là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác. Vì vậy bạn không rút ra "AI không bị hypothesis ảnh hưởng", mà rút ra phương pháp:
 
-1. Chạy lần đầu **không** nêu giả thuyết (blind).
-2. Chạy lần hai có giả thuyết của team.
+1. Chạy lần đầu **không** nêu hypothesis (blind).
+2. Chạy lần hai có hypothesis của team.
 3. So hai bản: chủ đề nào đứng đầu, note ID nào được trích, và có note nào xuất hiện ở bản này mà biến mất ở bản kia.
 
 Ở Lesson 3 bạn làm đúng việc này trên source notes của chính bạn.
@@ -339,7 +339,7 @@ Project mẫu (hư cấu): Delivery App, nhiều khách mới không đặt lạ
 
 ## Appendix. Competitor analysis
 
-Ngoài 90 phút của buổi học. Dùng khi còn thời gian hoặc khi lớp hỏi thêm; làm sau research question, khi cần thêm giả thuyết.
+Ngoài 90 phút của buổi học. Dùng khi còn thời gian hoặc khi lớp hỏi thêm; làm sau research question, khi cần thêm hypothesis.
 
 Năm điều cần nắm:
 
@@ -347,7 +347,7 @@ Năm điều cần nắm:
 2. **Chọn hai đến bốn competitor, trộn trực tiếp và gián tiếp**, gồm cả competitor tốt hơn sản phẩm đang xét.
 3. **Ghi pattern, không ghi ảnh chụp.** Pattern có giá trị khi thấy ở nhiều nguồn và gắn với assumption.
 4. **AI mô tả trước, đánh giá sau, bạn đối chiếu.** Chốt scope trước (một journey, tối đa sáu tiêu chí). AI mô tả từng ảnh chụp rồi điền bảng evidence, mỗi ô ghi tên file nguồn. Bạn mở ảnh gốc cho các ô quan trọng và ghi tỷ lệ ô sai.
-5. **Giới hạn: chỉ cho biết competitor làm gì, không cho biết user vì sao chọn họ.** Kết luận là giả thuyết để hỏi trong phỏng vấn.
+5. **Giới hạn: chỉ cho biết competitor làm gì, không cho biết user vì sao chọn họ.** Kết luận là hypothesis để hỏi trong phỏng vấn.
 
 ---
 
