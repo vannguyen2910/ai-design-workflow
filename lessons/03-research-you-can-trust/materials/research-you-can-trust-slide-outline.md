@@ -66,12 +66,10 @@ last_synced: 2026-11-16
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Sáu phút, cả lớp; mỗi người nói tên và một câu, khoảng bốn mươi giây
-  - Ghi nguyên nhân vào cột "Vì sao đã tin" và giữ bảng này để dùng lại ở phần synthesis
-  - Nguyên nhân hay gặp: mẫu nhỏ, người nói to nhất, chỉ thấy điều mình mong thấy
-  - Những lý do này chính là lý do cần một quy trình kiểm tra; mình vào phần nội dung
-  - Kể một lần bạn tin một insight, rồi mới thấy nó sai. Điều gì đã làm bạn tin?
+  - Ghi lại hai điều mỗi người kể: đã đưa gì cho AI, và đã kiểm tra kết quả bằng cách nào (hoặc không kiểm tra)
+  - Giữ ghi chú này để dùng lại ở phần synthesis: đối chiếu cách mỗi người đang làm với quy trình kiểm tra hôm nay
 
-  > Ai chưa có câu chuyện thì kể điều bạn lo khi tin một insight
+  > Ai chưa có câu chuyện thì kể điều bạn lo khi dùng AI để synthesis
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, tiêu đề lớn, một câu hỏi ngắn bên dưới.
 
 ---
@@ -83,7 +81,7 @@ last_synced: 2026-11-16
   - Source notes
   - Mỗi ghi chú từ research là một ID, quote đã kiểm tra
   - Quy tắc
-  - Các principles and câu hỏi về dữ liệu trước khi đưa cho AI
+  - Các principles và câu hỏi về dữ liệu trước khi đưa cho AI
   - Hôm nay
   - Decision, Insight, Challenge
   - Outcome
@@ -133,7 +131,7 @@ last_synced: 2026-11-16
 ---
 
 ### NUMBERED · What AI does in Define
-- Kicker: AI làm được gì · 02/04
+- Kicker: AI làm được gì
 - Title: Define
 - On-slide:
   - AI soạn nháp, bạn kiểm tra
