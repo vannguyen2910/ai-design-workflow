@@ -1,6 +1,6 @@
 ---
 title: "Discover the Problem"
-summary: "Đặt design principles trước, break the brief với AI, chuẩn bị phỏng vấn người dùng, rồi đưa transcript vào hub qua ingest và kiểm quote bằng chương trình."
+summary: "Đặt design principles trước, break the brief với AI, chuẩn bị phỏng vấn người dùng, rồi đưa transcript vào hub qua ingest và kiểm tra quote bằng chương trình."
 subtitle: "Set the principles first, break the brief with AI, prepare to interview real users, then ingest the transcripts into the hub and check every quote by program"
 type: lesson
 program: ai-design-workflow
@@ -13,7 +13,7 @@ slides: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
 previous-session: "Your Design Process, with AI"
 next-session: "Turn Research into Insights You Can Trust"
 ---
-Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học cách phá brief (break the brief), chuẩn bị và chạy phỏng vấn người dùng thật, rồi đưa transcript vào hub theo ba quy tắc của Lesson 1: ingest thành source notes có ID, và kiểm mọi quote bằng chương trình. Bạn làm cả chuỗi này trên project của mình ở nhà sau buổi học. Phần từ source notes đến insight (synthesis) học ở Lesson 3.
+Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học cách phá brief (break the brief), chuẩn bị và chạy phỏng vấn người dùng thật, rồi đưa transcript vào hub theo ba quy tắc của Lesson 1: ingest thành source notes có ID, và kiểm tra mọi quote bằng chương trình. Bạn làm cả chuỗi này trên project của mình ở nhà sau buổi học. Phần từ source notes đến insight (synthesis) học ở Lesson 3.
 
 > **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** Mọi điều bạn ghi ở Discover truy được về một nguồn, hoặc mang nhãn "chưa có nguồn". Độ tin cậy nằm ở đó, không nằm ở độ trơn tru của bản AI soạn.
 
@@ -23,7 +23,7 @@ Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học
 2. Principles cho AI: chuẩn để AI đối chiếu
 3. Break the brief: scope, assumption và research question
 4. Understand our users: research plan, script, buổi phỏng vấn và quy tắc dữ liệu
-5. Ingest: từ transcript đến source notes, và kiểm quote bằng chương trình
+5. Ingest: từ transcript đến source notes, và kiểm tra quote bằng chương trình
 6. Blind synthesis: hypothesis trong prompt làm AI nói gì
 7. Những gì vào hub sau buổi này
 8. Ví dụ xuyên suốt với Delivery App
@@ -34,11 +34,11 @@ Phụ lục, ngoài 90 phút: competitor analysis.
 
 1. Chỉ ra Discover nằm ở đâu trong Double Diamond và nêu AI giúp được gì, chưa giúp được gì ở stage này
 2. Viết một principle riêng của sản phẩm có thể đảo ngược một quyết định và có dòng "điều này không có nghĩa là", và giải thích vì sao chuẩn đặt trước khi AI chạy
-3. Mô tả ba việc của Break the brief (scope, assumption, research question), file mỗi việc tạo ra và phần bạn kiểm tra, và chạy bốn move AI (brief thành vấn đề, đào assumption từ tài liệu, kiểm evidence trong hub, phản biện scope) với phần bạn kiểm tra ở mỗi move
+3. Mô tả ba việc của Break the brief (scope, assumption, research question), file mỗi việc tạo ra và phần bạn kiểm tra, và chạy bốn move AI (brief thành vấn đề, đào assumption từ tài liệu, kiểm tra evidence trong hub, phản biện scope) với phần bạn kiểm tra ở mỗi move
 4. Giải thích vì sao AI không được đóng vai PO hay user, và gắn trạng thái confirmed hoặc assumed cho scope
 5. Nêu bốn thói quen của một buổi phỏng vấn tốt, vai trò của AI khi chuẩn bị phỏng vấn, và bốn câu hỏi trước khi đưa dữ liệu phỏng vấn cho AI
 6. Cắt một transcript đã ẩn danh thành source notes có ID, và giải thích vì sao quote phải nguyên văn
-7. Giải thích một phép kiểm quote bằng chương trình chứng minh gì và không chứng minh gì
+7. Giải thích một phép kiểm tra quote bằng chương trình chứng minh gì và không chứng minh gì
 8. Mô tả blind synthesis cho thấy gì về cách một hypothesis trong prompt ảnh hưởng đến câu trả lời của AI
 
 ---
@@ -55,7 +55,7 @@ Một brief thường nêu giải pháp ("thêm bước onboarding"). Một busi
 
 Ở Discover, AI soạn nháp được các việc sau, cùng một nhịp "AI soạn nháp, bạn kiểm tra":
 
-- Tạo transcript buổi phỏng vấn: bạn kiểm lại tên riêng, thuật ngữ và con số.
+- Tạo transcript buổi phỏng vấn: bạn kiểm tra lại tên riêng, thuật ngữ và con số.
 - Tóm tắt một buổi phỏng vấn thành các ý chính: bạn đối chiếu từng quote với transcript, vì bản tóm tắt hay thêm chi tiết không có thật.
 - Gom ghi chú thành nhóm affinity bản đầu: AI tìm liên hệ về nghĩa, bạn sắp xếp lại và đặt tên nhóm.
 - Tìm lại research cũ của team: bạn mở nguồn gốc khi AI trích.
@@ -101,14 +101,14 @@ Principle riêng cũng là rubric cho AI chấm. Nghiên cứu UXBench cho thấ
 
 ### 2.3 Principles first, then AI
 
-Bạn nắm principles trước để nhận ra khi AI gán sai principles hoặc đưa ra nhận định chung chung: AI chạy sau, trên chuẩn của bạn, không ngược lại. Hình dung nhờ AI đánh giá cùng một màn hình thanh toán hai lần mà không nạp chuẩn nào: lần một ra mười finding, chín cái là "làm cho rõ ràng hơn", lần hai ra một bộ khác hẳn, và không ai biết bộ nào đúng. Đây là ví dụ minh hoạ, bạn có thể thay bằng lần chạy thật của mình. Nạp principles thì AI so với cùng một chuẩn, và kiểm một finding chỉ cần hỏi nó vi phạm principle nào.
+Bạn nắm principles trước để nhận ra khi AI gán sai principles hoặc đưa ra nhận định chung chung: AI chạy sau, trên chuẩn của bạn, không ngược lại. Hình dung nhờ AI đánh giá cùng một màn hình thanh toán hai lần mà không nạp chuẩn nào: lần một ra mười finding, chín cái là "làm cho rõ ràng hơn", lần hai ra một bộ khác hẳn, và không ai biết bộ nào đúng. Đây là ví dụ minh hoạ, bạn có thể thay bằng lần chạy thật của mình. Nạp principles thì AI so với cùng một chuẩn, và kiểm tra một finding chỉ cần hỏi nó vi phạm principle nào.
 
 ### 2.4 What AI can do with the principles
 
 | Nhóm | AI làm | Bạn làm |
 |---|---|---|
 | Viết principles | Soạn nháp từ research và scope; chỉ ra hai principle mâu thuẫn nhau; chấm lại theo bốn tiêu chí | Chọn và chốt từng cái |
-| Đối chiếu | Cross-check finding với principle | Kiểm lại, vì AI dễ gán sai principle cho finding |
+| Đối chiếu | Cross-check finding với principle | Kiểm tra lại, vì AI dễ gán sai principle cho finding |
 | Kiểm tra | Chấm output theo rubric viết từ bộ principles | Viết tiêu chí quan sát được, chạy thử vài vòng trước khi tin |
 
 AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như "vi phạm nhất quán", mà không hỏi sự không nhất quán đó có giải một vấn đề thật hay không. Principle giúp AI bám chuẩn, còn quyết định vẫn là của bạn.
@@ -120,7 +120,7 @@ AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như "vi
 - **Rules file:** ngắn, nạp ở đầu mỗi bước, chứa điều luôn đúng như principle và ràng buộc business. Giữ dưới khoảng 200 dòng và viết đủ cụ thể để kiểm chứng được.
 - **Skill:** một thư mục gói một quy trình lặp lại, ví dụ "đối chiếu một flow với principles". Tên và mô tả luôn có sẵn, nội dung đầy đủ chỉ nạp khi cần.
 
-Điều luôn đúng thì vào rules file, việc lặp lại nhiều bước thì làm skill. Rules file là ngữ cảnh cho AI, không phải ràng buộc cứng, nên bạn vẫn kiểm output ở các bước sau.
+Điều luôn đúng thì vào rules file, việc lặp lại nhiều bước thì làm skill. Rules file là ngữ cảnh cho AI, không phải ràng buộc cứng, nên bạn vẫn kiểm tra output ở các bước sau.
 
 ---
 
@@ -134,8 +134,8 @@ Break the brief là cách kiểm tra brief trước khi chấp nhận nó, và b
 |---|---|---|---|
 | 1 | Brief thành vấn đề | Phân loại từng dòng brief, viết lại dòng giải pháp thành câu vấn đề, nêu giả định ngầm | Dòng nào bị đổi nghĩa; scope viết theo vấn đề, không theo giải pháp |
 | 2 | Phản biện scope | Đóng vai người phản biện: năm cách scope có thể sai, ai phản đối, câu hỏi cho người thật | Chọn câu hỏi đáng hỏi; agreement status và danh sách việc cần xác nhận |
-| 3 | Đào assumption từ tài liệu | Trích assumption kèm line ID và quote nguyên văn, gồm cả giả định ngầm | Chạy kiểm quote; bỏ dòng trùng hoặc chỉ là sự kiện; assumption map |
-| 4 | Kiểm evidence trong hub | Tìm ghi chú ủng hộ và đi ngược, trả note ID và quote; không có thì "chưa có nguồn" | Đọc từng ghi chú có thật sự ủng hộ không; cột evidence của assumption map |
+| 3 | Đào assumption từ tài liệu | Trích assumption kèm line ID và quote nguyên văn, gồm cả giả định ngầm | Chạy kiểm tra quote; bỏ dòng trùng hoặc chỉ là sự kiện; assumption map |
+| 4 | Kiểm tra evidence trong hub | Tìm ghi chú ủng hộ và đi ngược, trả note ID và quote; không có thì "chưa có nguồn" | Đọc từng ghi chú có thật sự ủng hộ không; cột evidence của assumption map |
 
 Ba hoạt động vẫn là ba file: scope, assumption map, research question. Bốn move nằm bên trong hai hoạt động đầu. Bộ dữ liệu mẫu và kết quả đã lưu của bốn move nằm ở `break-the-brief-moves.md` trong course case.
 
@@ -182,9 +182,9 @@ Không có access là vị thế yếu hơn, và quy trình chỉ giảm nhẹ c
 - **Ma trận Importance × Evidence:** góc quan trọng cao, evidence yếu là chỗ phải kiểm chứng trước. Luôn đọc nhãn trục trước khi đọc vị trí, vì một số bản đảo trục. Framework cho phép 3 đến 5 assumption; chương trình chọn 3 vì thời gian.
 - **Cập nhật bản đồ:** chuyển assumption sang Confirmed, Unconfirmed hay Unknown sau khi có insight từ phỏng vấn (làm ở Lesson 3).
 
-**Move 3: Đào assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, mỗi dòng có ID, và nhờ nó trả về từng dòng `assumption | line IDs | quote` với quote chép nguyên văn. Đó đúng là định dạng citation của mục 5, nên bạn chạy được phép kiểm quote. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
+**Move 3: Đào assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, mỗi dòng có ID, và nhờ nó trả về từng dòng `assumption | line IDs | quote` với quote chép nguyên văn. Đó đúng là định dạng citation của mục 5, nên bạn chạy được phép kiểm tra quote. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
 
-**Move 4: Kiểm evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (18 ghi chú review và diễn đàn), assumption về khung giờ có bốn ghi chú ủng hộ, assumption "giá là lý do chính" chỉ có F07 ủng hộ và R06 đi ngược, còn assumption "nhắc sau 7 ngày" là "chưa có nguồn". Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên source notes mới để cập nhật bản đồ.
+**Move 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (18 ghi chú review và diễn đàn), assumption về khung giờ có bốn ghi chú ủng hộ, assumption "giá là lý do chính" chỉ có F07 ủng hộ và R06 đi ngược, còn assumption "nhắc sau 7 ngày" là "chưa có nguồn". Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên source notes mới để cập nhật bản đồ.
 
 Giới hạn: quote có thật không có nghĩa nó ủng hộ đúng assumption (AI xếp F01 vào cả hai assumption khác nhau), và ghi chú không đánh dấu khách mới hay khách cũ, nên "nhiều ghi chú" chưa có nghĩa là đủ. Bạn đọc từng ghi chú trước khi tính.
 
@@ -271,7 +271,7 @@ Bạn cắt note, hoặc nhờ AI cắt rồi so từng note với transcript, v
 
 AI tóm tắt rất trơn. Khi bạn nhờ AI rút insight, nó trả về insight kèm quote. Các hướng dẫn thực hành về tổng hợp research bằng AI cảnh báo hai lỗi: quote bịa nghe hay hơn quote thật, vì người thật nói câu dở dang; và insight dựa vào một ý của vài người nhưng được trình bày như xu hướng chính. Các hướng dẫn này chủ yếu do bên bán công cụ viết, nên là kinh nghiệm thực hành, chưa phải evidence đã kiểm. Một nghiên cứu tổng quan về UX researcher cũng cho thấy họ ít tin kết quả AI vì không truy được về dữ liệu gốc.
 
-Vì vậy bạn yêu cầu AI trả về mỗi insight dưới dạng một dòng `insight | note IDs | một quote nguyên văn`. Dạng này kiểm được, còn một đoạn văn trơn thì không.
+Vì vậy bạn yêu cầu AI trả về mỗi insight dưới dạng một dòng `insight | note IDs | một quote nguyên văn`. Dạng này kiểm tra được, còn một đoạn văn trơn thì không.
 
 ### 5.3 The machine check
 
@@ -281,11 +281,11 @@ Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script đ�
 
 Chương trình đã thử instruction này trên 24 note mẫu cùng bốn dòng citations (bộ test của script mẫu có đúng bốn dòng này): dòng bị đổi một chữ báo không đạt, dòng chỉ khác khoảng trắng thì đạt. Khi file notes thiếu ID, trùng ID hoặc có note trống, script dừng và nêu dòng nào.
 
-Hai buổi phỏng vấn cho khoảng 10 đến 20 note, và thế là đủ: phép kiểm kiểm quote do AI đưa ra, không kiểm số lượng note của bạn.
+Hai buổi phỏng vấn cho khoảng 10 đến 20 note, và thế là đủ: phép kiểm tra này chỉ kiểm tra quote do AI đưa ra, không kiểm tra số lượng note của bạn.
 
-**Phép kiểm này chứng minh:** quote có thật trong note được trích.
+**Phép kiểm tra này chứng minh:** quote có thật trong note được trích.
 
-**Phép kiểm này không chứng minh:** insight đúng, hay note phản ánh đúng điều người đó nói trong transcript. Hai việc đó vẫn là của bạn: đọc lại đoạn gốc của những insight quan trọng.
+**Phép kiểm tra này không chứng minh:** insight đúng, hay note phản ánh đúng điều người đó nói trong transcript. Hai việc đó vẫn là của bạn: đọc lại đoạn gốc của những insight quan trọng.
 
 ---
 
@@ -332,7 +332,7 @@ Năm thứ mang ra khỏi buổi này vào hub của bạn, và là input của 
 | Scope | Business question, outcome, metric và trạng thái confirmed hoặc assumed |
 | Assumption map | Ba assumption hàng đầu và mức evidence của chúng |
 | Research questions | Câu hỏi điều tra được, mỗi câu gắn với một assumption và một quyết định |
-| Source notes | Note có ID từ transcript đã ẩn danh, kèm kết quả kiểm quote không còn dòng không đạt |
+| Source notes | Note có ID từ transcript đã ẩn danh, kèm kết quả kiểm tra quote không còn dòng không đạt |
 
 Mỗi thứ có nguồn hoặc nhãn "chưa có nguồn", để người sau không coi assumption là sự thật. ID của các mục này đi theo cùng quy ước với source ID, để sau này mỗi insight trỏ về được note nó dựa vào. Hub mặc định riêng tư và nằm trong project folder của bạn; đưa lên GitHub là tuỳ chọn. Lesson 3 bắt đầu từ các file này.
 
@@ -348,7 +348,7 @@ Project mẫu (hư cấu): Delivery App, nhiều khách mới không đặt lạ
 - **Điều đang tin** (AI soạn nháp, bạn đối chiếu): giá là lý do chính; khách không hiểu cách đổi khung giờ giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong project mẫu, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ đặt đơn thứ hai trong 30 ngày; baseline chưa biết, ghi assumed, người xác nhận là business.
 - **Research question** (từ assumption "khách không hiểu cách đổi khung giờ giao"): "Khách đang làm gì khi cần dời khung giờ giao của đơn đã đặt, và điều gì khiến họ bỏ dở?"
-- **Source notes:** 24 note mẫu có ID. Một dòng citation kiểm được: `Khách không biết cách huỷ đơn | R03 | I could not find how to cancel an order anywhere`.
+- **Source notes:** 24 note mẫu có ID. Một dòng citation kiểm tra được: `Khách không biết cách huỷ đơn | R03 | I could not find how to cancel an order anywhere`.
 
 ---
 
@@ -373,5 +373,5 @@ Năm điều cần nắm:
 - Ba mức access và agreement status do chương trình thiết kế, chưa thử với lớp thật.
 - Các cảnh báo về quote bịa và theme bịa (5.2) đến từ hướng dẫn thực hành của nhà cung cấp công cụ và một bài tổng quan; chúng là kinh nghiệm, chưa phải số đo.
 - Blind synthesis (mục 6) chạy trên 24 note, một mô hình, một lần chạy cho mỗi prompt, và bộ mẫu có sẵn mâu thuẫn rõ. Nó cho thấy phương pháp so sánh, không cho thấy kích thước của hiệu ứng.
-- Phép kiểm quote (5.3) chỉ chứng minh quote có trong note, không chứng minh insight đúng.
+- Phép kiểm tra quote (5.3) chỉ chứng minh quote có trong note, không chứng minh insight đúng.
 - Delivery App là case hư cấu do chương trình soạn, không đại diện cho dữ liệu thật hay phỏng vấn bằng tiếng Việt.

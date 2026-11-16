@@ -56,11 +56,11 @@ Bản scope nháp đưa vào: business question, quyết định, outcome 41% l�
 | Một đợt email giảm giá quý trước đại diện cho mọi cách tác động bằng giá | B07 | Email giảm giá quý trước có tác dụng rất ít |
 | Tỷ lệ đặt lại có thể tăng 9 điểm phần trăm trong một quý | B01 | từ 41% lên 50% |
 
-**Kiểm quote bằng chương trình** (cùng script ở mục Ingest): 17 trong 18 dòng đạt. Dòng không đạt: AI trích hai dòng B02 và B06 cho assumption "không đổi giá mà vẫn tăng được tỷ lệ đặt lại", nhưng quote "Quý này không đổi giá" chỉ nằm trong B06. Một dòng trích sai nguồn, và chương trình bắt được.
+**Kiểm tra quote bằng chương trình** (cùng script ở mục Ingest): 17 trong 18 dòng đạt. Dòng không đạt: AI trích hai dòng B02 và B06 cho assumption "không đổi giá mà vẫn tăng được tỷ lệ đặt lại", nhưng quote "Quý này không đổi giá" chỉ nằm trong B06. Một dòng trích sai nguồn, và chương trình bắt được.
 
 **Điều cần tự lọc:** 18 dòng là nhiều. Có dòng chỉ là sự kiện (B01 nói mức hiện tại 41%), có dòng trùng nhau (hai dòng cho B03, hai dòng cho B08). Mức quan trọng là việc của bạn.
 
-## Move 4: Kiểm evidence cho từng assumption
+## Move 4: Kiểm tra evidence cho từng assumption
 
 Assumption đưa vào (`ID | text`):
 
@@ -84,9 +84,9 @@ Assumption đưa vào (`ID | text`):
 | A4 khung giờ giao | R01, R02, F01, F02 | chưa có nguồn | Mạnh: bốn ghi chú từ hai loại nguồn |
 | A5 hài lòng món ăn | R07, R08, F08, R06 | R10 | Trung bình đến mạnh: R10 là lỗi của một nhà hàng, không phải chất lượng nói chung |
 
-**Kiểm quote bằng chương trình:** 13 trong 13 dòng đạt.
+**Kiểm tra quote bằng chương trình:** 13 trong 13 dòng đạt.
 
-**Điều chương trình không kiểm được:** quote có thật không có nghĩa nó ủng hộ đúng assumption. F01 được AI xếp vào cả A2 (khách không hiểu app) lẫn A4 (khung giờ). Bạn đọc từng ghi chú để quyết định có tính vào không. Ghi chú không đánh dấu khách mới hay khách cũ, nên "mạnh" chỉ có nghĩa là nhiều ghi chú, chưa có nghĩa là đủ.
+**Điều chương trình không kiểm tra được:** quote có thật không có nghĩa nó ủng hộ đúng assumption. F01 được AI xếp vào cả A2 (khách không hiểu app) lẫn A4 (khung giờ). Bạn đọc từng ghi chú để quyết định có tính vào không. Ghi chú không đánh dấu khách mới hay khách cũ, nên "mạnh" chỉ có nghĩa là nhiều ghi chú, chưa có nghĩa là đủ.
 
 ## Giới hạn chung
 

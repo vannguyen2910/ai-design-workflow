@@ -1,6 +1,6 @@
 ---
 title: "Discover Your Project"
-summary: "Chuỗi việc ở nhà: principles, scope, assumption và research question, chuẩn bị và phỏng vấn user thật, rồi đưa transcript vào hub thành source notes đã kiểm quote."
+summary: "Chuỗi việc ở nhà: principles, scope, assumption và research question, chuẩn bị và phỏng vấn user thật, rồi đưa transcript vào hub thành source notes đã kiểm tra quote."
 type: practice
 program: ai-design-workflow
 lesson: discover-the-problem
@@ -9,7 +9,7 @@ draft: true
 
 ## Goal
 
-Đưa project của khoá đi qua stage Discover, đến trước bước synthesis. Cuối bài bạn có bộ principles, scope, ba assumption hàng đầu, các research question, transcript đã ẩn danh của ít nhất hai buổi phỏng vấn người thật, và source notes có ID với quote đã kiểm bằng chương trình. Từ Lesson 3, bạn rút insight từ chính các source notes này.
+Đưa project của khoá đi qua stage Discover, đến trước bước synthesis. Cuối bài bạn có bộ principles, scope, ba assumption hàng đầu, các research question, transcript đã ẩn danh của ít nhất hai buổi phỏng vấn người thật, và source notes có ID với quote đã kiểm tra bằng chương trình. Từ Lesson 3, bạn rút insight từ chính các source notes này.
 
 Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết định đặt chúng ở đâu và đặt tên thế nào trong folder của mình.
 
@@ -29,7 +29,7 @@ Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết đ�
 
 ### Step 1 · Principles
 
-- **Design principles:** viết 3 đến 5 principle riêng của project. Mỗi principle cần: cụ thể (kiểm được bằng một câu hỏi có hoặc không), có thứ tự ưu tiên khi hai principle xung đột, có dòng "điều này không có nghĩa là…", và đảo ngược được ít nhất một quyết định.
+- **Design principles:** viết 3 đến 5 principle riêng của project. Mỗi principle cần: cụ thể (kiểm tra được bằng một câu hỏi có hoặc không), có thứ tự ưu tiên khi hai principle xung đột, có dòng "điều này không có nghĩa là…", và đảo ngược được ít nhất một quyết định.
 - **Business principles:** ràng buộc và ưu tiên mà thiết kế không được vi phạm (mission, brand value, compliance, KPI, guardrail). Chưa có business thật thì ghi "assumed" và người cần xác nhận.
 - Lưu thành file markdown để AI dùng làm chuẩn ở các bước sau.
 
@@ -45,9 +45,9 @@ Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết đ�
 
 ### Step 3 · Challenge assumptions · AI soạn nháp, bạn kiểm tra
 
-- **Move 3, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh, mỗi dòng có ID). Nhờ AI trả mỗi assumption một dòng `assumption | line IDs | quote`, với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
+- **Move 3, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh, mỗi dòng có ID). Nhờ AI trả mỗi assumption một dòng `assumption | line IDs | quote`, với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm tra quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
 - **Bạn lọc:** bỏ dòng trùng và dòng chỉ là sự kiện. Sửa ít nhất hai assumption cho cụ thể hơn.
-- **Move 4, kiểm evidence trong hub:** đưa AI danh sách assumption còn lại và các ghi chú đang có trong hub (review, ticket, analytics, research cũ; hub trống thì để trống). Nhờ AI tìm ghi chú ủng hộ và ghi chú đi ngược, kèm ID và quote nguyên văn, và ghi "chưa có nguồn" khi không có.
+- **Move 4, kiểm tra evidence trong hub:** đưa AI danh sách assumption còn lại và các ghi chú đang có trong hub (review, ticket, analytics, research cũ; hub trống thì để trống). Nhờ AI tìm ghi chú ủng hộ và ghi chú đi ngược, kèm ID và quote nguyên văn, và ghi "chưa có nguồn" khi không có.
 - **Bạn kiểm tra:** đọc từng ghi chú AI trích có thật sự ủng hộ assumption đó không. AI hay gọi kiến thức chung là "đã có evidence": chưa có file nguồn thì ghi "chưa có nguồn".
 - **Bạn xếp** các assumption lên assumption map theo hai trục mức quan trọng và mức evidence (số ghi chú ủng hộ và đi ngược, kèm ID). Đọc nhãn trục trước khi đọc vị trí. Chọn **ba assumption hàng đầu**: quan trọng cao, evidence yếu.
 
@@ -99,16 +99,16 @@ Script là lưới an toàn, không phải khuôn.
 
 ### Step 9 · Ingest: transcript thành source notes · AI soạn nháp, bạn kiểm tra
 
-1. **Cắt.** Bạn cắt mỗi transcript đã ẩn danh thành source notes (nếu nhờ AI cắt giúp, hãy so từng note với transcript, vì AI có thể diễn giải lại lời người nói): mỗi note một ý, giữ nguyên lời người nói, mỗi note một ID dạng `I01-03` (phỏng vấn 01, note 03). Lưu mỗi note một dòng, dạng `ID | text`. Định dạng này cố định để chương trình đọc được; chỗ lưu file do bạn chọn. Hai buổi phỏng vấn cho khoảng 10 đến 20 note, và thế là đủ: phép kiểm ở bước 3 kiểm quote do AI đưa ra, không kiểm số lượng note của bạn. Không sửa transcript đã ẩn danh.
+1. **Cắt.** Bạn cắt mỗi transcript đã ẩn danh thành source notes (nếu nhờ AI cắt giúp, hãy so từng note với transcript, vì AI có thể diễn giải lại lời người nói): mỗi note một ý, giữ nguyên lời người nói, mỗi note một ID dạng `I01-03` (phỏng vấn 01, note 03). Lưu mỗi note một dòng, dạng `ID | text`. Định dạng này cố định để chương trình đọc được; chỗ lưu file do bạn chọn. Hai buổi phỏng vấn cho khoảng 10 đến 20 note, và thế là đủ: phép kiểm tra ở bước 3 kiểm tra quote do AI đưa ra, không kiểm tra số lượng note của bạn. Không sửa transcript đã ẩn danh.
 2. **Trích.** Đưa AI chat tool các note đã ẩn danh và dùng instruction sau. Đây chỉ để có thứ để kiểm; tổng hợp đầy đủ nằm ở Lesson 3.
 
    > Chỉ dùng các ghi chú dưới đây. Đề xuất tối đa ba insight. Với mỗi insight, trả về một dòng có dạng `insight | note ID | một quote nguyên văn từ note đó`. Không diễn giải lại quote. Nếu không có quote phù hợp, ghi "unknown".
 
    Lưu kết quả thành file citations, mỗi insight một dòng.
 3. **Kiểm.** Đưa AI coding tool instruction trong [check-quotes-instruction.md](../../../assets/starter-files/course-case/check-quotes-instruction.md), kèm đường dẫn tới file source notes và file citations. Script in ra từng dòng đạt hay không đạt.
-4. **Sửa.** Với mỗi dòng không đạt: mở note được trích, so với quote, rồi sửa quote cho đúng hoặc hỏi lại AI chat tool kèm danh sách dòng không đạt. Dòng AI ghi "unknown" vì không có quote phù hợp cũng báo không đạt: bỏ dòng đó khỏi file citations, đừng ép AI tìm một quote. Chạy lại cho tới khi không còn dòng không đạt. Sau đó đọc lại đoạn gốc trong transcript của insight bạn thấy quan trọng nhất, vì phép kiểm chỉ cho biết quote có thật trong note, không cho biết insight đúng hay không.
+4. **Sửa.** Với mỗi dòng không đạt: mở note được trích, so với quote, rồi sửa quote cho đúng hoặc hỏi lại AI chat tool kèm danh sách dòng không đạt. Dòng AI ghi "unknown" vì không có quote phù hợp cũng báo không đạt: bỏ dòng đó khỏi file citations, đừng ép AI tìm một quote. Chạy lại cho tới khi không còn dòng không đạt. Sau đó đọc lại đoạn gốc trong transcript của insight bạn thấy quan trọng nhất, vì phép kiểm tra chỉ cho biết quote có thật trong note, không cho biết insight đúng hay không.
 
-- Đưa source notes và kết quả kiểm lên hub, ở chỗ bạn và AI tìm lại được.
+- Đưa source notes và kết quả kiểm tra lên hub, ở chỗ bạn và AI tìm lại được.
 - Chưa phỏng vấn được 2 người: dùng các note phỏng vấn mẫu (I01-01 đến I02-03) trong [file source notes mẫu dạng `ID | text`](../../../assets/starter-files/course-case/source-notes-plain.txt), và ghi rõ trong hub đây là dữ liệu mẫu.
 - Lesson 3 có một bước chạy blind synthesis trên chính các note này, nên giữ file source notes gọn và có ID.
 
@@ -120,7 +120,7 @@ Script là lưới an toàn, không phải khuôn.
 - Research question
 - Research plan và script
 - Transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn
-- Source notes có ID (`ID | text`) và kết quả kiểm quote không còn dòng không đạt
+- Source notes có ID (`ID | text`) và kết quả kiểm tra quote không còn dòng không đạt
 
 ## Self-check
 
@@ -130,7 +130,7 @@ Script là lưới an toàn, không phải khuôn.
 - [ ] Mọi dòng AI soạn ở Step 2, 3, 4, 6 và 9 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
 - [ ] Mỗi research question gắn với một assumption và một quyết định.
 - [ ] Bản gốc chưa ẩn danh không nằm ở chỗ AI đọc.
-- [ ] Lần kiểm quote cuối không còn dòng không đạt.
+- [ ] Lần kiểm tra quote cuối không còn dòng không đạt.
 - [ ] Bạn đã đọc lại đoạn gốc trong transcript của ít nhất một insight.
 
 Xong thì mang các output này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.

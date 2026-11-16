@@ -70,8 +70,8 @@ last_synced: 2026-11-16
     - 02 Principles cho AI: chuẩn nào để AI đối chiếu, ai viết và viết lúc nào.
     - 03 Break the brief: ba việc kiểm tra brief là scope, assumption và research question, mỗi việc ra một file.
     - 04 Understand our users: từ research question đến câu hỏi phỏng vấn, chuẩn bị plan và script với AI, quy tắc dữ liệu. Nền tảng phỏng vấn nằm ở Appendix.
-    - 05 Ingest vào hub: biến transcript thành source notes có ID, kiểm quote bằng chương trình, và xem một hypothesis trong prompt làm AI nói gì.
-  - Thứ tự này đi từ điều quan sát được đến điều cần học: hiểu bối cảnh, đặt chuẩn, kiểm brief, rồi hỏi người thật.
+    - 05 Ingest vào hub: biến transcript thành source notes có ID, kiểm tra quote bằng chương trình, và xem một hypothesis trong prompt làm AI nói gì.
+  - Thứ tự này đi từ điều quan sát được đến điều cần học: hiểu bối cảnh, đặt chuẩn, kiểm tra brief, rồi hỏi người thật.
   - Cuối buổi có Q&A và slide practice cho chuỗi việc ở nhà.
 
   > Trong năm phần này, phần nào bạn đang làm nhiều nhất trong công việc hiện tại?
@@ -211,7 +211,7 @@ last_synced: 2026-11-16
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần một cho thấy AI làm được nhiều việc ở Discover, nhưng chọn vấn đề đáng giải vẫn là việc của designer. Muốn kiểm được AI, designer cần một chuẩn để đối chiếu.
+  - Phần một cho thấy AI làm được nhiều việc ở Discover, nhưng chọn vấn đề đáng giải vẫn là việc của designer. Muốn kiểm tra được AI, designer cần một chuẩn để đối chiếu.
   - Phần này trả lời ba câu: chuẩn đó là gì, ai viết, và viết lúc nào. Câu trả lời ngắn: designer viết, trước khi AI chạy.
 
   > Khi bạn nhờ AI đánh giá một màn hình, AI đang so với chuẩn nào?
@@ -224,17 +224,17 @@ last_synced: 2026-11-16
 - Title: Principles trước,\n*rồi dùng AI để tiêu chuẩn hoá các research sau này*
 - On-slide:
   - Trái, Không có principles: lần 1 mười finding, chín cái là "làm cho rõ ràng hơn"; lần 2 một bộ finding khác hẳn; không ai biết bộ nào đúng
-  - Phải, Có principles: mỗi finding trỏ về một principle; chạy lại thì kết quả gần nhau; kiểm một finding mất vài chục giây
+  - Phải, Có principles: mỗi finding trỏ về một principle; chạy lại thì kết quả gần nhau; kiểm tra một finding mất vài chục giây
   - Cuối slide: Có chuẩn rồi, dùng nó để kiểm tra chính cái brief. Phần ba: Break the brief
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Slide trước nói designer viết chuẩn trước khi AI chạy. Slide này trả lời: vì sao phải viết chuẩn trước rồi mới cho AI chạy.
   - Hình dung nhờ AI đánh giá cùng một màn hình thanh toán hai lần, không nạp chuẩn nào. Lần một ra mười finding, chín cái là “làm cho rõ ràng hơn”. Lần hai ra một bộ khác hẳn. Không ai biết bộ nào đúng. Đây là ví dụ minh hoạ, bạn có thể thay bằng lần chạy thật của mình.
-  - Nạp principles.md trước thì AI so với cùng một chuẩn, kết quả gần nhau giữa các lần. Kiểm một finding chỉ cần hỏi: finding này vi phạm principle nào? Nếu không trỏ được về principle nào, đó mới là ý kiến chung chung. Việc kiểm mất vài chục giây thay vì vài phút.
+  - Nạp principles.md trước thì AI so với cùng một chuẩn, kết quả gần nhau giữa các lần. Kiểm tra một finding chỉ cần hỏi: finding này vi phạm principle nào? Nếu không trỏ được về principle nào, đó mới là ý kiến chung chung. Việc kiểm tra mất vài chục giây thay vì vài phút.
   - Chuẩn này dùng cho mọi research về sau, không chỉ một lần.
 
-  > Principle nào của sản phẩm bạn sẽ dùng để kiểm finding đầu tiên?
+  > Principle nào của sản phẩm bạn sẽ dùng để kiểm tra finding đầu tiên?
 - 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
 
 ---
@@ -255,7 +255,7 @@ last_synced: 2026-11-16
     - Why: AI và bạn cùng đối chiếu một chuẩn, không dựa vào cảm giác.
     - When: viết trước khi AI chạy bất kỳ bước nào, rồi lưu thành file markdown để AI dựa vào.
   - Bốn điều của một principle tốt:
-    - Cụ thể: kiểm được bằng một câu hỏi có hoặc không
+    - Cụ thể: kiểm tra được bằng một câu hỏi có hoặc không
     - Có thứ tự ưu tiên: nói rõ cái nào thắng khi hai cái va nhau
     - Có dòng “không có nghĩa là”: đổi ý dễ hơn không có nghĩa là bỏ bước xác nhận thanh toán
     - Ít: ba đến năm cái cho case, tối đa bảy cho cả sản phẩm
@@ -294,7 +294,7 @@ last_synced: 2026-11-16
 - Title: AI làm được gì với *bộ principles*
 - On-slide:
   - 01 · Viết principles: soạn nháp từ research và scope; chỉ ra hai principle mâu thuẫn nhau
-  - 02 · Đối chiếu: cross-check finding với principle; designer kiểm lại vì AI dễ gán sai
+  - 02 · Đối chiếu: cross-check finding với principle; designer kiểm tra lại vì AI dễ gán sai
   - 03 · Kiểm tra: chấm output theo rubric từ bộ principles; chạy thử vài vòng trước khi tin
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
@@ -302,7 +302,7 @@ last_synced: 2026-11-16
   - Có principles rồi, AI làm được nhiều việc hơn là chỉ đọc. Slide này trả lời: giao cho AI những việc nào, và giữ lại việc nào.
   - Sáu việc gom thành ba nhóm:
     - Viết principles: AI soạn nháp từ research và scope, và chỉ ra hai principle mâu thuẫn nhau. Nếu cần, nhờ AI chấm lại theo bốn tiêu chí của một principle tốt. Designer chọn và chốt từng cái
-    - Đối chiếu: AI cross-check finding với principle, ví dụ finding “khách không tìm thấy nút đổi khung giờ” với principle “đổi ý phải dễ hơn cam kết”. Designer kiểm lại, vì AI dễ gán sai principle cho finding
+    - Đối chiếu: AI cross-check finding với principle, ví dụ finding “khách không tìm thấy nút đổi khung giờ” với principle “đổi ý phải dễ hơn cam kết”. Designer kiểm tra lại, vì AI dễ gán sai principle cho finding
     - Kiểm tra: AI chấm output của chính nó hoặc của AI khác theo rubric viết từ bộ principles. Tiêu chí phải quan sát được, và chạy thử vài vòng trước khi tin
   - Lưu ý: AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như “vi phạm nhất quán”, mà không hỏi sự không nhất quán đó có giải một vấn đề thật hay không. Principle giúp AI bám chuẩn, quyết định vẫn là của designer.
   - Việc đóng gói bộ principles để dùng lại nằm ở slide kế tiếp.
@@ -325,8 +325,8 @@ last_synced: 2026-11-16
     - Rules file: ngắn, nạp ở đầu mỗi bước, chứa điều luôn đúng như principle và ràng buộc business. Giữ dưới khoảng 200 dòng và viết đủ cụ thể để kiểm chứng được
     - Skill: một thư mục gói một quy trình lặp lại, như “đối chiếu một flow với principles.md”. Tên và mô tả luôn có sẵn, nội dung đầy đủ chỉ nạp khi cần, nên không chiếm chỗ khi không dùng
   - Cách chọn: điều luôn đúng thì vào rules file, việc lặp lại nhiều bước thì làm skill.
-  - Ba lưu ý khi viết: đủ cụ thể để kiểm chứng (“đổi ý phải dễ hơn cam kết” kiểm được, “dễ dùng” thì không), không để hai quy tắc mâu thuẫn nhau, và rà lại định kỳ để bỏ quy tắc đã cũ.
-  - Rules file là ngữ cảnh cho AI, không phải ràng buộc cứng, nên vẫn kiểm output ở các bước sau.
+  - Ba lưu ý khi viết: đủ cụ thể để kiểm chứng (“đổi ý phải dễ hơn cam kết” kiểm tra được, “dễ dùng” thì không), không để hai quy tắc mâu thuẫn nhau, và rà lại định kỳ để bỏ quy tắc đã cũ.
+  - Rules file là ngữ cảnh cho AI, không phải ràng buộc cứng, nên vẫn kiểm tra output ở các bước sau.
   - Có bộ nguyên tắc rồi, mình dùng nó để kiểm tra chính cái brief trước khi chấp nhận. Phần ba là Break the brief.
 
   > Bộ principles của bạn nên là rules luôn nạp, hay skill chỉ nạp khi cần đối chiếu?
@@ -399,7 +399,7 @@ last_synced: 2026-11-16
     - Move 2 phản biện scope viết theo vấn đề đó.
     - Move 3 đào những giả định brief đang tin ngầm.
     - Move 4 tìm trong hub xem mỗi giả định đã có nguồn chưa.
-  - Mỗi move ra một thứ bạn lưu vào hub, và thứ đó là đầu vào của move sau. Move 3 và Move 4 dùng lại phép kiểm quote của phần Ingest.
+  - Mỗi move ra một thứ bạn lưu vào hub, và thứ đó là đầu vào của move sau. Move 3 và Move 4 dùng lại phép kiểm tra quote của phần Ingest.
   - Cuối chuỗi là research question, đầu vào của phần phỏng vấn.
 
   > Move nào trong bốn move này bạn đang làm tay nhiều nhất?
@@ -562,7 +562,7 @@ last_synced: 2026-11-16
     - Công thức: “Chúng ta tin rằng [nhóm người dùng nào] sẽ [làm gì] vì [vì sao]. Chúng ta biết mình đúng khi [tín hiệu].”
     - Ma trận Importance × Evidence: giả định quan trọng cao mà bằng chứng thấp là chỗ phải kiểm chứng trước. Chọn ba giả định hàng đầu, vì thời gian của lớp.
   - Chia việc: AI liệt kê giả định theo công thức, gắn loại, tìm giả định ẩn và hỏi ngược bằng chứng của từng cái (“dựa vào file nào? Nếu không có, ghi unknown”). Designer tự xếp lên ma trận, vì mức quan trọng và bằng chứng phụ thuộc bối cảnh AI không có, rồi sửa ít nhất hai giả định cho cụ thể với project.
-  - Ba lúc nên dừng lại kiểm giả định, như cột When trên slide: trước khi thiết kế theo brief, trước khi cam kết một tính năng lớn, và khi team bất đồng ý kiến.
+  - Ba lúc nên dừng lại kiểm tra giả định, như cột When trên slide: trước khi thiết kế theo brief, trước khi cam kết một tính năng lớn, và khi team bất đồng ý kiến.
   - Cập nhật bản đồ (Confirmed, Unconfirmed, Unknown) làm ở nhà, sau phỏng vấn.
 
   > Điều đang tin nào của case nghe rất hợp lý nhưng bạn chưa từng thấy bằng chứng?
@@ -586,7 +586,7 @@ last_synced: 2026-11-16
   - Bốn bước:
     - Đưa AI brief, PRD hoặc research cũ, mỗi dòng có ID
     - AI trả mỗi assumption một dòng gồm assumption, line ID và quote chép nguyên văn. Đây là định dạng citation của phần Ingest
-    - Chạy phép kiểm quote bằng chương trình. Trên brief mẫu có 17 trong 18 dòng đạt. Dòng hỏng trích hai dòng brief, nhưng quote chỉ nằm ở một dòng
+    - Chạy phép kiểm tra quote bằng chương trình. Trên brief mẫu có 17 trong 18 dòng đạt. Dòng hỏng trích hai dòng brief, nhưng quote chỉ nằm ở một dòng
     - Bạn bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận
   - Chương trình chỉ chứng minh quote có thật. Mức quan trọng của từng assumption vẫn do bạn quyết.
 
@@ -597,7 +597,7 @@ last_synced: 2026-11-16
 
 ### COMPARE · Move 4: audit the evidence
 - Kicker: AI move 4
-- Title: Kiểm evidence\n*trong hub*
+- Title: Kiểm tra evidence\n*trong hub*
 - On-slide:
   - Ví dụ: 18 ghi chú mẫu của Delivery App (review và bài trên forum)
   - Khung giờ giao: R01, R02, F01, F02 ủng hộ, evidence mạnh
@@ -878,7 +878,7 @@ last_synced: 2026-11-16
   - Slide chuyển phần: Ingest vào hub, từ transcript đến source notes.
   - Phần này đi qua ba việc:
     - Cắt transcript thành source notes có ID.
-    - Kiểm quote bằng chương trình, không bằng một AI khác.
+    - Kiểm tra quote bằng chương trình, không bằng một AI khác.
     - Blind synthesis: cùng dữ liệu, hỏi hai cách, xem hypothesis trong prompt làm AI nói gì.
   - Phần này nối từ phần trước: sau phỏng vấn bạn có transcript, và ba quy tắc của buổi 1 (raw không bị sửa, mỗi note một ID, quote nguyên văn) áp dụng ở đây lần đầu.
 
@@ -941,8 +941,8 @@ last_synced: 2026-11-16
 ---
 
 ### COMPARE · The machine check
-- Kicker: Kiểm quote
-- Title: Kiểm quote\n*bằng chương trình*
+- Kicker: Kiểm tra quote
+- Title: Kiểm tra quote\n*bằng chương trình*
 - On-slide:
   - Ví dụ từ bộ mẫu Delivery App: AI trích một quote từ note F04
   - AI insight: khách bị tính tiền dù đã hủy đơn
@@ -978,7 +978,7 @@ last_synced: 2026-11-16
 - Ví dụ: có (bộ 24 note, hai lần chạy)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước kiểm quote. Slide này trả lời: một hypothesis trong prompt làm câu trả lời của AI đổi thế nào?
+  - Slide trước kiểm tra quote. Slide này trả lời: một hypothesis trong prompt làm câu trả lời của AI đổi thế nào?
   - Dữ liệu là 24 note mẫu của Delivery App. Câu hỏi: vì sao khách mới không đặt lại sau đơn đầu tiên? Mình hỏi hai lần, ở hai phiên riêng, cùng 24 note và cùng một câu hỏi. Lần 2 chỉ thêm câu đầu: “Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi.”
   - Bộ mẫu có sẵn hypothesis này: chỉ R06 và F07 nhắc đến giá, còn I02-03 nói thời gian chờ làm khách phiền hơn giá.
   - Kết quả đã lưu trong blind-synthesis.md:
@@ -1009,7 +1009,7 @@ last_synced: 2026-11-16
     - Scope: business question, outcome, metric và agreement status.
     - Assumption map: ba giả định hàng đầu và mức bằng chứng của chúng.
     - Research questions: câu hỏi điều tra được, mỗi câu gắn với một giả định và một quyết định.
-    - Source notes: note có ID từ transcript đã ẩn danh, kèm kết quả kiểm quote không còn dòng không đạt.
+    - Source notes: note có ID từ transcript đã ẩn danh, kèm kết quả kiểm tra quote không còn dòng không đạt.
   - Mỗi file có nguồn hoặc nhãn “chưa có nguồn”. Điều gì chưa kiểm chứng thì ghi rõ, để người sau không coi giả định là sự thật.
   - Hub private mặc định, nằm trong case folder. Xuất bản lên GitHub là tuỳ chọn.
   - Lesson 3 bắt đầu từ các file này. Phần từ source notes đến insight (synthesis) được học ở Lesson 3.
@@ -1044,14 +1044,14 @@ last_synced: 2026-11-16
 - Title: Understand your users
 - On-slide:
   - Break the brief: thiết lập nguyên tắc thiết kế và product; chốt business question và scope; liệt kê assumptions; liệt kê research questions; add work lên hub
-  - Phỏng vấn và ingest: chuẩn bị research plan và interview script; facilitate user interview ít nhất 2 người; cắt transcript thành source notes có ID và kiểm quote bằng chương trình
+  - Phỏng vấn và ingest: chuẩn bị research plan và interview script; facilitate user interview ít nhất 2 người; cắt transcript thành source notes có ID và kiểm tra quote bằng chương trình
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Chín step ở nhà chia ba phần, mỗi step ra một file:
     - Break the brief: thiết lập nguyên tắc, scope, liệt kê assumptions, research question, rồi đưa các file lên hub.
     - Phỏng vấn user thật: research plan và script, phỏng vấn, rồi lấy raw transcript và ẩn danh.
-    - Ingest vào hub (Step 9): cắt transcript thành source notes có ID, nhờ AI trích ba insight kèm quote, kiểm quote bằng chương trình, sửa dòng không đạt.
+    - Ingest vào hub (Step 9): cắt transcript thành source notes có ID, nhờ AI trích ba insight kèm quote, kiểm tra quote bằng chương trình, sửa dòng không đạt.
   - Phỏng vấn cần hẹn lịch và consent, nên bắt đầu hẹn người ngay hôm nay.
   - Ẩn danh transcript trước khi đưa cho AI. Dữ liệu gốc ở lại ngoài vùng AI đọc.
   - Buổi practice trên lớp làm tiếp phần chưa xong nếu còn thời gian, rồi chấm. Cách chấm chưa quyết, sẽ báo sau.
@@ -1064,7 +1064,7 @@ last_synced: 2026-11-16
 
 ### END · Takeaway
 - Kicker: Takeaway
-- Title: Đặt chuẩn trước, kiểm brief, truy mọi thứ về gốc.
+- Title: Đặt chuẩn trước, kiểm tra brief, truy mọi thứ về gốc.
 - On-slide:
   - Sign: Winnie Nguyen
 - Ví dụ: Không cần.
@@ -1136,7 +1136,7 @@ last_synced: 2026-11-16
   - Có thể dùng lại bộ principles đã viết làm tiêu chí. Kết quả vào bản phân tích đối thủ, và sau này ghép với điều user nói và làm.
   - Đối thủ cho biết họ làm gì, không cho biết vì sao user chọn họ. Câu trả lời nằm ở người dùng thật. Nếu cần điều user nói và làm, quay lại phần bốn: từ research question đến cuộc phỏng vấn.
 
-  > Ô nào trong bảng bạn sẽ mở ảnh gốc kiểm đầu tiên?
+  > Ô nào trong bảng bạn sẽ mở ảnh gốc kiểm tra đầu tiên?
 - 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
 
 ---

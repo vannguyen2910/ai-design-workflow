@@ -30,7 +30,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 
 ### Step 1 · Source notes có source ID
 
-- Bắt đầu từ source notes bạn đã cắt và kiểm quote ở Practice 2 (Step 9): **mỗi ghi chú một ý, một ID**, ví dụ `I01-03`. Thiếu ghi chú nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng `ID | text`.
+- Bắt đầu từ source notes bạn đã cắt và kiểm tra quote ở Practice 2 (Step 9): **mỗi ghi chú một ý, một ID**, ví dụ `I01-03`. Thiếu ghi chú nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng `ID | text`.
 - Chạy blind synthesis trên các note này: lần 1 không nêu hypothesis, lần 2 nêu hypothesis hàng đầu của team. So hai bản: chủ đề nào đứng đầu, note ID nào được trích. Cách làm và ví dụ nằm ở Lesson 2, mục 6.
 - Ghi điều người đó nói và làm, không thêm diễn giải của bạn. Giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
 - Dữ liệu gốc có tên thật vẫn ở ngoài chỗ AI đọc. AI chỉ thấy bản đã gắn P1, P2 và source ID.
