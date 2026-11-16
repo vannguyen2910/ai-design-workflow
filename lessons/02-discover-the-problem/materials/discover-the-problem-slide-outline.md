@@ -598,8 +598,8 @@ last_synced: 2026-11-16
 - On-slide:
   - Khung giờ giao: R01, R02, F01, F02 ủng hộ, evidence mạnh
   - Giá là lý do chính: F07 ủng hộ, R06 đi ngược, evidence yếu
-  - Nhắc đặt lại sau 7 ngày: chưa có nguồn
-  - Không có nguồn thì ghi “chưa có nguồn”
+  - Nhắc đặt lại sau 7 ngày: no source yet
+  - Không có nguồn thì ghi “no source yet”
 - Ví dụ: có (assumption mẫu và 18 ghi chú R và F)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
