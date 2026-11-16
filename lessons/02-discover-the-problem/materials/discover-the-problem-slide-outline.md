@@ -918,10 +918,10 @@ last_synced: 2026-11-16
 - Kicker: Ingest
 - Title: Set up\n*source notes*
 - On-slide:
-  - 1 Cắt: một ý, một note. Câu có hai ý thì tách thành hai note
-  - 2 Chép: giữ nguyên lời người nói. Không tóm tắt, không sửa chính tả
-  - 3 Đặt ID: loại nguồn, buổi, số thứ tự. I02-05 là note 5 của buổi phỏng vấn 2
-  - 4 Lưu: mỗi note một dòng, dạng ID | text
+  - 1 Cut: one idea, one note. Câu có hai ý thì tách thành hai note
+  - 2 Copy: keep the speaker's exact words. Không tóm tắt, không sửa chính tả
+  - 3 Assign ID: source type, session, running number. I02-05 là note 5 của buổi phỏng vấn 2
+  - 4 Save: one note per line. I02-05 | text của note
   - Đã đặt ID thì không đổi và không dùng lại, để insight đã trích vẫn trỏ đúng note
 - Ví dụ: có (I02-05)
 - Câu hỏi hay gặp: None.
