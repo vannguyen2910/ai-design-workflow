@@ -6,7 +6,7 @@ import { dirname, relative, resolve, sep } from 'node:path';
 import { ROOT } from './lessons.mjs';
 
 const REPO = 'https://github.com/vannguyen2910/ai-design-workflow/blob/main/';
-const LESSON_PAGE = /^lessons\/\d+-([^/]+)\/materials\/.+-(lesson|practice)\.md$/;
+const LESSON_PAGE = /^lessons\/\d+-([^/]+)\/materials\/.+-(lesson|practice|reference)\.md$/;
 const PAGE_ID = { 'introduction.md': '', 'landing/landing-page.md': 'landing' };
 
 // id of the page a file becomes: lessons/<slug>/<kind>, or '' for the home page

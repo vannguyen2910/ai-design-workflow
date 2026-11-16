@@ -2,6 +2,12 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "landing-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4330", "-d", "site/public"],
+      "port": 4330
+    },
+    {
       "name": "site",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--", "--port", "4321"],

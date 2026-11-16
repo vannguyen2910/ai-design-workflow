@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Design Workflow Brand Explorations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: hub page, one card per round, newest first. Each card links to its own page by relative path so it works under the site base. */
+:root{--bg:#FFFFFF;--surface:#fff;--fg:#1F1D1A;--muted:#6B675F;--line:#DDDAD2;--f:"Be Vietnam Pro",system-ui,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171613;--surface:#22201C;--fg:#F1EEE7;--muted:#A19C91;--line:#3A372F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171613;--surface:#22201C;--fg:#F1EEE7;--muted:#A19C91;--line:#3A372F;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f);line-height:1.6;padding:40px max(16px,env(safe-area-inset-right,0px)) 80px max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2,p{margin:0}
+h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wrap:balance}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.lede{color:var(--muted);margin-top:12px;max-width:60ch}
+.list{display:flex;flex-direction:column;gap:14px}
+.card{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:18px;align-items:center;padding:20px 22px;background:var(--surface);border:1px solid var(--line);border-radius:18px;color:inherit;text-decoration:none}
+.card:hover{border-color:var(--fg)}
+.card:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+.card h2{font-size:1.25rem}
+.card p{color:var(--muted);font-size:.92rem;margin-top:6px}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--fg);color:var(--bg);margin-bottom:8px}
+.go{display:inline-block;margin-top:10px;font-weight:600;font-size:.9rem}
+.sh{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;height:84px}
+.sh i{display:block}
+@media(max-width:620px){.card{grid-template-columns:minmax(0,1fr)}.sh{max-width:220px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">AI Design Workflow · brand exploration</div>
+    <h1>Bốn round khám phá brand</h1>
+    <p class="lede">Mỗi round là một trang riêng. Round 4 là mới nhất; round 1 đến 3 giữ lại để so sánh.</p>
+  </header>
+
+  <div class="list">
+    <a class="card" href="round-4.html">
+      <div><span class="tag">Mới nhất</span><h2>Round 4 · Bố cục C, sáu bảng màu mới</h2><p>Giữ bố cục option C của round 3, thử Emerald, Tomato, Teal, Plum, Midnight và Violet.</p><span class="go">Mở round 4 →</span></div>
+      <div class="sh" aria-hidden="true"><i style="background:#064E3B;border-radius:12px 12px 12px 40px"></i><i style="background:#FF4D2E;border-radius:40px 40px 0 0"></i><i style="background:#D4FF3F;border-radius:50%"></i></div>
+    </a>
+    <a class="card" href="round-3.html">
+      <div><h2>Round 3 · Sạch, nhiều shape, ảnh xen màu</h2><p>Ba option (bento, hành trình, táo bạo) với bảng màu mới, nhiều shape ghép ảnh, và logo bậc thang.</p><span class="go">Mở round 3 →</span></div>
+      <div class="sh" aria-hidden="true"><i style="background:#FF6A2B;border-radius:12px 12px 12px 40px"></i><i style="background:#8B6CF0;border-radius:40px 40px 0 0"></i><i style="background:#C8F25A;border-radius:50%"></i></div>
+    </a>
+    <a class="card" href="round-2.html">
+      <div><h2>Round 2 · Phẳng, tươi, lên cấp</h2><p>Một hướng (H) với nhiều cách dùng, tám phiên bản logo, và font Manrope.</p><span class="go">Mở round 2 →</span></div>
+      <div class="sh" aria-hidden="true"><i style="background:#7C86FF;border-radius:12px"></i><i style="background:#FFE14A;border-radius:12px"></i><i style="background:#FF8AC4;border-radius:12px"></i></div>
+    </a>
+    <a class="card" href="round-1.html">
+      <div><h2>Round 1 · Bảy hướng và sáu mẫu logo</h2><p>Lượt đầu: thử font, các hướng A đến G, và các ý tưởng logo.</p><span class="go">Mở round 1 →</span></div>
+      <div class="sh" aria-hidden="true"><i style="background:#FFC933;border-radius:4px"></i><i style="background:#D2402B;border-radius:4px"></i><i style="background:#15133A;border-radius:4px"></i></div>
+    </a>
+  </div>
+</div>
+</body>
+</html>

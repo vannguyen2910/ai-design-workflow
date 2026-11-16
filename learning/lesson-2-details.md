@@ -18,11 +18,31 @@ File làm việc riêng, không lên site. Các phần dưới đây được d�
 
 ### 7.2 Engagement rules
 
-Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và designer tự bắt được. Cái bẫy của buổi 2: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của project. Ở phần synthesis, cái bẫy là một insight AI trả lại nghe đúng nhưng dẫn một ghi chú bị cắt mất câu quan trọng nhất (source ID I01-03).
+Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trước, rồi mới xem kết quả của AI; (2) đổi kiểu tương tác mỗi 8 đến 10 phút (cá nhân, cặp, cả lớp bỏ phiếu bằng chat), và mỗi phần theory kết thúc bằng một câu hỏi 30 giây có hai lựa chọn; (3) mỗi buổi có một "cái bẫy": một lúc AI sai nhưng nghe rất hợp lý và designer tự bắt được. Cái bẫy của buổi 2: một điều đang tin do AI đưa ra nghe hợp lý nhưng không có trong tài liệu của project. (Cái bẫy ở phần synthesis, insight dẫn ghi chú bị cắt, chuyển sang Lesson 3.)
 
 ### 7.3 Activities
 
 **Ice breaker** (5 phút, cả lớp, không có output). Mỗi người nói tên và một câu: brief gần nhất họ nhận nêu vấn đề cần giải hay chỉ nêu giải pháp cần làm. Người hướng dẫn ghi nhanh vào hai cột "vấn đề" và "giải pháp" và quay lại bảng này ở phần Discover.
+
+**Activity: viết insight, phản biện chéo** đã bỏ khỏi Lesson 2 ngày 2026-11-10 (synthesis học ở Lesson 3). Nguyên văn lưu ở `lessons/03-research-you-can-trust/materials/synthesis-from-lesson-2-holding.md`.
+
+### 7.4 Practice at home and in-class session
+
+**Practice 2 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo với lớp thật), trên project của từng designer:
+1. Hoàn thiện bộ nguyên tắc (`principles.md`): 3 đến 5 UX principle riêng của project (mỗi cái kèm "điều này không có nghĩa là…", cách thử ở mục 2), business principles.
+2. Chốt scope, thách thức giả định và viết research question (Break the brief).
+3. Chuẩn bị research plan và facilitation script cho buổi phỏng vấn.
+4. Phỏng vấn user thật của project, đã có consent.
+5. Ẩn danh transcript và gắn source ID.
+
+Mỗi bước cho ra một file; đầu ra của bước trước là đầu vào của bước sau. **Buổi practice trên lớp (90 phút)** nằm sau chuỗi việc này: designer làm tiếp phần còn dang dở nếu còn thời gian, rồi được chấm kết quả. Cách chấm chưa quyết. Practice sheet `discover-the-problem-practice.md` đã viết lại theo cấu trúc này (7 step, không ghi thời lượng; synthesis, hub và learning log chuyển sang Lesson 3).
+
+
+---
+
+## Đã bỏ khỏi Lesson 2 (2026-11-10)
+
+Activity viết insight và phản biện chéo (nguyên văn):
 
 **Activity: viết insight, phản biện chéo** (10 phút, theo cặp, không dùng AI). *Mục đích:* luyện hai bước dễ bị bỏ nhất, tự viết lại insight và tự phản biện (phép thử đóng AI lại), trước khi designer chạy ba bước trên dữ liệu riêng ở nhà. *Đầu vào:* bộ ghi chú nguồn app giao đồ ăn (`source-notes.md`, 24 ghi chú có source ID) và quyết định chung: có thiết kế lại bước đổi khung giờ giao hay không (cùng project và cùng câu hỏi nghiên cứu với phần Break the brief). *Quy trình:*
 1. (3 phút, một mình) Mỗi người viết một insight theo mẫu "[Ai] làm hoặc cần [gì] khi [bối cảnh], và điều này quan trọng với quyết định [theo quyết định chung]", dẫn ít nhất 2 source ID, nêu nguồn là interview, scope hay assumption, và thêm một dòng "nguồn này không cho biết điều gì".
@@ -30,15 +50,3 @@ Ba quy tắc áp dụng cho mọi lesson của chương trình: (1) đoán trư�
 3. (2 phút, cả lớp) Một cặp kể lỗi bắt được hay nhất; người hướng dẫn nối với năm điều cần soi (mục 5.7).
 
 *Quy tắc dữ liệu:* dữ liệu hư cấu, không có thông tin thật. *Output:* một insight đã sửa và danh sách lỗi kèm source ID. *Checkpoint trên lớp:* mỗi cặp bắt được ít nhất một lỗi có source ID.
-
-### 7.4 Practice at home and in-class session
-
-**Practice 2 là chuỗi việc làm ở nhà** sau buổi này, khoảng 4 giờ `[to confirm]` (chưa đo với lớp thật), trên project của từng designer:
-1. Hoàn thiện bộ nguyên tắc (`principles.md`): 3 đến 5 UX principle riêng của project (mỗi cái kèm "điều này không có nghĩa là…", cách thử ở mục 2), business principles, severity.
-2. Viết research plan: scope, giả định, research questions và competitor analysis (Break the brief), cùng facilitation script cho buổi phỏng vấn.
-3. Phỏng vấn user thật của project, đã có consent.
-4. Ẩn danh transcript và gắn source ID.
-5. Synthesis theo ba bước Decision, Insight, Challenge; mỗi dòng của insight dẫn về source ID.
-6. Đưa insight lên hub và nối về business question.
-
-Mỗi bước cho ra một file; đầu ra của bước trước là đầu vào của bước sau. **Buổi practice trên lớp (90 phút)** nằm sau chuỗi việc này: designer làm tiếp phần còn dang dở nếu còn thời gian, rồi được chấm kết quả. Cách chấm chưa quyết. Practice sheet `discover-the-problem-practice.md` đã viết lại theo cấu trúc này (12 step, không ghi thời lượng).

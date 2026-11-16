@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brand Exploration Round 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+<style>
+/* Layout: neutral review page, then three self-contained options (A, B, C). Each option sets its own palette vars; shapes are shared utilities. */
+:root{--bg:#FFFFFF;--surface:#fff;--fg:#1F1D1A;--muted:#6B675F;--line:#DDDAD2;--f:"Be Vietnam Pro",system-ui,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171613;--surface:#22201C;--fg:#F1EEE7;--muted:#A19C91;--line:#3A372F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171613;--surface:#22201C;--fg:#F1EEE7;--muted:#A19C91;--line:#3A372F;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f);line-height:1.6;padding:40px max(16px,env(safe-area-inset-right,0px)) 80px max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:64px}
+h1,h2,h3,p{margin:0}
+h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;line-height:1.15;text-wrap:balance}
+.back{display:inline-block;color:var(--muted);font-size:.85rem;font-weight:600;text-decoration:none;margin-bottom:14px}.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.lede{max-width:64ch;color:var(--muted);margin-top:14px}
+.ask{display:grid;gap:6px;margin-top:22px;padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:12px;max-width:64ch}
+.meta{display:flex;flex-direction:column;gap:4px;margin-bottom:14px}
+.meta h2{font-size:1.5rem}
+.meta span{color:var(--muted);max-width:70ch}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 14px}
+.chips i{display:flex;align-items:center;gap:8px;font-style:normal;font-size:.78rem;color:var(--muted)}
+.chips i::before{content:"";width:22px;height:22px;border-radius:50%;background:var(--c);border:1px solid #0001}
+
+/* ===== shared specimen ===== */
+.o{border-radius:22px;overflow:hidden;padding:clamp(14px,2.4vw,26px);background:var(--paper);color:var(--ink);font-family:var(--font);display:flex;flex-direction:column;gap:clamp(22px,3vw,34px);border:1px solid var(--line)}
+.o *{min-width:0}
+.o h3{font-family:var(--font);font-weight:800;letter-spacing:-.015em;line-height:1.2}
+.o .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.o .logo{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:-.01em;font-size:1rem}
+.o .logo i{display:block;width:34px;height:34px}
+.o .links{display:flex;gap:18px;font-size:.84rem;font-weight:600}
+.o .btn{display:inline-flex;align-items:center;gap:8px;font:800 .9rem var(--font);padding:12px 20px;border-radius:999px;border:0;background:var(--ink);color:var(--paper);text-decoration:none}
+.o .btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.o .go{width:38px;height:38px;border-radius:50%;background:var(--paper);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;font-weight:800;flex:none;box-shadow:inset 0 0 0 1.5px var(--ink)}
+.ph{background-size:cover;background-position:center;background-color:#ddd}
+.kick{display:inline-block;font-weight:800;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.o .lead{font-size:1.04rem;font-weight:500;max-width:42ch;margin-top:14px;opacity:.82}
+.o .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.big{font-weight:800;letter-spacing:-.03em;line-height:1}
+.cap{font-size:.78rem;font-weight:600;opacity:.8;line-height:1.35}
+.stack{display:flex;flex-direction:column;justify-content:space-between;padding:18px}
+@media(max-width:760px){.o .links{display:none}}
+
+
+.back{display:inline-block;color:var(--muted);font-size:.85rem;font-weight:600;text-decoration:none;margin-bottom:14px}
+/* ===== C: bold, indigo / chartreuse / pink ===== */
+.oc{--font:"Manrope",sans-serif;--paper:#FFFFFF;--s1:var(--c1);--s2:var(--c1);--s3:var(--c3);--s4:var(--c3);--lk:var(--ink)}
+.oc .nav{background:var(--c2);border-radius:999px;padding:8px 8px 8px 18px}
+.oc .btn{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);padding:8px 18px}
+.oc .hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.75fr) minmax(0,.9fr);grid-template-rows:auto auto;gap:12px}
+.oc .h-main{grid-row:span 2;background:var(--c1);color:#fff;border-radius:30px;padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:380px}
+.oc .h-main h3{font-size:clamp(1.9rem,4.2vw,3rem);text-transform:uppercase;letter-spacing:-.01em;line-height:1.28}
+.oc .h-main h3 em{font-style:normal;color:var(--c2)}
+.oc .h-main .btn{background:var(--cta,var(--c2));color:var(--ink);box-shadow:none;padding:16px 24px;justify-content:center;border-radius:18px}
+.oc .h-main .lead{opacity:.85}
+.oc .h-a{background:var(--c1);color:var(--on1);border-radius:28px 100px 28px 28px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+.oc .h-a .big{font-size:2rem;white-space:nowrap}
+.oc .h-b{background:var(--c2);border-radius:28px 28px 100px 28px;padding:18px;display:flex;flex-direction:column-reverse;justify-content:space-between;gap:10px;position:relative}
+.oc .h-b svg{width:46px;height:46px;color:var(--c3)}
+.oc .h-ph{grid-row:span 2;background-image:url(r3-img/p7.jpg);background-position:30% 50%;border-radius:120px 30px 30px 30px;position:relative;min-height:380px}
+.oc .h-ph .sparkle{position:absolute;right:-10px;top:-14px;width:64px;height:64px;color:var(--c3)}
+.oc .band{background:var(--c2);border-radius:34px;padding:clamp(20px,3vw,34px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr);gap:clamp(16px,3vw,30px);align-items:center;position:relative}
+.oc .band h3{font-size:clamp(1.6rem,3.6vw,2.4rem);text-transform:uppercase;letter-spacing:-.01em;color:var(--bandh);line-height:1.28}
+.oc .band h3 em{font-style:normal;color:var(--bandem)}
+.oc .band .ph{height:160px;margin-top:18px;background-image:url(r3-img/p6.jpg);background-position:50% 30%;border-radius:999px 30px 999px 30px}
+.oc .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.oc .cards>div{background:var(--c1);color:var(--on1);border-radius:26px;padding:18px;display:flex;flex-direction:column;gap:6px;min-height:150px;justify-content:flex-end}
+.oc .cards>div:nth-child(2){transform:rotate(-3deg);border-radius:30px 80px 30px 30px;background:var(--c3);color:var(--ink)}
+.oc .cards>div:nth-child(3){border-radius:26px 26px 80px 26px}
+.oc .cards>div:nth-child(4){background:var(--ink);color:#fff;transform:rotate(2deg)}
+.oc .cards small{font-weight:800;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.oc .cards b{font-size:1.1rem;letter-spacing:-.01em;line-height:1.25}
+.oc .band .sparkle{position:absolute;right:18px;top:-18px;width:58px;height:58px;color:var(--c3)}
+@media(max-width:860px){.oc .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.oc .h-main{grid-column:span 2;grid-row:auto;min-height:0}.oc .h-ph{grid-row:auto;grid-column:span 2;min-height:260px;border-radius:30px 120px 30px 30px}.oc .band{grid-template-columns:minmax(0,1fr)}}
+
+.oc[style*="--cta"] .nav .btn{background:var(--cta);box-shadow:none}
+.oc[style*="--cta"] .h-main h3 em{color:var(--cta)}
+/* ===== A: bento, tangerine / iris / lime ===== */
+.od .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(18px,3vw,36px);align-items:center}
+.od h3{font-size:clamp(2rem,4.6vw,3.2rem)}
+.od h3 em{font-style:normal;background:var(--c3);padding:0 .18em;border-radius:.22em;display:inline-block}
+.od .kick{background:var(--soft)}
+.od .mosaic{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:170px 170px;gap:12px}
+.od .m1{grid-row:span 2;border-radius:999px 999px 28px 28px}
+.od .m2{background:var(--c3);border-radius:28px 100px 28px 28px}
+.od .m3{background-image:url(r3-img/p3.jpg);border-radius:100px 28px 28px 28px}
+.od .m4{grid-column:span 2;background:var(--c1);border-radius:28px 100px 28px 28px;flex-direction:column;justify-content:center;align-items:flex-start;gap:6px;padding:18px 22px}
+.od .m2 .big{font-size:2.6rem}
+.od .m2 .cap{max-width:11ch}
+.od .m4 .big{font-size:2.8rem}
+.od .sec{display:flex;flex-direction:column;gap:16px}
+.od .sec>h4{margin:0;font:800 1.2rem var(--font);letter-spacing:-.03em;text-align:center}
+.od .tri{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.od .tri>div{padding:22px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.od .tri b{display:block;font-size:1.2rem;letter-spacing:-.01em;line-height:1.25}
+.od .tri p{font-size:.84rem;font-weight:500;margin-top:8px;opacity:.85}
+.od .tri .go{align-self:flex-end;background:transparent}
+.od .tri .t1{background:var(--c1);border-radius:30px 30px 30px 110px}
+.od .tri .t2{background:var(--c2);border-radius:90px 30px 30px 30px;color:#fff;flex-direction:column-reverse}
+.od .t2 .go{color:#fff;box-shadow:inset 0 0 0 1.5px #fff}
+.od .tri .t3{background:var(--c3);border-radius:30px 110px 30px 30px}
+.od .t1,.od .tri .t3{color:var(--ink)}
+.od .strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch}
+.od .strip>div{padding:18px 22px;display:flex;align-items:center;gap:14px;background:var(--soft)}
+.od .strip>div:nth-child(1){border-radius:999px}
+.od .strip>div:nth-child(2){border-radius:28px}
+.od .strip>div:nth-child(3){border-radius:28px 999px 999px 28px;padding-right:34px;background:var(--ink);color:var(--paper)}
+.od .strip .big{font-size:2.1rem}
+@media(max-width:760px){.od .hero{grid-template-columns:minmax(0,1fr)}.od .tri,.od .strip{grid-template-columns:minmax(0,1fr)}.od .mosaic{grid-template-rows:150px 150px}}
+
+
+.od{--font:"Manrope",sans-serif;--paper:#FFFFFF;--ink:#14123A;--c1:#FF5CB8;--c2:#4A3FEF;--c3:#DDF247;--soft:#ECEAFF;--lk:#14123A;--s1:#4A3FEF;--s2:#4A3FEF;--s3:#FF5CB8;--s4:#FF5CB8}
+.od .btn.go1{background:var(--c2);color:#fff}
+.od .nav{background:var(--c3);border-radius:999px;padding:8px 8px 8px 18px}
+.od .nav .btn.go1{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);padding:8px 18px}
+.od .m4{color:var(--ink)}
+.od .m2 .big,.od .m4 .big{color:var(--ink)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="star" viewBox="0 0 100 100"><g stroke="currentColor" stroke-width="13" stroke-linecap="round"><path d="M50 8V92"/><path d="M8 50H92"/><path d="M20 20L80 80"/><path d="M80 20L20 80"/></g></symbol>
+<symbol id="mk" viewBox="0 0 100 100"><path d="M10 90H30V70H50V50H70V34" fill="none" stroke="var(--lk,#14123A)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="70" cy="17" r="12" fill="var(--s4)"/></symbol>
+</defs></svg>
+
+<div class="wrap">
+  <header>
+    <a class="back" href="./">← Tất cả các round</a>
+    <div class="eyebrow">AI Design Workflow · brand exploration, round 4</div>
+    <h1>Round 4: giữ bố cục C, thử 6 bảng màu mới và hai biến thể</h1>
+    <p class="lede">Cùng một layout, cùng chữ, cùng ảnh, chỉ đổi màu, để bạn so được thuần về màu. Có sẵn C gốc ở đầu làm mốc.</p>
+    <div class="ask">
+      <div><b>Mình cần bạn:</b></div>
+      <div>1. Chọn một bảng màu (1 đến 5), hoặc ghép: ví dụ màu chính của bảng này với màu nhấn của bảng kia.</div>
+      <div>2. Nói màu nào bạn thích và màu nào bạn muốn bỏ.</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="meta"><h2>C · gốc (để so sánh)</h2><span>Indigo, chartreuse, hồng</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#14123A">Ink #14123A</i><i style="--c:#4A3FEF">Chính #4A3FEF</i><i style="--c:#DDF247">Nền sáng #DDF247</i><i style="--c:#FF5CB8">Nhấn #FF5CB8</i></div>
+    <div class="o oc" style="--c1:#4A3FEF;--on1:#fff;--c2:#DDF247;--c3:#FF5CB8;--ink:#14123A;--bandh:#4A3FEF;--bandem:#14123A">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="meta"><h2>1 · Emerald</h2><span>Xanh ngọc, vàng chanh, cam san hô</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#0B1F17">Ink #0B1F17</i><i style="--c:#064E3B">Chính #064E3B</i><i style="--c:#F4E04D">Nền sáng #F4E04D</i><i style="--c:#FF7A59">Nhấn #FF7A59</i></div>
+    <div class="o oc" style="--c1:#064E3B;--on1:#fff;--c2:#F4E04D;--c3:#FF7A59;--ink:#0B1F17;--bandh:#064E3B;--bandem:#0B1F17">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="meta"><h2>2 · Tomato</h2><span>Đỏ cà chua, xanh trời, vàng nắng</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#1A1A2E">Ink #1A1A2E</i><i style="--c:#FF4D2E">Chính #FF4D2E</i><i style="--c:#BFE3FF">Nền sáng #BFE3FF</i><i style="--c:#FFD23F">Nhấn #FFD23F</i></div>
+    <div class="o oc" style="--c1:#FF4D2E;--on1:#1A1A2E;--c2:#BFE3FF;--c3:#FFD23F;--ink:#1A1A2E;--bandh:#1A1A2E;--bandem:#D63A1E">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="meta"><h2>3 · Teal</h2><span>Xanh teal, vàng mật, hồng</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#082F33">Ink #082F33</i><i style="--c:#00747C">Chính #00747C</i><i style="--c:#FFD166">Nền sáng #FFD166</i><i style="--c:#FF8FA3">Nhấn #FF8FA3</i></div>
+    <div class="o oc" style="--c1:#00747C;--on1:#fff;--c2:#FFD166;--c3:#FF8FA3;--ink:#082F33;--bandh:#00747C;--bandem:#082F33">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="meta"><h2>4 · Plum</h2><span>Tím mận, bạc hà, cam hổ phách</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#1E0B2E">Ink #1E0B2E</i><i style="--c:#4B1D6E">Chính #4B1D6E</i><i style="--c:#B8F2D0">Nền sáng #B8F2D0</i><i style="--c:#FFB347">Nhấn #FFB347</i></div>
+    <div class="o oc" style="--c1:#4B1D6E;--on1:#fff;--c2:#B8F2D0;--c3:#FFB347;--ink:#1E0B2E;--bandh:#4B1D6E;--bandem:#1E0B2E">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="meta"><h2>5 · Midnight</h2><span>Xanh đen, lime điện, xanh da trời</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#0F172A">Ink #0F172A</i><i style="--c:#0F172A">Chính #0F172A</i><i style="--c:#D4FF3F">Nền sáng #D4FF3F</i><i style="--c:#38BDF8">Nhấn #38BDF8</i></div>
+    <div class="o oc" style="--c1:#0F172A;--on1:#fff;--c2:#D4FF3F;--c3:#38BDF8;--ink:#0F172A;--bandh:#0F172A;--bandem:#1D4ED8">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="meta"><h2>6 · Violet</h2><span>Tím, hồng, lilac nhạt</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#1E0B2E">Ink #1E0B2E</i><i style="--c:#5B21B6">Chính #5B21B6</i><i style="--c:#E9D5FF">Nền sáng #E9D5FF</i><i style="--c:#FF4FA3">Nhấn #FF4FA3</i></div>
+    <div class="o oc" style="--c1:#5B21B6;--on1:#fff;--c2:#E9D5FF;--c3:#FF4FA3;--ink:#1E0B2E;--bandh:#5B21B6;--bandem:#BE185D">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="meta"><h2>7 · Violet + xanh lá cho CTA</h2><span>Như Violet, nhưng nút CTA (Bắt đầu học, Đăng ký) đổi sang xanh lime để nổi hẳn lên khỏi tím và hồng</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#1E0B2E">Ink #1E0B2E</i><i style="--c:#5B21B6">Chính #5B21B6</i><i style="--c:#E9D5FF">Nền sáng #E9D5FF</i><i style="--c:#FF4FA3">Nhấn #FF4FA3</i><i style="--c:#D4FF3F">CTA #D4FF3F</i></div>
+    <div class="o oc" style="--c1:#5B21B6;--on1:#fff;--c2:#E9D5FF;--c3:#FF4FA3;--ink:#1E0B2E;--bandh:#5B21B6;--bandem:#BE185D;--cta:#D4FF3F">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn">Đăng ký</a></div>
+      <div class="hero">
+        <div class="h-main">
+          <div>
+            <h3>Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+            <p class="lead">Quy trình làm việc thật với AI dành cho designer đã có kinh nghiệm.</p>
+          </div>
+          <a class="btn">Bắt đầu học</a>
+        </div>
+        <div class="h-a"><span class="cap">Thời gian học</span><span class="big">4 tuần</span></div>
+        <div class="h-ph ph"><svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+        <div class="h-b"><svg viewBox="0 0 100 100"><use href="#star"/></svg><span class="cap" style="color:var(--ink)">12 bài thực hành, có feedback từng bài</span></div>
+      </div>
+      <div class="band">
+        <div>
+          <h3>Học gì <em>trong 4 tuần</em></h3>
+          <p class="lead" style="color:var(--ink)">Mỗi tuần là một cấp. Hết tuần, bạn có sản phẩm để bỏ vào portfolio.</p>
+          <div class="ph"></div>
+        </div>
+        <div class="cards">
+          <div><small>Cấp 1</small><b>Làm quen với AI</b></div>
+          <div><small>Cấp 2</small><b>Khám phá ý tưởng</b></div>
+          <div><small>Cấp 3</small><b>Dựng giao diện</b></div>
+          <div><small>Cấp 4</small><b>Bàn giao và đo lường</b></div>
+        </div>
+        <svg class="sparkle" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="meta"><h2>8 · Hero kiểu A với indigo, chartreuse, hồng</h2><span>Giữ bố cục hero của option A (ô bento: ảnh trong vòm, ô số, ảnh ghi chú) và đổi sang bảng màu của C: chartreuse cho ô "-30%", hồng cho ô "12", indigo cho các nút CTA.</span></div>
+    <div class="chips"><i style="--c:#FFFFFF">Paper #FFFFFF</i><i style="--c:#14123A">Ink #14123A</i><i style="--c:#4A3FEF">Indigo #4A3FEF</i><i style="--c:#DDF247">Chartreuse #DDF247</i><i style="--c:#FF5CB8">Hồng #FF5CB8</i></div>
+    <div class="o od">
+      <div class="nav"><div class="logo"><i><svg viewBox="0 0 100 100" width="34" height="34"><use href="#mk"/></svg></i>AI Design Workflow</div><div class="links"><span>Chương trình</span><span>Lộ trình</span><span>Case</span></div><a class="btn go1">Đăng ký</a></div>
+      <div class="hero">
+        <div>
+          <span class="kick">Dành cho designer 2+ năm</span>
+          <h3 style="margin-top:16px">Thiết kế với AI, <em>lên cấp</em> mỗi tuần</h3>
+          <p class="lead">Học quy trình làm việc thật với AI trên một case xuyên suốt, từ research đến handoff.</p>
+          <div class="cta"><a class="btn go1">Bắt đầu học</a><a class="btn ghost">Xem lộ trình</a></div>
+        </div>
+        <div class="mosaic">
+          <div class="m1 ph" style="background-image:url(r3-img/p4.jpg);background-position:60% 50%"></div>
+          <div class="m2 stack"><span class="cap">Thời gian lặp thiết kế</span><span class="big">-30%</span></div>
+          <div class="m3 ph"></div>
+          <div class="m4 stack"><span class="big">12</span><span class="cap" style="font-size:.9rem">bài thực hành trên Delivery App</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
