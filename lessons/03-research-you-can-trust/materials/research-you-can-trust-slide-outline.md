@@ -187,13 +187,17 @@ last_synced: 2026-11-16
   - Bạn gọi tên quyết định mà nghiên cứu này phục vụ, trước khi AI tóm tắt.
   - Insight
   - AI đề xuất tối đa 3 insight, mỗi cái kèm source ID và dòng “nguồn này không cho biết điều gì”. Bạn chọn một và viết lại.
+  - Challenge
   - Bạn tấn công insight, AI đóng vai người phản biện. Giữ ý kiến trái chiều.
-  - Cùng một đầu vào
-  - Cả ba bước bắt đầu từ bộ ghi chú nguồn đã ẩn danh, có source ID.
+  - Cả ba bước bắt đầu từ cùng một đầu vào: bộ ghi chú nguồn đã ẩn danh, có source ID.
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Có ghi chú nguồn rồi, câu hỏi tiếp theo: ai làm gì để ra được một insight. Slide này trả lời bằng ba bước.
+  - Ba thuật ngữ, hiểu trong buổi này như sau:
+    - Decision: quyết định cụ thể mà team phải đưa ra và đang chờ research trả lời, ví dụ “có nên thêm bước đổi khung giờ sau thanh toán không”. Không phải kết luận của nghiên cứu, và không phải mục tiêu chung chung.
+    - Insight: một phát hiện đã kiểm tra về người dùng, viết thành một câu theo mẫu, có source ID dẫn về nguồn và trả lời cho một Decision. Không phải bản tóm tắt, cũng không phải một câu trích dẫn.
+    - Challenge: bước bạn tự phản biện insight trước khi tin nó: tìm chỗ insight nói rộng hơn dữ liệu, source ID bị dẫn sai, cách giải thích khác, dữ liệu mâu thuẫn hoặc bị bỏ ra. Kết quả và ý kiến trái chiều được giữ cùng trang với insight.
   - Ba bước, mỗi bước có người làm khác nhau:
     - Decision: bạn tự viết quyết định đang chờ câu trả lời, ví dụ “có nên thêm bước đổi khung giờ sau thanh toán không”. Chỉ bạn biết quyết định nào đang chờ, nên AI không viết hộ bước này.
     - Insight: AI nhóm ghi chú thành tối đa ba insight theo mẫu “[ai] làm hoặc cần [gì] khi [bối cảnh], và điều này quan trọng với quyết định [nào]”. Mỗi insight kèm source ID, số người nói và một dòng “nguồn này không cho biết điều gì”. Bạn mở từng source ID, chọn một insight và viết lại bằng lời của mình.
@@ -202,7 +206,7 @@ last_synced: 2026-11-16
   - Insight mới gộp vào ghi chú có sẵn theo cách đề xuất trước: AI nói ý nào vào đâu, bạn duyệt rồi mới ghi, chỉ thêm vào cuối và giữ một bản sao trước.
 
   > Viết Decision cho project của bạn trong một câu, dán vào chat.
-- 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô ink hoặc purple.
+- 🎨 Visual hint: Đường thời gian ngang, ba điểm tròn nối nhau, số 01 đến 03, tên bước và mô tả; không card viền; dòng cuối dưới một đường kẻ.
 
 ---
 
