@@ -1,0 +1,5 @@
+O1 | Thêm nút hủy nổi bật trên màn hình đơn hàng.
+O2 | Khách mới gặp khó khi chọn khung giờ giao vì không biết khung giờ đó là cuối cùng.
+O3 | Gửi thông báo đẩy khi đơn giao trễ.
+O4 | Khách mới gặp khó khi theo dõi đơn đầu tiên vì ước tính giờ giao lạc quan hơn thực tế.
+O5 | Làm lại toàn bộ màn hình chọn khung giờ.

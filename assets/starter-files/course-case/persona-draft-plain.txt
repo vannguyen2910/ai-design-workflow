@@ -1,0 +1,6 @@
+L1 | Works long days and wants dinner without planning.
+L2 | Aged 28 to 35, lives in a city flat, shops at a supermarket twice a week.
+L3 | Picks a delivery time slot quickly, without checking whether they will be home.
+L4 | Compares prices with the restaurant and leaves when the delivery fee feels expensive.
+L5 | Wants to cancel or change an order when plans change, and cannot find where.
+L6 | Loves trying new cuisines and is excited by variety.

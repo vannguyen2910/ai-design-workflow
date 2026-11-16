@@ -58,6 +58,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 ### Step 3 · Đưa insight lên hub
 
 - Tìm trong hub trước, để không thêm bản trùng. Chưa có thì thêm một entry cho insight đã qua Challenge: insight ID, source ID dẫn về, ngày, mức mạnh của evidence, tag, điều dữ liệu không cho biết và ý kiến trái chiều.
+- Làm theo ba bước: AI đề xuất vào một file md (mỗi dòng có nguồn, loại card, quan hệ tới card đã có, củng cố hay mâu thuẫn hay mới), bạn duyệt từng dòng (decision và thứ hạng do bạn quyết), rồi AI tạo card và chạy kiểm tra liên kết và ID.
 - Tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc. AI có thể gợi ý entry liên quan và tag; chỉ nhận entry có ID, và bạn duyệt trước khi thêm. AI không tự thêm insight vào hub.
 
 ## Phần B · Persona, journey map, opportunity
@@ -68,11 +69,18 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 - **Bạn kiểm tra:** đánh dấu từng dòng có insight ID hay không; mở source ID và đối chiếu từng chữ. Dòng không có insight thì xoá hoặc ghi "unknown"; dòng insight nói ngược thì sửa theo insight. Giữ ý kiến trái chiều cùng nhóm, không làm phẳng.
 - Persona AI tự sinh từ dữ liệu internet chỉ là bản nháp giả định, không phải evidence.
 
+- **AI move 1, soát nguồn từng dòng:** đưa AI persona nháp (mỗi dòng một ID, dạng `L1 | text`) và file insight (dạng `IN-01 | text`). Nhờ nó trả mỗi dòng `line ID | insight IDs | nhận định`, nhận định là ủng hộ, đi ngược hoặc assumption. Bạn xoá hoặc sửa các dòng assumption và đi ngược.
+- **AI move 2, gom nhóm hành vi, blind rồi primed:** chạy gom nhóm hai lần, lần hai thêm hypothesis của team. Nhóm nào xuất hiện cả hai lần thì đáng tin hơn; nhóm nào chỉ có ở một lần hoặc chỉ có một insight đỡ thì ghi rõ. Prompt và dữ liệu mẫu của cả bảy move nằm ở [define-moves.md](../../../assets/starter-files/course-case/define-moves.md).
+
 ### Step 5 · Journey map · bạn liệt kê, AI soạn nháp, bạn kiểm tra
 
-- **Bạn liệt kê** các giai đoạn của persona trước, bắt đầu từ một flow chính.
+- **Bạn chuẩn bị:** chốt journey nào, actor nào, map phục vụ quyết định nào; đưa dữ liệu đã có (AI gom thành source notes có ID); rồi liệt kê các giai đoạn của persona, bắt đầu từ một flow chính.
 - **AI soạn nháp:** đề xuất bước còn thiếu và điền actions, cảm xúc, pain, insight ID từ insight của bạn. Đưa persona và insight vào, để AI không điền theo một nhóm người dùng chung chung.
-- **Bạn kiểm tra:** ô nào không có insight thì ghi "assumption". Đếm tỷ lệ ô assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp. Hỏi AI insight nào nằm ở điểm thấp nhất của đường cảm xúc. Mỗi pain một insight ID; không có thì xoá hoặc ghi assumption.
+- **Bạn kiểm tra:** ô nào không có insight thì ghi "assumption". Đếm tỷ lệ ô assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp. Bản nháp là một proto-journey; để team review chọn chỗ cần research thêm rồi mới vẽ thành hình. Lưu bản nháp là file md hoặc bảng, miễn mỗi ô có insight ID hoặc assumption. Hỏi AI insight nào nằm ở điểm thấp nhất của đường cảm xúc. Mỗi pain một insight ID; không có thì xoá hoặc ghi assumption.
+
+- **AI move 3, dựng map không persona rồi so:** dựng journey map hai lần, một lần chỉ từ insight, một lần từ insight cộng persona. Ô nào chỉ có ở bản có persona thì kiểm tra xem insight ID gắn vào có thật sự nói điều ô đó ghi không.
+- **Tìm ô thiếu insight (bước thêm, không phải AI move trên lớp):** nhờ AI liệt kê ô không có insight hoặc có ID nhưng insight không nói điều đó, đếm tỷ lệ, và đề xuất câu hỏi phỏng vấn mở về hành vi quá khứ cho từng ô thiếu. Chọn một cách đếm và dùng nhất quán.
+- **AI move 4, soát đường cảm xúc:** với mỗi ô cảm xúc có nội dung, nhờ AI tìm ghi chú gốc ủng hộ hoặc đi ngược, trả quote nguyên văn. Chạy chương trình kiểm quote của Practice 2 trên kết quả, rồi tự đọc từng ghi chú: quote có thật nhưng AI vẫn có thể xếp nhầm chỗ.
 
 ### Step 6 · Opportunity · AI soạn nháp, bạn kiểm tra và quyết định
 
@@ -81,7 +89,21 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 3. **Reframing** nhánh mạnh nhất (không reframe tất cả): mục tiêu này của ai và nếu sai thì sao; ai đã thành công và khác ở điểm nào; khung này bỏ ngoài điều gì. Ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
 4. **Chấm rồi chọn:** sizing, importance, company fit, market position. Xếp thứ tự theo severity, context và reach, không theo số lần được nhắc. Ghi opportunity bị loại kèm lý do. Mỗi opportunity có insight ID và một câu nêu mẫu không cho biết điều gì.
 
-### Step 7 · Một trang cho lead và đưa lên hub
+5. **AI move 5, bắt câu dạng giải pháp:** đưa AI danh sách opportunity nháp của team. Nhờ nó gắn nhãn need hoặc giải pháp, và viết lại dòng giải pháp thành user need kèm insight ID hoặc assumption. Bạn kiểm tra bản viết lại có đổi nghĩa không.
+6. **AI move 6, thử ba giải pháp:** với opportunity ưu tiên cao nhất, nhờ AI đề xuất ba giải pháp khác nhau về bản chất và nêu assumption mà mỗi giải pháp thêm vào. Rồi hỏi: need còn đúng nếu bỏ cả ba không? Đây là phép thử need đứng độc lập, không phải bước chọn giải pháp.
+
+### Step 7 · Kiểm truy vết bằng chương trình
+
+- Đưa AI coding tool instruction trong [check-trace-instruction.md](../../../assets/starter-files/course-case/check-trace-instruction.md), kèm đường dẫn tới file insight (`ID | text`) và file output của bạn (persona, journey map hoặc opportunity, mỗi dòng dạng `line ID | insight IDs`, hoặc đúng chữ `assumption`).
+- Script in ra từng dòng đạt hay không đạt. Dòng không đạt: ID không tồn tại, không có ID, hoặc `assumption` lẫn với ID. Sửa rồi chạy lại cho tới khi không còn dòng không đạt.
+- Phép kiểm chỉ chứng minh ID có thật. ID có thật vẫn có thể không đỡ đúng dòng, nên bạn tự mở insight và đọc.
+
+### Step 8 · Đóng gói thành skill
+
+- Khi chuỗi đã chạy ổn hai lần (một lần trên dữ liệu mẫu, một lần trên dữ liệu của bạn), nhờ AI coding tool viết một skill chạy cả chuỗi: ai làm (người hay AI), đầu vào, đầu ra, và các phép kiểm phải qua (kiểm quote, kiểm truy vết).
+- Skill không thay bước Challenge và các bước bạn tự đọc. Đóng gói quá sớm sẽ đóng gói cả lỗi. Cách đóng gói nằm ở phần Appendix của Lesson 3.
+
+### Step 9 · Một trang cho lead và đưa lên hub
 
 - **Một trang cho lead**, người đọc hiểu mà không cần hỏi lại:
   - quyết định và insight của bạn;
@@ -101,6 +123,8 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 - Assumption map đã cập nhật
 - Persona, journey map, opportunity đã xếp hạng
 - Một trang cho lead (bản đầu problem brief)
+- Kết quả sáu AI move và kết quả kiểm truy vết
+- Một skill chạy cả chuỗi
 - Các entry đã đưa lên hub, và bảng giờ từng step
 
 ## Self-check
@@ -110,13 +134,16 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 - [ ] Bạn đã mở source ID và đọc ngữ cảnh của mọi ghi chú dùng cho insight.
 - [ ] Mỗi opportunity viết như một user need, được xếp theo severity, context và reach.
 - [ ] Bạn đóng AI lại vẫn giải thích được insight của mình.
+- [ ] Bạn đã chạy sáu AI move và ghi move nào bắt được lỗi thật, move nào chỉ nghe hợp lý.
+- [ ] Lần kiểm truy vết cuối không còn dòng không đạt.
 
 Xong thì mang các output này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
 
 ## If you get stuck
 
+- **Chưa có dữ liệu để thử sáu move:** dùng `insights-plain.txt`, `persona-draft-plain.txt`, `journey-map-draft.md` và `opportunities-draft-plain.txt` trong course case, cùng prompt ở `define-moves.md`.
 - **Chưa có transcript từ Practice 2:** làm thử bằng bộ source notes và bộ insight mẫu ở trên, rồi làm lại với transcript của bạn khi có.
 - **Ít insight (dưới khoảng 5) hoặc chỉ một người phỏng vấn đứng sau:** gọi persona là assumption, ghi rõ số người, và dành thêm sức cho Step 2.
 - **AI đưa ra điều nghe hợp lý nhưng không có insight nào làm căn cứ:** ghi "chưa có nguồn" hoặc "unknown", không đưa vào như một sự thật.
 - **AI trả lại source ID không có trong bộ source notes:** đó là nguồn bịa. Bỏ nó và đếm vào số lỗi.
-- **Không làm hết được:** làm Step 1 đến 3 trước, rồi persona và journey map. Opportunity và trang cho lead làm sau.
+- **Không làm hết được:** làm Step 1 đến 3 trước, rồi persona và journey map. Opportunity, kiểm truy vết, skill và trang cho lead làm sau.
