@@ -374,6 +374,25 @@ last_synced: 2026-11-16
 
 ---
 
+### IMAGE · A persona built by AI from insights
+- Kicker: Ví dụ
+- Title: Persona\ndo AI dựng từ insight
+- On-slide:
+  - do AI dựng từ insight
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ví dụ một persona do AI dựng từ bộ insight đã có (project Travel Buddy demo), tên "The Documenter"
+  - Bio, Goals, Frustrations đều phải dẫn về insight ID; dòng không có thì xoá hoặc ghi unknown
+  - Ví dụ: "Auto-capture là tính năng được muốn nhiều nhất (7/8)" có số từ khảo sát; tuổi, nghề và nơi ở thì cần kiểm tra
+  - Chữ trong hình giữ tiếng Anh; đây là hình minh hoạ, không phải persona của project app giao đồ ăn
+  - So với persona AI tự sinh, không có insight phía sau
+
+  > Đọc từng dòng và hỏi: dòng nào truy được về insight?
+- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
+
+---
+
 ### TABLE · Move 1: audit the persona
 - Kicker: AI move 1 · Persona
 - Title: Soát nguồn\n*từng dòng*
@@ -431,6 +450,28 @@ last_synced: 2026-11-16
   - Phần 2: journey map, cách điền chỗ "khi nào"
   - Ô nào không có insight thì ghi assumption
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
+
+---
+
+### IMAGE · A journey map built by AI
+- Kicker: Ví dụ · Journey map do AI dựng · Travel Buddy
+- Title: 
+- On-slide:
+  - Nguồn · Travel Buddy demo
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước là journey map vẽ tay. Slide này trả lời: journey map do AI dựng trông thế nào, và đọc nó ra sao.
+  - Đây là journey map của project Travel Buddy demo, AI dựng từ insight rồi bạn kiểm tra. Đọc từ trên xuống:
+    - Năm giai đoạn từ Awareness đến Loyalty, mỗi giai đoạn một câu cảm xúc.
+    - Đường cảm xúc thấp nhất ở Decision, nơi khách chép danh sách vào bảng tính bằng tay.
+    - Các hàng bên dưới: hành động, touchpoint, opportunity, mục tiêu business, KPI, quyết định đã đưa ra, giả thuyết cần kiểm, vấn đề tìm thấy ở prototype.
+  - Chú ý những ô ghi thẳng điều chưa biết: Awareness chưa có giả thuyết, KPI của Service và Loyalty chưa đặt. Dòng cuối bản đồ ghi rõ cảm xúc đọc từ một phỏng vấn, KPI là của team và chưa ai xác nhận, vấn đề đến từ test mô phỏng và một walkthrough do AI soạn, không phải từ user thật. Đây đúng là nguyên tắc ô nào chưa có insight thì ghi assumption.
+  - Hình rất dày nên đọc cấu trúc, không đọc từng chữ. Bản gốc là một trang HTML mở được trong trình duyệt. Hình minh hoạ, không phải dữ liệu của project app giao đồ ăn.
+  - Đọc đường cảm xúc của bản đồ như vậy thế nào
+
+  > Ô nào trong bản đồ này bạn sẽ mở insight gốc ra kiểm trước?
+- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
 
 ---
 
@@ -516,6 +557,22 @@ last_synced: 2026-11-16
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
 
 ---
+
+### IMAGE · An opportunity map built by AI
+- Kicker: Ví dụ
+- Title: Opportunity map *do AI dựng*
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ví dụ opportunity map của project demo Travel Buddy, do AI dựng
+  - Đọc từ trên xuống: một vấn đề ở gốc, năm opportunity viết như câu hỏi How might we, rồi các design bet cần kiểm tra ở tầng cuối
+  - Opportunity được xếp từ 1 đến 5; design bet là cách giải, nằm dưới opportunity chứ không thay nó
+  - Chữ trong hình giữ tiếng Anh; hình minh hoạ, không phải dữ liệu của project app giao đồ ăn
+  - Opportunity đã chọn cần một chỗ để tìm lại sau này: insight hub
+- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
+
+---
+
 
 ### TABLE · Move 6: catch solutions disguised as needs
 - Kicker: AI move 6 · Opportunity
@@ -818,25 +875,6 @@ last_synced: 2026-11-16
   - AI gom theme đã kiểm tra thành tối đa ba nhóm hành vi và soạn mô tả
   - Bạn đối chiếu từng dòng với insight ID; dòng không có insight thì xoá hoặc ghi unknown
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
-
----
-
-### IMAGE · A persona built by AI from insights
-- Kicker: Ví dụ
-- Title: Persona\ndo AI dựng từ insight
-- On-slide:
-  - do AI dựng từ insight
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ví dụ một persona do AI dựng từ bộ insight đã có (project Travel Buddy demo), tên "The Documenter"
-  - Bio, Goals, Frustrations đều phải dẫn về insight ID; dòng không có thì xoá hoặc ghi unknown
-  - Ví dụ: "Auto-capture là tính năng được muốn nhiều nhất (7/8)" có số từ khảo sát; tuổi, nghề và nơi ở thì cần kiểm tra
-  - Chữ trong hình giữ tiếng Anh; đây là hình minh hoạ, không phải persona của project app giao đồ ăn
-  - So với persona AI tự sinh, không có insight phía sau
-
-  > Đọc từng dòng và hỏi: dòng nào truy được về insight?
-- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
 
 ---
 
@@ -1245,28 +1283,6 @@ last_synced: 2026-11-16
 
 ---
 
-### IMAGE · A journey map built by AI
-- Kicker: Ví dụ · Journey map do AI dựng · Travel Buddy
-- Title: 
-- On-slide:
-  - Nguồn · Travel Buddy demo
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Slide trước là journey map vẽ tay. Slide này trả lời: journey map do AI dựng trông thế nào, và đọc nó ra sao.
-  - Đây là journey map của project Travel Buddy demo, AI dựng từ insight rồi bạn kiểm tra. Đọc từ trên xuống:
-    - Năm giai đoạn từ Awareness đến Loyalty, mỗi giai đoạn một câu cảm xúc.
-    - Đường cảm xúc thấp nhất ở Decision, nơi khách chép danh sách vào bảng tính bằng tay.
-    - Các hàng bên dưới: hành động, touchpoint, opportunity, mục tiêu business, KPI, quyết định đã đưa ra, giả thuyết cần kiểm, vấn đề tìm thấy ở prototype.
-  - Chú ý những ô ghi thẳng điều chưa biết: Awareness chưa có giả thuyết, KPI của Service và Loyalty chưa đặt. Dòng cuối bản đồ ghi rõ cảm xúc đọc từ một phỏng vấn, KPI là của team và chưa ai xác nhận, vấn đề đến từ test mô phỏng và một walkthrough do AI soạn, không phải từ user thật. Đây đúng là nguyên tắc ô nào chưa có insight thì ghi assumption.
-  - Hình rất dày nên đọc cấu trúc, không đọc từng chữ. Bản gốc là một trang HTML mở được trong trình duyệt. Hình minh hoạ, không phải dữ liệu của project app giao đồ ăn.
-  - Đọc đường cảm xúc của bản đồ như vậy thế nào
-
-  > Ô nào trong bản đồ này bạn sẽ mở insight gốc ra kiểm trước?
-- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
-
----
-
 ### NUMBERED · Reading the emotion line
 - Kicker: Cách đọc
 - Title: Đọc *đường cảm xúc*
@@ -1560,20 +1576,4 @@ last_synced: 2026-11-16
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
-
-### IMAGE · An opportunity map built by AI
-- Kicker: Ví dụ
-- Title: Opportunity map *do AI dựng*
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ví dụ opportunity map của project demo Travel Buddy, do AI dựng
-  - Đọc từ trên xuống: một vấn đề ở gốc, năm opportunity viết như câu hỏi How might we, rồi các design bet cần kiểm tra ở tầng cuối
-  - Opportunity được xếp từ 1 đến 5; design bet là cách giải, nằm dưới opportunity chứ không thay nó
-  - Chữ trong hình giữ tiếng Anh; hình minh hoạ, không phải dữ liệu của project app giao đồ ăn
-  - Opportunity đã chọn cần một chỗ để tìm lại sau này: insight hub
-- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
-
----
-
 
