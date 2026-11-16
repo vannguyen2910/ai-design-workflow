@@ -58,6 +58,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 ### Step 3 · Đưa insight lên hub
 
 - Tìm trong hub trước, để không thêm bản trùng. Chưa có thì thêm một entry cho insight đã qua Challenge: insight ID, source ID dẫn về, ngày, mức mạnh của evidence, tag, điều dữ liệu không cho biết và ý kiến trái chiều.
+- Làm theo ba bước: AI đề xuất vào một file md (mỗi dòng có nguồn, loại card, quan hệ tới card đã có, củng cố hay mâu thuẫn hay mới), bạn duyệt từng dòng (decision và thứ hạng do bạn quyết), rồi AI tạo card và chạy kiểm tra liên kết và ID.
 - Tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc. AI có thể gợi ý entry liên quan và tag; chỉ nhận entry có ID, và bạn duyệt trước khi thêm. AI không tự thêm insight vào hub.
 
 ## Phần B · Persona, journey map, opportunity
@@ -73,9 +74,9 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 
 ### Step 5 · Journey map · bạn liệt kê, AI soạn nháp, bạn kiểm tra
 
-- **Bạn liệt kê** các giai đoạn của persona trước, bắt đầu từ một flow chính.
+- **Bạn chuẩn bị:** chốt journey nào, actor nào, map phục vụ quyết định nào; đưa dữ liệu đã có (AI gom thành source notes có ID); rồi liệt kê các giai đoạn của persona, bắt đầu từ một flow chính.
 - **AI soạn nháp:** đề xuất bước còn thiếu và điền actions, cảm xúc, pain, insight ID từ insight của bạn. Đưa persona và insight vào, để AI không điền theo một nhóm người dùng chung chung.
-- **Bạn kiểm tra:** ô nào không có insight thì ghi "assumption". Đếm tỷ lệ ô assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp. Hỏi AI insight nào nằm ở điểm thấp nhất của đường cảm xúc. Mỗi pain một insight ID; không có thì xoá hoặc ghi assumption.
+- **Bạn kiểm tra:** ô nào không có insight thì ghi "assumption". Đếm tỷ lệ ô assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp. Bản nháp là một proto-journey; để team review chọn chỗ cần research thêm rồi mới vẽ thành hình. Lưu bản nháp là file md hoặc bảng, miễn mỗi ô có insight ID hoặc assumption. Hỏi AI insight nào nằm ở điểm thấp nhất của đường cảm xúc. Mỗi pain một insight ID; không có thì xoá hoặc ghi assumption.
 
 - **AI move 3, dựng map không persona rồi so:** dựng journey map hai lần, một lần chỉ từ insight, một lần từ insight cộng persona. Ô nào chỉ có ở bản có persona thì kiểm tra xem insight ID gắn vào có thật sự nói điều ô đó ghi không.
 - **AI move 4, tìm ô thiếu insight:** nhờ AI liệt kê ô không có insight hoặc có ID nhưng insight không nói điều đó, đếm tỷ lệ, và đề xuất câu hỏi phỏng vấn mở về hành vi quá khứ cho từng ô thiếu. Chọn một cách đếm và dùng nhất quán.

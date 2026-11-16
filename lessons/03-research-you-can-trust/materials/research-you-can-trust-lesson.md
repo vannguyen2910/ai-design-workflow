@@ -186,12 +186,14 @@ Chạy hai lần trên cùng các insight, một lần chỉ có yêu cầu gom 
 | **What** | Bản đồ các bước một persona đi qua để đạt một mục tiêu, với hành động, suy nghĩ, cảm xúc và chỗ đau ở từng bước |
 | **Why** | Cho thấy chỗ đau xảy ra ở bước nào và sau điều gì, thay vì một danh sách pain point rời rạc |
 | **When** | Sau persona, khi vấn đề trải dài qua nhiều bước, kênh hoặc thời gian. Không cần khi vấn đề nằm trong một màn hình |
-| **How with AI** | Bạn liệt kê các giai đoạn trước; AI đề xuất bước còn thiếu và điền ô từ insight. Ô nào không có insight được đánh dấu assumption, và bạn đếm tỷ lệ ô assumption |
+| **How with AI** | Ba bước. Bạn chuẩn bị: chốt journey nào, actor nào, map phục vụ quyết định nào, đưa dữ liệu đã có (AI gom thành source notes có ID) và liệt kê các giai đoạn. AI soạn nháp: đề xuất bước còn thiếu và điền ô từ insight, mỗi ô kèm insight ID. Bạn kiểm tra: ô nào không có insight thì ghi assumption, đếm tỷ lệ ô assumption, team review để chọn chỗ cần research thêm rồi mới vẽ thành hình |
 | **AI không làm** | Vẽ trọn một bản đồ từ kiến thức chung |
 
 ![Ví dụ journey map](../assets/journey-map-example.webp)
 
 **Phát hiện.** Không tìm thấy nghiên cứu đo độ chính xác của journey map do AI soạn. Nghiên cứu gần nhất là mind map do LLM tạo so với bản của designer: LLM nắm khái niệm trung tâm nhưng yếu ở phân cấp và bám ngữ cảnh. Hướng dẫn thực hành: pain point trên persona phải xuất hiện lại ở đúng bước gây ra nó, và chỗ suy đoán phải được đánh dấu.
+
+**Quy trình khi đã có insight** (gom từ các nguồn practitioner như NN/g và Smaply; mình chỉ đọc phần tóm tắt, chưa có nghiên cứu đo journey map do AI dựng): chốt phạm vi, gom dữ liệu đã có, dựng bản nháp giả thuyết, điền từng giai đoạn, tìm ô trống, team review. Bản nháp giống một proto-journey: ghi lại giả định, cần kiểm lại với người dùng thật. Định dạng bản nháp là file md hoặc bảng, miễn mỗi ô có insight ID hoặc ghi assumption; khoá dùng md vì script kiểm ID đọc được.
 
 **Suy luận.** Bản đồ trông đầy đủ ngay cả khi các bước là bịa, nên bài dạy bằng quy trình kiểm tra, không hứa độ chính xác. Assumption không phải lỗi; giấu assumption mới là lỗi.
 
@@ -212,6 +214,8 @@ Nhờ AI dựng journey map hai lần: một lần chỉ từ insight, một l�
 **Mức cơ sở: chưa có cơ sở.** Không tìm thấy nghiên cứu đo journey map do AI dựng; chỉ có bài của practitioner nói map do AI sinh là giả thuyết, không phải kết quả ([Renascence](https://www.renascence.io/journal/ai-journey-map-generators-what-they-fix-and-what-they-dont)). Đây là cách làm của khoá, chưa được đo.
 
 ### 3.2 AI move 4: Tìm ô thiếu insight
+
+Move này làm ở nhà (practice), không có slide riêng trên lớp; nó cũng là bước "tìm ô trống" của quy trình trên.
 
 Đưa AI journey map nháp và các insight, nhờ nó (1) liệt kê ô không có insight hoặc có ID nhưng insight không nói điều ô ghi, (2) đếm tỷ lệ, (3) đề xuất câu hỏi phỏng vấn mở về hành vi quá khứ cho từng ô thiếu. Trên bộ mẫu, AI tìm ra hai ô lệch căn cứ và năm ô trống (cả cột "Thanh toán"), kèm câu hỏi như "Hãy kể về lần gần nhất bạn thanh toán một đơn...". Hai cách đếm cho hai con số (2/10 hoặc 7/15), nên chọn một cách và dùng nhất quán. Mức "căn cứ không khớp" ở các ô sát ranh giới là đánh giá của AI, bạn có thể đọc chặt hơn.
 
@@ -275,6 +279,8 @@ Insight hub là một phần của Knowledge Hub của project (thư mục `insi
 | **When** | Đóng góp sau khi insight đã qua kiểm tra; tìm trong hub trước khi lên kế hoạch research mới |
 | **How with AI** | AI giúp tìm entry liên quan và gợi ý tag. Chỉ được trích entry có ID, và bạn duyệt trước khi thêm |
 | **AI không làm** | Tự thêm insight vào hub |
+
+**Ví dụ hub thật.** Hai ảnh trên lớp lấy từ hub của project demo Travel Buddy (không phải Delivery App): trang Insights liệt kê card theo loại (opportunity, hypothesis, metric, decision, evidence, finding) với ô tìm theo ID và ba chế độ xem Cards, Tree, Matrix; và trang một finding với các đường từ opportunity qua hypothesis và evidence tới finding, cùng bảng khu vực, mức nghiêm trọng và trạng thái.
 
 **Phát hiện.** Atomic research được đề xuất năm 2018 sau khi một team lặp lại nghiên cứu vì không tìm lại được câu trả lời cũ: finding chia thành đơn vị nhỏ có evidence và tag, và thói quen "kiểm tra repository trước" ngăn việc làm lại. Tag có kiểm soát giữ repository tìm được. NN/g ghi nhận chỉ một tỷ lệ nhỏ tổ chức có vai trò riêng để quản lý repository. Nguồn về atomic research chủ yếu là blog của agency và vendor.
 
