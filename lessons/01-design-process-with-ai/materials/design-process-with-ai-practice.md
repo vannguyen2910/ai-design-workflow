@@ -10,7 +10,7 @@ draft: true
 
 ## Goal
 
-Dựng nền cho cả chương trình: một repo và một project folder do bạn tự tổ chức, cho project của khoá. Cuối bài, folder có data rules, product context, README do AI soạn và bạn đã kiểm tra, và vài câu hỏi còn mở.
+Dựng nền cho cả chương trình: một repo và một project folder do bạn tự tổ chức, cho project của khoá. Cuối bài, folder có data rules, product context, README và `AGENTS.md` do AI soạn và bạn đã kiểm tra, và vài câu hỏi còn mở.
 
 Đây là folder làm việc của bạn, không phải bài nộp. Làm xong trước buổi practice trên lớp vào Chủ nhật.
 
@@ -46,14 +46,18 @@ Làm trước khi đưa bất kỳ thứ gì cho AI.
 - Viết bản đầu, nửa trang: bạn đang nghĩ đến sản phẩm hoặc giải pháp gì, ai dùng, job chính của họ. Chỗ nào chưa biết thì ghi "chưa biết". Lesson 2 và 3 sẽ sửa bản này.
 - Gửi cho giảng viên cây folder và file này theo kênh của lớp để nhận feedback sớm.
 
-### Step 4 · README do AI soạn · AI soạn nháp, bạn kiểm tra
+### Step 4 · README và AGENTS.md do AI soạn · AI soạn nháp, bạn kiểm tra
 
 - **AI soạn nháp:** trong AI coding tool, dùng instruction sau.
 
   > Đọc file product context và cấu trúc folder này. Soạn `README.md` cho project: project là gì, dành cho ai, folder có những gì và nên đọc file nào trước. Chỉ dùng những gì có trong folder. Chỗ nào chưa có thông tin, ghi "unknown". Không đoán.
 
 - **Bạn kiểm tra:** mỗi dòng trong README có đúng với folder và context của bạn không? Sửa chỗ sai, giữ chữ "unknown". Đừng tin dòng "xong rồi" của AI.
-- Nếu bạn muốn AI có luật riêng khi làm việc trong folder này (đọc gì trước, không đụng vào đâu), nhờ AI soạn thêm `AGENTS.md`. Đây là luật chứ không phải rào chắn kỹ thuật, nên file confidential vẫn để ngoài folder.
+- **AI soạn nháp `AGENTS.md`:** đây là schema của hub, một file ngắn cho AI biết đọc gì trước và không đụng vào đâu. Dùng instruction sau.
+
+  > Đọc folder này. Soạn `AGENTS.md` ngắn: thứ tự nên đọc file, folder không được đọc, và ba quy tắc cứng: không bao giờ sửa file nguồn gốc, mỗi note có một ID, quote phải nguyên văn. Chỉ ghi những gì bạn không tự suy ra được từ folder.
+
+- **Bạn kiểm tra:** ba quy tắc có trong file không? Viết lại từng quy tắc bằng lời của bạn và giữ file ngắn. Đây là luật chứ không phải rào chắn kỹ thuật, nên file confidential vẫn để ngoài folder.
 
 ### Step 5 · Chạy một instruction với file đã lưu · AI soạn nháp, bạn kiểm tra
 
@@ -79,6 +83,7 @@ Chỉ làm khi folder của bạn chỉ có dữ liệu giả. Gói GitHub miễ
 - Data rules
 - Product context (bản đầu)
 - README đã được bạn kiểm tra
+- `AGENTS.md` ngắn, có ba quy tắc viết bằng lời của bạn
 - Các câu hỏi còn mở
 - Tuỳ chọn: link trang live
 
@@ -87,6 +92,7 @@ Chỉ làm khi folder của bạn chỉ có dữ liệu giả. Gói GitHub miễ
 - [ ] Data rules viết bằng lời của bạn, và viết trước khi đưa tài liệu cho AI.
 - [ ] Product context đủ cụ thể để người ngoài hình dung được người dùng và tình huống.
 - [ ] Mỗi dòng của README bạn đã đối chiếu với folder.
+- [ ] Bạn nói được mỗi quy tắc trong `AGENTS.md` bảo vệ điều gì.
 
 ## If you get stuck
 
