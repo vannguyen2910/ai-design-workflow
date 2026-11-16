@@ -910,7 +910,7 @@ last_synced: 2026-11-16
   - Slide sau nói cách bạn set up note từ transcript của chính mình.
 
   > Bạn đã có nguồn nào ngoài phỏng vấn, như review hay bài trên forum, để thêm vào hub?
-- 🎨 Visual hint: DIAGRAM. Hai card nền trắng cùng rộng: transcript bên trái, source notes viền tím bên phải với một dòng định nghĩa và ba dòng mono.
+- 🎨 Visual hint: DIAGRAM. Hai card nền trắng cùng rộng: transcript bên trái, source notes viền ink bên phải với một dòng định nghĩa và bảng hai cột ID, text; ID in đậm, các dòng ngăn bằng đường kẻ.
 
 ---
 
