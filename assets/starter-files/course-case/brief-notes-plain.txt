@@ -1,0 +1,10 @@
+B01 | Mục tiêu quý này: tăng tỷ lệ khách mới đặt đơn thứ hai trong 30 ngày từ 41% lên 50%.
+B02 | Nhiều khách mới không đặt lại sau đơn đầu tiên. Giá là lý do chính khiến họ rời đi.
+B03 | Giải pháp đề xuất: thêm màn hình onboarding bốn bước để giới thiệu app cho khách mới.
+B04 | Gửi thông báo đẩy nhắc đặt lại vào ngày thứ 7 sau đơn đầu tiên.
+B05 | Khách mục tiêu là người 25 đến 40 tuổi, sống một mình hoặc với bạn đời.
+B06 | Quý này không đổi giá. Có hai designer, một squad kỹ sư, sáu tuần, trên iOS và Android.
+B07 | Email giảm giá quý trước có tác dụng rất ít lên tỷ lệ đặt lại.
+B08 | Tỷ lệ hủy đơn đầu tiên hiện là 18%. Nếu vượt 22% thì rollback.
+B09 | Khách mới thường không hiểu cách app hoạt động nên bỏ đi. Onboarding sẽ giải quyết việc này.
+B10 | Thành công là khi chỉ số đặt lại tăng và người dùng hài lòng với đơn đầu tiên.
