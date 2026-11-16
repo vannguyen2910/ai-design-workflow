@@ -18,7 +18,7 @@ last_synced: 2026-11-16
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
-| Timing note | Bốn slide hub mới (ba lớp, ba quy tắc, một hub một chức năng, ID chung) thêm khoảng 10 phút; cần bớt tương ứng ở phần nghề (T1), hỏi đáp cuối buổi hoặc slide ví dụ trước khi dạy, và Winnie quyết định bớt chỗ nào |
+| Timing note | Bốn slide hub mới (ba lớp, ba quy tắc, một hub một chức năng, ID chung) thêm khoảng 10 phút; phần nghề (T1) giữ nguyên theo quyết định của Winnie (2026-11-16); cần bớt tương ứng ở hỏi đáp cuối buổi, các slide ví dụ hoặc phần agent trước khi dạy, và Winnie quyết định bớt chỗ nào |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
