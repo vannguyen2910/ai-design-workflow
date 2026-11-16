@@ -220,13 +220,13 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .route-line path{fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s var(--ease);vector-effect:non-scaling-stroke}
 .route.in .route-line path{stroke-dashoffset:0}
 .wk{position:relative;z-index:1;flex:none;width:300px;border-radius:var(--r-lg);padding:26px;scroll-snap-align:center;color:var(--ink);transition:transform .5s var(--ease);user-select:none}
-.wk:nth-child(1){background:var(--chartreuse);transform:rotate(-2deg)}
-.wk:nth-child(2){background:#fff;margin-top:70px;transform:rotate(1.5deg)}
-.wk:nth-child(3){background:var(--pink);margin-top:10px;transform:rotate(-1.5deg)}
-.wk:nth-child(4){background:var(--indigo);color:#fff;margin-top:80px;transform:rotate(2deg)}
-.wk:nth-child(5){background:var(--chartreuse);margin-top:20px;transform:rotate(-2deg)}
-.wk:nth-child(6){background:#fff;margin-top:70px;transform:rotate(1.5deg)}
-.wk:nth-child(7){background:var(--pink);margin-top:10px;transform:rotate(-1.5deg)}
+.wk:nth-of-type(1){background:var(--chartreuse);transform:rotate(-2deg)}
+.wk:nth-of-type(2){background:#fff;margin-top:70px;transform:rotate(1.5deg)}
+.wk:nth-of-type(3){background:var(--pink);margin-top:10px;transform:rotate(-1.5deg)}
+.wk:nth-of-type(4){background:var(--indigo);color:#fff;margin-top:80px;transform:rotate(2deg)}
+.wk:nth-of-type(5){background:var(--chartreuse);margin-top:20px;transform:rotate(-2deg)}
+.wk:nth-of-type(6){background:#fff;margin-top:70px;transform:rotate(1.5deg)}
+.wk:nth-of-type(7){background:var(--pink);margin-top:10px;transform:rotate(-1.5deg)}
 .route-wrap{position:relative}
 .route-wrap::after{content:"";position:absolute;top:0;right:0;bottom:60px;width:clamp(48px,10vw,140px);background:linear-gradient(90deg,#14123a00,var(--ink));pointer-events:none;transition:opacity .4s}
 .route-wrap.end::after{opacity:0}
@@ -248,8 +248,9 @@ details[open]>.more-btn .ms{transform:rotate(45deg)}
 .wk details{margin-top:18px}
 .wk .more-btn{border-bottom-color:currentColor}
 .wk .d{margin-top:14px;font-size:.93rem;line-height:1.55;animation:fade .5s var(--ease)}
+.wk ul.d{padding-left:18px;display:grid;gap:6px}.wk ul.d li{list-style:disc}
 .wk .out{margin-top:14px;padding-top:14px;border-top:1.5px solid #14123a33;font-size:.88rem;font-weight:700;line-height:1.5}
-.wk:nth-child(4) .out{border-top-color:#ffffff44}
+.wk:nth-of-type(4) .out{border-top-color:#ffffff44}
 .wk .out b{display:block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-bottom:4px}
 
 /* Dành cho ai: một khối đậm, một cột nhẹ */
@@ -506,15 +507,16 @@ html{scroll-behavior:auto}
       <p class="sub">Hãy tự do sáng tạo cho workflow của chính bạn hoặc team của bạn.</p>
     </div>
     <div class="rail"><div class="track" id="track">
-      <button class="shot" data-t="Central Hub" data-c="Tổng quan project: số liệu, gate và cảnh báo thiếu bằng chứng."><img src="img/knowledge-hub-overview.webp" alt="Central Hub" loading="lazy"></button>
-      <button class="shot" data-t="Insights Page" data-c="Mọi insight truy ngược được về quote gốc."><img src="img/knowledge-hub-insights.webp" alt="Insights Page" loading="lazy"></button>
-      <button class="shot" data-t="Journey Map" data-c="Hành trình người dùng, mỗi giai đoạn gắn opportunity và KPI."><img src="img/journey-map.png" alt="Journey Map" loading="lazy"></button>
-      <button class="shot" data-t="Opportunity Map" data-c="Từ vấn đề đến năm cơ hội và những giả thuyết cần test."><img src="img/opportunity-map.png" alt="Opportunity Map" loading="lazy"></button>
-      <button class="shot" data-t="Process Map" data-c="Luồng đi của một chuyến đi, chia theo từng vai trò."><img src="img/process-map.png" alt="Process Map" loading="lazy"></button>
-      <button class="shot" data-t="AI Prototype" data-c="Prototype chạy được, dựng bằng AI theo design system."><img src="img/prototype-welcome-screen.webp" alt="AI Prototype" loading="lazy"></button>
-      <button class="shot" data-t="UX Audit" data-c="Đánh giá solution hoặc bản đã build theo các principles."><img src="img/ux-audit.png" alt="UX Audit" loading="lazy"></button>
+      <button class="shot" data-t="Workspace Repo" data-c="Bộ nhớ của project: AI đọc hết context nên không phải giải thích lại từ đầu."><img src="img/github-workspace-repo.webp" alt="Workspace Repo" loading="lazy"></button>
+      <button class="shot" data-t="Project Workspace" data-c="AI đọc, viết và cập nhật tài liệu ngay trong project, bạn là người duyệt."><img src="img/workspace-work.webp" alt="Project Workspace" loading="lazy"></button>
+      <button class="shot" data-t="Insights Page" data-c="Đưa ghi chú phỏng vấn cho AI, nó rút insight và gắn quote gốc, bạn duyệt."><img src="img/knowledge-hub-insights.webp" alt="Insights Page" loading="lazy"></button>
+      <button class="shot" data-t="Journey Map" data-c="AI dựng journey từ insight, gắn sẵn opportunity và KPI cho từng giai đoạn."><img src="img/journey-map.png" alt="Journey Map" loading="lazy"></button>
+      <button class="shot" data-t="Opportunity Map" data-c="AI đề xuất cơ hội và giả thuyết từ vấn đề, bạn chọn cái đáng test."><img src="img/opportunity-map.png" alt="Opportunity Map" loading="lazy"></button>
+      <button class="shot" data-t="Process Map" data-c="AI vẽ luồng theo từng vai trò từ mô tả của bạn, sửa bằng một câu."><img src="img/process-map.png" alt="Process Map" loading="lazy"></button>
+      <button class="shot" data-t="AI Prototype" data-c="AI dựng prototype chạy được từ flow có sẵn, theo đúng design system."><img src="img/prototype-welcome-screen.webp" alt="AI Prototype" loading="lazy"></button>
+      <button class="shot" data-t="UX Audit" data-c="AI chấm solution hoặc bản đã build theo các principles, chỉ ra lỗi và cách sửa."><img src="img/ux-audit.png" alt="UX Audit" loading="lazy"></button>
     </div></div>
-    <div class="cap"><div class="cap-in"><span class="cap-n" id="capn">01 / 07</span><div class="cap-t"><b id="capt">Central Hub</b><span id="capc">Tổng quan project</span></div><div class="cap-bar"><i id="capbar"></i></div></div><div class="cap-btns"><button class="cap-btn" id="sprev" aria-label="Trước"><span class="ms">arrow_back</span></button><button class="cap-btn" id="snext" aria-label="Sau"><span class="ms">arrow_forward</span></button></div></div>
+    <div class="cap"><div class="cap-in"><span class="cap-n" id="capn">01 / 08</span><div class="cap-t"><b id="capt">Workspace Repo</b><span id="capc">Bộ nhớ của project: AI đọc hết context nên không phải giải thích lại từ đầu.</span></div><div class="cap-bar"><i id="capbar"></i></div></div><div class="cap-btns"><button class="cap-btn" id="sprev" aria-label="Trước"><span class="ms">arrow_back</span></button><button class="cap-btn" id="snext" aria-label="Sau"><span class="ms">arrow_forward</span></button></div></div>
   </div>
 </section>
 <dialog class="reg" id="reg"><div class="reg-in">
@@ -544,13 +546,13 @@ html{scroll-behavior:auto}
   </div>
   <div class="route-wrap"><div class="route" id="route"><div class="route-in">
     <svg class="route-line" viewBox="0 0 2400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 230 C 200 80, 330 80, 520 220 S 840 400, 1060 230 S 1380 70, 1600 220 S 1960 400, 2160 240 S 2330 130, 2400 190"/></svg>
-    <article class="wk"><div class="top"><span>Tuần 1</span><span>Foundation</span></div><h3>Quy trình thiết kế với AI</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Nghề đang đi đâu. AI giúp được gì ở từng stage và còn yếu ở đâu. Dữ liệu nào an toàn để đưa cho AI.</p><div class="out"><b>Cuối tuần bạn có</b>Project folder, quy tắc dữ liệu riêng, Knowledge Hub bắt đầu, ghi chú hướng đi nghề của bạn</div></details></article>
-    <article class="wk"><div class="top"><span>Tuần 2</span><span>Discover</span></div><h3>Hiểu vấn đề</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Bắt đầu từ business question, không phải từ brief có sẵn. Tách điều đã xác nhận khỏi giả định. Chuẩn bị phỏng vấn người dùng.</p><div class="out"><b>Cuối tuần bạn có</b>Design principles để AI đối chiếu, câu hỏi nghiên cứu, danh sách giả định, phân tích đối thủ</div></details></article>
-    <article class="wk"><div class="top"><span>Tuần 3</span><span>Discover · Define</span></div><h3>Insight đáng tin</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Tổng hợp quote cùng AI mà vẫn giữ nguyên văn. Persona, journey map, opportunity: mỗi dòng dẫn về một quote có ID. Đóng gói bước tổng hợp thành agent để dùng lại.</p><div class="out"><b>Cuối tuần bạn có</b>Evidence pack và problem brief</div></details></article>
-    <article class="wk"><div class="top"><span>Tuần 4</span><span>Define · Develop</span></div><h3>Khám phá ý tưởng</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Từ opportunity đến solution: viết How might we, bạn nghĩ trước rồi AI mở rộng. Concept sketch trên giấy, rồi user flow và process map. Đóng gói quy trình thành skill.</p><div class="out"><b>Cuối tuần bạn có</b>Ba hướng khác nhau thật sự, một hướng đã chọn có lý do, user flow và process map</div></details></article>
-    <article class="wk"><div class="top"><span>Tuần 5</span><span>Develop</span></div><h3>AI prototyping</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Viết design system notes, rules file và skill để AI dựng đúng design system của bạn mỗi lần. Dựng luồng chính từng màn hình. Kiểm tra những gì AI thật sự đã sửa.</p><div class="out"><b>Cuối tuần bạn có</b>Prototype dựng theo design system của bạn, sẵn sàng đem đi test</div></details></article>
-    <article class="wk"><div class="top"><span>Tuần 6</span><span>Test</span></div><h3>Test với người dùng thật</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">UX audit, metrics, test plan, phân tích kết quả. Vì sao người dùng do AI mô phỏng không thay được người dùng thật.</p><div class="out"><b>Cuối tuần bạn có</b>Prototype đã test và sửa theo finding, bài trình bày project, Knowledge Hub đầy đủ</div></details></article>
-    <article class="wk"><div class="top"><span>Buổi 12</span><span>Wrap-up</span></div><h3>Reflection và wrap-up</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><p class="d">Trình bày project, quyết định phần workflow nào giữ, chỉnh hoặc bỏ, và xem lại hướng đi nghề bạn viết ở tuần 1.</p></details></article>
+    <article class="wk"><div class="top"><span>Tuần 1</span><span>Foundation</span></div><h3>Quy trình thiết kế với AI</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><ul class="d"><li>Thấy rõ AI đang đổi nghề thiết kế thế nào, và chọn hướng đi của bạn</li><li>Biết AI làm được gì ở từng bước của quy trình, và việc nào vẫn là của bạn</li><li>Dùng AI đúng cách: nó thấy gì, khi nào nó bịa, dữ liệu nào an toàn đưa cho nó</li><li>Dựng nơi làm việc chung để bạn và AI cùng làm project, lưu bằng GitHub</li></ul><div class="out"><b>Cuối tuần bạn có</b>Project folder, quy tắc dữ liệu riêng, Knowledge Hub bắt đầu, ghi chú hướng đi nghề của bạn</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 2</span><span>Discover</span></div><h3>Hiểu vấn đề</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><ul class="d"><li>Dạy AI nguyên tắc thiết kế của riêng bạn, mọi thứ nó làm sau đó đều theo chuẩn của bạn</li><li>Nhờ AI soi brief và lôi ra những giả định chưa ai kiểm chứng</li><li>Để AI soạn câu hỏi phỏng vấn và chạy thử, bạn chỉ cần chỉnh lại</li></ul><div class="out"><b>Cuối tuần bạn có</b>Nguyên tắc thiết kế của bạn, brief đã kiểm tra, danh sách câu hỏi nghiên cứu</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 3</span><span>Discover · Define</span></div><h3>Insight đáng tin</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><ul class="d"><li>Giao AI đọc hết ghi chú phỏng vấn, bạn nhận về insight, persona và journey map</li><li>Mỗi kết luận gắn với lời người dùng thật, AI không được tự bịa</li><li>Biết khi nào tin AI và khi nào phải kiểm lại</li></ul><div class="out"><b>Cuối tuần bạn có</b>Persona, journey map, opportunity map, mỗi dòng truy được về insight gốc</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 4</span><span>Define · Develop</span></div><h3>Khám phá ý tưởng</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><ul class="d"><li>AI tung ra hàng loạt ý tưởng giải pháp từ cơ hội của bạn, bạn chọn hướng đáng làm</li><li>Bạn nghĩ trước, AI mở rộng sau, để ý tưởng vẫn là của bạn</li><li>Phác concept trên giấy, rồi để AI vẽ luồng người dùng và những gì diễn ra phía sau</li></ul><div class="out"><b>Cuối tuần bạn có</b>Ý tưởng giải pháp, concept sketch và luồng người dùng cho hướng đã chọn</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 5</span><span>Develop</span></div><h3>AI prototyping</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><ul class="d"><li>Dạy AI design system của bạn một lần, mọi màn hình nó dựng sau đều nhất quán</li><li>AI dựng prototype chạy được cho luồng chính, bạn chỉnh và duyệt</li><li>Kiểm tra AI làm có đúng không, vì nhanh chưa có nghĩa là đúng</li></ul><div class="out"><b>Cuối tuần bạn có</b>Prototype chạy được do AI dựng theo design system của bạn, sẵn sàng đem đi test</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 6</span><span>Test</span></div><h3>Test với người dùng thật</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><ul class="d"><li>Để AI rà prototype tìm lỗi trải nghiệm trước khi bạn mời người dùng</li><li>Test với 3 đến 5 người thật bạn tự tìm, phần mà AI không thay được</li><li>AI gom và phân tích ghi chú, bạn quyết định sửa gì và bàn giao cho người build</li></ul><div class="out"><b>Cuối tuần bạn có</b>Prototype đã test và sửa theo kết quả, tài liệu bàn giao cho người build tiếp</div></details></article>
+    <article class="wk"><div class="top"><span>Tuần 7</span><span>Showcase</span></div><h3>Showcase outcome và reflection</h3><details><summary class="more-btn">Chi tiết <span class="ms">add</span></summary><ul class="d"><li>Trình bày project hoàn chỉnh làm cùng AI, từ vấn đề đến prototype</li><li>Quyết định phần workflow AI nào giữ, chỉnh hay bỏ</li><li>Xem lại hướng đi nghề bạn viết ở tuần 1</li></ul><div class="out"><b>Cuối tuần bạn có</b>Bài trình bày project, Knowledge Hub đầy đủ, workflow bạn sẽ dùng tiếp</div></details></article>
   </div></div>
   <div class="route-hint"><span class="bar"><i id="rbar"></i></span><div class="arrows"><button id="prev" aria-label="Trước"><span class="ms">arrow_back</span></button><button id="next" aria-label="Sau"><span class="ms">arrow_forward</span></button></div></div>
   </div>
