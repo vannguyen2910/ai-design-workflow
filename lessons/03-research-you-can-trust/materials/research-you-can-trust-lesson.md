@@ -287,7 +287,7 @@ Insight hub là một phần của Knowledge Hub của project (thư mục `insi
 
 **Từ ghi chú đến card trên hub.** Page Insights của hub không do AI gõ cả trang; nó được build từ các card, mỗi file một card có ID trong thư mục `insights/`. AI làm card, script dựng page. Decision, Insight, Challenge và Opportunity đều là card: decision là decision card, insight là evidence hoặc finding card, challenge là ghi chú mâu thuẫn trên card insight (không gộp, không xoá), opportunity là opportunity card; quan hệ giữa chúng là các ID. Ba bước, theo workflow `add-insights` của workspace:
 
-1. AI đề xuất một bảng, chưa tạo file. Mỗi dòng có nguồn, loại card, quan hệ tới card đã có, và đánh dấu củng cố, mâu thuẫn hay mới.
+1. AI đề xuất vào một file md (một bảng), chưa tạo card. Mỗi dòng có nguồn, loại card, quan hệ tới card đã có, và đánh dấu củng cố, mâu thuẫn hay mới.
 2. Bạn duyệt: giữ, sửa hoặc cắt từng dòng. Decision và thứ hạng do bạn quyết, AI không tự đặt decision thành accepted.
 3. AI tạo card bằng lệnh, rồi chạy kiểm tra để bắt card thiếu liên kết hoặc ID không tồn tại.
 
