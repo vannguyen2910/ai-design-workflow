@@ -65,7 +65,7 @@ last_synced: 2026-11-16
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Sáu phút, cả lớp; mỗi người nói tên và một câu, khoảng bốn mươi giây
+  - Bốn phút, cả lớp; mỗi người nói tên và một câu, khoảng ba mươi giây
   - Ghi lại hai điều mỗi người kể: đã đưa gì cho AI, và đã kiểm tra kết quả bằng cách nào (hoặc không kiểm tra)
   - Giữ ghi chú này để dùng lại ở phần synthesis: đối chiếu cách mỗi người đang làm với quy trình kiểm tra hôm nay
 
@@ -1065,43 +1065,12 @@ last_synced: 2026-11-16
 
 ---
 
-### NUMBERED · AI across the four steps
-- Kicker: Tóm tắt
-- Title: AI chạy xuyên *cả bốn bước*
-- On-slide:
-  - Insight
-  - Đầu vào
-  - Insight có ID, đã qua kiểm tra.
-  - Đầu ra
-  - Mỗi đầu ra của AI là một file markdown, mỗi dòng mang insight ID.
-  - Persona
-  - AI làm
-  - Gom theme, soạn các dòng persona.
-  - Bạn kiểm tra
-  - Đối chiếu từng dòng với insight ID.
-  - Journey map
-  - Đề xuất bước còn thiếu, điền ô từ insight.
-  - Ô không có insight thì ghi assumption.
-  - Opportunity
-  - Viết lại sticky thành nhu cầu.
-  - Chạy test ba giải pháp, rồi chọn.
-- Ví dụ: Không cần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Gom lại cả buổi: AI chạy xuyên bốn bước, nhưng mỗi bước vẫn có một việc bạn phải làm
-  - Insight là đầu vào đã kiểm tra, có ID; từ đây mỗi đầu ra của AI là một file markdown, mỗi dòng mang insight ID
-  - Persona: AI gom theme và soạn dòng, bạn đối chiếu với insight ID. Journey map: AI đề xuất bước còn thiếu, ô không có insight thì ghi assumption. Opportunity: AI viết lại sticky thành nhu cầu, bạn chạy test ba giải pháp rồi chọn
-  - Phần đóng gói thành agent nằm ở Appendix. Tiếp theo là Q&A
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
-
----
-
 ## 7. Q&A, practice and close
 
 ---
 
 ### Q&A · Q&A
-- Kicker: Hỏi đáp · 8 phút
+- Kicker: Hỏi đáp · 5 phút
 - Title: Q&A
 - On-slide:
   - Bốn câu hỏi hay gặp
@@ -1115,8 +1084,8 @@ last_synced: 2026-11-16
   - Bốn câu còn lại mà mọi người hay hỏi khi dùng AI cho research; năm câu đầu đã trả lời ở Lesson 2
   - Câu nào chưa có nguồn đo thì nói thẳng là chưa có; câu nào trả lời bằng suy luận chứ không bằng số đo thì nói rõ
   - Câu hỏi mới được ghi vào cheat sheet cho lớp sau
-  - Tám phút; cheat sheet ở slide sau chiếu trong lúc hỏi đáp
-  - Khi quá giờ, phần này rút còn năm phút và câu còn lại để cho buổi practice trên lớp
+  - Năm phút; cheat sheet ở slide sau chiếu trong lúc hỏi đáp
+  - Hết năm phút thì câu còn lại để cho buổi practice trên lớp
 
   > Câu nào bạn thấy chưa rõ thì hỏi câu đó
 - 🎨 Visual hint: TWO CARDS. Nửa vàng với tiêu đề Q&A, và bốn câu hỏi hay gặp.
@@ -1758,3 +1727,33 @@ last_synced: 2026-11-16
 
 ---
 
+### NUMBERED · AI across the four steps
+- Kicker: Tóm tắt
+- Title: AI chạy xuyên *cả bốn bước*
+- On-slide:
+  - Insight
+  - Đầu vào
+  - Insight có ID, đã qua kiểm tra.
+  - Đầu ra
+  - Mỗi đầu ra của AI là một file markdown, mỗi dòng mang insight ID.
+  - Persona
+  - AI làm
+  - Gom theme, soạn các dòng persona.
+  - Bạn kiểm tra
+  - Đối chiếu từng dòng với insight ID.
+  - Journey map
+  - Đề xuất bước còn thiếu, điền ô từ insight.
+  - Ô không có insight thì ghi assumption.
+  - Opportunity
+  - Viết lại sticky thành nhu cầu.
+  - Chạy test ba giải pháp, rồi chọn.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Gom lại cả buổi: AI chạy xuyên bốn bước, nhưng mỗi bước vẫn có một việc bạn phải làm
+  - Insight là đầu vào đã kiểm tra, có ID; từ đây mỗi đầu ra của AI là một file markdown, mỗi dòng mang insight ID
+  - Persona: AI gom theme và soạn dòng, bạn đối chiếu với insight ID. Journey map: AI đề xuất bước còn thiếu, ô không có insight thì ghi assumption. Opportunity: AI viết lại sticky thành nhu cầu, bạn chạy test ba giải pháp rồi chọn
+  - Phần đóng gói thành agent nằm ở Appendix. Tiếp theo là Q&A
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+
+---
