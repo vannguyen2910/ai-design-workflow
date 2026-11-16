@@ -893,8 +893,8 @@ last_synced: 2026-11-16
 - On-slide:
   - Transcript đã ẩn danh: nguồn gốc, không ai sửa
   - Source notes: R03, F04, I01-01 dạng ID | text
-  - Mỗi note một ý, một ID, một dòng, giữ nguyên lời người nói
-  - Ví dụ lấy từ bộ mẫu Delivery App: R là review, F là bài trên forum, I01-01 là note 1 của buổi phỏng vấn 1
+  - Cách set up: 1 Cắt (một ý, một note), 2 Chép (giữ nguyên lời người nói), 3 Đặt ID (loại nguồn, buổi, số thứ tự: I01-03), 4 Lưu (một dòng, dạng ID | text)
+  - Ví dụ lấy từ bộ mẫu Delivery App. R là review, F là bài trên forum, I01-01 là note 1 của buổi phỏng vấn 1
 - Ví dụ: có (ba note từ bộ mẫu Delivery App)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -908,6 +908,12 @@ last_synced: 2026-11-16
     - F (forum): bài đăng của khách trên forum người dùng, F01 đến F08. Thường kể lại một tình huống hoặc hỏi nhờ người khác.
     - I (interview): trích từ hai buổi phỏng vấn, I01-01 đến I02-03. Số sau chữ I là buổi phỏng vấn và thứ tự note, nên I01-03 là note thứ 3 của buổi 1.
   - Khác nhau ở chỗ: R và F là điều khách tự nói, bạn không hỏi thêm được. I là buổi bạn trực tiếp hỏi và hỏi sâu được, nhưng mẫu chỉ có hai buổi. Vì vậy một insight dựa trên cả ba loại nguồn đáng tin hơn một insight chỉ dựa trên một loại.
+  - Cách set up note của bạn, bốn bước như dải dưới slide:
+    - Cắt: đọc transcript và chọn những câu mang một ý. Mỗi ý là một note, nên một câu dài mang hai ý thì tách thành hai note.
+    - Chép: giữ nguyên lời người nói, kể cả câu dở dang. Không tóm tắt, không sửa chính tả, vì quote ở bước sau phải khớp với note này từng chữ.
+    - Đặt ID: chữ cái cho biết loại nguồn, rồi số buổi, rồi số thứ tự. Với phỏng vấn của bạn, chữ cái là I, nên buổi 2 note 5 là I02-05. Đã đặt ID thì không đổi số và không dùng lại, để insight đã trích vẫn trỏ đúng note.
+    - Lưu: mỗi note một dòng, dạng ID | text, đúng như trên slide.
+  - Hai buổi phỏng vấn cho khoảng 10 đến 20 note là đủ. Bạn có thể nhờ AI cắt giúp, nhưng phải so từng note với transcript, vì AI hay diễn giải lại lời người nói. R và F chỉ cần khi bạn có thêm review hoặc bài trên forum của sản phẩm.
   - Chưa phỏng vấn được hai người thì dùng các note phỏng vấn mẫu, và ghi rõ trong hub đó là dữ liệu mẫu.
 
   > Câu nào trong transcript đầu tiên của bạn sẽ thành note I01-01?
