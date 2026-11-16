@@ -990,6 +990,7 @@ last_synced: 2026-11-16
 
   > Hypothesis nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?
 - 🎨 Visual hint: COMPARE. Hai card cùng cấu trúc: nhãn, prompt, đường kẻ, tiêu đề, rồi ba hàng Mở đầu, Bốn lý do, Giá; card lần 2 viền tím.
+
 ---
 
 ## 7. Hub, Q&A, practice and close
@@ -1001,6 +1002,7 @@ last_synced: 2026-11-16
 - Title: Những gì vào *hub trong lesson này*
 - On-slide:
   - Năm thứ vào hub: Principles, Scope, Assumption map, Research questions, Source notes
+  - Năm card cùng chiều ngang và cùng kiểu, không card nào được nhấn
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
