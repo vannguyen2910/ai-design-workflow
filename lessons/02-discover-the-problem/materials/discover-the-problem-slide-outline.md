@@ -2,7 +2,7 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 55
+slide_count: 56
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
@@ -893,31 +893,51 @@ last_synced: 2026-11-16
 - On-slide:
   - Transcript đã ẩn danh: nguồn gốc, không ai sửa
   - Source notes: R03, F04, I01-01 dạng ID | text
-  - Cách set up: 1 Cắt (một ý, một note), 2 Chép (giữ nguyên lời người nói), 3 Đặt ID (loại nguồn, buổi, số thứ tự: I01-03), 4 Lưu (một dòng, dạng ID | text)
+  - Mỗi note một dòng, dạng ID | text, và giữ nguyên lời người nói
   - Ví dụ lấy từ bộ mẫu Delivery App. R là review, F là bài trên forum, I01-01 là note 1 của buổi phỏng vấn 1
 - Ví dụ: có (ba note từ bộ mẫu Delivery App)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Slide trước nói phần này làm gì. Slide này cho thấy ingest một transcript trông như thế nào.
   - Ingest là đưa một nguồn vào hub, thành dạng AI dùng được và bạn kiểm tra được. Ba việc theo thứ tự trên slide:
-    - Transcript đã ẩn danh là nguồn gốc (raw source), bạn không sửa nó
-    - Bạn cắt nó thành source notes: mỗi note một ý, một ID, giữ nguyên lời người nói
-    - Mỗi note một dòng, dạng ID | text. Định dạng này cố định để chương trình đọc được, còn folder bạn sắp xếp thế nào cũng được
+    - Transcript đã ẩn danh là nguồn gốc (raw source), bạn không sửa nó.
+    - Bạn cắt nó thành source notes: mỗi note một ý, một ID, giữ nguyên lời người nói.
+    - Mỗi note một dòng, dạng ID | text. Định dạng này cố định để chương trình đọc được, còn folder bạn sắp xếp thế nào cũng được.
   - Ba note trên slide lấy từ bộ mẫu Delivery App. Bộ mẫu có 24 note, và chữ cái đầu của ID cho biết note đến từ loại nguồn nào:
     - R (review): review của khách trên app store, R01 đến R10. Khách tự viết, ngắn, không ai hỏi thêm.
     - F (forum): bài đăng của khách trên forum người dùng, F01 đến F08. Thường kể lại một tình huống hoặc hỏi nhờ người khác.
     - I (interview): trích từ hai buổi phỏng vấn, I01-01 đến I02-03. Số sau chữ I là buổi phỏng vấn và thứ tự note, nên I01-03 là note thứ 3 của buổi 1.
   - Khác nhau ở chỗ: R và F là điều khách tự nói, bạn không hỏi thêm được. I là buổi bạn trực tiếp hỏi và hỏi sâu được, nhưng mẫu chỉ có hai buổi. Vì vậy một insight dựa trên cả ba loại nguồn đáng tin hơn một insight chỉ dựa trên một loại.
-  - Cách set up note của bạn, bốn bước như dải dưới slide:
+  - Slide sau nói cách bạn set up note từ transcript của chính mình.
+
+  > Bạn đã có nguồn nào ngoài phỏng vấn, như review hay bài trên forum, để thêm vào hub?
+- 🎨 Visual hint: DIAGRAM. Hai card nền trắng: transcript bên trái, source notes viền tím bên phải với ba dòng mono.
+
+---
+
+### NUMBERED · Set up source notes
+- Kicker: Ingest
+- Title: Set up\n*source notes*
+- On-slide:
+  - 1 Cắt: một ý, một note. Câu có hai ý thì tách thành hai note
+  - 2 Chép: giữ nguyên lời người nói. Không tóm tắt, không sửa chính tả
+  - 3 Đặt ID: loại nguồn, buổi, số thứ tự. I02-05 là note 5 của buổi phỏng vấn 2
+  - 4 Lưu: mỗi note một dòng, dạng ID | text
+  - Đã đặt ID thì không đổi và không dùng lại, để insight đã trích vẫn trỏ đúng note
+- Ví dụ: có (I02-05)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước cho thấy transcript thành source notes trông thế nào. Slide này trả lời: bạn set up note từ transcript của mình ra sao?
+  - Bốn bước:
     - Cắt: đọc transcript và chọn những câu mang một ý. Mỗi ý là một note, nên một câu dài mang hai ý thì tách thành hai note.
     - Chép: giữ nguyên lời người nói, kể cả câu dở dang. Không tóm tắt, không sửa chính tả, vì quote ở bước sau phải khớp với note này từng chữ.
     - Đặt ID: chữ cái cho biết loại nguồn, rồi số buổi, rồi số thứ tự. Với phỏng vấn của bạn, chữ cái là I, nên buổi 2 note 5 là I02-05. Đã đặt ID thì không đổi số và không dùng lại, để insight đã trích vẫn trỏ đúng note.
-    - Lưu: mỗi note một dòng, dạng ID | text, đúng như trên slide.
+    - Lưu: mỗi note một dòng, dạng ID | text. Định dạng này cố định để chương trình đọc được, còn folder bạn sắp xếp thế nào cũng được.
   - Hai buổi phỏng vấn cho khoảng 10 đến 20 note là đủ. Bạn có thể nhờ AI cắt giúp, nhưng phải so từng note với transcript, vì AI hay diễn giải lại lời người nói. R và F chỉ cần khi bạn có thêm review hoặc bài trên forum của sản phẩm.
   - Chưa phỏng vấn được hai người thì dùng các note phỏng vấn mẫu, và ghi rõ trong hub đó là dữ liệu mẫu.
 
   > Câu nào trong transcript đầu tiên của bạn sẽ thành note I01-01?
-- 🎨 Visual hint: DIAGRAM. Hai card nền trắng: transcript bên trái, source notes viền tím bên phải với ba dòng mono.
+- 🎨 Visual hint: NUMBERED. Bốn hàng ngang ngăn cách bằng đường kẻ: số lớn, tên bước và quy tắc, ví dụ dạng mono.
 
 ---
 
