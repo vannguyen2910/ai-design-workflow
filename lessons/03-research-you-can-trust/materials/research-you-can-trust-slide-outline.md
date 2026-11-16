@@ -104,6 +104,7 @@ last_synced: 2026-11-11
     - Bốn câu hỏi về dữ liệu trước khi đưa cho AI: participant đã đồng ý gì, công ty cho phép công cụ nào, công cụ có học từ dữ liệu không, đã ẩn danh trên máy chưa.
     - Bộ nguyên tắc cho AI và scope, assumption, research question từ các buổi trước.
     - Còn thiếu: insight đã kiểm tra. Hôm nay đi từ source notes đến đó bằng ba bước, Decision, Insight, Challenge.
+  - Bộ source notes còn thiếu note nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng ID | text, đặt ID mới và không dùng lại ID cũ. Việc chạy blind synthesis trên note của bạn nằm ở practice, Step 1. Slide cách set up note ở Lesson 2 được chuyển xuống Appendix, dùng khi lớp cần ôn.
   - Persona, journey map và opportunity đều dựng từ insight. Nếu insight chưa qua Challenge thì mọi thứ phía sau chưa kiểm tra, nên mình bắt đầu từ synthesis.
 
   > Bạn đã có source notes có ID từ Lesson 2 chưa? Có hoặc không, gõ vào chat.
@@ -153,39 +154,6 @@ last_synced: 2026-11-11
   - Phần 1: synthesis, từ source notes đến một insight đã kiểm tra
   - Mọi insight phải dẫn về một source ID
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
-
----
-
-### PROCESS · From transcript to source notes
-- Kicker: Bước 1
-- Title: Bắt đầu từ *ghi chú nguồn của bạn*
-- On-slide:
-  - Source notes từ Lesson 2
-  - Buổi phỏng vấn P1
-  - Đã cắt và kiểm tra quote ở Lesson 2. Thiếu note nào thì cắt thêm từ transcript đã ẩn danh.
-  - I01-01
-  - Đặt vào Chủ nhật, chạm vào khung giờ đầu tiên hiện ra.
-  - I01-02
-  - Đi hết menu mà không thấy chỗ bỏ qua một tuần, nhắn cho support.
-  - I01-03
-  - Một ý, một ID, lời người nói giữ nguyên ngữ cảnh.
-  - Quy tắc
-  - Mỗi ghi chú một ý, một ID. Ghi điều họ nói và làm, không thêm diễn giải.
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Bạn đã cắt transcript thành ghi chú nguồn và kiểm tra quote ở Lesson 2. Slide này trả lời: bước đầu tiên hôm nay là gì, trước khi nhờ AI rút insight.
-  - Rà lại bộ ghi chú nguồn của bạn:
-    - Mỗi ghi chú một ý và một ID, ví dụ I01-01 là ghi chú đầu của người phỏng vấn số 1. Thiếu note nào thì cắt thêm từ transcript đã ẩn danh, đặt ID mới và không dùng lại ID cũ.
-    - Ghi điều người đó nói và làm, không thêm diễn giải của bạn.
-    - Ghi chú giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
-  - Rồi chạy blind synthesis trên chính các note này, như đã xem ở Lesson 2: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích.
-  - Ví dụ với app giao đồ ăn: người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra. Ghi chú ghi đúng hành động đó, chưa kết luận “khách vội”. Kết luận là việc của các bước sau.
-  - Hình bên chỉ là ví dụ minh hoạ cấu trúc ghi chú. Dữ liệu gốc có tên thật nằm ngoài vùng AI đọc; AI chỉ thấy bản đã gắn participant code P1, P2 và source ID, theo quy tắc dữ liệu ở Lesson 2.
-  - Mọi insight ở các bước sau phải dẫn về một ID như vậy. Ghi chú không có ID thì không có chỗ đứng.
-
-  > Bộ ghi chú nguồn của bạn còn thiếu note nào mà bạn nhớ người phỏng vấn đã nói?
-- 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô ink hoặc purple.
 
 ---
 
@@ -1402,3 +1370,34 @@ last_synced: 2026-11-11
 - 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô ink hoặc purple.
 
 ---
+
+### PROCESS · From transcript to source notes
+- Kicker: Ôn từ Lesson 2
+- Title: Bắt đầu từ *ghi chú nguồn của bạn*
+- On-slide:
+  - Source notes từ Lesson 2
+  - Buổi phỏng vấn P1
+  - Đã cắt và kiểm tra quote ở Lesson 2. Thiếu note nào thì cắt thêm từ transcript đã ẩn danh.
+  - I01-01
+  - Đặt vào Chủ nhật, chạm vào khung giờ đầu tiên hiện ra.
+  - I01-02
+  - Đi hết menu mà không thấy chỗ bỏ qua một tuần, nhắn cho support.
+  - I01-03
+  - Một ý, một ID, lời người nói giữ nguyên ngữ cảnh.
+  - Quy tắc
+  - Mỗi ghi chú một ý, một ID. Ghi điều họ nói và làm, không thêm diễn giải.
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Bạn đã cắt transcript thành ghi chú nguồn và kiểm tra quote ở Lesson 2. Slide này trả lời: bước đầu tiên hôm nay là gì, trước khi nhờ AI rút insight.
+  - Rà lại bộ ghi chú nguồn của bạn:
+    - Mỗi ghi chú một ý và một ID, ví dụ I01-01 là ghi chú đầu của người phỏng vấn số 1. Thiếu note nào thì cắt thêm từ transcript đã ẩn danh, đặt ID mới và không dùng lại ID cũ.
+    - Ghi điều người đó nói và làm, không thêm diễn giải của bạn.
+    - Ghi chú giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
+  - Rồi chạy blind synthesis trên chính các note này, như đã xem ở Lesson 2: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích.
+  - Ví dụ với app giao đồ ăn: người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra. Ghi chú ghi đúng hành động đó, chưa kết luận “khách vội”. Kết luận là việc của các bước sau.
+  - Hình bên chỉ là ví dụ minh hoạ cấu trúc ghi chú. Dữ liệu gốc có tên thật nằm ngoài vùng AI đọc; AI chỉ thấy bản đã gắn participant code P1, P2 và source ID, theo quy tắc dữ liệu ở Lesson 2.
+  - Mọi insight ở các bước sau phải dẫn về một ID như vậy. Ghi chú không có ID thì không có chỗ đứng.
+
+  > Bộ ghi chú nguồn của bạn còn thiếu note nào mà bạn nhớ người phỏng vấn đã nói?
+- 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô ink hoặc purple.

@@ -61,7 +61,7 @@ Việc cắt transcript thành source notes đã làm ở Lesson 2, mục 5. Bư
 - Ghi chú ghi điều người đó nói và làm, không thêm diễn giải của bạn. Người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra thì ghi đúng hành động đó, chưa kết luận "khách vội". Kết luận là việc của các bước sau.
 - Ghi chú giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
 
-Rồi chạy **blind synthesis** trên chính các note này, như đã xem ở Lesson 2, mục 6: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích. Ở Lesson 2 bạn thấy hypothesis đổi thứ AI nói trước; ở đây bạn xem điều đó có xảy ra với dữ liệu của bạn không.
+Rồi chạy **blind synthesis** trên chính các note này (bạn làm ở practice, Step 1), như đã xem ở Lesson 2, mục 6: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích. Ở Lesson 2 bạn thấy hypothesis đổi thứ AI nói trước; ở đây bạn xem điều đó có xảy ra với dữ liệu của bạn không.
 
 Mọi insight ở các bước sau phải dẫn về một ID như vậy. Ghi chú không có ID thì không có chỗ đứng.
 
