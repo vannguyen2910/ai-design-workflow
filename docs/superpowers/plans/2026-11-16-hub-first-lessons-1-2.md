@@ -92,7 +92,7 @@
 - [ ] **Step 2:** Expand section 6 into the main section: three layers, three rules, index and log files, schema file short and specific.
 - [ ] **Step 3:** Add a section "One hub or many" with the five points in the spec (why per-function hubs; shared-ID thread with a worked chain; three ID rules; owner, status, version; two risks). Say "large companies"; no company name; no exercise. Present it as a pattern companies are trying, not a standard.
 - [ ] **Step 4:** Update "Nội dung buổi học" and "Sau buổi học, bạn có thể" so each objective maps to a section; add objectives for the three layers and the multi-hub idea.
-- [ ] **Step 5:** Verify: `grep -n ", " <file>` returns nothing; `grep -niE "claude|chatgpt|cursor|copilot|NAB" <file>` returns nothing. Commit.
+- [ ] **Step 5:** Verify: `grep -c $'\xe2\x80\x94' <file>` prints 0 (that is the em dash character); `grep -niE "claude|chatgpt|cursor|copilot|NAB" <file>` returns nothing. Commit.
 
 ### Task 5: Lesson 1 practice
 
@@ -149,7 +149,7 @@
 **Files:** all Task 2, 3, 4, 5, 6, 7, 8, 9 files.
 
 - [ ] **Step 1:** Run the three Vietnamese editing skills in order (`translationese-cleaner-vi`, `style-guide-vi`, `grammar-checker-vi`) on every new or changed Vietnamese passage. Keep trade terms in English.
-- [ ] **Step 2:** Run `grep -rn ", " lessons/01-* lessons/02-* assets/starter-files/course-case` (nothing expected in changed files) and the tool and company name grep from Task 4. Fix any hit.
+- [ ] **Step 2:** Run `grep -rn $'\xe2\x80\x94' lessons/01-* lessons/02-* assets/starter-files/course-case` (nothing expected in changed files) and the tool and company name grep from Task 4. Fix any hit.
 - [ ] **Step 3:** Check that each practice step name appears identically in the lesson, outline and Output list. Commit.
 
 ### Task 11: Winnie reviews the written files (gate)
