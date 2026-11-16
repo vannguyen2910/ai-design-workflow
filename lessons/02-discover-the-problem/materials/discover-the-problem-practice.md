@@ -41,13 +41,13 @@ Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết đ�
 - **Bạn viết:** một business question tách khỏi giải pháp, và quyết định mà câu trả lời sẽ phục vụ.
 - **AI soạn nháp:** năm câu hỏi cho business, mỗi câu một ý: outcome, success metric, baseline, constraints, timeline và người quyết định.
 - **Bạn kiểm tra:** sửa câu cho trung lập, rồi ghi vào scope. Câu đã có trả lời là "confirmed". Câu chưa có thì ghi "assumed" kèm người cần xác nhận. Không nhờ AI trả lời thay.
-- **Move 4, phản biện scope:** đưa AI bản scope nháp, nhờ nó đóng vai người phản biện (không đóng vai PO): năm cách scope có thể sai, ai phản đối, dấu hiệu sớm, một câu hỏi cho người thật, và một cách metric bị lách. Chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
+- **Move 2, phản biện scope:** đưa AI bản scope nháp, nhờ nó đóng vai người phản biện (không đóng vai PO): năm cách scope có thể sai, ai phản đối, dấu hiệu sớm, một câu hỏi cho người thật, và một cách metric bị lách. Chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
 
 ### Step 3 · Challenge assumptions · AI soạn nháp, bạn kiểm tra
 
-- **Move 2, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh, mỗi dòng có ID). Nhờ AI trả mỗi assumption một dòng `assumption | line IDs | quote`, với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
+- **Move 3, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh, mỗi dòng có ID). Nhờ AI trả mỗi assumption một dòng `assumption | line IDs | quote`, với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
 - **Bạn lọc:** bỏ dòng trùng và dòng chỉ là sự kiện. Sửa ít nhất hai assumption cho cụ thể hơn.
-- **Move 3, kiểm evidence trong hub:** đưa AI danh sách assumption còn lại và các ghi chú đang có trong hub (review, ticket, analytics, research cũ; hub trống thì để trống). Nhờ AI tìm ghi chú ủng hộ và ghi chú đi ngược, kèm ID và quote nguyên văn, và ghi "chưa có nguồn" khi không có.
+- **Move 4, kiểm evidence trong hub:** đưa AI danh sách assumption còn lại và các ghi chú đang có trong hub (review, ticket, analytics, research cũ; hub trống thì để trống). Nhờ AI tìm ghi chú ủng hộ và ghi chú đi ngược, kèm ID và quote nguyên văn, và ghi "chưa có nguồn" khi không có.
 - **Bạn kiểm tra:** đọc từng ghi chú AI trích có thật sự ủng hộ assumption đó không. AI hay gọi kiến thức chung là "đã có evidence": chưa có file nguồn thì ghi "chưa có nguồn".
 - **Bạn xếp** các assumption lên assumption map theo hai trục mức quan trọng và mức evidence (số ghi chú ủng hộ và đi ngược, kèm ID). Đọc nhãn trục trước khi đọc vị trí. Chọn **ba assumption hàng đầu**: quan trọng cao, evidence yếu.
 

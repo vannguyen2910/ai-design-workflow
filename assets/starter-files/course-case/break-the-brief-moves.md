@@ -21,7 +21,26 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với file của
 - B02 vừa là vấn đề vừa là assumption ("giá là lý do chính"). B07 nói giảm giá ít tác dụng, ngược với B02. B10 có "hài lòng" nhưng chưa có cách đo.
 - Nhận xét thêm: B06 cấm đổi giá, nên cả hai giải pháp B03 và B04 đều không đụng vào nguyên nhân mà B02 nêu.
 
-## Move 2: Đào assumption từ tài liệu
+## Move 2: Phản biện scope
+
+Bản scope nháp đưa vào: business question, quyết định, outcome 41% lên 50%, metric 30-day second-order rate, guardrail hủy đơn không vượt 22%, ràng buộc (không đổi giá, hai nền tảng, sáu tuần), điều đang tin (giá, khách chưa hiểu app) và agreement status pending.
+
+**Prompt**
+
+> Đây là bản scope nháp của một dự án app giao đồ ăn. Hãy đóng vai người phản biện scope (không đóng vai Head of Product, không trả lời thay business). Nêu năm cách scope này có thể sai. Với mỗi cách: ai sẽ phản đối, dấu hiệu sớm cho thấy nó sai, và một câu hỏi cần hỏi người thật. Nêu thêm một cách metric hoặc guardrail có thể bị lách hoặc đạt mà vẫn không giải quyết vấn đề thật. Đừng bịa số liệu.
+
+**Kết quả đã lưu (rút gọn)**
+
+1. "Giá là lý do chính" chưa kiểm chứng và mâu thuẫn với ràng buộc không đổi giá. Câu hỏi: "Lần gần nhất anh chị đặt đơn đầu xong rồi không đặt lại, lý do thật sự là gì?"
+2. Mục tiêu 50% có thể không gắn với việc nào làm được trong sáu tuần; chỉ số đo trong 30 ngày nên khách vào sau tuần cuối chưa đủ cửa sổ đo. Câu hỏi: "50% do ai đặt, dựa trên gì? Đạt 45% là thành công hay thất bại?"
+3. Scope tập trung vào "khách chưa hiểu app" có thể bỏ sót nguyên nhân ngoài giao diện (giao trễ, sai món, nguội). Câu hỏi: "Đơn đầu của khách không quay lại diễn ra thế nào?"
+4. "Khách mới" và "đơn thứ hai" chưa được định nghĩa; trung bình có thể che nhóm đang gặp vấn đề. Câu hỏi: "Khi nói khách mới, anh chị tính ai?"
+5. Scope còn pending mà đã dùng để chốt việc sáu tuần; người xác nhận cũng là người ra quyết định. Câu hỏi: "Ai ngoài Head of Product cần đồng ý scope này?"
+6. Metric bị lách: ưu đãi nhỏ kéo khách đặt đơn thứ hai chỉ để lấy ưu đãi, hoặc ẩn nút hủy để giữ guardrail đẹp. Câu hỏi: "Nếu đơn thứ hai lên 50% mà khách không đặt đơn thứ ba, đó có phải thành công không?"
+
+**Điều cần nhớ:** đây là danh sách giả thuyết để hỏi người thật, không phải sự thật về business. AI không biết "khách mới" của công ty bạn nghĩa là gì. Câu trả lời vẫn do người thật đưa.
+
+## Move 3: Đào assumption từ tài liệu
 
 **Prompt**
 
@@ -41,7 +60,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với file của
 
 **Điều cần tự lọc:** 18 dòng là nhiều. Có dòng chỉ là sự kiện (B01 nói mức hiện tại 41%), có dòng trùng nhau (hai dòng cho B03, hai dòng cho B08). Mức quan trọng là việc của bạn.
 
-## Move 3: Kiểm evidence cho từng assumption
+## Move 4: Kiểm evidence cho từng assumption
 
 Assumption đưa vào (`ID | text`):
 
@@ -68,25 +87,6 @@ Assumption đưa vào (`ID | text`):
 **Kiểm quote bằng chương trình:** 13 trong 13 dòng đạt.
 
 **Điều chương trình không kiểm được:** quote có thật không có nghĩa nó ủng hộ đúng assumption. F01 được AI xếp vào cả A2 (khách không hiểu app) lẫn A4 (khung giờ). Bạn đọc từng ghi chú để quyết định có tính vào không. Ghi chú không đánh dấu khách mới hay khách cũ, nên "mạnh" chỉ có nghĩa là nhiều ghi chú, chưa có nghĩa là đủ.
-
-## Move 4: Phản biện scope
-
-Bản scope nháp đưa vào: business question, quyết định, outcome 41% lên 50%, metric 30-day second-order rate, guardrail hủy đơn không vượt 22%, ràng buộc (không đổi giá, hai nền tảng, sáu tuần), điều đang tin (giá, khách chưa hiểu app) và agreement status pending.
-
-**Prompt**
-
-> Đây là bản scope nháp của một dự án app giao đồ ăn. Hãy đóng vai người phản biện scope (không đóng vai Head of Product, không trả lời thay business). Nêu năm cách scope này có thể sai. Với mỗi cách: ai sẽ phản đối, dấu hiệu sớm cho thấy nó sai, và một câu hỏi cần hỏi người thật. Nêu thêm một cách metric hoặc guardrail có thể bị lách hoặc đạt mà vẫn không giải quyết vấn đề thật. Đừng bịa số liệu.
-
-**Kết quả đã lưu (rút gọn)**
-
-1. "Giá là lý do chính" chưa kiểm chứng và mâu thuẫn với ràng buộc không đổi giá. Câu hỏi: "Lần gần nhất anh chị đặt đơn đầu xong rồi không đặt lại, lý do thật sự là gì?"
-2. Mục tiêu 50% có thể không gắn với việc nào làm được trong sáu tuần; chỉ số đo trong 30 ngày nên khách vào sau tuần cuối chưa đủ cửa sổ đo. Câu hỏi: "50% do ai đặt, dựa trên gì? Đạt 45% là thành công hay thất bại?"
-3. Scope tập trung vào "khách chưa hiểu app" có thể bỏ sót nguyên nhân ngoài giao diện (giao trễ, sai món, nguội). Câu hỏi: "Đơn đầu của khách không quay lại diễn ra thế nào?"
-4. "Khách mới" và "đơn thứ hai" chưa được định nghĩa; trung bình có thể che nhóm đang gặp vấn đề. Câu hỏi: "Khi nói khách mới, anh chị tính ai?"
-5. Scope còn pending mà đã dùng để chốt việc sáu tuần; người xác nhận cũng là người ra quyết định. Câu hỏi: "Ai ngoài Head of Product cần đồng ý scope này?"
-6. Metric bị lách: ưu đãi nhỏ kéo khách đặt đơn thứ hai chỉ để lấy ưu đãi, hoặc ẩn nút hủy để giữ guardrail đẹp. Câu hỏi: "Nếu đơn thứ hai lên 50% mà khách không đặt đơn thứ ba, đó có phải thành công không?"
-
-**Điều cần nhớ:** đây là danh sách giả thuyết để hỏi người thật, không phải sự thật về business. AI không biết "khách mới" của công ty bạn nghĩa là gì. Câu trả lời vẫn do người thật đưa.
 
 ## Giới hạn chung
 

@@ -495,9 +495,9 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 4: challenge the scope
+### COMPARE · Move 2: challenge the scope
 - Kicker: AI move
-- Title: Move 4: phản biện\n*scope*
+- Title: Move 2: phản biện\n*scope*
 - On-slide:
   - Không làm: đóng vai PO, trả lời thay business
   - Làm: năm cách scope có thể sai, ai phản đối, dấu hiệu sớm
@@ -541,9 +541,9 @@ last_synced: 2026-11-16
 
 ---
 
-### PROCESS · Move 2: mine assumptions
+### PROCESS · Move 3: mine assumptions
 - Kicker: AI move
-- Title: Move 2: đào *assumption*\ntừ tài liệu
+- Title: Move 3: đào *assumption*\ntừ tài liệu
 - On-slide:
   - 01 · Đưa AI brief, PRD, research cũ có ID
   - 02 · AI trả: assumption, line ID, quote nguyên văn
@@ -566,9 +566,9 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 3: audit the evidence
+### COMPARE · Move 4: audit the evidence
 - Kicker: AI move
-- Title: Move 3: kiểm evidence\ntrong *hub*
+- Title: Move 4: kiểm evidence\ntrong *hub*
 - On-slide:
   - A4 khung giờ giao: 4 ghi chú ủng hộ, mạnh
   - A1 giá: 1 ủng hộ, 1 đi ngược, yếu
