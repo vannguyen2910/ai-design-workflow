@@ -73,7 +73,7 @@ last_synced: 2026-11-17
 ### MILESTONE · Ice breaker
 - Num: 6
 - Kicker: Giới thiệu
-- Title: Một lần dùng AI,\n*hay hoặc dở*
+- Title: Ice Breaker
 - Sub: Tên, công việc hiện tại, và một lần AI làm designer bất ngờ hoặc bực
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
 - Câu hỏi hay gặp: None.
@@ -162,7 +162,7 @@ last_synced: 2026-11-17
 - On-slide:
   - 01
   - Strategic designer
-  - cùng Product và Business xác định vấn đề cần giải quyết
+  - Cùng Product và Business xác định vấn đề cần giải quyết
   - 02
   - Design builder
   - Dùng AI để dựng prototype hoạt động được, rồi đưa vào production
@@ -187,7 +187,7 @@ last_synced: 2026-11-17
 - Title: Làm theo brief hay\n*cùng định hình vấn đề?*
 - On-slide:
   - Từ brief có sẵn
-  - kiểm tra yêu cầu, thiết kế rồi bàn giao. Cách làm này nhanh, nhưng mặc định vấn đề đã được xác định đúng
+  - Kiểm tra yêu cầu, thiết kế rồi bàn giao. Nhanh, nhưng mặc định vấn đề đã đúng
   - Design nhận brief từ Product rồi thực hiện
   - Nhanh, nhưng rủi ro giải sai vấn đề
   - Cùng định hình
@@ -429,11 +429,12 @@ last_synced: 2026-11-17
 
 ### DIAGRAM · The project folder
 - Kicker: Định nghĩa
-- Title: Project\n*folder*
+- Title: Project folder\n*như một công ty nhỏ*
 - On-slide: Bốn chỗ cần nhớ: AGENTS.md, context, work, insights
 - On-slide:
   - Công ty
   - →
+  - Project folder
   - Một nơi chứa mọi thứ của một project
   - NHÂN VIÊN
   - Agent
@@ -453,16 +454,20 @@ last_synced: 2026-11-17
 - Ví dụ: Không cần. Slide chỉ ra bốn chỗ trong cấu trúc folder; phần thực hành là Practice 1 ở nhà.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Folder local nằm trên máy của designer, không phải file design trên server hay tài liệu cloud
-  - AI coding tool sẽ mở folder này như một project và đọc các file bên trong. Nếu folder đang đồng bộ qua cloud, đôi khi có thể xảy ra lỗi khi tool đang ghi file.
-  - Cây folder minh hoạ: trang chủ `index.html` của hub (bấm đúp là mở bằng trình duyệt), file schema `AGENTS.md` và folder `context/` trước, rồi `work/` (những gì làm ra) và `insights/` (những gì học được, các quyết định)
-  - `AGENTS.md` là file tool tự đọc khi mở folder, nên các quy tắc không phụ thuộc vào việc designer nhớ dán lại; skill nằm ở `toolkit/skills/` (gốc workspace, dùng chung cho mọi project) và ghi rõ mỗi bước ai làm, đọc file nào, ghi vào đâu
-  - Dữ liệu gốc nằm trong `_raw-private/`, không lên GitHub; AI chỉ đọc bản đã ẩn danh trong `anonymised/`
-  - Mỗi folder một vai: `context/` là thứ đưa vào đầu tiên ở mọi bước, `work/` là những gì làm ra, `insights/` là những gì học được và các quyết định
-  - Đây là một ví dụ; designer tự sắp xếp folder, miễn mỗi lớp của hub có chỗ riêng và `AGENTS.md` ghi rõ chỗ đó
-  - Có hai loại file cần phân biệt: Markdown (`.md`) là văn bản thuần, phù hợp để designer và công cụ AI cùng đọc, chỉnh sửa. Hub cũng dùng Markdown nên có thể xem trên GitHub hoặc VS Code. HTML chủ yếu dùng cho prototype.
-  - Hai phút cho slide này; chỉ chỉ ra bốn chỗ: `AGENTS.md`, `context/`, `work/` và `insights/`; phần còn lại là Practice 1 ở nhà
-  - Buổi này không dựng folder trên lớp; mọi người dựng ở nhà trong Practice 1
+  - Project folder là một thư mục bình thường trên máy bạn, nhưng dùng như không gian làm việc của một project.
+  - Bạn gom vào đó mọi thứ AI cần: tài liệu research, brief, file hướng dẫn, và chỗ để AI ghi kết quả.
+  - Khi mở AI agent trong folder này, agent đọc được cả folder thay vì chỉ một đoạn bạn dán vào chat.
+  - Trong folder thường có bốn nhóm:
+    - File hướng dẫn chung như AGENTS.md: ai làm gì, đọc gì trước, qua gate nào
+    - Mô tả từng agent và các skill, mỗi thứ là một file markdown
+    - Context pack: tài liệu nền của project như research, brief, design system
+    - Thư mục learnings/: nơi agent ghi lại điều đã học để lần sau đọc lại
+  - Cái lợi là bạn không phải dán lại ngữ cảnh mỗi lần. Ngữ cảnh nằm sẵn trong folder, và mọi agent dùng chung một bản.
+  - Hình dung project folder như một công ty nhỏ: mỗi agent là một nhân viên có vai và kỹ năng riêng, folder là văn phòng chung nơi mọi người đọc và ghi tài liệu
+  - Skill mình sẽ đi sâu ở phần 03. Tạm hiểu: skill là một thư mục dạy agent cách làm một loại việc, tối thiểu có SKILL.md (tên, mô tả, chỉ dẫn); agent chỉ nạp chỉ dẫn khi thấy skill liên quan (theo tài liệu Anthropic; agent skills là chuẩn mở từ 12/2025)
+  - Giới hạn của phép ví von: agent không nhớ gì từ phiên trước, nhân viên này đọc lại hồ sơ mỗi lần bắt đầu, nên mọi thứ cần nhớ phải nằm trong file
+
+  > Nếu project của bạn là một công ty nhỏ, bạn muốn có những nhân viên agent nào?
 - 🎨 Visual hint: SCHEMATIC. Một cây folder gọn, `AGENTS.md` và folder context được tô purple, folder hub màu ink; `_raw-private` có biểu tượng khoá.
 
 ---
@@ -552,7 +557,7 @@ last_synced: 2026-11-17
 
 ### DIAGRAM · Your AI team
 - Kicker: Agent design workflow
-- Title: Đội ngũ\n*AI của bạn*
+- Title: Workflow thiết kế\nvới *agent*
 - On-slide:
   - WHAT
   - Mỗi quy trình giao cho một agent
@@ -570,33 +575,35 @@ last_synced: 2026-11-17
 - Ví dụ: có (app giao đồ ăn chạy qua tám agent)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Chiếu sơ đồ, đi qua từng phase khoảng 40 giây; mỗi agent là một instruction, một input riêng và một output ghi vào design memory
-  - Ví dụ với app giao đồ ăn: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding
-  - Design memory là một record dùng chung cho cả tám agent; hôm nay nó chính là project folder và hub (slide kế tiếp và T5)
-  - Designer duyệt ở mỗi mũi tên REVIEW; không có agent nào duyệt thay, vì một agent duyệt cũng có thể sai
-  - Hai vai không giao cho AI: người dùng thật và người phía product và business
-  - Hiện trạng: toolkit hiện có skill cho cả tám agent, nhưng đều là bản nháp chưa thử với lớp thật; mỗi skill được chỉnh sau lần chạy đầu ở buổi tương ứng
-  - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc; sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX) nhưng tên và phạm vi agent là của chương trình; chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design `[to confirm]`
-  - Ba phút cho slide này
+  - Vậy thì nếu chúng ta phải customise theo workflow thiết kế thì phải như thế nào?
+  - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory; bạn duyệt trước mỗi lần chuyển phase
+  - Why: AI soạn nháp nhanh phần lặp lại, bạn giữ quyết định; mỗi bước để lại file và nguồn nên người khác lần ngược được lập luận. Nối lại nguyên tắc ở slide Double Diamond: AI soạn nháp, bạn kiểm tra, bạn quyết định
+  - When: chỉ khi workflow đã ổn; quay lại slide sửa workflow: workflow phải ổn trước khi giao cho agent. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
+  - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc bước đó cần người thật: user, hoặc người phía product và business
+  - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần; chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác
+
+  > Bước nào trong công việc của bạn đã đủ ổn định để thử giao cho một agent?
 - 🎨 Visual hint: SCHEMATIC. Một ảnh, gần full bleed: sơ đồ bốn phase, mỗi phase một khung hai agent, design memory ở dưới, vòng Next round; agent Framing được nhấn màu accent. Tệp: `../assets/designer-agents-double-diamond.png` (nguồn HTML: `_system/diagrams/designer-agents-double-diamond.html`).
 
 ---
 
 ### PROCESS · What the team needs
 - Kicker: Ví dụ
-- Title: Một đội AI\n*cần những gì?*
+- Title: Đội ngũ AI của bạn cần\n*những gì*
 - On-slide:
   - © UX Level Up
 - Ví dụ: cần ví dụ: một skill thật (bước, file đọc, nơi ghi)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Thêm nhiều agent không đồng nghĩa với việc công việc sẽ tốt hơn. Trước hết, hãy quay lại ba câu hỏi trước khi tự động hoá. Nếu quy trình chưa ổn, AI chỉ giúp lỗi xuất hiện nhanh hơn.
-  - Ở slide này, chỉ cần hiểu mỗi khái niệm qua một dòng. Sang slide tiếp theo, mình sẽ chỉ ra chúng nằm ở đâu trong project folder. (context pack là folder `context/`, skill nằm trong `toolkit/skills/`, quy tắc chung là `AGENTS.md`)
-  - Hôm nay chưa cần agent: Practice 1 ở nhà dựng nền, buổi 7 mới giao việc cho đội
-  - Cách setup trong một câu: một AI coding tool mở cả folder, mỗi agent là một skill, flow là đề xuất, duyệt, ghi file rồi qua gate (chi tiết ở `learning/lesson-1-details.md`, mục 4.4)
-  - Câu A/B 30 giây: nếu chỉ giao được một agent cho AI, designer chọn desk research agent hay prototype agent?
-  - Mình trả lời trước để làm mẫu: chọn prototype agent
-  - Hai phút
+  - Chiếu sơ đồ, đi qua từng phase khoảng 40 giây; mỗi agent có một instruction, một input riêng và một output ghi vào design memory
+  - Design memory là record dùng chung cho cả tám agent; hôm nay nó chính là project folder và hub
+  - Designer duyệt ở mỗi mũi tên REVIEW; không agent nào duyệt thay, vì một agent duyệt cũng có thể sai
+  - Hai vai không giao cho AI: người dùng thật và người phía product và business
+  - Ví dụ: Delivery App: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding
+  - Nói thật hiện trạng: toolkit mới có skill cho agent 01 và 03; sáu agent còn lại mới có template tài liệu, card dựng ở các buổi sau
+  - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc; sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX) nhưng tên và phạm vi agent là của chương trình
+  - Chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design
+  - Đội AI đã có đủ vai, nhưng mỗi agent mới chỉ là một nhân viên chung chung. Thứ biến họ thành người làm đúng một loại việc là kỹ năng mình đưa cho họ. Phần ba nói về skill.
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước ba được tô purple.
 
 ---
@@ -1317,7 +1324,7 @@ last_synced: 2026-11-17
 
 ### NUMBERED · Three kinds of material
 - Kicker: Định nghĩa
-- Title: Ba loại\n*tài liệu*
+- Title: Data *Safety*
 - On-slide:
   - WHAT
   - Tên và thông tin định danh người tham gia
@@ -1334,12 +1341,19 @@ last_synced: 2026-11-17
 - Ví dụ: có (năm đoạn trích app giao đồ ăn của Activity)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Mọi thứ cho tới giờ là về những gì đi ra; đây là về những gì đi vào
-  - Đừng mặc định là nó private: ở nhiều gói consumer, hội thoại có thể được dùng để cải thiện model trừ khi designer tắt đi; hãy kiểm tra tool designer dùng
-  - Dữ liệu cá nhân ở Việt Nam thuộc luật 2025 có hiệu lực từ ngày 1 tháng 1 năm 2026; tên, email và bản ghi cũng tính; đây không phải tư vấn pháp lý
-  - Việc phân loại
-  - Hai phút; câu A/B 30 giây: transcript phỏng vấn có tên nằm ở nhóm nào?
-  - Trang phí giao công khai và ghi chú về một app công khai là safe; transcript có tên, spec chưa phát hành, danh sách khách hàng là never in a public tool (ẩn danh trước nếu được)
+  - Data safety là câu hỏi bạn phải trả lời trước khi đưa bất kỳ thứ gì cho AI: dữ liệu này có được phép rời khỏi máy của mình không.
+  - Dữ liệu cần cẩn thận gồm ba nhóm: tên và thông tin định danh người tham gia, quote và transcript phỏng vấn, và file confidential cùng số liệu khách hàng.
+  - Với designer, transcript phỏng vấn là loại dễ dán vào AI nhất vì nó rất hữu ích để tổng hợp.
+  - Vì sao phải cẩn thận: dữ liệu đã dán vào có thể bị lưu hoặc dùng để train, và gần như không thu hồi được. Nó cũng có thể vi phạm quy định dữ liệu của công ty và Luật Bảo vệ dữ liệu cá nhân, có hiệu lực từ 01/01/2026.
+  - Ba thời điểm cần dừng lại:
+    - Trước khi dán bất kỳ tài liệu nào vào công cụ AI: kiểm tra chính sách AI của công ty và phân loại tài liệu. Chưa có chính sách thì hỏi; còn phân vân thì đừng dán
+    - Ẩn danh trước khi AI nhìn thấy quote: thay tên bằng P1, P2, bỏ công ty, số điện thoại và email. Làm bằng find and replace trên máy bạn, không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi
+    - Trước khi kết nối connector: connector đọc được file trong folder, nên chỉ nối phần cần thiết và giữ file confidential ở ngoài folder
+  - ----
+  - Nếu còn tgian
+  - Dữ liệu gốc cần ẩn danh nằm trong _raw-private/: không lên GitHub, file luật bảo tool không đọc. Đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder. Liên hệ với slide repo ban nãy: file nào không đưa lên repo thì cũng không nên để trong folder mà agent đọc.
+  - Output AI có được dùng cho công việc với client hay không, và ai sở hữu, tuỳ công ty và quốc gia; ghi trong project log chỗ nào đã dùng AI.
+  - Bạn viết data rules của riêng mình ở bài tập về nhà; đến lúc đó đừng dán tài liệu thật vào công cụ AI. Nhắc đọc trang data controls của tool đang dùng; điều khoản đổi thường xuyên.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba cột kèm một dòng ví dụ bên dưới; không tô màu nào ngoài số purple.
 
 ---
@@ -1392,7 +1406,7 @@ last_synced: 2026-11-17
 
 ### STATEMENT · Closing thought
 - Kicker: Takeaway
-- Title: Tool sẽ đổi.\n*Cách làm việc thì không.*
+- Title: Go crazy with AI!
 - On-slide: Đưa input rõ ràng. Yêu cầu nguồn. Kiểm tra. Tự quyết định.
 - On-slide:
   - Winnie Nguyen
@@ -1400,10 +1414,8 @@ last_synced: 2026-11-17
 - Ví dụ: Không cần. Slide kết bài.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Lesson tiếp theo bắt đầu từ câu hỏi của business
-  - Brief một trang của lesson tiếp theo đọc trước buổi học
-
-  > Điều nào hôm nay làm designer đổi ý về cách dùng AI trong công việc?
+  - Nhắc gửi cây folder và file product để nhận feedback sau khi làm xong bước 2 của bài tập (product-and-users)
+  - Mời đặt câu hỏi; ở lại với ai cần giúp về project folder
 - 🎨 Visual hint: TYPOGRAPHIC. Title lớn, một dòng bên dưới trên nền sáng.
 
 ---
@@ -1558,7 +1570,7 @@ last_synced: 2026-11-17
 - Title: Kết nối một lần.\n*Dùng lại quy tắc.*
 - On-slide:
   - Connector (MCP)
-  - cắm giữa file design hoặc tài liệu và công cụ AI
+  - Cắm giữa file design hoặc tài liệu và công cụ AI
   - file design
   - công cụ AI
   - Reusable instructions
