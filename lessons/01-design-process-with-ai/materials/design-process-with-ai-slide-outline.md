@@ -2,7 +2,7 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 62
+slide_count: 63
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
@@ -18,7 +18,7 @@ last_synced: 2026-11-17
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
-| Timing note | Deck có 53 slide trong luồng chính (thêm phần Skills và GitHub, ba slide giới thiệu hub, demo, giá trị cho tổ chức); chưa ước thời lượng. Phần nghề (T1) giữ nguyên theo quyết định của Winnie (2026-11-16); cần bớt khoảng 10 phút ở chỗ khác và Winnie quyết định bớt chỗ nào |
+| Timing note | Deck có 54 slide trong luồng chính (thêm phần Skills và GitHub, ba slide giới thiệu hub, demo, giá trị cho tổ chức); chưa ước thời lượng. Phần nghề (T1) giữ nguyên theo quyết định của Winnie (2026-11-16); cần bớt khoảng 10 phút ở chỗ khác và Winnie quyết định bớt chỗ nào |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
@@ -843,6 +843,23 @@ last_synced: 2026-11-17
   - Việc chung như đọc PDF hay xuất file thì dùng nguyên. Việc gắn với cách làm của team, như đánh giá hay research, thì sửa lại cho khớp principles của team.
   - Ví dụ: kiểm tra accessibility, viết microcopy, tóm tắt research, tạo tài liệu bàn giao.
   - Skill từ nguồn lạ cần đọc kỹ trước khi dùng. Slide tiếp theo nói về rủi ro.
+- 🎨 Visual hint: Theo slide trong deck hiện tại.
+
+---
+
+### IMAGE · Example skills for Product
+- Kicker: Ví dụ
+- Title: Skill cho\n*Product gồm gì?*
+- Ví dụ: Xem speaker notes.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đây là ví dụ cho câu hỏi "skill cho Product có thể gồm những gì". Ảnh chụp thư mục skills của thư viện Product Manager Skills, do Dean Peters tạo và chia sẻ trên GitHub, giấy phép CC BY-NC-SA 4.0.
+  - Thư viện có 77 skill. Mỗi skill là một folder, và tên folder nói đúng việc của nó: customer-journey-map, discovery-interview-prep, epic-breakdown-advisor... Nhìn tên bạn đã đoán được skill dùng để làm gì.
+  - Mình đưa ví dụ này để bạn thấy một skill nhỏ và cụ thể đến mức nào. Skill không phải một prompt khổng lồ, nó là cách làm cho một loại việc.
+  - Lưu ý: đây là thư viện cho Product Manager, không phải cho designer, và mình chưa thử các skill này với lớp. Nếu muốn dùng, bạn đọc kỹ SKILL.md và áp quy tắc data safety như đã nói ở slide trước.
+  - Giấy phép CC BY-NC-SA 4.0 nghĩa là: được dùng và chia sẻ lại kèm ghi nguồn, không dùng cho mục đích thương mại, và bản chia sẻ lại phải cùng giấy phép. [to confirm] việc chiếu ảnh này trong khoá học thu phí có phù hợp điều khoản NonCommercial không.
+
+  > Nhìn danh sách này, bạn muốn có skill nào cho công việc của Design?
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
