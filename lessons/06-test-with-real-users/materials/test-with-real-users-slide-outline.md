@@ -688,7 +688,7 @@ last_synced: 2026-11-17
 - Câu hỏi hay gặp:
   - AI viết script dẫn dắt thì sửa thế nào? Bạn cắt ít nhất một nửa câu và viết lại câu dẫn dắt; AI hay lặp ý.
 - Speaker notes:
-  - - Hỏi về điều đã xảy ra, không hỏi ý kiến về ý tưởng
+    - Hỏi về điều đã xảy ra, không hỏi ý kiến về ý tưởng
     - Quy tắc hỏi trung tính từ buổi 2 áp dụng nguyên vẹn
     - Task là một việc người dùng thử làm, không nói trước cách làm
     - AI giúp được ở đâu: soạn nháp script và nhánh follow-up; AI không quyết định câu nào dẫn dắt
@@ -1187,7 +1187,7 @@ last_synced: 2026-11-17
 - Ví dụ: Không cần. Câu hỏi đến từ designer.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - - Sáu phút cho phần hỏi đáp
+    - Sáu phút cho phần hỏi đáp
     - Câu hay gặp: không tìm được người test thì làm gì, AI chấm severity khác mình thì giữ bên nào, có audit bản developer build không
     - Câu hỏi mở ra một chủ đề mới được ghi vào parking lot và trả lời sau buổi
 
