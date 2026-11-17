@@ -85,7 +85,15 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - Trả lời một câu: layer nào bạn đã sửa sai chỗ, và bạn sẽ sửa ở đâu lần sau? Ghi ngay dưới mục vừa thêm.
 - **File:** `work/prototype/index.md` (`## Known gaps`), `_personal/learning-log.md`
 
-**Gợi ý chia việc (chưa thử với lớp thật `[to confirm]`):** Step 1 đến 3 làm ở nhà. Step 4 đến 8 làm trên lớp, hoặc làm tiếp ở nhà nếu bạn đã đi nhanh. Nếu bạn đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau.
+### Step 9 · Publish lên GitHub · YOU
+
+- Tạo một repo riêng chỉ chứa prototype, không dùng repo của cả project. Về repo Private và Public, xem `toolkit/guides/02-github-sharing-and-obsidian.md`.
+- Chỉ dùng dữ liệu giả hoặc đã ẩn danh. Không đưa `_personal/` và dữ liệu gốc lên repo.
+- Push prototype, bật GitHub Pages cho repo để có một link. Với repo Private, GitHub Pages có thể cần gói trả phí `[to confirm]`; kiểm tra gói của bạn trước.
+- Mở link và tự dùng hết flow trên đó, rồi gửi link cho một người để họ mở được. Link giữ nguyên; push bản mới thì mọi người cùng thấy bản mới.
+- **File:** link của prototype, ghi vào `work/prototype/index.md`
+
+**Gợi ý chia việc (chưa thử với lớp thật `[to confirm]`):** Step 1 đến 3 làm ở nhà. Step 4 đến 9 làm trên lớp, hoặc làm tiếp ở nhà nếu bạn đã đi nhanh. Nếu bạn đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau.
 
 ## Optional: dùng bộ package trong toolkit
 
@@ -104,6 +112,7 @@ Toolkit có sẵn rules và skill để bạn không phải viết từ đầu. 
 - Các file màn hình của journey
 - `work/prototype/index.md` (Scope, Shell and templates, Screen plan, Rule check, Known gaps)
 - `_personal/learning-log.md` (một mục mới và câu reflection)
+- Link GitHub Pages của prototype
 
 ## Self-check
 
@@ -115,6 +124,7 @@ Toolkit có sẵn rules và skill để bạn không phải viết từ đầu. 
 - [ ] Mỗi quy tắc bị phá hoặc còn thiếu đã được sửa hoặc ghi lại.
 - [ ] `## Known gaps` nêu rõ prototype chưa làm gì.
 - [ ] `_personal/learning-log.md` có một mục mới và câu reflection đã trả lời.
+- [ ] Link GitHub Pages mở được, dùng dữ liệu giả hoặc đã ẩn danh, và bạn đã tự dùng hết flow trên link đó.
 
 ## If you get stuck
 
