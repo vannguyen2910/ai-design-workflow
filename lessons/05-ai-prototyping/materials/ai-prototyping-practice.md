@@ -42,7 +42,7 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - **Kiểm tra:** một người có hoàn thành flow trong một lượt ngồi được không? Dấu hiệu sai: "cả app"; nội dung chưa có.
 - **File:** `work/prototype/index.md` mục `## Scope`
 
-### Step 3 · Build design system · AI coding tool · AI dựng, bạn kiểm tra (Gate A)
+### Step 3 · Build design system · AI coding tool · AI dựng, bạn kiểm tra (Check A)
 
 - **AI dựng:** từ Figma, tạo `tokens.css` (token) và `components.css`, `components.html` (component). Chỉ dùng token và component bạn liệt kê; thiếu thì nói và dừng.
 - **Bạn kiểm tra:** mở `components.html`, so từng component với Figma. Tìm trong file các giá trị thô (màu `#`, cỡ `px` ngoài token). Component nào lệch thì gửi lại **một** danh sách sửa.
@@ -54,7 +54,7 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 
 - **Bạn quyết định trước:** năm quyết định của shell (header, điều hướng, tên product, các mục, nút chính, hành vi ở màn hình hẹp) và 2 hoặc 3 template (khi nào dùng, các vùng bố cục). Rút từ các màn đã thiết kế, không để AI tự nghĩ.
 - **AI dựng:** shell là màn số 0, rồi các template, từ token và component. Shell chỉ dựng ở đây; các màn sau không tự thêm điều hướng.
-- **Bạn kiểm tra (Gate B):** tab qua điều hướng bằng bàn phím, mở ở độ rộng điện thoại và máy tính, tìm giá trị thô. Khi đúng, nói "Lưu lại".
+- **Bạn kiểm tra (Check B):** tab qua điều hướng bằng bàn phím, mở ở độ rộng điện thoại và máy tính, tìm giá trị thô. Khi đúng, nói "Lưu lại".
 - **File:** các file shell và template, mục `## Shell and templates` trong `work/prototype/index.md`
 
 ### Step 5 · Build experience pattern · AI coding tool · Optional
@@ -64,13 +64,13 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - **Bạn kiểm tra:** experience pattern có dùng ở ít nhất hai màn không? Một experience pattern chỉ dùng một lần thì để lại trong màn đó.
 - **File:** `components.css`, `components.html` (mục pattern)
 
-### Step 6 · Build journey prototype · AI coding tool · AI dựng, bạn kiểm tra (Gate C cho Screen plan)
+### Step 6 · Build journey prototype · AI coding tool · AI dựng, bạn kiểm tra (Check C cho Screen plan)
 
 - Bạn viết Screen plan từ flow ở Step 2: mỗi màn một dòng gồm tên, template, nội dung thật, trạng thái, màn tiếp theo. Nhờ AI chỉ **kiểm tra** plan (thiếu component, thiếu nội dung), không viết hộ. Thiếu component thì bạn quyết định dùng cái có sẵn hay tự thêm vào design system.
 - **AI dựng cả journey trong một lượt:** mọi màn nằm trong shell, theo template đã chọn. Nội dung thiếu thì ghi "unknown".
 - **File:** các file màn hình, mục `## Screen plan` và `## Build log` trong `work/prototype/index.md`
 
-### Step 7 · Review · AI coding tool, rồi bạn · Gate D
+### Step 7 · Review · AI coding tool, rồi bạn · Check D
 
 - **AI kiểm tra trước, không sửa:** liệt kê chỗ phạm quy tắc kèm file và dòng (giá trị thô, component ngoài design system, màn ngoài shell, ô nhập thiếu nhãn, lỗi không có thông báo cạnh ô, nghĩa chỉ nằm ở màu, vùng chạm dưới 44 px, nhiều hơn một `<h1>`, focus không chuyển khi đổi màn).
 - **Bạn kiểm tra (phần dài nhất):** mở ba chỗ AI liệt kê xem có thật không. Rồi mở và dùng từng màn: bấm mọi control, tab qua, xem ở hai độ rộng, so với plan và `components.html`.
@@ -78,7 +78,7 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - Viết lại mỗi quy tắc AI phá hoặc còn thiếu, bằng lời của bạn, và cập nhật `project-rules.md`.
 - **File:** mục `## Rule check (AI)` và `## Build log` trong `work/prototype/index.md`, `project-rules.md`
 
-### Step 8 · Known gaps, learning log và reflection · YOU · Gate E
+### Step 8 · Known gaps, learning log và reflection · YOU · Check E
 
 - Ghi vào `## Known gaps` những gì prototype **chưa** làm: trạng thái chưa dựng, nội dung giả, màn còn thiếu. Để người test không nhầm một bản chưa xong là bản hoàn chỉnh.
 - Mở `_personal/learning-log.md` (riêng tư, không đưa cho AI) và thêm một mục ba dòng: bạn đã làm gì, phản hồi nào bạn nhận được, lần sau bạn đổi gì.
@@ -86,6 +86,14 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - **File:** `work/prototype/index.md` (`## Known gaps`), `_personal/learning-log.md`
 
 **Gợi ý chia việc (chưa thử với lớp thật `[to confirm]`):** Step 1 đến 3 làm ở nhà. Step 4 đến 8 làm trên lớp, hoặc làm tiếp ở nhà nếu bạn đã đi nhanh. Nếu bạn đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau.
+
+## Optional: dùng bộ package trong toolkit
+
+Toolkit có sẵn rules và skill để bạn không phải viết từ đầu. Không bắt buộc; bạn có thể tự viết rules của mình.
+
+- **Rules:** `project-rules.md` trong `toolkit/skills/prototype/starter/`. Mười quy tắc để copy vào project rồi viết lại (Step 3).
+- **Skill:** `toolkit/skills/prototype/SKILL.md`. Các bước và prompt từ design system đến Known gaps, kèm câu hỏi kiểm tra ở cuối mỗi bước (trong skill gọi là Check A đến E; số step của skill khớp với bài này).
+- **Hook:** toolkit chưa có bản mẫu `[to confirm]`. Dùng cheat sheet hook trong lesson để nhờ người rành tool cài.
 
 ## Output
 

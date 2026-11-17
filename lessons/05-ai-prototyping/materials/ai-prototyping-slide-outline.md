@@ -2,7 +2,7 @@
 title: "AI Prototyping"
 lesson_file: "ai-prototyping-lesson.md"
 level: ""
-slide_count: 44
+slide_count: 41
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/XeNWGZiasHHRgF1Sai5bak"
@@ -20,7 +20,7 @@ last_synced: 2026-11-17
 | Next session | Practice 5: Build prototype main flow |
 | Running example | Một delivery app hư cấu (màn hình "Chọn thời gian giao" ở activity); designer làm trên một project cụ thể ở Practice 5 |
 
-**Deck:** đã build tại https://claude.ai/artifact/XeNWGZiasHHRgF1Sai5bak (44 slide). File này được đồng bộ ngược từ deck; nội dung on-slide trích từ chính slide.
+**Deck:** đã build tại https://claude.ai/artifact/XeNWGZiasHHRgF1Sai5bak (45 slide). File này được đồng bộ ngược từ deck; nội dung on-slide trích từ chính slide.
 
 ---
 
@@ -552,7 +552,7 @@ last_synced: 2026-11-17
 
   - Thứ tự là phương pháp của chương trình: rules trước, rồi shell, rồi flow, rồi dựng, rồi review. Chưa có nghiên cứu đo hiệu quả của thứ tự này.
   - Màn hình số 0 là shell trống; kiểm ở độ rộng điện thoại và máy tính trước khi dựng tiếp. Flow đến từ tuần 4, không phải AI nghĩ ra, vì đó là quyết định thiết kế đã có.
-  - Skill prototype của toolkit có các gate để kiểm tra; bạn dùng nó ở Practice 5. Chương trình dạy dựng cả journey sau khi có rules và shell, còn gate của skill dùng để kiểm từng bước.
+  - Skill prototype của toolkit có các điểm kiểm tra, từ Check A đến E; bạn dùng nó ở Practice 5. Chương trình dạy dựng cả journey sau khi có rules và shell, còn các điểm kiểm tra của skill dùng để kiểm từng bước.
   - Review là bước dài nhất, vì một lượt dựng cả journey cho ra nhiều chỗ cần sửa.
 
   > Trong năm bước, bước nào bạn thường bỏ khi làm vội?
@@ -651,7 +651,7 @@ last_synced: 2026-11-17
   - Mức hoàn thiện cần có để đem đi test sẽ chốt ở Practice 5. Plan ghi prototype "có thể là final design" [to confirm].
   - Khi chuyển cho người khác, ba thứ đi cùng: link chạy được, rules file và danh sách điều chưa làm. Lesson handoff đã bỏ khỏi chương trình; hôm nay chỉ nêu ba thứ này ở mức khái niệm.
   - Một prototype chạy được là một thứ để test, không phải một kết quả.
-  - Prototype chạy được chưa chứng minh thiết kế đúng, nên cần cách giữ nó đúng qua nhiều lần dựng. Phần bốn là Gate, Rules, Skill: điểm dừng, quy tắc và quy trình để AI làm theo mà không phụ thuộc trí nhớ của một người.
+  - Prototype chạy được chưa chứng minh thiết kế đúng, nên cần cách giữ nó đúng qua nhiều lần dựng. Phần bốn là các lớp kiểm soát: rules, skill và hook, để AI làm theo mà không phụ thuộc trí nhớ của một người.
 
   > Câu hỏi 30 giây: nút màu cam xuất hiện ở cả bốn màn. Sửa ở đâu trước? A: từng màn. B: ở layer rộng nhất mà lỗi còn đúng, ví dụ token. Gõ A hoặc B.
 - 🎨 Visual hint: Typographic / layout chữ
@@ -661,20 +661,20 @@ last_synced: 2026-11-17
 - Kicker: 04
 - Title: Các lớp kiểm soát
 - On-slide:
-  - Gate, Rules, Skill, Hook
+  - Rules, Skill, Hook (nâng cao)
 - Ví dụ: Không cần.
 - Speaker notes:
 
-  > Phần này nói về bốn thứ giữ cho quy trình không nằm trong trí nhớ của một người.
+  > Phần này nói về ba thứ giữ cho quy trình không nằm trong trí nhớ của một người.
 
-  - Gate, rules, skill và hook. Gate là điểm dừng để bạn kiểm tra; rules và skill là thứ AI đọc và làm theo; hook là bước kiểm tra máy tự chạy. Mình đi theo thứ tự đó: rules với mười quy tắc chia hai nhóm, rồi skill, gate và hook. Quy tắc nào bạn viết lại bằng lời của mình mới là của bạn.
-  - Mình bắt đầu từ bốn khái niệm.
+  - Rules, skill và hook. Rules và skill là thứ AI đọc và làm theo; hook là bước kiểm tra máy tự chạy. Mình đi theo thứ tự đó: rules với mười quy tắc chia hai nhóm, rồi skill, và cuối cùng là hook ở mức nâng cao. Quy tắc nào bạn viết lại bằng lời của mình mới là của bạn.
+  - Mình bắt đầu từ ba khái niệm.
 - 🎨 Visual hint: Typographic / layout chữ
 ---
 
-### 25 · NUMBERED · Gate, Rules, Skill, Hook
+### 25 · NUMBERED · Rules, Skill, Hook
 - Kicker: Kiểm soát
-- Title: Gate, Rules, Skill, *Hook*
+- Title: Rules, Skill, *Hook*
 - On-slide:
   - 01
   - Rules
@@ -685,25 +685,20 @@ last_synced: 2026-11-17
   - Trong lúc dựng
   - Các bước và prompt mà AI tool làm theo
   - 03
-  - Gate
-  - Giữa các bước
-  - Điểm dừng để bạn kiểm tra trước khi AI đi tiếp
-  - 04
   - Hook
-  - Sau mỗi việc
-  - Bước kiểm tra tự chạy, không cần ai nhớ
+  - Nâng cao
+  - Kiểm tra tự chạy sau mỗi việc, thường nhờ developer cài
 - Ví dụ: Delivery App; mỗi lớp nằm ở một thời điểm của quy trình.
 - Speaker notes:
 
-  > Atlassian cài bộ skill vào repo và thêm một chỉ dẫn ngắn trong AGENTS.md để mọi agent dùng chung. Uber dùng một skill riêng cho mỗi mục của spec (nguồn [3] và [9]).
+  > Atlassian cài bộ skill vào repo và thêm một chỉ dẫn ngắn trong AGENTS.md để mọi agent dùng chung. Uber dùng các skill riêng cho từng loại spec, ví dụ spec screen reader (nguồn [3] và [9]).
 
-  - Bốn thứ này nằm ở bốn thời điểm khác nhau. Rules là rules file; AI đọc nó trước mỗi lần dựng. Skill là các bước và prompt mà AI tool làm theo, để quy trình lặp lại được. Gate là điểm dừng giữa các bước, nơi bạn kiểm tra trước khi AI đi tiếp. Hook là bước kiểm tra máy tự chạy mỗi khi AI làm xong một việc.
-  - Phân biệt nhanh: rules và skill là thứ AI đọc và làm theo, gate là việc bạn làm, hook là việc máy làm. Gate cần phán đoán của bạn; hook chỉ bắt được lỗi có đúng sai rõ.
-  - Cả bốn cùng một mục đích: quy trình không nằm trong trí nhớ của một người. Chúng chạy xuyên cả One View và The Second View, và được đặt trước khi dựng.
-  - Quy tắc và gate được đặt trước khi dựng, không thêm vào sau.
+  - Ba thứ này nằm ở ba thời điểm khác nhau. Rules là rules file; AI đọc nó trước mỗi lần dựng. Skill là các bước và prompt mà AI tool làm theo, để quy trình lặp lại được. Hook là bước kiểm tra máy tự chạy mỗi khi AI làm xong một việc; đây là phần nâng cao, nói ngắn ở cuối phần này.
+  - Phân biệt nhanh: rules và skill là thứ AI đọc và làm theo, hook là việc máy làm. Việc cần phán đoán, như màn này có dễ dùng không, vẫn là của bạn.
+  - Cả ba cùng một mục đích: quy trình không nằm trong trí nhớ của một người. Chúng chạy xuyên cả One View và The Second View, và được đặt trước khi dựng.
 
   > Quy trình nào của bạn đang nằm trong đầu bạn mà chưa viết ra?
-- 🎨 Visual hint: Typographic / bốn thẻ ngang, thẻ Hook nền tối.
+- 🎨 Visual hint: Typographic / ba thẻ ngang, thẻ Hook nền tối.
 ---
 
 ### 26 · DIAGRAM · Rules là gì?
@@ -713,7 +708,7 @@ last_synced: 2026-11-17
   - File quy tắc mà AI đọc trước mỗi lần dựng
   - Giữ AI trong One View: chỉ dùng component và token đã có
   - Mỗi dòng là một quy tắc kiểm tra được
-  - project-rules.md · Delivery App
+  - AGENTS.md · Delivery App
   - 01
   - Chỉ dùng component trong inventory; thiếu thì thêm trước
   - 02
@@ -729,7 +724,7 @@ last_synced: 2026-11-17
   - Rules là quy tắc cố định, khác skill: skill là các bước của một quy trình. Rules chỉ là lời nhắc, AI vẫn có thể bỏ sót; phần chạy tự động là hook, nói ở cuối phần này.
 
   > Quy tắc nào bạn đã từng nhắc AI nhiều lần mà nó vẫn quên?
-- 🎨 Visual hint: SPLIT. Trái: tiêu đề và ba dòng; phải: thẻ file project-rules.md ba dòng.
+- 🎨 Visual hint: SPLIT. Trái: tiêu đề và ba dòng; phải: thẻ file AGENTS.md ba dòng.
 ---
 
 ### 27 · NUMBERED · System rules
@@ -862,90 +857,24 @@ last_synced: 2026-11-17
   - Khác rules: rules là quy tắc cố định, skill là các bước
   - Skill prototype · toolkit
   - Design system
-  - Gate A
   - Shell
-  - Gate B
   - Screen plan và journey
-  - Gate C
   - Review
-  - Gate D
   - Known gaps
-  - Gate E
 - Ví dụ: Skill prototype của toolkit; bạn dùng ở Practice 5.
 - Speaker notes:
 
   > Skill là các bước và prompt mà AI tool làm theo, gói lại thành một quy trình dùng lại được. Bạn không phải gõ lại từ đầu mỗi lần, và người khác trong team chạy cũng ra cùng một quy trình.
 
-  - Ví dụ skill prototype của toolkit: đi từ design system, shell, Screen plan và journey, đến review và Known gaps. Mỗi bước có prompt riêng và dừng ở một gate, từ A đến E. Bạn dùng skill này ở Practice 5.
-  - Rules là quy tắc cố định; skill là các bước của một quy trình. Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong AGENTS.md; Uber dùng một skill riêng cho mỗi mục của spec (nguồn [3] và [9]).
+  - Ví dụ skill prototype của toolkit: đi từ design system, shell, Screen plan và journey, đến review và Known gaps. Mỗi bước có prompt riêng và một chỗ để bạn kiểm tra trước khi đi tiếp; trong toolkit, các chỗ kiểm tra này được đặt tên Check A đến E. Bạn dùng skill này ở Practice 5.
+  - Rules là quy tắc cố định; skill là các bước của một quy trình. Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong AGENTS.md; Uber dùng các skill riêng cho từng loại spec, ví dụ spec screen reader (nguồn [3] và [9]).
 
   > Quy trình nào của bạn đáng đóng gói thành skill?
-- 🎨 Visual hint: SPLIT. Trái: tiêu đề và ba dòng; phải: thẻ skill với năm bước và nhãn gate.
+- 🎨 Visual hint: SPLIT. Trái: tiêu đề và ba dòng; phải: thẻ skill với năm bước.
 ---
 
-### 32 · NUMBERED · Gate là gì?
-- Kicker: Định nghĩa
-- Title: *Gate* là gì?
-- On-slide:
-  - Điểm dừng giữa hai bước: AI dừng, bạn kiểm tra
-  - Lỗi ở bước trước không lan sang các bước sau
-  - Đặt ở cuối bước mà một lỗi nhỏ sẽ nhân lên ở mọi màn sau
-  - Gate B · Shell của Delivery App
-  - AI dừng
-  - Sau khi dựng xong shell
-  - Bạn kiểm
-  - Tab qua điều hướng bằng bàn phím
-  - Mở ở độ rộng điện thoại và máy tính
-  - Tìm giá trị thô
-  - Đi tiếp
-  - Khi đúng hết, bạn nói “Lưu lại”
-- Ví dụ: Delivery App, Gate B sau khi AI dựng xong shell.
-- Speaker notes:
-
-  > Gate là điểm dừng giữa hai bước. AI làm xong một bước thì dừng, bạn kiểm tra, rồi mới cho đi tiếp. Gate không phải review: gate là điểm dừng, review là việc bạn làm ở một gate.
-
-  - Ví dụ ở Delivery App, Gate B nằm sau khi AI dựng xong shell: bạn tab qua điều hướng bằng bàn phím, mở ở độ rộng điện thoại và máy tính, tìm giá trị thô. Đúng hết thì bạn nói “Lưu lại” và AI mới dựng tiếp.
-  - Vì sao dừng ở shell: shell là khung mà mọi màn sau nằm trong. Lệch ở đây thì lệch ở mọi màn, và sửa ở màn thứ mười tốn hơn nhiều so với sửa ngay ở màn số 0.
-  - Đây là cách làm của skill prototype trong toolkit. Chưa có nghiên cứu đo gate có giảm lỗi hay không.
-
-  > Trong quy trình của bạn, chỗ nào AI nên dừng lại để bạn kiểm tra?
-- 🎨 Visual hint: SPLIT. Trái: tiêu đề và ba dòng; phải: một thẻ ví dụ có đầu tối.
----
-
-### 33 · DIAGRAM · Năm gate của quy trình
-- Kicker: Ví dụ
-- Title: Năm gate của *quy trình*
-- On-slide:
-  - Mỗi gate cùng một nhịp: AI dừng, bạn kiểm tra, rồi mới nói “Lưu lại”.
-  - A
-  - Design system
-  - So từng component với Figma; tìm màu và cỡ chữ viết tay
-  - B
-  - Shell
-  - Tab qua điều hướng, mở hai độ rộng, tìm giá trị thô
-  - C
-  - Screen plan
-  - AI chỉ kiểm plan: thiếu component hay nội dung nào không
-  - D
-  - Review
-  - Mở từng màn, bấm mọi control, so với plan
-  - E
-  - Known gaps
-  - Ghi những gì prototype chưa làm trước khi đưa người test
-- Ví dụ: Năm gate từ A đến E của Practice 5.
-- Speaker notes:
-
-  > Skill prototype của toolkit có năm gate, từ A đến E. Mỗi gate cùng một nhịp: AI dừng, bạn kiểm tra, đúng thì bạn nói “Lưu lại”.
-
-  - Gate A sau khi dựng design system: so từng component với Figma, tìm màu và cỡ chữ viết tay. Gate B sau shell: bàn phím, hai độ rộng, giá trị thô. Gate C ở Screen plan: bạn viết plan, AI chỉ kiểm plan thiếu component hay nội dung, không viết hộ. Gate D là review, bước dài nhất: mở từng màn, bấm mọi control, so với plan. Gate E ghi những gì prototype chưa làm, để người test không nhầm bản chưa xong là bản hoàn chỉnh.
-  - Bạn dùng năm gate này ở Practice 5.
-
-  > Gate nào bạn dễ bỏ qua nhất khi làm vội?
-- 🎨 Visual hint: SCHEMATIC. Bảng năm dòng: chữ cái A đến E, tên gate, một dòng kiểm gì.
----
-
-### 34 · DIAGRAM · Hook là gì?
-- Kicker: Định nghĩa
+### 32 · DIAGRAM · Hook là gì?
+- Kicker: Nâng cao
 - Title: *Hook* là gì?
 - On-slide:
   - Bước kiểm tra tự chạy mỗi khi AI làm xong một việc
@@ -960,89 +889,52 @@ last_synced: 2026-11-17
 - Ví dụ: Delivery App, màn Chọn thời gian giao; AI dựng xong thì hook kiểm tra state và token.
 - Speaker notes:
 
-  > Rules file là lời nhắc. AI đọc rồi vẫn có thể bỏ sót, nhất là khi dựng nhiều màn liên tiếp. Hook là bước kiểm tra tự chạy mỗi khi AI làm xong một việc, không cần ai nhớ. Gate cần bạn đứng ra kiểm; hook là phần kiểm tra mà máy làm thay.
+  > Rules file là lời nhắc. AI đọc rồi vẫn có thể bỏ sót, nhất là khi dựng nhiều màn liên tiếp. Hook là bước kiểm tra tự chạy mỗi khi AI làm xong một việc, không cần ai nhớ. Phần kiểm tra bằng mắt vẫn là của bạn; hook là phần kiểm tra mà máy làm thay.
 
   - Ví dụ ở delivery app: AI vừa dựng xong màn Chọn thời gian giao. Hook tự kiểm tra màn đó có đủ state loading, empty và error không, có mã màu viết tay nào ngoài token không. Thiếu thì báo ngay, trước khi bạn mở màn ra xem.
   - Mỗi hook có hai phần: sự kiện kích hoạt (AI sửa xong một file, AI xong một lượt việc) và việc tự chạy theo (một lệnh kiểm tra, một thông báo). Thường developer hoặc người rành tool cài đặt. Phần của designer là quyết định kiểm tra cái gì, và đó chính là các quy tắc bạn viết ở phần này.
   - Hook chỉ bắt được lỗi có đúng sai rõ: thiếu state, token sai, nhãn lệch. Việc cần phán đoán, như màn này có dễ dùng không, vẫn cần designer và người dùng thật ở Lesson 6.
-  - Tên gọi và cách cài hook khác nhau theo từng tool; lớp này chỉ dạy khái niệm. Mức cơ sở: đây là cách các AI tool dạng agent đang dùng hook, chưa phải cách làm do khoá đo.
+  - Hook phổ biến chia theo thời điểm chạy: trước khi AI làm (chặn, ví dụ chặn sửa file token), sau mỗi lần AI sửa (kiểm: tìm mã màu viết tay ngoài token, kiểm tra component nằm trong inventory, tương phản, vùng chạm 44 px, một h1), và khi AI xong lượt việc (báo: nhắc ghi điều chưa làm, gửi thông báo cho team). Đây là phần nâng cao: designer không cần cài hook, chỉ cần nói được mình muốn kiểm gì ở thời điểm nào.
+  - Tên gọi và cách cài hook khác nhau theo từng tool; lớp này chỉ dạy khái niệm. Mức cơ sở: một số AI tool dạng agent có tính năng hook; cách ghép với design system là đề xuất của khoá, chưa phải cách làm do khoá đo.
+  - Slide kế là tuỳ chọn, nói về package trong toolkit. Nếu bỏ qua thì sang phần năm: Share prototype.
 
   > Trong mười quy tắc, quy tắc nào bạn muốn máy tự kiểm tra thay vì nhờ AI nhớ?
 - 🎨 Visual hint: SCHEMATIC. Trái: tiêu đề và ba dòng; phải: ba thẻ dọc nối bằng mũi tên.
 ---
 
-### 35 · DIAGRAM · Gate và Hook ở từng bước
-- Kicker: Quy trình
-- Title: Gate và Hook ở *từng bước*
+### 33 · DIAGRAM · Package trong toolkit
+- Kicker: Tuỳ chọn
+- Title: Package trong *toolkit*
 - On-slide:
-  - Bước
-  - Gate · bạn kiểm
-  - Hook · máy tự chạy
-  - Design system
-  - So từng component với Figma
-  - Tìm màu và cỡ chữ viết tay ngoài token
-  - Shell
-  - Tab bàn phím, hai độ rộng
-  - Báo khi màn mới nằm ngoài shell
-  - Journey
-  - Screen plan: thiếu gì không
-  - Sau mỗi màn: đủ state, component trong inventory
-  - Review
-  - Mở và dùng từng màn
-  - Tương phản, vùng chạm 44 px, nhãn ô nhập, một h1
-  - Known gaps
-  - Ghi điều chưa làm
-  - Cuối lượt việc: nhắc ghi vào Known gaps
-- Ví dụ: Bước Journey: sau mỗi màn AI dựng, hook kiểm tra đủ state và component trong inventory.
+  - 01
+  - Rules
+  - AGENTS.md
+  - Mười quy tắc; bản khởi đầu là project-rules.md trong toolkit
+  - 02
+  - Skill
+  - SKILL.md
+  - Các bước và prompt, từ design system đến Known gaps
+  - 03
+  - Hook
+  - Nâng cao
+  - Kiểm tra tự chạy; chưa có file mẫu, nhờ developer cài
+  - Thư mục toolkit/skills/prototype. Dùng ở Practice 5, không bắt buộc.
+- Ví dụ: Copy thư mục starter thành work/prototype, đặt mười quy tắc vào AGENTS.md hoặc đưa project-rules.md cho AI tool ở mỗi lần dựng.
 - Speaker notes:
 
-  > Gate và hook cùng nằm trên quy trình, khác nhau ở người kiểm. Gate là bạn, hook là máy. Cột giữa là việc bạn làm ở Practice 5; cột phải là việc có thể giao cho hook.
+  > Slide tuỳ chọn: bỏ nếu trễ giờ.
 
-  - Ví dụ ở bước Journey: sau mỗi màn AI dựng, hook kiểm tra màn đó có đủ state và dùng component trong inventory. Đến Gate C bạn không phải đi tìm những lỗi đó nữa, mà dùng sức cho việc cần phán đoán.
-  - Ở bước Review, hook chạy các kiểm tra có đúng sai rõ: độ tương phản, vùng chạm dưới 44 px, nhãn ô nhập, một h1. Việc mở và dùng từng màn vẫn là của bạn.
-  - Hook không thay gate. Hook bắt lỗi có quy tắc rõ; gate là chỗ bạn quyết định đi tiếp hay không.
-  - Cách ghép này do khoá đề xuất, chưa có nghiên cứu đo.
+  - Toolkit của khoá có sẵn hai thứ trong thư mục skill prototype. Các công ty lớn để rules trong repo, thường là file AGENTS.md mà nhiều tool tự đọc. Toolkit có sẵn bản khởi đầu là project-rules.md trong thư mục starter: mười quy tắc để bạn copy vào AGENTS.md (hoặc file rules mà tool của bạn đọc) rồi viết lại. Skill là file SKILL.md: các bước và prompt từ design system đến Known gaps.
+  - Cách dùng: copy thư mục starter thành work/prototype, đặt mười quy tắc vào AGENTS.md hoặc đưa project-rules.md cho AI tool ở mỗi lần dựng, và chạy các bước của skill theo thứ tự. Bạn dùng đúng bộ này ở Practice 5, và không bắt buộc: bạn có thể tự viết rules của mình.
+  - Hook thì toolkit chưa có bản mẫu. Hook là phần nâng cao ở slide trước: khi cần, nhờ developer cài. Skill prototype đang ở trạng thái draft, chưa thử với lớp thật.
+  - Bộ này là cách khoá xếp lại các thực hành có thật, không phải một package có sẵn của các công ty lớn. Các công ty không đóng gói thành một bộ: skill và MCP được phát hành qua npm hoặc registry, rules nằm trong repo, và việc kiểm tra chạy bằng lint, CI hoặc hook. Mình chưa tìm thấy case study công khai nào dùng đủ cả bộ.
+  - Giờ bạn có rules và skill để AI dựng đúng, và biết hook là bước tiếp theo khi cần. Phần năm là Share prototype: đưa prototype đến tay team, qua HTML, live site hoặc hub.
 
-  > Ở bước nào trong năm bước bạn muốn máy kiểm tra thay mình trước?
-- 🎨 Visual hint: SCHEMATIC. Bảng ba cột: Bước, Gate · bạn kiểm, Hook · máy tự chạy.
+  > Bạn muốn dùng bộ có sẵn hay tự viết rules của mình?
+- 🎨 Visual hint: SCHEMATIC. Ba thẻ ngang Rules, Skill, Hook; thẻ Hook nền tối.
 ---
 
-### 36 · DIAGRAM · Hook phổ biến
-- Kicker: Tham khảo
-- Title: Hook *phổ biến*
-- On-slide:
-  - Chặn
-  - Trước khi AI làm
-  - Chặn sửa file token và component ngoài bước design system
-  - Chặn lệnh nguy hiểm như xoá file
-  - Nhắc đính kèm rules file nếu chưa có
-  - Kiểm
-  - Sau mỗi lần AI sửa
-  - Tìm màu và cỡ chữ viết tay ngoài token
-  - Kiểm tra component nằm trong inventory
-  - Kiểm tra tương phản, vùng chạm 44 px, một h1
-  - Báo
-  - Khi AI xong lượt việc
-  - Lưu checkpoint, tức lệnh “Lưu lại”
-  - Nhắc ghi điều chưa làm vào Known gaps
-  - Gửi thông báo cho team khi có bản mới
-  - Tên và cách cài khác nhau theo từng tool; designer chọn kiểm gì và khi nào.
-- Ví dụ: Không cần; slide tham khảo.
-- Speaker notes:
-
-  > Một màn hình để quay lại khi cài hook hoặc nhờ developer cài. Hook phổ biến chia theo thời điểm chạy: trước khi AI làm, sau mỗi lần AI sửa, và khi AI xong lượt việc.
-
-  - Trước khi AI làm là nhóm chặn. Ví dụ chặn sửa file token và component ngoài bước design system, vì sửa nhầm ở đây lan ra mọi màn.
-  - Sau mỗi lần AI sửa là nhóm kiểm, và là nhóm designer dùng nhiều nhất: tìm màu và cỡ chữ viết tay ngoài token, kiểm tra component nằm trong inventory, kiểm tra tương phản, vùng chạm và một h1.
-  - Khi AI xong lượt việc là nhóm báo: lưu checkpoint, nhắc ghi điều chưa làm vào Known gaps, gửi thông báo cho team.
-  - Tên hook và cách cài khác nhau theo từng tool. Designer không cần cài; chỉ cần nói được mình muốn kiểm gì ở thời điểm nào.
-  - Giờ bạn có rules, skill, gate và hook để AI dựng đúng. Phần năm là Share prototype: đưa prototype đến tay team, qua HTML, live site hoặc hub.
-
-  > Hook nào trong danh sách này bạn sẽ nhờ cài trước?
-- 🎨 Visual hint: SPLIT. Ba thẻ ngang theo thời điểm, thẻ giữa nền tối.
----
-
-### 37 · SECTION DIVIDER · Share prototype
+### 34 · SECTION DIVIDER · Share prototype
 - Kicker: 05
 - Title: Share *prototype*
 - On-slide:
@@ -1056,7 +948,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: TYPOGRAPHIC. Section divider nền vàng, số 05 lớn.
 ---
 
-### 38 · COMPARE · Prototype code khác Figma
+### 35 · COMPARE · Prototype code khác Figma
 - Kicker: Vì sao cần
 - Title: Prototype code *khác Figma*
 - On-slide:
@@ -1085,7 +977,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: TWO CARDS. So sánh Figma và Prototype code.
 ---
 
-### 39 · COMPARE · Ba cách share prototype
+### 36 · COMPARE · Ba cách share prototype
 - Kicker: So sánh
 - Title: Ba cách *share prototype*
 - On-slide:
@@ -1116,7 +1008,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Ba cách xếp từ đơn giản đến đầy đủ.
 ---
 
-### 40 · DIAGRAM · Share file HTML
+### 37 · DIAGRAM · Share file HTML
 - Kicker: Cách 1
 - Title: Share *file HTML*
 - On-slide:
@@ -1144,7 +1036,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Trái: ba dòng; phải: file prototype.html và các bản v1, v2, v3_final.
 ---
 
-### 41 · PROCESS · Live site trên GitHub
+### 38 · PROCESS · Live site trên GitHub
 - Kicker: Cách 2
 - Title: Live site *trên GitHub*
 - On-slide:
@@ -1178,7 +1070,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Bốn bước nối nhau từ Push đến Stakeholder mở link.
 ---
 
-### 42 · DIAGRAM · Prototype hub
+### 39 · DIAGRAM · Prototype hub
 - Kicker: Cách 3
 - Title: Prototype *hub*
 - On-slide:
@@ -1208,7 +1100,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Một thẻ hub liệt kê các prototype.
 ---
 
-### 43 · STATEMENT · Q&A
+### 40 · STATEMENT · Q&A
 - Kicker: Bạn muốn hỏi về
 - Title: Q&A
 - On-slide:
@@ -1228,7 +1120,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: Typographic / layout chữ
 ---
 
-### 44 · PRACTICE · Build the prototype
+### 41 · PRACTICE · Build the prototype
 - Kicker: Practice
 - Title: Build the prototype
 - On-slide:
@@ -1236,12 +1128,14 @@ last_synced: 2026-11-17
   - Có một bộ design system (Figma/Repo/Others)
   - Chọn một flow muốn develop
   - Design flow bằng Figma
-  - Build design system và template
+  - Rules, design system và template
+  - Viết rules file từ bản mẫu
   - Build design system
   - Dựng shell và template
   - Experience pattern (tuỳ chọn)
   - Prototype
   - Dựng journey prototype
+  - Skill prototype (tuỳ chọn)
   - Publish prototype lên GitHub
 - Ví dụ: Không cần.
 - Speaker notes:
@@ -1251,10 +1145,11 @@ last_synced: 2026-11-17
   - Bài không giới hạn một buổi: làm phần đầu ở nhà, tiếp tục trên lớp; mỗi bước có một file lưu lại.
   - Mang theo: - design system trong Figma (token, component kèm trạng thái) - hướng đã chọn và flow từ tuần 4 - nội dung thật - một AI coding tool đã được công ty cho phép
   - Design system của công ty có thể là tài liệu mật; không chắc thì dùng bản của giảng viên.
-  - Hai làn: Figma (bạn tự làm) và AI coding tool (AI dựng, bạn kiểm tra). Gate A ở Step 3, Gate B ở Step 4, Gate C ở Screen plan của Step 6, Gate D ở Step 7, Gate E ở Step 8.
+  - Hai làn: Figma (bạn tự làm) và AI coding tool (AI dựng, bạn kiểm tra). Check A ở Step 3, Check B ở Step 4, Check C ở Screen plan của Step 6, Check D ở Step 7, Check E ở Step 8; số step của skill prototype khớp với bài này.
   - Gợi ý chia việc (chưa thử với lớp thật): Step 1 đến 3 ở nhà, Step 4 đến 8 trên lớp. Nếu đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau.
   - Output: tokens.css, components.css, components.html, project-rules.md, file shell và template, file màn hình, work/prototype/index.md, _personal/learning-log.md.
   - Shell và template của product là phần bạn tự định nghĩa; AI không làm thay.
+  - Về rules: ở Step 3, bạn bắt đầu từ mười quy tắc mẫu, viết lại quy tắc mơ hồ và thêm content voice. Về skill: skill prototype của toolkit là tuỳ chọn; nên làm tay một lần trước, rồi mới dùng skill nếu tool của bạn hỗ trợ.
   - Bước cuối của bài là publish prototype lên GitHub, để team mở và xem được; cách chia sẻ đã nói ở phần Share prototype.
   - Quy trình thiết kế không thay đổi; thứ thay đổi là đầu ra của công việc.
 - 🎨 Visual hint: Typographic / layout chữ

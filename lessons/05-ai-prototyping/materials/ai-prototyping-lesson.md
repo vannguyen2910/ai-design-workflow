@@ -22,7 +22,7 @@ Chúng ta dựng prototype từ design system riêng bằng rules file, thay vì
 1. The Aim: vì sao dựng từng màn hình thì lệch dần
 2. One View: nền chuẩn và bốn layer
 3. The Second View: prototype thật
-4. Các lớp kiểm soát: Gate, Rules, Skill và Hook
+4. Các lớp kiểm soát: Rules, Skill và Hook
 5. Share prototype: đưa prototype đến tay team
 
 ## Sau buổi học, bạn có thể
@@ -30,7 +30,7 @@ Chúng ta dựng prototype từ design system riêng bằng rules file, thay vì
 1. Giải thích vì sao dựng từng màn hình từ đầu thì kết quả lệch dần, và vì sao Design Pattern đi trước màn hình
 2. Phân biệt token, component, template và shell, gọi tên cả bộ là Design Pattern, và chỉ ra layer nào còn thiếu trong design system đang có
 3. Phân biệt One View (nền chuẩn) với The Second View (prototype thật), và nêu vì sao thay đổi ở nguồn chỉ tự cập nhật sang ở layer token
-4. Nêu vai trò của Gate, Rules, Skill và Hook, và hai nhóm quy tắc của một rules file (quy tắc hệ thống, quy tắc làm việc)
+4. Nêu vai trò của Rules, Skill và Hook, và hai nhóm quy tắc của một rules file (quy tắc hệ thống, quy tắc làm việc)
 5. Nhận ra một màn hình do AI dựng vi phạm quy tắc bằng cách đối chiếu với rules file và component có sẵn, và nêu giới hạn của prototype: là bản tham chiếu và thứ để test
 6. Chọn cách chia sẻ prototype (file HTML, live site hoặc hub) phù hợp với tình huống
 
@@ -172,7 +172,7 @@ flowchart LR
   RV -. "sửa ở layer rộng nhất<br/>mà lỗi còn đúng" .-> SH
 ```
 
-Skill `prototype` của toolkit có thêm các gate kiểm (đối chiếu kế hoạch, bàn phím, hai độ rộng, giá trị thô) và được dùng ở bài tập về nhà.
+Skill `prototype` của toolkit có thêm các điểm kiểm tra, từ Check A đến E (đối chiếu kế hoạch, bàn phím, hai độ rộng, giá trị thô) và được dùng ở bài tập về nhà.
 
 ### 3.4 Sửa ở đúng layer
 
@@ -212,24 +212,23 @@ Khi chuyển cho người khác, ba thứ đi cùng prototype: link chạy đư�
 
 ---
 
-## 4. Các lớp kiểm soát: Gate, Rules, Skill và Hook
+## 4. Các lớp kiểm soát: Rules, Skill và Hook
 
-### 4.1 Bốn lớp kiểm soát
+### 4.1 Ba lớp kiểm soát
 
 | Lớp | Là gì | Dùng để |
 |---|---|---|
 | **Rules** | Rules file: các quy tắc AI đọc trước mỗi lần dựng | Giữ AI trong One View |
 | **Skill** | Các bước và prompt mà AI tool làm theo | Làm quy trình có thể dùng lại |
-| **Gate** | Điểm dừng kiểm tra giữa các bước: các gate của skill `prototype` (design system, shell, kế hoạch, review, điều chưa làm) | Dừng lại kiểm trước khi đi tiếp |
 | **Hook** | Bước kiểm tra máy tự chạy mỗi khi AI làm xong một việc | Bắt lỗi có đúng sai rõ mà không cần ai nhớ |
 
-Bốn lớp nằm ở bốn thời điểm: rules trước khi dựng, skill trong lúc dựng, gate giữa các bước, hook sau mỗi việc. Rules và skill là thứ AI đọc và làm theo; gate là việc bạn làm; hook là việc máy làm.
+Ba lớp nằm ở ba thời điểm: rules trước khi dựng, skill trong lúc dựng, hook sau mỗi việc. Rules và skill là thứ AI đọc và làm theo; hook là việc máy làm. Việc cần phán đoán, như màn này có dễ dùng không, vẫn là của bạn.
 
-Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong `AGENTS.md`; Uber dùng một skill riêng cho mỗi mục của spec. Cả hai là cách giữ cho quy trình không nằm trong trí nhớ của một người.
+Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong `AGENTS.md`; Uber dùng các skill riêng cho từng loại spec, ví dụ spec screen reader. Cả hai là cách giữ cho quy trình không nằm trong trí nhớ của một người.
 
 ### 4.2 Rules là gì
 
-Rules file là file quy tắc mà AI đọc trước mỗi lần dựng; mỗi dòng là một quy tắc kiểm tra được. Không có nó thì AI quay về default của nó, và một token còn thiếu dễ biến thành một mã màu tự bịa mà trông vẫn ổn. Ví dụ ở delivery app, quy tắc 1: thiếu component trong inventory thì yêu cầu thêm trước, rồi mới dựng. Bộ mẫu gồm mười quy tắc, nói ở mục 4.3. Rules chỉ là lời nhắc; phần chạy tự động là hook (mục 4.9).
+Rules file là file quy tắc mà AI đọc trước mỗi lần dựng; mỗi dòng là một quy tắc kiểm tra được. Không có nó thì AI quay về default của nó, và một token còn thiếu dễ biến thành một mã màu tự bịa mà trông vẫn ổn. Ví dụ ở delivery app, quy tắc 1: thiếu component trong inventory thì yêu cầu thêm trước, rồi mới dựng. Bộ mẫu gồm mười quy tắc, nói ở mục 4.3. Rules chỉ là lời nhắc; phần chạy tự động là hook (mục 4.8).
 
 ### 4.3 Mười quy tắc của rules file
 
@@ -283,51 +282,21 @@ Mười quy tắc nói AI không được làm gì; dòng bốn phần nói khi 
 
 ### 4.7 Skill là gì
 
-Skill là các bước và prompt mà AI tool làm theo, gói lại thành một quy trình dùng lại được. Rules là quy tắc cố định; skill là các bước của một quy trình. Skill `prototype` của toolkit đi từ design system, shell, Screen plan và journey, đến review và Known gaps, và dừng ở một gate sau mỗi bước.
+Skill là các bước và prompt mà AI tool làm theo, gói lại thành một quy trình dùng lại được. Rules là quy tắc cố định; skill là các bước của một quy trình. Skill `prototype` của toolkit đi từ design system, shell, Screen plan và journey, đến review và Known gaps, và có một chỗ để bạn kiểm tra sau mỗi bước. Trong toolkit, các chỗ kiểm tra này được đặt tên Check A đến E (xem Practice 5).
 
-### 4.8 Gate là gì
+### 4.8 Hook: bước kiểm tra tự chạy (nâng cao)
 
-Gate là điểm dừng giữa hai bước: AI làm xong một bước thì dừng, bạn kiểm tra, rồi mới cho đi tiếp. Gate không phải review; review là việc bạn làm ở một gate. Ví dụ ở delivery app, Gate B nằm sau khi AI dựng xong shell: bạn tab qua điều hướng bằng bàn phím, mở ở độ rộng điện thoại và máy tính, tìm giá trị thô, rồi nói "Lưu lại". Dừng ở shell vì mọi màn sau nằm trong shell; lệch ở đây thì lệch ở mọi màn.
-
-Năm gate của skill `prototype`, dùng ở Practice 5:
-
-| Gate | Sau bước | Bạn kiểm |
-|---|---|---|
-| A | Design system | So từng component với Figma; tìm màu và cỡ chữ viết tay |
-| B | Shell | Tab qua điều hướng, mở hai độ rộng, tìm giá trị thô |
-| C | Screen plan | AI chỉ kiểm plan: thiếu component hay nội dung nào không |
-| D | Review | Mở từng màn, bấm mọi control, so với plan |
-| E | Known gaps | Ghi những gì prototype chưa làm trước khi đưa người test |
-
-### 4.9 Hook: bước kiểm tra tự chạy
-
-Rules file là lời nhắc, và AI có thể bỏ sót khi dựng nhiều màn liên tiếp. Hook là bước kiểm tra tự chạy mỗi khi AI làm xong một việc, không cần ai nhớ. Gate cần bạn đứng ra kiểm; hook là phần kiểm tra mà máy làm thay. Ví dụ ở delivery app: AI vừa dựng xong màn Chọn thời gian giao, hook tự kiểm tra màn đó có đủ state loading, empty, error và không có mã màu viết tay ngoài token. Thiếu thì báo ngay, trước khi bạn mở màn ra xem.
+Rules file là lời nhắc, và AI có thể bỏ sót khi dựng nhiều màn liên tiếp. Hook là bước kiểm tra tự chạy mỗi khi AI làm xong một việc, không cần ai nhớ. Phần kiểm tra bằng mắt vẫn là của bạn; hook là phần kiểm tra mà máy làm thay. Ví dụ ở delivery app: AI vừa dựng xong màn Chọn thời gian giao, hook tự kiểm tra màn đó có đủ state loading, empty, error và không có mã màu viết tay ngoài token. Thiếu thì báo ngay, trước khi bạn mở màn ra xem.
 
 Mỗi hook có hai phần: sự kiện kích hoạt (AI sửa xong một file, xong một lượt việc) và việc tự chạy theo (một lệnh kiểm tra, một thông báo). Thường developer hoặc người rành tool cài đặt; phần của designer là quyết định kiểm tra cái gì, tức các quy tắc bạn viết ở mục 4.3. Hook chỉ bắt được lỗi có đúng sai rõ, như thiếu state, token sai, nhãn lệch. Việc cần phán đoán, như màn này có dễ dùng không, vẫn cần designer và người dùng thật ở Lesson 6.
 
-Tên gọi và cách cài hook khác nhau theo từng tool; buổi này chỉ dạy khái niệm. Mức cơ sở: đây là cách các AI tool dạng agent đang dùng hook, chưa phải cách làm do khoá đo.
+Hook phổ biến chia theo thời điểm chạy: trước khi AI làm (chặn, ví dụ chặn sửa file token), sau mỗi lần AI sửa (kiểm: tìm màu và cỡ chữ viết tay ngoài token, kiểm tra component nằm trong inventory, tương phản, vùng chạm 44 px, một h1), và khi AI xong lượt việc (báo: nhắc ghi điều chưa làm, gửi thông báo cho team). Đây là phần nâng cao: designer không cần cài hook, chỉ cần nói được mình muốn kiểm gì ở thời điểm nào. Tên gọi và cách cài hook khác nhau theo từng tool; buổi này chỉ dạy khái niệm. Mức cơ sở: một số AI tool dạng agent có tính năng hook; cách ghép với design system là đề xuất của khoá, chưa phải cách làm do khoá đo.
 
-### 4.10 Gate và Hook ở từng bước
+### 4.9 Package trong toolkit (tuỳ chọn)
 
-| Bước | Gate · bạn kiểm | Hook · máy tự chạy |
-|---|---|---|
-| Design system | So từng component với Figma | Tìm màu và cỡ chữ viết tay ngoài token |
-| Shell | Tab bàn phím, hai độ rộng | Báo khi màn mới nằm ngoài shell |
-| Journey | Screen plan: thiếu gì không | Sau mỗi màn: đủ state, component trong inventory |
-| Review | Mở và dùng từng màn | Tương phản, vùng chạm 44 px, nhãn ô nhập, một h1 |
-| Known gaps | Ghi điều chưa làm | Cuối lượt việc: nhắc ghi vào Known gaps |
+Toolkit của khoá có sẵn hai lớp đầu trong thư mục `toolkit/skills/prototype/`: rules là `starter/project-rules.md` (mười quy tắc để copy vào project rồi viết lại) và skill là `SKILL.md` (các bước và prompt từ design system đến Known gaps). Các công ty lớn để rules trong repo, thường là file `AGENTS.md` mà nhiều tool tự đọc; bản khởi đầu `project-rules.md` được copy vào `AGENTS.md` (hoặc file rules mà tool của bạn đọc) rồi viết lại. Cách dùng: copy thư mục `starter` thành `work/prototype/`, đưa `project-rules.md` cho AI tool ở mỗi lần dựng, và chạy các bước của skill theo thứ tự. Không bắt buộc; bạn có thể tự viết rules của mình. Hook thì toolkit chưa có bản mẫu; Hook là phần nâng cao ở mục 4.8: khi cần, nhờ developer cài. Skill `prototype` đang ở trạng thái draft, chưa thử với lớp thật.
 
-Hook không thay gate: hook bắt lỗi có quy tắc rõ, gate là chỗ bạn quyết định đi tiếp hay không. Cách ghép này do khoá đề xuất, chưa có nghiên cứu đo.
-
-### 4.11 Cheat sheet: hook phổ biến
-
-| Nhóm | Chạy khi | Ví dụ |
-|---|---|---|
-| Chặn | Trước khi AI làm | Chặn sửa file token và component ngoài bước design system; chặn lệnh nguy hiểm như xoá file; nhắc đính kèm rules file nếu chưa có |
-| Kiểm | Sau mỗi lần AI sửa | Tìm màu và cỡ chữ viết tay ngoài token; kiểm tra component nằm trong inventory; kiểm tra tương phản, vùng chạm 44 px, một h1 |
-| Báo | Khi AI xong lượt việc | Lưu checkpoint ("Lưu lại"); nhắc ghi điều chưa làm vào Known gaps; gửi thông báo cho team khi có bản mới |
-
-Designer không cần cài hook; chỉ cần nói được mình muốn kiểm gì ở thời điểm nào.
+Bộ này là cách khoá xếp lại các thực hành có thật, không phải một package có sẵn của các công ty lớn. Các công ty không đóng gói thành một bộ: skill và MCP được phát hành qua npm hoặc registry, rules nằm trong repo, và việc kiểm tra chạy bằng lint, CI hoặc hook. Chưa tìm thấy case study công khai nào dùng đủ cả bộ.
 
 ---
 
