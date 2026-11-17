@@ -78,12 +78,11 @@ last_synced: 2026-11-17
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Sáu phút, cả lớp; nói trước hai mươi giây để làm mẫu, rồi mỗi người khoảng bốn mươi giây
-  - Hai việc mỗi người nói: tên và công việc hiện tại; một lần dùng AI trong công việc khiến designer bất ngờ, hoặc làm designer bực
-  - Ai chưa dùng AI nhiều: kể điều kỳ vọng hoặc lo ngại; không ai phải có câu chuyện hay
-  - Bảng hai cột được dùng lại
-  - Lớp nhỏ thì rút còn năm phút; nếu quá giờ ở phần sau, đây là chỗ cắt cuối cùng
-  - Chuyển tiếp: hôm nay nhìn lại cả hai cột bằng bằng chứng
+  - Ice breaker khoảng sáu phút, cả lớp. Mình nói mẫu trước khoảng hai mươi giây, rồi mỗi người khoảng bốn mươi giây.
+  - Mỗi người nói hai việc: tên và công việc hiện tại, và một lần dùng AI khiến bạn bất ngờ hoặc thấy bực. Ai chưa dùng AI nhiều thì kể điều kỳ vọng hoặc lo ngại. Không ai phải có câu chuyện hay.
+  - Mình ghi lại thành bảng hai cột, vì bảng này sẽ dùng lại ở các slide sau.
+  - Lớp nhỏ thì rút còn năm phút. Nếu quá giờ ở phần sau, đây là chỗ cắt cuối cùng.
+  - Chuyển tiếp: hôm nay mình nhìn lại cả hai cột này bằng bằng chứng.
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn; không có diagram. Bên dưới có hai cột trống "Bất ngờ" và "Bực" để chiếu trong lúc ghi.
 
 ---
@@ -123,11 +122,12 @@ last_synced: 2026-11-17
 - Ví dụ: cần ví dụ: một tình huống trong ngày làm việc của designer cho thấy các con số (ví dụ nhận brief và AI dựng màn hình)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Với mỗi con số, nói nguồn, năm và cỡ mẫu. 01 và 03: Designer Fund và Foundation Capital, AI in Design 2026, hơn 900 designer, tự khai báo, không phải mẫu ngẫu nhiên; nói "trong khảo sát", không nói "cả nghề"
-  - 02: Nielsen Norman Group, State of UX 2026; đây là phân tích của chuyên gia, không phải khảo sát
-  - Nếu có người hỏi về số việc làm: BLS dự báo web và digital interface designer +7,0% (2024 đến 2034) và nói AI "may soften" mức tăng ở bảng 2025 đến 2035; hai bảng dùng cách gộp khác nhau nên đừng so trực tiếp (lesson mục 1.1)
-  - Giới hạn: chưa có nguồn nào cho thị trường Việt Nam ở cấp designer
-  - Một phút rưỡi cho slide này
+  - Với mỗi con số, mình nói rõ nguồn, năm và cỡ mẫu.
+  - Số 01 và 03 đến từ Designer Fund và Foundation Capital, AI in Design 2026: hơn 900 designer, tự khai báo, không phải mẫu ngẫu nhiên. Vì vậy mình nói "trong khảo sát", không nói "cả nghề".
+  - Số 02 đến từ Nielsen Norman Group, State of UX 2026. Đây là phân tích của chuyên gia, không phải khảo sát.
+  - Nếu có người hỏi về số việc làm: BLS dự báo web và digital interface designer +7,0% (2024 đến 2034) và nói AI "may soften" mức tăng ở bảng 2025 đến 2035. Hai bảng dùng cách gộp khác nhau nên đừng so trực tiếp (lesson mục 1.1).
+  - Giới hạn: chưa có nguồn nào cho thị trường Việt Nam ở cấp designer.
+  - Slide này khoảng một phút rưỡi.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba mục; số liệu lớn, nguồn là dòng xám nhỏ bên dưới mỗi mục.
 
 ---
@@ -172,12 +172,13 @@ last_synced: 2026-11-17
 - Ví dụ: cần ví dụ: một tình huống một dòng cho mỗi hướng, dùng role label
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ba hướng không loại trừ nhau, và đây là xu hướng chứ không phải sự đảm bảo; mỗi hướng một câu, tổng một phút
-  - 01: bằng chứng ở mức vừa (NN/g 2026 cộng một nghiên cứu gián tiếp); buổi 2 đến 5
-  - 02: một nửa designer được khảo sát đã ship code do AI tạo; buổi 7 đến 9; khoá không biến designer thành engineer, designer chỉ đạo AI coding tool và kiểm tra những gì nó đã làm
-  - 03: nói thẳng khoá này dạy cách dùng AI để làm việc, không dạy thiết kế sản phẩm AI; bằng chứng về tăng trưởng ở mức yếu
-  - Mỗi hướng có một slide chi tiết ở Appendix; mở ra khi có người hỏi sâu hơn
-  - Câu A/B 30 giây: bỏ phiếu trong chat, designer nghiêng về hướng 01, 02 hay 03?
+  - Ba hướng này không loại trừ nhau, và đây là xu hướng chứ không phải sự đảm bảo. Mỗi hướng mình nói một câu, tổng khoảng một phút.
+    - 01: bằng chứng ở mức vừa (NN/g 2026 cộng một nghiên cứu gián tiếp), học ở buổi 2 đến 5
+    - 02: một nửa designer được khảo sát đã ship code do AI tạo, học ở buổi 7 đến 9. Khoá không biến designer thành engineer: bạn chỉ đạo AI coding tool và kiểm tra những gì nó đã làm
+    - 03: mình nói thẳng là khoá này dạy cách dùng AI để làm việc, không dạy thiết kế sản phẩm AI. Bằng chứng về tăng trưởng ở mức yếu
+  - Mỗi hướng có một slide chi tiết ở Appendix, mở ra khi có người hỏi sâu hơn.
+
+  > Bỏ phiếu trong chat, bạn nghiêng về hướng 01, 02 hay 03?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn mục, số purple; dòng 04 dùng màu ochre để nhấn giới hạn của khoá.
 
 ---
@@ -187,7 +188,7 @@ last_synced: 2026-11-17
 - Title: Làm theo brief hay\n*cùng định hình vấn đề?*
 - On-slide:
   - Từ brief có sẵn
-  - Kiểm tra yêu cầu, thiết kế rồi bàn giao. Nhanh, nhưng mặc định vấn đề đã đúng
+  - Kiểm tra yêu cầu, thiết kế rồi bàn giao. Cách làm này nhanh, nhưng mặc định vấn đề đã được xác định đúng
   - Design nhận brief từ Product rồi thực hiện
   - Nhanh, nhưng rủi ro giải sai vấn đề
   - Cùng định hình
@@ -225,13 +226,12 @@ last_synced: 2026-11-17
 - Ví dụ: Không cần. Slide gọi tên và xếp thứ tự các stage.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đối chiếu với điều đã học: Empathise là Discover; Define là Define; Ideate và Prototype là Develop; Test là Deliver
-  - Hai hình thoi: mở rộng rồi thu hẹp về vấn đề, sau đó mở rộng rồi thu hẹp về giải pháp
-  - Output của mỗi stage là input của stage kế tiếp
-  - Mỗi stage kết thúc bằng một checklist ngắn, một gate, trước khi công việc đi tiếp; chi tiết sẽ có sau
-  - Một phút rưỡi
+  - Nối với điều bạn đã học: Empathise là Discover, Define là Define, Ideate và Prototype là Develop, Test là Deliver.
+  - Hai hình thoi: hình thứ nhất mở rộng rồi thu hẹp về vấn đề, hình thứ hai mở rộng rồi thu hẹp về giải pháp.
+  - Output của mỗi stage là input của stage kế tiếp. Mỗi stage kết thúc bằng một checklist ngắn, gọi là gate, trước khi công việc đi tiếp. Chi tiết mình nói sau.
+  - Slide này khoảng một phút rưỡi.
 
-  > Hiện giờ AI đang giúp designer nhiều nhất ở stage nào?
+  > Hiện giờ AI đang giúp bạn nhiều nhất ở stage nào?
 - 🎨 Visual hint: SCHEMATIC. Double Diamond từ asset của series: hai hình thoi, bốn nhãn stage, output được ghi dưới mỗi stage, một vòng tròn gate nhỏ ở cuối mỗi stage.
 
 ---
@@ -317,10 +317,9 @@ last_synced: 2026-11-17
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần mới của buổi đầu: agent là gì, rồi cách dựng một đội AI cho product design
-  - Hôm nay chỉ ở mức khái niệm; buổi 7 mới dựng đội thật với AI coding tool
-  - Từ demo: demo vừa rồi là một lượt hỏi đáp; công việc thật có nhiều bước, nhiều file và nhiều vai
-  - Nửa phút
+  - Đây là phần mới của buổi đầu: agent là gì, rồi cách dựng một đội AI cho product design. Hôm nay chỉ ở mức khái niệm, buổi 7 mới dựng đội thật với AI coding tool.
+  - Nối từ demo: demo vừa rồi chỉ là một lượt hỏi đáp, còn công việc thật có nhiều bước, nhiều file và nhiều vai.
+  - Phần này khoảng nửa phút.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn, accent ở dòng 2.
 
 ---
@@ -344,12 +343,12 @@ last_synced: 2026-11-17
 - Ví dụ: có (app giao đồ ăn: chat tóm tắt một đoạn ghi chú, agent đọc cả folder research)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Chat là một lượt hỏi đáp; agent nhận một mục tiêu rồi tự đọc file, sửa file, chạy lệnh và báo lại khi xong
-  - Ví dụ với app giao đồ ăn: nhờ chat tóm tắt một đoạn ghi chú, còn nhờ agent đọc cả folder research và dựng bản tổng hợp kèm nguồn
-  - AI coding tool thường hoạt động theo kiểu này; câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm trong folder
-  - Agent vẫn hallucinate: nó có thể báo "xong" khi chưa xong; nối lại slide "Looks finished. Is it right?"
-  - Connector (MCP) và reusable instructions không dạy ở đây; có một slide tham khảo ở Appendix, dạy sâu ở buổi 7
-  - Hai phút cho slide này
+  - Chat là một lượt hỏi đáp. Agent nhận một mục tiêu rồi tự đọc file, sửa file, chạy lệnh và báo lại khi xong.
+  - Ví dụ với app giao đồ ăn: nhờ chat thì bạn tóm tắt một đoạn ghi chú, còn nhờ agent thì nó đọc cả folder research và dựng bản tổng hợp kèm nguồn.
+  - AI coding tool thường hoạt động theo kiểu này. Câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm trong folder.
+  - Agent vẫn hallucinate: nó có thể báo "xong" khi chưa xong. Nối lại slide "Looks finished. Is it right?".
+  - Connector (MCP) và reusable instructions không dạy ở đây. Có một slide tham khảo ở Appendix, và mình dạy sâu ở buổi 7.
+  - Slide này khoảng hai phút.
 - 🎨 Visual hint: SCHEMATIC. Hai hàng: hàng trên một prompt và một câu trả lời; hàng dưới một prompt, mũi tên tách thành ba bước nhỏ (đọc, sửa, chạy), rồi một báo cáo kèm icon folder.
 
 ---
@@ -375,15 +374,14 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Markdown là định dạng văn bản thuần, file đuôi .md
+  - Markdown là định dạng văn bản thuần, file đuôi .md.
   - Vì sao dùng với AI:
-  - Nó là ngôn ngữ nguyên bản của AI
-  - nhẹ hơn PDF hoặc Word nên tốn ít token;
-  - mở và sửa được bằng mọi công cụ;
-  - Git theo dõi được từng thay đổi; gần như mọi công cụ AI đều đọc được
-  - Trong chương trình, hầu hết những gì bạn viết cho AI là markdown:
-  - rules file, SKILL.md, ghi chú research, tài liệu product, cả output AI trả về
-  - Không cần nhớ cú pháp: AI viết được markdown, designer chỉ cần đọc và chỉnh
+    - Đây là ngôn ngữ nguyên bản của AI
+    - Nhẹ hơn PDF hoặc Word nên tốn ít token
+    - Mở và sửa được bằng mọi công cụ
+    - Git theo dõi được từng thay đổi, và gần như mọi công cụ AI đều đọc được
+  - Trong chương trình, hầu hết những gì bạn viết cho AI là markdown: rules file, SKILL.md, ghi chú research, tài liệu product, cả output AI trả về.
+  - Bạn không cần nhớ cú pháp. AI viết được markdown, designer chỉ cần đọc và chỉnh.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -518,16 +516,16 @@ last_synced: 2026-11-17
 - Ví dụ: có (skill Competitor Analysis trong `toolkit/skills/`; ảnh chụp `../assets/competitor-analysis-step-card.webp`)
 - Câu hỏi hay gặp: "Skill là gì?" Trả lời: một file Markdown ghi cách làm một loại việc, để AI tool đọc và làm theo; buổi 7 sẽ dạy cách viết.
 - Speaker notes:
-  - Ví dụ thật: agent Competitor Analysis là một skill, file `toolkit/skills/competitor-analysis/SKILL.md`; mở project folder, nhờ tool đọc skill này và làm theo
-  - Skill ghi rõ file làm việc là `work/competitor-analysis.md`, nguồn là `work/sources/anonymised/`, và mỗi bước điền một mục: bước 1 designer viết Scope, bước 2 và 3 AI đề xuất rồi designer chốt danh sách đối thủ
-  - Bước 5 AI soạn mục Evidence (AI draft) và designer không sửa mục này; bước 6 designer tự đối chiếu với nguồn rồi ghi bản đã sửa vào Evidence (verified)
-  - Chỗ AI không được sửa và designer tự đối chiếu chính là bước 3; nối lại slide "Looks finished. Is it right?" và vai trò của gate ở slide kế
-  - Output là file Markdown trong `work/`, nên lần sau ở project khác chỉ cần mở lại skill; muốn đưa sang Excel hoặc email thì nối connector sau (dạy ở buổi 7)
-  - Bước 5: khi một lần chạy đã ổn, nhờ tool ghi lại cách làm thành skill, như skill này; mỗi agent trong đội ở slide kế tiếp ra đời theo cách đó
-  - `AGENTS.md` không điều phối các agent; nó là luật chung tool đọc mỗi lần mở folder, còn người điều phối vẫn là designer
-  - Hai phút rưỡi cho slide này; card tự ghi "Status: draft", nói thật là chưa thử với lớp thật
+  - Ví dụ thật cho agent đầu tiên là Competitor Analysis. Nó là một skill nằm ở `toolkit/skills/competitor-analysis/SKILL.md`. Bạn mở project folder, nhờ công cụ AI đọc skill này rồi làm theo.
+  - Skill ghi rõ file làm việc là `work/competitor-analysis.md`, nguồn là `work/sources/anonymised/`, và mỗi bước điền một mục. Bước 1 designer viết Scope. Bước 2 và 3 AI đề xuất danh sách đối thủ, rồi designer chốt.
+  - Bước 5 AI soạn mục Evidence (AI draft), và designer không sửa mục này. Bước 6 designer tự đối chiếu với nguồn rồi ghi bản đã sửa vào Evidence (verified).
+  - Chỗ AI không được sửa, còn designer tự đối chiếu, chính là điểm mình muốn bạn nhớ. Nó nối lại slide "Trông đã xong. Có đúng không?" và vai trò của gate ở slide kế.
+  - Output là file Markdown trong `work/`, nên lần sau ở project khác chỉ cần mở lại skill. Muốn đưa sang Excel hoặc email thì nối connector sau, mình dạy ở buổi 7.
+  - Khi một lần chạy đã ổn, bạn nhờ công cụ ghi lại cách làm thành skill, như skill này. Mỗi agent trong đội ở slide kế tiếp cũng ra đời theo cách đó.
+  - `AGENTS.md` không điều phối các agent. Nó là quy tắc chung mà công cụ đọc mỗi lần mở folder, còn người điều phối vẫn là designer.
+  - Card của skill này tự ghi "Status: draft": mình nói thật là chưa thử với lớp thật. Slide này khoảng hai phút rưỡi.
 
-  > Một agent chạy ổn thì có một skill; tám skill thành một đội.
+  > Việc nào bạn làm lặp lại đủ nhiều để thành agent đầu tiên?
 - 🎨 Visual hint: SCHEMATIC. Process track năm bước, bước ba được tô purple. Ảnh chụp skill để ở slide tham khảo hoặc chiếu khi designer hỏi.
 
 ---
@@ -544,13 +542,12 @@ last_synced: 2026-11-17
 - Ví dụ: có (chưa định nghĩa thành công rồi nhờ AI tạo mười hướng)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - AI thường khuếch đại cách làm hiện tại. Quy trình tốt có thể chạy nhanh hơn; còn quy trình chưa ổn thì có thể tạo ra nhiều kết quả chưa ổn hơn, cũng trong thời gian ngắn hơn.
-  - Báo cáo DORA 2025 ghi nhận throughput tăng nhưng độ bất ổn cũng tăng (khảo sát gần 5.000 người làm công nghệ, 2025). Số liệu này từ phát triển phần mềm; áp vào design là suy luận
-  - Ý này không mới: năm 1990, Michael Hammer đã viết "Don't automate, obliterate" trên Harvard Business Review
-  - Ví dụ: chưa có định nghĩa thế nào là thành công, rồi nhờ AI tạo mười hướng. Kết quả là mười hướng và không ai chọn được
-  - Nửa phút
+  - AI thường khuếch đại cách làm hiện tại. Quy trình tốt có thể chạy nhanh hơn, còn quy trình chưa ổn thì tạo ra nhiều kết quả chưa ổn hơn, cũng trong thời gian ngắn hơn.
+  - Báo cáo DORA 2025 ghi nhận throughput tăng nhưng độ bất ổn cũng tăng (khảo sát gần 5.000 người làm công nghệ, 2025). Số liệu này từ phát triển phần mềm, còn áp vào design là suy luận của mình.
+  - Ý này không mới. Năm 1990, Michael Hammer đã viết "Don't automate, obliterate" trên Harvard Business Review.
+  - Ví dụ: bạn chưa có định nghĩa thế nào là thành công, rồi nhờ AI tạo mười hướng. Kết quả là mười hướng và không ai chọn được. Slide này khoảng nửa phút.
 
-  > Trong công việc của designer, có bước nào designer làm vì thói quen chứ không vì nó tạo giá trị?
+  > Trong công việc của bạn, có bước nào bạn làm vì thói quen chứ không vì nó tạo giá trị?
 - 🎨 Visual hint: TYPOGRAPHIC. Title lớn, một dòng ngắn trên slide, không thêm gì khác.
 
 ---
@@ -575,12 +572,13 @@ last_synced: 2026-11-17
 - Ví dụ: có (app giao đồ ăn chạy qua tám agent)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Vậy thì nếu chúng ta phải customise theo workflow thiết kế thì phải như thế nào?
-  - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory; bạn duyệt trước mỗi lần chuyển phase
-  - Why: AI soạn nháp nhanh phần lặp lại, bạn giữ quyết định; mỗi bước để lại file và nguồn nên người khác lần ngược được lập luận. Nối lại nguyên tắc ở slide Double Diamond: AI soạn nháp, bạn kiểm tra, bạn quyết định
-  - When: chỉ khi workflow đã ổn; quay lại slide sửa workflow: workflow phải ổn trước khi giao cho agent. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
-  - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc bước đó cần người thật: user, hoặc người phía product và business
-  - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần; chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác
+  - Vậy nếu mình muốn tuỳ chỉnh theo workflow thiết kế thì làm thế nào?
+  - Ba câu hỏi:
+    - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Bạn duyệt trước mỗi lần chuyển phase
+    - Why: AI soạn nháp nhanh phần lặp lại, còn bạn giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc ở slide Double Diamond: AI soạn nháp, bạn kiểm tra rồi quyết định
+    - When: chỉ khi workflow đã ổn. Quay lại slide sửa workflow: workflow phải ổn trước khi giao cho agent. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
+  - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc khi bước đó cần người thật: user, hoặc người phía product và business.
+  - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
 
   > Bước nào trong công việc của bạn đã đủ ổn định để thử giao cho một agent?
 - 🎨 Visual hint: SCHEMATIC. Một ảnh, gần full bleed: sơ đồ bốn phase, mỗi phase một khung hai agent, design memory ở dưới, vòng Next round; agent Framing được nhấn màu accent. Tệp: `../assets/designer-agents-double-diamond.png` (nguồn HTML: `_system/diagrams/designer-agents-double-diamond.html`).
@@ -595,14 +593,13 @@ last_synced: 2026-11-17
 - Ví dụ: cần ví dụ: một skill thật (bước, file đọc, nơi ghi)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Chiếu sơ đồ, đi qua từng phase khoảng 40 giây; mỗi agent có một instruction, một input riêng và một output ghi vào design memory
-  - Design memory là record dùng chung cho cả tám agent; hôm nay nó chính là project folder và hub
-  - Designer duyệt ở mỗi mũi tên REVIEW; không agent nào duyệt thay, vì một agent duyệt cũng có thể sai
-  - Hai vai không giao cho AI: người dùng thật và người phía product và business
-  - Ví dụ: Delivery App: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding
-  - Nói thật hiện trạng: toolkit mới có skill cho agent 01 và 03; sáu agent còn lại mới có template tài liệu, card dựng ở các buổi sau
-  - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc; sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX) nhưng tên và phạm vi agent là của chương trình
-  - Chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design
+  - Mình chiếu sơ đồ và đi qua từng phase, khoảng 40 giây mỗi phase. Mỗi agent có một instruction, một input riêng và một output ghi vào design memory.
+  - Design memory là record dùng chung cho cả tám agent. Hôm nay nó chính là project folder và hub.
+  - Designer duyệt ở mỗi mũi tên REVIEW. Không agent nào duyệt thay, vì một agent duyệt cũng có thể sai.
+  - Có hai vai mình không giao cho AI: người dùng thật, và người phía product và business.
+  - Ví dụ ở Delivery App: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding.
+  - Nói thật về hiện trạng: toolkit mới có skill cho agent 01 và 03. Sáu agent còn lại mới có template tài liệu, card dựng ở các buổi sau.
+  - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc. Sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX), nhưng tên và phạm vi agent là của chương trình. Chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design.
   - Đội AI đã có đủ vai, nhưng mỗi agent mới chỉ là một nhân viên chung chung. Thứ biến họ thành người làm đúng một loại việc là kỹ năng mình đưa cho họ. Phần ba nói về skill.
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước ba được tô purple.
 
@@ -935,7 +932,7 @@ last_synced: 2026-11-17
   - Repo
   - Folder của cả project
   - Commit
-  - Một lần chốt phiên bản, kèm lời nhắn
+  - Một lần chốt phiên bản được chỉnh sửa mới nhất
   - Push
   - Gửi các commit từ máy lên GitHub
   - Branch
@@ -1052,16 +1049,17 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Khi AI tham gia quy trình, quyết định đưa ra nhanh hơn nhưng khó trả lời "vì sao chọn hướng này?"; Hub giữ câu trả lời đó
-  - Hub là một folder duy nhất ghi lại lý do sau mỗi quyết định, nối với nhu cầu người dùng, giả định đã đặt và kết quả kiểm chứng;
-  - What: Có thể hình dung nó là một site liên kết chứa mọi output; mỗi page một output, mỗi item một file có ID ngắn (O1, H1, D1, T1, M1)
-  - Why: output mỗi bước là input bước sau; từ một decision lần ngược ra opportunity, hypothesis, principle, test, metric.
-  - When: Bắt đầu từ ngày đầu tiên onboard với product, thêm trang sau mỗi giai đoạn, hoàn thiện ở buổi 12
-  - Vấn đề nó giải: AI cho kết quả trông hoàn chỉnh nhưng có thể thiếu căn cứ; và công việc làm cùng AI rải rác trong các chat, nên bạn sau vài tháng cũng khó dựng lại
-  - Nói thật trước khi bị hỏi: tính năng tự phát hiện chỗ yếu chưa được thử với lớp học thật; học viên tự đối chiếu vài dòng mỗi lần dùng
-  - Sẽ có người hỏi: sao không làm hub trên Notion rồi nối MCP? Mình trả lời ở slide kế tiếp
-  - Hub mặc định riêng tư, chỉ chia sẻ khi project cho phép
-  - Giờ mình xem một Knowledge Hub trông ra sao, bắt đầu từ trang Overview
+  - Khi AI tham gia quy trình, quyết định đưa ra nhanh hơn nhưng khó trả lời câu "vì sao chọn hướng này?". Hub giữ câu trả lời đó.
+  - Hub là một folder duy nhất ghi lại lý do sau mỗi quyết định, nối với nhu cầu người dùng, giả định đã đặt và kết quả kiểm chứng.
+  - Hình dung theo ba câu:
+    - What: một site liên kết chứa mọi output của project. Mỗi page một output, mỗi item một file có ID ngắn (O1, H1, D1, T1, M1)
+    - Why: output của mỗi bước là input của bước sau. Từ một decision, bạn lần ngược ra opportunity, hypothesis, principle, test và metric
+    - When: bắt đầu từ ngày đầu tiên onboard với product, thêm trang sau mỗi giai đoạn, hoàn thiện ở buổi 12
+  - Hub giải hai vấn đề. Một là AI cho kết quả trông hoàn chỉnh nhưng có thể thiếu căn cứ. Hai là công việc làm cùng AI rải rác trong các chat, nên vài tháng sau chính bạn cũng khó dựng lại.
+  - Nói thật trước khi bị hỏi: tính năng tự phát hiện chỗ yếu chưa được thử với lớp học thật, nên bạn tự đối chiếu vài dòng mỗi lần dùng.
+  - Sẽ có người hỏi: sao không làm hub trên Notion rồi nối MCP? Mình trả lời ở slide kế tiếp.
+  - Hub mặc định riêng tư, chỉ chia sẻ khi project cho phép.
+  - Giờ mình xem một Knowledge Hub trông ra sao, bắt đầu từ trang Overview.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -1166,16 +1164,15 @@ last_synced: 2026-11-17
 - Ví dụ: bản nháp (lần ngược quyết định chọn địa chỉ giao của app giao đồ ăn về nhu cầu người dùng và bằng chứng)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Hub là một folder trong project của designer; mỗi quyết định, nhu cầu, giả định và kết quả kiểm thử là một file, nối với nhau
-  - Ví dụ: quyết định D3 nối tới nhu cầu O2 "người dùng sợ đặt dư đồ ăn", bằng chứng là 3 trong 8 buổi phỏng vấn nhắc chuyện lãng phí, và bài test T1 xác nhận hướng này
-  - Chiếu ba ảnh kết quả có sẵn (overview, work, insights) thay cho demo trực tiếp; ở nhà mọi người mở hub mẫu trong folder của designer
-  - Hub chỉ ra chỗ yếu: quyết định chưa có nhu cầu người dùng phía sau, giả định chưa có test; AI dựng bảng này từ các file, bước này chưa thử với lớp thật nên cần đối chiếu vài dòng với file gốc
-  - Với tổ chức, hub giữ lại lý do khi người làm đổi dự án, và giúp designer báo cáo bằng bằng chứng thay vì cảm nhận
-  - Hub mặc định là private; cách chia sẻ có ở slide tham khảo và trong `guides/04-share-your-hub.md`
-  - Báo cáo cuối của series chính là hub hoàn chỉnh; mỗi buổi thêm item và một page
-  - Ba phút, gồm câu A/B
+  - Hub là một folder trong project của bạn. Mỗi quyết định, nhu cầu, giả định và kết quả kiểm thử là một file, nối với nhau.
+  - Ví dụ: quyết định D3 nối tới nhu cầu O2 "người dùng sợ đặt dư đồ ăn". Bằng chứng là 3 trong 8 buổi phỏng vấn nhắc chuyện lãng phí, và bài test T1 xác nhận hướng này.
+  - Mình chiếu ba ảnh kết quả có sẵn (overview, work, insights) thay cho demo trực tiếp. Ở nhà, bạn mở hub mẫu trong folder của mình.
+  - Hub chỉ ra chỗ yếu: quyết định chưa có nhu cầu người dùng phía sau, hoặc giả định chưa có test. AI dựng bảng này từ các file. Bước này mình chưa thử với lớp thật, nên bạn đối chiếu vài dòng với file gốc.
+  - Với tổ chức, hub giữ lại lý do khi người làm đổi dự án, và giúp designer báo cáo bằng bằng chứng thay cho cảm nhận.
+  - Hub mặc định là private. Cách chia sẻ có ở slide tham khảo và trong `guides/04-share-your-hub.md`.
+  - Báo cáo cuối của series chính là hub hoàn chỉnh: mỗi buổi thêm item và một page. Slide này khoảng ba phút, gồm cả câu A/B.
 
-  > Mình trả lời trước để làm mẫu: quyết định trước, bằng chứng sau; vì vậy slide nói bắt đầu từ bất kỳ quyết định nào rồi lần ngược ra.
+  > Bạn muốn người đọc hub thấy bằng chứng trước hay quyết định trước? Mình trả lời trước để làm mẫu: quyết định trước, bằng chứng sau, nên slide nói bắt đầu từ bất kỳ quyết định nào rồi lần ngược ra.
 - 🎨 Visual hint: REAL. Ba ảnh kết quả cạnh nhau: overview, work, insights (`programs/ai-design-workflow/assets/outcome-examples/knowledge-hub-*.webp`; copy vào `assets/` của lesson khi dựng deck).
 
 ---
@@ -1218,14 +1215,14 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Live demo khoảng 5 phút, trên hub của một project thật của mình
-  - 1. Trang Overview: chỉ index, trạng thái gate và bảng alignment
-  - 2. Bấm một decision: thấy nó nối tới opportunity, hypothesis, principle, test và metric
-  - 3. Lần ngược ra user need để thấy decision có lý do
-  - 4. Chỉ phần cảnh báo: decision không có user need, hypothesis chưa test, link hỏng
-  - 5. Mở một item để thấy mỗi item là một file
-  - Dự phòng nếu demo lỗi: quay lại ba slide ảnh trước đó
-  - Hub của bạn sẽ có cấu trúc này; hôm nay chỉ cần mở hub mẫu ở bài tập về nhà
+  - Live demo khoảng 5 phút, trên hub của một project thật của mình. Mình đi qua năm bước:
+    - Trang Overview: chỉ index, trạng thái gate và bảng alignment
+    - Bấm một decision: thấy nó nối tới opportunity, hypothesis, principle, test và metric
+    - Lần ngược ra user need để thấy decision có lý do
+    - Chỉ phần cảnh báo: decision không có user need, hypothesis chưa test, link hỏng
+    - Mở một item để thấy mỗi item là một file
+  - Dự phòng nếu demo lỗi: quay lại ba slide ảnh trước đó.
+  - Hub của bạn sẽ có cấu trúc này. Hôm nay bạn chỉ cần mở hub mẫu ở bài tập về nhà.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -1394,12 +1391,12 @@ last_synced: 2026-11-17
 - Ví dụ: có (instruction "năm điều AI cần biết mà file không có", chạy trên file đã lưu)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Một chuỗi sáu bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo); ba phút rưỡi cho slide này, và chiếu luôn slide tham khảo "Six steps" ở Appendix vì đây là lần duy nhất designer thấy đủ sáu bước; xong trước buổi practice trên lớp vì các buổi sau làm trên chính folder này
-  - Sáu bước nằm ở phần Practice 1 reference sau slide END: tạo repo và project folder, viết data rules, viết product context, để AI soạn README cho folder, chạy một instruction với file đã lưu, tuỳ chọn push lên Git và bật trang live
-  - Output của chuỗi là một ready-folder với context; hai bước Git và trang live không bắt buộc
-  - Chưa dán tài liệu thật của project vào công cụ AI trước khi viết data rules; ai chưa viết xong Activity thì dùng project mẫu để thử
-  - Buổi practice trên lớp: làm tiếp phần chưa xong nếu còn thời gian, rồi chấm; cách chấm chưa quyết, sẽ báo sau
-  - Đây là folder dự án của designer, không phải bài nộp; nhắc tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có
+  - Practice 1 là chuỗi sáu bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo). Slide này khoảng ba phút rưỡi. Mình chiếu luôn slide tham khảo "Six steps" ở Appendix, vì đây là lần duy nhất bạn thấy đủ sáu bước.
+  - Sáu bước nằm ở phần Practice 1 reference sau slide END: tạo repo và project folder, viết data rules, viết product context, để AI soạn README cho folder, chạy một instruction với file đã lưu, và tuỳ chọn push lên Git rồi bật trang live.
+  - Bạn nên làm xong trước buổi practice trên lớp, vì các buổi sau làm trên chính folder này. Đầu ra là một folder đã có context. Hai bước Git và trang live không bắt buộc.
+  - Chưa dán tài liệu thật của project vào công cụ AI trước khi viết data rules. Ai chưa viết xong Activity thì dùng project mẫu để thử.
+  - Ở buổi practice trên lớp, bạn làm tiếp phần chưa xong nếu còn thời gian, rồi mình chấm. Cách chấm mình chưa quyết, sẽ báo sau.
+  - Đây là folder dự án của bạn, không phải bài nộp. Nhắc mọi người tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có.
 - 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Dựng project folder" kèm bốn dòng ngắn bên dưới.
 
 ---
@@ -1443,16 +1440,19 @@ last_synced: 2026-11-17
 - Ví dụ: có (số đo kèm nguồn ở mục 3.4 của lesson); cần thêm một tình huống ngày làm việc của designer
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đối chiếu với bảng ice breaker: ý nào ở cột "bất ngờ" và cột "bực" khớp với hai cột của slide này?
-  - Slide này cho biết giới hạn của câu trả lời cho câu hỏi AI giúp được ở đâu ở bốn stage vừa rồi (lesson mục 3.4, nguồn [13] đến [19])
-  - Phía trái, có số đo: thời gian viết giảm khoảng 40% (453 người, 2023); task nằm trong khả năng của mô hình nhanh hơn khoảng 25% (758 consultant, 2023); một task code độc lập nhanh hơn khoảng 55% (95 developer, 2022)
-  - Phía phải, cũng có số đo: developer giàu kinh nghiệm chậm hơn 19% trên codebase quen thuộc (16 developer, đầu 2025; METR nay ghi kết quả này đã cũ)
-  - agent tốt nhất tự hoàn thành khoảng 2,5% dự án freelance thật khi ra mắt (2025), các cập nhật sau đó cao hơn nhiều (bảng xếp hạng 22/10/2026: trên 21%)
-  - Tổng hợp nghiên cứu UX bằng AI: phiên âm hữu ích nhưng cần kiểm lại; phần code và nhóm dữ liệu do AI tạo chỉ là bản đầu (NN/g)
-  - Đây là bằng chứng từ nghiên cứu và benchmark, và nó đổi theo từng phiên bản mô hình; đừng nói "AI luôn yếu" hay "AI luôn mạnh"
-  - Hai phút
+  - Quay lại bảng ice breaker: ý nào ở cột "bất ngờ" và cột "bực" khớp với hai cột của slide này?
+  - Slide này cho biết giới hạn của câu trả lời cho câu hỏi "AI giúp được ở đâu" ở bốn stage vừa rồi (lesson mục 3.4, nguồn [13] đến [19]).
+  - Bên trái có số đo:
+    - Thời gian viết giảm khoảng 40% (453 người, 2023)
+    - Task nằm trong khả năng của mô hình nhanh hơn khoảng 25% (758 consultant, 2023)
+    - Một task code độc lập nhanh hơn khoảng 55% (95 developer, 2022)
+  - Bên phải cũng có số đo:
+    - Developer giàu kinh nghiệm chậm hơn 19% trên codebase quen thuộc (16 developer, đầu 2025; METR nay ghi kết quả này đã cũ)
+    - Agent tốt nhất tự hoàn thành khoảng 2,5% dự án freelance thật khi ra mắt (2025). Các cập nhật sau đó cao hơn nhiều (bảng xếp hạng 22/10/2026: trên 21%)
+  - Với tổng hợp nghiên cứu UX bằng AI: phiên âm hữu ích nhưng cần kiểm lại, còn phần code và nhóm dữ liệu do AI tạo chỉ là bản đầu (NN/g).
+  - Đây là bằng chứng từ nghiên cứu và benchmark, và nó đổi theo từng phiên bản mô hình. Đừng nói "AI luôn yếu" hay "AI luôn mạnh". Slide này khoảng hai phút.
 
-  > Việc nào designer đang giao cho AI mà thật ra là một chuỗi dài nhiều bước?
+  > Việc nào bạn đang giao cho AI mà thật ra là một chuỗi dài nhiều bước?
 - 🎨 Visual hint: SCHEMATIC. Compare hai cột. Cột trái trơn, cột phải purple đặc với chữ trắng.
 
 ---
@@ -1483,11 +1483,10 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Mỗi opportunity, hypothesis, decision, principle check, test và metric có một ID ngắn (O1, H1, D1, P1, T1, M1); trong hub mỗi ID link tới nơi định nghĩa và mọi chỗ nhắc tới nó
-  - Mũi tên hai chiều: từ decision đi ngược ra user need và đi xuôi ra test và metric
-  - Đây là điểm làm nên hub: cross-link; không có chúng thì hub chỉ là một thư mục báo cáo
-  - Ví dụ Delivery App trên slide do mình viết để minh hoạ, không phải dữ liệu thật
-  - Principle check (P1…) không vẽ trên slide cho gọn; nhắc miệng
+  - Mỗi opportunity, hypothesis, decision, principle check, test và metric có một ID ngắn (O1, H1, D1, P1, T1, M1). Trong hub, mỗi ID link tới nơi định nghĩa nó và mọi chỗ nhắc tới nó.
+  - Mũi tên hai chiều nghĩa là từ một decision, bạn đi ngược ra user need và đi xuôi ra test và metric.
+  - Đây là điểm làm nên hub: cross-link. Không có chúng thì hub chỉ là một thư mục báo cáo.
+  - Ví dụ Delivery App trên slide do mình viết để minh hoạ, không phải dữ liệu thật. Principle check (P1...) không vẽ trên slide cho gọn, mình nhắc miệng.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -1511,9 +1510,13 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Hub không dựng một lần ở cuối; mỗi giai đoạn thêm các trang của nó
-  - Buổi 1: Overview. Discover (buổi 2 đến 3): Scope, Evidence. Define (4 đến 5): Problem brief. Develop (6 đến 10): Options, flows và prototype; Alignment check; Findings. Deliver (11 đến 12): Handoff và measurement; Project log
-  - Đến buổi 12 hub hoàn thiện, đó là output cuối của khoá
+  - Hub không dựng một lần ở cuối. Mỗi giai đoạn thêm các trang của nó:
+    - Buổi 1: Overview
+    - Discover (buổi 2 đến 3): Scope, Evidence
+    - Define (buổi 4 đến 5): Problem brief
+    - Develop (buổi 6 đến 10): Options, flows và prototype; Alignment check; Findings
+    - Deliver (buổi 11 đến 12): Handoff và measurement; Project log
+  - Đến buổi 12, hub hoàn thiện và đó là output cuối của khoá.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -1533,10 +1536,10 @@ last_synced: 2026-11-17
 - Ví dụ: có (gắn lại vào demo app giao đồ ăn vừa chạy)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Năm thuật ngữ còn lại (AI chat tool, AI coding tool, context window, connector, reusable instructions) nằm trong pre-read và được dạy lại đúng buổi cần, chủ yếu buổi 7; agent được giới thiệu ngay ở phần sau
-  - Gắn với demo: project mẫu là context; "chỉ dùng project mẫu" là grounding; lời khuyên tự tin của bản mơ hồ là rủi ro hallucination
-  - AI-assisted vs AI-generated: đã nói ở đầu buổi qua slide "AI drafts. You verify. You decide."
-  - Một phút cho slide này; ba phút rưỡi cho hai slide tiếp theo
+  - Năm thuật ngữ còn lại là AI chat tool, AI coding tool, context window, connector và reusable instructions. Chúng nằm trong pre-read và được dạy lại đúng buổi cần, chủ yếu là buổi 7. Agent thì mình giới thiệu ngay ở phần sau.
+  - Nối với demo vừa rồi: project mẫu là context. Câu "chỉ dùng project mẫu" là grounding. Còn lời khuyên rất tự tin của bản mơ hồ là ví dụ của hallucination.
+  - AI-assisted và AI-generated mình đã nói ở đầu buổi, qua slide "AI drafts. You verify. You decide."
+  - Slide này khoảng một phút, hai slide tiếp theo khoảng ba phút rưỡi.
 
   > Trong demo, cái nào là thứ designer đưa cho AI, cái nào là điều AI tự thêm vào?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered grid, bốn mục, số purple.
@@ -1550,15 +1553,13 @@ last_synced: 2026-11-17
 - Ví dụ: có (mười hướng thiết kế trong vài phút); ví dụ đang nằm sau hình, cần đưa lên đầu notes
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đây là hình minh hoạ từ cộng đồng, không phải số liệu; nói rõ với lớp và đừng trình bày như một phát hiện nghiên cứu
-  - Nhìn hình trên: trước AI, nút thắt nằm ở implementation. Dòng ý tưởng bị siết lại ở đó, nên việc làm ra sản phẩm tốn thời gian
-  - Nhìn hình dưới: AI nới implementation ra, ý tưởng đi vào nhiều hơn và nhanh hơn. Nhưng verification vẫn là một ống hẹp, nên phần việc chưa kiểm tra dồn lại ở đó
-  - Với designer: AI cho designer mười hướng thiết kế trong vài phút, còn việc chọn hướng nào đúng và kiểm tra nó với người dùng thật vẫn tốn thời gian như trước
-  - Dòng "AI soạn nháp. Designer kiểm tra. Designer quyết định.": bước kiểm tra là nơi giá trị của designer nằm
-  - Khung lý thuyết đứng sau hình là Theory of Constraints: hiệu suất của cả hệ thống bị giới hạn bởi điểm nghẽn, và khi gỡ một điểm nghẽn thì nó dịch sang chỗ khác. Đây là lý thuyết nền chung, chưa có nguồn nào đo trực tiếp ở công việc design
-  - áp vào design là suy luận `[to confirm]` nguồn gốc (Goldratt, The Goal, 1984) trước khi dạy
-  - Một phút rưỡi
-  - Nguồn hình: ảnh lưu truyền trên mạng, chưa truy ra tác giả [to confirm]; xác nhận nguồn trước khi đưa deck lên site công khai
+  - Đây là hình minh hoạ từ cộng đồng, không phải số liệu. Nói rõ với lớp và đừng trình bày như một phát hiện nghiên cứu.
+  - Hình trên là trước AI: nút thắt nằm ở implementation. Dòng ý tưởng bị siết lại ở đó, nên làm ra sản phẩm tốn thời gian.
+  - Hình dưới là sau AI: implementation được nới ra, ý tưởng đi vào nhiều hơn và nhanh hơn. Nhưng verification vẫn là một ống hẹp, nên phần việc chưa kiểm tra dồn lại ở đó.
+  - Với designer thì dễ hình dung: AI cho bạn mười hướng thiết kế trong vài phút, còn việc chọn hướng nào đúng và kiểm tra nó với người dùng thật vẫn tốn thời gian như trước. Bước kiểm tra là nơi giá trị của designer nằm.
+  - Khung lý thuyết đứng sau hình là Theory of Constraints: hiệu suất của cả hệ thống bị giới hạn bởi điểm nghẽn, và khi gỡ một điểm nghẽn thì nó dịch sang chỗ khác. Đây là lý thuyết nền chung, chưa có nguồn nào đo trực tiếp ở công việc design. Việc áp vào design là suy luận của mình, và [to confirm] nguồn gốc (Goldratt, The Goal, 1984) trước khi dạy.
+  - Nguồn hình: ảnh lưu truyền trên mạng, chưa truy ra tác giả [to confirm]. Xác nhận nguồn trước khi đưa deck lên site công khai.
+  - Slide này khoảng một phút rưỡi.
 
   > Trong công việc của designer, phần nào đang được AI làm nhanh hơn, và ai đang kiểm tra phần đó?
 - 🎨 Visual hint: REAL. Một ảnh, gần full bleed, không chú thích thêm; chữ trong ảnh giữ nguyên tiếng Anh. Tệp: `../assets/software-before-after-ai.webp`.
@@ -1606,13 +1607,17 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Tinh thần: biết đủ để đọc và trao đổi, không cần trở thành developer; đây là slide quan trọng nhất để lớp yên tâm
-  - Cần biết: repo là folder project, nằm trên GitHub sau khi push; commit là một lần chốt và bạn đọc được lịch sử để biết ai đổi gì; pull request là chỗ review output của AI; đọc được README.md và AGENTS.md
-  - Chưa cần biết: gõ lệnh terminal, giải xung đột khi ghép branch, quản lý nhiều branch phức tạp; AI coding tool hoặc developer làm giúp
-  - Với bạn lo "mình không phải dev": việc của designer ở đây là đọc, review và quyết định
-  - Đây là điểm nối sang phần tiếp theo
+  - Slide này để lớp yên tâm: bạn chỉ cần biết đủ để đọc và trao đổi, không cần trở thành developer. Mình thấy đây là slide quan trọng nhất của phần GitHub.
+  - Cần biết:
+    - Repo là folder của project, nằm trên GitHub sau khi push
+    - Commit là một lần chốt, và bạn đọc được lịch sử để biết ai đổi gì
+    - Pull request là chỗ review output của AI
+    - Đọc được README.md và AGENTS.md
+  - Chưa cần biết: gõ lệnh terminal, giải xung đột khi ghép branch, quản lý nhiều branch phức tạp. Công cụ AI hoặc developer làm giúp bạn phần này.
+  - Nếu bạn đang nghĩ "mình không phải dev": việc của designer ở đây là đọc, review và quyết định.
+  - Đây cũng là điểm nối sang phần tiếp theo.
 
-  > Trong công việc hiện tại, ai đang giữ repo của team bạn? Đó là người nên làm quen; hỏi họ sẽ học nhanh hơn đọc tài liệu
+  > Trong công việc hiện tại, ai đang giữ repo của team bạn? Đó là người nên làm quen, vì hỏi họ sẽ học nhanh hơn đọc tài liệu.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -1633,13 +1638,13 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Một: AI coding tool làm việc trên folder; agent đọc và sửa file ngay trong repo, và GitHub là nơi folder đó thường nằm
-  - Hai: lịch sử thay đổi giúp yên tâm. AI sửa mạnh tay mà vẫn quay lại được; nhắc lại "Trông đã xong. Có đúng không?"
-  - Ba: nhiều tool AI dùng GitHub làm điểm chung, nên một repo mở được ở nhiều tool; đổi tool không phải làm lại từ đầu
-  - Đây là thực tế phổ biến, không phải luật bắt buộc, và đổi theo tool; đừng nói "AI chỉ chạy được với GitHub"
-  - Khi agent mở một repo, nó đọc gì đầu tiên?
+  - Có ba lý do AI hay đi cùng GitHub.
+  - Một, công cụ AI làm việc trên folder: agent đọc và sửa file ngay trong repo, và GitHub là nơi folder đó thường nằm.
+  - Hai, lịch sử thay đổi giúp bạn yên tâm. AI có sửa mạnh tay thì vẫn quay lại được. Nối lại slide "Trông đã xong. Có đúng không?".
+  - Ba, nhiều công cụ AI dùng GitHub làm điểm chung, nên một repo mở được ở nhiều công cụ và đổi công cụ không phải làm lại từ đầu.
+  - Đây là thực tế phổ biến chứ không phải luật bắt buộc, và nó đổi theo công cụ. Đừng nói "AI chỉ chạy được với GitHub".
 
-  > Bạn từng sợ AI sửa hỏng bản đang có chưa? Lịch sử thay đổi giải đúng nỗi sợ đó
+  > Bạn từng sợ AI sửa hỏng bản đang có chưa? Lịch sử thay đổi giải đúng nỗi sợ đó.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
