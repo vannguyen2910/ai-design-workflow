@@ -509,11 +509,10 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đóng gói một agent: viết vai và quy trình của nó thành một file markdown, mỗi agent một file
-  - File đó ghi rõ agent đọc file nào và ghi vào đâu. Skill, tức cách làm một loại việc, mình dạy kỹ ở phần Skills
-  - AGENTS.md là file markdown công cụ AI nạp mỗi lần mở folder, ghi bản đồ folder, thứ tự đọc và luật cứng. Nó điều hướng chứ không tự chạy gì; người giao việc thật sự là công cụ AI (hoặc model điều phối)
-  - AGENTS.md là luật, không phải rào chắn kỹ thuật; rào chắn thật là .gitignore cho _raw-private/ và _personal/
-  - Tên agent trên sơ đồ chỉ là ví dụ; đội đầy đủ có tám agent, mình sẽ xem ở phần workflow thiết kế
+  - Đóng gói một agent nghĩa là viết vai và quy trình của nó thành một file markdown, mỗi agent một file. File đó ghi rõ agent đọc file nào và ghi vào đâu. Skill, tức cách làm một loại việc, mình dạy kỹ ở phần Skills.
+  - AGENTS.md là file markdown mà công cụ AI nạp mỗi lần mở folder. Trong đó có bản đồ folder, thứ tự đọc và các quy tắc cứng. Nó chỉ điều hướng chứ không tự chạy gì. Người giao việc thật sự là công cụ AI, hoặc model điều phối.
+  - AGENTS.md là luật, không phải rào chắn kỹ thuật. Rào chắn thật là .gitignore cho _raw-private/ và _personal/.
+  - Tên agent trên sơ đồ chỉ là ví dụ. Đội đầy đủ có tám agent, mình sẽ xem ở phần workflow thiết kế.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -643,8 +642,8 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Skill, thứ biến một agent chung chung thành người làm đúng một loại việc
-  - Ẩn dụ xuyên suốt: agent là nhân viên, skill là kỹ năng, tool là công cụ đưa cho nhân viên đó
+  - Phần này nói về skill, thứ giúp một agent chung chung làm đúng một loại việc.
+  - Xuyên suốt phần này mình dùng một hình ảnh: agent là nhân viên, skill là kỹ năng nhân viên đó được dạy, còn tool là công cụ mình giao cho họ.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -745,11 +744,11 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Vậy thì prompt, rules và skills khác nhau chỗ nào?
-  - Prompt: gõ trong hội thoại trong AI chat session, chỉ có hiệu lực trong hội thoại đó
-  - Rules file: luật chung của project, nạp ở đầu mỗi phiên (AGENTS.md, CLAUDE.md, Cursor rules); nên ngắn vì phiên nào cũng phải đọc
-  - Skill: quy trình cho một loại việc; chỉ tên và mô tả có sẵn, phần còn lại nạp khi việc khớp. Mỗi công cụ gọi một kiểu: Agent Skills, hoặc custom GPT với chỉ dẫn đi kèm
-  - Trước khi có skill, cách phổ biến là nhét mọi thứ vào một prompt hệ thống luôn nạp, chiếm chỗ của chính việc đang làm
+  - Có ba cách đưa chỉ dẫn cho AI, và mọi người hay lẫn: prompt, rules file và skill.
+  - Prompt là câu bạn gõ trong một cuộc chat. Nó chỉ có hiệu lực trong cuộc chat đó.
+  - Rules file là quy tắc chung của cả project, như AGENTS.md, CLAUDE.md hay Cursor rules. Công cụ nạp nó ở đầu mỗi phiên làm việc, nên viết ngắn thôi, vì phiên nào cũng phải đọc.
+  - Skill là cách làm cho một loại việc. Ban đầu AI chỉ thấy tên và mô tả, phần còn lại chỉ nạp khi việc bạn nhờ khớp với skill. Mỗi công cụ gọi tên một kiểu: Agent Skills, hoặc custom GPT kèm chỉ dẫn.
+  - Trước khi có skill, cách phổ biến là nhét mọi thứ vào một prompt hệ thống luôn được nạp. Cách đó chiếm chỗ của chính việc đang làm.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -773,11 +772,14 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Một skill là một folder. File bắt buộc là SKILL.md, mở đầu bằng khối khai báo có name và description; phần thân là hướng dẫn. Folder references và assets là tuỳ chọn
-  - Có  ba mức (progressive disclosure): đầu phiên agent chỉ thấy tên và mô tả của mọi skill, vài chục token mỗi skill; khi việc khớp mô tả thì đọc thân SKILL.md; tài liệu đi kèm chỉ đọc khi hướng dẫn nhắc đến
-  - AI không đọc toàn bộ file ngay; nó rà phần summary giữa hai dòng gạch ---, để quét nhanh xem skill có cần cho việc đang làm không. Vì vậy mô tả quyết định skill có được dùng hay không: viết rõ skill làm gì và dùng khi nào
-  - Giữ SKILL.md dưới khoảng 500 dòng, phần chi tiết tách sang references
-  - Định dạng do Anthropic phát hành thành chuẩn mở tháng 12/2025 (agentskills.io), nhiều công cụ khác dùng được
+  - Một skill thực ra chỉ là một folder. File bắt buộc là SKILL.md, mở đầu bằng một khối khai báo có name và description, phần thân là hướng dẫn. Hai folder references và assets là tuỳ chọn.
+  - AI không đọc hết mọi thứ ngay. Nó đọc theo ba mức, gọi là progressive disclosure:
+    - Đầu phiên, agent chỉ thấy tên và mô tả của mọi skill, vài chục token mỗi skill
+    - Khi việc bạn nhờ khớp mô tả, nó mới đọc phần thân SKILL.md
+    - Tài liệu đi kèm chỉ được mở khi hướng dẫn nhắc đến
+  - Vì vậy mô tả quyết định skill có được dùng hay không. Phần giữa hai dòng gạch --- là chỗ AI quét nhanh để biết skill có cần cho việc đang làm không, nên hãy viết rõ skill làm gì và dùng khi nào.
+  - Giữ SKILL.md dưới khoảng 500 dòng, phần chi tiết tách sang references.
+  - Định dạng này do Anthropic phát hành thành chuẩn mở vào tháng 12/2025 (agentskills.io), nên nhiều công cụ khác dùng được.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -798,11 +800,12 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Bước 1, làm tay ba lần: chạy việc đó với agent, ghi bước nào chạy tốt, bước nào phải sửa
-  - Bước 2, viết thành SKILL.md: tên, mô tả nói rõ khi nào dùng, các bước, tiêu chí và một ví dụ đầu ra
-  - Bước 3, thử và sửa: chạy trên một việc mới, so với kết quả làm tay, sửa chỗ lệch
-  - Skill viết sau khi đã làm tay thường tốt hơn viết từ đầu, vì đã biết chỗ nào dễ sai
-  - Mỗi công cụ đặt skill ở vị trí khác nhau; kiểm tra tài liệu của công cụ đang dùng
+  - Mình khuyên làm tay trước rồi mới viết skill. Ba bước:
+    - Làm tay ba lần: chạy việc đó với agent, ghi lại bước nào chạy tốt, bước nào phải sửa
+    - Viết thành SKILL.md: tên, mô tả nói rõ khi nào dùng, các bước, tiêu chí và một ví dụ đầu ra
+    - Thử và sửa: chạy trên một việc mới, so với kết quả làm tay, rồi sửa chỗ lệch
+  - Skill viết sau khi đã làm tay thường tốt hơn viết từ đầu, vì bạn đã biết chỗ nào dễ sai.
+  - Mỗi công cụ đặt skill ở một vị trí khác nhau, nên bạn kiểm tra tài liệu của công cụ mình đang dùng.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -823,11 +826,12 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Tự động: agent chỉ thấy tên và mô tả của mọi skill; khi việc bạn nhờ khớp mô tả thì nó mới đọc chỉ dẫn. Vì vậy mô tả viết rõ làm gì và dùng khi nào quyết định skill có được gọi hay không
-  - Thủ công: bạn nêu đúng tên skill trong yêu cầu; một số công cụ cho gõ /tên-skill
+  - Có hai cách để một skill được dùng.
+  - Cách tự động: agent chỉ thấy tên và mô tả của mọi skill. Khi việc bạn nhờ khớp với mô tả, nó mới đọc chỉ dẫn. Vì vậy mô tả viết rõ skill làm gì và dùng khi nào quyết định skill có được gọi hay không.
+  - Cách thủ công: bạn nêu đúng tên skill trong yêu cầu. Một số công cụ cho gõ /tên-skill.
   - Cách gọi cụ thể khác nhau theo công cụ [to confirm]
-  - Nên gọi tay khi cần chắc chắn skill được dùng, hoặc khi chạy tự động mà skill không kích hoạt
-  - Skill không chạy tự động: kiểm tra mô tả trước, rồi gọi tay để xác nhận skill vẫn đúng
+  - Nên gọi tay khi bạn cần chắc chắn skill được dùng, hoặc khi chạy tự động mà skill không kích hoạt.
+  - Nếu skill không tự chạy, kiểm tra phần mô tả trước, rồi gọi tay để xác nhận skill vẫn đúng.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -856,11 +860,15 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Không cần tự viết từ đầu: tìm skill có sẵn từ marketplace chính thức của công cụ, GitHub hoặc cộng đồng
-  - Bốn bước: tìm theo loại việc; đọc SKILL.md và file đi kèm để biết nó làm gì; thử trên một việc đã biết kết quả; rồi giữ nguyên, sửa, hoặc bỏ
-  - Việc chung như đọc PDF hay xuất file thì dùng nguyên; việc gắn với cách làm của team như đánh giá hay research thì sửa cho khớp principles của team
-  - Ví dụ: Kiểm tra accessibility, viết microcopy, tóm tắt research, tạo tài liệu bàn giao
-  - Skill từ nguồn lạ cần đọc kỹ trước khi dùng; xem slide rủi ro ngay sau
+  - Bạn không cần viết skill từ đầu. Có thể tìm skill có sẵn từ marketplace chính thức của công cụ, GitHub hoặc cộng đồng.
+  - Bốn bước:
+    - Tìm theo loại việc bạn cần
+    - Đọc SKILL.md và các file đi kèm để biết nó làm gì
+    - Thử trên một việc bạn đã biết kết quả
+    - Quyết định giữ nguyên, sửa hoặc bỏ
+  - Việc chung như đọc PDF hay xuất file thì dùng nguyên. Việc gắn với cách làm của team, như đánh giá hay research, thì sửa lại cho khớp principles của team.
+  - Ví dụ: kiểm tra accessibility, viết microcopy, tóm tắt research, tạo tài liệu bàn giao.
+  - Skill từ nguồn lạ cần đọc kỹ trước khi dùng. Slide tiếp theo nói về rủi ro.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -883,15 +891,14 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Khi nào nên đóng gói: việc lặp lại từ ba lần trở lên, có cách làm đúng khá rõ, và nhiều agent hoặc người cùng dùng; việc làm một lần thì prompt là đủ
-  - Rủi ro 1: skill sai thì sai ở mọi lần chạy. Rủi ro 2: skill cũ khi quy trình hoặc principles đổi, cần rà định kỳ
-  - Rủi ro 3: skill từ nguồn lạ có thể chứa chỉ dẫn gây hại hoặc gửi dữ liệu ra ngoài; đọc SKILL.md và file đi kèm trước khi dùng, áp quy tắc data safety như khi dán tài liệu
-  - Khi công ty không cho phép tải và dùng skill bên ngoài: đây là chính sách an toàn dữ liệu, không phải trở ngại.
-  - Hỏi bộ phận IT hoặc security xem được dùng gì; nếu có kho skill nội bộ đã duyệt thì dùng kho đó.
-  - Nếu không, tự viết skill từ quy trình của chính bạn, vì skill chỉ là file chỉ dẫn bằng chữ nên bạn viết và đọc lại được.
-  - Skill tự viết lại có lợi hơn: đúng với cách làm của team, và bạn biết rõ trong đó có gì
-  - Skill là chỉ dẫn cho AI, không bảo đảm kết quả; vẫn cần người kiểm output
-  - Skill, AGENTS.md hay ghi chú research đều là file trong folder, và skill sai thì sai ở mọi lần chạy. Những file này cần một nơi để lưu lịch sử và có người rà lại. Nơi đó là GitHub, phần bốn.
+  - Khi nào nên đóng gói thành skill? Khi việc đó lặp lại từ ba lần trở lên, có cách làm đúng khá rõ, và nhiều agent hoặc nhiều người cùng dùng. Việc chỉ làm một lần thì viết prompt là đủ.
+  - Ba rủi ro cần biết:
+    - Skill sai thì sai ở mọi lần chạy
+    - Skill cũ khi quy trình hoặc principles đổi, nên cần rà định kỳ
+    - Skill từ nguồn lạ có thể chứa chỉ dẫn gây hại hoặc gửi dữ liệu ra ngoài. Hãy đọc SKILL.md và các file đi kèm trước khi dùng, và áp quy tắc data safety như khi dán tài liệu
+  - Nếu công ty không cho tải skill bên ngoài, đó là chính sách an toàn dữ liệu chứ không phải trở ngại. Hỏi bộ phận IT hoặc security xem được dùng gì. Nếu có kho skill nội bộ đã duyệt thì dùng kho đó. Nếu không, bạn tự viết skill từ quy trình của mình, vì skill chỉ là file chỉ dẫn bằng chữ nên bạn viết và đọc lại được. Skill tự viết còn có lợi: đúng với cách làm của team và bạn biết rõ trong đó có gì.
+  - Skill là chỉ dẫn cho AI, không bảo đảm kết quả. Bạn vẫn kiểm tra output.
+  - Skill, AGENTS.md hay ghi chú research đều là file trong folder, và skill sai thì sai ở mọi lần chạy. Những file này cần một nơi lưu lịch sử và có người rà lại. Nơi đó là GitHub, phần bốn.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -907,10 +914,9 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Hỏi mở đầu: bạn đã nghe "đẩy lên GitHub" bao nhiêu lần mà chưa ai giải thích nghĩa là gì?
-  - Từ đầu buổi, mọi thứ dựng cho AI (AGENTS.md, skill, ghi chú research) đều là file trong folder; folder đó cần một nơi để tồn tại, lưu lịch sử và chia sẻ. Đó là GitHub
-  - Mục tiêu: hiểu đủ để đọc và trao đổi với engineer, không phải để thao tác.
-  - Bắt đầu bằng câu hỏi nhỏ nhất: GitHub là gì
+  - Bạn đã nghe câu "đẩy lên GitHub" bao nhiêu lần mà chưa ai giải thích nghĩa là gì?
+  - Từ đầu buổi, mọi thứ mình dựng cho AI như AGENTS.md, skill hay ghi chú research đều là file trong một folder. Folder đó cần một nơi để tồn tại, lưu lịch sử và chia sẻ. Nơi đó là GitHub.
+  - Mục tiêu là hiểu đủ để đọc và trao đổi với engineer, chứ không phải để tự thao tác. Mình bắt đầu từ câu hỏi nhỏ nhất: GitHub là gì?
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -931,14 +937,16 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - What: GitHub là website lưu folder project trên mạng, kèm lịch sử mọi thay đổi. Nhấn hai chữ: folder và lịch sử, không chỉ là chỗ chứa file
-  - Why: nhiều người và nhiều công cụ AI cùng làm trên một bản, không ai gửi file qua lại; có chỗ review, góp ý và phân quyền ai được sửa gì
-  - Ẩn dụ: Google Drive có Version history; GitHub giống Drive dành cho cả folder project
-  - Giới hạn ẩn dụ: GitHub không tự lưu từng ký tự như Google Docs; lịch sử được tạo mỗi khi bạn chủ động chốt một phiên bản (commit, slide sau)
-  - Nếu hỏi Git khác GitHub thế nào: Git là công cụ ghi lịch sử chạy trên máy; GitHub là website dùng nó. Hôm nay chỉ cần nhớ GitHub
-  - Để đọc được GitHub, bạn cần sáu từ
+  - GitHub là website lưu folder project của bạn trên mạng, kèm lịch sử mọi thay đổi. Mình muốn nhấn hai chữ: folder và lịch sử. Nó không chỉ là chỗ chứa file.
+  - Vì sao dùng nó:
+    - Nhiều người và nhiều công cụ AI cùng làm trên một bản, không ai phải gửi file qua lại
+    - Có chỗ để review, góp ý và phân quyền ai được sửa gì
+  - Hình dung đơn giản: Google Drive có Version history, còn GitHub giống Drive dành cho cả folder project.
+  - Chỗ ví dụ này chưa đúng: GitHub không tự lưu từng ký tự như Google Docs. Lịch sử chỉ có khi bạn chủ động chốt một phiên bản, gọi là commit, mình nói ở slide sau.
+  - Nếu có người hỏi Git khác GitHub thế nào: Git là công cụ ghi lịch sử chạy trên máy, GitHub là website dùng nó. Hôm nay chỉ cần nhớ GitHub.
+  - Để đọc được GitHub, bạn cần biết sáu từ.
 
-  > Bạn đã bao giờ có file tên "final_v3_that_final" chưa? GitHub giải đúng vấn đề đó
+  > Bạn đã bao giờ có file tên "final_v3_that_final" chưa? GitHub giải đúng vấn đề đó.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -962,13 +970,13 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đi theo thứ tự trái sang phải, trên xuống dưới, mỗi từ khoảng 40 giây; dùng một ví dụ xuyên suốt là Delivery App
-  - Repo: folder của cả project, gồm context, research, thiết kế và AGENTS.md. Commit: một lần chốt phiên bản kèm lời nhắn, ví dụ "thêm 20 review đã gắn tag"
-  - Push: gửi commit từ máy lên GitHub để người khác và công cụ khác thấy; trước khi push, mọi thứ chỉ nằm trên máy bạn. Branch: bản nháp chạy song song, thử hướng onboarding mới mà bản chính vẫn nguyên
-  - Pull request: đề nghị ghép bản nháp vào bản chính; đây là chỗ designer review output của AI, xem từng thay đổi, comment, duyệt hoặc yêu cầu sửa; là từ designer dùng nhiều nhất
-  - Run localhost: chạy prototype ngay trên máy, mở ở địa chỉ dạng localhost:3000; chỉ bạn thấy. Xem ổn rồi mới push
-  - Không cần nhớ hết; slide này mở lại được khi gặp từ lạ
-  - Có từ vựng rồi, giờ đặt chúng vào một bức tranh: ai làm gì với repo
+  - Mình đi theo thứ tự trái sang phải, trên xuống dưới, mỗi từ khoảng 40 giây, và dùng Delivery App làm ví dụ xuyên suốt.
+  - Repo là folder của cả project, gồm context, research, thiết kế và AGENTS.md. Commit là một lần chốt phiên bản kèm lời nhắn, ví dụ "thêm 20 review đã gắn tag".
+  - Push là gửi commit từ máy lên GitHub để người khác và công cụ khác thấy. Trước khi push, mọi thứ chỉ nằm trên máy bạn. Branch là bản nháp chạy song song: bạn thử một hướng onboarding mới mà bản chính vẫn nguyên.
+  - Pull request là đề nghị ghép bản nháp vào bản chính. Đây là chỗ designer review output của AI: xem từng thay đổi, comment, duyệt hoặc yêu cầu sửa. Trong sáu từ này, designer dùng pull request nhiều nhất.
+  - Run localhost là chạy prototype ngay trên máy, mở ở địa chỉ dạng localhost:3000, chỉ bạn thấy được. Xem ổn rồi mới push.
+  - Không cần nhớ hết. Slide này mở lại được khi bạn gặp từ lạ.
+  - Có từ vựng rồi, giờ mình đặt chúng vào một bức tranh: ai làm gì với repo.
 
   > AI vừa dựng xong màn hình thanh toán mới, bạn làm gì trước, push hay run localhost? (Run localhost, rồi mới push)
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
@@ -1010,15 +1018,14 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Bức tranh vừa rồi cho thấy ai làm gì với repo. Giờ xem khi AI mở một repo thì nó đọc gì đầu tiên
-  - Agent mở repo thì đọc theo thứ tự này, đi từng file
-  - README.md: giới thiệu repo là gì, dành cho ai, cho cả người lẫn AI
-  - AGENTS.md: luật và bản đồ folder dành riêng cho AI; nhắc lại nó là luật chứ không phải rào chắn kỹ thuật.
-  - Cứ tưởng tượng, nó là giấy phụ lục của lego là liệt kê có bao nhiêu agents và công dụng cả mỗi agent là như thế nào
-  - SKILL.md: cách làm một loại việc; học kỹ ở phần Skills, hôm nay chỉ cần biết nó nằm trong repo
-  - Cả ba đều là markdown, nên designer đọc và chỉnh được mà không cần viết code
-  - "mình không phải dev". chúng ta không cần viết cái này bằng tay, hãy nhờ AI viết dùm
-  - Biết AI đọc gì rồi, câu hỏi tiếp theo là mình nên để gì lên repo
+  - Bức tranh vừa rồi cho thấy ai làm gì với repo. Giờ mình xem khi AI mở một repo thì nó đọc gì đầu tiên.
+  - Agent đọc theo thứ tự này, từng file một:
+    - README.md: giới thiệu repo là gì, dành cho ai, cho cả người lẫn AI
+    - AGENTS.md: luật và bản đồ folder dành riêng cho AI. Nhắc lại là nó chỉ là luật, không phải rào chắn kỹ thuật. Bạn có thể hình dung nó như tờ phụ lục trong hộp Lego: liệt kê có bao nhiêu agent và mỗi agent làm gì
+    - SKILL.md: cách làm một loại việc. Phần Skills đã học kỹ, hôm nay chỉ cần biết nó nằm trong repo
+  - Cả ba đều là markdown, nên designer đọc và chỉnh được mà không cần viết code.
+  - Nếu bạn nghĩ "mình không phải dev", đừng lo: những file này không cần viết bằng tay. Bạn nhờ AI viết rồi đọc lại và chỉnh.
+  - Biết AI đọc gì rồi, câu hỏi tiếp theo là nên để gì lên repo.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -1029,7 +1036,7 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Những thứ nên để trên repo sẽ gom lại thành một thứ có cấu trúc: Knowledge Hub. Mình sang phần 05.
+  - Những thứ nên để trên repo được gom lại thành một thứ có cấu trúc, gọi là Knowledge Hub. Mình sang phần 05.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -1045,7 +1052,7 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Nó có rất nhiều tên gọi, Knowledge hub, central hub, experience hub
+  - Thứ này có rất nhiều tên gọi: Knowledge Hub, central hub, experience hub. Trong khoá mình gọi là Knowledge Hub.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
@@ -1266,11 +1273,13 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Kiểm chứng được: bấm một quyết định là thấy bằng chứng, không cần họp
-  - Phát hiện chỗ yếu sớm: chỉ ra quyết định thiếu căn cứ trước khi chi tiền xây
-  - Giữ tri thức: người thiết kế rời đi, lý do ở lại
-  - Dùng để báo cáo: trình bày dựa trên bằng chứng. Kiểm soát rủi ro: mặc định riêng tư, có bốn mức chia sẻ
-  - Chốt: Hub không làm thiết kế nhanh hơn. Nó làm cho thiết kế có AI đủ đáng tin để một tổ chức dám dựa vào
+  - Hub có bốn giá trị cho tổ chức:
+    - Kiểm chứng được: bấm vào một quyết định là thấy bằng chứng, không cần họp
+    - Phát hiện chỗ yếu sớm: chỉ ra quyết định thiếu căn cứ trước khi chi tiền xây
+    - Giữ tri thức: người thiết kế rời đi thì lý do vẫn ở lại
+    - Dùng để báo cáo: trình bày dựa trên bằng chứng
+  - Về rủi ro, hub mặc định riêng tư và có bốn mức chia sẻ.
+  - Hub không làm thiết kế nhanh hơn. Nó làm cho thiết kế có AI đủ đáng tin để một tổ chức dám dựa vào.
   - Hub gom mọi output của project về một chỗ, nên trước khi đưa tài liệu vào, mình cần biết tài liệu nào được phép đưa. Đó là phần sáu, Data Safety.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
@@ -1341,7 +1350,7 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần mới: trước khi dán tài liệu vào Agent, phân loại tài liệu và tạo thói quen kiểm tra
+  - Phần mới này nói về việc trước khi dán tài liệu vào agent: phân loại tài liệu và tập thói quen kiểm tra.
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
 ---
