@@ -112,7 +112,7 @@ last_synced: 2026-11-17
 
 ### NUMBERED · What the data says
 - Kicker: Findings
-- Title: Số liệu *nói gì*
+- Title: Những con số *đang nói gì*
 - On-slide:
   - 91%
   - designer dùng AI mỗi tuần, từ 54% một năm trước
@@ -137,7 +137,7 @@ last_synced: 2026-11-17
 
 ### COMPARE · Where the pressure is
 - Kicker: Thách thức
-- Title: Áp lực của chúng ta *nằm ở đâu*
+- Title: Công việc nào *đang thay đổi?*
 - On-slide:
   - AI làm nhanh nhất phần làm ra screen
   - Từ brief một dòng đến màn hình onboarding, AI generate phần này nhanh nhất hiện nay.
@@ -161,24 +161,24 @@ last_synced: 2026-11-17
 
 ### NUMBERED · Three paths
 - Kicker: Định hướng
-- Title: Ba hướng đi *nghề nghiệp*
+- Title: Ba hướng đi *cho designer*
 - On-slide:
   - 01
   - Strategic designer
-  - Cùng product và business chọn vấn đề đáng giải
+  - Cùng Product và Business xác định vấn đề cần giải quyết
   - 02
   - Design builder
-  - Dựng prototype chạy được và đưa lên production bằng AI
+  - Dùng AI để dựng prototype hoạt động được, rồi đưa vào production
   - 03
   - AI product designer
-  - Thiết kế hành vi, lỗi và niềm tin của sản phẩm có AI
+  - Thiết kế cách sản phẩm AI hoạt động, phản hồi khi có lỗi và tạo dựng niềm tin
 - Ví dụ: cần ví dụ: một tình huống một dòng cho mỗi hướng, dùng role label
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Ba hướng đi, mỗi hướng một dòng mô tả, một ví dụ với Delivery App và một mức bằng chứng
   - Một người thường làm nhiều hơn một hướng: strategic designer vẫn dựng prototype nhanh, design builder vẫn cần chọn đúng vấn đề
-  - Mỗi hướng có một slide chi tiết ở Appendix; mở khi học viên hỏi
-  - Ví dụ: 01 Strategic designer: cùng product và business chọn vấn đề đáng giải trước khi vẽ. Delivery App thấy khách đặt đơn đầu rồi không quay lại; thay vì vẽ mã giảm giá, hỏi vì sao (phí giao, thời gian giao hay trải nghiệm đơn đầu), cùng PO chọn một vấn đề và một chỉ số. Bằng chứng mức vừa: NN/g 2026 cho biết senior và generalist phục hồi nhanh hơn
+  - Mỗi hướng có một slide chi tiết ở Appendix; mở ra khi có người hỏi sâu hơn
+  - Ví dụ: 01 Strategic designer: cùng Product và Business xác định vấn đề cần giải quyết trước khi vẽ. Delivery App thấy khách đặt đơn đầu rồi không quay lại; thay vì vẽ mã giảm giá, hỏi vì sao (phí giao, thời gian giao hay trải nghiệm đơn đầu), cùng PO chọn một vấn đề và một chỉ số. Bằng chứng mức vừa: NN/g 2026 cho biết senior và generalist phục hồi nhanh hơn
   - 02 Design builder: dựng prototype chạy được và đưa lên production bằng AI coding tool. Ví dụ: dựng luồng onboarding ba bước thành prototype có dữ liệu mẫu, cho năm khách mới thử trong tuần. Bằng chứng: một nửa designer khảo sát đã ship code do AI tạo, nhưng phần lớn là design engineer; khoá không biến bạn thành engineer, bạn chỉ đạo và kiểm tra (buổi 7 đến 9)
   - 03 AI product designer: thiết kế hành vi, lỗi và niềm tin của sản phẩm có AI bên trong. Ví dụ: tính năng gợi ý món, quyết định gợi ý nói gì khi AI không chắc, khách sửa gợi ý sai thế nào, trạng thái lỗi ra sao
   - Nói thẳng: khoá này dạy dùng AI để làm việc, không dạy thiết kế sản phẩm AI; ở hướng 03 bạn chỉ có phần nền tảng, bằng chứng tăng trưởng ở mức yếu
@@ -193,21 +193,21 @@ last_synced: 2026-11-17
 - Title: Mindset shift
 - On-slide:
   - Từ brief có sẵn
-  - Kiểm tra, thiết kế, bàn giao. Nhanh, nhưng giả định vấn đề đã đúng
-  - Design nhận brief từ product rồi thực thi
+  - Kiểm tra yêu cầu, thiết kế rồi bàn giao. Nhanh, nhưng mặc định vấn đề đã đúng
+  - Design nhận brief từ Product rồi thực hiện
   - Nhanh, nhưng rủi ro giải sai vấn đề
   - Cùng định hình
-  - Bắt đầu từ câu hỏi của business, thống nhất outcome với product, thiết kế đúng thứ đã thống nhất
-  - Design cùng product định hình vấn đề trước khi thiết kế
+  - Bắt đầu từ câu hỏi của Business, thống nhất kết quả mong muốn với Product, rồi mới chọn hướng thiết kế
+  - Design cùng Product làm rõ vấn đề trước khi thiết kế
   - Chậm hơn, nhưng đúng vấn đề
 - Ví dụ: cần ví dụ: một brief dạng giải pháp ("thêm nút X") đặt cạnh một business question
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Ví dụ: Brief "thêm nút Skip vào onboarding" đặt cạnh câu hỏi của business "vì sao khách mới tạm dừng sau hộp đầu tiên?"
-  - Brief từ product thường là điểm xuất phát rất tốt; không phải brief nào cũng có vấn đề, và không ai đang sửa ai
-  - Biến brief thành screen là việc AI làm nhanh nhất; AI không làm thay được việc cùng chọn vấn đề đáng giải và thống nhất thế nào là thành công
-  - Cần cả hai phía: design vào sớm với evidence, product và business chia sẻ điều họ biết về vấn đề và ràng buộc
-  - Thành thật về mức độ làm việc chung: có bạn làm sát product mỗi ngày, có bạn chỉ liên lạc qua trung gian, có bạn chưa có cơ hội; workflow vẫn chạy được trong cả ba
+  - Brief từ Product thường là điểm bắt đầu tốt. Mình không mặc định brief nào cũng có vấn đề, và mục tiêu ở đây không phải là tìm lỗi của nhau
+  - AI có thể biến một brief thành màn hình rất nhanh. Nhưng việc xác định vấn đề nào đáng giải quyết và thống nhất thế nào là thành công vẫn cần designer, Product và Business cùng trao đổi
+  - Việc này cần cả hai phía: Design mang theo research và evidence; Product và Business chia sẻ những gì họ biết về vấn đề, mục tiêu và các ràng buộc
+  - Thành thật về mức độ làm việc chung: có bạn làm sát product mỗi ngày, có bạn chỉ liên lạc qua trung gian, có bạn chưa có cơ hội; dù mức độ phối hợp khác nhau, bạn vẫn áp dụng được cách làm trong buổi học này
   - Đừng hứa cuộc họp đó sẽ xảy ra với tất cả mọi người
   - Nếu lớp có PO, PM hoặc BA, mời họ nói họ cần gì từ design
   - Quá giờ thì chỉ nói hai ý đầu
@@ -282,7 +282,7 @@ last_synced: 2026-11-17
   - project card
   - ghi chú
   - Tài liệu
-  - Chỉ đưa những gì một bước cần. Rồi bảo nó chỉ dùng những gì bạn đưa.
+  - Chỉ cung cấp thông tin cần cho bước đang làm, và nói rõ AI nên dựa trên nguồn nào.
 - Ví dụ: có (project mẫu app giao đồ ăn làm context)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -300,7 +300,7 @@ last_synced: 2026-11-17
 - Title: AI có thể bịa,\n*mà vẫn rất tự tin.*
 - On-slide: Hãy để nó nói "unknown".
 - On-slide:
-  - Hãy cho phép AI nói “unknown”.
+  - Khi chưa có đủ thông tin, hãy cho phép AI trả lời “unknown”.
   - 3–13%
   - URL citation do agent nghiên cứu sâu dẫn không tồn tại
   - Reference Hallucinations in LLMs and Deep Research Agents, 2026
@@ -380,7 +380,7 @@ last_synced: 2026-11-17
   - Nhẹ hơn PDF hoặc Word, ít token hơn
   - Sửa được bằng bất kỳ công cụ nào
   - Git theo dõi được thay đổi
-  - Mọi AI tool đều đọc
+  - Mọi công cụ AI đều đọc
   - Use cases
   - Rules file (AGENTS.md, CLAUDE.md)
   - SKILL.md
@@ -395,7 +395,7 @@ last_synced: 2026-11-17
   - Nó là ngôn ngữ nguyên bản của AI
   - nhẹ hơn PDF hoặc Word nên tốn ít token;
   - mở và sửa được bằng mọi công cụ;
-  - Git theo dõi được từng thay đổi; gần như mọi AI tool đều đọc được
+  - Git theo dõi được từng thay đổi; gần như mọi công cụ AI đều đọc được
   - Trong chương trình, hầu hết những gì bạn viết cho AI là markdown:
   - rules file, SKILL.md, ghi chú research, tài liệu product, cả output AI trả về
   - Không cần nhớ cú pháp: AI viết được markdown, designer chỉ cần đọc và chỉnh
@@ -511,7 +511,7 @@ last_synced: 2026-11-17
 - Speaker notes:
   - Đóng gói một agent: viết vai và quy trình của nó thành một file markdown, mỗi agent một file
   - File đó ghi rõ agent đọc file nào và ghi vào đâu. Skill, tức cách làm một loại việc, mình dạy kỹ ở phần Skills
-  - AGENTS.md là file markdown AI tool nạp mỗi lần mở folder, ghi bản đồ folder, thứ tự đọc và luật cứng. Nó điều hướng chứ không tự chạy gì; người giao việc thật sự là AI tool (hoặc model điều phối)
+  - AGENTS.md là file markdown công cụ AI nạp mỗi lần mở folder, ghi bản đồ folder, thứ tự đọc và luật cứng. Nó điều hướng chứ không tự chạy gì; người giao việc thật sự là công cụ AI (hoặc model điều phối)
   - AGENTS.md là luật, không phải rào chắn kỹ thuật; rào chắn thật là .gitignore cho _raw-private/ và _personal/
   - Tên agent trên sơ đồ chỉ là ví dụ; đội đầy đủ có tám agent, mình sẽ xem ở phần workflow thiết kế
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
@@ -549,7 +549,7 @@ last_synced: 2026-11-17
 
 ### STATEMENT · Do not automate a bad workflow
 - Kicker: Workflow chưa sửa
-- Title: *Sửa workflow trước.* \nRồi mới tự động hoá tiếp công việc
+- Title: *Ổn định cách làm trước.* \nRồi mới tự động hoá
 - On-slide: AI làm nhanh cả việc đúng lẫn việc sai.
 - On-slide:
   - AI
@@ -560,7 +560,7 @@ last_synced: 2026-11-17
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Vậy nếu kết quả agent đưa ra không làm bạn hài lòng thì làm thế nào?
-  - AI khuếch đại những gì đã có: workflow tốt chạy nhanh hơn, workflow chưa ổn cho ra nhiều thứ chưa ổn hơn
+  - AI thường khuếch đại cách làm hiện tại. Quy trình tốt có thể chạy nhanh hơn; quy trình chưa ổn thì có thể tạo ra nhiều kết quả chưa ổn hơn, cũng trong thời gian ngắn hơn
   - Phản xạ thường gặp là viết lại prompt dài hơn hoặc thử lại cho tới khi may mắn.
   - Cách này tốn thời gian và không lặp lại được. Hãy hỏi trước: lỗi nằm ở bước nào?
   - Cách xử lý, theo năm bước:
@@ -589,7 +589,7 @@ last_synced: 2026-11-17
   - Tất cả ghi vào một design memory dùng chung (.md)
   - Bạn duyệt trước mỗi lần chuyển phase
   - WHY
-  - AI có thể detect cho bạn phần lặp đi lăjp lại trong quy trình
+  - AI có thể detect cho bạn phần lặp đi lặp lại trong quy trình
   - Mỗi bước để lại file và nguồn để truy vết ngược lại
   - Quyết định vẫn là ở bạn
   - WHEN
@@ -676,7 +676,7 @@ last_synced: 2026-11-17
   - MCP (Model Context Protocol) là chuẩn mở đứng sau. Nó giống một kiểu ổ cắm chung: mỗi công cụ làm một lần theo chuẩn này, AI nào hỗ trợ chuẩn cũng nối vào được. Trước đây mỗi công cụ cần một kiểu tích hợp riêng cho từng AI.
   - Cách hoạt động ở mức đơn giản:
     - Công cụ (Figma, Drive, Notion...) có một MCP server, liệt kê những việc AI được phép làm
-    - AI tool của bạn là phía kết nối, gọi các việc đó khi cần
+    - công cụ AI của bạn là phía kết nối, gọi các việc đó khi cần
     - Bạn đăng nhập và cấp quyền một lần, sau đó AI dùng lại
   - Có hai loại việc: đọc và ghi. Đọc là xem file Figma, tài liệu Drive hay Notion, ticket Jira hoặc Linear, hay truy vấn dữ liệu analytics. Ghi là đăng lên Slack hoặc tạo ticket. Việc ghi tác động ra bên ngoài nên cần cẩn thận hơn.
   - Ví dụ trong Delivery App: thay vì chụp từng màn Figma rồi dán, bạn nối Figma để AI đọc thẳng file. Ghi chú research nằm ở Notion thì nối Notion để AI đọc cùng lúc, rồi đối chiếu với nhau.
@@ -1069,7 +1069,7 @@ last_synced: 2026-11-17
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Khi AI tham gia quy trình, quyết định đưa ra nhanh hơn nhưng khó trả lời "vì sao chọn hướng này?"; Hub giữ câu trả lời đó
-  - Hub là một tfolder duy nhất ghi lại lý do sau mỗi quyết định, nối với nhu cầu người dùng, giả định đã đặt và kết quả kiểm chứng;
+  - Hub là một folder duy nhất ghi lại lý do sau mỗi quyết định, nối với nhu cầu người dùng, giả định đã đặt và kết quả kiểm chứng;
   - What: Có thể hình dung nó là một site liên kết chứa mọi output; mỗi page một output, mỗi item một file có ID ngắn (O1, H1, D1, T1, M1)
   - Why: output mỗi bước là input bước sau; từ một decision lần ngược ra opportunity, hypothesis, principle, test, metric.
   - When: Bắt đầu từ ngày đầu tiên onboard với product, thêm trang sau mỗi giai đoạn, hoàn thiện ở buổi 12
@@ -1101,7 +1101,7 @@ last_synced: 2026-11-17
   - Lịch sử và quay lại được
   - Git ghi từng thay đổi, AI sửa hỏng thì quay về
   - Không khoá vào một tool
-  - Nhiều AI tool mở cùng một folder
+  - Nhiều công cụ AI mở cùng một folder
   - Dữ liệu trong tay bạn
   - Riêng tư mặc định, nằm trên máy và trong repo
   - Notion vẫn tốt để đọc tài liệu. Hub cần AI ghi, lần ngược và kiểm lại.
@@ -1112,7 +1112,7 @@ last_synced: 2026-11-17
   - Notion vẫn dùng tốt để đọc tài liệu, và mình đã nói Notion là một connector. Nhưng với Hub, mình chọn folder trên máy và GitHub vì bốn lý do:
     - AI làm việc trực tiếp trên file: agent mở folder là đọc và sửa được các file markdown, mỗi item một file. Với Notion, AI chỉ làm được những việc connector cho phép, và phải đi qua kết nối đó mỗi lần
     - Lịch sử và quay lại được: Git ghi lại từng thay đổi, AI sửa hỏng thì quay về bản trước và xem được bản nào đổi gì. Notion có lịch sử trang, nhưng khó so từng dòng thay đổi như Git
-    - Không phụ thuộc một tool: folder markdown mở được ở nhiều AI tool, đổi tool không phải làm lại từ đầu. Hub không bị khoá vào một nền tảng, một gói trả phí hay một connector
+    - Không phụ thuộc một tool: folder markdown mở được ở nhiều công cụ AI, đổi tool không phải làm lại từ đầu. Hub không bị khoá vào một nền tảng, một gói trả phí hay một connector
     - Dữ liệu nằm trong tay bạn: hub mặc định riêng tư, nằm trên máy và trong repo của bạn, không đi qua dịch vụ bên thứ ba nếu bạn không chọn chia sẻ
   - Không có nghĩa Notion dở. Nếu tài liệu của bạn đã nằm ở Notion, cứ nối MCP để AI đọc. Chỉ là Hub cần AI ghi, lần ngược và kiểm lại, nên folder và GitHub hợp hơn.
 
@@ -1126,19 +1126,19 @@ last_synced: 2026-11-17
 - Title: Ba lớp *của hub*
 - On-slide:
   - 01
-  - Thứ bạn thu được: transcript đã ẩn danh, review, tài liệu của team. Không ai sửa.
+  - Tài liệu gốc: transcript đã ẩn danh, review, tài liệu của team. Lưu nguyên trạng.
   - 02
-  - Thứ rút ra: source notes, insight, decision, mỗi mục một file. AI soạn nháp, bạn kiểm tra.
+  - Những điều đã tổng hợp: source notes, insight, decision, mỗi mục một file. AI soạn nháp, bạn kiểm tra.
   - 03
-  - Quy ước làm việc, AI đọc đầu tiên: đọc gì, ghi ở đâu, quy tắc nào cứng. Trong khoá là AGENTS.md.
+  - Quy tắc làm việc mà AI cần đọc trước: đọc gì, ghi ở đâu, quy tắc nào phải tuân theo. Trong khoá là AGENTS.md.
   - Hai file giúp tìm đường: index (README.md) cho biết hub có gì, log (project-log.md) ghi mỗi lần đưa nguồn vào hoặc đổi quyết định.
 - Ví dụ: có (một source note, một insight và file AGENTS.md của project mẫu)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Slide trước nói hub dùng để làm gì. Slide này trả lời: hub gồm những lớp nào.
-  - Mỗi cuộc chat AI mới bắt đầu từ trống. Hub là cách để AI không phải bắt đầu lại. Andrej Karpathy mô tả ý này vào tháng 4 năm 2026: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi. Lý do ông nêu là người ta bỏ wiki vì công bảo trì, còn AI không ngại cập nhật liên kết.
+  - Mỗi lần mở một cuộc chat mới, bạn thường phải cung cấp lại bối cảnh. Hub lưu những thông tin cần thiết để AI tiếp tục công việc mà không phải bắt đầu lại từ đầu. Andrej Karpathy mô tả ý này vào tháng 4 năm 2026: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi. Lý do ông nêu là người ta bỏ wiki vì công bảo trì, còn AI không ngại cập nhật liên kết.
   - Ba lớp:
-    - Raw sources: thứ bạn thu được. Bạn đưa vào, không ai sửa
+    - Raw sources: tài liệu gốc, được lưu nguyên trạng để đối chiếu khi cần
     - Wiki: source notes, insight, opportunity, decision, mỗi mục một file Markdown nối với nhau. AI soạn nháp, bạn kiểm tra
     - Schema: một file ngắn cho AI biết đọc gì trước và quy tắc nào cứng. Trong khoá là AGENTS.md
   - Hai file giúp tìm đường: index (README.md) và log (project-log.md).
@@ -1150,7 +1150,7 @@ last_synced: 2026-11-17
 
 ### NUMBERED · Three rules
 - Kicker: Knowledge Hub
-- Title: Ba quy tắc *giữ hub đáng tin*
+- Title: Ba quy tắc *để hub luôn đáng tin*
 - On-slide:
   - 01
   - Bản tóm tắt sai thì vẫn còn nguồn để đối chiếu.
@@ -1359,7 +1359,7 @@ last_synced: 2026-11-17
   - Có thể vi phạm quy định dữ liệu của công ty
   - Có thể vi phạm Luật Bảo vệ dữ liệu cá nhân (hiệu lực từ 01/01/2026)
   - WHEN
-  - Trước khi dán bất kỳ tài liệu nào vào AI tool, kiểm tra chính sách AI của công ty
+  - Trước khi dán bất kỳ tài liệu nào vào công cụ AI, kiểm tra chính sách AI của công ty
   - Ẩn danh trước khi AI nhìn thấy bất kỳ quote nào
   - Trước khi kết nối connector, vì nó đọc được file trong folder; giữ file confidential ở ngoài
 - Ví dụ: có (năm đoạn trích app giao đồ ăn của Activity)
@@ -1370,14 +1370,14 @@ last_synced: 2026-11-17
   - Với designer, transcript phỏng vấn là loại dễ dán vào AI nhất vì nó rất hữu ích để tổng hợp.
   - Vì sao phải cẩn thận: dữ liệu đã dán vào có thể bị lưu hoặc dùng để train, và gần như không thu hồi được. Nó cũng có thể vi phạm quy định dữ liệu của công ty và Luật Bảo vệ dữ liệu cá nhân, có hiệu lực từ 01/01/2026.
   - Ba thời điểm cần dừng lại:
-    - Trước khi dán bất kỳ tài liệu nào vào AI tool: kiểm tra chính sách AI của công ty và phân loại tài liệu. Chưa có chính sách thì hỏi; còn phân vân thì đừng dán
+    - Trước khi dán bất kỳ tài liệu nào vào công cụ AI: kiểm tra chính sách AI của công ty và phân loại tài liệu. Chưa có chính sách thì hỏi; còn phân vân thì đừng dán
     - Ẩn danh trước khi AI nhìn thấy quote: thay tên bằng P1, P2, bỏ công ty, số điện thoại và email. Làm bằng find and replace trên máy bạn, không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi
     - Trước khi kết nối connector: connector đọc được file trong folder, nên chỉ nối phần cần thiết và giữ file confidential ở ngoài folder
   - ----
   - Nếu còn tgian
   - Dữ liệu gốc cần ẩn danh nằm trong _raw-private/: không lên GitHub, file luật bảo tool không đọc. Đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder. Liên hệ với slide repo ban nãy: file nào không đưa lên repo thì cũng không nên để trong folder mà agent đọc.
   - Output AI có được dùng cho công việc với client hay không, và ai sở hữu, tuỳ công ty và quốc gia; ghi trong project log chỗ nào đã dùng AI.
-  - Bạn viết data rules của riêng mình ở bài tập về nhà; đến lúc đó đừng dán tài liệu thật vào AI tool. Nhắc đọc trang data controls của tool đang dùng; điều khoản đổi thường xuyên.
+  - Bạn viết data rules của riêng mình ở bài tập về nhà; đến lúc đó đừng dán tài liệu thật vào công cụ AI. Nhắc đọc trang data controls của tool đang dùng; điều khoản đổi thường xuyên.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba cột kèm một dòng ví dụ bên dưới; không tô màu nào ngoài số purple.
 
 ---
@@ -1396,7 +1396,7 @@ last_synced: 2026-11-17
 - Speaker notes:
   - Đi qua các câu hỏi đã ghi trong chat suốt buổi; chọn câu nhiều người quan tâm nhất trước
   - Câu cần số liệu hoặc cần nghĩ thêm: trả lời ngắn và hẹn trả lời bằng văn bản sau buổi
-  - Hỏi đáp kết thúc sớm thì để học viên hỏi về hướng đi nghề nghiệp, và ai cần cài AI tool thì ở lại làm cùng
+  - Hỏi đáp kết thúc sớm thì để học viên hỏi về hướng đi nghề nghiệp, và ai cần cài công cụ AI thì ở lại làm cùng
   - Tám phút; sau đó là bài tập về nhà và lời kết (sáu phút). Còn thời gian thì nhắc lại bước 1 và 2 của bài tập
 
   > Mở đầu cho cả lớp: bạn sẽ giải thích lại thuật ngữ nào theo cách khác, hoặc chạy stage nào với AI theo cách khác?
@@ -1422,7 +1422,7 @@ last_synced: 2026-11-17
   - Sáu bước: tạo repo và project folder; viết data rules; viết product context; để AI soạn README và AGENTS.md cho folder (AGENTS.md ghi ba quy tắc của hub, bạn viết lại bằng lời của mình); chạy một instruction với file đã lưu; tuỳ chọn push lên Git và bật trang live
   - Xong trước buổi practice trên lớp vì các buổi sau làm trên chính folder này
   - Đầu ra là một folder với context; hai bước Git và trang live không bắt buộc
-  - Chưa dán tài liệu thật vào AI tool trước khi viết data rules; ai chưa xong Activity thì dùng project mẫu
+  - Chưa dán tài liệu thật vào công cụ AI trước khi viết data rules; ai chưa xong Activity thì dùng project mẫu
   - Buổi practice trên lớp: làm tiếp phần chưa xong rồi mình chấm; cách chấm chưa quyết, sẽ báo sau
   - Đây là folder dự án của bạn, không phải bài nộp; nhắc tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có
 - 🎨 Visual hint: TYPOGRAPHIC. Practice layout, một card lớn "Dựng project folder" kèm bốn dòng ngắn bên dưới.
@@ -1590,9 +1590,9 @@ last_synced: 2026-11-17
 - Title: Kết nối một lần.\n*Dùng lại quy tắc nhiều lần.*
 - On-slide:
   - Connector (MCP)
-  - Cắm giữa file design hoặc tài liệu và AI tool
+  - Cắm giữa file design hoặc tài liệu và công cụ AI
   - file design
-  - AI tool
+  - công cụ AI
   - Reusable instructions
   - Quy tắc viết một lần, dùng lại nhiều lần
   - AGENTS.md
@@ -1601,7 +1601,7 @@ last_synced: 2026-11-17
   - hội thoại 3
   - Trước khi kết nối, hãy biết nó đọc và sửa được những gì
 - Speaker notes:
-  - Slide trước đã định nghĩa Connector (MCP); đây là ví dụ: connector giống một cái USB, cắm giữa file design và AI tool để AI đọc được thứ bạn đang làm
+  - Slide trước đã định nghĩa Connector (MCP); đây là ví dụ: connector giống một cái USB, cắm giữa file design và công cụ AI để AI đọc được thứ bạn đang làm
   - Trước khi kết nối, xác định nó đọc và sửa được những gì, và áp data rules như khi dán
   - Reusable instructions gồm skills, file luật của project và project memory; AGENTS.md trong project folder là ví dụ đầu tiên
   - Dạy sâu ở buổi 7
