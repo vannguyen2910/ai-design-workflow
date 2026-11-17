@@ -26,7 +26,7 @@ Bài không có giới hạn một buổi. Bạn làm phần đầu ở nhà, r�
 
 ## Steps
 
-Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. **AI soạn nháp, bạn kiểm tra, bạn quyết định.** AI không đóng vai người dùng và không chốt severity.
+Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. **AI soạn bản nháp, bạn kiểm tra rồi quyết định.** AI không đóng vai người dùng và không chốt severity.
 
 ### Step 1 · Tự rà prototype · bạn
 
@@ -37,8 +37,8 @@ Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. *
 ### Step 2 · Audit cùng AI · AI soạn nháp, bạn kiểm tra
 
 - **Xem mẫu trước:** mở `assets/travel-buddy-ux-audit.html` để thấy một audit hoàn chỉnh (phạm vi, tiêu chí, finding gắn màn hình, severity, giới hạn). Đích của bạn là đầu ra có dạng tương tự trên prototype của mình.
-- **Đặt phạm vi và tiêu chí:** chọn các lớp cần rà trong sáu lớp (heuristic, accessibility, design system, state, nội dung, flow). Bộ nguyên tắc và rules file của bạn là tiêu chí.
-- **AI soạn nháp finding:** mỗi finding ghi màn hình, lớp, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất. Điều không thấy trong ảnh thì AI ghi unknown.
+- **Đặt phạm vi và tiêu chí:** chọn các layer cần rà trong sáu layer (heuristic, accessibility, design system, state, nội dung, flow). Bộ nguyên tắc và rules file của bạn là tiêu chí.
+- **AI soạn nháp finding:** mỗi finding ghi màn hình, layer, tiêu chí bị vi phạm, evidence (ảnh và vùng nào) và severity đề xuất. Điều không thấy trong ảnh thì AI ghi unknown.
 - **Bạn lọc qua ba cổng:** thấy được trên màn hình không; có vi phạm tiêu chí đã gán không; người dùng thật có gặp không. Finding không qua cổng nào thì bỏ, hoặc đổi thành giả thuyết để hỏi ở test.
 - **Bạn chấm severity** theo thang 0 đến 4, kèm một dòng lý do cho mỗi điểm.
 - **Đếm lỗi của AI:** số finding sai và số finding AI bỏ sót so với bước tự rà. Ghi hai con số.
@@ -47,7 +47,7 @@ Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. *
 
 ### Step 3 · Tìm participant và chuẩn bị · bạn
 
-- Chọn 3 đến 5 người đúng nhóm người dùng của project. Không chọn người cùng làm project. Ba người là mức tối thiểu, năm là mức đẹp.
+- Chọn 3 đến 5 người đúng nhóm người dùng của project. Không chọn người cùng làm project. Ba người là mức tối thiểu, năm người là mức nên có.
 - Viết hai câu lọc trước khi mời, gửi lời mời.
 - Nói rõ trước buổi test: bạn ghi hình hay không, dùng để làm gì, ai xem. Chỉ ghi hình khi họ đồng ý; người từ chối thì ghi chú tay.
 - **Kiểm tra:** nếu chỉ có người quen, ghi rõ điều này như giới hạn của test.
@@ -118,8 +118,8 @@ Bài đi theo thứ tự: audit trước, test sau, rồi sửa và bàn giao. *
 
 - **Không tìm được participant đúng nhóm:** mời đồng nghiệp ngoài team đúng nhóm, hoặc người quen có thói quen dùng loại app của bạn. Ghi rõ đây là giới hạn của test, và đừng suy ra tỷ lệ.
 - **Participant khen hết:** hỏi về điều đã xảy ra ("Lúc nãy bạn dừng ở màn này, bạn đang nghĩ gì?") thay vì hỏi ý kiến, và đưa task thay vì hỏi họ có thích không.
-- **AI audit trả danh sách dài, nhiều finding chung chung:** quay lại ba cổng; finding nào không nói rõ màn, lớp và evidence thì bỏ. Đếm đó là lỗi của AI.
+- **AI audit trả danh sách dài, nhiều finding chung chung:** quay lại ba cổng; finding nào không nói rõ màn, layer và evidence thì bỏ. Đếm đó là lỗi của AI.
 - **AI chấm severity khác bạn:** bạn là người chốt điểm. Ghi lý do của bạn, giữ điểm của AI ở cột riêng nếu muốn so.
 - **Không có thời gian chạy đủ 5 buổi test:** ba buổi là mức tối thiểu. Ghi rõ số người trong `findings.md`.
 - **Finding lặp ở nhiều màn:** sửa ở token, component, shell hoặc template, không sửa từng màn.
-- **Không dùng được AI tool của công ty:** dừng và hỏi lead, hoặc dùng project mẫu Delivery App của chương trình.
+- **Không dùng được công cụ AI của công ty:** dừng và hỏi lead, hoặc dùng project mẫu Delivery App của chương trình.

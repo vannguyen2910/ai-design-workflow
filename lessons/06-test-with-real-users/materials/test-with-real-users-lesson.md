@@ -15,11 +15,11 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 ---
 Ở Lesson 5, bạn dựng một prototype chạy được từ design system của mình. Buổi này kiểm tra nó: bạn tự rà bằng UX Audit với AI, rồi test với 3 đến 5 người thật bạn tự tìm. Sau đó bạn xếp finding, sửa đúng layer, dựng lại và gom một gói handoff để người implement sau không bỏ qua nền UX.
 
-> **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** AI giúp bạn rà nhanh và gom ghi chú, nhưng AI không thay người dùng thật và không chấm severity thay bạn.
+> **AI soạn bản nháp, bạn kiểm tra rồi quyết định.** AI giúp bạn rà nhanh và gom ghi chú, nhưng không thay người dùng thật và không chấm severity thay bạn.
 
 ## Nội dung buổi học
 
-1. Validate sau khi AI build: vì sao verification là nút thắt
+1. Vì sao kiểm tra (verification) thành nút thắt sau khi AI build
 2. UX Audit với AI: heuristic evaluation và các layer khác
 3. Usability test với người thật: Goals, Signals, Metrics, rồi test với participant bạn tự tìm
 4. Phân tích, xếp finding và sửa đúng layer
@@ -32,7 +32,7 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 3. Viết Goals, Signals, Metrics cho một test và nêu giới hạn của SUS trên mẫu nhỏ
 4. Chuẩn bị một usability test: tìm participant, xin consent, viết test plan và script với AI mà không để AI đóng vai người dùng
 5. Kiểm tra phần phân tích của AI với ghi chú gốc, xếp finding theo severity và sửa ở đúng layer
-6. Gom gói handoff giữ UX foundation để người implement sau không chồng tính năng lên mà bỏ qua nền
+6. Gom gói handoff giữ UX foundation, để người implement sau không chồng thêm tính năng mà quên nền UX
 7. Nêu mỗi lesson đóng góp gì cho design outcome và business outcome, và phân biệt đóng góp có thể có với kết quả đã đo
 
 ---
@@ -45,7 +45,7 @@ Khi AI làm implementation rẻ đi, nút thắt chuyển sang bước kiểm tr
 
 ### 1.2 Vì sao UX bị bỏ qua
 
-Ở nhiều team product, ai cũng làm được design và prototype, từ product owner đến developer. Vì implement nhanh nên UX thường bị bỏ qua ở nhiều giai đoạn. Khi có vấn đề xảy ra, team hay build thêm tính năng chồng lên tính năng, thay vì nghĩ lại UX foundation một cách toàn diện. Kết quả là người dùng không hài lòng, và đó là lý do cần có người rà soát và kiểm chứng những gì được giao ra.
+Ở nhiều team Product, ai cũng làm được design và prototype, từ product owner đến developer. Build nhanh nên UX hay bị bỏ qua. Khi có vấn đề, team thường thêm tính năng chồng lên tính năng chứ ít khi nghĩ lại UX foundation. Người dùng nhận về thứ họ không hài lòng, và đó là lý do cần có người rà soát những gì được giao ra.
 
 ### 1.3 Audit hay test
 
@@ -90,7 +90,7 @@ Heuristic evaluation là một method: bạn chấm giao diện theo mười usa
 
 ### 2.3 Mười heuristic của Nielsen
 
-Mười heuristic là chuẩn chung để chấm một giao diện. Bạn cần nhận ra từng cái để kiểm nhãn mà AI gán cho finding.
+Mười heuristic là chuẩn chung để chấm một giao diện. Bạn cần nhận ra từng cái để kiểm tra nhãn mà AI gán cho finding.
 
 | # | Heuristic | Ý chính |
 |---|---|---|
@@ -256,7 +256,7 @@ Một cách làm thực tế: bạn ghi hình từng buổi test (màn hình và
 4. Chỗ nghe không rõ thì ghi "không rõ", không đoán.
 5. Không thêm ý, không gộp hay bỏ lượt nói.
 
-Rules thay cho việc soát từng timestamp vì chúng ép transcript giữ đúng những thứ bạn cần kiểm sau này: lời nguyên văn và mốc thời gian để quay về video.
+Rules thay cho việc soát từng timestamp vì chúng ép transcript giữ đúng những thứ bạn cần kiểm tra sau này: lời nguyên văn và mốc thời gian để quay về video.
 
 **Bước 2: đưa AI đầu vào đủ.** Gồm transcript đã clean up, câu trả lời SUS của từng participant, test plan (goal, signal, metric) và rules file. Có test plan và rules file thì recommendation bám theo mục tiêu đã đặt, không theo cảm giác.
 
@@ -309,7 +309,7 @@ Có hai cách sai: **fix too low** (sửa lại ở từng màn, các bản lệ
 
 ### 5.1 Handoff không còn là bàn giao màn hình
 
-Handoff pack và measurement plan kiểu cũ không còn trong chương trình. Điều còn lại cần bàn giao là **UX foundation**, vì người implement sau (có thể là developer, product owner hay chính AI của họ) dễ chồng tính năng lên nhau mà không biết nền UX đang giữ điều gì.
+Handoff pack và measurement plan kiểu cũ không còn trong chương trình. Điều cần bàn giao bây giờ là **UX foundation**, vì người implement sau (developer, product owner hay chính AI của họ) dễ chồng tính năng lên nhau mà không biết nền UX đang giữ điều gì.
 
 ### 5.2 Gói handoff
 
@@ -333,8 +333,8 @@ Lesson này là lesson cuối. Bảng dưới nối từng lesson với business
 
 | Lesson | Đóng góp cho design outcome | Đóng góp cho business outcome |
 |---|---|---|
-| 1 | Làm việc với AI trong một workspace lặp lại được, không đưa dữ liệu nhạy cảm vào AI tool công khai | Giảm rủi ro dữ liệu và tuân thủ, để công ty dùng AI một cách an toàn |
-| 2 | Biết đúng vấn đề đáng giải và có chuẩn chung để đánh giá thiết kế | Thống nhất business question và metric với business trước khi build, tránh build sai vấn đề |
+| 1 | Làm việc với AI trong một workspace lặp lại được, không đưa dữ liệu nhạy cảm vào công cụ AI công khai | Giảm rủi ro dữ liệu và tuân thủ, để công ty dùng AI một cách an toàn |
+| 2 | Biết đúng vấn đề đáng giải và có chuẩn chung để đánh giá thiết kế | Thống nhất business question và metric với Business trước khi build, tránh build sai vấn đề |
 | 3 | Hiểu người dùng bằng persona, journey map, opportunity có evidence | Quyết định dựa trên evidence thay vì niềm tin của team (ví dụ "giá là lý do chính") |
 | 4 | Chọn được hướng giải pháp có lý do và vẽ rõ flow phía sau màn hình | Chọn hướng trước khi tốn công của developer, thấy sớm việc chạm đến team nào |
 | 5 | Trải nghiệm nhất quán nhờ design system và rules file | Có prototype nhanh để test sớm, giảm làm lại giữa design và developer |
@@ -342,7 +342,7 @@ Lesson này là lesson cuối. Bảng dưới nối từng lesson với business
 
 Bảng này nói **đóng góp có thể có**, không phải kết quả đã đo. Một prototype đã test cho tín hiệu về trải nghiệm, nhưng không chứng minh tỷ lệ đặt đơn thứ hai tăng. Điều đó phải đo sau launch, ngoài phạm vi khoá.
 
-Điều bạn làm được bây giờ: cùng product và business chọn vấn đề đáng giải, dùng AI để làm nhanh mà vẫn tự kiểm tra và tự quyết định.
+Điều bạn làm được bây giờ: cùng Product và Business xác định vấn đề cần giải quyết, và dùng AI để làm nhanh mà vẫn tự kiểm tra, tự quyết định.
 
 ---
 
