@@ -64,15 +64,15 @@ last_synced: 2026-11-17
 - Num: 5
 - Kicker: Mở đầu
 - Title: Ice Breaker
-- Sub: Kể một lần sản phẩm trông đã xong nhưng người dùng vẫn gặp vấn đề.
+- Sub: Hãy kể một lần sản phẩm được AI generate từ bạn hay team, nhưng người dùng vẫn gặp vấn đề. Vấn đề đó là gì? Và cách giải quyết của bạn ra sao?
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Giữ bảng này lại. Lát nữa mình quay lại khi nói về chuyện kiểm tra.
   - Mỗi người nói tên và một câu, cả lớp khoảng năm phút. Bạn xếp câu trả lời theo kiểu vấn đề: thiếu state, nhãn lệch, điều hướng khác nhau, nội dung giả. Bảng này được dùng lại ở phần một.
 
-  > Bạn hãy kể một lần sản phẩm được AI dựng giúp, trông đã xong, nhưng người dùng vẫn gặp vấn đề. Vấn đề đó là gì?
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, một cột trống bên dưới.
+  > Hãy kể một lần sản phẩm được AI generate từ bạn hay team, nhưng người dùng vẫn gặp vấn đề. Vấn đề đó là gì? Và cách giải quyết của bạn ra sao?
+- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền vàng, tiêu đề ở giữa và câu mô tả bên dưới.
 
 ---
 
@@ -83,7 +83,7 @@ last_synced: 2026-11-17
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Xong phần khởi động. Phần một trả lời hai câu hỏi: vì sao kiểm tra thành nút thắt khi làm ra sản phẩm đã rẻ hơn, và audit khác usability test ở đâu.
+  - Xong phần khởi động. Phần một trả lời hai câu hỏi: vì sao kiểm tra thành nút thắt khi làm ra sản phẩm đã ít tốn effort hơn, và audit khác usability test ở đâu.
 
   > Quay lại bảng ice breaker, những vấn đề đó thường lộ ra ở giai đoạn nào?
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn.
@@ -97,16 +97,16 @@ last_synced: 2026-11-17
   - Trước AI
   - Nút thắt nằm ở khâu làm ra sản phẩm (implementation).
   - Sau AI
-  - Làm ra sản phẩm nhanh và rẻ hơn, nhưng kiểm tra (verification) vẫn tốn công.
+  - Làm ra sản phẩm nhanh và ít effort hơn, nhưng công việc kiểm tra (verification) vẫn tốn công sức của team nếu như chúng ta không có rules để biết cái nào là đúng hay sai.
 - Ví dụ: có (bản nháp, Delivery App: AI dựng mười màn hình trong vài phút, còn kiểm tra màn nào đúng thì không nhanh theo)
 - Câu hỏi hay gặp:
   - Hình này có phải số liệu không? Không. Đây là hình minh hoạ; khung lý thuyết gần nhất là Theory of Constraints, và áp vào design là suy luận.
 - Speaker notes:
-  - AI làm cho việc build sản phẩm và cách tính năng nhanh hơn và rẻ đi.
-  - Nhưng việc kiểm tra thì không rẻ theo.
+  - AI làm cho việc build sản phẩm và cách tính năng nhanh hơn và ít tốn effort hơn.
+  - Nhưng việc kiểm tra thì không giảm effort theo.
   - Hình này so sánh trước và sau AI: nút thắt dời từ implementation sang verification.
   - Với designer, AI tạo mười hướng trong vài phút, nhưng chọn hướng đúng và kiểm tra với người dùng thật thì không nhanh theo.
-  - Khi đầu ra rẻ đi, chi phí dồn sang bước kiểm tra.
+  - Khi làm ra đầu ra ít tốn effort hơn, phần effort dồn sang bước kiểm tra.
   - Vì AI tạo ra có thể trông có vẻ đúng nhưng lại tiềm ẩn các lỗi logic tinh vi hoặc vấn đề về bộ nhớ, nên việc con người kiểm duyệt, thực hiện kiểm thử đơn vị (unit testing) và xác thực thông qua quy trình CI/CD là những bước bắt buộc.
   - AI dựng mười màn hình trong vài phút, còn kiểm tra màn nào đúng thì vẫn mất công như trước.
 

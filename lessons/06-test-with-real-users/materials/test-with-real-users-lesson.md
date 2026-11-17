@@ -41,7 +41,7 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 
 ### 1.1 Verification là nút thắt mới
 
-Khi AI làm implementation rẻ đi, nút thắt chuyển sang bước kiểm tra. Ở Lesson 1, bạn đã thấy hình này: trước AI, nút thắt nằm ở implementation; sau AI, implementation rộng ra còn verification vẫn là ống hẹp. Với designer, AI dựng mười màn hình trong vài phút, còn kiểm tra màn nào đúng và người dùng có dùng được không thì không nhanh theo.
+Khi AI làm implementation ít tốn effort hơn, nút thắt chuyển sang bước kiểm tra. Ở Lesson 1, bạn đã thấy hình này: trước AI, nút thắt nằm ở implementation; sau AI, implementation rộng ra còn verification vẫn là ống hẹp. Với designer, AI dựng mười màn hình trong vài phút, còn kiểm tra màn nào đúng và người dùng có dùng được không thì không nhanh theo.
 
 ### 1.2 Vì sao UX bị bỏ qua
 
