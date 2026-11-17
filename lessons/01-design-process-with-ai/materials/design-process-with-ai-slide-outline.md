@@ -201,8 +201,8 @@ last_synced: 2026-11-17
   - Brief từ Product thường là điểm bắt đầu tốt. Mình không mặc định brief nào cũng có vấn đề, và mục tiêu ở đây không phải là tìm lỗi của nhau.
   - AI có thể biến một brief thành màn hình rất nhanh. Nhưng việc xác định vấn đề nào đáng giải quyết và thống nhất thế nào là thành công vẫn cần designer, Product và Business cùng trao đổi.
   - Việc này cần sự tham gia của cả hai phía: Design mang theo research và evidence; Product và Business chia sẻ những gì họ biết về vấn đề, mục tiêu và các ràng buộc.
-  - Nếu lớp có PO, PM hoặc BA, mời họ nói họ cần gì từ design
-  - Thành thật về mức độ làm việc chung: có designer làm sát product mỗi ngày, có designer chỉ liên lạc qua người trung gian, có designer chưa có cơ hội trao đổi
+  - Nếu lớp có PO, PM hoặc BA, mời họ nói họ cần gì từ Design
+  - Thành thật về mức độ làm việc chung: có designer làm sát Product mỗi ngày, có designer chỉ liên lạc qua người trung gian, có designer chưa có cơ hội trao đổi
   - Dù mức độ phối hợp hiện tại khác nhau, bạn vẫn có thể áp dụng cách làm trong buổi học này. Những buổi tiếp theo sẽ đi vào cách thực hiện cụ thể.
   - Đừng hứa là cuộc họp đó sẽ xảy ra với tất cả mọi người
   - Nửa phút; nếu T1 quá giờ, chỉ nói hai ý đầu
@@ -577,7 +577,7 @@ last_synced: 2026-11-17
     - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Bạn duyệt trước mỗi lần chuyển phase
     - Why: AI soạn nháp nhanh phần lặp lại, còn bạn giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc ở slide Double Diamond: AI soạn nháp, bạn kiểm tra rồi quyết định
     - When: chỉ khi workflow đã ổn. Quay lại slide sửa workflow: workflow phải ổn trước khi giao cho agent. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
-  - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc khi bước đó cần người thật: user, hoặc người phía product và business.
+  - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc khi bước đó cần người thật: user, hoặc người phía Product và Business.
   - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
 
   > Bước nào trong công việc của bạn đã đủ ổn định để thử giao cho một agent?
@@ -596,7 +596,7 @@ last_synced: 2026-11-17
   - Mình chiếu sơ đồ và đi qua từng phase, khoảng 40 giây mỗi phase. Mỗi agent có một instruction, một input riêng và một output ghi vào design memory.
   - Design memory là record dùng chung cho cả tám agent. Hôm nay nó chính là project folder và hub.
   - Designer duyệt ở mỗi mũi tên REVIEW. Không agent nào duyệt thay, vì một agent duyệt cũng có thể sai.
-  - Có hai vai mình không giao cho AI: người dùng thật, và người phía product và business.
+  - Có hai vai mình không giao cho AI: người dùng thật, và người phía Product và Business.
   - Ví dụ ở Delivery App: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding.
   - Nói thật về hiện trạng: toolkit mới có skill cho agent 01 và 03. Sáu agent còn lại mới có template tài liệu, card dựng ở các buổi sau.
   - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc. Sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX), nhưng tên và phạm vi agent là của chương trình. Chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design.
@@ -1266,7 +1266,7 @@ last_synced: 2026-11-17
 - Ví dụ: bản nháp (mục tiêu business, opportunity, decision và ràng buộc kỹ thuật của app giao đồ ăn)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Mỗi chức năng sở hữu một loại dữ liệu và có người chịu trách nhiệm: business giữ mục tiêu và metric, technical giữ ràng buộc và kiến trúc, design giữ insight và decision
+  - Mỗi chức năng sở hữu một loại dữ liệu và có người chịu trách nhiệm: Business giữ mục tiêu và metric, Technical giữ ràng buộc và kiến trúc, Design giữ insight và decision
   - Gộp hết vào một hub thì không ai là chủ của từng phần; cùng nguyên tắc với data mesh: mỗi miền tự chủ, chỉ một bộ chuẩn chung rất nhỏ
   - AI là lớp nối: lấy dữ liệu liên quan và đối chiếu giữa ba hub
   - Phần này là lý thuyết, không có bài tập; hub của designer là một trong ba nhánh
@@ -1382,7 +1382,7 @@ last_synced: 2026-11-17
 - Title: Folder,\n*hub đầu tiên*
 - On-slide:
   - Thiết lập local project folder
-  - Thêm product context liên qan
+  - Thêm product context liên quan
   - Để AI soạn README và AGENTS.md
   - Tạo repository trên Git cho folder
   - Push folder lên repository
