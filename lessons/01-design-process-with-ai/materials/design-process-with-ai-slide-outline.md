@@ -150,7 +150,7 @@ last_synced: 2026-11-17
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Thách thức của chúng ta gói trong ba ý. Một: phần việc làm ra màn hình từ một brief, AI generate nhanh nhất hiện nay. Hai: người mới vào nghề chịu áp lực nhiều nhất. Ba: ranh giới giữa các position đang mờ dần.
-  - Ví dụ cho ý một: dựng màn hình onboarding Deliver App từ một brief một dòng.
+  - Ví dụ cho ý một: dựng màn hình onboarding Delivery App từ một brief một dòng.
   - Đây là suy luận của mình, dựa trên hai nguồn: NN/g 2026 (vị trí entry level khan hiếm, người có kinh nghiệm phục hồi nhanh hơn) và Stanford. Stanford: người 22 đến 25 tuổi trong nghề chịu tác động mạnh của AI có việc làm thấp hơn khoảng 19% so với mức lẽ ra có (dữ liệu đến 06/2026); người có kinh nghiệm không có khoảng cách tương tự.
   - Lưu ý: nghiên cứu Stanford không tách riêng designer, và không nguồn nào đo trực tiếp nhóm designer nhận brief rồi làm screen. Đừng nói như một phát hiện, và đừng dùng để doạ.
 
@@ -175,10 +175,10 @@ last_synced: 2026-11-17
 - Ví dụ: cần ví dụ: một tình huống một dòng cho mỗi hướng, dùng role label
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ba hướng đi, mỗi hướng một dòng mô tả, một ví dụ với Deliver App và một mức bằng chứng
+  - Ba hướng đi, mỗi hướng một dòng mô tả, một ví dụ với Delivery App và một mức bằng chứng
   - Một người thường làm nhiều hơn một hướng: strategic designer vẫn dựng prototype nhanh, design builder vẫn cần chọn đúng vấn đề
   - Mỗi hướng có một slide chi tiết ở Appendix; mở khi học viên hỏi
-  - Ví dụ: 01 Strategic designer: cùng product và business chọn vấn đề đáng giải trước khi vẽ. Deliver App thấy khách đặt đơn đầu rồi không quay lại; thay vì vẽ mã giảm giá, hỏi vì sao (phí giao, thời gian giao hay trải nghiệm đơn đầu), cùng PO chọn một vấn đề và một chỉ số. Bằng chứng mức vừa: NN/g 2026 cho biết senior và generalist phục hồi nhanh hơn
+  - Ví dụ: 01 Strategic designer: cùng product và business chọn vấn đề đáng giải trước khi vẽ. Delivery App thấy khách đặt đơn đầu rồi không quay lại; thay vì vẽ mã giảm giá, hỏi vì sao (phí giao, thời gian giao hay trải nghiệm đơn đầu), cùng PO chọn một vấn đề và một chỉ số. Bằng chứng mức vừa: NN/g 2026 cho biết senior và generalist phục hồi nhanh hơn
   - 02 Design builder: dựng prototype chạy được và đưa lên production bằng AI coding tool. Ví dụ: dựng luồng onboarding ba bước thành prototype có dữ liệu mẫu, cho năm khách mới thử trong tuần. Bằng chứng: một nửa designer khảo sát đã ship code do AI tạo, nhưng phần lớn là design engineer; khoá không biến bạn thành engineer, bạn chỉ đạo và kiểm tra (buổi 7 đến 9)
   - 03 AI product designer: thiết kế hành vi, lỗi và niềm tin của sản phẩm có AI bên trong. Ví dụ: tính năng gợi ý món, quyết định gợi ý nói gì khi AI không chắc, khách sửa gợi ý sai thế nào, trạng thái lỗi ra sao
   - Nói thẳng: khoá này dạy dùng AI để làm việc, không dạy thiết kế sản phẩm AI; ở hướng 03 bạn chỉ có phần nền tảng, bằng chứng tăng trưởng ở mức yếu
@@ -227,7 +227,7 @@ last_synced: 2026-11-17
   - Develop
   - Dựng và thử các hướng giải pháp thành prototype
   - Deliver
-  - Kiểm chứng với người thật và đưa ra các findinds
+  - Kiểm chứng với người thật và đưa ra các findings
 - Ví dụ: Không cần. Slide gọi tên và xếp thứ tự các stage.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -363,7 +363,7 @@ last_synced: 2026-11-17
   - Chat là một lượt hỏi đáp; agent nhận một mục tiêu rồi tự đọc file, sửa file, chạy lệnh và báo lại khi xong
   - AI coding tool thường chạy kiểu này; câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm trong folder
   - Ví dụ:
-  - Deliver App: nhờ chat tóm tắt một đoạn ghi chú, còn nhờ agent đọc cả folder research và dựng bản tổng hợp kèm nguồn trích dẫn
+  - Delivery App: nhờ chat tóm tắt một đoạn ghi chú, còn nhờ agent đọc cả folder research và dựng bản tổng hợp kèm nguồn trích dẫn
   - Agent vẫn hallucinate, có thể báo "xong" khi chưa xong; nối lại slide "Trông đã xong. Có đúng không?"
 - 🎨 Visual hint: SCHEMATIC. Hai hàng: hàng trên một prompt và một câu trả lời; hàng dưới một prompt, mũi tên tách thành ba bước nhỏ (đọc, sửa, chạy), rồi một báo cáo kèm icon folder.
 
@@ -623,7 +623,7 @@ last_synced: 2026-11-17
   - Design memory là record dùng chung cho cả tám agent; hôm nay nó chính là project folder và hub
   - Designer duyệt ở mỗi mũi tên REVIEW; không agent nào duyệt thay, vì một agent duyệt cũng có thể sai
   - Hai vai không giao cho AI: người dùng thật và người phía product và business
-  - Ví dụ: Deliver App: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding
+  - Ví dụ: Delivery App: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding
   - Nói thật hiện trạng: toolkit mới có skill cho agent 01 và 03; sáu agent còn lại mới có template tài liệu, card dựng ở các buổi sau
   - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc; sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX) nhưng tên và phạm vi agent là của chương trình
   - Chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design
@@ -962,7 +962,7 @@ last_synced: 2026-11-17
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đi theo thứ tự trái sang phải, trên xuống dưới, mỗi từ khoảng 40 giây; dùng một ví dụ xuyên suốt là Deliver App
+  - Đi theo thứ tự trái sang phải, trên xuống dưới, mỗi từ khoảng 40 giây; dùng một ví dụ xuyên suốt là Delivery App
   - Repo: folder của cả project, gồm context, research, thiết kế và AGENTS.md. Commit: một lần chốt phiên bản kèm lời nhắn, ví dụ "thêm 20 review đã gắn tag"
   - Push: gửi commit từ máy lên GitHub để người khác và công cụ khác thấy; trước khi push, mọi thứ chỉ nằm trên máy bạn. Branch: bản nháp chạy song song, thử hướng onboarding mới mà bản chính vẫn nguyên
   - Pull request: đề nghị ghép bản nháp vào bản chính; đây là chỗ designer review output của AI, xem từng thay đổi, comment, duyệt hoặc yêu cầu sửa; là từ designer dùng nhiều nhất
@@ -1510,7 +1510,7 @@ last_synced: 2026-11-17
   - Mỗi opportunity, hypothesis, decision, principle check, test và metric có một ID ngắn (O1, H1, D1, P1, T1, M1); trong hub mỗi ID link tới nơi định nghĩa và mọi chỗ nhắc tới nó
   - Mũi tên hai chiều: từ decision đi ngược ra user need và đi xuôi ra test và metric
   - Đây là điểm làm nên hub: cross-link; không có chúng thì hub chỉ là một thư mục báo cáo
-  - Ví dụ Deliver App trên slide do mình viết để minh hoạ, không phải dữ liệu thật
+  - Ví dụ Delivery App trên slide do mình viết để minh hoạ, không phải dữ liệu thật
   - Principle check (P1…) không vẽ trên slide cho gọn; nhắc miệng
 - 🎨 Visual hint: Theo slide trong deck hiện tại.
 
@@ -1573,7 +1573,7 @@ last_synced: 2026-11-17
 - Ví dụ: có (mười hướng thiết kế trong vài phút); ví dụ đang nằm sau hình, cần đưa lên đầu notes
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ví dụ: AI cho Deliver App mười hướng thiết kế onboarding trong vài phút; chọn hướng nào đúng và kiểm với khách mới vẫn tốn thời gian như trước
+  - Ví dụ: AI cho Delivery App mười hướng thiết kế onboarding trong vài phút; chọn hướng nào đúng và kiểm với khách mới vẫn tốn thời gian như trước
   - Hình trên: trước AI, nút thắt nằm ở implementation, nên làm ra sản phẩm tốn thời gian
   - Hình dưới: AI nới implementation, ý tưởng vào nhiều và nhanh hơn, nhưng verification vẫn là ống hẹp nên phần chưa kiểm tra dồn lại ở đó
   - Nối lại nguyên tắc ở slide Double Diamond (AI soạn nháp, bạn kiểm tra, bạn quyết định): bước kiểm tra là nơi giá trị của bạn nằm
