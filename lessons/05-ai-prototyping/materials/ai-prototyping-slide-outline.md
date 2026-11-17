@@ -552,7 +552,7 @@ last_synced: 2026-11-17
 
   - Thứ tự là phương pháp của chương trình: rules trước, rồi shell, rồi flow, rồi dựng, rồi review. Chưa có nghiên cứu đo hiệu quả của thứ tự này.
   - Màn hình số 0 là shell trống; kiểm ở độ rộng điện thoại và máy tính trước khi dựng tiếp. Flow đến từ tuần 4, không phải AI nghĩ ra, vì đó là quyết định thiết kế đã có.
-  - Skill prototype của toolkit có các điểm kiểm tra, từ Check A đến E; bạn dùng nó ở Practice 5. Chương trình dạy dựng cả journey sau khi có rules và shell, còn các điểm kiểm tra của skill dùng để kiểm từng bước.
+  - Skill prototype của toolkit có các điểm kiểm tra, từ Check A đến E; bạn có thể dùng nó ở Practice 5 (tuỳ chọn). Chương trình dạy dựng cả journey sau khi có rules và shell, còn các điểm kiểm tra của skill dùng để kiểm từng bước.
   - Review là bước dài nhất, vì một lượt dựng cả journey cho ra nhiều chỗ cần sửa.
 
   > Trong năm bước, bước nào bạn thường bỏ khi làm vội?
@@ -866,7 +866,7 @@ last_synced: 2026-11-17
 
   > Skill là các bước và prompt mà AI tool làm theo, gói lại thành một quy trình dùng lại được. Bạn không phải gõ lại từ đầu mỗi lần, và người khác trong team chạy cũng ra cùng một quy trình.
 
-  - Ví dụ skill prototype của toolkit: đi từ design system, shell, Screen plan và journey, đến review và Known gaps. Mỗi bước có prompt riêng và một chỗ để bạn kiểm tra trước khi đi tiếp; trong toolkit, các chỗ kiểm tra này được đặt tên Check A đến E. Bạn dùng skill này ở Practice 5.
+  - Ví dụ skill prototype của toolkit: đi từ design system, shell, Screen plan và journey, đến review và Known gaps. Mỗi bước có prompt riêng và một chỗ để bạn kiểm tra trước khi đi tiếp; trong toolkit, các chỗ kiểm tra này được đặt tên Check A đến E. Bạn có thể dùng skill này ở Practice 5 (tuỳ chọn).
   - Rules là quy tắc cố định; skill là các bước của một quy trình. Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong AGENTS.md; Uber dùng các skill riêng cho từng loại spec, ví dụ spec screen reader (nguồn [3] và [9]).
 
   > Quy trình nào của bạn đáng đóng gói thành skill?
@@ -1125,7 +1125,7 @@ last_synced: 2026-11-17
 - Title: Build the prototype
 - On-slide:
   - Chuẩn bị
-  - Có một bộ design system (Figma/Repo/Others)
+  - Có một bộ design system trong Figma
   - Chọn một flow muốn develop
   - Design flow bằng Figma
   - Rules, design system và template
@@ -1135,7 +1135,7 @@ last_synced: 2026-11-17
   - Experience pattern (tuỳ chọn)
   - Prototype
   - Dựng journey prototype
-  - Skill prototype (tuỳ chọn)
+  - Package rules và skills (tuỳ chọn)
   - Publish prototype lên GitHub
 - Ví dụ: Không cần.
 - Speaker notes:
@@ -1146,8 +1146,8 @@ last_synced: 2026-11-17
   - Mang theo: - design system trong Figma (token, component kèm trạng thái) - hướng đã chọn và flow từ tuần 4 - nội dung thật - một AI coding tool đã được công ty cho phép
   - Design system của công ty có thể là tài liệu mật; không chắc thì dùng bản của giảng viên.
   - Hai làn: Figma (bạn tự làm) và AI coding tool (AI dựng, bạn kiểm tra). Check A ở Step 3, Check B ở Step 4, Check C ở Screen plan của Step 6, Check D ở Step 7, Check E ở Step 8; số step của skill prototype khớp với bài này.
-  - Gợi ý chia việc (chưa thử với lớp thật): Step 1 đến 3 ở nhà, Step 4 đến 8 trên lớp. Nếu đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau.
-  - Output: tokens.css, components.css, components.html, project-rules.md, file shell và template, file màn hình, work/prototype/index.md, _personal/learning-log.md.
+  - Gợi ý chia việc (chưa thử với lớp thật): Step 1 đến 3 ở nhà, Step 4 đến 9 trên lớp. Nếu đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau.
+  - Output: tokens.css, components.css, components.html, project-rules.md, file shell và template, file màn hình, work/prototype/index.md, _personal/learning-log.md, link GitHub Pages của prototype.
   - Shell và template của product là phần bạn tự định nghĩa; AI không làm thay.
   - Về rules: ở Step 3, bạn bắt đầu từ mười quy tắc mẫu, viết lại quy tắc mơ hồ và thêm content voice. Về skill: skill prototype của toolkit là tuỳ chọn; nên làm tay một lần trước, rồi mới dùng skill nếu tool của bạn hỗ trợ.
   - Bước cuối của bài là publish prototype lên GitHub, để team mở và xem được; cách chia sẻ đã nói ở phần Share prototype.

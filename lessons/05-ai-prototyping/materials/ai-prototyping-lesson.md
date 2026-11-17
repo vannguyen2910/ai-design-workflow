@@ -172,7 +172,7 @@ flowchart LR
   RV -. "sửa ở layer rộng nhất<br/>mà lỗi còn đúng" .-> SH
 ```
 
-Skill `prototype` của toolkit có thêm các điểm kiểm tra, từ Check A đến E (đối chiếu kế hoạch, bàn phím, hai độ rộng, giá trị thô) và được dùng ở bài tập về nhà.
+Skill `prototype` của toolkit có thêm các điểm kiểm tra, từ Check A đến E (đối chiếu kế hoạch, bàn phím, hai độ rộng, giá trị thô) và có thể dùng ở bài tập (tuỳ chọn).
 
 ### 3.4 Sửa ở đúng layer
 
@@ -322,7 +322,7 @@ File HTML mở được ngay trên trình duyệt, nên là cách nhanh nhất. 
 
 ### 5.4 Cách 2: live site trên GitHub
 
-Ba bước: push prototype lên repo GitHub, bật GitHub Pages để repo thành website có một link, rồi gửi link cho stakeholder. Link giữ nguyên; bạn push bản mới thì mọi người cùng thấy bản mới. Đây là mặc định nên dùng vì giải quyết chính vấn đề của cách 1: chỉ có một bản. Nếu repo public, dùng dữ liệu giả hoặc đã ẩn danh; repo public hay private tuỳ chính sách của công ty `[to confirm]`. Vercel hay Netlify cũng được, nguyên tắc giống nhau: một link cho một bản mới nhất. Chi tiết thao tác nằm ở tài liệu practice `[to confirm]`.
+Ba bước: push prototype lên repo GitHub, bật GitHub Pages để repo thành website có một link, rồi gửi link cho stakeholder. Link giữ nguyên; bạn push bản mới thì mọi người cùng thấy bản mới. Đây là mặc định nên dùng vì giải quyết chính vấn đề của cách 1: chỉ có một bản. Nếu repo public, dùng dữ liệu giả hoặc đã ẩn danh; repo public hay private tuỳ chính sách của công ty `[to confirm]`. Vercel hay Netlify cũng được, nguyên tắc giống nhau: một link cho một bản mới nhất. Các bước làm nằm ở Step 9 của practice.
 
 ### 5.5 Cách 3: prototype hub
 
