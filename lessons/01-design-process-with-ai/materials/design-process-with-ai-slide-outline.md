@@ -1196,7 +1196,7 @@ last_synced: 2026-11-17
   - Project folder đầy đủ
   - Context, learnings, tools và AGENTS.md đã dùng thật trên project của bạn.
   - 03
-  - Một sản phẩm cho portfolio
+  - Sản phẩm cho portfolio
   - Từ business question đến prototype đã test, sẵn sàng handoff.
 - Ví dụ: Xem speaker notes.
 - Câu hỏi hay gặp: None.
