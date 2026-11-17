@@ -1195,8 +1195,8 @@ last_synced: 2026-11-17
 ---
 
 ### DIAGRAM · What you take home
-- Kicker: Outcome của khoá
-- Title: Sau 12 buổi,\n*bạn mang về*
+- Kicker: Bạn sẽ được gì?
+- Title: Outcome của AI Design Workflow
 - On-slide:
   - Hub
   - O1
@@ -1204,14 +1204,14 @@ last_synced: 2026-11-17
   - T1
   - 01
   - Knowledge Hub
-  - Mọi output của project trên một site liên kết, click được từ decision ra đến bằng chứng.
+  - Mọi output của project trên một site liên kết, từ decision ra đến bằng chứng.
   - AGENTS
   - Context
   - Tools
   - Learn
   - 02
   - Project folder đầy đủ
-  - Context, learnings, tools và AGENTS.md đã dùng thật trên project của bạn.
+  - Context, learnings, tools và AGENTS.md đã dùng trên project của bạn.
   - 03
   - Sản phẩm cho portfolio
   - Từ business question đến prototype đã test, sẵn sàng handoff.
@@ -1374,7 +1374,7 @@ last_synced: 2026-11-17
 
 ### STATEMENT · Questions
 - Kicker: Hỏi đáp
-- Title: Hỏi\n*bất cứ điều gì*
+- Title: Q&A
 - On-slide: Về nội dung hôm nay, hướng đi của designer, hoặc khoá học. Ghi vào chat.
 - On-slide:
   - Bạn muốn hỏi về
