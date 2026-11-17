@@ -13,7 +13,7 @@ slides: "https://claude.ai/artifact/XnVV5JPT8DdVUhCyCKop2v"
 previous-session: "AI Prototyping"
 next-session: "Practice 6: Audit, test and fix your prototype"
 ---
-Ở Lesson 5, bạn dựng một prototype chạy được từ design system của mình. Buổi này kiểm tra nó: bạn tự rà bằng UX Audit với AI, rồi test với 3 đến 5 người thật bạn tự tìm. Sau đó bạn xếp finding, sửa đúng layer, dựng lại và gom một gói handoff để người implement sau không bỏ qua nền UX.
+Ở Lesson 5, bạn dựng một prototype chạy được từ design system của bạn. Buổi này kiểm tra nó: bạn tự rà bằng UX Audit với AI, rồi test với 3 đến 5 người thật bạn tự tìm. Sau đó bạn xếp finding, sửa đúng layer, dựng lại và gom một gói handoff để người implement sau không bỏ qua nền UX.
 
 > **AI soạn bản nháp, bạn kiểm tra rồi quyết định.** AI giúp bạn rà nhanh và gom ghi chú, nhưng không thay người dùng thật và không chấm severity thay bạn.
 

@@ -97,7 +97,7 @@ last_synced: 2026-11-17
   - Trước AI
   - Nút thắt nằm ở khâu làm ra sản phẩm (implementation).
   - Sau AI
-  - Làm ra sản phẩm nhanh và rẻ hơn, nhưng kiểm tra (verification) vẫn là phần tốn công.
+  - Làm ra sản phẩm nhanh và rẻ hơn, nhưng kiểm tra (verification) vẫn tốn công.
 - Ví dụ: có (bản nháp, Delivery App: AI dựng mười màn hình trong vài phút, còn kiểm tra màn nào đúng thì không nhanh theo)
 - Câu hỏi hay gặp:
   - Hình này có phải số liệu không? Không. Đây là hình minh hoạ; khung lý thuyết gần nhất là Theory of Constraints, và áp vào design là suy luận.
@@ -119,7 +119,7 @@ last_synced: 2026-11-17
 - Kicker: Thực tế
 - Title: Build nhanh,\n*UX bị bỏ qua*
 - On-slide:
-  - Team cứ thêm tính năng chồng lên nhau mà không xem lại nền UX (UX foundation).
+  - Team cứ thêm tính năng mà không xem lại nền UX (UX foundation).
 - Ví dụ: cần ví dụ: một tình huống thật của team product (đã ẩn danh) khi tính năng được chồng lên tính năng và người dùng không hài lòng
 - Câu hỏi hay gặp:
   - Điều này có số liệu không? Không có số đo riêng; đây là xu hướng thường gặp trong thực tế làm việc.
@@ -145,7 +145,7 @@ last_synced: 2026-11-17
   - Usability test
   - Người thật làm task
   - Cho biết người dùng có gặp vấn đề không, và vì sao
-  - Audit làm trước. Test dành thời gian của người dùng cho những câu audit chưa trả lời được.
+  - Audit làm trước, test dành cho những câu audit chưa trả lời được.
 - Ví dụ: có (bản nháp, Delivery App: audit thấy thiếu trạng thái "không còn khung giờ nào"; test cho biết khách có thực sự dừng ở đó không)
 - Câu hỏi hay gặp:
   - Có thể bỏ audit mà test luôn không? Được, nhưng bạn dùng thời gian của người dùng cho những lỗi bạn tự thấy được.
@@ -186,7 +186,7 @@ last_synced: 2026-11-17
 - Title: *UX Audit* là gì
 - On-slide:
   - WHAT
-  - Rà sản phẩm đã dựng theo một bộ tiêu chí, ghi mỗi vấn đề kèm evidence và severity
+  - Rà sản phẩm đã dựng theo tiêu chí, ghi mỗi vấn đề kèm evidence và severity
   - Gồm: heuristic, accessibility, design system, state, content, flow
   - WHY
   - Bắt sớm những lỗi trải nghiệm bị bỏ sót khi build nhanh
@@ -216,7 +216,7 @@ last_synced: 2026-11-17
 - Title: Sáu layer của *UX audit*
 - On-slide:
   - Heuristic
-  - Các nguyên tắc chung giúp sản phẩm dễ dùng, trực quan và hạn chế lỗi cho người dùng.
+  - Nguyên tắc chung để sản phẩm dễ dùng, trực quan và ít lỗi.
   - Có vi phạm heuristic nào không?
   - Accessibility
   - Sản phẩm mà mọi người đều dùng được, kể cả người khuyết tật.
@@ -338,7 +338,7 @@ last_synced: 2026-11-17
   - Người dùng gặp khó thật: mất thời gian hoặc phải làm lại
   - 4
   - Catastrophe
-  - Người dùng không hoàn thành được task hoặc bị thiệt hại. Sửa trước khi phát hành
+  - Người dùng không hoàn thành task hoặc bị thiệt hại, nên sửa trước khi phát hành
 - Ví dụ: có (bản nháp, Delivery App: điểm 3 là thiếu trạng thái "không còn khung giờ nào"; điểm 4 là khách thanh toán rồi mới biết không đổi được khung giờ)
 - Câu hỏi hay gặp:
   - AI có chấm severity được không? AI đề xuất được, nhưng bạn chốt điểm cuối vì AI không biết hậu quả với người dùng và business của bạn.
@@ -529,14 +529,14 @@ last_synced: 2026-11-17
 - Title: Usability test *là gì*
 - On-slide:
   - WHAT
-  - Một người thật làm task thật trên prototype. Bạn quan sát và nhờ họ nói to suy nghĩ
+  - Người thật làm task trên prototype, bạn quan sát và nhờ họ nói to suy nghĩ
   - Gồm: test plan, script, task, quan sát, ghi chú
   - WHY
   - Thấy thiết kế hỏng ở đâu và vì sao
   - Không test thì bạn chỉ biết điều mình nghĩ, không biết điều người dùng làm
   - WHEN
   - Sau audit và sau khi sửa lỗi hiển nhiên
-  - Chưa cần khi bạn chỉ cần so hai bản trên nhiều người dùng (dùng A/B test)
+  - Chưa cần khi chỉ so hai bản trên nhiều người dùng (dùng A/B test)
 - Ví dụ: có (bản nháp, Delivery App: nhờ một người hay đặt đồ ăn giao tận nơi thử đặt một đơn lúc 19:00 và quan sát họ dừng ở đâu)
 - Câu hỏi hay gặp:
   - Moderated và unmoderated khác nhau ở đâu? Moderated có bạn ngồi cùng và hỏi ngay; unmoderated người dùng tự làm, không có bạn.
@@ -597,7 +597,7 @@ last_synced: 2026-11-17
   - Time on task
   - 2×
   - Không đặt mục tiêu
-  - So sánh tương đối; gắn cờ khi cao hơn hai lần median
+  - So sánh tương đối, gắn cờ khi cao hơn hai lần median
   - SUS
   - 68
   - Trên trung bình
@@ -622,7 +622,7 @@ last_synced: 2026-11-17
 - Kicker: Giới hạn
 - Title: Tín hiệu,\n*không phải tỷ lệ*
 - On-slide:
-  - Với mẫu nhỏ, SUS và task success chỉ dùng để so sánh trước và sau khi sửa
+  - Mẫu nhỏ chỉ đủ để so sánh SUS và task success trước và sau khi sửa
 - Ví dụ: có (bản nháp, Delivery App: 4 trên 5 người hoàn thành task chọn khung giờ; điều đáng học là vì sao một người kẹt, không phải con số 80%)
 - Câu hỏi hay gặp:
   - SUS là gì? Bảng mười câu hỏi cho điểm 0 đến 100; điểm 68 thường là mức tham chiếu trung bình.
@@ -630,7 +630,7 @@ last_synced: 2026-11-17
 - Speaker notes:
   - Với năm người, 4 trên 5 hoàn thành không có nghĩa 80% người dùng sẽ hoàn thành. Mẫu nhỏ cho bạn biết vì sao, không cho bạn biết bao nhiêu phần trăm.
     - SUS có mười câu hỏi, điểm 0 đến 100, điểm 68 thường dùng làm mức tham chiếu
-    - Với mẫu nhỏ, SUS và task success chỉ dùng để so sánh trước và sau khi sửa
+    - Mẫu nhỏ chỉ đủ để so sánh SUS và task success trước và sau khi sửa
     - Điều học được nhiều nhất từ mẫu nhỏ là vì sao người dùng gặp khó
   - Ví dụ trong Delivery App, 4 trên 5 người hoàn thành task chọn khung giờ; điều đáng học là vì sao một người kẹt, không phải con số 80%.
   - Nếu học viên hỏi “SUS là gì?”, trả lời: Bảng mười câu hỏi cho điểm 0 đến 100; điểm 68 thường là mức tham chiếu trung bình.
@@ -776,7 +776,7 @@ last_synced: 2026-11-17
 - Kicker: Giới hạn của AI
 - Title: AI không\n*đóng vai người dùng*
 - On-slide:
-  - Người dùng mô phỏng luôn làm được task, nên che mất đúng chỗ bạn cần thấy
+  - Người dùng mô phỏng luôn làm được task, nên che mất chỗ bạn cần thấy
 - Ví dụ: có (bản nháp, Delivery App: một "người dùng" do AI mô phỏng luôn chọn đúng khung giờ và khen màn hình, trong khi hai người thật dừng lại vì không thấy cut-off)
 - Câu hỏi hay gặp:
   - Dùng AI mô phỏng để thử script trước được không? Được để thử câu chữ, nhưng không dùng kết quả để kết luận về người dùng.
@@ -800,15 +800,15 @@ last_synced: 2026-11-17
   - SEQ
   - 4,6
   - Trên thang 7
-  - Mục tiêu 5,5 trở lên; một task bị chặn hoàn toàn (SEQ 1)
+  - Mục tiêu 5,5 trở lên, còn một task bị chặn hoàn toàn (SEQ 1)
   - SUS
   - 69,2
   - Trên thang 100
-  - Ba persona do AI đóng vai chấm 80, 62,5 và 65; một lượt tốt kéo điểm lên
+  - Ba persona do AI đóng vai chấm 80, 62,5 và 65, còn một lượt tốt kéo điểm lên
   - Kết luận
   - 0
   - Người thật
-  - Chỉ là giả thuyết cần kiểm chứng; chưa qua gate “người thật đã test”
+  - Chỉ là giả thuyết cần kiểm chứng, vì chưa qua gate “người thật đã test”
   - Nguồn: test report của dự án mẫu Travel Buddy, được ghi là simulated.
 - Ví dụ: có (test report simulated của dự án mẫu Travel Buddy)
 - Câu hỏi hay gặp: None.
@@ -987,7 +987,7 @@ last_synced: 2026-11-17
   - Bảy quyết định kèm lý do
   - Ghi chú nghiệm thu, ví dụ: nhấn Save khi chưa có tài khoản thì mở form đăng ký
   - Còn mở
-  - Chỉ tab Explore có PRD; Plan, Connect, Journal chưa có
+  - Chỉ tab Explore có PRD, còn Plan, Connect, Journal chưa có
   - Bốn câu hỏi cho developer, ví dụ: crowd signal là dữ liệu người dùng báo hay điểm thuật toán?
   - Chưa có chủ sở hữu và ngày review cho measurement plan
 - Ví dụ: có (dự án mẫu Travel Buddy, trạng thái "chưa sẵn sàng")
