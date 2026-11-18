@@ -831,6 +831,7 @@ last_synced: 2026-11-16
     - Công cụ có huấn luyện trên dữ liệu bạn tải lên không, và lưu trong bao lâu: đọc điều khoản, không đoán.
     - Đã ẩn danh trên máy chưa: đổi tên thành participant code như P1, P2 ngay trên máy, trước khi tải lên. Tên, số điện thoại và địa chỉ không đi vào AI.
   - Hai quy tắc đi kèm. Ẩn danh làm trên máy của bạn, không nhờ AI ẩn danh giúp, vì như vậy dữ liệu gốc đã đi qua AI. Và bản gốc có tên thật nằm ngoài vùng AI đọc, chỉ AI thấy bản đã gắn P1, P2.
+  - Bỏ tên chưa đủ. Câu "giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề" không có tên, nhưng người trong ngành vẫn nhận ra được đó là ai, nên bạn bỏ hoặc nói chung hơn những chi tiết như vậy. Nếu thay "chị Lan" bằng [NAME] thì bạn che được tên, nhưng không còn phân biệt được các participant; dùng P3 thì vẫn phân biệt được. P3 vẫn là dữ liệu cá nhân, vì còn bảng đối chiếu P3 = Lan, nên bảng đó phải nằm ngoài vùng AI đọc
   - Không biết câu nào thì hỏi lead hoặc người phụ trách dữ liệu trước. Đây là thói quen làm việc, không phải tư vấn pháp lý. Chính sách công ty luôn đi trước.
 
   > Trong bốn câu, câu nào bạn chưa biết đáp án ở công ty mình?

@@ -868,6 +868,7 @@ last_synced: 2026-11-17
 
   - Ví dụ skill prototype của toolkit: đi từ design system, shell, Screen plan và journey, đến review và Known gaps. Mỗi bước có prompt riêng và một chỗ để bạn kiểm tra trước khi đi tiếp; trong toolkit, các chỗ kiểm tra này được đặt tên Check A đến E. Bạn có thể dùng skill này ở Practice 5 (tuỳ chọn).
   - Rules là quy tắc cố định; skill là các bước của một quy trình. Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong AGENTS.md; Uber dùng các skill riêng cho từng loại spec, ví dụ spec screen reader (nguồn [3] và [9]).
+  - Skill là file do bạn kiểm soát. Bản copy trong project của bạn sẽ không tự đổi khi bạn chưa biết, vì nó chỉ là một file nằm trong folder. Bạn nên ghi phiên bản hoặc ngày vào đầu SKILL.md. Nhiều công ty cũng không cho skill, plugin hay connector tự cập nhật, vì phần được nạp vào có thể đổi sau khi đã được duyệt.
 
   > Quy trình nào của bạn đáng đóng gói thành skill?
 - 🎨 Visual hint: SPLIT. Trái: tiêu đề và ba dòng; phải: thẻ skill với năm bước.
@@ -895,6 +896,7 @@ last_synced: 2026-11-17
   - Mỗi hook có hai phần: sự kiện kích hoạt (AI sửa xong một file, AI xong một lượt việc) và việc tự chạy theo (một lệnh kiểm tra, một thông báo). Thường developer hoặc người rành tool cài đặt. Phần của designer là quyết định kiểm tra cái gì, và đó chính là các quy tắc bạn viết ở phần này.
   - Hook chỉ bắt được lỗi có đúng sai rõ: thiếu state, token sai, nhãn lệch. Việc cần phán đoán, như màn này có dễ dùng không, vẫn cần designer và người dùng thật ở Lesson 6.
   - Hook phổ biến chia theo thời điểm chạy: trước khi AI làm (chặn, ví dụ chặn sửa file token), sau mỗi lần AI sửa (kiểm: tìm mã màu viết tay ngoài token, kiểm tra component nằm trong inventory, tương phản, vùng chạm 44 px, một h1), và khi AI xong lượt việc (báo: nhắc ghi điều chưa làm, gửi thông báo cho team). Đây là phần nâng cao: designer không cần cài hook, chỉ cần nói được mình muốn kiểm gì ở thời điểm nào.
+  - Hook tự chạy lệnh trên máy bạn, nên nhóm security thường xem rất kỹ. Bạn nhờ developer cài, và cho security xem lệnh của hook trước khi dùng
   - Tên gọi và cách cài hook khác nhau theo từng tool; lớp này chỉ dạy khái niệm. Mức cơ sở: một số AI tool dạng agent có tính năng hook; cách ghép với design system là đề xuất của khoá, chưa phải cách làm do khoá đo.
   - Slide kế là tuỳ chọn, nói về package trong toolkit. Nếu bỏ qua thì sang phần năm: Share prototype.
 
@@ -927,6 +929,7 @@ last_synced: 2026-11-17
   - Toolkit của khoá có sẵn hai thứ trong thư mục skill prototype. Các công ty lớn để rules trong repo, thường là file AGENTS.md mà nhiều tool tự đọc. Toolkit có sẵn bản khởi đầu là project-rules.md trong thư mục starter: mười quy tắc để bạn copy vào AGENTS.md (hoặc file rules mà tool của bạn đọc) rồi viết lại. Skill là file SKILL.md: các bước và prompt từ design system đến Known gaps.
   - Cách dùng: copy thư mục starter thành work/prototype, đặt mười quy tắc vào AGENTS.md hoặc đưa project-rules.md cho AI tool ở mỗi lần dựng, và chạy các bước của skill theo thứ tự. Bạn dùng đúng bộ này ở Practice 5, và không bắt buộc: bạn có thể tự viết rules của mình.
   - Hook thì toolkit chưa có bản mẫu. Hook là phần nâng cao ở slide trước: khi cần, nhờ developer cài. Skill prototype đang ở trạng thái draft, chưa thử với lớp thật.
+  - Khi cần cập nhật skill, bạn đọc phần thay đổi, thử trên project mẫu rồi mới đưa vào project thật. Với skill hoặc plugin lấy từ nguồn bên ngoài, bạn không nên bật cập nhật tự động. Hãy chọn một phiên bản đã đọc và giữ nguyên cho đến khi bạn đọc xong bản mới
   - Bộ này là cách khoá xếp lại các thực hành có thật, không phải một package có sẵn của các công ty lớn. Các công ty không đóng gói thành một bộ: skill và MCP được phát hành qua npm hoặc registry, rules nằm trong repo, và việc kiểm tra chạy bằng lint, CI hoặc hook. Mình chưa tìm thấy case study công khai nào dùng đủ cả bộ.
   - Giờ bạn có rules và skill để AI dựng đúng, và biết hook là bước tiếp theo khi cần. Phần năm là Share prototype: đưa prototype đến tay team, qua HTML, live site hoặc hub.
 
@@ -1065,7 +1068,7 @@ last_synced: 2026-11-17
   > Bạn đã có tài khoản GitHub chưa?
 
   > Câu hỏi hay gặp:
-  - Repo public hay private? tuỳ chính sách của công ty và dữ liệu trong prototype; dùng dữ liệu giả hoặc đã ẩn danh [to confirm].
+  - Repo public hay private? tuỳ chính sách của công ty và dữ liệu trong prototype [to confirm]. Với repo public, GitHub Pages khiến cả prototype và mọi dữ liệu trong đó đều public, ai có link cũng mở được. Bạn chỉ nên đưa dữ liệu giả hoặc dữ liệu đã ẩn danh lên, và kiểm tra ai mở được site trước khi đưa bất kỳ thứ gì thật. GitHub Pages với repo private có thể cần gói trả phí [to confirm].
   - Dùng Vercel hay Netlify được không? được, nguyên tắc giống nhau, một link cho một bản mới nhất.
 - 🎨 Visual hint: SCHEMATIC. Bốn bước nối nhau từ Push đến Stakeholder mở link.
 ---

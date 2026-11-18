@@ -759,6 +759,7 @@ last_synced: 2026-11-17
     - Giữ timestamp và người nói cho mỗi lượt, để mọi finding sau này dẫn về được video
     - Chỗ nghe không rõ thì ghi “không rõ”, không đoán
     - Không thêm ý, không gộp hay bỏ lượt nói
+  - Nếu bạn dùng công cụ tự ghi âm hoặc ghi biên bản, hãy báo trước cho participant và kiểm tra công cụ đó lưu bản ghi ở đâu, trong bao lâu. Hãng model không lưu dữ liệu không có nghĩa app xây trên model đó cũng không lưu
   - Rules thay cho việc soát từng timestamp, vì rules ép transcript giữ đúng những thứ bạn cần kiểm sau này.
   - Sau khi có transcript sạch, bạn đưa AI bốn thứ: transcript, câu trả lời SUS của từng người, test plan và rules file:
     - AI trả finding kèm timestamp và lời trích nguyên văn, điểm SUS từng người và trung bình, task success từng task, và recommendation kèm layer cần sửa
