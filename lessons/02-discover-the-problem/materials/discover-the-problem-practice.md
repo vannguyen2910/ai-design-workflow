@@ -110,7 +110,7 @@ Script là lưới an toàn, không phải khuôn.
 4. **Đặt status.** Note đã qua kiểm tra và bạn đã đọc lại thì đổi `status` thành `checked`.
 
 - Đưa evidence note và kết quả kiểm tra lên hub, ở chỗ bạn và AI tìm lại được.
-- Chưa phỏng vấn được 2 người: dùng 8 evidence note mẫu (RET-01 đến RET-08) trong thư mục [evidence](../../../assets/starter-files/course-case/evidence/) và hai transcript trong thư mục [raw](../../../assets/starter-files/course-case/raw/) của course case, và ghi rõ trong hub đây là dữ liệu mẫu.
+- Chưa phỏng vấn được 2 người: dùng 10 evidence note mẫu (RET-01 đến RET-10) trong thư mục [evidence](../../../assets/starter-files/course-case/evidence/) và hai transcript trong thư mục [raw](../../../assets/starter-files/course-case/raw/) của course case, và ghi rõ trong hub đây là dữ liệu mẫu.
 - Lesson 3 có một bước chạy blind synthesis trên các note này, nên giữ mỗi note một quan sát và tiêu đề trung tính.
 
 ## Output

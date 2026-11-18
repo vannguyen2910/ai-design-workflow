@@ -13,7 +13,7 @@ Use it when:
 | `po-case-pack.md` | Retired, not used in class | For the student who has no PO to talk to. **The PO-only section is for the person playing the PO** |
 | `source-notes.md` | Week 2 Move 4, and the old blind synthesis (Week 3) until it is re-run on the evidence notes | 24 fictional one-line source notes with IDs, from three kinds of source. Still used by `blind-synthesis.md`, `insight-set.md` and the Week 3 drafts |
 | `raw/I01.txt`, `raw/I02.txt` | Week 2, Practice 2 Step 9 | Two fictional anonymised interview transcripts. Each turn starts with its number so a quote can point to it |
-| `evidence/RET-01` to `RET-08` | Week 2, Practice 2 Step 9 | Eight evidence notes written from the two transcripts: one md file per observation, observation title, verbatim quotes with source and turn |
+| `evidence/RET-01` to `RET-10` | Week 2, Practice 2 Step 9 | Ten evidence notes written from the two transcripts: one md file per observation, observation title, verbatim quotes with source and turn |
 | `check-evidence-instruction.md` | Week 2, Practice 2 Step 9 | Instruction for an AI coding tool to write a script that checks every quote against the raw transcript. Replaces `check-quotes-instruction.md` |
 | `insight-set.md` | Week 3 | Nine fictional insights with insight IDs, source type and strength; the input for persona, journey map and opportunity |
 | `persona-ai-draft.md` | Week 3 activity | A six-line persona an AI might write; some lines have an insight behind them, some do not. Answer key inside, instructor only |

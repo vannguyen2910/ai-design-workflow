@@ -4,7 +4,7 @@ summary: "Đặt design principles trước, break the brief với AI, chuẩn b
 subtitle: "Set the principles first, break the brief with AI, prepare to interview real users, then ingest the transcripts into the hub and check every quote by program"
 type: lesson
 program: ai-design-workflow
-tags: [discover, principles, break-the-brief, assumptions, research-questions, interviews, ingest, source-notes, blind-synthesis, ai-workflow]
+tags: [discover, principles, break-the-brief, assumptions, research-questions, interviews, ingest, evidence-notes, blind-synthesis, ai-workflow]
 level: intermediate
 duration: "90 min"
 date: 2026-10-30
@@ -286,7 +286,7 @@ tags: [cancel, support]
 
 Vì sao tiêu đề là observation chứ không phải insight: ở Lesson 3 bạn nhờ AI tổng hợp từ các note này. Nếu tiêu đề đã chứa kết luận của bạn, AI đọc lại kết luận thay vì dữ liệu, và phép blind synthesis không còn blind. Câu insight xuất hiện sau khi gộp nhiều evidence.
 
-Folder đặt note do bạn chọn; nhiều công ty gọi là `Insights` hoặc `Evidence`. Bạn viết note, hoặc nhờ AI soạn nháp rồi kiểm tra tiêu đề và quote của từng note. Bộ mẫu của Delivery App có 8 note, RET-01 đến RET-08, viết từ hai transcript trong `assets/starter-files/course-case/`.
+Folder đặt note do bạn chọn; nhiều công ty gọi là `Insights` hoặc `Evidence`. Bạn viết note, hoặc nhờ AI soạn nháp rồi kiểm tra tiêu đề và quote của từng note. Bộ mẫu của Delivery App có 10 note, RET-01 đến RET-10, viết từ hai transcript trong `assets/starter-files/course-case/`.
 
 ### 5.2 Quotes must be word for word
 
@@ -300,7 +300,7 @@ Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script đ�
 
 Đây là phép so khớp chuỗi do chương trình làm, không phải một AI khác đánh giá. Lý do: một AI duyệt giúp có thể bỏ qua một quote bịa theo cùng cách AI đầu tiên đã bịa ra nó. Đây là suy luận của chương trình, không phải kết quả đo.
 
-Chương trình đã thử instruction này bằng một script tham chiếu viết theo đúng instruction (`tests/hub_quote_check/check_evidence.py`, có chín test), trên 8 note mẫu (9 quote): bộ mẫu đạt hết. Khi cố ý đổi một chữ trong quote, trỏ sai số lượt, đặt `id` trùng hoặc trỏ tới file transcript không tồn tại, script báo không đạt đúng các note đó; quote chỉ khác khoảng trắng, chữ hoa chữ thường hoặc dấu ngoặc cong vẫn đạt. Chưa thử với một AI coding tool tự viết script từ instruction `[to confirm]`.
+Chương trình đã thử instruction này bằng một script tham chiếu viết theo đúng instruction (`tests/hub_quote_check/check_evidence.py`, có chín test), trên 10 note mẫu (11 quote): bộ mẫu đạt hết. Khi cố ý đổi một chữ trong quote, trỏ sai số lượt, đặt `id` trùng hoặc trỏ tới file transcript không tồn tại, script báo không đạt đúng các note đó; quote chỉ khác khoảng trắng, chữ hoa chữ thường hoặc dấu ngoặc cong vẫn đạt. Chưa thử với một AI coding tool tự viết script từ instruction `[to confirm]`.
 
 Hai buổi phỏng vấn cho khoảng 8 đến 20 note, và thế là đủ: phép kiểm tra chỉ kiểm tra quote trong note của bạn, không kiểm tra số lượng note hay việc bạn đã chọn đủ quan sát quan trọng.
 
@@ -312,34 +312,32 @@ Hai buổi phỏng vấn cho khoảng 8 đến 20 note, và thế là đủ: ph�
 
 ## 6. Blind synthesis
 
-> `[to confirm]` Mục 6 mô tả các lần chạy trên bộ 24 ghi chú mẫu dạng một dòng (`source-notes.md`), chưa phải bộ evidence note ở mục 5. Chương trình sẽ chạy lại blind synthesis trên evidence note; cho đến lúc đó, các bảng và con số dưới đây chỉ đúng với bộ 24 ghi chú cũ.
-
 ### 6.1 The setup
 
-Cùng 24 note mẫu của Delivery App, hai lần hỏi AI trong hai phiên riêng. Lần 1 không nêu hypothesis. Lần 2 thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi." Hai lần có cùng câu hỏi, cùng dữ liệu, cùng yêu cầu nêu note ID. Prompt và kết quả đầy đủ nằm ở `assets/starter-files/course-case/blind-synthesis.md`.
+Cùng 10 evidence note mẫu của Delivery App (RET-01 đến RET-10), hai lần hỏi AI trong hai phiên riêng. Lần 1 không nêu hypothesis. Lần 2 thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi." Hai lần có cùng câu hỏi, cùng dữ liệu, cùng yêu cầu nêu mã note. Prompt và kết quả đầy đủ nằm ở `assets/starter-files/course-case/blind-synthesis.md`.
 
-Bộ mẫu chứa sẵn hypothesis này: chỉ R06 và F07 nhắc đến giá, còn I02-03 nói thời gian chờ làm khách phiền hơn giá.
+Bộ mẫu chứa sẵn hypothesis này: RET-10 nói món quá đắt, RET-09 nói phí giao hơi đắt nhưng vẫn đặt tiếp, và RET-08 nói thời gian chờ làm khách phiền hơn giá.
 
 ### 6.2 What the runs show
 
 | | Lần 1 (không hypothesis) | Lần 2 (có hypothesis) |
 |---|---|---|
-| Giá xuất hiện ở đâu | Một dòng trong phần "Lưu ý" ở cuối | Câu đầu tiên của câu trả lời, rồi một đoạn riêng ở cuối |
-| Note ID nhắc đến giá | R06, F07 | F07, R06, I02-03 |
-| Kết luận về giá | Lý do phụ | Không phải lý do chính |
-| Bốn lý do còn lại | Giống nhau | Giống nhau |
+| Giá xuất hiện ở đâu | Lý do thứ năm, cuối danh sách | Câu đầu tiên của câu trả lời, rồi một mục riêng sau bốn lý do |
+| Mã note nhắc đến giá | RET-10, RET-09, RET-08 | RET-10, RET-09, RET-08 |
+| Kết luận về giá | Không phải lý do bỏ đi của P1; với P2, thời gian chờ nặng hơn giá | Không được ủng hộ; RET-10 là bằng chứng ủng hộ duy nhất, từ một người |
+| Bốn lý do còn lại | Giống nhau (cùng nhóm, cùng mã note) | Giống nhau |
 
-Hypothesis không đảo kết luận, nhưng đổi thứ AI nói trước và thứ AI tốn lời để bác bỏ. Câu đầu tiên của lần 2 là về giá, dù giá là một trong những chủ đề có ít evidence nhất trong dữ liệu.
+Hypothesis không đảo kết luận, nhưng đổi chỗ giá nằm trong câu trả lời: từ lý do cuối danh sách thành câu đầu tiên cộng một mục riêng. Giá là một trong những chủ đề có ít evidence nhất (ba trên mười note, và một trong ba note là của người nói thời gian chờ quan trọng hơn giá). Lần 2 còn nêu một điều lần 1 không nêu: RET-08 và RET-10 là của cùng một người và nghe ngược nhau, nên cần hỏi lại người đó.
 
 ### 6.3 What the runs do not show
 
-Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: một prompt đòi AI "tóm tắt các bằng chứng trong ghi chú cho thấy điều đó", và một prompt đòi soạn "ba điểm mạnh nhất từ các ghi chú để ủng hộ đề xuất" giảm phí giao. Cả hai prompt và kết quả đã lưu nằm trong `blind-synthesis.md`. Cả hai lần AI đều nói các note không đủ ủng hộ và chỉ ra R06 và I02-03 đi ngược lại. Vậy bộ mẫu này **không** cho thấy AI đồng ý với hypothesis.
+Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: một prompt đòi AI "tóm tắt các bằng chứng trong ghi chú cho thấy điều đó", và một prompt đòi soạn "ba điểm mạnh nhất từ các ghi chú để ủng hộ" đề xuất giảm phí giao. Cả hai prompt và kết quả đã lưu nằm trong `blind-synthesis.md`. Với prompt đầu, AI nói bằng chứng không ủng hộ rõ, chỉ RET-10 ủng hộ còn RET-09 và RET-08 làm yếu hypothesis. Với prompt sau, AI từ chối soạn ba điểm mạnh vì không có đủ bằng chứng. Vậy bộ mẫu này **không** cho thấy AI đồng ý với hypothesis.
 
-Đây là hành vi của một mô hình ở một thời điểm, trên một bộ nhỏ có sẵn mâu thuẫn rõ. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác. Vì vậy bạn không rút ra "AI không bị hypothesis ảnh hưởng", mà rút ra phương pháp:
+Đây là hành vi của một mô hình ở một thời điểm, trên một bộ rất nhỏ có sẵn mâu thuẫn rõ; bốn lần chạy này do một subagent của AI coding tool thực hiện, không phải công cụ AI của bạn. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác. Vì vậy bạn không rút ra "AI không bị hypothesis ảnh hưởng", mà rút ra phương pháp:
 
 1. Chạy lần đầu **không** nêu hypothesis (blind).
 2. Chạy lần hai có hypothesis của team.
-3. So hai bản: chủ đề nào đứng đầu, note ID nào được trích, và có note nào xuất hiện ở bản này mà biến mất ở bản kia.
+3. So hai bản: chủ đề nào đứng đầu, mã note nào được trích, và có note nào xuất hiện ở bản này mà biến mất ở bản kia.
 
 Ở Lesson 3 bạn làm đúng việc này trên evidence note của chính bạn.
 
@@ -371,7 +369,7 @@ Project mẫu (hư cấu): Delivery App, nhiều khách mới không đặt lạ
 - **Điều đang tin** (AI soạn nháp, bạn đối chiếu): giá là lý do chính; khách không hiểu cách đổi khung giờ giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong project mẫu, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ đặt đơn thứ hai trong 30 ngày; baseline chưa biết, ghi assumed, người xác nhận là business.
 - **Research question** (từ assumption "khách không hiểu cách đổi khung giờ giao"): "Khách đang làm gì khi cần dời khung giờ giao của đơn đã đặt, và điều gì khiến họ bỏ dở?"
-- **Evidence notes:** 8 note mẫu, RET-01 đến RET-08, viết từ hai transcript phỏng vấn. Một dòng quote kiểm tra được, trong note RET-02 "P1 could not find where to cancel and contacted support": `> "I wanted to cancel because my plans changed. I went through the whole order screen and could not find it. Eventually I messaged support." (I01, turn 06)`.
+- **Evidence notes:** 10 note mẫu, RET-01 đến RET-10, viết từ hai transcript phỏng vấn. Một dòng quote kiểm tra được, trong note RET-02 "P1 could not find where to cancel and contacted support": `> "I wanted to cancel because my plans changed. I went through the whole order screen and could not find it. Eventually I messaged support." (I01, turn 06)`.
 
 ---
 
@@ -395,6 +393,6 @@ Năm điều cần nắm:
 - Hướng dẫn viết principle (2.2) tổng hợp từ 18F và một tài liệu practitioner, không phải nghiên cứu thực nghiệm. UXBench mới được đọc qua kết quả tìm kiếm.
 - Ba mức access và agreement status do chương trình thiết kế, chưa thử với lớp thật.
 - Các cảnh báo về quote bịa và theme bịa (5.2) đến từ hướng dẫn thực hành của nhà cung cấp công cụ và một bài tổng quan; chúng là kinh nghiệm, chưa phải số đo.
-- Blind synthesis (mục 6) chạy trên 24 note, một mô hình, một lần chạy cho mỗi prompt, và bộ mẫu có sẵn mâu thuẫn rõ. Nó cho thấy phương pháp so sánh, không cho thấy kích thước của hiệu ứng.
+- Blind synthesis (mục 6) chạy trên 10 note, một mô hình, một lần chạy cho mỗi prompt, và bộ mẫu có sẵn mâu thuẫn rõ. Nó cho thấy phương pháp so sánh, không cho thấy kích thước của hiệu ứng.
 - Phép kiểm tra quote (5.3) chỉ chứng minh quote có trong note, không chứng minh insight đúng.
 - Delivery App là case hư cấu do chương trình soạn, không đại diện cho dữ liệu thật hay phỏng vấn bằng tiếng Việt.

@@ -29,7 +29,7 @@ class EvidenceCheck(unittest.TestCase):
 
     def test_sample_passes(self):
         results = check_dir(self.tmp / "evidence", self.tmp / "raw")
-        self.assertEqual(len(results), 8)
+        self.assertEqual(len(results), 10)
         self.assertTrue(all(r.ok for r in results), [r.problems for r in results if not r.ok])
 
     def test_fail_one_word_changed(self):

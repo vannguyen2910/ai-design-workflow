@@ -14,3 +14,5 @@ Interview I01 (fictional, anonymised). Participant: P1. Each turn has a number; 
 12 P1: I love how many restaurants there are. I have tried a dish I would never have found on my own.
 13 Interviewer: Would you order again?
 14 P1: Probably, but I would pick the time very carefully now.
+15 Interviewer: How about the price?
+16 P1: A bit expensive with the delivery fee, but the food is good so I keep ordering.

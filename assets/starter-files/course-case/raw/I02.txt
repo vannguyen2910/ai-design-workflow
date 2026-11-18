@@ -12,3 +12,5 @@ Interview I02 (fictional, anonymised). Participant: P2. Each turn has a number; 
 10 P2: Honestly, the waiting time bothered me more than the price. After a long day I do not want to wait an hour for dinner.
 11 Interviewer: Would you recommend it?
 12 P2: To a colleague, yes, with a warning about the time slot.
+13 Interviewer: Anything else you would change?
+14 P2: Too pricey for what it is. I can pick up the same meal for half at the restaurant.
