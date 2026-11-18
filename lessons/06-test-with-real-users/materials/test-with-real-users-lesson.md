@@ -217,6 +217,7 @@ Participant là người thật, nên áp lại data rules từ Lesson 1:
 2. Chỉ ghi hình khi họ đồng ý.
 3. Ẩn danh trên máy bằng participant code (P1, P2) trước khi đưa ghi chú hay bản phiên âm cho AI.
 4. Hỏi công ty bạn có cho phép công cụ AI bạn dùng không.
+5. Nếu dùng tool tự ghi âm hoặc ghi biên bản: báo trước cho participant, và kiểm tra tool lưu bản ghi ở đâu, bao lâu. Hãng model không lưu dữ liệu không có nghĩa app xây trên model đó cũng không lưu.
 
 Chương trình dạy mức thực hành cho nghiên cứu nội bộ, không thay chính sách công ty hay tư vấn pháp lý.
 

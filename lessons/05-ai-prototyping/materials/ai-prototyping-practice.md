@@ -10,7 +10,7 @@ draft: true
 
 ## Goal
 
-Dựng prototype chạy được trong trình duyệt cho một flow của bạn, từ design system và các màn đã thiết kế trong Figma. Cuối bài bạn có design system dạng code, shell, template, rules file và một journey 5 đến 6 màn đã qua review. Prototype này là đầu vào cho Lesson 6 (test với người dùng).
+Dựng prototype chạy được trong trình duyệt cho một flow của bạn, từ design system và các màn đã thiết kế trong Figma. Cuối bài bạn có design system dạng code, shell, template, rules file và một journey 5 đến 6 màn đã qua review, kèm một link để người khác mở được. Prototype này là đầu vào cho Lesson 6 (test với người dùng).
 
 Bài không có giới hạn một buổi. Bạn làm phần đầu ở nhà, rồi tiếp tục trên lớp. Mỗi bước có một file lưu lại, nên bạn dừng và quay lại ở bất kỳ bước nào.
 
@@ -27,7 +27,7 @@ Bài không có giới hạn một buổi. Bạn làm phần đầu ở nhà, r�
 
 Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI dựng, bạn kiểm tra). Thứ tự dựng: design system, shell và template, pattern, journey, review.
 
-**AI dựng, bạn kiểm tra, bạn quyết định.** Mỗi lần dựng, đưa cho AI `work/prototype/project-rules.md` và chỉ nhờ nó làm đúng bước đang chạy. Không nhận "xong" khi bạn chưa tự mở trang.
+**AI dựng, bạn kiểm tra, bạn quyết định.** Mỗi lần dựng, đưa cho AI `work/prototype/project-rules.md` (hoặc copy nội dung vào file rules mà tool của bạn đọc, ví dụ `AGENTS.md`) và chỉ nhờ nó làm đúng bước đang chạy. Không nhận "xong" khi bạn chưa tự mở trang.
 
 ### Step 1 · Có một bộ design system · Figma · YOU
 
@@ -42,11 +42,11 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - **Kiểm tra:** một người có hoàn thành flow trong một lượt ngồi được không? Dấu hiệu sai: "cả app"; nội dung chưa có.
 - **File:** `work/prototype/index.md` mục `## Scope`
 
-### Step 3 · Build design system · AI coding tool · AI dựng, bạn kiểm tra (Check A)
+### Step 3 · Rules và design system · AI coding tool · AI dựng, bạn kiểm tra (Check A)
 
+- **Viết rules file trước:** bắt đầu từ mười quy tắc trong `project-rules.md`, viết lại những quy tắc mơ hồ và thêm content voice ở quy tắc 5. Rules quyết định mọi thứ AI dựng sau đó.
 - **AI dựng:** từ Figma, tạo `tokens.css` (token) và `components.css`, `components.html` (component). Chỉ dùng token và component bạn liệt kê; thiếu thì nói và dừng.
 - **Bạn kiểm tra:** mở `components.html`, so từng component với Figma. Tìm trong file các giá trị thô (màu `#`, cỡ `px` ngoài token). Component nào lệch thì gửi lại **một** danh sách sửa.
-- Viết rules file: bắt đầu từ mười quy tắc trong `project-rules.md`, viết lại những quy tắc mơ hồ và thêm content voice ở quy tắc 5.
 - Khi đúng, nói "Lưu lại".
 - **File:** `tokens.css`, `components.css`, `components.html`, `project-rules.md`
 
@@ -89,6 +89,7 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 
 - Tạo một repo riêng chỉ chứa prototype, không dùng repo của cả project. Về repo Private và Public, xem `toolkit/guides/02-github-sharing-and-obsidian.md`.
 - Chỉ dùng dữ liệu giả hoặc đã ẩn danh. Không đưa `_personal/` và dữ liệu gốc lên repo.
+- Trước khi bật GitHub Pages: prototype chỉ có dữ liệu giả hoặc đã ẩn danh, vì với repo public, ai biết link cũng mở được.
 - Push prototype, bật GitHub Pages cho repo để có một link. Với repo Private, GitHub Pages có thể cần gói trả phí `[to confirm]`; kiểm tra gói của bạn trước.
 - Mở link và tự dùng hết flow trên đó, rồi gửi link cho một người để họ mở được. Link giữ nguyên; push bản mới thì mọi người cùng thấy bản mới.
 - **File:** link của prototype, ghi vào `work/prototype/index.md`
@@ -100,14 +101,14 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 Toolkit có sẵn rules và skill để bạn không phải viết từ đầu. Không bắt buộc; bạn có thể tự viết rules của mình.
 
 - **Rules:** `project-rules.md` trong `toolkit/skills/prototype/starter/`. Mười quy tắc để copy vào project rồi viết lại (Step 3).
-- **Skill:** `toolkit/skills/prototype/SKILL.md`. Các bước và prompt từ design system đến Known gaps, kèm câu hỏi kiểm tra ở cuối mỗi bước (trong skill gọi là Check A đến E; số step của skill khớp với bài này).
-- **Hook:** toolkit chưa có bản mẫu `[to confirm]`. Dùng cheat sheet hook trong lesson để nhờ người rành tool cài.
+- **Skill:** `toolkit/skills/prototype/SKILL.md`. Các bước và prompt từ design system đến Known gaps, kèm câu hỏi kiểm tra ở cuối mỗi bước (trong skill gọi là Check A đến E). Số step của skill khớp với Step 1 đến 8 của bài này. Nên làm tay một lần trước, rồi mới dùng skill nếu tool của bạn hỗ trợ skill.
+- **Hook:** phần nâng cao, toolkit chưa có bản mẫu `[to confirm]`. Khi cần, nhờ developer cài theo mục Hook trong lesson.
 
 ## Output
 
 - `context/design-system-notes.md`
 - `tokens.css`, `components.css`, `components.html`
-- `project-rules.md` (mười quy tắc, đã viết lại)
+- `project-rules.md` hoặc `AGENTS.md` (mười quy tắc, đã viết lại)
 - Các file shell, template và (nếu làm) pattern
 - Các file màn hình của journey
 - `work/prototype/index.md` (Scope, Shell and templates, Screen plan, Rule check, Known gaps)

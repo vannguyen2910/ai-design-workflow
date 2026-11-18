@@ -68,7 +68,7 @@ Mọi insight ở các bước sau phải dẫn về một ID như vậy. Ghi ch
 
 ### 1.2 Rules with the data
 
-1. **Ẩn danh trên máy trước khi đưa cho AI**, bằng find and replace, thay tên bằng participant code (P1, P2). Bạn đã làm việc này ở Lesson 2; dữ liệu gốc chưa ẩn danh vẫn nằm ngoài vùng AI đọc.
+1. **Ẩn danh trên máy trước khi đưa cho AI**, bằng find and replace, thay tên bằng participant code (P1, P2). Bạn đã làm việc này ở Lesson 2; dữ liệu gốc chưa ẩn danh vẫn nằm ngoài vùng AI đọc. Công cụ tự động tìm thông tin định danh giúp tìm ra số điện thoại, email và các mã có định dạng cố định để bạn bỏ đi, nhưng không đảm bảo bắt hết, và thường mạnh nhất với tiếng Anh. Tên người, nơi làm và chi tiết gián tiếp trong tiếng Việt vẫn cần bạn đọc lại.
 2. **Mỗi source notes có source ID** theo nguồn: R01 cho review, F01 cho bài đăng forum, I01-03 cho ghi chú thứ 3 của phỏng vấn 01 (P1). Mỗi insight có insight ID (IN-01), nêu nguồn là interview, scope hay assumption, và dẫn source ID, để mọi dòng về sau dẫn được về đúng chỗ.
 3. **AI được phép nói unknown.** Khi không được phép, AI lấp chỗ trống bằng nội dung nghe hợp lý. Quy tắc đi kèm: chỉ dùng source notes được đưa, và mọi insight kèm source ID có thật.
 

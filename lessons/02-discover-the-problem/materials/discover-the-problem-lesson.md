@@ -249,7 +249,11 @@ Sau phỏng vấn bạn có transcript và recording. Trả lời đủ bốn c�
 | 3 | Đã ẩn danh trên máy chưa? | Đổi tên thành participant code (P1, P2) bằng find and replace trên máy, trước khi tải lên |
 | 4 | Bản gốc có tên thật đã nằm ngoài vùng AI đọc chưa? | Chỉ AI thấy bản đã gắn P1, P2 |
 
-Không nhờ AI ẩn danh giúp, vì như vậy dữ liệu gốc đã đi qua AI. Luật Việt Nam về bảo vệ dữ liệu cá nhân (Luật 91/2025/QH15, hiệu lực 01/01/2026) lấy sự đồng ý làm trung tâm; nội dung luật chưa được đọc toàn văn trong tài liệu này.
+Không nhờ AI ẩn danh giúp, vì như vậy dữ liệu gốc đã đi qua AI.
+
+Bỏ tên chưa đủ. "Giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề" vẫn đủ để người trong ngành nhận ra một người; hãy bỏ hoặc nói chung lại những chi tiết như vậy. Thay "Chị Lan" bằng `[NAME]` che được tên nhưng làm mất việc phân biệt các participant; P3 giữ được việc đó. P3 là giả danh chứ chưa phải ẩn danh, nên bảng đối chiếu P3 = Lan phải nằm ngoài vùng AI đọc.
+
+Luật Việt Nam về bảo vệ dữ liệu cá nhân (Luật 91/2025/QH15, hiệu lực 01/01/2026) lấy sự đồng ý làm trung tâm; nội dung luật chưa được đọc toàn văn trong tài liệu này.
 
 ---
 
