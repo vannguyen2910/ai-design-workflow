@@ -2,7 +2,7 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 65
+slide_count: 64
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
@@ -1365,6 +1365,7 @@ last_synced: 2026-11-18
     - Trước khi kết nối connector: connector đọc được file trong folder, nên chỉ nối phần cần thiết và giữ file confidential ở ngoài folder
   - ----
   - Nếu còn tgian
+  - Thay tên bằng P1, P2 chưa phải là ẩn danh: bạn vẫn giữ một bảng ghi P1 là ai, nên đó vẫn là dữ liệu cá nhân, và bảng này phải để ngoài vùng AI đọc. Vai trò, tuổi, nơi ở hay thời điểm cũng đủ để nhận ra một người. Ví dụ "giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề" không có tên nhưng người trong ngành vẫn đoán ra được, nên bạn bỏ chi tiết đó hoặc nói chung hơn, như "một PM ở thành phố lớn"
   - Dữ liệu gốc cần ẩn danh nằm trong _raw-private/: không lên GitHub, file luật bảo tool không đọc. Đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder. Liên hệ với slide repo ban nãy: file nào không đưa lên repo thì cũng không nên để trong folder mà agent đọc.
   - Output AI có được dùng cho công việc với client hay không, và ai sở hữu, tuỳ công ty và quốc gia; ghi trong project log chỗ nào đã dùng AI.
   - Bạn viết data rules của riêng mình ở bài tập về nhà; đến lúc đó đừng dán tài liệu thật vào công cụ AI. Nhắc đọc trang data controls của tool đang dùng; điều khoản đổi thường xuyên.
@@ -1372,61 +1373,36 @@ last_synced: 2026-11-18
 
 ---
 
-### COMPARE · Pseudonym vs anonymous
-- Kicker: Lưu ý
-- Title: P1, P2 chưa phải\n*ẩn danh*
-- On-slide:
-  - Giả danh
-  - Việc bạn làm khi thay tên
-  - Thay tên bằng P1, P2; bảng P3 = Lan được giữ ở nơi khác
-  - Vẫn là dữ liệu cá nhân, vì còn nối ngược được
-  - Bảng đối chiếu để ngoài vùng AI đọc
-  - Chi tiết gián tiếp
-  - Dễ bị quên
-  - Vai trò, tuổi, nơi ở, thời điểm vẫn đủ để nhận ra một người
-  - "Giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề": không có tên, vẫn nhận ra
-  - Bỏ đi, hoặc nói chung lại: "một PM ở thành phố lớn"
-- Ví dụ: "Giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề" không có tên, nhưng người trong ngành vẫn đoán ra.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Giả danh và ẩn danh là hai việc khác nhau. Thay tên bằng P1, P2 là giả danh: bạn vẫn giữ bảng P1 là ai ở đâu đó, nên nó vẫn là dữ liệu cá nhân. Ẩn danh thật nghĩa là không ai nối ngược lại được, và với transcript phỏng vấn thì rất khó đạt
-  - Chi tiết gián tiếp hay bị quên. "Giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề" không có tên, nhưng người trong ngành vẫn đoán ra. Hãy bỏ những chi tiết đó, hoặc nói chung lại, ví dụ "một PM ở thành phố lớn"
-  - Bảng đối chiếu P3 = Lan phải được bảo vệ như dữ liệu gốc: để ngoài vùng AI đọc, không đưa lên repo
-  - Nếu công ty cần nói "dữ liệu đã ẩn danh theo luật", hỏi bộ phận legal. Theo cách hiểu của luật châu Âu, dữ liệu giả danh vẫn là dữ liệu cá nhân
-  - Hai phút
-  > Trong transcript của bạn, chi tiết nào ngoài tên có thể giúp ai đó đoán ra người nói?
-- 🎨 Visual hint: Hai card: trái nền trắng "Giả danh", phải nền tối "Chi tiết gián tiếp"; mỗi card có nhãn nhỏ, tiêu đề đậm và ba dòng.
-
----
-
-### COMPARE · When the company restricts AI
+### FEATURE GRID · When the company restricts AI
 - Status: Tuỳ chọn, bỏ nếu trễ giờ.
 - Kicker: Tuỳ chọn
 - Title: Khi công ty\n*siết bảo mật*
 - On-slide:
-  - Công ty hạn chế AI
-  - Bạn ở tầng nào?
-  - Cấm hẳn: học trên project mẫu, soạn đề xuất xin duyệt
-  - Có tool được duyệt: chỉ dùng tool đó
-  - Có phân quyền: AI chỉ thấy tài liệu bạn được xem
-  - Hỏi security: lưu ở đâu, lưu bao lâu, có train không
-  - Tool không tự cập nhật
-  - Gọi tay, cập nhật tay
-  - Phần được nạp vào có thể đổi sau khi đã duyệt
-  - Đọc thay đổi, thử trên project mẫu, rồi mới dùng
-  - Hỏi IT: bản ổn định hay mới nhất, có ghim phiên bản không, skill lấy từ đâu
-- Ví dụ: Năm 2023, Samsung cấm tool công cộng sau khi kỹ sư dán mã nguồn nội bộ vào một chatbot (tin báo chí).
+  - 01
+  - Biết công ty ở mức nào
+  - Cấm hẳn, có công cụ được duyệt, hoặc có phân quyền.
+  - 02
+  - Luôn tò mò về cách bảo mật
+  - Dữ liệu lưu ở đâu, lưu bao lâu, có dùng để train không.
+  - 03
+  - Cập nhật bằng tay
+  - Đọc thay đổi, thử trên project mẫu rồi mới dùng thật.
+- Ví dụ: Năm 2023, Samsung cấm công cụ AI công cộng sau khi một số kỹ sư dán mã nguồn nội bộ vào chatbot (tin báo chí).
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide tuỳ chọn: bỏ nếu trễ giờ. Dành cho học viên làm ở công ty hạn chế AI
-  - Công ty hạn chế AI thường rơi vào một trong ba tầng. Cấm hẳn tool công cộng và chưa có tool thay: bạn học kỹ năng trên project mẫu và soạn đề xuất xin duyệt. Có tool được duyệt: bạn chỉ dùng tool đó, với loại dữ liệu được phép. Có phân quyền: AI chỉ thấy tài liệu người hỏi đã có quyền xem. Ví dụ năm 2023, Samsung cấm tool công cộng sau khi kỹ sư dán mã nguồn nội bộ vào một chatbot; nhiều công ty sau đó đưa tool doanh nghiệp vào thay. Đây là tin báo chí, chính sách hiện tại có thể khác
-  - Ba câu hỏi cho security: dữ liệu lưu ở đâu, lưu bao lâu và có dùng để train không. Thêm một câu: loại dữ liệu nào được phép đưa vào
-  - Nhiều công ty cũng không cho tool, agent hay skill tự cập nhật, vì phần được nạp vào có thể đổi sau khi đã được duyệt. Nếu công ty bạn như vậy, bạn gọi agent bằng tay và cập nhật bằng tay: đọc thay đổi, thử trên project mẫu, rồi mới dùng cho việc thật. Ba câu hỏi cho IT: dùng bản ổn định hay mới nhất, có ghim phiên bản không, skill và connector lấy từ đâu
-  - Liên hệ slide skill ban nãy: skill từ nguồn lạ cần đọc trước khi dùng
-  - Chi tiết nằm ở tài liệu đọc thêm "Data safety khi công ty siết bảo mật"
-  - Hai phút
-  > Công ty bạn đang ở tầng nào?
-- 🎨 Visual hint: Hai card: trái nền trắng "Công ty hạn chế AI", phải nền tối "Tool không tự cập nhật"; mỗi card có nhãn nhỏ, tiêu đề đậm và ba đến bốn dòng.
+  - Slide trước nói ba nhóm dữ liệu cần cẩn thận và ba lúc cần dừng lại. Slide này trả lời: nếu công ty hạn chế AI, bạn làm gì
+  - Công ty hạn chế AI thường ở một trong ba mức:
+    - Cấm hẳn: công ty cấm công cụ AI công cộng và chưa có công cụ thay thế. Bạn học kỹ năng trên project mẫu và soạn đề xuất xin duyệt
+    - Có công cụ được duyệt: bạn chỉ dùng công cụ đó, với loại dữ liệu được phép
+    - Có phân quyền: AI chỉ đọc những tài liệu mà người hỏi đã được xem
+  - Năm 2023, Samsung cấm công cụ AI công cộng sau khi một số kỹ sư dán mã nguồn nội bộ vào chatbot, rồi nhiều công ty đưa công cụ dành cho doanh nghiệp vào thay thế. Đây là tin báo chí, chính sách hiện tại của họ có thể đã khác
+  - Bạn hỏi security ba câu: dữ liệu lưu ở đâu, lưu bao lâu, và có dùng để train không. Nhiều công ty cũng không cho công cụ, agent hay skill tự cập nhật, vì skill, plugin hay connector có thể đổi nội dung sau khi đã được duyệt. Nếu công ty bạn như vậy:
+    - Gọi agent bằng tay khi cần
+    - Cập nhật bằng tay: đọc phần thay đổi, thử trên project mẫu rồi mới dùng cho việc thật
+    - Hỏi IT ba câu: dùng bản ổn định hay mới nhất, có khoá phiên bản không, skill và connector lấy từ đâu
+  - (tuỳ chọn) Slide này có thể bỏ nếu trễ giờ. Chi tiết nằm trong tài liệu đọc thêm "Data safety khi công ty siết bảo mật"
+  > Công ty bạn đang ở mức nào?
+- 🎨 Visual hint: Ba card nền trắng viền đen, mỗi card có minh hoạ line-art (ba ô xếp bậc Cấm hẳn, Được duyệt, Phân quyền; ba dòng có dấu hỏi; ba bước Đọc, Thử, Dùng nối bằng mũi tên), số tím, tiêu đề đậm và một câu mô tả.
 
 ---
 

@@ -89,7 +89,7 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 
 - Tạo một repo riêng chỉ chứa prototype, không dùng repo của cả project. Về repo Private và Public, xem `toolkit/guides/02-github-sharing-and-obsidian.md`.
 - Chỉ dùng dữ liệu giả hoặc đã ẩn danh. Không đưa `_personal/` và dữ liệu gốc lên repo.
-- Trước khi bật GitHub Pages: prototype chỉ có dữ liệu giả hoặc đã ẩn danh, vì với repo public, ai biết link cũng mở được.
+- Trước khi bật GitHub Pages, bạn kiểm tra prototype chỉ chứa dữ liệu giả hoặc đã ẩn danh, vì với repo public, ai có link cũng mở được.
 - Push prototype, bật GitHub Pages cho repo để có một link. Với repo Private, GitHub Pages có thể cần gói trả phí `[to confirm]`; kiểm tra gói của bạn trước.
 - Mở link và tự dùng hết flow trên đó, rồi gửi link cho một người để họ mở được. Link giữ nguyên; push bản mới thì mọi người cùng thấy bản mới.
 - **File:** link của prototype, ghi vào `work/prototype/index.md`

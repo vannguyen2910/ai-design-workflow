@@ -37,7 +37,7 @@ Làm trước khi đưa bất kỳ thứ gì cho AI.
 
 - Viết ba dòng bằng lời của bạn: được dán gì vào AI tool, sẽ không dán gì, và dùng tool nào cho việc gì.
 - Nhớ hai lúc cần dừng lại:
-  - **Trước khi AI nhìn thấy quote của người thật:** ẩn danh bằng find and replace trên máy bạn (tên thành P1, P2; bỏ công ty, số điện thoại, email). Không nhờ AI làm việc này, vì khi đó dữ liệu đã bị gửi đi. Nhớ bỏ cả vai trò, tuổi và nơi ở nếu chúng đủ để nhận ra người đó: P1, P2 mới là giả danh, chưa phải ẩn danh.
+  - **Trước khi AI nhìn thấy quote của người thật:** ẩn danh bằng find and replace trên máy bạn (tên thành P1, P2; bỏ công ty, số điện thoại, email). Không nhờ AI làm việc này, vì khi đó dữ liệu đã bị gửi đi. Bạn cũng bỏ vai trò, tuổi và nơi ở nếu chúng đủ để nhận ra người đó, vì P1, P2 chưa phải là ẩn danh.
   - **Trước khi kết nối connector:** connector đọc được file trong folder, nên giữ file confidential ở ngoài folder.
 
 ### Step 3 · Product context
