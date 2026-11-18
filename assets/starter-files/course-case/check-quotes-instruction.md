@@ -1,3 +1,5 @@
+> **Bản cũ, không còn dùng ở Practice 2.** Instruction mới nằm ở `check-evidence-instruction.md`. Giữ lại cho tới khi blind synthesis và Lesson 3 được chuyển sang evidence note.
+
 # Instruction: kiểm tra quote bằng chương trình
 
 Dùng trong Practice 2, Step 9. Đưa đoạn dưới cho AI coding tool, kèm đường dẫn tới hai file của bạn.

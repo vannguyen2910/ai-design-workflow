@@ -13,7 +13,7 @@ slides: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
 previous-session: "Your Design Process, with AI"
 next-session: "Turn Research into Insights You Can Trust"
 ---
-Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học cách phá brief (break the brief), chuẩn bị và chạy phỏng vấn người dùng thật, rồi đưa transcript vào hub theo ba quy tắc của Lesson 1: ingest thành source notes có ID, và kiểm tra mọi quote bằng chương trình. Bạn làm cả chuỗi này trên project của mình ở nhà sau buổi học. Phần từ source notes đến insight (synthesis) học ở Lesson 3.
+Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học cách phá brief (break the brief), chuẩn bị và chạy phỏng vấn người dùng thật, rồi đưa transcript vào hub theo ba quy tắc của Lesson 1: ingest thành evidence note có mã, và kiểm tra mọi quote bằng chương trình. Bạn làm cả chuỗi này trên project của mình ở nhà sau buổi học. Phần từ evidence note đến insight (synthesis) học ở Lesson 3.
 
 > **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** Mọi điều bạn ghi ở Discover truy được về một nguồn, hoặc mang nhãn "chưa có nguồn". Độ tin cậy nằm ở đó, không nằm ở độ trơn tru của bản AI soạn.
 
@@ -23,7 +23,7 @@ Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học
 2. Principles cho AI: chuẩn để AI đối chiếu
 3. Break the brief: scope, assumption và research question
 4. Understand our users: research plan, script, buổi phỏng vấn và quy tắc dữ liệu
-5. Ingest: từ transcript đến source notes, và kiểm tra quote bằng chương trình
+5. Ingest: từ transcript đến evidence note, và kiểm tra quote bằng chương trình
 6. Blind synthesis: hypothesis trong prompt làm AI nói gì
 7. Những gì vào hub sau buổi này
 8. Ví dụ xuyên suốt với Delivery App
@@ -37,7 +37,7 @@ Phụ lục, ngoài 90 phút: competitor analysis.
 3. Mô tả ba việc của Break the brief (scope, assumption, research question), file mỗi việc tạo ra và phần bạn kiểm tra, và chạy bốn move AI (brief thành vấn đề, đào assumption từ tài liệu, kiểm tra evidence trong hub, phản biện scope) với phần bạn kiểm tra ở mỗi move
 4. Giải thích vì sao AI không được đóng vai PO hay user, và gắn trạng thái confirmed hoặc assumed cho scope
 5. Nêu bốn thói quen của một buổi phỏng vấn tốt, vai trò của AI khi chuẩn bị phỏng vấn, và bốn câu hỏi trước khi đưa dữ liệu phỏng vấn cho AI
-6. Cắt một transcript đã ẩn danh thành source notes có ID, và giải thích vì sao quote phải nguyên văn
+6. Viết evidence note từ một transcript đã ẩn danh, và giải thích vì sao quote phải nguyên văn và tiêu đề phải là observation
 7. Giải thích một phép kiểm tra quote bằng chương trình chứng minh gì và không chứng minh gì
 8. Mô tả blind synthesis cho thấy gì về cách một hypothesis trong prompt ảnh hưởng đến câu trả lời của AI
 
@@ -184,7 +184,7 @@ Không có access là vị thế yếu hơn, và quy trình chỉ giảm nhẹ c
 
 **Move 3: Đào assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, mỗi dòng có ID, và nhờ nó trả về từng dòng `assumption | line IDs | quote` với quote chép nguyên văn. Đó đúng là định dạng citation của mục 5, nên bạn chạy được phép kiểm tra quote. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
 
-**Move 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (18 ghi chú review và diễn đàn), assumption về khung giờ có bốn ghi chú ủng hộ, assumption "giá là lý do chính" chỉ có F07 ủng hộ và R06 đi ngược, còn assumption "nhắc sau 7 ngày" là "chưa có nguồn". Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên source notes mới để cập nhật bản đồ.
+**Move 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (18 ghi chú review và diễn đàn), assumption về khung giờ có bốn ghi chú ủng hộ, assumption "giá là lý do chính" chỉ có F07 ủng hộ và R06 đi ngược, còn assumption "nhắc sau 7 ngày" là "chưa có nguồn". Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên evidence note mới để cập nhật bản đồ.
 
 Giới hạn: quote có thật không có nghĩa nó ủng hộ đúng assumption (AI xếp F01 vào cả hai assumption khác nhau), và ghi chú không đánh dấu khách mới hay khách cũ, nên "nhiều ghi chú" chưa có nghĩa là đủ. Bạn đọc từng ghi chú trước khi tính.
 
@@ -257,43 +257,62 @@ Luật Việt Nam về bảo vệ dữ liệu cá nhân (Luật 91/2025/QH15, hi
 
 ---
 
-## 5. Ingest: from transcript to source notes
+## 5. Ingest: from transcript to evidence notes
 
 Ingest là đưa một nguồn vào hub thành dạng AI dùng được và bạn kiểm tra được. Ở Lesson 1, bạn đã viết ba quy tắc vào `AGENTS.md`: raw không bị sửa, mỗi note có ID, quote nguyên văn. Mục này là lần đầu bạn áp dụng chúng lên dữ liệu thật.
 
-### 5.1 Source notes
+### 5.1 Evidence notes
 
-Transcript đã ẩn danh là **raw source**; bạn không sửa nó. Từ đó bạn cắt thành **source notes**:
+Transcript đã ẩn danh là **raw source**; bạn không sửa nó. Từ đó bạn viết **evidence note**: một file md ghi một quan sát của một participant về một chủ đề.
 
-- mỗi note một ý, giữ nguyên lời người nói;
-- mỗi note một ID, ví dụ `I01-03` là ghi chú 3 của phỏng vấn 1;
-- mỗi note một dòng, dạng `ID | text`.
+- **Tiêu đề là observation.** Đó là điều participant làm hoặc nói, viết trung tính, chưa có nguyên nhân, đánh giá hay giải pháp. Ví dụ "P1 could not find where to cancel and contacted support", không phải "The cancel button is hidden".
+- **Quote nguyên văn.** Mỗi note có một đến ba quote, mỗi quote kèm tên transcript và số lượt.
+- **Mã.** Mã Business Outcome trong Scope của bạn cộng số thứ tự, ví dụ `RET-02`. Mã này nối evidence về outcome nó phục vụ, giống mã Epic ở nhiều công ty.
+- **Các trường khác.** `status` (draft, checked hoặc superseded), `confidence` (low, medium hoặc high), `source` và `tags`. `confidence` do bạn đặt, không do AI. Mỗi note ở Lesson 2 chỉ có một participant nên để `low`; Lesson 3 mới nâng khi nhiều evidence cùng nói một điều.
 
-Bạn cắt note, hoặc nhờ AI cắt rồi so từng note với transcript, vì AI có thể diễn giải lại lời người nói. Định dạng này cố định và rất nhỏ để chương trình đọc được. Cách bạn sắp xếp folder vẫn tuỳ bạn. Bộ mẫu của Delivery App có 24 note: R01 đến R10 là review, F01 đến F08 là bài trên forum, I01-01 đến I02-03 là trích từ hai buổi phỏng vấn.
+```markdown
+---
+id: RET-02
+outcome: RET
+status: checked
+confidence: low
+source: [I01 @ turn 06]
+tags: [cancel, support]
+---
+# P1 could not find where to cancel and contacted support
+
+> "I wanted to cancel because my plans changed. I went through the whole order screen and could not find it. Eventually I messaged support." (I01, turn 06)
+```
+
+Vì sao tiêu đề là observation chứ không phải insight: ở Lesson 3 bạn nhờ AI tổng hợp từ các note này. Nếu tiêu đề đã chứa kết luận của bạn, AI đọc lại kết luận thay vì dữ liệu, và phép blind synthesis không còn blind. Câu insight xuất hiện sau khi gộp nhiều evidence.
+
+Folder đặt note do bạn chọn; nhiều công ty gọi là `Insights` hoặc `Evidence`. Bạn viết note, hoặc nhờ AI soạn nháp rồi kiểm tra tiêu đề và quote của từng note. Bộ mẫu của Delivery App có 8 note, RET-01 đến RET-08, viết từ hai transcript trong `assets/starter-files/course-case/`.
 
 ### 5.2 Quotes must be word for word
 
 AI tóm tắt rất trơn. Khi bạn nhờ AI rút insight, nó trả về insight kèm quote. Các hướng dẫn thực hành về tổng hợp research bằng AI cảnh báo hai lỗi: quote bịa nghe hay hơn quote thật, vì người thật nói câu dở dang; và insight dựa vào một ý của vài người nhưng được trình bày như xu hướng chính. Các hướng dẫn này chủ yếu do bên bán công cụ viết, nên là kinh nghiệm thực hành, chưa phải evidence đã kiểm. Một nghiên cứu tổng quan về UX researcher cũng cho thấy họ ít tin kết quả AI vì không truy được về dữ liệu gốc.
 
-Vì vậy bạn yêu cầu AI trả về mỗi insight dưới dạng một dòng `insight | note IDs | một quote nguyên văn`. Dạng này kiểm tra được, còn một đoạn văn trơn thì không.
+Vì vậy mỗi quote nằm trong evidence note theo dạng cố định `> "quote" (I01, turn 04)`, kèm transcript và số lượt. Dạng này kiểm tra được, còn một đoạn văn trơn thì không.
 
 ### 5.3 The machine check
 
-Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script đọc file source notes và file citations, rồi với mỗi dòng kiểm tra quote có nằm trong từng note được trích hay không. Nó bỏ qua khác biệt về khoảng trắng, xuống dòng, chữ hoa chữ thường và kiểu dấu ngoặc, nhưng không bỏ qua khác biệt về chữ. Kết quả là danh sách từng dòng đạt hoặc không đạt, kèm lý do ngắn. Instruction mẫu nằm ở `assets/starter-files/course-case/check-quotes-instruction.md`.
+Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script đọc từng evidence note, rồi với mỗi dòng quote mở transcript gốc, tìm đúng lượt được ghi và kiểm tra quote có nằm trong lượt đó hay không. Nó bỏ qua khác biệt về khoảng trắng, xuống dòng, chữ hoa chữ thường và kiểu dấu ngoặc, nhưng không bỏ qua khác biệt về chữ. Nó cũng kiểm mỗi note có đủ trường, `id` không trùng và nguồn của quote khớp trường `source`. Kết quả là danh sách từng quote và từng note đạt hoặc không đạt, kèm lý do ngắn. Instruction mẫu nằm ở `assets/starter-files/course-case/check-evidence-instruction.md`.
 
 Đây là phép so khớp chuỗi do chương trình làm, không phải một AI khác đánh giá. Lý do: một AI duyệt giúp có thể bỏ qua một quote bịa theo cùng cách AI đầu tiên đã bịa ra nó. Đây là suy luận của chương trình, không phải kết quả đo.
 
-Chương trình đã thử instruction này trên 24 note mẫu cùng bốn dòng citations (bộ test của script mẫu có đúng bốn dòng này): dòng bị đổi một chữ báo không đạt, dòng chỉ khác khoảng trắng thì đạt. Khi file notes thiếu ID, trùng ID hoặc có note trống, script dừng và nêu dòng nào.
+Chương trình đã thử instruction này bằng một script tham chiếu viết theo đúng instruction (`tests/hub_quote_check/check_evidence.py`, có chín test), trên 8 note mẫu (9 quote): bộ mẫu đạt hết. Khi cố ý đổi một chữ trong quote, trỏ sai số lượt, đặt `id` trùng hoặc trỏ tới file transcript không tồn tại, script báo không đạt đúng các note đó; quote chỉ khác khoảng trắng, chữ hoa chữ thường hoặc dấu ngoặc cong vẫn đạt. Chưa thử với một AI coding tool tự viết script từ instruction `[to confirm]`.
 
-Hai buổi phỏng vấn cho khoảng 10 đến 20 note, và thế là đủ: phép kiểm tra này chỉ kiểm tra quote do AI đưa ra, không kiểm tra số lượng note của bạn.
+Hai buổi phỏng vấn cho khoảng 8 đến 20 note, và thế là đủ: phép kiểm tra chỉ kiểm tra quote trong note của bạn, không kiểm tra số lượng note hay việc bạn đã chọn đủ quan sát quan trọng.
 
-**Phép kiểm tra này chứng minh:** quote có thật trong note được trích.
+**Phép kiểm tra này chứng minh:** quote có thật trong transcript gốc, đúng ở lượt được ghi.
 
-**Phép kiểm tra này không chứng minh:** insight đúng, hay note phản ánh đúng điều người đó nói trong transcript. Hai việc đó vẫn là của bạn: đọc lại đoạn gốc của những insight quan trọng.
+**Phép kiểm tra này không chứng minh:** tiêu đề observation mô tả đúng quote, bạn đã không bỏ sót quan sát quan trọng, hay một insight nào đó đúng. Những việc đó vẫn là của bạn: đọc lại tiêu đề từng note với quote bên dưới, và đọc lại đoạn gốc của những quan sát quan trọng.
 
 ---
 
 ## 6. Blind synthesis
+
+> `[to confirm]` Mục 6 mô tả các lần chạy trên bộ 24 ghi chú mẫu dạng một dòng (`source-notes.md`), chưa phải bộ evidence note ở mục 5. Chương trình sẽ chạy lại blind synthesis trên evidence note; cho đến lúc đó, các bảng và con số dưới đây chỉ đúng với bộ 24 ghi chú cũ.
 
 ### 6.1 The setup
 
@@ -322,7 +341,7 @@ Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: mộ
 2. Chạy lần hai có hypothesis của team.
 3. So hai bản: chủ đề nào đứng đầu, note ID nào được trích, và có note nào xuất hiện ở bản này mà biến mất ở bản kia.
 
-Ở Lesson 3 bạn làm đúng việc này trên source notes của chính bạn.
+Ở Lesson 3 bạn làm đúng việc này trên evidence note của chính bạn.
 
 ---
 
@@ -336,9 +355,9 @@ Năm thứ mang ra khỏi buổi này vào hub của bạn, và là input của 
 | Scope | Business question, outcome, metric và trạng thái confirmed hoặc assumed |
 | Assumption map | Ba assumption hàng đầu và mức evidence của chúng |
 | Research questions | Câu hỏi điều tra được, mỗi câu gắn với một assumption và một quyết định |
-| Source notes | Note có ID từ transcript đã ẩn danh, kèm kết quả kiểm tra quote không còn dòng không đạt |
+| Evidence notes | Mỗi note là một file md, một quan sát của một participant, có mã outcome, quote nguyên văn kèm vị trí trong transcript, và kết quả kiểm tra quote không còn dòng không đạt |
 
-Mỗi thứ có nguồn hoặc nhãn "chưa có nguồn", để người sau không coi assumption là sự thật. ID của các mục này đi theo cùng quy ước với source ID, để sau này mỗi insight trỏ về được note nó dựa vào. Hub mặc định riêng tư và nằm trong project folder của bạn; đưa lên GitHub là tuỳ chọn. Lesson 3 bắt đầu từ các file này.
+Mỗi thứ có nguồn hoặc nhãn "chưa có nguồn", để người sau không coi assumption là sự thật. ID của các mục này đi theo cùng quy ước với mã evidence note, để sau này mỗi insight trỏ về được note nó dựa vào. Hub mặc định riêng tư và nằm trong project folder của bạn; đưa lên GitHub là tuỳ chọn. Lesson 3 bắt đầu từ các file này.
 
 ---
 
@@ -352,7 +371,7 @@ Project mẫu (hư cấu): Delivery App, nhiều khách mới không đặt lạ
 - **Điều đang tin** (AI soạn nháp, bạn đối chiếu): giá là lý do chính; khách không hiểu cách đổi khung giờ giao; bước thanh toán làm khách ngại cam kết. Mục thứ hai và thứ ba chưa có nguồn trong project mẫu, nên đánh dấu "chưa có nguồn".
 - **Metric:** tỷ lệ đặt đơn thứ hai trong 30 ngày; baseline chưa biết, ghi assumed, người xác nhận là business.
 - **Research question** (từ assumption "khách không hiểu cách đổi khung giờ giao"): "Khách đang làm gì khi cần dời khung giờ giao của đơn đã đặt, và điều gì khiến họ bỏ dở?"
-- **Source notes:** 24 note mẫu có ID. Một dòng citation kiểm tra được: `Khách không biết cách huỷ đơn | R03 | I could not find how to cancel an order anywhere`.
+- **Evidence notes:** 8 note mẫu, RET-01 đến RET-08, viết từ hai transcript phỏng vấn. Một dòng quote kiểm tra được, trong note RET-02 "P1 could not find where to cancel and contacted support": `> "I wanted to cancel because my plans changed. I went through the whole order screen and could not find it. Eventually I messaged support." (I01, turn 06)`.
 
 ---
 
