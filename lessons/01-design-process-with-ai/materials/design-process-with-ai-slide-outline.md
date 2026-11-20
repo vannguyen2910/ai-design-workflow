@@ -1023,7 +1023,7 @@ last_synced: 2026-11-18
 - On-slide:
   - README.md
   - Repo này là gì, dành cho ai
-  - Người và AI đều đọc đầu tiên
+  - Đọc file nào trước, bắt đầu từ đâu
   - AGENTS.md
   - Luật và bản đồ folder cho AI
   - Đã học ở phần Agent
@@ -1035,7 +1035,7 @@ last_synced: 2026-11-18
 - Speaker notes:
   - Bức tranh vừa rồi cho thấy ai làm gì với repo. Giờ mình xem khi AI mở một repo thì nó đọc gì đầu tiên.
   - Agent đọc theo thứ tự này, từng file một:
-    - README.md: giới thiệu repo là gì, dành cho ai, cho cả người lẫn AI
+    - README.md: cổng vào của repo, cho cả người lẫn AI. Bên trong thường ghi repo này là gì và dành cho ai, nên đọc file nào trước, và bắt đầu từ đâu. Người mới và AI mở folder lần đầu chỉ thấy tên file, nên cần một chỗ để biết đi đường nào. Một README tốt ngắn: nó dẫn sang các file khác, không chép lại nội dung của chúng
     - AGENTS.md: luật và bản đồ folder dành riêng cho AI. Nhắc lại là nó chỉ là luật, không phải rào chắn kỹ thuật. Bạn có thể hình dung nó như tờ phụ lục trong hộp Lego: liệt kê có bao nhiêu agent và mỗi agent làm gì
     - SKILL.md: cách làm một loại việc. Phần Skills đã học kỹ, hôm nay chỉ cần biết nó nằm trong repo
   - Cả ba đều là markdown, nên designer đọc và chỉnh được mà không cần viết code.
