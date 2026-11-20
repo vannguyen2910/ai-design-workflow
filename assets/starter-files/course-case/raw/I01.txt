@@ -1,0 +1,18 @@
+Interview I01 (fictional, anonymised). Participant: P1. Each turn has a number; evidence notes cite the number.
+
+01 Interviewer: Thanks for making time. Can you tell me about the last time you ordered food with the app?
+02 P1: Sure. It was a few weeks ago, my first order actually.
+03 Interviewer: What happened?
+04 P1: I ordered at lunch and just tapped the first time slot it showed. I did not think about whether I would be at my desk. It arrived when I was in a meeting and I felt silly.
+05 Interviewer: Did you try to change anything afterwards?
+06 P1: I wanted to cancel because my plans changed. I went through the whole order screen and could not find it. Eventually I messaged support.
+07 Interviewer: How did that go?
+08 P1: Support was polite. They said it was too late to change it anyway.
+09 Interviewer: How long did you wait for the food?
+10 P1: The estimate said 30 minutes and I was still waiting at 60. I felt like I had done something wrong.
+11 Interviewer: Was there anything you liked?
+12 P1: I love how many restaurants there are. I have tried a dish I would never have found on my own.
+13 Interviewer: Would you order again?
+14 P1: Probably, but I would pick the time very carefully now.
+15 Interviewer: How about the price?
+16 P1: A bit expensive with the delivery fee, but the food is good so I keep ordering.

@@ -1,0 +1,16 @@
+Interview I02 (fictional, anonymised). Participant: P2. Each turn has a number; evidence notes cite the number.
+
+01 Interviewer: Tell me about the last time you used the app.
+02 P2: Last Thursday, dinner for myself.
+03 Interviewer: How did you choose the delivery time?
+04 P2: When I picked the delivery time, I assumed I could change it later like in other apps. I only learned it was locked when I tried.
+05 Interviewer: And then?
+06 P2: I thought cancelling would be easy. It is not obvious. I would rather the app told me the deadline before it charges me.
+07 Interviewer: Was that your first order?
+08 P2: No, my third. The first time I was not sure the order had gone through. There was no message for a while.
+09 Interviewer: How about the price?
+10 P2: Honestly, the waiting time bothered me more than the price. After a long day I do not want to wait an hour for dinner.
+11 Interviewer: Would you recommend it?
+12 P2: To a colleague, yes, with a warning about the time slot.
+13 Interviewer: Anything else you would change?
+14 P2: Too pricey for what it is. I can pick up the same meal for half at the restaurant.

@@ -215,10 +215,12 @@ Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói
 
 ### 5.3 Four habits before pasting
 
-1. **Kiểm tra chính sách.** Chưa có thì hỏi; còn phân vân thì không dán.
+1. **Kiểm tra chính sách.** Chưa có thì hỏi; còn phân vân thì không dán. Bạn hỏi bộ phận security hoặc IT ba câu: dữ liệu được lưu ở đâu, lưu bao lâu, và có dùng để train model không. Nếu công ty cấm công cụ AI công cộng thì thường đã có một công cụ được duyệt, và bạn hỏi xem đó là công cụ nào. Chưa có thì bạn làm trên project mẫu của chương trình.
 2. **Phân loại tài liệu** theo ba nhóm trên.
-3. **Xoá thông tin định danh trước**, bằng find and replace trên máy cục bộ chứ không nhờ AI làm, vì khi đó dữ liệu đã được gửi đi.
+3. **Xoá thông tin định danh trước**, bằng find and replace trên máy cục bộ chứ không nhờ AI làm, vì khi đó dữ liệu đã được gửi đi. Thay tên bằng P1, P2 chưa phải là ẩn danh, vì vai trò, tuổi, nơi ở hay thời điểm vẫn đủ để nhận ra một người. Bạn nên bỏ các chi tiết đó, hoặc nói chung hơn, ví dụ "một PM ở thành phố lớn".
 4. **Giữ file confidential ngoài folder của tool**, vì AI coding tool hoặc agent đọc toàn bộ project folder. `AGENTS.md` có thể dặn tool không đọc một folder, nhưng đó là quy tắc chứ không phải rào chắn kỹ thuật. Cùng nguyên tắc với **connector**: trước khi kết nối, xác định nó đọc và sửa được những gì.
+
+Trước khi dùng agent hoặc skill, bạn cũng nên biết công cụ AI của mình có tự cập nhật không. Nhiều công ty không cho công cụ AI, agent hay skill tự cập nhật, vì phần được nạp vào có thể đổi sau khi đã được duyệt. Nếu công ty bạn như vậy, bạn gọi agent bằng tay và cập nhật bằng tay khi cần: đọc phần thay đổi, thử trên project mẫu, rồi mới dùng cho việc thật. Bạn hỏi IT ba câu: công cụ dùng bản ổn định hay bản mới nhất, có khoá phiên bản không, và skill hay connector lấy từ đâu.
 
 Quyền dùng output của AI cho công việc với client và quyền sở hữu tuỳ công ty và quốc gia; nên ghi những chỗ đã dùng AI vào log của project. Output của mục này là ba dòng bằng lời của bạn: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì.
 
@@ -256,12 +258,45 @@ Một bình luận dưới bài của Karpathy báo cáo rằng truy vấn chỉ
 
 Schema là file ngắn và cụ thể. Chỉ ghi những điều AI không tự suy ra được từ folder: thứ tự đọc, folder nào không đọc, quy tắc cứng như ba quy tắc trên. Thêm một dòng khi bạn thấy AI lặp lại cùng một lỗi. Một nghiên cứu arXiv (2026) thấy file ngữ cảnh do người viết chỉ cải thiện khiêm tốn và tăng chi phí xử lý khoảng 20%, nên file dài không tốt hơn file ngắn. Muốn biết file của mình có giúp không, chạy cùng một task có file và không có file rồi so hai kết quả.
 
-### 6.5 Files, folders and sharing
+### 6.5 Reading the files in a hub
+
+Mở một folder lạ, bạn chỉ thấy tên file. Hai file đầu tiên cho bạn biết folder này là gì và AI được dặn gì:
+
+| File | Ai đọc | Chứa gì | Vì sao cần |
+|---|---|---|---|
+| `README.md` | Người, và AI khi bắt đầu | Hub này là gì, nên đọc file nào trước, folder nào chứa gì, bắt đầu từ đâu | Người mới và AI mở folder lần đầu cần một cổng vào. Không có nó, họ phải mở từng file để đoán |
+| `AGENTS.md` | AI | Quy tắc làm việc: đọc gì trước, ghi vào đâu, folder nào không đọc, ba quy tắc ở 6.3 | AI không tự suy ra được những quy tắc này từ folder |
+
+Một README tốt ngắn: nó trả lời "đây là gì, bắt đầu từ đâu" và dẫn sang các file khác, không chép lại nội dung của chúng. Hướng dẫn của GitHub cũng nói README chỉ nên chứa điều người khác cần để bắt đầu, tài liệu dài hơn để chỗ khác. Các nguồn không thống nhất README phải có những mục nào, nên chương trình dùng README làm Index của hub, theo nghĩa ở 6.2.
+
+Khi mở một file `.md`, bạn gặp sáu thứ:
+
+- **Front matter:** khối giữa hai dòng `---` ở đầu file, ghi thông tin về chính file đó (id, trạng thái, nguồn). Đây là phần AI và chương trình đọc để lọc và kiểm tra.
+- **Đề mục:** dòng bắt đầu bằng `#`. Nhiều dấu `#` thì mục càng nhỏ.
+- **Danh sách và bảng:** dòng bắt đầu bằng `-` hoặc `1.`, và bảng vẽ bằng dấu `|`.
+- **Liên kết:** dạng `[chữ hiển thị](đường dẫn)`. Đường dẫn tương đối cho biết file đó nằm ở đâu trong folder.
+- **Quote:** dòng bắt đầu bằng `>`. Trong hub, đây là lời trích nguyên văn.
+- **Code block:** khối giữa hai dòng ba dấu huyền, dùng cho ví dụ hoặc lệnh.
+
+Thử ngay: mở `README.md` của workspace template và trả lời ba câu. Folder này là gì? Nên đọc file nào trước? File nào dặn AI?
+
+### 6.6 Files, folders and sharing
 
 - **Markdown (`.md`)** là định dạng của hub: plain text mà AI tool xử lý ổn định. Khi stakeholder cần đọc thì export ra PDF hoặc trang HTML.
 - Project nằm trong một folder local, vì AI coding tool mở cả folder làm project và đọc mọi thứ bên trong.
 - Bạn tự sắp xếp folder theo cách làm việc của mình. Chỉ cần mỗi lớp ở trên có chỗ riêng và schema ghi rõ chỗ đó.
 - Hub mặc định là private. Bạn chia sẻ qua trang HTML hoặc PDF, file nén, repository private, hoặc công khai chỉ khi toàn bộ project được phép.
+
+Trình duyệt không hiển thị markdown đã định dạng: nó hiện file `.md` như chữ thường. Muốn người khác xem hub như một trang web, cần một bước chuyển markdown sang HTML. Bạn không phải viết HTML bằng tay. Có bốn cách:
+
+| Cách | Ai chuyển sang HTML | Hợp với |
+|---|---|---|
+| Script riêng của chương trình (hoặc Pandoc) | Script chạy trên máy bạn, ra một file HTML | Hub nhỏ, một người làm, gửi qua email hoặc chat. Đây là cách chương trình dùng |
+| MkDocs, Docusaurus, Quartz | Công cụ đọc cả folder, ra cả site có menu và tìm kiếm | Hub nhiều trang, nhiều người xem. Các team kỹ thuật hay dùng khi tài liệu lớn lên |
+| GitHub Pages, Notion, Confluence | Nền tảng tự hiển thị | Team đã dùng sẵn nền tảng đó |
+| Obsidian Publish | Dịch vụ trả phí | Người đã viết ghi chú trong Obsidian |
+
+Chọn cách nào, câu hỏi đầu tiên vẫn là ai xem được. Site GitHub Pages có thể công khai dù repository là private; chỉ gói Enterprise Cloud mới cho publish riêng tư. Bản publish chỉ nên chứa dữ liệu đã ẩn danh và được phép chia sẻ. Chi tiết và nguồn nằm ở `learning/reference/desk-research-publish-markdown-hub.md`; mức độ phổ biến của từng cách trong các công ty chưa có số liệu.
 
 ---
 
@@ -306,4 +341,5 @@ Ngoài ID, các hub cần một bộ field chung rất nhỏ, ví dụ owner, st
 - **Dữ liệu đưa vào có thể bị lưu lại.** Áp dụng data rules ở mỗi lần dùng.
 - **Giới hạn của evidence.** Evidence nghề nghiệp xem 1.3; các hướng đi ở mục 2 là xu hướng, không phải dự báo cá nhân. Số liệu về năng lực AI (3.4) đến từ nghiên cứu trên những mô hình tại thời điểm đó và đổi nhanh; evidence về AI như bộ khuếch đại (3.5) đến từ phát triển phần mềm, áp vào design là suy luận.
 - **Mô hình hub.** Ba lớp và ba quy tắc ở mục 6 dựa trên mô tả của Karpathy và các hướng dẫn thực hành, chưa có nghiên cứu đo hiệu quả của hub trong công việc design. Mô hình nhiều hub ở mục 7 là pattern một số tổ chức đang thử; các nguồn chủ yếu là bài viết của nhà cung cấp công cụ và tài liệu về traceability và data mesh, không phải chuẩn cho design.
+- **Đọc và publish file markdown.** Nội dung về README và bốn cách đưa markdown lên web (6.5, 6.6) lấy từ tìm kiếm web, chưa đọc toàn văn từng nguồn. Chưa có số liệu mức độ phổ biến của từng cách trong các công ty.
 - **Giới hạn của chương trình.** Chương trình không dạy thiết kế sản phẩm AI. Cách chia agent ở 4.4 là phương pháp của chương trình, chưa có nguồn đo hiệu quả.

@@ -10,7 +10,7 @@ draft: true
 
 ## Goal
 
-Dựng prototype chạy được trong trình duyệt cho một flow của bạn, từ design system và các màn đã thiết kế trong Figma. Cuối bài bạn có design system dạng code, shell, template, rules file và một journey 5 đến 6 màn đã qua review. Prototype này là đầu vào cho Lesson 6 (test với người dùng).
+Dựng prototype chạy được trong trình duyệt cho một flow của bạn, từ design system và các màn đã thiết kế trong Figma. Cuối bài bạn có design system dạng code, shell, template, rules file và một journey 5 đến 6 màn đã qua review, kèm một link để người khác mở được. Prototype này là đầu vào cho Lesson 6 (test với người dùng).
 
 Bài không có giới hạn một buổi. Bạn làm phần đầu ở nhà, rồi tiếp tục trên lớp. Mỗi bước có một file lưu lại, nên bạn dừng và quay lại ở bất kỳ bước nào.
 
@@ -27,7 +27,7 @@ Bài không có giới hạn một buổi. Bạn làm phần đầu ở nhà, r�
 
 Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI dựng, bạn kiểm tra). Thứ tự dựng: design system, shell và template, pattern, journey, review.
 
-**AI dựng, bạn kiểm tra, bạn quyết định.** Mỗi lần dựng, đưa cho AI `work/prototype/project-rules.md` và chỉ nhờ nó làm đúng bước đang chạy. Không nhận "xong" khi bạn chưa tự mở trang.
+**AI dựng, bạn kiểm tra, bạn quyết định.** Mỗi lần dựng, đưa cho AI `work/prototype/project-rules.md` (hoặc copy nội dung vào file rules mà tool của bạn đọc, ví dụ `AGENTS.md`) và chỉ nhờ nó làm đúng bước đang chạy. Không nhận "xong" khi bạn chưa tự mở trang.
 
 ### Step 1 · Có một bộ design system · Figma · YOU
 
@@ -42,11 +42,11 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - **Kiểm tra:** một người có hoàn thành flow trong một lượt ngồi được không? Dấu hiệu sai: "cả app"; nội dung chưa có.
 - **File:** `work/prototype/index.md` mục `## Scope`
 
-### Step 3 · Build design system · AI coding tool · AI dựng, bạn kiểm tra (Gate A)
+### Step 3 · Rules và design system · AI coding tool · AI dựng, bạn kiểm tra (Check A)
 
+- **Viết rules file trước:** bắt đầu từ mười quy tắc trong `project-rules.md`, viết lại những quy tắc mơ hồ và thêm content voice ở quy tắc 5. Rules quyết định mọi thứ AI dựng sau đó.
 - **AI dựng:** từ Figma, tạo `tokens.css` (token) và `components.css`, `components.html` (component). Chỉ dùng token và component bạn liệt kê; thiếu thì nói và dừng.
 - **Bạn kiểm tra:** mở `components.html`, so từng component với Figma. Tìm trong file các giá trị thô (màu `#`, cỡ `px` ngoài token). Component nào lệch thì gửi lại **một** danh sách sửa.
-- Viết rules file: bắt đầu từ mười quy tắc trong `project-rules.md`, viết lại những quy tắc mơ hồ và thêm content voice ở quy tắc 5.
 - Khi đúng, nói "Lưu lại".
 - **File:** `tokens.css`, `components.css`, `components.html`, `project-rules.md`
 
@@ -54,7 +54,7 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 
 - **Bạn quyết định trước:** năm quyết định của shell (header, điều hướng, tên product, các mục, nút chính, hành vi ở màn hình hẹp) và 2 hoặc 3 template (khi nào dùng, các vùng bố cục). Rút từ các màn đã thiết kế, không để AI tự nghĩ.
 - **AI dựng:** shell là màn số 0, rồi các template, từ token và component. Shell chỉ dựng ở đây; các màn sau không tự thêm điều hướng.
-- **Bạn kiểm tra (Gate B):** tab qua điều hướng bằng bàn phím, mở ở độ rộng điện thoại và máy tính, tìm giá trị thô. Khi đúng, nói "Lưu lại".
+- **Bạn kiểm tra (Check B):** tab qua điều hướng bằng bàn phím, mở ở độ rộng điện thoại và máy tính, tìm giá trị thô. Khi đúng, nói "Lưu lại".
 - **File:** các file shell và template, mục `## Shell and templates` trong `work/prototype/index.md`
 
 ### Step 5 · Build experience pattern · AI coding tool · Optional
@@ -64,13 +64,13 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - **Bạn kiểm tra:** experience pattern có dùng ở ít nhất hai màn không? Một experience pattern chỉ dùng một lần thì để lại trong màn đó.
 - **File:** `components.css`, `components.html` (mục pattern)
 
-### Step 6 · Build journey prototype · AI coding tool · AI dựng, bạn kiểm tra (Gate C cho Screen plan)
+### Step 6 · Build journey prototype · AI coding tool · AI dựng, bạn kiểm tra (Check C cho Screen plan)
 
 - Bạn viết Screen plan từ flow ở Step 2: mỗi màn một dòng gồm tên, template, nội dung thật, trạng thái, màn tiếp theo. Nhờ AI chỉ **kiểm tra** plan (thiếu component, thiếu nội dung), không viết hộ. Thiếu component thì bạn quyết định dùng cái có sẵn hay tự thêm vào design system.
 - **AI dựng cả journey trong một lượt:** mọi màn nằm trong shell, theo template đã chọn. Nội dung thiếu thì ghi "unknown".
 - **File:** các file màn hình, mục `## Screen plan` và `## Build log` trong `work/prototype/index.md`
 
-### Step 7 · Review · AI coding tool, rồi bạn · Gate D
+### Step 7 · Review · AI coding tool, rồi bạn · Check D
 
 - **AI kiểm tra trước, không sửa:** liệt kê chỗ phạm quy tắc kèm file và dòng (giá trị thô, component ngoài design system, màn ngoài shell, ô nhập thiếu nhãn, lỗi không có thông báo cạnh ô, nghĩa chỉ nằm ở màu, vùng chạm dưới 44 px, nhiều hơn một `<h1>`, focus không chuyển khi đổi màn).
 - **Bạn kiểm tra (phần dài nhất):** mở ba chỗ AI liệt kê xem có thật không. Rồi mở và dùng từng màn: bấm mọi control, tab qua, xem ở hai độ rộng, so với plan và `components.html`.
@@ -78,24 +78,42 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - Viết lại mỗi quy tắc AI phá hoặc còn thiếu, bằng lời của bạn, và cập nhật `project-rules.md`.
 - **File:** mục `## Rule check (AI)` và `## Build log` trong `work/prototype/index.md`, `project-rules.md`
 
-### Step 8 · Known gaps, learning log và reflection · YOU · Gate E
+### Step 8 · Known gaps, learning log và reflection · YOU · Check E
 
 - Ghi vào `## Known gaps` những gì prototype **chưa** làm: trạng thái chưa dựng, nội dung giả, màn còn thiếu. Để người test không nhầm một bản chưa xong là bản hoàn chỉnh.
 - Mở `_personal/learning-log.md` (riêng tư, không đưa cho AI) và thêm một mục ba dòng: bạn đã làm gì, phản hồi nào bạn nhận được, lần sau bạn đổi gì.
 - Trả lời một câu: layer nào bạn đã sửa sai chỗ, và bạn sẽ sửa ở đâu lần sau? Ghi ngay dưới mục vừa thêm.
 - **File:** `work/prototype/index.md` (`## Known gaps`), `_personal/learning-log.md`
 
-**Gợi ý chia việc (chưa thử với lớp thật `[to confirm]`):** Step 1 đến 3 làm ở nhà. Step 4 đến 8 làm trên lớp, hoặc làm tiếp ở nhà nếu bạn đã đi nhanh. Nếu bạn đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau.
+### Step 9 · Publish lên GitHub · YOU
+
+- Tạo một repo riêng chỉ chứa prototype, không dùng repo của cả project. Về repo Private và Public, xem `toolkit/guides/02-github-sharing-and-obsidian.md`.
+- Chỉ dùng dữ liệu giả hoặc đã ẩn danh. Không đưa `_personal/` và dữ liệu gốc lên repo.
+- Trước khi bật GitHub Pages, bạn kiểm tra prototype chỉ chứa dữ liệu giả hoặc đã ẩn danh, vì với repo public, ai có link cũng mở được.
+- Push prototype, bật GitHub Pages cho repo để có một link. Với repo Private, GitHub Pages có thể cần gói trả phí `[to confirm]`; kiểm tra gói của bạn trước.
+- Mở link và tự dùng hết flow trên đó, rồi gửi link cho một người để họ mở được. Link giữ nguyên; push bản mới thì mọi người cùng thấy bản mới.
+- **File:** link của prototype, ghi vào `work/prototype/index.md`
+
+**Gợi ý chia việc (chưa thử với lớp thật `[to confirm]`):** Step 1 đến 3 làm ở nhà. Step 4 đến 9 làm trên lớp, hoặc làm tiếp ở nhà nếu bạn đã đi nhanh. Nếu bạn đến lớp mà Step 3 chưa đúng, dừng ở Step 3: một design system lệch sẽ lan sang mọi màn sau.
+
+## Optional: dùng bộ package trong toolkit
+
+Toolkit có sẵn rules và skill để bạn không phải viết từ đầu. Không bắt buộc; bạn có thể tự viết rules của mình.
+
+- **Rules:** `project-rules.md` trong `toolkit/skills/prototype/starter/`. Mười quy tắc để copy vào project rồi viết lại (Step 3).
+- **Skill:** `toolkit/skills/prototype/SKILL.md`. Các bước và prompt từ design system đến Known gaps, kèm câu hỏi kiểm tra ở cuối mỗi bước (trong skill gọi là Check A đến E). Số step của skill khớp với Step 1 đến 8 của bài này. Nên làm tay một lần trước, rồi mới dùng skill nếu tool của bạn hỗ trợ skill.
+- **Hook:** phần nâng cao, toolkit chưa có bản mẫu `[to confirm]`. Khi cần, nhờ developer cài theo mục Hook trong lesson.
 
 ## Output
 
 - `context/design-system-notes.md`
 - `tokens.css`, `components.css`, `components.html`
-- `project-rules.md` (mười quy tắc, đã viết lại)
+- `project-rules.md` hoặc `AGENTS.md` (mười quy tắc, đã viết lại)
 - Các file shell, template và (nếu làm) pattern
 - Các file màn hình của journey
 - `work/prototype/index.md` (Scope, Shell and templates, Screen plan, Rule check, Known gaps)
 - `_personal/learning-log.md` (một mục mới và câu reflection)
+- Link GitHub Pages của prototype
 
 ## Self-check
 
@@ -107,6 +125,7 @@ Bài đi theo hai làn: **Figma** (bạn tự làm) và **AI coding tool** (AI d
 - [ ] Mỗi quy tắc bị phá hoặc còn thiếu đã được sửa hoặc ghi lại.
 - [ ] `## Known gaps` nêu rõ prototype chưa làm gì.
 - [ ] `_personal/learning-log.md` có một mục mới và câu reflection đã trả lời.
+- [ ] Link GitHub Pages mở được, dùng dữ liệu giả hoặc đã ẩn danh, và bạn đã tự dùng hết flow trên link đó.
 
 ## If you get stuck
 

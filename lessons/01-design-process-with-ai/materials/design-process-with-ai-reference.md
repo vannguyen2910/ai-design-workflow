@@ -6,6 +6,10 @@ program: ai-design-workflow
 lesson: design-process-with-ai
 ---
 
+## Data safety
+
+- [Data safety khi công ty siết bảo mật](data-safety-in-restricted-companies.md): đọc thêm nếu công ty bạn hạn chế AI tool hoặc không cho tool tự cập nhật.
+
 ## Setup GitHub
 
 - [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
