@@ -19,7 +19,7 @@ last_synced: 2026-11-20
 | Prior session | Buổi 9: AI Prototyping |
 | Next session | Buổi practice, rồi buổi 12: reflection và wrap-up |
 | Running example | project Delivery App hư cấu: audit và test màn "Chọn thời gian giao" và "Huỷ đơn"; business question từ buổi 2 (khách mới không đặt lại sau đơn đầu tiên, 41% đặt đơn thứ hai trong 30 ngày); ví dụ accessibility cần khác bối cảnh thì dùng một màn healthcare hoặc finance hư cấu, ghi rõ là hư cấu |
-| Chia giờ `[to confirm]` | ice breaker 5, validate 4, UX Audit 12, accessibility 14, usability test 14, một report và làm việc với dev 11, handoff, hub và cả khoá 13 (gồm cheat sheet và audit hunt), activity 5, hỏi đáp 6, close 4. Tổng khoảng 88 phút theo ghi chú từng slide, buffer khoảng 2 phút; chưa chạy thử với lớp, cần cắt thêm hoặc chuyển slide sang Appendix nếu chạy dài |
+| Chia giờ `[to confirm]` | ice breaker 5, mở đầu validate 4, UX Audit 18, accessibility 13, usability test 14, một report, làm việc với dev và hub 11, handoff và cả khoá 10 (gồm cheat sheet và audit hunt), activity 5, hỏi đáp 6, close 4. Tổng khoảng 90 phút theo ghi chú từng slide, không còn buffer; chưa chạy thử với lớp, cần chuyển slide sang Appendix hoặc cắt ví dụ nếu chạy dài |
 | Không có trong buổi | Reflection cá nhân; slide reflection nằm ở buổi 12 |
 
 ---
@@ -41,27 +41,25 @@ last_synced: 2026-11-20
 - Kicker: Lộ trình
 - Title: Nội dung\n*buổi học*
 - On-slide:
-  - 01 · Validate sau khi AI build
-  - 02 · UX Audit cùng AI
-  - 03 · Accessibility cùng AI
-  - 04 · Usability test với người thật
-  - 05 · Gộp thành một report để làm việc với dev
-  - 06 · Handoff và chia sẻ trên hub
+  - 01 · UX Audit cùng AI
+  - 02 · Accessibility cùng AI
+  - 03 · Usability test với người thật
+  - 04 · Gộp report, làm việc với dev và chia sẻ trên hub
+  - 05 · Handoff và nhìn lại cả khoá
 - Ví dụ: Không cần. Slide định hướng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
-  > Buổi này có sáu phần. Mình đi từ lý do cần validate, đến lúc đưa kết quả lên hub cho stakeholder xem.
+  > Buổi này có năm phần. Mình đi từ UX Audit cùng AI đến lúc đưa kết quả lên hub cho stakeholder xem.
 
-  - 01: AI build nhanh hơn, nên nút thắt chuyển sang bước kiểm tra.
-  - 02: Mình làm UX Audit cùng AI, dựa trên bốn bộ tiêu chí, mỗi bộ là một file markdown.
-  - 03: Với accessibility, mình dùng một checklist, kiểm ba lượt, và bàn xem khi nào nên tin kết quả của AI.
-  - 04: Usability test với người thật, từ test plan đến lúc có recording.
-  - 05: Mình gộp kết quả test vào một audit report, chốt severity rồi làm việc với dev.
-  - 06: Cuối buổi là handoff UX foundation, chia sẻ trên hub và nhìn lại cả khoá.
+  - 01: Mình làm UX Audit cùng AI, dựa trên bốn bộ tiêu chí, mỗi bộ là một file markdown.
+  - 02: Với accessibility, mình dùng một checklist, kiểm ba lượt, và bàn xem khi nào nên tin kết quả của AI.
+  - 03: Usability test với người thật, từ test plan đến lúc có recording.
+  - 04: Mình gộp kết quả test vào một audit report, chốt severity, làm việc với dev rồi chia sẻ trên hub.
+  - 05: Cuối buổi là handoff UX foundation và nhìn lại cả khoá.
 
   > Bạn đã có ai để mời test chưa?
-- 🎨 Visual hint: TYPOGRAPHIC. Sáu dòng đánh số lớn.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm dòng đánh số lớn.
 
 ---
 
@@ -84,22 +82,6 @@ last_synced: 2026-11-20
 
   > Bạn hãy kể một lần có sản phẩm được AI dựng giúp, trông đã xong, nhưng người dùng vẫn gặp vấn đề. Vấn đề đó là gì?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, một cột trống bên dưới.
-
----
-
-### SECTION DIVIDER · Validate after AI builds
-- Num: 01
-- Kicker: Chuyển phần
-- Title: Validate\n*sau khi AI build*
-- Sub: AI build nhanh hơn, nhưng bước kiểm tra vẫn tốn thời gian.
-- Ví dụ: Không cần. Slide chuyển phần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Phần này giải thích vì sao kiểm tra trở thành nút thắt khi AI làm implementation rẻ đi. Hình hai ống từ buổi 1 nằm ở Appendix.
-  - Phần này cũng phân biệt UX Audit với usability test.
-
-  > Mình quay lại bảng ice breaker: những vấn đề đó thường lộ ra ở giai đoạn nào?
-- 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn.
 
 ---
 
@@ -155,7 +137,7 @@ last_synced: 2026-11-20
 ---
 
 ### SECTION DIVIDER · UX Audit with AI
-- Num: 02
+- Num: 01
 - Kicker: Chuyển phần
 - Title: UX Audit\n*cùng AI*
 - Sub: AI soạn finding bản nháp, còn bạn lọc và chấm điểm.
@@ -201,12 +183,11 @@ last_synced: 2026-11-20
 
 ### DIAGRAM · Criteria stack
 - Kicker: Tiêu chí
-- Title: Bốn bộ tiêu chí để audit
+- Title: Bốn bộ tiêu chí để audit UX
 - On-slide:
-  - Heuristics gồm P1 đến P10 và dùng cho mọi sản phẩm.
-  - Design principles là principle riêng của project, lấy từ Lesson 2.
-  - Business principles là ràng buộc từ phía business, cũng lấy từ Lesson 2.
-  - Accessibility là checklist WCAG, bắt đầu từ P30.
+  - 01 · Heuristics: dùng cho mọi sản phẩm.
+  - 02 · Principles: principle riêng của product và ràng buộc từ phía business.
+  - 03 · Accessibility: checklist WCAG.
 - Ví dụ: có (bản nháp, Delivery App: màn không có xác nhận sau khi chọn khung giờ vi phạm P1; focus không nhìn thấy vi phạm P33; khách không thấy cut-off vi phạm principle riêng của project)
 - Câu hỏi hay gặp:
   - Mỗi bộ tiêu chí là một file à? Đúng. Mỗi bộ là một file markdown, mỗi dòng có một ID để finding dẫn về.
@@ -215,15 +196,14 @@ last_synced: 2026-11-20
 
   > Khi audit, bạn không hỏi AI "màn này có ổn không". Bạn đưa cho nó bốn bộ tiêu chí và nhờ nó đối chiếu từng dòng.
 
-  - Heuristics và principle riêng nằm trong `principle-checks.md`, mỗi dòng đã có ID từ buổi 2.
-  - Business principle cũng đến từ buổi 2. Nếu chưa có business thật thì bạn ghi "assumed".
-  - Accessibility nằm trong `accessibility-rules.md`, mình sẽ mở file này ở phần 03.
-  - ID là thứ nối mọi thứ lại với nhau: finding dẫn về ID, và trên hub, ID tự biến thành link.
-  - AI đối chiếu từng màn với từng dòng nhanh hơn một người. Nhưng tiêu chí nào áp dụng cho sản phẩm của bạn thì AI không quyết định được.
+  - Heuristics và principle riêng nằm trong principle-checks.md, mỗi dòng đã có ID từ buổi 2.
+  - Design principle và business principle cùng nằm trên một card, vì cả hai đều đến từ buổi 2. Nếu chưa có business thật thì bạn ghi "assumed".
+  - Accessibility nằm trong accessibility-rules.md, mình sẽ mở file này ở phần 02.
+  - ID nối mọi thứ lại với nhau: finding dẫn về ID, và trên hub, ID tự biến thành link.
   - Khoảng 2 phút cho slide này
 
   > Bộ tiêu chí nào trong project của bạn vẫn còn là một file trống?
-- 🎨 Visual hint: SCHEMATIC. Bốn ô xếp 2 nhân 2, mỗi ô có tên file và dải ID (P1 đến P10, P11 đến P29, P30 trở đi).
+- 🎨 Visual hint: SCHEMATIC. Ba line-art feature card cùng mức, hình lớn ở trên, số, tiêu đề và mô tả ở đáy.
 
 ---
 
@@ -309,6 +289,77 @@ last_synced: 2026-11-20
 
 ---
 
+### IMAGE · AI audit from a screen recording
+- Kicker: Ví dụ phổ biến
+- Title: Audit từ video quay màn hình
+- On-slide:
+  - Một cách các designer khác đang làm để khỏi phải chụp từng màn hình.
+  - Quay màn hình: bạn quay lại lúc đi qua flow, không cần chụp từng màn.
+  - AI lấy các khung hình: AI dựa vào video để lấy ra những màn quan trọng.
+  - Đối chiếu với principle: AI so từng khung hình với principle và trả danh sách finding.
+- Ví dụ: Không cần. Slide ví dụ về cách làm.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Một cách làm phổ biến mình thấy ở các bạn designer khác: thay vì chụp từng màn hình rồi đưa cho AI, bạn quay lại lúc đi qua flow rồi nhờ AI lấy ra các màn quan trọng từ video đó.
+
+  - Bạn quay màn hình khi đi qua flow chính, từ màn đầu đến màn cuối.
+  - AI lấy ra các khung hình cần xem, thay cho việc bạn chụp từng màn.
+  - AI đối chiếu từng khung hình với principle của bạn, rồi trả danh sách finding.
+  - Bạn vẫn mở lại khung hình AI dẫn để kiểm. Điều không thấy trong video thì AI phải ghi unknown.
+
+  > Flow nào của bạn quay lại thì nhanh hơn chụp từng màn?
+  - Khoảng 2 phút cho slide này
+- 🎨 Visual hint: SCHEMATIC. Ba line-art feature card.
+
+---
+
+### IMAGE · AI audit on a live environment
+- Kicker: Ví dụ phổ biến
+- Title: Audit trực tiếp trên môi trường thật
+- On-slide:
+  - Dùng khi bạn có quyền vào môi trường test hoặc production.
+  - Có quyền truy cập: bạn có quyền đăng nhập, hoặc cho AI dùng chế độ truy cập trình duyệt.
+  - Cần cách xử lý riêng: mỗi môi trường cần workaround riêng, ví dụ tài khoản thử và quyền chỉ đọc.
+  - Danh sách có ưu tiên: AI đối chiếu với principle và trả danh sách audit kèm mức ưu tiên.
+- Ví dụ: Không cần. Slide ví dụ về cách làm.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Một cách làm khác mình thấy ở các bạn designer: audit ngay trên môi trường test hoặc production, thay vì trên prototype hay ảnh chụp.
+
+  - Bạn cần có quyền đăng nhập vào môi trường đó, hoặc dùng chế độ truy cập trình duyệt của AI.
+  - Cách này thường cần workaround riêng cho từng môi trường, ví dụ tài khoản thử, dữ liệu giả và quyền chỉ đọc.
+  - AI duyệt qua các màn, đối chiếu với principle của bạn và trả danh sách audit kèm mức ưu tiên.
+  - Lưu ý: chỉ làm khi công ty cho phép, và đừng đưa thông tin đăng nhập thật cho công cụ AI khi chưa được duyệt.
+
+  > Môi trường nào của bạn có thể cho AI truy cập an toàn?
+  - Khoảng 2 phút cho slide này
+- 🎨 Visual hint: SCHEMATIC. Ba line-art feature card.
+
+---
+
+### IMAGE · AI audit on FigJam
+- Kicker: Ví dụ
+- Title: AI Audit trên FigJam
+- On-slide:
+  - Audit trên FigJam: Figma nối công cụ AI qua MCP, AI đánh giá theo design principles.
+- Ví dụ: có (dự án mẫu Travel Buddy, flow đặt ghế bãi biển)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Đây là một cách làm khác: học viên audit ngay trên FigJam.
+
+  - Học viên đặt các màn hình của flow lên FigJam theo đúng thứ tự.
+  - Kết nối Figma vào công cụ AI bằng MCP, để AI đọc được màn hình thật thay vì ảnh chụp.
+  - AI đánh giá theo các Design Principles và ghi mỗi finding thành một sticky note gắn cạnh màn hình, kèm giả thuyết, Importance và Evidence.
+
+  > Nếu đặt flow chính của bạn lên FigJam như vậy, bạn muốn AI đánh giá theo principle nào trước?
+  - Khoảng 1 phút cho slide này
+- 🎨 Visual hint: REAL. Ảnh chụp FigJam, một dòng chú thích.
+
+---
+
 ### IMAGE · A finding in markdown
 - Kicker: Ví dụ
 - Title: Một finding trong audit report
@@ -325,7 +376,7 @@ last_synced: 2026-11-20
   > Đây là một dòng trong `audit-report.md`. Nhìn vào đó, developer biết lỗi ở đâu, vi phạm tiêu chí nào và cần sửa ở layer nào.
 
   - Bảng có các cột: màn, finding, tiêu chí (ID), nguồn, evidence, severity kèm lý do, layer cần sửa, trạng thái.
-  - Cột nguồn ghi audit, test hoặc cả hai. Mình sẽ quay lại cột này ở phần 05.
+  - Cột nguồn ghi audit, test hoặc cả hai. Mình sẽ quay lại cột này ở phần 04.
   - Evidence phải mở ra xem được: một đoạn code, một vùng trên ảnh, hoặc một timestamp.
   - Template `deliver-audit-report.md` đã có sẵn các cột này.
   - Khoảng 2 phút cho slide này
@@ -347,6 +398,27 @@ last_synced: 2026-11-20
 
   > Nếu ghim finding lên màn hình của bạn, màn nào sẽ có nhiều ghim nhất?
 - 🎨 Visual hint: SCHEMATIC. Ba ảnh điện thoại cạnh nhau, chú giải bên dưới.
+
+---
+
+### IMAGE · UX Audit tool from a prototype
+- Kicker: Ví dụ
+- Title: UX Audit tool từ prototype
+- On-slide:
+  - Dựng từ prototype, mỗi finding gắn với principle đã đối chiếu.
+- Ví dụ: có (dự án mẫu Travel Buddy, 11 finding)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Đây là cùng bộ finding của slide trước, gom lại trong một công cụ audit dựng từ prototype.
+
+  - Bên trái là màn hình prototype kèm ghim; bấm một ghim thì hiện finding, severity và principle liên quan.
+  - Bên phải là danh sách 11 finding, lọc được theo mức severity.
+  - Công cụ chỉ là vỏ. Điều làm audit đáng tin là bước đối chiếu finding với principle, không phải giao diện.
+
+  > Finding nào trong prototype của bạn cần đối chiếu với principle trước khi đưa vào danh sách?
+  - Khoảng 1 phút cho slide này
+- 🎨 Visual hint: REAL. Ảnh công cụ audit.
 
 ---
 
@@ -380,7 +452,7 @@ last_synced: 2026-11-20
 ---
 
 ### SECTION DIVIDER · Accessibility with AI
-- Num: 03
+- Num: 02
 - Kicker: Chuyển phần
 - Title: Accessibility\n*cùng AI*
 - Sub: Bạn sẽ có một checklist, ba lượt kiểm, và biết khi nào nên tin AI.
@@ -455,28 +527,32 @@ last_synced: 2026-11-20
 
 ### PROCESS · Three passes
 - Kicker: Cách làm
-- Title: Ba lượt kiểm accessibility
+- Title: Ba lượt kiểm accessibility cùng AI
 - On-slide:
-  - Lượt 1: công cụ tự động chạy trên HTML.
-  - Lượt 2: AI đối chiếu từng dòng checklist.
-  - Lượt 3: bạn kiểm bằng bàn phím và screen reader.
-- Ví dụ: có (bản nháp, Delivery App: lượt 1 báo thiếu label ở ô ghi chú; lượt 2 báo focus bị tắt trong CSS; ở lượt 3 bạn bấm Tab và thấy focus nhảy ra khỏi màn)
+  - Lượt 1, công cụ tự động: chạy trên HTML của prototype.
+  - Lượt 2, AI theo checklist: bạn đưa prototype/PROD và file checklist, AI trả pass, fail, unknown hoặc cần người cho từng dòng, và mỗi fail thành một finding có ID và evidence.
+  - Lượt 3, bạn kiểm: bạn kiểm lại các fail và tự làm những dòng cần người, bằng bàn phím và screen reader.
+- Ví dụ: có (bản nháp, Delivery App: lượt 1 báo thiếu label ở ô ghi chú; lượt 2 AI trả P33 fail vì CSS có outline: none, P34 fail vì nút khung giờ cao 32 px, P32 cần người; ở lượt 3 bạn bấm Tab, xác nhận P33 và thấy focus nhảy ra khỏi màn)
 - Câu hỏi hay gặp:
   - Lượt 1 đã đủ chưa? Chưa, vì công cụ tự động chỉ phát hiện một phần vấn đề. Một nghiên cứu của vendor Deque thấy khoảng 57% theo số lượng, còn REI viết là khoảng 30% đến 50%.
   - Bỏ lượt 3 được không? Với sản phẩm healthcare hay finance thì không. Lượt 3 là lượt duy nhất cho thấy người dùng bàn phím và screen reader gặp gì.
+  - Prompt viết thế nào? Mẫu prompt nằm trong reference. Ý chính là: đọc từng dòng, chỉ kết luận điều thấy trong code, còn lại ghi unknown.
+  - AI trả toàn pass thì sao? Bạn đếm lại. Dòng nào AI không thể biết từ code mà vẫn ghi pass là lỗi của AI, và bạn ghi vào số lỗi AI.
 - Speaker notes:
 
   > Mỗi lượt sau tốn công hơn lượt trước một chút, nhưng chính lượt sau mới cho mình thấy vấn đề thật.
 
-  - Lượt 1 chạy trên HTML của prototype. AI coding tool có thể chạy công cụ này giúp bạn.
-  - Ở lượt 2, AI đọc code và ảnh theo checklist, rồi trả pass, fail, unknown hoặc cần người.
-  - Lượt 3 bạn tự làm: bấm Tab qua toàn bộ flow và nghe thử bằng screen reader.
-  - Bạn ghi lại việc nào đã làm, việc nào chưa vào bảng Accessibility của audit report.
-  - Dòng nào còn "cần người" mà chưa kiểm thì ghi rõ là accessibility còn hở.
-  - Khoảng 2 phút cho slide này
+  - Lượt 1 chạy trên HTML của prototype. Công cụ AI coding có thể chạy công cụ này giúp bạn.
+  - Ở lượt 2, bạn đưa AI HTML của prototype, accessibility-rules.md và requirement của flow. Prompt chỉ cần ngắn: đây là màn hình, đây là checklist, trả lời từng dòng, chỗ nào không chắc thì ghi unknown.
+  - AI trả bảng các dòng với pass, fail, unknown hoặc cần người. Mỗi fail có evidence là đoạn code hoặc vùng trên màn hình, và trở thành một finding có ID.
+  - Để kiểm lại, bạn mở đúng đoạn code mà AI dẫn ra. Dòng nào AI ghi pass mà không dẫn được code thì nên nghi ngờ.
+  - Lượt 3 bạn tự làm: bấm Tab qua toàn bộ flow và nghe thử bằng screen reader. Danh sách các dòng cần người mà AI liệt kê chính là việc của lượt này.
+  - Bạn ghi lại việc nào đã làm, việc nào chưa vào bảng Accessibility của audit report. Dòng nào còn cần người mà chưa kiểm thì ghi rõ là accessibility còn hở.
+  - Kết quả chạy thử của chương trình trên màn Audit Hunt nằm ở slide "AI audit tốt đến đâu".
+  - Khoảng 4 phút cho slide này
 
   > Bạn có chạy được lượt 3 trên prototype của mình trong tuần này không?
-- 🎨 Visual hint: SCHEMATIC. Process ba bước ngang, bước 3 nền tối.
+- 🎨 Visual hint: SCHEMATIC. Danh sách số, ba dòng.
 
 ---
 
@@ -508,34 +584,6 @@ last_synced: 2026-11-20
 
 ---
 
-### PROCESS · Run the checklist with AI
-- Kicker: Use case
-- Title: Chạy checklist cùng AI
-- On-slide:
-  - Bạn đưa cho AI prototype HTML và file checklist.
-  - AI trả pass, fail, unknown hoặc cần người cho từng dòng.
-  - Mỗi fail trở thành một finding có ID và evidence.
-  - Bạn kiểm lại các fail và tự làm những dòng cần người.
-- Ví dụ: có (bản nháp, Delivery App: AI trả P33 fail vì CSS có `outline: none`, P34 fail vì nút khung giờ cao 32 px, P32 cần người; bạn bấm Tab và xác nhận P33)
-- Câu hỏi hay gặp:
-  - Prompt viết thế nào? Mẫu prompt nằm trong reference. Ý chính là: đọc từng dòng, chỉ kết luận điều thấy trong code, còn lại ghi unknown.
-  - AI trả toàn "pass" thì sao? Bạn đếm lại. Dòng nào AI không thể biết từ code mà vẫn ghi pass là lỗi của AI, và bạn ghi vào số lỗi AI.
-- Speaker notes:
-
-  > Prompt chỉ cần ngắn: đây là màn hình, đây là checklist, trả lời từng dòng, chỗ nào không chắc thì ghi unknown.
-
-  - Đầu vào gồm HTML của prototype (AI đọc được cấu trúc chứ không chỉ nhìn ảnh), `accessibility-rules.md`, và requirement của flow.
-  - Đầu ra là bảng các dòng với pass, fail, unknown hoặc cần người. Mỗi fail có evidence là đoạn code hoặc vùng trên màn hình.
-  - Để kiểm lại, bạn mở đúng đoạn code mà AI dẫn ra. Dòng nào AI ghi pass mà không dẫn được code thì nên nghi ngờ.
-  - Cuối cùng AI liệt kê riêng các dòng cần người, và đó là danh sách việc của lượt 3.
-  - Kết quả chạy thử của chương trình trên màn Audit Hunt nằm ở slide "AI audit tốt đến đâu".
-  - Khoảng 3 phút cho slide này
-
-  > Dòng nào trong checklist bạn tin AI trả pass mà không cần mở lại?
-- 🎨 Visual hint: SCHEMATIC. Process bốn bước ngang, bước kiểm lại active.
-
----
-
 ### COMPARE · A company checklist as a model file
 - Kicker: Ví dụ thật
 - Title: Checklist của công ty,\n*thành file cho AI*
@@ -562,7 +610,7 @@ last_synced: 2026-11-20
 ---
 
 ### SECTION DIVIDER · Usability test with real users
-- Num: 04
+- Num: 03
 - Kicker: Chuyển phần
 - Title: Usability\n*test*
 - Sub: Bạn test với người dùng thật, và AI giúp bạn synthesis.
@@ -575,6 +623,35 @@ last_synced: 2026-11-20
 
   > Audit xong, bạn cần biết mình test để trả lời câu hỏi gì. Hôm nay bạn không có bạn cùng cặp, vì người thử là người dùng thật mà bạn tự tìm.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper.
+
+---
+
+### NUMBERED · What is a usability test
+- Kicker: Định nghĩa
+- Title: Usability test\n*là gì?*
+- On-slide:
+  - What: Một người thật làm task thật trên prototype, bạn quan sát và nhờ họ nói to suy nghĩ.
+  - Gồm: test plan, script, task, quan sát, ghi chú.
+  - Why: Bạn thấy thiết kế hỏng ở đâu và vì sao.
+  - Nếu thiếu: Bạn chỉ biết điều mình nghĩ, chứ không biết điều người dùng làm.
+  - When: Sau audit và sau khi sửa các lỗi hiển nhiên.
+  - Không cần khi: Bạn chỉ cần so hai bản trên lượng lớn người dùng (dùng A/B test).
+- Ví dụ: có (bản nháp, Delivery App: nhờ một người hay đặt đồ ăn giao tận nơi thử đặt một đơn lúc 19:00 và quan sát họ dừng ở đâu)
+- Câu hỏi hay gặp:
+  - Moderated và unmoderated khác nhau ở đâu? Với moderated, bạn ngồi cùng và hỏi ngay. Với unmoderated, người dùng tự làm và không có bạn bên cạnh.
+- Speaker notes:
+
+  > Một designer nhờ một người hay đặt đồ ăn thử đặt đơn trên prototype. Người đó dừng năm giây trước nút Thanh toán. Năm giây đó chính là dữ liệu.
+
+  - Buổi này dạy moderated test: bạn ngồi cùng hoặc gọi video với từng participant.
+  - Mục tiêu của buổi test là hiểu thực tế của người dùng, chứ không để họ xác nhận ý tưởng của bạn.
+  - Method card có sẵn cho moderated, unmoderated, concept testing và A/B testing.
+  - AI giúp được ở đâu: soạn nháp test plan và script, gom ghi chú sau buổi test. AI không đóng vai người dùng.
+
+  > **Bạn test để hiểu người dùng, chứ không để nghe họ khen.**
+
+  > Ai là người bạn sẽ mời test đầu tiên?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Gồm, Why, Nếu thiếu, When, Không cần khi; icon người dùng nhỏ góc phải.
 
 ---
 
@@ -626,35 +703,6 @@ last_synced: 2026-11-20
 
   > Bạn sẽ dùng SUS và task success để so sánh điều gì trước và sau khi sửa?
 - 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "tín hiệu, không cho tỷ lệ".
-
----
-
-### NUMBERED · What is a usability test
-- Kicker: Định nghĩa
-- Title: Usability test\n*là gì?*
-- On-slide:
-  - What: Một người thật làm task thật trên prototype, bạn quan sát và nhờ họ nói to suy nghĩ.
-  - Gồm: test plan, script, task, quan sát, ghi chú.
-  - Why: Bạn thấy thiết kế hỏng ở đâu và vì sao.
-  - Nếu thiếu: Bạn chỉ biết điều mình nghĩ, chứ không biết điều người dùng làm.
-  - When: Sau audit và sau khi sửa các lỗi hiển nhiên.
-  - Không cần khi: Bạn chỉ cần so hai bản trên lượng lớn người dùng (dùng A/B test).
-- Ví dụ: có (bản nháp, Delivery App: nhờ một người hay đặt đồ ăn giao tận nơi thử đặt một đơn lúc 19:00 và quan sát họ dừng ở đâu)
-- Câu hỏi hay gặp:
-  - Moderated và unmoderated khác nhau ở đâu? Với moderated, bạn ngồi cùng và hỏi ngay. Với unmoderated, người dùng tự làm và không có bạn bên cạnh.
-- Speaker notes:
-
-  > Một designer nhờ một người hay đặt đồ ăn thử đặt đơn trên prototype. Người đó dừng năm giây trước nút Thanh toán. Năm giây đó chính là dữ liệu.
-
-  - Buổi này dạy moderated test: bạn ngồi cùng hoặc gọi video với từng participant.
-  - Mục tiêu của buổi test là hiểu thực tế của người dùng, chứ không để họ xác nhận ý tưởng của bạn.
-  - Method card có sẵn cho moderated, unmoderated, concept testing và A/B testing.
-  - AI giúp được ở đâu: soạn nháp test plan và script, gom ghi chú sau buổi test. AI không đóng vai người dùng.
-
-  > **Bạn test để hiểu người dùng, chứ không để nghe họ khen.**
-
-  > Ai là người bạn sẽ mời test đầu tiên?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Gồm, Why, Nếu thiếu, When, Không cần khi; icon người dùng nhỏ góc phải.
 
 ---
 
@@ -719,6 +767,29 @@ last_synced: 2026-11-20
 
 ---
 
+### STATEMENT · AI is not the user
+- Kicker: Giới hạn của AI
+- Title: AI không\n*đóng vai người dùng*
+- On-slide: Người dùng mô phỏng luôn làm được task, nên che mất đúng chỗ bạn cần thấy.
+- Ví dụ: có (bản nháp, Delivery App: một "người dùng" do AI mô phỏng luôn chọn đúng khung giờ và khen màn hình, trong khi hai người thật dừng lại vì không thấy cut-off)
+- Câu hỏi hay gặp:
+  - Dùng AI mô phỏng để thử script trước được không? Được, nhưng chỉ để thử câu chữ. Bạn không dùng kết quả đó để kết luận về người dùng.
+- Speaker notes:
+
+  > Người dùng do AI mô phỏng thường làm được mọi task, và thường khen.
+
+  - Các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe và chỉ khớp ở mức nhóm.
+  - NN/g chạy lại ba nghiên cứu cũ với người dùng AI. Giá trị và nhu cầu họ nêu ra quá nông, còn hành vi bị lý tưởng hoá.
+  - AI giúp được ở khâu chuẩn bị và gom ghi chú. Người dùng thật thì không có gì thay thế được.
+  - Khoảng 1 phút cho slide này
+
+  > **Chỉ người dùng thật mới cho bạn thấy họ kẹt ở đâu.**
+
+  > Bạn đang định hỏi AI điều gì mà chỉ người dùng thật mới trả lời được?
+- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "đóng vai người dùng".
+
+---
+
 ### PROCESS · Transcript rules
 - Kicker: Use case
 - Title: AI Rules để clean up transcript
@@ -777,70 +848,47 @@ last_synced: 2026-11-20
 
 ---
 
-### STATEMENT · AI is not the user
-- Kicker: Giới hạn của AI
-- Title: AI không\n*đóng vai người dùng*
-- On-slide: Người dùng mô phỏng luôn làm được task, nên che mất đúng chỗ bạn cần thấy.
-- Ví dụ: có (bản nháp, Delivery App: một "người dùng" do AI mô phỏng luôn chọn đúng khung giờ và khen màn hình, trong khi hai người thật dừng lại vì không thấy cut-off)
-- Câu hỏi hay gặp:
-  - Dùng AI mô phỏng để thử script trước được không? Được, nhưng chỉ để thử câu chữ. Bạn không dùng kết quả đó để kết luận về người dùng.
-- Speaker notes:
-
-  > Người dùng do AI mô phỏng thường làm được mọi task, và thường khen.
-
-  - Các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe và chỉ khớp ở mức nhóm.
-  - NN/g chạy lại ba nghiên cứu cũ với người dùng AI. Giá trị và nhu cầu họ nêu ra quá nông, còn hành vi bị lý tưởng hoá.
-  - AI giúp được ở khâu chuẩn bị và gom ghi chú. Người dùng thật thì không có gì thay thế được.
-  - Khoảng 1 phút cho slide này
-
-  > **Chỉ người dùng thật mới cho bạn thấy họ kẹt ở đâu.**
-
-  > Bạn đang định hỏi AI điều gì mà chỉ người dùng thật mới trả lời được?
-- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "đóng vai người dùng".
-
----
-
 ### SECTION DIVIDER · Analysis and fixing
-- Num: 05
+- Num: 04
 - Kicker: Chuyển phần
 - Title: Một report,\n*làm việc với dev*
-- Sub: Gộp finding, chốt severity, rồi sửa đúng layer.
+- Sub: Gộp finding, chốt severity, sửa đúng layer, rồi chia sẻ trên hub.
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần này gộp kết quả test vào audit report của phần 02, rồi dùng thang severity và layer ladder của buổi 5 để quyết định dev cần làm gì.
+  - Phần này gộp kết quả test vào audit report của phần 01, rồi dùng thang severity và layer ladder của buổi 5 để quyết định dev cần làm gì.
 
   > Test xong, bạn đang có một chồng ghi chú. Phần này biến nó thành một danh sách việc cho dev.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper.
 
 ---
 
-### PROCESS · Merge test findings into the report
+### PROCESS · One report, three jobs with AI
 - Kicker: Use case
-- Title: Kéo kết quả test vào audit report
+- Title: Một audit report, ba việc cùng AI
 - On-slide:
-  - Bạn đưa cho AI file audit-report.md và các finding có timestamp từ test.
-  - AI khớp từng finding của test với finding audit theo màn và ID tiêu chí.
-  - Finding nào được test xác nhận thì AI đề xuất nâng severity, kèm lý do.
-  - Finding mới từ test thành một dòng mới, nguồn ghi "test".
-  - Bạn quyết định từng đề xuất.
-- Ví dụ: có (bản nháp, Delivery App: audit ghi F1 "không hiện cut-off" severity 3; hai trong năm người dùng thanh toán xong mới hỏi "sao không đổi được giờ"; AI đề xuất nâng F1 lên 4 kèm timestamp P2-08:15 và P4-11:40; bạn xem lại video rồi đồng ý)
+  - Gộp kết quả test: AI khớp finding của test với finding audit và đề xuất nâng severity kèm lý do, rồi bạn mở timestamp và quyết định từng đề xuất.
+  - Soạn ticket cho dev: AI nhóm finding theo layer rồi soạn ticket, mỗi ticket dẫn ID tiêu chí làm điều kiện nghiệm thu.
+  - Tóm tắt cho hub: AI soạn phần tóm tắt cho trang Findings, và bạn đọc lại như một stakeholder trước khi chia sẻ.
+- Ví dụ: có (bản nháp, Delivery App: audit ghi F1 "không hiện cut-off" severity 3; hai trong năm người dùng thanh toán xong mới hỏi "sao không đổi được giờ" (P2-08:15 và P4-11:40), nên AI đề xuất nâng F1 lên 4 và bạn đồng ý sau khi xem lại video; ba finding về focus ở ba màn gộp thành một ticket "đặt focus visible ở token"; trang Findings có bốn finding mức 4 và 3, accessibility còn hở ở P32 và P42, và một dòng "cần PO quyết định mức hành động cho F5")
 - Câu hỏi hay gặp:
   - Vì sao không làm hai báo cáo? Có hai báo cáo thì dev và stakeholder phải tự ghép lại, severity cũng dễ lệch nhau. Một bảng cho ra một danh sách việc.
   - Finding audit mà test không thấy thì sao? Giữ nguyên, nguồn vẫn là audit, và ghi thêm là mẫu test chưa cho thấy. Đừng xoá, vì test chỉ có 3 đến 5 người.
+  - Dev không dùng bảng markdown thì sao? Ticket là nội dung để dán vào công cụ của dev, và bạn giữ ID cùng evidence trong ticket.
+  - Stakeholder đọc gì trước? Số finding nặng, điều còn hở và điều cần họ quyết. Bảng đầy đủ nằm bên dưới.
 - Speaker notes:
 
-  > Mình không viết một báo cáo test riêng. Kết quả test đi vào cùng bảng finding của audit, để dev chỉ có một danh sách để làm.
+  > Mình không viết nhiều báo cáo riêng. Mọi thứ đi quanh một file audit-report.md, và AI giúp bạn ở ba việc: gộp kết quả test, soạn ticket cho dev, và tóm tắt cho stakeholder.
 
-  - Bảng có cột nguồn (audit, test hoặc cả hai) và cột trạng thái (nâng severity, xác nhận hoặc mới).
-  - Khi test xác nhận một finding của audit, severity thường tăng, vì đã có người thật gặp đúng vấn đề đó.
-  - Khi test cho thấy điều audit không thấy, mình thêm một dòng mới kèm timestamp và lời trích nguyên văn.
-  - AI chỉ đề xuất việc khớp và nâng severity. Bạn mở timestamp của mọi dòng bị đổi rồi mới chốt điểm.
-  - Mẫu nhỏ chỉ cho tín hiệu, nên mình ghi rõ số người và điều mẫu này chưa cho biết.
-  - Khoảng 3 phút cho slide này
+  - Gộp kết quả test: kết quả test đi vào cùng bảng finding của audit, để dev chỉ có một danh sách để làm. Bảng có cột nguồn (audit, test hoặc cả hai) và cột trạng thái (nâng severity, xác nhận hoặc mới).
+  - Khi test xác nhận một finding của audit, severity thường tăng vì đã có người thật gặp vấn đề đó. Khi test cho thấy điều audit không thấy, mình thêm một dòng mới kèm timestamp và lời trích nguyên văn. AI chỉ đề xuất; bạn mở timestamp của mọi dòng bị đổi rồi mới chốt điểm.
+  - Soạn ticket: một ticket tốt cho dev có ba thứ là lỗi ở đâu, sửa ở layer nào, và khi nào coi là xong. AI nhóm finding theo layer trước khi viết ticket; ba lỗi focus ở ba màn thường chỉ là một việc ở token.
+  - Tóm tắt cho hub: trang Findings nhận số finding theo severity, các rủi ro lớn nhất, trạng thái accessibility, việc đã sửa và chưa sửa. Principle dùng ID nên hub tự nối finding với principle và cảnh báo khi có chỗ gãy.
+  - AI không quyết định severity cuối, thứ tự sửa hay nội dung stakeholder cần quyết. Những việc đó vẫn là của bạn.
+  - Khoảng 5 phút cho slide này
 
-  > Finding nào của audit bạn muốn test xác nhận trước?
-- 🎨 Visual hint: SCHEMATIC. Process năm bước ngang, bước "bạn quyết định" active.
+  > Trong ba việc này, việc nào đang tốn thời gian nhất ở project của bạn?
+- 🎨 Visual hint: SCHEMATIC. Danh sách số, ba dòng.
 
 ---
 
@@ -928,38 +976,11 @@ last_synced: 2026-11-20
 
 ---
 
-### PROCESS · AI writes tickets
-- Kicker: Use case
-- Title: Để AI soạn ticket cho dev
-- On-slide:
-  - Bạn đưa cho AI file audit-report.md đã chốt severity.
-  - AI soạn một ticket cho mỗi finding, hoặc cho mỗi nhóm finding cùng layer.
-  - Mỗi ticket dẫn ID tiêu chí làm điều kiện nghiệm thu.
-  - Bạn đọc lại, còn dev bổ sung chi phí sửa.
-- Ví dụ: có (bản nháp, Delivery App: ba finding về focus ở ba màn gộp thành một ticket "đặt focus visible ở token", với điều kiện nghiệm thu là P33 pass trên mọi màn)
-- Câu hỏi hay gặp:
-  - Dev không dùng bảng markdown thì sao? Ticket là nội dung để dán vào công cụ của dev, và bạn giữ ID cùng evidence trong ticket.
-  - AI gộp sai finding thì sao? Bạn xem lại layer. Chỉ gộp khi các finding cùng một nguyên nhân.
-- Speaker notes:
-
-  > Một ticket tốt cho dev có ba thứ: lỗi ở đâu, sửa ở layer nào, và khi nào coi là xong.
-
-  - AI nhóm finding theo layer trước khi viết ticket. Ba lỗi focus ở ba màn thường chỉ là một việc ở token.
-  - Điều kiện nghiệm thu dẫn ID tiêu chí, ví dụ "P33 pass trên mọi màn".
-  - Sau khi dev sửa xong, bạn dựng lại phần bị ảnh hưởng và chạy lại đúng dòng tiêu chí đó.
-  - AI giúp được ở đâu: soạn ticket và nhóm finding. AI không quyết định thứ tự sửa.
-  - Khoảng 2 phút cho slide này
-
-  > Dev của bạn muốn nhận việc ở dạng nào, và bạn sẽ chuyển finding sang dạng đó bằng cách nào?
-- 🎨 Visual hint: SCHEMATIC. Process bốn bước ngang.
-
----
-
 ### SECTION DIVIDER · A new way to hand off
-- Num: 06
+- Num: 05
 - Kicker: Chuyển phần
 - Title: Handoff\n*kiểu mới*
-- Sub: Handoff UX foundation, chia sẻ trên hub, rồi nhìn lại cả khoá.
+- Sub: Handoff UX foundation, rồi nhìn lại cả khoá.
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -1009,33 +1030,6 @@ last_synced: 2026-11-20
 
   > Mục nào trong gói này project của bạn đã có, và mục nào chưa?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, năm mục với số lớn.
-
----
-
-### PROCESS · Share on the hub
-- Kicker: Chia sẻ
-- Title: Đưa báo cáo lên hub cho stakeholder
-- On-slide:
-  - audit-report.md là nguồn, còn hub là trang để mọi người đọc.
-  - Trang Findings tóm tắt số finding theo severity và các rủi ro lớn nhất.
-  - Mỗi finding dẫn về ID principle, và ID tự thành link.
-  - Stakeholder thấy điều đã sửa, điều chưa sửa và quyết định cần họ đưa ra.
-- Ví dụ: có (bản nháp, Delivery App: trang Findings có bốn finding mức 4 và 3, trạng thái accessibility còn hở ở P32 và P42 chờ người kiểm, và một dòng "cần PO quyết định mức hành động cho F5")
-- Câu hỏi hay gặp:
-  - Stakeholder đọc gì trước? Số finding nặng, điều còn hở và điều cần họ quyết. Bảng đầy đủ nằm bên dưới.
-  - Hub kiểm tra gì cho mình? Hub cảnh báo ID bị gãy link, quyết định kéo ngược principle, và principle chưa được dùng.
-- Speaker notes:
-
-  > Báo cáo nằm trong markdown để AI đọc được. Hub là chỗ đưa nó ra cho người khác đọc.
-
-  - Trang Findings của hub nhận phần tóm tắt: số finding theo severity, các rủi ro lớn nhất, trạng thái accessibility, việc đã sửa và việc chưa sửa.
-  - Principle dùng ID (P1, P33…) nên hub tự nối finding với principle và cảnh báo khi có chỗ gãy.
-  - Stakeholder cần thấy ba thứ: rủi ro lớn nhất, phần còn hở, và quyết định đang chờ họ.
-  - AI giúp được ở đâu: soạn phần tóm tắt từ audit-report.md. Bạn đọc như một stakeholder rồi bỏ những chỗ dễ gây hiểu nhầm.
-  - Khoảng 3 phút cho slide này
-
-  > Stakeholder của bạn cần quyết định điều gì sau khi đọc trang này?
-- 🎨 Visual hint: SCHEMATIC. Process bốn bước ngang từ audit-report.md đến trang Findings trên hub.
 
 ---
 
@@ -1311,7 +1305,7 @@ là điều không nên bỏ qua
 - Title: Sáu layer của một audit
 - On-slide:
   - Heuristic: xem màn hình có vi phạm heuristic nào không
-  - Accessibility: kiểm bằng checklist riêng ở phần 03
+  - Accessibility: kiểm bằng checklist riêng ở phần 02
   - Design system: xem màn hình có dùng đúng token và component không
   - State: xem đã có đủ trạng thái rỗng, đang tải và lỗi chưa
   - Nội dung: xem nhãn có nhất quán với content voice không
@@ -1324,7 +1318,7 @@ là điều không nên bỏ qua
   > Mỗi layer trả lời một câu hỏi riêng. Một màn hình qua được layer này vẫn có thể hỏng ở layer khác.
 
   - Layer heuristic dùng mười heuristic của Nielsen
-  - Layer accessibility xét độ tương phản, focus nhìn thấy được và vùng chạm, theo checklist ở phần 03. Phần đó có ba lượt kiểm riêng
+  - Layer accessibility xét độ tương phản, focus nhìn thấy được và vùng chạm, theo checklist ở phần 02. Phần đó có ba lượt kiểm riêng
   - Layer design system tìm giá trị thô và component nằm ngoài inventory
   - Layer state và nội dung là hai chỗ AI hay bỏ sót nhất khi dựng
   - Layer flow đối chiếu với flow và requirement bạn đã chọn ở buổi 4
@@ -1437,7 +1431,7 @@ là điều không nên bỏ qua
 
   > Handoff chưa phải điểm kết thúc. Audit lại bản build là cách bạn biết UX foundation có còn đứng vững hay không.
 
-  - Cách audit bản build giống cách audit prototype ở phần 02
+  - Cách audit bản build giống cách audit prototype ở phần 01
   - Phần này chỉ nhắc qua, chưa dạy sâu
   - Khoảng 2 phút cho slide này
 

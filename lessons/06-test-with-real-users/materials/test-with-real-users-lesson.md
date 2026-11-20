@@ -23,8 +23,8 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 2. UX Audit với AI: bốn bộ tiêu chí là bốn file markdown
 3. Accessibility với AI: checklist, ba lượt kiểm, và khi nào tin AI
 4. Usability test với người thật: Goals, Signals, Metrics, rồi test với participant bạn tự tìm
-5. Một report, làm việc với dev: gộp finding, chốt severity, sửa đúng layer, soạn ticket
-6. Handoff và chia sẻ trên hub: bàn giao UX foundation, và nhìn lại cả khoá
+5. Một report, làm việc với dev và chia sẻ trên hub: gộp finding, chốt severity, sửa đúng layer, soạn ticket, tóm tắt cho stakeholder
+6. Handoff và nhìn lại cả khoá: bàn giao UX foundation, và nhìn lại đóng góp của từng lesson
 
 ## Sau buổi học, bạn có thể
 
@@ -89,7 +89,7 @@ Khi bạn nhờ AI "audit màn này", AI chỉ trả những nhận xét chung c
 | Business principles | `principle-checks.md` | P11 trở đi | Ràng buộc của business từ Lesson 2 (ghi "assumed" nếu chưa xác nhận) |
 | Accessibility | `accessibility-rules.md` | P30 trở đi | Checklist WCAG ở mục 3 |
 
-Mỗi dòng có một ID. Finding ghi ID của dòng bị vi phạm, nên bất kỳ ai đọc cũng quay về được đúng tiêu chí. Khi báo cáo lên hub, ID tự biến thành link giữa finding và principle. Bảng mười heuristic nằm ở tài liệu tham khảo.
+Mỗi dòng có một ID. Finding ghi ID của dòng bị vi phạm, nên bất kỳ ai đọc cũng quay về được đúng tiêu chí. Khi báo cáo lên hub, ID tự biến thành link giữa finding và principle. Bảng mười heuristic nằm ở tài liệu tham khảo. Trên slide, design principle và business principle nằm chung một card vì cả hai đều đến từ Lesson 2.
 
 ### 2.3 Các layer của một audit
 
@@ -157,7 +157,18 @@ flowchart TD
   A2 --> D1 --> C1
 ```
 
-### 2.6 AI làm audit tốt đến đâu
+### 2.6 Cách đưa màn hình cho AI
+
+Chụp từng màn rồi đưa cho AI tốn thời gian. Các designer khác đang dùng một số cách để đỡ việc này, và bạn chọn cách hợp với quyền truy cập của mình:
+
+- **Prototype dạng HTML:** AI đọc được cấu trúc chứ không chỉ nhìn ảnh, nên kiểm được cả accessibility. Đây là cách mặc định trong bài.
+- **Video quay màn hình:** bạn quay lại lúc đi qua flow. AI lấy ra các khung hình quan trọng từ video rồi đối chiếu từng khung hình với principle và trả danh sách finding. Bạn vẫn mở lại khung hình AI dẫn để kiểm, và điều không thấy trong video thì AI ghi unknown.
+- **Môi trường test hoặc production:** nếu bạn có quyền đăng nhập, hoặc cho AI dùng chế độ truy cập trình duyệt, AI duyệt trực tiếp từng màn, đối chiếu với principle và trả danh sách audit kèm mức ưu tiên. Cách này thường cần workaround riêng cho từng môi trường (tài khoản thử, dữ liệu giả, quyền chỉ đọc). Chỉ làm khi công ty cho phép, và đừng đưa thông tin đăng nhập thật cho công cụ AI khi chưa được duyệt.
+- **FigJam:** đặt các màn hình của flow lên FigJam theo thứ tự, nối Figma với công cụ AI qua MCP để AI đọc màn hình thật, rồi AI ghi mỗi finding thành một sticky note gắn cạnh màn hình, kèm giả thuyết, Importance và Evidence. Ví dụ dựng sẵn nằm trong dự án mẫu Travel Buddy.
+
+Dù dùng cách nào, đầu ra vẫn là một bảng finding có ID tiêu chí và evidence như ở mục 2.5, và bạn vẫn lọc qua ba cổng.
+
+### 2.7 AI làm audit tốt đến đâu
 
 - Trong một nghiên cứu, một mô hình ngôn ngữ lớn đánh giá usability chỉ tìm lại khoảng 21,2% vấn đề của chuyên gia, và 24,3% kết quả là false positive.
 - Một nghiên cứu khác (preprint) thấy mô hình tìm 73 đến 77% vấn đề so với 57 đến 63% của năm chuyên gia gộp lại, kèm nhiều non-issue.
@@ -310,7 +321,11 @@ Chương trình dạy mức thực hành cho nghiên cứu nội bộ, không th
 4. Ghi hình màn hình và tiếng khi họ đồng ý, và ghi nhanh khi cần: họ làm gì, dừng ở đâu, nói gì (nguyên văn khi được), có hoàn thành không, mất bao lâu. Mỗi quan sát ghi kèm participant code và thứ tự (ví dụ P1-03).
 5. Cuối buổi: SUS và một hai câu hỏi mở.
 
-### 4.5 Từ recording đến finding cùng AI
+### 4.5 Vì sao AI không đóng vai người dùng
+
+Các nghiên cứu về người trả lời mô phỏng (silicon sampling) cho thấy họ thiên về câu trả lời dễ nghe và chỉ khớp ở mức nhóm. NN/g, khi chạy lại ba nghiên cứu cũ với người dùng AI, thấy giá trị và nhu cầu nêu ra quá nông và hành vi bị lý tưởng hoá. Một "người dùng" do AI mô phỏng luôn làm được task, nên nó che đúng chỗ bạn cần thấy. AI giúp được ở khâu chuẩn bị và gom ghi chú, nhưng không thay thế được người dùng thật.
+
+### 4.6 Từ recording đến finding cùng AI
 
 Một cách làm thực tế: bạn ghi hình từng buổi test (màn hình và tiếng, khi participant đồng ý), nhờ AI clean up transcript, rồi để AI gom finding, tính SUS và đề xuất thay đổi. Bạn giữ phần quyết định.
 
@@ -346,13 +361,11 @@ flowchart LR
 
 Vì sao rules đòi giữ timestamp và lời nguyên văn? Năm 2023, NN/g thử các công cụ AI phân tích recording của một usability test đã được nhà nghiên cứu phân tích, rồi so kết quả. Công cụ chỉ đọc transcript chứ không nhìn video; NN/g viết rằng người hay AI đều không phân tích được buổi test chỉ từ transcript. Công cụ cũng không nhận mục tiêu nghiên cứu, nên insight không xếp theo ưu tiên, và trích dẫn thường thiếu session hay timestamp. Trang bài ghi công cụ đã cải thiện từ đó; bài là một mốc thời điểm để hiểu lý do của các rules, không phải đánh giá công cụ hiện tại.
 
-### 4.6 Vì sao AI không đóng vai người dùng
-
-Các nghiên cứu về người trả lời mô phỏng (silicon sampling) cho thấy họ thiên về câu trả lời dễ nghe và chỉ khớp ở mức nhóm. NN/g, khi chạy lại ba nghiên cứu cũ với người dùng AI, thấy giá trị và nhu cầu nêu ra quá nông và hành vi bị lý tưởng hoá. Một "người dùng" do AI mô phỏng luôn làm được task, nên nó che đúng chỗ bạn cần thấy. AI giúp được ở khâu chuẩn bị và gom ghi chú, nhưng không thay thế được người dùng thật.
-
 ---
 
-## 5. One report, working with dev
+## 5. One report, working with dev, and sharing on the hub
+
+Mọi thứ đi quanh một file `audit-report.md`, và AI giúp bạn ở ba việc: gộp kết quả test (mục 5.1), soạn ticket cho dev (mục 5.4), và tóm tắt cho stakeholder trên hub (mục 5.5). Severity (mục 5.2) và layer (mục 5.3) là phần bạn quyết định ở giữa.
 
 ### 5.1 Kéo kết quả test vào audit report
 
@@ -414,9 +427,19 @@ Atlassian là một ví dụ về cách làm này ở quy mô lớn. Theo blog c
 
 Cập nhật `design-system-notes.md` và rules file trong cùng lượt khi đổi token hoặc component.
 
+### 5.5 Chia sẻ trên hub
+
+Audit report nằm trong markdown để AI đọc được. Hub là chỗ đưa nó ra cho stakeholder và team đọc. Trang Findings của hub nhận phần tóm tắt từ `audit-report.md`:
+
+- Số finding theo severity, và các rủi ro lớn nhất.
+- Trạng thái accessibility: ba lượt đã làm gì, và dòng nào còn "cần người".
+- Điều đã sửa, điều chưa sửa, và quyết định đang chờ stakeholder (ví dụ "PO chọn mức hành động cho F5").
+
+Principle dùng ID (P1, P33…), nên hub tự nối finding với principle và cảnh báo khi có chỗ gãy, như một quyết định kéo ngược principle. AI có thể soạn phần tóm tắt từ audit report; bạn đọc lại như một stakeholder và bỏ những gì dễ gây hiểu nhầm.
+
 ---
 
-## 6. Handoff, sharing on the hub, and the whole course
+## 6. Handoff and the whole course
 
 ### 6.1 Handoff không còn là bàn giao màn hình
 
@@ -432,17 +455,7 @@ Handoff pack và measurement plan kiểu cũ không còn trong chương trình. 
 
 Người implement cho AI của họ đọc chính gói này, giống cách bạn đưa rules file cho AI ở Lesson 5. Sau khi bản build ra, bạn có thể audit lại bản đó bằng cùng quy trình ở mục 2, kể cả bản developer đã build; đây là phần mở rộng, chưa phải nội dung chính của buổi.
 
-### 6.2 Chia sẻ trên hub
-
-Audit report nằm trong markdown để AI đọc được. Hub là chỗ đưa nó ra cho stakeholder và team đọc. Trang Findings của hub nhận phần tóm tắt từ `audit-report.md`:
-
-- Số finding theo severity, và các rủi ro lớn nhất.
-- Trạng thái accessibility: ba lượt đã làm gì, và dòng nào còn "cần người".
-- Điều đã sửa, điều chưa sửa, và quyết định đang chờ stakeholder (ví dụ "PO chọn mức hành động cho F5").
-
-Principle dùng ID (P1, P33…), nên hub tự nối finding với principle và cảnh báo khi có chỗ gãy, như một quyết định kéo ngược principle. AI có thể soạn phần tóm tắt từ audit report; bạn đọc lại như một stakeholder và bỏ những gì dễ gây hiểu nhầm.
-
-### 6.3 Cả khoá: mỗi lesson đóng góp gì
+### 6.2 Cả khoá: mỗi lesson đóng góp gì
 
 Lesson này là lesson cuối. Bảng dưới nối từng lesson với business question của Delivery App từ Lesson 2 (khách mới không đặt lại sau đơn đầu tiên; tỷ lệ đặt đơn thứ hai trong 30 ngày là 41%). Cùng nội dung ở dạng bảng một trang: [course-contribution.html](../assets/course-contribution.html).
 
@@ -482,12 +495,12 @@ Bảng này nói **đóng góp có thể có**, không phải kết quả đã �
 
 - Mục 1.2 mô tả một xu hướng thường gặp trong thực tế làm việc, không phải kết quả nghiên cứu có số đo.
 - Bằng chứng về AI làm heuristic evaluation đến từ hai nghiên cứu nhỏ có thiết kế khác nhau; áp vào prototype của bạn là suy luận.
-- Chạy thử của chương trình ở mục 2.6 là một lần, một màn, một mô hình, với requirement nằm trong prompt; chưa thử lặp lại hay bỏ requirement.
+- Chạy thử của chương trình ở mục 2.7 là một lần, một màn, một mô hình, với requirement nằm trong prompt; chưa thử lặp lại hay bỏ requirement.
 - Checklist accessibility soạn từ WCAG 2.2, chưa đối chiếu lại với bản gốc; các nguồn pháp lý (ADA Title II, European Accessibility Act) chủ yếu là blog của vendor và lệch nhau về WCAG 2.2, cần kiểm với văn bản gốc.
 - Các con số của Atlassian, REI và Deque đều do chính họ công bố; bài của REI ghi hai con số về phần tự động không được đối chiếu; bài của Deque không nêu mẫu hay baseline; GOV.UK và REI không nhắc đến AI.
 - Bài NN/g năm 2023 về công cụ AI phân tích recording là một mốc thời điểm; công cụ đã cải thiện từ đó.
 - Con số "3 đến 5 người", điểm SUS tham chiếu và khung HEART là kiến thức chung của ngành; chương trình chưa mở lại bản gốc để kiểm lại.
 - Mẫu test nhỏ chỉ cho tín hiệu định tính, không cho kết luận về tỷ lệ.
 - Bảng severity thành việc cho dev ở mục 5.2 và mục 3.6 (checklist của công ty) đang chờ Winnie xác nhận.
-- Bảng đóng góp ở mục 6.3 là suy luận của chương trình, chưa đo.
+- Bảng đóng góp ở mục 6.2 là suy luận của chương trình, chưa đo.
 - Delivery App và các ví dụ là hư cấu, do chương trình tự dựng.
