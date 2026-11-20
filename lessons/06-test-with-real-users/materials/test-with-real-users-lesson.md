@@ -29,7 +29,7 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 ## Sau buổi học, bạn có thể
 
 1. Giải thích vì sao implement nhanh bằng AI làm verification thành nút thắt, và khi nào dùng UX Audit, khi nào dùng usability test
-2. Viết tiêu chí audit thành file markdown có ID, và chạy một UX Audit với AI: lọc finding qua ba cổng, chấm severity, và đếm finding AI sai hoặc bỏ sót
+2. Viết tiêu chí audit thành file markdown có ID, và chạy một UX Audit với AI: lọc finding qua ba cổng, chấm severity, và biết cách đếm finding AI sai hoặc bỏ sót (thực hành trên prototype của bạn ở buổi practice; bài Audit Hunt nằm trong Appendix của deck)
 3. Đọc một checklist accessibility, biết dòng nào AI kiểm được và dòng nào chỉ người kiểm được, rồi chạy ba lượt kiểm trên prototype
 4. Viết Goals, Signals, Metrics cho một test, và chuẩn bị usability test với participant bạn tự tìm mà không để AI đóng vai người dùng
 5. Gộp kết quả test vào audit report, kiểm phần phân tích của AI với ghi chú gốc, và xếp finding theo severity
@@ -104,6 +104,8 @@ Bốn bộ tiêu chí cho biết dùng thước nào. Layer cho biết nhìn và
 | Nội dung | Nhãn và thông báo có nhất quán với content voice không? | Chỗ gọi "Đơn hàng", chỗ gọi "Order" |
 | Flow | Có khớp requirement và flow đã chọn ở Lesson 4 không? | Thiếu bước hiển thị cut-off trước khi thanh toán |
 
+Từ "layer" ở đây là sáu góc nhìn để audit. Nó khác với layer ladder ở mục 5.3 (token, component, shell, template, màn hình), là chỗ để sửa. Cột "Layer cần sửa" trong finding thuộc loại thứ hai.
+
 Bạn không cần audit đủ sáu layer. Chọn layer phù hợp với flow, và ghi rõ layer nào chưa rà.
 
 ### 2.4 Thang severity
@@ -162,9 +164,10 @@ flowchart TD
 Chụp từng màn rồi đưa cho AI tốn thời gian. Các designer khác đang dùng một số cách để đỡ việc này, và bạn chọn cách hợp với quyền truy cập của mình:
 
 - **Prototype dạng HTML:** AI đọc được cấu trúc chứ không chỉ nhìn ảnh, nên kiểm được cả accessibility. Đây là cách mặc định trong bài.
-- **Video quay màn hình:** bạn quay lại lúc đi qua flow. AI lấy ra các khung hình quan trọng từ video rồi đối chiếu từng khung hình với principle và trả danh sách finding. Bạn vẫn mở lại khung hình AI dẫn để kiểm, và điều không thấy trong video thì AI ghi unknown.
 - **Môi trường test hoặc production:** nếu bạn có quyền đăng nhập, hoặc cho AI dùng chế độ truy cập trình duyệt, AI duyệt trực tiếp từng màn, đối chiếu với principle và trả danh sách audit kèm mức ưu tiên. Cách này thường cần workaround riêng cho từng môi trường (tài khoản thử, dữ liệu giả, quyền chỉ đọc). Chỉ làm khi công ty cho phép, và đừng đưa thông tin đăng nhập thật cho công cụ AI khi chưa được duyệt.
+- **Video quay màn hình:** bạn quay lại lúc đi qua flow. AI lấy ra các khung hình quan trọng từ video rồi đối chiếu từng khung hình với principle và trả danh sách finding. Bạn vẫn mở lại khung hình AI dẫn để kiểm, và điều không thấy trong video thì AI ghi unknown.
 - **FigJam:** đặt các màn hình của flow lên FigJam theo thứ tự, nối Figma với công cụ AI qua MCP để AI đọc màn hình thật, rồi AI ghi mỗi finding thành một sticky note gắn cạnh màn hình, kèm giả thuyết, Importance và Evidence. Ví dụ dựng sẵn nằm trong dự án mẫu Travel Buddy.
+- **Công cụ audit dựng từ prototype:** màn hình prototype có ghim finding ở một bên, danh sách finding lọc theo severity ở bên kia, và mỗi finding gắn với principle đã đối chiếu. Công cụ chỉ là vỏ; điều làm audit đáng tin là bước cross-check finding với principle.
 
 Dù dùng cách nào, đầu ra vẫn là một bảng finding có ID tiêu chí và evidence như ở mục 2.5, và bạn vẫn lọc qua ba cổng.
 
@@ -208,8 +211,11 @@ Checklist nằm ở `accessibility-rules.md` trong template, soạn từ WCAG 2.
 | P32 | Mọi thao tác làm được bằng bàn phím, và focus không bị kẹt? | 2.1.1, 2.1.2 | A | Người |
 | P33 | Focus luôn nhìn thấy được và không bị che? | 2.4.7, 2.4.11 | AA | AI, Người |
 | P34 | Vùng chạm tối thiểu 24 x 24 px (nên 44 x 44 px)? | 2.5.8 | AA | Tool, AI |
+| P35 | Mỗi ô nhập có label hiển thị và tên đọc được bởi screen reader? | 1.3.1, 3.3.2, 4.1.2 | A | Tool, AI |
+| P36 | Thông báo lỗi nói rõ lỗi gì, ở đâu và cách sửa? | 3.3.1, 3.3.3 | A, AA | AI, Người |
+| P37 | Ý nghĩa có bao giờ chỉ nằm ở màu không? | 1.4.1 | A | AI, Người |
 
-Bản đầy đủ có 17 dòng, từ P30 đến P46. Cột **Ai kiểm được** là phần bạn cần đọc kỹ nhất:
+Slide chỉ hiện bảy dòng cơ bản này để bạn đưa cho AI. Bản đầy đủ có 17 dòng, từ P30 đến P46. Cột **Ai kiểm được** là phần bạn cần đọc kỹ nhất:
 
 - **Tool:** công cụ tự động chạy trên HTML (như axe hoặc Lighthouse).
 - **AI:** AI đọc code hoặc ảnh theo câu hỏi; bạn kiểm lại các fail.
@@ -241,9 +247,15 @@ Hai nguồn này không nhắc đến AI. Chúng cho thấy lượt 1 và lượ
 
 ### 3.6 Checklist của công ty thành model file
 
-*[to confirm]* Phần này dành cho một trường hợp thật Winnie đã thấy: một designer có checklist accessibility của công ty, viết nó thành một file, và AI đọc file này mỗi lần chạy UX audit. Giống design principle và business principle, accessibility cũng là một bộ nguyên tắc; AI đối chiếu giữa các bộ rồi trả danh sách UX issue. Cần ví dụ thật, đã ẩn danh, trước khi viết tiếp mục này.
+GitHub Accessibility có một trang hướng dẫn công khai về việc viết custom instructions cho Copilot, ở cấp tổ chức, repo hoặc cá nhân; instructions cá nhân được ưu tiên hơn. Tiêu chí được viết bằng ngôn ngữ giống WCAG (MUST, MUST NOT, SHOULD), và ví dụ trong trang là một checklist cho WCAG 1.3.1: không gán role presentation cho phần tử có ngữ nghĩa, thông báo lỗi phải gắn được với ô nhập. Checklist này mở rộng WCAG cho cả Copilot coding agent và code review, và có thể thêm quy tắc của design system, như không dùng button đã deprecated. Trang khuyên viết ngắn và dán thẳng nội dung cần dùng, không dán link hay cả bộ WCAG.
 
-### 3.7 Giới hạn
+Giống design principle và business principle, accessibility cũng là một bộ nguyên tắc; khi checklist là một file, bạn sửa, thêm dòng và dùng lại ở mọi project. Đây là hướng dẫn công khai cho người viết instructions, không mô tả quy trình nội bộ của GitHub và không đo hiệu quả; trang không ghi ngày cập nhật, chỉ ghi bản quyền 2026. Bạn dùng nó làm mẫu cách viết, rồi đối chiếu lại với tiêu chuẩn và yêu cầu của công ty mình.
+
+### 3.7 AI sinh spec accessibility ở lúc thiết kế
+
+*(Slide ví dụ này nằm trong Appendix của deck; dùng khi học viên hỏi.)* Uber xây hệ thống uSpec: một agent đọc component trong Figma rồi sinh spec screen reader cho iOS, Android và Web trong dưới hai phút mỗi lần chạy, chạy cục bộ và nối Figma với công cụ AI coding qua MCP. AI chọn từ các API đã có tài liệu thay vì đoán tên thuộc tính. Ví dụ này cho thấy AI làm tốt khi đầu vào có cấu trúc, như một design system. Đây là việc sinh spec lúc thiết kế, không phải audit, và bài viết không mô tả ai kiểm tra spec được sinh ra, nên việc kiểm tra vẫn là việc của người. Nguồn là blog của Uber (11/03/2026).
+
+### 3.8 Giới hạn
 
 - Checklist soạn từ WCAG 2.2 và chưa đối chiếu lại với bản gốc.
 - AI tự dựng thường cho ra focus không nhìn thấy và tương phản sát ngưỡng, nhưng một nghiên cứu về trang AI dựng (VentureBeat, 30/9/2026, bài do AudioEye tài trợ) chỉ có 15 trang, không công bố prompt hay phương pháp, và không cho biết nhắc accessibility trong prompt có giúp không. Dùng như lời cảnh báo, chưa phải thước đo.
@@ -359,6 +371,8 @@ flowchart LR
   AI --> Y["Bạn: mở timestamp,<br/>kiểm lại SUS, chọn recommendation"]
 ```
 
+Một ví dụ thật từ dự án mẫu Travel Buddy: transcript và recording của các buổi test được đưa cho AI để tổng hợp và viết report bằng một file markdown, rồi report được đưa lên hub cho stakeholder và team đọc. Report không liệt kê một chồng lỗi rời rạc mà gom thành vài mẫu chung (ở đây là hai mẫu giải thích phần lớn các vấn đề), mỗi vấn đề có hành vi hoặc lời trích của participant, màn hình, severity và đề xuất sửa. Đây là dự án mẫu, không phải kết quả của prototype của bạn, và bạn vẫn mở timestamp để kiểm lại các finding quan trọng.
+
 Vì sao rules đòi giữ timestamp và lời nguyên văn? Năm 2023, NN/g thử các công cụ AI phân tích recording của một usability test đã được nhà nghiên cứu phân tích, rồi so kết quả. Công cụ chỉ đọc transcript chứ không nhìn video; NN/g viết rằng người hay AI đều không phân tích được buổi test chỉ từ transcript. Công cụ cũng không nhận mục tiêu nghiên cứu, nên insight không xếp theo ưu tiên, và trích dẫn thường thiếu session hay timestamp. Trang bài ghi công cụ đã cải thiện từ đó; bài là một mốc thời điểm để hiểu lý do của các rules, không phải đánh giá công cụ hiện tại.
 
 ---
@@ -398,7 +412,7 @@ Với sản phẩm bị quy định (healthcare, finance), một đề xuất l�
 
 ### 5.3 Sửa ở đúng layer
 
-Dùng lại layer ladder ở Lesson 5. Câu hỏi kiểm tra: lỗi này có sai ở nhiều hơn một màn không?
+Dùng lại layer ladder ở Lesson 5. Layer ở đây là chỗ sửa, không phải sáu layer để audit ở mục 2.3. Câu hỏi kiểm tra: lỗi này có sai ở nhiều hơn một màn không?
 
 | Lỗi lặp ở nhiều màn | Sửa ở |
 |---|---|
@@ -501,6 +515,6 @@ Bảng này nói **đóng góp có thể có**, không phải kết quả đã �
 - Bài NN/g năm 2023 về công cụ AI phân tích recording là một mốc thời điểm; công cụ đã cải thiện từ đó.
 - Con số "3 đến 5 người", điểm SUS tham chiếu và khung HEART là kiến thức chung của ngành; chương trình chưa mở lại bản gốc để kiểm lại.
 - Mẫu test nhỏ chỉ cho tín hiệu định tính, không cho kết luận về tỷ lệ.
-- Bảng severity thành việc cho dev ở mục 5.2 và mục 3.6 (checklist của công ty) đang chờ Winnie xác nhận.
+- Bảng severity thành việc cho dev ở mục 5.2 đang chờ Winnie xác nhận.
 - Bảng đóng góp ở mục 6.2 là suy luận của chương trình, chưa đo.
 - Delivery App và các ví dụ là hư cấu, do chương trình tự dựng.
