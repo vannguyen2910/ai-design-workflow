@@ -162,9 +162,10 @@ flowchart TD
 Chụp từng màn rồi đưa cho AI tốn thời gian. Các designer khác đang dùng một số cách để đỡ việc này, và bạn chọn cách hợp với quyền truy cập của mình:
 
 - **Prototype dạng HTML:** AI đọc được cấu trúc chứ không chỉ nhìn ảnh, nên kiểm được cả accessibility. Đây là cách mặc định trong bài.
-- **Video quay màn hình:** bạn quay lại lúc đi qua flow. AI lấy ra các khung hình quan trọng từ video rồi đối chiếu từng khung hình với principle và trả danh sách finding. Bạn vẫn mở lại khung hình AI dẫn để kiểm, và điều không thấy trong video thì AI ghi unknown.
 - **Môi trường test hoặc production:** nếu bạn có quyền đăng nhập, hoặc cho AI dùng chế độ truy cập trình duyệt, AI duyệt trực tiếp từng màn, đối chiếu với principle và trả danh sách audit kèm mức ưu tiên. Cách này thường cần workaround riêng cho từng môi trường (tài khoản thử, dữ liệu giả, quyền chỉ đọc). Chỉ làm khi công ty cho phép, và đừng đưa thông tin đăng nhập thật cho công cụ AI khi chưa được duyệt.
+- **Video quay màn hình:** bạn quay lại lúc đi qua flow. AI lấy ra các khung hình quan trọng từ video rồi đối chiếu từng khung hình với principle và trả danh sách finding. Bạn vẫn mở lại khung hình AI dẫn để kiểm, và điều không thấy trong video thì AI ghi unknown.
 - **FigJam:** đặt các màn hình của flow lên FigJam theo thứ tự, nối Figma với công cụ AI qua MCP để AI đọc màn hình thật, rồi AI ghi mỗi finding thành một sticky note gắn cạnh màn hình, kèm giả thuyết, Importance và Evidence. Ví dụ dựng sẵn nằm trong dự án mẫu Travel Buddy.
+- **Công cụ audit dựng từ prototype:** màn hình prototype có ghim finding ở một bên, danh sách finding lọc theo severity ở bên kia, và mỗi finding gắn với principle đã đối chiếu. Công cụ chỉ là vỏ; điều làm audit đáng tin là bước cross-check finding với principle.
 
 Dù dùng cách nào, đầu ra vẫn là một bảng finding có ID tiêu chí và evidence như ở mục 2.5, và bạn vẫn lọc qua ba cổng.
 
@@ -208,8 +209,11 @@ Checklist nằm ở `accessibility-rules.md` trong template, soạn từ WCAG 2.
 | P32 | Mọi thao tác làm được bằng bàn phím, và focus không bị kẹt? | 2.1.1, 2.1.2 | A | Người |
 | P33 | Focus luôn nhìn thấy được và không bị che? | 2.4.7, 2.4.11 | AA | AI, Người |
 | P34 | Vùng chạm tối thiểu 24 x 24 px (nên 44 x 44 px)? | 2.5.8 | AA | Tool, AI |
+| P35 | Mỗi ô nhập có label hiển thị và tên đọc được bởi screen reader? | 1.3.1, 3.3.2, 4.1.2 | A | Tool, AI |
+| P36 | Thông báo lỗi nói rõ lỗi gì, ở đâu và cách sửa? | 3.3.1, 3.3.3 | A, AA | AI, Người |
+| P37 | Ý nghĩa có bao giờ chỉ nằm ở màu không? | 1.4.1 | A | AI, Người |
 
-Bản đầy đủ có 17 dòng, từ P30 đến P46. Cột **Ai kiểm được** là phần bạn cần đọc kỹ nhất:
+Slide chỉ hiện bảy dòng cơ bản này để bạn đưa cho AI. Bản đầy đủ có 17 dòng, từ P30 đến P46. Cột **Ai kiểm được** là phần bạn cần đọc kỹ nhất:
 
 - **Tool:** công cụ tự động chạy trên HTML (như axe hoặc Lighthouse).
 - **AI:** AI đọc code hoặc ảnh theo câu hỏi; bạn kiểm lại các fail.
@@ -243,7 +247,11 @@ Hai nguồn này không nhắc đến AI. Chúng cho thấy lượt 1 và lượ
 
 *[to confirm]* Phần này dành cho một trường hợp thật Winnie đã thấy: một designer có checklist accessibility của công ty, viết nó thành một file, và AI đọc file này mỗi lần chạy UX audit. Giống design principle và business principle, accessibility cũng là một bộ nguyên tắc; AI đối chiếu giữa các bộ rồi trả danh sách UX issue. Cần ví dụ thật, đã ẩn danh, trước khi viết tiếp mục này.
 
-### 3.7 Giới hạn
+### 3.7 AI sinh spec accessibility ở lúc thiết kế
+
+Uber xây hệ thống uSpec: một agent đọc component trong Figma rồi sinh spec screen reader cho iOS, Android và Web trong dưới hai phút mỗi lần chạy, chạy cục bộ và nối Figma với công cụ AI coding qua MCP. AI chọn từ các API đã có tài liệu thay vì đoán tên thuộc tính. Ví dụ này cho thấy AI làm tốt khi đầu vào có cấu trúc, như một design system. Đây là việc sinh spec lúc thiết kế, không phải audit, và bài viết không mô tả ai kiểm tra spec được sinh ra, nên việc kiểm tra vẫn là việc của người. Nguồn là blog của Uber (11/03/2026).
+
+### 3.8 Giới hạn
 
 - Checklist soạn từ WCAG 2.2 và chưa đối chiếu lại với bản gốc.
 - AI tự dựng thường cho ra focus không nhìn thấy và tương phản sát ngưỡng, nhưng một nghiên cứu về trang AI dựng (VentureBeat, 30/9/2026, bài do AudioEye tài trợ) chỉ có 15 trang, không công bố prompt hay phương pháp, và không cho biết nhắc accessibility trong prompt có giúp không. Dùng như lời cảnh báo, chưa phải thước đo.
@@ -358,6 +366,8 @@ flowchart LR
   S["SUS + test plan + rules file"] --> AI
   AI --> Y["Bạn: mở timestamp,<br/>kiểm lại SUS, chọn recommendation"]
 ```
+
+Một ví dụ thật từ dự án mẫu Travel Buddy: transcript và recording của các buổi test được đưa cho AI để tổng hợp và viết report bằng một file markdown, rồi report được đưa lên hub cho stakeholder và team đọc. Report không liệt kê một chồng lỗi rời rạc mà gom thành vài mẫu chung (ở đây là hai mẫu giải thích phần lớn các vấn đề), mỗi vấn đề có hành vi hoặc lời trích của participant, màn hình, severity và đề xuất sửa. Đây là dự án mẫu, không phải kết quả của prototype của bạn, và bạn vẫn mở timestamp để kiểm lại các finding quan trọng.
 
 Vì sao rules đòi giữ timestamp và lời nguyên văn? Năm 2023, NN/g thử các công cụ AI phân tích recording của một usability test đã được nhà nghiên cứu phân tích, rồi so kết quả. Công cụ chỉ đọc transcript chứ không nhìn video; NN/g viết rằng người hay AI đều không phân tích được buổi test chỉ từ transcript. Công cụ cũng không nhận mục tiêu nghiên cứu, nên insight không xếp theo ưu tiên, và trích dẫn thường thiếu session hay timestamp. Trang bài ghi công cụ đã cải thiện từ đó; bài là một mốc thời điểm để hiểu lý do của các rules, không phải đánh giá công cụ hiện tại.
 
