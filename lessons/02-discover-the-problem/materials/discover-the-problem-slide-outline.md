@@ -2,11 +2,11 @@
 title: "Discover the Problem"
 lesson_file: "discover-the-problem-lesson.md"
 level: ""
-slide_count: 56
+slide_count: 63
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
-last_synced: 2026-11-16
+last_synced: 2026-11-19
 ---
 
 ## Session metadata
@@ -57,7 +57,7 @@ last_synced: 2026-11-16
 - Kicker: Lộ trình
 - Title: Nội dung\n*buổi học*
 - On-slide:
-  - 01 · AI trong Discover Problem
+  - 01 · Cho AI những gì team đã biết
   - 02 · Principles cho AI
   - 03 · Break the brief
   - 04 · Understand our users
@@ -66,12 +66,12 @@ last_synced: 2026-11-16
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Đây là lộ trình năm phần. Mỗi phần trả lời một câu hỏi:
-    - 01 AI trong Discover Problem: Discover nằm ở đâu trong quy trình và AI giúp được gì.
+    - 01 Cho AI những gì team đã biết: vì sao là bước đầu, tài liệu có sẵn và thiên lệch ở đâu, gom thành context library, và làm gì khi project chưa có gì.
     - 02 Principles cho AI: chuẩn nào để AI đối chiếu, ai viết và viết lúc nào.
     - 03 Break the brief: ba việc kiểm tra brief là scope, assumption và research question, mỗi việc ra một file.
     - 04 Understand our users: từ research question đến câu hỏi phỏng vấn, chuẩn bị plan và script với AI, quy tắc dữ liệu. Nền tảng phỏng vấn nằm ở Appendix.
     - 05 Ingest vào hub: biến transcript thành source notes có ID, kiểm tra quote bằng chương trình, và xem một hypothesis trong prompt làm AI nói gì.
-  - Thứ tự này đi từ điều quan sát được đến điều cần học: hiểu bối cảnh, đặt chuẩn, kiểm tra brief, rồi hỏi người thật.
+  - Thứ tự này đi từ điều quan sát được đến điều cần học: bắt đầu từ cái đã có, đặt chuẩn, kiểm tra brief, rồi hỏi người thật.
   - Cuối buổi có Q&A và slide practice cho chuỗi việc ở nhà.
 
   > Trong năm phần này, phần nào bạn đang làm nhiều nhất trong công việc hiện tại?
@@ -92,32 +92,34 @@ last_synced: 2026-11-16
     - Vấn đề: brief nêu điều cần giải quyết, ví dụ “khách mới không đặt lại sau đơn đầu tiên”.
     - Giải pháp: brief nêu thứ cần làm, ví dụ “thêm bước onboarding” hay “làm lại màn hình thanh toán”.
   - Nếu ai phân vân, hỏi: brief này nói “cần giải quyết điều gì”, hay nói “cần làm cái gì”?
-  - Bảng này được giữ lại để quay về ở slide Discover.
+  - Bảng này được giữ lại để quay về khi gom tài liệu có sẵn.
   - Bài tập buổi 1 gồm case folder và product-and-users. Ai chưa xong thì dùng case mẫu.
-  - Bảng hai cột vừa rồi cho thấy brief thường đến dưới dạng thứ cần làm. Giờ mình vào phần một, Discover trong design process: nó nằm ở đâu và AI giúp được gì ở bước này.
+  - Bảng hai cột vừa rồi cho thấy brief thường đến dưới dạng thứ cần làm. Giờ mình vào phần một: cho AI những gì team đã biết, trước khi hỏi người thật.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền purple, tiêu đề lớn, một câu hỏi ngắn bên dưới.
 
 ---
 
 
-## 2. AI in Discover Problem
+## 2. Feed: cho AI những gì team đã biết
 
 ---
 
-### SECTION DIVIDER · AI in Discover
+### SECTION DIVIDER · Feed
 - Num: 01
 - Kicker: Phần một
-- Title: AI trong Discover Problem
+- Title: Cho AI những gì team đã biết
 - On-slide:
-  - Sub: Discover và AI
+  - Sub: Context library
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Cột “giải pháp” ở ice breaker phần lớn là brief. Phần này đi từ brief sang câu hỏi.
-  - Buổi học có bốn phần: Discover và AI, principles, break the brief, hiểu người dùng.
-  - Phần đầu tiên trả lời hai câu:
-    - Discover nằm ở đâu trong Double Diamond và gồm những gì.
-    - AI làm tốt việc nào ở Discover, và việc nào bạn không giao đi.
+  - Cột “giải pháp” ở ice breaker phần lớn là brief. Trước khi hỏi người thật, bạn xem team đã biết gì.
+  - Buổi học có năm phần: cho AI những gì team đã biết, principles, break the brief, hiểu người dùng, và ingest vào hub.
+  - Phần đầu tiên trả lời bốn câu:
+    - Vì sao đây là bước đầu tiên khi set up AI design workflow.
+    - Team đã có sẵn những gì, và mỗi nguồn thiên lệch ở đâu.
+    - Gom và đặt chúng cho AI thế nào để kiểm tra được.
+    - Project mới hoàn toàn, chưa có gì, thì bắt đầu từ đâu.
   - Phần luyện tập dài làm ở nhà, sau buổi học.
 
   > Ở ice breaker, brief nào của bạn nằm ở cột giải pháp, và vấn đề thật phía sau nó có thể là gì?
@@ -125,78 +127,137 @@ last_synced: 2026-11-16
 
 ---
 
-### DIAGRAM · Discover in the Double Diamond
-- Kicker: Định nghĩa
-- Title: Discover trong *Double Diamond*
+### NUMBERED · Why this is the first step
+- Kicker: Lý do
+- Title: Vì sao đây là\n*bước đầu tiên*
 - On-slide:
-  - Double Diamond với Discover được tô nổi bật: mở rộng, rồi thu hẹp ở Define
-  - Discover bao gồm: Điều đã biết · Điều user nói và làm · Điều thị trường làm
+  - 01 · AI chỉ biết những gì bạn đưa cho nó: thiếu context, AI sẽ tự lấp chỗ trống bằng những câu nghe có vẻ hợp lý
+  - 02 · Ít tốn effort nhất: không cần hẹn ai, AI đọc được ngay tài liệu team đã có
+  - 03 · Các bước sau dùng lại được: principles, break the brief và ingest đều lấy dữ liệu từ library, nên bạn chỉ dựng một lần
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Chúng ta đi vào phần đầu tiên của Double Diamond
-  - Discover là phần mở rộng đầu tiên: gom nhiều thông tin trước khi chọn vấn đề đáng giải. Ba nguồn để gom, như ba ô cuối slide:
-    - Điều đã biết: tài liệu product, PRD, research cũ của team.
-    - Điều user nói và làm: phỏng vấn, quan sát, dữ liệu sử dụng.
-    - Điều thị trường làm: đối thủ và cách người khác giải cùng một việc.
-  - Chọn vấn đề đáng giải ở cuối Discover là việc của designer cùng product và business, AI không làm thay.
-- 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
+  - Ở ice breaker, brief thường đến dưới dạng thứ cần làm. Slide này trả lời: khi set up một AI design workflow, vì sao bước đầu tiên là cho AI những gì team đã biết
+  - Ba lý do:
+    - AI chỉ biết những gì bạn đưa cho nó: thiếu context, nó tự lấp chỗ trống bằng những câu nghe có vẻ hợp lý, giống ví dụ hallucination ở Lesson 1
+    - Ít tốn effort nhất: bạn không cần hẹn ai, AI đọc được ngay những tài liệu team đã có
+    - Các bước sau dùng lại được: principles, break the brief và ingest đều lấy dữ liệu từ library, nên bạn chỉ dựng một lần
+  - Đây là cách làm của chương trình, chưa phải kết quả nghiên cứu
+
+  > Nếu hôm nay bạn bắt đầu một project mới với AI, bạn sẽ đưa cho nó thứ gì đầu tiên?
+- 🎨 Visual hint: TYPOGRAPHIC. Trái: tiêu đề; phải: ba hàng đánh số lớn, đường kẻ mảnh giữa các hàng.
 
 ---
 
-### NUMBERED · What AI does in Discover
-- Kicker: AI làm được gì ở Discover
-- Title: Discover
+### FEATURE GRID · Existing documents
+- Kicker: Trong team
+- Title: Bắt đầu từ\n*tài liệu team đã có*
 - On-slide:
-  - Sub: AI soạn nháp, bạn kiểm tra
-  - Tạo transcript buổi phỏng vấn và usability test
-  - Dịch và localise transcript research
-  - Tóm tắt một buổi phỏng vấn thành các ý chính
-  - Gắn tag đoạn trích theo codebook có sẵn
-  - Gom ghi chú thành nhóm affinity bản đầu
-  - Tìm lại research cũ của team
-  - Soạn nháp interview guide
-  - Làm sạch và tóm tắt câu trả lời mở trong survey
+  - PRD và spec: những gì team đã quyết
+  - Ticket và chat support: vấn đề khách đã báo
+  - Review và diễn đàn: điều khách tự nói ra
+  - Research cũ: những gì team từng tìm hiểu
+  - Analytics: khách thực sự làm gì
+  - Ghi chú họp và quyết định: những gì team đã bàn
+  - AI đọc được tất cả các loại này, nhiều file cùng lúc.
+- Ví dụ: có (Delivery App: review nói không đổi được khung giờ sau khi thanh toán)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói vì sao bắt đầu từ cái đã có. Slide này trả lời: team bạn thường đã có những gì
+  - Sáu loại hay gặp:
+    - PRD và spec: những gì team đã quyết
+    - Ticket và chat support: vấn đề khách đã báo
+    - Review và diễn đàn: điều khách tự nói ra
+    - Research cũ: những gì team từng tìm hiểu
+    - Analytics: khách thực sự làm gì
+    - Ghi chú họp và quyết định: những gì team đã bàn
+  - AI đọc được tất cả, nhiều file cùng lúc. Ví dụ ở Delivery App, review nói không đổi được khung giờ sau khi thanh toán
+  - Phần chưa có trong tài liệu thì hỏi người, và đó là phần Understand our users ở phía sau
+
+  > Loại tài liệu nào team bạn có nhiều nhất mà chưa ai đọc lại?
+- 🎨 Visual hint: Lưới 3 cột, 2 hàng; mỗi ô có đường kẻ đậm phía trên, icon Material Symbols tím, tiêu đề đậm và một dòng mô tả; một dòng chốt bên dưới.
+
+---
+
+### NUMBERED · Existing sources
+- Kicker: Nguồn
+- Title: Mỗi nguồn cho thấy gì,\n*thiên lệch ở đâu*
+- On-slide:
+  - 01 · Ticket và chat support: cho thấy vấn đề của người đang gặp trục trặc; thiên lệch: chỉ người chịu liên hệ
+  - 02 · Review và diễn đàn: cho thấy lời khách nói một cách tự nhiên; thiên lệch: nghiêng về hai đầu cảm xúc
+  - 03 · Cuộc gọi sales và CS: cho thấy điều khách cần mà chưa tìm thấy; thiên lệch: nhiều người chưa mua, chưa phải user
+  - 04 · Analytics: cho thấy hành vi của khách; thiên lệch: không cho biết vì sao
+  - PRD và research cũ: những gì team đang tin. Mở nguồn kiểm tra trước khi coi là sự thật.
+- Ví dụ: có (GitLab: thư viện research thử hypothesis trên bốn nguồn)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước liệt kê tài liệu hiện có trong team. Slide này trả lời: mỗi nguồn cho thấy gì, và thiên lệch ở đâu
+  - Bốn nguồn về khách hay gặp:
+    - Ticket và chat support: đến từ người đang gặp vấn đề nên tín hiệu thường rất rõ, nhưng chỉ gồm người chịu liên hệ
+    - Review và diễn đàn: lời khách nói tự nhiên, nhưng nghiêng về hai đầu cảm xúc
+    - Cuộc gọi sales và CS: cho biết khách cần gì mà chưa tìm thấy, nhưng nhiều cuộc là người chưa mua, không phải user
+    - Analytics: cho thấy khách làm gì, nhưng không cho biết vì sao
+  - PRD và research cũ là những gì team đang tin. Bạn mở nguồn ra kiểm tra trước khi coi chúng là sự thật
+  - Ví dụ thật: thư viện research của GitLab cho phép thử một hypothesis trên bốn nguồn, gồm báo cáo research nội bộ, trích dẫn khách, cuộc gọi của sales và ticket
+  - (tuỳ chọn) Đối thủ cũng là một nguồn có sẵn; phần này nằm ở Appendix
+  - Các nhận xét về độ thiên lệch lấy từ hướng dẫn thực hành của các hãng công cụ, nên là kinh nghiệm chung, chưa phải số đo
+
+  > Nguồn nào bạn lấy được ngay hôm nay, và nó thiên lệch ở đâu?
+- 🎨 Visual hint: Bảng dạng hàng, ba cột (Nguồn, Cho thấy, Thiên lệch), đường kẻ mảnh giữa các hàng; hàng cuối nền tối cho PRD và research cũ.
+
+---
+
+### PROCESS · Build the context library
+- Kicker: Cách làm
+- Title: Gom thành\n*context library*
+- On-slide:
+  - 01 · Ẩn danh trước: làm trên máy của bạn, theo data rules
+  - 02 · Chuyển thành markdown: mỗi tài liệu một file; ticket thì mỗi đợt xuất một file, mỗi ticket một ID
+  - 03 · Ghi vài dòng ở đầu file: loại nguồn, ngày, người viết và điểm thiên lệch
+  - 04 · Đặt vào folder context: kèm file mục lục; quy tắc dùng nằm trong AGENTS.md. Project mới chưa có gì để gom thì xem slide kế
+  - Context library: cả folder, là nơi chứa mọi file. Context pack: vài file bạn chọn từ library cho một việc.
+  - Hình: cây folder `context/` gồm index.md, product/, customer/, research/
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide này trả lời: ở Discover, AI soạn nháp được những việc nào. Bảy việc trên slide cùng một nhịp: AI soạn nháp, bạn kiểm tra. Ví dụ: AI tóm tắt một buổi phỏng vấn với khách app giao đồ ăn, bạn đối chiếu từng quote với transcript.
-  - Phần bạn kiểm tra ở từng việc:
-    - Transcript: kiểm tra lại tên riêng, thuật ngữ và con số.
-    - Tóm tắt: đối chiếu từng quote với transcript, vì bản tóm tắt hay thêm chi tiết không có thật.
-    - Tag theo codebook: người xem lại các trường hợp mơ hồ.
-    - Affinity: AI tìm liên hệ về nghĩa, bạn sắp xếp lại và đặt tên nhóm.
-    - Interview guide: bạn loại câu hỏi dẫn dắt và sắp xếp theo mức rủi ro.
-    - Survey: lấy mẫu kiểm tra xem có bỏ sót ý kiến thiểu số không.
-  - Với việc dịch transcript và tìm lại research cũ của team, bạn cũng mở nguồn gốc ra đối chiếu khi AI trích hoặc dịch.
-  - AI chưa làm được hai việc: biết điều không có trong tài liệu (nó lấp chỗ trống bằng điều nghe hợp lý) và thay người thật trả lời. Phần lớn danh sách này là ước tính từ catalogue task, chưa phải số đo trên designer Việt Nam.
+  - Slide trước nói mỗi nguồn thiên lệch ở đâu. Slide này trả lời: làm sao đưa chúng cho AI mà vẫn kiểm tra được
+  - Bốn bước, theo thứ tự:
+    - Ẩn danh trước: làm trên máy bạn, theo data rules ở Lesson 1. Ticket và ghi chú cuộc gọi có tên và email trong văn bản tự do. Nếu nhờ AI chuyển định dạng trước khi ẩn danh thì dữ liệu đã đi qua AI
+    - Chuyển thành markdown: mỗi tài liệu một file, ví dụ PRD một file, mỗi báo cáo research một file. Nguồn nhiều dòng như ticket thì mỗi đợt xuất một file, mỗi ticket một ID. Giữ nguyên văn, không tóm tắt
+    - Ghi vài dòng ở đầu file: loại nguồn, ngày, người viết và điểm thiên lệch
+    - Đặt vào folder context kèm một file mục lục, để AI đọc mục lục trước. Quy tắc dùng, ví dụ thiếu thì ghi “chưa có nguồn”, nằm trong AGENTS.md
+  - Hình bên phải là một cây folder ví dụ. Context library là nơi chứa mọi file. Context pack là vài file bạn chọn từ library cho một việc, ví dụ Move 3 ở phần Break the brief
+  - (tuỳ chọn) File quá dài thì tách nhỏ, vì một số công cụ cắt ngầm phần cuối. Tên folder và tên file do bạn chọn
 
-  > Trong bảy việc này, việc nào bạn đang tự làm tay nhiều giờ nhất?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+  > Nguồn nào của bạn cần ẩn danh nhiều nhất trước khi đưa vào library?
+- 🎨 Visual hint: SPLIT. Trái: bốn bước xếp lưới hai cột (số tím, tiêu đề đậm, một câu); phải: khung viền đen chứa cây folder `context/` bằng chữ mono, kèm hai dòng giải thích context library và context pack.
 
 ---
 
-### STATEMENT · Choose the problem together
-- Kicker: Lập trường
-- Title: Chọn vấn đề\n*cùng nhau.*
+### PROCESS · Starting from scratch
+- Kicker: Chưa có gì
+- Title: Project mới thì\n*bắt đầu từ đâu*
 - On-slide:
-  - Phần AI không làm thay được là chọn vấn đề đáng giải và thống nhất thế nào là thành công.
-- Ví dụ: có (xem speaker notes)
+  - 01 · Viết ra điều team đang tin: gom vào một file, mỗi dòng gắn nhãn assumed
+  - 02 · Gom nguồn công khai: đối thủ, review app tương tự, diễn đàn, báo cáo ngành; mỗi dòng ghi nguồn
+  - 03 · Hỏi nhanh stakeholder: product, business, support; ghi lại thành file
+  - Chỗ nào chưa có nguồn, ghi “chưa có nguồn”. Đó là chỗ cần hỏi người.
+- Ví dụ: có (case mẫu Delivery App trong practice)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Nối từ buổi 1: AI làm nhanh nhất bước biến brief thành màn hình. Phần AI không làm thay được là chọn vấn đề đáng giải và thống nhất thế nào là thành công.
-  - Việc này cần cả hai phía:
-    - Design mang evidence.
-    - Product và business mang điều họ biết về vấn đề, outcome và ràng buộc.
-  - Lập trường ở đây là partner, không phải người nhận order. Ví dụ: thay vì làm ngay màn hình onboarding, hỏi “vì sao khách mới không đặt lại sau đơn đầu tiên?”.
-  - Brief có sẵn là điểm xuất phát tốt để cùng kiểm tra. Không phải brief nào cũng cần sửa.
-  - AI chỉ giúp được khi mình đã biết thế nào là tốt. Vì vậy trước khi cho AI chạy bất cứ thứ gì, mình đặt chuẩn trước. Phần hai là Design Principles.
+  - Slide trước nói cách gom tài liệu có sẵn. Slide này trả lời: nếu project mới hoàn toàn, chưa có gì để gom thì sao
+  - Ba việc, theo thứ tự:
+    - Viết ra điều team đang tin: gom các giả định hiện có thành một file, mỗi dòng gắn nhãn assumed. Đây là đầu vào cho phần assumption ở Break the brief
+    - Gom nguồn công khai: đối thủ, review của app tương tự, diễn đàn, báo cáo ngành. Mỗi dòng ghi rõ nguồn
+    - Hỏi nhanh stakeholder: vài cuộc trao đổi ngắn với product, business và support, rồi ghi lại thành file
+  - Chỗ nào chưa có nguồn thì ghi “chưa có nguồn”. Library còn trống cũng là một kết quả đúng: nó cho biết việc phải làm là đi phỏng vấn
+  - (tuỳ chọn) Chưa có tài liệu thật để thử thì dùng case mẫu Delivery App trong practice
+  - AI chỉ giúp được khi mình đã biết thế nào là tốt. Vì vậy trước khi cho AI chạy bất cứ thứ gì, mình đặt chuẩn trước. Phần hai là Principles cho AI
 
-  > Bỏ phiếu trong chat. A nếu bạn thường nhận brief có sẵn, B nếu thường được hỏi ý kiến từ đầu.
-- 🎨 Visual hint: TYPOGRAPHIC. Tiêu đề lớn, một dòng ngắn bên dưới, không thêm gì khác.
+  > Project hiện tại của bạn có gì trong library, và phần nào còn là “chưa có nguồn”?
+- 🎨 Visual hint: PROCESS. Ba bước nối nhau bằng mũi tên ngang (số tím, tiêu đề đậm, một câu); một thanh nền vàng bên dưới cho câu chốt.
 
 ---
-
 
 ## 3. Principles for AI
 
@@ -408,19 +469,19 @@ last_synced: 2026-11-16
 ---
 
 ### COMPARE · Move 1: brief to problem
-- Kicker: AI move 1
+- Kicker: Việc AI làm
 - Title: Brief thành\n*vấn đề*
 - On-slide:
-  - Ví dụ từ brief mẫu của Delivery App (dòng B03)
+  - Ví dụ từ brief mẫu của Delivery App (dòng 3)
   - Brief ghi: “Thêm onboarding bốn bước”
   - AI viết lại thành vấn đề: “Khách mới chưa hiểu app hoạt động thế nào”
   - Giả định ngầm: khách rời đi vì không hiểu app, chứ không phải vì giá
   - Bạn đọc từng bản viết lại xem nghĩa có bị đổi không
-- Ví dụ: có (brief mẫu của Delivery App, dòng B03 và B09)
+- Ví dụ: có (brief mẫu của Delivery App, dòng 3 và dòng 9)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Phần method đã nói brief thường là một giải pháp đội lốt vấn đề. Slide này nhờ AI tách chúng ra.
-  - Bạn đưa AI từng dòng brief, mỗi dòng có ID. Bốn việc:
+  - Bạn đưa AI brief, đánh số từng dòng để AI chỉ đúng chỗ. Bốn việc:
     - AI xếp mỗi dòng vào một loại: mục tiêu, vấn đề, giải pháp, assumption hoặc ràng buộc
     - AI viết lại dòng giải pháp thành câu vấn đề, không nhắc đến giải pháp. “Thêm onboarding bốn bước” thành “khách mới chưa hiểu app hoạt động thế nào”
     - AI chỉ ra điều giải pháp đang ngầm tin. Ở đây là khách rời đi vì không hiểu app, chứ không phải vì giá
@@ -511,7 +572,7 @@ last_synced: 2026-11-16
   - Ba slide trước nói cách hỏi business. Quy tắc chung cho cả phần này: AI chuẩn bị, người thật trả lời.
     - AI soạn câu hỏi, soạn nháp ghi chú, gợi ý điều cần hỏi thêm.
     - Câu trả lời của PO, business hay user luôn do người thật đưa ra.
-  - Lý do: các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe (nguồn 6). Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý.
+  - Lý do: các nghiên cứu về người dùng do AI mô phỏng cho thấy chúng thiên về câu trả lời dễ nghe (nguồn 6). Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý.
   - Ví dụ: bạn nhờ AI đóng vai PO của app giao đồ ăn. Nó trả lời rất tự tin rằng tỷ lệ đặt đơn thứ hai mục tiêu là 60%. Con số này không nằm trong tài liệu nào của team. Nếu ghi nó vào scope như một câu trả lời, mọi bước sau đứng trên một con số bịa.
   - Vì thế trong chương trình này không ai tập trả lời thay PO hay user. Câu trả lời mô phỏng (simulator) không phải evidence.
 
@@ -521,7 +582,7 @@ last_synced: 2026-11-16
 ---
 
 ### NUMBERED · Move 2: challenge the scope
-- Kicker: AI move 2
+- Kicker: Việc AI làm
 - Title: Phản biện\n*scope*
 - On-slide:
   - Ví dụ: AI phản biện bản scope mẫu của Delivery App
@@ -571,32 +632,31 @@ last_synced: 2026-11-16
 ---
 
 ### DIAGRAM · Move 3: mine assumptions
-- Kicker: AI move 3
+- Kicker: Việc AI làm
 - Title: Đào assumption\n*từ tài liệu*
 - On-slide:
-  - Ví dụ: brief mẫu của Delivery App, 10 dòng từ B01 đến B10
-  - Bảng ba dòng: assumption, line ID, quote nguyên văn
-  - Dòng thứ ba không đạt: quote chỉ nằm trong B06
-  - 17/18 dòng đạt, dòng hỏng bị chương trình bắt được
+  - Bạn đưa AI brief mẫu của Delivery App. AI trả về từng assumption, kèm quote nguyên văn và vị trí nó lấy trong brief
+  - Hai ví dụ, mỗi ví dụ một hàng: AI trả về (assumption, “trích từ dòng 2 của brief”, quote) rồi kiểm tra quote
+  - Hàng 1 đạt: quote có đúng ở dòng 2. Hàng 2 không đạt: quote nằm ở dòng 6, không có ở dòng 2
 - Ví dụ: có (brief mẫu: 18 dòng, 17 dòng đạt)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Move 2 cho bạn bản scope. Move 3 tìm xem brief còn đang tin điều gì mà chưa nói ra.
   - Giả định nguy hiểm nhất thường nằm sau câu về giải pháp. “Onboarding sẽ giữ chân khách” ngầm nói rằng khách rời đi vì không hiểu app.
   - Bốn bước:
-    - Đưa AI brief, PRD hoặc research cũ, mỗi dòng có ID
-    - AI trả mỗi assumption một dòng gồm assumption, line ID và quote chép nguyên văn. Đây là định dạng citation của phần Ingest
-    - Chạy phép kiểm tra quote bằng chương trình. Trên brief mẫu có 17 trong 18 dòng đạt. Dòng hỏng trích hai dòng brief, nhưng quote chỉ nằm ở một dòng
+    - Đưa AI brief, PRD hoặc research cũ. Với brief ngắn như bản mẫu, bạn đánh số dòng để AI chỉ đúng chỗ. Với tài liệu dài, bạn nhờ AI ghi vị trí theo đề mục hoặc số trang cũng được
+    - AI trả mỗi assumption kèm vị trí trong tài liệu và quote chép nguyên văn. Đây là kiểu ghi nguồn bạn sẽ dùng lại ở phần Ingest
+    - Kiểm tra quote: mở đúng dòng AI ghi, xem quote có thật nằm trong đó không. Bạn có thể làm tay, và phần Ingest ở sau sẽ cho bạn cách nhờ một script làm việc này. Trên brief mẫu có 17 trong 18 dòng đạt. Dòng hỏng trích hai dòng của brief, nhưng quote chỉ nằm ở một dòng
     - Bạn bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận
   - Chương trình chỉ chứng minh quote có thật. Mức quan trọng của từng assumption vẫn do bạn quyết.
 
   > Tài liệu nào trong project của bạn chưa từng được đọc để tìm giả định?
-- 🎨 Visual hint: DIAGRAM. Một card nền trắng với ba dòng, icon check và cancel line-art, dòng hỏng viền tím; số 17/18 lớn màu tím bên dưới. Hình line-art nhỏ ở góc phải tiêu đề.
+- 🎨 Visual hint: Hai hàng, mỗi hàng có card trái (assumption, vị trí, quote) nối bằng mũi tên với card phải (Đạt hoặc Không đạt); card Không đạt nền tối. Hình line-art nhỏ ở góc phải tiêu đề.
 
 ---
 
 ### COMPARE · Move 4: audit the evidence
-- Kicker: AI move 4
+- Kicker: Việc AI làm
 - Title: Kiểm tra evidence\n*trong hub*
 - On-slide:
   - Ví dụ: 18 ghi chú mẫu của Delivery App (review và bài trên forum)
@@ -1096,8 +1156,40 @@ last_synced: 2026-11-16
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Phần phụ lục, ngoài 90 phút của buổi. Dùng khi còn thời gian hoặc khi lớp hỏi thêm.
-  - Ba chủ đề: competitor analysis, nền tảng phỏng vấn, và method recap của Break the brief.
+  - Bốn chủ đề: AI làm được gì ở Discover, competitor analysis, nền tảng phỏng vấn, và method recap của Break the brief.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
+
+---
+
+### NUMBERED · What AI does in Discover (moved from part one)
+- Kicker: AI làm được gì ở Discover
+- Title: Discover
+- On-slide:
+  - Sub: AI soạn nháp, bạn kiểm tra
+  - Tạo transcript buổi phỏng vấn và usability test
+  - Dịch và localise transcript research
+  - Tóm tắt một buổi phỏng vấn thành các ý chính
+  - Gắn tag đoạn trích theo codebook có sẵn
+  - Gom ghi chú thành nhóm affinity bản đầu
+  - Tìm lại research cũ của team
+  - Soạn nháp interview guide
+  - Làm sạch và tóm tắt câu trả lời mở trong survey
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide này trả lời: ở Discover, AI soạn nháp được những việc nào. Bảy việc trên slide cùng một nhịp: AI soạn nháp, bạn kiểm tra. Ví dụ: AI tóm tắt một buổi phỏng vấn với khách app giao đồ ăn, bạn đối chiếu từng quote với transcript.
+  - Phần bạn kiểm tra ở từng việc:
+    - Transcript: kiểm tra lại tên riêng, thuật ngữ và con số.
+    - Tóm tắt: đối chiếu từng quote với transcript, vì bản tóm tắt hay thêm chi tiết không có thật.
+    - Tag theo codebook: người xem lại các trường hợp mơ hồ.
+    - Affinity: AI tìm liên hệ về nghĩa, bạn sắp xếp lại và đặt tên nhóm.
+    - Interview guide: bạn loại câu hỏi dẫn dắt và sắp xếp theo mức rủi ro.
+    - Survey: lấy mẫu kiểm tra xem có bỏ sót ý kiến thiểu số không.
+  - Với việc dịch transcript và tìm lại research cũ của team, bạn cũng mở nguồn gốc ra đối chiếu khi AI trích hoặc dịch.
+  - AI chưa làm được hai việc: biết điều không có trong tài liệu (nó tự lấp chỗ trống bằng những câu nghe có vẻ hợp lý) và thay người thật trả lời. Phần lớn danh sách này là ước tính từ catalogue task, chưa phải số đo trên designer Việt Nam.
+
+  > Trong bảy việc này, việc nào bạn đang tự làm tay nhiều giờ nhất?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
 

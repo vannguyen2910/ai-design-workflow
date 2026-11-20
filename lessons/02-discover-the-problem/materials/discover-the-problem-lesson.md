@@ -13,13 +13,13 @@ slides: "https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6"
 previous-session: "Your Design Process, with AI"
 next-session: "Turn Research into Insights You Can Trust"
 ---
-Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học cách phá brief (break the brief), chuẩn bị và chạy phỏng vấn người dùng thật, rồi đưa transcript vào hub theo ba quy tắc của Lesson 1: ingest thành evidence note có mã, và kiểm tra mọi quote bằng chương trình. Bạn làm cả chuỗi này trên project của mình ở nhà sau buổi học. Phần từ evidence note đến insight (synthesis) học ở Lesson 3.
+Buổi này mở stage Discover. Bạn gom tài liệu team đã có thành context library cho AI, đặt một bộ principles chung, học cách phá brief (break the brief), chuẩn bị và chạy phỏng vấn người dùng thật, rồi đưa transcript vào hub theo ba quy tắc của Lesson 1: ingest thành evidence note có mã, và kiểm tra mọi quote bằng chương trình. Bạn làm cả chuỗi này trên project của mình ở nhà sau buổi học. Phần từ evidence note đến insight (synthesis) học ở Lesson 3.
 
 > **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** Mọi điều bạn ghi ở Discover truy được về một nguồn, hoặc mang nhãn "chưa có nguồn". Độ tin cậy nằm ở đó, không nằm ở độ trơn tru của bản AI soạn.
 
 ## Nội dung buổi học
 
-1. AI trong Discover Problem: Discover nằm ở đâu và AI giúp được gì
+1. Cho AI những gì team đã biết: vì sao là bước đầu, tài liệu có sẵn, context library, và project mới chưa có gì
 2. Principles cho AI: chuẩn để AI đối chiếu
 3. Break the brief: scope, assumption và research question
 4. Understand our users: research plan, script, buổi phỏng vấn và quy tắc dữ liệu
@@ -28,11 +28,11 @@ Buổi này mở stage Discover. Bạn đặt một bộ principles chung, học
 7. Những gì vào hub sau buổi này
 8. Ví dụ xuyên suốt với Delivery App
 
-Phụ lục, ngoài 90 phút: competitor analysis.
+Phụ lục, ngoài 90 phút: AI làm được gì ở Discover, và competitor analysis.
 
 ## Sau buổi học, bạn có thể
 
-1. Chỉ ra Discover nằm ở đâu trong Double Diamond và nêu AI giúp được gì, chưa giúp được gì ở stage này
+1. Giải thích vì sao cho AI những gì team đã biết là bước đầu tiên, nêu mỗi nguồn có sẵn thiên lệch ở đâu, gom tài liệu thành context library, và biết bắt đầu từ đâu khi project chưa có gì
 2. Viết một principle riêng của sản phẩm có thể đảo ngược một quyết định và có dòng "điều này không có nghĩa là", và giải thích vì sao chuẩn đặt trước khi AI chạy
 3. Mô tả ba việc của Break the brief (scope, assumption, research question), file mỗi việc tạo ra và phần bạn kiểm tra, và chạy bốn move AI (brief thành vấn đề, đào assumption từ tài liệu, kiểm tra evidence trong hub, phản biện scope) với phần bạn kiểm tra ở mỗi move
 4. Giải thích vì sao AI không được đóng vai PO hay user, và gắn trạng thái confirmed hoặc assumed cho scope
@@ -43,29 +43,60 @@ Phụ lục, ngoài 90 phút: competitor analysis.
 
 ---
 
-## 1. Background: where Discover sits and what AI can do
+## 1. Feed: cho AI những gì team đã biết
 
-### 1.1 Discover in the Double Diamond
+Trước khi hỏi người thật, bạn xem team đã có gì. Phần này nói vì sao đây là bước đầu tiên, team thường đã có những tài liệu nào và mỗi nguồn thiên lệch ở đâu, đưa chúng cho AI thế nào để kiểm tra được, và bắt đầu từ đâu khi project chưa có gì.
 
-Kim cương thứ nhất (Discover rồi Define) mở rộng để hiểu vấn đề, rồi thu hẹp về vấn đề đáng giải. Discover là điểm mở rộng đầu tiên: gom điều team đã biết, điều người dùng nói và làm, điều thị trường đang làm.
+### 1.1 Vì sao đây là bước đầu tiên
 
-Một brief thường nêu giải pháp ("thêm bước onboarding"). Một business question nêu vấn đề mà giải pháp phục vụ ("vì sao khách mới không đặt lại sau đơn đầu tiên?"). Brief là điểm xuất phát tốt để cùng kiểm tra, không phải thứ cần sửa. Break the brief (mục 3) là cách kiểm tra đó.
+Khi set up một AI design workflow, bước đầu tiên là cho AI những gì team đã biết. Có ba lý do:
 
-### 1.2 What AI can do in Discover
+- **AI chỉ biết những gì bạn đưa cho nó.** Thiếu context, AI sẽ tự lấp chỗ trống bằng những câu nghe có vẻ hợp lý, như bạn đã thấy ở phần hallucination của Lesson 1.
+- **Ít tốn effort nhất.** Không cần hẹn ai, AI đọc được ngay tài liệu team đã có.
+- **Các bước sau dùng lại được.** Principles, break the brief và ingest đều lấy dữ liệu từ library, nên bạn chỉ dựng một lần.
 
-Ở Discover, AI soạn nháp được các việc sau, cùng một nhịp "AI soạn nháp, bạn kiểm tra":
+Đây là cách làm của chương trình, chưa phải kết quả nghiên cứu.
 
-- Tạo transcript buổi phỏng vấn: bạn kiểm tra lại tên riêng, thuật ngữ và con số.
-- Tóm tắt một buổi phỏng vấn thành các ý chính: bạn đối chiếu từng quote với transcript, vì bản tóm tắt hay thêm chi tiết không có thật.
-- Gom ghi chú thành nhóm affinity bản đầu: AI tìm liên hệ về nghĩa, bạn sắp xếp lại và đặt tên nhóm.
-- Tìm lại research cũ của team: bạn mở nguồn gốc khi AI trích.
-- Soạn nháp interview guide: bạn loại câu hỏi dẫn dắt và sắp xếp theo mức rủi ro.
+### 1.2 Tài liệu hiện có trong team
 
-AI chưa làm được hai việc: biết điều không có trong tài liệu (nó lấp chỗ trống bằng điều nghe hợp lý) và thay người thật trả lời. Danh sách trên là ước tính từ catalogue task, chưa phải số đo trên designer Việt Nam. Chọn điều gì đáng đưa vào scope và chấm severity vẫn thuộc về bạn.
+Team bạn thường đã có sáu loại: PRD và spec (những gì team đã quyết), ticket và chat support (vấn đề khách đã báo), review và diễn đàn (điều khách tự nói ra), research cũ (những gì team từng tìm hiểu), analytics (khách thực sự làm gì), và ghi chú họp, quyết định (những gì team đã bàn). AI đọc được tất cả, nhiều file cùng lúc. Ví dụ ở Delivery App, một review cho biết khách không đổi được khung giờ sau khi thanh toán. Những gì tài liệu chưa nói tới, bạn sẽ hỏi người ở phần 4.
 
-### 1.3 The partner stance
+Mỗi nguồn về khách cho thấy một điều và thiên lệch theo một kiểu:
 
-Phần AI chưa làm thay được là cùng product và business chọn vấn đề đáng giải và thống nhất thế nào là thành công. Lập trường ở đây là partner, không phải người nhận order: thay vì làm ngay màn hình onboarding, hỏi "vì sao khách mới không đặt lại sau đơn đầu tiên?".
+| Nguồn | Cho thấy | Thiên lệch |
+|---|---|---|
+| Ticket và chat support | Vấn đề của người đang gặp trục trặc | Chỉ gồm người chịu liên hệ |
+| Review và diễn đàn | Lời khách nói một cách tự nhiên | Nghiêng về hai đầu cảm xúc |
+| Cuộc gọi sales và CS | Điều khách cần mà chưa tìm thấy | Nhiều người chưa mua, chưa phải user |
+| Analytics | Hành vi của khách | Không cho biết vì sao |
+| PRD và research cũ | Những gì team đang tin | Mở nguồn kiểm tra trước khi coi là sự thật |
+
+Đối thủ cũng là một nguồn có sẵn, và phần này nằm ở Appendix. Ví dụ công khai: thư viện research của GitLab cho phép thử một hypothesis trên bốn nguồn, gồm báo cáo research nội bộ, trích dẫn khách, cuộc gọi của sales và ticket support (handbook của GitLab). Các nhận xét về độ thiên lệch lấy từ hướng dẫn thực hành của các hãng công cụ, nên là kinh nghiệm chung, chưa phải số đo.
+
+Khi đưa nguồn cho AI, bạn cần nhớ hai bẫy. Thứ nhất, AI chỉ thấy những người chịu gửi feedback, nên bức tranh nó vẽ chỉ là của nhóm đó. Thứ hai, một số công cụ âm thầm cắt phần cuối của file dài, nên bạn tách file lớn ra.
+
+### 1.3 Gom thành context library
+
+Bốn bước, theo thứ tự:
+
+1. **Ẩn danh trước**, trên máy bạn, theo data rules ở Lesson 1. Ticket và ghi chú cuộc gọi thường có tên và email nằm lẫn trong văn bản tự do. Nếu bạn nhờ AI chuyển định dạng trước khi ẩn danh, dữ liệu gốc đã đi qua AI rồi.
+2. **Chuyển thành markdown.** Mỗi tài liệu một file: PRD một file, mỗi báo cáo research một file. Nguồn nhiều dòng như ticket thì mỗi đợt xuất một file và mỗi ticket có một ID. Giữ nguyên văn, không tóm tắt.
+3. **Ghi vài dòng ở đầu file:** loại nguồn, ngày, người viết và điểm thiên lệch.
+4. **Đặt vào folder context, kèm một file mục lục** để AI đọc mục lục trước. Quy tắc dùng tài liệu nằm trong `AGENTS.md`, ví dụ: thiếu nguồn thì ghi "chưa có nguồn".
+
+**Context library** là cả folder, nơi chứa mọi file. **Context pack** là vài file bạn chọn từ library cho một việc, ví dụ Move 3 ở mục 3. Tên folder và tên file do bạn chọn. Product context bạn viết ở Practice 1 là file đầu tiên của library.
+
+### 1.4 Project mới, chưa có gì
+
+Project mới hoàn toàn thì chưa có gì để gom. Ba việc, theo thứ tự:
+
+1. **Viết ra điều team đang tin.** Gom các giả định hiện có thành một file, mỗi dòng gắn nhãn `assumed`. Đây là đầu vào cho phần assumption ở mục 3.
+2. **Gom nguồn công khai:** đối thủ, review của app tương tự, diễn đàn, báo cáo ngành. Mỗi dòng ghi rõ nguồn.
+3. **Hỏi nhanh stakeholder:** vài cuộc trao đổi ngắn với product, business và support, rồi ghi lại thành file.
+
+Chỗ nào chưa có nguồn thì ghi "chưa có nguồn". Library còn trống cũng là một kết quả hợp lệ: nó cho biết việc cần làm tiếp theo là đi phỏng vấn. Chưa có tài liệu thật để thử thì dùng case mẫu Delivery App trong practice.
+
+AI chỉ giúp được khi bạn đã biết thế nào là tốt, nên mục tiếp theo là principles.
 
 ---
 
@@ -101,7 +132,7 @@ Principle riêng cũng là rubric cho AI chấm. Nghiên cứu UXBench cho thấ
 
 ### 2.3 Principles first, then AI
 
-Bạn nắm principles trước để nhận ra khi AI gán sai principles hoặc đưa ra nhận định chung chung: AI chạy sau, trên chuẩn của bạn, không ngược lại. Hình dung nhờ AI đánh giá cùng một màn hình thanh toán hai lần mà không nạp chuẩn nào: lần một ra mười finding, chín cái là "làm cho rõ ràng hơn", lần hai ra một bộ khác hẳn, và không ai biết bộ nào đúng. Đây là ví dụ minh hoạ, bạn có thể thay bằng lần chạy thật của mình. Nạp principles thì AI so với cùng một chuẩn, và kiểm tra một finding chỉ cần hỏi nó vi phạm principle nào.
+Bạn nắm principles trước để nhận ra khi AI gán sai principle hoặc đưa ra nhận định chung chung. AI chạy sau, trên chuẩn của bạn. Hình dung bạn nhờ AI đánh giá cùng một màn hình thanh toán hai lần mà không nạp chuẩn nào: lần một ra mười finding, chín cái là "làm cho rõ ràng hơn"; lần hai ra một bộ khác hẳn, và không ai biết bộ nào đúng. Đây chỉ là ví dụ minh hoạ, bạn có thể thay bằng lần chạy thật của mình. Khi nạp principles, AI so với cùng một chuẩn, và để kiểm tra một finding bạn chỉ cần hỏi nó vi phạm principle nào.
 
 ### 2.4 What AI can do with the principles
 
@@ -111,7 +142,7 @@ Bạn nắm principles trước để nhận ra khi AI gán sai principles hoặ
 | Đối chiếu | Cross-check finding với principle | Kiểm tra lại, vì AI dễ gán sai principle cho finding |
 | Kiểm tra | Chấm output theo rubric viết từ bộ principles | Viết tiêu chí quan sát được, chạy thử vài vòng trước khi tin |
 
-AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như "vi phạm nhất quán", mà không hỏi sự không nhất quán đó có giải một vấn đề thật hay không. Principle giúp AI bám chuẩn, còn quyết định vẫn là của bạn.
+AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như "vi phạm nhất quán", mà không hỏi sự thiếu nhất quán đó có gây ra vấn đề thật hay không. Principle giúp AI bám chuẩn, còn quyết định vẫn là của bạn.
 
 ### 2.5 Package the principles: rules file and skill
 
@@ -128,13 +159,13 @@ AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như "vi
 
 ### 3.1 Three steps, three files
 
-Break the brief là cách kiểm tra brief trước khi chấp nhận nó, và bắt đầu từ context pack đã dựng ở bài tập buổi 1. Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question và scope, liệt kê điều đang tin mà chưa có evidence, biến những điều đó thành research question. Method bạn đã biết. Phần mới của buổi này là **bốn move AI**: những việc AI làm tốt hơn người ở bước này, mỗi move có phần bạn kiểm tra và một chỗ để ghi vào hub.
+Break the brief là cách kiểm tra brief trước khi chấp nhận nó, và bắt đầu từ context pack, tức vài file bạn chọn từ context library ở mục 1. Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question và scope, liệt kê điều đang tin mà chưa có evidence, biến những điều đó thành research question. Method bạn đã biết. Phần mới của buổi này là **bốn move AI**: những việc AI làm tốt hơn người ở bước này, mỗi move có phần bạn kiểm tra và một chỗ để ghi vào hub.
 
 | # | Move | AI làm | Bạn kiểm tra và ghi vào hub |
 |---|---|---|---|
 | 1 | Brief thành vấn đề | Phân loại từng dòng brief, viết lại dòng giải pháp thành câu vấn đề, nêu giả định ngầm | Dòng nào bị đổi nghĩa; scope viết theo vấn đề, không theo giải pháp |
 | 2 | Phản biện scope | Đóng vai người phản biện: năm cách scope có thể sai, ai phản đối, câu hỏi cho người thật | Chọn câu hỏi đáng hỏi; agreement status và danh sách việc cần xác nhận |
-| 3 | Đào assumption từ tài liệu | Trích assumption kèm line ID và quote nguyên văn, gồm cả giả định ngầm | Chạy kiểm tra quote; bỏ dòng trùng hoặc chỉ là sự kiện; assumption map |
+| 3 | Đào assumption từ tài liệu | Trích assumption kèm vị trí trong tài liệu và quote nguyên văn, gồm cả giả định ngầm | Chạy kiểm tra quote; bỏ dòng trùng hoặc chỉ là sự kiện; assumption map |
 | 4 | Kiểm tra evidence trong hub | Tìm ghi chú ủng hộ và đi ngược, trả note ID và quote; không có thì "chưa có nguồn" | Đọc từng ghi chú có thật sự ủng hộ không; cột evidence của assumption map |
 
 Ba hoạt động vẫn là ba file: scope, assumption map, research question. Bốn move nằm bên trong hai hoạt động đầu. Bộ dữ liệu mẫu và kết quả đã lưu của bốn move nằm ở `break-the-brief-moves.md` trong course case.
@@ -151,13 +182,13 @@ Tên file và cấu trúc thư mục chỉ là gợi ý. Cách tổ chức nào 
 
 Tầng gửi business có năm câu: outcome, success metric, baseline, ràng buộc, thời hạn và người quyết định. Bạn viết thêm **quyết định** mà câu trả lời sẽ phục vụ. Câu đã có trả lời ghi vào scope là **confirmed**; câu chưa có ghi **assumed**, kèm người cần xác nhận. **Agreement status** có ba giá trị: agreed, pending, not available.
 
-**AI không đóng vai PO hay user.** Các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe. Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý. AI chuẩn bị câu hỏi và soạn nháp ghi chú, còn câu trả lời luôn do người thật đưa ra.
+**AI không đóng vai PO hay user.** Các nghiên cứu về người dùng do AI mô phỏng cho thấy chúng thiên về câu trả lời dễ nghe. Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý. AI chuẩn bị câu hỏi và soạn nháp ghi chú, còn câu trả lời luôn do người thật đưa ra.
 
-**Move 1: Brief thành vấn đề.** Brief thường đến dưới dạng giải pháp ("thêm onboarding bốn bước"). Đưa AI từng dòng brief có ID, nhờ nó phân loại (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc), rồi viết lại mỗi dòng giải pháp thành một câu vấn đề không nhắc đến giải pháp, kèm điều giải pháp đó đang ngầm giả định. Trên brief mẫu của Delivery App, AI tách được dòng gộp hai ý (B09), chỉ ra B02 và B07 nói ngược nhau về giá, và nhận ra cả hai giải pháp đều không đụng vào nguyên nhân mà brief nêu, vì giá bị khoá. Bạn kiểm tra bản viết lại có đổi nghĩa không, rồi viết scope theo câu vấn đề.
+**Move 1: Brief thành vấn đề.** Brief thường đến dưới dạng giải pháp ("thêm onboarding bốn bước"). Đưa AI brief, đánh số từng dòng để nó chỉ đúng chỗ, nhờ nó phân loại (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc), rồi viết lại mỗi dòng giải pháp thành một câu vấn đề không nhắc đến giải pháp, kèm điều giải pháp đó đang ngầm giả định. Trên brief mẫu của Delivery App, AI tách được dòng gộp hai ý (B09), chỉ ra B02 và B07 nói ngược nhau về giá, và nhận ra cả hai giải pháp đều không đụng vào nguyên nhân mà brief nêu, vì giá bị khoá. Bạn kiểm tra bản viết lại có đổi nghĩa không, rồi viết scope theo câu vấn đề.
 
 **Move 2: Phản biện scope.** Khi đã có scope nháp, nhờ AI đóng vai người phản biện, không đóng vai PO: nêu năm cách scope này có thể sai, ai sẽ phản đối, dấu hiệu sớm, một câu hỏi cần hỏi người thật, và một cách metric hoặc guardrail có thể bị lách. Trên bản scope mẫu, AI chỉ ra "khách mới" chưa được định nghĩa, scope còn pending mà đã chốt việc sáu tuần, và guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy. Đây là danh sách giả thuyết để hỏi người thật. AI không biết "khách mới" của công ty bạn nghĩa là gì, nên bạn chọn câu đáng hỏi, và câu trả lời vẫn do người thật đưa.
 
-**Hỏi trung tính.** Câu nêu sẵn hypothesis có thể làm AI nghiêng theo người hỏi, hoặc ít nhất đổi thứ AI nói trước (xem mục 6). "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân". Mục 6 cho thấy chính xác nghiêng theo kiểu nào.
+**Hỏi trung tính.** Câu nêu sẵn hypothesis có thể làm AI nghiêng theo người hỏi, hoặc ít nhất đổi điều AI nói đầu tiên (xem mục 6). "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân". Mục 6 cho thấy nó nghiêng theo kiểu nào.
 
 | Access level | Tình huống | Bạn làm gì | Agreement status |
 |---|---|---|---|
@@ -182,7 +213,7 @@ Không có access là vị thế yếu hơn, và quy trình chỉ giảm nhẹ c
 - **Ma trận Importance × Evidence:** góc quan trọng cao, evidence yếu là chỗ phải kiểm chứng trước. Luôn đọc nhãn trục trước khi đọc vị trí, vì một số bản đảo trục. Framework cho phép 3 đến 5 assumption; chương trình chọn 3 vì thời gian.
 - **Cập nhật bản đồ:** chuyển assumption sang Confirmed, Unconfirmed hay Unknown sau khi có insight từ phỏng vấn (làm ở Lesson 3).
 
-**Move 3: Đào assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, mỗi dòng có ID, và nhờ nó trả về từng dòng `assumption | line IDs | quote` với quote chép nguyên văn. Đó đúng là định dạng citation của mục 5, nên bạn chạy được phép kiểm tra quote. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
+**Move 3: Đào assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, và nhờ nó trả về từng dòng `assumption | vị trí | quote` với quote chép nguyên văn. Brief ngắn như bản mẫu thì bạn đánh số dòng để AI chỉ đúng chỗ; tài liệu dài thì nhờ AI ghi vị trí theo đề mục hoặc số trang. Đánh số từng dòng là cách làm của khoá, không phải cách phổ biến nhất. Kiểu ghi nguồn này giống citation của mục 5, nên bạn kiểm tra quote được bằng cách mở đúng chỗ AI ghi. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
 
 **Move 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (18 ghi chú review và diễn đàn), assumption về khung giờ có bốn ghi chú ủng hộ, assumption "giá là lý do chính" chỉ có F07 ủng hộ và R06 đi ngược, còn assumption "nhắc sau 7 ngày" là "chưa có nguồn". Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên evidence note mới để cập nhật bản đồ.
 
@@ -198,7 +229,7 @@ AI đọc context pack và scope rồi liệt kê assumption theo công thức, 
 | **Why** | Giữ phỏng vấn bám vào điều cần học |
 | **When** | Sau Challenge assumptions, trước research plan và phỏng vấn |
 
-Chuỗi là **assumption, rồi research question, rồi 5 đến 8 interview question**. **Method cần nhắc:** viết research question trung tính về hành vi, thái độ hoặc bối cảnh, không nói về giải pháp định đưa ra; không quá rộng hay quá hẹp; viết trước khi phỏng vấn. Ba kiểu câu xấu: tìm phản hồi, kiểm tra sở thích, hỏi hành vi giả định. Hai tiêu chí thêm: gắn với đúng một assumption và một quyết định, và biết tìm câu trả lời ở đâu.
+Chuỗi là: **assumption**, **research question**, rồi **5 đến 8 interview question**. **Method cần nhắc:** viết research question trung tính về hành vi, thái độ hoặc bối cảnh, không nói về giải pháp định đưa ra; không quá rộng hay quá hẹp; viết trước khi phỏng vấn. Ba kiểu câu xấu: tìm phản hồi, kiểm tra sở thích, hỏi hành vi giả định. Hai tiêu chí thêm: gắn với đúng một assumption và một quyết định, và biết tìm câu trả lời ở đâu.
 
 **Công thức:** *"Chúng ta cần hiểu gì về [hành vi, vấn đề, bối cảnh] để [đưa ra quyết định]?"*. Research question không bao giờ được hỏi thẳng người dùng: họ kể chuyện của họ, và câu trả lời nằm trong những câu chuyện đó.
 
@@ -221,7 +252,7 @@ Bốn thói quen của một buổi phỏng vấn tốt:
 3. **Tò mò, không dẫn dắt.** Không xác nhận assumption của bạn; để câu trả lời làm bạn bất ngờ.
 4. **Nghe và quan sát.** Người phỏng vấn nói quá khoảng 20% thời gian thì có điều gì đó sai. Điều họ làm khác điều họ nói thì ghi cả hai.
 
-Chuỗi xin câu chuyện rồi hỏi sâu đi theo một nhịp: xin một lần cụ thể gần nhất, hỏi chuyện gì xảy ra sau đó, hỏi vì sao điều đó quan trọng, rồi xin họ chỉ cho xem. Tránh ba kiểu câu: hành vi giả định ("Bạn có dùng tính năng đổi khung giờ không?"), câu đặt sẵn đáp án ("Bạn có thấy bước chọn giờ khó hiểu không?") và câu đóng cho con số mà không có lý do.
+Để xin câu chuyện rồi hỏi sâu, bạn đi theo một nhịp: xin một lần cụ thể gần nhất, hỏi chuyện gì xảy ra sau đó, hỏi vì sao điều đó quan trọng, rồi xin họ chỉ cho xem. Tránh ba kiểu câu: hành vi giả định ("Bạn có dùng tính năng đổi khung giờ không?"), câu đặt sẵn đáp án ("Bạn có thấy bước chọn giờ khó hiểu không?") và câu đóng cho con số mà không có lý do.
 
 ### 4.2 Research với AI: plan và script
 
@@ -234,9 +265,9 @@ AI giúp rõ nhất ở khâu chuẩn bị. Trước khi viết câu hỏi, cầ
 | Interview question | Soạn 8 đến 10 câu mở từ một research question | Cắt ít nhất một nửa (AI hay lặp ý), viết lại câu dẫn dắt |
 | Facilitation script | Soạn lời mở, câu hỏi, nhánh follow-up, lời kết | Chỉnh giọng, bỏ câu dẫn dắt |
 
-Hai điều bắt buộc. **Chạy thử với một đồng nghiệp hoặc người quen** trước buổi thật, vì AI yếu ở bước thử trước (pretest). **Xin phép người tham gia** ở ba điểm: ghi hình, dùng cho bài tập hoặc nghiên cứu nội bộ, không chia sẻ ra ngoài; người từ chối ghi hình thì ghi chú tay. Chương trình dạy mức thực hành, không thay tư vấn pháp lý. Trong buổi phỏng vấn, bạn giữ vai moderator; nếu cả buổi chỉ đi theo thứ tự câu hỏi thì script đã thành bảng khảo sát.
+Hai điều bắt buộc. **Chạy thử với một đồng nghiệp hoặc người quen** trước buổi thật, vì AI yếu ở bước thử trước (pretest). **Xin phép người tham gia** ở ba điểm: ghi hình, dùng cho bài tập hoặc nghiên cứu nội bộ, không chia sẻ ra ngoài; người từ chối ghi hình thì ghi chú tay. Chương trình chỉ dạy ở mức thực hành, không thay tư vấn pháp lý. Trong buổi phỏng vấn, bạn giữ vai moderator; nếu cả buổi chỉ đi theo thứ tự câu hỏi thì script đã thành bảng khảo sát.
 
-AI nghiêng theo cách bạn đặt câu hỏi, nên hãy nhờ nó phản biện thay vì hỏi "đúng không?", và chỉ cho nó dùng tài liệu bạn đã đưa, thiếu thì ghi unknown. Evidence riêng cho AI ở ba bước assumption, research question và interview question còn mỏng: điều đã biết chắc là AI soạn câu hỏi rõ nhưng bỏ sót thiên kiến tinh vi và yếu ở bước thử với người thật.
+AI nghiêng theo cách bạn đặt câu hỏi, nên hãy nhờ nó phản biện thay vì hỏi "đúng không?", và chỉ cho nó dùng tài liệu bạn đã đưa, thiếu thì ghi unknown. Bằng chứng riêng về AI ở ba bước assumption, research question và interview question còn mỏng. Điều đã khá chắc: AI soạn câu hỏi rõ ràng, nhưng bỏ sót những thiên kiến tinh vi và yếu ở bước thử với người thật.
 
 ### 4.3 Four questions before sending interview data to AI
 
@@ -314,7 +345,7 @@ Hai buổi phỏng vấn cho khoảng 8 đến 20 note, và thế là đủ: ph�
 
 ### 6.1 The setup
 
-Cùng 10 evidence note mẫu của Delivery App (RET-01 đến RET-10), hai lần hỏi AI trong hai phiên riêng. Lần 1 không nêu hypothesis. Lần 2 thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi." Hai lần có cùng câu hỏi, cùng dữ liệu, cùng yêu cầu nêu mã note. Prompt và kết quả đầy đủ nằm ở `assets/starter-files/course-case/blind-synthesis.md`.
+Bạn hỏi AI hai lần, trong hai phiên riêng, trên cùng 10 evidence note mẫu của Delivery App (RET-01 đến RET-10). Lần 1 không nêu hypothesis. Lần 2 thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi." Hai lần có cùng câu hỏi, cùng dữ liệu, cùng yêu cầu nêu mã note. Prompt và kết quả đầy đủ nằm ở `assets/starter-files/course-case/blind-synthesis.md`.
 
 Bộ mẫu chứa sẵn hypothesis này: RET-10 nói món quá đắt, RET-09 nói phí giao hơi đắt nhưng vẫn đặt tiếp, và RET-08 nói thời gian chờ làm khách phiền hơn giá.
 
@@ -327,13 +358,13 @@ Bộ mẫu chứa sẵn hypothesis này: RET-10 nói món quá đắt, RET-09 n�
 | Kết luận về giá | Không phải lý do bỏ đi của P1; với P2, thời gian chờ nặng hơn giá | Không được ủng hộ; RET-10 là bằng chứng ủng hộ duy nhất, từ một người |
 | Bốn lý do còn lại | Giống nhau (cùng nhóm, cùng mã note) | Giống nhau |
 
-Hypothesis không đảo kết luận, nhưng đổi chỗ giá nằm trong câu trả lời: từ lý do cuối danh sách thành câu đầu tiên cộng một mục riêng. Giá là một trong những chủ đề có ít evidence nhất (ba trên mười note, và một trong ba note là của người nói thời gian chờ quan trọng hơn giá). Lần 2 còn nêu một điều lần 1 không nêu: RET-08 và RET-10 là của cùng một người và nghe ngược nhau, nên cần hỏi lại người đó.
+Hypothesis không đảo kết luận, nhưng đổi chỗ giá nằm trong câu trả lời: từ lý do cuối danh sách thành câu đầu tiên cộng một mục riêng. Giá là một trong những chủ đề có ít evidence nhất (ba trên mười note, và một trong ba note là của người nói thời gian chờ quan trọng hơn giá). Lần 2 còn nêu một điều lần 1 không nêu: RET-08 và RET-10 là của cùng một người và mâu thuẫn nhau, nên cần hỏi lại người đó.
 
 ### 6.3 What the runs do not show
 
 Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: một prompt đòi AI "tóm tắt các bằng chứng trong ghi chú cho thấy điều đó", và một prompt đòi soạn "ba điểm mạnh nhất từ các ghi chú để ủng hộ" đề xuất giảm phí giao. Cả hai prompt và kết quả đã lưu nằm trong `blind-synthesis.md`. Với prompt đầu, AI nói bằng chứng không ủng hộ rõ, chỉ RET-10 ủng hộ còn RET-09 và RET-08 làm yếu hypothesis. Với prompt sau, AI từ chối soạn ba điểm mạnh vì không có đủ bằng chứng. Vậy bộ mẫu này **không** cho thấy AI đồng ý với hypothesis.
 
-Đây là hành vi của một mô hình ở một thời điểm, trên một bộ rất nhỏ có sẵn mâu thuẫn rõ; bốn lần chạy này do một subagent của AI coding tool thực hiện, không phải công cụ AI của bạn. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác. Vì vậy bạn không rút ra "AI không bị hypothesis ảnh hưởng", mà rút ra phương pháp:
+Đây là hành vi của một mô hình ở một thời điểm, trên một bộ rất nhỏ có sẵn mâu thuẫn rõ; bốn lần chạy này do một subagent của AI coding tool thực hiện, không phải công cụ AI của bạn. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác. Vì vậy bạn không nên kết luận "AI không bị hypothesis ảnh hưởng". Điều đáng mang đi là phương pháp:
 
 1. Chạy lần đầu **không** nêu hypothesis (blind).
 2. Chạy lần hai có hypothesis của team.
@@ -345,7 +376,7 @@ Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: mộ
 
 ## 7. What goes into the hub
 
-Năm thứ mang ra khỏi buổi này vào hub của bạn, và là input của chuỗi việc ở nhà:
+Năm thứ bạn đưa vào hub sau buổi này, và cũng là input cho chuỗi việc làm ở nhà:
 
 | Thứ | Nội dung |
 |---|---|
@@ -373,6 +404,23 @@ Project mẫu (hư cấu): Delivery App, nhiều khách mới không đặt lạ
 
 ---
 
+## Appendix. What AI can do in Discover
+
+Ngoài 90 phút của buổi học. Dùng khi lớp hỏi thêm về các việc AI soạn nháp được ở Discover.
+
+AI soạn nháp được các việc sau, cùng một nhịp "AI soạn nháp, bạn kiểm tra":
+
+- Tạo transcript buổi phỏng vấn: bạn kiểm tra lại tên riêng, thuật ngữ và con số.
+- Tóm tắt một buổi phỏng vấn thành các ý chính: bạn đối chiếu từng quote với transcript, vì bản tóm tắt hay thêm chi tiết không có thật.
+- Gom ghi chú thành nhóm affinity bản đầu: AI tìm liên hệ về nghĩa, bạn sắp xếp lại và đặt tên nhóm.
+- Tìm lại research cũ của team: bạn mở nguồn gốc khi AI trích.
+- Soạn nháp interview guide: bạn loại câu hỏi dẫn dắt và sắp xếp theo mức rủi ro.
+- Dịch và localise transcript research, gắn tag đoạn trích theo codebook có sẵn, làm sạch và tóm tắt câu trả lời mở trong survey: bạn xem lại các trường hợp mơ hồ và lấy mẫu kiểm tra xem có bỏ sót ý kiến thiểu số không.
+
+AI chưa làm được hai việc: biết điều không có trong tài liệu (nó tự lấp chỗ trống bằng những câu nghe có vẻ hợp lý) và thay người thật trả lời. Danh sách trên là ước tính từ catalogue task, chưa phải số đo trên designer Việt Nam. Chọn điều gì đáng đưa vào scope và chấm severity vẫn thuộc về bạn.
+
+---
+
 ## Appendix. Competitor analysis
 
 Ngoài 90 phút của buổi học. Dùng khi còn thời gian hoặc khi lớp hỏi thêm; làm sau research question, khi cần thêm hypothesis.
@@ -389,7 +437,7 @@ Năm điều cần nắm:
 
 ## Giới hạn của bài học
 
-- Danh sách việc AI làm được ở Discover (1.2) là ước tính từ catalogue task, chưa phải số đo trên designer Việt Nam. Evidence riêng cho AI ở ba bước assumption, research question và interview question còn mỏng.
+- Danh sách việc AI làm được ở Discover (Appendix) là ước tính từ catalogue task, chưa phải số đo trên designer Việt Nam. Bằng chứng riêng về AI ở ba bước assumption, research question và interview question còn mỏng.
 - Hướng dẫn viết principle (2.2) tổng hợp từ 18F và một tài liệu practitioner, không phải nghiên cứu thực nghiệm. UXBench mới được đọc qua kết quả tìm kiếm.
 - Ba mức access và agreement status do chương trình thiết kế, chưa thử với lớp thật.
 - Các cảnh báo về quote bịa và theme bịa (5.2) đến từ hướng dẫn thực hành của nhà cung cấp công cụ và một bài tổng quan; chúng là kinh nghiệm, chưa phải số đo.

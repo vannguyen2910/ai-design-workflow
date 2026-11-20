@@ -37,7 +37,7 @@ Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết đ�
 
 ### Step 2 · Business question và scope · AI soạn nháp, bạn kiểm tra
 
-- **Move 1, brief thành vấn đề:** đưa AI brief của project, mỗi dòng có ID (`B01 | ...`). Nhờ AI phân loại từng dòng (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc) và viết lại mỗi dòng giải pháp thành một câu vấn đề, kèm điều giải pháp đó đang ngầm giả định. Bạn kiểm tra bản viết lại có đổi nghĩa không.
+- **Move 1, brief thành vấn đề:** đưa AI brief của project, đánh số từng dòng (`1 | ...`) để AI chỉ đúng chỗ. Nhờ AI phân loại từng dòng (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc) và viết lại mỗi dòng giải pháp thành một câu vấn đề, kèm điều giải pháp đó đang ngầm giả định. Bạn kiểm tra bản viết lại có đổi nghĩa không.
 - **Bạn viết:** một business question tách khỏi giải pháp, và quyết định mà câu trả lời sẽ phục vụ.
 - **AI soạn nháp:** năm câu hỏi cho business, mỗi câu một ý: outcome, success metric, baseline, constraints, timeline và người quyết định.
 - **Bạn kiểm tra:** sửa câu cho trung lập, rồi ghi vào scope. Câu đã có trả lời là "confirmed". Câu chưa có thì ghi "assumed" kèm người cần xác nhận. Không nhờ AI trả lời thay.
@@ -45,7 +45,7 @@ Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết đ�
 
 ### Step 3 · Challenge assumptions · AI soạn nháp, bạn kiểm tra
 
-- **Move 3, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh, mỗi dòng có ID). Nhờ AI trả mỗi assumption một dòng `assumption | line IDs | quote`, với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm tra quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
+- **Move 3, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh). Nhờ AI trả mỗi assumption một dòng `assumption | vị trí | quote` (vị trí là số dòng, đề mục hoặc số trang), với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm tra quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
 - **Bạn lọc:** bỏ dòng trùng và dòng chỉ là sự kiện. Sửa ít nhất hai assumption cho cụ thể hơn.
 - **Move 4, kiểm tra evidence trong hub:** đưa AI danh sách assumption còn lại và các ghi chú đang có trong hub (review, ticket, analytics, research cũ; hub trống thì để trống). Nhờ AI tìm ghi chú ủng hộ và ghi chú đi ngược, kèm ID và quote nguyên văn, và ghi "chưa có nguồn" khi không có.
 - **Bạn kiểm tra:** đọc từng ghi chú AI trích có thật sự ủng hộ assumption đó không. AI hay gọi kiến thức chung là "đã có evidence": chưa có file nguồn thì ghi "chưa có nguồn".

@@ -2,7 +2,7 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 64
+slide_count: 66
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
@@ -383,6 +383,30 @@ last_synced: 2026-11-18
   - Trong chương trình, hầu hết những gì bạn viết cho AI là markdown: rules file, SKILL.md, ghi chú research, tài liệu product, cả output AI trả về.
   - Bạn không cần nhớ cú pháp. AI viết được markdown, designer chỉ cần đọc và chỉnh.
 - 🎨 Visual hint: Ba card What, Why, Use cases nền trắng viền đen, mỗi card có icon nhỏ, tiêu đề và vài dòng ngắn.
+
+---
+
+### SPLIT · Reading a markdown file
+- Kicker: Cách đọc
+- Title: Đọc một file markdown
+- On-slide:
+  - Trái: file mẫu RET-02.md (front matter, đề mục, bảng, danh sách, quote, liên kết)
+  - Phải, năm dòng: Front matter (thông tin về chính file: id, trạng thái, nguồn); Đề mục (nhiều dấu # thì mục càng nhỏ); Bảng và danh sách (dòng có dấu | hoặc bắt đầu bằng -); Liên kết (đường dẫn cho biết file kia nằm đâu); Quote (lời trích nguyên văn của người dùng)
+- Ví dụ: có (evidence note mẫu của Delivery App, gặp lại ở Lesson 2)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói vì sao dùng markdown. Slide này cho bạn thấy một file markdown trông thế nào, để bạn đọc được dù không phải người viết nó
+  - Một file .md thường có năm thứ:
+    - Front matter: khối giữa hai dòng --- ở đầu file, ghi thông tin về chính file đó như id, trạng thái, nguồn. AI và chương trình đọc phần này để lọc và kiểm tra
+    - Đề mục: dòng bắt đầu bằng #. Nhiều dấu # thì mục càng nhỏ
+    - Bảng và danh sách: dòng bắt đầu bằng - hoặc vẽ bằng dấu |
+    - Liên kết: chữ hiển thị trong ngoặc vuông, đường dẫn trong ngoặc tròn. Đường dẫn cho biết file kia nằm ở đâu trong folder
+    - Quote: dòng bắt đầu bằng >. Trong hub, đây là lời trích nguyên văn của người dùng
+  - (tuỳ chọn) Khối giữa ba dấu huyền là code block, dùng cho ví dụ hoặc lệnh
+  - Mở một file lạ, bạn không cần hiểu hết. Chỉ cần nhìn ra file này nói về gì, ai viết, và nó dẫn tới file nào
+
+  > Trong các file markdown bạn từng mở, thứ nào bạn thấy lạ nhất?
+- 🎨 Visual hint: SPLIT. Trái: khung viền đen chứa file mẫu bằng chữ mono; phải: năm hàng, mỗi hàng một ký hiệu trong khung nhỏ, tên mục đậm và một dòng giải thích, đường kẻ mảnh giữa các hàng.
 
 ---
 
@@ -1569,6 +1593,29 @@ last_synced: 2026-11-18
     - Deliver (buổi 11 đến 12): Handoff và measurement; Project log
   - Đến buổi 12, hub hoàn thiện và đó là output cuối của khoá.
 - 🎨 Visual hint: Hai hình thoi Double Diamond (hình đầu tô tím nhạt) và bốn cột giai đoạn, mỗi cột xếp các ô trang của hub.
+
+---
+
+### TABLE · Sharing the hub
+- Kicker: Chia sẻ hub
+- Title: Đưa hub cho người khác xem
+- On-slide:
+  - Bảng ba cột (Cách, Ai chuyển sang HTML, Hợp với), bốn hàng: Script của chương trình hoặc Pandoc (chạy trên máy bạn, ra một file HTML; hub nhỏ, gửi qua email hoặc chat); MkDocs, Docusaurus, Quartz (đọc cả folder, ra site có menu và tìm kiếm; hub nhiều trang, nhiều người xem); GitHub Pages, Notion, Confluence (nền tảng tự hiển thị; team đã dùng sẵn); Obsidian Publish (dịch vụ trả phí; ghi chú viết trong Obsidian)
+  - Trình duyệt không hiển thị markdown đã định dạng, nên luôn cần một bước chuyển sang HTML. Chọn cách nào, hỏi trước: ai xem được?
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Phần HTML ở trước nói cách dựng một file HTML từ markdown. Slide này trả lời: khi nhiều người cần xem hub, có những cách nào
+  - Trình duyệt chỉ hiện file .md như chữ thường, nên cách nào cũng cần một bước chuyển markdown sang HTML. Bốn cách:
+    - Script của chương trình hoặc Pandoc: chạy trên máy bạn, ra một file HTML gửi được qua email hoặc chat. Đây là cách chương trình dùng
+    - MkDocs, Docusaurus, Quartz: đọc cả folder, ra một site có menu và tìm kiếm. Các team kỹ thuật hay dùng khi tài liệu lớn lên, ví dụ Backstage TechDocs của Spotify dùng MkDocs
+    - GitHub Pages, Notion, Confluence: nền tảng tự hiển thị, hợp khi team đã dùng sẵn
+    - Obsidian Publish: dịch vụ trả phí, hợp với ghi chú viết trong Obsidian
+  - Chọn cách nào, hỏi trước: ai xem được. Site GitHub Pages có thể công khai dù repository là private. Bản publish chỉ nên chứa dữ liệu đã ẩn danh và được phép chia sẻ
+  - Nguồn là tìm kiếm web, chưa có số liệu mức độ phổ biến của từng cách trong các công ty, nên đây là các lựa chọn hay gặp, chưa phải xếp hạng
+
+  > Ở chỗ bạn làm, người khác thường xem tài liệu ở đâu?
+- 🎨 Visual hint: Bảng dạng hàng như slide Nguồn của Lesson 2, hàng đầu nền tối (cách chương trình dùng); một thanh nền vàng bên dưới cho câu chốt. Nằm trong Appendix, sau slide Hub lớn dần.
 
 ---
 
