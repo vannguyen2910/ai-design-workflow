@@ -91,19 +91,15 @@ last_synced: 2026-11-20
   - Nút thắt nằm ở khâu làm ra sản phẩm (implementation).
   - Sau AI
   - Làm ra sản phẩm nhanh và ít effort hơn, nhưng công việc kiểm tra (verification) vẫn tốn công sức của team nếu như chúng ta không có rules để biết cái nào là đúng hay sai.
-- Ví dụ: có (bản nháp, Delivery App: AI dựng mười màn hình trong vài phút, nhưng kiểm tra xem màn nào đúng thì không nhanh theo)
+- Ví dụ: có (AI dựng mười màn hình trong vài phút, còn kiểm tra màn nào đúng thì vẫn mất công như trước.)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
-  > AI làm cho việc build sản phẩm và cách tính năng nhanh hơn và ít tốn effort hơn. Nhưng việc kiểm tra thì không giảm effort theo.
+  > AI làm cho việc build sản phẩm và tính năng nhanh hơn, ít tốn effort hơn. Nhưng việc kiểm tra thì không giảm effort theo.
 
-  > Hình này so sánh trước và sau AI: nút thắt dời từ implementation sang verification. Với designer, AI tạo mười hướng trong vài phút, nhưng chọn hướng đúng và kiểm tra với người dùng thật thì không nhanh theo.
-
-  > Khi làm ra đầu ra ít tốn effort hơn, phần effort dồn sang bước kiểm tra.
-
-  > Vì AI tạo ra có thể trông có vẻ đúng nhưng lại tiềm ẩn các lỗi logic tinh vi hoặc vấn đề về bộ nhớ, nên việc con người kiểm duyệt, thực hiện kiểm thử đơn vị (unit testing) và xác thực thông qua quy trình CI/CD là những bước bắt buộc.
-
-  > AI dựng mười màn hình trong vài phút, còn kiểm tra màn nào đúng thì vẫn mất công như trước.
+  - Hình này so sánh trước và sau AI: nút thắt dời từ implementation sang verification.
+  - Với designer, AI tạo mười hướng trong vài phút, nhưng chọn hướng đúng và kiểm tra với người dùng thật thì không nhanh theo.
+  - Khi làm ra đầu ra ít tốn effort hơn, phần effort dồn sang bước kiểm tra.
 
   > Ở project của bạn, ai đang kiểm tra những gì AI hoặc team dựng ra?
 - 🎨 Visual hint: SCHEMATIC. Hình hai ống: trước AI nút thắt ở implementation, sau AI nút thắt ở verification.
@@ -194,7 +190,7 @@ last_synced: 2026-11-20
 
   > Một designer ở team product mở prototype ra và thấy nút Confirm nằm ngoài Design System. Đó là một finding của audit chứ không phải ý kiến cá nhân.
 
-  - Heuristic evaluation chấm experience theo cái design standard phổ biết của thế giới. Bảng mười heuristic nằm ở Appendix và ở tài liệu tham khảo.
+  - Heuristic evaluation chấm experience theo cái design standard phổ biết của thế giới. Bảng mười heuristic nằm ở tài liệu tham khảo.
   - UX Audit rộng hơn. AI đối chiếu màn hình với bốn bộ tiêu chí, còn các bộ tiêu chí nằm trong rules files mà bạn và team set up
   - Đầu ra là danh sách finding có evidence và severity, không phải nhận xét chung chung.
   - Audit đáng làm sau khi dựng prototype và trước usability test, vì AI dựng nhanh thì chỗ bị bỏ sót cũng nhiều. Thiếu bước này, người dùng là người đầu tiên phát hiện lỗi.
@@ -207,8 +203,8 @@ last_synced: 2026-11-20
 ---
 
 ### DIAGRAM · Criteria stack
-- Kicker: Tiêu chí
-- Title: Các bộ tiêu chí để audit UX
+- Kicker: Đầu vào
+- Title: Bộ tiêu chí để audit UX
 - On-slide:
   - 01 · Heuristics: Dùng cho mọi sản phẩm.
   - 02 · Principles: Principle riêng của product và ràng buộc từ phía business.
@@ -326,7 +322,7 @@ last_synced: 2026-11-20
 
 ### IMAGE · AI audit on a live environment
 - Kicker: Ví dụ phổ biến
-- Title: Audit trực tiếp trên môi trường thật
+- Title: Audit trên môi trường thật
 - On-slide:
   - Dùng khi bạn có quyền vào môi trường test hoặc production.
   - 01 · Có quyền truy cập: Bạn có quyền đăng nhập, hoặc cho AI dùng chế độ truy cập trình duyệt.
@@ -572,7 +568,7 @@ last_synced: 2026-11-20
 ---
 
 ### DIAGRAM · Accessibility checklist
-- Kicker: Checklist
+- Kicker: Cách đọc
 - Title: Checklist accessibility cơ bản cho AI
 - On-slide:
   - P30 · Chữ có tương phản tối thiểu 4.5:1 với nền?: Tool, AI
@@ -636,7 +632,7 @@ last_synced: 2026-11-20
 
 ### COMPARE · GOV.UK and REI
 - Kicker: Ví dụ
-- Title: Cách các công ty làm\n*audit accessibility*
+- Title: Audit accessibility\n*ở tổ chức lớn*
 - On-slide:
   - GOV.UK
   - Audit trước public beta, gồm công cụ tự động, kiểm thủ công và công nghệ hỗ trợ.
@@ -666,23 +662,23 @@ last_synced: 2026-11-20
 
 ### COMPARE · A company checklist as a model file
 - Kicker: Ví dụ thật · GitHub
-- Title: Checklist của công ty,\n*thành file cho AI*
+- Title: Checklist thành\n*file cho AI*
 - On-slide:
-  - 01 · GitHub Accessibility có hướng dẫn viết custom instructions cho Copilot, ở cấp tổ chức, repo hoặc cá nhân.
+  - 01 · GitHub Accessibility có hướng dẫn viết custom instructions cho công cụ AI coding, ở cấp tổ chức, repo hoặc cá nhân.
   - 02 · Tiêu chí viết bằng MUST, MUST NOT, SHOULD, ví dụ một checklist cho WCAG 1.3.1.
-  - 03 · Checklist mở rộng WCAG cho Copilot coding agent và code review, kèm quy tắc của design system.
+  - 03 · Checklist mở rộng WCAG cho coding agent và code review, kèm quy tắc của design system.
   - 04 · Nên viết ngắn và dán thẳng nội dung, không dán link hay cả bộ WCAG.
-- Ví dụ: có (GitHub Accessibility, trang Copilot instructions (accessibility.github.com, mục documentation/guide/copilot-instructions); hướng dẫn cho tổ chức được ghi là GA từ 2/4/2026)
+- Ví dụ: có (GitHub Accessibility, trang custom instructions (accessibility.github.com, mục documentation/guide/copilot-instructions); hướng dẫn cho tổ chức được ghi là GA từ 2/4/2026)
 - Câu hỏi hay gặp:
   - Công ty mình chưa có checklist thì sao? Bạn dùng bản mẫu 17 dòng trong template làm mức nền, rồi thêm quy tắc riêng từ P47.
   - Có dùng thẳng file của GitHub được không? Dùng làm mẫu cách viết thì được. Bạn vẫn đối chiếu lại với tiêu chuẩn và yêu cầu của công ty mình.
 - Speaker notes:
 
-  > GitHub là một ví dụ công khai về việc biến checklist accessibility thành file cho AI. Trang hướng dẫn của GitHub Accessibility chỉ cách viết custom instructions để Copilot bám theo yêu cầu accessibility của team.
+  > GitHub là một ví dụ công khai về việc biến checklist accessibility thành file cho AI. Trang hướng dẫn của GitHub Accessibility chỉ cách viết custom instructions để công cụ AI coding bám theo yêu cầu accessibility của team.
 
   - Có thể đặt ở cấp tổ chức, repo hoặc cá nhân; instructions cá nhân được ưu tiên hơn.
   - Tiêu chí viết bằng ngôn ngữ giống WCAG: MUST, MUST NOT, SHOULD. Ví dụ trong trang là một checklist cho WCAG 1.3.1: không gán role presentation cho phần tử có ngữ nghĩa, và thông báo lỗi phải gắn được với ô nhập.
-  - Checklist này mở rộng WCAG cho cả Copilot coding agent và code review, và có thể thêm quy tắc design system, ví dụ không dùng button đã deprecated.
+  - Checklist này mở rộng WCAG cho cả coding agent và code review, và có thể thêm quy tắc design system, ví dụ không dùng button đã deprecated.
   - Trang khuyên viết ngắn, dán thẳng nội dung cần dùng, không dán link hay cả bộ WCAG, vì mô hình đã biết WCAG.
   - Giống design principle và business principle, accessibility cũng là một bộ nguyên tắc; khi checklist là một file, bạn sửa, thêm dòng và dùng lại ở mọi project.
   - Đây là hướng dẫn công khai cho người viết instructions, không mô tả quy trình nội bộ của GitHub và không đo hiệu quả. Trang không ghi ngày cập nhật, chỉ ghi bản quyền 2026.
@@ -772,7 +768,7 @@ last_synced: 2026-11-20
 
 ### STATEMENT · Small samples
 - Kicker: Giới hạn
-- Title: Mẫu nhỏ cho ra tín hiệu,\n*chưa phải tỷ lệ*
+- Title: Mẫu nhỏ, chỉ là\n*tín hiệu*
 - On-slide: Với mẫu nhỏ, bạn chỉ nên dùng SUS và task success để so sánh trước và sau khi sửa.
 - Ví dụ: có (trong Delivery App, 4 trên 5 người hoàn thành task chọn khung giờ; điều đáng học là vì sao một người kẹt, chứ không phải con số 80%)
 - Câu hỏi hay gặp:
@@ -796,7 +792,7 @@ last_synced: 2026-11-20
 
 ### PROCESS · Recruit and prepare
 - Kicker: Cách làm
-- Title: Chuẩn bị và chạy một buổi test
+- Title: Chuẩn bị và chạy buổi test
 - On-slide:
   - 01 · Chọn 3 đến 5 người đúng nhóm người dùng, và hỏi hai câu lọc trước khi mời.
   - 02 · Dùng AI viết test plan và script.
@@ -914,7 +910,7 @@ last_synced: 2026-11-20
 
 ### IMAGE · Usability report from AI
 - Kicker: Ví dụ thật · Travel Buddy
-- Title: Report usability test do AI tổng hợp
+- Title: Report test do AI tổng hợp
 - On-slide: AI tổng hợp transcript và recording thành report markdown, rồi đưa lên hub
 - Ví dụ: có (dự án mẫu Travel Buddy: report do AI tổng hợp từ transcript và recording của các buổi test, hiển thị trên hub)
 - Câu hỏi hay gặp: None.
@@ -939,7 +935,7 @@ last_synced: 2026-11-20
 
 ### NUMBERED · A test analysed by AI
 - Kicker: Ví dụ thật · NN/g
-- Title: AI đọc recording, vì sao phải có mục tiêu
+- Title: AI đọc recording cần mục tiêu
 - On-slide:
   - NN/g thử công cụ AI phân tích recording của một buổi usability test (2023) và thấy ba chỗ yếu.
   - 01 · Chỉ đọc transcript: Công cụ không nhìn video, nên thiếu những thao tác người dùng không nói ra.
@@ -1005,7 +1001,7 @@ last_synced: 2026-11-20
 
 ### PROCESS · One report, three jobs with AI
 - Kicker: Use case
-- Title: Một audit report, ba việc cùng AI
+- Title: Một report, ba việc cùng AI
 - On-slide:
   - 01 · Gộp kết quả test: AI khớp finding của test với finding audit và đề xuất nâng severity kèm lý do; bạn mở timestamp và quyết định.
   - 02 · Soạn ticket cho dev: AI nhóm finding theo layer rồi soạn ticket, mỗi ticket dẫn ID tiêu chí làm điều kiện nghiệm thu.
@@ -1033,7 +1029,7 @@ last_synced: 2026-11-20
 
 ### DIAGRAM · Layer ladder
 - Kicker: Chỗ sửa
-- Title: Sửa ở layer có *ảnh hưởng rộng nhất*
+- Title: Sửa ở layer *rộng nhất*
 - On-slide: Sửa một layer là sửa mọi thứ nằm bên trong nó. Lỗi lặp lại thì sửa lên layer ngoài; lỗi chỉ ở một màn thì sửa ngay màn đó.
 - Ví dụ: có (trong Delivery App, nút Xác nhận sai màu ở bốn màn nên sửa ở token hoặc component; thiếu trạng thái hết khung giờ chỉ ở một màn nên sửa ngay ở màn đó)
 - Câu hỏi hay gặp:
@@ -1108,12 +1104,15 @@ last_synced: 2026-11-20
 - Speaker notes:
 
   - Slide này có cùng định dạng với ba slide “AI làm được gì” của các giai đoạn trước.
+  - Ở giai đoạn Deliver, AI soạn nháp ghi chú handoff, tài liệu component, script, alt text, design rationale và changelog. Bạn kiểm tra rồi chốt.
+
+  > Việc nào trong danh sách này bạn đang tự viết tay mà có thể nhờ AI soạn nháp?
 - 🎨 Visual hint: SCHEMATIC. Danh sách việc AI soạn nháp.
 
 ---
 
 ### NUMBERED · UX foundation package
-- Kicker: Gói handoff
+- Kicker: Bàn giao
 - Title: Gói handoff UX foundation
 - On-slide:
   - 01 · Rules file, design system và các file tiêu chí (principle, accessibility)
@@ -1193,7 +1192,7 @@ last_synced: 2026-11-20
 ---
 
 ### DIAGRAM · What each lesson contributes
-- Kicker: Đóng góp
+- Kicker: Nhìn lại cả khoá
 - Title: Mỗi lesson đóng góp gì
 - On-slide:
   - 1 · Làm việc với AI an toàn; giảm rủi ro dữ liệu
@@ -1278,7 +1277,7 @@ last_synced: 2026-11-20
 
 ### STATEMENT · Closing line
 - Kicker: Takeaway
-- Title: Muốn AI build đúng,\nđừng bỏ qua handoff rules
+- Title: Handoff rules\ngiữ AI build đúng
 - On-slide: AI chỉ giữ được UX foundation của bạn khi nó đọc được lý do và giới hạn. Sau đó bạn audit lại bản build.
 - Ví dụ: Không cần. Slide kết.
 - Câu hỏi hay gặp: None.
@@ -1387,7 +1386,7 @@ last_synced: 2026-11-20
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
-  > Slide trước là công thức goal, signal, metric. Đây là phần metric trong test plan thật của Travel Buddy: cho 8 đến 12 người, năm task theo hành trình.
+  > Slide “Từ goal đến metric” ở phần 03 là công thức. Đây là phần metric trong test plan thật của Travel Buddy: cho 8 đến 12 người, năm task theo hành trình.
 
   > Ba metric chính:
 
@@ -1423,7 +1422,7 @@ last_synced: 2026-11-20
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
-  > Slide trước nói AI không đóng vai người dùng được. Đây là một vòng test của Travel Buddy làm đúng điều đó, để bạn thấy nó cho ra loại kết quả nào.
+  > Slide “AI không đóng vai người dùng” ở phần 03 nói AI không thay được người dùng thật. Đây là một vòng test của Travel Buddy làm đúng điều đó, để bạn thấy nó cho ra loại kết quả nào.
 
   > Ba con số:
 
@@ -1466,7 +1465,7 @@ last_synced: 2026-11-20
 
 ### NUMBERED · A tool that reads code
 - Kicker: Ví dụ
-- Title: Uber dùng AI để generate\nspec accessibility
+- Title: Uber dùng AI sinh\nspec accessibility
 - On-slide:
   - 01 · Uber xây hệ thống uSpec: agent đọc component trong Figma rồi sinh spec
   - 02 · Một lần chạy sinh spec screen reader cho iOS, Android và Web trong dưới hai phút
