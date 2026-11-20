@@ -298,7 +298,7 @@ Transcript đã ẩn danh là **raw source**; bạn không sửa nó. Từ đó 
 
 - **Tiêu đề là observation.** Đó là điều participant làm hoặc nói, viết trung tính, chưa có nguyên nhân, đánh giá hay giải pháp. Ví dụ "P1 could not find where to cancel and contacted support", không phải "The cancel button is hidden".
 - **Quote nguyên văn.** Mỗi note có một đến ba quote, mỗi quote kèm tên transcript và số lượt.
-- **Mã.** Mã Business Outcome trong Scope của bạn cộng số thứ tự, ví dụ `RET-02`. Mã này nối evidence về outcome nó phục vụ, giống mã Epic ở nhiều công ty.
+- **Mã.** Mã Business Outcome trong Scope của bạn cộng số thứ tự, ví dụ `RET-02`. Mã này nối evidence về outcome nó phục vụ, giống mã Epic ở nhiều công ty. Mã cũng là thứ giúp AI làm việc đáng tin: AI chỉ ra được note nào ủng hộ insight nào thay vì nói chung chung, bạn kiểm tra được quote ở đúng note đó, và ba tháng sau ai hỏi "vì sao kết luận vậy?" thì mở lại được nguồn.
 - **Các trường khác.** `status` (draft, checked hoặc superseded), `confidence` (low, medium hoặc high), `source` và `tags`. `confidence` do bạn đặt, không do AI. Mỗi note ở Lesson 2 chỉ có một participant nên để `low`; Lesson 3 mới nâng khi nhiều evidence cùng nói một điều.
 
 ```markdown
