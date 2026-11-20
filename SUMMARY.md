@@ -116,7 +116,7 @@ Not shown. Move a line above the comment to publish it.
 - [Principle checks](assets/starter-files/case-folder-template/learnings/context-principle-checks.md)
 - [Product and users](assets/starter-files/case-folder-template/learnings/context-product-and-users.md)
 - [Problem brief](assets/starter-files/case-folder-template/learnings/define-problem-brief.md)
-- [Findings](assets/starter-files/case-folder-template/learnings/deliver-findings.md)
+- [Findings](assets/starter-files/case-folder-template/learnings/deliver-audit-report.md)
 - [Handoff](assets/starter-files/case-folder-template/learnings/deliver-handoff.md)
 - [Measurement plan](assets/starter-files/case-folder-template/learnings/deliver-measurement-plan.md)
 - [Test plan](assets/starter-files/case-folder-template/learnings/deliver-test-plan.md)

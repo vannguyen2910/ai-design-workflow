@@ -60,6 +60,6 @@ Verdict của bạn cho từng warning (sửa, chấp nhận như trade-off, ho�
 | [Problem brief](03-problem-brief.md) | Define | Opportunity, hypothesis, metric, principle | `learnings/define-problem-brief.md` |
 | [Options, flows, prototype](04-develop.md) | Develop | Các hướng đã khám phá, decision | `learnings/develop-options.md`, `prototype/` |
 | [Alignment check](05-alignment.md) | Develop | Principle audit, verdict | `learnings/develop-alignment.md` |
-| [Findings](06-findings.md) | Deliver | Kết quả test với người dùng | `learnings/deliver-findings.md` |
+| [Findings](06-findings.md) | Deliver | Kết quả test với người dùng | `learnings/deliver-audit-report.md` |
 | [Handoff and measurement](07-handoff.md) | Deliver | Handoff pack, measurement plan | `learnings/deliver-handoff.md`, `measurement-plan.md` |
 | [Project log](../case-log.md) | mọi giai đoạn | Mỗi decision một dòng | `case-log.md` ở folder gốc của project |

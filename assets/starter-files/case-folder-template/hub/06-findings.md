@@ -2,7 +2,7 @@
 
 *Người dùng thật đã làm gì: task success, thời gian, lỗi và mức hài lòng, đặt cạnh baseline.*
 
-> **Cách điền:** mỗi test là một file trong `hub/` (T1.md...), có dòng `Tests` và `Measures`; bảng bên dưới do AI dựng từ các file đó. Báo cáo kết quả so với baseline. Kiểm tra mọi phân tích có AI hỗ trợ với ghi chú hoặc bản ghi gốc. Copy từ [`learnings/deliver-findings.md`](../learnings/deliver-findings.md).
+> **Cách điền:** mỗi test là một file trong `hub/` (T1.md...), có dòng `Tests` và `Measures`; bảng bên dưới do AI dựng từ các file đó. Báo cáo kết quả so với baseline. Kiểm tra mọi phân tích có AI hỗ trợ với ghi chú hoặc bản ghi gốc. Copy từ [`learnings/deliver-audit-report.md`](../learnings/deliver-audit-report.md).
 
 ## Tests
 
