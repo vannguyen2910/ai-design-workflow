@@ -29,7 +29,7 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 ## Sau buổi học, bạn có thể
 
 1. Giải thích vì sao implement nhanh bằng AI làm verification thành nút thắt, và khi nào dùng UX Audit, khi nào dùng usability test
-2. Viết tiêu chí audit thành file markdown có ID, và chạy một UX Audit với AI: lọc finding qua ba cổng, chấm severity, và đếm finding AI sai hoặc bỏ sót
+2. Viết tiêu chí audit thành file markdown có ID, và chạy một UX Audit với AI: lọc finding qua ba cổng, chấm severity, và biết cách đếm finding AI sai hoặc bỏ sót (thực hành trên prototype của bạn ở buổi practice; bài Audit Hunt nằm trong Appendix của deck)
 3. Đọc một checklist accessibility, biết dòng nào AI kiểm được và dòng nào chỉ người kiểm được, rồi chạy ba lượt kiểm trên prototype
 4. Viết Goals, Signals, Metrics cho một test, và chuẩn bị usability test với participant bạn tự tìm mà không để AI đóng vai người dùng
 5. Gộp kết quả test vào audit report, kiểm phần phân tích của AI với ghi chú gốc, và xếp finding theo severity
@@ -103,6 +103,8 @@ Bốn bộ tiêu chí cho biết dùng thước nào. Layer cho biết nhìn và
 | State | Đã có trạng thái rỗng, đang tải, lỗi chưa? | Không có trạng thái "không còn khung giờ nào" |
 | Nội dung | Nhãn và thông báo có nhất quán với content voice không? | Chỗ gọi "Đơn hàng", chỗ gọi "Order" |
 | Flow | Có khớp requirement và flow đã chọn ở Lesson 4 không? | Thiếu bước hiển thị cut-off trước khi thanh toán |
+
+Từ "layer" ở đây là sáu góc nhìn để audit. Nó khác với layer ladder ở mục 5.3 (token, component, shell, template, màn hình), là chỗ để sửa. Cột "Layer cần sửa" trong finding thuộc loại thứ hai.
 
 Bạn không cần audit đủ sáu layer. Chọn layer phù hợp với flow, và ghi rõ layer nào chưa rà.
 
@@ -245,11 +247,13 @@ Hai nguồn này không nhắc đến AI. Chúng cho thấy lượt 1 và lượ
 
 ### 3.6 Checklist của công ty thành model file
 
-*[to confirm]* Phần này dành cho một trường hợp thật Winnie đã thấy: một designer có checklist accessibility của công ty, viết nó thành một file, và AI đọc file này mỗi lần chạy UX audit. Giống design principle và business principle, accessibility cũng là một bộ nguyên tắc; AI đối chiếu giữa các bộ rồi trả danh sách UX issue. Cần ví dụ thật, đã ẩn danh, trước khi viết tiếp mục này.
+GitHub Accessibility có một trang hướng dẫn công khai về việc viết custom instructions cho Copilot, ở cấp tổ chức, repo hoặc cá nhân; instructions cá nhân được ưu tiên hơn. Tiêu chí được viết bằng ngôn ngữ giống WCAG (MUST, MUST NOT, SHOULD), và ví dụ trong trang là một checklist cho WCAG 1.3.1: không gán role presentation cho phần tử có ngữ nghĩa, thông báo lỗi phải gắn được với ô nhập. Checklist này mở rộng WCAG cho cả Copilot coding agent và code review, và có thể thêm quy tắc của design system, như không dùng button đã deprecated. Trang khuyên viết ngắn và dán thẳng nội dung cần dùng, không dán link hay cả bộ WCAG.
+
+Giống design principle và business principle, accessibility cũng là một bộ nguyên tắc; khi checklist là một file, bạn sửa, thêm dòng và dùng lại ở mọi project. Đây là hướng dẫn công khai cho người viết instructions, không mô tả quy trình nội bộ của GitHub và không đo hiệu quả; trang không ghi ngày cập nhật, chỉ ghi bản quyền 2026. Bạn dùng nó làm mẫu cách viết, rồi đối chiếu lại với tiêu chuẩn và yêu cầu của công ty mình.
 
 ### 3.7 AI sinh spec accessibility ở lúc thiết kế
 
-Uber xây hệ thống uSpec: một agent đọc component trong Figma rồi sinh spec screen reader cho iOS, Android và Web trong dưới hai phút mỗi lần chạy, chạy cục bộ và nối Figma với công cụ AI coding qua MCP. AI chọn từ các API đã có tài liệu thay vì đoán tên thuộc tính. Ví dụ này cho thấy AI làm tốt khi đầu vào có cấu trúc, như một design system. Đây là việc sinh spec lúc thiết kế, không phải audit, và bài viết không mô tả ai kiểm tra spec được sinh ra, nên việc kiểm tra vẫn là việc của người. Nguồn là blog của Uber (11/03/2026).
+*(Slide ví dụ này nằm trong Appendix của deck; dùng khi học viên hỏi.)* Uber xây hệ thống uSpec: một agent đọc component trong Figma rồi sinh spec screen reader cho iOS, Android và Web trong dưới hai phút mỗi lần chạy, chạy cục bộ và nối Figma với công cụ AI coding qua MCP. AI chọn từ các API đã có tài liệu thay vì đoán tên thuộc tính. Ví dụ này cho thấy AI làm tốt khi đầu vào có cấu trúc, như một design system. Đây là việc sinh spec lúc thiết kế, không phải audit, và bài viết không mô tả ai kiểm tra spec được sinh ra, nên việc kiểm tra vẫn là việc của người. Nguồn là blog của Uber (11/03/2026).
 
 ### 3.8 Giới hạn
 
@@ -408,7 +412,7 @@ Với sản phẩm bị quy định (healthcare, finance), một đề xuất l�
 
 ### 5.3 Sửa ở đúng layer
 
-Dùng lại layer ladder ở Lesson 5. Câu hỏi kiểm tra: lỗi này có sai ở nhiều hơn một màn không?
+Dùng lại layer ladder ở Lesson 5. Layer ở đây là chỗ sửa, không phải sáu layer để audit ở mục 2.3. Câu hỏi kiểm tra: lỗi này có sai ở nhiều hơn một màn không?
 
 | Lỗi lặp ở nhiều màn | Sửa ở |
 |---|---|
@@ -511,6 +515,6 @@ Bảng này nói **đóng góp có thể có**, không phải kết quả đã �
 - Bài NN/g năm 2023 về công cụ AI phân tích recording là một mốc thời điểm; công cụ đã cải thiện từ đó.
 - Con số "3 đến 5 người", điểm SUS tham chiếu và khung HEART là kiến thức chung của ngành; chương trình chưa mở lại bản gốc để kiểm lại.
 - Mẫu test nhỏ chỉ cho tín hiệu định tính, không cho kết luận về tỷ lệ.
-- Bảng severity thành việc cho dev ở mục 5.2 và mục 3.6 (checklist của công ty) đang chờ Winnie xác nhận.
+- Bảng severity thành việc cho dev ở mục 5.2 đang chờ Winnie xác nhận.
 - Bảng đóng góp ở mục 6.2 là suy luận của chương trình, chưa đo.
 - Delivery App và các ví dụ là hư cấu, do chương trình tự dựng.

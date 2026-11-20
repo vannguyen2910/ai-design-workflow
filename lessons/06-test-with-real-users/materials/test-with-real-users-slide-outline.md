@@ -19,7 +19,7 @@ last_synced: 2026-11-20
 | Prior session | Buổi 9: AI Prototyping |
 | Next session | Buổi practice, rồi buổi 12: reflection và wrap-up |
 | Running example | project Delivery App hư cấu: audit và test màn "Chọn thời gian giao" và "Huỷ đơn"; business question từ buổi 2 (khách mới không đặt lại sau đơn đầu tiên, 41% đặt đơn thứ hai trong 30 ngày); ví dụ accessibility cần khác bối cảnh thì dùng một màn healthcare hoặc finance hư cấu, ghi rõ là hư cấu |
-| Chia giờ `[to confirm]` | ice breaker 5, mở đầu validate 4, UX Audit 18, accessibility 13, usability test 14, một report, làm việc với dev và hub 11, handoff và cả khoá 10 (gồm cheat sheet), hỏi đáp 6, close 4. Tổng khoảng 90 phút theo ghi chú từng slide, không còn buffer; chưa chạy thử với lớp. Audit Hunt đã chuyển xuống Appendix, nên không còn activity 5 phút trong luồng chính; cần cắt ví dụ nếu chạy dài |
+| Chia giờ `[to confirm]` | ice breaker 5, mở đầu validate 6, UX Audit 21, accessibility 15, usability test 17, một report, làm việc với dev và hub 8, handoff và cả khoá 9, hỏi đáp 6, close 1. Tổng khoảng 88 phút theo ghi chú từng slide (đã chuyển Uber và Audit Hunt xuống Appendix), chưa tính thời gian thảo luận câu hỏi cho lớp, nên vẫn không còn buffer; chưa chạy thử với lớp |
 | Không có trong buổi | Reflection cá nhân; slide reflection nằm ở buổi 12 |
 
 ---
@@ -195,7 +195,7 @@ last_synced: 2026-11-20
   > Một designer ở team product mở prototype ra và thấy nút Confirm nằm ngoài Design System. Đó là một finding của audit chứ không phải ý kiến cá nhân.
 
   - Heuristic evaluation chấm experience theo cái design standard phổ biết của thế giới. Bảng mười heuristic nằm ở Appendix và ở tài liệu tham khảo.
-  - UX Audit rộng hơn. AI đối chiếu màn hình với bốn bộ tiêu chí, còn các layer nằm trong rules files mà bạn và team set up
+  - UX Audit rộng hơn. AI đối chiếu màn hình với bốn bộ tiêu chí, còn các bộ tiêu chí nằm trong rules files mà bạn và team set up
   - Đầu ra là danh sách finding có evidence và severity, không phải nhận xét chung chung.
   - Audit đáng làm sau khi dựng prototype và trước usability test, vì AI dựng nhanh thì chỗ bị bỏ sót cũng nhiều. Thiếu bước này, người dùng là người đầu tiên phát hiện lỗi.
   - Không cần audit khi thay đổi chỉ nằm ở một màn hình nhỏ hoặc impact tới business không cao.
@@ -296,7 +296,7 @@ last_synced: 2026-11-20
   - 01 · Bạn tự rà 5 phút trước khi hỏi AI.
   - 02 · Bạn đưa AI các màn hình, các file tiêu chí và requirement của flow.
   - 03 · AI trả về bảng finding gồm màn, ID tiêu chí, evidence và severity đề xuất.
-  - 04 · Bạn lọc finding cùng với severity.
+  - 04 · Bạn lọc finding qua ba cổng: thấy được trên màn hình, vi phạm tiêu chí đã gán, người dùng thật có gặp.
   - 05 · Bạn kiểm tra lại finding AI làm sai hoặc bỏ sót.
 - Ví dụ: có (trong Delivery App, bạn tự ghi ba điều; AI nhận màn HTML, principle-checks.md và accessibility-rules.md rồi trả một bảng finding; bạn đếm hai finding sai và hai điều bạn thấy mà AI bỏ sót)
 - Câu hỏi hay gặp:
@@ -307,7 +307,7 @@ last_synced: 2026-11-20
 
   > Bạn không hỏi AI “màn này có ổn không”. Bạn đưa nó màn hình và các file tiêu chí, rồi yêu cầu nó trả về một bảng có evidence.
 
-  > Năm bước trên slide: bạn tự rà 5 phút để có mốc so sánh, đưa AI màn hình cùng file tiêu chí và requirement, nhận bảng finding, lọc finding cùng với severity, rồi kiểm lại chỗ AI làm sai hoặc bỏ sót.
+  > Năm bước trên slide: bạn tự rà 5 phút để có mốc so sánh, đưa AI màn hình cùng file tiêu chí và requirement, nhận bảng finding, lọc finding qua ba cổng, rồi kiểm lại chỗ AI làm sai hoặc bỏ sót.
 
   - Đầu vào có bốn phần: màn hình (HTML nếu có), principle-checks.md và accessibility-rules.md, business principle, và requirement của flow.
   - Đầu ra là bảng finding gồm màn, finding, ID tiêu chí, evidence, severity đề xuất kèm lý do, và layer cần sửa.
@@ -316,6 +316,7 @@ last_synced: 2026-11-20
   - Finding nào không qua được cổng nào thì bỏ, hoặc đổi thành hypothesis để hỏi ở usability test.
   - Số lỗi của AI cho bạn biết mức độ đáng tin của nó với loại task này.
   - Mẫu prompt nằm trong tài liệu tham khảo.
+  - Việc đếm lỗi của AI bạn làm ở buổi practice trên chính prototype của mình. Audit Hunt trong Appendix là bản tập trước nếu lớp còn thời gian.
   - Khoảng 4 phút cho slide này
 
   > Flow chính trong prototype của bạn có bao nhiêu màn cần audit?
@@ -456,6 +457,7 @@ last_synced: 2026-11-20
 
   - Bảng có các cột: màn, finding, tiêu chí (ID), nguồn, evidence, severity kèm lý do, layer cần sửa, trạng thái.
   - Cột nguồn ghi audit, test hoặc cả hai. Mình sẽ quay lại cột này ở phần 04.
+  - Layer cần sửa là chỗ sửa: token, component, shell, template hay một màn riêng. Mình dạy cách chọn ở phần 04, bây giờ bạn chỉ cần biết cột này có.
   - Evidence phải mở ra xem được: một đoạn code, một vùng trên ảnh, hoặc một timestamp.
   - Template deliver-audit-report.md đã có sẵn các cột này.
   - Khoảng 2 phút cho slide này
@@ -620,14 +622,12 @@ last_synced: 2026-11-20
 
   > Mỗi lượt sau tốn công hơn lượt trước một chút, nhưng chính lượt sau mới cho mình thấy vấn đề thật.
 
-  - Lượt 1 chạy trên HTML của prototype. AI coding tool có thể chạy công cụ này giúp bạn.
-  - Ở lượt 2, bạn đưa AI HTML của prototype (AI đọc được cấu trúc chứ không chỉ nhìn ảnh), accessibility-rules.md và requirement của flow. Prompt chỉ cần ngắn: đây là màn hình, đây là checklist, trả lời từng dòng, chỗ nào không chắc thì ghi unknown.
-  - AI trả bảng các dòng với pass, fail, unknown hoặc cần người. Mỗi fail có evidence là đoạn code hoặc vùng trên màn hình, và trở thành một finding có ID.
-  - Để kiểm lại, bạn mở đúng đoạn code mà AI dẫn ra. Dòng nào AI ghi pass mà không dẫn được code thì nên nghi ngờ.
-  - Lượt 3 bạn tự làm: bấm Tab qua toàn bộ flow và nghe thử bằng screen reader. Danh sách các dòng “cần người” mà AI liệt kê chính là danh sách việc của lượt này.
-  - Bạn ghi lại việc nào đã làm, việc nào chưa vào bảng Accessibility của audit report. Dòng nào còn “cần người” mà chưa kiểm thì ghi rõ là accessibility còn hở.
-  - Kết quả chạy thử của chương trình trên màn Audit Hunt nằm ở slide “AI audit tốt đến đâu”.
-  - Khoảng 4 phút cho slide này
+  - Lượt 1: công cụ tự động chạy trên HTML của prototype. AI coding tool chạy giúp bạn.
+  - Lượt 2: đưa AI HTML của prototype, accessibility-rules.md và requirement của flow. Prompt ngắn: trả lời từng dòng, chỗ nào không chắc thì ghi unknown.
+  - AI trả pass, fail, unknown hoặc cần người. Mỗi fail có evidence là đoạn code và thành một finding có ID. Bạn mở đúng đoạn code đó để kiểm; dòng pass mà không dẫn được code thì nên nghi ngờ.
+  - Lượt 3: bạn bấm Tab qua flow, nghe thử bằng screen reader và làm các dòng “cần người”. Dòng nào chưa kiểm thì ghi vào audit report là accessibility còn hở.
+  - Kết quả chạy thử của chương trình nằm ở slide “AI audit tốt đến đâu”. Bài Audit Hunt nằm trong Appendix.
+  - Khoảng 3 phút cho slide này
 
   > Bạn có chạy được lượt 3 trên prototype của mình trong tuần này không?
 - 🎨 Visual hint: THREE CARDS. Line-art feature card, ba thẻ cùng cấp (công cụ tự động, AI theo checklist, bạn kiểm): minh hoạ line-art lớn, số, tiêu đề và mô tả.
@@ -665,54 +665,31 @@ last_synced: 2026-11-20
 ---
 
 ### COMPARE · A company checklist as a model file
-- Kicker: Ví dụ
+- Kicker: Ví dụ thật · GitHub
 - Title: Checklist của công ty,\n*thành file cho AI*
 - On-slide:
-  - 01 · Công ty có sẵn checklist accessibility riêng.
-  - 02 · Checklist được viết lại thành file markdown, mỗi dòng một ID.
-  - 03 · AI đối chiếu từng màn với file này khi chạy UX audit.
-  - 04 · [to confirm] cần ví dụ thật từ Winnie
-- Ví dụ: cần ví dụ: một trường hợp thật, đã ẩn danh, trong đó designer viết checklist của công ty thành model file và dùng nó cho AI cross-check lúc audit (checklist có những gì, AI trả ra những loại UX issue nào)
+  - 01 · GitHub Accessibility có hướng dẫn viết custom instructions cho Copilot, ở cấp tổ chức, repo hoặc cá nhân.
+  - 02 · Tiêu chí viết bằng MUST, MUST NOT, SHOULD, ví dụ một checklist cho WCAG 1.3.1.
+  - 03 · Checklist mở rộng WCAG cho Copilot coding agent và code review, kèm quy tắc của design system.
+  - 04 · Nên viết ngắn và dán thẳng nội dung, không dán link hay cả bộ WCAG.
+- Ví dụ: có (GitHub Accessibility, trang Copilot instructions (accessibility.github.com, mục documentation/guide/copilot-instructions); hướng dẫn cho tổ chức được ghi là GA từ 2/4/2026)
 - Câu hỏi hay gặp:
   - Công ty mình chưa có checklist thì sao? Bạn dùng bản mẫu 17 dòng trong template làm mức nền, rồi thêm quy tắc riêng từ P47.
+  - Có dùng thẳng file của GitHub được không? Dùng làm mẫu cách viết thì được. Bạn vẫn đối chiếu lại với tiêu chuẩn và yêu cầu của công ty mình.
 - Speaker notes:
 
-  > Một designer ở một công ty lớn có sẵn checklist accessibility của công ty. Bạn ấy viết nó thành một file, và AI đọc file này mỗi lần chạy UX audit.
+  > GitHub là một ví dụ công khai về việc biến checklist accessibility thành file cho AI. Trang hướng dẫn của GitHub Accessibility chỉ cách viết custom instructions để Copilot bám theo yêu cầu accessibility của team.
 
-  - [to confirm] Phần này lấy từ trường hợp thật Winnie đã thấy, bản outline chưa có chi tiết.
-  - Điểm cần nhấn: giống design principle và business principle, accessibility cũng là một bộ nguyên tắc. AI cross-check giữa các bộ rồi trả về danh sách UX issue.
-  - Khi checklist là một file, bạn có thể sửa, thêm dòng và dùng lại ở mọi project.
+  - Có thể đặt ở cấp tổ chức, repo hoặc cá nhân; instructions cá nhân được ưu tiên hơn.
+  - Tiêu chí viết bằng ngôn ngữ giống WCAG: MUST, MUST NOT, SHOULD. Ví dụ trong trang là một checklist cho WCAG 1.3.1: không gán role presentation cho phần tử có ngữ nghĩa, và thông báo lỗi phải gắn được với ô nhập.
+  - Checklist này mở rộng WCAG cho cả Copilot coding agent và code review, và có thể thêm quy tắc design system, ví dụ không dùng button đã deprecated.
+  - Trang khuyên viết ngắn, dán thẳng nội dung cần dùng, không dán link hay cả bộ WCAG, vì mô hình đã biết WCAG.
+  - Giống design principle và business principle, accessibility cũng là một bộ nguyên tắc; khi checklist là một file, bạn sửa, thêm dòng và dùng lại ở mọi project.
+  - Đây là hướng dẫn công khai cho người viết instructions, không mô tả quy trình nội bộ của GitHub và không đo hiệu quả. Trang không ghi ngày cập nhật, chỉ ghi bản quyền 2026.
   - Khoảng 2 phút cho slide này
 
   > Công ty hay team của bạn có checklist nào đang nằm trong một file PDF hay một trang wiki không?
-- 🎨 Visual hint: SCHEMATIC. Compare hai cột: "Checklist trong PDF" và "Checklist là file cho AI".
-
----
-
-### NUMBERED · A tool that reads code
-- Kicker: Ví dụ
-- Title: Uber dùng AI để generate\nspec accessibility
-- On-slide:
-  - 01 · Uber xây hệ thống uSpec: agent đọc component trong Figma rồi sinh spec
-  - 02 · Một lần chạy sinh spec screen reader cho iOS, Android và Web trong dưới hai phút
-  - 03 · Hệ thống chạy cục bộ, nối Figma với công cụ AI coding qua MCP
-  - 04 · Bài viết không mô tả bước người kiểm tra spec do AI sinh ra
-- Ví dụ: có (blog Uber, 11/03/2026; design system có hàng trăm component trên bảy nền tảng; bài viết không nêu tỷ lệ lỗi hay số spec đã tạo)
-- Câu hỏi hay gặp:
-  - Đây có phải là audit không? Không. Đây là sinh spec ở lúc thiết kế, để người dựng biết cần gán gì cho screen reader. Việc kiểm tra vẫn là việc của người.
-- Speaker notes:
-
-  > Uber dùng AI cho một việc cụ thể: viết spec screen reader cho component, thay vì để từng người làm thủ công trên từng nền tảng.
-
-  - Mỗi phần của spec có một skill riêng. Riêng phần screen reader, agent nạp tài liệu tham khảo của từng nền tảng trước khi phân tích
-  - Một lần chạy sinh spec screen reader cho iOS, Android và Web trong dưới hai phút, theo bài viết.
-  - Bài viết ghi rằng AI chọn từ các API đã có tài liệu, thay vì đoán tên thuộc tính
-  - Bài viết không mô tả ai kiểm tra spec được sinh ra, nên mình không suy ra rằng spec đã chính xác
-  - Mình dùng slide này để nói rằng AI làm tốt khi đầu vào có cấu trúc, như một design system
-  - Khoảng 2 phút cho slide này
-
-  > Design system của bạn có đủ cấu trúc để AI sinh spec từ đó không?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn dòng.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn dòng ở bên phải, tiêu đề bên trái.
 
 ---
 
@@ -837,15 +814,11 @@ last_synced: 2026-11-20
   > Người đúng nhóm quan trọng hơn người dễ mời. Và khi họ kẹt, đó là lúc bạn học được nhiều nhất, nên đừng giúp.
 
   - Năm bước trên slide: chọn 3 đến 5 người đúng nhóm và hỏi hai câu lọc, dùng AI soạn test plan và script, nói rõ chuyện ghi hình và xin đồng ý, đưa task rồi im lặng quan sát, cuối buổi cho làm SUS và hỏi một hai câu hỏi mở.
-  - Bạn không nên chọn người cùng làm project với mình.
-  - Về consent, bạn nói rõ ghi hình để làm gì và ai sẽ xem, rồi chỉ ghi khi họ đồng ý.
-  - Bạn ẩn danh bằng participant code (P1, P2) ngay trên máy trước khi đưa ghi chú cho AI, và áp dụng lại data rules của buổi 1.
-  - Bạn cũng cần hỏi công ty có cho phép dùng công cụ AI đó không.
-  - Template deliver-test-plan.md có sẵn các phần: hypothesis, task, participant, script, metric.
-  - Buổi test mở đầu bằng việc nói rõ bạn đang test prototype chứ không test họ, và không có câu trả lời sai.
-  - Mỗi quan sát được ghi kèm participant code và thứ tự, ví dụ P1-03.
-  - AI giúp được ở đâu: soạn nháp test plan và script từ goal, signal, metric. AI không đóng vai người dùng.
-  - Khoảng 4 phút cho slide này
+  - Không chọn người cùng làm project với mình.
+  - Consent: nói rõ ghi hình để làm gì và ai xem, chỉ ghi khi họ đồng ý. Ẩn danh bằng participant code (P1, P2) trên máy trước khi đưa ghi chú cho AI, theo data rules buổi 1, và hỏi công ty có cho dùng công cụ AI đó không.
+  - Đầu buổi nói rõ bạn test prototype chứ không test họ, và không có câu trả lời sai. Mỗi quan sát ghi kèm participant code và thứ tự, ví dụ P1-03.
+  - Template deliver-test-plan.md có hypothesis, task, participant, script, metric. AI soạn nháp từ goal, signal, metric và không đóng vai người dùng.
+  - Khoảng 3 phút cho slide này
 
   > Bạn có ba người nào đủ điều kiện để mời trong tuần này không?
 - 🎨 Visual hint: SCHEMATIC. Process năm bước ngang, bước "im lặng quan sát" active.
@@ -1045,14 +1018,13 @@ last_synced: 2026-11-20
   - Stakeholder đọc gì trước? Số finding nặng, điều còn hở và điều cần họ quyết. Bảng đầy đủ nằm bên dưới.
 - Speaker notes:
 
-  > Mình không viết nhiều báo cáo riêng. Mọi thứ đi quanh một file audit-report.md, và AI giúp bạn ở ba việc: gộp kết quả test, soạn ticket cho dev, và tóm tắt cho stakeholder.
+  > Mình không viết nhiều báo cáo riêng. Mọi thứ đi quanh một file audit-report.md, và AI giúp ở ba việc.
 
-  - Gộp kết quả test: kết quả test đi vào cùng bảng finding của audit, để dev chỉ có một danh sách để làm. Bảng có cột nguồn (audit, test hoặc cả hai) và cột trạng thái (nâng severity, xác nhận hoặc mới).
-  - Khi test xác nhận một finding của audit, severity thường tăng vì đã có người thật gặp vấn đề đó. Khi test cho thấy điều audit không thấy, mình thêm một dòng mới kèm timestamp và lời trích nguyên văn. AI chỉ đề xuất; bạn mở timestamp của mọi dòng bị đổi rồi mới chốt điểm.
-  - Soạn ticket: một ticket tốt cho dev có ba thứ là lỗi ở đâu, sửa ở layer nào, và khi nào coi là xong. AI nhóm finding theo layer trước khi viết ticket; ba lỗi focus ở ba màn thường chỉ là một việc ở token. Điều kiện nghiệm thu dẫn ID tiêu chí, ví dụ “P33 pass trên mọi màn”.
-  - Tóm tắt cho hub: trang Findings nhận số finding theo severity, các rủi ro lớn nhất, trạng thái accessibility, việc đã sửa và chưa sửa. Principle dùng ID (P1, P33…) nên hub tự nối finding với principle và cảnh báo khi có chỗ gãy.
-  - AI không quyết định severity cuối, thứ tự sửa hay nội dung stakeholder cần quyết. Những việc đó vẫn là của bạn.
-  - Khoảng 5 phút cho slide này
+  - Gộp kết quả test: test và audit vào cùng một bảng finding, có cột nguồn (audit, test hoặc cả hai) và cột trạng thái (nâng severity, xác nhận, mới). Test xác nhận một finding thì severity thường tăng; AI chỉ đề xuất, bạn mở timestamp rồi chốt.
+  - Soạn ticket: mỗi ticket có lỗi ở đâu, sửa ở layer nào và khi nào coi là xong. AI nhóm finding theo layer trước; điều kiện nghiệm thu dẫn ID tiêu chí, ví dụ “P33 pass trên mọi màn”.
+  - Tóm tắt cho hub: số finding theo severity, rủi ro lớn nhất, trạng thái accessibility, việc đã sửa và chưa sửa. Bạn đọc lại như một stakeholder.
+  - Severity cuối, thứ tự sửa và điều stakeholder cần quyết vẫn là của bạn.
+  - Khoảng 4 phút cho slide này
 
   > Trong ba việc này, việc nào đang tốn thời gian nhất ở project của bạn?
 - 🎨 Visual hint: THREE CARDS. Line-art feature card, ba thẻ cùng cấp (gộp kết quả test, soạn ticket cho dev, tóm tắt cho hub): minh hoạ line-art lớn, số, tiêu đề và mô tả.
@@ -1070,6 +1042,7 @@ last_synced: 2026-11-20
 
   > Lỗi này có xuất hiện ở nhiều hơn một màn không? Câu trả lời cho bạn biết nên sửa ở layer nào.
 
+  - Layer ở đây là chỗ sửa, từ token đến màn hình. Nó khác với sáu layer để audit (heuristic, accessibility, design system, state, nội dung, flow).
   - Layer ladder lấy từ buổi 5, đi từ rộng đến hẹp. Các layer lồng nhau, nên sửa một layer là sửa mọi thứ nằm bên trong nó.
   - Sau khi sửa ở nguồn, bạn dựng lại phần bị ảnh hưởng rồi test lại đường chính một lượt ngắn.
   - Khi đổi token hoặc component, cập nhật luôn design-system-notes.md và rules file trong cùng một lượt.
@@ -1491,6 +1464,33 @@ last_synced: 2026-11-20
 
 ---
 
+### NUMBERED · A tool that reads code
+- Kicker: Ví dụ
+- Title: Uber dùng AI để generate\nspec accessibility
+- On-slide:
+  - 01 · Uber xây hệ thống uSpec: agent đọc component trong Figma rồi sinh spec
+  - 02 · Một lần chạy sinh spec screen reader cho iOS, Android và Web trong dưới hai phút
+  - 03 · Hệ thống chạy cục bộ, nối Figma với công cụ AI coding qua MCP
+  - 04 · Bài viết không mô tả bước người kiểm tra spec do AI sinh ra
+- Ví dụ: có (blog Uber, 11/03/2026; design system có hàng trăm component trên bảy nền tảng; bài viết không nêu tỷ lệ lỗi hay số spec đã tạo)
+- Câu hỏi hay gặp:
+  - Đây có phải là audit không? Không. Đây là sinh spec ở lúc thiết kế, để người dựng biết cần gán gì cho screen reader. Việc kiểm tra vẫn là việc của người.
+- Speaker notes:
+
+  > Uber dùng AI cho một việc cụ thể: viết spec screen reader cho component, thay vì để từng người làm thủ công trên từng nền tảng.
+
+  - Mỗi phần của spec có một skill riêng. Riêng phần screen reader, agent nạp tài liệu tham khảo của từng nền tảng trước khi phân tích
+  - Một lần chạy sinh spec screen reader cho iOS, Android và Web trong dưới hai phút, theo bài viết.
+  - Bài viết ghi rằng AI chọn từ các API đã có tài liệu, thay vì đoán tên thuộc tính
+  - Bài viết không mô tả ai kiểm tra spec được sinh ra, nên mình không suy ra rằng spec đã chính xác
+  - Mình dùng slide này để nói rằng AI làm tốt khi đầu vào có cấu trúc, như một design system
+  - Khoảng 2 phút cho slide này
+
+  > Design system của bạn có đủ cấu trúc để AI sinh spec từ đó không?
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn dòng.
+
+---
+
 ### NUMBERED · A scan-and-fix loop
 - Kicker: Ví dụ thật · Deque
 - Title: Vòng quét, sửa,\nquét lại
@@ -1573,6 +1573,8 @@ last_synced: 2026-11-20
   - Mình chấm lệch một bậc thì sao? Bình thường. Lệch hai bậc trở lên thì bạn nêu lý do.
   - AI hay bỏ sót vấn đề nào nhất? Thường là vấn đề flow (số 1), vì phải đối chiếu với requirement chứ không chỉ nhìn ảnh.
 - Speaker notes:
+
+  > Slide này nằm ở Appendix, dùng khi bạn chạy Audit Hunt.
 
   > Mình sẽ đối chiếu từng vấn đề. Bạn đếm xem AI bỏ sót mấy vấn đề và sai mấy finding.
 
