@@ -35,3 +35,16 @@ Màn tĩnh này không cho thấy trạng thái rỗng (không còn khung giờ 
 4. Lộ đáp án và so điểm severity. Điểm lệch một bậc là bình thường; lệch hai bậc trở lên thì hỏi lý do.
 
 Nếu học viên tìm ra vấn đề thật mà bản nháp bỏ sót, ghi lại và sửa `screen.html` cùng file này.
+
+## Vấn đề thật ngoài bảy điểm cài sẵn (ghi sau lần chạy thử 2026-11-20)
+
+Lần chạy thử prompt audit bằng AI (một lần, một màn) tìm thêm các điểm dưới đây. Ba điểm đầu là vấn đề thật; đừng chấm sai nếu học viên tìm ra.
+
+| Điểm | Evidence | Ghi chú |
+|---|---|---|
+| Chữ trắng trên nút cam `#E8590C` | Tương phản khoảng 3,6:1, dưới 4,5:1 cho chữ 16 px đậm (tính tay; chạy axe hoặc Lighthouse để xác nhận) | Cùng nguyên nhân với vấn đề 6 (màu thô) |
+| Thứ tự heading | `<h2>` "Đơn hàng" đứng trước `<h1>`, rồi nhảy từ `h1` sang `h3` | Lỗi cấu trúc nhỏ |
+| Link "Xem chi tiết phí giao" trỏ `#fee` nhưng không có phần tử `id="fee"` | Link không dẫn đến đâu | Có thể là prototype chưa nối |
+| Nhóm khung giờ không có tên nhóm (không `fieldset` hay `radiogroup`) | Screen reader đọc từng radio, không biết nhóm hỏi gì | Còn tranh cãi; cần người kiểm bằng screen reader |
+
+AI cũng gạch thẻ "Phổ biến" vì không gắn với khung giờ nào. Mục "Điểm trông lạ nhưng đúng" ở trên coi thẻ này là hợp lệ, nên đếm đó là finding sai của AI.

@@ -12,7 +12,7 @@ Every lesson has a starting point, so nobody is blocked if homework was skipped.
 | 5 | Explore ideas | Options and decisions | `case-folder-template/learnings/develop-options.md` |
 | 6 | First prototype | Starter design system, rules file, empty page | `prototype-starter/` |
 | 7 | Refine and check | A working three-screen prototype to refine | `checkpoint-prototype/` |
-| 8 | Test with users | Test plan and findings | `case-folder-template/learnings/deliver-test-plan.md`, `deliver-findings.md` |
+| 8 | Test with users | Test plan and findings | `case-folder-template/learnings/deliver-test-plan.md`, `deliver-audit-report.md` |
 | 9 | Hand off and measure | Handoff pack and measurement plan | `case-folder-template/learnings/deliver-handoff.md`, `deliver-measurement-plan.md` |
 | 10 | Capstone | None | |
 
