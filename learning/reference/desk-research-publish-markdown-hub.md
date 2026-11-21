@@ -66,7 +66,7 @@ Hub của học viên có thể chứa trích dẫn phỏng vấn và ghi chú v
 - Checklist của một đơn vị đại học (JHU OSPO) gợi ý: giải thích cách đi từ các file tới lần dùng đầu tiên, và nói báo lỗi ở đâu. **[blog/vendor]**
 - Các nguồn không thống nhất một danh sách cố định, và một nguồn nói rõ không có đồng thuận về README nên chứa gì. **[blog/vendor]**
 
-Trong chương trình, `README.md` là Index của hub: nói hub có gì, đọc gì trước (Lesson 1, mục 6.2). `AGENTS.md` là Schema: dặn AI.
+Trong chương trình, `README.md` là Index của hub: nói hub có gì, đọc gì trước (Lesson 1, mục 8.2). `AGENTS.md` là Schema: dặn AI.
 
 ## 6. Chưa kiểm chứng
 
