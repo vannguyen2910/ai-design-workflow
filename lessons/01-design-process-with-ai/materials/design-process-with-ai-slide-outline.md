@@ -18,7 +18,7 @@ last_synced: 2026-11-21
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
-| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: UI/UX, file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 62 slide (thêm Use case markdown + HTML, Project folder, hai slide Rules, hai slide publish live site, hai divider; bỏ slide chuyển ý "để gì lên repo"); deck thật trên Slides chưa sắp xếp lại; chưa ước thời lượng. Phần nghề (T1) giữ nguyên theo quyết định của Winnie (2026-11-16); cần bớt khoảng 10 phút ở chỗ khác và Winnie quyết định bớt chỗ nào |
+| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: UI/UX, file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 64 slide (thêm Use case markdown + HTML, Project folder, hai slide Rules, MCP use cases, Agent đầu tiên viết lại cùng một ví dụ agent thật, hai slide publish live site, hai divider; bỏ slide chuyển ý "để gì lên repo"; slide Workflow thiết kế với agent đứng đầu phần Agent như một slide What/Why/When); deck thật trên Slides đã sắp xếp lại theo thứ tự này (2026-11-21, 74 slide kể cả Appendix), phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5; chưa ước thời lượng. Phần nghề (T1) giữ nguyên theo quyết định của Winnie (2026-11-16); cần bớt khoảng 10 phút ở chỗ khác và Winnie quyết định bớt chỗ nào |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
@@ -777,6 +777,25 @@ last_synced: 2026-11-21
 
 ---
 
+### DIAGRAM · MCP use cases
+- Kicker: Use case
+- Title: MCP trong\n*product và design*
+- On-slide:
+  - Product: Jira, Linear, Asana (đọc ticket và backlog, tạo ticket từ insight); Notion, Confluence, Drive (đọc PRD, ghi chú họp, research cũ); Slack (đọc thread phản hồi, đăng bản tóm tắt); Analytics (hỏi số liệu funnel, retention)
+  - Design: Figma (đọc file, component, variables, đối chiếu với design system); Miro, FigJam (đọc board affinity, journey map); Google Drive, Slides (đọc deck cũ, soạn bản mới); GitHub (đọc repo và pull request)
+  - Đọc ít rủi ro hơn ghi. Việc ghi nên để AI hỏi lại trước.
+- Ví dụ: Delivery App: nối Figma để AI đọc màn onboarding, nối Notion để đọc ghi chú research, rồi nhờ AI chỉ ra chỗ màn hình lệch với insight.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói connector là gì. Slide này cho thấy dùng nó vào việc gì trong công việc product và design.
+  - Danh sách là ví dụ; connector nào có sẵn tuỳ công cụ AI và gói đang dùng.
+  - Đọc ít rủi ro hơn ghi. Với việc ghi, để AI hỏi lại trước và chỉ nối phần cần thiết; Data Safety nói kỹ hơn.
+
+  > Trong các connector này, cái nào bạn muốn nối đầu tiên, và AI chỉ đọc hay được ghi?
+- 🎨 Visual hint: TYPOGRAPHIC. Hai cột không khung như slide What/Why/When, nhãn PRODUCT và DESIGN, mỗi cột bốn dòng tên công cụ đậm và một việc ngắn; câu chốt về đọc và ghi ở đáy.
+
+---
+
 ## 4. Agent và đội AI của bạn
 
 ---
@@ -793,6 +812,39 @@ last_synced: 2026-11-21
   - Nối từ demo: demo vừa rồi chỉ là một lượt hỏi đáp, còn công việc thật có nhiều bước, nhiều file và nhiều vai.
   - Phần này khoảng nửa phút.
 - 🎨 Visual hint: Nền vàng, số phần rất lớn ở góc trên trái, title ở giữa, dòng mono nhỏ bên dưới.
+
+---
+
+### DIAGRAM · Your AI team
+- Kicker: Agent design workflow
+- Title: Workflow thiết kế\nvới *agent*
+- On-slide:
+  - WHAT
+  - Mỗi quy trình giao cho một agent
+  - Mỗi agent có instruction, input và output riêng
+  - Tất cả ghi vào một design memory dùng chung (.md)
+  - Bạn duyệt trước mỗi lần chuyển phase
+  - WHY
+  - AI có thể detect cho bạn phần lặp đi lặp lại trong quy trình
+  - Mỗi bước để lại file và nguồn để truy vết ngược lại
+  - Quyết định vẫn là ở bạn
+  - WHEN
+  - Workflow traditional đã ổn, làm tay cho kết quả ổn định
+  - Đầu ra kiểm tra được nhanh
+  - Chưa dùng khi vấn đề còn mơ hồ hoặc cần người thật
+- Ví dụ: Bước lặp lại và đầu ra kiểm tra nhanh thì hợp giao cho agent; vấn đề còn mơ hồ hoặc cần người thật thì chưa nên.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Vậy nếu mình muốn tuỳ chỉnh theo workflow thiết kế thì làm thế nào?
+  - Ba câu hỏi:
+    - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Bạn duyệt trước mỗi lần chuyển phase
+    - Why: AI soạn nháp nhanh phần lặp lại, còn bạn giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc ở slide Double Diamond: AI soạn nháp, bạn kiểm tra rồi quyết định
+    - When: chỉ khi workflow đã ổn. Workflow phải ổn trước khi giao cho agent; slide "Ổn định cách làm trước" ở phần sau nói kỹ ý này. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
+  - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc khi bước đó cần người thật: user, hoặc người phía Product và Business.
+  - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
+
+  > Bước nào trong công việc của bạn đã đủ ổn định để thử giao cho một agent?
+- 🎨 Visual hint: Title hai dòng bên trái, sơ đồ nhỏ ba ô nối mũi tên bên phải; bên dưới ba cột What, Why, When có đường kẻ đậm và gạch đầu dòng tím.
 
 ---
 
@@ -906,6 +958,48 @@ last_synced: 2026-11-21
 
 ---
 
+### PROCESS · Your first agent
+- Kicker: Cách làm
+- Title: Agent\n*đầu tiên*
+- On-slide:
+  - 01 Chọn một việc lặp lại (ví dụ: tóm tắt user interview)
+  - 02 Giao vai và kết quả cụ thể (vai: trợ lý tổng hợp phỏng vấn)
+  - 03 Liệt kê các skill và tài liệu cần (ví dụ 3 skill: tóm tắt, trích quote, gắn theme)
+  - 04 Viết thành một file markdown (một agent, một file .md)
+  - 05 Chạy thử, ghi kết quả vào .md (đối chiếu quote với transcript gốc)
+  - Bên phải: ví dụ file interview-summary.md với tên, mô tả, vai, skill cần dùng, tài liệu đọc, các bước làm và nơi ghi kết quả
+- Ví dụ: Agent tóm tắt user interview: file interview-summary.md khai báo vai, ba skill (summarize-interview, extract-quotes, tag-themes), đọc transcript đã ẩn danh, ghi kết quả vào work/interview-summary.md. Tên skill và file là tên minh hoạ.
+- Câu hỏi hay gặp: "Cấu trúc file agent có cố định không?" Trả lời: không. Nhiều công cụ dùng phần đầu có tên và mô tả, thân file là chỉ dẫn (ví dụ Claude Code); tên file, chỗ đặt và các trường khác nhau theo công cụ.
+- Speaker notes:
+  - Năm bước, với ví dụ agent tóm tắt user interview: chọn việc lặp lại đã làm tay ổn; giao vai và kết quả cụ thể; liệt kê các skill (một agent thường dùng nhiều skill) và tài liệu agent cần; viết thành một file markdown, mỗi agent một file; chạy thử, để agent ghi kết quả vào file .md rồi đối chiếu với nguồn và chỉnh.
+  - File ví dụ: phần đầu ghi tên và mô tả (agent làm gì, dùng khi nào); thân file ghi vai, skill cần dùng, tài liệu đọc, các bước và nơi ghi kết quả. Nguồn: tài liệu subagents của Claude Code (file markdown có name và description ở đầu, thân là chỉ dẫn).
+  - Bước chạy thử là chỗ kiểm tra: quote phải nguyên văn so với transcript. Nối lại slide "Trông đã xong. Có đúng không?".
+  - Trong toolkit của khoá, Competitor Analysis là một skill theo cách này; card ghi "Status: draft" vì chưa thử với lớp thật. AGENTS.md không điều phối các agent; người điều phối vẫn là designer.
+
+  > Việc nào bạn làm lặp lại đủ nhiều để thành agent đầu tiên?
+- 🎨 Visual hint: SPLIT. Trái: năm bước đánh số tím, mỗi bước một ví dụ ngắn; phải: khung file interview-summary.md hiện cùng bước 4.
+
+---
+
+### IMAGE · A real agent file
+- Kicker: Ví dụ
+- Title: Agent ghi lại\n*buổi học*
+- On-slide:
+  - Một file agent thật: tên và mô tả, công cụ, vai, đầu vào.
+  - Hai ảnh chụp file session-logger.md cạnh nhau: trái là Name, Description, Tools; phải là Role, Inputs, Steps
+- Ví dụ: Agent session-logger: lấy transcript buổi mentoring từ Zoom, làm sạch, rút quyết định và lời hứa, soạn nháp playback và dừng trước khi publish.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - File agent thật của người dạy, dài hơn ví dụ ở slide trước nhưng cùng cấu trúc: tên và mô tả (kể cả khi nào không dùng), công cụ (file, Zoom, Notion), vai, đầu vào.
+  - Quy trình chi tiết nằm ở file khác; file agent chỉ trỏ tới, nên giữ được ngắn.
+  - Recap sau buổi học là việc lặp lại, đã làm tay ổn, đầu ra kiểm tra được: hợp để giao cho agent.
+  - Ảnh có tên mentee và ID connector; che trước khi chiếu nếu cần.
+
+  > Việc nào sau mỗi buổi làm việc bạn đang tự làm tay và có thể giao cho một agent?
+- 🎨 Visual hint: REAL. Cùng bố cục slide Overview của hub: kicker và title hai dòng bên trái, một câu mô tả bên phải, một khung bo góc viền đậm chia đôi chứa hai ảnh chụp file.
+
+---
+
 ### PROCESS · A process packaged as markdown
 - Kicker: Use case
 - Title: Quy trình, *gói thành file markdown*
@@ -936,36 +1030,6 @@ last_synced: 2026-11-21
 
 ---
 
-### PROCESS · Your first agent
-- Kicker: Cách làm
-- Title: Agent\n*đầu tiên*
-- On-slide:
-  - 01
-  - Mở AI coding tool trên project folder
-  - 02
-  - Giao một vai và một kết quả cụ thể
-  - 03
-  - Chạy thử, đối chiếu với nguồn, chỉnh
-  - 04
-  - Lưu kết quả dưới dạng file Markdown (.md)
-  - Ví dụ: Agent Competitor research
-- Ví dụ: Agent Competitor Analysis: file toolkit/skills/competitor-analysis/SKILL.md; AI soạn Evidence (AI draft), designer đối chiếu rồi ghi Evidence (verified).
-- Câu hỏi hay gặp: "Skill là gì?" Trả lời: một file Markdown ghi cách làm một loại việc, để AI tool đọc và làm theo; buổi 7 sẽ dạy cách viết.
-- Speaker notes:
-  - Ví dụ thật cho agent đầu tiên là Competitor Analysis. Nó là một skill nằm ở `toolkit/skills/competitor-analysis/SKILL.md`. Bạn mở project folder, nhờ công cụ AI đọc skill này rồi làm theo.
-  - Skill ghi rõ file làm việc là `work/competitor-analysis.md`, nguồn là `work/sources/anonymised/`, và mỗi bước điền một mục. Bước 1 designer viết Scope. Bước 2 và 3 AI đề xuất danh sách đối thủ, rồi designer chốt.
-  - Bước 5 AI soạn mục Evidence (AI draft), và designer không sửa mục này. Bước 6 designer tự đối chiếu với nguồn rồi ghi bản đã sửa vào Evidence (verified).
-  - Chỗ AI không được sửa, còn designer tự đối chiếu, chính là điểm mình muốn bạn nhớ. Nó nối lại slide "Trông đã xong. Có đúng không?" và vai trò của gate ở slide kế.
-  - Output là file Markdown trong `work/`, nên lần sau ở project khác chỉ cần mở lại skill. Muốn đưa sang Excel hoặc email thì nối connector sau, mình dạy ở buổi 7.
-  - Khi một lần chạy đã ổn, bạn nhờ công cụ ghi lại cách làm thành skill, như skill này. Mỗi agent trong đội ở slide kế tiếp cũng ra đời theo cách đó.
-  - `AGENTS.md` không điều phối các agent. Nó là quy tắc chung mà công cụ đọc mỗi lần mở folder, còn người điều phối vẫn là designer.
-  - Card của skill này tự ghi "Status: draft": mình nói thật là chưa thử với lớp thật. Slide này khoảng hai phút rưỡi.
-
-  > Việc nào bạn làm lặp lại đủ nhiều để thành agent đầu tiên?
-- 🎨 Visual hint: Trái: kicker, title và bốn bước đánh số tím; phải: ảnh chụp file competitor-analysis.md trong khung viền đen có chú thích bên dưới.
-
----
-
 ### STATEMENT · Do not automate a bad workflow
 - Kicker: Workflow chưa sửa
 - Title: Ổn định cách làm trước.\n*Rồi mới* tự động hoá.
@@ -985,39 +1049,6 @@ last_synced: 2026-11-21
 
   > Trong công việc của bạn, có bước nào bạn làm vì thói quen chứ không vì nó tạo giá trị?
 - 🎨 Visual hint: Trái: kicker mono và title hai dòng; phải: hai hàng quy trình line-art, hàng trên nhiều điểm lỗi tím quanh khối AI vàng, hàng dưới không còn điểm lỗi; chú thích "Điểm lỗi".
-
----
-
-### DIAGRAM · Your AI team
-- Kicker: Agent design workflow
-- Title: Workflow thiết kế\nvới *agent*
-- On-slide:
-  - WHAT
-  - Mỗi quy trình giao cho một agent
-  - Mỗi agent có instruction, input và output riêng
-  - Tất cả ghi vào một design memory dùng chung (.md)
-  - Bạn duyệt trước mỗi lần chuyển phase
-  - WHY
-  - AI có thể detect cho bạn phần lặp đi lặp lại trong quy trình
-  - Mỗi bước để lại file và nguồn để truy vết ngược lại
-  - Quyết định vẫn là ở bạn
-  - WHEN
-  - Workflow traditional đã ổn, làm tay cho kết quả ổn định
-  - Đầu ra kiểm tra được nhanh
-  - Chưa dùng khi vấn đề còn mơ hồ hoặc cần người thật
-- Ví dụ: Bước lặp lại và đầu ra kiểm tra nhanh thì hợp giao cho agent; vấn đề còn mơ hồ hoặc cần người thật thì chưa nên.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Vậy nếu mình muốn tuỳ chỉnh theo workflow thiết kế thì làm thế nào?
-  - Ba câu hỏi:
-    - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Bạn duyệt trước mỗi lần chuyển phase
-    - Why: AI soạn nháp nhanh phần lặp lại, còn bạn giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc ở slide Double Diamond: AI soạn nháp, bạn kiểm tra rồi quyết định
-    - When: chỉ khi workflow đã ổn. Quay lại slide sửa workflow: workflow phải ổn trước khi giao cho agent. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
-  - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc khi bước đó cần người thật: user, hoặc người phía Product và Business.
-  - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
-
-  > Bước nào trong công việc của bạn đã đủ ổn định để thử giao cho một agent?
-- 🎨 Visual hint: Title hai dòng bên trái, sơ đồ nhỏ ba ô nối mũi tên bên phải; bên dưới ba cột What, Why, When có đường kẻ đậm và gạch đầu dòng tím.
 
 ---
 
