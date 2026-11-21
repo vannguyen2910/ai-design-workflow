@@ -26,7 +26,7 @@
 
 ## 2. Lesson 1 đã có gì, thiếu gì
 
-**Đã có** (từ `design-process-with-ai-lesson.md` mục 5, practice Step 2 và `learning/lesson-1-details.md`):
+**Đã có** (từ `design-process-with-ai-lesson.md` mục 11, practice Step 2 và `learning/lesson-1-details.md`):
 
 - Ba nhóm tài liệu theo mức được đưa cho AI (trong đó nhóm *Never in a public tool*).
 - Quy tắc: dữ liệu gốc để ở `_raw-private/`, tự ẩn danh rồi mới lưu vào `anonymised/`. AI chỉ đọc `anonymised/`.
