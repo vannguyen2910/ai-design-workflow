@@ -205,12 +205,12 @@ Quy tắc này là một phần của skill ở phần 5: một skill tốt gi�
 
 ## 5. Package into a skill and agent
 
-Khi quy trình user flow và process map đã chạy ổn, bạn đóng gói nó:
+Thứ tự là làm thật trước, viết quy trình sau, đưa lên hub cuối cùng:
 
-1. Viết quy trình thành skill: ai làm (bạn hay AI), đầu vào, đầu ra, và check nào phải qua.
-2. Giữ nguyên các gate: flow narrative khớp sản phẩm thật, fix bảo vệ được, diagram khớp flow narrative.
-3. Gắn skill cho một agent để agent chạy đúng quy trình này mỗi lần cần.
-4. Đặt skill và file output vào Knowledge Hub của project để buổi sau dùng lại.
+1. Làm việc thật với AI trên một task, đến khi bạn hài lòng với kết quả.
+2. Nhờ AI viết lại quy trình vừa làm thành skill: ai làm (bạn hay AI), đầu vào, đầu ra, và check nào phải qua. Giữ nguyên các gate: flow narrative khớp sản phẩm thật, fix bảo vệ được, diagram khớp flow narrative.
+3. Chạy thử skill trên một task thứ hai, chỉnh đến khi kết quả vẫn ổn. Có thể gắn skill cho một agent để agent chạy đúng quy trình này mỗi lần cần.
+4. Cuối cùng, đặt skill và file output vào Knowledge Hub của project để buổi sau dùng lại.
 
 Điều kiện để package: quy trình đã chạy ít nhất hai lần trên hai task khác nhau, và phần bạn kiểm tra đã được ghi rõ. Đóng gói quá sớm là đóng gói luôn cả lỗi. Skill không thay được bước kiểm tra flow narrative và bước quyết định fix. *Ví dụ trong Delivery App:* skill "user flow và process map" chạy lần một với task đổi khung giờ giao, lần hai với task huỷ đơn, rồi mới được đóng gói.
 

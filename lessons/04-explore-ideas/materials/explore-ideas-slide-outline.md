@@ -113,6 +113,29 @@ last_synced: 2026-11-04
 
 ---
 
+### NUMBERED · Từ opportunity đến solution: một câu HMW
+- Kicker: Cầu nối
+- Title: Từ opportunity đến solution:\n*một câu How Might We*
+- On-slide:
+  - 01 Opportunity: Khách chọn ngày giao mà không biết cut-off đã qua.
+  - 02 How Might We: Làm sao để khách thấy cut-off ngay chỗ chọn ngày giao? Câu hỏi nêu vấn đề, và cũng đã là một cách nói solution.
+  - 03 Concept: Banner, tooltip, tin nhắn nhắc. Mỗi concept là một cách trả lời cùng một câu HMW.
+  - Solution và How Might We là một: một câu HMW mở ra nhiều concept, mỗi concept là một solution.
+- Ví dụ: có (Delivery App: cut-off ngày giao)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Slide trước thêm tầng solution dưới mỗi opportunity. Slide này nói cầu nối giữa hai tầng: trong khoá này, solution được viết thành câu How Might We.
+
+  - Một câu HMW diễn tả vấn đề, đồng thời mở ra nhiều concept; mỗi concept là một solution cụ thể
+  - Viết solution thành HMW giữ chúng ta ở không gian vấn đề đủ lâu để nghĩ ra nhiều hướng
+  - Concept cụ thể nằm dưới câu HMW và được phác ở phần concept sketching
+
+  > Opportunity nào của chúng ta viết thành được một câu HMW, và chúng ta thấy mấy concept trả lời nó?
+- 🎨 Visual hint: NUMBERED. Ba thẻ cùng cấp (nền trắng), số 01 đến 03, một dòng chốt bên dưới; hiện dần theo click.
+
+---
+
 ### STATEMENT · Friction point
 - Kicker: Nối với flow
 - Title: Mỗi friction point là một\n*opportunity tiềm năng*
@@ -569,6 +592,31 @@ last_synced: 2026-11-04
 
 ---
 
+### IMAGE · File markdown là đầu vào của Process Map
+- Kicker: Đầu vào
+- Title: File markdown\n*là đầu vào của Process Map*
+- On-slide:
+  - Ảnh: file markdown của process map Travel Buddy (`assets/process-map-markdown.png`), phần How to read it và bảng Before the trip
+  - Mỗi hàng là một bước, theo thứ tự xảy ra
+  - Cột Who thành lane trên map
+  - Cột Planned solution thành dòng nhỏ dưới bước
+  - unknown nghĩa là chưa có nguồn, thành ô cam
+  - AI đọc file này để vẽ Process Map HTML
+- Ví dụ: có (Travel Buddy; chữ trong ảnh giữ tiếng Anh)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+
+  > Slide trước là cách đọc một process map. Đây là file đứng đằng sau nó: một file markdown, là đầu vào để AI vẽ Process Map HTML.
+
+  - Cột Who là actor sở hữu bước, thành lane; cột Planned solution thành dòng nhỏ dưới bước; dấu gạch ngang nghĩa là bước không cần solution riêng
+  - Cột Source cho biết bước đến từ đâu; unknown nghĩa là chưa có nguồn, trên map thành ô cam
+  - Muốn đổi map thì sửa file markdown rồi vẽ lại, không sửa HTML
+
+  > Hàng nào trong flow của chúng ta sẽ có Source là unknown?
+- 🎨 Visual hint: REAL. Ảnh file markdown (nền tối) bên trái, bốn ý bên phải; hiện dần theo click. Đặt trước slide Process map generate từ narrative.
+
+---
+
 ### SECTION DIVIDER · Package into a skill and agent
 - Num: 05
 - Kicker: Chuyển phần
@@ -587,11 +635,11 @@ last_synced: 2026-11-04
 - Kicker: Cách làm
 - Title: Từ workflow đến skill
 - On-slide:
-  - Viết quy trình: ai làm, đầu vào, đầu ra, check nào phải qua
-  - Giữ nguyên ba gate
-  - Đặt skill và output vào Knowledge Hub
-  - Điều kiện: quy trình đã chạy hai lần trên hai task khác nhau
-- Ví dụ: có (bản nháp, Delivery App: skill "user flow và process map" chạy lần một với task đổi khung giờ giao, lần hai với task huỷ đơn)
+  - 01 Làm việc thật với AI trên một task, đến khi hài lòng với kết quả
+  - 02 Nhờ AI viết lại quy trình vừa làm: ai làm, đầu vào, đầu ra, giữ ba gate
+  - 03 Chạy thử skill trên task thứ hai, chỉnh đến khi kết quả vẫn ổn
+  - 04 Cuối cùng, đặt skill và output vào Knowledge Hub
+- Ví dụ: có (bản nháp, Delivery App: làm user flow và process map cho task đổi khung giờ giao đến khi ổn, nhờ AI viết lại thành skill "user flow và process map", chạy thử với task huỷ đơn, rồi mới đưa skill và output vào hub)
 - Câu hỏi hay gặp:
   - Đóng gói sau lần chạy đầu tiên được không? Không nên. Đóng gói quá sớm là đóng gói luôn cả lỗi.
   - Skill có thay được bước kiểm tra bảng không? Không.
@@ -599,8 +647,9 @@ last_synced: 2026-11-04
 
   > Một quy trình chạy ổn hai lần thì đáng đóng gói. Mới một lần thì chưa.
 
+  - Thứ tự: làm thật trước, viết quy trình sau, đưa lên hub cuối cùng; chưa hài lòng với kết quả thì chưa đóng gói
   - Trong skill, ghi rõ phần designer vẫn tự làm: kiểm tra bảng và quyết định fix
-  - Đặt skill trong Knowledge Hub để buổi sau dùng lại
+  - Đặt skill và output trong Knowledge Hub để buổi sau dùng lại
   - Khoảng 7 phút cho slide này
 
   > **Đóng gói quá sớm là đóng gói luôn cả lỗi.**
