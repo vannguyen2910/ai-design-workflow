@@ -778,6 +778,45 @@ last_synced: 2026-11-16
 
 ---
 
+### COMPARE · Insight, opportunity, solution
+- Kicker: Phân biệt
+- Title: Insight, opportunity,\n*solution*
+- On-slide:
+  - ĐÃ BIẾT · Insight: Khách mới tưởng đổi được khung giờ giao sau khi đặt, chỉ biết nó bị khoá khi thử đổi.
+  - CẦN GIẢI · Opportunity: Khách mới gặp khó khi chọn khung giờ giao vì không biết giờ đó là cuối cùng.
+  - CÁCH GIẢI · BUỔI SAU · Solution: Thêm popup nhắc khung giờ giao. Chỉ là một cách giải trong nhiều cách.
+- Ví dụ: có (cùng một câu chuyện Delivery App chạy qua cả ba thẻ)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Insight trả lời "chúng ta thấy gì", opportunity trả lời "người dùng cần gì mà chưa có", solution trả lời "chúng ta làm gì"
+  - Nhảy thẳng từ insight sang solution là chỗ team hay bỏ lỡ nhu cầu thật
+  - Hôm nay dừng ở opportunity; solution để buổi sau
+
+  > Câu nào chúng ta viết gần đây tưởng là opportunity nhưng thật ra là solution?
+- 🎨 Visual hint: DIAGRAM. Ba thẻ ngang nối bằng mũi tên, mỗi thẻ có hình nhỏ (ba ô insight, một opportunity với hai insight, một opportunity với hai solution nét đứt). Thẻ Solution viền đứt, hiện dần từng thẻ theo click.
+
+---
+
+### PROCESS · From insight to opportunity map
+- Kicker: Cách làm
+- Title: Các bước từ insight\nđến *opportunity map*
+- On-slide:
+  - 01 Nhóm insight: Gom theo chủ đề, dùng lại kết quả vừa gom nhóm.
+  - 02 Viết thành opportunity: "Người dùng gặp khó khi… vì…". Ghi insight nguồn bên cạnh.
+  - 03 Gom thành nhánh: Opportunity lớn chia thành opportunity nhỏ hơn.
+  - Chưa chọn solution. Phần đó để buổi sau.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Bước 02 là bước khó nhất; thiếu chữ "vì" nghĩa là chúng ta đang đoán
+  - Mỗi opportunity truy về ít nhất một insight; không có insight nguồn thì ghi rõ là giả thuyết
+  - Chúng ta dừng ở đây: chưa chọn nhánh nào đáng giải và chưa nghĩ solution
+
+  > Opportunity nào trong map của chúng ta chưa trỏ về được insight nào?
+- 🎨 Visual hint: PROCESS. Ba thẻ ngang, mỗi thẻ có hình nhỏ (nhóm ba ô, một ô trỏ sang ô khác, một cây hai nhánh), số 01 đến 03 và tiêu đề; một dòng chốt bên dưới. Hiện dần từng thẻ rồi dòng chốt.
+
+---
+
 ### TABLE · Move 5: catch solutions disguised as needs
 - Kicker: AI move · Opportunity
 - Title: Bắt câu *dạng giải pháp*
@@ -839,7 +878,7 @@ last_synced: 2026-11-16
   - Khách nhớ dùng tính năng đổi giờ.
   - Chủ động
   - Khách bật thông báo và đọc kịp.
-  - Gốc vấn đề là đồ nguội, không phải chọn giờ.
+  - Thông báo đến đúng lúc, không bị bỏ qua.
   - Need vẫn đúng khi bỏ cả ba. Đây là phép thử need đứng độc lập, không phải bước chọn giải pháp.
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
@@ -1296,12 +1335,11 @@ last_synced: 2026-11-16
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ví dụ: Năm giai đoạn: chọn khung giờ giao, thanh toán, chờ đơn đầu, nhận đơn đầu, huỷ hoặc sửa đơn
-  - Chọn khung giờ giao và nhận đơn đầu có IN-01 (RET-01, RET-05); chờ đơn đầu có IN-03 (RET-03, RET-07)
-  - Huỷ đơn có IN-02 (RET-02, RET-06) và là đáy cảm xúc; thanh toán không có insight nào, team nghi bước này làm khách ngại cam kết nhưng đó vẫn là assumption
+  - Ví dụ: năm giai đoạn: chọn khung giờ giao, thanh toán, xác nhận đã thanh toán, chờ xác nhận đơn đã thanh toán, không thể huỷ hoặc sửa đơn đã thanh toán
+  - Chọn khung giờ giao và xác nhận đã thanh toán có IN-01 (RET-01, RET-05); chờ xác nhận đơn có IN-03 (RET-03, RET-07)
+  - Huỷ hoặc sửa đơn có IN-02 (RET-02, RET-06) và là đáy cảm xúc; thanh toán không có insight nào, team nghi bước này làm khách ngại cam kết nhưng đó vẫn là assumption
   - Bước nào có insight thì dẫn insight ID, bước nào không thì nói thẳng
   - Một ô assumption không làm journey xấu đi. Giấu nó mới làm nó xấu
-  - Nguyên tắc nằm sau ô assumption
 
   > Journey của bạn có bao nhiêu ô assumption trên tổng số ô? Gõ một con số
 - 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.

@@ -247,6 +247,10 @@ Với mỗi ô cảm xúc có nội dung, nhờ AI tìm một đến hai evidenc
 
 **Quy trình làm việc với opportunity.** AI soạn nháp từ insight, bạn chỉnh sửa, rồi AI đối chiếu từng ô với evidence và bạn mở note ID để xác nhận. Khi bản nháp đã chỉnh xong, lưu thành file markdown và đặt vào `hub/artifacts/` (`type: opportunity`).
 
+**Insight, opportunity, solution.** Ba thứ này hay bị lẫn. Cùng một câu chuyện của Delivery App: insight (đã biết) là khách mới tưởng đổi được khung giờ giao sau khi đặt, chỉ biết nó bị khoá khi thử đổi. Opportunity (cần giải) là khách mới gặp khó khi chọn khung giờ giao vì không biết giờ đó là cuối cùng. Solution (cách giải) là thêm popup nhắc khung giờ giao, chỉ là một cách trong nhiều cách, và để Lesson 4. Nhảy thẳng từ insight sang solution là chỗ team hay bỏ lỡ nhu cầu thật.
+
+**Ba bước từ insight đến opportunity map.** (1) Nhóm insight theo chủ đề, dùng lại kết quả gom nhóm ở phần synthesis. (2) Viết mỗi nhóm thành một opportunity theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]", ghi insight nguồn bên cạnh; đây là bước khó nhất, thiếu chữ "vì" nghĩa là đang đoán. (3) Gom opportunity thành nhánh: opportunity lớn chia thành opportunity nhỏ hơn. Mỗi opportunity truy về ít nhất một insight; không có insight nguồn thì ghi rõ là giả thuyết. Bước chọn nhánh đáng giải và nghĩ solution thuộc Lesson 4.
+
 **Bốn bước dựng opportunity.**
 
 1. **Root outcome là một hành vi.** Root outcome là đỉnh của cây opportunity, lấy từ job statement và viết lại thành một hành vi do team cùng cam kết, không lấy từ business đang đuổi một con số. Không làm root outcome được: một metric (không có hành vi bên dưới), một output (giải pháp khoác áo mục tiêu), hay một câu không kiểm chứng được. Kiểm tra: nếu root outcome xảy ra, con số kinh doanh có nhích không? Câu trả lời "không" thì ghi vào map, đừng làm mượt.
