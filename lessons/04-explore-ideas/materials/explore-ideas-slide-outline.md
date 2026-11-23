@@ -41,13 +41,12 @@ last_synced: 2026-11-23
 - Title: Nội dung\n*buổi học*
 - On-slide:
   - 01 · Từ opportunity đến solution
-  - 02 · AI sinh solution
-  - 03 · Concept sketching
-  - 04 · User flow và process map
-  - 05 · Package thành skill và agent
+  - 02 · Concept sketching
+  - 03 · User flow và process map
+  - 04 · Package thành skill và agent
 - Ví dụ: Không cần. Slide định hướng.
 - Câu hỏi hay gặp: None.
-- 🎨 Visual hint: TYPOGRAPHIC. Năm dòng đánh số lớn.
+- 🎨 Visual hint: TYPOGRAPHIC. Bốn dòng đánh số lớn.
 
 ---
 
@@ -81,6 +80,7 @@ last_synced: 2026-11-23
 - Speaker notes:
   - Phần này mở lại map từ buổi 3 và thêm tầng solution
   - Mình không dựng map mới
+  - Phần này gồm cả việc để AI mở rộng solution, sau khi chúng ta nghĩ trước
 
   > Mình mở lại map của buổi 3 trước.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper, số phần lớn.
@@ -182,28 +182,6 @@ last_synced: 2026-11-23
 
 ---
 
-### MILESTONE · Activity: Add solutions to a branch
-- Num: 10
-- Kicker: Activity
-- Title: Thêm solution\n*vào map*
-- Sub: Chọn một nhánh opportunity, thêm solution: bạn nghĩ trước, AI hỗ trợ sau
-- Ví dụ: có (map của designer, hoặc Delivery App)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-
-  > Bạn chọn một nhánh opportunity trong map của mình. Mười phút để thêm solution vào nhánh đó.
-
-  - Một phút chọn nhánh, bốn phút làm một mình không dùng AI, bốn phút hỏi AI, một phút đọc lại cả cây
-  - Ở bước hai, bạn viết ít nhất ba solution của riêng mình
-  - Ở bước ba, bạn hỏi AI: "Các solution này cùng dựa trên giả định nào? Cho tôi ba solution đi ngược giả định đó, mỗi solution kèm opportunity ID"
-  - Ý nào của AI thật sự mới thì thêm vào map và ghi rõ là từ AI
-  - Dữ liệu hư cấu hoặc đã ẩn danh, không dán tài liệu bảo mật
-
-  > **Đừng hỏi AI trước khi bạn viết xong phần của mình.**
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
-
----
-
 ### PROCESS · How to add solutions
 - Kicker: Cách làm
 - Title: Cách thêm solution
@@ -229,22 +207,6 @@ last_synced: 2026-11-23
 
 ---
 
-### SECTION DIVIDER · AI generating solutions
-- Num: 02
-- Kicker: Chuyển phần
-- Title: AI sinh\n*solution*
-- Sub: Bạn nghĩ trước, AI mở rộng sau.
-- Ví dụ: Không cần. Slide chuyển phần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-
-  > Quay lại bảng ice breaker: giải pháp nào bạn đã nghĩ ra trước khi hiểu vấn đề?
-
-  - Phần này giải thích vì sao trong activity vừa rồi bạn nghĩ trước và AI đến sau
-- 🎨 Visual hint: TYPOGRAPHIC. Nền paper-deeper.
-
----
-
 ### COMPARE · Ask AI first or last
 - Kicker: So sánh
 - Title: Hỏi AI trước hay sau?
@@ -256,6 +218,8 @@ last_synced: 2026-11-23
 - Câu hỏi hay gặp:
   - Con số cụ thể của nghiên cứu là gì? Xem nguồn [2] trong lesson. Kết luận là ý tưởng kém đa dạng; cỡ mẫu nằm trong nguồn.
 - Speaker notes:
+
+  > Quay lại bảng ice breaker: giải pháp nào bạn đã nghĩ ra trước khi hiểu vấn đề?
 
   > Một nghiên cứu về brainstorm có AI chat tool cho thấy ý tưởng kém đa dạng hơn, vì mô hình thường trả về câu trả lời có khả năng cao nhất.
 
@@ -322,34 +286,32 @@ last_synced: 2026-11-23
 
 ---
 
-### PROCESS · AI with the map as context
-- Kicker: Cách làm
-- Title: AI đọc map của bạn
-- On-slide:
-  - Đưa map vào AI, mỗi dòng có ID
-  - Yêu cầu mỗi solution kèm opportunity ID
-  - Câu trả lời không có ID là câu đoán
-  - Mọi thứ AI sinh ra là hypothesis cho đến khi gắn được với opportunity
-- Ví dụ: có (bản nháp, Delivery App: AI đề xuất "nhắc cut-off 30 phút trước" kèm ID opportunity về cut-off. AI đề xuất "giảm giá đơn đầu" không có ID nào, nên ghi là hypothesis, và IN-04 cho thấy giá không phải lý do chính)
-- Câu hỏi hay gặp:
-  - AI trích ID sai thì sao? Mở opportunity đó và đối chiếu. Một ID có thật chưa chắc đã đúng ý.
+### MILESTONE · Activity: Add solutions to a branch
+- Num: 10
+- Kicker: Activity
+- Title: Thêm solution\n*vào map*
+- Sub: Chọn một nhánh opportunity, thêm solution: bạn nghĩ trước, AI hỗ trợ sau
+- Ví dụ: có (map của designer, hoặc Delivery App)
+- Câu hỏi hay gặp: None.
 - Speaker notes:
 
-  > Quy tắc của buổi 3 vẫn áp dụng ở đây: không có ID thì không vào chuỗi.
+  > Bạn chọn một nhánh opportunity trong map của mình. Mười phút để thêm solution vào nhánh đó.
 
-  - Một số nghiên cứu về agent trong design workflow mô tả AI đọc tài liệu của designer qua retrieval hoặc MCP. Mình chỉ nhắc như một hướng đi, chưa phải quy trình đã thử `[to confirm]`
-  - Số solution AI đề xuất đã giữ và số đã loại được đếm
-  - Khoảng 2 phút cho slide này
+  - Một phút chọn nhánh, bốn phút làm một mình không dùng AI, bốn phút hỏi AI, một phút đọc lại cả cây
+  - Ở bước hai, bạn viết ít nhất ba solution của riêng mình
+  - Ở bước ba, bạn hỏi AI: "Các solution này cùng dựa trên giả định nào? Cho tôi ba solution đi ngược giả định đó, mỗi solution kèm opportunity ID"
+  - Ý nào của AI thật sự mới thì thêm vào map và ghi rõ là từ AI
+  - Dữ liệu hư cấu hoặc đã ẩn danh, không dán tài liệu bảo mật
 
-  > **Không có opportunity phía trên thì solution chỉ là hypothesis.**
+  - Lúc này bạn đã nghe vì sao thứ tự nghĩ trước, AI sau quan trọng; activity là lúc làm thật
 
-  > Map của bạn đã đủ ID để đưa cho AI chưa?
-- 🎨 Visual hint: SCHEMATIC. Map markdown bên trái, câu trả lời AI bên phải với ID tô đậm.
+  > **Đừng hỏi AI trước khi bạn viết xong phần của mình.**
+- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.
 
 ---
 
 ### SECTION DIVIDER · Concept sketching
-- Num: 03
+- Num: 02
 - Kicker: Chuyển phần
 - Title: Concept\n*sketching*
 - Sub: Một ý tưởng, vẽ thô, người khác đọc được trong 30 giây.
@@ -374,7 +336,7 @@ last_synced: 2026-11-23
   - Nếu thiếu: không biết chỗ nào bạn chưa nghĩ ra
   - When: sau khi chọn solution từ map, trước user flow và prototype
   - Không cần khi: chỉ có một ý tưởng và không có phương án nào để so sánh
-- Ví dụ: có (sketch QR seat-unlock, hai hành trình cạnh nhau; lesson mục 3, xem thêm slide Real examples)
+- Ví dụ: có (sketch QR seat-unlock, hai hành trình cạnh nhau; lesson mục 2, xem thêm slide Real examples)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
@@ -489,7 +451,7 @@ last_synced: 2026-11-23
 
 ---
 
-### IMAGE · Real examples
+### IMAGE · Real examples (hai slide)
 - Kicker: Ví dụ
 - Title: Concept sketch thật
 - On-slide:
@@ -538,7 +500,7 @@ last_synced: 2026-11-23
 ---
 
 ### SECTION DIVIDER · User flow and process map
-- Num: 04
+- Num: 03
 - Kicker: Chuyển phần
 - Title: User flow và\n*process map*
 - Sub: Một người dùng, rồi cả hệ thống phía sau.
@@ -724,7 +686,7 @@ last_synced: 2026-11-23
 ---
 
 ### SECTION DIVIDER · Package into a skill and agent
-- Num: 05
+- Num: 04
 - Kicker: Chuyển phần
 - Title: Package thành\n*skill và agent*
 - Sub: Đóng gói quy trình đã chạy ổn để dùng lại.
@@ -841,3 +803,37 @@ last_synced: 2026-11-23
   - Một câu để mang về: solution nào không dẫn về opportunity thì ghi là hypothesis
   - Cheat sheet sẽ được gửi sau buổi học
 - 🎨 Visual hint: End layout, nền paper-deeper.
+---
+
+### APPENDIX · AI with the map as context
+- Kicker: Cách làm
+- Vị trí: appendix, chiếu khi lớp hỏi; không nằm trong luồng chính
+- Title: AI đọc map của bạn
+- On-slide:
+  - Đưa map vào AI, mỗi dòng có ID
+  - Yêu cầu mỗi solution kèm opportunity ID
+  - Câu trả lời không có ID là câu đoán
+  - Mọi thứ AI sinh ra là hypothesis cho đến khi gắn được với opportunity
+- Ví dụ: có (bản nháp, Delivery App: AI đề xuất "nhắc cut-off 30 phút trước" kèm ID opportunity về cut-off. AI đề xuất "giảm giá đơn đầu" không có ID nào, nên ghi là hypothesis, và IN-04 cho thấy giá không phải lý do chính)
+- Câu hỏi hay gặp:
+  - AI trích ID sai thì sao? Mở opportunity đó và đối chiếu. Một ID có thật chưa chắc đã đúng ý.
+- Speaker notes:
+
+  > Quy tắc của buổi 3 vẫn áp dụng ở đây: không có ID thì không vào chuỗi.
+
+  - Một số nghiên cứu về agent trong design workflow mô tả AI đọc tài liệu của designer qua retrieval hoặc MCP. Mình chỉ nhắc như một hướng đi, chưa phải quy trình đã thử `[to confirm]`
+  - Số solution AI đề xuất đã giữ và số đã loại được đếm
+  - Khoảng 2 phút cho slide này
+
+  > **Không có opportunity phía trên thì solution chỉ là hypothesis.**
+
+  > Map của bạn đã đủ ID để đưa cho AI chưa?
+- 🎨 Visual hint: SCHEMATIC. Map markdown bên trái, câu trả lời AI bên phải với ID tô đậm.
+
+---
+
+### APPENDIX · AI capabilities in Develop
+- Vị trí: appendix, chiếu khi lớp hỏi; slide `ai-develop` trong deck
+- On-slide: danh sách việc AI làm được ở giai đoạn Develop (wireframe low-fi, biến thể UI, UX copy, dọn file thiết kế)
+- Ví dụ: Không cần. Slide tham chiếu.
+- Speaker notes: `[to confirm]` chưa viết lại trong outline; xem notes trong deck.

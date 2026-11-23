@@ -19,11 +19,10 @@ Lesson 3 dừng ở một map đi từ Goal hoặc Problem xuống Opportunity, 
 
 ## Nội dung buổi học
 
-1. Từ opportunity đến solution: mở lại map của Lesson 3 và thêm tầng solution
-2. AI sinh solution: bạn nghĩ trước, AI đến sau
-3. Concept sketching: một ý tưởng vẽ thô, đọc hiểu trong 30 giây
-4. User flow và process map: đường đi của một người dùng, rồi zoom out phía sau màn hình
-5. Package thành skill và agent: đóng gói quy trình để dùng lại
+1. Từ opportunity đến solution: mở lại map của Lesson 3, thêm tầng solution, để AI mở rộng sau khi bạn nghĩ trước, rồi làm activity
+2. Concept sketching: một ý tưởng vẽ thô, đọc hiểu trong 30 giây
+3. User flow và process map: đường đi của một người dùng, rồi zoom out phía sau màn hình
+4. Package thành skill và agent: đóng gói quy trình để dùng lại
 
 Xem cấu trúc 100 phút trong [lesson-structure.html](../assets/lesson-structure.html).
 
@@ -82,20 +81,7 @@ Opportunity mô tả khó khăn của người dùng. Solution là cách giải 
 
 Banner, tooltip và tin nhắn nhắc là ba solution cho cùng một opportunity. Trong thời đại AI, solution rẻ và nhanh, nên rủi ro là làm đúng việc cho sai opportunity. Vì vậy việc của chúng ta là chọn đúng opportunity và kiểm tra solution dẫn về đâu.
 
-### 1.4 Activity: add solutions to one branch (10 phút)
-
-1. (1 phút) Chọn một nhánh opportunity trong map của bạn, nhánh có ít solution nhất hoặc nhánh bạn thấy vướng nhất.
-2. (4 phút, một mình, không dùng AI) Viết ít nhất ba solution dưới opportunity đó.
-3. (4 phút) Hỏi AI: "Các solution này cùng dựa trên giả định nào? Cho tôi ba solution đi ngược giả định đó, mỗi solution kèm opportunity ID." Những ý thật sự mới thì thêm vào map và ghi rõ là từ AI.
-4. (1 phút) Đọc lại cả cây: nhánh nào dày, nhánh nào còn trống, solution nào chưa dẫn về opportunity.
-
-*Ví dụ trong Delivery App:* AI chỉ ra rằng các solution của người viết đều giả định khách sẽ nhìn thấy màn đổi khung giờ. Một ý đi ngược giả định đó là nhắc cut-off qua tin nhắn. Khi hỏi AI trước, cả lớp chỉ ra "banner cut-off". Khi viết trước, lớp có thêm ý "chốt khung giờ sau khi xem menu".
-
-Dữ liệu là map của bạn, hoặc Delivery App. Kết quả là map đã có tầng solution, mỗi solution ghi rõ do bạn nghĩ hay do AI đề xuất. Điều kiện duy nhất: không hỏi AI trước bước 2.
-
----
-
-## 2. AI generating solutions
+### 1.4 AI generating solutions
 
 Meincke, Nave và Terwiesch (Wharton, đăng trên Nature Human Behaviour năm 2025) làm năm thí nghiệm brainstorming với ChatGPT. ChatGPT có thể nâng mức sáng tạo của từng ý, nhưng nhóm có AI ra tập ý hẹp hơn nhóm không có: 37 trên 45 phép so sánh thống kê cho thấy độ đa dạng giảm. Ví dụ trong bài: món đồ chơi làm từ một viên gạch và một cái quạt, ý của nhóm dùng AI trùng nhau tới 94%, còn nhóm không dùng AI thì không ý nào trùng. Nhiệm vụ trong thí nghiệm là brainstorming đơn giản, nên đây là một tín hiệu, chưa phải bằng chứng cho thiết kế sản phẩm thật.
 
@@ -105,7 +91,7 @@ Meincke, Nave và Terwiesch (Wharton, đăng trên Nature Human Behaviour năm 2
 
 | Lúc | Căn cứ |
 |---|---|
-| Chưa có ý của mình | Dễ bám vào hình hoặc ý đầu tiên AI đưa ra, như thí nghiệm CHI 2024 ở mục 3 |
+| Chưa có ý của mình | Dễ bám vào hình hoặc ý đầu tiên AI đưa ra, như thí nghiệm CHI 2024 ở mục 2 |
 | Cần ý khác số đông | Thử nghiệm design sprint của thoughtbot (ChatGPT cùng DALL·E, 2024): ý của AI nhanh nhưng nông, theo khuôn quen thuộc. Đây là thử nghiệm của một người, công cụ khi đó đã cũ, nên chỉ coi là một ví dụ |
 | Cần giữ kỹ năng | Phỏng vấn 22 người làm sản phẩm về vibe coding: lo ngại mất kỹ năng và không rõ ai sở hữu kết quả |
 
@@ -124,9 +110,20 @@ Chương trình dùng AI sau khi bạn đã có ý của mình, và ở chỗ AI
 
 Các nghiên cứu về agent trong design workflow mô tả AI đọc tài liệu của designer thông qua retrieval hoặc MCP thay vì dán tay. Đây mới là một hướng đi, chưa phải quy trình đã thử với lớp.
 
+### 1.5 Activity: add solutions to one branch (10 phút)
+
+1. (1 phút) Chọn một nhánh opportunity trong map của bạn, nhánh có ít solution nhất hoặc nhánh bạn thấy vướng nhất.
+2. (4 phút, một mình, không dùng AI) Viết ít nhất ba solution dưới opportunity đó.
+3. (4 phút) Hỏi AI: "Các solution này cùng dựa trên giả định nào? Cho tôi ba solution đi ngược giả định đó, mỗi solution kèm opportunity ID." Những ý thật sự mới thì thêm vào map và ghi rõ là từ AI.
+4. (1 phút) Đọc lại cả cây: nhánh nào dày, nhánh nào còn trống, solution nào chưa dẫn về opportunity.
+
+*Ví dụ trong Delivery App:* AI chỉ ra rằng các solution của người viết đều giả định khách sẽ nhìn thấy màn đổi khung giờ. Một ý đi ngược giả định đó là nhắc cut-off qua tin nhắn. Khi hỏi AI trước, cả lớp chỉ ra "banner cut-off". Khi viết trước, lớp có thêm ý "chốt khung giờ sau khi xem menu".
+
+Dữ liệu là map của bạn, hoặc Delivery App. Kết quả là map đã có tầng solution, mỗi solution ghi rõ do bạn nghĩ hay do AI đề xuất. Điều kiện duy nhất: không hỏi AI trước bước 2.
+
 ---
 
-## 3. Concept sketching
+## 2. Concept sketching
 
 | | |
 |---|---|
@@ -158,9 +155,9 @@ Bạn làm concept sketch cho project của mình ở bài tập về nhà.
 
 ---
 
-## 4. User flow and process map
+## 3. User flow and process map
 
-### 4.1 User flow
+### 3.1 User flow
 
 | | |
 |---|---|
@@ -188,7 +185,7 @@ Flow narrative là nguồn chuẩn, diagram chỉ là cách nhìn nó. Có ba ga
 
 Xem bốn bước từ flow narrative sang diagram, với ba gate, ở [flow-to-map.html](../assets/flow-to-map.html).
 
-### 4.2 Process map: zoom out
+### 3.2 Process map: zoom out
 
 | | |
 |---|---|
@@ -205,7 +202,7 @@ Process map dùng lại flow narrative đã kiểm tra của user flow, thêm ba
 **Nối với phần đầu.** Mỗi thay đổi trên process map đề xuất phải trả lời một pain point có thật. AI dễ vẽ ra một tương lai trơn tru không có thật. Bạn kiểm tra từng thay đổi với pain point, và kiểm tra các phụ thuộc với người sở hữu chúng.
 
 
-### 4.3 One source, many views
+### 3.3 One source, many views
 
 | | |
 |---|---|
@@ -223,11 +220,11 @@ Process map dùng lại flow narrative đã kiểm tra của user flow, thêm ba
 
 *Ví dụ trong Travel Buddy:* flow narrative có các cột #, Step, Who, What happens, Planned solution, Source. Process map HTML lấy cột Who làm lane (Traveler, Travel Buddy, Local, Companion hoặc Contact), cột Planned solution thành dòng nhỏ dưới mỗi bước, và hàng 4 "Signs up" có nguồn unknown nên hiện thành ô cam. Xem hai file mẫu ở [Flow Narrative.png](../assets/Flow%20Narrative.png) và [process-map.html](../assets/process-map.html).
 
-Quy tắc này là một phần của skill ở phần 5: một skill tốt giữ nguồn ở một chỗ và để agent tự vẽ lại các view.
+Quy tắc này là một phần của skill ở phần 4: một skill tốt giữ nguồn ở một chỗ và để agent tự vẽ lại các view.
 
 ---
 
-## 5. Package into a skill and agent
+## 4. Package into a skill and agent
 
 Thứ tự là làm thật trước, viết quy trình sau, đưa lên hub cuối cùng:
 
@@ -240,7 +237,7 @@ Thứ tự là làm thật trước, viết quy trình sau, đưa lên hub cuố
 
 ---
 
-## 6. Common mistakes
+## 5. Common mistakes
 
 | Sai lầm | Biểu hiện | Cách sửa |
 |---|---|---|
