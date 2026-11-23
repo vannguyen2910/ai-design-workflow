@@ -28,7 +28,7 @@ Designer chưa có thì dùng Delivery App (`assets/starter-files/course-case/`)
 
 | # | Việc | Làm với AI | Output | Gate |
 |---|---|---|---|---|
-| 1 | **Hoàn thiện map.** Mở lại activity trên lớp: mỗi nhánh opportunity đã chọn có ít nhất ba solution viết thành HMW. Nối mỗi friction point trong flow với một opportunity | AI đề xuất thêm sau khi bạn viết, kèm opportunity ID | `options.md`: map có tầng solution | Mỗi solution dẫn về opportunity; chưa dẫn thì ghi hypothesis |
+| 1 | **Hoàn thiện map.** Mở lại activity trên lớp: mỗi nhánh opportunity đã chọn có ít nhất ba solution. Nối mỗi friction point trong flow với một opportunity | AI đề xuất thêm sau khi bạn viết, kèm opportunity ID | `options.md`: map có tầng solution | Mỗi solution dẫn về opportunity; chưa dẫn thì ghi hypothesis |
 | 2 | **Chọn hai solution** để sketch, dựa trên opportunity và nguyên tắc. Ghi lý do và lý do loại các solution còn lại | AI chất vấn lựa chọn, bạn quyết định | Hai solution kèm lý do | Có principle check (có hoặc không) cho từng solution |
 | 3 | **Concept sketch** cho cả hai (paper). Hai concept phải khác nhau về giả định, không phải biến thể | AI đọc cold từng sketch và nói nó hiểu gì | Hai sketch, mỗi cái có key moment, nhãn, ghi chú ý đồ, "This works because..." | Một người chưa nghe giải thích nói đúng concept làm gì |
 | 4 | **Chọn một hướng.** So hai concept với opportunity và nguyên tắc | AI không chọn thay bạn | `direction.md`: hướng đã chọn và lý do gác hướng còn lại | Rationale không có "nếu" hoặc "giả sử" |
@@ -57,7 +57,7 @@ Bấm giờ từng bước và so với cách làm tay để tự trả lời c�
 - Các file trên đã nằm trong hub và commit
 - Đầu vào của Lesson 5 (AI Prototyping): hướng đã chọn và flow
 
-## In-class session (90 phút)
+## In-class session (100 phút)
 
 Làm tiếp phần dang dở nếu còn thời gian, rồi được chấm; cách chấm chưa quyết `[to confirm]`.
 

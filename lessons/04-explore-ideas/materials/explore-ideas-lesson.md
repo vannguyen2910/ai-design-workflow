@@ -6,7 +6,7 @@ type: lesson
 program: ai-design-workflow
 tags: [develop, solutions, how-might-we, concept-sketching, user-flow, process-map, agents, ai-workflow]
 level: intermediate
-duration: "90 min"
+duration: "100 min"
 date: 2026-11-04
 draft: true
 slides: "https://claude.ai/artifact/4w6AdUVyfeuq8A3RJeMV18"
@@ -25,12 +25,12 @@ Lesson 3 dừng ở một map đi từ Goal hoặc Problem xuống Opportunity, 
 4. User flow và process map: đường đi của một người dùng, rồi zoom out phía sau màn hình
 5. Package thành skill và agent: đóng gói quy trình để dùng lại
 
-Xem cấu trúc 90 phút trong [lesson-structure.html](../assets/lesson-structure.html).
+Xem cấu trúc 100 phút trong [lesson-structure.html](../assets/lesson-structure.html).
 
 ## Sau buổi học, bạn có thể
 
 1. Kéo dài map từ Lesson 3 xuống solution, mỗi solution nằm dưới một opportunity và dẫn về insight ID
-2. Viết solution thành câu How Might We, giữ nguyên user need và không biến nó thành tính năng
+2. Phân biệt opportunity với solution: opportunity mô tả khó khăn của người dùng, solution là cách giải, và một opportunity có thể có nhiều solution
 3. Sinh solution theo thứ tự bạn nghĩ trước, AI sau, và đánh dấu là hypothesis những solution AI đề xuất mà không gắn được với opportunity nào
 4. Vẽ một concept sketch gồm khoảnh khắc chính, nhãn thành phần, ghi chú ý đồ và một câu "This works because..."
 5. Dựng user flow cho một task từ flow narrative đã kiểm tra, rồi mở rộng thành process map bằng các lane phía sau
@@ -71,19 +71,21 @@ Journey map và user flow hiện tại cho thấy các friction point: bước n
 
 Ví dụ trong Delivery App: IN-01 (khách mới không biết khung giờ giao đã chốt) và IN-02 (khó tìm chỗ huỷ đơn, cut-off không hiện) cùng trỏ về bước "chọn và đổi khung giờ giao". Hai friction point nằm ở một bước, nên chúng thuộc cùng một nhánh opportunity: *khách mới gặp khó khi muốn đổi hoặc huỷ đơn vì không thấy cut-off đúng lúc đang quyết định.*
 
-### 1.3 Solution as How Might We
+### 1.3 Opportunity or solution
 
-Solution được viết thành câu HMW, giữ user need làm ràng buộc: "Làm sao để khách thấy cut-off ngay tại chỗ họ chọn khung giờ giao?" Câu HMW không chứa sẵn giải pháp nên nghĩ được nhiều solution khác nhau. Một câu đã ghi "thêm banner" thì chỉ còn một đáp án.
+Opportunity mô tả khó khăn của người dùng. Solution là cách giải khó khăn đó, và một opportunity có thể có nhiều solution. Một solution nằm dưới đúng một opportunity trên map; solution nào không dẫn về opportunity thì ghi là hypothesis.
 
-| Viết thành tính năng | Viết thành HMW |
+| Viết nhầm (đây đã là solution) | Opportunity đúng |
 |---|---|
-| Thêm banner cảnh báo cut-off | Làm sao để khách thấy cut-off ngay tại chỗ họ chọn khung giờ giao? |
-| Làm nút Huỷ đơn to hơn | Làm sao để khách tìm thấy cách huỷ đơn đúng lúc họ cần, thay vì phải đi tìm? |
+| Thêm banner cảnh báo cut-off | Khách chọn ngày giao mà không thấy cut-off đã qua |
+| Làm nút Huỷ đơn to hơn | Khách không tìm thấy cách huỷ đơn đúng lúc họ cần |
+
+Banner, tooltip và tin nhắn nhắc là ba solution cho cùng một opportunity. Trong thời đại AI, solution rẻ và nhanh, nên rủi ro là làm đúng việc cho sai opportunity. Vì vậy việc của chúng ta là chọn đúng opportunity và kiểm tra solution dẫn về đâu.
 
 ### 1.4 Activity: add solutions to one branch (10 phút)
 
 1. (1 phút) Chọn một nhánh opportunity trong map của bạn, nhánh có ít solution nhất hoặc nhánh bạn thấy vướng nhất.
-2. (4 phút, một mình, không dùng AI) Viết ít nhất ba câu HMW hoặc solution dưới opportunity đó.
+2. (4 phút, một mình, không dùng AI) Viết ít nhất ba solution dưới opportunity đó.
 3. (4 phút) Hỏi AI: "Các solution này cùng dựa trên giả định nào? Cho tôi ba solution đi ngược giả định đó, mỗi solution kèm opportunity ID." Những ý thật sự mới thì thêm vào map và ghi rõ là từ AI.
 4. (1 phút) Đọc lại cả cây: nhánh nào dày, nhánh nào còn trống, solution nào chưa dẫn về opportunity.
 
@@ -95,9 +97,19 @@ Dữ liệu là map của bạn, hoặc Delivery App. Kết quả là map đã c
 
 ## 2. AI generating solutions
 
-Một nghiên cứu về brainstorm có ChatGPT (Wharton Mack Institute, đăng trên Nature năm 2025) cho thấy ý tưởng của nhóm dùng AI kém đa dạng hơn nhóm không dùng, vì mô hình thường trả về câu trả lời có khả năng cao nhất.
+Meincke, Nave và Terwiesch (Wharton, đăng trên Nature Human Behaviour năm 2025) làm năm thí nghiệm brainstorming với ChatGPT. ChatGPT có thể nâng mức sáng tạo của từng ý, nhưng nhóm có AI ra tập ý hẹp hơn nhóm không có: 37 trên 45 phép so sánh thống kê cho thấy độ đa dạng giảm. Ví dụ trong bài: món đồ chơi làm từ một viên gạch và một cái quạt, ý của nhóm dùng AI trùng nhau tới 94%, còn nhóm không dùng AI thì không ý nào trùng. Nhiệm vụ trong thí nghiệm là brainstorming đơn giản, nên đây là một tín hiệu, chưa phải bằng chứng cho thiết kế sản phẩm thật.
 
 **Suy luận.** Nếu hỏi AI trước, câu trả lời của nó trở thành ý số một, và bạn bám theo đó. Vì vậy thứ tự đúng là bạn nghĩ trước, AI đến sau.
+
+**Ba lúc nên cân nhắc trước khi mở AI** (chưa nghĩa là tránh AI):
+
+| Lúc | Căn cứ |
+|---|---|
+| Chưa có ý của mình | Dễ bám vào hình hoặc ý đầu tiên AI đưa ra, như thí nghiệm CHI 2024 ở mục 3 |
+| Cần ý khác số đông | Thử nghiệm design sprint của thoughtbot (ChatGPT cùng DALL·E, 2024): ý của AI nhanh nhưng nông, theo khuôn quen thuộc. Đây là thử nghiệm của một người, công cụ khi đó đã cũ, nên chỉ coi là một ví dụ |
+| Cần giữ kỹ năng | Phỏng vấn 22 người làm sản phẩm về vibe coding: lo ngại mất kỹ năng và không rõ ai sở hữu kết quả |
+
+Chương trình dùng AI sau khi bạn đã có ý của mình, và ở chỗ AI làm tốt: mở rộng, phản biện, viết lại.
 
 | Quy tắc | Cách làm |
 |---|---|
@@ -129,6 +141,18 @@ Concept sketch là công cụ để nghĩ, không phải wireframe. Một sketch
 **Four steps, one moment.** (1) Chọn một ý, ý thú vị nhất trên map. (2) Vẽ khoảnh khắc chính. (3) Ghi nhãn, không làm đẹp. (4) Viết "This works because...". *Ví dụ trong Delivery App:* vẽ màn chọn khung giờ giao có một chip "Chốt trước 15 phút", với rationale: "This works because khách thấy cut-off ngay lúc đang quyết định".
 
 **Ví dụ thật.** Hai sketch thật từ các lớp trước. Một là sản phẩm QR seat-unlock với hai hành trình đặt cạnh nhau (quét QR, đặt chỗ, thanh toán; hoặc tải app trước rồi mới quét), mỗi hành trình có nhãn viết tay và khung Pros/Cons. Hai là ba concept urban farming vẽ trong 10 phút (seasonal pack, farm-partner flow, phygital grocery) với mức hoàn thiện khác nhau. Bạn thử xem concept nào đọc nhanh nhất trong 30 giây, và vì sao.
+
+**Vì sao AI dựng được mockup mà vẫn sketch.** Ba lý do, mỗi lý do có nguồn nhưng còn sơ bộ:
+
+- *Dễ bám vào hình AI đưa ra.* Thí nghiệm của Wadinambiarachchi và cộng sự (CHI 2024, 60 người): nhóm ideation bằng hình có AI tạo ảnh bám vào ví dụ đầu nhiều hơn, ra ít ý hơn, và ý ít đa dạng, ít gốc hơn nhóm đối chứng. Một thí nghiệm, một dạng nhiệm vụ.
+- *Hình hoàn chỉnh khó sửa.* Khảo sát 55 sinh viên thiết kế (Zhang, Ranscombe, Coutts, DRS 2026): AI render nhanh giúp ra nhiều hướng, nhưng sinh viên thấy ít kiểm soát và khó chỉnh lặp lại. Tác giả gọi là nghịch lý giữa fidelity và flexibility. Đây là khảo sát tự báo cáo, cỡ mẫu nhỏ.
+- *Sketch thô còn mở.* Buxton mô tả sketch là nhanh, nhiều, mơ hồ và ít chi tiết, nên ai cũng dám sửa hoặc bỏ. Mình trích qua một bài tổng quan về model sketching (2023), chưa đọc sách gốc `[to confirm]`.
+
+**Suy luận của chương trình** (chưa phải kết quả nghiên cứu): ở giai đoạn chọn hướng, chúng ta cần thứ còn mở và dễ bỏ, nên sketch đi trước, AI dựng sau.
+
+**Khi đưa sketch cho AI.** Sketch2Code (Li, Zhang, Yang, 2024, preprint) là benchmark cho 10 mô hình thị giác biến sketch thành trang web; tác giả kết luận ngay cả mô hình mạnh vẫn đọc sketch chưa chính xác. Trong nghiên cứu với chuyên gia UI/UX của cùng bài, họ ưa mô hình chủ động hỏi câu làm rõ hơn là chờ phản hồi. Từ đó chương trình suy ra (không phải kết quả của bài): ghi nhãn từng thành phần, ghi chú ý đồ và viết câu "This works because...", rồi bảo AI hỏi lại những chỗ chưa rõ trước khi dựng. Cách đưa sketch cho AI cụ thể trong khoá này chưa chốt `[to confirm]`.
+
+**Case thật: một team Adobe.** Một designer trong team Adobe Firefly kể lại (Adobe Design, bài tự thuật, chưa phải nghiên cứu độc lập): chỉ sketch vài màn chính, khoảng 20 phút đến một giờ, rồi dựng phần còn lại trực tiếp trong codebase thật. Nhóm 5 người (product manager, ba engineer, một designer) đưa hai tính năng lên production trong 8 ngày làm việc. Dựng thật lộ ra điều mockup tĩnh không thấy: thời gian, chuyển động, phản hồi và trạng thái, và cộng tác với engineer tăng lên. Tác giả nói nền tảng của nghề (thấu cảm, phán đoán, gu, tay nghề) không đổi, và còn câu hỏi mở về nhịp làm việc cũng như khi nào quy trình truyền thống vẫn tốt hơn. Phần dựng prototype nằm ở buổi 5.
 
 Bạn làm concept sketch cho project của mình ở bài tập về nhà.
 
@@ -232,5 +256,6 @@ Thứ tự là làm thật trước, viết quy trình sau, đưa lên hub cuố
 ## Giới hạn của bài học
 
 - Quy trình user flow và process map dựa trên hai lesson cũ và chưa chạy với lớp thật.
-- Bằng chứng về AI và độ đa dạng ý tưởng chỉ lấy từ một nguồn (Wharton Mack Institute, Nature 2025).
+- Bằng chứng về AI và sketch lấy từ vài nghiên cứu nhỏ, mỗi nghiên cứu một dạng nhiệm vụ (brainstorming, ideation bằng hình, khảo sát sinh viên, benchmark preprint), chưa phải kết luận chung. Case Adobe là bài tự thuật của một team.
+- Thời lượng buổi là 100 phút, đã tăng từ 90 phút để chứa các slide bằng chứng về AI và sketch (con số ước tính, chưa dạy thử) `[to confirm]`.
 - Các ví dụ Delivery App do chương trình tự dựng, chưa lấy từ dữ liệu của một product thật.

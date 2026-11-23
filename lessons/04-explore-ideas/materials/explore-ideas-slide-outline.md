@@ -2,11 +2,11 @@
 title: "Explore Ideas and Pick a Direction"
 lesson_file: "explore-ideas-lesson.md"
 level: ""
-slide_count: 31
-duration: "90 min"
+slide_count: 35
+duration: "100 min"
 status: draft
-built_deck: ""
-last_synced: 2026-11-04
+built_deck: "https://claude.ai/artifact/4w6AdUVyfeuq8A3RJeMV18"
+last_synced: 2026-11-23
 ---
 
 ## Session metadata
@@ -14,12 +14,12 @@ last_synced: 2026-11-04
 | Field | Value |
 |---|---|
 | Program | AI Design Workflow |
-| Track / session | Buổi 4 của series, 90 phút, online, 7 đến 8 designer; sau đó là buổi practice |
+| Track / session | Buổi 4 của series, 100 phút, online, 7 đến 8 designer; sau đó là buổi practice |
 | Stage | Develop |
 | Prior session | Buổi 3: Turn Research into Insights You Can Trust |
 | Next session | Buổi practice, rồi buổi 5: AI Prototyping |
 | Running example | project Delivery App hư cấu: IN-01 và IN-02 cùng trỏ về bước chọn và đổi khung giờ giao; opportunity "khách mới gặp khó khi muốn đổi hoặc huỷ đơn vì không thấy cut-off" |
-| Chia giờ `[to confirm]` | ice breaker 6, mở lại map 8, solution HMW 6, activity 10, AI sinh solution 6, concept sketching 10, user flow 12, process map 10, package 8, hỏi đáp và close 13 (tổng 89) |
+| Chia giờ `[to confirm]` | ice breaker 6, mở lại map 8, solution 6, activity 10, AI sinh solution 10, concept sketching 17, user flow 12, process map 10, package 8, hỏi đáp và close 13 (tổng 100; đã quyết định giữ 100 phút, gồm 11 phút cho năm slide thêm ngày 2026-11-23) |
 
 ---
 
@@ -113,29 +113,6 @@ last_synced: 2026-11-04
 
 ---
 
-### NUMBERED · Từ opportunity đến solution: một câu HMW
-- Kicker: Cầu nối
-- Title: Từ opportunity đến solution:\n*một câu How Might We*
-- On-slide:
-  - 01 Opportunity: Khách chọn ngày giao mà không biết cut-off đã qua.
-  - 02 How Might We: Làm sao để khách thấy cut-off ngay chỗ chọn ngày giao? Câu hỏi nêu vấn đề, và cũng đã là một cách nói solution.
-  - 03 Concept: Banner, tooltip, tin nhắn nhắc. Mỗi concept là một cách trả lời cùng một câu HMW.
-  - Solution và How Might We là một: một câu HMW mở ra nhiều concept, mỗi concept là một solution.
-- Ví dụ: có (Delivery App: cut-off ngày giao)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-
-  > Slide trước thêm tầng solution dưới mỗi opportunity. Slide này nói cầu nối giữa hai tầng: trong khoá này, solution được viết thành câu How Might We.
-
-  - Một câu HMW diễn tả vấn đề, đồng thời mở ra nhiều concept; mỗi concept là một solution cụ thể
-  - Viết solution thành HMW giữ chúng ta ở không gian vấn đề đủ lâu để nghĩ ra nhiều hướng
-  - Concept cụ thể nằm dưới câu HMW và được phác ở phần concept sketching
-
-  > Opportunity nào của chúng ta viết thành được một câu HMW, và chúng ta thấy mấy concept trả lời nó?
-- 🎨 Visual hint: NUMBERED. Ba thẻ cùng cấp (nền trắng), số 01 đến 03, một dòng chốt bên dưới; hiện dần theo click.
-
----
-
 ### STATEMENT · Friction point
 - Kicker: Nối với flow
 - Title: Mỗi friction point là một\n*opportunity tiềm năng*
@@ -159,40 +136,38 @@ last_synced: 2026-11-04
 - Kicker: So sánh
 - Title: Nhu cầu hay giải pháp?
 - On-slide:
-  - Tính năng: thêm banner cảnh báo cut-off
-  - HMW: làm sao để khách thấy cut-off ngay chỗ chọn khung giờ giao?
-  - Câu HMW không chứa sẵn đáp án
-- Ví dụ: có (Delivery App: "thêm banner cut-off" và "làm nút Huỷ đơn to hơn", viết lại thành HMW)
+  - Viết nhầm: "Opportunity: thêm banner cảnh báo cut-off" (đây đã là một solution)
+  - Viết đúng: "Opportunity: khách chọn ngày giao mà không thấy cut-off đã qua"
+  - Banner, tooltip hay tin nhắn nhắc là các solution cho opportunity này
+- Ví dụ: có (Delivery App: "thêm banner cut-off" và "làm nút Huỷ đơn to hơn" là hai solution; opportunity phía sau là khách không thấy cut-off)
 - Câu hỏi hay gặp:
-  - Opportunity và HMW khác nhau thế nào? Opportunity mô tả khó khăn của người dùng. HMW là câu hỏi để nghĩ ra solution cho khó khăn đó.
+  - Opportunity và solution khác nhau thế nào? Opportunity mô tả khó khăn của người dùng. Solution là cách giải khó khăn đó; một opportunity có thể có nhiều solution.
 - Speaker notes:
 
-  > Vế trái đã là một giải pháp. Vế phải vẫn còn mở: banner, tooltip hay email nhắc đều trả lời được.
+  > Vế trái đã là một solution, nên nếu ghi nó làm opportunity thì chỉ còn một đáp án. Vế phải mô tả khó khăn của khách.
 
-  - Câu HMW giữ user need làm ràng buộc, nên cho ra nhiều solution khác nhau
-  - Viết thành HMW trước, rồi mới nghĩ cách trả lời
+  - Banner, tooltip và tin nhắn nhắc đều là solution cho cùng một opportunity
+  - Viết khó khăn của người dùng trước, rồi mới nghĩ cách giải
   - Khoảng 3 phút cho slide này
 
-  > **Một câu hỏi tốt cho ra nhiều câu trả lời khác nhau.**
+  > Câu hỏi 30 giây: câu nào là opportunity? "Thêm nút Huỷ đơn" hay "Khách không tìm thấy cách huỷ đơn khi cần"? Gõ A hoặc B vào chat.
 
-  > Câu hỏi 30 giây: câu nào là HMW? "Thêm nút Huỷ đơn" hay "Làm sao để khách tìm thấy cách huỷ đơn khi cần?" Gõ A hoặc B vào chat.
-
-  > Trong map của bạn, opportunity nào thật ra là một tính năng viết lại?
-- 🎨 Visual hint: SCHEMATIC. Hai cột, trái viết tính năng (xám), phải viết HMW (purple).
+  > Trong map của bạn, opportunity nào thật ra là một solution viết lại?
+- 🎨 Visual hint: SCHEMATIC. Hai cột cùng cấp (nền trắng), trái "Viết nhầm", phải "Viết đúng"; hiện dần theo click.
 
 ---
 
-### NUMBERED · What is solution HMW
+### NUMBERED · What is a solution
 - Kicker: Định nghĩa
-- Title: Solution HMW\n*là gì?*
+- Title: Solution\n*là gì?*
 - On-slide:
-  - What: solution viết thành câu How Might We, đặt dưới một opportunity trên map
-  - Gồm: một user need làm ràng buộc, chưa chứa sẵn giải pháp
-  - Why: không nhảy thẳng từ mục tiêu xuống màn hình
-  - Nếu thiếu: ý tưởng không dẫn về nhu cầu nào, và không biết nhánh nào còn trống
+  - What: một cách trả lời cho một opportunity trên map; một opportunity có thể có nhiều solution
+  - Gồm: nêu rõ trả lời opportunity nào, chưa cần chi tiết màn hình
+  - Why: không nhảy thẳng từ mục tiêu xuống màn hình, và thấy nhánh nào còn trống
+  - Thời đại AI: AI đề xuất solution rất nhanh, nên việc của chúng ta là chọn đúng opportunity và kiểm tra solution dẫn về đâu
   - When: sau khi opportunity dẫn về insight ID, trước khi sketch
   - Không cần khi: opportunity chưa rõ, nên quay lại sửa opportunity trước
-- Ví dụ: có (Delivery App: nhánh opportunity về cut-off khung giờ giao; lesson mục 1.2 và 1.3)
+- Ví dụ: có (Delivery App: opportunity cut-off khung giờ giao; solution là banner, tooltip hoặc tin nhắn nhắc)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
 
@@ -201,7 +176,9 @@ last_synced: 2026-11-04
   - Ví dụ: Delivery App có opportunity "khách mới gặp khó khi muốn đổi hoặc huỷ đơn vì không thấy cut-off". Solution nằm dưới nó, chẳng hạn nhắc cut-off ngay chỗ chọn khung giờ giao
   - AI giúp được ở đâu: đề xuất thêm solution sau khi bạn đã viết, kèm opportunity ID; AI không sinh solution trước và không đề xuất cho opportunity không có trên map
   - Khoảng 4 phút cho slide này
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, sáu hàng ngắn với nhãn What, Gồm, Why, Nếu thiếu, When, Không cần khi; ba cột What, Why, When, mỗi cột hai dòng.
+
+  > Opportunity nào trong map của bạn đang có ít solution nhất?
+- 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; icon bóng đèn line-art nhỏ góc phải.
 
 ---
 
@@ -217,7 +194,7 @@ last_synced: 2026-11-04
   > Bạn chọn một nhánh opportunity trong map của mình. Mười phút để thêm solution vào nhánh đó.
 
   - Một phút chọn nhánh, bốn phút làm một mình không dùng AI, bốn phút hỏi AI, một phút đọc lại cả cây
-  - Ở bước hai, bạn viết ít nhất ba HMW hoặc solution của riêng mình
+  - Ở bước hai, bạn viết ít nhất ba solution của riêng mình
   - Ở bước ba, bạn hỏi AI: "Các solution này cùng dựa trên giả định nào? Cho tôi ba solution đi ngược giả định đó, mỗi solution kèm opportunity ID"
   - Ý nào của AI thật sự mới thì thêm vào map và ghi rõ là từ AI
   - Dữ liệu hư cấu hoặc đã ẩn danh, không dán tài liệu bảo mật
@@ -295,6 +272,56 @@ last_synced: 2026-11-04
 
 ---
 
+### CARDS · AI diversity evidence
+- Kicker: Bằng chứng
+- Title: AI giúp ý hay hơn,\n*nhưng nhóm giống nhau hơn*
+- On-slide:
+  - Ý riêng lẻ tốt hơn: brainstorm có ChatGPT có thể nâng mức sáng tạo của từng ý
+  - Nhóm giống nhau hơn: năm thí nghiệm, nhóm có AI ra tập ý hẹp hơn; 37 trên 45 phép so sánh cho thấy độ đa dạng giảm
+  - Vì vậy nghĩ trước: mỗi người nghĩ ý của mình trước, AI đến sau để thách thức giả định (suy luận của chương trình)
+  - Nguồn: Meincke, Nave, Terwiesch, Nature Human Behaviour 2025. Thẻ cuối là suy luận, không phải kết quả của bài.
+- Ví dụ: có (trong bài: món đồ chơi làm từ một viên gạch và một cái quạt, ý của nhóm dùng AI trùng nhau tới 94%, nhóm không dùng AI thì không ý nào trùng)
+- Câu hỏi hay gặp:
+  - Kết quả này áp dụng cho thiết kế sản phẩm thật không? Chưa chắc. Nhiệm vụ trong thí nghiệm là brainstorming đơn giản, nên chúng ta dùng nó như một tín hiệu.
+- Speaker notes:
+
+  > Slide trước nói chúng ta nghĩ trước, AI hỏi sau. Slide này cho một bằng chứng cho thứ tự đó.
+
+  - Ý riêng lẻ tốt hơn: Meincke, Nave và Terwiesch (Nature Human Behaviour, 2025, Wharton) làm năm thí nghiệm brainstorming; ChatGPT có thể nâng mức sáng tạo của từng ý
+  - Cả nhóm giống nhau hơn: nhóm có ChatGPT ra tập ý hẹp hơn nhóm không có; 37 trên 45 phép so sánh thống kê cho thấy độ đa dạng giảm
+  - Vì vậy nghĩ trước: đây là suy luận của chương trình, chưa phải kết quả của bài. Mỗi người nghĩ trước thì giữ được sự khác nhau giữa người với người
+  - Giới hạn: brainstorming đơn giản, chưa phải thiết kế sản phẩm thật. Khoảng 2 phút cho slide này
+
+  > Nhóm của bạn thường có mấy ý khác nhau cho một vấn đề, trước và sau khi dùng AI?
+- 🎨 Visual hint: CARDS. Ba line-art feature card cùng cấp (nền trắng, không số, không đánh dấu thẻ nào), một dòng nguồn bên dưới; hiện dần theo click.
+
+---
+
+### CARDS · AI limits when exploring
+- Kicker: Cân nhắc
+- Title: Ba lúc nên cân nhắc\n*trước khi mở AI*
+- On-slide:
+  - Chưa có ý của mình: dễ bám vào hình hoặc ý đầu tiên AI đưa ra
+  - Cần ý khác số đông: thử nghiệm design sprint của thoughtbot, ý của AI nhanh nhưng nông, theo khuôn quen thuộc
+  - Cần giữ kỹ năng: phỏng vấn 22 người làm sản phẩm, lo ngại mất kỹ năng và không rõ ai sở hữu kết quả
+  - Dùng AI sau khi chúng ta đã có ý của mình, ở chỗ nó làm tốt: mở rộng, phản biện, viết lại
+- Ví dụ: Không cần. Ba tình huống đã có nguồn riêng.
+- Câu hỏi hay gặp:
+  - Vậy có nên tránh AI ở giai đoạn Explore không? Không. Dùng AI sau khi đã có ý của mình.
+- Speaker notes:
+
+  > Slide trước cho thấy AI thu hẹp độ đa dạng của nhóm. Slide này nói ba lúc nên cân nhắc trước khi mở AI.
+
+  - Chưa có ý của mình: thí nghiệm CHI 2024 ở phần concept sketching cho thấy nhóm dùng AI tạo ảnh bám vào ví dụ đầu nhiều hơn
+  - Cần ý khác số đông: thử nghiệm design sprint của thoughtbot (ChatGPT cùng DALL·E, 2024) thấy AI nhanh nhưng ý nông; đây là thử nghiệm của một người, công cụ khi đó đã cũ, chỉ coi là một ví dụ
+  - Cần giữ kỹ năng: nghiên cứu phỏng vấn 22 người làm sản phẩm về vibe coding ghi nhận lo ngại mất kỹ năng và không rõ ai sở hữu kết quả
+  - Khoảng 2 phút cho slide này
+
+  > Trong ba tình huống này, bạn hay rơi vào tình huống nào nhất?
+- 🎨 Visual hint: CARDS. Ba line-art feature card cùng cấp, không số; hiện dần theo click, dòng chốt hiện cuối.
+
+---
+
 ### PROCESS · AI with the map as context
 - Kicker: Cách làm
 - Title: AI đọc map của bạn
@@ -362,6 +389,32 @@ last_synced: 2026-11-04
 
 ---
 
+### CARDS · Why still sketch
+- Kicker: Vì sao vẫn sketch
+- Title: AI dựng mockup trong vài giây.\n*Sketch còn giá trị gì?*
+- On-slide:
+  - Dễ bám vào hình AI: thí nghiệm 60 người, nhóm dùng AI tạo ảnh bám vào ví dụ đầu nhiều hơn, ra ít ý hơn, ít đa dạng và ít gốc hơn nhóm đối chứng
+  - Hình đẹp khó sửa: khảo sát 55 sinh viên, AI vẽ lại rất nhanh nhưng họ thấy ít kiểm soát và khó chỉnh tiếp từng bước
+  - Sketch thô còn mở: nhanh, nhiều, mơ hồ, ít chi tiết; ai cũng dám sửa hoặc bỏ
+  - Bằng chứng còn sơ bộ: vài nghiên cứu nhỏ, chưa phải kết luận chung. Nguồn ở phần notes.
+- Ví dụ: Không cần. Mỗi thẻ đã có nguồn.
+- Câu hỏi hay gặp:
+  - Vậy sketch tay có luôn tốt hơn AI không? Không. Ở bước chọn hướng chúng ta cần thứ còn mở và dễ bỏ, nên sketch đi trước, AI dựng sau; đây là suy luận của chương trình.
+- Speaker notes:
+
+  > Slide trước nói concept sketch là gì. Slide này trả lời câu lớp hay hỏi: AI dựng mockup trong vài giây, vì sao chúng ta vẫn sketch?
+
+  - Dễ bám vào hình AI đưa ra: Wadinambiarachchi và cộng sự (CHI 2024, 60 người). Một thí nghiệm, một dạng nhiệm vụ, các nghiên cứu khác chưa thống nhất
+  - Hình hoàn chỉnh khó sửa: Zhang, Ranscombe, Coutts (DRS 2026), khảo sát 55 sinh viên thiết kế; tác giả gọi là nghịch lý giữa fidelity và flexibility. Đây là khảo sát tự báo cáo, cỡ mẫu nhỏ
+  - Sketch thô còn mở: Buxton mô tả sketch là nhanh, nhiều, mơ hồ và ít chi tiết; mình trích lại qua một bài tổng quan về model sketching (2023), chưa đọc sách gốc `[to confirm]`
+  - Suy luận của chương trình, chưa phải kết quả nghiên cứu: ở giai đoạn chọn hướng, sketch đi trước, AI dựng sau
+  - Khoảng 3 phút cho slide này
+
+  > Lần gần nhất AI cho bạn một mockup đẹp, bạn có còn nghĩ ra hướng khác không?
+- 🎨 Visual hint: CARDS. Ba line-art feature card cùng cấp, không số; hiện dần theo click, dòng nguồn hiện cuối.
+
+---
+
 ### STATEMENT · A thinking tool
 - Kicker: Phân biệt
 - Title: A thinking tool,\nnot a *wireframe*
@@ -410,6 +463,32 @@ last_synced: 2026-11-04
 
 ---
 
+### STEPS · AI reads sketches
+- Kicker: Đưa sketch cho AI
+- Title: AI đọc sketch\n*chưa chắc đúng*
+- On-slide:
+  - Mô hình khó đọc sketch thô: benchmark Sketch2Code thử 10 mô hình, ngay cả mô hình mạnh vẫn đọc sketch chưa chính xác
+  - Chuyên gia UX thích AI hỏi lại: chuyên gia UI/UX ưa mô hình chủ động hỏi lại hơn là chờ phản hồi
+  - Sketch cần nhãn và ghi chú ý đồ: suy ra, ghi nhãn, ý đồ và câu "This works because...", rồi bảo AI hỏi lại trước khi dựng
+  - Bằng chứng còn sơ bộ, từ một benchmark.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp:
+  - Cách đưa sketch cho AI cụ thể là gì? Chưa chốt, đang chờ quyết định của người dạy `[to confirm]`.
+- Speaker notes:
+
+  > Slide trước nói vì sao chúng ta vẫn sketch. Slide này nói chuyện sau đó: đưa sketch cho AI thì chuyện gì xảy ra.
+
+  - Mô hình khó đọc sketch thô: Sketch2Code (Li, Zhang, Yang, 2024), benchmark cho 10 mô hình thị giác biến sketch thành trang web. Đây là preprint, chưa qua bình duyệt
+  - Chuyên gia UX thích AI hỏi lại: trong nghiên cứu với chuyên gia UI/UX của cùng bài, họ ưa mô hình hỏi câu làm rõ hơn là chờ nhận phản hồi
+  - Suy ra: đây là suy luận của chương trình, không phải kết quả của bài trên. Nhãn từng thành phần, ghi chú ý đồ và câu "This works because..." là phần AI không phải đoán
+  - Cách đưa sketch cho AI cụ thể trong khoá này sẽ bổ sung sau `[to confirm]`
+  - Khoảng 2 phút cho slide này
+
+  > Sketch của bạn có chỗ nào mà người lạ nhìn vào sẽ phải đoán?
+- 🎨 Visual hint: STEPS. Cột trái tiêu đề, ba dòng bên phải, không số; hiện dần theo click.
+
+---
+
 ### IMAGE · Real examples
 - Kicker: Ví dụ
 - Title: Concept sketch thật
@@ -428,6 +507,33 @@ last_synced: 2026-11-04
 
   > Concept nào đọc nhanh nhất trong ba mươi giây, và vì sao?
 - 🎨 Visual hint: REAL. Hai ảnh sketch thật cạnh nhau, không chú thích thêm.
+
+---
+
+### STEPS · Adobe case
+- Kicker: Case thật (nhãn kicker đã bị bỏ khỏi slide, giữ logo Adobe)
+- Title: Một team Adobe\n*dựng ngay trong code*
+- On-slide:
+  - Logo Adobe bên trái cùng tiêu đề
+  - Sketch vài màn chính: khoảng 20 phút đến 1 giờ, rồi dựng phần còn lại trực tiếp
+  - Dựng và xin feedback liên tục: nhóm 5 người dựng trong codebase thật; hai tính năng lên bản production trong 8 ngày làm việc
+  - Lộ ra điều mockup tĩnh không thấy: thời gian, chuyển động, trạng thái; cộng tác với engineer tăng lên, không giảm
+- Ví dụ: có (bài tự thuật của một designer trong team Adobe Firefly, Adobe Design; chưa phải nghiên cứu độc lập)
+- Câu hỏi hay gặp:
+  - Sao dùng logo Adobe? Đây là case có thật từ một công ty; người dạy chịu trách nhiệm về việc dùng logo.
+- Speaker notes:
+
+  > Slide trước nói sketch vẫn có giá trị. Slide này cho thấy một team thật làm thế nào khi AI dựng được rất nhanh.
+
+  - Đây là bài tự thuật của một designer trong team Adobe Firefly, chưa phải nghiên cứu độc lập; nguồn: Adobe Design. Chúng ta dùng nó như một ví dụ
+  - Sketch vài màn chính: chỉ sketch những màn quan trọng, khoảng 20 phút đến một giờ, rồi dựng phần còn lại trực tiếp
+  - Dựng và xin feedback liên tục: một product manager, ba engineer và một designer dựng trong codebase thật; hai tính năng lên production trong tám ngày làm việc
+  - Lộ ra điều mockup tĩnh không thấy: thời gian, chuyển động, phản hồi, trạng thái; cộng tác với engineer tăng lên
+  - Tác giả nói nền tảng của nghề không đổi, và còn câu hỏi mở về nhịp làm việc và khi nào quy trình truyền thống vẫn tốt hơn
+  - Phần dựng prototype nằm ở buổi 5. Khoảng 2 phút cho slide này
+
+  > Nếu AI dựng được phần còn lại, sketch của bạn cần chứa những gì?
+- 🎨 Visual hint: STEPS. Trái: logo Adobe đỏ và tiêu đề căn giữa theo chiều dọc; phải: ba dòng, không số, đường kẻ mảnh giữa các dòng; hiện dần theo click.
 
 ---
 
