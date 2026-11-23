@@ -27,6 +27,8 @@ Sau Lesson 2, bạn có evidence notes, viết từ transcript đã ẩn danh c�
 6. Bốn câu hỏi về giới hạn của AI trong research
 7. Ví dụ xuyên suốt với Delivery App
 
+Practice ở nhà có ba phần: A · Synthesis (mục 1), B · Persona, journey map, opportunity (mục 2 đến 4), và C · Build Insight Hub (mục 5).
+
 Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và package quy trình thành agent.
 
 ## Sau buổi học, bạn có thể
@@ -36,7 +38,7 @@ Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và
 3. Dựng persona, journey map hoặc opportunity từ insight đã kiểm tra, mỗi dòng dẫn về insight ID, và đánh dấu ô chưa có insight làm căn cứ là assumption
 4. Phân biệt persona dựng từ insight với persona AI tự sinh, và chỉ ra dòng không có insight nào làm căn cứ
 5. Viết opportunity như một user need, qua test ba giải pháp, rồi chấm và chọn
-6. Đóng góp một insight đã kiểm tra vào insight hub, và tìm trong hub trước khi hỏi lại
+6. Dựng một insight hub cho cả team từ các insight đã kiểm tra và opportunity đã xếp hạng, có tìm và lọc, và tìm trong hub trước khi hỏi lại
 7. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu
 8. Chạy sáu AI move (soát nguồn persona, gom nhóm không gợi ý và có gợi ý, dựng map không persona rồi so, soát đường cảm xúc, bắt câu dạng giải pháp, thử ba giải pháp), nêu phần bạn kiểm tra ở mỗi move, và nói được move nào có nguyên lý đỡ, move nào mới là cách làm của khoá
 
@@ -300,6 +302,8 @@ Insight hub là một phần của Knowledge Hub của project (thư mục `insi
 1. AI đề xuất vào một file md (một bảng), chưa tạo card. Mỗi dòng có nguồn, loại card, quan hệ tới card đã có, và đánh dấu củng cố, mâu thuẫn hay mới.
 2. Bạn duyệt: giữ, sửa hoặc cắt từng dòng. Decision và thứ hạng do bạn quyết, AI không tự đặt decision thành accepted.
 3. AI tạo card bằng lệnh, rồi chạy kiểm tra để bắt card thiếu liên kết hoặc ID không tồn tại.
+
+**Insight hub ở practice.** Học viên dựng một hub cho cả team từ các card đã duyệt: chứa insight và opportunity (persona và journey map nếu muốn), có ô tìm theo ID và từ khoá, bộ lọc theo loại card, tag và mức mạnh của evidence, và từ mỗi card thấy được các card liên quan. Hub mở được bằng link hoặc file để người trong team tự tìm. Kiểm tra bằng cách tìm ba mục theo ba cách, chạy kiểm tra liên kết, và nhờ một người khác tìm một insight không cần hướng dẫn.
 
 Mỗi người có workflow riêng (Notion, Obsidian, Figma, thư mục md). Ba điều giữ nguyên bất kể công cụ: mỗi mục một card có ID, AI đề xuất rồi bạn duyệt, có bước kiểm cuối. Đây là cách làm của khoá; chưa có nguồn ngoài so sánh với cách khác.
 

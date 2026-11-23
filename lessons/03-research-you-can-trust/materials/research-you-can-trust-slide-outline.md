@@ -1124,25 +1124,30 @@ last_synced: 2026-11-16
 - Kicker: Practice
 - Title: Từ transcript *đến opportunity*
 - On-slide:
-  - Synthesis từ evidence notes
-  - Evidence notes có note ID từ Lesson 2, và blind synthesis trên note của bạn
-  - Chạy Decision, Insight, Challenge
-  - Đưa các finding lên Hub
-  - Persona, journey map, opportunity
-  - Từ outcome của synthesis hãy cùng AI dựng Persona, journey map và Opportunity Map
-  - Đưa các work của bạn lên Hub
+  - Card 1, Synthesis từ evidence notes:
+    - Evidence notes có mã từ Lesson 2
+    - Blind synthesis trên note của bạn
+    - Chạy Decision, Insight, Challenge
+  - Card 2, Persona, journey map, opportunity:
+    - Cùng AI dựng từ insight đã kiểm tra
+    - Mỗi dòng dẫn về insight ID
+  - Card 3, Build Insight Hub:
+    - Một hub cho cả team: insight và opportunity
+    - Tìm và lọc được
+    - Người trong team tự tìm ra
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Hôm nay đã đi từ transcript đến insight rồi đến ba đầu ra; ở nhà bạn chạy đúng chuỗi đó trên transcript của project mình
+  - Practice có ba phần: A synthesis từ evidence notes, B persona, journey map, opportunity, và C build insight hub cho cả team, tìm và lọc được
   - Đầu vào là evidence notes từ Practice 2 và bộ nguyên tắc. Làm synthesis trước: rà evidence notes có note ID và chạy blind synthesis, rồi Decision, Insight, Challenge. Sau đó mới dựng persona, journey map, opportunity, mỗi dòng dẫn về insight ID
-  - Kết quả là evidence pack và problem brief: một trang cho lead và một entry đóng góp vào insight hub
+  - Kết quả là evidence pack và problem brief: một trang cho lead và một Insight page trong hub, tìm và lọc được
   - Output của các buổi trước là input của chuỗi này: scope và research question cho Decision, giả định để insight xác nhận hoặc bác, UX audit và competitor analysis làm giả thuyết
   - Bấm giờ từng bước; đây là cách designer tự trả lời câu hỏi tiết kiệm bao nhiêu thời gian
   - Buổi practice trên lớp làm tiếp phần chưa xong, rồi chấm; cách chấm chưa quyết, sẽ báo sau
 
   > Ai chưa có evidence notes từ Practice 2, hãy nhắn cho người hướng dẫn hôm nay
-- 🎨 Visual hint: TWO CARDS. Hai card viền ink, mỗi card một nhóm bước với các gạch đầu dòng chấm purple.
+- 🎨 Visual hint: THREE CARDS. Ba card cùng cấp viền ink, mỗi card một phần của practice (A, B, C) với các gạch đầu dòng chấm purple.
 
 ---
 
