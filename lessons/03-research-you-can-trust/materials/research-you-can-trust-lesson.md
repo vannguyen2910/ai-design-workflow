@@ -38,7 +38,7 @@ Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và
 5. Viết opportunity như một user need, qua test ba giải pháp, rồi chấm và chọn
 6. Đóng góp một insight đã kiểm tra vào insight hub, và tìm trong hub trước khi hỏi lại
 7. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu
-8. Chạy sáu AI move (soát nguồn persona, gom nhóm blind và primed, dựng map không persona rồi so, soát đường cảm xúc, bắt câu dạng giải pháp, thử ba giải pháp), nêu phần bạn kiểm tra ở mỗi move, và nói được move nào có nguyên lý đỡ, move nào mới là cách làm của khoá
+8. Chạy sáu AI move (soát nguồn persona, gom nhóm không gợi ý và có gợi ý, dựng map không persona rồi so, soát đường cảm xúc, bắt câu dạng giải pháp, thử ba giải pháp), nêu phần bạn kiểm tra ở mỗi move, và nói được move nào có nguyên lý đỡ, move nào mới là cách làm của khoá
 
 ---
 
@@ -171,11 +171,11 @@ Ví dụ: người phỏng vấn số 1 chạm vào khung giờ đầu tiên hi�
 
 **Mức cơ sở: có nguyên lý đỡ.** Persona do AI sinh có thiên lệch về tuổi, nghề và pain point ([Salminen và cộng sự, 2024](https://elmi.hbku.edu.qa/en/publications/deus-ex-machina-and-personas-from-large-language-models-investiga/)), và có preprint cảnh báo về tính hợp lệ ([arXiv 2503.16527](https://arxiv.org/pdf/2503.16527)). Việc soát từng dòng với insight ID là cách làm của khoá.
 
-### 2.2 AI move 2: Gom nhóm hành vi, blind rồi primed
+### 2.2 AI move 2: Gom nhóm hành vi, không gợi ý rồi có gợi ý
 
 Chạy hai lần trên cùng các insight, một lần chỉ có yêu cầu gom nhóm, một lần thêm câu "team tin khách mới nhạy cảm về giá", rồi so. Trên bộ mẫu, hai nhóm chính (khung giờ và hủy đơn; kỳ vọng giờ giao) giống nhau ở cả hai lần, nhưng lần thứ hai mở đầu bằng giá và còn đổi chỗ đặt IN-05 (thành một nhóm riêng thay vì bỏ ngoài). Giống blind synthesis ở Lesson 2: hypothesis đổi thứ AI nói trước, chưa đổi các nhóm chính. Bạn xem nhóm nào xuất hiện ở cả hai lần (đáng tin hơn) và nhóm nào chỉ có ở một lần (cần kiểm tra thêm), và ghi rõ nhóm nào chỉ có một insight đỡ.
 
-**Mức cơ sở: có nguyên lý đỡ.** Nghiên cứu của AISI thấy mô hình càng nghiêng theo ý người dùng khi người đó nói chắc chắn ([Ask, don't tell](https://arxiv.org/abs/2602.23971), preprint, chỉ thử prompt một lượt). Cách so blind và primed là cách làm của khoá.
+**Mức cơ sở: có nguyên lý đỡ.** Nghiên cứu của AISI thấy mô hình càng nghiêng theo ý người dùng khi người đó nói chắc chắn ([Ask, don't tell](https://arxiv.org/abs/2602.23971), preprint, chỉ thử prompt một lượt). Cách so không gợi ý và có gợi ý là cách làm của khoá.
 
 ---
 

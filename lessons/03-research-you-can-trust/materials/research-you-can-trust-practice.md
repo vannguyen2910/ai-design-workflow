@@ -70,7 +70,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 - Persona AI tự sinh từ dữ liệu internet chỉ là bản nháp giả định, không phải evidence.
 
 - **AI move 1, soát nguồn từng dòng:** đưa AI persona nháp (mỗi dòng một ID, dạng `L1 | text`) và file insight (dạng `IN-01 | text`). Nhờ nó trả mỗi dòng `line ID | insight IDs | nhận định`, nhận định là ủng hộ, đi ngược hoặc assumption. Bạn xoá hoặc sửa các dòng assumption và đi ngược.
-- **AI move 2, gom nhóm hành vi, blind rồi primed:** chạy gom nhóm hai lần, lần hai thêm hypothesis của team. Nhóm nào xuất hiện cả hai lần thì đáng tin hơn; nhóm nào chỉ có ở một lần hoặc chỉ có một insight đỡ thì ghi rõ. Prompt và dữ liệu mẫu của cả bảy move nằm ở [define-moves.md](../../../assets/starter-files/course-case/define-moves.md).
+- **AI move 2, gom nhóm hành vi, không gợi ý rồi có gợi ý:** chạy gom nhóm hai lần, lần hai thêm hypothesis của team. Nhóm nào xuất hiện cả hai lần thì đáng tin hơn; nhóm nào chỉ có ở một lần hoặc chỉ có một insight đỡ thì ghi rõ. Prompt và dữ liệu mẫu của cả bảy move nằm ở [define-moves.md](../../../assets/starter-files/course-case/define-moves.md).
 
 ### Step 5 · Journey map · bạn liệt kê, AI soạn nháp, bạn kiểm tra
 

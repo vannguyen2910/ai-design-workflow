@@ -333,7 +333,7 @@ last_synced: 2026-11-16
   - Soát nguồn từng dòng
   - Persona
   - ● Principle supported
-  - Gom nhóm, blind rồi primed
+  - Gom nhóm, không gợi ý rồi có gợi ý
   - Dựng map không persona, rồi so
   - Journey
   - ○ Untested
@@ -528,26 +528,26 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 2: blind and primed grouping
+### COMPARE · Move 2: grouping without and with a hint
 - Kicker: AI move · Persona
-- Title: Gom nhóm hành vi, *blind rồi primed*
+- Title: Gom nhóm hành vi, *không gợi ý rồi có gợi ý*
 - On-slide:
   - Ví dụ: chín insight của Delivery App, chạy hai lần.
-  - Blind
+  - Không gợi ý
   - Ba nhóm: khung giờ và hủy đơn, kỳ vọng thời gian giao, món ăn. Giá chỉ là một insight yếu.
-  - Primed
+  - Có gợi ý
   - Vẫn ba nhóm đó, nhưng giá được nói đầu tiên rồi bị bác bằng IN-04.
   - Hypothesis không đổi nhóm, nhưng đổi thứ AI nói trước. Nhóm nào xuất hiện cả hai lần thì đáng tin hơn.
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Move 2 giống blind synthesis ở Lesson 2, nhưng áp lên bước gom nhóm hành vi.
-  - Bạn chạy gom nhóm hai lần trên cùng các insight, lần hai thêm một câu về hypothesis của team. Trên bộ mẫu, cả hai lần ra ba nhóm giống nhau. Lần primed mở đầu bằng giá và bác nó bằng IN-04.
+  - Bạn chạy gom nhóm hai lần trên cùng các insight, lần hai thêm một câu về hypothesis của team. Trên bộ mẫu, cả hai lần ra ba nhóm giống nhau. Lần có gợi ý mở đầu bằng giá và bác nó bằng IN-04.
   - Bạn xem nhóm nào xuất hiện ở cả hai lần (đáng tin hơn) và nhóm nào chỉ có một insight đỡ (ghi rõ là mỏng).
-  - Mức cơ sở: principle supported. Nghiên cứu của AISI thấy mô hình càng nghiêng theo ý người dùng khi người đó nói chắc chắn (preprint, chỉ thử prompt một lượt). Cách so blind và primed là cách làm của khoá.
+  - Mức cơ sở: principle supported. Nghiên cứu của AISI thấy mô hình càng nghiêng theo ý người dùng khi người đó nói chắc chắn (preprint, chỉ thử prompt một lượt). Cách so không gợi ý và có gợi ý là cách làm của khoá.
 
   > Hypothesis nào của team đang nằm sẵn trong prompt khi bạn nhờ AI gom nhóm?
-- 🎨 Visual hint: COMPARE. Hai card cùng cấu trúc, mỗi card ba hàng; card primed viền tím.
+- 🎨 Visual hint: COMPARE. Hai card cùng cấu trúc, mỗi card ba hàng; card có gợi ý viền tím.
 
 ---
 
