@@ -242,9 +242,9 @@ last_synced: 2026-11-16
     - Đọc ngữ cảnh gốc của mọi ghi chú dùng cho insight.
   - Một nghiên cứu so hai công cụ AI chat với người phân tích theme trên 40 tin nhắn SMS cho thấy AI nhanh hơn rất nhiều, nhưng độ đồng thuận khi gắn theme/tag chỉ khoảng 36 đến 47%, và người nhận ra theme tinh tế tốt hơn.
   - Câu trả lời của AI đọc rất trơn tru, nên lỗi khó nhìn ra hơn. Chưa có số đo riêng cho research UX, và chưa phải số đo trên designer Việt Nam.
-  - Phép thử: đóng AI lại, giải thích insight và chỉ ra note ID nào đỡ nó. Chưa làm được thì chưa phải của bạn.
+  - Phép thử: tắt AI đi, giải thích insight và chỉ ra note ID nào làm căn cứ cho nó. Chưa làm được thì chưa phải của bạn.
 
-  > đóng AI lại, nói với bạn bên cạnh insight hàng đầu của mình và note ID nào đỡ nó.
+  > tắt AI đi, nói với bạn bên cạnh insight hàng đầu của mình và note ID nào làm căn cứ cho nó.
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
@@ -1159,7 +1159,7 @@ last_synced: 2026-11-16
   - Rà lại bộ evidence notes của bạn:
     - Mỗi note một quan sát và một mã, ví dụ RET-01 là note đầu của outcome RET. Thiếu note nào thì viết thêm từ transcript đã ẩn danh, đặt mã mới và không dùng lại mã cũ
     - Tiêu đề ghi điều người đó nói và làm, không thêm diễn giải của bạn
-    - Quote giữ đủ ngữ cảnh, và trỏ về transcript và số lượt
+    - Quote giữ đủ ngữ cảnh, và dẫn về transcript và số lượt
   - Ví dụ với app giao đồ ăn: người số 1 chạm vào khung giờ đầu tiên hiện ra mà không nghĩ mình sẽ ở đâu. Tiêu đề note ghi đúng hành động đó, chưa kết luận “khách vội”. Kết luận là việc của các bước sau
   - Hình bên chỉ là ví dụ minh hoạ cấu trúc note. Dữ liệu gốc có tên thật nằm ngoài vùng AI đọc; AI chỉ thấy bản đã gắn participant code P1, P2 và note ID, theo quy tắc dữ liệu ở Lesson 2
   - Mọi insight ở các bước sau phải dẫn về một mã note như vậy. Note không có mã thì không có chỗ đứng
@@ -1296,10 +1296,10 @@ last_synced: 2026-11-16
 
 ### STATEMENT · No insight, then assumption
 - Kicker: Nguyên tắc
-- Title: Chưa có insight,\n*thì là assumption*
+- Title: Chưa có insight,\n*thì ghi assumption*
 - On-slide:
   - Chưa có insight,
-  - thì là assumption
+  - thì ghi assumption
   - Thông tin chưa có insight làm căn cứ thì ghi assumption, rồi đếm tỷ lệ
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.

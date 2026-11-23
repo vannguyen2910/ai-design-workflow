@@ -54,7 +54,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
    - Dữ liệu mới nào sẽ làm insight này sai?
 
    Soi thêm năm điều khiến insight nghe mạnh hơn thực tế: scope, sự đồng thuận, sample mix, nhảy sang giải pháp, và cảm xúc che việc ghi chú hiếm. Ghi **điều gì làm bạn đổi ý**. Giữ ý kiến trái chiều **cùng trang** với insight, không để ở phụ lục. Mẫu có nhóm khác biệt rõ thì phân tích riêng từng nhóm trước khi gộp, và ghi sample mix.
-4. **Phép thử:** đóng AI lại. Bạn có giải thích được insight và chỉ ra note ID nào đỡ nó không? Chưa thì insight chưa phải của bạn.
+4. **Phép thử:** tắt AI đi. Bạn có giải thích được insight và chỉ ra note ID nào làm căn cứ cho nó không? Chưa thì insight chưa phải của bạn.
 5. Cập nhật assumption map: mỗi assumption hàng đầu là Confirmed, Unconfirmed hay Unknown, kèm note ID.
 
 ## Phần B · Persona, journey map, opportunity
@@ -108,7 +108,7 @@ Mục tiêu: một hub chứa tất cả insight đã kiểm tra và opportunity
 - **Trang hub phải có:**
   - ô tìm theo ID và từ khoá;
   - bộ lọc theo loại card (insight, opportunity...), tag và mức mạnh của evidence;
-  - từ mỗi card thấy được các card liên quan (opportunity thấy insight đỡ nó, insight thấy note ID dẫn về).
+  - từ mỗi card thấy được các card liên quan (opportunity thấy insight làm căn cứ cho nó, insight thấy note ID dẫn về).
 - **Tag** lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc.
 - **Dùng chung được:** hub là một trang mở được bằng link hoặc file, người trong team không cần cài gì. Bạn tự chọn nơi đặt, miễn cả team mở được.
 - **Tìm trước khi thêm:** hub đã có card gần giống thì cập nhật, không thêm bản trùng. Hub đã có sẵn thì mở rộng, không dựng lại.
@@ -155,7 +155,7 @@ Mục tiêu: một hub chứa tất cả insight đã kiểm tra và opportunity
 - [ ] Insight có một dòng nêu điều dữ liệu không cho biết và ít nhất một ý kiến trái chiều cùng trang.
 - [ ] Bạn đã mở note ID và đọc ngữ cảnh của mọi ghi chú dùng cho insight.
 - [ ] Mỗi opportunity viết như một user need, được xếp theo severity, context và reach.
-- [ ] Bạn đóng AI lại vẫn giải thích được insight của mình.
+- [ ] Bạn tắt AI đi vẫn giải thích được insight của mình.
 - [ ] Hub tìm được theo ID, từ khoá và tag, lọc được theo loại card và mức evidence; mỗi insight và opportunity đã duyệt có một card, không còn ID không tồn tại, và một người khác tìm được một insight mà không cần hướng dẫn.
 - [ ] Bạn đã chạy sáu AI move và ghi move nào bắt được lỗi thật, move nào chỉ nghe hợp lý.
 - [ ] Lần kiểm truy vết cuối không còn dòng không đạt.

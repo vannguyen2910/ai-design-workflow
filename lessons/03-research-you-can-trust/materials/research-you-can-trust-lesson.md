@@ -62,7 +62,7 @@ Việc viết evidence note từ transcript đã làm ở Lesson 2, mục 5. Bư
 
 - Mỗi note **một quan sát và một mã**. Ví dụ `RET-01` là note đầu của outcome RET. Thiếu note nào thì viết thêm từ transcript đã ẩn danh theo cùng dạng, đặt mã mới và không dùng lại mã cũ.
 - Tiêu đề note ghi điều người đó nói và làm, không thêm diễn giải của bạn. Người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra thì ghi đúng hành động đó, chưa kết luận "khách vội". Kết luận là việc của các bước sau.
-- Quote giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu, và mỗi quote còn trỏ về transcript và số lượt.
+- Quote giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu, và mỗi quote còn dẫn về transcript và số lượt.
 
 Rồi chạy **blind synthesis** trên chính các note này (bạn làm ở practice, Step 1), như đã xem ở Lesson 2, mục 6: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích. Ở Lesson 2 bạn thấy hypothesis đổi thứ AI nói trước; ở đây bạn xem điều đó có xảy ra với dữ liệu của bạn không.
 
@@ -71,7 +71,7 @@ Mọi insight ở các bước sau phải dẫn về một mã note như vậy. 
 ### 1.2 Rules with the data
 
 1. **Ẩn danh trên máy trước khi đưa cho AI**, bằng find and replace, thay tên bằng participant code (P1, P2). Bạn đã làm việc này ở Lesson 2; dữ liệu gốc chưa ẩn danh vẫn nằm ngoài vùng AI đọc. Có công cụ tự động tìm thông tin định danh. Nó tìm khá tốt số điện thoại, email và các mã có định dạng cố định để bạn bỏ đi, nhưng không đảm bảo bắt hết và thường mạnh nhất với tiếng Anh. Với tiếng Việt, bạn vẫn tự đọc lại tên người, nơi làm và các chi tiết gián tiếp.
-2. **Mỗi evidence note có một mã** (`RET-01`), và mỗi quote trong note trỏ về transcript và số lượt, ví dụ `(I01, turn 04)`. Mỗi insight có insight ID (IN-01), nêu nguồn là interview, scope hay assumption, và dẫn note ID, để mọi dòng về sau dẫn được về đúng chỗ.
+2. **Mỗi evidence note có một mã** (`RET-01`), và mỗi quote trong note dẫn về transcript và số lượt, ví dụ `(I01, turn 04)`. Mỗi insight có insight ID (IN-01), nêu nguồn là interview, scope hay assumption, và dẫn note ID, để mọi dòng về sau dẫn được về đúng chỗ.
 3. **AI được phép nói unknown.** Khi không được phép, AI lấp chỗ trống bằng nội dung nghe hợp lý. Quy tắc đi kèm: chỉ dùng evidence notes được đưa, và mọi insight kèm note ID có thật.
 
 ### 1.3 The three steps
@@ -103,7 +103,7 @@ Có. Nghiên cứu so hai công cụ AI chat với người phân tích theme tr
 
 ### 1.6 Is the insight still yours?
 
-Tính "của chính bạn" xác định bằng ba việc, trùng với ba bước: tự viết Decision, tự viết lại Insight, tự phản biện ở Challenge. Phép thử: đóng AI lại, giải thích insight và chỉ ra note ID nào đỡ nó. Chưa làm được thì chưa phải của bạn. Người tin AI nhiều hơn tự báo cáo ít tư duy phản biện hơn (dữ liệu tự báo cáo).
+Tính "của chính bạn" xác định bằng ba việc, trùng với ba bước: tự viết Decision, tự viết lại Insight, tự phản biện ở Challenge. Phép thử: tắt AI đi, giải thích insight và chỉ ra note ID nào làm căn cứ cho nó. Chưa làm được thì chưa phải của bạn. Người tin AI nhiều hơn tự báo cáo ít tư duy phản biện hơn (dữ liệu tự báo cáo).
 
 ### 1.7 Five things that make an insight sound stronger than it is
 
@@ -203,7 +203,7 @@ Chạy hai lần trên cùng các insight, một lần chỉ có yêu cầu gom 
 
 **Cấu trúc.** Một journey map có năm hàng: stage (bạn liệt kê trước), actions (người dùng làm gì), cảm xúc (đường nối các giai đoạn, điểm thấp nhất là chỗ đau chính), pain (đặt đúng ở bước gây ra nó) và insight ID (hàng chương trình thêm vào).
 
-**Nguyên tắc: chưa có insight thì là assumption.** Thông tin chưa có insight làm căn cứ chưa phải điều ta biết về người dùng. Journey map do AI soạn trông đầy đủ ngay cả khi các bước là bịa. Ghi rõ ô assumption thì biết chỗ nào cần thêm research; giấu đi thì cả team tưởng đó là sự thật. Đếm tỷ lệ assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp. Một ô assumption không làm journey xấu đi; giấu nó mới làm nó xấu.
+**Nguyên tắc: chưa có insight thì ghi assumption.** Thông tin chưa có insight làm căn cứ chưa phải điều ta biết về người dùng. Journey map do AI soạn trông đầy đủ ngay cả khi các bước là bịa. Ghi rõ ô assumption thì biết chỗ nào cần thêm research; giấu đi thì cả team tưởng đó là sự thật. Đếm tỷ lệ assumption: tỷ lệ cao thì quay lại phỏng vấn thay vì điền cho đẹp. Một ô assumption không làm journey xấu đi; giấu nó mới làm nó xấu.
 
 **Bốn lỗi khi AI vẽ journey map.** (1) Điền ô cho đẹp: ô nào không có insight thì ghi assumption. (2) User group chung chung: đưa persona và insight của bạn vào, rồi đọc lại xem chi tiết nào kéo về Mỹ (suy luận từ nghiên cứu persona, chưa có số đo riêng). (3) Đường cảm xúc trơn: hỏi insight nào nằm ở điểm thấp nhất. (4) Pain không có insight ID: mỗi pain một ID, không có thì xoá hoặc ghi assumption.
 
@@ -255,7 +255,7 @@ Với mỗi ô cảm xúc có nội dung, nhờ AI tìm một đến hai evidenc
 
 **Bốn bước dựng opportunity.**
 
-1. **Root outcome là một hành vi.** Root outcome là đỉnh của cây opportunity, lấy từ job statement và viết lại thành một hành vi do team cùng cam kết, không lấy từ business đang đuổi một con số. Không làm root outcome được: một metric (không có hành vi bên dưới), một output (giải pháp khoác áo mục tiêu), hay một câu không kiểm chứng được. Kiểm tra: nếu root outcome xảy ra, con số kinh doanh có nhích không? Câu trả lời "không" thì ghi vào map, đừng làm mượt.
+1. **Root outcome là một hành vi.** Root outcome là đỉnh của cây opportunity, lấy từ job statement và viết lại thành một hành vi do team cùng cam kết, không lấy từ business đang đuổi một con số. Không làm root outcome được: một metric (không có hành vi bên dưới), một output (giải pháp khoác áo mục tiêu), hay một câu không kiểm chứng được. Kiểm tra: nếu root outcome xảy ra, con số kinh doanh có nhích không? Câu trả lời "không" thì ghi vào map, đừng làm mờ.
 2. **Sticky có thật, nhưng thường là giải pháp.** Chạy test ba giải pháp: kể được ba cách khác nhau để thoả sticky thì nó là user need; chỉ có một cách thì nó là giải pháp. Nhiều sticky sẽ không qua test, đó là phản xạ thường gặp, không phải lỗi; nâng từng sticky lên một mức chính là việc cần làm. Mẹo: có động từ làm ra thứ gì (thêm, xây) thì nó đã là giải pháp. Ví dụ: "thêm popup nhắc khung giờ giao" là giải pháp; "khách cần biết khung giờ giao là cuối cùng trước khi cam kết" là user need.
 3. **Reframing tạo ra lựa chọn.** Ba thao tác: question the objective (mục tiêu này của ai, và nếu sai thì sao), positive exceptions (ai đã thành công và khác ở điểm nào), what's missing (khung này bỏ ngoài điều gì). Reframing không tìm ra vấn đề thật, nó cho xem có vấn đề tốt hơn hay không. Chỉ reframe nhánh mạnh nhất, và ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
 4. **Chấm rồi chọn.** Bốn yếu tố: sizing (quy mô), importance (quan trọng thế nào với mục tiêu kinh doanh), company fit, market position. Chưa có cột effort, vì effort vào ở tầng giải pháp. Khi làm riêng chấm bằng bốn yếu tố; khi trình bày dùng impact và effort. Thứ tự vẫn theo severity, context và reach. Ghi opportunity bị loại kèm lý do: có lý do thì xem lại được khi evidence đổi.
@@ -361,7 +361,7 @@ Danh sách dưới đây là suy luận từ các nguồn, không có nguồn đ
 Không tìm thấy đánh giá độc lập về độ chính xác so sánh các công cụ phân tích định tính; kết quả tìm được là so sánh tính năng hoặc bài của vendor. Vì vậy chương trình dùng nhãn "AI chat tool đã được công ty cho phép" và dạy chọn theo năm tiêu chí:
 
 1. **Dữ liệu:** có huấn luyện trên dữ liệu không, tắt được không; lưu bao lâu; xoá có tới bản sao lưu; có hợp đồng xử lý dữ liệu; có chế độ chạy trên máy.
-2. **Truy được nguồn:** mỗi output trỏ về insight ID, note ID hoặc mốc thời gian, để kiểm tra từng dòng.
+2. **Truy được nguồn:** mỗi output dẫn về insight ID, note ID hoặc mốc thời gian, để kiểm tra từng dòng.
 3. **Nói được unknown:** từ chối khi dữ liệu thiếu.
 4. **Được công ty cho phép** và có người chịu trách nhiệm.
 5. **Xuất được dữ liệu**, để insight không bị khoá trong công cụ và nối được với insight hub.
