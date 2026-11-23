@@ -319,6 +319,7 @@ last_synced: 2026-11-23
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Sau khi chọn solution từ map, bước tiếp theo là đưa nó ra giấy
+  - Solution là hướng trả lời một opportunity; concept là một bản phác cụ thể của hướng đó, và một solution có thể có vài concept để so sánh
   - Phần này mình demo, không có activity trên lớp. Bạn tự sketch ở buổi practice
 
   > Mình vẽ thử một cái trước.
@@ -388,7 +389,7 @@ last_synced: 2026-11-23
   > Nếu bạn vẽ nhiều hơn một màn hình thì đã sang wireframe rồi.
 
   - Ví dụ: sketch QR seat-unlock chỉ vẽ hai hành trình và nhãn, không có màn hình nào hoàn chỉnh
-  - Concept khác solution: một concept có thể gồm nhiều flow và nhiều solution
+  - Concept khác solution: solution là hướng trả lời một opportunity, concept là một bản phác cụ thể của hướng đó; ý có nhiều flow thì chia thành vài sketch
   - Sketch thô thì người khác góp ý thoải mái. Sketch quá đẹp làm cuộc trò chuyện dừng lại
   - Khoảng 1 phút cho slide này
 

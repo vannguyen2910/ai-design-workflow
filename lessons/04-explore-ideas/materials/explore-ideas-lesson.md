@@ -133,7 +133,7 @@ Dữ liệu là map của bạn, hoặc Delivery App. Kết quả là map đã c
 | **How with AI** | AI đọc sketch như một người lạ và nói nó hiểu gì, chỗ nào thiếu nhãn. Bạn vẫn tự vẽ và tự viết "This works because..." |
 | **AI không làm** | Vẽ concept thay bạn |
 
-Concept sketch là công cụ để nghĩ, không phải wireframe. Một sketch gồm bốn phần: khoảnh khắc chính (một khoảnh khắc làm concept dễ hiểu, không phải cả flow), nhãn thành phần, ghi chú ý đồ, và một câu "This works because..." không kèm điều kiện. Người chưa nghe giải thích đọc được sketch trong khoảng 30 giây.
+Solution là hướng trả lời một opportunity; concept là một bản phác cụ thể của hướng đó, và một solution có thể có vài concept để so sánh. Concept sketch là công cụ để nghĩ, không phải wireframe. Một sketch gồm bốn phần: khoảnh khắc chính (một khoảnh khắc làm concept dễ hiểu, không phải cả flow), nhãn thành phần, ghi chú ý đồ, và một câu "This works because..." không kèm điều kiện. Người chưa nghe giải thích đọc được sketch trong khoảng 30 giây.
 
 **Four steps, one moment.** (1) Chọn một ý, ý thú vị nhất trên map. (2) Vẽ khoảnh khắc chính. (3) Ghi nhãn, không làm đẹp. (4) Viết "This works because...". *Ví dụ trong Delivery App:* vẽ màn chọn khung giờ giao có một chip "Chốt trước 15 phút", với rationale: "This works because khách thấy cut-off ngay lúc đang quyết định".
 
