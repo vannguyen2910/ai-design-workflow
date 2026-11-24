@@ -50,7 +50,7 @@ Bạn đang cầm evidence notes của các buổi phỏng vấn ở Lesson 2. S
 
 | Bạn mang từ Lesson 2 | Nội dung |
 |---|---|
-| Evidence notes | Mỗi note một file md: một quan sát của một participant, tiêu đề là observation, quote nguyên văn kèm transcript và số lượt, mã như `RET-02` (Lesson 2, mục 5) |
+| Evidence notes | Mỗi buổi phỏng vấn một file md, mỗi note là một mục trong file: một quan sát của một participant, tiêu đề là observation, quote nguyên văn kèm transcript và số lượt, mã như `RET-02` (Lesson 2, mục 5) |
 | Transcript | Đã ẩn danh trên máy bằng participant code; dữ liệu gốc nằm ngoài vùng AI đọc |
 | Bốn câu hỏi về dữ liệu | Participant đã đồng ý gì, công cụ có học từ dữ liệu không, đã ẩn danh trên máy chưa, bản gốc nằm ngoài vùng AI đọc chưa (Lesson 2, mục 4.3) |
 | Bộ principles, scope, assumption map, research question | Làm ràng buộc trong prompt và làm phép kiểm tra của bạn |
@@ -60,7 +60,7 @@ Bạn đang cầm evidence notes của các buổi phỏng vấn ở Lesson 2. S
 
 Việc viết evidence note từ transcript đã làm ở Lesson 2, mục 5. Bước đầu tiên hôm nay, trước khi nhờ AI rút insight, là rà lại bộ evidence notes của bạn:
 
-- Mỗi note **một quan sát và một mã**. Ví dụ `RET-01` là note đầu của outcome RET. Thiếu note nào thì viết thêm từ transcript đã ẩn danh theo cùng dạng, đặt mã mới và không dùng lại mã cũ.
+- Mỗi note **một quan sát và một mã**. Ví dụ `RET-01` là note đầu của outcome RET. Thiếu note nào thì viết thêm từ transcript đã ẩn danh theo cùng dạng, vào file của buổi phỏng vấn đó, đặt mã mới và không dùng lại mã cũ.
 - Tiêu đề note ghi điều người đó nói và làm, không thêm diễn giải của bạn. Người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra thì ghi đúng hành động đó, chưa kết luận "khách vội". Kết luận là việc của các bước sau.
 - Quote giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu, và mỗi quote còn dẫn về transcript và số lượt.
 
@@ -307,7 +307,7 @@ Insight hub là một phần của Knowledge Hub của project (thư mục `insi
 
 Mỗi người có workflow riêng (Notion, Obsidian, Figma, thư mục md). Ba điều giữ nguyên bất kể công cụ: mỗi mục một card có ID, AI đề xuất rồi bạn duyệt, có bước kiểm cuối. Đây là cách làm của khoá; chưa có nguồn ngoài so sánh với cách khác.
 
-**AI chạy xuyên cả bốn bước.** Insight là input đã kiểm tra, có ID; từ đây mỗi output của AI là một file markdown, mỗi dòng mang insight ID. Persona: AI gom theme và soạn dòng, bạn đối chiếu từng dòng với insight ID. Journey map: AI đề xuất bước còn thiếu và điền ô từ insight, bạn ghi assumption ở ô không có insight. Opportunity: AI viết lại sticky thành user need, bạn chạy test ba giải pháp rồi chọn. Tag trong hub lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc.
+**AI chạy xuyên cả bốn bước.** Insight là input đã kiểm tra, có ID; từ đây mỗi output của AI là một file markdown, mỗi dòng mang insight ID. Persona: AI gom theme và soạn dòng, bạn đối chiếu từng dòng với insight ID. Journey map: AI đề xuất bước còn thiếu và điền ô từ insight, bạn ghi assumption ở ô không có insight. Opportunity: AI viết lại sticky thành user need, bạn chạy test ba giải pháp rồi chọn. Tag trong hub lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc; bạn có thể bắt đầu từ `tags.md` của evidence notes.
 
 ---
 
@@ -378,7 +378,7 @@ Bộ này là ví dụ xuyên suốt: persona khách mới ở đơn đầu tiê
 
 ### 7.2 Bộ evidence notes cho synthesis
 
-Bộ mẫu là 10 evidence note, `RET-01` đến `RET-10`, nằm trong folder `evidence/` của course case. Chúng viết từ hai transcript phỏng vấn ngắn (`raw/I01.txt` và `raw/I02.txt`). Note bằng tiếng Anh; insight có thể viết bằng tiếng Việt, nhưng mọi note ID dẫn vào phải có thật và khớp với note gốc.
+Bộ mẫu là 10 evidence note, `RET-01` đến `RET-10`, nằm trong folder `evidence/` của course case, chia thành hai file `I01.md` và `I02.md` theo buổi phỏng vấn. Chúng viết từ hai transcript phỏng vấn ngắn (`raw/I01.txt` và `raw/I02.txt`). Note bằng tiếng Anh; insight có thể viết bằng tiếng Việt, nhưng mọi note ID dẫn vào phải có thật và khớp với note gốc.
 
 Bộ này có sẵn các điểm để bạn tự phát hiện:
 

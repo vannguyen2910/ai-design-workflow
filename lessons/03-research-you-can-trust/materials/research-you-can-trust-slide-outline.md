@@ -90,7 +90,7 @@ last_synced: 2026-11-16
     - Bốn câu hỏi về dữ liệu trước khi đưa cho AI: participant đã đồng ý gì, công ty cho phép công cụ nào, công cụ có học từ dữ liệu không, đã ẩn danh trên máy chưa.
     - Bộ nguyên tắc cho AI và scope, assumption, research question từ các buổi trước.
   - Có công cụ tự động tìm thông tin định danh. Nó tìm khá tốt số điện thoại, email và các mã có định dạng cố định để bạn bỏ đi, nhưng không đảm bảo bắt hết và thường mạnh nhất với tiếng Anh. Với tiếng Việt, bạn vẫn tự đọc lại tên người, nơi làm và các chi tiết gián tiếp
-  - Bộ evidence notes còn thiếu note nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng ID | text, đặt ID mới và không dùng lại ID cũ. Việc chạy blind synthesis trên note của bạn nằm ở practice, Step 1. Slide cách set up note ở Lesson 2 được chuyển xuống Appendix, dùng khi lớp cần ôn.
+  - Bộ evidence notes còn thiếu note nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng, vào file của buổi phỏng vấn đó, đặt mã mới và không dùng lại mã cũ. Việc chạy blind synthesis trên note của bạn nằm ở practice, Step 1. Slide cách set up note ở Lesson 2 được chuyển xuống Appendix, dùng khi lớp cần ôn.
 
   > bạn đã có evidence notes có ID từ Lesson 2 chưa? Có hoặc không, gõ vào chat.
 - 🎨 Visual hint: ROWS. Tiêu đề bên trái, ba dòng bên phải, không số, đường kẻ mảnh giữa các dòng; hiện dần theo click.
@@ -1143,7 +1143,7 @@ last_synced: 2026-11-16
 - On-slide:
   - Evidence notes từ Lesson 2
   - Buổi phỏng vấn P1
-  - Đã viết ở Lesson 2, mỗi note một quan sát. Thiếu note nào thì viết thêm từ transcript đã ẩn danh.
+  - Đã viết ở Lesson 2, mỗi buổi phỏng vấn một file, mỗi note một quan sát. Thiếu note nào thì viết thêm từ transcript đã ẩn danh.
   - RET-01
   - Chạm vào khung giờ đầu tiên hiện ra, không nghĩ mình sẽ ở đâu.
   - RET-02
@@ -1157,7 +1157,7 @@ last_synced: 2026-11-16
 - Speaker notes:
   - Bạn đã viết evidence note từ transcript ở Lesson 2. Slide này trả lời: bước đầu tiên hôm nay là gì, trước khi nhờ AI rút insight
   - Rà lại bộ evidence notes của bạn:
-    - Mỗi note một quan sát và một mã, ví dụ RET-01 là note đầu của outcome RET. Thiếu note nào thì viết thêm từ transcript đã ẩn danh, đặt mã mới và không dùng lại mã cũ
+    - Mỗi note một quan sát và một mã, ví dụ RET-01 là note đầu của outcome RET. Thiếu note nào thì viết thêm từ transcript đã ẩn danh vào file của buổi đó, đặt mã mới và không dùng lại mã cũ
     - Tiêu đề ghi điều người đó nói và làm, không thêm diễn giải của bạn
     - Quote giữ đủ ngữ cảnh, và dẫn về transcript và số lượt
   - Ví dụ với app giao đồ ăn: người số 1 chạm vào khung giờ đầu tiên hiện ra mà không nghĩ mình sẽ ở đâu. Tiêu đề note ghi đúng hành động đó, chưa kết luận “khách vội”. Kết luận là việc của các bước sau
@@ -1653,7 +1653,7 @@ last_synced: 2026-11-16
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - AI giúp tìm entry và gợi ý tag; chỉ được trích entry có ID, và designer duyệt trước khi thêm
-  - Tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc
+  - Tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc; có thể bắt đầu từ tags.md của evidence notes
   - Tìm trong hub trước khi lên kế hoạch research mới
   - Gom lại cả buổi: AI chạy xuyên các bước
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.

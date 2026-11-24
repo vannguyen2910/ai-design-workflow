@@ -32,7 +32,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 
 ### Step 1 · Evidence notes có mã
 
-- Bắt đầu từ evidence notes bạn đã viết ở Practice 2 (Step 9): **mỗi note một quan sát, một mã**, ví dụ `RET-03`. Thiếu note nào thì viết thêm từ transcript đã ẩn danh theo cùng dạng.
+- Bắt đầu từ evidence notes bạn đã viết ở Practice 2 (Step 9): **mỗi note một quan sát, một mã**, ví dụ `RET-03`. Thiếu note nào thì viết thêm từ transcript đã ẩn danh theo cùng dạng, vào file của buổi phỏng vấn đó.
 - Chạy blind synthesis trên các note này: lần 1 không nêu hypothesis, lần 2 nêu hypothesis hàng đầu của team. So hai bản: chủ đề nào đứng đầu, note ID nào được trích. Cách làm và ví dụ nằm ở Lesson 2, mục 6.
 - Tiêu đề note ghi điều người đó nói và làm, không thêm diễn giải của bạn. Giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
 - Dữ liệu gốc có tên thật vẫn ở ngoài chỗ AI đọc. AI chỉ thấy bản đã gắn P1, P2 và note ID.
@@ -109,7 +109,7 @@ Mục tiêu: một hub chứa tất cả insight đã kiểm tra và opportunity
   - ô tìm theo ID và từ khoá;
   - bộ lọc theo loại card (insight, opportunity...), tag và mức mạnh của evidence;
   - từ mỗi card thấy được các card liên quan (opportunity thấy insight làm căn cứ cho nó, insight thấy note ID dẫn về).
-- **Tag** lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc.
+- **Tag** lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc. Bạn có thể bắt đầu từ `tags.md` của evidence notes.
 - **Dùng chung được:** hub là một trang mở được bằng link hoặc file, người trong team không cần cài gì. Bạn tự chọn nơi đặt, miễn cả team mở được.
 - **Tìm trước khi thêm:** hub đã có card gần giống thì cập nhật, không thêm bản trùng. Hub đã có sẵn thì mở rộng, không dựng lại.
 - **Kiểm tra:**

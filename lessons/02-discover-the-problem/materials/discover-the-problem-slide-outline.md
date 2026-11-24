@@ -659,25 +659,25 @@ last_synced: 2026-11-19
 - Kicker: Việc AI làm
 - Title: Kiểm tra evidence\n*trong hub*
 - On-slide:
-  - Ví dụ: 18 ghi chú mẫu của Delivery App (review và bài trên forum)
-  - Khung giờ giao: R01, R02, F01, F02 ủng hộ, evidence mạnh
-  - Giá là lý do chính: F07 ủng hộ, R06 đi ngược, evidence yếu
-  - Nhắc đặt lại sau 7 ngày: no source yet
-  - Không có nguồn thì ghi “no source yet”
-- Ví dụ: có (assumption mẫu và 18 ghi chú R và F)
+  - Ví dụ: 10 evidence note mẫu của Delivery App (hai buổi phỏng vấn)
+  - Khung giờ giao có vấn đề: RET-01, RET-05 ủng hộ, evidence yếu
+  - Giá là lý do chính: RET-10 ủng hộ, RET-08 và RET-09 đi ngược, evidence yếu
+  - Nhắc đặt lại sau 7 ngày: chưa có nguồn
+  - Không có nguồn thì ghi “chưa có nguồn”
+- Ví dụ: có (assumption mẫu và 10 evidence note RET)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Move 3 ra danh sách assumption. Move 4 hỏi: trong hub đã có gì để ủng hộ hoặc bác từng cái?
   - Với mỗi assumption, AI tìm ghi chú ủng hộ và ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn. Không tìm thấy thì ghi đúng cụm “chưa có nguồn”.
-  - Kết quả trên 18 ghi chú mẫu (review và diễn đàn):
-    - Khung giờ giao: bốn ghi chú ủng hộ, evidence mạnh
-    - Giá là lý do chính: F07 ủng hộ, R06 đi ngược, evidence yếu
+  - Kết quả trên 10 evidence note mẫu (hai buổi phỏng vấn):
+    - Khung giờ giao có vấn đề: RET-01 và RET-05 ủng hộ, không note nào đi ngược. Evidence yếu vì chỉ có hai người
+    - Giá là lý do chính: RET-10 ủng hộ, RET-08 và RET-09 đi ngược. Evidence yếu, và không note nào nói có người rời đi vì giá
     - Nhắc đặt lại sau 7 ngày: chưa có nguồn
   - Đây chính là cột Evidence của ma trận ở slide sau, có ID thay cho cảm giác. Hub còn trống thì mọi dòng đều là “chưa có nguồn”. Kết quả đó đúng, và nó cho biết việc cần làm là đi phỏng vấn.
-  - Giới hạn: quote có thật chưa chắc ủng hộ đúng assumption. AI từng xếp cùng một ghi chú vào hai assumption khác nhau. Ghi chú cũng không đánh dấu khách mới hay khách cũ. Bạn đọc từng ghi chú trước khi tính.
+  - Giới hạn: cả 10 note đến từ hai người, nên “yếu” là mức cao nhất bộ này cho được. Quote có thật chưa chắc ủng hộ đúng assumption: AI tự ghi RET-01 là hành vi của người dùng nhiều hơn là lỗi thiết kế. Note cũng không nói participant là khách mới. Bạn đọc từng note trước khi tính. Kết quả đổi giữa các lần chạy.
 
   > Assumption nào của bạn sẽ ra “chưa có nguồn”?
-- 🎨 Visual hint: COMPARE. Bảng bốn cột nền trắng (Assumption, Supports, Contradicts, Evidence); cột Evidence là chip viền: strong viền tím đậm, weak viền ink, none viền nét đứt. Hình line-art nhỏ ở góc phải tiêu đề.
+- 🎨 Visual hint: COMPARE. Bảng bốn cột nền trắng (Assumption, Supports, Contradicts, Evidence); cột Evidence là chip viền: weak viền ink, none viền nét đứt. Hình line-art nhỏ ở góc phải tiêu đề.
 
 ---
 
@@ -952,7 +952,7 @@ last_synced: 2026-11-19
 - Title: Từ transcript đến evidence notes
 - On-slide:
   - Transcript đã ẩn danh: nguồn gốc (raw source) của buổi phỏng vấn, không ai sửa
-  - Evidence note: một file md, ghi một quan sát của một participant; file mẫu RET-02 (id, status, source; tiêu đề observation; quote kèm transcript và số lượt)
+  - Evidence note: một mục trong file ghi chú của buổi phỏng vấn, ghi một quan sát của một participant; mẫu RET-02 (id, status, source, tags; tiêu đề observation; quote kèm transcript và số lượt)
   - Mỗi note một quan sát, có mã và quote nguyên văn. Mã giúp insight nào cũng truy về được note của nó.
 - Ví dụ: có (RET-02 của Delivery App)
 - Câu hỏi hay gặp: None.
@@ -960,12 +960,15 @@ last_synced: 2026-11-19
   - Slide trước nói phần này làm gì. Slide này cho thấy ingest một transcript trông như thế nào
   - Ingest là đưa một nguồn vào hub, thành dạng AI dùng được và bạn kiểm tra được. Hai thứ trên slide:
     - Transcript đã ẩn danh là nguồn gốc (raw source), bạn không sửa nó
-    - Evidence note là một file md ghi một quan sát của một participant: phần đầu file có id, trạng thái và nguồn; dòng đề mục là điều participant làm hoặc nói; dòng bắt đầu bằng > là quote nguyên văn, kèm tên transcript và số lượt
+    - Evidence note là một mục trong file ghi chú của buổi phỏng vấn, ghi một quan sát của một participant: dòng đề mục là điều participant làm hoặc nói; dưới đó là id, trạng thái, nguồn và tag; dòng bắt đầu bằng > là quote nguyên văn, kèm tên transcript và số lượt
+    - Mỗi buổi phỏng vấn một file, vì ở công ty một đợt research 10 đến 30 buổi là bình thường; mỗi note một file thì ra hàng trăm đến hàng nghìn file
   - Vì sao mỗi note cần một mã? AI trích dẫn được note nào ủng hộ insight nào thay vì nói chung chung; bạn mở lại đúng note và đúng lượt trong transcript để đối chiếu quote; ba tháng sau ai hỏi “vì sao mình kết luận vậy?” thì truy lại được nguồn
   - Mã RET-02 gồm mã outcome trong Scope (RET, giữ khách quay lại) cộng số thứ tự
-  - Bộ mẫu Delivery App có 10 note, RET-01 đến RET-10, viết từ hai transcript. Mỗi note chỉ có một participant nên confidence để low; Lesson 3 mới nâng
+  - Đơn vị này không phải của riêng khoá: Dovetail gọi là highlight, atomic research gọi là nugget. Công ty thường lưu chúng trong một công cụ research repository hoặc cơ sở dữ liệu; file md là lựa chọn của khoá để AI và git làm việc được. Nguồn chủ yếu là trang của hãng bán công cụ, nên đây là kinh nghiệm thực hành, chưa phải evidence đã kiểm
+  - Tag lấy từ một bộ cố định trong file tags.md, hai cấp dạng cha/con, mô tả chủ đề hoặc vấn đề của người dùng chứ không mô tả tên dự án, mỗi tag một câu mô tả; thêm tag mới là một quyết định. AI được gợi ý tag nhưng chỉ trong bộ này. Dovetail khuyên bắt đầu nhỏ, đây là lời khuyên của hãng, không phải nghiên cứu
+  - Bộ mẫu Delivery App có 10 note, RET-01 đến RET-10, viết từ hai transcript. Mỗi note chỉ có một participant nên confidence để low; Lesson 3 mới nâng. Bộ mẫu nằm trong hai file I01.md và I02.md, kèm tags.md
   - Slide sau nói cách bạn viết note từ transcript của chính mình
-- 🎨 Visual hint: DIAGRAM. Hai card nền trắng: trái là transcript, phải là evidence note kèm khung chứa file md mẫu bằng chữ mono.
+- 🎨 Visual hint: DIAGRAM. Hai card nền trắng: trái là transcript, phải là evidence note kèm khung chứa mục note mẫu (đề mục, các trường, quote) bằng chữ mono.
 
 ---
 
@@ -976,7 +979,7 @@ last_synced: 2026-11-19
   - 1 · Chọn: một quan sát, một note
   - 2 · Đặt tiêu đề: điều participant làm hoặc nói
   - 3 · Chép quote: giữ nguyên lời người nói, kèm (I01, turn 06)
-  - 4 · Gắn mã: mã outcome và số thứ tự, ví dụ RET-02
+  - 4 · Gắn mã và tag: mã outcome, số thứ tự, tag từ bộ cố định, ví dụ RET-02 · order/cancel
   - Đã đặt mã thì không đổi và không dùng lại, để insight đã trích vẫn trỏ đúng note.
 - Ví dụ: có (RET-02)
 - Câu hỏi hay gặp: None.
@@ -986,8 +989,8 @@ last_synced: 2026-11-19
     - Chọn: chọn một quan sát mà participant làm hoặc nói; mỗi quan sát là một note
     - Đặt tiêu đề: trung tính, chưa có nguyên nhân, đánh giá hay giải pháp. “P1 could not find where to cancel”, không phải “The cancel button is hidden”. Ở Lesson 3 AI tổng hợp từ các note này; tiêu đề chứa kết luận thì AI đọc lại kết luận thay vì dữ liệu
     - Chép quote: một đến ba quote, giữ nguyên lời người nói kể cả câu dở dang, kèm tên transcript và số lượt
-    - Gắn mã: mã outcome cộng số thứ tự; đã đặt thì không đổi, không dùng lại
-  - Hai buổi phỏng vấn cho khoảng 8 đến 20 note là đủ. Bạn có thể nhờ AI soạn nháp, nhưng phải đọc lại tiêu đề và so từng quote với transcript
+    - Gắn mã và tag: mã outcome cộng số thứ tự; đã đặt thì không đổi, không dùng lại. Tag chỉ lấy trong tags.md; chưa có tag phù hợp thì bạn quyết định có thêm vào bộ hay không
+  - Các note của một buổi phỏng vấn nằm chung một file, ví dụ I01.md. Hai buổi phỏng vấn cho khoảng 8 đến 20 note là đủ. Bạn có thể nhờ AI soạn nháp, nhưng phải đọc lại tiêu đề và so từng quote với transcript
   - Chưa phỏng vấn được hai người thì dùng các note phỏng vấn mẫu, và ghi rõ trong hub đó là dữ liệu mẫu
 
   > Câu nào trong transcript đầu tiên của bạn sẽ thành note RET-01?
@@ -999,15 +1002,15 @@ last_synced: 2026-11-19
 - Kicker: Ingest
 - Title: Prompt để viết evidence note
 - On-slide:
-  - Trái, khung tối "Prompt mẫu": Đây là transcript I01 đã ẩn danh. Viết evidence note cho từng quan sát: mỗi note một quan sát của một participant; tiêu đề là điều participant làm hoặc nói, trung tính; chép nguyên văn quote kèm (I01, turn số); mã dạng RET-01, RET-02 theo thứ tự; chỗ không chắc thì liệt kê riêng ở cuối
+  - Trái, khung tối "Prompt mẫu": Đây là transcript I01 đã ẩn danh. Viết evidence note cho từng quan sát: mỗi note một quan sát của một participant; tiêu đề là điều participant làm hoặc nói, trung tính; chép nguyên văn quote kèm (I01, turn số); mã dạng RET-01, RET-02 theo thứ tự; tag chỉ lấy trong tags.md, tag thiếu thì ghi riêng; chỗ không chắc thì liệt kê riêng ở cuối
   - Phải: Tiêu đề là observation (chưa có nguyên nhân hay giải pháp); Quote nguyên văn (AI hay diễn giải lại); Không tự quyết (chỗ mơ hồ thì ghi riêng, bạn quyết)
-  - Chạy trên transcript của bạn, so từng note, sửa prompt đến khi đúng, rồi nhờ AI tool tạo skill.
+  - Chạy trên transcript của bạn, so từng note, sửa prompt đến khi đúng, rồi nhờ công cụ AI tạo skill.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Slide trước nói bốn bước viết note. Slide này trả lời: nhờ AI soạn nháp giúp thì viết prompt thế nào
-  - Prompt cần chốt ba điều: tiêu đề là observation; quote nguyên văn vì AI hay diễn giải lại; không tự quyết, chỗ mơ hồ ghi riêng
-  - Chạy trước, đóng gói sau: chạy trên một transcript, so từng note, sửa prompt đến khi đúng rồi mới nhờ AI tool tạo skill (ví dụ write-evidence-notes). Tool không có skill thì lưu prompt thành file để dán lại
+  - Prompt cần chốt bốn điều: tiêu đề là observation; quote nguyên văn vì AI hay diễn giải lại; không tự quyết, chỗ mơ hồ ghi riêng; tag có kiểm soát, AI chỉ gán tag có trong tags.md và tag nó đề xuất mà chưa có thì ghi riêng để bạn quyết
+  - Chạy trước, đóng gói sau: chạy trên một transcript, so từng note, sửa prompt đến khi đúng rồi mới nhờ công cụ AI tạo skill (ví dụ write-evidence-notes). Tool không có skill thì lưu prompt thành file để dán lại
   - Skill hợp với việc lặp lại như ingest; rule dành cho nguyên tắc luôn đúng, như giữ nguyên văn và không đổi mã
 
   > Câu nào trong transcript của bạn AI dễ diễn giải lại nhất?

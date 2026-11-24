@@ -99,18 +99,19 @@ Script là lưới an toàn, không phải khuôn.
 
 ### Step 9 · Ingest: transcript thành evidence note · AI soạn nháp, bạn kiểm tra
 
-1. **Viết.** Từ mỗi transcript đã ẩn danh, bạn viết evidence note, hoặc nhờ AI soạn nháp rồi kiểm tra từng note. Mỗi note là một file md ghi một quan sát của một participant về một chủ đề:
+1. **Viết.** Từ mỗi transcript đã ẩn danh, bạn viết evidence note, hoặc nhờ AI soạn nháp rồi kiểm tra từng note. Mỗi buổi phỏng vấn có một file ghi chú, và mỗi note là một mục `##` trong file đó, ghi một quan sát của một participant về một chủ đề:
    - Tiêu đề là observation, viết trung tính: điều participant làm hoặc nói, chưa có nguyên nhân, đánh giá hay giải pháp.
    - Một đến ba quote nguyên văn, mỗi quote dạng `> "quote" (I01, turn 04)`, trong đó `04` là số lượt trong transcript.
-   - Phần đầu file có `id` (mã outcome trong Scope cộng số thứ tự, ví dụ `RET-02`), `outcome`, `status`, `confidence`, `source` và `tags`. `confidence` để `low` vì mỗi note chỉ có một participant, và do bạn đặt, không do AI.
+   - Dưới đề mục của mỗi note có `id` (mã outcome trong Scope cộng số thứ tự, ví dụ `RET-02`), `outcome`, `status`, `confidence`, `source` và `tags`. `confidence` để `low` vì mỗi note chỉ có một participant, và do bạn đặt, không do AI.
 
-   Mẫu nằm ở thư mục `evidence/` của course case. Transcript cần có số lượt ở đầu mỗi dòng để quote trỏ tới được; chỗ lưu folder do bạn chọn. Hai buổi phỏng vấn cho khoảng 8 đến 20 note là đủ. Không sửa transcript đã ẩn danh.
-2. **Kiểm.** Đưa AI coding tool instruction trong [check-evidence-instruction.md](../../../assets/starter-files/course-case/check-evidence-instruction.md), kèm đường dẫn tới folder evidence note và folder transcript. Script in ra từng quote và từng note đạt hay không đạt.
+   Bộ mẫu nằm ở thư mục `evidence/` của course case, gồm `I01.md`, `I02.md` (mỗi buổi phỏng vấn một file) và `tags.md`. Transcript cần có số lượt ở đầu mỗi dòng để quote trỏ tới được; chỗ lưu folder do bạn chọn. Hai buổi phỏng vấn cho khoảng 8 đến 20 note là đủ. Không sửa transcript đã ẩn danh.
+2. **Kiểm.** Đưa AI coding tool instruction trong [check-evidence-instruction.md](../../../assets/starter-files/course-case/check-evidence-instruction.md), kèm đường dẫn tới folder file ghi chú và folder transcript. Script in ra từng quote và từng note đạt hay không đạt.
 3. **Sửa.** Với mỗi chỗ không đạt: mở transcript ở lượt được ghi, so với quote, rồi sửa quote hoặc số lượt cho đúng, hoặc hỏi lại AI chat tool kèm danh sách không đạt. Chạy lại cho tới khi không còn chỗ không đạt. Sau đó đọc lại tiêu đề của từng note cạnh quote của nó: tiêu đề có nói đúng điều participant đã nói, và không thêm kết luận không? Phép kiểm tra chỉ cho biết quote có thật trong transcript, không cho biết tiêu đề đúng.
 4. **Đặt status.** Note đã qua kiểm tra và bạn đã đọc lại thì đổi `status` thành `checked`.
+5. **Đặt tag từ bộ cố định.** Tạo file `tags.md` với vài chục tag hai cấp dạng `cha/con` (ví dụ `order/cancel`, `help/contact-support`), mỗi tag một câu mô tả. Tag mô tả chủ đề hoặc vấn đề của người dùng, không mô tả tên dự án. Mọi note chỉ dùng tag trong file này. AI được gợi ý tag, nhưng chỉ trong bộ này; tag AI đề xuất mà chưa có thì bạn quyết định có thêm hay không.
 
 - Đưa evidence note và kết quả kiểm tra lên hub, ở chỗ bạn và AI tìm lại được.
-- Chưa phỏng vấn được 2 người: dùng 10 evidence note mẫu (RET-01 đến RET-10) trong thư mục [evidence](../../../assets/starter-files/course-case/evidence/) và hai transcript trong thư mục [raw](../../../assets/starter-files/course-case/raw/) của course case, và ghi rõ trong hub đây là dữ liệu mẫu.
+- Chưa phỏng vấn được 2 người: dùng 10 evidence note mẫu (RET-01 đến RET-10, hai file `I01.md` và `I02.md`) và bộ tag `tags.md` trong thư mục [evidence](../../../assets/starter-files/course-case/evidence/) và hai transcript trong thư mục [raw](../../../assets/starter-files/course-case/raw/) của course case, và ghi rõ trong hub đây là dữ liệu mẫu.
 - Lesson 3 có một bước chạy blind synthesis trên các note này, nên giữ mỗi note một quan sát và tiêu đề trung tính.
 
 ## Output
@@ -121,7 +122,7 @@ Script là lưới an toàn, không phải khuôn.
 - Research question
 - Research plan và script
 - Transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn
-- Evidence note (mỗi note một file md, tiêu đề observation, quote kèm số lượt) và kết quả kiểm tra quote không còn chỗ không đạt
+- File ghi chú của mỗi buổi phỏng vấn (mỗi note một mục, tiêu đề observation, quote kèm số lượt, tag từ bộ tag cố định), file `tags.md`, và kết quả kiểm tra quote không còn chỗ không đạt
 
 ## Self-check
 
@@ -133,6 +134,7 @@ Script là lưới an toàn, không phải khuôn.
 - [ ] Bản gốc chưa ẩn danh không nằm ở chỗ AI đọc.
 - [ ] Lần kiểm tra quote cuối không còn chỗ không đạt.
 - [ ] Bạn đã đọc lại tiêu đề của từng evidence note cạnh quote, và không tiêu đề nào chứa nguyên nhân, đánh giá hay giải pháp.
+- [ ] Mọi tag trong note đều có trong `tags.md`, và mỗi tag có một câu mô tả.
 
 Xong thì mang các output này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
 
@@ -140,6 +142,6 @@ Xong thì mang các output này tới buổi practice trên lớp: bạn làm ti
 
 - **Không gặp được business:** ghi mọi outcome và metric là "assumed", kèm người cần xác nhận. Đừng nhờ AI đóng vai PO.
 - **Chưa hẹn được người phỏng vấn đúng nhóm:** nhờ người quen có thói quen liên quan đến project, và ghi rõ đây là giới hạn của mẫu. Chưa có ghi chú phỏng vấn thì làm Step 1 đến 6 trước, và dùng note mẫu cho Step 9.
-- **Chưa có brief hay tài liệu để thử bốn move:** dùng brief mẫu `brief-notes-plain.txt` và các ghi chú R và F trong `source-notes-plain.txt` của course case, cùng prompt trong `break-the-brief-moves.md`.
+- **Chưa có brief hay tài liệu để thử bốn move:** dùng brief mẫu `brief-notes-plain.txt` và 10 evidence note trong `evidence-notes-plain.txt` của course case, cùng prompt trong `break-the-brief-moves.md`.
 - **AI đưa điều nghe hợp lý nhưng không có trong tài liệu:** ghi "chưa có nguồn", không đưa vào như một sự thật.
 - **Không làm hết được:** làm Step 1 đến 4 trước và hẹn người phỏng vấn sớm, vì lịch hẹn là phần khó kiểm soát nhất.

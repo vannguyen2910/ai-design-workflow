@@ -215,7 +215,7 @@ Không có access là vị thế yếu hơn, và quy trình chỉ giảm nhẹ c
 
 **Move 3: Đào assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, và nhờ nó trả về từng dòng `assumption | vị trí | quote` với quote chép nguyên văn. Brief ngắn như bản mẫu thì bạn đánh số dòng để AI chỉ đúng chỗ; tài liệu dài thì nhờ AI ghi vị trí theo đề mục hoặc số trang. Đánh số từng dòng là cách làm của khoá, không phải cách phổ biến nhất. Kiểu ghi nguồn này giống citation của mục 5, nên bạn kiểm tra quote được bằng cách mở đúng chỗ AI ghi. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
 
-**Move 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (18 ghi chú review và diễn đàn), assumption về khung giờ có bốn ghi chú ủng hộ, assumption "giá là lý do chính" chỉ có F07 ủng hộ và R06 đi ngược, còn assumption "nhắc sau 7 ngày" là "chưa có nguồn". Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên evidence note mới để cập nhật bản đồ.
+**Move 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (10 evidence note từ hai buổi phỏng vấn), assumption về khung giờ có RET-01 và RET-05 ủng hộ, không note nào đi ngược, evidence yếu vì chỉ có hai người; assumption "giá là lý do chính" có RET-10 ủng hộ, RET-08 và RET-09 đi ngược, evidence yếu; assumption "nhắc sau 7 ngày" là "chưa có nguồn". Cả 10 note đến từ hai người nên "yếu" là mức cao nhất bộ này cho được. Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên evidence note mới để cập nhật bản đồ.
 
 Giới hạn: quote có thật không có nghĩa nó ủng hộ đúng assumption (AI xếp F01 vào cả hai assumption khác nhau), và ghi chú không đánh dấu khách mới hay khách cũ, nên "nhiều ghi chú" chưa có nghĩa là đủ. Bạn đọc từng ghi chú trước khi tính.
 
@@ -294,7 +294,7 @@ Ingest là đưa một nguồn vào hub thành dạng AI dùng được và bạ
 
 ### 5.1 Evidence notes
 
-Transcript đã ẩn danh là **raw source**; bạn không sửa nó. Từ đó bạn viết **evidence note**: một file md ghi một quan sát của một participant về một chủ đề.
+Transcript đã ẩn danh là **raw source**; bạn không sửa nó. Từ đó bạn viết **evidence note**: một mục ghi một quan sát của một participant về một chủ đề. Mỗi buổi phỏng vấn có **một file ghi chú**, và mỗi note là một mục `##` trong file đó.
 
 - **Tiêu đề là observation.** Đó là điều participant làm hoặc nói, viết trung tính, chưa có nguyên nhân, đánh giá hay giải pháp. Ví dụ "P1 could not find where to cancel and contacted support", không phải "The cancel button is hidden".
 - **Quote nguyên văn.** Mỗi note có một đến ba quote, mỗi quote kèm tên transcript và số lượt.
@@ -302,22 +302,34 @@ Transcript đã ẩn danh là **raw source**; bạn không sửa nó. Từ đó 
 - **Các trường khác.** `status` (draft, checked hoặc superseded), `confidence` (low, medium hoặc high), `source` và `tags`. `confidence` do bạn đặt, không do AI. Mỗi note ở Lesson 2 chỉ có một participant nên để `low`; Lesson 3 mới nâng khi nhiều evidence cùng nói một điều.
 
 ```markdown
----
-id: RET-02
-outcome: RET
-status: checked
-confidence: low
-source: [I01 @ turn 06]
-tags: [cancel, support]
----
-# P1 could not find where to cancel and contacted support
+# I01 · Delivery App · P1
+
+## RET-02 · P1 could not find where to cancel and contacted support
+- outcome: RET
+- status: checked
+- confidence: low
+- source: I01 @ turn 06
+- tags: [order/cancel, help/contact-support]
 
 > "I wanted to cancel because my plans changed. I went through the whole order screen and could not find it. Eventually I messaged support." (I01, turn 06)
+
+## RET-03 · P1 waited 60 minutes against an estimate of 30
+...
 ```
 
-Vì sao tiêu đề là observation chứ không phải insight: ở Lesson 3 bạn nhờ AI tổng hợp từ các note này. Nếu tiêu đề đã chứa kết luận của bạn, AI đọc lại kết luận thay vì dữ liệu, và phép blind synthesis không còn blind. Câu insight xuất hiện sau khi gộp nhiều evidence.
+**Vì sao một file cho mỗi buổi phỏng vấn.** Ở công ty, một đợt research 10 đến 30 buổi là chuyện bình thường. Mỗi note một file thì ra hàng trăm đến hàng nghìn file. Mỗi buổi một file thì chỉ 10 đến 30 file, mở theo đúng thứ tự transcript, và script kiểm quote vẫn đi được từng note.
 
-Folder đặt note do bạn chọn; nhiều công ty gọi là `Insights` hoặc `Evidence`. Bạn viết note, hoặc nhờ AI soạn nháp rồi kiểm tra tiêu đề và quote của từng note. Bộ mẫu của Delivery App có 10 note, RET-01 đến RET-10, viết từ hai transcript trong `assets/starter-files/course-case/`.
+**Đơn vị này không phải của riêng khoá.** Ý tưởng chia research thành đơn vị nhỏ, mỗi đơn vị một quan sát có nguồn và tag, là cách làm quen thuộc. Dovetail gọi đó là highlight: một đoạn được đánh dấu trong note gốc và gắn tag, rồi nhóm lại thành insight dẫn về bằng chứng. Atomic research gọi là nugget, gồm quan sát, bằng chứng và tag. Các công ty thường lưu chúng thành bản ghi trong một công cụ research repository hoặc cơ sở dữ liệu, không lưu thành file md. Một file cho mỗi buổi phỏng vấn là lựa chọn của khoá, để AI và git làm việc được trên máy của bạn. Nếu công ty bạn dùng Dovetail, Condens hay Airtable, bạn giữ nguyên các nguyên tắc (một quan sát, một mã, quote nguyên văn kèm nguồn, tag có kiểm soát) và đặt chúng vào công cụ đó. Nguồn về Dovetail và atomic research chủ yếu là trang của hãng bán công cụ và blog, nên đây là kinh nghiệm thực hành, chưa phải evidence đã kiểm.
+
+**Tag có kiểm soát.** Tag giúp tìm và lọc note sau này. Nếu ai muốn đặt tag gì cũng được thì chỉ vài buổi sau đã có `cancel`, `huy-don` và `order-cancel` cho cùng một ý, và bộ lọc không còn dùng được. Vì vậy bạn giữ một file `tags.md` chứa bộ tag cố định, và mọi note chỉ dùng tag trong file đó:
+
+- **Bắt đầu nhỏ, mở rộng dần.** Một dự án của khoá chỉ cần vài chục tag. Dovetail ghi rằng đa số đội thấy 50 đến 150 tag được duy trì tốt là đủ cho một kho dùng lâu dài, và họ cũng khuyên bắt đầu nhỏ. Đây là lời khuyên của hãng, không phải kết quả nghiên cứu.
+- **Hai cấp, dạng `cha/con`.** Ví dụ `order/cancel`, `order/change-slot`, `help/contact-support`. Tag cha là nhóm chủ đề dùng chung; tag con là chi tiết.
+- **Tag mô tả chủ đề hoặc vấn đề của người dùng**, không mô tả tên dự án, tên team hay kết luận của bạn. Phương pháp, nhóm participant và ngày đi vào trường riêng, không đi vào tag.
+- **Mỗi tag có một câu mô tả** trong `tags.md`, để người khác dùng đúng cách.
+- **Thêm tag mới là một quyết định,** do bạn (hoặc người phụ trách bộ tag trong team) duyệt. AI được gợi ý tag, nhưng chỉ trong bộ này; tag nào AI đề xuất mà chưa có thì bạn quyết định có thêm vào bộ hay không.
+
+Folder đặt các file ghi chú do bạn chọn; nhiều công ty gọi là `Insights` hoặc `Evidence`. Bạn viết note, hoặc nhờ AI soạn nháp rồi kiểm tra tiêu đề, quote và tag của từng note. Bộ mẫu của Delivery App có 10 note, RET-01 đến RET-10, viết từ hai transcript trong `assets/starter-files/course-case/`. Chúng nằm trong hai file `I01.md` và `I02.md`, kèm bộ tag `tags.md`.
 
 ### 5.2 Quotes must be word for word
 
@@ -327,11 +339,11 @@ Vì vậy mỗi quote nằm trong evidence note theo dạng cố định `> "quo
 
 ### 5.3 The machine check
 
-Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script đọc từng evidence note, rồi với mỗi dòng quote mở transcript gốc, tìm đúng lượt được ghi và kiểm tra quote có nằm trong lượt đó hay không. Nó bỏ qua khác biệt về khoảng trắng, xuống dòng, chữ hoa chữ thường và kiểu dấu ngoặc, nhưng không bỏ qua khác biệt về chữ. Nó cũng kiểm mỗi note có đủ trường, `id` không trùng và nguồn của quote khớp trường `source`. Kết quả là danh sách từng quote và từng note đạt hoặc không đạt, kèm lý do ngắn. Instruction mẫu nằm ở `assets/starter-files/course-case/check-evidence-instruction.md`.
+Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script đọc từng file ghi chú của buổi phỏng vấn, rồi với mỗi note và mỗi dòng quote mở transcript gốc, tìm đúng lượt được ghi và kiểm tra quote có nằm trong lượt đó hay không. Nó bỏ qua khác biệt về khoảng trắng, xuống dòng, chữ hoa chữ thường và kiểu dấu ngoặc, nhưng không bỏ qua khác biệt về chữ. Nó cũng kiểm mỗi note có đủ trường, `id` không trùng, nguồn của quote khớp trường `source` và mọi tag có trong `tags.md`. Kết quả là danh sách từng quote và từng note đạt hoặc không đạt, kèm lý do ngắn. Instruction mẫu nằm ở `assets/starter-files/course-case/check-evidence-instruction.md`.
 
 Đây là phép so khớp chuỗi do chương trình làm, không phải một AI khác đánh giá. Lý do: một AI duyệt giúp có thể bỏ qua một quote bịa theo cùng cách AI đầu tiên đã bịa ra nó. Đây là suy luận của chương trình, không phải kết quả đo.
 
-Chương trình đã thử instruction này bằng một script tham chiếu viết theo đúng instruction (`tests/hub_quote_check/check_evidence.py`, có chín test), trên 10 note mẫu (11 quote): bộ mẫu đạt hết. Khi cố ý đổi một chữ trong quote, trỏ sai số lượt, đặt `id` trùng hoặc trỏ tới file transcript không tồn tại, script báo không đạt đúng các note đó; quote chỉ khác khoảng trắng, chữ hoa chữ thường hoặc dấu ngoặc cong vẫn đạt. Chưa thử với một AI coding tool tự viết script từ instruction `[to confirm]`.
+Chương trình đã thử instruction này bằng một script tham chiếu viết theo đúng instruction (`tests/hub_quote_check/check_evidence.py`, có mười hai test), trên 10 note mẫu (11 quote) trong hai file buổi phỏng vấn: bộ mẫu đạt hết. Khi cố ý đổi một chữ trong quote, trỏ sai số lượt, đặt `id` trùng hoặc trỏ tới file transcript không tồn tại, hoặc gắn tag không có trong `tags.md`, script báo không đạt đúng các note đó; quote chỉ khác khoảng trắng, chữ hoa chữ thường hoặc dấu ngoặc cong vẫn đạt. Chưa thử với một AI coding tool tự viết script từ instruction `[to confirm]`.
 
 Hai buổi phỏng vấn cho khoảng 8 đến 20 note, và thế là đủ: phép kiểm tra chỉ kiểm tra quote trong note của bạn, không kiểm tra số lượng note hay việc bạn đã chọn đủ quan sát quan trọng.
 
@@ -384,7 +396,7 @@ Năm thứ bạn đưa vào hub sau buổi này, và cũng là input cho chuỗi
 | Scope | Business question, outcome, metric và trạng thái confirmed hoặc assumed |
 | Assumption map | Ba assumption hàng đầu và mức evidence của chúng |
 | Research questions | Câu hỏi điều tra được, mỗi câu gắn với một assumption và một quyết định |
-| Evidence notes | Mỗi note là một file md, một quan sát của một participant, có mã outcome, quote nguyên văn kèm vị trí trong transcript, và kết quả kiểm tra quote không còn dòng không đạt |
+| Evidence notes | Mỗi note là một mục trong file ghi chú của buổi phỏng vấn, một quan sát của một participant, có tag trong bộ tag cố định, có mã outcome, quote nguyên văn kèm vị trí trong transcript, và kết quả kiểm tra quote không còn dòng không đạt |
 
 Mỗi thứ có nguồn hoặc nhãn "chưa có nguồn", để người sau không coi assumption là sự thật. ID của các mục này đi theo cùng quy ước với mã evidence note, để sau này mỗi insight trỏ về được note nó dựa vào. Hub mặc định riêng tư và nằm trong project folder của bạn; đưa lên GitHub là tuỳ chọn. Lesson 3 bắt đầu từ các file này.
 
