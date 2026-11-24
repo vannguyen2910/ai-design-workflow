@@ -34,7 +34,7 @@ Phụ lục, ngoài 90 phút: competitor analysis.
 
 1. Chỉ ra Discover nằm ở đâu trong Double Diamond và nêu AI giúp được gì, chưa giúp được gì ở stage này
 2. Viết một principle riêng của sản phẩm có thể đảo ngược một quyết định và có dòng "điều này không có nghĩa là", và giải thích vì sao chuẩn đặt trước khi AI chạy
-3. Mô tả ba việc của Break the brief (scope, assumption, research question), file mỗi việc tạo ra và phần bạn kiểm tra, và chạy bốn move AI (brief thành vấn đề, đào assumption từ tài liệu, kiểm tra evidence trong hub, phản biện scope) với phần bạn kiểm tra ở mỗi move
+3. Mô tả ba việc của Break the brief (scope, assumption, research question), file mỗi việc tạo ra và phần bạn kiểm tra, và chạy bốn cách dùng AI (brief thành vấn đề, đào assumption từ tài liệu, kiểm tra evidence trong hub, phản biện scope) với phần bạn kiểm tra ở mỗi cách dùng
 4. Giải thích vì sao AI không được đóng vai PO hay user, và gắn trạng thái confirmed hoặc assumed cho scope
 5. Nêu bốn thói quen của một buổi phỏng vấn tốt, vai trò của AI khi chuẩn bị phỏng vấn, và bốn câu hỏi trước khi đưa dữ liệu phỏng vấn cho AI
 6. Cắt một transcript đã ẩn danh thành source notes có ID, và giải thích vì sao quote phải nguyên văn
@@ -128,16 +128,16 @@ AI rất giỏi biến principle thành nhận xét nghe chắc chắn, như "vi
 
 ### 3.1 Three steps, three files
 
-Break the brief là cách kiểm tra brief trước khi chấp nhận nó, và bắt đầu từ context pack đã dựng ở bài tập buổi 1. Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question và scope, liệt kê điều đang tin mà chưa có evidence, biến những điều đó thành research question. Method bạn đã biết. Phần mới của buổi này là **bốn move AI**: những việc AI làm tốt hơn người ở bước này, mỗi move có phần bạn kiểm tra và một chỗ để ghi vào hub.
+Break the brief là cách kiểm tra brief trước khi chấp nhận nó, và bắt đầu từ context pack đã dựng ở bài tập buổi 1. Thứ tự đi từ điều quan sát được đến điều cần học: chốt business question và scope, liệt kê điều đang tin mà chưa có evidence, biến những điều đó thành research question. Method bạn đã biết. Phần mới của buổi này là **bốn cách dùng AI**: những việc AI làm tốt hơn người ở bước này, mỗi cách dùng có phần bạn kiểm tra và một chỗ để ghi vào hub.
 
-| # | Move | AI làm | Bạn kiểm tra và ghi vào hub |
+| # | Cách dùng AI | AI làm | Bạn kiểm tra và ghi vào hub |
 |---|---|---|---|
 | 1 | Brief thành vấn đề | Phân loại từng dòng brief, viết lại dòng giải pháp thành câu vấn đề, nêu giả định ngầm | Dòng nào bị đổi nghĩa; scope viết theo vấn đề, không theo giải pháp |
 | 2 | Phản biện scope | Đóng vai người phản biện: năm cách scope có thể sai, ai phản đối, câu hỏi cho người thật | Chọn câu hỏi đáng hỏi; agreement status và danh sách việc cần xác nhận |
 | 3 | Đào assumption từ tài liệu | Trích assumption kèm line ID và quote nguyên văn, gồm cả giả định ngầm | Chạy kiểm tra quote; bỏ dòng trùng hoặc chỉ là sự kiện; assumption map |
 | 4 | Kiểm tra evidence trong hub | Tìm ghi chú ủng hộ và đi ngược, trả note ID và quote; không có thì "chưa có nguồn" | Đọc từng ghi chú có thật sự ủng hộ không; cột evidence của assumption map |
 
-Ba hoạt động vẫn là ba file: scope, assumption map, research question. Bốn move nằm bên trong hai hoạt động đầu. Bộ dữ liệu mẫu và kết quả đã lưu của bốn move nằm ở `break-the-brief-moves.md` trong course case.
+Ba hoạt động vẫn là ba file: scope, assumption map, research question. Bốn cách dùng nằm bên trong hai hoạt động đầu. Bộ dữ liệu mẫu và kết quả đã lưu của bốn cách dùng nằm ở `break-the-brief-moves.md` trong course case.
 
 Tên file và cấu trúc thư mục chỉ là gợi ý. Cách tổ chức nào cũng được, miễn là mỗi bước có một output lưu lại được, AI đọc được và người khác kiểm tra được.
 
@@ -153,9 +153,9 @@ Tầng gửi business có năm câu: outcome, success metric, baseline, ràng bu
 
 **AI không đóng vai PO hay user.** Các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về câu trả lời dễ nghe. Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý. AI chuẩn bị câu hỏi và soạn nháp ghi chú, còn câu trả lời luôn do người thật đưa ra.
 
-**Move 1: Brief thành vấn đề.** Brief thường đến dưới dạng giải pháp ("thêm onboarding bốn bước"). Đưa AI từng dòng brief có ID, nhờ nó phân loại (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc), rồi viết lại mỗi dòng giải pháp thành một câu vấn đề không nhắc đến giải pháp, kèm điều giải pháp đó đang ngầm giả định. Trên brief mẫu của Delivery App, AI tách được dòng gộp hai ý (B09), chỉ ra B02 và B07 nói ngược nhau về giá, và nhận ra cả hai giải pháp đều không đụng vào nguyên nhân mà brief nêu, vì giá bị khoá. Bạn kiểm tra bản viết lại có đổi nghĩa không, rồi viết scope theo câu vấn đề.
+**Cách dùng AI 1: Brief thành vấn đề.** Brief thường đến dưới dạng giải pháp ("thêm onboarding bốn bước"). Đưa AI từng dòng brief có ID, nhờ nó phân loại (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc), rồi viết lại mỗi dòng giải pháp thành một câu vấn đề không nhắc đến giải pháp, kèm điều giải pháp đó đang ngầm giả định. Trên brief mẫu của Delivery App, AI tách được dòng gộp hai ý (B09), chỉ ra B02 và B07 nói ngược nhau về giá, và nhận ra cả hai giải pháp đều không đụng vào nguyên nhân mà brief nêu, vì giá bị khoá. Bạn kiểm tra bản viết lại có đổi nghĩa không, rồi viết scope theo câu vấn đề.
 
-**Move 2: Phản biện scope.** Khi đã có scope nháp, nhờ AI đóng vai người phản biện, không đóng vai PO: nêu năm cách scope này có thể sai, ai sẽ phản đối, dấu hiệu sớm, một câu hỏi cần hỏi người thật, và một cách metric hoặc guardrail có thể bị lách. Trên bản scope mẫu, AI chỉ ra "khách mới" chưa được định nghĩa, scope còn pending mà đã chốt việc sáu tuần, và guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy. Đây là danh sách giả thuyết để hỏi người thật. AI không biết "khách mới" của công ty bạn nghĩa là gì, nên bạn chọn câu đáng hỏi, và câu trả lời vẫn do người thật đưa.
+**Cách dùng AI 2: Phản biện scope.** Khi đã có scope nháp, nhờ AI đóng vai người phản biện, không đóng vai PO: nêu năm cách scope này có thể sai, ai sẽ phản đối, dấu hiệu sớm, một câu hỏi cần hỏi người thật, và một cách metric hoặc guardrail có thể bị lách. Trên bản scope mẫu, AI chỉ ra "khách mới" chưa được định nghĩa, scope còn pending mà đã chốt việc sáu tuần, và guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy. Đây là danh sách giả thuyết để hỏi người thật. AI không biết "khách mới" của công ty bạn nghĩa là gì, nên bạn chọn câu đáng hỏi, và câu trả lời vẫn do người thật đưa.
 
 **Hỏi trung tính.** Câu nêu sẵn hypothesis có thể làm AI nghiêng theo người hỏi, hoặc ít nhất đổi thứ AI nói trước (xem mục 6). "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân". Mục 6 cho thấy chính xác nghiêng theo kiểu nào.
 
@@ -182,9 +182,9 @@ Không có access là vị thế yếu hơn, và quy trình chỉ giảm nhẹ c
 - **Ma trận Importance × Evidence:** góc quan trọng cao, evidence yếu là chỗ phải kiểm chứng trước. Luôn đọc nhãn trục trước khi đọc vị trí, vì một số bản đảo trục. Framework cho phép 3 đến 5 assumption; chương trình chọn 3 vì thời gian.
 - **Cập nhật bản đồ:** chuyển assumption sang Confirmed, Unconfirmed hay Unknown sau khi có insight từ phỏng vấn (làm ở Lesson 3).
 
-**Move 3: Đào assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, mỗi dòng có ID, và nhờ nó trả về từng dòng `assumption | line IDs | quote` với quote chép nguyên văn. Đó đúng là định dạng citation của mục 5, nên bạn chạy được phép kiểm tra quote. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
+**Cách dùng AI 3: Đào assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, mỗi dòng có ID, và nhờ nó trả về từng dòng `assumption | line IDs | quote` với quote chép nguyên văn. Đó đúng là định dạng citation của mục 5, nên bạn chạy được phép kiểm tra quote. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
 
-**Move 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (18 ghi chú review và diễn đàn), assumption về khung giờ có bốn ghi chú ủng hộ, assumption "giá là lý do chính" chỉ có F07 ủng hộ và R06 đi ngược, còn assumption "nhắc sau 7 ngày" là "chưa có nguồn". Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên source notes mới để cập nhật bản đồ.
+**Cách dùng AI 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (18 ghi chú review và diễn đàn), assumption về khung giờ có bốn ghi chú ủng hộ, assumption "giá là lý do chính" chỉ có F07 ủng hộ và R06 đi ngược, còn assumption "nhắc sau 7 ngày" là "chưa có nguồn". Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại cách dùng này trên source notes mới để cập nhật bản đồ.
 
 Giới hạn: quote có thật không có nghĩa nó ủng hộ đúng assumption (AI xếp F01 vào cả hai assumption khác nhau), và ghi chú không đánh dấu khách mới hay khách cũ, nên "nhiều ghi chú" chưa có nghĩa là đủ. Bạn đọc từng ghi chú trước khi tính.
 

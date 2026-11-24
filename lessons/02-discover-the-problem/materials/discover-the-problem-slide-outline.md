@@ -18,7 +18,7 @@ last_synced: 2026-11-16
 | Stage           | Discover                                                                                                                                 |
 | Prior session   | Buổi 1: Your Design Process, with AI                                                                                                     |
 | Next session    | Practice 2                                                                                                                               |
-| Timing note      | Ingest và blind synthesis thêm khoảng 10 phút, năm slide move của Break the brief (một sơ đồ chuỗi và bốn move) thêm khoảng 8 phút. Đã bớt khoảng 16 phút ở Understand our users: sáu slide nền tảng phỏng vấn (User interview, Research plan, một trang research plan, Interview fundamentals, Avoid and probe, Pilot with a colleague) và ba slide method recap của Break the brief chuyển sang Appendix, không xoá. Lớp cần ôn thì mở lại từ Appendix |
+| Timing note      | Ingest và blind synthesis thêm khoảng 10 phút, năm slide cách dùng AI của Break the brief (một sơ đồ chuỗi và bốn cách dùng) thêm khoảng 8 phút. Đã bớt khoảng 16 phút ở Understand our users: sáu slide nền tảng phỏng vấn (User interview, Research plan, một trang research plan, Interview fundamentals, Avoid and probe, Pilot with a colleague) và ba slide method recap của Break the brief chuyển sang Appendix, không xoá. Lớp cần ôn thì mở lại từ Appendix |
 | Running example | App giao đồ ăn                                                                                                                           |
 
 ---
@@ -383,32 +383,32 @@ last_synced: 2026-11-16
 
 ---
 
-### DIAGRAM · Four moves in a chain
+### DIAGRAM · Four ways to use AI in a chain
 - Kicker: Tổng quan
-- Title: Bốn move,\n*một chuỗi*
+- Title: Bốn cách dùng AI,\n*một chuỗi*
 - On-slide:
-  - Brief của business đi qua Move 1, 2, 3, 4 rồi ra research question
-  - Mỗi move ra một thứ lưu vào hub: câu vấn đề, việc cần xác nhận, assumption kèm quote, evidence kèm ID
-  - Mỗi thứ là đầu vào của move sau
+  - Brief của business đi qua Cách dùng AI 1, 2, 3, 4 rồi ra research question
+  - Mỗi cách dùng ra một thứ lưu vào hub: câu vấn đề, việc cần xác nhận, assumption kèm quote, evidence kèm ID
+  - Mỗi thứ là đầu vào của cách dùng sau
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần method đã nói ba việc của Break the brief. Slide này cho thấy bốn move của AI nằm ở đâu trong chuỗi đó.
+  - Phần method đã nói ba việc của Break the brief. Slide này cho thấy bốn cách dùng AI nằm ở đâu trong chuỗi đó.
   - Đọc từ trái sang phải:
-    - Move 1 biến brief thành câu vấn đề.
-    - Move 2 phản biện scope viết theo vấn đề đó.
-    - Move 3 đào những giả định brief đang tin ngầm.
-    - Move 4 tìm trong hub xem mỗi giả định đã có nguồn chưa.
-  - Mỗi move ra một thứ bạn lưu vào hub, và thứ đó là đầu vào của move sau. Move 3 và Move 4 dùng lại phép kiểm tra quote của phần Ingest.
+    - Cách dùng AI 1 biến brief thành câu vấn đề.
+    - Cách dùng AI 2 phản biện scope viết theo vấn đề đó.
+    - Cách dùng AI 3 đào những giả định brief đang tin ngầm.
+    - Cách dùng AI 4 tìm trong hub xem mỗi giả định đã có nguồn chưa.
+  - Mỗi cách dùng ra một thứ bạn lưu vào hub, và thứ đó là đầu vào của cách dùng sau. Cách dùng AI 3 và Cách dùng AI 4 dùng lại phép kiểm tra quote của phần Ingest.
   - Cuối chuỗi là research question, đầu vào của phần phỏng vấn.
 
-  > Move nào trong bốn move này bạn đang làm tay nhiều nhất?
-- 🎨 Visual hint: DIAGRAM. Bốn box line-art nối bằng mũi tên ngang, box Move 3 viền tím; brief đi vào từ trên, research question đi ra ở dưới.
+  > Cách dùng AI nào trong bốn cách dùng này bạn đang làm tay nhiều nhất?
+- 🎨 Visual hint: DIAGRAM. Bốn box line-art nối bằng mũi tên ngang, box Cách dùng AI 3 viền tím; brief đi vào từ trên, research question đi ra ở dưới.
 
 ---
 
-### COMPARE · Move 1: brief to problem
-- Kicker: AI move 1
+### COMPARE · Cách dùng AI 1: brief to problem
+- Kicker: Cách dùng AI 1
 - Title: Brief thành\n*vấn đề*
 - On-slide:
   - Ví dụ từ brief mẫu của Delivery App (dòng B03)
@@ -520,8 +520,8 @@ last_synced: 2026-11-16
 
 ---
 
-### NUMBERED · Move 2: challenge the scope
-- Kicker: AI move 2
+### NUMBERED · Cách dùng AI 2: challenge the scope
+- Kicker: Cách dùng AI 2
 - Title: Phản biện\n*scope*
 - On-slide:
   - Ví dụ: AI phản biện bản scope mẫu của Delivery App
@@ -532,7 +532,7 @@ last_synced: 2026-11-16
 - Ví dụ: có (scope mẫu của Delivery App)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 1 giúp bạn viết scope theo vấn đề. Move 2 hỏi ngược lại: scope này có thể sai ở đâu?
+  - Cách dùng AI 1 giúp bạn viết scope theo vấn đề. Cách dùng AI 2 hỏi ngược lại: scope này có thể sai ở đâu?
   - Bạn đưa AI bản scope nháp và nhờ nó đóng vai người phản biện, không đóng vai PO. Với mỗi chỗ scope có thể sai, AI nêu ai sẽ phản đối, dấu hiệu sớm, và một câu hỏi cho người thật.
   - Trên scope mẫu, AI chỉ ra ba chỗ:
     - “Khách mới” chưa có định nghĩa
@@ -570,8 +570,8 @@ last_synced: 2026-11-16
 
 ---
 
-### DIAGRAM · Move 3: mine assumptions
-- Kicker: AI move 3
+### DIAGRAM · Cách dùng AI 3: mine assumptions
+- Kicker: Cách dùng AI 3
 - Title: Đào assumption\n*từ tài liệu*
 - On-slide:
   - Ví dụ: brief mẫu của Delivery App, 10 dòng từ B01 đến B10
@@ -581,7 +581,7 @@ last_synced: 2026-11-16
 - Ví dụ: có (brief mẫu: 18 dòng, 17 dòng đạt)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 2 cho bạn bản scope. Move 3 tìm xem brief còn đang tin điều gì mà chưa nói ra.
+  - Cách dùng AI 2 cho bạn bản scope. Cách dùng AI 3 tìm xem brief còn đang tin điều gì mà chưa nói ra.
   - Giả định nguy hiểm nhất thường nằm sau câu về giải pháp. “Onboarding sẽ giữ chân khách” ngầm nói rằng khách rời đi vì không hiểu app.
   - Bốn bước:
     - Đưa AI brief, PRD hoặc research cũ, mỗi dòng có ID
@@ -595,8 +595,8 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 4: audit the evidence
-- Kicker: AI move 4
+### COMPARE · Cách dùng AI 4: audit the evidence
+- Kicker: Cách dùng AI 4
 - Title: Kiểm tra evidence\n*trong hub*
 - On-slide:
   - Ví dụ: 18 ghi chú mẫu của Delivery App (review và bài trên forum)
@@ -607,7 +607,7 @@ last_synced: 2026-11-16
 - Ví dụ: có (assumption mẫu và 18 ghi chú R và F)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 3 ra danh sách assumption. Move 4 hỏi: trong hub đã có gì để ủng hộ hoặc bác từng cái?
+  - Cách dùng AI 3 ra danh sách assumption. Cách dùng AI 4 hỏi: trong hub đã có gì để ủng hộ hoặc bác từng cái?
   - Với mỗi assumption, AI tìm ghi chú ủng hộ và ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn. Không tìm thấy thì ghi đúng cụm “chưa có nguồn”.
   - Kết quả trên 18 ghi chú mẫu (review và diễn đàn):
     - Khung giờ giao: bốn ghi chú ủng hộ, evidence mạnh

@@ -65,7 +65,7 @@ Chương trình chưa phù hợp nếu bạn:
 |---|---|---|---|
 | 1 | Your Design Process, with AI | Nền tảng | Project folder sẵn sàng làm việc với AI, quy tắc dữ liệu của riêng bạn và hướng đi nghề nghiệp bạn chọn |
 | 2 | Discover the Problem | Discover | Bộ nguyên tắc để AI đối chiếu, và các file phá brief: câu hỏi nghiên cứu, đánh giá trải nghiệm, điều đang tin, đối thủ |
-| 3 | Insights You Can Trust | Discover, Define | Insight, persona, journey map và cơ hội mà bạn chỉ ra được nguồn gốc của từng dòng, cùng một problem brief |
+| 3 | Insights You Can Trust | Discover, Define | Insight, persona, journey map và cơ hội mà bạn chỉ ra được nguồn gốc của từng dòng, cùng một design challenge và bản đầu problem brief |
 | 4 | Explore Ideas | Define, Develop | Giả thuyết kiểm chứng được, ba hướng khác nhau thật sự, và một hướng đã chọn có lý do kèm luồng trải nghiệm |
 | 5 | AI Prototyping | Develop | Prototype dựng bằng AI theo design system của riêng bạn, sẵn sàng đem đi test |
 | 6 | Test with Real Users, rồi wrap-up | Develop, Deliver | Kết quả test với người dùng thật, prototype đã sửa theo finding, bài trình bày project và hub hoàn chỉnh |

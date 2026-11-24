@@ -1,13 +1,13 @@
-# Bốn move của Break the brief: Delivery App (fictional)
+# Bốn cách dùng AI của Break the brief: Delivery App (fictional)
 
 Dùng trong Lesson 2, mục "Break the brief". Bốn prompt chạy trên dữ liệu mẫu:
 
 - `brief-notes-plain.txt`: brief của business, 10 dòng dạng `ID | text` (B01 đến B10).
 - `source-notes-plain.txt`: chỉ lấy 18 dòng R và F (review công khai và bài đăng diễn đàn), coi như evidence đang có sẵn trong hub trước khi phỏng vấn.
 
-Mỗi move chạy một lần, trong một phiên riêng, chỉ với file của move đó. Kết quả dưới đây rút gọn, giữ nguyên ý.
+Mỗi cách dùng chạy một lần, trong một phiên riêng, chỉ với file của cách dùng đó. Kết quả dưới đây rút gọn, giữ nguyên ý.
 
-## Move 1: Brief thành vấn đề
+## Cách dùng AI 1: Brief thành vấn đề
 
 **Prompt**
 
@@ -21,7 +21,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với file của
 - B02 vừa là vấn đề vừa là assumption ("giá là lý do chính"). B07 nói giảm giá ít tác dụng, ngược với B02. B10 có "hài lòng" nhưng chưa có cách đo.
 - Nhận xét thêm: B06 cấm đổi giá, nên cả hai giải pháp B03 và B04 đều không đụng vào nguyên nhân mà B02 nêu.
 
-## Move 2: Phản biện scope
+## Cách dùng AI 2: Phản biện scope
 
 Bản scope nháp đưa vào: business question, quyết định, outcome 41% lên 50%, metric 30-day second-order rate, guardrail hủy đơn không vượt 22%, ràng buộc (không đổi giá, hai nền tảng, sáu tuần), điều đang tin (giá, khách chưa hiểu app) và agreement status pending.
 
@@ -40,7 +40,7 @@ Bản scope nháp đưa vào: business question, quyết định, outcome 41% l�
 
 **Điều cần nhớ:** đây là danh sách giả thuyết để hỏi người thật, không phải sự thật về business. AI không biết "khách mới" của công ty bạn nghĩa là gì. Câu trả lời vẫn do người thật đưa.
 
-## Move 3: Đào assumption từ tài liệu
+## Cách dùng AI 3: Đào assumption từ tài liệu
 
 **Prompt**
 
@@ -60,7 +60,7 @@ Bản scope nháp đưa vào: business question, quyết định, outcome 41% l�
 
 **Điều cần tự lọc:** 18 dòng là nhiều. Có dòng chỉ là sự kiện (B01 nói mức hiện tại 41%), có dòng trùng nhau (hai dòng cho B03, hai dòng cho B08). Mức quan trọng là việc của bạn.
 
-## Move 4: Kiểm tra evidence cho từng assumption
+## Cách dùng AI 4: Kiểm tra evidence cho từng assumption
 
 Assumption đưa vào (`ID | text`):
 
@@ -90,6 +90,6 @@ Assumption đưa vào (`ID | text`):
 
 ## Giới hạn chung
 
-- Một dự án mẫu, một mô hình, một lần chạy mỗi move. Kết quả đổi giữa các lần chạy và giữa các mô hình.
+- Một dự án mẫu, một mô hình, một lần chạy mỗi cách dùng. Kết quả đổi giữa các lần chạy và giữa các mô hình.
 - Brief mẫu được viết có chủ ý chứa giả định ngầm và mâu thuẫn (B02 và B07, B02 và B06), nên đây là trường hợp dễ. Brief thật thường dài, mơ hồ và ít mâu thuẫn rõ như vậy.
 - Đây là cách làm của khoá, được thử trên bộ mẫu, chưa phải kết quả đo hiệu quả trên nhiều dự án.

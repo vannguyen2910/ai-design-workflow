@@ -1,18 +1,18 @@
-# Sáu AI move của Lesson 3: Delivery App (fictional)
+# Sáu cách dùng AI của Lesson 3: Delivery App (fictional)
 
 Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prompt chạy trên dữ liệu mẫu:
 
 - `insights-plain.txt`: chín insight có ID (IN-01 đến IN-09), dạng `ID | text`.
 - `persona-draft-plain.txt`: sáu dòng persona nháp (L1 đến L6), dạng `ID | text`. Dòng L2 bịa, dòng L4 đi ngược dữ liệu.
-- `journey-map-draft.md`: một journey map nháp do AI dựng từ persona và insight (Move 3).
+- `journey-map-draft.md`: một journey map nháp do AI dựng từ persona và insight (Cách dùng AI 3).
 - `opportunities-draft-plain.txt`: năm dòng opportunity nháp của team, ba trong số đó đã là giải pháp.
 - `source-notes-plain.txt`: 24 ghi chú gốc.
 
-Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file của move đó. Kết quả dưới đây rút gọn, giữ nguyên ý.
+Mỗi cách dùng chạy một lần, trong một phiên riêng, chỉ với các file của cách dùng đó. Kết quả dưới đây rút gọn, giữ nguyên ý.
 
 ## Persona
 
-### Move 1: Soát nguồn từng dòng
+### Cách dùng AI 1: Soát nguồn từng dòng
 
 **Prompt**
 
@@ -33,7 +33,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 **Điều bạn tự quyết:** AI bắt được dòng 2 (bịa) và dòng 4 (đi ngược dữ liệu). Bạn xoá dòng 2, đổi dòng 4 thành "giá không phải lý do chính (IN-04)", và làm mềm dòng 6.
 
-### Move 2: Gom nhóm hành vi, blind rồi primed
+### Cách dùng AI 2: Gom nhóm hành vi, blind rồi primed
 
 **Prompt lần 1 (blind)**
 
@@ -54,7 +54,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 ## Journey map
 
-### Move 3: Dựng map không cần persona, rồi so
+### Cách dùng AI 3: Dựng map không cần persona, rồi so
 
 **Prompt (không persona)**
 
@@ -72,7 +72,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 **Điều cần thấy khi so:** bản có persona điền thêm ô "chọn món" và gắn IN-05, nhưng IN-05 chỉ nói khách đánh giá cao sự đa dạng và chất lượng món, chưa nói họ duyệt menu hay thấy vui ở bước đó. Persona kéo AI điền quá tay, và insight ID gắn vào vẫn trông hợp lý. Bản không persona thật hơn nhưng trống hơn.
 
-### Bước thêm (không phải move trên lớp): Tìm ô thiếu insight
+### Bước thêm (không phải cách dùng AI trên lớp): Tìm ô thiếu insight
 
 **Prompt**
 
@@ -87,7 +87,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 **Giới hạn:** AI tự nêu mức "căn cứ không khớp" ở các ô sát ranh giới là đánh giá của nó, có thể chặt hoặc lỏng hơn bạn. Hai cách tính tỷ lệ ra hai con số khác nhau, nên bạn chọn một cách và dùng nhất quán.
 
-### Move 4: Soát đường cảm xúc
+### Cách dùng AI 4: Soát đường cảm xúc
 
 **Prompt**
 
@@ -105,7 +105,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 ## Opportunity
 
-### Move 5: Bắt câu dạng giải pháp
+### Cách dùng AI 5: Bắt câu dạng giải pháp
 
 **Prompt**
 
@@ -123,7 +123,7 @@ Mỗi move chạy một lần, trong một phiên riêng, chỉ với các file 
 
 AI tự nhận ra O5 viết lại trùng với O2, nên hai dòng là một need.
 
-### Move 6: Thử ba giải pháp
+### Cách dùng AI 6: Thử ba giải pháp
 
 **Prompt**
 
@@ -135,7 +135,7 @@ AI tự nhận ra O5 viết lại trùng với O2, nên hai dòng là một need
 
 ## Giới hạn chung
 
-- Một dữ liệu mẫu, một mô hình, một lần chạy mỗi move. Kết quả đổi giữa các lần chạy và giữa các mô hình.
+- Một dữ liệu mẫu, một mô hình, một lần chạy mỗi cách dùng. Kết quả đổi giữa các lần chạy và giữa các mô hình.
 - Dữ liệu mẫu được viết có chủ ý, với một dòng persona bịa và một dòng đi ngược dữ liệu, nên đây là trường hợp dễ cho AI. Dữ liệu thật thường mơ hồ hơn.
 - Phép kiểm bằng chương trình chỉ chứng minh ID hoặc quote có thật. Nó không chứng minh ID đó đỡ đúng dòng, và đó là việc bạn đọc.
 - Đây là cách làm của khoá, được thử trên bộ mẫu, chưa phải kết quả đo hiệu quả trên nhiều dự án.

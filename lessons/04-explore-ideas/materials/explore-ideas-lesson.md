@@ -13,7 +13,7 @@ slides: "https://claude.ai/artifact/4w6AdUVyfeuq8A3RJeMV18"
 previous-session: "Turn Research into Insights You Can Trust"
 next-session: "AI Prototyping"
 ---
-Lesson 3 dừng ở một map đi từ Goal hoặc Problem xuống Opportunity, và mỗi opportunity dẫn về insight ID. Buổi này kéo dài chính map đó xuống Solution. Từ solution, bạn đi tiếp đến một concept vẽ được ra giấy, rồi đến user flow và process map cho hướng đã chọn.
+Lesson 3 dừng ở một map đi từ Goal hoặc Problem xuống Opportunity, cùng một design challenge trong problem brief, và mỗi opportunity dẫn về insight ID. Buổi này kéo dài chính map đó xuống Solution. Từ solution, bạn đi tiếp đến một concept vẽ được ra giấy, rồi đến user flow và process map cho hướng đã chọn.
 
 > **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** Bạn nghĩ solution trước, AI mở rộng sau. Flow narrative được kiểm tra trước, diagram vẽ sau.
 
@@ -40,7 +40,7 @@ Xem cấu trúc 90 phút trong [lesson-structure.html](../assets/lesson-structur
 
 ## 1. From opportunity to solution
 
-Lesson 3 kết thúc ở opportunity. Phần này đi tiếp một bước trên cùng một map.
+Lesson 3 kết thúc ở opportunity và design challenge. Phần này đi tiếp một bước trên cùng một map, và design challenge là thước đo cho các solution.
 
 ### 1.1 One map, one more level
 
