@@ -22,15 +22,17 @@ Chúng ta dựng prototype từ design system riêng bằng rules file, thay vì
 1. The Aim: vì sao dựng từng màn hình thì lệch dần
 2. One View: nền chuẩn và bốn layer
 3. The Second View: prototype thật
-4. Gate, Rules and Skill
+4. Các lớp kiểm soát: Rules, Skill và Hook
+5. Share prototype: đưa prototype đến tay team
 
 ## Sau buổi học, bạn có thể
 
 1. Giải thích vì sao dựng từng màn hình từ đầu thì kết quả lệch dần, và vì sao Design Pattern đi trước màn hình
 2. Phân biệt token, component, template và shell, gọi tên cả bộ là Design Pattern, và chỉ ra layer nào còn thiếu trong design system đang có
 3. Phân biệt One View (nền chuẩn) với The Second View (prototype thật), và nêu vì sao thay đổi ở nguồn chỉ tự cập nhật sang ở layer token
-4. Nêu vai trò của Gate, Rules và Skill, và hai nhóm quy tắc của một rules file (quy tắc hệ thống, quy tắc làm việc)
+4. Nêu vai trò của Rules, Skill và Hook, và hai nhóm quy tắc của một rules file (quy tắc hệ thống, quy tắc làm việc)
 5. Nhận ra một màn hình do AI dựng vi phạm quy tắc bằng cách đối chiếu với rules file và component có sẵn, và nêu giới hạn của prototype: là bản tham chiếu và thứ để test
+6. Chọn cách chia sẻ prototype (file HTML, live site hoặc hub) phù hợp với tình huống
 
 ---
 
@@ -85,7 +87,7 @@ Thông điệp rút ra là suy luận của chương trình: chất lượng đ�
 
 ### 2.1 One View là gì
 
-**One View** là nền chuẩn mà mọi prototype xuất phát từ nó: cùng starter, cấu trúc folder, component và content voice. Trong One View có bốn layer (2.2) và một journey chuẩn (2.4). Trong khoá AI Prototype Development, One View là trang `design-system.html`: một trang gom token, component inventory, template và shell, nơi bạn kiểm tra hệ thống trước khi dựng màn hình. The Second View là prototype dựng từ trang này.
+**One View** là nền chuẩn mà mọi prototype xuất phát từ nó: cùng parent prototype, cấu trúc folder, component và content voice. Trong One View có bốn layer (2.2) và một journey chuẩn (2.4). Trong khoá AI Prototype Development, One View là trang `design-system.html`: một trang gom token, component inventory, template và shell, nơi bạn kiểm tra hệ thống trước khi dựng màn hình. The Second View là prototype dựng từ trang này.
 
 **Content voice** là cách đặt nhãn, thông báo và thuật ngữ nhất quán giữa các màn hình. Ví dụ trong Delivery App: luôn gọi là "Đơn hàng", không lúc "Đơn" lúc "Order".
 
@@ -132,7 +134,7 @@ Phạm vi của prototype ở buổi này là **một shell và một journey**:
 
 ### 2.6 Ví dụ: cùng một màn hình, hai prompt
 
-Cùng màn hình "Chọn thời gian giao", hai kết quả dựng khác nhau. Bản một đến từ prompt mơ hồ: AI tự chọn màu, tự thêm thanh điều hướng và đặt tên nút theo ý nó. Bản hai đến từ prompt kèm rules file: màn dùng đúng token, đúng component trong inventory và nằm trong shell đã có. Bạn thử chỉ ra bản nào dùng đúng design system trước khi mở file ra đối chiếu.
+Cùng màn hình "Chọn thời gian giao", hai kết quả dựng khác nhau. Bản một đến từ prompt mơ hồ: AI tự chọn màu, tự thêm thanh điều hướng và đặt tên nút theo ý nó. Bản hai đến từ prompt kèm rules file: màn dùng đúng token, đúng component trong inventory và nằm trong shell đã có. Hai bản được dựng sẵn trước buổi dạy, không chạy trực tiếp. Bạn thử chỉ ra bản nào dùng đúng design system trước khi mở file ra đối chiếu.
 
 ---
 
@@ -170,7 +172,7 @@ flowchart LR
   RV -. "sửa ở layer rộng nhất<br/>mà lỗi còn đúng" .-> SH
 ```
 
-Skill `prototype` của toolkit có thêm các gate kiểm (đối chiếu kế hoạch, bàn phím, hai độ rộng, giá trị thô) và được dùng ở bài tập về nhà.
+Skill `prototype` của toolkit có thêm các điểm kiểm tra, từ Check A đến E (đối chiếu kế hoạch, bàn phím, hai độ rộng, giá trị thô) và có thể dùng ở bài tập (tuỳ chọn).
 
 ### 3.4 Sửa ở đúng layer
 
@@ -204,27 +206,33 @@ Sơ đồ: mỗi requirement gắn vào một element. Mở [ai-pattern-link.htm
 ### 3.6 Prototype là gì, và cái gì đi cùng nó
 
 - **Là:** bản tham chiếu cho developer và thứ để test với người dùng.
-- **Không là:** code production, hay bằng chứng rằng thiết kế đúng. Prototype chạy được chỉ cho thấy ý tưởng **có thể** hoạt động, chưa cho thấy nó **có** hoạt động.
+- **Không là:** code production, hay bằng chứng rằng thiết kế đúng. Prototype chạy được chỉ cho thấy ý tưởng **có thể** hoạt động, chưa cho thấy nó **có** hoạt động; buổi test ở Lesson 6 mới cho thấy điều đó.
 
 Khi chuyển cho người khác, ba thứ đi cùng prototype: link chạy được, rules file, và danh sách điều chưa làm (state chưa dựng, nội dung giả, màn hình thiếu).
 
 ---
 
-## 4. Gate, Rules and Skill
+## 4. Các lớp kiểm soát: Rules, Skill và Hook
 
-### 4.1 Ba thành phần kiểm soát
+### 4.1 Ba lớp kiểm soát
 
 | Lớp | Là gì | Dùng để |
 |---|---|---|
-| **Gate** | Điểm dừng kiểm tra giữa các bước: các gate của skill `prototype` (design system, shell, kế hoạch, review, điều chưa làm) | Dừng lại kiểm trước khi đi tiếp |
 | **Rules** | Rules file: các quy tắc AI đọc trước mỗi lần dựng | Giữ AI trong One View |
 | **Skill** | Các bước và prompt mà AI tool làm theo | Làm quy trình có thể dùng lại |
+| **Hook** | Bước kiểm tra máy tự chạy mỗi khi AI làm xong một việc | Bắt lỗi có đúng sai rõ mà không cần ai nhớ |
 
-Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong `AGENTS.md`; Uber dùng một skill riêng cho mỗi mục của spec. Cả hai là cách giữ cho quy trình không nằm trong trí nhớ của một người.
+Ba lớp nằm ở ba thời điểm: rules trước khi dựng, skill trong lúc dựng, hook sau mỗi việc. Rules và skill là thứ AI đọc và làm theo; hook là việc máy làm. Việc cần phán đoán, như màn này có dễ dùng không, vẫn là của bạn.
 
-### 4.2 Mười quy tắc của rules file
+Atlassian cài bộ skill vào repo kèm một chỉ dẫn ngắn trong `AGENTS.md`; Uber dùng các skill riêng cho từng loại spec, ví dụ spec screen reader. Cả hai là cách giữ cho quy trình không nằm trong trí nhớ của một người.
 
-Rules file là file AI tool đọc trước mỗi lần dựng; mỗi dòng là một quy tắc kiểm tra được. Bộ mẫu của buổi này gồm mười quy tắc, chia hai nhóm: năm quy tắc về hệ thống (AI được phép dùng gì) và năm quy tắc về cách làm việc.
+### 4.2 Rules là gì
+
+Rules file là file quy tắc mà AI đọc trước mỗi lần dựng; mỗi dòng là một quy tắc kiểm tra được. Không có nó thì AI quay về default của nó, và một token còn thiếu dễ biến thành một mã màu tự bịa mà trông vẫn ổn. Ví dụ ở delivery app, quy tắc 1: thiếu component trong inventory thì yêu cầu thêm trước, rồi mới dựng. Bộ mẫu gồm mười quy tắc, nói ở mục 4.3. Rules chỉ là lời nhắc; phần chạy tự động là hook (mục 4.8).
+
+### 4.3 Mười quy tắc của rules file
+
+Bộ mẫu của buổi này gồm mười quy tắc, chia hai nhóm: năm quy tắc về hệ thống (AI được phép dùng gì) và năm quy tắc về cách làm việc.
 
 **Năm quy tắc hệ thống**
 
@@ -244,10 +252,80 @@ Rules file là file AI tool đọc trước mỗi lần dựng; mỗi dòng là 
 
 > **Ghi chú:** quy tắc 1 đến 3 cần nhấn nhất; quy tắc 1 và 2 cùng trả lời câu "đừng dùng gì ngoài design system". Vế sau của quy tắc 2 ngăn một token còn thiếu biến thành một mã màu tự bịa mà trông vẫn ổn. Quy tắc 3 giúp việc cập nhật thay đổi xuống các màn hình khả thi về sau. Quy tắc 7 ngược trực giác: thêm context không giúp mà chỉ mở rộng phạm vi tool có thể sửa. Quy tắc 10: màn do AI dựng thường có focus không nhìn thấy và độ tương phản sát ngưỡng; áp quy tắc lúc dựng không tốn gì, kiểm tra sau thì tốn cả một buổi. Quy tắc 9: "lưu" là lưu một checkpoint (skill `prototype` dùng lệnh "Lưu lại").
 
-### 4.3 Phải cập nhật cùng design system
+### 4.4 Phải cập nhật cùng design system
 
-Rules file và design system có thể lệch nhau khi một bên đổi mà bên kia không đổi. Quy tắc của chương trình: khi thêm component hoặc đổi token, cập nhật `design-system-notes.md` và rules file trong cùng lượt.
+Rules file và design system có thể lệch nhau khi một bên đổi mà bên kia không đổi. Một nguồn agency báo rủi ro này; đó là kinh nghiệm của một agency, chưa phải kết quả đo. Quy tắc của chương trình: khi thêm component hoặc đổi token, cập nhật `design-system-notes.md` và rules file trong cùng lượt.
 
-### 4.4 Quy tắc nhận từ người khác chưa thuộc về bạn
+### 4.5 Quy tắc nhận từ người khác chưa thuộc về bạn
 
-Bộ quy tắc mẫu đến từ kinh nghiệm của người khác. Quy tắc chỉ thật sự thuộc về bạn sau khi bạn dựng một lần, thấy quy tắc nào AI vẫn vi phạm hoặc quy tắc nào thiếu, và tự viết lại bằng lời riêng.
+Bộ quy tắc mẫu đến từ kinh nghiệm của người khác. Quy tắc chỉ thật sự thuộc về bạn sau khi bạn dựng một lần, thấy quy tắc nào AI vẫn vi phạm hoặc quy tắc nào thiếu, và tự viết lại bằng lời riêng. Quy tắc nào chưa có thì viết thêm bằng lời của bạn, đặt ở đầu danh sách. Một quy tắc không bắt được gì chưa chắc là sai: đánh dấu, đừng xoá, xem lại sau journey thứ hai.
+
+### 4.6 Biến pattern thành định luật thiết kế
+
+Nếu chỉ đưa AI một đoạn HTML mẫu của danh sách khung giờ, AI biết nó trông thế nào nhưng không biết khi nào dùng; khi không chắc, AI quay về default của nó. Viết thành một dòng bốn phần thì AI có lý do để chọn. Ví dụ ở màn Chọn thời gian giao của Delivery App:
+
+| Phần | Ví dụ |
+|---|---|
+| Khi | Có hơn 5 khung giờ để chọn |
+| Dùng | Danh sách cuộn (scrolling) |
+| Vì | Chip bị chồng trên small screen |
+| Không dùng cho | Chọn ngày giao |
+
+Sau dòng đầu tiên còn hai việc đi kèm:
+
+- **Ghi ra những thứ AI hay tự thêm**, như nền cream với serif và accent coral, font Inter, card grid kiểu icon, heading một câu kèm nhãn nhỏ phía trên, đánh số 01/02/03 không có thứ tự thật. Mỗi thứ hoặc được giải thích trong một câu hoặc bị thay, và không cần cấm.
+- **Ghi lại mỗi lần bạn loại một kết quả của AI:** trường hợp, lý do, cách kiểm tra. Sau đó chuyển dần thành dòng trong rules file.
+
+Nên giữ rules file là một file markdown của bạn và đưa vào mọi project, thay vì dựa vào việc import design system giữa các tool. Thấy AI lặp lại một lỗi thì ghi vào rules file ngay, đừng sửa lại mỗi ngày; ví dụ chữ trắng trên nền vàng khó đọc, hoặc khoảng cách không được nhỏ hơn 16px. Viết một lần thì AI tự kiểm tra ở mọi màn.
+
+Mười quy tắc nói AI không được làm gì; dòng bốn phần nói khi nào chọn pattern nào. Không cần cấm mọi default của AI; chỉ không để default xuất hiện ngẫu nhiên. Nguồn: lời kể của người dùng trên Reddit, chưa phải nghiên cứu đo.
+
+### 4.7 Skill là gì
+
+Skill là các bước và prompt mà AI tool làm theo, gói lại thành một quy trình dùng lại được. Rules là quy tắc cố định; skill là các bước của một quy trình. Skill `prototype` của toolkit đi từ design system, shell, Screen plan và journey, đến review và Known gaps, và có một chỗ để bạn kiểm tra sau mỗi bước. Trong toolkit, các chỗ kiểm tra này được đặt tên Check A đến E (xem Practice 5). Skill là file do bạn kiểm soát. Bản copy trong project của bạn sẽ không tự đổi khi bạn chưa biết, vì nó chỉ là một file nằm trong folder. Bạn nên ghi phiên bản hoặc ngày vào đầu `SKILL.md`. Nhiều công ty cũng không cho skill, plugin hay connector tự cập nhật, vì phần được nạp vào có thể đổi sau khi đã được duyệt.
+
+### 4.8 Hook: bước kiểm tra tự chạy (nâng cao)
+
+Rules file là lời nhắc, và AI có thể bỏ sót khi dựng nhiều màn liên tiếp. Hook là bước kiểm tra tự chạy mỗi khi AI làm xong một việc, không cần ai nhớ. Phần kiểm tra bằng mắt vẫn là của bạn; hook là phần kiểm tra mà máy làm thay. Ví dụ ở delivery app: AI vừa dựng xong màn Chọn thời gian giao, hook tự kiểm tra màn đó có đủ state loading, empty, error và không có mã màu viết tay ngoài token. Thiếu thì báo ngay, trước khi bạn mở màn ra xem.
+
+Mỗi hook có hai phần: sự kiện kích hoạt (AI sửa xong một file, xong một lượt việc) và việc tự chạy theo (một lệnh kiểm tra, một thông báo). Thường developer hoặc người rành tool cài đặt; phần của designer là quyết định kiểm tra cái gì, tức các quy tắc bạn viết ở mục 4.3. Hook chỉ bắt được lỗi có đúng sai rõ, như thiếu state, token sai, nhãn lệch. Việc cần phán đoán, như màn này có dễ dùng không, vẫn cần designer và người dùng thật ở Lesson 6.
+
+Hook phổ biến chia theo thời điểm chạy: trước khi AI làm (chặn, ví dụ chặn sửa file token), sau mỗi lần AI sửa (kiểm: tìm màu và cỡ chữ viết tay ngoài token, kiểm tra component nằm trong inventory, tương phản, vùng chạm 44 px, một h1), và khi AI xong lượt việc (báo: nhắc ghi điều chưa làm, gửi thông báo cho team). Đây là phần nâng cao: designer không cần cài hook, chỉ cần nói được mình muốn kiểm gì ở thời điểm nào. Tên gọi và cách cài hook khác nhau theo từng tool; buổi này chỉ dạy khái niệm. Mức cơ sở: một số AI tool dạng agent có tính năng hook; cách ghép với design system là đề xuất của khoá, chưa phải cách làm do khoá đo. Hook tự chạy lệnh trên máy bạn, nên nhóm security thường xem rất kỹ. Bạn nhờ developer cài, và cho security xem lệnh của hook trước khi dùng.
+
+### 4.9 Package trong toolkit (tuỳ chọn)
+
+Toolkit của khoá có sẵn hai lớp đầu trong thư mục `toolkit/skills/prototype/`: rules là `starter/project-rules.md` (mười quy tắc để copy vào project rồi viết lại) và skill là `SKILL.md` (các bước và prompt từ design system đến Known gaps). Các công ty lớn để rules trong repo, thường là file `AGENTS.md` mà nhiều tool tự đọc; bản khởi đầu `project-rules.md` được copy vào `AGENTS.md` (hoặc file rules mà tool của bạn đọc) rồi viết lại. Cách dùng: copy thư mục `starter` thành `work/prototype/`, đưa `project-rules.md` cho AI tool ở mỗi lần dựng, và chạy các bước của skill theo thứ tự. Không bắt buộc; bạn có thể tự viết rules của mình. Hook thì toolkit chưa có bản mẫu; Hook là phần nâng cao ở mục 4.8: khi cần, nhờ developer cài. Skill `prototype` đang ở trạng thái draft, chưa thử với lớp thật.
+
+Khi cần cập nhật skill, bạn đọc phần thay đổi, thử trên project mẫu rồi mới đưa vào project thật. Với skill hoặc plugin lấy từ nguồn bên ngoài, bạn không nên bật cập nhật tự động. Hãy chọn một phiên bản đã đọc và giữ nguyên cho đến khi bạn đọc xong bản mới.
+
+Bộ này là cách khoá xếp lại các thực hành có thật, không phải một package có sẵn của các công ty lớn. Các công ty không đóng gói thành một bộ: skill và MCP được phát hành qua npm hoặc registry, rules nằm trong repo, và việc kiểm tra chạy bằng lint, CI hoặc hook. Chưa tìm thấy case study công khai nào dùng đủ cả bộ.
+
+---
+
+## 5. Share prototype
+
+Prototype chạy được rồi thì bước tiếp theo là đưa nó đến người cần xem.
+
+### 5.1 Vì sao prototype code cần cách chia sẻ riêng
+
+Với Figma, bạn gửi link file và người xem có thể comment ngay. Prototype code thì không có sẵn bước đó, nên bạn phải chọn cách chia sẻ. Figma file thường chỉ nằm trong team design; stakeholder cần xem prototype chạy được.
+
+### 5.2 Ba cách chia sẻ
+
+| Cách | Là gì | Dùng khi |
+|---|---|---|
+| 1. File HTML | Gửi một file qua Slack, email hoặc Drive | Bản nháp nhanh, một người xem |
+| 2. Live site | Host trên GitHub, một link duy nhất | Mặc định nên dùng |
+| 3. Prototype hub (tuỳ chọn) | Một trang chung liệt kê mọi prototype của product | Product có nhiều prototype và khó tìm |
+
+### 5.3 Cách 1: gửi file HTML
+
+File HTML mở được ngay trên trình duyệt, nên là cách nhanh nhất. Vấn đề nằm ở việc theo dõi: sau vài vòng sửa, bạn có `prototype.html`, `prototype_v2.html` và `prototype_final.html` nằm rải rác ở Slack, email và Drive, và không biết người xem đang mở bản nào. Cách này không nên dùng cho bản stakeholder cần xem nhiều lần. Nếu file lớn hơn giới hạn gửi thì chuyển sang live site.
+
+### 5.4 Cách 2: live site trên GitHub
+
+Ba bước: push prototype lên repo GitHub, bật GitHub Pages để repo thành website có một link, rồi gửi link cho stakeholder. Link giữ nguyên; bạn push bản mới thì mọi người cùng thấy bản mới. Đây là mặc định nên dùng vì giải quyết chính vấn đề của cách 1: chỉ có một bản. Chỗ này cần cẩn thận: với repo public, GitHub Pages khiến cả prototype và mọi dữ liệu trong đó đều public, ai có link cũng mở được. Bạn chỉ nên đưa dữ liệu giả hoặc dữ liệu đã ẩn danh lên, và kiểm tra ai mở được site trước khi đưa bất kỳ thứ gì thật. Repo public hay private tuỳ chính sách của công ty `[to confirm]`; GitHub Pages với repo private có thể cần gói trả phí `[to confirm]`. Vercel hay Netlify cũng được, nguyên tắc giống nhau: một link cho một bản mới nhất. Các bước làm nằm ở Step 9 của practice.
+
+### 5.5 Cách 3: prototype hub
+
+Hub là một trang chung liệt kê mọi prototype của product, mỗi prototype có link, ngày cập nhật và người phụ trách, giúp team khỏi hỏi "link ở đâu". Đây là tuỳ chọn: nếu product chỉ có vài prototype thì live site là đủ. Cần hub khi bạn mất thời gian tìm link hoặc phải trả lời "đây có phải bản mới nhất không?". Hub có thể là một trang mở rộng của Knowledge Hub hoặc một hub riêng `[to confirm]`.

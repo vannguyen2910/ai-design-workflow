@@ -1,6 +1,6 @@
 ---
 title: "Discover Your Project"
-summary: "Chuỗi việc ở nhà: principles, scope, assumption và research question, chuẩn bị và phỏng vấn user thật, rồi đưa transcript vào hub thành source notes đã kiểm tra quote."
+summary: "Chuỗi việc ở nhà: principles, scope, assumption và research question, chuẩn bị và phỏng vấn user thật, rồi đưa transcript vào hub thành evidence note đã kiểm tra quote."
 type: practice
 program: ai-design-workflow
 lesson: discover-the-problem
@@ -9,7 +9,7 @@ draft: true
 
 ## Goal
 
-Đưa project của khoá đi qua stage Discover, đến trước bước synthesis. Cuối bài bạn có bộ principles, scope, ba assumption hàng đầu, các research question, transcript đã ẩn danh của ít nhất hai buổi phỏng vấn người thật, và source notes có ID với quote đã kiểm tra bằng chương trình. Từ Lesson 3, bạn rút insight từ chính các source notes này.
+Đưa project của khoá đi qua stage Discover, đến trước bước synthesis. Cuối bài bạn có bộ principles, scope, ba assumption hàng đầu, các research question, transcript đã ẩn danh của ít nhất hai buổi phỏng vấn người thật, và evidence note có mã với quote đã kiểm tra bằng chương trình. Từ Lesson 3, bạn rút insight từ chính các evidence note này.
 
 Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết định đặt chúng ở đâu và đặt tên thế nào trong folder của mình.
 
@@ -37,7 +37,7 @@ Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết đ�
 
 ### Step 2 · Business question và scope · AI soạn nháp, bạn kiểm tra
 
-- **Cách dùng AI 1, brief thành vấn đề:** đưa AI brief của project, mỗi dòng có ID (`B01 | ...`). Nhờ AI phân loại từng dòng (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc) và viết lại mỗi dòng giải pháp thành một câu vấn đề, kèm điều giải pháp đó đang ngầm giả định. Bạn kiểm tra bản viết lại có đổi nghĩa không.
+- **Cách dùng AI 1, brief thành vấn đề:** đưa AI brief của project, đánh số từng dòng (`1 | ...`) để AI chỉ đúng chỗ. Nhờ AI phân loại từng dòng (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc) và viết lại mỗi dòng giải pháp thành một câu vấn đề, kèm điều giải pháp đó đang ngầm giả định. Bạn kiểm tra bản viết lại có đổi nghĩa không.
 - **Bạn viết:** một business question tách khỏi giải pháp, và quyết định mà câu trả lời sẽ phục vụ.
 - **AI soạn nháp:** năm câu hỏi cho business, mỗi câu một ý: outcome, success metric, baseline, constraints, timeline và người quyết định.
 - **Bạn kiểm tra:** sửa câu cho trung lập, rồi ghi vào scope. Câu đã có trả lời là "confirmed". Câu chưa có thì ghi "assumed" kèm người cần xác nhận. Không nhờ AI trả lời thay.
@@ -45,7 +45,7 @@ Mỗi step cho ra một output bạn lưu lại được. Bạn tự quyết đ�
 
 ### Step 3 · Challenge assumptions · AI soạn nháp, bạn kiểm tra
 
-- **Cách dùng AI 3, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh, mỗi dòng có ID). Nhờ AI trả mỗi assumption một dòng `assumption | line IDs | quote`, với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm tra quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
+- **Cách dùng AI 3, đào assumption từ tài liệu:** đưa AI brief, PRD hoặc research cũ của project (đã ẩn danh). Nhờ AI trả mỗi assumption một dòng `assumption | vị trí | quote` (vị trí là số dòng, đề mục hoặc số trang), với quote chép nguyên văn, gồm cả assumption ngầm trong câu về giải pháp. Mở từng dòng trích và so quote bằng mắt; bạn chạy kiểm tra quote bằng chương trình ở Step 9 và có thể quay lại chạy cho bảng này.
 - **Bạn lọc:** bỏ dòng trùng và dòng chỉ là sự kiện. Sửa ít nhất hai assumption cho cụ thể hơn.
 - **Cách dùng AI 4, kiểm tra evidence trong hub:** đưa AI danh sách assumption còn lại và các ghi chú đang có trong hub (review, ticket, analytics, research cũ; hub trống thì để trống). Nhờ AI tìm ghi chú ủng hộ và ghi chú đi ngược, kèm ID và quote nguyên văn, và ghi "chưa có nguồn" khi không có.
 - **Bạn kiểm tra:** đọc từng ghi chú AI trích có thật sự ủng hộ assumption đó không. AI hay gọi kiến thức chung là "đã có evidence": chưa có file nguồn thì ghi "chưa có nguồn".
@@ -97,20 +97,22 @@ Script là lưới an toàn, không phải khuôn.
 
 ## Phần C · Ingest vào hub
 
-### Step 9 · Ingest: transcript thành source notes · AI soạn nháp, bạn kiểm tra
+### Step 9 · Ingest: transcript thành evidence note · AI soạn nháp, bạn kiểm tra
 
-1. **Cắt.** Bạn cắt mỗi transcript đã ẩn danh thành source notes (nếu nhờ AI cắt giúp, hãy so từng note với transcript, vì AI có thể diễn giải lại lời người nói): mỗi note một ý, giữ nguyên lời người nói, mỗi note một ID dạng `I01-03` (phỏng vấn 01, note 03). Lưu mỗi note một dòng, dạng `ID | text`. Định dạng này cố định để chương trình đọc được; chỗ lưu file do bạn chọn. Hai buổi phỏng vấn cho khoảng 10 đến 20 note, và thế là đủ: phép kiểm tra ở bước 3 kiểm tra quote do AI đưa ra, không kiểm tra số lượng note của bạn. Không sửa transcript đã ẩn danh.
-2. **Trích.** Đưa AI chat tool các note đã ẩn danh và dùng instruction sau. Đây chỉ để có thứ để kiểm; tổng hợp đầy đủ nằm ở Lesson 3.
+1. **Viết.** Từ mỗi transcript đã ẩn danh, bạn viết evidence note, hoặc nhờ AI soạn nháp rồi kiểm tra từng note. Mỗi buổi phỏng vấn có một file ghi chú, và mỗi note là một mục `##` trong file đó, ghi một quan sát của một participant về một chủ đề:
+   - Tiêu đề là observation, viết trung tính: điều participant làm hoặc nói, chưa có nguyên nhân, đánh giá hay giải pháp.
+   - Một đến ba quote nguyên văn, mỗi quote dạng `> "quote" (I01, turn 04)`, trong đó `04` là số lượt trong transcript.
+   - Dưới đề mục của mỗi note có `id` (mã outcome trong Scope cộng số thứ tự, ví dụ `RET-02`), `outcome`, `status`, `confidence`, `source` và `tags`. `confidence` để `low` vì mỗi note chỉ có một participant, và do bạn đặt, không do AI.
 
-   > Chỉ dùng các ghi chú dưới đây. Đề xuất tối đa ba insight. Với mỗi insight, trả về một dòng có dạng `insight | note ID | một quote nguyên văn từ note đó`. Không diễn giải lại quote. Nếu không có quote phù hợp, ghi "unknown".
+   Bộ mẫu nằm ở thư mục `evidence/` của course case, gồm `I01.md`, `I02.md` (mỗi buổi phỏng vấn một file) và `tags.md`. Transcript cần có số lượt ở đầu mỗi dòng để quote trỏ tới được; chỗ lưu folder do bạn chọn. Hai buổi phỏng vấn cho khoảng 8 đến 20 note là đủ. Không sửa transcript đã ẩn danh.
+2. **Kiểm.** Đưa AI coding tool instruction trong [check-evidence-instruction.md](../../../assets/starter-files/course-case/check-evidence-instruction.md), kèm đường dẫn tới folder file ghi chú và folder transcript. Script in ra từng quote và từng note đạt hay không đạt.
+3. **Sửa.** Với mỗi chỗ không đạt: mở transcript ở lượt được ghi, so với quote, rồi sửa quote hoặc số lượt cho đúng, hoặc hỏi lại AI chat tool kèm danh sách không đạt. Chạy lại cho tới khi không còn chỗ không đạt. Sau đó đọc lại tiêu đề của từng note cạnh quote của nó: tiêu đề có nói đúng điều participant đã nói, và không thêm kết luận không? Phép kiểm tra chỉ cho biết quote có thật trong transcript, không cho biết tiêu đề đúng.
+4. **Đặt status.** Note đã qua kiểm tra và bạn đã đọc lại thì đổi `status` thành `checked`.
+5. **Đặt tag từ bộ cố định.** Tạo file `tags.md` với vài chục tag hai cấp dạng `cha/con` (ví dụ `order/cancel`, `help/contact-support`), mỗi tag một câu mô tả. Tag mô tả chủ đề hoặc vấn đề của người dùng, không mô tả tên dự án. Mọi note chỉ dùng tag trong file này. AI được gợi ý tag, nhưng chỉ trong bộ này; tag AI đề xuất mà chưa có thì bạn quyết định có thêm hay không.
 
-   Lưu kết quả thành file citations, mỗi insight một dòng.
-3. **Kiểm.** Đưa AI coding tool instruction trong [check-quotes-instruction.md](../../../assets/starter-files/course-case/check-quotes-instruction.md), kèm đường dẫn tới file source notes và file citations. Script in ra từng dòng đạt hay không đạt.
-4. **Sửa.** Với mỗi dòng không đạt: mở note được trích, so với quote, rồi sửa quote cho đúng hoặc hỏi lại AI chat tool kèm danh sách dòng không đạt. Dòng AI ghi "unknown" vì không có quote phù hợp cũng báo không đạt: bỏ dòng đó khỏi file citations, đừng ép AI tìm một quote. Chạy lại cho tới khi không còn dòng không đạt. Sau đó đọc lại đoạn gốc trong transcript của insight bạn thấy quan trọng nhất, vì phép kiểm tra chỉ cho biết quote có thật trong note, không cho biết insight đúng hay không.
-
-- Đưa source notes và kết quả kiểm tra lên hub, ở chỗ bạn và AI tìm lại được.
-- Chưa phỏng vấn được 2 người: dùng các note phỏng vấn mẫu (I01-01 đến I02-03) trong [file source notes mẫu dạng `ID | text`](../../../assets/starter-files/course-case/source-notes-plain.txt), và ghi rõ trong hub đây là dữ liệu mẫu.
-- Lesson 3 có một bước chạy blind synthesis trên chính các note này, nên giữ file source notes gọn và có ID.
+- Đưa evidence note và kết quả kiểm tra lên hub, ở chỗ bạn và AI tìm lại được.
+- Chưa phỏng vấn được 2 người: dùng 10 evidence note mẫu (RET-01 đến RET-10, hai file `I01.md` và `I02.md`) và bộ tag `tags.md` trong thư mục [evidence](../../../assets/starter-files/course-case/evidence/) và hai transcript trong thư mục [raw](../../../assets/starter-files/course-case/raw/) của course case, và ghi rõ trong hub đây là dữ liệu mẫu.
+- Lesson 3 có một bước chạy blind synthesis trên các note này, nên giữ mỗi note một quan sát và tiêu đề trung tính.
 
 ## Output
 
@@ -120,7 +122,7 @@ Script là lưới an toàn, không phải khuôn.
 - Research question
 - Research plan và script
 - Transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn
-- Source notes có ID (`ID | text`) và kết quả kiểm tra quote không còn dòng không đạt
+- File ghi chú của mỗi buổi phỏng vấn (mỗi note một mục, tiêu đề observation, quote kèm số lượt, tag từ bộ tag cố định), file `tags.md`, và kết quả kiểm tra quote không còn chỗ không đạt
 
 ## Self-check
 
@@ -130,8 +132,9 @@ Script là lưới an toàn, không phải khuôn.
 - [ ] Mọi dòng AI soạn ở Step 2, 3, 4, 6 và 9 đã được bạn kiểm tra; bạn biết dòng nào bạn đã sửa.
 - [ ] Mỗi research question gắn với một assumption và một quyết định.
 - [ ] Bản gốc chưa ẩn danh không nằm ở chỗ AI đọc.
-- [ ] Lần kiểm tra quote cuối không còn dòng không đạt.
-- [ ] Bạn đã đọc lại đoạn gốc trong transcript của ít nhất một insight.
+- [ ] Lần kiểm tra quote cuối không còn chỗ không đạt.
+- [ ] Bạn đã đọc lại tiêu đề của từng evidence note cạnh quote, và không tiêu đề nào chứa nguyên nhân, đánh giá hay giải pháp.
+- [ ] Mọi tag trong note đều có trong `tags.md`, và mỗi tag có một câu mô tả.
 
 Xong thì mang các output này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
 
@@ -139,6 +142,6 @@ Xong thì mang các output này tới buổi practice trên lớp: bạn làm ti
 
 - **Không gặp được business:** ghi mọi outcome và metric là "assumed", kèm người cần xác nhận. Đừng nhờ AI đóng vai PO.
 - **Chưa hẹn được người phỏng vấn đúng nhóm:** nhờ người quen có thói quen liên quan đến project, và ghi rõ đây là giới hạn của mẫu. Chưa có ghi chú phỏng vấn thì làm Step 1 đến 6 trước, và dùng note mẫu cho Step 9.
-- **Chưa có brief hay tài liệu để thử bốn cách dùng AI:** dùng brief mẫu `brief-notes-plain.txt` và các ghi chú R và F trong `source-notes-plain.txt` của course case, cùng prompt trong `break-the-brief-moves.md`.
+- **Chưa có brief hay tài liệu để thử bốn cách dùng AI:** dùng brief mẫu `brief-notes-plain.txt` và 10 evidence note trong `evidence-notes-plain.txt` của course case, cùng prompt trong `break-the-brief-moves.md`.
 - **AI đưa điều nghe hợp lý nhưng không có trong tài liệu:** ghi "chưa có nguồn", không đưa vào như một sự thật.
 - **Không làm hết được:** làm Step 1 đến 4 trước và hẹn người phỏng vấn sớm, vì lịch hẹn là phần khó kiểm soát nhất.
