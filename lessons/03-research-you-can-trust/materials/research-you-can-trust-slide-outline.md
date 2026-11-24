@@ -315,7 +315,7 @@ last_synced: 2026-11-16
 
 ### NUMBERED · Six moves, three levels
 - Kicker: Tổng quan
-- Title: Sáu AI move, *ba mức cơ sở*
+- Title: Sáu cách dùng AI, *ba mức cơ sở*
 - On-slide:
   - Move
   - Mục
@@ -331,12 +331,12 @@ last_synced: 2026-11-16
   - Bắt câu dạng giải pháp
   - Opportunity
   - Thử ba giải pháp
-  - Cả sáu move là cách làm của khoá, mới thử một lần trên bộ mẫu. Chưa move nào được kiểm chứng như một best practice.
+  - Cả sáu cách dùng AI là cách làm của khoá, mới thử một lần trên bộ mẫu. Chưa cách dùng nào được kiểm chứng như một best practice.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần method của persona, journey map và opportunity bạn đã biết, nên buổi này dành cho sáu AI move: việc AI làm tốt hơn người ở từng bước, kèm phần bạn kiểm tra.
-  - Mỗi move có một mức cơ sở:
+  - Phần method của persona, journey map và opportunity bạn đã biết, nên buổi này dành cho sáu cách dùng AI: việc AI làm tốt hơn người ở từng bước, kèm phần bạn kiểm tra.
+  - Mỗi cách dùng có một mức cơ sở:
     - Principle supported: có nghiên cứu hoặc nguồn practitioner làm căn cứ cho nguyên lý phía sau. Move vẫn là cách làm của khoá, chưa được đo riêng
     - Untested: chưa tìm thấy nguồn nào, coi là ý tưởng để bạn tự thử
   - Move yếu nhất về cơ sở là dựng map không persona. Hai move soát đường cảm xúc và thử ba giải pháp có nguồn ở phần cảnh báo, không phải ở chính move.
@@ -471,8 +471,8 @@ last_synced: 2026-11-16
 
 ---
 
-### TABLE · Move 1: audit the persona
-- Kicker: AI move · Persona
+### TABLE · Cách dùng AI 1: audit the persona
+- Kicker: cách dùng AI · Persona
 - Title: Soát nguồn *từng dòng*
 - On-slide:
   - Ví dụ: persona nháp 6 dòng của Delivery App.
@@ -495,7 +495,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói sáu move. Move 1 trả lời: persona nháp có dòng nào không có nguồn?
+  - Slide trước nói sáu cách dùng AI. Cách dùng AI 1 trả lời: persona nháp có dòng nào không có nguồn?
   - Bạn đưa AI persona nháp (mỗi dòng một ID) và các insight đã kiểm tra, rồi nhờ trả mỗi dòng một nhận định: ủng hộ, đi ngược hoặc assumption. Trên bộ mẫu:
     - L2 (28 đến 35 tuổi, nhà thành phố) không insight nào nói: assumption
     - L4 (bỏ đi vì phí giao đắt) đi ngược IN-04, insight nói giá không phải lý do chính
@@ -508,8 +508,8 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 2: grouping without and with a hint
-- Kicker: AI move · Persona
+### COMPARE · Cách dùng AI 2: grouping without and with a hint
+- Kicker: cách dùng AI · Persona
 - Title: Gom nhóm hành vi, *không gợi ý rồi có gợi ý*
 - On-slide:
   - Ví dụ: chín insight của Delivery App, chạy hai lần.
@@ -521,7 +521,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 2 giống blind synthesis ở Lesson 2, nhưng áp lên bước gom nhóm hành vi.
+  - Cách dùng AI 2 giống blind synthesis ở Lesson 2, nhưng áp lên bước gom nhóm hành vi.
   - Bạn chạy gom nhóm hai lần trên cùng các insight, lần hai thêm một câu về hypothesis của team. Trên bộ mẫu, cả hai lần ra ba nhóm giống nhau. Lần có gợi ý mở đầu bằng giá và bác nó bằng IN-04.
   - Bạn xem nhóm nào xuất hiện ở cả hai lần (đáng tin hơn) và nhóm nào chỉ có một insight đỡ (ghi rõ là mỏng).
   - Mức cơ sở: principle supported. Nghiên cứu của AISI thấy mô hình càng nghiêng theo ý người dùng khi người đó nói chắc chắn (preprint, chỉ thử prompt một lượt). Cách so không gợi ý và có gợi ý là cách làm của khoá.
@@ -605,8 +605,8 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 3: map with and without persona
-- Kicker: AI move
+### COMPARE · Cách dùng AI 3: map with and without persona
+- Kicker: cách dùng AI
 - Title: Dựng map *không cần persona*
 - On-slide:
   - Ví dụ: năm giai đoạn từ chọn món đến nhận hàng, trên 10 evidence note.
@@ -618,7 +618,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 3 hỏi: persona làm journey map tốt hơn hay chỉ làm nó đầy hơn?
+  - Cách dùng AI 3 hỏi: persona làm journey map tốt hơn hay chỉ làm nó đầy hơn?
   - Bạn nhờ AI dựng journey map hai lần, ô nào không có insight thì ghi đúng chữ assumption. Trên bộ mẫu 10 note, hai bản gần giống nhau: bản không persona có 4 ô assumption, bản có persona có 5. Bản có persona điền thêm ô hành động ở giai đoạn chọn món và gắn IN-05, nhưng IN-05 chỉ có một note nói khách đánh giá cao số lượng nhà hàng
   - Ở lần chạy trước trên bộ 24 note cũ, bản có persona điền thêm quá tay; lần này điều đó không lặp lại, nên đừng coi nó là kết quả chắc chắn. Thứ lặp lại ở cả hai bản: cảm xúc “Tốt” ở chọn món gắn vào IN-05, và cảm xúc ở nhận hàng gắn vào IN-01, trong khi hai insight này không nói thẳng cảm xúc
   - Mức cơ sở: untested. Mình không tìm thấy nghiên cứu đo journey map do AI dựng, chỉ có bài của practitioner nói map do AI sinh là giả thuyết. Đây là cách làm của khoá, chưa được đo.
@@ -661,8 +661,8 @@ last_synced: 2026-11-16
 
 ---
 
-### TABLE · Move 4: audit the emotion line
-- Kicker: AI move
+### TABLE · Cách dùng AI 4: audit the emotion line
+- Kicker: cách dùng AI
 - Title: Soát *đường cảm xúc*
 - On-slide:
   - Ví dụ: 10 evidence note mẫu của Delivery App.
@@ -675,7 +675,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 4 hỏi: đường cảm xúc của journey map dựa trên lời khách hay trên cảm giác của AI?
+  - Cách dùng AI 4 hỏi: đường cảm xúc của journey map dựa trên lời khách hay trên cảm giác của AI?
   - Bạn nhờ AI tìm cho mỗi ô cảm xúc có nội dung một đến hai evidence note ủng hộ hoặc đi ngược, trả quote nguyên văn. Rồi chạy chương trình kiểm quote ở practice trên kết quả, nếu bạn đã làm bước đó
   - Trên bộ mẫu 10 note, AI trả bốn dòng, cả bốn ủng hộ, không dòng nào đi ngược. AI nêu hai chỗ mỏng: chọn món chỉ có một note từ một người, và nhận hàng chỉ có một note nói “ngượng”, không hẳn “tệ”. Lần chạy trước trên bộ 24 note cũ có một nhãn sai kiểu “ghi chú về giá bị xếp đi ngược cảm xúc chọn món”; lỗi đó không lặp lại lần này, nên đừng coi nó là chắc chắn. Bạn vẫn đọc từng note: quote có thật nhưng nhãn vẫn có thể sai chỗ
   - Mức cơ sở: có nguyên lý đỡ, ở phần cảnh báo. Một nghiên cứu về gắn sentiment trên dữ liệu y tế thấy AI và người chỉ khớp ở mức vừa và AI hay gắn theo chữ, không theo ý nghĩa diễn giải (JMIR 2026)
@@ -789,8 +789,8 @@ last_synced: 2026-11-16
 
 ---
 
-### TABLE · Move 5: catch solutions disguised as needs
-- Kicker: AI move · Opportunity
+### TABLE · Cách dùng AI 5: catch solutions disguised as needs
+- Kicker: cách dùng AI · Opportunity
 - Title: Bắt câu *dạng giải pháp*
 - On-slide:
   - Ví dụ: năm opportunity nháp của Delivery App.
@@ -819,7 +819,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 5 bắt phản xạ quen thuộc: viết giải pháp rồi gọi nó là opportunity.
+  - Cách dùng AI 5 bắt phản xạ quen thuộc: viết giải pháp rồi gọi nó là opportunity.
   - Bạn đưa AI danh sách opportunity nháp của team và các insight. Nó gắn nhãn từng dòng là need hoặc giải pháp, rồi viết lại dòng giải pháp thành user need theo mẫu “[người dùng] gặp khó khi [tình huống] vì [lý do]”, kèm insight ID hoặc assumption.
   - Trên bộ mẫu AI gắn nhãn đúng cả năm dòng:
     - O1, O3, O5 là giải pháp
@@ -833,8 +833,8 @@ last_synced: 2026-11-16
 
 ---
 
-### COMPARE · Move 6: three solutions for one need
-- Kicker: AI move · Opportunity
+### COMPARE · Cách dùng AI 6: three solutions for one need
+- Kicker: cách dùng AI · Opportunity
 - Title: Thử ba *giải pháp*
 - On-slide:
   - Ví dụ: need khung giờ giao của Delivery App.
@@ -855,7 +855,7 @@ last_synced: 2026-11-16
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Move 6 kiểm tra một điều: need của bạn có đứng độc lập khỏi giải pháp không?
+  - Cách dùng AI 6 kiểm tra một điều: need của bạn có đứng độc lập khỏi giải pháp không?
   - Với need “khách mới gặp khó khi chọn khung giờ giao vì không biết giờ đó là cuối cùng”, bạn nhờ AI đề xuất ba giải pháp khác nhau về bản chất, nêu assumption mới mà mỗi giải pháp thêm vào, rồi trả lời: need còn đúng nếu bỏ cả ba không?
   - Trên bộ mẫu AI đưa ba giải pháp thật sự khác nhau và kết luận need vẫn đúng. Nó còn nói cách diễn đạt need hiện tại đã ngầm gợi giải pháp 1. Ba giải pháp suy ra từ một insight, chưa có dữ liệu để xếp hạng.
   - Nhờ thêm “các hướng khác nhau về bản chất”, vì AI có xu hướng đưa ý giống nhau.
@@ -1613,7 +1613,7 @@ last_synced: 2026-11-16
 
 ### DIAGRAM · Extra: cells without insight
 - Status: Không có trong deck hiện tại, giữ ở đây để dùng lại.
-- Kicker: AI move · Journey map
+- Kicker: cách dùng AI · Journey map
 - Title: Tìm ô\n*thiếu insight*
 - On-slide:
   - Liệt kê ô không có insight hoặc có ID nhưng insight không nói điều đó

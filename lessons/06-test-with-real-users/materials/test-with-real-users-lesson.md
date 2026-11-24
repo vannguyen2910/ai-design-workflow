@@ -19,6 +19,8 @@ next-session: "Practice 6: Audit, test and fix your prototype"
 
 ## Nội dung buổi học
 
+*Trên slide, buổi học có năm phần đánh số 01 đến 05, ứng với mục 2 đến 6 dưới đây. Mục 1 là phần mở đầu và không có slide chuyển phần riêng.*
+
 1. Validate sau khi AI build: vì sao verification là nút thắt
 2. UX Audit với AI: bốn bộ tiêu chí là bốn file markdown
 3. Accessibility với AI: checklist, ba lượt kiểm, và khi nào tin AI
@@ -247,7 +249,7 @@ Hai nguồn này không nhắc đến AI. Chúng cho thấy lượt 1 và lượ
 
 ### 3.6 Checklist của công ty thành model file
 
-GitHub Accessibility có một trang hướng dẫn công khai về việc viết custom instructions cho Copilot, ở cấp tổ chức, repo hoặc cá nhân; instructions cá nhân được ưu tiên hơn. Tiêu chí được viết bằng ngôn ngữ giống WCAG (MUST, MUST NOT, SHOULD), và ví dụ trong trang là một checklist cho WCAG 1.3.1: không gán role presentation cho phần tử có ngữ nghĩa, thông báo lỗi phải gắn được với ô nhập. Checklist này mở rộng WCAG cho cả Copilot coding agent và code review, và có thể thêm quy tắc của design system, như không dùng button đã deprecated. Trang khuyên viết ngắn và dán thẳng nội dung cần dùng, không dán link hay cả bộ WCAG.
+GitHub Accessibility có một trang hướng dẫn công khai về việc viết custom instructions cho công cụ AI coding của họ, ở cấp tổ chức, repo hoặc cá nhân; instructions cá nhân được ưu tiên hơn. Tiêu chí được viết bằng ngôn ngữ giống WCAG (MUST, MUST NOT, SHOULD), và ví dụ trong trang là một checklist cho WCAG 1.3.1: không gán role presentation cho phần tử có ngữ nghĩa, thông báo lỗi phải gắn được với ô nhập. Checklist này mở rộng WCAG cho cả coding agent và code review, và có thể thêm quy tắc của design system, như không dùng button đã deprecated. Trang khuyên viết ngắn và dán thẳng nội dung cần dùng, không dán link hay cả bộ WCAG.
 
 Giống design principle và business principle, accessibility cũng là một bộ nguyên tắc; khi checklist là một file, bạn sửa, thêm dòng và dùng lại ở mọi project. Đây là hướng dẫn công khai cho người viết instructions, không mô tả quy trình nội bộ của GitHub và không đo hiệu quả; trang không ghi ngày cập nhật, chỉ ghi bản quyền 2026. Bạn dùng nó làm mẫu cách viết, rồi đối chiếu lại với tiêu chuẩn và yêu cầu của công ty mình.
 

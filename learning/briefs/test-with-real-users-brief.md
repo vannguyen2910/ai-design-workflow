@@ -8,6 +8,8 @@ duration: "90 min"
 
 **Cập nhật 2026-11-20:** cấu trúc lesson đã đổi theo quyết định của Winnie: audit trước rồi usability test, nhưng **một audit report duy nhất** (finding từ test được kéo vào audit report, severity quyết định việc dev làm); thêm phần **Accessibility** (checklist là một file tiêu chí, ba lượt kiểm, AI cross-check); tiêu chí audit là bốn file markdown có ID; kết quả đưa lên hub làm final outcome cho stakeholder. Lesson, slide outline, practice và reference đã sửa theo. Các mục Theory, Learning objectives và Sources bên dưới đã cập nhật; phần còn lại là bản gốc 2026-11-08.
 
+**Cập nhật theo deck (2026-11-20):** deck chia năm phần chuyển thay vì sáu (phần Validate là mở đầu, không có slide chuyển phần riêng); phần accessibility gộp "Ba lượt kiểm" và "Chạy checklist cùng AI" vào một slide; phần "Một report, làm việc với dev" gộp ba việc AI (gộp kết quả test, soạn ticket, tóm tắt cho hub) vào một slide, nên chia sẻ trên hub nằm ở phần 04, không còn ở phần handoff; thêm ba ví dụ cách audit (video quay màn hình, môi trường test hoặc production, FigJam) và công cụ audit từ prototype. Danh sách Theory bên dưới còn theo cấu trúc sáu phần cũ; lesson và slide outline đã theo cấu trúc mới.
+
 **Trạng thái:** brief bản đầu, soạn 2026-11-08, **chờ Winnie duyệt**. Chưa tạo lesson, slide outline hay deck. Lưu ở `learning/briefs/` cùng các brief trước.
 
 ## Purpose

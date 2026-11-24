@@ -1,18 +1,18 @@
-# Sáu AI move của Lesson 3: Delivery App (fictional)
+# Sáu cách dùng AI của Lesson 3: Delivery App (fictional)
 
 Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prompt chạy trên dữ liệu mẫu:
 
 - `insights-plain.txt`: chín insight có ID (IN-01 đến IN-09), dạng `ID | text`, mỗi insight ghi các evidence note làm căn cứ.
 - `persona-draft-plain.txt`: sáu dòng persona nháp (L1 đến L6), dạng `ID | text`. Dòng L2 bịa, dòng L4 đi ngược dữ liệu.
-- `journey-map-draft.md`: một journey map nháp do AI dựng từ persona và insight (Move 3).
+- `journey-map-draft.md`: một journey map nháp do AI dựng từ persona và insight (Cách dùng AI 3).
 - `opportunities-draft-plain.txt`: năm dòng opportunity nháp của team, ba trong số đó đã là giải pháp.
 - `evidence-notes-plain.txt`: 10 evidence note (RET-01 đến RET-10) gộp thành mỗi note một dòng, dùng ở Move 4.
 
-**Chạy lại ngày 2026-11-20** trên dữ liệu mới (10 evidence note, thay cho 24 ghi chú một dòng). Mỗi move chạy một lần, trong một phiên riêng do một subagent của AI coding tool thực hiện (không phải công cụ AI của bạn), chỉ với các file của move đó; mô hình cụ thể không được kiểm tra. Kết quả dưới đây rút gọn, giữ nguyên ý.
+**Chạy lại ngày 2026-11-20** trên dữ liệu mới (10 evidence note, thay cho 24 ghi chú một dòng). Mỗi cách dùng chạy một lần, trong một phiên riêng do một subagent của AI coding tool thực hiện (không phải công cụ AI của bạn), chỉ với các file của cách dùng đó; mô hình cụ thể không được kiểm tra. Kết quả dưới đây rút gọn, giữ nguyên ý.
 
 ## Persona
 
-### Move 1: Soát nguồn từng dòng
+### Cách dùng AI 1: Soát nguồn từng dòng
 
 **Prompt**
 
@@ -33,7 +33,7 @@ Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prom
 
 **Điều bạn tự quyết:** AI bắt được dòng 2 (bịa) và dòng 4 (đi ngược dữ liệu). Bạn xoá dòng 2, sửa dòng 4 theo IN-04, và làm mềm dòng 6.
 
-### Move 2: Gom nhóm hành vi, blind rồi primed
+### Cách dùng AI 2: Gom nhóm hành vi, blind rồi primed
 
 **Prompt lần 1 (blind)**
 
@@ -55,7 +55,7 @@ Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prom
 
 ## Journey map
 
-### Move 3: Dựng map không cần persona, rồi so
+### Cách dùng AI 3: Dựng map không cần persona, rồi so
 
 **Prompt (không persona)**
 
@@ -73,7 +73,7 @@ Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prom
 
 **Điều cần thấy khi so:** trên bộ mới, bản có persona **không** điền thêm quá tay như lần chạy trước (bộ 24 note): bản có persona thậm chí có nhiều ô `assumption` hơn. Nhưng cả hai bản đều gắn cảm xúc "Tốt" ở bước chọn món vào IN-05 (một note, weak), và bản không persona ghi "Rất tệ" ở bước nhận hàng chỉ từ IN-01 và IN-09, trong khi IN-01 chỉ nói đơn có thể đến lúc khách vắng nhà. Cảm xúc suy từ pain, không từ insight nói thẳng. Hai bản khác nhau theo cách khác lần trước, nên kết luận "persona kéo AI điền quá tay" chưa lặp lại; thứ lặp lại là ô cảm xúc có insight ID nhưng insight không nói cảm xúc.
 
-### Bước thêm (không phải move trên lớp): Tìm ô thiếu insight
+### Bước thêm (không phải cách dùng AI trên lớp): Tìm ô thiếu insight
 
 **Prompt**
 
@@ -88,7 +88,7 @@ Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prom
 
 **Giới hạn:** AI tự nêu mức "căn cứ không khớp" ở các ô sát ranh giới là đánh giá của nó, có thể chặt hoặc lỏng hơn bạn. Hai cách tính tỷ lệ ra hai con số khác nhau, nên bạn chọn một cách và dùng nhất quán. Lần chạy này cũng cho thấy một điều: journey map nháp nói "món nguội", nhưng bộ insight mới không còn insight nào nói điều đó, nên bước này bắt được một chi tiết mà bản nháp tự thêm.
 
-### Move 4: Soát đường cảm xúc
+### Cách dùng AI 4: Soát đường cảm xúc
 
 **Prompt**
 
@@ -107,7 +107,7 @@ Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prom
 
 ## Opportunity
 
-### Move 5: Bắt câu dạng giải pháp
+### Cách dùng AI 5: Bắt câu dạng giải pháp
 
 **Prompt**
 
@@ -125,7 +125,7 @@ Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prom
 
 AI tự nhận ra O2 và O5 viết lại ra cùng một need.
 
-### Move 6: Thử ba giải pháp
+### Cách dùng AI 6: Thử ba giải pháp
 
 **Prompt**
 
@@ -137,7 +137,7 @@ AI tự nhận ra O2 và O5 viết lại ra cùng một need.
 
 ## Giới hạn chung
 
-- Một dữ liệu mẫu, một mô hình chưa kiểm tra, một lần chạy mỗi move. Kết quả đổi giữa các lần chạy và giữa các mô hình; lần chạy lại này đã đổi hai kết luận của lần chạy trước (xem Move 3 và Move 4).
+- Một dữ liệu mẫu, một mô hình chưa kiểm tra, một lần chạy mỗi cách dùng. Kết quả đổi giữa các lần chạy và giữa các mô hình; lần chạy lại này đã đổi hai kết luận của lần chạy trước (xem Cách dùng AI 3 và Cách dùng AI 4).
 - Dữ liệu mẫu có chủ ý chứa một dòng persona bịa và một dòng đi ngược dữ liệu, nên đây là trường hợp dễ cho AI. Dữ liệu thật thường mơ hồ hơn.
 - Bộ mới chỉ có một loại nguồn (hai phỏng vấn), nên mọi insight đều có căn cứ mỏng (một đến ba note).
 - Phép kiểm bằng chương trình chỉ chứng minh ID hoặc quote có thật. Nó không chứng minh ID đó đỡ đúng dòng, và đó là việc bạn đọc.

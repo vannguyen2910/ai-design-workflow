@@ -40,7 +40,7 @@ Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và
 5. Viết opportunity như một user need, qua test ba giải pháp, rồi chấm và chọn
 6. Dựng một insight hub cho cả team từ các insight đã kiểm tra và opportunity đã xếp hạng, có tìm và lọc, và tìm trong hub trước khi hỏi lại
 7. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu
-8. Chạy sáu AI move (soát nguồn persona, gom nhóm không gợi ý và có gợi ý, dựng map không persona rồi so, soát đường cảm xúc, bắt câu dạng giải pháp, thử ba giải pháp), nêu phần bạn kiểm tra ở mỗi move, và nói được move nào có nguyên lý đỡ, move nào mới là cách làm của khoá
+8. Chạy sáu cách dùng AI (soát nguồn persona, gom nhóm không gợi ý và có gợi ý, dựng map không persona rồi so, soát đường cảm xúc, bắt câu dạng giải pháp, thử ba giải pháp), nêu phần bạn kiểm tra ở mỗi cách dùng, và nói được cách dùng nào có nguyên lý đỡ, cách dùng nào mới là cách làm của khoá
 
 ---
 
@@ -137,13 +137,13 @@ Persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity đ
 
 Bộ principles từ Lesson 2 dùng hai lần ở cả ba output: đưa vào prompt làm ràng buộc, và dùng lại khi bạn kiểm tra bản AI soạn.
 
-**Sáu AI move của buổi này.** Mỗi mục persona, journey map, opportunity có các AI move: việc AI làm tốt hơn người ở bước đó, kèm phần bạn kiểm tra. Method của ba mục (định nghĩa, cấu trúc, lỗi hay gặp) bạn đã biết, nên phần dưới giữ gọn và dồn chỗ cho các move. Prompt, dữ liệu mẫu và kết quả đã lưu của cả sáu move nằm ở `define-moves.md` trong course case. Mỗi move gắn một trong ba mức cơ sở:
+**Sáu cách dùng AI của buổi này.** Mỗi mục persona, journey map, opportunity có các cách dùng AI: việc AI làm tốt hơn người ở bước đó, kèm phần bạn kiểm tra. Method của ba mục (định nghĩa, cấu trúc, lỗi hay gặp) bạn đã biết, nên phần dưới giữ gọn và dồn chỗ cho các move. Prompt, dữ liệu mẫu và kết quả đã lưu của cả sáu cách dùng AI nằm ở `define-moves.md` trong course case. Mỗi cách dùng gắn một trong ba mức cơ sở:
 
 - **Có nguyên lý đỡ:** có nghiên cứu hoặc nguồn practitioner làm căn cứ cho nguyên lý phía sau. Move vẫn là cách làm của khoá, chưa được đo riêng.
 - **Cách làm của khoá:** mình thiết kế và chỉ thử trên bộ mẫu, một mô hình, một lần chạy.
 - **Chưa có cơ sở:** chưa tìm thấy nguồn nào; coi là ý tưởng để bạn tự thử.
 
-Không move nào là best practice đã kiểm chứng. Các nguồn dưới đây mình mới đọc phần tóm tắt, nhiều nguồn là preprint hoặc bài của practitioner; hãy kiểm lại trước khi trích.
+Không cách dùng nào là best practice đã kiểm chứng. Các nguồn dưới đây mình mới đọc phần tóm tắt, nhiều nguồn là preprint hoặc bài của practitioner; hãy kiểm lại trước khi trích.
 
 | | |
 |---|---|
@@ -167,13 +167,13 @@ Nielsen Norman Group chạy lại ba nghiên cứu cũ với người dùng AI: 
 
 Ví dụ: người phỏng vấn số 1 chạm vào khung giờ đầu tiên hiện ra (RET-01); người số 2 nghĩ có thể đổi khung giờ sau như các app khác (RET-05). Hai người khác nhau nhưng hành vi giống nhau: khách mới ở đơn đầu tiên, chọn khung giờ nhanh và tưởng đổi được sau.
 
-### 2.1 AI move 1: Soát nguồn từng dòng
+### 2.1 cách dùng AI 1: Soát nguồn từng dòng
 
 Đưa AI persona nháp (mỗi dòng một ID) và các insight đã kiểm tra, nhờ nó trả mỗi dòng persona một dòng `line ID | insight IDs | nhận định`, nhận định là ủng hộ, đi ngược hoặc assumption. Trên bộ mẫu, AI bắt được dòng bịa ("28 đến 35 tuổi, nhà trong thành phố": không insight nào nói) và dòng đi ngược dữ liệu ("rời đi vì phí giao đắt": IN-04 nói giá chưa rõ là lý do chính), và làm mềm dòng "hào hứng thử món mới" vì IN-05 chỉ nói khách đánh giá cao số lượng nhà hàng. Bạn xoá hoặc sửa các dòng đó. Phần chạy được bằng chương trình (ID có thật không) làm ở practice; ID có thật chưa chứng minh insight đỡ đúng dòng, nên bạn vẫn mở insight để đọc.
 
 **Mức cơ sở: có nguyên lý đỡ.** Persona do AI sinh có thiên lệch về tuổi, nghề và pain point ([Salminen và cộng sự, 2024](https://elmi.hbku.edu.qa/en/publications/deus-ex-machina-and-personas-from-large-language-models-investiga/)), và có preprint cảnh báo về tính hợp lệ ([arXiv 2503.16527](https://arxiv.org/pdf/2503.16527)). Việc soát từng dòng với insight ID là cách làm của khoá.
 
-### 2.2 AI move 2: Gom nhóm hành vi, không gợi ý rồi có gợi ý
+### 2.2 cách dùng AI 2: Gom nhóm hành vi, không gợi ý rồi có gợi ý
 
 Chạy hai lần trên cùng các insight, một lần chỉ có yêu cầu gom nhóm, một lần thêm câu "team tin khách mới nhạy cảm về giá", rồi so. Trên bộ mẫu, hai nhóm chính (khung giờ và hủy đơn; kỳ vọng giờ giao) giống nhau ở cả hai lần, nhưng lần thứ hai mở đầu bằng giá và còn đổi chỗ đặt IN-05 (thành một nhóm riêng thay vì bỏ ngoài). Giống blind synthesis ở Lesson 2: hypothesis đổi thứ AI nói trước, chưa đổi các nhóm chính. Bạn xem nhóm nào xuất hiện ở cả hai lần (đáng tin hơn) và nhóm nào chỉ có ở một lần (cần kiểm tra thêm), và ghi rõ nhóm nào chỉ có một insight đỡ.
 
@@ -209,13 +209,13 @@ Chạy hai lần trên cùng các insight, một lần chỉ có yêu cầu gom 
 
 **Từ map đến opportunity.** Journey map chưa phải opportunity; nó là chỗ opportunity được tìm ra. Tìm điểm thấp nhất và các pain quanh nó, viết lại pain thành user need (không phải tính năng), rồi đặt user need dưới root outcome trong cây opportunity, giữ insight ID đi cùng. Pain là triệu chứng; user need mới là opportunity. Ở Delivery App: bước huỷ đơn có hạn chót huỷ không hiện trên màn hình (IN-02); user need viết lại là khách cần biết còn huỷ được đến khi nào.
 
-### 3.1 AI move 3: Dựng map không cần persona, rồi so
+### 3.1 cách dùng AI 3: Dựng map không cần persona, rồi so
 
 Nhờ AI dựng journey map hai lần: một lần chỉ từ insight, một lần từ insight cộng persona nháp. Ô nào không có insight thì ghi đúng chữ `assumption`. Trên bộ mẫu, hai bản gần giống nhau: bản không persona có 4 ô `assumption`, bản có persona có 5. Ở lần chạy trước (bộ 24 note), bản có persona điền thêm quá tay; ở bộ mới điều đó không lặp lại, nên bạn đừng coi đó là kết quả chắc chắn. Thứ lặp lại ở cả hai bản: cảm xúc "Tốt" ở bước chọn món gắn vào IN-05 (một note, weak) và cảm xúc ở bước nhận hàng gắn vào IN-01, trong khi hai insight này không nói thẳng cảm xúc. Khi so, tìm ô nào chỉ có ở một bản, và ô nào có insight ID nhưng insight không nói điều ô ghi.
 
 **Mức cơ sở: chưa có cơ sở.** Không tìm thấy nghiên cứu đo journey map do AI dựng; chỉ có bài của practitioner nói map do AI sinh là giả thuyết, không phải kết quả ([Renascence](https://www.renascence.io/journal/ai-journey-map-generators-what-they-fix-and-what-they-dont)). Đây là cách làm của khoá, chưa được đo.
 
-### 3.2 Tìm ô thiếu insight (bước thêm, không phải AI move trên lớp)
+### 3.2 Tìm ô thiếu insight (bước thêm, không phải cách dùng AI trên lớp)
 
 Bước này làm ở nhà (practice), không có slide riêng trên lớp; nó chính là bước "tìm ô trống" của quy trình trên.
 
@@ -223,7 +223,7 @@ Bước này làm ở nhà (practice), không có slide riêng trên lớp; nó 
 
 **Mức cơ sở: chưa có cơ sở.** Không tìm thấy nguồn trực tiếp. Tư duy "đánh dấu chỗ suy đoán" đã có ở nguyên tắc assumption của mục này; dùng nó để sinh câu hỏi phỏng vấn là cách làm của khoá.
 
-### 3.3 AI move 4: Soát đường cảm xúc
+### 3.3 cách dùng AI 4: Soát đường cảm xúc
 
 Với mỗi ô cảm xúc có nội dung, nhờ AI tìm một đến hai evidence note cho thấy cảm xúc đó (và note đi ngược nếu có), trả quote nguyên văn. Chạy chương trình kiểm quote ở practice (Step 9) trên kết quả. Trên bộ mẫu, AI trả bốn dòng, cả bốn ủng hộ, không dòng nào đi ngược, và nêu rằng hai giai đoạn chỉ có một note. Ở lần chạy trước (bộ 24 note), AI từng xếp một ghi chú về giá vào "đi ngược" cảm xúc ở bước chọn món, trong khi ghi chú đó không nói về cảm xúc; lỗi đó không lặp lại ở bộ mới. Chương trình chỉ chứng minh quote có thật; nhãn đúng hay sai là việc bạn đọc.
 
@@ -260,13 +260,13 @@ Với mỗi ô cảm xúc có nội dung, nhờ AI tìm một đến hai evidenc
 3. **Reframing tạo ra lựa chọn.** Ba thao tác: question the objective (mục tiêu này của ai, và nếu sai thì sao), positive exceptions (ai đã thành công và khác ở điểm nào), what's missing (khung này bỏ ngoài điều gì). Reframing không tìm ra vấn đề thật, nó cho xem có vấn đề tốt hơn hay không. Chỉ reframe nhánh mạnh nhất, và ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
 4. **Chấm rồi chọn.** Bốn yếu tố: sizing (quy mô), importance (quan trọng thế nào với mục tiêu kinh doanh), company fit, market position. Chưa có cột effort, vì effort vào ở tầng giải pháp. Khi làm riêng chấm bằng bốn yếu tố; khi trình bày dùng impact và effort. Thứ tự vẫn theo severity, context và reach. Ghi opportunity bị loại kèm lý do: có lý do thì xem lại được khi evidence đổi.
 
-### 4.1 AI move 5: Bắt câu dạng giải pháp
+### 4.1 cách dùng AI 5: Bắt câu dạng giải pháp
 
 Đưa AI danh sách opportunity nháp của team và các insight. Nhờ nó gắn nhãn từng dòng là `need` hoặc `giải pháp`, viết lại dòng giải pháp thành user need theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]" (không nhắc giải pháp), và nêu insight ID hoặc `assumption`. Trên bộ mẫu, AI gắn nhãn đúng cả năm dòng ("thêm nút hủy nổi bật", "gửi thông báo đẩy khi trễ" và "làm lại màn hình chọn giờ" là giải pháp), ghi `assumption` cho dòng thông báo trễ vì không insight nào nói khách thiếu thông báo, và tự nhận ra một bản viết lại trùng với một need đã có. Bạn kiểm tra bản viết lại có đổi nghĩa không.
 
 **Mức cơ sở: có nguyên lý đỡ (practitioner).** Opportunity solution tree của Teresa Torres tách opportunity (user need) khỏi solution ([Product Talk](https://www.producttalk.org/glossary-discovery-opportunity-solution-tree/)). Mình chỉ đọc nguồn thứ cấp, chưa đọc sách gốc. Việc nhờ AI bắt câu dạng giải pháp là cách làm của khoá.
 
-### 4.2 AI move 6: Thử ba giải pháp
+### 4.2 cách dùng AI 6: Thử ba giải pháp
 
 Với một user need, nhờ AI đề xuất ba giải pháp khác nhau về bản chất, nêu assumption mới mà mỗi giải pháp thêm vào, rồi trả lời: need còn đúng nếu bỏ cả ba không? Trên bộ mẫu, AI đưa ba giải pháp thật sự khác nhau (nhãn "khung giờ cuối" lúc chọn, cho đổi giờ sau khi đặt, nhắc và theo dõi sát giờ giao), mỗi giải pháp kèm hai ba assumption mới, và kết luận need vẫn đúng. Nó còn nói cách diễn đạt need hiện tại đã ngầm gợi giải pháp 1. Đây là phép thử need có đứng độc lập không, không phải bước chọn giải pháp: ba giải pháp suy ra từ một insight, chưa có dữ liệu để xếp hạng. Nhờ thêm "các hướng khác nhau về bản chất" vì AI có xu hướng đưa ý giống nhau.
 

@@ -18,7 +18,7 @@ Hai phần của practice này đúng theo slide Practice của Lesson 4: **Dự
 
 ## Input
 
-- Map từ Lesson 3 (Goal hoặc Problem, Opportunity, insight ID) và problem brief
+- Map từ Lesson 3 (Goal hoặc Problem, Opportunity, insight ID) và problem brief, có design challenge
 - Journey map hoặc user flow hiện tại (friction point)
 - Bộ nguyên tắc từ Lesson 2
 

@@ -286,7 +286,9 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 
 *Slug:* `research-you-can-trust`. Là **buổi 3** của series (buổi 5 trong chuỗi 12 session), theo `plan.md` mục 2. Viết lại 2026-10-27 theo `learning/reference/ai-in-insights.md` mục 6: ba bước Decision, Insight, Challenge (cập nhật 2026-11-01, trước đó bốn bước có Evidence và Claim) thay cho tám bước và ba cổng; thêm persona, journey map, opportunity và insight hub; evidence menu và competitor analysis đã chuyển sang Lesson 2. Phỏng vấn peer (bài tập của Lesson 2 và Practice 2) cung cấp ghi chú nguồn đã ẩn danh; Lesson 3 nhận bộ nguyên tắc và insight làm đầu vào.
 
-**Why:** AI soạn nháp được pattern từ research, nhưng độ tin cậy của insight nằm ở phạm vi nguồn dẫn và ý kiến trái chiều được giữ lại. Lesson dạy cách biến insight thành persona, journey map và opportunity mà mỗi dòng truy được về insight ID, và cách đóng góp insight đã kiểm tra vào insight hub để không làm lại research.
+Cập nhật 2026-11-24: thêm cầu nối sang Define. Lesson chia hai nửa của Define: **Hiểu** (synthesis, persona, journey map) và **Chọn** (opportunity, design challenge). Thêm mục 1.9 đóng vòng với Lesson 2 và mục 5 design challenge và problem brief, theo method card Set design challenges. Insight hub rút còn một slide thói quen trên lớp, phần còn lại sang phụ lục.
+
+**Why:** AI soạn nháp được pattern từ research, nhưng độ tin cậy của insight nằm ở phạm vi nguồn dẫn và ý kiến trái chiều được giữ lại. Lesson dạy cách biến insight thành persona, journey map và opportunity mà mỗi dòng truy được về insight ID, cách chốt việc sẽ giải thành một design challenge trong problem brief, và cách đóng góp insight đã kiểm tra vào insight hub để không làm lại research.
 
 **Sau lesson, học viên có thể:**
 
@@ -294,13 +296,14 @@ Một số học viên thật sự không tiếp cận được PO hoặc busine
 2. Chạy ba bước Decision, Insight, Challenge, và chỉ ra phần AI làm với phần học viên tự làm.
 3. Viết persona, journey map hoặc opportunity như một insight "ai, khi nào, quyết định nào", dùng bộ nguyên tắc làm ràng buộc và phép kiểm tra, mỗi dòng dẫn về insight ID, và đánh dấu ô chưa có insight là assumption.
 4. Phản biện một insight và giữ ý kiến trái chiều.
-5. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu, và đóng góp một insight đã kiểm tra vào insight hub.
+5. Viết một design challenge cho một hoặc hai opportunity đứng đầu, kiểm tra nó không giấu giải pháp, và ghi trạng thái đồng ý với Product và Business trong problem brief.
+6. Quyết định khi nào dùng và khi nào bỏ AI cho một bộ dữ liệu, và đóng góp một insight đã kiểm tra vào insight hub.
 
 **Key activity:** **persona có insight hay không** (14 phút, theo cặp, không dùng AI) trên bộ insight của project Delivery App (`assets/starter-files/course-case/insight-set.md`, `persona-ai-draft.md`). Mỗi người đánh dấu từng dòng của persona do AI sinh có insight ID đỡ hay không, rồi bạn cùng cặp mở source ID để đối chiếu, mỗi lỗi kèm insight ID. Việc làm trên insight của học viên nằm ở Practice 3.
 
-*Chia giờ 90 phút (không còn buffer, 2026-11-01):* ice breaker 6, ôn nguyên tắc và insight 5, persona 14, journey map 13, opportunity 11, activity 14, insight hub 8, package 6, hỏi đáp 8, close 5. Cấu trúc ở `lessons/03-research-you-can-trust/assets/lesson-structure.html`. Chưa thử với một lớp thật.
+*Chia giờ 90 phút (không còn buffer, 2026-11-01):* ice breaker 6, ôn nguyên tắc và insight 5, persona 14, journey map 13, opportunity 11, activity 14, insight hub 8, package 6, hỏi đáp 8, close 5. Cấu trúc ở `lessons/03-research-you-can-trust/assets/lesson-structure.html`. Chưa thử với một lớp thật. **Cần tính lại (2026-11-24):** bảng giờ này chưa có synthesis và chưa có design challenge, còn insight hub đã rút còn một slide thói quen. Chưa chốt giờ mới.
 
-**Output của practice:** evidence pack (insight có insight ID và source ID, persona, journey map, opportunity), một trang cho lead, một entry trong insight hub; problem brief. Gate check 1b, 1c, 1d, 1e, 1g (và 2a khi evidence hỗ trợ một opportunity). Tên file cụ thể trong folder của học viên chưa chốt `[to confirm]`.
+**Output của practice:** evidence pack (insight có insight ID và source ID, persona, journey map, opportunity, design challenge), một trang cho lead, một entry trong insight hub; bản đầu problem brief. Gate check 1b, 1c, 1d, 1e, 1g (và 2a khi evidence hỗ trợ một opportunity, 2b khi design challenge có trạng thái đồng ý). Tên file cụ thể trong folder của học viên chưa chốt `[to confirm]`.
 
 ---
 
