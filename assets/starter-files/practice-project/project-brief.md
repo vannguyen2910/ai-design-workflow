@@ -2,38 +2,40 @@
 title: "Project brief: Chia tiền nhóm đi chơi"
 description: Đề tài 6 tuần, một project xuyên suốt
 ---
-**Problem statement:** 
+**Problem statement:**
 
-Khi cả nhóm đi chơi chung, mỗi người ứng tiền một ít cho ăn uống, xe, phòng nghỉ và vé, nhưng hiếm khi ai ghi lại. Đến cuối chuyến, việc tính xem ai đã trả gì và ai còn nợ ai thường mất nhiều thời gian và dễ gây bất đồng. Một cách làm giúp ghi chi tiêu ngay khi phát sinh, chia tiền minh bạch và chốt nợ nhanh sẽ giảm việc tính toán này, và giữ không khí của chuyến đi. Giải pháp cần đơn giản, dễ dùng khi đang đi, và giữ được sự riêng tư của từng người.
+Khi cả nhóm đi chơi chung, mỗi người ứng tiền một ít cho ăn uống, xe, phòng nghỉ và vé, nhưng hiếm khi ai ghi lại. Đến cuối chuyến, việc tính xem ai đã trả gì và ai còn nợ ai thường mất nhiều thời gian và dễ gây bất đồng. Nếu có một cách làm giúp ghi chi tiêu ngay khi phát sinh, chia tiền minh bạch và chốt nợ nhanh, cả nhóm sẽ bớt phải tính toán và giữ được không khí của chuyến đi. Giải pháp cần đơn giản, dễ dùng khi đang đi và giữ được sự riêng tư của từng người.
 
 **Scenarios:**
 
 - Khi một người ứng tiền taxi lúc nửa đêm, họ muốn ghi khoản đó trong vài giây để không quên.
-- Khi cả nhóm ăn chung nhưng mỗi người gọi món khác nhau, người ghi chi tiêu muốn chia đúng theo món, để không ai phải trả phần của người khác.
-- Khi về đến nhà, người giữ sổ muốn thấy ai còn nợ ai và chuyển tiền đúng một lần, để nhóm không phải nhắn tin qua lại nhiều vòng.
+- Khi cả nhóm ăn chung nhưng mỗi người gọi món khác nhau, người giữ sổ muốn chia đúng theo món, để không ai phải trả phần của người khác.
+- Khi về đến nhà, người giữ sổ muốn thấy ai còn nợ ai và chuyển tiền một lần là xong, để nhóm không phải nhắn tin qua lại nhiều vòng.
 - Khi một người không muốn cả nhóm thấy toàn bộ chi tiêu của mình, họ muốn xem được phần của mình mà không lộ phần của người khác.
 
-Bạn tự chọn nhóm người dùng và giải pháp. Người dùng có thể là bạn bè, đồng nghiệp, hoặc gia đình. Giải pháp có thể là một app, một tính năng, một quy trình, hoặc một cách làm khác. Điều quan trọng là bạn giải thích được vì sao chọn cách đó.
+Bạn tự chọn nhóm người dùng và giải pháp. Người dùng có thể là bạn bè, đồng nghiệp hoặc gia đình. Giải pháp có thể là một app, một tính năng, một quy trình hoặc một cách làm khác. Điều bạn cần làm được là giải thích vì sao mình chọn cách đó.
 
+Muốn hiểu thêm về đề tài? Đọc [Tài liệu nền](topic-primer.md): bối cảnh, cách mọi người đang làm, các tình huống khó và câu hỏi nên khám phá.
 
 ## Practice flow
 
 - **Thứ Năm:** buổi lý thuyết. Giảng viên đưa đề bài practice của tuần đó.
 - **Thứ Năm đến Chủ nhật:** làm practice ở nhà. Mỗi bước có một file, lưu trong folder project của bạn.
-- **Chủ nhật:** nộp file. Mentor sửa bài và chọn bài để showcase, gồm những bài hay và những bài cần làm nổi bật để cả lớp cùng học.
+- **Chủ nhật:** nộp file. Mentor sửa bài và chọn những bài để showcase, để cả lớp cùng học từ các bài hay và các bài nổi bật.
 
 ## Sáu tuần
 
 | Tuần | Lesson                 | Practice   | Việc trên đề tài                                                                                                                                      |
 | ---- | ---------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Design process with AI | Practice 1 | Dựng project folder. Viết bản đầu về sản phẩm, người dùng và job chính. Viết data rules bằng lời của bạn.                                             |
+| 1    | Design process with AI | Practice 1 | Dựng project folder. Viết bản nháp đầu tiên về sản phẩm, người dùng và job chính. Viết data rules bằng lời của bạn.                                             |
 | 2    | Discover the problem   | Practice 2 | Viết bộ nguyên tắc và business question. Phỏng vấn 2 đến 3 người đã từng đi chơi nhóm. Rút insight có source ID.                                      |
 | 3    | Research you can trust | Practice 3 | Làm persona, journey map từ lúc ứng tiền đến lúc chốt tiền, và opportunity. Viết problem brief.                                                       |
 | 4    | Explore ideas          | Practice 4 | Viết ít nhất ba solution cho một opportunity. Sketch hai concept khác nhau về giả định, chọn một hướng và viết lý do. Làm user flow 5 đến 7 màn hình. |
 | 5    | AI prototyping         | Practice 5 | Dựng prototype chạy được trên trình duyệt cho flow đã chọn, kèm design system tối thiểu và rules file.                                                |
 | 6    | Test with real users   | Practice 6 | Audit prototype cùng AI, test với 3 đến 5 người thật, sửa đúng layer, và đóng gói handoff.                                                            |
+
 Chi tiết từng bước nằm trong file practice của từng lesson. Bảng trên chỉ cho bạn thấy đề tài của mình ở mỗi tuần.
 
 ## Kết quả cuối cùng
 
-Sau tuần 6, folder project của bạn có đủ các file trong bảng trên, một prototype đã sửa, và gói handoff cho người sẽ triển khai sản phẩm. 
+Sau tuần 6, folder project của bạn có đủ các file trong bảng trên, một prototype đã sửa, và gói handoff cho người sẽ triển khai sản phẩm.
