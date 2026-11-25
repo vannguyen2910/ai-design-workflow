@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "winnie-skills": {
+      "source": {
+        "source": "github",
+        "repo": "vannguyen2910/winnie-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "teaching@winnie-skills": true,
+    "vietnamese-writing@winnie-skills": true
+  }
+}

@@ -9,7 +9,6 @@ lesson: explore-ideas
 ## Method cards
 
 - [Opportunity solution tree](../../../assets/method-cards/03-develop/01-brainstorm/opportunity-solution-tree.md)
-- [How Might We ideation](../../../assets/method-cards/03-develop/01-brainstorm/how-might-we-ideation.md)
 - [Crazy 8s](../../../assets/method-cards/03-develop/01-brainstorm/crazy-8s.md)
 - [Brainwriting](../../../assets/method-cards/03-develop/01-brainstorm/brainwriting.md)
 - [Concept sketching](../../../assets/method-cards/03-develop/02-select/concept-sketching.md)
