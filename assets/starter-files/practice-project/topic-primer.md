@@ -19,7 +19,7 @@ Nhóm đi chơi cũng rất khác nhau. Bạn bè thân có thể châm chước
 
 ## 2. Cách mọi người đang làm
 
-Các cách dưới đây là giả thuyết để bạn kiểm tra, vì chúng ta chưa khảo sát đủ để khẳng định mức độ phổ biến. Dùng chúng làm danh sách khởi đầu cho phần competitor và desk research ở Tuần 2.
+Các cách dưới đây là giả thuyết để bạn kiểm tra, vì chúng ta chưa khảo sát đủ để khẳng định mức độ phổ biến. Dùng chúng làm danh sách khởi đầu cho các assumption và research question ở Tuần 2, hoặc cho phần phân tích competitor tuỳ chọn.
 
 | Cách làm | Điểm có thể mạnh | Điểm có thể hỏng | Cần kiểm tra |
 |---|---|---|---|
@@ -46,7 +46,7 @@ Bạn nên tự tìm thêm ít nhất hai cách mà bảng chưa có, vì mỗi 
 
 ## 4. Câu hỏi nên khám phá
 
-Bạn dùng các câu hỏi này để soạn research questions ở Tuần 2 và chọn người phỏng vấn. Chúng là câu hỏi cho nghiên cứu, chưa phải câu hỏi phỏng vấn. Khi phỏng vấn, bạn nên hỏi về những lần đã xảy ra thay vì hỏi ý kiến chung chung.
+Bạn dùng các câu hỏi này để soạn research question ở Tuần 2 (Practice 2, Step 4) và chọn người phỏng vấn. Chúng là câu hỏi cho nghiên cứu, chưa phải câu hỏi phỏng vấn. Khi phỏng vấn, bạn nên hỏi về những lần đã xảy ra thay vì hỏi ý kiến chung chung.
 
 - Khi chuyến đi gần nhất của họ kết thúc, ai là người tính tiền, và họ mất bao lâu?
 - Họ ghi lại khoản chi vào lúc nào, bằng cách nào, và khi nào thì họ quên?
