@@ -22,6 +22,7 @@ Only the pages listed here appear on the site, in this order. To show a page, mo
 ## Project
 
 - [Project brief: Chia tiền nhóm đi chơi](assets/starter-files/practice-project/project-brief.md)
+- [Tài liệu nền: Chia tiền nhóm đi chơi](assets/starter-files/practice-project/topic-primer.md)
 
 ## Resources
 

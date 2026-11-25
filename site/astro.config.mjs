@@ -23,6 +23,7 @@ export default defineConfig({
 				{ label: 'Giới thiệu chương trình', slug: 'index' },
 				{ label: 'Lessons', items: lessons },
 					{ label: 'Project brief', slug: 'project/brief' },
+					{ label: 'Tài liệu nền', slug: 'project/topic-primer' },
 				{ label: 'Classes', items: classes },
 			],
 		}),
