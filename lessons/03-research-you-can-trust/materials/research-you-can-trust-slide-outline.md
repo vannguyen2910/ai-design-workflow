@@ -2,7 +2,7 @@
 title: "Research You Can Trust"
 lesson_file: "research-you-can-trust-lesson.md"
 level: ""
-slide_count: 67
+slide_count: 78
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/4AFDgey1QNAkFuXdiRGvvu"
@@ -45,19 +45,17 @@ last_synced: 2026-11-24
 - Kicker: Lộ trình
 - Title: Nội dung\n*buổi học*
 - On-slide:
-  - Synthesis
-  - Persona
-  - Journey map
-  - Opportunity
-  - Design challenge
-  - Insight hub
+  - Synthesis và insight hub
+  - Hiểu người dùng đã nói và làm gì
+  - Chọn việc đáng giải quyết
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Năm mục đầu nằm trong Define, chia hai nửa: Hiểu gồm synthesis, persona, journey map; Chọn gồm opportunity và design challenge
-  - Insight hub là thói quen giữ lại những gì đã kiểm tra
+  - Phần 1: synthesis và insight hub, biến source notes thành insight đã kiểm tra rồi lưu lại để lần sau tìm trước khi hỏi lại
+  - Phần 2 là nửa Hiểu của Define: persona và journey map, người dùng đã nói và làm gì
+  - Phần 3 là nửa Chọn: opportunity, design challenge và problem brief, việc nào đáng giải quyết
 
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, ba mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
 
@@ -107,17 +105,16 @@ last_synced: 2026-11-24
 ---
 
 ### DIAGRAM · Where we are in the Double Diamond
-- Kicker: Bản đồ
-- Title: Define có\n*hai nửa*
+- Kicker: Outcome
+- Title: Mục tiêu của\n*bài học hôm nay*
 - On-slide:
   - Discover
-  - Lesson 2: scope, assumption, research question, source notes
-  - Define, nửa Hiểu
-  - Synthesis, persona, journey map: người dùng đã nói và làm gì
-  - Define, nửa Chọn
-  - Opportunity, design challenge: việc nào đáng giải, ai đã đồng ý
-  - Develop
-  - Lesson 4: giả thuyết, ba hướng, một hướng được chọn
+  - Raw insights đã thu thập: scope, assumption map, research question, source notes
+  - Define · Hiểu
+  - Người dùng đã nói và làm gì: synthesis, persona, journey map
+  - Define · Chọn
+  - Việc nào đáng giải quyết: opportunity, design challenge, problem brief
+  - Nửa Hiểu mô tả người dùng. Nửa Chọn là quyết định cần Product và Business đồng ý
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -128,7 +125,7 @@ last_synced: 2026-11-24
   - Đầu ra cuối của Define là design challenge, ghi trong problem brief. Lesson 4 bắt đầu từ brief đó
 
   > Hiện giờ team bạn dừng ở insight hay đã có một design challenge được ký?
-- 🎨 Visual hint: SCHEMATIC. Hai hình thoi nối nhau; Define nằm ở nửa hình thoi thứ nhất và đầu hình thoi thứ hai, tách thành hai vùng Hiểu và Chọn, accent purple ở Define.
+- 🎨 Visual hint: FEATURE CARDS. Ba card line-art cùng mức (Discover, Define · Hiểu, Define · Chọn), hình ở trên, tiêu đề và mô tả ở đáy, hiện theo click; một câu chốt bên dưới.
 
 ---
 
@@ -156,7 +153,7 @@ last_synced: 2026-11-24
   - Thanh vàng ở dưới là insight ID, sợi dây nối cả chuỗi. Bộ nguyên tắc áp lên mọi bước.
   - Đây là cách hiểu của chương trình, chưa phải kết quả nghiên cứu.
   - Opportunity xếp hạng xong thì đi tiếp tới design challenge, đầu ra cuối của Define, ghi trong problem brief.
-  - Một dòng không có insight ID thì không còn là đầu ra của research. Hôm nay mình đi từ trái sang phải, bắt đầu từ synthesis.
+  - Một dòng không có insight ID thì không còn là đầu ra của research. Hôm nay chúng ta đi từ trái sang phải theo ba phần: synthesis cùng insight hub, rồi persona với journey map, rồi opportunity với design challenge.
 - 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
 
 ---
@@ -185,18 +182,20 @@ last_synced: 2026-11-24
 
 ---
 
-## 2. Synthesis
+## 2. Part 1 · Synthesis và insight hub
 
 ---
 
-### SECTION DIVIDER · Synthesis
+### SECTION DIVIDER · Synthesis và insight hub
 - Num: 01
-- Kicker: Từ transcript đến insight đã kiểm tra
-- Title: Synthesis
+- Kicker: Từ transcript sạch đến insight đã kiểm tra, rồi lưu lại
+- Title: Synthesis\n*và insight hub*
+- On-slide:
+  - và insight hub
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần 1: synthesis, từ source notes đến một insight đã kiểm tra
+  - Phần 1: synthesis và insight hub, từ transcript sạch qua source notes đến một insight đã kiểm tra, rồi lưu thành card trong hub
   - Mọi insight phải dẫn về một source ID
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
 
@@ -371,13 +370,34 @@ last_synced: 2026-11-24
   - Cùng với file là assumption map đã cập nhật: mỗi assumption hàng đầu là Confirmed, Unconfirmed hoặc Unknown, kèm source ID
   - Insight được lưu thành một card trong insight hub ở phần cuối buổi
   - Đây chưa phải research report. Trang cho lead nằm ở cuối cả chuỗi, sau persona, journey map, opportunity và design challenge
+  - Bản đầy đủ của file này, có quote nguyên văn và năm câu Challenge, nằm ở insight-file-example.md trong course case
 
   > Insight hàng đầu của bạn đã có đủ các dòng này trong một file chưa?
 - 🎨 Visual hint: DIAGRAM. Bên trái một khung file markdown viết bằng chữ mono; bên phải ba mục: file insight, assumption map, card trong hub; một dòng chốt ở dưới.
 
 ---
 
-### NUMBERED · Six ways to use AI, three levels
+### IMAGE · An insight after synthesis
+- Kicker: Ví dụ
+- Title: Một insight\n*sau synthesis*
+- On-slide:
+  - Quote nguyên văn
+  - Nguồn này không cho biết
+  - Challenge
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đây là insight file IN-01 của Delivery App, hai ảnh chụp từ insight-file-example.md; phần Challenge chương trình soạn, chưa review
+  - Ảnh thứ nhất: Decision, insight theo mẫu, mức mạnh và bảng nguồn; mỗi source ID có quote nguyên văn và nói rõ nó đỡ ý nào. I01-01 chỉ đỡ ý vắng nhà, không đỡ ý bị khoá
+  - Ảnh thứ hai: nguồn này không cho biết, năm câu Challenge, điều làm đổi ý và ý kiến trái chiều được giữ lại
+  - Ba điều cần nhìn: mỗi ý có source ID và quote nguyên văn; file nói rõ nguồn này không cho biết gì; Challenge tìm chỗ insight có thể sai
+
+  > Insight của bạn đã có đủ ba điều này chưa?
+- 🎨 Visual hint: REAL. Hai ảnh chụp file insight cạnh nhau, viền ink bo 22px; bên phải ba mục ngắn, mỗi khối hiện theo click.
+
+---
+
+### NUMBERED · Five ways to use AI, three levels
 - Kicker: Tổng quan
 - Title: Sáu cách dùng AI, *ba mức cơ sở*
 - On-slide:
@@ -392,38 +412,211 @@ last_synced: 2026-11-24
   - Journey
   - ○ Untested
   - Soát đường cảm xúc
-  - Bắt câu dạng giải pháp
+  - Bắt câu không phải nhu cầu
   - Opportunity
-  - Thử ba giải pháp
-  - Cả sáu là cách làm của khoá, thử một lần trên bộ mẫu. Không cách dùng nào là best practice đã kiểm chứng.
+  - Cả năm là cách làm của khoá, thử một lần trên bộ mẫu. Không cách dùng nào là best practice đã kiểm chứng.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần method của persona, journey map và opportunity bạn đã biết, nên buổi này dành cho sáu cách dùng AI: việc AI làm tốt hơn người ở từng bước, kèm phần bạn kiểm tra.
+  - Phần method của persona, journey map và opportunity bạn đã biết, nên buổi này dành cho năm cách dùng AI: việc AI làm tốt hơn người ở từng bước, kèm phần bạn kiểm tra.
   - Mỗi cách dùng có một mức cơ sở:
     - Principle supported: có nghiên cứu hoặc nguồn practitioner đỡ nguyên lý phía sau. Cách dùng này vẫn là cách làm của khoá, chưa được đo riêng
     - Untested: chưa tìm thấy nguồn nào, coi là ý tưởng để bạn tự thử
-  - Cách dùng yếu nhất về cơ sở là dựng map không persona. Hai cách dùng soát đường cảm xúc và thử ba giải pháp có nguồn ở phần cảnh báo, không phải ở chính cách dùng đó.
+  - Cách dùng yếu nhất về cơ sở là dựng map không persona. Cách dùng soát đường cảm xúc có nguồn ở phần cảnh báo, không phải ở chính cách dùng đó.
   - Mình chỉ đọc phần tóm tắt của các nguồn, nhiều nguồn là preprint hoặc bài của practitioner. Hãy kiểm lại trước khi trích. Dữ liệu mẫu và kết quả đã lưu nằm ở define-moves.md.
 
   > Cách dùng AI nào bạn đã làm tay mà chưa kiểm tra lại?
-- 🎨 Visual hint: TABLE. Bảng sáu hàng: số, cách dùng, mục, chip mức cơ sở (tím viền đậm cho Principle supported, nét đứt cho Untested).
+- 🎨 Visual hint: TABLE. Bảng năm hàng: số, cách dùng, mục, chip mức cơ sở (tím viền đậm cho Principle supported, nét đứt cho Untested).
 
 ---
 
-## 3. Persona
+### STATEMENT · From synthesis to insight hub
+- Kicker: Từ synthesis đến insight hub
+- Title: Insight xong rồi,\n*còn phải lưu lại*
+- On-slide:
+  - Hôm nay: một insight đã qua Challenge, nằm trong một file có source ID.
+  - Sáu tháng sau: một đồng nghiệp hỏi lại: vì sao khách huỷ đơn rồi vẫn bị tính tiền?
+  - Nếu không lưu: không ai tìm thấy file đó, và team phỏng vấn lại từ đầu.
+  - Khối nhấn: Insight hub, nơi lưu insight đã kiểm tra, để lần sau chúng ta tìm trước khi hỏi lại.
+- Ví dụ: Có.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Chúng ta vừa có một file insight đã qua Challenge; câu hỏi tiếp theo là file đó đi đâu sau buổi học
+  - Sáu tháng sau câu trả lời mất hai tuần phỏng vấn thay vì hai phút tìm lại, nếu file nằm ở nơi không ai biết
+  - Insight hub là nơi lưu insight đã kiểm tra để lần sau tìm trước khi hỏi lại
+
+  > Insight của bạn sau buổi này sẽ nằm ở đâu để người khác tìm lại được?
+- 🎨 Visual hint: TYPOGRAPHIC. Ba hàng ngữ cảnh ở trên, khối nền tối lớn ở dưới làm điểm nhấn, hiện theo click.
 
 ---
 
-### SECTION DIVIDER · Persona
-- Num: 02
-- Kicker: Nhóm hành vi dựng từ insight
-- Title: Persona
+### MILESTONE · Quick check
+- Kicker: Hoạt động nhẹ
+- Title: Quick check
+- On-slide:
+  - Bạn và team có chỗ nào lưu insight đã kiểm tra, để người khác truy xuất và tham khảo được không?
+  - Nếu có: nó nằm ở đâu, và mọi người tìm lại bằng cách nào?
+  - Nếu chưa: lần gần nhất team hỏi lại một câu đã từng trả lời là khi nào?
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần 1: persona, cách điền chỗ "ai" của câu insight
-  - Mỗi dòng của persona phải truy được về insight ID
+  - Hoạt động nhẹ, khoảng ba phút, đặt ngay sau slide chuyển tiếp và trước khi giới thiệu insight hub
+  - Phút đầu: đọc câu hỏi, mỗi người nghĩ cho bản thân và cho team; có thể gõ có hoặc không vào chat
+  - Hai phút sau: mời vài người trả lời hai câu hỏi phụ theo click; người có chỗ lưu kể nó nằm ở đâu và tìm lại thế nào, người chưa có kể lần gần nhất team hỏi lại một câu đã từng trả lời
+  - Ghi lại các nơi mọi người đang lưu và cách tìm lại, để dùng ở slide insight hub là gì và phần thói quen tìm trước khi hỏi lại
+  - Nếu lớp trả lời có nhưng chỉ lưu ghi chú thô hoặc báo cáo dài, hỏi tiếp: insight đã qua kiểm tra có tách riêng ra không, và có ID, ngày để tìm không
+
+  > Nếu một người mới vào team hôm nay, họ tìm lại insight cũ bằng cách nào?
+- 🎨 Visual hint: TYPOGRAPHIC. Nền vàng như Ice breaker, tiêu đề lớn ở trên, câu hỏi chính ở giữa, hai câu hỏi phụ hiện theo click.
+
+---
+
+### NUMBERED · Insight hub
+- Kicker: Định nghĩa
+- Title: Insight hub\n*là gì?*
+- On-slide:
+  - WHAT
+  - Nơi lưu insight đã kiểm tra, mỗi insight có ID, evidence, ngày và tag.
+  - Là thư mục insights trong Knowledge Hub của project, không phải công cụ riêng.
+  - WHY
+  - Tránh làm lại research cho cùng một câu hỏi.
+  - Giữ insight khi người trong team thay đổi.
+  - WHEN
+  - Đóng góp sau khi insight đã qua kiểm tra.
+  - Tìm trong hub trước khi lên kế hoạch research mới.
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ví dụ: Sáu tháng sau, một đồng nghiệp hỏi lại: vì sao khách huỷ đơn rồi vẫn bị tính tiền?
+  - Hub đã có entry INS-014 với insight ID và ngày, nên câu trả lời mất hai phút thay vì hai tuần phỏng vấn
+  - Insight hub là thư mục insights trong Knowledge Hub của project, không phải công cụ riêng
+  - Mỗi entry có insight ID, source ID dẫn về, ngày, độ mạnh evidence, tag và người phụ trách; tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc
+  - AI giúp tìm entry và gợi ý tag; chỉ được trích entry có ID, và designer duyệt trước khi thêm
+  - Atomic research bắt đầu từ việc một team lặp lại nghiên cứu vì không tìm được câu trả lời cũ
+  - Nguồn atomic research là blog của agency và vendor, chưa có đánh giá độc lập
+  - Thói quen tìm trước khi hỏi lại
+  - Ví dụ hub thật và cách từ ghi chú đến card nằm ở các slide kế tiếp
+
+  > Team của bạn có chỗ nào lưu insight đã kiểm tra không? Có hoặc không (30 giây)
+- 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; kicker Định nghĩa, tiêu đề có accent ở dòng 2.
+
+---
+
+### IMAGE · Insight hub: list of cards
+- Kicker: Ví dụ
+- Title: Insight hub\nlà danh sách\ncard có ID
+- On-slide:
+  - Ảnh trang Insights của hub Travel Buddy: 39 mục chia theo loại, ô tìm theo ID hoặc tên, ba chế độ xem Cards, Tree, Matrix
+- Ví dụ: Có.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói insight hub là gì. Đây là một hub thật trông thế nào: hub của project demo Travel Buddy, không phải project app giao đồ ăn.
+  - Đọc từ trên xuống:
+    - 39 mục, chia theo loại: opportunity, hypothesis, metric, decision, evidence, finding, mỗi loại một tab kèm số lượng
+    - Ô tìm theo ID hoặc tên, và ba cách xem: Cards, Tree, Matrix
+    - Mỗi card có ID và loại, ví dụ Opportunity 1 hoặc Hypothesis 1, kèm tiêu đề và số hypothesis phía dưới
+    - Hypothesis chưa có evidence từ người dùng thật được đánh dấu bằng biểu tượng cảnh báo
+  - Mỗi mục là một file trong thư mục insights, nên tìm lại bằng ID thay vì nhớ.
+
+  > nếu hub của bạn có ba mươi chín mục, bạn sẽ tìm theo ID, theo tên hay theo loại trước?
+- 🎨 Visual hint: Chữ trái, ảnh phải có viền.
+
+---
+
+### IMAGE · Insight hub: one finding
+- Kicker: Ví dụ
+- Title: Một finding\ntruy về\nuser need
+- On-slide:
+  - Ảnh trang finding F2: cảnh báo mức nghiêm trọng, các đường từ Opportunity qua Hypothesis và Evidence tới Finding, bảng thông tin
+- Ví dụ: Có.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước là danh sách. Đây là bên trong một card: một finding trong hub Travel Buddy.
+  - Đọc từ trên xuống:
+    - Tiêu đề nói thẳng điều tìm thấy: màn hình chia sẻ nhật ký chỉ có danh sách cố định ba người, không tìm hay mời theo tên được
+    - Dải cảnh báo: finding mức nghiêm trọng 4 chưa xử lý, chặn bước handoff
+    - Phần "From the user need": các đường đi từ opportunity qua hypothesis và evidence tới finding này, nên bạn biết finding sinh ra từ nhu cầu nào
+    - Bảng thông tin: khu vực, mức nghiêm trọng, tìm thấy ở evidence nào, ảnh hưởng quyết định nào, trạng thái xử lý
+  - Mỗi liên kết là một ID bấm được, đó là lý do insight có ID.
+
+  > nếu không có đường truy về nhu cầu, finding này còn đáng ưu tiên không?
+- 🎨 Visual hint: Chữ trái, ảnh phải có viền.
+
+---
+
+### NUMBERED · Build the hub by rules
+- Kicker: Cách dùng AI
+- Title: Dựng insight hub *theo rule*
+- On-slide:
+  - Đưa vào một folder
+  - Mỗi insight đã qua Challenge là một file card có ID
+  - Chỉ nhận insight đã qua kiểm tra
+  - Rule viết một lần, cho AI đọc mỗi lần chạy
+  - AI chạy theo rule
+  - Giống card cũ: gộp nguồn mới vào card đó
+  - Insight mới: thêm một card mới
+  - Mâu thuẫn hoặc không chắc: dừng và báo bạn
+  - AI dựng một trang
+  - Script dựng trang từ các card
+  - Mọi người xem và chia sẻ cùng một chỗ
+  - Lọc theo loại, tag, mức mạnh
+  - Gộp là gộp nguồn vào cùng một card, không xoá ý kiến trái chiều. Rule do bạn viết một lần.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Viết một bộ rule một lần, đưa cho AI cùng folder các insight đã qua Challenge; AI tự chạy theo rule khi có insight mới
+  - Giống card cũ thì gộp nguồn mới vào card đó; mới thì thêm card; mâu thuẫn hoặc không chắc thì dừng và báo
+  - Gộp là gộp nguồn, không gộp lời, không xoá ý kiến trái chiều; decision và thứ hạng vẫn do bạn quyết
+  - Lưu checkpoint trước mỗi lần chạy và cho AI ghi log card được thêm hoặc gộp
+  - Script dựng trang từ các card để cả team xem, chia sẻ và lọc
+  - Workflow add-insights hiện duyệt từng dòng; cách dùng rule là bản ít duyệt hơn, thử trên folder nhỏ trước. Đây là cách làm của khoá, chưa có nguồn ngoài
+
+  > Nếu bạn cho AI tự gộp, trường hợp nào bạn muốn nó dừng lại hỏi?
+- 🎨 Visual hint: Ba bước ngang, icon line-art (folder, gộp, chồng card), mũi tên nối, không card viền.
+---
+
+### DIAGRAM · Search before asking
+- Kicker: Thói quen
+- Title: Tìm trước\n*khi hỏi lại*
+- On-slide:
+  - Câu hỏi mới, rồi tìm trong hub
+  - Đã có thì dùng lại; chưa có thì research phần còn thiếu
+  - Kiểm tra, rồi đóng góp vào hub
+  - Insight hub
+  - Câu hỏi mới
+  - Tìm trong hub
+  - Research thêm
+  - Kiểm tra
+  - Đóng góp
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ví dụ: Câu hỏi mới: hạn chót huỷ đơn nên hiện ở đâu? Người đó mở hub trước, thấy một entry gần đúng và chỉ research phần còn thiếu
+  - Đây là cả vòng: câu hỏi mới, tìm trong hub, research thêm khi cần, kiểm tra, đóng góp
+  - Hub ở giữa: được đọc ở bước tìm và được ghi ở bước đóng góp; đã có thì dùng lại
+  - Thói quen cốt lõi là tìm trước khi hỏi lại, bước màu vàng trên vòng
+  - Cập nhật entry khi có evidence mới thay vì thêm bản trùng
+  - Atomic research ghi nhận thói quen kiểm tra repository trước là việc ngăn làm lại; nguồn là blog của agency
+  - AI giúp được ở đâu với hub
+- 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
+
+---
+
+## 3. Part 2 · Hiểu người dùng đã nói và làm gì
+
+---
+
+### SECTION DIVIDER · Hiểu người dùng đã nói và làm gì
+- Num: 02
+- Kicker: Persona và journey map
+- Title: Hiểu\n*người dùng đã nói và làm gì*
+- On-slide:
+  - người dùng đã nói và làm gì
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Phần 2 là nửa Hiểu của Define: persona điền chỗ "ai" của câu insight, journey map điền chỗ "khi nào"
+  - Mỗi dòng truy được về một insight ID; ô nào không có insight thì ghi assumption
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
 
 ---
@@ -454,6 +647,25 @@ last_synced: 2026-11-24
 
   > Nhóm hành vi nào đang có trong dữ liệu? Gõ một dòng vào chat
 - 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; kicker Định nghĩa, tiêu đề có accent ở dòng 2.
+
+---
+
+### IMAGE · A traditional persona
+- Kicker: Ví dụ về Persona truyền thống
+- Title: Travel Buddy
+- On-slide:
+  - @ Winnie
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ví dụ persona từ project Travel Buddy: hai persona, Explorer và Connector
+  - Mỗi persona có Bio, Goals, Frustration, Motivation, Expectation, Personality và Hobbies
+  - Persona của bạn phải dẫn về insight ID ở từng dòng; dòng không có insight thì ghi unknown
+  - Đây là hình minh hoạ cấu trúc, không phải persona dựng từ insight của project app giao đồ ăn
+  - Cách làm để mỗi dòng của persona đều có insight phía sau
+
+  > Dòng nào trong hình này bạn không tin được nếu không thấy insight phía sau?
+- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
 
 ---
 
@@ -569,7 +781,7 @@ last_synced: 2026-11-24
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói sáu cách dùng. Cách dùng AI 1 trả lời: persona nháp có dòng nào không có nguồn?
+  - Slide trước nói năm cách dùng. Cách dùng AI 1 trả lời: persona nháp có dòng nào không có nguồn?
   - Bạn đưa AI persona nháp (mỗi dòng một ID) và các insight đã kiểm tra, rồi nhờ trả mỗi dòng một nhận định: ủng hộ, đi ngược hoặc assumption. Trên bộ mẫu:
     - L2 (28 đến 35 tuổi, nhà thành phố) không insight nào nói: assumption
     - L4 (bỏ đi vì phí giao đắt) đi ngược IN-04, insight nói giá không phải lý do chính
@@ -602,23 +814,6 @@ last_synced: 2026-11-24
 
   > Hypothesis nào của team đang nằm sẵn trong prompt khi bạn nhờ AI gom nhóm?
 - 🎨 Visual hint: COMPARE. Hai card cùng cấu trúc, mỗi card ba hàng; card primed viền tím.
-
----
-
-## 4. Journey map
-
----
-
-### SECTION DIVIDER · Journey map
-- Num: 03
-- Kicker: Khi nào và ở bước nào
-- Title: Journey map
-- Ví dụ: Không cần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Phần 2: journey map, cách điền chỗ "khi nào"
-  - Ô nào không có insight thì ghi assumption
-- 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
 
 ---
 
@@ -677,6 +872,34 @@ last_synced: 2026-11-24
   - Pain đặt đúng ở bước gây ra nó; insight ID là hàng chương trình thêm vào, ô nào không có insight thì ghi assumption
   - Pain point trên persona phải xuất hiện lại ở đúng bước gây ra nó, và chỗ suy đoán phải được đánh dấu
   - Xem một journey map thật
+- 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
+
+---
+
+### DIAGRAM · A journey map with evidence
+- Kicker: Ví dụ
+- Title: Journey map *có evidence*
+- On-slide:
+  - Chọn khung giờ giao
+  - IN-01
+  - Thanh toán
+  - assumption
+  - Xác nhận đã thanh toán
+  - Chờ xác nhận đơn đã thanh toán
+  - IN-03
+  - Không thể huỷ hoặc sửa đơn đã thanh toán
+  - IN-02 · đáy cảm xúc
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ví dụ: Năm giai đoạn: chọn khung giờ giao, thanh toán, chờ đơn đầu, nhận đơn đầu, huỷ hoặc sửa đơn
+  - Chọn khung giờ giao và nhận đơn đầu có IN-01 (I01-01, I02-01, R01, F01); chờ đơn đầu có IN-03 (R05, I01-03)
+  - Huỷ đơn có IN-02 (R04, F04) và là đáy cảm xúc; thanh toán không có insight nào, team nghi bước này làm khách ngại cam kết nhưng đó vẫn là assumption
+  - Bước nào có insight thì dẫn insight ID, bước nào không thì nói thẳng
+  - Một ô assumption không làm journey xấu đi. Giấu nó mới làm nó xấu
+  - Nguyên tắc nằm sau ô assumption
+
+  > Journey của bạn có bao nhiêu ô assumption trên tổng số ô? Gõ một con số
 - 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
 
 ---
@@ -795,58 +1018,228 @@ last_synced: 2026-11-24
 
 ---
 
-## 5. Opportunity
+### IMAGE · A journey from a screen recording
+- Kicker: Ví dụ
+- Title: Journey hiện tại, dựng từ bản ghi app đang chạy
+- On-slide:
+  - Ảnh journey map của một app giao đồ ăn đang chạy: năm giai đoạn, đường cảm xúc giả định, hành động, touchpoint, điều người dùng mong đợi (assumed), ô nét đứt là chỗ có thể vỡ trải nghiệm
+  - Nguồn: walk-through ngày 23/11/2026
+- Ví dụ: Có.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Dùng khi chưa có research nào: dựng journey hiện tại từ sản phẩm đang chạy (PROD)
+  - Quay lại một lần dùng app thật, nhờ AI dựng journey từ bản ghi
+  - Bản ghi chỉ cho thấy người dùng nhìn thấy gì và bấm gì; cảm xúc và mong đợi là assumed, ghi assumption cho đến khi có insight
+  - Hình minh hoạ, không phải dữ liệu của project app giao đồ ăn trong khoá
+
+  > ô nào trong hình này bạn cần một câu phỏng vấn để xác nhận trước?
+- 🎨 Visual hint: Ảnh full-bleed trên nền tối, hai nhãn nhỏ ở dưới.
 
 ---
 
-### SECTION DIVIDER · Opportunity
-- Num: 04
-- Kicker: Nhu cầu đáng giải, không phải tính năng
-- Title: Opportunity\n*quyết định nào*
+## 4. Part 3 · Chọn việc đáng giải quyết
+
+---
+
+### SECTION DIVIDER · Chọn việc đáng giải quyết
+- Num: 03
+- Kicker: Opportunity, design challenge và problem brief
+- Title: Chọn\n*việc đáng giải quyết*
 - On-slide:
-  - quyết định nào
+  - việc đáng giải quyết
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần 3: opportunity, cách điền chỗ "quyết định nào"
+  - Phần 3 là nửa Chọn của Define: opportunity cho biết nhu cầu nào đáng giải, design challenge chốt việc team sẽ giải và ghi trong problem brief
   - Câu kiểm tra: đây là nhu cầu của người dùng hay là một tính năng?
+  - Chữ challenge ở đây khác bước Challenge của synthesis: bước đó phản biện insight, còn design challenge là câu hỏi thiết kế
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
 
 ---
 
-### NUMBERED · Opportunity
-- Kicker: Định nghĩa
-- Title: Opportunity\n*là gì?*
+### DIAGRAM · Insight, opportunity, design challenge
+- Kicker: Phân biệt
+- Title: Insight, opportunity,\n*design challenge*
 - On-slide:
-  - WHAT
-  - Nhu cầu hoặc khó khăn của người dùng đáng giải, viết như vấn đề của khách hàng chứ không phải tính năng.
-  - Mỗi cái có evidence và được xếp thứ tự.
-  - WHY
-  - Tách vấn đề khỏi giải pháp trước khi nghĩ ý tưởng.
-  - Nối research với quyết định.
-  - WHEN
-  - Sau journey map, từ các pain point, trước hypothesis và ý tưởng ở buổi sau.
-  - Không dùng làm danh sách việc cần làm.
-- Ví dụ: có (xem speaker notes)
+  - Insight: đã biết, điều chúng ta thấy trong dữ liệu
+  - Opportunity: cần giải, nhu cầu chưa được đáp ứng (card nhấn)
+  - Design challenge: việc team chọn giải
+  - Insight là điều chúng ta thấy, opportunity là điều người dùng cần, design challenge là việc team chọn giải
+- Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ví dụ: R01: khách chọn khung giờ giao mà không biết sau khi thanh toán không đổi được, đơn đến lúc họ ở sân bay và đồ ăn nguội ngoài cửa
-  - Một team sẽ nghĩ ngay đến thêm popup nhắc khung giờ giao; đó là giải pháp, chưa phải nhu cầu
-  - Nhu cầu: khách cần biết khung giờ giao là cuối cùng trước khi cam kết, hoặc đổi được nó
-  - Opportunity là tầng khách hàng nằm giữa outcome và solution trong opportunity solution tree; tách nhu cầu khỏi giải pháp trước khi nghĩ ý tưởng
-  - AI viết theo mẫu người dùng gặp khó khi tình huống vì lý do, và bị cấm nhắc tính năng
-  - Bạn kiểm tra ba điều: nhu cầu hay giải pháp, có insight ID chưa, xếp theo severity, context và reach
-  - Một opportunity sai khung kéo lệch mọi thứ phía trên nó
-  - Bắt đầu từ gốc của cây opportunity
+  - Ba lớp nối tiếp nhau trong Define, theo thứ tự click: insight, opportunity, design challenge
+  - Opportunity là lớp ở giữa mà team hay bỏ qua khi nhảy thẳng từ điều đã thấy sang ý tưởng
+  - Ý tưởng cụ thể chưa nằm trong ba lớp này, để buổi sau
 
-  > Bạn có opportunity nào đang viết như tính năng không? Gõ có hoặc không
-- 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; kicker Định nghĩa, tiêu đề có accent ở dòng 2.
+  > Câu nào bạn viết gần đây tưởng là opportunity nhưng thật ra là một tính năng?
+- 🎨 Visual hint: FEATURE CARDS. Ba card line-art, hình ở trên, tiêu đề và mô tả ở đáy; card Opportunity nền vàng; hiện theo click.
 
 ---
 
-### TABLE · Cách dùng AI 5: catch solutions disguised as needs
+### NUMBERED · Opportunity map
+- Kicker: Định nghĩa
+- Title: Opportunity map\n*là gì?*
+- On-slide:
+  - WHAT
+  - Một cây: gốc là outcome hoặc problem statement, các nhánh là opportunity.
+  - Mỗi opportunity là một nhu cầu, truy về insight.
+  - WHY
+  - Cả team thấy mọi thứ có thể giải, và vì sao chọn nhánh này.
+  - Chọn từ nhu cầu, trước khi nghĩ ý tưởng.
+  - WHEN
+  - Sau journey map, trước design challenge.
+  - Ý tưởng gắn vào cây ở buổi sau.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Opportunity map là một cây. Gốc là outcome hoặc problem statement đã chốt từ insight; các nhánh là opportunity, nhu cầu của người dùng hoặc mong muốn của business
+  - Cây dừng ở opportunity, ý tưởng cụ thể gắn vào cây ở buổi sau
+  - Ví dụ Delivery App: gốc là nhiều khách mới đặt lại sau đơn đầu tiên; một nhánh là khách mới cần biết khung giờ giao là cuối cùng, truy về IN-01
+  - Mỗi nhánh có evidence nên chọn nhánh nào là chọn có căn cứ
+
+  > Team của bạn đang có outcome hay problem statement? Gõ một trong hai (30 giây)
+- 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When; icon line-art là một cây (gốc và các nhánh).
+
+---
+
+### NUMBERED · Five steps
+- Kicker: Cách làm
+- Title: Năm bước dựng\n*opportunity map*
+- On-slide:
+  - 01 Chọn gốc: một outcome hoặc một problem statement
+  - 02 Liệt kê opportunity: nhu cầu của người dùng hoặc của business
+  - 03 Dựng cây: gom thành nhánh lớn và nhánh nhỏ
+  - 04 Reframe: nhìn nhánh mạnh nhất theo cách khác
+  - 05 Chấm và chọn: xếp thứ tự, ghi lý do loại
+  - Dừng ở opportunity. Chưa chọn ý tưởng.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Năm bước dựng một opportunity map từ insight, mỗi bước hiện lần lượt
+  - Mỗi opportunity truy về ít nhất một insight; không có insight nguồn thì ghi assumption
+  - Chúng ta dừng ở opportunity, ý tưởng gắn vào cây ở buổi sau
+
+  > Opportunity nào trong map của bạn chưa dẫn về được insight nào?
+- 🎨 Visual hint: TYPOGRAPHIC. Danh sách số, tiêu đề trái, năm dòng phải, hiện từng dòng theo click.
+
+---
+
+### COMPARE · Root: outcome or problem statement
+- Kicker: Opportunity map · Bước 1
+- Title: Chọn *gốc của cây*
+- On-slide:
+  - Outcome: nhiều khách mới đặt lại sau đơn đầu tiên. Hành vi team muốn thấy, cả team cùng cam kết
+  - Problem statement: khách mới không biết khung giờ giao đã chốt cho đến khi quá muộn. Vấn đề đã chốt từ insight
+  - Không làm gốc được: metric (không có hành vi bên dưới), câu không kiểm chứng được
+  - Chọn một trong hai gốc. Kiểm tra: nếu gốc xảy ra, con số kinh doanh có nhích không?
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Gốc có thể là outcome hoặc problem statement, tuỳ team đang có gì
+  - Outcome lấy từ mục tiêu business và cả team cùng cam kết; problem statement dùng khi chưa có outcome rõ
+  - Gốc không ai đồng ý thì chưa có mục tiêu, và làm cho nó được đồng ý là một phần của bài tập
+
+  > Team của bạn đang có outcome hay problem statement?
+- 🎨 Visual hint: COMPARE. Ba card cùng mức: Outcome, Problem statement, Không làm gốc được.
+
+---
+
+### COMPARE · List the opportunities
+- Kicker: Opportunity map · Bước 2
+- Title: Liệt kê *nhu cầu*
+- On-slide:
+  - Từ phía người dùng: khách cần biết khung giờ giao là cuối cùng (IN-01); còn huỷ được đến khi nào (IN-02); ước tính thời gian chờ đáng tin (IN-03)
+  - Từ phía business: giảm đơn bị huỷ sau thanh toán (assumption, chưa có số liệu)
+  - Viết như một nhu cầu: có chữ “vì”, không có động từ làm ra một thứ gì (thêm, xây, làm lại)
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Mỗi opportunity là một nhu cầu hoặc khó khăn, không phải một cách làm
+  - Mong muốn của business cũng là opportunity nếu team cùng cam kết; chưa có số liệu thì ghi assumption
+  - Câu có động từ làm ra một thứ gì thì viết lại thành nhu cầu đằng sau nó; nhiều dòng sẽ không qua lần đầu, đó là phản xạ thường gặp
+
+  > Dòng nào trong danh sách của team bạn có động từ làm ra một thứ gì?
+- 🎨 Visual hint: COMPARE. Hai card: Từ phía người dùng, Từ phía business; một câu chốt bên dưới.
+
+---
+
+### DIAGRAM · Build the tree
+- Kicker: Opportunity map · Bước 3
+- Title: Dựng *cây opportunity*
+- On-slide:
+  - Gốc: nhiều khách mới đặt lại sau đơn đầu tiên
+  - Nhánh lớn: khách mới biết mình đang cam kết điều gì; khách mới tin ước tính thời gian
+  - Nhánh nhỏ: biết khung giờ giao là cuối cùng (IN-01); biết còn huỷ được đến khi nào (IN-02); biết đơn đã được xác nhận (IN-03)
+  - Opportunity lớn chia thành opportunity nhỏ. Nhánh nào dày nhu cầu thường là chỗ đáng xem trước
+- Ví dụ: Có.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ví dụ do chương trình soạn từ IN-01 đến IN-03, chưa review
+  - Gom các opportunity thành nhánh lớn và nhỏ, nối lên gốc
+  - Opportunity không nối được lên gốc thì nằm sai chỗ hoặc gốc chưa đủ rộng; ghi lại thay vì bỏ đi
+
+  > Opportunity nào của bạn chưa biết nối vào nhánh nào?
+- 🎨 Visual hint: SCHEMATIC. Cây ba tầng, gốc nền tối, các node còn lại nền trắng viền đậm; hiện theo tầng.
+
+---
+
+### NUMBERED · Reframing
+- Kicker: Opportunity map · Bước 4
+- Title: Reframing tạo ra *lựa chọn*
+- On-slide:
+  - Question the objective
+  - Mục tiêu này của ai, và nếu nó sai thì sao?
+  - Positive exceptions
+  - Ai đã thành công rồi, và họ khác ở điểm nào?
+  - What's missing
+  - Khung này bỏ ngoài điều gì?
+  - Reframing không tìm ra vấn đề thật. Nó cho xem có vấn đề tốt hơn hay không.
+  - Chỉ reframe nhánh mạnh nhất. Ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đã có một cây opportunity; reframing là một thao tác thực hiện trên cây đó, và nó tạo ra lựa chọn chứ không tìm ra vấn đề thật
+  - Chỉ reframe nhánh mạnh nhất; reframe tất cả thì thành hội thảo triết học thay vì một quyết định
+  - Dẫn bằng positive exceptions vì nó gắn với evidence và cần dữ liệu theo giai đoạn
+  - Một nguồn đủ để sinh reframe, không đủ để đặt cược; ghi số insight bên cạnh reframe để cân nhắc trung thực
+  - Reframe cho thấy một nhánh khác, nhưng không được dùng làm đường quay lại cho ý tưởng yêu thích
+  - Chọn nhánh nào, bằng bốn yếu tố
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+
+---
+
+### NUMBERED · Score and choose
+- Kicker: Opportunity map · Bước 5
+- Title: Chấm *rồi chọn*
+- On-slide:
+  - Sizing
+  - Quy mô: bao nhiêu người, bao nhiêu lần.
+  - Importance
+  - Quan trọng thế nào với mục tiêu kinh doanh.
+  - Company fit
+  - Hợp với công ty đến đâu.
+  - Market position
+  - Đặt công ty ở đâu trên thị trường.
+  - Chưa có cột effort: effort vào ở tầng giải pháp.
+  - Chấm bằng bốn yếu tố khi làm riêng; trình bày bằng impact và effort.
+  - Ghi opportunity bị loại kèm lý do.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Chấm opportunity bằng bốn yếu tố khi làm riêng; khi trình bày trong phòng thì dùng ngôn ngữ impact và effort
+  - Sizing, Importance, Company fit, Market position; Importance là thuộc tính của mục tiêu kinh doanh, không phải của hành trình khách hàng
+  - Không có cột effort ở bước này vì các giải pháp cho cùng một opportunity chênh nhau rất nhiều về chi phí; effort vào ở tầng giải pháp
+  - Ghi lại opportunity bị loại kèm lý do: có lý do thì xem lại được khi evidence đổi, không ghi thì bị tranh luận lại
+  - Người không nói được vì sao opportunity thứ hai thua thì chưa chọn, mới chỉ thích
+  - Quy tắc xếp thứ tự vẫn là severity, context và reach ở slide "Nhu cầu hay giải pháp?"; bốn yếu tố này là lớp chấm cho quyết định chọn
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+
+---
+
+### TABLE · Cách dùng AI 5: catch lines that are not needs
 - Kicker: Cách dùng AI · Opportunity
-- Title: Bắt câu *dạng giải pháp*
+- Title: Bắt câu *không phải nhu cầu*
 - On-slide:
   - Ví dụ: năm opportunity nháp của Delivery App.
   - ID
@@ -855,11 +1248,11 @@ last_synced: 2026-11-24
   - Viết lại, căn cứ
   - O1
   - Thêm nút hủy nổi bật
-  - ○ solution
+  - ○ tính năng
   - IN-02
   - O2
   - Khó chọn giờ vì không biết là cuối cùng
-  - ● need
+  - ● nhu cầu
   - IN-01
   - O3
   - Gửi thông báo đẩy khi trễ
@@ -874,7 +1267,7 @@ last_synced: 2026-11-24
 - Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Cách dùng AI 5 bắt phản xạ quen thuộc: viết giải pháp rồi gọi nó là opportunity.
+  - Cách dùng AI 5 bắt phản xạ quen thuộc: viết một tính năng rồi gọi nó là opportunity.
   - Bạn đưa AI danh sách opportunity nháp của team và các insight. Nó gắn nhãn từng dòng là need hoặc giải pháp, rồi viết lại dòng giải pháp thành user need theo mẫu “[người dùng] gặp khó khi [tình huống] vì [lý do]”, kèm insight ID hoặc assumption.
   - Trên bộ mẫu AI gắn nhãn đúng cả năm dòng:
     - O1, O3, O5 là giải pháp
@@ -885,39 +1278,6 @@ last_synced: 2026-11-24
 
   > Dòng nào trong danh sách opportunity của team bạn có động từ làm ra một thứ gì đó?
 - 🎨 Visual hint: TABLE. Bảng năm hàng ID, dòng của team, nhãn, căn cứ; nhãn solution là chip nét đứt.
-
----
-
-### COMPARE · Cách dùng AI 6: three solutions for one need
-- Kicker: Cách dùng AI · Opportunity
-- Title: Thử ba *giải pháp*
-- On-slide:
-  - Ví dụ: need khung giờ giao của Delivery App.
-  - Need
-  - Khách mới khó chọn khung giờ giao vì không biết giờ đó là cuối cùng.
-  - Giải pháp
-  - Hiển thị
-  - Thêm assumption
-  - Khách đọc và hiểu nhãn “khung giờ cuối”.
-  - Thời điểm chọn giờ là lúc cần biết.
-  - Quy trình
-  - Nhà hàng và shipper chịu được việc dời giờ.
-  - Khách nhớ dùng tính năng đổi giờ.
-  - Chủ động
-  - Khách bật thông báo và đọc kịp.
-  - Gốc vấn đề là đồ nguội, không phải chọn giờ.
-  - Need vẫn đúng khi bỏ cả ba. Đây là phép thử need đứng độc lập, không phải bước chọn giải pháp.
-- Ví dụ: có
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Cách dùng AI 6 kiểm tra một điều: need của bạn có đứng độc lập khỏi giải pháp không?
-  - Với need “khách mới gặp khó khi chọn khung giờ giao vì không biết giờ đó là cuối cùng”, bạn nhờ AI đề xuất ba giải pháp khác nhau về bản chất, nêu assumption mới mà mỗi giải pháp thêm vào, rồi trả lời: need còn đúng nếu bỏ cả ba không?
-  - Trên bộ mẫu AI đưa ba giải pháp thật sự khác nhau và kết luận need vẫn đúng. Nó còn nói cách diễn đạt need hiện tại đã ngầm gợi giải pháp 1. Ba giải pháp suy ra từ một insight, chưa có dữ liệu để xếp hạng.
-  - Nhờ thêm “các hướng khác nhau về bản chất”, vì AI có xu hướng đưa ý giống nhau.
-  - Mức cơ sở: principle supported, ở phần cảnh báo. Một nghiên cứu 36 người thấy ý tưởng do AI gợi ý giống nhau hơn giữa các người dùng (Anderson và cộng sự, 2024). Phép thử bỏ giải pháp thì need còn đúng không là cách làm của khoá.
-
-  > Need của bạn còn đúng không nếu bỏ giải pháp mà team đang nghĩ tới?
-- 🎨 Visual hint: COMPARE. Ba card cùng cấu trúc, mỗi card một giải pháp và hai assumption mới.
 
 ---
 
@@ -965,23 +1325,25 @@ last_synced: 2026-11-24
 
 ---
 
-## 6. Design challenge
-
----
-
-### SECTION DIVIDER · Design challenge
-- Num: 05
-- Kicker: Việc nào đáng giải, và ai đã đồng ý
-- Title: Design challenge\n*việc team sẽ giải*
+### DIAGRAM · From the tree to a design challenge
+- Kicker: Chuyển tiếp
+- Title: Từ cây opportunity\n*đến design challenge*
 - On-slide:
-  - việc team sẽ giải
-- Ví dụ: Không cần.
+  - Cho khách mới ở đơn đầu tiên: Persona
+  - người cần biết khung giờ giao và hạn huỷ đã chốt chưa: nhánh đã chọn của cây (O1, O2 · IN-01, IN-02)
+  - trong khi giá quý này không đổi: ràng buộc, scope Lesson 2
+  - để tăng tỷ lệ đặt đơn thứ hai trong 30 ngày: gốc của cây, outcome (IN-06)
+  - Mỗi mảnh của challenge đi ra từ một chỗ trong những gì chúng ta đã làm. Challenge không thêm dữ kiện mới, nó chọn và ghép lại.
+- Ví dụ: Có.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần 4: design challenge, nửa cuối của Define
-  - Opportunity cho biết việc nào đáng giải. Design challenge chốt lại việc team sẽ giải, và ghi trong problem brief
-  - Chữ challenge ở đây khác bước Challenge của synthesis: bước đó phản biện insight, còn design challenge là câu hỏi thiết kế
-- 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
+  - Opportunity map cho biết có những việc nào đáng giải; design challenge chọn một nhánh và viết thành một câu cả team cùng giải
+  - Đọc từng mảnh theo click và hỏi mỗi mảnh đến từ đâu: persona, nhánh đã chọn của cây, scope Lesson 2, gốc của cây
+  - Câu nào không chỉ về được một chỗ thì có thể đang đoán hoặc giấu một cách làm
+  - Theo Teresa Torres, chọn một opportunity mục tiêu trước khi nghĩ ý tưởng; chương trình đọc nguồn thứ cấp, đây là cách làm của khoá
+
+  > Nhánh nào của cây bạn sẽ chọn để viết challenge, và vì sao?
+- 🎨 Visual hint: TYPOGRAPHIC. Bốn hàng, mỗi hàng một mảnh của challenge, mũi tên chỉ về nguồn; hiện theo click.
 
 ---
 
@@ -1058,60 +1420,31 @@ last_synced: 2026-11-24
   > Ai sẽ là người đồng ý design challenge của bạn?
 - 🎨 Visual hint: Ba bước ngang, icon line-art (người, robot, dấu tick), mũi tên nối, gạch đầu dòng một ý một dòng, không số và không card viền.
 
----
-
-## 7. Insight hub
 
 ---
 
-### SECTION DIVIDER · Insight hub
-- Num: 06
-- Kicker: Nơi lưu insight đã kiểm tra
-- Title: Insight hub\n*tìm trước khi hỏi lại*
+### DIAGRAM · Where the challenge lives: the problem brief
+- Kicker: Outcome
+- Title: Design challenge nằm\n*trong problem brief*
 - On-slide:
-  - Insight hub
-  - tìm trước khi hỏi lại
-- Ví dụ: Không cần.
+  - Khối markdown: type problem-brief; Outcome; Design challenge DC-1 (phục vụ O1, O2; đồng ý pending); Opportunities (ranked)
+  - Một file markdown: problem-brief.md
+  - Một trang trong hub: problem-brief.html
+  - Trạng thái đồng ý: agreed hoặc pending, không để trống
+  - Challenge là câu đứng đầu brief. Mọi thứ ở Lesson 4 được kiểm tra so với nó.
+- Ví dụ: Có.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần 5: insight hub, một phần của Knowledge Hub
-  - Tìm trong hub trước khi lên kế hoạch research mới
-- 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
+  - Ví dụ do chương trình soạn từ bộ insight của Delivery App, chưa review; file đầy đủ là problem-brief-example.md trong course case
+  - Đầu ra là một problem brief ở hai dạng cùng nội dung: file markdown trong work/ và trang trong hub
+  - Template hub chưa có chỗ riêng cho design challenge nên ghi ngay dưới outcome; mỗi challenge có ID, opportunity nó phục vụ và trạng thái đồng ý
+  - Project demo Travel Buddy có problem-brief.md nhưng chưa có mục design challenge; đây là chỗ cách làm của khoá bổ sung
 
+  > Brief hiện tại của team bạn ghi việc sẽ giải ở đâu, và ai đã đồng ý nó?
+- 🎨 Visual hint: TYPOGRAPHIC. Trái là khối markdown viền đậm, phải là ba khối chữ (file markdown, trang hub, trạng thái đồng ý), hiện theo click.
 ---
 
-### NUMBERED · Insight hub
-- Kicker: Định nghĩa
-- Title: Insight hub\n*là gì?*
-- On-slide:
-  - WHAT
-  - Nơi lưu insight đã kiểm tra, mỗi insight có ID, evidence, ngày và tag.
-  - Là thư mục insights trong Knowledge Hub của project, không phải công cụ riêng.
-  - WHY
-  - Tránh làm lại research cho cùng một câu hỏi.
-  - Giữ insight khi người trong team thay đổi.
-  - WHEN
-  - Đóng góp sau khi insight đã qua kiểm tra.
-  - Tìm trong hub trước khi lên kế hoạch research mới.
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ví dụ: Sáu tháng sau, một đồng nghiệp hỏi lại: vì sao khách huỷ đơn rồi vẫn bị tính tiền?
-  - Hub đã có entry INS-014 với insight ID và ngày, nên câu trả lời mất hai phút thay vì hai tuần phỏng vấn
-  - Insight hub là thư mục insights trong Knowledge Hub của project, không phải công cụ riêng
-  - Mỗi entry có insight ID, source ID dẫn về, ngày, độ mạnh evidence, tag và người phụ trách; tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc
-  - AI giúp tìm entry và gợi ý tag; chỉ được trích entry có ID, và designer duyệt trước khi thêm
-  - Atomic research bắt đầu từ việc một team lặp lại nghiên cứu vì không tìm được câu trả lời cũ
-  - Nguồn atomic research là blog của agency và vendor, chưa có đánh giá độc lập
-  - Thói quen tìm trước khi hỏi lại
-  - Ví dụ hub thật và cách từ ghi chú đến card nằm ở phụ lục
-
-  > Team của bạn có chỗ nào lưu insight đã kiểm tra không? Có hoặc không (30 giây)
-- 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When, mỗi cột hai dòng; kicker Định nghĩa, tiêu đề có accent ở dòng 2.
-
----
-
-## 8. Q&A, practice and close
+## 5. Q&A, practice and close
 
 ---
 
@@ -1337,34 +1670,6 @@ last_synced: 2026-11-24
 
 ---
 
-### DIAGRAM · A journey map with evidence
-- Kicker: Ví dụ
-- Title: Journey map *có evidence*
-- On-slide:
-  - Chọn khung giờ giao
-  - IN-01
-  - Thanh toán
-  - assumption
-  - Xác nhận đã thanh toán
-  - Chờ xác nhận đơn đã thanh toán
-  - IN-03
-  - Không thể huỷ hoặc sửa đơn đã thanh toán
-  - IN-02 · đáy cảm xúc
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ví dụ: Năm giai đoạn: chọn khung giờ giao, thanh toán, chờ đơn đầu, nhận đơn đầu, huỷ hoặc sửa đơn
-  - Chọn khung giờ giao và nhận đơn đầu có IN-01 (I01-01, I02-01, R01, F01); chờ đơn đầu có IN-03 (R05, I01-03)
-  - Huỷ đơn có IN-02 (R04, F04) và là đáy cảm xúc; thanh toán không có insight nào, team nghi bước này làm khách ngại cam kết nhưng đó vẫn là assumption
-  - Bước nào có insight thì dẫn insight ID, bước nào không thì nói thẳng
-  - Một ô assumption không làm journey xấu đi. Giấu nó mới làm nó xấu
-  - Nguyên tắc nằm sau ô assumption
-
-  > Journey của bạn có bao nhiêu ô assumption trên tổng số ô? Gõ một con số
-- 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
-
----
-
 ### STATEMENT · No insight, then assumption
 - Kicker: Nguyên tắc
 - Title: Chưa có insight,\n*thì là assumption*
@@ -1438,157 +1743,6 @@ last_synced: 2026-11-24
 
   > Pain nào trên journey của bạn viết lại được thành một nhu cầu?
 - 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô ink hoặc purple.
-
----
-
-### COMPARE · Root outcome
-- Kicker: Opportunity · Bước 1
-- Title: Gốc là một *hành vi*
-- On-slide:
-  - Gốc (root outcome)
-  - Nhiều khách mới đặt lại sau đơn đầu tiên.
-  - Một hành vi lấy từ job statement, do team cùng cam kết.
-  - Không làm gốc được
-  - Tăng tần suất đặt đơn 15%
-  - Metric: không có hành vi bên dưới
-  - Ra mắt màn hình chọn khung giờ mới
-  - Output: giải pháp, không phải mục tiêu
-  - Cải thiện trải nghiệm giao hàng
-  - Không kiểm chứng được
-  - Kiểm tra: nếu gốc xảy ra, con số kinh doanh có nhích không?
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Gốc lấy từ job statement, viết lại thành một hành vi, không lấy từ business đang đuổi một con số
-  - Ba hình dạng bị gạch bỏ: metric (không có gì bên dưới để đối chiếu), output (giải pháp khoác áo mục tiêu), câu không kiểm chứng được (không hành vi nào có thể thất bại)
-  - Câu hỏi quan trọng: nếu gốc hành vi xảy ra, con số kinh doanh có nhích không? Câu trả lời "không" thì ghi vào map, đừng làm mượt
-  - Gốc này là một đề xuất: một outcome được team cam kết, không phải một người suy ra rồi tuyên bố
-  - Gốc không ai đồng ý là mục tiêu không tồn tại; làm cho nó được đồng ý là một phần của bài tập
-  - Ví dụ: App giao đồ ăn: nhiều khách mới không đặt lại sau đơn đầu tiên; gốc hành vi là nhiều khách mới đặt lại sau đơn đầu tiên
-  - Từ gốc đi xuống các opportunity, bắt đầu bằng viết lại sticky
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
-
----
-
-### PROCESS · A sticky that is a solution
-- Kicker: Opportunity · Bước 2
-- Title: Sticky có thật, *nhưng là giải pháp*
-- On-slide:
-  - Test ba giải pháp: kể ba cách khác nhau để thoả sticky.
-  - Kể được ba cách thì nó là nhu cầu. Chỉ có một cách thì nó là giải pháp.
-  - Nhiều sticky sẽ không qua test. Đó là phản xạ thường gặp, không phải lỗi. Nâng từng sticky lên một mức chính là bài tập.
-  - Khách cần biết còn huỷ được đến khi nào
-  - Đưa nút huỷ lên đầu trang
-  - sticky ban đầu
-  - Hiện hạn chót huỷ trên màn hình huỷ
-  - Nhắc trước khi hết hạn huỷ
-  - Kể được ba cách khác nhau, nên đây là nhu cầu
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ví dụ: Sticky "đưa nút huỷ lên đầu trang" (từ R04: nút huỷ nằm cuối trang Order details, biến mất sau hai phút)
-  - Sticky đó có thật, chỉ là giải pháp; nhu cầu viết lại: khách cần biết còn huỷ được đến khi nào (IN-02: R04, F04)
-  - Test ba giải pháp: kể được ba cách khác nhau để thoả sticky thì nó là nhu cầu; chỉ có một cách thì nó là giải pháp
-  - Nhiều sticky sẽ không qua test. Đó là phản xạ thường gặp, không phải lỗi
-  - Nâng từng sticky lên một mức chính là bài tập; chạy test trên sticky của họ, không phải của mình
-  - Kiểm tra một dòng là nhu cầu hay giải pháp
-- 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô ink hoặc purple.
-
----
-
-### COMPARE · Need or solution
-- Kicker: So sánh
-- Title: Nhu cầu *hay giải pháp?*
-- On-slide:
-  - Giải pháp
-  - Thêm popup nhắc khung giờ giao
-  - Nhu cầu
-  - Khách cần biết khung giờ giao là cuối cùng trước khi cam kết
-  - Xếp theo severity, context, reach, không theo số lần nhắc
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Dòng thứ hai là nhu cầu; dòng thứ nhất là một cách giải, và còn nhiều cách khác như cho đổi khung giờ sau thanh toán
-  - Mẹo kiểm tra: có động từ làm ra thứ gì không (thêm, xây) thì nó đã là giải pháp
-  - Ví dụ: Xếp theo severity, context và reach, không theo số lần được nhắc: R04 bị tính tiền một đơn không muốn là mất tiền thật, R05 giao lâu hơn ước tính phiền nhưng nhẹ hơn
-  - Mỗi opportunity đi kèm một câu nói rõ mẫu không cho biết điều gì
-  - Reframing, trước khi chấm và chọn
-  - Hai dòng: "thêm popup nhắc khung giờ giao" và "khách cần biết khung giờ giao là cuối cùng trước khi cam kết". Dòng nào là nhu cầu?
-
-  > Opportunity bạn đang viết là nhu cầu hay giải pháp? Gõ một (30 giây)
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
-
----
-
-### NUMBERED · Reframing
-- Kicker: Opportunity · Bước 3
-- Title: Reframing tạo ra *lựa chọn*
-- On-slide:
-  - Question the objective
-  - Mục tiêu này của ai, và nếu nó sai thì sao?
-  - Positive exceptions
-  - Ai đã thành công rồi, và họ khác ở điểm nào?
-  - What's missing
-  - Khung này bỏ ngoài điều gì?
-  - Reframing không tìm ra vấn đề thật. Nó cho xem có vấn đề tốt hơn hay không.
-  - Chỉ reframe nhánh mạnh nhất. Ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
-- Ví dụ: Không cần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Đã có một cây opportunity; reframing là một thao tác thực hiện trên cây đó, và nó tạo ra lựa chọn chứ không tìm ra vấn đề thật
-  - Chỉ reframe nhánh mạnh nhất; reframe tất cả thì thành hội thảo triết học thay vì một quyết định
-  - Dẫn bằng positive exceptions vì nó gắn với evidence và cần dữ liệu theo giai đoạn
-  - Một nguồn đủ để sinh reframe, không đủ để đặt cược; ghi số insight bên cạnh reframe để cân nhắc trung thực
-  - Reframe cho thấy một nhánh khác, nhưng không được dùng làm đường quay lại cho ý tưởng yêu thích
-  - Chọn nhánh nào, bằng bốn yếu tố
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
-
----
-
-### NUMBERED · Score and choose
-- Kicker: Opportunity · Bước 4
-- Title: Chấm *rồi chọn*
-- On-slide:
-  - Sizing
-  - Quy mô: bao nhiêu người, bao nhiêu lần.
-  - Importance
-  - Quan trọng thế nào với mục tiêu kinh doanh.
-  - Company fit
-  - Hợp với công ty đến đâu.
-  - Market position
-  - Đặt công ty ở đâu trên thị trường.
-  - Chưa có cột effort: effort vào ở tầng giải pháp.
-  - Chấm bằng bốn yếu tố khi làm riêng; trình bày bằng impact và effort.
-  - Ghi opportunity bị loại kèm lý do.
-- Ví dụ: Không cần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Chấm opportunity bằng bốn yếu tố khi làm riêng; khi trình bày trong phòng thì dùng ngôn ngữ impact và effort
-  - Sizing, Importance, Company fit, Market position; Importance là thuộc tính của mục tiêu kinh doanh, không phải của hành trình khách hàng
-  - Không có cột effort ở bước này vì các giải pháp cho cùng một opportunity chênh nhau rất nhiều về chi phí; effort vào ở tầng giải pháp
-  - Ghi lại opportunity bị loại kèm lý do: có lý do thì xem lại được khi evidence đổi, không ghi thì bị tranh luận lại
-  - Người không nói được vì sao opportunity thứ hai thua thì chưa chọn, mới chỉ thích
-  - Quy tắc xếp thứ tự vẫn là severity, context và reach ở slide "Nhu cầu hay giải pháp?"; bốn yếu tố này là lớp chấm cho quyết định chọn
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
-
----
-
-### IMAGE · A traditional persona
-- Kicker: Ví dụ về Persona truyền thống
-- Title: Travel Buddy
-- On-slide:
-  - @ Winnie
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ví dụ persona từ project Travel Buddy: hai persona, Explorer và Connector
-  - Mỗi persona có Bio, Goals, Frustration, Motivation, Expectation, Personality và Hobbies
-  - Persona của bạn phải dẫn về insight ID ở từng dòng; dòng không có insight thì ghi unknown
-  - Đây là hình minh hoạ cấu trúc, không phải persona dựng từ insight của project app giao đồ ăn
-  - Cách làm để mỗi dòng của persona đều có insight phía sau
-
-  > Dòng nào trong hình này bạn không tin được nếu không thấy insight phía sau?
-- 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
 
 ---
 
@@ -1791,122 +1945,72 @@ last_synced: 2026-11-24
   - Đề xuất bước còn thiếu, điền ô từ insight.
   - Ô không có insight thì ghi assumption.
   - Opportunity
-  - Viết lại sticky thành nhu cầu.
-  - Chạy test ba giải pháp, rồi chọn.
+  - Viết lại thành nhu cầu.
+  - Dựng cây, kiểm từng nhánh, rồi chọn.
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Gom lại cả buổi: AI chạy xuyên bốn bước, nhưng mỗi bước vẫn có một việc bạn phải làm
   - Insight là đầu vào đã kiểm tra, có ID; từ đây mỗi đầu ra của AI là một file markdown, mỗi dòng mang insight ID
-  - Persona: AI gom theme và soạn dòng, bạn đối chiếu với insight ID. Journey map: AI đề xuất bước còn thiếu, ô không có insight thì ghi assumption. Opportunity: AI viết lại sticky thành nhu cầu, bạn chạy test ba giải pháp rồi chọn
+  - Persona: AI gom theme và soạn dòng, bạn đối chiếu với insight ID. Journey map: AI đề xuất bước còn thiếu, ô không có insight thì ghi assumption. Opportunity: AI viết lại thành nhu cầu, bạn dựng cây, kiểm từng nhánh rồi chọn
   - Phần đóng gói thành agent nằm ở Appendix. Tiếp theo là Q&A
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
 
-### DIAGRAM · Search before asking
-- Status: Chuyển sang phụ lục 2026-11-24 để lấy giờ cho Design challenge; deck đã dời cùng ngày.
-- Kicker: Thói quen
-- Title: Tìm trước\n*khi hỏi lại*
+### COMPARE · Need or solution
+- Status: Chuyển sang phụ lục 2026-11-24: Lesson 3 dừng ở opportunity, nội dung này thiên về giải pháp nên để dành cho Lesson 4.
+- Kicker: So sánh
+- Title: Nhu cầu *hay giải pháp?*
 - On-slide:
-  - Câu hỏi mới, rồi tìm trong hub
-  - Đã có thì dùng lại; chưa có thì research phần còn thiếu
-  - Kiểm tra, rồi đóng góp vào hub
-  - Insight hub
-  - Câu hỏi mới
-  - Tìm trong hub
-  - Research thêm
-  - Kiểm tra
-  - Đóng góp
+  - Giải pháp
+  - Thêm popup nhắc khung giờ giao
+  - Nhu cầu
+  - Khách cần biết khung giờ giao là cuối cùng trước khi cam kết
+  - Xếp theo severity, context, reach, không theo số lần nhắc
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ví dụ: Câu hỏi mới: hạn chót huỷ đơn nên hiện ở đâu? Người đó mở hub trước, thấy một entry gần đúng và chỉ research phần còn thiếu
-  - Đây là cả vòng: câu hỏi mới, tìm trong hub, research thêm khi cần, kiểm tra, đóng góp
-  - Hub ở giữa: được đọc ở bước tìm và được ghi ở bước đóng góp; đã có thì dùng lại
-  - Thói quen cốt lõi là tìm trước khi hỏi lại, bước màu vàng trên vòng
-  - Cập nhật entry khi có evidence mới thay vì thêm bản trùng
-  - Atomic research ghi nhận thói quen kiểm tra repository trước là việc ngăn làm lại; nguồn là blog của agency
-  - AI giúp được ở đâu với hub
-- 🎨 Visual hint: SCHEMATIC. Diagram line-art đen trắng, accent purple ở phần được nhấn.
+  - Dòng thứ hai là nhu cầu; dòng thứ nhất là một cách giải, và còn nhiều cách khác như cho đổi khung giờ sau thanh toán
+  - Mẹo kiểm tra: có động từ làm ra thứ gì không (thêm, xây) thì nó đã là giải pháp
+  - Ví dụ: Xếp theo severity, context và reach, không theo số lần được nhắc: R04 bị tính tiền một đơn không muốn là mất tiền thật, R05 giao lâu hơn ước tính phiền nhưng nhẹ hơn
+  - Mỗi opportunity đi kèm một câu nói rõ mẫu không cho biết điều gì
+  - Reframing, trước khi chấm và chọn
+  - Hai dòng: "thêm popup nhắc khung giờ giao" và "khách cần biết khung giờ giao là cuối cùng trước khi cam kết". Dòng nào là nhu cầu?
+
+  > Opportunity bạn đang viết là nhu cầu hay giải pháp? Gõ một (30 giây)
+- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
 
 ---
 
-### IMAGE · Insight hub: list of cards
-- Status: Chuyển sang phụ lục 2026-11-24 để lấy giờ cho Design challenge; deck đã dời cùng ngày.
-- Kicker: Ví dụ
-- Title: Insight hub\nlà danh sách\ncard có ID
+### COMPARE · Cách dùng AI 6: three solutions for one need
+- Status: Chuyển sang phụ lục 2026-11-24: Lesson 3 dừng ở opportunity, nội dung này thiên về giải pháp nên để dành cho Lesson 4.
+- Kicker: Cách dùng AI · Opportunity
+- Title: Thử ba *giải pháp*
 - On-slide:
-  - Ảnh trang Insights của hub Travel Buddy: 39 mục chia theo loại, ô tìm theo ID hoặc tên, ba chế độ xem Cards, Tree, Matrix
-- Ví dụ: Có.
+  - Ví dụ: need khung giờ giao của Delivery App.
+  - Need
+  - Khách mới khó chọn khung giờ giao vì không biết giờ đó là cuối cùng.
+  - Giải pháp
+  - Hiển thị
+  - Thêm assumption
+  - Khách đọc và hiểu nhãn “khung giờ cuối”.
+  - Thời điểm chọn giờ là lúc cần biết.
+  - Quy trình
+  - Nhà hàng và shipper chịu được việc dời giờ.
+  - Khách nhớ dùng tính năng đổi giờ.
+  - Chủ động
+  - Khách bật thông báo và đọc kịp.
+  - Gốc vấn đề là đồ nguội, không phải chọn giờ.
+  - Need vẫn đúng khi bỏ cả ba. Đây là phép thử need đứng độc lập, không phải bước chọn giải pháp.
+- Ví dụ: có
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói insight hub là gì. Đây là một hub thật trông thế nào: hub của project demo Travel Buddy, không phải project app giao đồ ăn.
-  - Đọc từ trên xuống:
-    - 39 mục, chia theo loại: opportunity, hypothesis, metric, decision, evidence, finding, mỗi loại một tab kèm số lượng
-    - Ô tìm theo ID hoặc tên, và ba cách xem: Cards, Tree, Matrix
-    - Mỗi card có ID và loại, ví dụ Opportunity 1 hoặc Hypothesis 1, kèm tiêu đề và số hypothesis phía dưới
-    - Hypothesis chưa có evidence từ người dùng thật được đánh dấu bằng biểu tượng cảnh báo
-  - Mỗi mục là một file trong thư mục insights, nên tìm lại bằng ID thay vì nhớ.
+  - Cách dùng AI 6 kiểm tra một điều: need của bạn có đứng độc lập khỏi giải pháp không?
+  - Với need “khách mới gặp khó khi chọn khung giờ giao vì không biết giờ đó là cuối cùng”, bạn nhờ AI đề xuất ba giải pháp khác nhau về bản chất, nêu assumption mới mà mỗi giải pháp thêm vào, rồi trả lời: need còn đúng nếu bỏ cả ba không?
+  - Trên bộ mẫu AI đưa ba giải pháp thật sự khác nhau và kết luận need vẫn đúng. Nó còn nói cách diễn đạt need hiện tại đã ngầm gợi giải pháp 1. Ba giải pháp suy ra từ một insight, chưa có dữ liệu để xếp hạng.
+  - Nhờ thêm “các hướng khác nhau về bản chất”, vì AI có xu hướng đưa ý giống nhau.
+  - Mức cơ sở: principle supported, ở phần cảnh báo. Một nghiên cứu 36 người thấy ý tưởng do AI gợi ý giống nhau hơn giữa các người dùng (Anderson và cộng sự, 2024). Phép thử bỏ giải pháp thì need còn đúng không là cách làm của khoá.
 
-  > nếu hub của bạn có ba mươi chín mục, bạn sẽ tìm theo ID, theo tên hay theo loại trước?
-- 🎨 Visual hint: Chữ trái, ảnh phải có viền.
-
----
-
-### IMAGE · Insight hub: one finding
-- Status: Chuyển sang phụ lục 2026-11-24 để lấy giờ cho Design challenge; deck đã dời cùng ngày.
-- Kicker: Ví dụ
-- Title: Một finding\ntruy về\nuser need
-- On-slide:
-  - Ảnh trang finding F2: cảnh báo mức nghiêm trọng, các đường từ Opportunity qua Hypothesis và Evidence tới Finding, bảng thông tin
-- Ví dụ: Có.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Slide trước là danh sách. Đây là bên trong một card: một finding trong hub Travel Buddy.
-  - Đọc từ trên xuống:
-    - Tiêu đề nói thẳng điều tìm thấy: màn hình chia sẻ nhật ký chỉ có danh sách cố định ba người, không tìm hay mời theo tên được
-    - Dải cảnh báo: finding mức nghiêm trọng 4 chưa xử lý, chặn bước handoff
-    - Phần "From the user need": các đường đi từ opportunity qua hypothesis và evidence tới finding này, nên bạn biết finding sinh ra từ nhu cầu nào
-    - Bảng thông tin: khu vực, mức nghiêm trọng, tìm thấy ở evidence nào, ảnh hưởng quyết định nào, trạng thái xử lý
-  - Mỗi liên kết là một ID bấm được, đó là lý do insight có ID.
-
-  > nếu không có đường truy về nhu cầu, finding này còn đáng ưu tiên không?
-- 🎨 Visual hint: Chữ trái, ảnh phải có viền.
-
----
-
-### NUMBERED · Từ ghi chú đến card trên hub
-- Status: Chuyển sang phụ lục 2026-11-24 để lấy giờ cho Design challenge; deck đã dời cùng ngày.
-- Kicker: Cách dùng AI
-- Title: Từ ghi chú *đến card trên hub*
-- On-slide:
-  - AI đề xuất
-  - Đề xuất vào một file md, chưa tạo card
-  - Mỗi dòng có nguồn và loại card
-  - Ghi quan hệ tới card đã có
-  - Đánh dấu củng cố, mâu thuẫn hay mới
-  - Bạn duyệt
-  - Giữ, sửa hoặc cắt từng dòng
-  - Decision và thứ hạng do bạn quyết
-  - AI không tự đặt
-  - AI tạo card, rồi kiểm
-  - Mỗi mục một file card có ID, tạo bằng lệnh
-  - Chạy kiểm tra liên kết
-  - Bắt ID không tồn tại
-  - Page do script dựng từ các card. Decision, Insight, Challenge và Opportunity đều là card có ID.
-- Ví dụ: Không cần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Hai slide trước cho thấy hub trông thế nào. Slide này trả lời: làm sao có được các card đó bằng AI mà vẫn tin được.
-  - Page Insights không do AI gõ cả trang. Nó do script dựng từ mỗi file một card trong thư mục insights. AI chỉ làm card, script dựng page.
-  - Ba bước:
-    - AI đề xuất vào một file md (một bảng), chưa tạo card. Mỗi dòng có nguồn, loại card, quan hệ tới card đã có (tests, serves, found_in), và đánh dấu củng cố, mâu thuẫn hay mới
-    - Bạn duyệt: giữ, sửa hoặc cắt. Decision và thứ hạng do bạn quyết, AI không tự đặt decision thành accepted
-    - AI tạo card bằng lệnh, rồi chạy kiểm tra để bắt card thiếu liên kết hoặc ID không tồn tại
-  - Bốn thứ bạn hay gom vào một chỗ đều là card: Decision là decision card, Insight là evidence hoặc finding card, Challenge là ghi chú mâu thuẫn trên card insight (không gộp, không xoá), Opportunity là opportunity card.
-  - Mỗi người có workflow riêng (Notion, Obsidian, Figma, thư mục md). Ba điều giữ nguyên bất kể công cụ: mỗi mục một card có ID, AI đề xuất rồi bạn duyệt, có bước kiểm cuối.
-  - Đây là cách làm của khoá, chưa có nguồn ngoài so sánh với cách khác.
-
-  > workflow hiện tại của bạn có bước duyệt giữa AI đề xuất và lúc ghi vào hub không?
-- 🎨 Visual hint: Ba bước ngang, icon line-art (bảng, dấu tick, chồng card), mũi tên nối, không card viền.
+  > Need của bạn còn đúng không nếu bỏ giải pháp mà team đang nghĩ tới?
+- 🎨 Visual hint: COMPARE. Ba card cùng cấu trúc, mỗi card một giải pháp và hai assumption mới.

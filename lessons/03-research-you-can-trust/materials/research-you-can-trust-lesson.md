@@ -13,25 +13,37 @@ slides: "https://claude.ai/artifact/4AFDgey1QNAkFuXdiRGvvu"
 previous-session: "Discover the Problem"
 next-session: "Explore Ideas and Pick a Direction"
 ---
-Sau Lesson 2, bạn có source notes có ID, cắt từ transcript đã ẩn danh, và mọi quote đã qua phép kiểm tra bằng chương trình. Buổi này đi từ source notes đến một insight đã kiểm tra (synthesis). Từ insight đó, bạn dựng persona, customer journey map và opportunity, rồi viết một design challenge, và mỗi dòng đều truy được về insight ID. Bộ principles vừa làm ràng buộc trong prompt, vừa làm phép kiểm tra của bạn. Cuối buổi, bạn đưa insight đã kiểm tra vào insight hub.
+Sau Lesson 2, bạn có source notes có ID, cắt từ transcript đã ẩn danh, và mọi quote đã qua phép kiểm tra bằng chương trình. Buổi này đi từ source notes đến một insight đã kiểm tra (synthesis). Từ insight đó, bạn dựng persona, customer journey map và opportunity, rồi viết một design challenge, và mỗi dòng đều truy được về insight ID. Bộ principles vừa làm ràng buộc trong prompt, vừa làm phép kiểm tra của bạn. Ngay sau synthesis, bạn đưa insight đã kiểm tra vào insight hub.
 
 Buổi này nằm ở chỗ hai nửa của Double Diamond gặp nhau. Lesson 2 kết thúc ở Discover: scope, assumption map, research question và source notes. Define bắt đầu từ đó và có hai nửa. Nửa **Hiểu** cho bạn biết người dùng đã nói và làm gì. Nửa **Chọn** quyết định việc nào đáng giải. Hai nửa khác nhau ở một điểm: nửa đầu mô tả người dùng, còn nửa sau là quyết định cần Product và Business đồng ý.
 
-| Nửa của Define | Việc | Đầu ra | Mục |
-|---|---|---|---|
-| Hiểu | synthesis, persona, journey map | insight đã kiểm tra, persona, journey map | 1 đến 3 |
-| Chọn | opportunity, design challenge | opportunity đã xếp hạng, design challenge, problem brief | 4 và 5 |
+| Phần | Nửa của Define | Việc | Đầu ra | Mục |
+|---|---|---|---|---|
+| 1. Synthesis và insight hub | Hiểu (bắt đầu) | synthesis, insight hub | insight đã kiểm tra, card trong hub | 1 và 2 |
+| 2. Hiểu người dùng đã nói và làm gì | Hiểu | persona, journey map | persona, journey map | 3 và 4 |
+| 3. Chọn việc đáng giải quyết | Chọn | opportunity, design challenge | opportunity map đã xếp hạng, design challenge, problem brief | 5 và 6 |
 
 > **AI soạn bản nháp, bạn kiểm tra rồi quyết định.** Một insight hay một persona đọc thuyết phục chưa chắc có dữ liệu đứng sau. Dòng nào không truy được về insight ID thì xoá đi hoặc ghi unknown.
 
 ## Nội dung buổi học
 
+**Phần 1. Synthesis và insight hub**
+
 1. Synthesis: từ source notes đến một insight đã kiểm tra
-2. Persona
-3. Journey map
-4. Opportunity
-5. Design challenge và problem brief
-6. Insight hub
+2. Insight hub: lưu insight đã kiểm tra và tìm trước khi hỏi lại
+
+**Phần 2. Hiểu người dùng đã nói và làm gì**
+
+3. Persona
+4. Journey map
+
+**Phần 3. Chọn việc đáng giải quyết**
+
+5. Opportunity map
+6. Design challenge và problem brief
+
+**Cuối bài**
+
 7. Bốn câu hỏi về giới hạn của AI trong research
 8. Ví dụ xuyên suốt với Delivery App
 
@@ -43,11 +55,11 @@ Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và
 2. Kiểm tra từng insight AI trả lại bằng hai lớp: source ID có thật và ngữ cảnh còn nguyên, rồi giữ ý kiến trái chiều cùng trang với insight
 3. Dựng persona, journey map hoặc opportunity từ insight đã kiểm tra, mỗi dòng dẫn về insight ID, và ghi assumption cho ô nào chưa có insight làm căn cứ
 4. Phân biệt persona dựng từ insight với persona AI tự sinh, và chỉ ra dòng không có insight nào làm căn cứ
-5. Viết opportunity như một user need, cho qua test ba giải pháp, rồi chấm và chọn
+5. Dựng một opportunity map: chọn gốc, liệt kê opportunity là nhu cầu chứ không phải tính năng, dựng cây, reframe, rồi chấm và chọn
 6. Viết một design challenge cho một hoặc hai opportunity đứng đầu, kiểm tra nó không giấu giải pháp, rồi ghi trạng thái đồng ý với Product và Business trong problem brief
 7. Đóng góp một insight đã kiểm tra vào insight hub, và tìm trong hub trước khi hỏi lại
 8. Quyết định khi nào dùng AI và khi nào bỏ AI cho một bộ dữ liệu
-9. Chạy sáu cách dùng AI, nêu phần bạn phải kiểm tra ở mỗi cách dùng, và nói được cách dùng nào có nguyên lý đỡ, cách dùng nào mới chỉ là cách làm của khoá. Sáu cách dùng gồm: soát nguồn persona, gom nhóm blind và primed, dựng map không persona rồi so, soát đường cảm xúc, bắt câu dạng giải pháp, và thử ba giải pháp
+9. Chạy năm cách dùng AI, nêu phần bạn phải kiểm tra ở mỗi cách dùng, và nói được cách dùng nào có nguyên lý đỡ, cách dùng nào mới chỉ là cách làm của khoá. Năm cách dùng gồm: soát nguồn persona, gom nhóm blind và primed, dựng map không persona rồi so, soát đường cảm xúc, và bắt câu không phải nhu cầu
 
 ---
 
@@ -147,7 +159,7 @@ Ví dụ ở Delivery App: team tin giá là lý do chính khiến khách rời 
 
 ### 1.10 What you walk away with
 
-Đầu ra của synthesis không phải một báo cáo dài. Nó là một file markdown cho mỗi insight, cùng một assumption map đã cập nhật. Cuối cùng, insight được lưu thành một card trong insight hub (mục 6).
+Đầu ra của synthesis không phải một báo cáo dài. Nó là một file markdown cho mỗi insight, cùng một assumption map đã cập nhật. Cuối cùng, insight được lưu thành một card trong insight hub (mục 2).
 
 File insight gồm Decision bạn viết ở bước 1, insight theo mẫu, source ID và mức mạnh của evidence, dòng "nguồn này không cho biết", kết quả Challenge (điều gì làm bạn đổi ý) và ý kiến trái chiều. Mọi thứ nằm cùng một trang.
 
@@ -171,17 +183,57 @@ Challenge:
 Assumption map: IN-07 (giá là lý do chính) Unconfirmed. IN-08 (khách mới lần đầu dùng app) Unknown.
 ```
 
+Bản đầy đủ, có quote nguyên văn cho từng source ID và đủ năm câu Challenge, nằm ở [insight-file-example.md](../../../assets/starter-files/course-case/insight-file-example.md).
+
 Bạn đưa file này cho lead khi cần, và đây là nguồn để tạo card ở insight hub. Nó chưa phải research report. Trang cho lead nằm ở cuối cả chuỗi (practice Step 10), sau persona, journey map, opportunity và design challenge. Bạn tự quyết định lưu file ở đâu trong folder của mình.
 
 ---
 
-## 2. Persona
+## 2. Insight hub
 
-Persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity điền chỗ "quyết định nào". Đây là cách nhìn của chương trình. Các bước nối với nhau thành một chuỗi: synthesis (mục 1), persona, journey map, opportunity, design challenge, insight hub. Mỗi bước dùng output của bước trước, và mọi dòng đều dẫn về insight ID. Xem sơ đồ [insight-chain.html](../assets/insight-chain.html).
+Insight hub là nơi lưu insight đã kiểm tra ở mục 1, để lần sau bạn tìm lại thay vì làm lại. Nó là một phần của Knowledge Hub của project (thư mục `insights/`), không phải một công cụ repository riêng.
+
+| | |
+|---|---|
+| **What** | Nơi lưu các insight đã kiểm tra, mỗi insight có ID, evidence, ngày và tag |
+| **Why** | Tránh làm lại research cho cùng một câu hỏi, giữ insight khi người thay đổi, và nối insight với các quyết định về sau |
+| **When** | Đóng góp sau khi insight đã qua kiểm tra, và tìm trong hub trước khi lên kế hoạch research mới |
+| **How with AI** | AI giúp tìm entry liên quan và gợi ý tag. AI chỉ được trích entry có ID, và bạn duyệt trước khi thêm |
+| **AI không làm** | Tự thêm insight vào hub |
+
+**Ví dụ hub thật.** Hai ảnh trên lớp lấy từ hub của project demo Travel Buddy (không phải Delivery App). Một ảnh là trang Insights, liệt kê card theo loại (opportunity, hypothesis, metric, decision, evidence, finding) với ô tìm theo ID và ba chế độ xem Cards, Tree, Matrix. Ảnh còn lại là trang một finding, với các đường từ opportunity qua hypothesis và evidence tới finding, cùng bảng khu vực, mức nghiêm trọng và trạng thái.
+
+**Phát hiện.** Atomic research được đề xuất năm 2018 sau khi một team lặp lại nghiên cứu vì không tìm lại được câu trả lời cũ. Finding được chia thành đơn vị nhỏ có evidence và tag, và thói quen "kiểm tra repository trước" ngăn việc làm lại. Tag có kiểm soát giữ cho repository tìm được. NN/g ghi nhận chỉ một tỷ lệ nhỏ tổ chức có vai trò riêng để quản lý repository. Nguồn về atomic research chủ yếu là blog của agency và vendor.
+
+**Thói quen** (xem [insight-hub-loop.html](../assets/insight-hub-loop.html)):
+
+- Đóng góp mỗi insight đã kiểm tra thành một entry gồm insight ID, source ID dẫn về, ngày, độ mạnh evidence, tag và người phụ trách.
+- Tìm trong hub trước khi hỏi.
+- Cập nhật khi có evidence mới thay vì thêm bản trùng.
+- Có người chăm sóc hub (với người làm một mình, người đó chính là bạn).
+
+**Dựng hub theo rule.** Page Insights của hub không do AI gõ cả trang. Nó được build từ các card, mỗi file một card có ID trong thư mục `insights/`: AI làm card, script dựng page. Decision, Insight, Challenge và Opportunity đều là card. Bạn không cần ghi tay từng card: bạn viết một bộ rule một lần, đưa cho AI cùng folder các insight đã qua Challenge, và AI chạy theo rule mỗi khi có insight mới.
+
+1. **Đưa vào một folder.** Mỗi insight đã qua Challenge là một file card có ID. Chỉ insight đã qua kiểm tra mới vào folder.
+2. **AI chạy theo rule.** Insight giống một card cũ thì gộp nguồn mới vào card đó, nên card mạnh lên chứ không có hai bản trùng. Insight mới thì thêm một card mới. Insight mâu thuẫn với card cũ, hoặc AI không chắc, thì dừng và báo bạn.
+3. **AI dựng một trang.** Script dựng page từ các card, để cả team xem và chia sẻ cùng một chỗ, và lọc theo loại, tag, mức mạnh.
+
+Hai điểm bạn giữ chặt. Một, gộp nghĩa là gộp nguồn vào cùng một card, không gộp lời và không xoá ý kiến trái chiều; insight mâu thuẫn thì không gộp, đúng như ở bước Challenge (mục 1.8). Hai, AI chỉ tự chạy với hai trường hợp rõ (giống hoặc mới), còn mâu thuẫn hay không chắc thì quay về bạn quyết. Decision và thứ hạng vẫn do bạn quyết, AI không tự đặt decision thành accepted. Trước mỗi lần chạy bạn lưu một checkpoint (commit hoặc copy folder) và cho AI ghi log: card nào được thêm, card nào được gộp, để xem lại và hoàn tác được.
+
+Bộ rule mẫu (cổng vào, so khớp giống, mới hay mâu thuẫn, log) nằm ở [insight-hub-rules.md](../../../assets/starter-files/course-case/insight-hub-rules.md). Workflow `add-insights` của workspace hiện duyệt từng dòng trước khi tạo card (AI đề xuất, bạn giữ, sửa hoặc cắt, rồi AI tạo card). Cách dùng rule ở trên là bản ít duyệt hơn, nên bạn thử trên một folder nhỏ trước. Đây là cách làm của khoá, chưa có nguồn ngoài so sánh với cách khác.
+
+Mỗi người có workflow riêng (Notion, Obsidian, Figma, thư mục md), nhưng ba điều giữ nguyên bất kể công cụ: mỗi insight một card có ID, rule rõ cho gộp, thêm mới và dừng, và một trang cả team lọc được.
+
+Tag trong hub lấy từ một danh sách cố định, nếu không thì tag chồng chéo sẽ làm hỏng bộ lọc.
+---
+
+## 3. Persona
+
+Persona điền chỗ "ai", journey map điền chỗ "khi nào", opportunity điền chỗ "quyết định nào". Đây là cách nhìn của chương trình. Các bước nối với nhau thành một chuỗi: synthesis và insight hub (mục 1 và 2), persona, journey map, opportunity, design challenge. Mỗi bước dùng output của bước trước, và mọi dòng đều dẫn về insight ID. Xem sơ đồ [insight-chain.html](../assets/insight-chain.html).
 
 Bộ principles từ Lesson 2 được dùng hai lần ở cả ba output: đưa vào prompt làm ràng buộc, rồi dùng lại khi bạn kiểm tra bản AI soạn.
 
-**Sáu cách dùng AI của buổi này.** Mỗi mục persona, journey map và opportunity có các cách dùng AI: đó là việc AI làm tốt hơn người ở bước đó, kèm phần bạn kiểm tra. Method của ba mục (định nghĩa, cấu trúc, lỗi hay gặp) bạn đã biết, nên phần dưới giữ gọn để dành chỗ cho các cách dùng này. Prompt, dữ liệu mẫu và kết quả đã lưu của cả sáu cách dùng nằm ở `define-moves.md` trong course case. Mỗi cách dùng gắn một trong ba mức cơ sở:
+**Năm cách dùng AI của buổi này.** Mỗi mục persona, journey map và opportunity có các cách dùng AI: đó là việc AI làm tốt hơn người ở bước đó, kèm phần bạn kiểm tra. Method của ba mục (định nghĩa, cấu trúc, lỗi hay gặp) bạn đã biết, nên phần dưới giữ gọn để dành chỗ cho các cách dùng này. Prompt, dữ liệu mẫu và kết quả đã lưu của cả năm cách dùng nằm ở `define-moves.md` trong course case. Mỗi cách dùng gắn một trong ba mức cơ sở:
 
 - **Có nguyên lý đỡ:** có nghiên cứu hoặc nguồn practitioner đỡ cho nguyên lý phía sau. Cách dùng này vẫn là cách làm của khoá và chưa được đo riêng.
 - **Cách làm của khoá:** chương trình tự thiết kế, chỉ thử trên bộ mẫu với một mô hình, một lần chạy.
@@ -211,13 +263,13 @@ Nielsen Norman Group chạy lại ba nghiên cứu cũ với người dùng AI v
 
 Ví dụ: người phỏng vấn số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên (I01-01). Người số 2 nghĩ có thể đổi khung giờ sau như các app khác (I02-01). Hai người khác nhau nhưng hành vi giống nhau: họ là khách mới ở đơn đầu tiên, chọn khung giờ nhanh và tưởng đổi được sau.
 
-### 2.1 Cách dùng AI 1: Soát nguồn từng dòng
+### 3.1 Cách dùng AI 1: Soát nguồn từng dòng
 
 Bạn đưa AI persona nháp (mỗi dòng một ID) và các insight đã kiểm tra. Nhờ nó trả mỗi dòng persona một dòng `line ID | insight IDs | nhận định`, trong đó nhận định là ủng hộ, đi ngược hoặc assumption. Trên bộ mẫu, AI bắt được dòng bịa ("28 đến 35 tuổi, nhà trong thành phố": không insight nào nói) và dòng đi ngược dữ liệu ("rời đi vì phí giao đắt": IN-04 nói giá không phải lý do chính). Nó cũng làm mềm dòng "hào hứng thử món mới", vì IN-05 chỉ nói khách đánh giá cao sự đa dạng. Bạn xoá hoặc sửa các dòng đó. Phần chạy được bằng chương trình (ID có thật không) làm ở practice. ID có thật chưa chứng minh insight đỡ đúng dòng, nên bạn vẫn mở insight ra đọc.
 
 **Mức cơ sở: có nguyên lý đỡ.** Persona do AI sinh có thiên lệch về tuổi, nghề và pain point ([Salminen và cộng sự, 2024](https://elmi.hbku.edu.qa/en/publications/deus-ex-machina-and-personas-from-large-language-models-investiga/)), và có preprint cảnh báo về tính hợp lệ ([arXiv 2503.16527](https://arxiv.org/pdf/2503.16527)). Việc soát từng dòng với insight ID là cách làm của khoá.
 
-### 2.2 Cách dùng AI 2: Gom nhóm hành vi, blind rồi primed
+### 3.2 Cách dùng AI 2: Gom nhóm hành vi, blind rồi primed
 
 Bạn chạy hai lần trên cùng các insight: một lần chỉ có yêu cầu gom nhóm, một lần thêm câu "team tin khách mới nhạy cảm về giá", rồi so. Trên bộ mẫu, cả hai lần ra ba nhóm giống nhau, nhưng lần thứ hai mở đầu bằng giá. Giống blind synthesis ở Lesson 2, hypothesis làm đổi thứ AI nói trước chứ chưa đổi nhóm. Bạn xem nhóm nào xuất hiện ở cả hai lần (đáng tin hơn) và nhóm nào chỉ có ở một lần (cần kiểm tra thêm), rồi ghi rõ nhóm nào chỉ có một insight đỡ.
 
@@ -225,7 +277,7 @@ Bạn chạy hai lần trên cùng các insight: một lần chỉ có yêu cầ
 
 ---
 
-## 3. Customer journey map
+## 4. Customer journey map
 
 | | |
 |---|---|
@@ -253,13 +305,15 @@ Bạn chạy hai lần trên cùng các insight: một lần chỉ có yêu cầ
 
 **Từ map đến opportunity.** Journey map chưa phải opportunity, mà là chỗ opportunity được tìm ra. Bạn tìm điểm thấp nhất và các pain quanh nó, viết lại pain thành user need (không phải tính năng), rồi đặt user need dưới root outcome trong cây opportunity, giữ insight ID đi cùng. Pain là triệu chứng, còn user need mới là opportunity. Ở Delivery App, bước huỷ đơn có hạn chót huỷ không hiện trên màn hình (IN-02), và user need viết lại là khách cần biết còn huỷ được đến khi nào.
 
-### 3.1 Cách dùng AI 3: Dựng map không cần persona, rồi so
+**Journey hiện tại từ bản ghi.** Khi chưa có research nào, bạn vẫn dựng được một journey từ sản phẩm đang chạy (PROD): quay lại một lần dùng app thật, rồi nhờ AI dựng journey từ bản ghi đó. Bản ghi cho bạn thấy người dùng nhìn thấy gì và bấm gì: giai đoạn, hành động, touchpoint, chỗ có thể vỡ trải nghiệm. Cảm xúc và điều người dùng mong đợi chỉ là giả định, nên ghi assumption cho đến khi có insight làm căn cứ. Ảnh ví dụ lưu ở [journey-current-from-recording.webp](../assets/journey-current-from-recording.webp).
+
+### 4.1 Cách dùng AI 3: Dựng map không cần persona, rồi so
 
 Bạn nhờ AI dựng journey map hai lần: một lần chỉ từ insight, một lần từ insight cộng persona nháp. Ô nào không có insight thì ghi đúng chữ `assumption`. Trên bộ mẫu, bản không persona để trống nhiều ô. Bản có persona điền thêm giai đoạn "chọn món" ("Duyệt menu, thử món mới", cảm xúc "Tốt") và gắn IN-05, nhưng IN-05 chỉ nói khách đánh giá cao sự đa dạng, chưa nói họ duyệt menu hay thấy vui ở bước đó. Khi so, bạn tìm ô nào chỉ có ở bản có persona, vì persona có thể đang kéo AI điền quá tay và insight ID gắn vào vẫn trông hợp lý.
 
 **Mức cơ sở: chưa có cơ sở.** Không tìm thấy nghiên cứu đo journey map do AI dựng. Chỉ có một bài của practitioner nói map do AI sinh là giả thuyết, không phải kết quả ([Renascence](https://www.renascence.io/journal/ai-journey-map-generators-what-they-fix-and-what-they-dont)). Đây là cách làm của khoá, chưa được đo.
 
-### 3.2 Tìm ô thiếu insight (bước thêm, không phải cách dùng AI trên lớp)
+### 4.2 Tìm ô thiếu insight (bước thêm, không phải cách dùng AI trên lớp)
 
 Bước này làm ở nhà (practice), không có slide riêng trên lớp. Đây chính là bước "tìm ô trống" của quy trình ở trên.
 
@@ -267,7 +321,7 @@ Bạn đưa AI journey map nháp và các insight, rồi nhờ nó làm ba việ
 
 **Mức cơ sở: chưa có cơ sở.** Không tìm thấy nguồn trực tiếp. Tư duy "đánh dấu chỗ suy đoán" đã có ở nguyên tắc assumption của mục này, còn việc dùng nó để sinh câu hỏi phỏng vấn là cách làm của khoá.
 
-### 3.3 Cách dùng AI 4: Soát đường cảm xúc
+### 4.3 Cách dùng AI 4: Soát đường cảm xúc
 
 Với mỗi ô cảm xúc có nội dung, bạn nhờ AI tìm một đến hai ghi chú gốc cho thấy cảm xúc đó (và ghi chú đi ngược nếu có), trả quote nguyên văn. Sau đó bạn chạy chương trình kiểm quote của Lesson 2 trên kết quả. Trên bộ mẫu, cả tám quote đạt, nhưng AI xếp F07 (than đắt) vào "đi ngược" cảm xúc "Tốt" ở bước chọn món, trong khi F07 nói về giá chứ không nói về cảm xúc lúc chọn món. Chương trình chỉ chứng minh quote có thật, còn nhãn đúng hay sai là việc bạn đọc.
 
@@ -275,52 +329,60 @@ Với mỗi ô cảm xúc có nội dung, bạn nhờ AI tìm một đến hai g
 
 ---
 
-## 4. Opportunity
+## 5. Opportunity map
 
 Từ đây là nửa **Chọn** của Define: từ những gì bạn đã hiểu, bạn quyết định việc nào đáng giải.
 
+**Opportunity map là một cây.** Gốc là một outcome (hành vi team muốn thấy) hoặc một problem statement (vấn đề đã chốt từ insight). Các nhánh bên dưới là opportunity: nhu cầu hoặc khó khăn của người dùng, hoặc mong muốn của business. Mỗi nhánh truy về insight ID. Cây dừng ở opportunity; ý tưởng cụ thể gắn vào cây ở Lesson 4.
+
 | | |
 |---|---|
-| **What** | Danh sách các user need và khó khăn của người dùng đáng giải, viết như vấn đề của khách hàng chứ không phải tính năng. Mỗi mục có evidence và được xếp thứ tự |
-| **Why** | Tách vấn đề khỏi giải pháp trước khi nghĩ ý tưởng, và nối research với quyết định |
-| **When** | Sau journey map (từ các pain point), trước design challenge ở mục 5 và ý tưởng ở Lesson 4. Không dùng làm danh sách việc cần làm |
-| **How with AI** | AI viết opportunity theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]" và không được nhắc tính năng. Bạn kiểm tra xem đó là user need hay giải pháp, đã có insight ID chưa, rồi xếp theo severity, context và reach |
-| **AI không làm** | Quyết định opportunity nào đáng giải |
+| **What** | Một cây có gốc là outcome hoặc problem statement, và các nhánh là opportunity, mỗi nhánh có evidence và được xếp thứ tự |
+| **Why** | Cả team thấy mọi thứ có thể giải trên một trang, chọn từ nhu cầu trước khi nghĩ ý tưởng, và nối research với quyết định |
+| **When** | Sau journey map (từ các pain point), trước design challenge ở mục 6. Không dùng làm danh sách việc cần làm |
+| **How with AI** | AI viết opportunity theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]" và không được nhắc tính năng. Bạn kiểm tra xem đó là nhu cầu hay tính năng, đã có insight ID chưa, rồi xếp theo severity, context và reach |
+| **AI không làm** | Chọn gốc, và quyết định opportunity nào đáng giải |
 
-**Phát hiện.** Trong opportunity solution tree, opportunity là tầng khách hàng (user need, pain point, mong muốn) nằm giữa outcome và solution. Một opportunity sai khung sẽ kéo lệch mọi tầng phía trên. Không tìm thấy nghiên cứu độc lập đo chất lượng opportunity do AI đề xuất.
+**Phát hiện.** Trong opportunity solution tree, opportunity là tầng khách hàng (nhu cầu, pain point, mong muốn) nằm giữa outcome và các ý tưởng. Một opportunity sai khung sẽ kéo lệch mọi tầng phía trên. Không tìm thấy nghiên cứu độc lập đo chất lượng opportunity do AI đề xuất.
 
-**Suy luận.** AI nghiêng về viết tính năng, nên câu kiểm tra quan trọng nhất là "đây là user need hay giải pháp?".
+**Suy luận.** AI nghiêng về viết tính năng, nên câu kiểm tra quan trọng nhất là "đây là nhu cầu hay tính năng?".
 
 **Xếp opportunity.** Một opportunity chỉ một người gặp nhưng khiến họ bỏ dở task vẫn quan trọng hơn một khó chịu nhỏ có nhiều người nhắc. Bạn xếp opportunity theo severity (hậu quả), context (hoàn cảnh xảy ra) và reach (bao nhiêu người, thuộc nhóm nào), không theo số lần nhắc, và kèm một câu nêu mẫu không cho biết điều gì.
 
 **Quy trình làm việc với opportunity.** AI soạn nháp từ insight, bạn chỉnh sửa, rồi AI đối chiếu từng ô với evidence và bạn mở source ID để xác nhận. Khi bản nháp đã chỉnh xong, bạn lưu thành file markdown và đặt vào `hub/artifacts/` (`type: opportunity`).
 
-**Bốn bước dựng opportunity.**
+**Năm bước dựng opportunity map.**
 
-1. **Root outcome là một hành vi.** Root outcome là đỉnh của cây opportunity. Bạn lấy nó từ job statement và viết lại thành một hành vi mà team cùng cam kết, chứ không lấy từ business đang đuổi một con số. Những thứ không làm được root outcome gồm một metric (không có hành vi bên dưới), một output (giải pháp khoác áo mục tiêu), hay một câu không kiểm chứng được. Phép kiểm tra: nếu root outcome xảy ra, con số kinh doanh có nhích không? Nếu câu trả lời là "không" thì ghi vào map, đừng làm mờ.
-2. **Sticky có thật, nhưng thường là giải pháp.** Bạn chạy test ba giải pháp: nếu kể được ba cách khác nhau để thoả sticky thì nó là user need, còn nếu chỉ có một cách thì nó là giải pháp. Nhiều sticky sẽ không qua test. Đó là phản xạ thường gặp chứ không phải lỗi, và việc cần làm là nâng từng sticky lên một mức. Mẹo: nếu sticky có động từ làm ra thứ gì (thêm, xây) thì nó đã là giải pháp. Ví dụ, "thêm popup nhắc khung giờ giao" là giải pháp, còn "khách cần biết khung giờ giao là cuối cùng trước khi cam kết" là user need.
-3. **Reframing tạo ra lựa chọn.** Có ba thao tác: question the objective (mục tiêu này của ai, và nếu sai thì sao), positive exceptions (ai đã thành công và khác ở điểm nào), what's missing (khung này bỏ ngoài điều gì). Reframing không tìm ra vấn đề thật, nó chỉ cho bạn xem có vấn đề tốt hơn hay không. Bạn chỉ reframe nhánh mạnh nhất và ghi số insight bên cạnh, vì một nguồn đủ để sinh reframe nhưng chưa đủ để đặt cược.
-4. **Chấm rồi chọn.** Bốn yếu tố: sizing (quy mô), importance (quan trọng thế nào với mục tiêu kinh doanh), company fit và market position. Chưa có cột effort vì effort vào ở tầng giải pháp. Khi làm riêng, bạn chấm bằng bốn yếu tố này. Khi trình bày, dùng impact và effort. Thứ tự vẫn theo severity, context và reach. Opportunity bị loại thì ghi kèm lý do, để xem lại được khi evidence đổi.
+1. **Chọn gốc.** Gốc là một outcome hoặc một problem statement. Outcome là hành vi team muốn thấy, lấy từ mục tiêu business và cả team cùng cam kết, ví dụ "nhiều khách mới đặt lại sau đơn đầu tiên". Problem statement là vấn đề đã chốt từ insight, dùng khi team chưa có outcome rõ, ví dụ "khách mới không biết khung giờ giao đã chốt cho đến khi quá muộn" (IN-01). Không làm gốc được: một metric (không có hành vi bên dưới) và một câu không kiểm chứng được. Phép kiểm tra: nếu gốc xảy ra, con số kinh doanh có nhích không? Nếu câu trả lời là "không" thì ghi vào map, đừng làm mờ.
+2. **Liệt kê opportunity.** Mỗi opportunity là một nhu cầu của người dùng hoặc mong muốn của business, viết bằng ngôn ngữ vấn đề, chưa phải cách làm. Nhu cầu của người dùng lấy từ insight và pain trên journey map, ví dụ "khách cần biết còn huỷ được đến khi nào" (IN-02). Mong muốn của business cũng là opportunity nếu team cùng cam kết; chưa có số liệu thì ghi assumption. Mẹo kiểm tra: câu có động từ làm ra một thứ gì (thêm, xây, làm lại) là một cách làm, và bạn viết lại thành nhu cầu đằng sau nó. Nhiều dòng sẽ không qua lần đầu. Đó là phản xạ thường gặp chứ không phải lỗi.
+3. **Dựng cây.** Gom các opportunity thành nhánh lớn và nhánh nhỏ, nối lên gốc. Ví dụ ở Delivery App, "khách mới biết mình đang cam kết điều gì" là một nhánh lớn, và "biết khung giờ giao là cuối cùng" (IN-01) với "biết còn huỷ được đến khi nào" (IN-02) là hai nhánh nhỏ. Opportunity nào không nối được lên gốc thì hoặc nằm sai chỗ, hoặc gốc chưa đủ rộng; bạn ghi lại thay vì bỏ đi.
+4. **Reframing tạo ra lựa chọn.** Có ba thao tác: question the objective (mục tiêu này của ai, và nếu sai thì sao), positive exceptions (ai đã thành công và khác ở điểm nào), what's missing (khung này bỏ ngoài điều gì). Reframing không tìm ra vấn đề thật, nó chỉ cho bạn xem có vấn đề tốt hơn hay không. Bạn chỉ reframe nhánh mạnh nhất và ghi số insight bên cạnh, vì một nguồn đủ để sinh reframe nhưng chưa đủ để đặt cược.
+5. **Chấm rồi chọn.** Bốn yếu tố: sizing (quy mô), importance (quan trọng thế nào với mục tiêu kinh doanh), company fit và market position. Chưa có cột effort vì effort chỉ tính được khi đã có cách làm, ở buổi sau. Khi làm riêng, bạn chấm bằng bốn yếu tố này. Khi trình bày, dùng impact và effort. Thứ tự vẫn theo severity, context và reach. Opportunity bị loại thì ghi kèm lý do, để xem lại được khi evidence đổi.
 
-### 4.1 Cách dùng AI 5: Bắt câu dạng giải pháp
+### 5.1 Cách dùng AI 5: Bắt câu không phải nhu cầu
 
-Bạn đưa AI danh sách opportunity nháp của team và các insight. Nhờ nó gắn nhãn từng dòng là `need` hoặc `giải pháp`, viết lại dòng giải pháp thành user need theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]" (không nhắc giải pháp), và nêu insight ID hoặc `assumption`. Trên bộ mẫu, AI gắn nhãn đúng cả năm dòng ("thêm nút hủy nổi bật", "gửi thông báo đẩy khi trễ" và "làm lại màn hình chọn giờ" là giải pháp). Nó ghi `assumption` cho dòng thông báo trễ vì không insight nào nói khách thiếu thông báo, và tự nhận ra một bản viết lại trùng với một need đã có. Bạn kiểm tra bản viết lại có làm đổi nghĩa không.
+Bạn đưa AI danh sách opportunity nháp của team và các insight. Nhờ nó gắn nhãn từng dòng là `nhu cầu` hoặc `tính năng`, viết lại dòng tính năng thành nhu cầu theo mẫu "[Người dùng] gặp khó khi [tình huống] vì [lý do]" (không nhắc tính năng), và nêu insight ID hoặc `assumption`. Trên bộ mẫu, AI gắn nhãn đúng cả năm dòng ("thêm nút hủy nổi bật", "gửi thông báo đẩy khi trễ" và "làm lại màn hình chọn giờ" là tính năng). Nó ghi `assumption` cho dòng thông báo trễ vì không insight nào nói khách thiếu thông báo, và tự nhận ra một bản viết lại trùng với một nhu cầu đã có. Bạn kiểm tra bản viết lại có làm đổi nghĩa không.
 
-**Mức cơ sở: có nguyên lý đỡ (practitioner).** Opportunity solution tree của Teresa Torres tách opportunity (user need) khỏi solution ([Product Talk](https://www.producttalk.org/glossary-discovery-opportunity-solution-tree/)). Chương trình chỉ đọc nguồn thứ cấp, chưa đọc sách gốc. Việc nhờ AI bắt câu dạng giải pháp là cách làm của khoá.
-
-### 4.2 Cách dùng AI 6: Thử ba giải pháp
-
-Với một user need, bạn nhờ AI đề xuất ba giải pháp khác nhau về bản chất, nêu assumption mới mà mỗi giải pháp thêm vào, rồi trả lời: need còn đúng nếu bỏ cả ba không? Trên bộ mẫu, AI đưa ba giải pháp thật sự khác nhau (nhãn "khung giờ cuối" lúc chọn, cho đổi giờ sau khi đặt, nhắc và theo dõi sát giờ giao), mỗi giải pháp kèm hai ba assumption mới, và kết luận need vẫn đúng. Nó còn nói cách diễn đạt need hiện tại đã ngầm gợi giải pháp 1. Đây là phép thử need có đứng độc lập không, chứ không phải bước chọn giải pháp: ba giải pháp suy ra từ một insight nên chưa có dữ liệu để xếp hạng. Bạn nhờ thêm "các hướng khác nhau về bản chất", vì AI có xu hướng đưa ý giống nhau.
-
-**Mức cơ sở: có nguyên lý đỡ, ở phần cảnh báo.** Một nghiên cứu 36 người thấy ý tưởng do AI gợi ý giống nhau hơn giữa các người dùng ([Anderson và cộng sự, 2024](https://arxiv.org/html/2402.01536v2)). Phép thử "bỏ giải pháp thì need còn đúng không" là cách làm của khoá, dựa trên test ba giải pháp có sẵn ở mục này.
+**Mức cơ sở: có nguyên lý đỡ (practitioner).** Opportunity solution tree của Teresa Torres tách opportunity (nhu cầu của người dùng) khỏi solution ([Product Talk](https://www.producttalk.org/glossary-discovery-opportunity-solution-tree/)). Chương trình chỉ đọc nguồn thứ cấp, chưa đọc sách gốc. Việc nhờ AI bắt câu không phải nhu cầu là cách làm của khoá.
 
 ---
 
-## 5. Design challenge and problem brief
+## 6. Design challenge and problem brief
 
 Opportunity cho bạn biết việc nào đáng giải. Nhưng một danh sách opportunity chưa đủ để team bắt đầu thiết kế, vì mỗi người có thể chọn một opportunity khác nhau. Design challenge là câu chốt lại việc team sẽ giải. Problem brief là trang ghi challenge đó cùng bằng chứng và sự đồng ý của Product và Business. Mọi thứ ở Develop được kiểm tra so với challenge này.
 
 Hai chữ này dễ nhầm. **Challenge** ở mục 1 là bước bạn phản biện một insight. **Design challenge** ở mục này là câu hỏi thiết kế bạn chọn để giải.
+
+**Từ opportunity map đến design challenge.** Design challenge không thêm dữ kiện mới, nó chọn một nhánh của cây opportunity và ghép lại thành một câu. Mỗi mảnh của câu đi ra từ một chỗ bạn đã làm:
+
+| Mảnh của challenge | Lấy từ | Ví dụ ở Delivery App |
+|---|---|---|
+| Cho [user] | Persona (mục 3) | Khách mới ở đơn đầu tiên |
+| người cần [nhu cầu] | Nhánh đã chọn của cây (mục 5) | Biết khung giờ giao và hạn huỷ đã chốt chưa (O1, O2 · IN-01, IN-02) |
+| trong [ràng buộc] | Scope (Lesson 2) | Giá quý này không đổi |
+| để [outcome đo được] | Gốc của cây (mục 5) | Tăng tỷ lệ đặt đơn thứ hai trong 30 ngày (IN-06) |
+
+Nếu một mảnh không chỉ về được một chỗ trong persona, cây hoặc scope thì nhiều khả năng bạn đang đoán, hoặc đang giấu một cách làm vào trong câu.
 
 | | |
 |---|---|
@@ -331,6 +393,8 @@ Hai chữ này dễ nhầm. **Challenge** ở mục 1 là bước bạn phản b
 | **AI không làm** | Đóng vai PO, hoặc thay Product và Business đồng ý |
 
 **Phát hiện.** IxDF mô tả giai đoạn Define của design thinking là tổ chức và phân tích dữ liệu đã thu thập để xác định vấn đề cốt lõi, và đầu ra là một problem statement rõ ràng ([IxDF](https://ixdf.org/literature/article/stage-2-in-the-design-thinking-process-define-the-problem-and-interpret-the-results)). Chương trình mới đọc đoạn trích, chưa đọc bài đầy đủ, và design thinking có năm giai đoạn chứ không phải bốn như Double Diamond.
+
+**Phát hiện thêm.** Theo Teresa Torres, bạn chọn một opportunity mục tiêu trước khi nghĩ ý tưởng, rồi mới nghĩ giải pháp cho nó, chứ không nghĩ giải pháp cho cả cây ([Product Talk](https://producttalk.org/2023/12/opportunity-solution-trees/)). Các hướng dẫn How Might We phổ biến dùng câu ba phần (how might we, cho ai, để đạt gì) và khuyên không đưa giải pháp vào câu, ví dụ không viết "làm sao thiết kế một app để…" ([IxDF](https://ixdf.org/literature/article/define-and-frame-your-design-challenge-by-creating-your-point-of-view-and-ask-how-might-we), [Trailhead](https://trailhead.salesforce.com/content/learn/modules/challenge-framing-and-scoping/create-effective-how-might-we-statements)). Chương trình mới đọc đoạn trích của các nguồn này.
 
 **Suy luận.** Opportunity đã xếp hạng chưa cho biết team sẽ giải việc nào, cho ai, trong ràng buộc nào và ai đã đồng ý. Design challenge trả lời bốn câu đó. Đây là cách làm của khoá, theo method card "Set design challenges".
 
@@ -353,47 +417,34 @@ Cột bên trái là giải pháp vì nó nói làm gì. Cột bên phải giữ
 
 **Kiểm tra một bản nháp.** Bạn đọc challenge và hỏi bốn câu: có quá rộng không, có quá hẹp không, có giấu giải pháp không, có thiếu measure không. Bạn nhờ AI hỏi các câu này trên bản của bạn, rồi bạn quyết định.
 
+**Đầu ra trông thế nào.** Design challenge không phải một slide hay một báo cáo dài. Nó là một dòng trong problem brief, và brief có hai dạng cùng nội dung: một file markdown `problem-brief.md` trong thư mục `work/` của project, và trang `problem-brief.html` trong hub. Mỗi challenge có ID (DC-1), ghi nó phục vụ opportunity nào và trạng thái đồng ý (agreed hoặc pending). Ví dụ rút gọn (file đầy đủ ở [problem-brief-example.md](../../../assets/starter-files/course-case/problem-brief-example.md)):
+
+```markdown
+---
+type: "problem-brief"
+status: "draft"
+agreement: "pending"
+---
+## Outcome
+Tăng tỷ lệ khách mới đặt đơn thứ hai trong 30 ngày. Hiện 41% (IN-06), mục tiêu assumed.
+
+## Design challenge
+**DC-1.** Cho khách mới ở đơn đầu tiên, người cần biết khung giờ giao và hạn huỷ đã chốt chưa (IN-01, IN-02), làm sao chúng ta giúp họ chọn khung giờ và huỷ đơn tự tin, trong khi giá quý này không đổi, để tăng tỷ lệ đặt đơn thứ hai trong 30 ngày?
+Phục vụ: O1, O2 · Đồng ý: pending
+
+## Opportunities (ranked)
+| O1 | Khách mới cần biết khung giờ giao là cuối cùng | IN-01 | Mạnh |
+```
+
+Project demo Travel Buddy cũng có `work/problem-brief.md` với outcome và opportunity xếp hạng, nhưng chưa có mục design challenge riêng. Cách đặt DC ngay dưới outcome là cách làm của khoá. Từ challenge, bạn đi ngược được tới opportunity, insight ID và source ID, nên câu chuyện research không đứt.
+
 **Problem brief.** Template `problem-brief.html` trong hub gồm outcome và success (kèm người ký), opportunity đã xếp hạng, hypothesis, success metric và principle check. Hôm nay bạn điền ba phần: outcome kèm measure, opportunity đã xếp hạng, và design challenge cùng trạng thái đồng ý. Template chưa có chỗ riêng cho design challenge, nên bạn ghi nó ngay dưới outcome. Hypothesis, metric chi tiết và principle check hoàn thiện ở các buổi sau.
 
 **Quy trình làm việc với design challenge.** AI soạn nháp challenge từ opportunity đứng đầu, bạn chỉnh sửa, rồi AI kiểm tra bản của bạn theo bốn câu trên. Bạn chọn challenge, ghi measure và thống nhất với Product và Business. Bạn giữ bản nháp của AI tách khỏi bản đã thống nhất, vì một brief bóng bẩy mà chưa ai đồng ý thì chưa có giá trị.
 
 **Mức cơ sở: chưa có cơ sở.** Method card của khoá mô tả việc này, nhưng chưa tìm thấy nguồn ngoài đo việc AI soạn design challenge, và chưa thử với lớp thật. Đây là cách làm của khoá.
 
----
-
-## 6. Insight hub
-
-Insight hub là một phần của Knowledge Hub của project (thư mục `insights/`), không phải một công cụ repository riêng.
-
-| | |
-|---|---|
-| **What** | Nơi lưu các insight đã kiểm tra, mỗi insight có ID, evidence, ngày và tag |
-| **Why** | Tránh làm lại research cho cùng một câu hỏi, giữ insight khi người thay đổi, và nối insight với các quyết định về sau |
-| **When** | Đóng góp sau khi insight đã qua kiểm tra, và tìm trong hub trước khi lên kế hoạch research mới |
-| **How with AI** | AI giúp tìm entry liên quan và gợi ý tag. AI chỉ được trích entry có ID, và bạn duyệt trước khi thêm |
-| **AI không làm** | Tự thêm insight vào hub |
-
-**Ví dụ hub thật.** Hai ảnh trên lớp lấy từ hub của project demo Travel Buddy (không phải Delivery App). Một ảnh là trang Insights, liệt kê card theo loại (opportunity, hypothesis, metric, decision, evidence, finding) với ô tìm theo ID và ba chế độ xem Cards, Tree, Matrix. Ảnh còn lại là trang một finding, với các đường từ opportunity qua hypothesis và evidence tới finding, cùng bảng khu vực, mức nghiêm trọng và trạng thái.
-
-**Phát hiện.** Atomic research được đề xuất năm 2018 sau khi một team lặp lại nghiên cứu vì không tìm lại được câu trả lời cũ. Finding được chia thành đơn vị nhỏ có evidence và tag, và thói quen "kiểm tra repository trước" ngăn việc làm lại. Tag có kiểm soát giữ cho repository tìm được. NN/g ghi nhận chỉ một tỷ lệ nhỏ tổ chức có vai trò riêng để quản lý repository. Nguồn về atomic research chủ yếu là blog của agency và vendor.
-
-**Thói quen** (xem [insight-hub-loop.html](../assets/insight-hub-loop.html)):
-
-- Đóng góp mỗi insight đã kiểm tra thành một entry gồm insight ID, source ID dẫn về, ngày, độ mạnh evidence, tag và người phụ trách.
-- Tìm trong hub trước khi hỏi.
-- Cập nhật khi có evidence mới thay vì thêm bản trùng.
-- Có người chăm sóc hub (với người làm một mình, người đó chính là bạn).
-
-**Từ ghi chú đến card trên hub.** Page Insights của hub không do AI gõ cả trang. Nó được build từ các card, mỗi file một card có ID trong thư mục `insights/`: AI làm card, script dựng page. Decision, Insight, Challenge và Opportunity đều là card. Decision là decision card, insight là evidence hoặc finding card, challenge là ghi chú mâu thuẫn trên card insight (không gộp, không xoá), opportunity là opportunity card, và quan hệ giữa chúng là các ID. Ba bước theo workflow `add-insights` của workspace:
-
-1. AI đề xuất vào một file md (một bảng), chưa tạo card. Mỗi dòng có nguồn, loại card, quan hệ tới card đã có, và đánh dấu củng cố, mâu thuẫn hay mới.
-2. Bạn duyệt: giữ, sửa hoặc cắt từng dòng. Decision và thứ hạng do bạn quyết, AI không tự đặt decision thành accepted.
-3. AI tạo card bằng lệnh, rồi chạy kiểm tra để bắt card thiếu liên kết hoặc ID không tồn tại.
-
-Mỗi người có workflow riêng (Notion, Obsidian, Figma, thư mục md), nhưng ba điều giữ nguyên bất kể công cụ: mỗi mục một card có ID, AI đề xuất rồi bạn duyệt, và có bước kiểm cuối. Đây là cách làm của khoá, chưa có nguồn ngoài so sánh với cách khác.
-
-**AI chạy xuyên cả bốn bước.** Insight là input đã kiểm tra, có ID. Từ đây mỗi output của AI là một file markdown, và mỗi dòng mang insight ID. Với persona, AI gom theme và soạn dòng, còn bạn đối chiếu từng dòng với insight ID. Với journey map, AI đề xuất bước còn thiếu và điền ô từ insight, còn bạn ghi assumption ở ô không có insight. Với opportunity, AI viết lại sticky thành user need, còn bạn chạy test ba giải pháp rồi chọn. Tag trong hub lấy từ một danh sách cố định, nếu không thì tag chồng chéo sẽ làm hỏng bộ lọc.
-
+**AI chạy xuyên các bước.** Insight là input đã kiểm tra, có ID. Từ đây mỗi output của AI là một file markdown, và mỗi dòng mang insight ID. Với persona, AI gom theme và soạn dòng, còn bạn đối chiếu từng dòng với insight ID. Với journey map, AI đề xuất bước còn thiếu và điền ô từ insight, còn bạn ghi assumption ở ô không có insight. Với opportunity, AI viết lại thành nhu cầu, còn bạn dựng cây, kiểm từng nhánh rồi chọn.
 ---
 
 ## 7. Four questions about AI in research
@@ -459,7 +510,7 @@ Không tìm thấy đánh giá độc lập về độ chính xác so sánh các
 
 Project mẫu là Delivery App (hư cấu): nhiều khách mới không đặt lại sau đơn đầu tiên, team tin giá là lý do chính, và chưa có research nào (cùng project với Lesson 2). Bộ `insight-set.md` có chín insight (IN-01 đến IN-09): sáu từ phỏng vấn, review và forum, một từ scope, hai là assumption. Mỗi insight kèm nguồn, source ID dẫn về `source-notes.md` (24 ghi chú) và mức độ chắc chắn. Insight viết bằng tiếng Anh. Persona, journey map và opportunity có thể viết bằng tiếng Việt, nhưng mọi insight ID dẫn vào phải có thật.
 
-Bộ này là ví dụ xuyên suốt: persona khách mới ở đơn đầu tiên (mục 2), journey từ chọn khung giờ giao đến huỷ đơn (mục 3) và opportunity về khung giờ giao (mục 4) và design challenge cho khách mới (mục 5). Chương trình còn có một persona mẫu do AI sinh cho cùng project (`persona-ai-draft.md`) với sáu dòng, trong đó một số có insight làm căn cứ và một số không. Bạn thử tự phát hiện dòng nào không có căn cứ.
+Bộ này là ví dụ xuyên suốt: persona khách mới ở đơn đầu tiên (mục 3), journey từ chọn khung giờ giao đến huỷ đơn (mục 4), opportunity về khung giờ giao (mục 5) và design challenge cho khách mới (mục 6). Chương trình còn có một persona mẫu do AI sinh cho cùng project (`persona-ai-draft.md`) với sáu dòng, trong đó một số có insight làm căn cứ và một số không. Bạn thử tự phát hiện dòng nào không có căn cứ.
 
 ### 8.2 Bộ source notes cho synthesis
 

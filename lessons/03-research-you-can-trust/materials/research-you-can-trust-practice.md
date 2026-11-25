@@ -26,7 +26,7 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 - Bạn có source notes có ID đã qua phép kiểm tra quote, cắt từ transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn ở Practice 2 (Step 9), cùng bộ principles, scope, research question và assumption map.
 - Chưa phỏng vấn được ai: dùng [bộ source notes mẫu](../../../assets/starter-files/course-case/source-notes.md) và [bộ insight mẫu](../../../assets/starter-files/course-case/insight-set.md) để làm thử, rồi làm lại với dữ liệu của bạn khi có.
 
-## Phần A · Synthesis
+## Phần A · Synthesis và insight hub
 
 ### Step 1 · Source notes có source ID
 
@@ -63,7 +63,7 @@ Kết quả của Step 2 là một file markdown cho insight này, gồm Decisio
 - Làm theo ba bước: AI đề xuất vào một file md (mỗi dòng có nguồn, loại card, quan hệ tới card đã có, củng cố hay mâu thuẫn hay mới), bạn duyệt từng dòng (decision và thứ hạng do bạn quyết), rồi AI tạo card và chạy kiểm tra liên kết và ID.
 - Tag lấy từ một danh sách cố định, nếu không tag chồng chéo làm hỏng bộ lọc. AI có thể gợi ý entry liên quan và tag; chỉ nhận entry có ID, và bạn duyệt trước khi thêm. AI không tự thêm insight vào hub.
 
-## Phần B · Persona, journey map, opportunity, design challenge
+## Phần B · Hiểu người dùng đã nói và làm gì
 
 ### Step 4 · Persona · AI soạn nháp, bạn kiểm tra
 
@@ -84,26 +84,29 @@ Kết quả của Step 2 là một file markdown cho insight này, gồm Decisio
 - **Tìm ô thiếu insight (bước thêm, không phải cách dùng AI trên lớp):** nhờ AI liệt kê ô không có insight hoặc có ID nhưng insight không nói điều đó, đếm tỷ lệ, và đề xuất câu hỏi phỏng vấn mở về hành vi quá khứ cho từng ô thiếu. Chọn một cách đếm và dùng nhất quán.
 - **Cách dùng AI 4, soát đường cảm xúc:** với mỗi ô cảm xúc có nội dung, nhờ AI tìm ghi chú gốc ủng hộ hoặc đi ngược, trả quote nguyên văn. Chạy chương trình kiểm quote của Practice 2 trên kết quả, rồi tự đọc từng ghi chú: quote có thật nhưng AI vẫn có thể xếp nhầm chỗ.
 
-### Step 6 · Opportunity · AI soạn nháp, bạn kiểm tra và quyết định
+## Phần C · Chọn việc đáng giải quyết
 
-1. **Chọn root outcome** của cây opportunity: một hành vi bạn muốn thấy ở người dùng, ví dụ "nhiều khách mới đặt lại sau đơn đầu tiên", và team cùng cam kết. Root outcome không phải một con số ("tăng 15%"), không phải một giải pháp ("ra mắt màn hình mới"), và không phải một câu không kiểm chứng được ("cải thiện trải nghiệm").
-2. **Từ pain thành user need.** Tìm điểm thấp nhất và các pain quanh nó trên journey map, viết lại thành user need theo mẫu *"[Người dùng] gặp khó khi [tình huống] vì [lý do]"*, không nhắc tính năng. Chạy **test ba giải pháp**: kể được ba cách khác nhau để thoả user need thì nó là user need; chỉ có một cách thì nó là giải pháp. Nhiều dòng sẽ không qua test, nâng từng dòng lên một mức là việc cần làm.
-3. **Reframing** nhánh mạnh nhất (không reframe tất cả): mục tiêu này của ai và nếu sai thì sao; ai đã thành công và khác ở điểm nào; khung này bỏ ngoài điều gì. Ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
-4. **Chấm rồi chọn:** sizing, importance, company fit, market position. Xếp thứ tự theo severity, context và reach, không theo số lần được nhắc. Ghi opportunity bị loại kèm lý do. Mỗi opportunity có insight ID và một câu nêu mẫu không cho biết điều gì.
+### Step 6 · Opportunity map · AI soạn nháp, bạn kiểm tra và quyết định
 
-5. **Cách dùng AI 5, bắt câu dạng giải pháp:** đưa AI danh sách opportunity nháp của team. Nhờ nó gắn nhãn need hoặc giải pháp, và viết lại dòng giải pháp thành user need kèm insight ID hoặc assumption. Bạn kiểm tra bản viết lại có đổi nghĩa không.
-6. **Cách dùng AI 6, thử ba giải pháp:** với opportunity ưu tiên cao nhất, nhờ AI đề xuất ba giải pháp khác nhau về bản chất và nêu assumption mà mỗi giải pháp thêm vào. Rồi hỏi: need còn đúng nếu bỏ cả ba không? Đây là phép thử need đứng độc lập, không phải bước chọn giải pháp.
+Opportunity map là một cây: gốc là outcome hoặc problem statement, các nhánh là opportunity (nhu cầu của người dùng hoặc mong muốn của business). Cây dừng ở opportunity, chưa có ý tưởng.
+
+1. **Chọn gốc** của cây: một outcome (hành vi bạn muốn thấy ở người dùng, ví dụ "nhiều khách mới đặt lại sau đơn đầu tiên", team cùng cam kết) hoặc một problem statement đã chốt từ insight. Một metric ("tăng 15%") hoặc một câu không kiểm chứng được ("cải thiện trải nghiệm") không làm gốc được.
+2. **Liệt kê opportunity.** Tìm điểm thấp nhất và các pain quanh nó trên journey map, rồi viết thành nhu cầu theo mẫu *"[Người dùng] gặp khó khi [tình huống] vì [lý do]"*. Mong muốn của business cũng là opportunity nếu team cùng cam kết. Câu nào có động từ làm ra một thứ gì (thêm, xây, làm lại) thì viết lại thành nhu cầu đằng sau nó. Mỗi dòng kèm insight ID hoặc `assumption`.
+3. **Dựng cây:** gom các opportunity thành nhánh lớn và nhánh nhỏ, nối lên gốc. Opportunity nào không nối được lên gốc thì ghi lại, đừng bỏ đi.
+4. **Reframing** nhánh mạnh nhất (không reframe tất cả): mục tiêu này của ai và nếu sai thì sao; ai đã thành công và khác ở điểm nào; khung này bỏ ngoài điều gì. Ghi số insight bên cạnh: một nguồn đủ để sinh reframe, chưa đủ để đặt cược.
+5. **Chấm rồi chọn:** sizing, importance, company fit, market position. Xếp thứ tự theo severity, context và reach, không theo số lần được nhắc. Ghi opportunity bị loại kèm lý do. Mỗi opportunity có insight ID và một câu nêu mẫu không cho biết điều gì.
+6. **Cách dùng AI 5, bắt câu không phải nhu cầu:** đưa AI danh sách opportunity nháp của team. Nhờ nó gắn nhãn nhu cầu hoặc tính năng, và viết lại dòng tính năng thành nhu cầu kèm insight ID hoặc assumption. Bạn kiểm tra bản viết lại có đổi nghĩa không.
 
 ### Step 7 · Design challenge và problem brief · AI soạn nháp, bạn chọn và thống nhất
 
-1. **Chọn** một hoặc hai opportunity đứng đầu từ Step 6, dựa trên bảng xếp hạng và outcome của business.
+1. **Chọn** một hoặc hai nhánh đứng đầu của cây opportunity từ Step 6, dựa trên bảng xếp hạng. Gốc của cây là outcome của challenge, persona là user, scope ở Lesson 2 là ràng buộc. Mỗi mảnh của challenge phải chỉ về được một trong các chỗ đó.
 2. **AI soạn nháp:** đưa AI opportunity đã chọn, outcome của business và các ràng buộc đã biết từ scope ở Lesson 2. Nhờ nó soạn một đến hai design challenge theo mẫu *"cho [user], người cần [nhu cầu], làm sao chúng ta có thể [hướng đi], trong [ràng buộc], để [outcome đo được]"*, mỗi cái kèm insight ID và không nhắc giải pháp.
 3. **Bạn chỉnh và kiểm tra:** đọc lại và sửa bản nháp, rồi hỏi AI bốn câu trên bản đã sửa: có quá rộng không, quá hẹp không, giấu giải pháp không, thiếu measure không. Bạn quyết định giữ câu nào.
 4. **Thêm outcome và measure:** một cách để biết challenge đạt. Chưa xác nhận thì đánh dấu "assumed".
 5. **Ghi các hypothesis chính** để test sau. Bạn chỉ cần ghi tên, chưa cần viết hay test.
 6. **Thống nhất với PO và business**, và ghi trạng thái: agreed hoặc pending. Chưa có ai để hỏi thì ghi pending. Giữ bản nháp của AI tách khỏi bản bạn đã thống nhất.
 
-Đây là phần đầu của problem brief. [Template problem brief](../../../assets/templates/hub/problem-brief.html) trong hub có chỗ cho outcome và opportunity; bạn ghi design challenge ngay dưới outcome. Hypothesis chi tiết, metric và principle check hoàn thiện ở các buổi sau.
+Đầu ra là một file `problem-brief.md` (xem [problem-brief-example.md](../../../assets/starter-files/course-case/problem-brief-example.md)): outcome, design challenge có ID (DC-1) kèm opportunity nó phục vụ, opportunity xếp hạng và trạng thái đồng ý. Đây là phần đầu của problem brief. [Template problem brief](../../../assets/templates/hub/problem-brief.html) trong hub có chỗ cho outcome và opportunity; bạn ghi design challenge ngay dưới outcome. Hypothesis chi tiết, metric và principle check hoàn thiện ở các buổi sau.
 
 ### Step 8 · Kiểm truy vết bằng chương trình
 
@@ -137,7 +140,7 @@ Kết quả của Step 2 là một file markdown cho insight này, gồm Decisio
 - Persona, journey map, opportunity đã xếp hạng
 - Một design challenge, kèm outcome, measure và trạng thái đồng ý
 - Một trang cho lead (bản đầu problem brief)
-- Kết quả sáu cách dùng AI và kết quả kiểm truy vết
+- Kết quả năm cách dùng AI và kết quả kiểm truy vết
 - Một skill chạy cả chuỗi
 - Các entry đã đưa lên hub, và bảng giờ từng step
 
@@ -149,14 +152,14 @@ Kết quả của Step 2 là một file markdown cho insight này, gồm Decisio
 - [ ] Mỗi opportunity viết như một user need, được xếp theo severity, context và reach.
 - [ ] Design challenge của bạn không giấu giải pháp, có measure (đánh dấu "assumed" nếu chưa xác nhận) và có trạng thái đồng ý (agreed hoặc pending).
 - [ ] Bạn đóng AI lại vẫn giải thích được insight của mình.
-- [ ] Bạn đã chạy sáu cách dùng AI và ghi cách dùng nào bắt được lỗi thật, cách dùng nào chỉ nghe hợp lý.
+- [ ] Bạn đã chạy năm cách dùng AI và ghi cách dùng nào bắt được lỗi thật, cách dùng nào chỉ nghe hợp lý.
 - [ ] Lần kiểm truy vết cuối không còn dòng không đạt.
 
 Xong thì mang các output này tới buổi practice trên lớp: bạn làm tiếp phần còn dang dở và nhận phản hồi.
 
 ## If you get stuck
 
-- **Chưa có dữ liệu để thử sáu cách dùng:** dùng `insights-plain.txt`, `persona-draft-plain.txt`, `journey-map-draft.md` và `opportunities-draft-plain.txt` trong course case, cùng prompt ở `define-moves.md`.
+- **Chưa có dữ liệu để thử năm cách dùng:** dùng `insights-plain.txt`, `persona-draft-plain.txt`, `journey-map-draft.md` và `opportunities-draft-plain.txt` trong course case, cùng prompt ở `define-moves.md`.
 - **Chưa có transcript từ Practice 2:** làm thử bằng bộ source notes và bộ insight mẫu ở trên, rồi làm lại với transcript của bạn khi có.
 - **Ít insight (dưới khoảng 5) hoặc chỉ một người phỏng vấn đứng sau:** gọi persona là assumption, ghi rõ số người, và dành thêm sức cho Step 2.
 - **AI đưa ra điều nghe hợp lý nhưng không có insight nào làm căn cứ:** ghi "chưa có nguồn" hoặc "unknown", không đưa vào như một sự thật.
