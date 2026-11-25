@@ -2,11 +2,11 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 73
+slide_count: 66
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
-last_synced: 2026-11-21
+last_synced: 2026-11-25
 ---
 
 ## Session metadata
@@ -18,7 +18,7 @@ last_synced: 2026-11-21
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 2: Discover the Problem |
-| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: UI/UX, file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 64 slide (thêm Use case markdown + HTML, Project folder, hai slide Rules, MCP use cases, Agent đầu tiên viết lại cùng một ví dụ agent thật, hai slide publish live site, hai divider; bỏ slide chuyển ý "để gì lên repo"; slide Workflow thiết kế với agent đứng đầu phần Agent như một slide What/Why/When); deck thật trên Slides đã sắp xếp lại theo thứ tự này (2026-11-21, 74 slide kể cả Appendix), phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5; chưa ước thời lượng. Phần nghề (T1) giữ nguyên theo quyết định của Winnie (2026-11-16); cần bớt khoảng 10 phút ở chỗ khác và Winnie quyết định bớt chỗ nào |
+| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 57 slide; deck thật trên Slides đã sắp xếp lại theo thứ tự này, phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5. Ngày 2026-11-25, mục UI/UX (số liệu, hướng nghề, hướng tiếp cận brief, “trông đã xong”) chuyển sang intro (`program-intro-slide-outline.md`), còn Context and grounding và Hallucination đứng đầu mục 1 (File, folder và rules); thời lượng giảm tương ứng, chưa ước lại |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
@@ -50,23 +50,21 @@ last_synced: 2026-11-21
 - Title: Nội dung\n*buổi học*
 - On-slide:
   - 01
-  - UI/UX thời đại AI
-  - 02
   - File, folder và rules
-  - 03
+  - 02
   - Skills và connector
-  - 04
+  - 03
   - Agent và đội AI của bạn
-  - 05
+  - 04
   - Knowledge Hub
-  - 06
+  - 05
   - GitHub cho designer
-  - 07
+  - 06
   - Data Safety
 - Ví dụ: Không cần. Slide nêu bảy phần của buổi học.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Bảy phần của buổi học, theo thứ tự mỗi phần dùng thứ đã học ở phần trước: file và folder, rules, skill và connector, agent, hub, GitHub
+  - Sáu phần của buổi học, theo thứ tự mỗi phần dùng thứ đã học ở phần trước: file và folder, rules, skill và connector, agent, hub, GitHub
   - Hỏi đáp để cuối buổi; câu hỏi cứ ghi vào chat
 - 🎨 Visual hint: Agenda hai cột: trái là title hai dòng, phải là bảy hàng đánh số 01 đến 07 có đường kẻ ngăn.
 
@@ -84,175 +82,25 @@ last_synced: 2026-11-21
   - Mỗi người nói hai việc: tên và công việc hiện tại, và một lần dùng AI khiến bạn bất ngờ hoặc thấy bực. Ai chưa dùng AI nhiều thì kể điều kỳ vọng hoặc lo ngại. Không ai phải có câu chuyện hay.
   - Mình ghi lại thành bảng hai cột, vì bảng này sẽ dùng lại ở các slide sau.
   - Lớp nhỏ thì rút còn năm phút. Nếu quá giờ ở phần sau, đây là chỗ cắt cuối cùng.
-  - Chuyển tiếp: hôm nay mình nhìn lại cả hai cột này bằng bằng chứng.
+  - Chuyển tiếp: bây giờ chúng ta bắt đầu với file và folder, nền để AI làm việc với project của bạn.
 - 🎨 Visual hint: Nền vàng, chỉ có chữ Ice Breaker lớn ở giữa slide.
 
 ---
 
-## 1. UI/UX thời đại AI
+## 1. File, folder và rules
 
 ---
 
-### SECTION DIVIDER · Where design is heading
+### SECTION DIVIDER · Files, folders and rules
 - Num: 01
-- Title: UI/UX sẽ ra sao\n*khi AI ở khắp nơi?*
-- Sub: Liệu AI có ảnh hưởng đến bạn hay không?
+- Title: File, folder\n*và rules*
+- Sub: Nền để AI làm việc với project của bạn
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần này có số liệu có nguồn, có hướng đi cụ thể, và cũng có chỗ chưa ai đo được
-  - Ground rule của lớp: những gì chia sẻ trên lớp ở lại trong lớp; ẩn danh trước; không ai bắt buộc phải trình bày công việc confidential
-  - Project mẫu của khoá luôn sẵn sàng nếu project của designer quá nhạy cảm
-
-  > Câu hỏi ghi vào chat bất cứ lúc nào; 8 phút cuối buổi để trả lời, câu nào chưa kịp thì trả lời sau bằng văn bản
+  - Phần này đi từ file đến folder rồi đến rules. Skill, agent và hub ở các phần sau đều là file nằm trong một folder và làm việc theo rules.
+  - Thứ tự: markdown và HTML là hai loại file, project folder là nơi chứa chúng, rules là luật AI đọc khi mở folder.
 - 🎨 Visual hint: Nền vàng, số phần rất lớn ở góc trên trái, title ở giữa, dòng mono nhỏ bên dưới.
-
----
-
-### NUMBERED · What the data says
-- Kicker: Findings
-- Title: Những con số\n*đang nói gì*
-- On-slide:
-  - 91%
-  - designer dùng AI mỗi tuần, từ 54% một năm trước
-  - Khảo sát hơn 900 designer, 2026
-  - Entry level
-  - Entry level khan hiếm, senior phục hồi nhanh hơn khi AI phát triển
-  - NN/g, 2026
-  - 1/2
-  - số designer được khảo sát đã đưa code do AI tạo lên production
-- Ví dụ: Một ngày làm việc bắt đầu bằng một brief: AI dựng màn hình trong vài phút, còn lại là kiểm tra màn hình có giải đúng vấn đề khách tạm dừng hay không.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Với mỗi con số, mình nói rõ nguồn, năm và cỡ mẫu.
-  - Số 01 và 03 đến từ Designer Fund và Foundation Capital, AI in Design 2026: hơn 900 designer, tự khai báo, không phải mẫu ngẫu nhiên. Vì vậy mình nói "trong khảo sát", không nói "cả nghề".
-  - Số 02 đến từ Nielsen Norman Group, State of UX 2026. Đây là phân tích của chuyên gia, không phải khảo sát.
-  - Nếu có người hỏi về số việc làm: BLS dự báo web và digital interface designer +7,0% (2024 đến 2034) và nói AI "may soften" mức tăng ở bảng 2025 đến 2035. Hai bảng dùng cách gộp khác nhau nên đừng so trực tiếp (lesson mục 1.1).
-  - Giới hạn: chưa có nguồn nào cho thị trường Việt Nam ở cấp designer.
-  - Slide này khoảng một phút rưỡi.
-- 🎨 Visual hint: Ba card cạnh nhau: card đầu và cuối nền trắng với con số tím lớn, card giữa nền tối chữ trắng; nguồn là dòng mono xám ở đáy mỗi card.
-
----
-
-### COMPARE · Where the pressure is
-- Kicker: Thách thức
-- Title: Công việc nào\n*đang thay đổi?*
-- On-slide:
-  - AI làm nhanh nhất phần làm ra screen
-  - Từ brief một dòng đến màn hình onboarding, AI generate phần này nhanh nhất hiện nay.
-  - Người mới vào nghề chịu áp lực nhiều nhất
-  - Vị trí entry level khan hiếm hơn, người mới khó tìm chỗ đứng hơn người có kinh nghiệm.
-  - Ranh giới giữa các position mờ dần
-  - Phần việc của từng position chồng lên nhau nhiều hơn trước.
-  - Nguồn: NN/g 2026; Stanford, dữ liệu đến 06/2026
-- Ví dụ: Dựng màn hình onboarding Delivery App từ một brief một dòng.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Đây là suy luận của người soạn, dựa trên hai nguồn:
-    - NN/g 2026: entry level khan hiếm, senior phục hồi nhanh hơn
-    - Stanford: người 22 đến 25 tuổi trong các nghề chịu tác động mạnh của AI có việc làm thấp hơn khoảng 19% so với mức lẽ ra có nếu theo kịp nhóm cùng tuổi ở nghề ít chịu tác động (dữ liệu đến 06/2026), người có kinh nghiệm không có khoảng cách tương tự; nghiên cứu này không tách riêng designer
-  - Không có nguồn nào đo trực tiếp nhóm "designer nhận brief rồi làm screen"; đừng nói như một phát hiện, và đừng dùng để doạ
-  - Phía phải: đây là phần AI chưa làm thay được, và cũng là phần series dạy
-  - Một phút cho slide này
-- 🎨 Visual hint: Ba card nền trắng viền đen, mỗi card có icon line-art, tiêu đề đậm và một câu; dòng nguồn nhỏ ở dưới cùng.
-
----
-
-### NUMBERED · Three paths
-- Kicker: Định hướng
-- Title: Ba hướng đi\n*cho designer*
-- On-slide:
-  - 01
-  - Strategic designer
-  - Cùng Product và Business xác định vấn đề cần giải quyết
-  - 02
-  - Design builder
-  - Dùng AI để dựng prototype hoạt động được, rồi đưa vào production
-  - 03
-  - AI product designer
-  - Thiết kế cách sản phẩm AI hoạt động, phản hồi khi có lỗi và tạo dựng niềm tin
-- Ví dụ: Delivery App: Strategic designer cùng Product tìm lý do khách đặt đơn đầu rồi không quay lại; Design builder dựng prototype onboarding ba bước; AI product designer thiết kế tính năng gợi ý món.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Ba hướng này không loại trừ nhau, và đây là xu hướng chứ không phải sự đảm bảo. Mỗi hướng mình nói một câu, tổng khoảng một phút.
-    - 01: bằng chứng ở mức vừa (NN/g 2026 cộng một nghiên cứu gián tiếp), học ở buổi 2 đến 5
-    - 02: một nửa designer được khảo sát đã ship code do AI tạo, học ở buổi 7 đến 9. Khoá không biến designer thành engineer: bạn chỉ đạo AI coding tool và kiểm tra những gì nó đã làm
-    - 03: mình nói thẳng là khoá này dạy cách dùng AI để làm việc, không dạy thiết kế sản phẩm AI. Bằng chứng về tăng trưởng ở mức yếu
-  - Mỗi hướng có một slide chi tiết ở Appendix, mở ra khi có người hỏi sâu hơn.
-
-  > Bỏ phiếu trong chat, bạn nghiêng về hướng 01, 02 hay 03?
-- 🎨 Visual hint: Ba card, mỗi card có hình line-art ở trên (sơ đồ cây, cửa sổ code, hai bong bóng chat), số 01 đến 03 màu tím, tên hướng và một câu.
-
----
-
-### COMPARE · Start from a finished brief, or shape it together?
-- Kicker: Hãy thay đổi
-- Title: Làm theo brief hay\n*cùng định hình vấn đề?*
-- On-slide:
-  - Từ brief có sẵn
-  - Kiểm tra yêu cầu, thiết kế rồi bàn giao. Cách làm này nhanh, nhưng mặc định vấn đề đã được xác định đúng
-  - Design nhận brief từ Product rồi thực hiện
-  - Nhanh, nhưng rủi ro giải sai vấn đề
-  - Cùng định hình
-  - Bắt đầu từ câu hỏi của Business, thống nhất kết quả mong muốn với Product, rồi mới chọn hướng thiết kế
-  - Design cùng Product làm rõ vấn đề trước khi thiết kế
-  - Chậm hơn, nhưng đúng vấn đề
-- Ví dụ: Brief "thêm nút Skip vào onboarding" đặt cạnh câu hỏi của Business "vì sao khách mới tạm dừng sau hộp đầu tiên?".
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Brief từ Product thường là điểm bắt đầu tốt. Mình không mặc định brief nào cũng có vấn đề, và mục tiêu ở đây không phải là tìm lỗi của nhau.
-  - AI có thể biến một brief thành màn hình rất nhanh. Nhưng việc xác định vấn đề nào đáng giải quyết và thống nhất thế nào là thành công vẫn cần designer, Product và Business cùng trao đổi.
-  - Việc này cần sự tham gia của cả hai phía: Design mang theo research và evidence; Product và Business chia sẻ những gì họ biết về vấn đề, mục tiêu và các ràng buộc.
-  - Nếu lớp có PO, PM hoặc BA, mời họ nói họ cần gì từ Design
-  - Thành thật về mức độ làm việc chung: có designer làm sát Product mỗi ngày, có designer chỉ liên lạc qua người trung gian, có designer chưa có cơ hội trao đổi
-  - Dù mức độ phối hợp hiện tại khác nhau, bạn vẫn có thể áp dụng cách làm trong buổi học này. Những buổi tiếp theo sẽ đi vào cách thực hiện cụ thể.
-  - Đừng hứa là cuộc họp đó sẽ xảy ra với tất cả mọi người
-  - Nửa phút; nếu T1 quá giờ, chỉ nói hai ý đầu
-- 🎨 Visual hint: Hai card so sánh: trái nền trắng, phải nền tối chữ trắng; mỗi card có icon, tiêu đề, một câu và hai dòng tick ở đáy.
-
----
-
-### DIAGRAM · The Double Diamond
-- Kicker: Design Process
-- Title: The Double\n*Diamond*
-- On-slide: Discover · Define · Develop · Deliver
-- On-slide:
-  - Discover
-  - Hiểu người dùng và bối cảnh dựa trên bằng chứng
-  - Define
-  - Chốt vấn đề đáng giải thành một design challenge
-  - Develop
-  - Dựng và thử các hướng giải pháp thành prototype
-  - Deliver
-  - Kiểm chứng với người thật và đưa ra các findings
-- Ví dụ: Nối với Design Thinking: Empathise là Discover, Ideate và Prototype là Develop, Test là Deliver.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Nối với điều bạn đã học: Empathise là Discover, Define là Define, Ideate và Prototype là Develop, Test là Deliver.
-  - Hai hình thoi: hình thứ nhất mở rộng rồi thu hẹp về vấn đề, hình thứ hai mở rộng rồi thu hẹp về giải pháp.
-  - Output của mỗi stage là input của stage kế tiếp. Mỗi stage kết thúc bằng một checklist ngắn, gọi là gate, trước khi công việc đi tiếp. Chi tiết mình nói sau.
-  - Slide này khoảng một phút rưỡi.
-
-  > Hiện giờ AI đang giúp bạn nhiều nhất ở stage nào?
-- 🎨 Visual hint: Hai hình thoi nối nhau, hình đầu tô tím nhạt, có đường nét đứt ở giữa; bên dưới bốn cột Discover, Define, Develop, Deliver, mỗi cột một câu.
-
----
-
-### STATEMENT · Looks finished, is it right
-- Kicker: Trông đã xong
-- Title: Nhìn có vẻ hoàn chỉnh.\n*Nhưng đã đúng chưa?*
-- On-slide: Lỗi nguy hiểm nhất là lỗi trông như đã xong.
-- On-slide:
-  - Chưa kiểm tra
-  - Khảo sát 1.150 người ở Mỹ (2025): 40% nhận sản phẩm AI trông đã xong nhưng thiếu nội dung, mất khoảng hai giờ sửa lại
-- Ví dụ: UX yếu được làm cho chỉn chu; prototype đúng thương hiệu nhưng lệch design system; bản tổng hợp nghe như insight nhưng không trả lời được gì.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Một khảo sát 1.150 desk worker toàn thời gian ở Mỹ (2025): 40% nhận sản phẩm AI trông như đã xong nhưng thiếu nội dung trong tháng qua, mỗi lần mất khoảng hai giờ để xử lý
-  - Với designer: UX yếu được làm cho trông chỉn chu; prototype nhìn đúng thương hiệu nhưng lệch design system; bản tổng hợp nghe như insight nhưng không trả lời được gì
-  - Vì vậy bước kiểm tra là phần việc của designer, không phải phần việc có thể bỏ qua
-  - Nửa phút
-- 🎨 Visual hint: Title lớn bên trái, dòng khảo sát in nghiêng bên dưới; bên phải là tảng băng line-art, phần nổi tô vàng "Trông đã xong", phần chìm "Chưa kiểm tra".
 
 ---
 
@@ -307,21 +155,6 @@ last_synced: 2026-11-21
 - 🎨 Visual hint: Title lớn hai dòng kèm dòng phụ nhỏ; hai card số liệu nằm ngang ở đáy (3 đến 13% và 14 đến 95%) kèm nguồn nghiên cứu.
 
 ---
-
-## 2. File, folder và rules
-
----
-
-### SECTION DIVIDER · Files, folders and rules
-- Num: 02
-- Title: File, folder\n*và rules*
-- Sub: Nền để AI làm việc với project của bạn
-- Ví dụ: Không cần. Slide chuyển phần.
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Phần này đi từ file đến folder rồi đến rules. Skill, agent và hub ở các phần sau đều là file nằm trong một folder và làm việc theo rules.
-  - Thứ tự: markdown và HTML là hai loại file, project folder là nơi chứa chúng, rules là luật AI đọc khi mở folder.
-- 🎨 Visual hint: Nền vàng, số phần rất lớn ở góc trên trái, title ở giữa, dòng mono nhỏ bên dưới.
 
 ---
 
@@ -525,12 +358,12 @@ last_synced: 2026-11-21
 
 ---
 
-## 3. Skills và connector
+## 2. Skills và connector
 
 ---
 
 ### SECTION DIVIDER · Skills and connectors
-- Num: 03
+- Num: 02
 - Title: Skills và\n*connector*
 - Sub: Cách làm và công cụ đưa cho AI
 - Ví dụ: Không cần. Slide chuyển phần.
@@ -796,12 +629,12 @@ last_synced: 2026-11-21
 
 ---
 
-## 4. Agent và đội AI của bạn
+## 3. Agent và đội AI của bạn
 
 ---
 
 ### SECTION DIVIDER · An AI team
-- Num: 04
+- Num: 03
 - Title: Agent là gì,\n*và làm việc theo nhóm ra sao?*
 - Sub: Từ một cuộc chat đến một đội
 - Ví dụ: Không cần. Slide chuyển phần.
@@ -838,7 +671,7 @@ last_synced: 2026-11-21
   - Vậy nếu mình muốn tuỳ chỉnh theo workflow thiết kế thì làm thế nào?
   - Ba câu hỏi:
     - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Bạn duyệt trước mỗi lần chuyển phase
-    - Why: AI soạn nháp nhanh phần lặp lại, còn bạn giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc ở slide Double Diamond: AI soạn nháp, bạn kiểm tra rồi quyết định
+    - Why: AI soạn nháp nhanh phần lặp lại, còn bạn giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc AI soạn nháp, bạn kiểm tra rồi quyết định, đã học ở buổi 0 (intro)
     - When: chỉ khi workflow đã ổn. Workflow phải ổn trước khi giao cho agent; slide "Ổn định cách làm trước" ở phần sau nói kỹ ý này. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
   - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc khi bước đó cần người thật: user, hoặc người phía Product và Business.
   - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
@@ -1072,12 +905,12 @@ last_synced: 2026-11-21
 
 ---
 
-## 5. Knowledge Hub
+## 4. Knowledge Hub
 
 ---
 
 ### SECTION DIVIDER · Knowledge Hub
-- Num: 05
+- Num: 04
 - Title: Knowledge *Hub*
 - Sub: Điểm đến của khoá
 - Ví dụ: Không cần. Slide chuyển phần.
@@ -1321,12 +1154,12 @@ last_synced: 2026-11-21
 
 ---
 
-## 6. GitHub cho designer
+## 5. GitHub cho designer
 
 ---
 
 ### SECTION DIVIDER · GitHub for designers
-- Num: 06
+- Num: 05
 - Title: GitHub cho designer
 - Sub: Project của bạn sẽ được publish ở đâu
 - Ví dụ: Không cần. Slide chuyển phần.
@@ -1544,12 +1377,12 @@ last_synced: 2026-11-21
 
 ---
 
-## 7. Data Safety, hỏi đáp và kết
+## 6. Data Safety, hỏi đáp và kết
 
 ---
 
 ### SECTION DIVIDER · Data Safety
-- Num: 07
+- Num: 06
 - Title: Data Safety
 - Sub: Phân loại tài liệu trước khi đưa vào AI
 - Ví dụ: Không cần. Slide chuyển phần.
@@ -2061,7 +1894,7 @@ last_synced: 2026-11-21
 - On-slide:
   - Trái, mơ hồ: "Làm sao để cải thiện onboarding cho app giao đồ ăn của tôi?"
   - Phải, có cấu trúc (đính kèm project mẫu): "Chỉ dùng project mẫu. Liệt kê năm điều cần biết mà KHÔNG có trong đó. Không đoán. Nói 'unknown'. Chỉ trả về danh sách."
-- Ví dụ: có (app giao đồ ăn: hai instruction trên cùng một project mẫu, lesson mục 4.2)
+- Ví dụ: có (app giao đồ ăn: hai instruction trên cùng một project mẫu, lesson mục 2.2)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Project mẫu: một app giao đồ ăn hư cấu mà nhiều khách mới không đặt lại sau đơn đầu tiên; nghi ngờ do giá; chưa có research

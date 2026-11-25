@@ -18,7 +18,7 @@ Cách sắp xếp folder do bạn quyết định. Layout ở Lesson 1 chỉ đ�
 
 ## Before you start
 
-- Bạn đã học [Lesson 1](design-process-with-ai-lesson.md) và đọc [project brief](../../../assets/starter-files/practice-project/project-brief.md).
+- Bạn đã học [Lesson 1](design-process-with-ai-lesson.md) và đọc [project brief](../../../assets/starter-files/practice-project/project-brief.md) và [tài liệu nền](../../../assets/starter-files/practice-project/topic-primer.md).
 - Một tài khoản GitHub, GitHub Desktop (tải ở [desktop.github.com](https://desktop.github.com)) và một AI coding tool.
 - Folder đặt trong `Documents`, không đặt trong Google Drive, iCloud, OneDrive hay Dropbox: folder đồng bộ cloud có thể làm hỏng file khi AI đang ghi.
 - Chưa đưa tài liệu nào cho AI trước khi viết xong data rules (Step 2). Chỉ dùng dữ liệu giả hoặc đã ẩn danh.
@@ -35,7 +35,7 @@ Cách sắp xếp folder do bạn quyết định. Layout ở Lesson 1 chỉ đ�
 
 Làm trước khi đưa bất kỳ thứ gì cho AI.
 
-- Viết ba dòng bằng lời của bạn: được dán gì vào AI tool, sẽ không dán gì, và dùng tool nào cho việc gì.
+- Viết ba dòng bằng lời của bạn: được dán gì vào công cụ AI, sẽ không dán gì, và dùng công cụ nào cho việc gì.
 - Nhớ hai lúc cần dừng lại:
   - **Trước khi AI nhìn thấy quote của người thật:** ẩn danh bằng find and replace trên máy bạn (tên thành P1, P2; bỏ công ty, số điện thoại, email). Không nhờ AI làm việc này, vì khi đó dữ liệu đã bị gửi đi. Bạn cũng bỏ vai trò, tuổi và nơi ở nếu chúng đủ để nhận ra người đó, vì P1, P2 chưa phải là ẩn danh.
   - **Trước khi kết nối connector:** connector đọc được file trong folder, nên giữ file confidential ở ngoài folder.

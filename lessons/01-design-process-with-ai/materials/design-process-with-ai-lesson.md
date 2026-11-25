@@ -1,7 +1,7 @@
 ---
 title: "Your Design Process, with AI"
-summary: "Nghề thiết kế đang đi về đâu, bốn stage của quy trình, nền file, folder và rules, skill và connector, agent, Knowledge Hub, GitHub và publish hub thành live site, data safety."
-subtitle: "Where design careers are heading, the four stages you already know, the files, folders and rules AI works from, skills and connectors, agents, the hub every later lesson builds on, and how to publish it with GitHub"
+summary: "Bốn stage của quy trình, nền file, folder và rules, skill và connector, agent, Knowledge Hub, GitHub và publish hub thành live site, data safety."
+subtitle: "The four stages you already know, the files, folders and rules AI works from, skills and connectors, agents, the hub every later lesson builds on, and how to publish it with GitHub"
 type: lesson
 program: ai-design-workflow
 tags: [ai, design-process, double-diamond, terminology, context, markdown, rules, skills, agents, github, data-safety, hub, schema, foundational]
@@ -13,87 +13,41 @@ slides: "https://claude.ai/artifact/Dmc6zgaZrHQYunwHCeCVXa"
 previous-session: ""
 next-session: "Discover the Problem"
 ---
-Buổi này đi theo thứ tự phụ thuộc, mỗi phần dùng thứ đã học ở phần trước, và trả lời các câu hỏi: nghề đang đổi hướng thế nào, quy trình thiết kế khi có AI ra sao, làm việc với AI cần những khái niệm nào, file, folder và rules là gì, skill và connector là gì, agent và đội AI là gì, hub gồm những lớp nào và vì sao một công ty có thể giữ nhiều hub, GitHub dùng để làm gì và publish hub thành live site thế nào, và dữ liệu nào được đưa cho AI.
+Buổi này đi theo thứ tự phụ thuộc, mỗi phần dùng thứ đã học ở phần trước, và trả lời các câu hỏi: quy trình thiết kế khi có AI ra sao, làm việc với AI cần những khái niệm nào, file, folder và rules là gì, skill và connector là gì, agent và đội AI là gì, hub gồm những lớp nào và vì sao một công ty có thể giữ nhiều hub, GitHub dùng để làm gì và publish hub thành live site thế nào, và dữ liệu nào được đưa cho AI.
 
 > **AI-assisted, không phải AI-generated.** AI soạn nháp. Bạn kiểm tra. Bạn quyết định. Lập trường của chương trình: bạn là partner cùng business và product chọn vấn đề đáng giải trước khi build.
 
 ## Nội dung buổi học
 
-1. Background: AI và nghề thiết kế
-2. Career directions: ba hướng đi
-3. The design process with AI: bốn stage, AI làm tốt và còn yếu ở đâu
-4. Working with AI: bốn khái niệm
-5. Files, folders and rules: markdown, HTML, project folder, rules
-6. Skills and connectors: skill, cách tạo, connector (MCP)
-7. Agents and an AI team: agent, skill và tool, đội AI
-8. The hub: ba lớp, ba quy tắc và schema file
-9. One hub or many: nhiều hub nối nhau bằng ID chung
-10. GitHub and publishing: từ vựng, repo, publish hub thành live site
-11. Data safety: ba nhóm tài liệu
+1. The design process with AI: bốn stage, AI làm tốt và còn yếu ở đâu
+2. Working with AI: bốn khái niệm
+3. Files, folders and rules: markdown, HTML, project folder, rules
+4. Skills and connectors: skill, cách tạo, connector (MCP)
+5. Agents and an AI team: agent, skill và tool, đội AI
+6. The hub: ba lớp, ba quy tắc và schema file
+7. One hub or many: nhiều hub nối nhau bằng ID chung
+8. GitHub and publishing: từ vựng, repo, publish hub thành live site
+9. Data safety: ba nhóm tài liệu
 
 ## Sau buổi học, bạn có thể
 
-1. Mô tả ba hướng đi nghề nghiệp (strategic designer, design builder, AI product designer), evidence và giới hạn của chúng, và chọn hướng nghiêng về
-2. Nêu, với mỗi stage trong bốn stage, phần AI giúp được và phần bạn vẫn tự làm
-3. Giải thích bốn khái niệm: context, grounding, hallucination, và AI-assisted so với AI-generated
-4. Nêu hai loại task AI làm tốt và hai loại còn yếu, rồi đánh giá một workflow có đáng automate hay chưa bằng ba câu hỏi
-5. Phân biệt markdown và HTML, dùng markdown làm nguồn và HTML làm kết quả, và mô tả một project folder cùng README
-6. Giải thích rules là gì, vì sao cần, và viết bản đầu một rules file ngắn
-7. Phân biệt prompt, rules file và skill; mô tả skill là một folder, cách tạo, gọi và tìm skill; nói connector (MCP) là gì
-8. Mô tả agent khác một lượt hỏi đáp ở điểm nào, phân biệt agent, skill và tool, và phác một đội AI cho product design
-9. Giải thích ba lớp của hub (raw sources, wiki, schema) và ba quy tắc giữ cho hub đáng tin
-10. Giải thích trong hai câu vì sao một công ty có thể giữ mỗi chức năng một hub, và nêu ba quy tắc cho ID chung
-11. Đọc sáu từ vựng GitHub, giải thích vì sao hub dùng folder và GitHub, và publish hub thành live site hoặc chọn không publish khi dữ liệu chưa được phép công khai
-12. Phân loại tài liệu thành ba nhóm (safe, ask first, never in a public tool) và viết bản đầu data rules
+1. Nêu, với mỗi stage trong bốn stage, phần AI giúp được và phần bạn vẫn tự làm
+2. Giải thích bốn khái niệm: context, grounding, hallucination, và AI-assisted so với AI-generated
+3. Nêu hai loại task AI làm tốt và hai loại còn yếu, rồi đánh giá một workflow có đáng automate hay chưa bằng ba câu hỏi
+4. Phân biệt markdown và HTML, dùng markdown làm nguồn và HTML làm kết quả, và mô tả một project folder cùng README
+5. Giải thích rules là gì, vì sao cần, và viết bản đầu một rules file ngắn
+6. Phân biệt prompt, rules file và skill; mô tả skill là một folder, cách tạo, gọi và tìm skill; nói connector (MCP) là gì
+7. Mô tả agent khác một lượt hỏi đáp ở điểm nào, phân biệt agent, skill và tool, và phác một đội AI cho product design
+8. Giải thích ba lớp của hub (raw sources, wiki, schema) và ba quy tắc giữ cho hub đáng tin
+9. Giải thích trong hai câu vì sao một công ty có thể giữ mỗi chức năng một hub, và nêu ba quy tắc cho ID chung
+10. Đọc sáu từ vựng GitHub, giải thích vì sao hub dùng folder và GitHub, và publish hub thành live site hoặc chọn không publish khi dữ liệu chưa được phép công khai
+11. Phân loại tài liệu thành ba nhóm (safe, ask first, never in a public tool) và viết bản đầu data rules
 
 ---
 
-## 1. Background: AI and the design profession
+## 1. The design process with AI
 
-Mục này tóm tắt những gì các nguồn kiểm chứng được cho biết về tác động của AI lên nghề. Mỗi con số ghi nguồn ngay trong câu.
-
-### 1.1 Findings
-
-| # | Phát hiện | Nguồn |
-|---|---|---|
-| 1 | **Mức dùng AI rất cao.** Khảo sát hơn 900 designer tại hơn 60 quốc gia (2026): 91% dùng AI ít nhất mỗi tuần (54% một năm trước), trung bình mỗi người dùng 7 AI tool (3 một năm trước) | Designer Fund và Foundation Capital, *AI in Design 2026* |
-| 2 | **Ranh giới giữa các vai trò mờ đi.** Một nửa số người trả lời đã đưa code do AI tạo lên production; 40% cho biết PM và engineer làm nhiều việc design hơn | Designer Fund và Foundation Capital |
-| 3 | **Số liệu dự báo chưa cho thấy nghề co lại.** BLS dự báo web và digital interface designer tăng 7,0% trong giai đoạn 2024 đến 2034, so với 3,1% của mọi ngành | U.S. Bureau of Labor Statistics |
-| 4 | **Áp lực lộ ra ở entry level.** NN/g nhận định vị trí entry-level vẫn "scarce and highly competitive" còn vị trí senior phục hồi nhanh hơn | Nielsen Norman Group, *State of UX 2026* |
-| 5 | **Cơ chế tác động.** Người đi làm sớm (22 đến 25 tuổi) ở các nghề chịu tác động mạnh nhất của AI có việc làm thấp hơn khoảng 19% so với nhóm cùng tuổi ở nghề ít chịu tác động. Nhóm có kinh nghiệm không có khoảng cách tương tự. Nghiên cứu xét mọi nghề, không tách riêng designer | Brynjolfsson, Chandar và Chen, Stanford Digital Economy Lab |
-
-### 1.2 Interpretation
-
-Hai nhận định dưới đây là **suy luận**, không phải kết quả đo trực tiếp.
-
-- **Phần việc bị nén nhanh nhất là từ brief sang screen.** Không nguồn nào đo riêng nhóm "nhận brief rồi làm screen"; nhận định suy ra từ phát hiện 4 và 5.
-- **Phần AI chưa làm thay được là chọn vấn đề đáng giải, thống nhất thế nào là thành công, và kiểm tra những gì AI soạn nháp.** NN/g mô tả practitioner thành công là "adaptable generalists".
-
-### 1.3 Limitations of the evidence
-
-- Khảo sát designer là tự khai báo, không dùng mẫu ngẫu nhiên, do bên có lợi ích trong lĩnh vực design và AI tooling thực hiện.
-- Dự báo của BLS tính tác động của AI còn hạn chế, và bản 2024 đến 2034 có trước phần lớn thay đổi gần đây.
-- Chưa có nguồn cho thị trường Việt Nam ở cấp designer. Số liệu chủ yếu về Mỹ và toàn cầu.
-
----
-
-## 2. Career directions
-
-Ba hướng đi không loại trừ nhau, mô tả xu hướng chứ không phải bảo đảm. Mức evidence ghi kèm để bạn cân nhắc.
-
-| Hướng | Công việc chính | Kỹ năng trọng tâm | Evidence và giới hạn | Chương trình hỗ trợ |
-|---|---|---|---|---|
-| **Strategic designer** (senior generalist) | Cùng product và business chọn vấn đề đáng giải | Research, framing, stakeholder management, judgment | Vị trí senior và generalist phục hồi nhanh hơn (NN/g); nhóm có kinh nghiệm ổn định (Stanford). **Mức vừa** | Buổi 3 đến 8 (Discover, Define); hub làm evidence cho lập luận |
-| **Design builder** (design engineer) | Dựng prototype chạy được và đưa lên production bằng AI coding tool | Design system, kiểm tra file AI đã sửa, đọc output | Một nửa designer được khảo sát đã đưa code do AI tạo lên production. **Mức vừa** về xu hướng; số liệu tuyển dụng yếu | Buổi 9 và 10 (AI Prototyping) |
-| **AI product designer** | Thiết kế sản phẩm có AI bên trong: hành vi, ranh giới, lỗi, niềm tin | Hiểu hallucination và grounding, đánh giá output, conversation design | NN/g nêu đây là chuyên môn đang lên; số liệu tăng trưởng chưa đáng tin. **Mức yếu** | **Chỉ nền tảng.** Chương trình dạy dùng AI để làm việc, không dạy thiết kế sản phẩm AI |
-
-Hướng thiên về execution ở entry level chịu áp lực nhiều nhất theo các nguồn trên, và là lý do để chọn hướng sớm.
-
----
-
-## 3. The design process with AI
-
-### 3.1 The four stages
+### 1.1 The four stages
 
 Double Diamond gồm bốn stage; output của stage này là input của stage kế. So với Design Thinking năm stage: Empathise là **Discover**, Define là **Define**, Ideate và Prototype là **Develop**, Test là **Deliver**.
 
@@ -106,7 +60,7 @@ Double Diamond gồm bốn stage; output của stage này là input của stage 
 
 Mỗi stage kết thúc bằng một checklist ngắn gọi là **gate** trước khi công việc đi tiếp. Bạn đã biết các stage này, nên buổi này chỉ hỏi một câu ở mỗi stage: AI giúp được ở đâu, và kết quả đó đi vào hub thế nào.
 
-### 3.2 The division of work
+### 1.2 The division of work
 
 Câu hỏi áp dụng cho mọi stage: **AI giúp được ở đâu, và đâu là phần bạn vẫn phải tự làm?**
 
@@ -119,13 +73,13 @@ Câu hỏi áp dụng cho mọi stage: **AI giúp được ở đâu, và đâu 
 
 Method thuộc về bạn; AI giúp soạn nháp nhanh hơn, việc kiểm tra thuộc về bạn. Mỗi method có một card một trang: [mục lục method card](../../../assets/method-cards/README.md).
 
-### 3.3 The partner stance
+### 1.3 The partner stance
 
 Phần AI làm nhanh nhất là biến brief thành screen. Phần AI chưa làm thay được là cùng product và business chọn vấn đề đáng giải. Mức làm việc chung với product khác nhau giữa các designer; chương trình chạy được trong cả ba trường hợp (làm sát product, liên lạc qua trung gian, chưa có cơ hội trao đổi), và Lesson 2 trình bày cách làm.
 
-### 3.4 What AI is good at, and where it falls short
+### 1.4 What AI is good at, and where it falls short
 
-Mục 3.2 trả lời AI giúp được ở đâu. Mục này cho biết giới hạn của câu trả lời đó.
+Mục 1.2 trả lời AI giúp được ở đâu. Mục này cho biết giới hạn của câu trả lời đó.
 
 | Loại việc | Phát hiện | Nguồn, năm, cỡ mẫu |
 |---|---|---|
@@ -141,7 +95,7 @@ Mục 3.2 trả lời AI giúp được ở đâu. Mục này cho biết giới 
 
 Nhận định "AI mạnh hay yếu" chỉ đúng với một loại task và một thời điểm.
 
-### 3.5 Before automating a workflow
+### 1.5 Before automating a workflow
 
 Trước khi hỏi AI giúp được ở đâu, cần hỏi workflow này có đáng được tăng tốc hay không. Báo cáo DORA 2025 (khảo sát gần 5.000 người làm công nghệ) mô tả AI như một bộ khuếch đại: AI phóng đại cả điểm mạnh lẫn điểm yếu của team. Số liệu đến từ phát triển phần mềm. Với designer, đây là suy luận: khi AI làm output rẻ đi, chi phí chuyển sang bước kiểm tra, và workflow thiếu gate chuyển lỗi sang stage sau nhanh hơn. AI tạo mười hướng trong vài phút, còn chọn hướng đúng và kiểm tra với người dùng thật thì không nhanh theo.
 
@@ -159,9 +113,9 @@ Trả lời "không" ở câu 1 hoặc 2: sửa hoặc bỏ workflow trước. T
 
 ---
 
-## 4. Working with AI: core concepts
+## 2. Working with AI: core concepts
 
-### 4.1 Four concepts
+### 2.1 Four concepts
 
 Bạn đã dùng AI hằng tuần nên phần này không đọc định nghĩa suông; mỗi khái niệm gắn vào ví dụ ở 4.2.
 
@@ -172,9 +126,9 @@ Bạn đã dùng AI hằng tuần nên phần này không đọc định nghĩa 
 | **Hallucination** | Câu trả lời tự tin nhưng bịa: một competitor không tồn tại, một câu quote chưa ai nói | Yêu cầu nguồn cho từng ý; cho phép AI trả lời "unknown" |
 | **AI-assisted so với AI-generated** | AI-generated: AI quyết định. AI-assisted: bạn quyết định, AI soạn nháp và lắp ráp | AI soạn nháp. Bạn kiểm tra. Bạn quyết định |
 
-Bốn thuật ngữ hay gặp khác được dạy đúng chỗ cần chúng: **AI chat tool** (bạn viết, AI trả lời), **AI coding tool** (đọc và ghi file trong project folder, buổi 7), **connector (MCP)**, giống một cái USB cắm giữa tài liệu và AI tool để AI đọc được thứ bạn đang làm (mục 6.5), và **agent** (mục 7).
+Bốn thuật ngữ hay gặp khác được dạy đúng chỗ cần chúng: **AI chat tool** (bạn viết, AI trả lời), **AI coding tool** (đọc và ghi file trong project folder, buổi 7), **connector (MCP)**, giống một cái USB cắm giữa tài liệu và AI tool để AI đọc được thứ bạn đang làm (mục 4.5), và **agent** (mục 5).
 
-### 4.2 Worked example: one task, done twice
+### 2.2 Worked example: one task, done twice
 
 Ví dụ dùng project mẫu hư cấu của chương trình, Delivery App: nhiều khách mới không đặt lại sau đơn đầu tiên, team nghi ngờ giá là lý do và chưa có research nào.
 
@@ -185,17 +139,17 @@ Ví dụ dùng project mẫu hư cấu của chương trình, Delivery App: nhi�
 
 **Diễn giải.** Project mẫu là **context**; "chỉ dùng project mẫu" là **grounding**; lời khuyên tự tin của instruction 1 là rủi ro **hallucination**; câu trả lời "unknown" là lý do instruction 2 hữu ích. Việc cho phép "unknown" giúp giảm nội dung bịa là giả định thực hành, bạn kiểm tra lại ở Practice 1 (bước 5), chưa được đo.
 
-### 4.3 Reuse rather than retype
+### 2.3 Reuse rather than retype
 
 Một cuộc hội thoại AI mới không biết gì về project, nên cần đính kèm file đã lưu thay vì mô tả từ trí nhớ. Một instruction tốt gồm: tài liệu cần dùng, một task duy nhất, quy định "chỉ dùng tài liệu này, nêu nguồn cho từng ý, trả lời 'unknown' nếu tài liệu không nói", và định dạng mong muốn. Cấu trúc này tương ứng khung CARE của Nielsen Norman Group.
 
 ---
 
-## 5. Files, folders and rules
+## 3. Files, folders and rules
 
 Mục này là nền cho mọi thứ sau: skill, agent và hub đều là file nằm trong một folder và làm việc theo rules. Thứ tự đi từ file, đến folder chứa file, đến rules mà AI đọc khi mở folder.
 
-### 5.1 Markdown and HTML
+### 3.1 Markdown and HTML
 
 **Markdown (`.md`)** là văn bản thuần, người và AI cùng đọc được; nó là ngôn ngữ chung giữa designer, developer và AI. Lý do dùng với AI: nhẹ hơn PDF hoặc Word nên tốn ít token, mở và sửa được bằng mọi công cụ, Git theo dõi được từng thay đổi, và gần như mọi công cụ AI đều đọc được. Trong chương trình, hầu hết những gì bạn viết cho AI là markdown: rules file, `SKILL.md`, ghi chú research, tài liệu product, cả output AI trả về. Bạn không cần nhớ cú pháp; AI viết được markdown, bạn chỉ cần đọc và chỉnh. Khi stakeholder cần đọc thì export ra PDF hoặc trang HTML.
 
@@ -218,9 +172,9 @@ Mở một file lạ, bạn không cần hiểu hết. Chỉ cần nhìn ra file
 2. Đưa file `.md` đó cho AI, kèm yêu cầu "dựng thành một file HTML".
 3. Mở file HTML trong trình duyệt để xem. Muốn đổi thì sửa file `.md` hoặc nói với AI rồi dựng lại, không sửa tay trong HTML.
 
-Tách hai lớp vì markdown là nguồn sự thật, dễ đọc và dễ sửa; HTML là bản xuất ra từ nguồn đó và dựng lại được bất cứ lúc nào. Ví dụ trong Delivery App: bạn viết brief và danh sách năm màn hình bằng markdown, đưa cho AI, nhận lại một file HTML bấm qua được từng màn; muốn đổi thứ tự màn, bạn sửa dòng trong `.md` rồi dựng lại. File HTML do AI viết vẫn có thể sai hoặc bịa nội dung, nên bạn đối chiếu lại với file `.md` trước khi gửi cho người khác. Cùng mô hình này cho phép xem một hub như một trang web (mục 10.4).
+Tách hai lớp vì markdown là nguồn sự thật, dễ đọc và dễ sửa; HTML là bản xuất ra từ nguồn đó và dựng lại được bất cứ lúc nào. Ví dụ trong Delivery App: bạn viết brief và danh sách năm màn hình bằng markdown, đưa cho AI, nhận lại một file HTML bấm qua được từng màn; muốn đổi thứ tự màn, bạn sửa dòng trong `.md` rồi dựng lại. File HTML do AI viết vẫn có thể sai hoặc bịa nội dung, nên bạn đối chiếu lại với file `.md` trước khi gửi cho người khác. Cùng mô hình này cho phép xem một hub như một trang web (mục 8.4).
 
-### 5.2 The project folder
+### 3.2 The project folder
 
 Project folder là một thư mục bình thường trên máy bạn, dùng như không gian làm việc của một project. Bạn gom vào đó mọi thứ AI cần: tài liệu research, brief, file hướng dẫn, và chỗ để AI ghi kết quả. Khi mở AI coding tool trong folder này, AI đọc được cả folder thay vì chỉ một đoạn bạn dán vào chat, nên bạn không phải dán lại ngữ cảnh mỗi lần. Thường có bốn nhóm: tài liệu nền (research, brief, design system), file đang làm, thư mục `learnings/` nơi ghi lại điều đã học, và `README.md`. AI không nhớ gì từ phiên trước, nên mọi thứ cần nhớ phải nằm trong file.
 
@@ -238,7 +192,7 @@ Một README tốt ngắn: nó trả lời "đây là gì, bắt đầu từ đ�
 
 Thử ngay: mở `README.md` của workspace template và trả lời ba câu. Folder này là gì? Nên đọc file nào trước? File nào dặn AI?
 
-### 5.3 Rules
+### 3.3 Rules
 
 **Rules** là một file ngắn ghi luật chung của project, AI đọc ở đầu mỗi phiên. Tên file tuỳ công cụ (`AGENTS.md`, `CLAUDE.md`, Cursor rules); chương trình dùng `AGENTS.md`. Trong file có: thứ tự đọc file, folder không được đọc, ghi vào đâu, và quy tắc cứng.
 
@@ -251,23 +205,23 @@ Thử ngay: mở `README.md` của workspace template và trả lời ba câu. F
 **Bốn chỗ bạn gặp rules trong buổi này.**
 
 1. `AGENTS.md`: luật cho AI trong project folder (mục này).
-2. Ba quy tắc của hub: không sửa file nguồn gốc, mỗi note có ID, quote nguyên văn (mục 8.3).
-3. Ba quy tắc cho ID chung giữa các hub (mục 9.3).
-4. Data rules: luật cho chính bạn về việc được dán gì vào AI (mục 11).
+2. Ba quy tắc của hub: không sửa file nguồn gốc, mỗi note có ID, quote nguyên văn (mục 6.3).
+3. Ba quy tắc cho ID chung giữa các hub (mục 7.3).
+4. Data rules: luật cho chính bạn về việc được dán gì vào AI (mục 9).
 
 **Cách viết rules.**
 
-Rules file ngắn và cụ thể. Chỉ ghi những điều AI không tự suy ra được từ folder: thứ tự đọc, folder nào không đọc, quy tắc cứng (ví dụ ba quy tắc của hub ở mục 8.3). Thêm một dòng khi bạn thấy AI lặp lại cùng một lỗi. Một nghiên cứu arXiv (2026) thấy file ngữ cảnh do người viết chỉ cải thiện khiêm tốn và tăng chi phí xử lý khoảng 20%, nên file dài không tốt hơn file ngắn. Muốn biết file của mình có giúp không, chạy cùng một task có file và không có file rồi so hai kết quả.
+Rules file ngắn và cụ thể. Chỉ ghi những điều AI không tự suy ra được từ folder: thứ tự đọc, folder nào không đọc, quy tắc cứng (ví dụ ba quy tắc của hub ở mục 6.3). Thêm một dòng khi bạn thấy AI lặp lại cùng một lỗi. Một nghiên cứu arXiv (2026) thấy file ngữ cảnh do người viết chỉ cải thiện khiêm tốn và tăng chi phí xử lý khoảng 20%, nên file dài không tốt hơn file ngắn. Muốn biết file của mình có giúp không, chạy cùng một task có file và không có file rồi so hai kết quả.
 
 Tóm lại ba bước: ghi điều AI không tự suy ra; để AI soạn nháp rồi bạn kiểm tra và viết lại từng rule bằng lời của bạn; thêm dần khi AI lặp lỗi. Bạn làm hai bước đầu ở Practice 1, bước 4.
 
 ---
 
-## 6. Skills and connectors
+## 4. Skills and connectors
 
-Rules là luật chung của project. Mục này thêm hai thứ: **skill** là cách làm một loại việc, **connector** là đường để AI tới dữ liệu thật trong công cụ của bạn. Agent ở mục 7 dùng cả hai.
+Rules là luật chung của project. Mục này thêm hai thứ: **skill** là cách làm một loại việc, **connector** là đường để AI tới dữ liệu thật trong công cụ của bạn. Agent ở mục 5 dùng cả hai.
 
-### 6.1 Prompt, rules file, skill
+### 4.1 Prompt, rules file, skill
 
 | | Prompt | Rules file | Skill |
 |---|---|---|---|
@@ -277,11 +231,11 @@ Rules là luật chung của project. Mục này thêm hai thứ: **skill** là 
 
 Rules file nạp ở đầu mỗi phiên nên viết ngắn. Với skill, ban đầu AI chỉ thấy tên và mô tả; phần còn lại chỉ nạp khi việc bạn nhờ khớp với skill. Trước khi có skill, cách phổ biến là nhét mọi thứ vào một prompt hệ thống luôn được nạp, và cách đó chiếm chỗ của chính việc đang làm.
 
-### 6.2 A skill is a folder
+### 4.2 A skill is a folder
 
 Một skill là một folder. File bắt buộc là `SKILL.md`, mở đầu bằng một khối khai báo có `name` và `description`, phần thân là hướng dẫn. Hai folder `references/` và `assets/` là tuỳ chọn. AI đọc theo ba mức (progressive disclosure): đầu phiên chỉ thấy tên và mô tả của mọi skill; khi việc bạn nhờ khớp mô tả thì đọc phần thân `SKILL.md`; tài liệu đi kèm chỉ được mở khi hướng dẫn nhắc đến. Vì vậy mô tả quyết định skill có được dùng hay không: hãy viết rõ skill làm gì và dùng khi nào. Giữ `SKILL.md` dưới khoảng 500 dòng, phần chi tiết tách sang `references/`. Định dạng này do Anthropic phát hành thành chuẩn mở vào tháng 12/2025 (agentskills.io), nên nhiều công cụ khác dùng được.
 
-### 6.3 Creating, calling and finding skills
+### 4.3 Creating, calling and finding skills
 
 **Ba bước tạo.** (1) Làm tay ba lần: chạy việc đó với agent, ghi lại bước nào chạy tốt, bước nào phải sửa. (2) Viết thành `SKILL.md`: tên, mô tả nói rõ khi nào dùng, các bước, tiêu chí và một ví dụ đầu ra. (3) Thử và sửa: chạy trên một việc mới, so với kết quả làm tay. Skill viết sau khi đã làm tay thường tốt hơn viết từ đầu. Mỗi công cụ đặt skill ở một vị trí khác nhau, nên bạn kiểm tra tài liệu của công cụ đang dùng.
 
@@ -289,7 +243,7 @@ Một skill là một folder. File bắt buộc là `SKILL.md`, mở đầu bằ
 
 **Tìm skill có sẵn.** Bạn không cần viết từ đầu: tìm ở marketplace chính thức của công cụ, GitHub hoặc cộng đồng. Bốn bước: tìm theo loại việc, đọc `SKILL.md` và file đi kèm, thử trên một việc đã biết kết quả, rồi giữ nguyên, sửa hoặc bỏ. Việc chung thì dùng nguyên; việc gắn với cách làm của team thì sửa cho khớp principles của team.
 
-### 6.4 When to create a skill, and the risks
+### 4.4 When to create a skill, and the risks
 
 Đáng đóng gói thành skill khi việc lặp lại từ ba lần trở lên, có cách làm đúng khá rõ, và nhiều agent hoặc nhiều người dùng chung. Việc chỉ làm một lần thì viết prompt là đủ. Ba rủi ro:
 
@@ -297,19 +251,19 @@ Một skill là một folder. File bắt buộc là `SKILL.md`, mở đầu bằ
 - Skill cũ khi quy trình hoặc principles đổi, nên cần rà định kỳ.
 - Skill từ nguồn lạ có thể chứa chỉ dẫn gây hại hoặc gửi dữ liệu ra ngoài. Đọc `SKILL.md` và các file đi kèm trước khi dùng, và áp data rules như khi dán tài liệu.
 
-Nếu công ty không cho tải skill bên ngoài, đó là chính sách an toàn dữ liệu, không phải trở ngại: hỏi IT xem có kho skill nội bộ đã duyệt không, nếu không thì tự viết skill từ quy trình của mình. Skill là chỉ dẫn cho AI, không bảo đảm kết quả; bạn vẫn kiểm tra output. Skill, `AGENTS.md` hay ghi chú research đều là file trong folder, nên cần một nơi lưu lịch sử và có người rà lại: GitHub, ở mục 10.
+Nếu công ty không cho tải skill bên ngoài, đó là chính sách an toàn dữ liệu, không phải trở ngại: hỏi IT xem có kho skill nội bộ đã duyệt không, nếu không thì tự viết skill từ quy trình của mình. Skill là chỉ dẫn cho AI, không bảo đảm kết quả; bạn vẫn kiểm tra output. Skill, `AGENTS.md` hay ghi chú research đều là file trong folder, nên cần một nơi lưu lịch sử và có người rà lại: GitHub, ở mục 8.
 
-### 6.5 Connectors (MCP)
+### 4.5 Connectors (MCP)
 
 **Connector** là một kết nối cụ thể giữa AI và công cụ hay nguồn dữ liệu bên ngoài, như Figma, Drive, Notion, Slack. **MCP** (Model Context Protocol) là chuẩn mở đứng sau, giống một kiểu ổ cắm chung: mỗi công cụ làm một lần theo chuẩn này, AI nào hỗ trợ chuẩn cũng nối vào được. Không có connector, AI chỉ thấy những gì bạn dán vào chat. Có connector, AI tự mở đúng file, đọc đúng chỗ và làm việc trên dữ liệu thật.
 
-Hai loại việc: đọc (xem file Figma, tài liệu Drive hay Notion, ticket Jira hoặc Linear, truy vấn analytics) và ghi (đăng lên Slack, tạo ticket). Việc ghi tác động ra bên ngoài nên cần cẩn thận hơn; nên để AI hỏi lại bạn trước khi ghi. Ví dụ trong product: Jira, Linear, Asana (đọc ticket, tạo ticket từ insight), Notion, Confluence, Drive (đọc PRD, ghi chú họp, research cũ), Slack (đọc phản hồi, đăng tóm tắt), analytics (hỏi số liệu funnel). Trong design: Figma (đọc file, component, variables), Miro hoặc FigJam (đọc board affinity, journey map), Google Drive hoặc Slides (đọc deck cũ), GitHub (đọc repo và pull request). Danh sách là ví dụ; connector nào có sẵn tuỳ công cụ AI và gói đang dùng. Chỉ nối phần cần thiết và không nối dữ liệu nhạy cảm (mục 11). Connector cho AI nhìn thấy nhiều hơn nhưng không bảo đảm AI hiểu đúng, nên bạn vẫn kiểm tra kết quả với nguồn.
+Hai loại việc: đọc (xem file Figma, tài liệu Drive hay Notion, ticket Jira hoặc Linear, truy vấn analytics) và ghi (đăng lên Slack, tạo ticket). Việc ghi tác động ra bên ngoài nên cần cẩn thận hơn; nên để AI hỏi lại bạn trước khi ghi. Ví dụ trong product: Jira, Linear, Asana (đọc ticket, tạo ticket từ insight), Notion, Confluence, Drive (đọc PRD, ghi chú họp, research cũ), Slack (đọc phản hồi, đăng tóm tắt), analytics (hỏi số liệu funnel). Trong design: Figma (đọc file, component, variables), Miro hoặc FigJam (đọc board affinity, journey map), Google Drive hoặc Slides (đọc deck cũ), GitHub (đọc repo và pull request). Danh sách là ví dụ; connector nào có sẵn tuỳ công cụ AI và gói đang dùng. Chỉ nối phần cần thiết và không nối dữ liệu nhạy cảm (mục 9). Connector cho AI nhìn thấy nhiều hơn nhưng không bảo đảm AI hiểu đúng, nên bạn vẫn kiểm tra kết quả với nguồn.
 
 ---
 
-## 7. Agents and an AI team
+## 5. Agents and an AI team
 
-Mục này giới thiệu ở mức khái niệm. Bạn chưa dựng đội trong buổi 1; đội được giao việc thật từ buổi 7. Agent dùng ba thứ đã học: file và folder (mục 5), rules, và skill cùng connector (mục 6).
+Mục này giới thiệu ở mức khái niệm. Bạn chưa dựng đội trong buổi 1; đội được giao việc thật từ buổi 7. Agent dùng ba thứ đã học: file và folder (mục 3), rules, và skill cùng connector (mục 4).
 
 **Workflow thiết kế với agent (What, Why, When).** What: mỗi quy trình giao cho một agent; mỗi agent có instruction, input và output riêng, tất cả ghi vào một design memory dùng chung (file markdown), và bạn duyệt trước mỗi lần chuyển phase. Why: AI nhận ra phần lặp đi lặp lại trong quy trình, mỗi bước để lại file và nguồn để truy vết ngược, và quyết định vẫn ở bạn. When: workflow truyền thống đã ổn, làm tay cho kết quả ổn định, và đầu ra kiểm tra được nhanh; chưa dùng khi vấn đề còn mơ hồ hoặc cần người thật (user, người phía Product và Business). Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
 
@@ -321,7 +275,7 @@ Mục này giới thiệu ở mức khái niệm. Bạn chưa dựng đội tron
 
 Một ví dụ thật là agent `session-logger` của người dạy, ghi lại một buổi mentoring: file agent khai báo tên và mô tả (kể cả khi nào không dùng), công cụ (đọc và ghi file, connector Zoom và Notion), vai (biến transcript thô thành ghi chú sạch và bản nháp, dừng trước khi publish) và đầu vào (mentee, ngày, nguồn theo thứ tự ưu tiên). Quy trình chi tiết nằm ở một file khác mà file agent trỏ tới.
 
-**Đội AI cho product design.** Mỗi agent là một instruction, một input riêng và một output ghi vào file; bạn dẫn dắt, kiểm tra và quyết định. Sơ đồ đặt hai agent vào mỗi phase của Double Diamond, tám agent cùng đọc và ghi một design memory chung, và bạn duyệt ở mỗi lần chuyển phase. Design memory chung này chính là hub ở mục 8.
+**Đội AI cho product design.** Mỗi agent là một instruction, một input riêng và một output ghi vào file; bạn dẫn dắt, kiểm tra và quyết định. Sơ đồ đặt hai agent vào mỗi phase của Double Diamond, tám agent cùng đọc và ghi một design memory chung, và bạn duyệt ở mỗi lần chuyển phase. Design memory chung này chính là hub ở mục 6.
 
 ![Double Diamond với hai agent cho mỗi phase: Discover có Desk research agent và Interview agent, Define có Synthesis agent và Framing agent, Develop có Ideation agent và Prototype agent, Deliver có Test agent và Handoff agent; tất cả cùng ghi vào một Design memory, và designer duyệt ở mỗi mũi tên REVIEW](../assets/designer-agents-double-diamond.png)
 
@@ -329,15 +283,15 @@ Một ví dụ thật là agent `session-logger` của người dạy, ghi lại
 
 ---
 
-## 8. The hub
+## 6. The hub
 
 Từ đầu buổi đến giờ, mỗi stage đều kết thúc bằng câu "kết quả đi vào hub". Mục này nói hub là gì và theo quy tắc nào.
 
-### 8.1 Why a hub
+### 6.1 Why a hub
 
 Mỗi cuộc hội thoại AI mới bắt đầu từ trống. Insight từ project này kẹt trong một khung chat, không đi sang bước sau, và khi ai đó hỏi "vì sao quyết định này?" thì lý do nằm rải rác. Andrej Karpathy (04/2026) mô tả một cách khác: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi, nên kiến thức tích luỹ qua từng lần dùng. Lý do ông nêu: người ta bỏ wiki vì công bảo trì lớn hơn lợi ích, còn AI không ngại cập nhật các liên kết. Hub của chương trình dùng cùng ý này.
 
-### 8.2 Three layers
+### 6.2 Three layers
 
 | Lớp | Nội dung | Ai ghi |
 |---|---|---|
@@ -347,7 +301,7 @@ Mỗi cuộc hội thoại AI mới bắt đầu từ trống. Insight từ proj
 
 Hai file giúp tìm đường trong hub. **Index** cho biết hub có gì và nên đọc gì trước (trong chương trình là `README.md`). **Log** ghi theo thứ tự thời gian mỗi lần đưa nguồn vào hoặc đổi quyết định, mỗi lần một dòng kèm lý do (trong chương trình là `project-log.md`).
 
-### 8.3 Three rules
+### 6.3 Three rules
 
 Ba quy tắc này nằm trong schema và giữ cho hub đáng tin.
 
@@ -357,21 +311,21 @@ Ba quy tắc này nằm trong schema và giữ cho hub đáng tin.
 
 Một bình luận dưới bài của Karpathy báo cáo rằng truy vấn chỉ qua wiki kém hơn truy vấn kèm tài liệu gốc (số tự báo cáo, chưa kiểm chứng). Đó là lý do quy tắc 1 tồn tại.
 
-### 8.4 The schema file
+### 6.4 The schema file
 
-Schema là file ngắn và cụ thể, chính là rules file ở mục 5.3 (trong chương trình là `AGENTS.md`) với ba quy tắc trên làm phần cứng. Cách viết và cách kiểm tra file có giúp hay không nằm ở mục 5.3.
+Schema là file ngắn và cụ thể, chính là rules file ở mục 3.3 (trong chương trình là `AGENTS.md`) với ba quy tắc trên làm phần cứng. Cách viết và cách kiểm tra file có giúp hay không nằm ở mục 3.3.
 
 ---
 
-## 9. One hub or many
+## 7. One hub or many
 
 Một số công ty lớn đang thử một hướng khác với "một hub cho tất cả": mỗi chức năng (business, technical, design) giữ hub riêng, và AI là lớp nối để đối chiếu và lấy dữ liệu liên quan. Mục này là lý thuyết, bạn không làm bài tập. Đây là một pattern các tổ chức đang thử, chưa phải một chuẩn.
 
-### 9.1 Why one hub per function
+### 7.1 Why one hub per function
 
 Mỗi chức năng sở hữu một loại dữ liệu khác nhau và có người chịu trách nhiệm riêng. Business giữ mục tiêu và metric, technical giữ ràng buộc và kiến trúc, design giữ insight và decision. Gộp tất cả vào một hub thì không ai là chủ của từng phần. Cách này giống nguyên tắc của data mesh: mỗi miền tự chủ, và chỉ một bộ chuẩn chung rất nhỏ áp cho mọi miền.
 
-### 9.2 The thread is a shared ID
+### 7.2 The thread is a shared ID
 
 Sợi dây nối các hub là ID chung. Ví dụ một chuỗi:
 
@@ -383,7 +337,7 @@ Sợi dây nối các hub là ID chung. Ví dụ một chuỗi:
 
 Mỗi mục mang ID và nêu ID của mục nó dựa vào. Nhờ vậy AI đi được từ test ngược về mục tiêu business, qua cả ba hub. Đây là ý của requirements traceability: ID có từ trước khi viết, và có hai chiều kiểm tra (mọi mục tiêu có ít nhất một test, và mọi test truy được về một mục tiêu). Hub của bạn đã dùng ý này ở quy mô nhỏ: source ID như `I01-03` và insight ID như `IN-01`.
 
-### 9.3 Three rules for shared IDs
+### 7.3 Three rules for shared IDs
 
 1. **ID không đổi.** Đổi ID là cắt liên kết.
 2. **ID không dùng lại.** Xoá một mục thì ID của nó cũng nghỉ.
@@ -391,18 +345,18 @@ Mỗi mục mang ID và nêu ID của mục nó dựa vào. Nhờ vậy AI đi �
 
 Ngoài ID, các hub cần một bộ field chung rất nhỏ, ví dụ owner, status, version, để AI nối được mà không phải dịch qua lại.
 
-### 9.4 Two risks
+### 7.4 Two risks
 
 - **Nối sai mà không báo lỗi.** Nếu hai hub dùng cùng ID nhưng cấu trúc khác nhau, phép nối cho ra kết quả sai và không có cảnh báo. Không dùng tên hay email làm khoá.
 - **AI nối nhanh, nhưng bạn vẫn kiểm tra.** Khi AI đối chiếu ba hub, bạn mở cả hai nguồn của mỗi kết luận, đúng như với một insight trong hub của riêng bạn.
 
 ---
 
-## 10. GitHub and publishing
+## 8. GitHub and publishing
 
 Từ đầu buổi, mọi thứ bạn dựng cho AI như `AGENTS.md`, skill hay ghi chú research đều là file trong một folder; hub cũng là một folder như vậy. Folder đó cần một nơi để tồn tại, lưu lịch sử và chia sẻ: GitHub. Mục tiêu là hiểu đủ để đọc và trao đổi với engineer, không phải để tự thao tác.
 
-### 10.1 What GitHub is, and six words
+### 8.1 What GitHub is, and six words
 
 GitHub là website lưu folder project của bạn trên mạng, kèm lịch sử mọi thay đổi. Hai chữ cần nhấn là folder và lịch sử. Lý do dùng: nhiều người và nhiều công cụ AI cùng làm trên một bản, và có chỗ để review, góp ý, phân quyền. Hình dung: Google Drive có Version history, còn GitHub giống Drive dành cho cả folder project. Ví dụ này chưa đúng hoàn toàn: GitHub không tự lưu từng ký tự như Google Docs; lịch sử chỉ có khi bạn chủ động chốt một phiên bản. Git là công cụ ghi lịch sử chạy trên máy, GitHub là website dùng nó.
 
@@ -415,19 +369,19 @@ GitHub là website lưu folder project của bạn trên mạng, kèm lịch s�
 | **Pull request** | Đề nghị ghép bản nháp vào bản chính; chỗ designer review output của AI |
 | **Run localhost** | Chạy và xem phiên bản trên máy ở địa chỉ dạng `localhost:3000`, chỉ bạn thấy được |
 
-### 10.2 How a repo works
+### 8.2 How a repo works
 
 Bạn chỉ đạo AI coding tool; AI sửa file trong folder project trên máy bạn. Bạn xem thử bằng run localhost; chưa ổn thì bảo AI sửa tiếp, mọi thứ vẫn chỉ nằm trên máy. Chỉ khi ổn bạn mới push lên repo. AI không tự push, nên bạn là cổng kiểm tra duy nhất giữa AI và những người khác. Teammate pull về để dùng, hoặc gửi pull request để review trước khi thay đổi vào bản chính.
 
 Khi AI mở một repo, nó đọc ba file đầu tiên: `README.md` (repo là gì, bắt đầu từ đâu), `AGENTS.md` (luật và bản đồ folder cho AI) và `SKILL.md` (cách làm một loại việc). Cả ba đều là markdown, bạn không cần viết tay mà nhờ AI viết rồi đọc lại và chỉnh. Với designer, cần biết: repo là folder của project, commit là một lần chốt, pull request là chỗ review output của AI, và đọc được `README.md` và `AGENTS.md`. Chưa cần: gõ lệnh trong terminal, giải xung đột khi ghép branch, quản lý nhiều branch phức tạp; AI hoặc developer làm giúp.
 
-### 10.3 Why folder and GitHub, not Notion
+### 8.3 Why folder and GitHub, not Notion
 
 Notion vẫn dùng tốt để đọc tài liệu, và nếu tài liệu đã nằm ở đó thì nối MCP để AI đọc. Với hub, chương trình chọn folder và GitHub vì bốn lý do: AI làm việc trực tiếp trên file markdown trong folder (Notion thì chỉ làm được những việc connector cho phép); Git ghi từng thay đổi nên AI sửa hỏng thì quay về, còn Notion khó so từng dòng thay đổi; folder markdown mở được ở nhiều công cụ AI nên không bị khoá vào một nền tảng; và dữ liệu mặc định riêng tư, nằm trên máy và trong repo của bạn, không đi qua dịch vụ bên thứ ba nếu bạn không chọn chia sẻ. Đây là lựa chọn của chương trình, chưa có nghiên cứu so sánh trong công việc design.
 
-### 10.4 Publishing the hub as a live site
+### 8.4 Publishing the hub as a live site
 
-Push đưa file lên GitHub, còn publish là cho người khác mở bằng link. Trình duyệt không hiển thị markdown đã định dạng: nó hiện file `.md` như chữ thường, nên cần một bước chuyển markdown sang HTML (mục 5.1). Bạn không phải viết HTML bằng tay; nhờ AI dựng `index.html`.
+Push đưa file lên GitHub, còn publish là cho người khác mở bằng link. Trình duyệt không hiển thị markdown đã định dạng: nó hiện file `.md` như chữ thường, nên cần một bước chuyển markdown sang HTML (mục 3.1). Bạn không phải viết HTML bằng tay; nhờ AI dựng `index.html`.
 
 Chọn nhánh bằng một câu hỏi: **toàn bộ project có được phép công khai không?** Không chắc thì chọn nhánh không công khai.
 
@@ -449,17 +403,17 @@ Chọn cách nào, câu hỏi đầu tiên vẫn là ai xem được. Bản publ
 
 ---
 
-## 11. Data safety
+## 9. Data safety
 
 Mục này là hướng dẫn thực tế, **không phải tư vấn pháp lý**; chính sách của công ty và luật địa phương là căn cứ quyết định.
 
-### 11.1 Why it matters
+### 9.1 Why it matters
 
 PRD, design chưa phát hành, user research có tên người, file của client và số liệu tài chính thường là thông tin confidential hoặc nằm dưới NDA. Ở Việt Nam, dữ liệu cá nhân được điều chỉnh bởi Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15, có hiệu lực từ 01/01/2026, và Nghị định 356/2025/NĐ-CP quy định chi tiết việc thi hành. Tên, email, số điện thoại và bản ghi của người dùng đều là dữ liệu cá nhân.
 
 Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói consumer thường cho người dùng chọn có cho phép dùng hội thoại để cải thiện model hay không; gói business, enterprise và API thường không dùng dữ liệu khách hàng để train theo mặc định. Cài đặt và điều khoản đổi thường xuyên, nên bạn cần đọc trang data controls của tool đang dùng và không mặc định dữ liệu là private.
 
-### 11.2 Three classes of material
+### 9.2 Three classes of material
 
 | Nhóm | Ví dụ | Quy tắc |
 |---|---|---|
@@ -467,7 +421,7 @@ Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói
 | **Ask first**: nội bộ nhưng không nhạy cảm | Ghi chú quy trình nội bộ; tóm tắt research chưa công bố, không có tên người | Chỉ dùng trong tool mà bạn đã chọn dùng cho việc đó |
 | **Never in a public tool**: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA | Transcript phỏng vấn có tên; danh sách khách hàng; spec chưa phát hành | Không dán. Ẩn danh trước, hoặc để ngoài |
 
-### 11.3 Four habits before pasting
+### 9.3 Four habits before pasting
 
 1. **Kiểm tra chính sách.** Chưa có thì hỏi; còn phân vân thì không dán. Bạn hỏi bộ phận security hoặc IT ba câu: dữ liệu được lưu ở đâu, lưu bao lâu, và có dùng để train model không. Nếu công ty cấm công cụ AI công cộng thì thường đã có một công cụ được duyệt, và bạn hỏi xem đó là công cụ nào. Chưa có thì bạn làm trên project mẫu của chương trình.
 2. **Phân loại tài liệu** theo ba nhóm trên.
@@ -484,8 +438,8 @@ Quyền dùng output của AI cho công việc với client và quyền sở h�
 
 - **Thiên lệch của dữ liệu train.** AI tool phản ánh pattern trong dữ liệu train, vốn nghiêng về phương Tây và tiếng Anh. Với người dùng Việt Nam hoặc Đông Nam Á, cần đối chiếu gợi ý với mental model của người dùng, không chỉ xem output có thuyết phục hay không.
 - **Dữ liệu đưa vào có thể bị lưu lại.** Áp dụng data rules ở mỗi lần dùng.
-- **Giới hạn của evidence.** Evidence nghề nghiệp xem 1.3; các hướng đi ở mục 2 là xu hướng, không phải dự báo cá nhân. Số liệu về năng lực AI (3.4) đến từ nghiên cứu trên những mô hình tại thời điểm đó và đổi nhanh; evidence về AI như bộ khuếch đại (3.5) đến từ phát triển phần mềm, áp vào design là suy luận.
-- **Mô hình hub.** Ba lớp và ba quy tắc ở mục 8 dựa trên mô tả của Karpathy và các hướng dẫn thực hành, chưa có nghiên cứu đo hiệu quả của hub trong công việc design. Mô hình nhiều hub ở mục 9 là pattern một số tổ chức đang thử; các nguồn chủ yếu là bài viết của nhà cung cấp công cụ và tài liệu về traceability và data mesh, không phải chuẩn cho design.
-- **Đọc và publish file markdown.** Nội dung về README (5.2) và bốn cách đưa markdown lên web (10.4) lấy từ tìm kiếm web, chưa đọc toàn văn từng nguồn. Chưa có số liệu mức độ phổ biến của từng cách trong các công ty.
-- **Giới hạn của chương trình.** Chương trình không dạy thiết kế sản phẩm AI. Cách chia agent ở mục 7 là phương pháp của chương trình, chưa có nguồn đo hiệu quả.
-- **Skill, connector và GitHub.** Nội dung mục 6 và mục 10 dựa trên tài liệu của Anthropic (Agent Skills, MCP) và của GitHub; cách gọi skill và vị trí đặt skill khác nhau theo công cụ, nên kiểm tra tài liệu của công cụ đang dùng. Chưa có nghiên cứu đo hiệu quả của rules file, skill hay hub trong công việc design.
+- **Giới hạn của evidence.** Số liệu về năng lực AI (1.4) đến từ nghiên cứu trên những mô hình tại thời điểm đó và đổi nhanh; evidence về AI như bộ khuếch đại (1.5) đến từ phát triển phần mềm, áp vào design là suy luận.
+- **Mô hình hub.** Ba lớp và ba quy tắc ở mục 6 dựa trên mô tả của Karpathy và các hướng dẫn thực hành, chưa có nghiên cứu đo hiệu quả của hub trong công việc design. Mô hình nhiều hub ở mục 7 là pattern một số tổ chức đang thử; các nguồn chủ yếu là bài viết của nhà cung cấp công cụ và tài liệu về traceability và data mesh, không phải chuẩn cho design.
+- **Đọc và publish file markdown.** Nội dung về README (3.2) và bốn cách đưa markdown lên web (8.4) lấy từ tìm kiếm web, chưa đọc toàn văn từng nguồn. Chưa có số liệu mức độ phổ biến của từng cách trong các công ty.
+- **Giới hạn của chương trình.** Chương trình không dạy thiết kế sản phẩm AI. Cách chia agent ở mục 5 là phương pháp của chương trình, chưa có nguồn đo hiệu quả.
+- **Skill, connector và GitHub.** Nội dung mục 4 và mục 8 dựa trên tài liệu của Anthropic (Agent Skills, MCP) và của GitHub; cách gọi skill và vị trí đặt skill khác nhau theo công cụ, nên kiểm tra tài liệu của công cụ đang dùng. Chưa có nghiên cứu đo hiệu quả của rules file, skill hay hub trong công việc design.
