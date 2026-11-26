@@ -17,7 +17,7 @@ last_synced: 2026-11-26
 | Track / session | Buổi 1 (tuần 1) của series: một buổi 90 phút, online, 7 đến 8 designer, kèm Practice 1 ở nhà (chuỗi việc dựng project folder và context), rồi buổi practice trên lớp |
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
-| Next session | Buổi 2: Discover the Problem |
+| Next session | Buổi 3: Discover the Problem |
 | Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 57 slide; deck thật trên Slides đã sắp xếp lại theo thứ tự này, phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5. Ngày 2026-11-25, mục UI/UX (số liệu, hướng nghề, hướng tiếp cận brief, “trông đã xong”) chuyển sang intro (`program-intro-slide-outline.md`), còn Context and grounding và Hallucination đứng đầu mục 1 (File, folder và rules); thời lượng giảm tương ứng, chưa ước lại |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
@@ -74,16 +74,16 @@ last_synced: 2026-11-26
 - Num: 6
 - Kicker: Giới thiệu
 - Title: Ice Breaker
-- Sub: Tên, công việc hiện tại, và một lần AI làm designer bất ngờ hoặc bực
+- Sub: Giới thiệu tên, công việc hiện tại và một lần dùng AI khiến bạn bất ngờ hoặc thấy bực
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Ice breaker khoảng sáu phút, cả lớp. Mình nói mẫu trước khoảng hai mươi giây, rồi mỗi người khoảng bốn mươi giây.
-  - Mỗi người nói hai việc: tên và công việc hiện tại, và một lần dùng AI khiến bạn bất ngờ hoặc thấy bực. Ai chưa dùng AI nhiều thì kể điều kỳ vọng hoặc lo ngại. Không ai phải có câu chuyện hay.
+  - Mỗi người nói hai việc: tên và công việc hiện tại, và một lần dùng AI khiến chúng ta bất ngờ hoặc thấy bực. Ai chưa dùng AI nhiều thì kể điều kỳ vọng hoặc lo ngại. Không ai phải có câu chuyện hay.
   - Mình ghi lại thành bảng hai cột, vì bảng này sẽ dùng lại ở các slide sau.
   - Lớp nhỏ thì rút còn năm phút. Nếu quá giờ ở phần sau, đây là chỗ cắt cuối cùng.
-  - Chuyển tiếp: bây giờ chúng ta bắt đầu với file và folder, nền để AI làm việc với project của bạn.
-- 🎨 Visual hint: Nền vàng, chỉ có chữ Ice Breaker lớn ở giữa slide.
+  - Chuyển tiếp: hôm nay mình nhìn lại cả hai cột này bằng bằng chứng.
+- 🎨 Visual hint: Nền tím, chữ Ice Breaker trắng lớn ở giữa slide và một câu bên dưới.
 
 ---
 
@@ -122,10 +122,10 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Context là instruction của designer, text đã dán, file đính kèm và các tin nhắn trước đó; không có gì khác về project của designer
-  - AI giữ được lượng thông tin có giới hạn (context window); khi tài liệu dài và lộn xộn, chi tiết sẽ nhoè hoặc rơi mất
-  - Chỉ đưa những phần mà một bước cần, không phải cả project
-  - Grounding: bảo AI chỉ dùng tài liệu designer đưa và nêu nguồn cho từng ý; "Chỉ dùng project mẫu" trong demo là grounding
-  - Gắn với demo: project mẫu là context
+  - AI giữ được lượng thông tin có giới hạn (context window);
+  - khi tài liệu dài và lộn xộn, chi tiết sẽ không rõ ràng hoặc hoặc nó sẽ không được involve
+  - Chỉ đưa cho AI những phần mà chúng ta cần
+  - Đừng đưa những thứ không liên quan
 - 🎨 Visual hint: Bên trái là khung context chứa sáu ô (instruction, text đã dán, file đính kèm, tin nhắn trước, project card, ghi chú), bên phải ba ô tài liệu nét đứt; một câu mô tả ở bên phải.
 
 ---
@@ -145,14 +145,13 @@ last_synced: 2026-11-26
 - Ví dụ: AI trích một câu của khách mà trong 20 review không hề có.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
+  - Theo như nghiên cứu (Đọc trên slide)
   - Ví dụ: một đối thủ không tồn tại, một câu quote chưa ai nói, lời khuyên tự tin trong output mơ hồ của demo
   - AI có xu hướng luôn trả lời. Nếu không được phép nói "unknown", nó sẽ lấp chỗ trống bằng một câu nghe rất hợp lý
-  - Cho phép "unknown" và yêu cầu nguồn cho từng claim
+  - Cách giải quyết là cho phép AI của chúng ta nói "unknown" như một rule và yêu cầu nguồn cho từng claim
   - Thói quen này đi xuyên suốt cả series
-  - Câu A/B 30 giây: bản demo vừa rồi là AI-assisted hay AI-generated? Ai là người chọn bản đáng tin?
-
-  > Designer đã bao giờ thấy AI bịa ra thứ gì mà mãi sau designer mới nhận ra chưa?
-- 🎨 Visual hint: Title lớn hai dòng kèm dòng phụ nhỏ; hai card số liệu nằm ngang ở đáy (3 đến 13% và 14 đến 95%) kèm nguồn nghiên cứu.
+  - Câu hỏi cho lớp: Designer đã bao giờ thấy AI bịa ra thứ gì mà mãi sau designer mới nhận ra chưa?
+- 🎨 Visual hint: Nền đen, chữ trắng, phần nhấn tím nhạt. Title lớn hai dòng kèm dòng phụ nhỏ; hai card số liệu trắng nằm ngang ở đáy (3 đến 13% và 14 đến 95%) kèm nguồn nghiên cứu.
 
 ---
 
@@ -185,8 +184,8 @@ last_synced: 2026-11-26
     - Nhẹ hơn PDF hoặc Word nên tốn ít token
     - Mở và sửa được bằng mọi công cụ
     - Git theo dõi được từng thay đổi, và gần như mọi công cụ AI đều đọc được
-  - Trong chương trình, hầu hết những gì bạn viết cho AI là markdown: rules file, SKILL.md, ghi chú research, tài liệu product, cả output AI trả về.
-  - Bạn không cần nhớ cú pháp. AI viết được markdown, designer chỉ cần đọc và chỉnh.
+  - Trong chương trình, hầu hết những gì chúng ta viết cho AI là markdown: rules file, SKILL.md, ghi chú research, tài liệu product, cả output AI trả về.
+  - Chúng ta không cần nhớ cú pháp. AI viết được markdown, designer chỉ cần đọc và chỉnh.
 - 🎨 Visual hint: Ba card What, Why, Use cases nền trắng viền đen, mỗi card có icon nhỏ, tiêu đề và vài dòng ngắn.
 
 ---
@@ -195,22 +194,44 @@ last_synced: 2026-11-26
 - Kicker: Cách đọc
 - Title: Đọc một file markdown
 - On-slide:
-  - Trái: file mẫu RET-02.md (front matter, đề mục, bảng, danh sách, quote, liên kết)
-  - Phải, năm dòng: Front matter (thông tin về chính file: id, trạng thái, nguồn); Đề mục (nhiều dấu # thì mục càng nhỏ); Bảng và danh sách (dòng có dấu | hoặc bắt đầu bằng -); Liên kết (đường dẫn cho biết file kia nằm đâu); Quote (lời trích nguyên văn của người dùng)
+  - RET-02.md
+  - ---
+  - id: RET-02
+  - status: checked
+  - ---
+  - # P1 không tìm được nút hủy
+  - | Màn | Vấn đề |
+  - - Đơn đã đặt
+  - > "I could not find it." (I01)
+  - [Xem transcript](raw/I01.txt)
+  - ---
+  - Front matter
+  - Thông tin về chính file: id, trạng thái, nguồn
+  - #
+  - Đề mục
+  - Nhiều dấu # thì mục càng nhỏ
+  - | -
+  - Bảng và danh sách
+  - Dòng có dấu | hoặc bắt đầu bằng -
+  - [ ]( )
+  - Liên kết
+  - Đường dẫn cho biết file kia nằm đâu
+  - >
+  - Quote
+  - Lời trích nguyên văn của người dùng
 - Ví dụ: có (evidence note mẫu của Delivery App, gặp lại ở Lesson 2)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói vì sao dùng markdown. Slide này cho bạn thấy một file markdown trông thế nào, để bạn đọc được dù không phải người viết nó
+  - Slide trước nói vì sao dùng markdown. Slide này cho chúng ta thấy một file markdown trông thế nào, để chúng ta đọc được dù không phải người viết nó.
   - Một file .md thường có năm thứ:
     - Front matter: khối giữa hai dòng --- ở đầu file, ghi thông tin về chính file đó như id, trạng thái, nguồn. AI và chương trình đọc phần này để lọc và kiểm tra
     - Đề mục: dòng bắt đầu bằng #. Nhiều dấu # thì mục càng nhỏ
     - Bảng và danh sách: dòng bắt đầu bằng - hoặc vẽ bằng dấu |
     - Liên kết: chữ hiển thị trong ngoặc vuông, đường dẫn trong ngoặc tròn. Đường dẫn cho biết file kia nằm ở đâu trong folder
     - Quote: dòng bắt đầu bằng >. Trong hub, đây là lời trích nguyên văn của người dùng
-  - (tuỳ chọn) Khối giữa ba dấu huyền là code block, dùng cho ví dụ hoặc lệnh
-  - Mở một file lạ, bạn không cần hiểu hết. Chỉ cần nhìn ra file này nói về gì, ai viết, và nó dẫn tới file nào
-
-  > Trong các file markdown bạn từng mở, thứ nào bạn thấy lạ nhất?
+  - (tuỳ chọn) Khối giữa ba dấu huyền là code block, dùng cho ví dụ hoặc lệnh.
+  - Mở một file lạ, chúng ta không cần hiểu hết. Chỉ cần nhìn ra file này nói về gì, ai viết, và nó dẫn tới file nào. File trên slide là một evidence note mẫu của Delivery App, chúng ta sẽ gặp nó ở Lesson 2.
+  - Câu hỏi cho lớp: Trong các file markdown chúng ta từng mở, thứ nào chúng ta thấy lạ nhất?
 - 🎨 Visual hint: SPLIT. Trái: khung viền đen chứa file mẫu bằng chữ mono; phải: năm hàng, mỗi hàng một ký hiệu trong khung nhỏ, tên mục đậm và một dòng giải thích, đường kẻ mảnh giữa các hàng.
 
 ---
@@ -236,8 +257,10 @@ last_synced: 2026-11-26
 - Ví dụ: Prototype tương tác, slide deck hay dashboard: mở file HTML bằng trình duyệt là xem được ngay.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - HTML là file mở bằng trình duyệt. AI viết giúp, designer chỉ cần xem và chỉnh.
-  - Khác markdown: .md là đầu vào cho AI, .html là kết quả để người xem hoặc gửi đi. Một bên để AI hiểu, một bên để người nhìn thấy.
+  - HTML là file mở bằng trình duyệt.
+  - AI viết giúp, designer chỉ cần xem và chỉnh.
+  - Khác markdown: .md là đầu vào cho AI, .html là kết quả để người xem hoặc gửi đi.
+  - Một bên để AI hiểu, một bên để con người nhìn thấy được kết qủa một cách trực quan
   - Vì sao dùng: chuẩn web nên mở được trên mọi trình duyệt, xem kết quả ngay không cần cài đặt, chỉ cần một file là chia sẻ được, và gần sản phẩm thật hơn ảnh tĩnh hay Figma.
   - Dùng cho: prototype tương tác, slide deck, tài liệu hướng dẫn có hình, dashboard hoặc báo cáo nghiên cứu, email, diagram, user flow, và các tool nhỏ tự build.
   - Cách dùng markdown và HTML chung, thành hai lớp nguồn và kết quả, nằm ở slide kế tiếp.
@@ -265,14 +288,13 @@ last_synced: 2026-11-26
   - Hai slide trước nói markdown và HTML là gì. Slide này cho thấy cách dùng chung: hai lớp, mỗi lớp một việc.
   - Ba bước:
     - Viết nội dung và quy tắc bằng markdown: brief, rules file, ghi chú research, danh sách màn hình
-    - Đưa file .md đó cho AI, kèm yêu cầu "dựng thành một file HTML"
+    - Đưa file .md đó cho AI, kèm yêu cầu “dựng thành một file HTML”
     - Mở file HTML trong trình duyệt để xem, rồi sửa bằng cách chỉnh file .md hoặc nói với AI, thay vì sửa tay trong HTML
-  - Nên tách hai lớp vì markdown là nguồn sự thật, dễ đọc, dễ sửa. HTML là bản xuất ra từ nguồn đó và có thể dựng lại bất cứ lúc nào. Khi nội dung đổi, bạn sửa .md rồi bảo AI dựng lại HTML.
-  - Ví dụ trong Delivery App: bạn viết brief và danh sách năm màn bằng markdown, đưa cho AI, nhận lại một file HTML bấm qua được từng màn. Muốn đổi thứ tự màn, bạn sửa dòng trong .md và dựng lại, không cần mở HTML.
-  - Một lưu ý: file HTML do AI viết vẫn có thể sai hoặc bịa nội dung. Bạn xem kết quả trong trình duyệt và đối chiếu lại với file .md trước khi gửi cho người khác.
+  - Nên tách hai lớp vì markdown là nguồn sự thật, dễ đọc, dễ sửa. HTML là bản xuất ra từ nguồn đó và có thể dựng lại bất cứ lúc nào. Khi nội dung đổi, chúng ta sửa .md rồi bảo AI dựng lại HTML.
+  - Ví dụ trong Delivery App: chúng ta viết brief và danh sách năm màn hình bằng markdown, đưa cho AI, nhận lại một file HTML bấm qua được từng màn. Muốn đổi thứ tự màn, chúng ta sửa dòng trong .md và dựng lại, không cần mở HTML.
+  - Một lưu ý: file HTML do AI viết vẫn có thể sai hoặc bịa nội dung. Chúng ta xem kết quả trong trình duyệt và đối chiếu lại với file .md trước khi gửi cho người khác.
   - Cùng mô hình này là cách Knowledge Hub được xem như một trang web: markdown trong folder, HTML để người khác mở. Phần Knowledge Hub và phần GitHub nói tiếp.
-
-  > Trong công việc của bạn, tài liệu nào nên là markdown làm nguồn, và kết quả nào nên là HTML?
+  - Câu hỏi cho lớp: Trong công việc của chúng ta, tài liệu nào nên là markdown làm nguồn, và kết quả nào nên là HTML?
 - 🎨 Visual hint: SCHEMATIC. Ba bước đánh số 01 đến 03 (tím) nối bằng mũi tên, bước giữa nền tối; một mũi tên vòng ở dưới ghi "sửa .md, dựng lại"; câu chốt nhỏ ở đáy.
 
 ---
@@ -290,15 +312,13 @@ last_synced: 2026-11-26
 - Ví dụ: Delivery App: một folder có review và brief (context), file tổng hợp (work), ghi chú đã học (learnings) và README.md.
 - Câu hỏi hay gặp: "Phải sắp xếp folder đúng một kiểu không?" Trả lời: không. Bạn tự sắp xếp theo cách làm việc của mình; layout của khoá chỉ để tham khảo.
 - Speaker notes:
-  - Project folder là một thư mục bình thường trên máy bạn, nhưng dùng như không gian làm việc của một project. Bạn gom vào đó mọi thứ AI cần: tài liệu research, brief, file hướng dẫn, và chỗ để AI ghi kết quả.
-  - Khi mở AI coding tool trong folder này, AI đọc được cả folder thay vì chỉ một đoạn bạn dán vào chat. Cái lợi là bạn không phải dán lại ngữ cảnh mỗi lần.
-  - Thường có bốn nhóm: tài liệu nền (research, brief, design system), file đang làm, thư mục learnings nơi ghi lại điều đã học để lần sau đọc lại, và README.md.
-  - README.md là cổng vào. Người mới và AI mở folder lần đầu chỉ thấy tên file, nên cần một chỗ trả lời "đây là gì, bắt đầu từ đâu". Một README tốt ngắn: nó dẫn sang các file khác, không chép lại nội dung của chúng.
-  - AI không nhớ gì từ phiên trước, nên mọi thứ cần nhớ phải nằm trong file.
-  - Folder đặt trên máy, không đặt trong Google Drive, iCloud, OneDrive hay Dropbox, vì thư mục đồng bộ có thể làm hỏng file khi AI ghi.
-  - Bạn tự sắp xếp folder theo cách làm việc của mình. Chỉ cần mỗi nhóm có chỗ riêng và rules ghi rõ chỗ đó. Slide kế tiếp nói về rules.
-
-  > Hiện giờ tài liệu của project bạn đang nằm rải ở những đâu?
+  - Project folder là một thư mục bình thường trên máy chúng ta, dùng như không gian làm việc của một project. Chúng ta gom vào đó mọi thứ AI cần: tài liệu research, brief, file hướng dẫn, và chỗ để AI ghi kết quả.
+  - Khi mở AI coding tool trong folder này, AI đọc được cả folder thay vì chỉ một đoạn chúng ta dán vào chat, nên chúng ta không phải dán lại ngữ cảnh mỗi lần.
+  - Thường có bốn nhóm: tài liệu nền (research, brief, design system), file đang làm, thư mục learnings/ nơi ghi lại điều đã học để lần sau đọc lại, và README.md.
+  - README.md là cổng vào. Người mới và AI mở folder lần đầu chỉ thấy tên file, nên cần một chỗ trả lời “đây là gì, bắt đầu từ đâu”. Một README tốt ngắn: nó dẫn sang các file khác, không chép lại nội dung của chúng.
+  - AI không nhớ gì từ phiên trước, nên mọi thứ cần nhớ phải nằm trong file. Folder đặt trên máy, không đặt trong Google Drive, iCloud, OneDrive hay Dropbox, vì thư mục đồng bộ có thể làm hỏng file khi AI ghi.
+  - Chúng ta tự sắp xếp folder theo cách làm việc của mình. Chỉ cần mỗi nhóm có chỗ riêng và rules ghi rõ chỗ đó. Slide kế tiếp nói về rules.
+  - Câu hỏi cho lớp: Hiện giờ tài liệu của project chúng ta đang nằm rải ở những đâu?
 - 🎨 Visual hint: SCHEMATIC. Template Method: ba cột What, Why, When dưới title, nhãn tím đậm; icon line-art cây folder ở góc phải trên.
 
 ---
@@ -317,16 +337,15 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: "Rules khác prompt thế nào?" Trả lời: prompt chỉ có hiệu lực trong một cuộc chat; rules nằm trong file và được nạp ở đầu mỗi phiên.
 - Speaker notes:
   - Rules là file chỉ dẫn chung của cả project. Tên file tuỳ công cụ: AGENTS.md, CLAUDE.md, Cursor rules. Trong khoá dùng AGENTS.md. Công cụ AI nạp nó ở đầu mỗi phiên, nên viết ngắn thôi, vì phiên nào cũng phải đọc.
-  - Vì sao cần: mỗi cuộc hội thoại AI mới bắt đầu từ trống. Nếu luật chỉ nằm trong đầu bạn hoặc trong một cuộc chat cũ, AI không biết. Viết thành file thì mọi phiên và mọi agent cùng đọc một bản.
+  - Vì sao cần: mỗi cuộc hội thoại AI mới bắt đầu từ trống. Luật chỉ nằm trong đầu chúng ta hoặc trong một cuộc chat cũ thì AI không biết. Viết thành file thì mọi phiên và mọi agent cùng đọc một bản.
   - Rules là luật, không phải rào chắn kỹ thuật. AGENTS.md có thể dặn AI không đọc một folder, nhưng rào chắn thật là .gitignore. File thật sự confidential vẫn để ngoài folder.
-  - Trong buổi này bạn sẽ gặp rules ở bốn chỗ:
+  - Trong buổi này chúng ta gặp rules ở bốn chỗ:
     - AGENTS.md: luật cho AI trong project folder (slide này và slide kế)
     - Ba quy tắc của hub: không sửa file nguồn gốc, mỗi note có ID, quote nguyên văn. Nằm trong AGENTS.md, nói ở phần Knowledge Hub
     - Quy tắc cho ID chung giữa các hub, nói ở phần Knowledge Hub
-    - Data rules: luật cho chính bạn về việc được dán gì vào AI, nói ở phần Data Safety và viết ở Practice 1
-  - Prompt, rules file và skill hay bị lẫn với nhau. Slide so sánh nằm ở phần Skills, sau khi bạn đã biết rules là gì.
-
-  > Có điều gì bạn đã dặn AI nhiều lần mà phiên sau nó vẫn quên?
+    - Data rules: luật cho chính chúng ta về việc được dán gì vào AI, nói ở phần Data Safety và viết ở Practice 1
+  - Prompt, rules file và skill hay bị lẫn với nhau. Slide so sánh nằm ở phần Skills, sau khi chúng ta đã biết rules là gì.
+  - Câu hỏi cho lớp: Có điều gì chúng ta đã dặn AI nhiều lần mà phiên sau nó vẫn quên?
 - 🎨 Visual hint: SCHEMATIC. Template Method: ba cột What, Why, When dưới title, nhãn tím đậm; icon line-art tờ nội quy có dấu tick ở góc phải trên.
 
 ---
@@ -348,12 +367,11 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: "File rules càng dài càng tốt?" Trả lời: không. Một nghiên cứu arXiv (2026) thấy file ngữ cảnh do người viết chỉ cải thiện khiêm tốn và tăng chi phí xử lý khoảng 20%.
 - Speaker notes:
   - Rules là file ngắn và cụ thể. Chỉ ghi những điều AI không tự suy ra được từ folder: thứ tự đọc, folder nào không đọc, quy tắc cứng.
-  - Bước 2: nhờ AI soạn bản đầu từ folder của bạn, rồi bạn kiểm tra. Mỗi rule bạn nói được nó bảo vệ điều gì. Đây là việc bạn làm ở Practice 1, bước 4.
-  - Bước 3: thêm một dòng khi bạn thấy AI lặp lại cùng một lỗi. Muốn biết file của mình có giúp không, chạy cùng một task có file và không có file rồi so hai kết quả.
+  - Bước 2: nhờ AI soạn bản đầu từ folder của chúng ta, rồi chúng ta kiểm tra. Mỗi rule chúng ta nói được nó bảo vệ điều gì. Đây là việc chúng ta làm ở Practice 1, bước 4.
+  - Bước 3: thêm một dòng khi chúng ta thấy AI lặp lại cùng một lỗi. Muốn biết file của mình có giúp không, chạy cùng một task có file và không có file rồi so hai kết quả.
   - Một nghiên cứu arXiv (2026) thấy file ngữ cảnh do người viết chỉ cải thiện khiêm tốn và tăng chi phí xử lý khoảng 20%, nên file dài không tốt hơn file ngắn.
   - Rules chỉ là luật. Nếu có file không được để AI đọc thì để ngoài folder.
-
-  > Rule đầu tiên bạn muốn viết cho project của mình là gì?
+  - Câu hỏi cho lớp: Rule đầu tiên chúng ta muốn viết cho project của mình là gì?
 - 🎨 Visual hint: SCHEMATIC. Ba card nhỏ nằm ngang đánh số 01 đến 03 (tím), mỗi card có tiêu đề và hai dòng; card cuối nền tối.
 
 ---
@@ -369,7 +387,7 @@ last_synced: 2026-11-26
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Rules là luật chung của project. Phần này thêm hai thứ: skill là cách làm một loại việc, connector là đường để AI tới dữ liệu thật trong công cụ của bạn.
+  - Rules là luật chung của project. Phần này thêm hai thứ: skill là cách làm một loại việc, connector là đường để AI tới dữ liệu thật trong công cụ của chúng ta.
   - Hai thứ này sẽ được dùng ở phần Agent ngay sau đó.
 - 🎨 Visual hint: Nền vàng, số phần rất lớn ở góc trên trái, title ở giữa, dòng mono nhỏ bên dưới.
 
@@ -395,9 +413,9 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Có ba cách đưa chỉ dẫn cho AI, và mọi người hay lẫn: prompt, rules file và skill. Rules vừa học ở phần 02, skill là thứ mới của phần này.
-  - Prompt là câu bạn gõ trong một cuộc chat. Nó chỉ có hiệu lực trong cuộc chat đó.
+  - Prompt là câu chúng ta gõ trong một cuộc chat. Nó chỉ có hiệu lực trong cuộc chat đó.
   - Rules file là quy tắc chung của cả project, như AGENTS.md, CLAUDE.md hay Cursor rules. Công cụ nạp nó ở đầu mỗi phiên làm việc, nên viết ngắn thôi, vì phiên nào cũng phải đọc.
-  - Skill là cách làm cho một loại việc. Ban đầu AI chỉ thấy tên và mô tả, phần còn lại chỉ nạp khi việc bạn nhờ khớp với skill. Mỗi công cụ gọi tên một kiểu: Agent Skills, hoặc custom GPT kèm chỉ dẫn.
+  - Skill là cách làm cho một loại việc. Ban đầu AI chỉ thấy tên và mô tả, phần còn lại chỉ nạp khi việc chúng ta nhờ khớp với skill. Mỗi công cụ gọi tên một kiểu: Agent Skills, hoặc custom GPT kèm chỉ dẫn.
   - Trước khi có skill, cách phổ biến là nhét mọi thứ vào một prompt hệ thống luôn được nạp. Cách đó chiếm chỗ của chính việc đang làm.
 - 🎨 Visual hint: Ba card cạnh nhau, mỗi card có icon, tên (Prompt, Rules file, Skill), mô tả ngắn và tên ví dụ chữ tím.
 
@@ -425,7 +443,7 @@ last_synced: 2026-11-26
   - Một skill thực ra chỉ là một folder. File bắt buộc là SKILL.md, mở đầu bằng một khối khai báo có name và description, phần thân là hướng dẫn. Hai folder references và assets là tuỳ chọn.
   - AI không đọc hết mọi thứ ngay. Nó đọc theo ba mức, gọi là progressive disclosure:
     - Đầu phiên, agent chỉ thấy tên và mô tả của mọi skill, vài chục token mỗi skill
-    - Khi việc bạn nhờ khớp mô tả, nó mới đọc phần thân SKILL.md
+    - Khi việc chúng ta nhờ khớp mô tả, nó mới đọc phần thân SKILL.md
     - Tài liệu đi kèm chỉ được mở khi hướng dẫn nhắc đến
   - Vì vậy mô tả quyết định skill có được dùng hay không. Phần giữa hai dòng gạch --- là chỗ AI quét nhanh để biết skill có cần cho việc đang làm không, nên hãy viết rõ skill làm gì và dùng khi nào.
   - Giữ SKILL.md dưới khoảng 500 dòng, phần chi tiết tách sang references.
@@ -454,8 +472,8 @@ last_synced: 2026-11-26
     - Làm tay ba lần: chạy việc đó với agent, ghi lại bước nào chạy tốt, bước nào phải sửa
     - Viết thành SKILL.md: tên, mô tả nói rõ khi nào dùng, các bước, tiêu chí và một ví dụ đầu ra
     - Thử và sửa: chạy trên một việc mới, so với kết quả làm tay, rồi sửa chỗ lệch
-  - Skill viết sau khi đã làm tay thường tốt hơn viết từ đầu, vì bạn đã biết chỗ nào dễ sai.
-  - Mỗi công cụ đặt skill ở một vị trí khác nhau, nên bạn kiểm tra tài liệu của công cụ mình đang dùng.
+  - Skill viết sau khi đã làm tay thường tốt hơn viết từ đầu, vì chúng ta đã biết chỗ nào dễ sai.
+  - Mỗi công cụ đặt skill ở một vị trí khác nhau, nên chúng ta kiểm tra tài liệu của công cụ mình đang dùng.
 - 🎨 Visual hint: Ba card nhỏ nằm ngang đánh số 01 đến 03 (tím), mỗi card có tiêu đề và một câu.
 
 ---
@@ -477,10 +495,11 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Có hai cách để một skill được dùng.
-  - Cách tự động: agent chỉ thấy tên và mô tả của mọi skill. Khi việc bạn nhờ khớp với mô tả, nó mới đọc chỉ dẫn. Vì vậy mô tả viết rõ skill làm gì và dùng khi nào quyết định skill có được gọi hay không.
-  - Cách thủ công: bạn nêu đúng tên skill trong yêu cầu. Một số công cụ cho gõ /tên-skill.
+  - Cách tự động: agent chỉ thấy tên và mô tả của mọi skill. Khi việc chúng ta nhờ khớp với mô tả, nó mới đọc chỉ dẫn. Vì vậy mô tả viết rõ skill làm gì và dùng khi nào quyết định skill có được gọi hay không.
+  - Cách thủ công: chúng ta nêu đúng tên skill trong yêu cầu. Một số công cụ cho gõ /tên-skill.
+  - Nhiều công cụ còn có “command”: một file markdown chứa sẵn một quy trình, gõ /tên để chạy. Trong Claude Code, command đã được gộp vào skill, nên chúng ta viết skill là đủ. Nếu có người hỏi, trả lời bằng câu này.
   - Cách gọi cụ thể khác nhau theo công cụ [to confirm]
-  - Nên gọi tay khi bạn cần chắc chắn skill được dùng, hoặc khi chạy tự động mà skill không kích hoạt.
+  - Nên gọi tay khi chúng ta cần chắc chắn skill được dùng, hoặc khi chạy tự động mà skill không kích hoạt.
   - Nếu skill không tự chạy, kiểm tra phần mô tả trước, rồi gọi tay để xác nhận skill vẫn đúng.
 - 🎨 Visual hint: Hai card cạnh nhau, mỗi card có hình line-art (bong bóng chat kèm dấu tick, ô gõ lệnh "/"), tiêu đề và hai dòng Bạn gõ, Điều kiện.
 
@@ -510,11 +529,11 @@ last_synced: 2026-11-26
 - Ví dụ: Kiểm tra accessibility, viết microcopy, tóm tắt research, tạo tài liệu bàn giao.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Bạn không cần viết skill từ đầu. Có thể tìm skill có sẵn từ marketplace chính thức của công cụ, GitHub hoặc cộng đồng.
+  - Chúng ta không cần viết skill từ đầu. Có thể tìm skill có sẵn từ marketplace chính thức của công cụ, GitHub hoặc cộng đồng.
   - Bốn bước:
-    - Tìm theo loại việc bạn cần
+    - Tìm theo loại việc chúng ta cần
     - Đọc SKILL.md và các file đi kèm để biết nó làm gì
-    - Thử trên một việc bạn đã biết kết quả
+    - Thử trên một việc chúng ta đã biết kết quả
     - Quyết định giữ nguyên, sửa hoặc bỏ
   - Việc chung như đọc PDF hay xuất file thì dùng nguyên. Việc gắn với cách làm của team, như đánh giá hay research, thì sửa lại cho khớp principles của team.
   - Ví dụ: kiểm tra accessibility, viết microcopy, tóm tắt research, tạo tài liệu bàn giao.
@@ -530,12 +549,11 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Đây là ví dụ cho câu hỏi "skill cho Product có thể gồm những gì". Ảnh chụp thư mục skills của thư viện Product Manager Skills, do Dean Peters tạo và chia sẻ trên GitHub, giấy phép CC BY-NC-SA 4.0.
-  - Thư viện có 77 skill. Mỗi skill là một folder, và tên folder nói đúng việc của nó: customer-journey-map, discovery-interview-prep, epic-breakdown-advisor... Nhìn tên bạn đã đoán được skill dùng để làm gì.
-  - Mình đưa ví dụ này để bạn thấy một skill nhỏ và cụ thể đến mức nào. Skill không phải một prompt khổng lồ, nó là cách làm cho một loại việc.
-  - Lưu ý: đây là thư viện cho Product Manager, không phải cho designer, và mình chưa thử các skill này với lớp. Nếu muốn dùng, bạn đọc kỹ SKILL.md và áp quy tắc data safety như đã nói ở slide trước.
+  - Thư viện có 77 skill. Mỗi skill là một folder, và tên folder nói đúng việc của nó: customer-journey-map, discovery-interview-prep, epic-breakdown-advisor... Nhìn tên chúng ta đã đoán được skill dùng để làm gì.
+  - Mình đưa ví dụ này để chúng ta thấy một skill nhỏ và cụ thể đến mức nào. Skill không phải một prompt khổng lồ, nó là cách làm cho một loại việc.
+  - Lưu ý: đây là thư viện cho Product Manager, không phải cho designer, và mình chưa thử các skill này với lớp. Nếu muốn dùng, chúng ta đọc kỹ SKILL.md và áp quy tắc data safety như đã nói ở slide trước.
   - Giấy phép CC BY-NC-SA 4.0 nghĩa là: được dùng và chia sẻ lại kèm ghi nguồn, không dùng cho mục đích thương mại, và bản chia sẻ lại phải cùng giấy phép. [to confirm] việc chiếu ảnh này trong khoá học thu phí có phù hợp điều khoản NonCommercial không.
-
-  > Nhìn danh sách này, bạn muốn có skill nào cho công việc của Design?
+  - Câu hỏi cho lớp: Nhìn danh sách này, chúng ta muốn có skill nào cho công việc của Design?
 - 🎨 Visual hint: Trái: kicker, title hai dòng, một câu mô tả và dòng nguồn xám; phải: ảnh chụp danh sách folder skills trong khung viền đen.
 
 ---
@@ -558,13 +576,19 @@ last_synced: 2026-11-26
 - Ví dụ: Skill tổng hợp interview sai thì sai ở mọi lần chạy; skill tải từ nguồn lạ cần đọc SKILL.md trước khi dùng.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Khi nào nên đóng gói thành skill? Khi việc đó lặp lại từ ba lần trở lên, có cách làm đúng khá rõ, và nhiều agent hoặc nhiều người cùng dùng. Việc chỉ làm một lần thì viết prompt là đủ.
+  - Khi nào nên đóng gói thành skill?
+  - Khi việc đó lặp lại từ ba lần trở lên, có cách làm đúng khá rõ, và nhiều agent hoặc nhiều người cùng dùng.
+  - Việc chỉ làm một lần thì viết prompt là đủ.
   - Ba rủi ro cần biết:
     - Skill sai thì sai ở mọi lần chạy
     - Skill cũ khi quy trình hoặc principles đổi, nên cần rà định kỳ
     - Skill từ nguồn lạ có thể chứa chỉ dẫn gây hại hoặc gửi dữ liệu ra ngoài. Hãy đọc SKILL.md và các file đi kèm trước khi dùng, và áp quy tắc data safety như khi dán tài liệu
-  - Nếu công ty không cho tải skill bên ngoài, đó là chính sách an toàn dữ liệu chứ không phải trở ngại. Hỏi bộ phận IT hoặc security xem được dùng gì. Nếu có kho skill nội bộ đã duyệt thì dùng kho đó. Nếu không, bạn tự viết skill từ quy trình của mình, vì skill chỉ là file chỉ dẫn bằng chữ nên bạn viết và đọc lại được. Skill tự viết còn có lợi: đúng với cách làm của team và bạn biết rõ trong đó có gì.
-  - Skill là chỉ dẫn cho AI, không bảo đảm kết quả. Bạn vẫn kiểm tra output.
+  - Nếu công ty không cho tải skill bên ngoài, đó là chính sách an toàn dữ liệu chứ không phải trở ngại.
+  - Hỏi bộ phận IT hoặc security xem được dùng gì.
+  - Nếu có kho skill nội bộ đã duyệt thì dùng kho đó.
+  - Nếu không, chúng ta tự viết skill từ quy trình của mình, vì skill chỉ là file chỉ dẫn bằng chữ nên chúng ta viết và đọc lại được.
+  - Skill tự viết còn có lợi: đúng với cách làm của team và chúng ta biết rõ trong đó có gì.
+  - Skill là chỉ dẫn cho AI, không bảo đảm kết quả. Chúng ta vẫn kiểm tra output.
   - Skill, AGENTS.md hay ghi chú research đều là file trong folder, và skill sai thì sai ở mọi lần chạy. Những file này cần một nơi lưu lịch sử và có người rà lại. Nơi đó là GitHub, phần sáu.
 - 🎨 Visual hint: Hai card: trái nền trắng "Việc đáng thành skill", phải nền tối "Skill cũng có rủi ro"; mỗi card có nhãn nhỏ và các dòng ngắn.
 
@@ -590,22 +614,21 @@ last_synced: 2026-11-26
 - Ví dụ: Delivery App: nối Figma để AI đọc thẳng file thay vì chụp từng màn rồi dán; ghi chú research ở Notion thì nối Notion để đối chiếu.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Skill dạy AI cách làm. Connector là thứ còn lại của phần này: đường để AI tới dữ liệu thật trong công cụ của bạn. Phần Agent ngay sau đó dùng cả skill và connector như hai thứ trang bị cho một agent.
-  - Connector là một kết nối cụ thể giữa AI và công cụ hay nguồn dữ liệu bên ngoài, như Figma, Drive, Notion, Slack. Hiểu đơn giản: connector là cái cửa để AI đi vào công cụ của bạn.
-  - Nếu không có connector, AI chỉ thấy những gì bạn dán vào chat. Bạn phải mở Figma, chụp màn hình hoặc copy chữ, rồi dán sang.
+  - Skill dạy AI cách làm. Connector là thứ còn lại của phần này: đường để AI tới dữ liệu thật trong công cụ của chúng ta. Phần Agent ngay sau đó dùng cả skill và connector như hai thứ trang bị cho một agent.
+  - Connector là một kết nối cụ thể giữa AI và công cụ hay nguồn dữ liệu bên ngoài, như Figma, Drive, Notion, Slack. Hiểu đơn giản: connector là cái cửa để AI đi vào công cụ của chúng ta.
+  - Nếu không có connector, AI chỉ thấy những gì chúng ta dán vào chat. Chúng ta phải mở Figma, chụp màn hình hoặc copy chữ, rồi dán sang.
   - Có connector, AI tự mở đúng file, đọc đúng chỗ, và làm việc trên dữ liệu thật.
   - MCP (Model Context Protocol) là chuẩn mở đứng sau. Nó giống một kiểu ổ cắm chung: mỗi công cụ làm một lần theo chuẩn này, AI nào hỗ trợ chuẩn cũng nối vào được. Trước đây mỗi công cụ cần một kiểu tích hợp riêng cho từng AI.
   - Cách hoạt động ở mức đơn giản:
     - Công cụ (Figma, Drive, Notion...) có một MCP server, liệt kê những việc AI được phép làm
-    - công cụ AI của bạn là phía kết nối, gọi các việc đó khi cần
-    - Bạn đăng nhập và cấp quyền một lần, sau đó AI dùng lại
+    - công cụ AI của chúng ta là phía kết nối, gọi các việc đó khi cần
+    - Chúng ta đăng nhập và cấp quyền một lần, sau đó AI dùng lại
   - Có hai loại việc: đọc và ghi. Đọc là xem file Figma, tài liệu Drive hay Notion, ticket Jira hoặc Linear, hay truy vấn dữ liệu analytics. Ghi là đăng lên Slack hoặc tạo ticket. Việc ghi tác động ra bên ngoài nên cần cẩn thận hơn.
-  - Ví dụ trong Delivery App: thay vì chụp từng màn Figma rồi dán, bạn nối Figma để AI đọc thẳng file. Ghi chú research nằm ở Notion thì nối Notion để AI đọc cùng lúc, rồi đối chiếu với nhau.
-  - Quyền truy cập: chỉ nối phần cần thiết, không nối dữ liệu nhạy cảm. Với việc ghi, nên để AI hỏi lại bạn trước khi làm. Phần này mình nói kỹ ở slide Data Safety phía sau.
+  - Ví dụ trong Delivery App: thay vì chụp từng màn Figma rồi dán, chúng ta nối Figma để AI đọc thẳng file. Ghi chú research nằm ở Notion thì nối Notion để AI đọc cùng lúc, rồi đối chiếu với nhau.
+  - Quyền truy cập: chỉ nối phần cần thiết, không nối dữ liệu nhạy cảm. Với việc ghi, nên để AI hỏi lại chúng ta trước khi làm. Phần này mình nói kỹ ở slide Data Safety phía sau.
   - Một lưu ý: connector cho AI nhìn thấy nhiều hơn, nhưng không đảm bảo AI hiểu đúng.
-  - Bạn vẫn kiểm tra kết quả với nguồn.
-
-  > Công cụ nào bạn đang copy và dán sang AI nhiều nhất, và nếu nối connector thì bạn muốn AI chỉ đọc hay được ghi?
+  - Chúng ta vẫn kiểm tra kết quả với nguồn.
+  - Câu hỏi cho lớp: Công cụ nào chúng ta đang copy và dán sang AI nhiều nhất, và nếu nối connector thì chúng ta muốn AI chỉ đọc hay được ghi?
 - 🎨 Visual hint: Ba card nền trắng viền đen, mỗi card có icon nhỏ, tiêu đề và vài dòng ngắn. Gồm What, Why, Use cases.
 
 ---
@@ -620,11 +643,21 @@ last_synced: 2026-11-26
 - Ví dụ: Delivery App: nối Figma để AI đọc màn onboarding, nối Notion để đọc ghi chú research, rồi nhờ AI chỉ ra chỗ màn hình lệch với insight.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói connector là gì. Slide này cho thấy dùng nó vào việc gì trong công việc product và design.
-  - Danh sách là ví dụ; connector nào có sẵn tuỳ công cụ AI và gói đang dùng.
-  - Đọc ít rủi ro hơn ghi. Với việc ghi, để AI hỏi lại trước và chỉ nối phần cần thiết; Data Safety nói kỹ hơn.
-
-  > Trong các connector này, cái nào bạn muốn nối đầu tiên, và AI chỉ đọc hay được ghi?
+  - Slide trước nói connector là gì. Slide này cho thấy chúng ta dùng nó vào việc gì trong công việc product và design.
+  - Product:
+    - Jira, Linear, Asana: AI đọc ticket và backlog; ghi thì tạo ticket từ insight đã kiểm chứng
+    - Notion, Confluence, Drive: AI đọc PRD, ghi chú họp và research cũ để đối chiếu với research mới
+    - Slack: AI đọc thread phản hồi của khách; ghi thì đăng bản tóm tắt
+    - Analytics: hỏi số liệu funnel, retention ngay trong chat thay vì mở dashboard
+  - Design:
+    - Figma: AI đọc thẳng file, component và variables, rồi đối chiếu màn hình với design system
+    - Miro, FigJam: AI đọc board affinity hay journey map để tổng hợp
+    - Google Drive, Slides: AI đọc tài liệu và deck cũ, soạn bản mới
+    - GitHub: AI đọc repo và pull request, để chúng ta xem lại output của AI coding tool
+  - Danh sách này là ví dụ. Connector nào có sẵn tuỳ công cụ AI và gói chúng ta đang dùng, nên kiểm tra trong cài đặt của công cụ.
+  - Đọc ít rủi ro hơn ghi. Với việc ghi, nên để AI hỏi lại chúng ta trước khi làm, và chỉ nối phần cần thiết. Phần Data Safety nói kỹ hơn.
+  - Ví dụ trong Delivery App: nối Figma để AI đọc màn onboarding, nối Notion để đọc ghi chú research, rồi nhờ AI chỉ ra chỗ màn hình lệch với insight.
+  - Câu hỏi cho lớp: Trong các connector này, cái nào chúng ta muốn nối đầu tiên, và AI chỉ đọc hay được ghi?
 - 🎨 Visual hint: TYPOGRAPHIC. Hai cột không khung như slide What/Why/When, nhãn PRODUCT và DESIGN, mỗi cột bốn dòng tên công cụ đậm và một việc ngắn; câu chốt về đọc và ghi ở đáy.
 
 ---
@@ -670,13 +703,12 @@ last_synced: 2026-11-26
 - Speaker notes:
   - Vậy nếu mình muốn tuỳ chỉnh theo workflow thiết kế thì làm thế nào?
   - Ba câu hỏi:
-    - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Bạn duyệt trước mỗi lần chuyển phase
-    - Why: AI soạn nháp nhanh phần lặp lại, còn bạn giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc AI soạn nháp, bạn kiểm tra rồi quyết định, đã học ở buổi 0 (intro)
-    - When: chỉ khi workflow đã ổn. Workflow phải ổn trước khi giao cho agent; slide "Ổn định cách làm trước" ở phần sau nói kỹ ý này. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
+    - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Chúng ta duyệt trước mỗi lần chuyển phase
+    - Why: AI soạn nháp nhanh phần lặp lại, còn chúng ta giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc đã học ở buổi 0 (intro): AI soạn nháp, chúng ta kiểm tra rồi quyết định
+    - When: chỉ khi workflow đã ổn. Quay lại slide sửa workflow: workflow phải ổn trước khi giao cho agent. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
   - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc khi bước đó cần người thật: user, hoặc người phía Product và Business.
   - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
-
-  > Bước nào trong công việc của bạn đã đủ ổn định để thử giao cho một agent?
+  - Câu hỏi cho lớp: Bước nào trong công việc của chúng ta đã đủ ổn định để thử giao cho một agent?
 - 🎨 Visual hint: Title hai dòng bên trái, sơ đồ nhỏ ba ô nối mũi tên bên phải; bên dưới ba cột What, Why, When có đường kẻ đậm và gạch đầu dòng tím.
 
 ---
@@ -686,23 +718,26 @@ last_synced: 2026-11-26
 - Title: Chat và Agent\n*khác nhau thế nào?*
 - On-slide:
   - Chat
-  - Bạn hỏi, AI trả lời một lượt
+  - Bạn hỏi, AI trả lời
   - Prompt
   - Câu trả lời
   - Agent
-  - Đọc file, làm nhiều bước, chạy lệnh, rồi báo lại
+  - Bạn đưa mục tiêu, AI làm nhiều bước, chạy lệnh, đưa ra outcome
   - Mục tiêu
   - Đọc file
   - Sửa file
   - Chạy lệnh
-  - Báo cáo + folder
+  - Outcome
   - Lặp lại: đọc, sửa, chạy cho tới khi xong
 - Ví dụ: Delivery App: nhờ chat tóm tắt một đoạn ghi chú, còn nhờ agent đọc cả folder research và dựng bản tổng hợp kèm nguồn.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Chat là một lượt hỏi đáp. Agent nhận một mục tiêu rồi tự đọc file, sửa file, chạy lệnh và báo lại khi xong.
-  - Ví dụ với app giao đồ ăn: nhờ chat thì bạn tóm tắt một đoạn ghi chú, còn nhờ agent thì nó đọc cả folder research và dựng bản tổng hợp kèm nguồn.
-  - AI coding tool thường hoạt động theo kiểu này. Câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm trong folder.
+  - Ví dụ với app giao đồ ăn:
+    - nhờ chat thì chúng ta tóm tắt một đoạn ghi chú hay có thể hoàn thành 1 task nhỏ nhưng phải chỉnh sửa nhiều lần cho tới khi nó làm chính xác, nhưng chưa chắc lần sau nó làm đúng
+    - còn nhờ agent thì nó đọc cả folder research và dựng bản tổng hợp kèm nguồn nghiên cứu.
+  - AI coding tool thường hoạt động theo kiểu này.
+  - Câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm trong folder.
   - Agent vẫn hallucinate: nó có thể báo "xong" khi chưa xong. Nối lại slide "Looks finished. Is it right?".
   - Rules, skill và connector đã học ở phần 02 và 03: đó là thứ một agent dùng để biết luật, biết cách làm và với tới dữ liệu. Mình dạy sâu cách dựng ở buổi 7.
   - Slide này khoảng hai phút.
@@ -717,32 +752,35 @@ last_synced: 2026-11-26
   - KỸ NĂNG
   - Skills
   - Cách làm một loại việc
-  - review
-  - synthesis
+  - summarize-interview
+  - extract-quotes
+  - tag-themes
   - Biết làm thế nào
   - NHÂN VIÊN
   - Agent
   - Nhận việc, tự quyết bước làm
+  - Ví dụ: Interview agent
   - CÔNG CỤ
   - Tools/MCP
   - Những gì làm được
-  - file
-  - Figma
+  - đọc folder transcript
+  - ghi file .md
+  - Zoom (MCP)
   - Có gì trong tay
 - Ví dụ: Agent tổng hợp research: skill synthesis dạy gom nhóm và ghi nguồn, tool cho phép đọc folder ghi chú và ghi ra một file.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Slide này tách ba thứ hay bị gộp làm một: agent, skill và tool. Cách nhớ: agent là nhân viên, skill là kỹ năng nhân viên đó được dạy, tool là công cụ được giao.
   - Agent là người nhận việc và tự quyết các bước làm để đạt mục tiêu. Agent trả lời câu hỏi: ai làm.
-  - Skill là cách làm một loại việc: quy trình, tiêu chí và ví dụ. Ví dụ skill review hay skill synthesis. Skill trả lời câu hỏi: làm thế nào.
+  - Skill là cách làm một loại việc: quy trình, tiêu chí và ví dụ. Skill trả lời câu hỏi: làm thế nào.
   - Tool là những gì làm được: đọc file, tìm web, kết nối Figma qua MCP. Tool thực thi và trả kết quả. Tool trả lời câu hỏi: có gì trong tay.
+  - Ví dụ với Interview agent, cùng agent ở slide “Agent đầu tiên”: skill là summarize-interview (tóm tắt theo chủ đề), extract-quotes (trích quote nguyên văn), tag-themes (gắn theme); tool là đọc folder transcript, ghi file .md và Zoom qua MCP. Tên skill và tool trong ví dụ là tên minh hoạ.
   - Ví dụ trong Delivery App: agent tổng hợp research. Skill synthesis dạy nó gom ghi chú thành các nhóm, ghi nguồn cho từng ý, và đánh dấu chỗ chưa chắc. Tool cho nó đọc folder ghi chú và ghi ra một file kết quả. Thiếu một trong ba thì kết quả khác hẳn: có tool mà không có skill thì nó làm theo thói quen của AI, có skill mà không có tool thì nó biết cách nhưng không với tới dữ liệu.
-  - Quan hệ giữa ba thứ: một tool phục vụ nhiều skill, và một skill dùng được cho nhiều agent. Bạn viết skill một lần rồi dùng lại, không phải viết lại cho từng agent.
+  - Quan hệ giữa ba thứ: một tool phục vụ nhiều skill, và một skill dùng được cho nhiều agent. Chúng ta viết skill một lần rồi dùng lại, không phải viết lại cho từng agent.
   - Trong deck này skill chỉ là chỉ dẫn viết bằng chữ, nên designer tự viết và tự đọc lại được, không cần biết code.
-  - Khi kết quả chưa ổn, ba thứ này giúp bạn biết sửa ở đâu: làm sai cách thì sửa skill, không với tới dữ liệu thì sửa tool hoặc kết nối, giao sai việc hoặc sai mức tự quyết thì sửa agent.
+  - Khi kết quả chưa ổn, ba thứ này giúp chúng ta biết sửa ở đâu: làm sai cách thì sửa skill, không với tới dữ liệu thì sửa tool hoặc kết nối, giao sai việc hoặc sai mức tự quyết thì sửa agent.
   - Skill và connector đã học ở phần 03; slide này đặt chúng cạnh agent để thấy ai làm, làm thế nào, và có gì trong tay.
-
-  > Với một việc bạn hay làm, đâu là agent, skill và tool của việc đó?
+  - Câu hỏi cho lớp: Với một việc chúng ta hay làm, đâu là agent, skill và tool của việc đó?
 - 🎨 Visual hint: Ba khối ngang: trái Skills (kỹ năng), giữa khối tối Agent (nhân viên), phải Tools/MCP (công cụ), nối bằng mũi tên; chú thích nhỏ bên dưới mỗi khối.
 
 ---
@@ -775,18 +813,17 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Project folder đã học ở phần 02. Slide này dùng nó như một công ty nhỏ, với agent, skill và rules đã học.
-  - Khi mở AI agent trong folder này, agent đọc được cả folder thay vì chỉ một đoạn bạn dán vào chat.
+  - Khi mở AI agent trong folder này, agent đọc được cả folder thay vì chỉ một đoạn chúng ta dán vào chat.
+  - Cái lợi là chúng ta không phải dán lại ngữ cảnh mỗi lần. Ngữ cảnh nằm sẵn trong folder, và mọi agent dùng chung một bản.
+  - Hình dung project folder như một công ty nhỏ: mỗi agent là một nhân viên có vai và kỹ năng riêng, folder là văn phòng chung nơi mọi người đọc và ghi tài liệu
+  - Nhắc lại skill (phần 03): skill là một thư mục dạy agent cách làm một loại việc, tối thiểu có SKILL.md (tên, mô tả, chỉ dẫn); agent chỉ nạp chỉ dẫn khi thấy skill liên quan (theo tài liệu Anthropic; agent skills là chuẩn mở từ 12/2025)
   - Trong folder thường có bốn nhóm:
     - File hướng dẫn chung như AGENTS.md: ai làm gì, đọc gì trước, qua gate nào
     - Mô tả từng agent và các skill, mỗi thứ là một file markdown
     - Context pack: tài liệu nền của project như research, brief, design system
     - Thư mục learnings/: nơi agent ghi lại điều đã học để lần sau đọc lại
-  - Cái lợi là bạn không phải dán lại ngữ cảnh mỗi lần. Ngữ cảnh nằm sẵn trong folder, và mọi agent dùng chung một bản.
-  - Hình dung project folder như một công ty nhỏ: mỗi agent là một nhân viên có vai và kỹ năng riêng, folder là văn phòng chung nơi mọi người đọc và ghi tài liệu
-  - Nhắc lại skill (phần 03): skill là một thư mục dạy agent cách làm một loại việc, tối thiểu có SKILL.md (tên, mô tả, chỉ dẫn); agent chỉ nạp chỉ dẫn khi thấy skill liên quan (theo tài liệu Anthropic; agent skills là chuẩn mở từ 12/2025)
   - Giới hạn của phép ví von: agent không nhớ gì từ phiên trước, nhân viên này đọc lại hồ sơ mỗi lần bắt đầu, nên mọi thứ cần nhớ phải nằm trong file
-
-  > Nếu project của bạn là một công ty nhỏ, bạn muốn có những nhân viên agent nào?
+  - Câu hỏi cho lớp: Nếu project của chúng ta là một công ty nhỏ, chúng ta muốn có những nhân viên agent nào?
 - 🎨 Visual hint: Bảng sáu hàng ẩn dụ: bên trái là thứ trong công ty, mũi tên, bên phải là thứ trong project folder kèm mô tả một dòng.
 
 ---
@@ -795,21 +832,53 @@ last_synced: 2026-11-26
 - Kicker: Cách làm
 - Title: Agent\n*đầu tiên*
 - On-slide:
-  - 01 Chọn một việc lặp lại (ví dụ: tóm tắt user interview)
-  - 02 Giao vai và kết quả cụ thể (vai: trợ lý tổng hợp phỏng vấn)
-  - 03 Liệt kê các skill và tài liệu cần (ví dụ 3 skill: tóm tắt, trích quote, gắn theme)
-  - 04 Viết thành một file markdown (một agent, một file .md)
-  - 05 Chạy thử, ghi kết quả vào .md (đối chiếu quote với transcript gốc)
-  - Bên phải: ví dụ file interview-summary.md với tên, mô tả, vai, skill cần dùng, tài liệu đọc, các bước làm và nơi ghi kết quả
+  - 01
+  - Chọn một việc lặp lại
+  - Ví dụ: tóm tắt user interview
+  - 02
+  - Giao vai và kết quả cụ thể
+  - Vai: trợ lý tổng hợp phỏng vấn
+  - 03
+  - Liệt kê các skill và tài liệu cần
+  - Ví dụ 3 skill: tóm tắt, trích quote, gắn theme
+  - 04
+  - Viết thành một file markdown
+  - Một agent, một file .md
+  - 05
+  - Chạy thử, ghi kết quả vào .md
+  - Đối chiếu quote với transcript gốc
+  - interview-summary.md
+  - ---
+  - name: interview-summary
+  - description: Tóm tắt phỏng vấn thành ghi chú có quote
+  - ---
+  - # Vai
+  - Trợ lý tổng hợp phỏng vấn.
+  - # Skill cần dùng
+  - - summarize-interview
+  - - extract-quotes
+  - - tag-themes
+  - # Đọc
+  - - work/interviews/ (đã ẩn danh)
+  - # Làm
+  - 1. Tóm tắt theo chủ đề
+  - 2. Mỗi ý kèm quote nguyên văn
+  - 3. Chỗ chưa rõ ghi “unknown”
+  - # Ghi kết quả
+  - work/interview-summary.md
 - Ví dụ: Agent tóm tắt user interview: file interview-summary.md khai báo vai, ba skill (summarize-interview, extract-quotes, tag-themes), đọc transcript đã ẩn danh, ghi kết quả vào work/interview-summary.md. Tên skill và file là tên minh hoạ.
 - Câu hỏi hay gặp: "Cấu trúc file agent có cố định không?" Trả lời: không. Nhiều công cụ dùng phần đầu có tên và mô tả, thân file là chỉ dẫn (ví dụ Claude Code); tên file, chỗ đặt và các trường khác nhau theo công cụ.
 - Speaker notes:
-  - Năm bước, với ví dụ agent tóm tắt user interview: chọn việc lặp lại đã làm tay ổn; giao vai và kết quả cụ thể; liệt kê các skill (một agent thường dùng nhiều skill) và tài liệu agent cần; viết thành một file markdown, mỗi agent một file; chạy thử, để agent ghi kết quả vào file .md rồi đối chiếu với nguồn và chỉnh.
-  - File ví dụ: phần đầu ghi tên và mô tả (agent làm gì, dùng khi nào); thân file ghi vai, skill cần dùng, tài liệu đọc, các bước và nơi ghi kết quả. Nguồn: tài liệu subagents của Claude Code (file markdown có name và description ở đầu, thân là chỉ dẫn).
-  - Bước chạy thử là chỗ kiểm tra: quote phải nguyên văn so với transcript. Nối lại slide "Trông đã xong. Có đúng không?".
-  - Trong toolkit của khoá, Competitor Analysis là một skill theo cách này; card ghi "Status: draft" vì chưa thử với lớp thật. AGENTS.md không điều phối các agent; người điều phối vẫn là designer.
-
-  > Việc nào bạn làm lặp lại đủ nhiều để thành agent đầu tiên?
+  - Ví dụ xuyên suốt slide này là một agent tóm tắt user interview. Năm bước:
+    - Chọn một việc lặp lại: việc chúng ta đã làm tay và ra kết quả ổn. Slide “Ổn định cách làm trước” nói lý do
+    - Giao vai và kết quả cụ thể: ai làm, làm gì, ra gì. Ví dụ vai là trợ lý tổng hợp phỏng vấn, kết quả là bản tóm tắt theo chủ đề kèm quote
+    - Liệt kê các skill và tài liệu agent cần: một agent thường dùng nhiều skill, mỗi skill một cách làm. Ví dụ summarize-interview (tóm tắt theo chủ đề), extract-quotes (trích quote nguyên văn), tag-themes (gắn theme). Một skill dùng lại được cho agent khác. Tài liệu là thứ agent đọc (transcript đã ẩn danh)
+    - Viết thành một file markdown, mỗi agent một file
+    - Chạy thử trên project, để agent ghi kết quả vào file .md, rồi đối chiếu với nguồn và chỉnh file agent
+  - File bên phải là ví dụ một agent. Phần đầu file ghi tên và mô tả: mô tả nói agent làm gì và dùng khi nào. Phần thân ghi vai, skill cần dùng, tài liệu đọc, các bước làm và nơi ghi kết quả. Nhiều công cụ dùng cấu trúc tương tự; ví dụ Claude Code đọc agent từ file markdown có phần đầu name và description, thân file là chỉ dẫn của agent. Tên file, chỗ đặt file và các trường khác nhau theo công cụ, nên kiểm tra tài liệu của công cụ chúng ta dùng. Tên các skill và tên file là tên minh hoạ.
+  - Bước chạy thử là chỗ chúng ta kiểm tra: quote trong bản tóm tắt phải nguyên văn so với transcript. Nối lại slide “Trông đã xong. Có đúng chưa?”.
+  - Trong toolkit của khoá, Competitor Analysis là một skill theo cách này; card của nó ghi “Status: draft” vì chưa thử với lớp thật. AGENTS.md không điều phối các agent, nó chỉ là quy tắc chung mà công cụ đọc mỗi lần mở folder; người điều phối vẫn là designer.
+  - Câu hỏi cho lớp: Việc nào chúng ta làm lặp lại đủ nhiều để thành agent đầu tiên?
 - 🎨 Visual hint: SPLIT. Trái: năm bước đánh số tím, mỗi bước một ví dụ ngắn; phải: khung file interview-summary.md hiện cùng bước 4.
 
 ---
@@ -823,12 +892,13 @@ last_synced: 2026-11-26
 - Ví dụ: Agent session-logger: lấy transcript buổi mentoring từ Zoom, làm sạch, rút quyết định và lời hứa, soạn nháp playback và dừng trước khi publish.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - File agent thật của người dạy, dài hơn ví dụ ở slide trước nhưng cùng cấu trúc: tên và mô tả (kể cả khi nào không dùng), công cụ (file, Zoom, Notion), vai, đầu vào.
-  - Quy trình chi tiết nằm ở file khác; file agent chỉ trỏ tới, nên giữ được ngắn.
-  - Recap sau buổi học là việc lặp lại, đã làm tay ổn, đầu ra kiểm tra được: hợp để giao cho agent.
-  - Ảnh có tên mentee và ID connector; che trước khi chiếu nếu cần.
-
-  > Việc nào sau mỗi buổi làm việc bạn đang tự làm tay và có thể giao cho một agent?
+  - Slide trước dùng một agent tóm tắt user interview làm ví dụ. Đây là một file agent thật của mình: session-logger, agent ghi lại một buổi mentoring sau khi dạy xong. File thật dài hơn ví dụ, nhưng cấu trúc giống nhau.
+    - Name và Description: tên agent, và mô tả agent làm gì, dùng khi nào. Mô tả này còn ghi cả khi nào không dùng (không dùng để viết recap hay tạo trang Notion), nên công cụ biết khi nào gọi agent và khi nào không
+    - Tools: Read, Write, Edit, Glob, Grep, Bash để làm việc với file, cộng với các connector: Zoom để tìm bản ghi và lấy transcript, Notion để tìm và đọc trang. Nối lại phần Connector
+    - Role: biến transcript thô thành ghi chú sạch và bản nháp playback, và dừng lại trước khi có gì được publish. Nối lại “AI soạn nháp, bạn kiểm tra, bạn quyết định”. Quy trình chi tiết nằm ở một file khác, file agent chỉ trỏ tới, nên giữ được ngắn
+    - Inputs: mentee và ngày hoặc số buổi; nguồn theo thứ tự ưu tiên: Zoom, file transcript, trang Notion, hoặc vài gạch đầu dòng
+  - Việc recap sau buổi học là việc lặp lại, đã làm tay ổn và đầu ra kiểm tra được, đúng loại việc hợp để giao cho agent.
+  - Câu hỏi cho lớp: Việc nào sau mỗi buổi làm việc chúng ta đang tự làm tay và có thể giao cho một agent?
 - 🎨 Visual hint: REAL. Cùng bố cục slide Overview của hub: kicker và title hai dòng bên trái, một câu mô tả bên phải, một khung bo góc viền đậm chia đôi chứa hai ảnh chụp file.
 
 ---
@@ -855,9 +925,12 @@ last_synced: 2026-11-26
 - Ví dụ: Ba agent Desk research, Tổng hợp, Prototype nhận việc từ AGENTS.md và ghi kết quả vào learnings.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đóng gói một agent nghĩa là viết vai và quy trình của nó thành một file markdown, mỗi agent một file. File đó ghi rõ agent đọc file nào và ghi vào đâu. Skill, tức cách làm một loại việc, đã học ở phần 03.
-  - AGENTS.md là file markdown mà công cụ AI nạp mỗi lần mở folder. Trong đó có bản đồ folder, thứ tự đọc và các quy tắc cứng. Nó chỉ điều hướng chứ không tự chạy gì. Người giao việc thật sự là công cụ AI, hoặc model điều phối.
+  - AGENTS.md là file markdown mà công cụ AI nạp mỗi lần mở folder.
+  - Trong đó có bản đồ folder, thứ tự đọc và các quy tắc cứng.
+  - Nó chỉ điều hướng chứ không tự chạy gì. Người giao việc thật sự là công cụ AI, hoặc model điều phối.
   - AGENTS.md là luật, không phải rào chắn kỹ thuật. Rào chắn thật là .gitignore cho _raw-private/ và _personal/.
+  - Đóng gói một agent nghĩa là viết vai và quy trình của nó thành một file markdown, mỗi agent một file markdown.
+  - File đó ghi rõ agent đọc file nào và ghi vào đâu. Skill, tức cách làm một loại việc, mình dạy kỹ ở phần Skills.
   - Tên agent trên sơ đồ chỉ là ví dụ. Đội đầy đủ có tám agent, mình sẽ xem ở phần workflow thiết kế.
 - 🎨 Visual hint: Sơ đồ dọc: khối AGENTS.md màu tím ở trên, ba ô agent ở giữa, khối learnings/ hub/ ở dưới, nối bằng mũi tên "giao việc" và "ghi file".
 
@@ -878,9 +951,12 @@ last_synced: 2026-11-26
   - AI thường khuếch đại cách làm hiện tại. Quy trình tốt có thể chạy nhanh hơn, còn quy trình chưa ổn thì tạo ra nhiều kết quả chưa ổn hơn, cũng trong thời gian ngắn hơn.
   - Báo cáo DORA 2025 ghi nhận throughput tăng nhưng độ bất ổn cũng tăng (khảo sát gần 5.000 người làm công nghệ, 2025). Số liệu này từ phát triển phần mềm, còn áp vào design là suy luận của mình.
   - Ý này không mới. Năm 1990, Michael Hammer đã viết "Don't automate, obliterate" trên Harvard Business Review.
-  - Ví dụ: bạn chưa có định nghĩa thế nào là thành công, rồi nhờ AI tạo mười hướng. Kết quả là mười hướng và không ai chọn được. Slide này khoảng nửa phút.
-
-  > Trong công việc của bạn, có bước nào bạn làm vì thói quen chứ không vì nó tạo giá trị?
+  - Ví dụ: chúng ta chưa có định nghĩa thế nào là thành công của 1 qui trình, rồi nhờ AI tạo mười hướng.
+  - Kết quả là mười option cho workflow và không ai chọn được.
+  - Nên hãy dành thôi gian suy nghĩ quy trình thiết kế product hay thiết kế design hiện tại của chúng ta như thế nào.
+  - Cái nào cần manual, cái nào cần automate.
+  - Nếu chúng ta đã có quy trình rồi thì nếu mà ở milestone nào bị lỗi lặp lại trên 3 lần thì hãy dừng lại, và chỉnh sửa workflow cho đến khi nó chạy thật sự đúng, rồi mới apply tiếp tục trong công việc của mình.
+  - Câu hỏi cho lớp: Trong công việc của chúng ta, có bước nào chúng ta làm vì thói quen chứ không vì nó tạo giá trị?
 - 🎨 Visual hint: Trái: kicker mono và title hai dòng; phải: hai hàng quy trình line-art, hàng trên nhiều điểm lỗi tím quanh khối AI vàng, hàng dưới không còn điểm lỗi; chú thích "Điểm lỗi".
 
 ---
@@ -943,10 +1019,10 @@ last_synced: 2026-11-26
   - Hub là một folder duy nhất ghi lại lý do sau mỗi quyết định, nối với nhu cầu người dùng, giả định đã đặt và kết quả kiểm chứng.
   - Hình dung theo ba câu:
     - What: một site liên kết chứa mọi output của project. Mỗi page một output, mỗi item một file có ID ngắn (O1, H1, D1, T1, M1)
-    - Why: output của mỗi bước là input của bước sau. Từ một decision, bạn lần ngược ra opportunity, hypothesis, principle, test và metric
+    - Why: output của mỗi bước là input của bước sau. Từ một decision, chúng ta lần ngược ra opportunity, hypothesis, principle, test và metric
     - When: bắt đầu từ ngày đầu tiên onboard với product, thêm trang sau mỗi giai đoạn, hoàn thiện ở buổi 12
-  - Hub giải hai vấn đề. Một là AI cho kết quả trông hoàn chỉnh nhưng có thể thiếu căn cứ. Hai là công việc làm cùng AI rải rác trong các chat, nên vài tháng sau chính bạn cũng khó dựng lại.
-  - Nói thật trước khi bị hỏi: tính năng tự phát hiện chỗ yếu chưa được thử với lớp học thật, nên bạn tự đối chiếu vài dòng mỗi lần dùng.
+  - Hub giải hai vấn đề. Một là AI cho kết quả trông hoàn chỉnh nhưng có thể thiếu căn cứ. Hai là công việc làm cùng AI rải rác trong các chat, nên vài tháng sau chính chúng ta cũng khó dựng lại.
+  - Nói thật trước khi bị hỏi: tính năng tự phát hiện chỗ yếu chưa được thử với lớp học thật, nên chúng ta tự đối chiếu vài dòng mỗi lần dùng.
   - Sẽ có người hỏi: sao không làm hub trên Notion rồi nối MCP? Mình trả lời ở phần GitHub.
   - Hub mặc định riêng tư, chỉ chia sẻ khi project cho phép.
   - Giờ mình vào cấu trúc của hub: ba lớp, rồi ba quy tắc.
@@ -970,12 +1046,11 @@ last_synced: 2026-11-26
 - Speaker notes:
   - Andrej Karpathy mô tả ý này vào tháng 4 năm 2026: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi; lý do ông nêu là người ta bỏ wiki vì công bảo trì, còn AI không ngại cập nhật liên kết
   - Raw sources gồm transcript đã ẩn danh, review và tài liệu của team. Đây là tài liệu gốc, được lưu nguyên trạng để có thể đối chiếu khi cần.
-  - Wiki gồm source notes, insight, opportunity và decision. Mỗi mục được lưu thành một file Markdown có liên kết với nhau. AI có thể hỗ trợ soạn nháp, nhưng designer cần kiểm tra trước khi sử dụng.
+  - Wiki gồm evidence notes, insight, opportunity và decision. Mỗi mục được lưu thành một file Markdown có liên kết với nhau. AI có thể hỗ trợ soạn nháp, nhưng designer cần kiểm tra trước khi sử dụng.
   - Schema là một file ngắn hướng dẫn AI cần đọc gì trước và những quy tắc nào phải tuân theo. Trong khoá học, file này là `AGENTS.md`.
   - Hai file giúp tìm đường: index (`README.md`) cho biết hub có gì, log (`project-log.md`) ghi mỗi lần đưa nguồn vào hoặc đổi quyết định
   - Chỉ vào ba file của project mẫu, một phút
-
-  > Trong project của bạn, thứ nào nên là raw source?
+  - Câu hỏi cho lớp: Trong project của chúng ta, thứ nào nên là raw source?
 - 🎨 Visual hint: Ba card đánh số 01 đến 03, card cuối nền tối; mỗi card có tên lớp và mô tả; dòng ghi chú về index và log ở đáy.
 
 ---
@@ -985,28 +1060,31 @@ last_synced: 2026-11-26
 - Title: Ba quy tắc\n*để hub luôn đáng tin*
 - On-slide:
   - 01
+  - AI không bao giờ sửa raw sources
   - Bản tóm tắt sai thì vẫn còn nguồn để đối chiếu.
   - 02
+  - Mỗi note có một ID
   - Một insight chỉ ra được nó dựa vào note nào.
-  - I01-03 | lời người nói
+  - RET-02 | quote nguyên văn
   - 03
-  - Quote AI viết lại nghe hay hơn quote thật. Buổi 2 kiểm điều này bằng chương trình.
+  - Quote phải nguyên văn
+  - Quote AI viết lại nghe hay hơn quote thật. Buổi 3 kiểm điều này bằng chương trình.
   - Ba quy tắc nằm trong AGENTS.md. Bạn viết lại bằng lời của mình ở Practice 1.
 - Ví dụ: I01-03 là ghi chú 3 của phỏng vấn 1; quote AI viết lại nghe hay hơn quote thật nên phải nguyên văn.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Quy tắc 1: nếu bản tóm tắt sai thì vẫn còn nguồn để đối chiếu; nghiên cứu về dùng AI cho UX research cho thấy researcher ít tin kết quả AI vì không truy được về dữ liệu gốc
-  - Quy tắc 2: ID `I01-03` là ghi chú 3 của phỏng vấn 1; một insight chỉ ra được nó dựa vào note nào
-  - Quy tắc 3: người thật nói câu dở dang, còn quote AI viết lại nghe tự nhiên hơn nên khó bắt; buổi 2 dạy cách kiểm điều này bằng chương trình
-  - Ba quy tắc nằm trong `AGENTS.md`; designer viết lại bằng lời của mình ở Practice 1, bước 4
   - Một bình luận dưới bài của Karpathy báo truy vấn chỉ qua wiki kém hơn khi có tài liệu gốc; số tự báo cáo, chưa kiểm chứng, và đó là lý do quy tắc 1 tồn tại
-
-  > Quy tắc nào bạn dễ vi phạm nhất khi làm việc gấp?
+  - Quy tắc 2: ID `I01-03` là ghi chú 3 của phỏng vấn 1; một insight chỉ ra được nó dựa vào note nào
+  - Quy tắc 3: người thật nói câu dở dang, còn quote AI viết lại nghe tự nhiên hơn nên khó bắt; buổi 3 dạy cách kiểm điều này bằng chương trình
+  - Ba quy tắc nằm trong `AGENTS.md`; designer viết lại bằng lời của mình ở Practice 1, bước 4
+  - Câu hỏi cho lớp: Quy tắc nào chúng ta dễ vi phạm nhất khi làm việc gấp?
 - 🎨 Visual hint: Ba card đánh số 01 đến 03, card cuối nền tối; card giữa có dòng mono ví dụ ID I01-03; dòng ghi chú nhỏ ở đáy.
 
 ---
 
 ### DIAGRAM · The Knowledge Hub
+- Status: Không có trong deck hiện tại, giữ ở đây để dùng lại.
 - Kicker: Page · Overview
 - Title: The Knowledge\n*Hub*
 - On-slide: Bắt đầu từ bất kỳ decision nào. Lần ra user need và test đứng sau nó.
@@ -1052,10 +1130,10 @@ last_synced: 2026-11-26
 - Ví dụ: Ba thứ mang về: Knowledge Hub, project folder đầy đủ, một sản phẩm cho portfolio.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ba thứ bạn mang về sau 12 buổi, theo plan của chương trình
+  - Ba thứ chúng ta mang về sau 12 buổi, theo plan của chương trình
   - Knowledge Hub nối hai thứ còn lại: project folder là nơi làm việc, hub là bản đọc được của cả project
-  - Project là của bạn và hub mặc định riêng tư
-  - Ba thứ này nghe còn trừu tượng. Giờ mình mở một Knowledge Hub của project thật để các bạn thấy nó trông ra sao.
+  - Project là của chúng ta và hub mặc định riêng tư
+  - Ba thứ này nghe còn trừu tượng. Giờ mình mở một Knowledge Hub của project thật để chúng ta thấy nó trông ra sao.
 - 🎨 Visual hint: Ba card nền trắng; mỗi card có hình line-art ở trên (sơ đồ hub, folder, cửa sổ prototype), số tím, tiêu đề và một câu.
 
 ---
@@ -1073,7 +1151,7 @@ last_synced: 2026-11-26
     - Chỉ phần cảnh báo: decision không có user need, hypothesis chưa test, link hỏng
     - Mở một item để thấy mỗi item là một file
   - Dự phòng nếu demo lỗi: quay lại ba slide ảnh trước đó.
-  - Hub của bạn sẽ có cấu trúc này. Hôm nay bạn chỉ cần mở hub mẫu ở bài tập về nhà.
+  - Hub của chúng ta sẽ có cấu trúc này. Hôm nay chúng ta chỉ cần mở hub mẫu ở bài tập về nhà.
 - 🎨 Visual hint: Nền vàng, biểu tượng phát ở góc trên trái, title Live demo ở giữa, dòng mono nhỏ bên dưới.
 
 ---
@@ -1082,10 +1160,15 @@ last_synced: 2026-11-26
 - Kicker: Knowledge Hub
 - Title: Giá trị cho *tổ chức*
 - On-slide:
+  - Kiểm chứng được.
   - Bấm vào một quyết định là thấy bằng chứng, không cần họp để hỏi lại.
+  - Phát hiện chỗ yếu sớm.
   - Chỉ ra quyết định thiếu căn cứ trước khi chi tiền để xây.
+  - Giữ lại tri thức.
   - Khi đổi dự án hoặc có người rời đi, knowledge vẫn ở lại.
+  - Dùng được để báo cáo.
   - Trình bày dựa trên bằng chứng, không dựa vào cảm nhận.
+  - Kiểm soát rủi ro.
   - Mặc định là riêng tư. Ai chia sẻ thì chịu trách nhiệm.
   - Quyết định
   - Nhu cầu
@@ -1111,8 +1194,16 @@ last_synced: 2026-11-26
 ### DIAGRAM · One hub per function
 - Kicker: Một hub hay nhiều hub
 - Title: Một chức năng,\n*một hub*
-- On-slide: Business, technical và design mỗi bên giữ một hub. AI nối ba hub bằng ID chung.
 - On-slide:
+  - AI
+  - Business hub
+  - mục tiêu, metric
+  - Design hub
+  - insight, decision
+  - Technical hub
+  - ràng buộc, kiến trúc
+  - ĐỌC VÀ ĐỐI CHIẾU
+  - ID CHUNG: BIZ, DES, TEC
   - Mỗi chức năng giữ hub của mình. AI nối ba hub bằng ID chung. Một số công ty lớn đang thử hướng này; đây là pattern, chưa phải chuẩn.
 - Ví dụ: Business giữ mục tiêu và metric, Technical giữ ràng buộc và kiến trúc, Design giữ insight và decision.
 - Câu hỏi hay gặp: None.
@@ -1121,8 +1212,7 @@ last_synced: 2026-11-26
   - Gộp hết vào một hub thì không ai là chủ của từng phần; cùng nguyên tắc với data mesh: mỗi miền tự chủ, chỉ một bộ chuẩn chung rất nhỏ
   - AI là lớp nối: lấy dữ liệu liên quan và đối chiếu giữa ba hub
   - Phần này là lý thuyết, không có bài tập; hub của designer là một trong ba nhánh
-
-  > Ở chỗ bạn làm, ai đang giữ mục tiêu business và ai giữ ràng buộc kỹ thuật?
+  - Câu hỏi cho lớp: Ở chỗ chúng ta làm, ai đang giữ mục tiêu business và ai giữ ràng buộc kỹ thuật?
 - 🎨 Visual hint: Khối AI tối ở trên đọc và đối chiếu ba hub (Business, Design, Technical) bên dưới; đường tím phía dưới nối ba hub, chú thích "ID chung: BIZ, DES, TEC".
 
 ---
@@ -1144,12 +1234,11 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Mỗi mục mang ID và nêu ID của mục nó dựa vào, nên AI đi được từ test ngược về mục tiêu business qua cả ba hub
-  - Hub của designer đã dùng ý này ở quy mô nhỏ: source ID như `I01-03`, insight ID như `IN-01`
+  - Hub của designer đã dùng ý này ở quy mô nhỏ: note ID như `RET-02`, insight ID như `IN-01`
   - Ba quy tắc cho ID: không đổi, không dùng lại, mỗi chức năng một tiền tố để không trùng; BIZ, DES, TEC chỉ là tiền tố minh hoạ, không phải chuẩn
   - Các hub cần thêm một bộ field chung rất nhỏ như owner, status, version
   - Hai rủi ro: hai hub cùng ID nhưng khác cấu trúc thì phép nối sai mà không báo lỗi; và AI nối nhanh nhưng designer vẫn mở cả hai nguồn để kiểm tra
-
-  > Mục nào trong project của bạn nên có ID trước?
+  - Câu hỏi cho lớp: Mục nào trong project của chúng ta nên có ID trước?
 - 🎨 Visual hint: Bốn card nối nhau theo chuỗi (BIZ-01, DES-02, DES-03, TEC-01), card cuối nền tối; mỗi card có ID mono, tên và một câu; ba quy tắc ID ở dòng cuối.
 
 ---
@@ -1165,7 +1254,7 @@ last_synced: 2026-11-26
 - Ví dụ: Không cần. Slide chuyển phần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Bạn đã nghe câu "đẩy lên GitHub" bao nhiêu lần mà chưa ai giải thích nghĩa là gì?
+  - Chúng ta đã nghe câu "đẩy lên GitHub" bao nhiêu lần mà chưa ai giải thích nghĩa là gì?
   - Từ đầu buổi, mọi thứ mình dựng cho AI như AGENTS.md, skill hay ghi chú research đều là file trong một folder. Folder đó cần một nơi để tồn tại, lưu lịch sử và chia sẻ. Nơi đó là GitHub. Hub vừa xem cũng là một folder như vậy.
   - Mục tiêu là hiểu đủ để đọc và trao đổi với engineer, chứ không phải để tự thao tác. Mình bắt đầu từ câu hỏi nhỏ nhất: GitHub là gì?
 - 🎨 Visual hint: Nền vàng, số phần rất lớn ở góc trên trái, title ở giữa, dòng mono nhỏ bên dưới.
@@ -1188,16 +1277,17 @@ last_synced: 2026-11-26
 - Ví dụ: Google Drive có Version history; GitHub giống Drive dành cho cả folder project. Hỏi lớp: bạn từng có file "final_v3_that_final" chưa?
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - GitHub là website lưu folder project của bạn trên mạng, kèm lịch sử mọi thay đổi. Mình muốn nhấn hai chữ: folder và lịch sử. Nó không chỉ là chỗ chứa file.
+  - GitHub là website lưu folder project của chúng ta trên mạng, kèm lịch sử mọi thay đổi.
+  - Mình muốn nhấn hai chữ: folder và lịch sử. Nó không chỉ là chỗ chứa file
   - Vì sao dùng nó:
-    - Nhiều người và nhiều công cụ AI cùng làm trên một bản, không ai phải gửi file qua lại
+    - Nhiều người và nhiều công cụ AI cùng làm trên một version, không ai phải gửi file qua lại
     - Có chỗ để review, góp ý và phân quyền ai được sửa gì
-  - Hình dung đơn giản: Google Drive có Version history, còn GitHub giống Drive dành cho cả folder project.
-  - Chỗ ví dụ này chưa đúng: GitHub không tự lưu từng ký tự như Google Docs. Lịch sử chỉ có khi bạn chủ động chốt một phiên bản, gọi là commit, mình nói ở slide sau.
-  - Nếu có người hỏi Git khác GitHub thế nào: Git là công cụ ghi lịch sử chạy trên máy, GitHub là website dùng nó. Hôm nay chỉ cần nhớ GitHub.
-  - Để đọc được GitHub, bạn cần biết sáu từ.
-
-  > Bạn đã bao giờ có file tên "final_v3_that_final" chưa? GitHub giải đúng vấn đề đó.
+  - Hình dung đơn giản: Google Drive có Version history
+  - còn GitHub giống Drive dành cho cả folder project
+  - Hồi trước nó sẽ phổ biến ở engineering hơn là product và design
+  - Chỗ ví dụ này chưa đúng:
+    - GitHub không tự lưu từng ký tự như Google Docs.
+    - Lịch sử chỉ có khi chúng ta chủ động chốt một phiên bản mà mình muốn stakeholder thấy được
 - 🎨 Visual hint: Ba card: What và Why nền trắng, Ẩn dụ nền tối; mỗi card có icon, tiêu đề và hai dòng.
 
 ---
@@ -1223,13 +1313,12 @@ last_synced: 2026-11-26
 - Speaker notes:
   - Mình đi theo thứ tự trái sang phải, trên xuống dưới, mỗi từ khoảng 40 giây, và dùng Delivery App làm ví dụ xuyên suốt.
   - Repo là folder của cả project, gồm context, research, thiết kế và AGENTS.md. Commit là một lần chốt phiên bản kèm lời nhắn, ví dụ "thêm 20 review đã gắn tag".
-  - Push là gửi commit từ máy lên GitHub để người khác và công cụ khác thấy. Trước khi push, mọi thứ chỉ nằm trên máy bạn. Branch là bản nháp chạy song song: bạn thử một hướng onboarding mới mà bản chính vẫn nguyên.
+  - Push là gửi commit từ máy lên GitHub để người khác và công cụ khác thấy. Trước khi push, mọi thứ chỉ nằm trên máy chúng ta. Branch là bản nháp chạy song song: chúng ta thử một hướng onboarding mới mà bản chính vẫn nguyên.
   - Pull request là đề nghị ghép bản nháp vào bản chính. Đây là chỗ designer review output của AI: xem từng thay đổi, comment, duyệt hoặc yêu cầu sửa. Trong sáu từ này, designer dùng pull request nhiều nhất.
-  - Run localhost là chạy prototype ngay trên máy, mở ở địa chỉ dạng localhost:3000, chỉ bạn thấy được. Xem ổn rồi mới push.
-  - Không cần nhớ hết. Slide này mở lại được khi bạn gặp từ lạ.
+  - Run localhost là chạy prototype ngay trên máy, mở ở địa chỉ dạng localhost:3000, chỉ chúng ta thấy được. Xem ổn rồi mới push.
+  - Không cần nhớ hết. Slide này mở lại được khi chúng ta gặp từ lạ.
   - Có từ vựng rồi, giờ mình đặt chúng vào một bức tranh: ai làm gì với repo.
-
-  > AI vừa dựng xong màn hình thanh toán mới, bạn làm gì trước, push hay run localhost? (Run localhost, rồi mới push)
+  - Câu hỏi cho lớp: AI vừa dựng xong màn hình thanh toán mới, chúng ta làm gì trước, push hay run localhost? (Run localhost, rồi mới push)
 - 🎨 Visual hint: Lưới sáu card (hai hàng ba cột): Repo, Commit, Push, Branch, Pull request, Run localhost; mỗi card có icon, tên lớn và một câu.
 
 ---
@@ -1242,13 +1331,13 @@ last_synced: 2026-11-26
 - Speaker notes:
   - Slide trước có sáu từ. Slide này đặt chúng vào một bức tranh: ai làm gì với repo.
   - Đọc theo mũi tên, từ trái sang phải:
-    - Bạn chỉ đạo AI coding tool; AI sửa file trong folder project trên máy bạn
-    - Bạn xem thử bằng run localhost. Chưa ổn thì bảo AI sửa tiếp, mọi thứ vẫn chỉ nằm trên máy bạn
-    - Chỉ khi ổn bạn mới push lên repo trên GitHub. AI không tự push, nên bạn là cổng kiểm tra duy nhất giữa AI và những người khác
-    - Teammate pull về để dùng, hoặc gửi pull request để review trước khi thay đổi vào bản chính
-  - Tên tool cụ thể tuỳ bạn dùng, hình này đúng với mọi AI coding tool.
-
-  > Trong luồng này, bước nào bạn sợ nhất là AI làm thay mình?
+    - Chúng ta chỉ đạo AI coding tool; AI sửa file trong folder project trên máy chúng ta
+    - Chúng ta xem thử bằng run localhost. Chưa ổn thì bảo AI sửa tiếp, mọi thứ vẫn chỉ nằm trên máy chúng ta
+    - Khi ổn, chúng ta commit để chốt phiên bản rồi push lên một branch trên repo GitHub. Nhiều AI coding tool cũng chạy được lệnh git nếu chúng ta cho phép, nên chúng ta nên giữ quyền duyệt ở bước này
+    - Trên GitHub, chúng ta mở pull request để đề nghị ghép branch vào bản chính. Teammate xem từng thay đổi, comment, duyệt rồi mới ghép
+    - Teammate pull về máy để dùng bản mới
+  - Hình là luồng chung. Mỗi tool có cách chạy lệnh git riêng, nên chúng ta kiểm tra tool của mình.
+  - Câu hỏi cho lớp: Trong luồng này, bước nào chúng ta sợ nhất là AI làm thay mình?
 - 🎨 Visual hint: Sơ đồ hai vùng: "Trên máy bạn" (Bạn, AI coding tool, Folder project) và "Trên GitHub" (Repo, Teammate); mũi tên tím Push nối hai vùng, chú thích "Bạn duyệt trước khi push".
 
 ---
@@ -1271,11 +1360,14 @@ last_synced: 2026-11-26
 - Speaker notes:
   - Bức tranh vừa rồi cho thấy ai làm gì với repo. Giờ mình xem khi AI mở một repo thì nó đọc gì đầu tiên.
   - Agent đọc theo thứ tự này, từng file một:
-    - README.md: cổng vào của repo, cho cả người lẫn AI. Bên trong thường ghi repo này là gì và dành cho ai, nên đọc file nào trước, và bắt đầu từ đâu. Người mới và AI mở folder lần đầu chỉ thấy tên file, nên cần một chỗ để biết đi đường nào. Một README tốt ngắn: nó dẫn sang các file khác, không chép lại nội dung của chúng
-    - AGENTS.md: luật và bản đồ folder dành riêng cho AI. Nhắc lại là nó chỉ là luật, không phải rào chắn kỹ thuật. Bạn có thể hình dung nó như tờ phụ lục trong hộp Lego: liệt kê có bao nhiêu agent và mỗi agent làm gì
+    - README.md: cổng vào của repo, cho cả người lẫn AI.
+  - Bên trong thường ghi repo này là gì và dành cho ai, nên đọc file nào trước, và bắt đầu từ đâu.
+  - Người mới và AI mở folder lần đầu chỉ thấy tên file, nên cần một chỗ để biết đi đường nào như chơi game mà mình lụm được cái map là thấy yên tâm
+  - Một README tốt ngắn: nó dẫn sang các file khác, không chép lại nội dung của chúng
+    - AGENTS.md: luật và bản đồ folder dành riêng cho AI. Nhắc lại là nó chỉ là luật, không phải rào chắn kỹ thuật. Chúng ta có thể hình dung nó như tờ phụ lục trong hộp Lego: liệt kê có bao nhiêu agent và mỗi agent làm gì
     - SKILL.md: cách làm một loại việc. Phần Skills đã học kỹ, hôm nay chỉ cần biết nó nằm trong repo
-  - Cả ba đều là markdown, nên designer đọc và chỉnh được mà không cần viết code.
-  - Nếu bạn nghĩ "mình không phải dev", đừng lo: những file này không cần viết bằng tay. Bạn nhờ AI viết rồi đọc lại và chỉnh.
+  - Các file này đều là markdown, nên designer đọc và chỉnh được mà không cần viết code.
+  - Nếu chúng ta nghĩ "mình không phải dev", đừng lo: những file này không cần viết bằng tay. Chúng ta nhờ AI viết rồi đọc lại và chỉnh.
   - Biết AI đọc gì rồi, mình quay lại câu hỏi vì sao Hub là folder và GitHub, chứ không phải Notion.
 - 🎨 Visual hint: Ba card tên file có icon, mỗi card hai dòng: file là gì và học ở đâu.
 
@@ -1312,10 +1404,9 @@ last_synced: 2026-11-26
     - AI làm việc trực tiếp trên file: agent mở folder là đọc và sửa được các file markdown, mỗi item một file. Với Notion, AI chỉ làm được những việc connector cho phép, và phải đi qua kết nối đó mỗi lần
     - Lịch sử và quay lại được: Git ghi lại từng thay đổi, AI sửa hỏng thì quay về bản trước và xem được bản nào đổi gì. Notion có lịch sử trang, nhưng khó so từng dòng thay đổi như Git
     - Không phụ thuộc một tool: folder markdown mở được ở nhiều công cụ AI, đổi tool không phải làm lại từ đầu. Hub không bị khoá vào một nền tảng, một gói trả phí hay một connector
-    - Dữ liệu nằm trong tay bạn: hub mặc định riêng tư, nằm trên máy và trong repo của bạn, không đi qua dịch vụ bên thứ ba nếu bạn không chọn chia sẻ
-  - Không có nghĩa Notion dở. Nếu tài liệu của bạn đã nằm ở Notion, cứ nối MCP để AI đọc. Chỉ là Hub cần AI ghi, lần ngược và kiểm lại, nên folder và GitHub hợp hơn.
-
-  > Tài liệu project của bạn đang nằm ở đâu, và AI chỉ cần đọc hay cần ghi vào đó?
+    - Dữ liệu nằm trong tay chúng ta: hub mặc định riêng tư, nằm trên máy và trong repo của chúng ta, không đi qua dịch vụ bên thứ ba nếu chúng ta không chọn chia sẻ
+  - Không có nghĩa Notion dở. Nếu tài liệu của chúng ta đã nằm ở Notion, cứ nối MCP để AI đọc. Chỉ là Hub cần AI ghi, lần ngược và kiểm lại, nên folder và GitHub hợp hơn.
+  - Câu hỏi cho lớp: Tài liệu project của chúng ta đang nằm ở đâu, và AI chỉ cần đọc hay cần ghi vào đó?
 - 🎨 Visual hint: Hai card so sánh: trái nền trắng "Notion + MCP", phải nền tối "Folder + GitHub"; mỗi card bốn hàng có tiêu đề đậm và mô tả nhỏ, câu kết nhỏ ở đáy.
 
 ---
@@ -1336,19 +1427,16 @@ last_synced: 2026-11-26
 - Ví dụ: Hub của Delivery App: push bản đã ẩn danh, bật Pages, gửi link cho mentor xem.
 - Câu hỏi hay gặp: "Cập nhật hub thì làm lại từ đầu?" Trả lời: không. Nói "Lưu và đăng lên", link giữ nguyên.
 - Speaker notes:
-  - Push đưa file lên GitHub, còn publish là cho người khác mở bằng link. Hub là markdown, mà trình duyệt chỉ hiện file .md như chữ thường, nên cần một file index.html. Bạn nhờ AI dựng, như ở slide Markdown và HTML.
+  - Push đưa file lên GitHub, còn publish là cho người khác mở bằng link. Hub là markdown, mà trình duyệt chỉ hiện file .md như chữ thường, nên cần một file index.html. Chúng ta nhờ AI dựng, như ở slide Markdown và HTML.
   - Ba bước:
-    - Đưa lên repo Public một bản đã làm sạch. Trước khi push, AI hiện danh sách file và bạn đọc danh sách này: đây là chỗ cuối cùng để chặn dữ liệu chưa ẩn danh, mật khẩu, khoá API hay file của công ty
+    - Đưa lên repo Public một bản đã làm sạch. Trước khi push, AI hiện danh sách file và chúng ta đọc danh sách này: đây là chỗ cuối cùng để chặn dữ liệu chưa ẩn danh, mật khẩu, khoá API hay file của công ty
     - Trên github.com vào Settings → Pages, chọn Deploy from a branch, main, /(root), bấm Save
-    - Chờ một đến hai phút, mở link `https://<tên-tài-khoản>.github.io/<tên-repo>/` bằng cửa sổ ẩn danh để thấy đúng những gì người khác thấy
-  - Cập nhật về sau: nói "Lưu và đăng lên", link giữ nguyên. Muốn gỡ: tắt Pages hoặc xoá repo trong Settings.
-  - AI không tự bật GitHub Pages hay chuyển repo sang Public. Hai việc đó chỉ bạn làm.
-  - Nếu link báo 404: kiểm tra repo là Public, Pages đã chọn main và /(root), rồi chờ hai phút.
+    - Chờ một đến hai phút, mở link https://tên-tài-khoản.github.io/tên-repo/ bằng cửa sổ ẩn danh để thấy đúng những gì người khác thấy
+  - Cập nhật về sau: nói “Lưu và đăng lên”, link giữ nguyên. Muốn gỡ: tắt Pages hoặc xoá repo trong Settings.
+  - AI không tự bật GitHub Pages hay chuyển repo sang Public. Hai việc đó chỉ chúng ta làm. Nếu link báo 404: kiểm tra repo là Public, Pages đã chọn main và /(root), rồi chờ hai phút.
   - Đây là bước 6 của Practice 1, tuỳ chọn.
-  - [Ảnh chụp Settings → Pages: chờ thư mục ảnh GitHub của Winnie]
-
-  > Hub của bạn nên mở cho ai xem: mentor, team, hay chỉ mình bạn?
-- 🎨 Visual hint: SPLIT. Trái: ba bước đánh số tím; phải: ảnh chụp trang Settings → Pages trong khung viền đen [chờ ảnh].
+  - Câu hỏi cho lớp: Hub của chúng ta nên mở cho ai xem: mentor, team, hay chỉ mình chúng ta?
+- 🎨 Visual hint: SPLIT. Trái: ba bước đánh số tím; phải: hai ảnh chụp GitHub Pages (trang cài đặt và trang hiện link), bo góc, không viền.
 
 ---
 
@@ -1358,21 +1446,25 @@ last_synced: 2026-11-26
 - On-slide:
   - Được công khai
   - Toàn bộ project được phép công khai
-  - Tạo repo mới chỉ chứa bản đã làm sạch, rồi bật Pages
+  - Tạo repo mới chỉ chứa bản đã làm sạch
+  - Không đổi repo Private đang dùng sang Public
+  - Kiểm tra không có _raw-private/, _personal/
   - Chưa chắc, hoặc không
   - Không bật Pages
-  - Gửi file index.html hoặc PDF, hoặc mời một người xem repo
-  - Pages miễn phí chỉ chạy với repo Public và công khai mọi file trong repo
+  - Gửi file index.html hoặc PDF in từ trình duyệt
+  - Hoặc mời một người xem repo
+  - Repo Private chưa có nghĩa site private
+  - GitHub Pages miễn phí chỉ chạy với repo Public và công khai mọi file trong repo.
 - Ví dụ: Repo Private chứa transcript chưa ẩn danh: không đổi sang Public. Tạo repo mới chỉ có hub đã ẩn danh.
 - Câu hỏi hay gặp: "Repo Private thì site cũng private?" Trả lời: không. Site GitHub Pages có thể công khai dù repo là Private; chỉ gói Enterprise Cloud mới cho publish riêng tư.
 - Speaker notes:
   - Một câu hỏi quyết định nhánh: toàn bộ project có được phép công khai không? Không chắc thì chọn nhánh không công khai.
   - Nhánh công khai: GitHub Pages miễn phí chỉ chạy với repo Public và công khai mọi file trong repo. Vì vậy tạo một repo mới chỉ chứa bản đã làm sạch, không đổi repo Private đang dùng sang Public. Kiểm tra repo mới không có dữ liệu mật, thông tin cá nhân của người dùng, _raw-private/ hay _personal/.
   - Nhánh không công khai: không bật Pages. Gửi file index.html của project hoặc PDF in từ trình duyệt; hoặc mời một người xem repo ở Settings → Collaborators → Add people.
+  - Site GitHub Pages có thể công khai dù repository là private; chỉ gói Enterprise Cloud mới cho publish riêng tư.
   - Hub mặc định là private. Bản publish chỉ nên chứa dữ liệu đã ẩn danh và được phép chia sẻ. Phần Data Safety ngay sau đây nói cách phân loại tài liệu.
   - Ngoài GitHub Pages còn các cách khác để đưa markdown lên web; có một slide tham khảo ở Appendix.
-
-  > Trong project của bạn, phần nào được công khai và phần nào không?
+  - Câu hỏi cho lớp: Trong project của chúng ta, phần nào được công khai và phần nào không?
 - 🎨 Visual hint: TWO CARDS. Hai card: trái nền trắng "Được công khai", phải nền tối "Chưa chắc, hoặc không"; mỗi card hai đến ba dòng; câu cảnh báo Pages ở đáy.
 
 ---
@@ -1412,20 +1504,20 @@ last_synced: 2026-11-26
 - Ví dụ: Transcript phỏng vấn là loại dễ dán vào AI nhất: ẩn danh thành P1, P2, bỏ công ty, số điện thoại và email trước khi AI nhìn thấy.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Data safety là câu hỏi bạn phải trả lời trước khi đưa bất kỳ thứ gì cho AI: dữ liệu này có được phép rời khỏi máy của mình không.
+  - Data safety là câu hỏi chúng ta phải trả lời trước khi đưa bất kỳ thứ gì cho AI: dữ liệu này có được phép rời khỏi máy của mình không.
   - Dữ liệu cần cẩn thận gồm ba nhóm: tên và thông tin định danh người tham gia, quote và transcript phỏng vấn, và file confidential cùng số liệu khách hàng.
   - Với designer, transcript phỏng vấn là loại dễ dán vào AI nhất vì nó rất hữu ích để tổng hợp.
   - Vì sao phải cẩn thận: dữ liệu đã dán vào có thể bị lưu hoặc dùng để train, và gần như không thu hồi được. Nó cũng có thể vi phạm quy định dữ liệu của công ty và Luật Bảo vệ dữ liệu cá nhân, có hiệu lực từ 01/01/2026.
   - Ba thời điểm cần dừng lại:
     - Trước khi dán bất kỳ tài liệu nào vào công cụ AI: kiểm tra chính sách AI của công ty và phân loại tài liệu. Chưa có chính sách thì hỏi; còn phân vân thì đừng dán
-    - Ẩn danh trước khi AI nhìn thấy quote: thay tên bằng P1, P2, bỏ công ty, số điện thoại và email. Làm bằng find and replace trên máy bạn, không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi
+    - Ẩn danh trước khi AI nhìn thấy quote: thay tên bằng P1, P2, bỏ công ty, số điện thoại và email. Làm bằng find and replace trên máy chúng ta, không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi
     - Trước khi kết nối connector: connector đọc được file trong folder, nên chỉ nối phần cần thiết và giữ file confidential ở ngoài folder
   - ----
   - Nếu còn tgian
-  - Thay tên bằng P1, P2 chưa phải là ẩn danh: bạn vẫn giữ một bảng ghi P1 là ai, nên đó vẫn là dữ liệu cá nhân, và bảng này phải để ngoài vùng AI đọc. Vai trò, tuổi, nơi ở hay thời điểm cũng đủ để nhận ra một người. Ví dụ "giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề" không có tên nhưng người trong ngành vẫn đoán ra được, nên bạn bỏ chi tiết đó hoặc nói chung hơn, như "một PM ở thành phố lớn"
+  - Thay tên bằng P1, P2 chưa phải là ẩn danh: chúng ta vẫn giữ một bảng ghi P1 là ai, nên đó vẫn là dữ liệu cá nhân, và bảng này phải để ngoài vùng AI đọc. Vai trò, tuổi, nơi ở hay thời điểm cũng đủ để nhận ra một người. Ví dụ "giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề" không có tên nhưng người trong ngành vẫn đoán ra được, nên chúng ta bỏ chi tiết đó hoặc nói chung hơn, như "một PM ở thành phố lớn".
   - Dữ liệu gốc cần ẩn danh nằm trong _raw-private/: không lên GitHub, file luật bảo tool không đọc. Đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder. Liên hệ với slide repo ban nãy: file nào không đưa lên repo thì cũng không nên để trong folder mà agent đọc.
   - Output AI có được dùng cho công việc với client hay không, và ai sở hữu, tuỳ công ty và quốc gia; ghi trong project log chỗ nào đã dùng AI.
-  - Bạn viết data rules của riêng mình ở bài tập về nhà; đến lúc đó đừng dán tài liệu thật vào công cụ AI. Nhắc đọc trang data controls của tool đang dùng; điều khoản đổi thường xuyên.
+  - Chúng ta viết data rules của riêng mình ở bài tập về nhà; đến lúc đó đừng dán tài liệu thật vào công cụ AI. Nhắc đọc trang data controls của tool đang dùng; điều khoản đổi thường xuyên.
 - 🎨 Visual hint: Title bên trái, khung icon khiên bên phải; bên dưới ba cột What, Why, When có đường kẻ đậm và gạch đầu dòng tím.
 
 ---
@@ -1447,18 +1539,18 @@ last_synced: 2026-11-26
 - Ví dụ: Năm 2023, Samsung cấm công cụ AI công cộng sau khi một số kỹ sư dán mã nguồn nội bộ vào chatbot (tin báo chí).
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói ba nhóm dữ liệu cần cẩn thận và ba lúc cần dừng lại. Slide này trả lời: nếu công ty hạn chế AI, bạn làm gì
+  - Slide trước nói ba nhóm dữ liệu cần cẩn thận và ba lúc cần dừng lại. Slide này trả lời: nếu công ty hạn chế AI, chúng ta làm gì.
   - Công ty hạn chế AI thường ở một trong ba mức:
-    - Cấm hẳn: công ty cấm công cụ AI công cộng và chưa có công cụ thay thế. Bạn học kỹ năng trên project mẫu và soạn đề xuất xin duyệt
-    - Có công cụ được duyệt: bạn chỉ dùng công cụ đó, với loại dữ liệu được phép
+    - Cấm hẳn: công ty cấm công cụ AI công cộng và chưa có công cụ thay thế. Chúng ta học kỹ năng trên project mẫu và soạn đề xuất xin duyệt
+    - Có công cụ được duyệt: chúng ta chỉ dùng công cụ đó, với loại dữ liệu được phép
     - Có phân quyền: AI chỉ đọc những tài liệu mà người hỏi đã được xem
-  - Năm 2023, Samsung cấm công cụ AI công cộng sau khi một số kỹ sư dán mã nguồn nội bộ vào chatbot, rồi nhiều công ty đưa công cụ dành cho doanh nghiệp vào thay thế. Đây là tin báo chí, chính sách hiện tại của họ có thể đã khác
-  - Bạn hỏi security ba câu: dữ liệu lưu ở đâu, lưu bao lâu, và có dùng để train không. Nhiều công ty cũng không cho công cụ, agent hay skill tự cập nhật, vì skill, plugin hay connector có thể đổi nội dung sau khi đã được duyệt. Nếu công ty bạn như vậy:
+  - Năm 2023, Samsung cấm công cụ AI công cộng sau khi một số kỹ sư dán mã nguồn nội bộ vào chatbot, rồi nhiều công ty đưa công cụ dành cho doanh nghiệp vào thay thế. Đây là tin báo chí, chính sách hiện tại của họ có thể đã khác.
+  - Chúng ta hỏi security ba câu: dữ liệu lưu ở đâu, lưu bao lâu, và có dùng để train không. Nhiều công ty cũng không cho công cụ, agent hay skill tự cập nhật, vì skill, plugin hay connector có thể đổi nội dung sau khi đã được duyệt. Nếu công ty chúng ta như vậy:
     - Gọi agent bằng tay khi cần
     - Cập nhật bằng tay: đọc phần thay đổi, thử trên project mẫu rồi mới dùng cho việc thật
     - Hỏi IT ba câu: dùng bản ổn định hay mới nhất, có khoá phiên bản không, skill và connector lấy từ đâu
-  - (tuỳ chọn) Slide này có thể bỏ nếu trễ giờ. Chi tiết nằm trong tài liệu đọc thêm "Data safety khi công ty siết bảo mật"
-  > Công ty bạn đang ở mức nào?
+  - (tuỳ chọn) Slide này có thể bỏ nếu trễ giờ. Chi tiết nằm trong tài liệu đọc thêm "Data safety khi công ty siết bảo mật".
+  - Câu hỏi cho lớp: Công ty chúng ta đang ở mức nào?
 - 🎨 Visual hint: Ba card nền trắng viền đen, mỗi card có minh hoạ line-art (ba ô xếp bậc Cấm hẳn, Được duyệt, Phân quyền; ba dòng có dấu hỏi; ba bước Đọc, Thử, Dùng nối bằng mũi tên), số tím, tiêu đề đậm và một câu mô tả.
 
 ---
@@ -1479,9 +1571,8 @@ last_synced: 2026-11-26
   - Câu nào cần số liệu hoặc cần nghĩ thêm: trả lời ngắn và hẹn trả lời bằng văn bản sau buổi
   - Nếu hỏi đáp kết thúc sớm: để designer hỏi về hướng đi nghề nghiệp, và ai cần giúp cài công cụ AI thì ở lại làm cùng
   - Tám phút; sau đó là Practice 1 ở nhà và lời kết (sáu phút). Nếu còn thời gian thì nhắc lại bước 1 và 2 của chuỗi Practice 1
-
-  > Designer sẽ giải thích lại thuật ngữ nào theo cách khác, hoặc chạy stage nào với AI theo cách khác?
-- 🎨 Visual hint: Nửa trái nền vàng chỉ có chữ Q&A; nửa phải ba card dọc có icon: Nội dung hôm nay, Hướng đi nghề nghiệp của design, Khoá học.
+  - Câu hỏi cho lớp: Designer sẽ giải thích lại thuật ngữ nào theo cách khác, hoặc chạy stage nào với AI theo cách khác?
+- 🎨 Visual hint: Nửa trái nền tím chỉ có chữ Q&A trắng; nửa phải ba card dọc có icon: Nội dung hôm nay, Hướng đi nghề nghiệp của design, Khoá học.
 
 ---
 
@@ -1489,9 +1580,11 @@ last_synced: 2026-11-26
 - Kicker: Practice
 - Title: Folder,\n*hub đầu tiên*
 - On-slide:
+  - Dựng project folder
   - Thiết lập local project folder
   - Thêm product context liên quan
   - Để AI soạn README và AGENTS.md
+  - Push lên Git và bật trang live
   - Tạo repository trên Git cho folder
   - Push folder lên repository
   - Set repository live với sharable link
@@ -1499,12 +1592,12 @@ last_synced: 2026-11-26
 - Ví dụ: Sáu bước làm ở nhà: tạo repo và project folder, viết data rules, viết product context, để AI soạn README và AGENTS.md, chạy một instruction, tuỳ chọn push lên Git.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Practice 1 là chuỗi sáu bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo). Slide này khoảng ba phút rưỡi. Mình chiếu luôn slide tham khảo "Six steps" ở Appendix, vì đây là lần duy nhất bạn thấy đủ sáu bước.
+  - Practice 1 là chuỗi sáu bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo). Slide này khoảng ba phút rưỡi. Mình chiếu luôn slide tham khảo "Six steps" ở Appendix, vì đây là lần duy nhất chúng ta thấy đủ sáu bước.
   - Sáu bước nằm ở phần Practice 1 reference sau slide END: tạo repo và project folder, viết data rules, viết product context, để AI soạn README cho folder, chạy một instruction với file đã lưu, và tuỳ chọn push lên Git rồi bật trang live.
-  - Bạn nên làm xong trước buổi practice trên lớp, vì các buổi sau làm trên chính folder này. Đầu ra là một folder đã có context. Hai bước Git và trang live không bắt buộc.
+  - Chúng ta nên làm xong trước buổi practice trên lớp, vì các buổi sau làm trên chính folder này. Đầu ra là một folder đã có context. Hai bước Git và trang live không bắt buộc.
   - Chưa dán tài liệu thật của project vào công cụ AI trước khi viết data rules. Ai chưa viết xong Activity thì dùng project mẫu để thử.
-  - Ở buổi practice trên lớp, bạn làm tiếp phần chưa xong nếu còn thời gian, rồi mình chấm. Cách chấm mình chưa quyết, sẽ báo sau.
-  - Đây là folder dự án của bạn, không phải bài nộp. Nhắc mọi người tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có.
+  - Ở buổi practice trên lớp, chúng ta làm tiếp phần chưa xong nếu còn thời gian, rồi mình chấm. Cách chấm mình chưa quyết, sẽ báo sau.
+  - Đây là folder dự án của chúng ta, không phải bài nộp. Nhắc mọi người tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có.
 - 🎨 Visual hint: Hai card cạnh nhau, mỗi card có icon, tiêu đề lớn và các dòng bắt đầu bằng chấm tím: "Dựng project folder" và "Push lên Git và bật trang live".
 
 ---
@@ -1559,8 +1652,7 @@ last_synced: 2026-11-26
     - Agent tốt nhất tự hoàn thành khoảng 2,5% dự án freelance thật khi ra mắt (2025). Các cập nhật sau đó cao hơn nhiều (bảng xếp hạng 22/10/2026: trên 21%)
   - Với tổng hợp nghiên cứu UX bằng AI: phiên âm hữu ích nhưng cần kiểm lại, còn phần code và nhóm dữ liệu do AI tạo chỉ là bản đầu (NN/g).
   - Đây là bằng chứng từ nghiên cứu và benchmark, và nó đổi theo từng phiên bản mô hình. Đừng nói "AI luôn yếu" hay "AI luôn mạnh". Slide này khoảng hai phút.
-
-  > Việc nào bạn đang giao cho AI mà thật ra là một chuỗi dài nhiều bước?
+  - Câu hỏi cho lớp: Việc nào chúng ta đang giao cho AI mà thật ra là một chuỗi dài nhiều bước?
 - 🎨 Visual hint: Hai card: trái nền trắng "AI làm tốt", phải nền tối "AI còn yếu"; mỗi card có icon, một câu mô tả và ba dòng tick.
 
 ---
@@ -1592,7 +1684,7 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Mỗi opportunity, hypothesis, decision, principle check, test và metric có một ID ngắn (O1, H1, D1, P1, T1, M1). Trong hub, mỗi ID link tới nơi định nghĩa nó và mọi chỗ nhắc tới nó.
-  - Mũi tên hai chiều nghĩa là từ một decision, bạn đi ngược ra user need và đi xuôi ra test và metric.
+  - Mũi tên hai chiều nghĩa là từ một decision, chúng ta đi ngược ra user need và đi xuôi ra test và metric.
   - Đây là điểm làm nên hub: cross-link. Không có chúng thì hub chỉ là một thư mục báo cáo.
   - Ví dụ Delivery App trên slide do mình viết để minh hoạ, không phải dữ liệu thật. Principle check (P1...) không vẽ trên slide cho gọn, mình nhắc miệng.
 - 🎨 Visual hint: Một hàng sáu ô nối bằng mũi tên hai chiều, ô Decision nền tím; mỗi ô có chú thích nhỏ bên dưới.
@@ -1638,16 +1730,15 @@ last_synced: 2026-11-26
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần HTML ở trước nói cách dựng một file HTML từ markdown. Slide này trả lời: khi nhiều người cần xem hub, có những cách nào
+  - Phần HTML ở trước nói cách dựng một file HTML từ markdown. Slide này trả lời: khi nhiều người cần xem hub, có những cách nào?
   - Trình duyệt chỉ hiện file .md như chữ thường, nên cách nào cũng cần một bước chuyển markdown sang HTML. Bốn cách:
-    - Script của chương trình hoặc Pandoc: chạy trên máy bạn, ra một file HTML gửi được qua email hoặc chat. Đây là cách chương trình dùng
+    - Script của chương trình hoặc Pandoc: chạy trên máy chúng ta, ra một file HTML gửi được qua email hoặc chat. Đây là cách chương trình dùng
     - MkDocs, Docusaurus, Quartz: đọc cả folder, ra một site có menu và tìm kiếm. Các team kỹ thuật hay dùng khi tài liệu lớn lên, ví dụ Backstage TechDocs của Spotify dùng MkDocs
     - GitHub Pages, Notion, Confluence: nền tảng tự hiển thị, hợp khi team đã dùng sẵn
     - Obsidian Publish: dịch vụ trả phí, hợp với ghi chú viết trong Obsidian
-  - Chọn cách nào, hỏi trước: ai xem được. Site GitHub Pages có thể công khai dù repository là private. Bản publish chỉ nên chứa dữ liệu đã ẩn danh và được phép chia sẻ
-  - Nguồn là tìm kiếm web, chưa có số liệu mức độ phổ biến của từng cách trong các công ty, nên đây là các lựa chọn hay gặp, chưa phải xếp hạng
-
-  > Ở chỗ bạn làm, người khác thường xem tài liệu ở đâu?
+  - Chọn cách nào, hỏi trước: ai xem được. Site GitHub Pages có thể công khai dù repository là private. Bản publish chỉ nên chứa dữ liệu đã ẩn danh và được phép chia sẻ.
+  - Nguồn là tìm kiếm web, chưa có số liệu mức độ phổ biến của từng cách trong các công ty, nên đây là các lựa chọn hay gặp, chưa phải xếp hạng.
+  - Câu hỏi cho lớp: Ở chỗ chúng ta làm, người khác thường xem tài liệu ở đâu?
 - 🎨 Visual hint: Bảng dạng hàng như slide Nguồn của Lesson 2, hàng đầu nền tối (cách chương trình dùng); một thanh nền vàng bên dưới cho câu chốt. Nằm trong Appendix, sau slide Hub lớn dần.
 
 ---
@@ -1671,8 +1762,7 @@ last_synced: 2026-11-26
   - Nối với demo vừa rồi: project mẫu là context. Câu "chỉ dùng project mẫu" là grounding. Còn lời khuyên rất tự tin của bản mơ hồ là ví dụ của hallucination.
   - AI-assisted và AI-generated mình đã nói ở đầu buổi, qua slide "AI drafts. You verify. You decide."
   - Slide này khoảng một phút, hai slide tiếp theo khoảng ba phút rưỡi.
-
-  > Trong demo, cái nào là thứ designer đưa cho AI, cái nào là điều AI tự thêm vào?
+  - Câu hỏi cho lớp: Trong demo, cái nào là thứ designer đưa cho AI, cái nào là điều AI tự thêm vào?
 - 🎨 Visual hint: Lưới 2x2 bốn card nền trắng: Context, Grounding, Hallucination, AI-assisted; mỗi card có icon, tên, một câu định nghĩa và một ví dụ ở đáy.
 
 ---
@@ -1680,19 +1770,22 @@ last_synced: 2026-11-26
 ### IMAGE · The bottleneck moves
 - Kicker: Trước và sau AI
 - Title: Khi AI làm nhanh hơn,\n*điểm nghẽn chuyển đi đâu?*
-- On-slide: AI nới implementation ra, còn verification vẫn hẹp.
+- On-slide:
+  - Trước AI
+  - Nút thắt nằm ở implementation, nên việc làm ra sản phẩm tốn thời gian.
+  - Sau AI
+  - Implementation được nới ra, nhưng verification vẫn là ống hẹp nên việc chưa kiểm tra dồn lại ở đó.
 - Ví dụ: AI cho mười hướng thiết kế trong vài phút, còn chọn hướng đúng và kiểm tra với người dùng thật vẫn tốn thời gian như trước.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Đây là hình minh hoạ từ cộng đồng, không phải số liệu. Nói rõ với lớp và đừng trình bày như một phát hiện nghiên cứu.
   - Hình trên là trước AI: nút thắt nằm ở implementation. Dòng ý tưởng bị siết lại ở đó, nên làm ra sản phẩm tốn thời gian.
   - Hình dưới là sau AI: implementation được nới ra, ý tưởng đi vào nhiều hơn và nhanh hơn. Nhưng verification vẫn là một ống hẹp, nên phần việc chưa kiểm tra dồn lại ở đó.
-  - Với designer thì dễ hình dung: AI cho bạn mười hướng thiết kế trong vài phút, còn việc chọn hướng nào đúng và kiểm tra nó với người dùng thật vẫn tốn thời gian như trước. Bước kiểm tra là nơi giá trị của designer nằm.
+  - Với designer thì dễ hình dung: AI cho chúng ta mười hướng thiết kế trong vài phút, còn việc chọn hướng nào đúng và kiểm tra nó với người dùng thật vẫn tốn thời gian như trước. Bước kiểm tra là nơi giá trị của designer nằm.
   - Khung lý thuyết đứng sau hình là Theory of Constraints: hiệu suất của cả hệ thống bị giới hạn bởi điểm nghẽn, và khi gỡ một điểm nghẽn thì nó dịch sang chỗ khác. Đây là lý thuyết nền chung, chưa có nguồn nào đo trực tiếp ở công việc design. Việc áp vào design là suy luận của mình, và [to confirm] nguồn gốc (Goldratt, The Goal, 1984) trước khi dạy.
   - Nguồn hình: ảnh lưu truyền trên mạng, chưa truy ra tác giả [to confirm]. Xác nhận nguồn trước khi đưa deck lên site công khai.
   - Slide này khoảng một phút rưỡi.
-
-  > Trong công việc của designer, phần nào đang được AI làm nhanh hơn, và ai đang kiểm tra phần đó?
+  - Câu hỏi cho lớp: Trong công việc của designer, phần nào đang được AI làm nhanh hơn, và ai đang kiểm tra phần đó?
 - 🎨 Visual hint: Hai ảnh minh hoạ cạnh nhau (Software before AI và Software after AI, hình phễu thắt cổ chai), mỗi ảnh có nhãn Trước AI, Sau AI và một câu.
 
 ---
@@ -1738,17 +1831,16 @@ last_synced: 2026-11-26
 - Ví dụ: Ai đang giữ repo của team bạn? Đó là người nên làm quen.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide này để lớp yên tâm: bạn chỉ cần biết đủ để đọc và trao đổi, không cần trở thành developer. Mình thấy đây là slide quan trọng nhất của phần GitHub.
+  - Slide này để lớp yên tâm: chúng ta chỉ cần biết đủ để đọc và trao đổi, không cần trở thành developer. Mình thấy đây là slide quan trọng nhất của phần GitHub.
   - Cần biết:
     - Repo là folder của project, nằm trên GitHub sau khi push
-    - Commit là một lần chốt, và bạn đọc được lịch sử để biết ai đổi gì
+    - Commit là một lần chốt, và chúng ta đọc được lịch sử để biết ai đổi gì
     - Pull request là chỗ review output của AI
     - Đọc được README.md và AGENTS.md
-  - Chưa cần biết: gõ lệnh terminal, giải xung đột khi ghép branch, quản lý nhiều branch phức tạp. Công cụ AI hoặc developer làm giúp bạn phần này.
-  - Nếu bạn đang nghĩ "mình không phải dev": việc của designer ở đây là đọc, review và quyết định.
+  - Chưa cần biết: gõ lệnh terminal, giải xung đột khi ghép branch, quản lý nhiều branch phức tạp. Công cụ AI hoặc developer làm giúp chúng ta phần này.
+  - Nếu chúng ta đang nghĩ "mình không phải dev": việc của designer ở đây là đọc, review và quyết định.
   - Đây cũng là điểm nối sang phần tiếp theo.
-
-  > Trong công việc hiện tại, ai đang giữ repo của team bạn? Đó là người nên làm quen, vì hỏi họ sẽ học nhanh hơn đọc tài liệu.
+  - Câu hỏi cho lớp: Trong công việc hiện tại, ai đang giữ repo của team chúng ta? Đó là người nên làm quen, vì hỏi họ sẽ học nhanh hơn đọc tài liệu.
 - 🎨 Visual hint: Hai card: trái nền tối "Cần biết" với icon tick vàng, phải nền trắng "Chưa cần biết" với icon gạch ngang; mỗi card bốn dòng.
 
 ---
@@ -1771,11 +1863,11 @@ last_synced: 2026-11-26
 - Speaker notes:
   - Có ba lý do AI hay đi cùng GitHub.
   - Một, công cụ AI làm việc trên folder: agent đọc và sửa file ngay trong repo, và GitHub là nơi folder đó thường nằm.
-  - Hai, lịch sử thay đổi giúp bạn yên tâm. AI có sửa mạnh tay thì vẫn quay lại được. Nối lại slide "Trông đã xong. Có đúng không?".
+  - Hai, lịch sử thay đổi giúp chúng ta yên tâm. AI có sửa mạnh tay thì vẫn quay lại được. Nối lại slide "Trông đã xong. Có đúng không?".
   - Ba, nhiều công cụ AI dùng GitHub làm điểm chung, nên một repo mở được ở nhiều công cụ và đổi công cụ không phải làm lại từ đầu.
   - Đây là thực tế phổ biến chứ không phải luật bắt buộc, và nó đổi theo công cụ. Đừng nói "AI chỉ chạy được với GitHub".
-
-  > Bạn từng sợ AI sửa hỏng bản đang có chưa? Lịch sử thay đổi giải đúng nỗi sợ đó.
+  - Câu hỏi tiếp theo: khi agent mở một repo, nó đọc gì đầu tiên?
+  - Câu hỏi cho lớp: Chúng ta từng sợ AI sửa hỏng bản đang có chưa? Lịch sử thay đổi giải đúng nỗi sợ đó.
 - 🎨 Visual hint: Ba card cạnh nhau, mỗi card có icon, tiêu đề đậm và hai dòng ngắn.
 
 ---
