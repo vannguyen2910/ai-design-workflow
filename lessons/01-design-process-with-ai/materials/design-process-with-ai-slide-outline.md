@@ -6,7 +6,7 @@ slide_count: 66
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
-last_synced: 2026-11-25
+last_synced: 2026-11-26
 ---
 
 ## Session metadata
@@ -1549,7 +1549,7 @@ last_synced: 2026-11-25
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Quay lại bảng ice breaker: ý nào ở cột "bất ngờ" và cột "bực" khớp với hai cột của slide này?
-  - Slide này cho biết giới hạn của câu trả lời cho câu hỏi "AI giúp được ở đâu" ở bốn stage vừa rồi (lesson mục 3.4, nguồn [13] đến [19]).
+  - Slide này cho biết AI làm tốt và còn hạn chế ở loại việc nào (nguồn [13] đến [19]).
   - Bên trái có số đo:
     - Thời gian viết giảm khoảng 40% (453 người, 2023)
     - Task nằm trong khả năng của mô hình nhanh hơn khoảng 25% (758 consultant, 2023)
@@ -1894,7 +1894,7 @@ last_synced: 2026-11-25
 - On-slide:
   - Trái, mơ hồ: "Làm sao để cải thiện onboarding cho app giao đồ ăn của tôi?"
   - Phải, có cấu trúc (đính kèm project mẫu): "Chỉ dùng project mẫu. Liệt kê năm điều cần biết mà KHÔNG có trong đó. Không đoán. Nói 'unknown'. Chỉ trả về danh sách."
-- Ví dụ: có (app giao đồ ăn: hai instruction trên cùng một project mẫu, lesson mục 2.2)
+- Ví dụ: có (app giao đồ ăn: hai instruction trên cùng một project mẫu, lesson mục 1.2)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Project mẫu: một app giao đồ ăn hư cấu mà nhiều khách mới không đặt lại sau đơn đầu tiên; nghi ngờ do giá; chưa có research

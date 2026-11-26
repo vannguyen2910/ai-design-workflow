@@ -1,16 +1,16 @@
 ---
 title: "AI Design Workflow: Giới thiệu chương trình"
 lesson_file: "program-intro-lesson.md"
-slide_count: 13
+slide_count: 19
 duration: "khoảng 12 phút (ước lượng từ ghi chú từng slide), chiếu trong buổi 1, trước Lesson 1 và ice breaker"
 status: draft
 built_deck: ""
-last_synced: 2026-11-25
+last_synced: 2026-11-26
 ---
 
 ## Cách dùng
 
-Mười ba slide; thời lượng ước ghi trong speaker notes của từng slide. Bộ slide nói chương trình giải quyết vấn đề gì, AI đang đổi nghề ra sao, dành cho ai, sáu tuần đi qua những gì, mỗi tuần chạy thế nào và tiến bộ được nhìn thấy ra sao. Ai muốn đọc thêm thì xem landing page, nên slide không nhắc học phí hay lịch khai giảng.
+Mười chín slide; thời lượng ước ghi trong speaker notes của từng slide. Bộ slide nói chương trình giải quyết vấn đề gì, AI đang đổi nghề ra sao, dành cho ai, sáu tuần đi qua những gì, mỗi tuần chạy thế nào và tiến bộ được nhìn thấy ra sao. Ai muốn đọc thêm thì xem landing page, nên slide không nhắc học phí hay lịch khai giảng.
 
 Phần UI/UX (số liệu, ba hướng nghề và “trông có vẻ xong”) nằm ở intro, ngay sau phần Dành cho ai. Slide “Làm theo brief hay cùng định hình vấn đề?” nằm cuối deck như slide phụ. Slide Double Diamond đã bỏ khỏi deck intro. Hai slide Context and grounding và Hallucination nằm ở đầu mục 1 của Lesson 1, vì đó là phần nói về giới hạn của AI, đứng trước phần file và folder.
 
@@ -24,6 +24,7 @@ Intro trả lời “chương trình này để làm gì, vì sao cần nó và 
 
 ### NUMBERED · Vấn đề và mục tiêu
 - Title: Vấn đề và *mục tiêu*
+- Slide hai câu hỏi trên deck: kicker “Hai câu hỏi”, title “Trước khi *bắt đầu*”
 - Items:
   - Vấn đề: Bạn dùng AI cho từng việc nhỏ, và mỗi lần lại bắt đầu từ đầu.
   - Vấn đề: Kết quả của AI trông đã xong, nhưng khó chỉ ra nó dựa trên gì.
@@ -37,7 +38,7 @@ Intro trả lời “chương trình này để làm gì, vì sao cần nó và 
   - Mission là việc chương trình làm trong sáu tuần: nối các lần dùng AI thành một workflow đi từ business question đến prototype đã test
   - Vision là điều mình mong ở bạn sau đó: dùng AI thoải mái mà vẫn nói được mỗi quyết định đến từ đâu
   - Slide này chưa dẫn số liệu, vì phần UI/UX ngay sau sẽ nói về số liệu
-- 🎨 Visual hint: Hai slide, mỗi slide hai card cùng cấp có line-art ở trên. Câu hỏi: vòng mũi tên quanh khung chat (bắt đầu lại), kính lúp soi tài liệu (truy nguồn). Mission và Vision: chuỗi bước nối nhau có đường quay lại, tấm khiên có dấu tích.
+- 🎨 Visual hint: Hai slide, mỗi slide hai card cùng cấp có line-art ở trên. Slide câu hỏi nền đen, card trắng, tiêu đề trắng với phần nhấn tím nhạt. Slide Mission và Vision nền trắng, vì hai slide nền đậm (đen, tím) không đứng liền nhau. Câu hỏi: vòng mũi tên quanh khung chat (bắt đầu lại), kính lúp soi tài liệu (truy nguồn). Mission và Vision: chuỗi bước nối nhau có đường quay lại, tấm khiên có dấu tích.
 
 ---
 
@@ -103,7 +104,7 @@ Intro trả lời “chương trình này để làm gì, vì sao cần nó và 
   - Chương trình dạy cách vận hành một workflow có AI. Chương trình không dạy mẹo viết prompt, không gắn với một công cụ cụ thể và không dạy thiết kế sản phẩm có AI bên trong
   - Nếu lớp có PO, PM hoặc BA thì mọi người cùng học một workflow, chỉ khác là không cần dựng prototype từ đầu
   - Vì sao cần một workflow sẽ được nói ngay ở phần UI/UX sau slide này
-- 🎨 Visual hint: Nền vàng, line-art ba người đứng cạnh nhau ở trên, rồi tiêu đề và một câu lớn căn giữa.
+- 🎨 Visual hint: Nền tím, line-art ba người đứng cạnh nhau ở trên, rồi tiêu đề và một câu lớn căn giữa; chữ và line-art trắng. Slide đang ẩn trong deck.
 
 ---
 
@@ -133,10 +134,11 @@ Intro trả lời “chương trình này để làm gì, vì sao cần nó và 
   - designer dùng AI mỗi tuần, từ 54% một năm trước
   - Khảo sát hơn 900 designer, 2026
   - Entry level
-  - Entry level khan hiếm, senior phục hồi nhanh hơn khi AI phát triển
+  - khan hiếm, trong khi senior phục hồi nhanh hơn khi AI phát triển
   - NN/g, 2026
   - 1/2
   - số designer được khảo sát đã đưa code do AI tạo lên production
+  - Khảo sát hơn 900 designer, 2026
 - Ví dụ: Một ngày làm việc bắt đầu bằng một brief: AI dựng màn hình trong vài phút, còn lại là kiểm tra màn hình có giải đúng vấn đề khách tạm dừng hay không.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -146,7 +148,7 @@ Intro trả lời “chương trình này để làm gì, vì sao cần nó và 
   - Nếu có người hỏi về số việc làm: BLS dự báo web và digital interface designer +7,0% (2024 đến 2034) và nói AI “may soften” mức tăng ở bảng 2025 đến 2035. Hai bảng dùng cách gộp khác nhau nên đừng so trực tiếp (xem mục 1.1 trong bài học).
   - Giới hạn: chưa có nguồn nào cho thị trường Việt Nam ở cấp designer.
   - Slide này khoảng một phút rưỡi.
-- 🎨 Visual hint: Ba card cạnh nhau: card đầu và cuối nền trắng với con số tím lớn, card giữa nền tối chữ trắng; nguồn là dòng mono xám ở đáy mỗi card.
+- 🎨 Visual hint: Ba card trắng cùng cấp: con số hoặc nhãn tím lớn cùng cỡ ở trên, một câu tiếp theo, nguồn là dòng mono xám ở đáy với đường kẻ thẳng hàng.
 
 ---
 
@@ -221,19 +223,140 @@ Intro trả lời “chương trình này để làm gì, vì sao cần nó và 
 
 ---
 
-### DIAGRAM · Lộ trình sáu tuần
-- Title: Lộ trình *sáu tuần*
-- Rows:
-  - Tuần 1: Project folder, quy tắc dữ liệu và hướng đi nghề nghiệp của bạn.
-  - Tuần 2: Bộ nguyên tắc để AI đối chiếu, và các file đặt câu hỏi ngược lại cho brief.
-  - Tuần 3: Insight, persona, journey map và opportunity truy được về nguồn, cùng một problem brief.
-  - Tuần 4: Giả thuyết kiểm chứng được, ba hướng khác nhau và một hướng được chọn.
-  - Tuần 5: Prototype dựng bằng AI theo design system của bạn.
-  - Tuần 6: Kết quả test với người dùng thật, prototype đã sửa và bài trình bày project.
+### LIST · Tuần 1
+- Kicker: Tuần 1
+- Title: Your design process,\n*with AI*
+- On-slide:
+  - Hiểu context, grounding và hallucination để biết vì sao cần kiểm tra câu trả lời của AI
+  - Chuẩn bị project folder, file markdown và rules file cho AI làm việc
+  - Phân biệt skill, connector và agent, rồi phác thảo một đội AI cho product design
+  - Hiểu ba lớp của hub, viết bản data rules đầu tiên và publish qua GitHub khi được phép
 - Speaker notes:
-  - Ở slide này mình chỉ đọc tên tuần và thứ bạn mang về, chứ không giải thích từng khái niệm. Chi tiết nằm ở landing page
-  - Tuần 6 có nhịp khác: bạn test với người dùng thật trong một ngày, rồi buổi cuối là reflection và wrap-up
-- 🎨 Visual hint: Sáu card cùng cấp, hai hàng ba. Mỗi card có icon line-art nhỏ bên phải nhãn tuần (thư mục, kính lúp, sticky note, sơ đồ nhánh, màn hình điện thoại, hai người và dấu tích).
+  - Tuần đầu tiên chúng ta chuẩn bị nền tảng. Trước khi giao việc cho AI, chúng ta cần biết AI có thể sai ở đâu và cần được cung cấp những gì.
+  - Chúng ta đi qua bốn ý theo thứ tự:
+    - Đầu tiên là context, grounding và hallucination. Hiểu ba khái niệm này, bạn sẽ thấy vì sao không nên tin ngay câu trả lời của AI
+    - Tiếp theo, bạn chuẩn bị project folder, file markdown và rules file để AI đọc được bối cảnh của project
+    - Sau đó bạn phân biệt skill, connector và agent, rồi dùng chúng để phác thảo một đội AI cho product design
+    - Cuối cùng là hub. Bạn tìm hiểu ba lớp của hub, viết bản data rules đầu tiên và chỉ publish qua GitHub khi dữ liệu được phép công khai
+- 🎨 Visual hint: Hai cột căn giữa theo chiều cao slide. Trái: “Tuần 1” màu đen, title, line-art (thư mục project và file quy tắc). Phải: bốn dòng có dấu tích, ngăn bằng đường kẻ mảnh. Mỗi click hiện một dòng.
+
+---
+
+### LIST · Tuần 2
+- Kicker: Tuần 2
+- Title: Discover\n*the problem*
+- On-slide:
+  - Gom tài liệu team đã có thành context library để AI đọc
+  - Viết design principle riêng trước, để AI đối chiếu theo chuẩn của bạn
+  - Đưa brief cho AI để nó đề xuất scope, assumption và research question
+  - Nhờ AI soạn câu hỏi phỏng vấn và evidence note, rồi kiểm tra từng quote
+- Speaker notes:
+  - Có nền tảng rồi, tuần 2 chúng ta quay về vấn đề: team đã biết gì và còn đang giả định điều gì.
+  - Chúng ta đi qua bốn ý theo thứ tự:
+    - Trước hết bạn gom tài liệu team đã có, như PRD, ticket hay research cũ, vào context library để AI đọc
+    - Sau đó bạn viết design principle riêng cho sản phẩm. Chuẩn này cần có trước khi AI chạy
+    - Với Break the brief, AI đề xuất scope, assumption và research question từ brief. Phần của bạn là kiểm tra từng đề xuất
+    - Cuối cùng là phỏng vấn người dùng. AI soạn nháp câu hỏi, và sau buổi phỏng vấn nó có thể soạn evidence note từ transcript đã ẩn danh để bạn kiểm tra quote
+- 🎨 Visual hint: Hai cột căn giữa theo chiều cao slide. Trái: “Tuần 2” màu đen, title, line-art (kính lúp soi hai bong bóng hội thoại). Phải: bốn dòng có dấu tích, ngăn bằng đường kẻ mảnh. Mỗi click hiện một dòng.
+
+---
+
+### LIST · Tuần 3
+- Kicker: Tuần 3
+- Title: Insights\n*you can trust*
+- On-slide:
+  - Đưa evidence note cho AI synthesis, rồi kiểm tra từng insight với note gốc
+  - AI soạn persona và journey map từ insight, dòng nào cũng truy được về insight ID
+  - Nhờ AI viết opportunity theo user need, còn bạn chấm điểm và chọn
+  - Duyệt card AI đề xuất cho insight hub, và biết khi nào không nên dùng AI
+- Speaker notes:
+  - Tuần 3 chúng ta biến evidence note thành insight mà bạn truy được về nguồn.
+  - Chúng ta đi qua bốn ý theo thứ tự:
+    - Bạn tự viết decision cần đưa ra, rồi để AI synthesis từ evidence note. Insight nào AI trả về, bạn cũng mở note gốc để kiểm tra
+    - Từ insight đã kiểm tra, AI soạn persona và journey map. Dòng nào không truy được về insight ID thì ghi là assumption hoặc xoá
+    - AI viết opportunity dưới dạng user need. Việc chấm điểm và chọn là của bạn
+    - Cuối cùng AI đề xuất card cho insight hub và bạn duyệt. Chúng ta cũng bàn với bộ dữ liệu nào thì không nên dùng AI
+- 🎨 Visual hint: Hai cột căn giữa theo chiều cao slide. Trái: “Tuần 3” màu đen, title, line-art (ghi chú nguồn nối vào một insight đã kiểm tra). Phải: bốn dòng có dấu tích, ngăn bằng đường kẻ mảnh. Mỗi click hiện một dòng.
+
+---
+
+### LIST · Tuần 4
+- Kicker: Tuần 4
+- Title: Explore\n*ideas*
+- On-slide:
+  - Tự nghĩ solution trước, rồi để AI đề xuất thêm cho từng opportunity
+  - Phân biệt opportunity với solution, ý chưa gắn được vào map thì ghi hypothesis
+  - Tự vẽ concept sketch, rồi để AI đọc như người lạ và chỉ chỗ thiếu
+  - Để AI soạn flow narrative, kiểm tra xong mới dựng user flow và process map
+- Speaker notes:
+  - Chọn được vấn đề rồi, tuần 4 chúng ta chuyển sang lời giải.
+  - Chúng ta đi qua bốn ý theo thứ tự:
+    - Bạn tự nghĩ solution trước. Sau đó AI đề xuất thêm solution cho từng opportunity trên map
+    - Opportunity là khó khăn của người dùng, còn solution là cách giải. Đề xuất nào chưa gắn được với opportunity thì bạn ghi là hypothesis
+    - Concept sketch là phần bạn tự vẽ, kèm một câu “This works because...”. AI đọc sketch như một người lạ và nói nó hiểu gì, chỗ nào thiếu nhãn
+    - Với flow narrative, AI soạn nháp trước. Kiểm tra xong, bạn mới dựng user flow và process map. Khi quy trình đã đủ ổn, bạn có thể package nó thành skill
+- 🎨 Visual hint: Hai cột căn giữa theo chiều cao slide. Trái: “Tuần 4” màu đen, title, line-art (một cơ hội tách ba hướng, một hướng được chọn). Phải: bốn dòng có dấu tích, ngăn bằng đường kẻ mảnh. Mỗi click hiện một dòng.
+
+---
+
+### LIST · Tuần 5
+- Kicker: Tuần 5
+- Title: AI\n*prototyping*
+- On-slide:
+  - Hiểu vì sao cần Design Pattern trước khi để AI dựng màn hình
+  - Chuẩn bị token, component, shell và template để AI lắp ráp theo design system
+  - Dùng Rules, Skill và Hook để giữ AI đúng chuẩn, và nhận ra màn hình vi phạm
+  - Phân biệt One View với The Second View, và chọn cách chia sẻ prototype
+- Speaker notes:
+  - Tuần 5 bạn dựng prototype từ design system của bạn, thay vì để AI tự vẽ lại từng màn hình.
+  - Chúng ta đi qua bốn ý theo thứ tự:
+    - Nếu để AI dựng từng màn hình từ đầu, kết quả sẽ lệch dần. Vì vậy chúng ta cần có Design Pattern trước
+    - Bạn chuẩn bị bốn layer là token, component, shell và template, rồi xem design system của bạn còn thiếu layer nào. AI lắp ráp màn hình từ đó
+    - Rules, Skill và Hook giữ AI đúng chuẩn. Bạn cũng tập nhận ra màn hình nào AI dựng sai quy tắc
+    - Cuối cùng bạn phân biệt One View là nền chuẩn với The Second View là prototype thật, rồi chọn cách chia sẻ phù hợp
+- 🎨 Visual hint: Hai cột căn giữa theo chiều cao slide. Trái: “Tuần 5” màu đen, title, line-art (component ghép thành hai màn hình điện thoại). Phải: bốn dòng có dấu tích, ngăn bằng đường kẻ mảnh. Mỗi click hiện một dòng.
+
+---
+
+### LIST · Tuần 6
+- Kicker: Tuần 6
+- Title: Test with\n*real users*
+- On-slide:
+  - Đưa tiêu chí cho AI audit prototype, rồi bạn lọc finding và chấm severity
+  - Để AI đối chiếu accessibility checklist, bạn kiểm lại và làm phần AI không kiểm được
+  - Chuẩn bị usability test với người tham gia thật, không để AI đóng vai người dùng
+  - Nhờ AI gộp kết quả vào audit report và soạn ticket cho dev để bạn rà lại
+- Speaker notes:
+  - Tuần cuối chúng ta kiểm tra xem prototype AI dựng có dùng được với người thật không.
+  - Chúng ta đi qua bốn ý theo thứ tự:
+    - Bạn đưa màn hình và file tiêu chí cho AI, nó soạn bảng finding kèm evidence. Bạn lọc lại và chấm severity
+    - Với accessibility, AI đối chiếu từng màn theo checklist. Bạn kiểm lại các dòng fail và tự làm những dòng chỉ người mới kiểm được
+    - Khi chuẩn bị usability test, bạn tự tìm người tham gia thật và không để AI đóng vai người dùng
+    - Cuối cùng AI gộp kết quả test vào audit report và soạn ticket cho dev. Bạn rà lại rồi chuẩn bị gói handoff
+  - Tuần 6 có nhịp khác: bạn test với người dùng thật trong một ngày, còn buổi cuối dành cho reflection và wrap-up
+- 🎨 Visual hint: Hai cột căn giữa theo chiều cao slide. Trái: “Tuần 6” màu đen, title, line-art (người dùng thử màn hình điện thoại, có dấu tích). Phải: bốn dòng có dấu tích, ngăn bằng đường kẻ mảnh. Mỗi click hiện một dòng.
+
+---
+
+### CARDS · Công cụ
+- Kicker: Công cụ
+- Title: Chúng ta sẽ dùng *những gì*
+- On-slide:
+  - AI tools
+  - Claude, Cursor, Codex… giúp bạn soạn tài liệu và dựng file visual
+  - GitHub
+  - Lưu lịch sử thay đổi của project và publish hub thành live site
+  - Figma
+  - Nơi bạn làm việc với design file cùng AI
+- Speaker notes:
+  - Trước khi nói về nhịp học, đây là những công cụ chúng ta sẽ dùng trong sáu tuần.
+  - Ba nhóm theo thứ tự trên slide:
+    - AI tools: Claude, Cursor, Codex và những công cụ tương tự. Chúng ta dùng chúng để soạn tài liệu markdown và dựng các file visual, rồi bạn kiểm tra và quyết định
+    - GitHub: nơi lưu lịch sử thay đổi của project, và là chỗ chúng ta publish hub thành live site
+    - Figma: nơi bạn làm việc với design file, và dùng cùng công cụ AI khi cần
+  - Trước khi đưa tài liệu công ty vào bất kỳ công cụ nào, bạn kiểm tra data rules. Phần này chúng ta học ở tuần 1.
+  - Câu hỏi cho lớp: Công ty bạn đang cho phép dùng công cụ nào trong số này?
+- 🎨 Visual hint: Nền đen, tiêu đề trắng với phần nhấn tím nhạt. Ba card trắng cùng cấp, mỗi card có logo ở trên (file trong `assets/logos/`), tên nhóm công cụ và một câu. Mỗi click hiện một card.
 
 ---
 
@@ -244,11 +367,11 @@ Intro trả lời “chương trình này để làm gì, vì sao cần nó và 
   - Giữa hai buổi: tiếp tục làm trên project của bạn ở nhà.
   - Buổi practice: làm tiếp, được coach theo nhóm nhỏ và review chéo.
 - Speaker notes:
-  - Chương trình có 12 buổi trong sáu tuần, mỗi buổi 90 phút, học online trong lớp 7 đến 8 người
-  - Lớp nhỏ nên ai cũng được góp ý trên project của bạn
-  - Practice 1 là dựng project folder, làm ở nhà ngay sau buổi hôm nay; chi tiết nằm cuối Lesson 1
-  - Khối lượng việc ở nhà lấy theo con số trong Lesson 1, để hai phần không mâu thuẫn nhau
-- 🎨 Visual hint: Ba thẻ ngang nối bằng mũi tên, mỗi thẻ có số, icon line-art (quyển sách, laptop, hai người trao đổi) và một câu. Dòng nhỏ dưới cùng: 12 buổi · 6 tuần · 7 đến 8 người.
+  - Mỗi tuần bắt đầu bằng buổi theory: chúng ta học khái niệm và làm một activity ngắn
+  - Giữa hai buổi, bạn tiếp tục làm trên project của mình ở nhà. Practice 1 là dựng project folder, làm ngay sau buổi hôm nay; chi tiết nằm cuối Lesson 1. Khối lượng việc ở nhà lấy theo con số trong Lesson 1
+  - Buổi practice là lúc làm tiếp, được coach theo nhóm nhỏ và review chéo. Lớp nhỏ nên ai cũng được góp ý trên project của mình
+  - Vòng này lặp lại mỗi tuần: 12 buổi trong sáu tuần, mỗi buổi 90 phút, học online trong lớp 7 đến 8 người
+- 🎨 Visual hint: Ba thẻ ngang nối bằng mũi tên, mỗi thẻ có số, icon line-art (quyển sách, laptop, hai người trao đổi) và một câu. Dòng nhỏ dưới cùng: 12 buổi · 6 tuần. Hiện dần theo click: thẻ 1, mũi tên và thẻ 2, mũi tên và thẻ 3, rồi vòng lặp cùng dòng nhỏ.
 
 ---
 
@@ -257,7 +380,7 @@ Intro trả lời “chương trình này để làm gì, vì sao cần nó và 
 - Sub: Không có bài thi, tiến bộ của bạn nằm trong những gì bạn làm ra.
 - Items:
   - KNOW: bạn giải thích được khái niệm bằng lời của mình.
-  - DO: bạn có thêm một file trong project folder sau mỗi buổi.
+  - DO: bạn có thêm các files trong project folder sau mỗi buổi.
   - SHOW: bạn trình bày và nhận review chéo ở buổi practice và buổi cuối.
 - Speaker notes:
   - Mình không chấm việc bạn thuộc lòng khái niệm. Mình nhìn vào file bạn làm ra và cách bạn giải thích nó
