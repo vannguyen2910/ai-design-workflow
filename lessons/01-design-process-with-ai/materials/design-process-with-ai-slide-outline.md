@@ -1722,11 +1722,11 @@ last_synced: 2026-11-26
 - On-slide:
   - [Project brief](https://vannguyen2910.github.io/ai-design-workflow/project/brief/)
   - Đọc đề bài và xem mỗi tuần làm gì
-  - [Tài liệu nền](https://vannguyen2910.github.io/ai-design-workflow/project/topic-primer/)
+  - [Topic primer](https://vannguyen2910.github.io/ai-design-workflow/project/topic-primer/)
   - Hiểu bối cảnh và lấy câu hỏi để đi research
-  - [Template project folder](https://github.com/vannguyen2910/ai-design-workflow-template)
+  - [Project folder template](https://github.com/vannguyen2910/ai-design-workflow-template)
   - Dùng luôn hoặc sửa theo cách của bạn
-  - [Project mẫu Delivery App](https://github.com/vannguyen2910/ai-design-workflow/blob/main/assets/starter-files/course-case/case-card.md)
+  - [Sample project: Delivery App](https://github.com/vannguyen2910/ai-design-workflow/blob/main/assets/starter-files/course-case/case-card.md)
   - Xem bài làm mẫu khi bị kẹt hoặc lỡ một tuần
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
