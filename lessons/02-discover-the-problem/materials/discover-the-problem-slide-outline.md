@@ -177,6 +177,7 @@ last_synced: 2026-11-27
   - 03 · Cuộc gọi sales và CS: cho thấy điều khách cần mà chưa tìm thấy; cần lưu ý: nhiều người chưa mua, chưa phải user
   - 04 · Analytics: cho thấy hành vi của khách; cần lưu ý: không cho biết vì sao
   - 05 · PRD và research cũ: cho thấy những gì team đang tin; mở nguồn kiểm tra trước khi coi là sự thật
+- Trạng thái: đang ẩn trên deck
 - Ví dụ: có (GitLab: thư viện research thử hypothesis trên bốn nguồn)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -202,7 +203,7 @@ last_synced: 2026-11-27
 - On-slide:
   - Ẩn danh trước: làm trên máy của bạn; theo data rules
   - Chuyển sang markdown: mỗi tài liệu một file; mỗi ticket có một ID
-  - Ghi đầu file: loại nguồn, ngày, người viết; giới hạn của nguồn
+  - Ghi đầu file: loại nguồn, ngày, người viết; lưu ý khi dùng nguồn đó
   - Đặt vào folder: folder context kèm file mục lục; quy tắc dùng nằm trong AGENTS.md
   - Câu chốt: Làm theo thứ tự: ẩn danh xong rồi mới chuyển file và đưa vào folder.
 - Ví dụ: có (xem speaker notes)
@@ -212,7 +213,7 @@ last_synced: 2026-11-27
   - Chúng ta làm theo bốn bước:
     - Đầu tiên, chúng ta ẩn danh ngay trên máy, theo data rules ở Lesson 1. Ticket và ghi chú cuộc gọi thường có tên và email nằm lẫn trong nội dung, vì vậy nếu nhờ AI chuyển định dạng trước thì dữ liệu đã đi qua AI rồi.
     - Tiếp theo, chúng ta chuyển mỗi tài liệu thành một file markdown, ví dụ PRD một file, mỗi báo cáo research một file. Với những nguồn nhiều dòng như ticket, mỗi đợt xuất là một file và mỗi ticket có một ID. Chúng ta giữ nguyên văn, không tóm tắt.
-    - Sau đó, chúng ta ghi vài dòng ở đầu file, gồm loại nguồn, ngày, người viết và giới hạn của nguồn.
+    - Sau đó, chúng ta ghi vài dòng ở đầu file, gồm loại nguồn, ngày, người viết và điều cần lưu ý khi dùng nguồn đó, ví dụ ticket chỉ đến từ những người đã chủ động liên hệ.
     - Cuối cùng, chúng ta đặt các file vào folder context, kèm một file mục lục để AI đọc trước. Quy tắc dùng tài liệu nằm trong AGENTS.md, ví dụ chỗ nào thiếu thì ghi “chưa có nguồn”.
   - Ở slide kế tiếp, chúng ta sẽ xem một folder context ví dụ. Nếu project mới chưa có gì để gom, chúng ta sẽ nói tới ngay sau đó.
 - 🎨 Visual hint: SCHEMATIC. Bốn cột không card nối bằng mũi tên: hình line-art, tiêu đề, hai gạch đầu dòng chấm purple; câu chốt dưới đường kẻ.
@@ -347,25 +348,118 @@ last_synced: 2026-11-27
 
 ---
 
+### NUMBERED · Design principles at large companies
+- Kicker: Tham khảo
+- Title: Design principles ở *công ty lớn*
+- On-slide:
+  - 1 · Clear and simple: Apple “Clarity” · Google “Simplicity is powerful” · IBM “Carefully considered”
+  - 2 · Focused: Apple “Deference to content” · Microsoft “Built for focus”
+  - 3 · Consistent: Apple “Consistency” · IBM “Uniquely unified” · Airbnb “Unified”
+  - 4 · Inclusive: Microsoft “One for all, all for one” · Airbnb “Universal” · Google “Design for the world”
+  - 5 · Trustworthy: Google “Be worthy of people’s trust” · Atlassian “Build trust in every interaction”
+- Ví dụ: có (xem on-slide)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước chia chuẩn thành design principles và business principles. Slide này cho thấy các công ty lớn đã công bố những design principles nào, để chúng ta có chỗ tham khảo khi tự viết.
+  - Năm chủ đề lặp lại nhiều nhất là các chủ đề dưới đây. Phần giải thích là cách hiểu của khoá, còn câu trong ngoặc kép là lời công ty công bố.
+    - Clear and simple: người dùng nhìn vào là hiểu màn hình này cho họ làm gì, không phải đọc những thứ thừa. Ví dụ: Apple “Clarity”, Google “Simplicity is powerful”, IBM “Carefully considered”.
+    - Focused: mỗi màn hình phục vụ một việc chính, và giao diện nhường chỗ cho nội dung. Ví dụ: Apple “Deference to content”, Microsoft “Built for focus”.
+    - Consistent: cùng một hành động thì trông và hoạt động giống nhau ở mọi nơi, nên người dùng không phải học lại. Ví dụ: Apple “Consistency”, IBM “Uniquely unified”, Airbnb “Unified”.
+    - Inclusive: thiết kế dùng được cho nhiều người khác nhau, kể cả khi họ khác về khả năng, ngôn ngữ hay thiết bị. Ví dụ: Microsoft “One for all, all for one”, Airbnb “Universal”, Google “Design for the world”.
+    - Trustworthy: người dùng tin được rằng sản phẩm nói đúng, giữ an toàn dữ liệu và làm đúng điều đã hứa. Ví dụ: Google “Be worthy of people’s trust”, Atlassian “Build trust in every interaction”.
+  - Ở slide AI principles, chúng ta đã thấy “đơn giản và dễ dùng” đúng với gần như mọi sản phẩm nên không giúp chọn gì. Năm chủ đề này cũng vậy: nhiều công ty cùng có, nên chúng chỉ là điểm xuất phát. Principle của chúng ta phải cụ thể cho sản phẩm và có thứ tự ưu tiên, đủ để chọn giữa hai hướng đều hợp lý.
+  - Lưu ý: danh sách lấy từ các trang công bố công khai, và chúng ta chưa kiểm tra công ty còn dùng đúng bản này hôm nay hay không. Danh sách của Apple lấy từ một bài tổng hợp, chưa phải trang chính thức. Từ iOS 26, Apple dùng ba nguyên tắc Hierarchy, Harmony và Consistency cho Liquid Glass.
+
+  > Trong năm chủ đề này, sản phẩm của chúng ta cần chủ đề nào, và với riêng sản phẩm đó nó cụ thể ra sao?
+- 🎨 Visual hint: TYPOGRAPHIC. Năm hàng đánh số, mỗi hàng một nhóm và lời các công ty.
+
+---
+
+### NUMBERED · How large companies decide
+- Kicker: Tham khảo
+- Title: Cách công ty lớn *ra quyết định*
+- On-slide:
+  - 1 · Start with the customer: Amazon “Customer Obsession” · Google “Focus on the user” · Shopify “Build what most merchants need”
+  - 2 · Do less, do it well: Google “One thing really, really well” · Amazon “Invent and Simplify”
+  - 3 · Fast, but reversible: Amazon “Bias for Action” · Google “Fast is better than slow”
+  - 4 · Data informs, judgment decides: Shopify “Data informed, not data driven” · Netflix “Judgment”
+  - 5 · High quality bar: Amazon “Insist on the Highest Standards” · Shopify “Great UX and polish”
+- Ví dụ: có (xem on-slide)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói business principles là ràng buộc mà thiết kế không được vi phạm. Slide này cho thấy một thứ khác, đó là cách các công ty lớn ra quyết định về sản phẩm. Đây không phải ràng buộc, nhưng là chỗ tham khảo tốt khi chúng ta viết principle cho case của mình.
+  - Năm chủ đề lặp lại nhiều nhất là các chủ đề dưới đây. Phần giải thích là cách hiểu của khoá, còn câu trong ngoặc kép là lời công ty công bố.
+    - Start with the customer: bắt đầu từ vấn đề của khách hàng rồi mới đi ngược về giải pháp. Ví dụ: Amazon “Customer Obsession”, Google “Focus on the user”, Shopify “Build what most merchants need, most of the time”.
+    - Do less, do it well: chọn ít việc hơn và làm cho thật tốt, thay vì cứ thêm tính năng. Ví dụ: Google “Do one thing really, really well”, Amazon “Invent and Simplify”.
+    - Fast, but reversible: với quyết định đảo ngược được, chúng ta nên làm nhanh, còn với quyết định khó đảo ngược, chúng ta cân nhắc kỹ. Ví dụ: Amazon “Bias for Action” (nhiều quyết định đảo ngược được), Google “Fast is better than slow”.
+    - Data informs, judgment decides: dữ liệu giúp hiểu tình hình, còn người vẫn là bên đưa ra quyết định. Ví dụ: Shopify “Be data informed, not data driven”, Netflix “Judgment”.
+    - High quality bar: đặt chuẩn chất lượng cao và không phát hành thứ chưa đạt chuẩn. Ví dụ: Amazon “Insist on the Highest Standards”, Shopify “Great UX and polish”.
+  - Phần lớn trong số này là giá trị văn hoá và leadership, chỉ Shopify viết thẳng thành quy tắc ra quyết định sản phẩm. Vì vậy chúng ta không nên chép nguyên văn principle của công ty khác vào project, mà chọn điều chúng ta cần rồi viết lại cho sản phẩm.
+  - Lưu ý: các câu của Google lấy từ bộ “Ten things we know to be true”, là bản cũ. Danh sách lấy từ các trang công bố công khai, và chúng ta chưa kiểm tra công ty còn dùng hôm nay hay không.
+
+  > Khi hai hướng đều hợp lý, team của chúng ta thường dựa vào điều gì để chọn?
+- 🎨 Visual hint: TYPOGRAPHIC. Năm hàng đánh số, cùng kiểu với slide trước.
+
+---
+
+### IMAGE · Product principles at Box
+- Kicker: Ví dụ
+- Title: Product principles *ở Box*
+- On-slide:
+  - Hình bảng bảy product principle của Box, có cột Versus
+  - Nguồn: Hustle Badger, https://www.hustlebadger.com/what-do-product-teams-do/product-principles/
+- Ví dụ: có (hình)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đây là product principles của Box, lấy từ bài tổng hợp của Hustle Badger.
+  - Điểm đáng học là mỗi principle đi kèm cột Versus, nói rõ điều gì bị xếp sau. Ví dụ, bảo vệ dữ liệu khách hàng được đặt trên việc tập trung kiếm doanh thu, và sự đơn giản được đặt trên việc có thật nhiều tính năng.
+  - Nhờ viết như vậy, khi hai hướng đều hợp lý, team biết nên chọn hướng nào. Đây cũng là điều chúng ta đã nói ở slide AI principles: một principle tốt có thứ tự ưu tiên.
+  - Lưu ý: chúng ta lấy nội dung từ bài của Hustle Badger và chưa kiểm tra với trang của Box xem hiện nay còn dùng bản này hay không.
+
+  > Nếu thêm cột Versus cho một principle của sản phẩm chúng ta đang làm, chúng ta sẽ ghi gì?
+- 🎨 Visual hint: IMAGE. Một hình lớn ở giữa, dòng nguồn bên dưới.
+
+---
+
+### IMAGE · Product principles at Airbnb
+- Kicker: Ví dụ
+- Title: Product principles *ở Airbnb*
+- On-slide:
+  - Hình bảng năm product principle của Airbnb, có cột Explainer
+  - Nguồn: Hustle Badger, https://www.hustlebadger.com/what-do-product-teams-do/product-principles/
+- Ví dụ: có (hình)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đây là product principles của Airbnb, cũng lấy từ bài tổng hợp của Hustle Badger. Bản này viết theo kiểu khác: mỗi principle đi kèm phần giải thích cách làm.
+  - Chúng ta xem hai ví dụ. “Start with the ideal end state” là bắt đầu từ trải nghiệm tốt nhất có thể hình dung rồi đi ngược về. “Metrics chase strategy” là đi từ vấn đề đến chiến lược trước, rồi mới dùng metric để xem chiến lược có hiệu quả không.
+  - Một principle hợp với công ty này vẫn có thể không hợp với sản phẩm khác. Ví dụ, “Stack the bricks” khuyên gom lại phát hành một lần thay vì cải tiến từng chút, trong khi nhiều team lại chọn làm ngược lại.
+  - Lưu ý: chúng ta lấy nội dung từ bài của Hustle Badger và chưa kiểm tra với trang của Airbnb xem hiện nay còn dùng bản này hay không.
+
+  > Trong hai cách viết, kèm cột Versus hay kèm phần giải thích, cách nào giúp team của chúng ta chọn nhanh hơn?
+- 🎨 Visual hint: IMAGE. Một hình lớn ở giữa, dòng nguồn bên dưới.
+
+---
+
 ### NUMBERED · What AI does with principles
 - Kicker: AI giúp được
 - Title: AI làm được gì với *bộ principles*
 - On-slide:
-  - 01 · Viết principles: soạn nháp từ research và scope; chỉ ra hai principle mâu thuẫn nhau
-  - 02 · Đối chiếu: cross-check finding với principle; designer kiểm tra lại vì AI dễ gán sai
-  - 03 · Kiểm tra: chấm output theo rubric từ bộ principles; chạy thử vài vòng trước khi tin
+  - 01 · Viết principles. AI làm: soạn nháp principle từ research và scope, vision, mission hay cách AI understand về product của chúng ta; chỉ ra các principle mâu thuẫn nhau. Bạn làm: chọn và quyết từng principle
+  - 02 · Đối chiếu. AI làm: cross-check finding với principle. Bạn làm: kiểm tra lại, vì AI dễ gán sai principle cho finding
+  - 03 · Kiểm tra. AI làm: chấm output của AI theo rubric từ bộ principles. Bạn làm: viết tiêu chí quan sát được và chạy thử vài vòng trước khi tin
+- Trạng thái: đang ẩn trên deck
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Khi đã có principles, AI làm được nhiều việc hơn là chỉ đọc. Slide này trả lời chúng ta nên giao cho AI những việc nào, và giữ lại việc nào.
-  - Sáu việc được gom thành ba nhóm:
-    - Viết principles: AI soạn nháp từ research và scope, rồi chỉ ra hai principle đang mâu thuẫn nhau. Nếu cần, chúng ta nhờ AI chấm lại theo bốn tiêu chí của một principle tốt, còn designer là người chọn và quyết từng cái.
-    - Đối chiếu: AI cross-check finding với principle, ví dụ so finding “khách không tìm thấy nút đổi khung giờ” với principle “đổi ý phải dễ hơn cam kết”. Designer kiểm tra lại, vì AI dễ gán sai principle cho finding.
-    - Kiểm tra: AI chấm output của chính nó hoặc của AI khác theo rubric viết từ bộ principles. Tiêu chí phải quan sát được, và chúng ta nên chạy thử vài vòng trước khi tin.
+  - Khi đã có principles, AI làm được nhiều việc hơn là chỉ đọc. Slide này trả lời ở từng bước, AI làm phần nào và chúng ta làm phần nào.
+  - Chúng ta đi qua ba bước, bước nào cũng có phần của AI và phần của chúng ta:
+    - Viết principles: AI soạn nháp từ research và scope, rồi chỉ ra hai principle đang mâu thuẫn nhau. Chúng ta có thể nhờ AI chấm lại theo bốn tiêu chí của một principle tốt, sau đó tự chọn và quyết từng cái.
+    - Đối chiếu: AI cross-check finding với principle, ví dụ so finding “khách không tìm thấy nút đổi khung giờ” với principle “đổi ý phải dễ hơn cam kết”. Chúng ta kiểm tra lại, vì AI dễ gán sai principle cho finding.
+    - Kiểm tra: AI chấm output của chính nó hoặc của AI khác theo rubric viết từ bộ principles. Chúng ta viết tiêu chí sao cho quan sát được, và chạy thử vài vòng trước khi tin.
   - Lưu ý: AI rất giỏi biến principle thành những nhận xét nghe chắc chắn, như “vi phạm nhất quán”, mà không hỏi sự không nhất quán đó có giải quyết một vấn đề thật hay không. Principle giúp AI bám chuẩn, còn quyết định vẫn là của designer.
   - Cách đóng gói bộ principles để dùng lại nằm ở slide kế tiếp.
 
-  > Trong sáu việc này, việc nào chúng ta đang tự làm tay mỗi lần?
+  > Trong những việc này, việc nào chúng ta đang tự làm tay mỗi lần?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
 
 ---
@@ -375,6 +469,7 @@ last_synced: 2026-11-27
 - Title: Từ *principles.md* thành rules và skill
 - On-slide:
   - principles.md thành Rules file (luôn nạp ở đầu mỗi bước) và Skill (chỉ nạp khi việc cần đến), dùng cho mọi bước research sau
+- Trạng thái: đang ẩn trên deck
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -561,19 +656,19 @@ last_synced: 2026-11-27
 
 ### STATEMENT · AI prepares, people answer
 - Kicker: Lưu ý khi viết scope
-- Title: Đừng để AI\n*trả lời thay PO.*
+- Title: Đừng để AI\n*trả lời thay stakeholder.*
 - On-slide:
-  - Bạn nhờ AI soạn câu hỏi và phản biện scope, còn câu trả lời phải đến từ business.
+  - Bạn nhờ AI soạn câu hỏi và phản biện scope, còn câu trả lời phải đến từ stakeholder, ví dụ PO, BA hay business.
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Các slide trước nói cách hỏi business. Trước khi nhờ AI phản biện scope, chúng ta có một lưu ý: đừng để AI trả lời thay PO.
+  - Các slide trước nói cách hỏi business. Trước khi nhờ AI phản biện scope, chúng ta có một lưu ý: đừng để AI trả lời thay stakeholder, ví dụ PO, BA hay business.
     - AI giúp soạn câu hỏi, soạn nháp ghi chú và gợi ý điều cần hỏi thêm.
-    - Còn câu trả lời về mục tiêu, metric và ràng buộc phải đến từ PO hoặc business.
+    - Còn câu trả lời về mục tiêu, metric và ràng buộc phải đến từ chính họ.
   - Lý do là các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về những câu trả lời dễ nghe (nguồn 6). Với stakeholder, AI còn bịa ra dữ kiện business và metric nghe rất hợp lý.
-  - Ví dụ, chúng ta nhờ AI đóng vai PO của app giao đồ ăn. Nó trả lời rất tự tin rằng mục tiêu tỷ lệ đặt đơn thứ hai là 60%. Con số này không nằm trong tài liệu nào của team. Nếu ghi nó vào scope như một câu trả lời, mọi bước sau sẽ đứng trên một con số bịa.
-  - Vì vậy trong chương trình này, không ai tập trả lời thay PO hay user. Câu trả lời mô phỏng (simulator) không phải evidence.
-  - Ở slide kế tiếp, chúng ta xem cách nhờ AI phản biện scope. AI chỉ ra chỗ dễ sai, rồi chúng ta mang câu hỏi đi hỏi business.
+  - Ví dụ, chúng ta nhờ AI đóng vai một stakeholder của app giao đồ ăn. Nó trả lời rất tự tin rằng mục tiêu tỷ lệ đặt đơn thứ hai là 60%. Con số này không nằm trong tài liệu nào của team. Nếu ghi nó vào scope như một câu trả lời, mọi bước sau sẽ đứng trên một con số bịa.
+  - Vì vậy trong chương trình này, không ai tập trả lời thay stakeholder hay user. Câu trả lời mô phỏng (simulator) không phải evidence.
+  - Ở slide kế tiếp, chúng ta xem cách nhờ AI phản biện scope. AI chỉ ra chỗ dễ sai, rồi chúng ta mang câu hỏi đi hỏi stakeholder.
 
   > Bỏ phiếu trong chat. A nếu chúng ta từng dùng câu trả lời của AI như thể là thật, B nếu chưa.
 - 🎨 Visual hint: TYPOGRAPHIC. Tiêu đề lớn, một dòng ngắn bên dưới, không thêm gì khác.

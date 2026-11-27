@@ -79,7 +79,7 @@ Bốn bước, theo thứ tự:
 
 1. **Ẩn danh trước**, trên máy bạn, theo data rules ở Lesson 1. Ticket và ghi chú cuộc gọi thường có tên và email nằm lẫn trong văn bản tự do. Nếu bạn nhờ AI chuyển định dạng trước khi ẩn danh, dữ liệu gốc đã đi qua AI rồi.
 2. **Chuyển thành markdown.** Mỗi tài liệu một file: PRD một file, mỗi báo cáo research một file. Nguồn nhiều dòng như ticket thì mỗi đợt xuất một file và mỗi ticket có một ID. Giữ nguyên văn, không tóm tắt.
-3. **Ghi vài dòng ở đầu file:** loại nguồn, ngày, người viết và giới hạn của nguồn.
+3. **Ghi vài dòng ở đầu file:** loại nguồn, ngày, người viết và lưu ý khi dùng nguồn đó, ví dụ ticket chỉ đến từ những người đã chủ động liên hệ.
 4. **Đặt vào folder context, kèm một file mục lục** để AI đọc mục lục trước. Quy tắc dùng tài liệu nằm trong `AGENTS.md`, ví dụ: thiếu nguồn thì ghi "chưa có nguồn".
 
 **Context library** là cả folder, nơi chứa mọi file. Tên folder và tên file do bạn chọn. Product context bạn viết ở Practice 1 là file đầu tiên của library.
