@@ -388,6 +388,12 @@ Quyền dùng output của AI cho công việc với client và quyền sở h�
 
 ---
 
+## Practice: đề tài chung của khoá
+
+Cả khoá làm practice trên một đề tài chung. Bạn tự chọn người dùng, tình huống và giải pháp, miễn là giải thích được vì sao chọn. Đọc [project brief](../../../assets/starter-files/practice-project/project-brief.md) trước, rồi đến [tài liệu nền](../../../assets/starter-files/practice-project/topic-primer.md). Cần khung folder để tham khảo thì xem [repo template](https://github.com/vannguyen2910/ai-design-workflow-template). Bạn muốn làm trên project thật của mình cũng được; đề tài chung chỉ dùng dữ liệu giả.
+
+---
+
 ## Phụ lục. What AI is good at, and where it falls short
 
 Phần này cho biết AI làm tốt và còn hạn chế ở loại việc nào. Slide tương ứng nằm ở phần phụ cuối deck.

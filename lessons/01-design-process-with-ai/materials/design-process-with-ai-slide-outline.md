@@ -2,7 +2,7 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 68
+slide_count: 72
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
@@ -18,7 +18,7 @@ last_synced: 2026-11-26
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 3: Discover the Problem |
-| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 58 slide; deck thật trên Slides đã sắp xếp lại theo thứ tự này, phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5. Ngày 2026-11-25, mục UI/UX (số liệu, hướng nghề, hướng tiếp cận brief, “trông đã xong”) chuyển sang intro (`program-intro-slide-outline.md`), còn Context and grounding và Hallucination đứng đầu mục 1 (File, folder và rules); thời lượng giảm tương ứng, chưa ước lại |
+| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 62 slide; deck thật trên Slides đã sắp xếp lại theo thứ tự này, phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5. Ngày 2026-11-25, mục UI/UX (số liệu, hướng nghề, hướng tiếp cận brief, “trông đã xong”) chuyển sang intro (`program-intro-slide-outline.md`), còn Context and grounding và Hallucination đứng đầu mục 1 (File, folder và rules); thời lượng giảm tương ứng, chưa ước lại |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
@@ -270,7 +270,7 @@ last_synced: 2026-11-26
 
 ### SPLIT · HTML examples
 - Kicker: Ví dụ
-- Title: HTML *trông thế nào*
+- Title: HTML *trông thế nào?*
 - On-slide:
   - Ảnh: `assets/html-example-heuristic-whiteboard.webp`
   - [Whiteboard heuristic evaluation, kéo và zoom được](https://vannguyen2910.github.io/ai-design-workflow-template/food-deliver-app-public/work/heuristic-evaluation/heuristic-whiteboard.html)
@@ -280,10 +280,10 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Hai ví dụ này đều là file HTML, mở bằng trình duyệt là xem được.
-  - Bên trái là whiteboard heuristic evaluation cho một app giao đồ ăn. Màn hình xếp theo journey, mỗi vấn đề một sticky note, màu theo severity. Chúng ta kéo, zoom, rồi bấm vào note để biết nó nằm ở đâu trên màn.
-  - Bên phải là prototype cuối của Travel Buddy, một app du lịch, chạy ngay trong trình duyệt.
+  - Bên trái là whiteboard heuristic evaluation cho một app giao đồ ăn. Màn hình được xếp theo journey. Mỗi vấn đề có một sticky note và màu note cho biết severity. Bạn kéo, zoom rồi bấm vào note để xem vấn đề nằm ở đâu trên màn.
+  - Bên phải là prototype cuối của app du lịch Travel Buddy, chạy ngay trên trình duyệt.
   - Muốn mở bản thật thì bấm vào dòng chú thích dưới ảnh. Nên mở sẵn hai tab trước buổi học.
-  - Câu hỏi cho lớp: Trong công việc của chúng ta, thứ gì đang gửi bằng ảnh tĩnh mà gửi bằng một file HTML sẽ dễ xem hơn?
+  - Câu hỏi cho lớp: Trong công việc của bạn, có thứ gì đang gửi bằng ảnh mà gửi file HTML sẽ dễ xem hơn?
 - 🎨 Visual hint: SPLIT. Trái: ảnh chụp whiteboard trên trình duyệt (khung lớn); phải: ảnh dọc màn mở đầu của prototype; mỗi ảnh một dòng link bên dưới. Mỗi click hiện một ví dụ.
 
 ---
@@ -816,21 +816,21 @@ last_synced: 2026-11-26
   - Dùng khi bạn muốn AI làm đúng cách bạn dặn
   - Ví dụ: tóm tắt một buổi user interview
   - Agent
-  - Nhân viên nhận cả một việc để làm
-  - Agent làm trong phiên riêng rồi gửi kết quả về
+  - Nhân viên được giao hẳn một việc
+  - Làm ở phiên riêng rồi gửi kết quả về
   - Dùng khi việc lặp lại, phải đọc nhiều hoặc cần giới hạn quyền
-  - Ví dụ: tổng hợp 20 buổi user interview
+  - Ví dụ: synthesis user interview
   - Cứ thử bằng skill trước rồi mới tính đến agent.
-- Ví dụ: có (một buổi interview so với 20 buổi; mốc số buổi là gợi ý của chương trình)
+- Ví dụ: có (tóm tắt một buổi so với synthesis; mốc số buổi trong speaker notes là gợi ý của chương trình)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Hai thứ này dễ lẫn vì đều có thể là file markdown có tên và mô tả.
   - Skill giống một checklist. Chúng ta đưa checklist cho AI ngay trong cuộc chat, và AI làm theo.
   - Agent giống như nhờ một đồng nghiệp sang phòng khác làm. Người đó không nghe được chúng ta đang bàn gì, nên phải giao việc cho rõ.
-  - Agent vẫn dùng được skill. Ví dụ agent tổng hợp interview có thể dùng skill trích quote.
-  - Một hai buổi interview thì skill là đủ. Khi có vài chục buổi, hoặc tuần nào cũng giao lại đúng việc đó, tạo agent mới đáng.
-  - Giới hạn quyền nghĩa là, ví dụ, agent review chỉ được đọc file chứ không được sửa.
-  - Agent chạy thêm một phiên nên cũng tốn thêm hạn mức sử dụng. Cách chạy cụ thể tuỳ công cụ AI.
+  - Agent vẫn dùng được skill. Ví dụ agent làm synthesis interview có thể dùng skill trích quote.
+  - Một hai buổi interview thì skill là đủ. Khi có vài chục buổi, hoặc tuần nào cũng giao lại đúng việc đó, thì mới đáng tạo agent.
+  - Ví dụ về giới hạn quyền: agent review chỉ được đọc file, không được sửa.
+  - Agent chạy thêm một phiên nên tốn hạn mức hơn. Cách chạy thì mỗi công cụ AI một khác.
   - Câu hỏi cho lớp: Với một việc bạn làm hằng tuần, bạn sẽ làm skill hay agent, và vì sao?
 - 🎨 Visual hint: COMPARE. Hai card trắng ngang hàng, mỗi card một line-art (bảng checklist; người ngồi bàn riêng gửi tài liệu đi) ở trên chữ; một câu chốt tím ở đáy. Mỗi click hiện một khối.
 
@@ -1652,6 +1652,91 @@ last_synced: 2026-11-26
   - Ở buổi practice trên lớp, chúng ta làm tiếp phần chưa xong nếu còn thời gian, rồi mình chấm. Cách chấm mình chưa quyết, sẽ báo sau.
   - Đây là folder dự án của chúng ta, không phải bài nộp. Nhắc mọi người tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có.
 - 🎨 Visual hint: Hai card cạnh nhau, mỗi card có icon, tiêu đề lớn và các dòng bắt đầu bằng chấm tím: "Dựng project folder" và "Push lên Git và bật trang live".
+
+---
+
+### SECTION DIVIDER · Practice topic
+- Slide: `divider-07`
+- Num: 07
+- Title: Đề tài\n*practice của khoá*
+- Sub: Cả khoá làm chung trong sáu tuần
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Phần cuối là đề tài chung của khoá.
+  - Chúng ta xem vấn đề cần giải quyết, bốn tình huống, rồi đến tài liệu để bắt đầu.
+- 🎨 Visual hint: Section divider nền vàng, số 07 ở góc trên trái, tiêu đề hai dòng căn giữa, dòng phụ chữ mono.
+
+---
+
+### SPLIT · Practice topic
+- Slide: `topic-intro`
+- Kicker: Đề tài practice
+- Title: Chia tiền nhóm đi chơi
+- On-slide:
+  - Đi chơi chung, mỗi người ứng một ít nhưng ít ai ghi lại
+  - Cuối chuyến ngồi tính ai nợ ai vừa lâu vừa dễ mất lòng
+  - Người dùng và giải pháp do bạn chọn, miễn là bạn nói được lý do
+- Ví dụ: có (đề tài chung của khoá, theo project brief)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Cả khoá làm chung đề tài này, từ Discover đến Deliver trong sáu tuần.
+  - Chắc nhiều bạn từng gặp cảnh này: về đến nhà rồi mà nhóm chat vẫn hỏi ai chuyển cho ai.
+  - Bạn thiết kế cho bạn bè, đồng nghiệp hay gia đình đều được. Giải pháp không nhất thiết là app, nó có thể là một tính năng, một quy trình hoặc một cách làm khác.
+  - Bạn nào muốn làm trên project thật của mình cũng được.
+  - Với đề tài chung, chúng ta chỉ dùng dữ liệu giả.
+  - Câu hỏi cho lớp: Chuyến đi gần nhất của bạn, ai là người tính tiền?
+- 🎨 Visual hint: SPLIT. Trái: ba dòng ngăn bằng đường kẻ, dòng cuối chữ tím; phải: line-art ba người quanh một tờ hoá đơn. Mỗi click hiện một dòng.
+
+---
+
+### FEATURE GRID · Practice scenarios
+- Slide: `topic-scenarios`
+- Kicker: Tình huống
+- Title: Bạn muốn giải tình huống nào?
+- On-slide:
+  - Ứng tiền lúc nửa đêm
+  - Ghi khoản taxi trong vài giây để không quên
+  - Ăn chung, gọi riêng
+  - Ai ăn món nào thì trả món đó
+  - Chốt nợ khi về nhà
+  - Xem ai nợ ai rồi chuyển một lần là xong
+  - Chi tiêu riêng tư
+  - Xem phần của mình mà không lộ phần người khác
+- Ví dụ: có (bốn tình huống trong project brief)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Bốn tình huống này lấy từ project brief.
+  - Bạn không cần giải cả bốn. Chọn một tình huống làm bạn tò mò, và nhớ là phải có người để hỏi.
+  - Trong tài liệu nền còn có những tình huống khó hơn, như có người đến muộn hoặc nợ chéo nhiều vòng.
+  - Chọn rồi vẫn đổi được. Phỏng vấn người thật ở Lesson 2 xong, bạn xem lại.
+  - Câu hỏi cho lớp: Trong bốn tình huống, bạn đã từng gặp tình huống nào?
+- 🎨 Visual hint: Bốn card trắng ngang hàng, mỗi card một line-art (taxi dưới trăng, hai đĩa ăn, hai người chuyển tiền, ổ khoá). Mỗi click hiện một card.
+
+---
+
+### FEATURE GRID · Practice resources
+- Slide: `topic-resources`
+- Kicker: Tài liệu
+- Title: Bạn có gì để bắt đầu?
+- On-slide:
+  - [Project brief](https://vannguyen2910.github.io/ai-design-workflow/project/brief/)
+  - Đọc đề bài và xem mỗi tuần làm gì
+  - [Tài liệu nền](https://vannguyen2910.github.io/ai-design-workflow/project/topic-primer/)
+  - Hiểu bối cảnh và lấy câu hỏi để đi research
+  - [Template project folder](https://github.com/vannguyen2910/ai-design-workflow-template)
+  - Dùng luôn hoặc sửa theo cách của bạn
+  - [Project mẫu Delivery App](https://github.com/vannguyen2910/ai-design-workflow/blob/main/assets/starter-files/course-case/case-card.md)
+  - Xem bài làm mẫu khi bị kẹt hoặc lỡ một tuần
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Bạn mở project brief trước, rồi đọc tài liệu nền.
+  - Tên trên slide là link, bạn bấm vào là mở.
+  - Tuần nào cũng vậy: thứ Năm học lý thuyết, rồi làm practice ở nhà và nộp vào Chủ nhật. Mentor sửa bài và chọn bài để showcase.
+  - Tuần này bạn dựng project folder, viết data rules và viết bản nháp đầu tiên về sản phẩm, người dùng, job chính.
+  - Câu hỏi cho lớp: Để bắt đầu, bạn còn thiếu gì không?
+- 🎨 Visual hint: Bốn card trắng ngang hàng, tên card là link màu tím, mỗi card một line-art (tờ đề bài, quyển sách, folder, điện thoại). Mỗi click hiện một card.
 
 ---
 
