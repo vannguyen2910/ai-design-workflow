@@ -9,9 +9,9 @@ draft: true
 
 ## Goal
 
-Đi từ transcript đến opportunity trên project của khoá. Cuối bài bạn có evidence notes có note ID, một insight đã kiểm tra và phản biện, persona, journey map, opportunity đã xếp hạng, một insight hub cả team dùng chung được, và một trang cho lead. Mỗi dòng của các output này dẫn về một insight ID. Đây là input cho Lesson 4 (hypothesis, How might we, chọn hướng).
+Đi từ transcript sạch đến opportunity trên project của khoá. Cuối bài bạn có evidence notes có note ID (kèm quote đã kiểm bằng chương trình), một insight đã kiểm tra và phản biện, persona, journey map, opportunity đã xếp hạng, một insight hub cả team dùng chung được, và một trang cho lead. Mỗi dòng của các output này dẫn về một insight ID. Đây là input cho Lesson 4 (hypothesis, How might we, chọn hướng).
 
-Practice có ba phần: **A · Synthesis** từ evidence notes, **B · Persona, journey map, opportunity**, và **C · Build Insight Hub** để cả team tìm và lọc được các insight và opportunity.
+Practice có ba phần: **A · Synthesis** từ transcript sạch qua evidence notes, **B · Persona, journey map, opportunity**, và **C · Build Insight Hub** để cả team tìm và lọc được các insight và opportunity.
 
 Bạn tự quyết định lưu từng output ở đâu và đặt tên thế nào trong folder của mình.
 
@@ -25,17 +25,23 @@ Bạn tự quyết định lưu từng output ở đâu và đặt tên thế n�
 ## Before you start
 
 - Bạn đã học [Lesson 3](research-you-can-trust-lesson.md).
-- Bạn có evidence notes, viết từ transcript đã ẩn danh của ít nhất 2 buổi phỏng vấn ở Practice 2 (Step 9), cùng bộ principles, scope, research question và assumption map.
-- Chưa phỏng vấn được ai: dùng [bộ evidence notes mẫu](../../../assets/starter-files/course-case/evidence) và [bộ insight mẫu](../../../assets/starter-files/course-case/insight-set.md) để làm thử, rồi làm lại với dữ liệu của bạn khi có.
+- Bạn có transcript sạch của ít nhất 2 buổi phỏng vấn (mã `I01`, `I02`, số lượt, đã kiểm ở Practice 2, Step 9), cùng bộ principles, scope, research question và assumption map.
+- Chưa phỏng vấn được ai: dùng hai transcript sạch mẫu ([I01](../../../assets/starter-files/course-case/raw/I01.txt), [I02](../../../assets/starter-files/course-case/raw/I02.txt)), [bộ evidence notes mẫu](../../../assets/starter-files/course-case/evidence) để đối chiếu và [bộ insight mẫu](../../../assets/starter-files/course-case/insight-set.md) để làm thử, rồi làm lại với dữ liệu của bạn khi có.
 
 ## Phần A · Synthesis
 
 ### Step 1 · Evidence notes có mã
 
-- Bắt đầu từ evidence notes bạn đã viết ở Practice 2 (Step 9): **mỗi note một quan sát, một mã**, ví dụ `RET-03`. Thiếu note nào thì viết thêm từ transcript đã ẩn danh theo cùng dạng, vào file của buổi phỏng vấn đó.
-- Chạy blind synthesis trên các note này: lần 1 không nêu hypothesis, lần 2 nêu hypothesis hàng đầu của team. So hai bản: chủ đề nào đứng đầu, note ID nào được trích. Cách làm và ví dụ nằm ở Lesson 2, mục 6.
-- Tiêu đề note ghi điều người đó nói và làm, không thêm diễn giải của bạn. Giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
-- Dữ liệu gốc có tên thật vẫn ở ngoài chỗ AI đọc. AI chỉ thấy bản đã gắn P1, P2 và note ID.
+1. **Viết.** Từ mỗi transcript sạch, bạn viết evidence note, hoặc nhờ AI soạn nháp rồi kiểm tra từng note. Mỗi buổi phỏng vấn có một file ghi chú, và mỗi note là một mục `##` trong file đó, ghi một quan sát của một participant:
+   - Tiêu đề là observation, viết trung tính: điều người đó nói và làm, chưa có nguyên nhân, đánh giá hay giải pháp. Giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu.
+   - Một đến ba quote nguyên văn, mỗi quote dạng `> "quote" (I01, turn 04)`, trong đó `04` là số lượt trong transcript sạch.
+   - Dưới đề mục có mã (mã outcome trong Scope cộng số thứ tự, ví dụ `RET-02`; thiếu note nào thì viết thêm và không dùng lại mã cũ), `outcome`, `status`, `confidence`, `source` và `tags`. `confidence` để `low` vì mỗi note chỉ có một participant, và do bạn đặt, không do AI.
+2. **Đặt tag từ bộ cố định.** Tạo file `tags.md` với vài chục tag hai cấp dạng `cha/con` (ví dụ `order/cancel`, `help/contact-support`), mỗi tag một câu mô tả. Tag mô tả chủ đề hoặc vấn đề của người dùng, không mô tả tên dự án. Mọi note chỉ dùng tag trong file này; tag AI đề xuất mà chưa có thì bạn quyết định có thêm hay không.
+3. **Kiểm quote.** Đưa AI coding tool instruction trong [check-evidence-instruction.md](../../../assets/starter-files/course-case/check-evidence-instruction.md), kèm đường dẫn tới folder file ghi chú và folder transcript sạch. Script in ra từng quote và từng note đạt hay không đạt. Với mỗi chỗ không đạt, mở transcript ở lượt được ghi, so với quote, rồi sửa quote hoặc số lượt, và chạy lại cho tới khi không còn chỗ không đạt.
+4. **Đọc lại và đặt status.** Đọc lại tiêu đề của từng note cạnh quote của nó: tiêu đề có nói đúng điều participant đã nói, và không thêm kết luận không? Phép kiểm chỉ cho biết quote có thật. Note đã qua kiểm tra và bạn đã đọc lại thì đổi `status` thành `checked`.
+5. **Blind synthesis.** Chạy trên các note này: lần 1 không nêu hypothesis, lần 2 nêu hypothesis hàng đầu của team. So hai bản: chủ đề nào đứng đầu, note ID nào được trích. Cách làm và kết quả mẫu nằm ở mục 1.1 của lesson.
+
+Dữ liệu gốc có tên thật vẫn ở ngoài chỗ AI đọc. AI chỉ thấy bản đã gắn P1, P2 và note ID. Hai buổi phỏng vấn cho khoảng 8 đến 20 note là đủ.
 
 ### Step 2 · Decision, Insight, Challenge
 

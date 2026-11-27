@@ -2,11 +2,11 @@
 title: "Research You Can Trust"
 lesson_file: "research-you-can-trust-lesson.md"
 level: ""
-slide_count: 62
+slide_count: 66
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/4AFDgey1QNAkFuXdiRGvvu"
-last_synced: 2026-11-16
+last_synced: 2026-11-27
 ---
 
 ## Session metadata
@@ -78,28 +78,28 @@ last_synced: 2026-11-16
 - Kicker: Recap
 - Title: Sau Lesson 2\n*chúng ta có*
 - On-slide:
-  - Evidence notes: mỗi note là một quan sát, có mã và quote nguyên văn, viết từ transcript đã ẩn danh
+  - Transcript sạch: đã ẩn danh trên máy, có mã và số lượt, đã kiểm là AI không đổi chữ nào
   - Dữ liệu an toàn: bốn câu hỏi về dữ liệu trước khi đưa cho AI; dữ liệu gốc nằm ngoài vùng AI đọc
   - Nguyên tắc: bộ principles cho AI, cùng scope, assumption và research question
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Ở Lesson 2 bạn đã đi từ brief đến phỏng vấn người thật, rồi cắt transcript thành evidence notes và kiểm tra quote bằng chương trình. Bây giờ trong tay bạn là bộ evidence notes của các buổi phỏng vấn đó.
+  - Ở Lesson 2 bạn đã đi từ brief đến phỏng vấn người thật, rồi ẩn danh transcript, nhờ AI làm sạch và kiểm bằng chương trình. Bây giờ trong tay bạn là transcript sạch của các buổi phỏng vấn đó.
   - Ba thứ bạn có sau buổi đó:
-    - Evidence notes có note ID, cắt từ transcript đã ẩn danh bằng participant code. Dữ liệu gốc nằm ngoài vùng AI đọc.
+    - Transcript sạch có mã I01 và số lượt, ẩn danh bằng participant code, đã kiểm là AI không đổi chữ nào. Dữ liệu gốc nằm ngoài vùng AI đọc.
     - Bốn câu hỏi về dữ liệu trước khi đưa cho AI: participant đã đồng ý gì, công ty cho phép công cụ nào, công cụ có học từ dữ liệu không, đã ẩn danh trên máy chưa.
     - Bộ nguyên tắc cho AI và scope, assumption, research question từ các buổi trước.
   - Có công cụ tự động tìm thông tin định danh. Nó tìm khá tốt số điện thoại, email và các mã có định dạng cố định để bạn bỏ đi, nhưng không đảm bảo bắt hết và thường mạnh nhất với tiếng Anh. Với tiếng Việt, bạn vẫn tự đọc lại tên người, nơi làm và các chi tiết gián tiếp
-  - Bộ evidence notes còn thiếu note nào thì cắt thêm từ transcript đã ẩn danh theo cùng dạng, vào file của buổi phỏng vấn đó, đặt mã mới và không dùng lại mã cũ. Việc chạy blind synthesis trên note của bạn nằm ở practice, Step 1. Slide cách set up note ở Lesson 2 được chuyển xuống Appendix, dùng khi lớp cần ôn.
+  - Việc đầu tiên hôm nay là viết evidence note từ các transcript sạch này, kiểm quote bằng chương trình, rồi chạy blind synthesis trên các note đó.
 
-  > bạn đã có evidence notes có ID từ Lesson 2 chưa? Có hoặc không, gõ vào chat.
+  > bạn đã có transcript sạch từ Lesson 2 chưa? Có hoặc không, gõ vào chat.
 - 🎨 Visual hint: ROWS. Tiêu đề bên trái, ba dòng bên phải, không số, đường kẻ mảnh giữa các dòng; hiện dần theo click.
 
 ---
 
 ### DIAGRAM · Map of the session
 - Kicker: Bản đồ
-- Title: Từ evidence notes đến *insight hub*
+- Title: Từ transcript sạch đến *insight hub*
 - On-slide:
   - Bước đầu
   - Ba thứ dựng từ insight
@@ -114,7 +114,7 @@ last_synced: 2026-11-16
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Đây là bản đồ cả buổi, đi từ evidence notes đến insight hub.
+  - Đây là bản đồ cả buổi, đi từ transcript sạch đến insight hub.
   - Synthesis đi trước, biến evidence notes thành insight đã kiểm tra. Từ insight đó, ba phần cùng điền một câu: persona điền chỗ “ai”, journey map điền chỗ “khi nào”, opportunity điền chỗ “quyết định nào”. Insight hub là nơi lưu lại để lần sau chúng ta tìm trước khi hỏi lại.
   - Mỗi bước dùng kết quả của bước trước, nên từ một opportunity chúng ta lần ngược được qua journey map và persona về insight, rồi về note ID trong transcript. Insight ID là sợi dây nối cả chuỗi, và bộ nguyên tắc áp lên mọi bước.
   - Dòng nào không có insight ID thì chưa phải kết quả của research. Đây là cách hiểu của chương trình, chưa phải kết quả nghiên cứu. Hôm nay mình đi từ trái sang phải, bắt đầu từ synthesis.
@@ -161,8 +161,139 @@ last_synced: 2026-11-16
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần 1 là synthesis: đi từ evidence notes đến một insight đã kiểm tra. Quy tắc xuyên suốt phần này là mọi insight đều phải dẫn về một note ID.
+  - Phần 1 là synthesis: đi từ transcript sạch, qua evidence notes, đến một insight đã kiểm tra. Quy tắc xuyên suốt phần này là mọi insight đều phải dẫn về một note ID.
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
+
+---
+
+### DIAGRAM · Transcript to evidence notes
+- Kicker: Evidence notes
+- Title: Từ transcript đến evidence notes
+- On-slide:
+  - Transcript sạch: nguồn của buổi phỏng vấn, đã kiểm ở Lesson 2, không sửa nữa
+  - Evidence note: một mục trong file ghi chú của buổi phỏng vấn, ghi một quan sát của một participant; mẫu RET-02 (id, status, source, tags; tiêu đề observation; quote kèm transcript và số lượt)
+  - Mỗi note một quan sát, có mã và quote nguyên văn. Mã giúp insight nào cũng truy về được note của nó.
+- Ví dụ: có (RET-02 của Delivery App)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nhắc lại những gì bạn có sau Lesson 2. Slide này cho thấy một transcript sạch trở thành evidence note như thế nào
+  - Evidence note là đơn vị mà mọi insight sau này dẫn về. Hai thứ trên slide:
+    - Transcript sạch từ Lesson 2 là nguồn của bạn, bạn không sửa nó nữa
+    - Evidence note là một mục trong file ghi chú của buổi phỏng vấn, ghi một quan sát của một participant: dòng đề mục là điều participant làm hoặc nói; dưới đó là id, trạng thái, nguồn và tag; dòng bắt đầu bằng > là quote nguyên văn, kèm tên transcript và số lượt
+    - Mỗi buổi phỏng vấn một file, vì ở công ty một đợt research 10 đến 30 buổi là bình thường; mỗi note một file thì ra hàng trăm đến hàng nghìn file
+  - Vì sao mỗi note cần một mã? AI trích dẫn được note nào ủng hộ insight nào thay vì nói chung chung; bạn mở lại đúng note và đúng lượt trong transcript để đối chiếu quote; ba tháng sau ai hỏi “vì sao mình kết luận vậy?” thì truy lại được nguồn
+  - Mã RET-02 gồm mã outcome trong Scope (RET, giữ khách quay lại) cộng số thứ tự
+  - Đơn vị này không phải của riêng khoá: Dovetail gọi là highlight, atomic research gọi là nugget. Công ty thường lưu chúng trong một công cụ research repository hoặc cơ sở dữ liệu; file md là lựa chọn của khoá để AI và git làm việc được. Nguồn chủ yếu là trang của hãng bán công cụ, nên đây là kinh nghiệm thực hành, chưa phải evidence đã kiểm
+  - Tag lấy từ một bộ cố định trong file tags.md, hai cấp dạng cha/con, mô tả chủ đề hoặc vấn đề của người dùng chứ không mô tả tên dự án, mỗi tag một câu mô tả; thêm tag mới là một quyết định. AI được gợi ý tag nhưng chỉ trong bộ này. Dovetail khuyên bắt đầu nhỏ, đây là lời khuyên của hãng, không phải nghiên cứu
+  - Bộ mẫu Delivery App có 10 note, RET-01 đến RET-10, viết từ hai transcript. Mỗi note chỉ có một participant nên confidence để low; Lesson 3 mới nâng. Bộ mẫu nằm trong hai file I01.md và I02.md, kèm tags.md
+  - Slide sau nói cách bạn viết note từ transcript của chính mình
+- 🎨 Visual hint: DIAGRAM. Hai card nền trắng: trái là transcript, phải là evidence note kèm khung chứa mục note mẫu (đề mục, các trường, quote) bằng chữ mono.
+
+---
+
+---
+
+### DIAGRAM · IDs link every conclusion to its source
+- Kicker: Evidence notes
+- Title: Mã nối mỗi kết luận về nguồn
+- On-slide:
+  - Bốn card nối nhau, mũi tên chỉ về nguồn: Transcript (I01), Evidence note (RET-02), Insight (IN-01), Opportunity (O2)
+  - Đặt mã thế nào: tiền tố cho biết loại; số tăng dần, đã đặt thì không đổi và không dùng lại; tên mã do team chọn, miễn nhất quán
+  - Vì sao quan trọng với AI: AI trích nguồn bằng mã nên bạn kiểm được từng dòng; mã không có trong bộ là nguồn bịa, bắt được ngay; không mã thì bản tóm tắt nghe trơn nhưng không truy lại được
+- Ví dụ: có (I01, RET-02, IN-01, O2 của Delivery App)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước cho thấy một evidence note có mã. Slide này trả lời: mã đó nằm ở đâu trong cả chuỗi, và vì sao nó quan trọng khi bạn làm việc với AI
+  - Bốn loại mã nối thành một chuỗi, đi từ kết luận ngược về nguồn:
+    - Transcript (I01): một buổi phỏng vấn đã ẩn danh
+    - Evidence note (RET-02): một quan sát trong buổi đó, kèm quote và số lượt
+    - Insight (IN-01): điều bạn kết luận từ nhiều note, làm ngay sau đây
+    - Opportunity (O2): hướng bạn chọn làm, dẫn về insight
+  - Tên mã do team chọn. Giữ ba điều: tiền tố cho biết loại, số tăng dần, đã đặt thì không đổi và không dùng lại. Bộ mẫu của khoá dùng I, RET, IN và O
+  - Ví dụ: AI trả lời “khách mới bỏ đi vì không tìm thấy chỗ huỷ đơn”. Có RET-02 và RET-06 kèm theo thì mở đúng hai note và kiểm được. Không có mã thì câu trả lời vẫn nghe hợp lý nhưng không biết lấy từ đâu, và AI có thể đã tự bịa. Mã AI trả về mà không có trong bộ thì biết ngay là nguồn bịa
+
+  > Team của bạn đang có quy ước đặt mã nào cho research, và nó đủ để truy từ kết luận về nguồn chưa?
+- 🎨 Visual hint: DIAGRAM. Hàng bốn card nền trắng nối bằng mũi tên chỉ về nguồn (tên loại, mã mono màu tím, một dòng mô tả), bên dưới hai card: cách đặt mã và vì sao quan trọng với AI.
+
+---
+
+---
+
+### NUMBERED · Write evidence notes
+- Kicker: Evidence notes
+- Title: Viết evidence note
+- On-slide:
+  - 1 · Chọn: một quan sát, một note
+  - 2 · Đặt tiêu đề: điều participant làm hoặc nói
+  - 3 · Chép quote: giữ nguyên lời người nói, kèm (I01, turn 06)
+  - 4 · Gắn mã và tag: mã outcome, số thứ tự, tag từ bộ cố định, ví dụ RET-02 · order/cancel
+  - Đã đặt mã thì không đổi và không dùng lại, để insight đã trích vẫn trỏ đúng note.
+- Ví dụ: có (RET-02)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước cho thấy transcript thành evidence note trông thế nào. Slide này trả lời: bạn viết note từ transcript của mình ra sao
+  - Bốn bước:
+    - Chọn: chọn một quan sát mà participant làm hoặc nói; mỗi quan sát là một note
+    - Đặt tiêu đề: trung tính, chưa có nguyên nhân, đánh giá hay giải pháp. “P1 could not find where to cancel”, không phải “The cancel button is hidden”. Ở Lesson 3 AI tổng hợp từ các note này; tiêu đề chứa kết luận thì AI đọc lại kết luận thay vì dữ liệu
+    - Chép quote: một đến ba quote, giữ nguyên lời người nói kể cả câu dở dang, kèm tên transcript và số lượt
+    - Gắn mã và tag: mã outcome cộng số thứ tự; đã đặt thì không đổi, không dùng lại. Tag chỉ lấy trong tags.md; chưa có tag phù hợp thì bạn quyết định có thêm vào bộ hay không
+  - Các note của một buổi phỏng vấn nằm chung một file, ví dụ I01.md. Hai buổi phỏng vấn cho khoảng 8 đến 20 note là đủ. Bạn có thể nhờ AI soạn nháp, nhưng phải đọc lại tiêu đề và so từng quote với transcript
+  - Chưa phỏng vấn được hai người thì dùng các note phỏng vấn mẫu, và ghi rõ trong hub đó là dữ liệu mẫu
+
+  > Câu nào trong transcript đầu tiên của bạn sẽ thành note RET-01?
+- 🎨 Visual hint: NUMBERED. Bốn hàng ngang ngăn cách bằng đường kẻ, mỗi hàng ba cột: số lớn, tên bước kèm một câu, ví dụ bằng chữ mono.
+
+---
+
+---
+
+### SPLIT · Prompt for evidence notes
+- Kicker: Evidence notes
+- Title: Prompt để viết evidence note
+- On-slide:
+  - Trái, khung tối "Prompt mẫu": Đây là transcript sạch I01. Viết evidence note cho từng quan sát: mỗi note một quan sát của một participant; tiêu đề là điều participant làm hoặc nói, trung tính; chép nguyên văn quote kèm (I01, turn số); mã dạng RET-01, RET-02 theo thứ tự; tag chỉ lấy trong tags.md, tag thiếu thì ghi riêng; chỗ không chắc thì liệt kê riêng ở cuối
+  - Phải: Tiêu đề là observation (chưa có nguyên nhân hay giải pháp); Quote nguyên văn (AI hay diễn giải lại); Không tự quyết (chỗ mơ hồ thì ghi riêng, bạn quyết)
+  - Chạy trên transcript của bạn, so từng note, sửa prompt đến khi đúng, rồi nhờ công cụ AI tạo skill.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói bốn bước viết note. Slide này trả lời: nhờ AI soạn nháp giúp thì viết prompt thế nào
+  - Prompt cần chốt bốn điều: tiêu đề là observation; quote nguyên văn vì AI hay diễn giải lại; không tự quyết, chỗ mơ hồ ghi riêng; tag có kiểm soát, AI chỉ gán tag có trong tags.md và tag nó đề xuất mà chưa có thì ghi riêng để bạn quyết
+  - Chạy trước, đóng gói sau: chạy trên một transcript, so từng note, sửa prompt đến khi đúng rồi mới nhờ công cụ AI tạo skill (ví dụ write-evidence-notes). Tool không có skill thì lưu prompt thành file để dán lại
+  - Skill hợp với việc lặp lại như ingest; rule dành cho nguyên tắc luôn đúng, như giữ nguyên văn và không đổi mã
+
+  > Câu nào trong transcript của bạn AI dễ diễn giải lại nhất?
+- 🎨 Visual hint: SPLIT. Trái: khung nền tối chứa prompt bằng chữ mono; phải: ba hàng ngăn bằng đường kẻ mảnh (tiêu đề đậm và một câu); một dòng chốt bên dưới.
+
+---
+
+---
+
+### COMPARE · Blind and primed
+- Kicker: Blind synthesis
+- Title: Cùng một bộ note, hai câu hỏi
+- On-slide:
+  - Dữ liệu: 10 evidence note mẫu của Delivery App. Câu hỏi: vì sao khách mới không đặt lại sau đơn đầu tiên?
+  - Lần 1: chỉ có câu hỏi. Giá nằm ở cuối danh sách, là lý do thứ năm trong năm lý do
+  - Lần 2: thêm “Team tin giá là lý do chính”. Giá được nói đầu tiên, rồi thêm một mục riêng về giá
+  - Kết luận không đổi, nhưng hypothesis làm AI nói về giá trước. Hỏi hai lần rồi so.
+- Ví dụ: có (10 evidence note, hai lần chạy)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước nói cách viết note. Slide này trả lời: một hypothesis trong prompt làm câu trả lời của AI đổi thế nào
+  - Dữ liệu là 10 evidence note mẫu, RET-01 đến RET-10. Hỏi hai lần ở hai phiên riêng; lần 2 chỉ thêm câu đầu “Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi”
+  - Kết quả: lần 1 giá là lý do thứ năm, ở cuối danh sách; lần 2 giá xuất hiện ngay câu đầu kèm một mục riêng, nhưng kết luận vẫn là giá không được ủng hộ, chỉ RET-10 ủng hộ từ một người
+  - Hypothesis không đảo kết luận, nhưng đổi thứ AI nói trước. Bộ mẫu có sẵn mâu thuẫn rõ nên đây không phải bằng chứng rằng AI luôn bác hypothesis; hai prompt mạnh hơn cũng cho kết quả AI nói bằng chứng không đủ. Kết quả đầy đủ nằm trong blind-synthesis.md
+  - Hãy mang về cách làm, không mang về kết luận: chạy một lần không có hypothesis, một lần có, rồi so chủ đề nào đứng đầu và note nào được trích. Ở Lesson 3 bạn làm việc này trên note của chính bạn
+
+  > Hypothesis nào của team bạn đang nằm sẵn trong prompt mỗi lần bạn hỏi AI?
+- 🎨 Visual hint: COMPARE. Hai card cùng cấu trúc (nhãn, prompt một câu, kết quả lớn, một dòng giải thích); card lần 2 nền tối. Một dòng chốt bên dưới.
+
+---
+
+## 7. Hub, Q&A, practice and close
+
+---
 
 ---
 
@@ -346,6 +477,42 @@ last_synced: 2026-11-16
 - 🎨 Visual hint: TABLE. Bảng sáu hàng: số, move, mục, chip mức cơ sở (tím viền đậm cho Principle supported, nét đứt cho Untested).
 
 ---
+
+### MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Chúng ta dừng một chút để xem còn nhớ gì từ phần vừa học. Quiz không chấm điểm, chọn sai cũng không sao.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### NUMBERED · Quick check 1
+- Kicker: Quick check
+- Title: AI trả về insight kèm note và ID. *Bạn làm gì tiếp theo?*
+- On-slide:
+  - A · Dùng luôn vì ID đã đúng
+  - B · Đọc ngữ cảnh quanh note xem ý có bị đổi không
+  - C · Nhờ AI cross-check lại insight với các evidence
+  - D · Chạy lại một lần, ra giống thì tin
+  - E · Chỉ kiểm tra thêm những insight nghe lạ
+  - Hiện sau một click: Đáp án B, C. Note ID đúng mới qua lớp đầu. AI cross-check giúp tìm chỗ đáng ngờ, còn bạn vẫn đọc ngữ cảnh quanh note.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là B và C, hiện sau một click.
+  - B là lớp kiểm tra thứ hai: mở đúng lượt trong transcript và đọc cả đoạn, vì quote bị cắt hoặc ghép vẫn có thể đổi nghĩa.
+  - C giúp tìm chỗ insight có thể sai, giống bước Challenge. Chúng ta vẫn tự mở nguồn, vì AI có thể bỏ qua lỗi của chính nó.
+  - A và E bỏ qua lớp thứ hai, còn D chỉ chạy lại AI mà chưa đối chiếu với nguồn.
+
+  > AI trả về insight kèm note và ID, và ID đó có thật. Bạn làm gì tiếp theo? Câu này có hơn một đáp án đúng, mỗi người gõ các chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
 
 ## 3. Persona
 
@@ -1055,6 +1222,42 @@ last_synced: 2026-11-16
 
 ---
 
+### MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Trước phần Q&A, chúng ta ôn thêm một câu. Quiz không chấm điểm.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### NUMBERED · Quick check 2
+- Kicker: Quick check
+- Title: Dấu hiệu nào cho thấy insight đang *nói quá hơn thực tế?*
+- On-slide:
+  - A · Viết “ai cũng vậy” khi chỉ vài người nói
+  - B · Kết luận rộng hơn số người và bối cảnh trong mẫu
+  - C · Có ghi ý kiến trái chiều ngay cạnh insight
+  - D · Bỏ qua những note nói ngược lại insight
+  - E · Ghi rõ nguồn này không cho biết điều gì
+  - Hiện sau một click: Đáp án A, B, D. C và E là những việc giúp insight trung thực hơn.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là A, B, D, hiện sau một click.
+  - A và B là nói rộng hơn dữ liệu đang có.
+  - D làm insight trông chắc hơn vì những note nói ngược lại đã biến mất.
+  - C và E giữ cho người đọc thấy giới hạn của insight.
+
+  > Dấu hiệu nào cho thấy insight đang nói quá hơn thực tế? Câu này có hơn một đáp án đúng, mỗi người gõ các chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
+
 ## 7. Q&A, practice and close
 
 ---
@@ -1136,37 +1339,6 @@ last_synced: 2026-11-16
 - 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, số phần lớn ở góc trên trái, tiêu đề giữa, một dòng phụ.
 
 ---
-
-### PROCESS · From transcript to evidence notes
-- Kicker: Ôn từ Lesson 2
-- Title: Bắt đầu từ *evidence notes của bạn*
-- On-slide:
-  - Evidence notes từ Lesson 2
-  - Buổi phỏng vấn P1
-  - Đã viết ở Lesson 2, mỗi buổi phỏng vấn một file, mỗi note một quan sát. Thiếu note nào thì viết thêm từ transcript đã ẩn danh.
-  - RET-01
-  - Chạm vào khung giờ đầu tiên hiện ra, không nghĩ mình sẽ ở đâu.
-  - RET-02
-  - Không tìm thấy chỗ hủy đơn, nhắn cho support.
-  - RET-03
-  - Chờ 60 phút so với ước tính 30 phút.
-  - Quy tắc
-  - Mỗi note một quan sát, một mã. Tiêu đề ghi điều họ nói và làm, không thêm diễn giải.
-- Ví dụ: có (xem speaker notes)
-- Câu hỏi hay gặp: None.
-- Speaker notes:
-  - Bạn đã viết evidence note từ transcript ở Lesson 2. Slide này trả lời: bước đầu tiên hôm nay là gì, trước khi nhờ AI rút insight
-  - Rà lại bộ evidence notes của bạn:
-    - Mỗi note một quan sát và một mã, ví dụ RET-01 là note đầu của outcome RET. Thiếu note nào thì viết thêm từ transcript đã ẩn danh vào file của buổi đó, đặt mã mới và không dùng lại mã cũ
-    - Tiêu đề ghi điều người đó nói và làm, không thêm diễn giải của bạn
-    - Quote giữ đủ ngữ cảnh, và dẫn về transcript và số lượt
-  - Ví dụ với app giao đồ ăn: người số 1 chạm vào khung giờ đầu tiên hiện ra mà không nghĩ mình sẽ ở đâu. Tiêu đề note ghi đúng hành động đó, chưa kết luận “khách vội”. Kết luận là việc của các bước sau
-  - Hình bên chỉ là ví dụ minh hoạ cấu trúc note. Dữ liệu gốc có tên thật nằm ngoài vùng AI đọc; AI chỉ thấy bản đã gắn participant code P1, P2 và note ID, theo quy tắc dữ liệu ở Lesson 2
-  - Mọi insight ở các bước sau phải dẫn về một mã note như vậy. Note không có mã thì không có chỗ đứng
-  - Rồi chạy blind synthesis trên chính các note này, như đã xem ở Lesson 2: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích
-
-  > Bộ evidence notes của bạn còn thiếu note nào mà bạn nhớ người phỏng vấn đã nói?
-- 🎨 Visual hint: SCHEMATIC. Hàng card nối nhau bằng mũi tên; card cuối tô ink hoặc purple.
 
 ### COMPARE · Persona from insight, persona from AI
 - Kicker: So sánh

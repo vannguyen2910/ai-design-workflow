@@ -13,13 +13,13 @@ slides: "https://claude.ai/artifact/4AFDgey1QNAkFuXdiRGvvu"
 previous-session: "Discover the Problem"
 next-session: "Frame the Problem Worth Solving"
 ---
-Sau Lesson 2, bạn có evidence notes, viết từ transcript đã ẩn danh của các buổi phỏng vấn: mỗi note một quan sát, có mã và quote nguyên văn. Buổi này đi từ evidence notes đến insight đã kiểm tra (synthesis), rồi dựng persona, customer journey map và opportunity mà mỗi dòng truy được về insight ID. Bộ principles vừa là ràng buộc trong prompt, vừa là phép kiểm tra của bạn. Cuối cùng bạn đưa insight đã kiểm tra vào insight hub.
+Sau Lesson 2, bạn có transcript sạch của các buổi phỏng vấn: đã ẩn danh, có mã và số lượt. Buổi này viết evidence note từ chúng (mỗi note một quan sát, có mã và quote nguyên văn), rồi đi từ evidence notes đến insight đã kiểm tra (synthesis), rồi dựng persona, customer journey map và opportunity mà mỗi dòng truy được về insight ID. Bộ principles vừa là ràng buộc trong prompt, vừa là phép kiểm tra của bạn. Cuối cùng bạn đưa insight đã kiểm tra vào insight hub.
 
 > **AI soạn nháp. Bạn kiểm tra. Bạn quyết định.** Một insight hay một persona đọc thuyết phục chưa chắc có dữ liệu đứng sau. Dòng nào không truy được về insight ID thì xoá hoặc ghi unknown.
 
 ## Nội dung buổi học
 
-1. Synthesis: từ evidence notes đến một insight đã kiểm tra
+1. Synthesis: từ transcript sạch qua evidence notes đến một insight đã kiểm tra
 2. Persona
 3. Journey map
 4. Opportunity
@@ -33,7 +33,7 @@ Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và
 
 ## Sau buổi học, bạn có thể
 
-1. Chạy blind synthesis trên evidence notes của bạn (đã cắt ở Lesson 2), rồi chạy ba bước Decision, Insight, Challenge
+1. Viết evidence note từ transcript sạch (một quan sát, một mã, quote nguyên văn, tag từ bộ cố định) và kiểm quote bằng chương trình, rồi chạy blind synthesis trên các note đó và ba bước Decision, Insight, Challenge
 2. Kiểm tra từng insight AI trả lại bằng hai lớp (note ID có thật, ngữ cảnh còn nguyên), và giữ ý kiến trái chiều cùng trang với insight
 3. Dựng persona, journey map hoặc opportunity từ insight đã kiểm tra, mỗi dòng dẫn về insight ID, và đánh dấu ô chưa có insight làm căn cứ là assumption
 4. Phân biệt persona dựng từ insight với persona AI tự sinh, và chỉ ra dòng không có insight nào làm căn cứ
@@ -44,33 +44,107 @@ Phụ lục, ngoài 90 phút: persona, journey map và opportunity với AI, và
 
 ---
 
-## 1. Synthesis: from evidence notes to an insight you can trust
+## 1. Synthesis: from clean transcripts to an insight you can trust
 
-Bạn đang cầm evidence notes của các buổi phỏng vấn ở Lesson 2. Synthesis biến chúng thành một insight mà mỗi dòng dẫn về note ID và nói rõ nguồn là phỏng vấn, scope hay assumption. Persona, journey map và opportunity đều dựng từ insight, nên nếu insight chưa qua Challenge thì mọi thứ phía sau chưa được kiểm tra.
+Bạn đang cầm các transcript sạch của buổi phỏng vấn ở Lesson 2. Mục 1.0 biến chúng thành evidence note, rồi synthesis biến các note thành một insight mà mỗi dòng dẫn về note ID và nói rõ nguồn là phỏng vấn, scope hay assumption. Persona, journey map và opportunity đều dựng từ insight, nên nếu insight chưa qua Challenge thì mọi thứ phía sau chưa được kiểm tra.
 
 | Bạn mang từ Lesson 2 | Nội dung |
 |---|---|
-| Evidence notes | Mỗi buổi phỏng vấn một file md, mỗi note là một mục trong file: một quan sát của một participant, tiêu đề là observation, quote nguyên văn kèm transcript và số lượt, mã như `RET-02` (Lesson 2, mục 5) |
+| Transcript sạch | Mỗi buổi phỏng vấn một file đã ẩn danh, có mã `I01`, số lượt và nhãn người nói, và đã kiểm bằng chương trình rằng AI không đổi chữ nào (Lesson 2, mục 5) |
 | Transcript | Đã ẩn danh trên máy bằng participant code; dữ liệu gốc nằm ngoài vùng AI đọc |
 | Bốn câu hỏi về dữ liệu | Participant đã đồng ý gì, công cụ có học từ dữ liệu không, đã ẩn danh trên máy chưa, bản gốc nằm ngoài vùng AI đọc chưa (Lesson 2, mục 4.3) |
 | Bộ principles, scope, assumption map, research question | Làm ràng buộc trong prompt và làm phép kiểm tra của bạn |
-| Còn thiếu | Insight đã kiểm tra: hôm nay đi từ evidence notes đến đó bằng ba bước |
+| Còn thiếu | Evidence notes (mục 1.0) và insight đã kiểm tra: hôm nay đi từ transcript sạch đến đó |
+
+### 1.0 From clean transcripts to evidence notes
+
+Ở Lesson 2 bạn có transcript sạch: đã ẩn danh, có mã `I01` và số lượt, và đã kiểm là AI không đổi lời người nói. Việc đầu tiên hôm nay là biến chúng thành **evidence note**, đơn vị mà mọi insight sau này dẫn về. Đây cũng là lần đầu bạn áp dụng quy tắc "mỗi note có mã, quote nguyên văn" của Lesson 1 lên dữ liệu thật.
+
+Transcript sạch từ Lesson 2 là nguồn của bạn; bạn không sửa nó sau khi đã kiểm. Từ đó bạn viết **evidence note**: một mục ghi một quan sát của một participant về một chủ đề. Mỗi buổi phỏng vấn có **một file ghi chú**, và mỗi note là một mục `##` trong file đó.
+
+- **Tiêu đề là observation.** Đó là điều participant làm hoặc nói, viết trung tính, chưa có nguyên nhân, đánh giá hay giải pháp. Ví dụ "P1 could not find where to cancel and contacted support", không phải "The cancel button is hidden".
+- **Quote nguyên văn.** Mỗi note có một đến ba quote, mỗi quote kèm tên transcript và số lượt.
+- **Mã.** Mã Business Outcome trong Scope của bạn cộng số thứ tự, ví dụ `RET-02`. Mã này nối evidence về outcome nó phục vụ, giống mã Epic ở nhiều công ty. Mã cũng là thứ giúp AI làm việc đáng tin: AI chỉ ra được note nào ủng hộ insight nào thay vì nói chung chung, bạn kiểm tra được quote ở đúng note đó, và ba tháng sau ai hỏi "vì sao kết luận vậy?" thì mở lại được nguồn.
+- **Các trường khác.** `status` (draft, checked hoặc superseded), `confidence` (low, medium hoặc high), `source` và `tags`. `confidence` do bạn đặt, không do AI. Mỗi note chỉ có một participant nên để `low`; bạn nâng lên khi nhiều note từ nhiều buổi cùng nói một điều.
+
+```markdown
+# I01 · Delivery App · P1
+
+## RET-02 · P1 could not find where to cancel and contacted support
+- outcome: RET
+- status: checked
+- confidence: low
+- source: I01 @ turn 06
+- tags: [order/cancel, help/contact-support]
+
+> "I wanted to cancel because my plans changed. I went through the whole order screen and could not find it. Eventually I messaged support." (I01, turn 06)
+
+## RET-03 · P1 waited 60 minutes against an estimate of 30
+...
+```
+
+**Vì sao một file cho mỗi buổi phỏng vấn.** Ở công ty, một đợt research 10 đến 30 buổi là chuyện bình thường. Mỗi note một file thì ra hàng trăm đến hàng nghìn file. Mỗi buổi một file thì chỉ 10 đến 30 file, mở theo đúng thứ tự transcript, và script kiểm quote vẫn đi được từng note.
+
+**Đơn vị này không phải của riêng khoá.** Ý tưởng chia research thành đơn vị nhỏ, mỗi đơn vị một quan sát có nguồn và tag, là cách làm quen thuộc. Dovetail gọi đó là highlight: một đoạn được đánh dấu trong note gốc và gắn tag, rồi nhóm lại thành insight dẫn về bằng chứng. Atomic research gọi là nugget, gồm quan sát, bằng chứng và tag. Các công ty thường lưu chúng thành bản ghi trong một công cụ research repository hoặc cơ sở dữ liệu, không lưu thành file md. Một file cho mỗi buổi phỏng vấn là lựa chọn của khoá, để AI và git làm việc được trên máy của bạn. Nếu công ty bạn dùng Dovetail, Condens hay Airtable, bạn giữ nguyên các nguyên tắc (một quan sát, một mã, quote nguyên văn kèm nguồn, tag có kiểm soát) và đặt chúng vào công cụ đó. Nguồn về Dovetail và atomic research chủ yếu là trang của hãng bán công cụ và blog, nên đây là kinh nghiệm thực hành, chưa phải evidence đã kiểm.
+
+**Mã nối cả chuỗi.** Mã không chỉ nằm ở note. Transcript có mã (`I01`, đặt ở Lesson 2), note có mã (`RET-02`), insight có mã (`IN-01`), opportunity có mã (`O2`), và mỗi mã dẫn về mã đứng trước nó. Tên mã do team chọn; bạn giữ ba điều: tiền tố cho biết loại, số tăng dần, và mã đã đặt thì không đổi, không dùng lại. Khi dùng AI, mã là thứ làm cho câu trả lời kiểm được. Nếu AI nói "khách mới bỏ đi vì không tìm thấy chỗ huỷ đơn" và kèm `RET-02`, `RET-06`, bạn mở đúng hai note và đọc quote. Nếu không có mã, câu trả lời vẫn nghe hợp lý nhưng bạn không biết nó lấy từ đâu, và AI có thể đã tự bịa. Nếu AI trả về một mã không có trong bộ, bạn biết ngay đó là nguồn bịa.
+
+**Tag có kiểm soát.** Tag giúp tìm và lọc note sau này. Nếu ai muốn đặt tag gì cũng được thì chỉ vài buổi sau đã có `cancel`, `huy-don` và `order-cancel` cho cùng một ý, và bộ lọc không còn dùng được. Vì vậy bạn giữ một file `tags.md` chứa bộ tag cố định, và mọi note chỉ dùng tag trong file đó:
+
+- **Bắt đầu nhỏ, mở rộng dần.** Một dự án của khoá chỉ cần vài chục tag. Dovetail ghi rằng đa số đội thấy 50 đến 150 tag được duy trì tốt là đủ cho một kho dùng lâu dài, và họ cũng khuyên bắt đầu nhỏ. Đây là lời khuyên của hãng, không phải kết quả nghiên cứu.
+- **Hai cấp, dạng `cha/con`.** Ví dụ `order/cancel`, `order/change-slot`, `help/contact-support`. Tag cha là nhóm chủ đề dùng chung; tag con là chi tiết.
+- **Tag mô tả chủ đề hoặc vấn đề của người dùng**, không mô tả tên dự án, tên team hay kết luận của bạn. Phương pháp, nhóm participant và ngày đi vào trường riêng, không đi vào tag.
+- **Mỗi tag có một câu mô tả** trong `tags.md`, để người khác dùng đúng cách.
+- **Thêm tag mới là một quyết định,** do bạn (hoặc người phụ trách bộ tag trong team) duyệt. AI được gợi ý tag, nhưng chỉ trong bộ này; tag nào AI đề xuất mà chưa có thì bạn quyết định có thêm vào bộ hay không.
+
+Folder đặt các file ghi chú do bạn chọn; nhiều công ty gọi là `Insights` hoặc `Evidence`. Bạn viết note, hoặc nhờ AI soạn nháp rồi kiểm tra tiêu đề, quote và tag của từng note. Bộ mẫu của Delivery App có 10 note, RET-01 đến RET-10, viết từ hai transcript sạch trong `assets/starter-files/course-case/`. Chúng nằm trong hai file `I01.md` và `I02.md`, kèm bộ tag `tags.md`.
+
+**Quote phải nguyên văn.** AI tóm tắt rất trơn. Khi bạn nhờ AI rút insight, nó trả về insight kèm quote. Các hướng dẫn thực hành về tổng hợp research bằng AI cảnh báo hai lỗi: quote bịa nghe hay hơn quote thật, vì người thật nói câu dở dang; và insight dựa vào một ý của vài người nhưng được trình bày như xu hướng chính. Các hướng dẫn này chủ yếu do bên bán công cụ viết, nên là kinh nghiệm thực hành, chưa phải evidence đã kiểm. Một nghiên cứu tổng quan về UX researcher cũng cho thấy họ ít tin kết quả AI vì không truy được về dữ liệu gốc.
+
+Vì vậy mỗi quote nằm trong evidence note theo dạng cố định `> "quote" (I01, turn 04)`, kèm transcript và số lượt. Dạng này kiểm tra được, còn một đoạn văn trơn thì không.
+
+**Phép kiểm tra bằng chương trình.** Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script đọc từng file ghi chú của buổi phỏng vấn, rồi với mỗi note và mỗi dòng quote mở transcript gốc, tìm đúng lượt được ghi và kiểm tra quote có nằm trong lượt đó hay không. Nó bỏ qua khác biệt về khoảng trắng, xuống dòng, chữ hoa chữ thường và kiểu dấu ngoặc, nhưng không bỏ qua khác biệt về chữ. Nó cũng kiểm mỗi note có đủ trường, `id` không trùng, nguồn của quote khớp trường `source` và mọi tag có trong `tags.md`. Kết quả là danh sách từng quote và từng note đạt hoặc không đạt, kèm lý do ngắn. Instruction mẫu nằm ở `assets/starter-files/course-case/check-evidence-instruction.md`.
+
+Đây là phép so khớp chuỗi do chương trình làm, không phải một AI khác đánh giá. Lý do: một AI duyệt giúp có thể bỏ qua một quote bịa theo cùng cách AI đầu tiên đã bịa ra nó. Đây là suy luận của chương trình, không phải kết quả đo.
+
+Chương trình đã thử instruction này bằng một script tham chiếu viết theo đúng instruction (`tests/hub_quote_check/check_evidence.py`, có mười hai test), trên 10 note mẫu (11 quote) trong hai file buổi phỏng vấn: bộ mẫu đạt hết. Khi cố ý đổi một chữ trong quote, trỏ sai số lượt, đặt `id` trùng hoặc trỏ tới file transcript không tồn tại, hoặc gắn tag không có trong `tags.md`, script báo không đạt đúng các note đó; quote chỉ khác khoảng trắng, chữ hoa chữ thường hoặc dấu ngoặc cong vẫn đạt. Chưa thử với một AI coding tool tự viết script từ instruction `[to confirm]`.
+
+Hai buổi phỏng vấn cho khoảng 8 đến 20 note, và thế là đủ: phép kiểm tra chỉ kiểm tra quote trong note của bạn, không kiểm tra số lượng note hay việc bạn đã chọn đủ quan sát quan trọng.
+
+**Phép kiểm tra này chứng minh:** quote có thật trong transcript gốc, đúng ở lượt được ghi.
+
+**Phép kiểm tra này không chứng minh:** tiêu đề observation mô tả đúng quote, bạn đã không bỏ sót quan sát quan trọng, hay một insight nào đó đúng. Những việc đó vẫn là của bạn: đọc lại tiêu đề từng note với quote bên dưới, và đọc lại đoạn gốc của những quan sát quan trọng.
 
 ### 1.1 From evidence notes to blind synthesis
 
-Việc viết evidence note từ transcript đã làm ở Lesson 2, mục 5. Bước đầu tiên hôm nay, trước khi nhờ AI rút insight, là rà lại bộ evidence notes của bạn:
+Khi bộ evidence notes đã qua kiểm quote và bạn đã đọc lại tiêu đề từng note (mục 1.0), bạn mới có dữ liệu đủ tin để nhờ AI tổng hợp.
 
-- Mỗi note **một quan sát và một mã**. Ví dụ `RET-01` là note đầu của outcome RET. Thiếu note nào thì viết thêm từ transcript đã ẩn danh theo cùng dạng, vào file của buổi phỏng vấn đó, đặt mã mới và không dùng lại mã cũ.
-- Tiêu đề note ghi điều người đó nói và làm, không thêm diễn giải của bạn. Người số 1 đặt vào Chủ nhật và chạm vào khung giờ đầu tiên hiện ra thì ghi đúng hành động đó, chưa kết luận "khách vội". Kết luận là việc của các bước sau.
-- Quote giữ đủ ngữ cảnh để đọc lại sau này vẫn hiểu, và mỗi quote còn dẫn về transcript và số lượt.
-
-Rồi chạy **blind synthesis** trên chính các note này (bạn làm ở practice, Step 1), như đã xem ở Lesson 2, mục 6: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích. Ở Lesson 2 bạn thấy hypothesis đổi thứ AI nói trước; ở đây bạn xem điều đó có xảy ra với dữ liệu của bạn không.
+Chạy **blind synthesis** trên chính các note này (bạn làm ở practice, Step 1), như kết quả mẫu bên dưới: một lần chỉ có câu hỏi, một lần thêm hypothesis hàng đầu của team, rồi so chủ đề nào đứng đầu và note ID nào được trích. Ở bộ mẫu bạn thấy hypothesis đổi thứ AI nói trước; ở practice bạn xem điều đó có xảy ra với dữ liệu của bạn không.
 
 Mọi insight ở các bước sau phải dẫn về một mã note như vậy. Note không có mã thì không có chỗ đứng.
 
+**Kết quả mẫu trên Delivery App.** Bạn hỏi AI hai lần, trong hai phiên riêng, trên cùng 10 evidence note mẫu của Delivery App (RET-01 đến RET-10). Lần 1 không nêu hypothesis. Lần 2 thêm một câu đầu: "Team sản phẩm đang tin rằng giá là lý do chính khiến khách rời đi." Hai lần có cùng câu hỏi, cùng dữ liệu, cùng yêu cầu nêu mã note. Prompt và kết quả đầy đủ nằm ở `assets/starter-files/course-case/blind-synthesis.md`.
+
+Bộ mẫu chứa sẵn hypothesis này: RET-10 nói món quá đắt, RET-09 nói phí giao hơi đắt nhưng vẫn đặt tiếp, và RET-08 nói thời gian chờ làm khách phiền hơn giá.
+
+
+| | Lần 1 (không hypothesis) | Lần 2 (có hypothesis) |
+|---|---|---|
+| Giá xuất hiện ở đâu | Lý do thứ năm, cuối danh sách | Câu đầu tiên của câu trả lời, rồi một mục riêng sau bốn lý do |
+| Mã note nhắc đến giá | RET-10, RET-09, RET-08 | RET-10, RET-09, RET-08 |
+| Kết luận về giá | Không phải lý do bỏ đi của P1; với P2, thời gian chờ nặng hơn giá | Không được ủng hộ; RET-10 là bằng chứng ủng hộ duy nhất, từ một người |
+| Bốn lý do còn lại | Giống nhau (cùng nhóm, cùng mã note) | Giống nhau |
+
+Hypothesis không đảo kết luận, nhưng đổi chỗ giá nằm trong câu trả lời: từ lý do cuối danh sách thành câu đầu tiên cộng một mục riêng. Giá là một trong những chủ đề có ít evidence nhất (ba trên mười note, và một trong ba note là của người nói thời gian chờ quan trọng hơn giá). Lần 2 còn nêu một điều lần 1 không nêu: RET-08 và RET-10 là của cùng một người và mâu thuẫn nhau, nên cần hỏi lại người đó.
+
+
+**Điều các lần chạy không cho thấy.** Chương trình cũng thử hai prompt mạnh hơn trên cùng dữ liệu: một prompt đòi AI "tóm tắt các bằng chứng trong ghi chú cho thấy điều đó", và một prompt đòi soạn "ba điểm mạnh nhất từ các ghi chú để ủng hộ" đề xuất giảm phí giao. Cả hai prompt và kết quả đã lưu nằm trong `blind-synthesis.md`. Với prompt đầu, AI nói bằng chứng không ủng hộ rõ, chỉ RET-10 ủng hộ còn RET-09 và RET-08 làm yếu hypothesis. Với prompt sau, AI từ chối soạn ba điểm mạnh vì không có đủ bằng chứng. Vậy bộ mẫu này **không** cho thấy AI đồng ý với hypothesis.
+
+Đây là hành vi của một mô hình ở một thời điểm, trên một bộ rất nhỏ có sẵn mâu thuẫn rõ; bốn lần chạy này do một subagent của AI coding tool thực hiện, không phải công cụ AI của bạn. Mô hình khác, dữ liệu dài hơn hoặc dữ liệu mơ hồ hơn có thể cho kết quả khác. Vì vậy bạn không nên kết luận "AI không bị hypothesis ảnh hưởng". Điều đáng mang đi là phương pháp:
+
 ### 1.2 Rules with the data
 
-1. **Ẩn danh trên máy trước khi đưa cho AI**, bằng find and replace, thay tên bằng participant code (P1, P2). Bạn đã làm việc này ở Lesson 2; dữ liệu gốc chưa ẩn danh vẫn nằm ngoài vùng AI đọc. Có công cụ tự động tìm thông tin định danh. Nó tìm khá tốt số điện thoại, email và các mã có định dạng cố định để bạn bỏ đi, nhưng không đảm bảo bắt hết và thường mạnh nhất với tiếng Anh. Với tiếng Việt, bạn vẫn tự đọc lại tên người, nơi làm và các chi tiết gián tiếp.
+1. **AI chỉ thấy dữ liệu đã ẩn danh trên máy** (P1, P2), như bạn đã làm ở Lesson 2; dữ liệu gốc chưa ẩn danh vẫn nằm ngoài vùng AI đọc. Có công cụ tự động tìm thông tin định danh. Nó tìm khá tốt số điện thoại, email và các mã có định dạng cố định để bạn bỏ đi, nhưng không đảm bảo bắt hết và thường mạnh nhất với tiếng Anh. Với tiếng Việt, bạn vẫn tự đọc lại tên người, nơi làm và các chi tiết gián tiếp.
 2. **Mỗi evidence note có một mã** (`RET-01`), và mỗi quote trong note dẫn về transcript và số lượt, ví dụ `(I01, turn 04)`. Mỗi insight có insight ID (IN-01), nêu nguồn là interview, scope hay assumption, và dẫn note ID, để mọi dòng về sau dẫn được về đúng chỗ.
 3. **AI được phép nói unknown.** Khi không được phép, AI lấp chỗ trống bằng nội dung nghe hợp lý. Quy tắc đi kèm: chỉ dùng evidence notes được đưa, và mọi insight kèm note ID có thật.
 
