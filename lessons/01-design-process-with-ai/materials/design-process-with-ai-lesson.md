@@ -365,7 +365,7 @@ Mục này là hướng dẫn thực tế, **không phải tư vấn pháp lý**
 
 PRD, design chưa phát hành, user research có tên người, file của client và số liệu tài chính thường là thông tin confidential hoặc nằm dưới NDA. Ở Việt Nam, dữ liệu cá nhân được điều chỉnh bởi Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15, có hiệu lực từ 01/01/2026, và Nghị định 356/2025/NĐ-CP quy định chi tiết việc thi hành. Tên, email, số điện thoại và bản ghi của người dùng đều là dữ liệu cá nhân.
 
-Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói consumer thường cho người dùng chọn có cho phép dùng hội thoại để cải thiện model hay không; gói business, enterprise và API thường không dùng dữ liệu khách hàng để train theo mặc định. Cài đặt và điều khoản đổi thường xuyên, nên bạn cần đọc trang data controls của tool đang dùng và không mặc định dữ liệu là private.
+Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Với gói cá nhân, mặc định tuỳ hãng: có công cụ dùng hội thoại để cải thiện model cho tới khi bạn tắt. Gói business, enterprise và API thường không dùng dữ liệu khách hàng để train theo mặc định. Cài đặt và điều khoản đổi thường xuyên, nên bạn cần đọc trang data controls của tool đang dùng và không mặc định dữ liệu là private.
 
 ### 8.2 Three classes of material
 
@@ -373,18 +373,29 @@ Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói
 |---|---|---|
 | **Safe**: thông tin công khai, suy nghĩ riêng, project hư cấu | Trang phí giao công khai của competitor; project mẫu của chương trình | Dùng được với bất kỳ tool nào đã chấp nhận |
 | **Ask first**: nội bộ nhưng không nhạy cảm | Ghi chú quy trình nội bộ; tóm tắt research chưa công bố, không có tên người | Chỉ dùng trong tool mà bạn đã chọn dùng cho việc đó |
-| **Never in a public tool**: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA | Transcript phỏng vấn có tên; danh sách khách hàng; spec chưa phát hành | Không dán. Ẩn danh trước, hoặc để ngoài |
+| **Never in a public tool**: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA | Transcript phỏng vấn có tên; danh sách khách hàng; spec chưa phát hành | Không dán. Dữ liệu cá nhân phải bỏ hết chi tiết nhận ra người rồi mới dùng; tài liệu confidential xoá tên rồi vẫn để ngoài |
 
 ### 8.3 Four habits before pasting
 
 1. **Kiểm tra chính sách.** Chưa có thì hỏi; còn phân vân thì không dán. Bạn hỏi bộ phận security hoặc IT ba câu: dữ liệu được lưu ở đâu, lưu bao lâu, và có dùng để train model không. Nếu công ty cấm công cụ AI công cộng thì thường đã có một công cụ được duyệt, và bạn hỏi xem đó là công cụ nào. Chưa có thì bạn làm trên project mẫu của chương trình.
 2. **Phân loại tài liệu** theo ba nhóm trên.
 3. **Xoá thông tin định danh trước**, bằng find and replace trên máy cục bộ chứ không nhờ AI làm, vì khi đó dữ liệu đã được gửi đi. Thay tên bằng P1, P2 chưa phải là ẩn danh, vì vai trò, tuổi, nơi ở hay thời điểm vẫn đủ để nhận ra một người. Bạn nên bỏ các chi tiết đó, hoặc nói chung hơn, ví dụ "một PM ở thành phố lớn".
-4. **Giữ file confidential ngoài folder của tool**, vì AI coding tool hoặc agent đọc toàn bộ project folder. `AGENTS.md` có thể dặn tool không đọc một folder, nhưng đó là quy tắc chứ không phải rào chắn kỹ thuật. Cùng nguyên tắc với **connector**: trước khi kết nối, xác định nó đọc và sửa được những gì.
+4. **Giữ file confidential ngoài folder của tool**, vì AI coding tool hoặc agent đọc toàn bộ project folder. `AGENTS.md` có thể dặn tool không đọc một folder, nhưng đó là quy tắc chứ không phải rào chắn kỹ thuật. Cùng nguyên tắc với **connector**: trước khi kết nối, xác định nó đọc và sửa được những gì. Nội dung AI đọc qua connector có thể chứa lệnh cài cắm, nên để quyền chỉ đọc khi được.
 
 Trước khi dùng agent hoặc skill, bạn cũng nên biết công cụ AI của mình có tự cập nhật không. Nhiều công ty không cho công cụ AI, agent hay skill tự cập nhật, vì phần được nạp vào có thể đổi sau khi đã được duyệt. Nếu công ty bạn như vậy, bạn gọi agent bằng tay và cập nhật bằng tay khi cần: đọc phần thay đổi, thử trên project mẫu, rồi mới dùng cho việc thật. Bạn hỏi IT ba câu: công cụ dùng bản ổn định hay bản mới nhất, có khoá phiên bản không, và skill hay connector lấy từ đâu.
 
 Quyền dùng output của AI cho công việc với client và quyền sở hữu tuỳ công ty và quốc gia; nên ghi những chỗ đã dùng AI vào log của project. Output của mục này là ba dòng bằng lời của bạn: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì.
+
+
+### 8.4 Real user data
+
+Phần này tóm tắt Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15. Đây không phải tư vấn pháp lý, nên bạn hỏi legal trước khi áp dụng.
+
+- **Xin phép theo từng mục đích.** Người tham gia cần đồng ý rõ ràng cho từng mục đích, và im lặng không tính là đồng ý. Form phỏng vấn nên ghi bạn dùng AI để làm gì.
+- **Chuyển dữ liệu ra nước ngoài.** Dùng nền tảng đặt ngoài Việt Nam để xử lý dữ liệu cá nhân thu tại Việt Nam được tính là chuyển dữ liệu xuyên biên giới (Điều 20). Tổ chức phải lập hồ sơ đánh giá tác động trong 60 ngày kể từ lần chuyển đầu tiên, trừ một số ngoại lệ.
+- **Khử nhận dạng.** Dữ liệu đã khử nhận dạng không còn là dữ liệu cá nhân, nhưng khi đó không thể xác định hay giúp xác định ai nữa. Thay tên bằng P1, P2 chưa đạt mức này.
+
+Với một số công cụ, bấm like hoặc dislike có thể gửi cả cuộc hội thoại đi để cải thiện model, kể cả khi bạn đã tắt tuỳ chọn train.
 
 ---
 

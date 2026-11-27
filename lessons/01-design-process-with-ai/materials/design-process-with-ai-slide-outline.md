@@ -2,7 +2,7 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 72
+slide_count: 73
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
@@ -18,7 +18,7 @@ last_synced: 2026-11-26
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 3: Discover the Problem |
-| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 62 slide; deck thật trên Slides đã sắp xếp lại theo thứ tự này, phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5. Ngày 2026-11-25, mục UI/UX (số liệu, hướng nghề, hướng tiếp cận brief, “trông đã xong”) chuyển sang intro (`program-intro-slide-outline.md`), còn Context and grounding và Hallucination đứng đầu mục 1 (File, folder và rules); thời lượng giảm tương ứng, chưa ước lại |
+| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 63 slide; deck thật trên Slides đã sắp xếp lại theo thứ tự này, phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5. Ngày 2026-11-25, mục UI/UX (số liệu, hướng nghề, hướng tiếp cận brief, “trông đã xong”) chuyển sang intro (`program-intro-slide-outline.md`), còn Context and grounding và Hallucination đứng đầu mục 1 (File, folder và rules); thời lượng giảm tương ứng, chưa ước lại |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
@@ -1552,9 +1552,9 @@ last_synced: 2026-11-26
   - Có thể vi phạm Luật Bảo vệ dữ liệu cá nhân (hiệu lực từ 01/01/2026)
   - WHEN
   - Trước khi dán bất kỳ tài liệu nào vào công cụ AI, kiểm tra chính sách AI của công ty
-  - Ẩn danh trước khi AI nhìn thấy bất kỳ quote nào
-  - Trước khi kết nối connector, vì nó đọc được file trong folder; giữ file confidential ở ngoài
-- Ví dụ: Transcript phỏng vấn là loại dễ dán vào AI nhất: ẩn danh thành P1, P2, bỏ công ty, số điện thoại và email trước khi AI nhìn thấy.
+  - Thay tên bằng mã và bỏ chi tiết nhận ra người trước khi AI thấy quote
+  - Trước khi kết nối connector, xem nó đọc và sửa được gì
+- Ví dụ: Transcript phỏng vấn là loại dễ dán vào AI nhất: thay tên bằng P1, P2, bỏ công ty, số điện thoại và email trước khi AI nhìn thấy.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Data safety là câu hỏi chúng ta phải trả lời trước khi đưa bất kỳ thứ gì cho AI: dữ liệu này có được phép rời khỏi máy của mình không.
@@ -1563,15 +1563,38 @@ last_synced: 2026-11-26
   - Vì sao phải cẩn thận: dữ liệu đã dán vào có thể bị lưu hoặc dùng để train, và gần như không thu hồi được. Nó cũng có thể vi phạm quy định dữ liệu của công ty và Luật Bảo vệ dữ liệu cá nhân, có hiệu lực từ 01/01/2026.
   - Ba thời điểm cần dừng lại:
     - Trước khi dán bất kỳ tài liệu nào vào công cụ AI: kiểm tra chính sách AI của công ty và phân loại tài liệu. Chưa có chính sách thì hỏi; còn phân vân thì đừng dán
-    - Ẩn danh trước khi AI nhìn thấy quote: thay tên bằng P1, P2, bỏ công ty, số điện thoại và email. Làm bằng find and replace trên máy chúng ta, không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi
-    - Trước khi kết nối connector: connector đọc được file trong folder, nên chỉ nối phần cần thiết và giữ file confidential ở ngoài folder
-  - ----
-  - Nếu còn tgian
+    - Trước khi AI nhìn thấy quote: thay tên bằng P1, P2, bỏ công ty, số điện thoại và email. Làm bằng find and replace trên máy chúng ta, không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi
+    - Trước khi kết nối connector: connector cho AI vào app được nối, như Drive, Figma hay Notion. Chúng ta xem nó đọc và sửa được gì, chỉ nối phần cần thiết và để quyền chỉ đọc khi được. Nội dung AI đọc từ đó có thể chứa lệnh cài cắm.
   - Thay tên bằng P1, P2 chưa phải là ẩn danh: chúng ta vẫn giữ một bảng ghi P1 là ai, nên đó vẫn là dữ liệu cá nhân, và bảng này phải để ngoài vùng AI đọc. Vai trò, tuổi, nơi ở hay thời điểm cũng đủ để nhận ra một người. Ví dụ "giám đốc sản phẩm ở Cần Thơ vừa chuyển nghề" không có tên nhưng người trong ngành vẫn đoán ra được, nên chúng ta bỏ chi tiết đó hoặc nói chung hơn, như "một PM ở thành phố lớn".
-  - Dữ liệu gốc cần ẩn danh nằm trong _raw-private/: không lên GitHub, file luật bảo tool không đọc. Đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder. Liên hệ với slide repo ban nãy: file nào không đưa lên repo thì cũng không nên để trong folder mà agent đọc.
+  - Dữ liệu gốc còn tên thật thì để ngoài folder mà AI đọc, vì file rules chỉ là lời dặn chứ không chặn được. File nào không đưa lên repo thì cũng đừng để trong folder agent đọc.
   - Output AI có được dùng cho công việc với client hay không, và ai sở hữu, tuỳ công ty và quốc gia; ghi trong project log chỗ nào đã dùng AI.
   - Chúng ta viết data rules của riêng mình ở bài tập về nhà; đến lúc đó đừng dán tài liệu thật vào công cụ AI. Nhắc đọc trang data controls của tool đang dùng; điều khoản đổi thường xuyên.
 - 🎨 Visual hint: Title bên trái, khung icon khiên bên phải; bên dưới ba cột What, Why, When có đường kẻ đậm và gạch đầu dòng tím.
+
+---
+
+### FEATURE GRID · Real user data
+- Slide: `user-data`
+- Kicker: Người dùng thật
+- Title: Trước khi đưa *dữ liệu thật cho AI*
+- On-slide:
+  - Xin phép người tham gia
+  - Nói rõ bạn dùng AI để làm gì. Im lặng không tính là đồng ý.
+  - Hỏi legal trước khi gửi ra nước ngoài
+  - Công cụ đặt ở nước ngoài có thể kéo theo thủ tục pháp lý.
+  - Cẩn thận nút like, dislike
+  - Đánh giá một câu trả lời có thể gửi cả cuộc chat đi.
+  - Không phải tư vấn pháp lý
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Ba việc này dành cho lúc chúng ta làm với dữ liệu của người dùng thật, không phải dữ liệu giả.
+  - Xin phép: nói rõ với người tham gia chúng ta dùng AI để làm gì, ví dụ chép lời hay tổng hợp. Luật Bảo vệ dữ liệu cá nhân yêu cầu đồng ý theo từng mục đích, và im lặng không tính là đồng ý.
+  - Gửi ra nước ngoài: dùng nền tảng đặt ngoài Việt Nam để xử lý dữ liệu cá nhân thu ở Việt Nam được luật coi là chuyển dữ liệu xuyên biên giới. Tổ chức phải lập hồ sơ đánh giá tác động trong 60 ngày, trừ một số ngoại lệ. Chúng ta không tự quyết chuyện này, hỏi legal trước.
+  - Nút like, dislike: với một số công cụ, đánh giá một câu trả lời sẽ gửi cả cuộc chat đi để cải thiện model, kể cả khi đã tắt train.
+  - Nội dung ở slide này không phải tư vấn pháp lý.
+  - Câu hỏi cho lớp: Form xin phép phỏng vấn của bạn đã nhắc đến AI chưa?
+- 🎨 Visual hint: Ba card trắng ngang hàng, mỗi card một line-art (tờ đồng ý có chữ ký, quả địa cầu qua đường biên, ngón tay cái và khung chat); dòng nhỏ "Không phải tư vấn pháp lý" ở đáy. Mỗi click hiện một card.
 
 ---
 
@@ -2154,7 +2177,7 @@ last_synced: 2026-11-26
   - **Xoá thông tin định danh bằng find and replace trên máy của designer**, không nhờ AI làm, vì như vậy dữ liệu đã bị gửi đi rồi
   - AI coding tool hoặc agent đọc toàn bộ project folder, nên hãy giữ file riêng tư ở chỗ khác
   - Một dòng về connector: nó cho AI đọc thẳng file design hoặc tài liệu của designer (ví dụ trong công cụ design hoặc ghi chú); **trước khi kết nối, biết nó đọc và sửa được những gì**, và áp data rules như khi dán. Dạy kỹ hơn ở buổi 7
-  - Dữ liệu gốc cần ẩn danh nằm trong `_raw-private/`: không lên GitHub, và file luật bảo tool không đọc; đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder
+  - Dữ liệu gốc còn tên thật thì để ngoài folder mà AI đọc, vì file rules chỉ là lời dặn chứ không chặn được
   - Output của AI có được dùng cho công việc với client hay không, và ai sở hữu nó, tuỳ công ty và quốc gia của designer; hãy ghi lại trong project log chỗ nào đã dùng AI
   - Designer sẽ viết data rules riêng ở cuối Activity ngay sau phần này; cho đến lúc đó đừng dán tài liệu thật vào AI tool
   - Hai phút
