@@ -52,7 +52,6 @@ last_synced: 2026-11-23
 
 ### MILESTONE · Ice breaker
 - Num: 6
-- Kicker: Mở đầu
 - Title: Ice Breaker
 - Sub: Kể một lần bạn có sẵn giải pháp trong đầu trước khi hiểu rõ vấn đề.
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
@@ -66,7 +65,7 @@ last_synced: 2026-11-23
   - Bảng hai cột được dùng lại ở phần AI sinh solution
 
   > **Giữ bảng này lại. Lát nữa mình sẽ quay lại khi nói về chuyện hỏi AI trước.**
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, hai cột trống bên dưới.
+- 🎨 Visual hint: Nền tím; line-art trắng hai người đang trò chuyện (một bong bóng có tia sáng, một bong bóng có đường rối) phía trên chữ Ice Breaker, một câu căn giữa bên dưới.
 
 ---
 

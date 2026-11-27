@@ -96,6 +96,14 @@ Mở một file lạ, bạn không cần hiểu hết. Chỉ cần nhìn ra file
 
 **HTML (`.html`)** là file mở bằng trình duyệt. Markdown cho AI đọc, HTML cho người xem: xem kết quả ngay không cần cài đặt, chỉ cần một file là chia sẻ được, và gần sản phẩm thật hơn ảnh tĩnh hoặc Figma. Dùng cho prototype tương tác, slide deck, tài liệu hướng dẫn có hình, dashboard hoặc báo cáo nghiên cứu, email và các tool nhỏ tự build. AI viết giúp, bạn chỉ cần xem và chỉnh.
 
+![Trang web whiteboard heuristic evaluation: ảnh màn hình một app giao đồ ăn xếp theo journey, kèm sticky note theo mức độ nghiêm trọng](../assets/html-example-heuristic-whiteboard.webp)
+
+*Ví dụ 1: [whiteboard heuristic evaluation](https://vannguyen2910.github.io/ai-design-workflow-template/food-deliver-app-public/work/heuristic-evaluation/heuristic-whiteboard.html), một file HTML kéo và zoom được.*
+
+![Màn hình mở đầu của prototype Travel Buddy trên trình duyệt, có nút Get started và Explore without signing up](../assets/html-example-travel-prototype.webp)
+
+*Ví dụ 2: [prototype Travel Buddy](https://vannguyen2910.github.io/ai-design-workflow-template/travel-app/work/final-prototype/travel-buddy-final-prototype.html), chạy ngay trong trình duyệt.*
+
 #### Use case: markdown là nguồn, HTML là kết quả
 
 1. Viết nội dung và quy tắc bằng markdown: brief, rules file, ghi chú research, danh sách màn hình.
@@ -106,7 +114,7 @@ Tách hai lớp vì markdown là nguồn sự thật, dễ đọc và dễ sửa
 
 ### 2.2 The project folder
 
-Project folder là một thư mục bình thường trên máy bạn, dùng như không gian làm việc của một project. Bạn gom vào đó mọi thứ AI cần: tài liệu research, brief, file hướng dẫn, và chỗ để AI ghi kết quả. Khi mở AI coding tool trong folder này, AI đọc được cả folder thay vì chỉ một đoạn bạn dán vào chat, nên bạn không phải dán lại ngữ cảnh mỗi lần. Thường có bốn nhóm: tài liệu nền (research, brief, design system), file đang làm, thư mục `learnings/` nơi ghi lại điều đã học, và `README.md`. AI không nhớ gì từ phiên trước, nên mọi thứ cần nhớ phải nằm trong file.
+Project folder là một thư mục bình thường trên máy bạn, dùng như không gian làm việc của một project. Bạn gom vào đó mọi thứ AI cần: tài liệu research, brief, file hướng dẫn, và chỗ để AI ghi kết quả. Khi mở AI coding tool trong folder này, AI đọc được cả folder thay vì chỉ một đoạn bạn dán vào chat, nên bạn không phải dán lại ngữ cảnh mỗi lần. Thường có bốn nhóm: tài liệu nền (research, brief, design system), file đang làm, thư mục `learnings/` nơi ghi lại điều đã học, và `README.md`. AI không tự nhớ phiên trước. Một số công cụ có memory riêng, nhưng thứ cần giữ chắc thì ghi vào file.
 
 - Project nằm trong một folder local, vì AI coding tool mở cả folder làm project và đọc mọi thứ bên trong. Không đặt trong Google Drive, iCloud, OneDrive hay Dropbox, vì thư mục đồng bộ có thể làm hỏng file khi AI ghi.
 - Bạn tự sắp xếp folder theo cách làm việc của mình. Chỉ cần mỗi nhóm có chỗ riêng và rules ghi rõ chỗ đó.
@@ -124,13 +132,13 @@ Thử ngay: mở `README.md` của workspace template và trả lời ba câu. F
 
 ### 2.3 Rules
 
-**Rules** là một file ngắn ghi luật chung của project, AI đọc ở đầu mỗi phiên. Tên file tuỳ công cụ (`AGENTS.md`, `CLAUDE.md`, Cursor rules); chương trình dùng `AGENTS.md`. Trong file có: thứ tự đọc file, folder không được đọc, ghi vào đâu, và quy tắc cứng.
+**Rules** là một file ngắn ghi luật chung của project, AI đọc ở đầu mỗi phiên. Tên file tuỳ công cụ (`AGENTS.md`, `CLAUDE.md`, Cursor rules); chương trình dùng `AGENTS.md`. Nếu công cụ của bạn đã có file rules riêng, kiểm tra xem nó còn đọc `AGENTS.md` không. Trong file có: thứ tự đọc file, folder không được đọc, ghi vào đâu, và quy tắc cứng.
 
 **Vì sao cần.** Mỗi cuộc hội thoại AI mới bắt đầu từ trống. Luật chỉ nằm trong đầu bạn hoặc trong một cuộc chat cũ thì AI không biết. Viết thành file thì mọi phiên và mọi agent cùng đọc một bản. Prompt khác rules ở chỗ prompt chỉ có hiệu lực trong một cuộc chat.
 
 **Khi nào không cần.** Dặn một lần cho một việc: viết prompt là đủ.
 
-**Rules là luật, không phải rào chắn kỹ thuật.** `AGENTS.md` có thể dặn AI không đọc một folder, nhưng rào chắn thật là `.gitignore`; file thật sự confidential vẫn để ngoài folder.
+**Rules là lời dặn, không phải rào chắn kỹ thuật.** `AGENTS.md` có thể dặn AI không đọc một folder, nhưng không ép được. `.gitignore` cũng chỉ ngăn file lên Git, không ngăn AI đọc. File confidential thì để ngoài folder. Muốn chặn AI đọc thì dùng cài đặt quyền của công cụ, và cài đặt này cũng không chặn được mọi đường.
 
 **Bốn chỗ bạn gặp rules trong buổi này.**
 
@@ -163,7 +171,7 @@ Rules file nạp ở đầu mỗi phiên nên viết ngắn. Với skill, ban đ
 
 ### 3.2 A skill is a folder
 
-Một skill là một folder. File bắt buộc là `SKILL.md`, mở đầu bằng một khối khai báo có `name` và `description`, phần thân là hướng dẫn. Hai folder `references/` và `assets/` là tuỳ chọn. AI đọc theo ba mức (progressive disclosure): đầu phiên chỉ thấy tên và mô tả của mọi skill; khi việc bạn nhờ khớp mô tả thì đọc phần thân `SKILL.md`; tài liệu đi kèm chỉ được mở khi hướng dẫn nhắc đến. Vì vậy mô tả quyết định skill có được dùng hay không: hãy viết rõ skill làm gì và dùng khi nào. Giữ `SKILL.md` dưới khoảng 500 dòng, phần chi tiết tách sang `references/`. Định dạng này do Anthropic phát hành thành chuẩn mở vào tháng 12/2025 (agentskills.io), nên nhiều công cụ khác dùng được.
+Một skill là một folder. File bắt buộc là `SKILL.md`, mở đầu bằng một khối khai báo có `name` và `description`, phần thân là hướng dẫn. Hai folder `references/` và `assets/` là tuỳ chọn. AI đọc theo ba mức (progressive disclosure): đầu phiên chỉ thấy tên và mô tả của mọi skill; khi việc bạn nhờ khớp mô tả thì đọc phần thân `SKILL.md`; tài liệu đi kèm chỉ được mở khi hướng dẫn nhắc đến. Vì vậy mô tả quyết định skill có được dùng hay không: hãy viết rõ skill làm gì và dùng khi nào. Giữ `SKILL.md` dưới khoảng 500 dòng, phần chi tiết tách sang `references/`. Định dạng này là chuẩn mở (agentskills.io), nên nhiều công cụ khác dùng được.
 
 ### 3.3 Creating, calling and finding skills
 
@@ -193,15 +201,17 @@ Hai loại việc: đọc (xem file Figma, tài liệu Drive hay Notion, ticket 
 
 ## 4. Agents and an AI team
 
-Mục này giới thiệu ở mức khái niệm. Bạn chưa dựng đội trong buổi 1; đội được giao việc thật từ buổi 7. Agent dùng ba thứ đã học: file và folder (mục 2), rules, và skill cùng connector (mục 3).
+Mục này giới thiệu ở mức khái niệm. Bạn chưa dựng đội trong buổi 1. Agent dùng ba thứ đã học: file và folder (mục 2), rules, và skill cùng connector (mục 3).
 
-**Workflow thiết kế với agent (What, Why, When).** What: mỗi quy trình giao cho một agent; mỗi agent có instruction, input và output riêng, tất cả ghi vào một design memory dùng chung (file markdown), và bạn duyệt trước mỗi lần chuyển phase. Why: AI nhận ra phần lặp đi lặp lại trong quy trình, mỗi bước để lại file và nguồn để truy vết ngược, và quyết định vẫn ở bạn. When: workflow truyền thống đã ổn, làm tay cho kết quả ổn định, và đầu ra kiểm tra được nhanh; chưa dùng khi vấn đề còn mơ hồ hoặc cần người thật (user, người phía Product và Business). Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
+**Workflow thiết kế với agent (What, Why, When).** What: mỗi quy trình giao cho một agent; mỗi agent có instruction, input và output riêng, tất cả ghi vào một design memory dùng chung (file markdown), và bạn duyệt trước mỗi lần chuyển phase. Why: AI soạn nháp nhanh phần lặp lại trong quy trình, mỗi bước để lại file và nguồn để truy vết ngược, và quyết định vẫn ở bạn. When: workflow truyền thống đã ổn, làm tay cho kết quả ổn định, và đầu ra kiểm tra được nhanh; chưa dùng khi vấn đề còn mơ hồ hoặc cần người thật (user, người phía Product và Business). Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
 
-**Agent.** Theo cách phân loại của Anthropic, workflow là hệ thống mà mô hình và tool được điều phối theo đường đi định sẵn trong code, còn agent là hệ thống trong đó mô hình tự quyết định quy trình và việc dùng tool ở thời điểm chạy, đến khi xong hoặc cần hỏi người. Một lượt hỏi đáp trong AI chat tool không phải agent: người dùng quyết định bước tiếp theo từng lượt. Hệ quả thực hành: câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm ở các file nó đã sửa, nên việc kiểm tra là kiểm tra file.
+**Agent.** Theo cách phân loại của Anthropic, workflow là hệ thống mà mô hình và tool được điều phối theo đường đi định sẵn trong code, còn agent là hệ thống trong đó mô hình tự quyết định quy trình và việc dùng tool ở thời điểm chạy, đến khi xong hoặc cần hỏi người. Theo cách phân loại này, quy trình có phase và gate định sẵn ở trên gần với workflow hơn, còn agent làm việc bên trong từng bước. Một lượt hỏi đáp trong AI chat tool không phải agent: người dùng quyết định bước tiếp theo từng lượt. Hệ quả thực hành: câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm ở các file nó đã sửa, nên việc kiểm tra là kiểm tra file.
 
 **Agent, skill và tool.** Agent là nhân viên: nhận việc và tự quyết các bước để đạt mục tiêu (ai làm). Skill là kỹ năng nhân viên đó được dạy: cách làm một loại việc (làm thế nào). Tool là công cụ được giao: đọc file, tìm web, kết nối Figma qua MCP (có gì trong tay). Thiếu một trong ba thì kết quả khác hẳn: có tool mà không có skill thì agent làm theo thói quen của AI; có skill mà không có tool thì nó biết cách nhưng không với tới dữ liệu. Khi kết quả chưa ổn: làm sai cách thì sửa skill, không với tới dữ liệu thì sửa tool hoặc kết nối, giao sai việc thì sửa agent.
 
-**Agent đầu tiên, năm bước** (ví dụ agent tóm tắt user interview). (1) Chọn một việc lặp lại đã làm tay ổn. (2) Giao vai và kết quả cụ thể, ví dụ vai là trợ lý tổng hợp phỏng vấn, kết quả là bản tóm tắt theo chủ đề kèm quote. (3) Liệt kê các skill và tài liệu agent cần: một agent thường dùng nhiều skill, ví dụ `summarize-interview` (tóm tắt theo chủ đề), `extract-quotes` (trích quote nguyên văn), `tag-themes` (gắn theme), cộng với thư mục transcript đã ẩn danh. (4) Viết thành một file markdown, mỗi agent một file: phần đầu ghi tên và mô tả (agent làm gì, dùng khi nào), thân file ghi vai, skill cần dùng, tài liệu đọc, các bước làm và nơi ghi kết quả. (5) Chạy thử, để agent ghi kết quả vào file `.md`, rồi đối chiếu với nguồn (quote phải nguyên văn so với transcript) và chỉnh file agent. Cấu trúc này theo cách tài liệu subagents của Claude Code mô tả (file markdown có `name` và `description` ở đầu, thân file là chỉ dẫn); tên file, chỗ đặt file và các trường khác nhau theo công cụ, và tên skill hay file trong ví dụ là tên minh hoạ.
+**Skill hay agent?** Cả hai đều có thể là file markdown có tên và mô tả nên dễ lẫn. Skill là cách làm một loại việc, và AI làm theo ngay trong cuộc chat bạn đang mở. Bạn dùng skill khi muốn AI làm đúng cách bạn dặn. Agent giống một nhân viên nhận cả một việc, làm trong phiên riêng rồi gửi kết quả về. Agent đáng tạo khi việc lặp lại, phải đọc nhiều hoặc cần giới hạn quyền, ví dụ agent review chỉ được đọc file. Agent vẫn dùng được skill. Một hai buổi user interview thì skill là đủ, còn khi có vài chục buổi, hoặc tuần nào bạn cũng giao lại đúng việc đó, tạo agent mới đáng. Agent chạy thêm một phiên nên tốn thêm hạn mức sử dụng, và cách chạy cụ thể tuỳ công cụ AI. Bạn cứ thử bằng skill trước rồi mới tính đến agent.
+
+**Agent đầu tiên, năm bước** (ví dụ agent tổng hợp vài chục buổi user interview). (1) Chọn một việc lặp lại đã làm tay ổn. (2) Giao vai và kết quả cụ thể, ví dụ vai là trợ lý tổng hợp phỏng vấn, kết quả là bản tóm tắt theo chủ đề kèm quote. (3) Liệt kê các skill và tài liệu agent cần: một agent thường dùng nhiều skill, ví dụ `summarize-interview` (tóm tắt theo chủ đề), `extract-quotes` (trích quote nguyên văn), `tag-themes` (gắn theme), cộng với thư mục transcript đã ẩn danh. (4) Viết thành một file markdown, mỗi agent một file: phần đầu ghi tên và mô tả (agent làm gì, dùng khi nào), thân file ghi vai, skill cần dùng, tài liệu đọc, các bước làm và nơi ghi kết quả. Bạn không cần viết tay: nhờ công cụ AI viết file, rồi đọc lại và chạy thử. (5) Chạy thử, để agent ghi kết quả vào file `.md`, rồi đối chiếu với nguồn (quote phải nguyên văn so với transcript) và chỉnh file agent. Cấu trúc này theo cách tài liệu subagents của Claude Code mô tả (file markdown có `name` và `description` ở đầu, thân file là chỉ dẫn); định dạng, tên file, chỗ đặt file và các trường khác nhau theo công cụ (có công cụ không dùng markdown), và tên skill hay file trong ví dụ là tên minh hoạ.
 
 Một ví dụ thật là agent `session-logger` của người dạy, ghi lại một buổi mentoring: file agent khai báo tên và mô tả (kể cả khi nào không dùng), công cụ (đọc và ghi file, connector Zoom và Notion), vai (biến transcript thô thành ghi chú sạch và bản nháp, dừng trước khi publish) và đầu vào (mentee, ngày, nguồn theo thứ tự ưu tiên). Quy trình chi tiết nằm ở một file khác mà file agent trỏ tới.
 
@@ -209,7 +219,7 @@ Một ví dụ thật là agent `session-logger` của người dạy, ghi lại
 
 ![Software trước và sau AI: trước AI, nút thắt nằm ở implementation; sau AI, implementation nở ra còn verification vẫn là ống hẹp](../assets/software-before-after-ai.webp)
 
-*Hình minh hoạ, không phải số liệu. Khung lý thuyết gần nhất là Theory of Constraints (Goldratt, 1984); áp vào design là suy luận.*
+*Hình minh hoạ, không phải số liệu; áp vào design là suy luận.*
 
 **Quy tắc của chương trình:** sửa hoặc bỏ workflow trước, rồi mới dùng AI. Ba câu hỏi trước khi automate:
 
@@ -223,7 +233,7 @@ Trả lời "không" ở câu 1 hoặc 2: sửa hoặc bỏ workflow trước. T
 
 ![Double Diamond với hai agent cho mỗi phase: Discover có Desk research agent và Interview agent, Define có Synthesis agent và Framing agent, Develop có Ideation agent và Prototype agent, Deliver có Test agent và Handoff agent; tất cả cùng ghi vào một Design memory, và designer duyệt ở mỗi mũi tên REVIEW](../assets/designer-agents-double-diamond.png)
 
-*Cấu trúc theo các nghiên cứu đã công bố (LacAIDes, MAUX); tên và scope agent là của chương trình.* Hai vai không giao cho AI: người dùng thật và người phía product và business. Không có agent nào duyệt thay bạn, vì một agent duyệt cũng có thể sai. Cách chia vai là phương pháp của chương trình, chưa có nguồn đo hiệu quả của một đội agent trong công việc design.
+*Cấu trúc đội, tên và scope agent là mô hình của chương trình.* Hai vai không giao cho AI: người dùng thật và người phía product và business. Không có agent nào duyệt thay bạn, vì một agent duyệt cũng có thể sai. Hiệu quả của đội tám agent này chưa được kiểm chứng.
 
 ---
 

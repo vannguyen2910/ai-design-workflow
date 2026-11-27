@@ -65,7 +65,6 @@ last_synced: 2026-11-20
 
 ### MILESTONE · Ice breaker
 - Num: 5
-- Kicker: Mở đầu
 - Title: Ice Breaker
 - Sub: Bạn hãy kể một lần sản phẩm của bạn được vibe code với team nhưng nhận được complaint từ phía user hoặc stakeholder.
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
@@ -79,7 +78,7 @@ last_synced: 2026-11-20
   > **Bạn giữ bảng này lại, lát nữa mình quay lại khi nói về chuyện kiểm tra.**
 
   > Bạn hãy kể một lần có sản phẩm được AI dựng giúp, trông đã xong, nhưng người dùng vẫn gặp vấn đề. Vấn đề đó là gì?
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, một cột trống bên dưới.
+- 🎨 Visual hint: Nền tím; line-art trắng hai người đang trò chuyện (một bong bóng có tia sáng, một bong bóng có đường rối) phía trên chữ Ice Breaker, một câu căn giữa bên dưới.
 
 ---
 

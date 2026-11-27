@@ -2,7 +2,7 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 66
+slide_count: 68
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
@@ -18,7 +18,7 @@ last_synced: 2026-11-26
 | Stage | Foundation |
 | Prior session | Không có (mở đầu series) |
 | Next session | Buổi 3: Discover the Problem |
-| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 57 slide; deck thật trên Slides đã sắp xếp lại theo thứ tự này, phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5. Ngày 2026-11-25, mục UI/UX (số liệu, hướng nghề, hướng tiếp cận brief, “trông đã xong”) chuyển sang intro (`program-intro-slide-outline.md`), còn Context and grounding và Hallucination đứng đầu mục 1 (File, folder và rules); thời lượng giảm tương ứng, chưa ước lại |
+| Timing note | Outline sắp xếp lại 2026-11-21 theo thứ tự phụ thuộc: file/folder/rules, skills/connector, agent, hub, GitHub, Data Safety. Luồng chính có 58 slide; deck thật trên Slides đã sắp xếp lại theo thứ tự này, phần ảnh GitHub Pages dùng ảnh từ thư mục assets của Lesson 5. Ngày 2026-11-25, mục UI/UX (số liệu, hướng nghề, hướng tiếp cận brief, “trông đã xong”) chuyển sang intro (`program-intro-slide-outline.md`), còn Context and grounding và Hallucination đứng đầu mục 1 (File, folder và rules); thời lượng giảm tương ứng, chưa ước lại |
 | Running example | App giao đồ ăn (project mẫu hư cấu cho phần demo); designer áp dụng các bước vào một project cụ thể |
 
 ---
@@ -83,7 +83,7 @@ last_synced: 2026-11-26
   - Mình ghi lại thành bảng hai cột, vì bảng này sẽ dùng lại ở các slide sau.
   - Lớp nhỏ thì rút còn năm phút. Nếu quá giờ ở phần sau, đây là chỗ cắt cuối cùng.
   - Chuyển tiếp: hôm nay mình nhìn lại cả hai cột này bằng bằng chứng.
-- 🎨 Visual hint: Nền tím, chữ Ice Breaker trắng lớn ở giữa slide và một câu bên dưới.
+- 🎨 Visual hint: Nền tím; line-art trắng hai người đang trò chuyện (một bong bóng có tia sáng, một bong bóng có đường rối) phía trên chữ Ice Breaker, một câu căn giữa bên dưới.
 
 ---
 
@@ -268,6 +268,26 @@ last_synced: 2026-11-26
 
 ---
 
+### SPLIT · HTML examples
+- Kicker: Ví dụ
+- Title: HTML *trông thế nào*
+- On-slide:
+  - Ảnh: `assets/html-example-heuristic-whiteboard.webp`
+  - [Whiteboard heuristic evaluation, kéo và zoom được](https://vannguyen2910.github.io/ai-design-workflow-template/food-deliver-app-public/work/heuristic-evaluation/heuristic-whiteboard.html)
+  - Ảnh: `assets/html-example-travel-prototype.webp`
+  - [Prototype Travel Buddy](https://vannguyen2910.github.io/ai-design-workflow-template/travel-app/work/final-prototype/travel-buddy-final-prototype.html)
+- Ví dụ: có (hai file HTML đã publish trên GitHub Pages)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Hai ví dụ này đều là file HTML, mở bằng trình duyệt là xem được.
+  - Bên trái là whiteboard heuristic evaluation cho một app giao đồ ăn. Màn hình xếp theo journey, mỗi vấn đề một sticky note, màu theo severity. Chúng ta kéo, zoom, rồi bấm vào note để biết nó nằm ở đâu trên màn.
+  - Bên phải là prototype cuối của Travel Buddy, một app du lịch, chạy ngay trong trình duyệt.
+  - Muốn mở bản thật thì bấm vào dòng chú thích dưới ảnh. Nên mở sẵn hai tab trước buổi học.
+  - Câu hỏi cho lớp: Trong công việc của chúng ta, thứ gì đang gửi bằng ảnh tĩnh mà gửi bằng một file HTML sẽ dễ xem hơn?
+- 🎨 Visual hint: SPLIT. Trái: ảnh chụp whiteboard trên trình duyệt (khung lớn); phải: ảnh dọc màn mở đầu của prototype; mỗi ảnh một dòng link bên dưới. Mỗi click hiện một ví dụ.
+
+---
+
 ### PROCESS · Markdown and HTML together
 - Kicker: Use case
 - Title: Markdown là nguồn,\n*HTML là kết quả*
@@ -285,7 +305,7 @@ last_synced: 2026-11-26
 - Ví dụ: Delivery App: viết brief và danh sách năm màn bằng markdown, đưa cho AI, nhận lại một file HTML bấm qua được từng màn. Đổi thứ tự màn thì sửa dòng trong .md rồi dựng lại, không mở HTML.
 - Câu hỏi hay gặp: "Sao không sửa thẳng file HTML?" Trả lời: HTML là bản xuất ra. Sửa tay thì lần dựng lại sau sẽ mất; sửa nguồn thì mọi bản xuất đổi theo.
 - Speaker notes:
-  - Hai slide trước nói markdown và HTML là gì. Slide này cho thấy cách dùng chung: hai lớp, mỗi lớp một việc.
+  - Chúng ta vừa xem markdown và HTML là gì. Slide này cho thấy cách dùng chung: hai lớp, mỗi lớp một việc.
   - Ba bước:
     - Viết nội dung và quy tắc bằng markdown: brief, rules file, ghi chú research, danh sách màn hình
     - Đưa file .md đó cho AI, kèm yêu cầu “dựng thành một file HTML”
@@ -316,7 +336,7 @@ last_synced: 2026-11-26
   - Khi mở AI coding tool trong folder này, AI đọc được cả folder thay vì chỉ một đoạn chúng ta dán vào chat, nên chúng ta không phải dán lại ngữ cảnh mỗi lần.
   - Thường có bốn nhóm: tài liệu nền (research, brief, design system), file đang làm, thư mục learnings/ nơi ghi lại điều đã học để lần sau đọc lại, và README.md.
   - README.md là cổng vào. Người mới và AI mở folder lần đầu chỉ thấy tên file, nên cần một chỗ trả lời “đây là gì, bắt đầu từ đâu”. Một README tốt ngắn: nó dẫn sang các file khác, không chép lại nội dung của chúng.
-  - AI không nhớ gì từ phiên trước, nên mọi thứ cần nhớ phải nằm trong file. Folder đặt trên máy, không đặt trong Google Drive, iCloud, OneDrive hay Dropbox, vì thư mục đồng bộ có thể làm hỏng file khi AI ghi.
+  - AI không tự nhớ phiên trước. Một số công cụ có memory riêng, nhưng thứ cần giữ chắc thì ghi vào file. Folder đặt trên máy, không đặt trong Google Drive, iCloud, OneDrive hay Dropbox, vì thư mục đồng bộ có thể làm hỏng file khi AI ghi.
   - Chúng ta tự sắp xếp folder theo cách làm việc của mình. Chỉ cần mỗi nhóm có chỗ riêng và rules ghi rõ chỗ đó. Slide kế tiếp nói về rules.
   - Câu hỏi cho lớp: Hiện giờ tài liệu của project chúng ta đang nằm rải ở những đâu?
 - 🎨 Visual hint: SCHEMATIC. Template Method: ba cột What, Why, When dưới title, nhãn tím đậm; icon line-art cây folder ở góc phải trên.
@@ -329,16 +349,16 @@ last_synced: 2026-11-26
 - On-slide:
   - What: một file ngắn ghi luật chung của project, AI đọc ở đầu mỗi phiên
   - Gồm: thứ tự đọc file, folder không được đọc, ghi vào đâu, quy tắc cứng
-  - Why: AI không nhớ phiên trước, nên luật phải nằm trong file
+  - Why: AI không tự nhớ phiên trước, nên luật phải nằm trong file
   - Còn giúp: viết một lần, mọi phiên và mọi agent dùng lại
   - When: khi AI lặp lại cùng một lỗi, hoặc project có quy tắc cứng
   - Không cần khi: dặn một lần cho một việc; viết prompt là đủ
 - Ví dụ: "Không bao giờ sửa file nguồn gốc" và "Quote phải nguyên văn" là hai rule trong AGENTS.md của hub.
 - Câu hỏi hay gặp: "Rules khác prompt thế nào?" Trả lời: prompt chỉ có hiệu lực trong một cuộc chat; rules nằm trong file và được nạp ở đầu mỗi phiên.
 - Speaker notes:
-  - Rules là file chỉ dẫn chung của cả project. Tên file tuỳ công cụ: AGENTS.md, CLAUDE.md, Cursor rules. Trong khoá dùng AGENTS.md. Công cụ AI nạp nó ở đầu mỗi phiên, nên viết ngắn thôi, vì phiên nào cũng phải đọc.
+  - Rules là file chỉ dẫn chung của cả project. Tên file tuỳ công cụ: AGENTS.md, CLAUDE.md, Cursor rules. Trong khoá dùng AGENTS.md. Nếu công cụ của bạn đã có file rules riêng, kiểm tra xem nó còn đọc AGENTS.md không. Công cụ AI nạp nó ở đầu mỗi phiên, nên viết ngắn thôi, vì phiên nào cũng phải đọc.
   - Vì sao cần: mỗi cuộc hội thoại AI mới bắt đầu từ trống. Luật chỉ nằm trong đầu chúng ta hoặc trong một cuộc chat cũ thì AI không biết. Viết thành file thì mọi phiên và mọi agent cùng đọc một bản.
-  - Rules là luật, không phải rào chắn kỹ thuật. AGENTS.md có thể dặn AI không đọc một folder, nhưng rào chắn thật là .gitignore. File thật sự confidential vẫn để ngoài folder.
+  - Rules là lời dặn, không phải rào chắn kỹ thuật. AGENTS.md có thể dặn AI không đọc một folder, nhưng không ép được. .gitignore cũng chỉ ngăn file lên Git, không ngăn AI đọc. File confidential thì để ngoài folder. Muốn chặn AI đọc thì dùng cài đặt quyền của công cụ, và cài đặt này cũng không chặn được mọi đường.
   - Trong buổi này chúng ta gặp rules ở bốn chỗ:
     - AGENTS.md: luật cho AI trong project folder (slide này và slide kế)
     - Ba quy tắc của hub: không sửa file nguồn gốc, mỗi note có ID, quote nguyên văn. Nằm trong AGENTS.md, nói ở phần Knowledge Hub
@@ -447,7 +467,7 @@ last_synced: 2026-11-26
     - Tài liệu đi kèm chỉ được mở khi hướng dẫn nhắc đến
   - Vì vậy mô tả quyết định skill có được dùng hay không. Phần giữa hai dòng gạch --- là chỗ AI quét nhanh để biết skill có cần cho việc đang làm không, nên hãy viết rõ skill làm gì và dùng khi nào.
   - Giữ SKILL.md dưới khoảng 500 dòng, phần chi tiết tách sang references.
-  - Định dạng này do Anthropic phát hành thành chuẩn mở vào tháng 12/2025 (agentskills.io), nên nhiều công cụ khác dùng được.
+  - Định dạng này là chuẩn mở (agentskills.io), nên nhiều công cụ khác dùng được.
 - 🎨 Visual hint: Trái: khung code hiển thị cây folder và phần khai báo giữa hai dòng gạch tô tím nhạt; phải: ba hàng đánh số 1 đến 3 giải thích ba mức nạp.
 
 ---
@@ -674,8 +694,8 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Agent dùng ba thứ đã học: file và folder, rules, và skill cùng connector.
-  - Đây là phần mới của buổi đầu: agent là gì, rồi cách dựng một đội AI cho product design. Hôm nay chỉ ở mức khái niệm, buổi 7 mới dựng đội thật với AI coding tool.
-  - Nối từ demo: demo vừa rồi chỉ là một lượt hỏi đáp, còn công việc thật có nhiều bước, nhiều file và nhiều vai.
+  - Đây là phần mới của buổi đầu: agent là gì, rồi cách dựng một đội AI cho product design. Hôm nay chỉ ở mức khái niệm, chúng ta chưa dựng đội.
+  - Nối từ phần trước: chúng ta đã có skill và connector. Công việc thật còn có nhiều bước, nhiều file và nhiều vai.
   - Phần này khoảng nửa phút.
 - 🎨 Visual hint: Nền vàng, số phần rất lớn ở góc trên trái, title ở giữa, dòng mono nhỏ bên dưới.
 
@@ -691,7 +711,7 @@ last_synced: 2026-11-26
   - Tất cả ghi vào một design memory dùng chung (.md)
   - Bạn duyệt trước mỗi lần chuyển phase
   - WHY
-  - AI có thể detect cho bạn phần lặp đi lặp lại trong quy trình
+  - AI soạn nháp nhanh phần lặp lại trong quy trình
   - Mỗi bước để lại file và nguồn để truy vết ngược lại
   - Quyết định vẫn là ở bạn
   - WHEN
@@ -705,7 +725,8 @@ last_synced: 2026-11-26
   - Ba câu hỏi:
     - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Chúng ta duyệt trước mỗi lần chuyển phase
     - Why: AI soạn nháp nhanh phần lặp lại, còn chúng ta giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc đã học ở buổi 0 (intro): AI soạn nháp, chúng ta kiểm tra rồi quyết định
-    - When: chỉ khi workflow đã ổn. Quay lại slide sửa workflow: workflow phải ổn trước khi giao cho agent. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
+    - When: chỉ khi workflow đã ổn. Workflow phải ổn trước khi giao cho agent, slide “Ổn định cách làm trước” phía sau nói kỹ hơn. Bước càng lặp lại và đầu ra càng kiểm tra nhanh thì càng hợp giao cho agent
+  - Nói cho chính xác: theo cách phân loại của Anthropic, quy trình có phase và gate định sẵn như thế này gần với workflow hơn, còn agent làm việc bên trong từng bước.
   - Chưa nên dùng khi vấn đề còn mơ hồ, hoặc khi bước đó cần người thật: user, hoặc người phía Product và Business.
   - Nguyên tắc thực dụng: bắt đầu đơn giản, tăng độ phức tạp khi cần, và chọn mức tự chủ theo chi phí khi sai và khả năng hoàn tác.
   - Câu hỏi cho lớp: Bước nào trong công việc của chúng ta đã đủ ổn định để thử giao cho một agent?
@@ -738,8 +759,8 @@ last_synced: 2026-11-26
     - còn nhờ agent thì nó đọc cả folder research và dựng bản tổng hợp kèm nguồn nghiên cứu.
   - AI coding tool thường hoạt động theo kiểu này.
   - Câu trả lời của agent chỉ là bản tóm tắt, kết quả thật nằm trong folder.
-  - Agent vẫn hallucinate: nó có thể báo "xong" khi chưa xong. Nối lại slide "Looks finished. Is it right?".
-  - Rules, skill và connector đã học ở phần 02 và 03: đó là thứ một agent dùng để biết luật, biết cách làm và với tới dữ liệu. Mình dạy sâu cách dựng ở buổi 7.
+  - Agent vẫn hallucinate: nó có thể báo "xong" khi chưa xong. Vì vậy chúng ta luôn mở file ra kiểm tra.
+  - Rules, skill và connector đã học ở phần 02 và 03: đó là thứ một agent dùng để biết luật, biết cách làm và với tới dữ liệu.
   - Slide này khoảng hai phút.
 - 🎨 Visual hint: Hai hàng sơ đồ ngang: Chat (Prompt rồi Câu trả lời) và Agent (Mục tiêu, Đọc file, Sửa file, Chạy lệnh, Báo cáo kèm folder) với vòng lặp ở dưới.
 
@@ -785,6 +806,36 @@ last_synced: 2026-11-26
 
 ---
 
+### COMPARE · Skill or agent
+- Kicker: Phân biệt
+- Title: Skill hay *agent?*
+- On-slide:
+  - Skill
+  - Cách làm một loại việc
+  - AI làm ngay trong cuộc chat bạn đang mở
+  - Dùng khi bạn muốn AI làm đúng cách bạn dặn
+  - Ví dụ: tóm tắt một buổi user interview
+  - Agent
+  - Nhân viên nhận cả một việc để làm
+  - Agent làm trong phiên riêng rồi gửi kết quả về
+  - Dùng khi việc lặp lại, phải đọc nhiều hoặc cần giới hạn quyền
+  - Ví dụ: tổng hợp 20 buổi user interview
+  - Cứ thử bằng skill trước rồi mới tính đến agent.
+- Ví dụ: có (một buổi interview so với 20 buổi; mốc số buổi là gợi ý của chương trình)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Hai thứ này dễ lẫn vì đều có thể là file markdown có tên và mô tả.
+  - Skill giống một checklist. Chúng ta đưa checklist cho AI ngay trong cuộc chat, và AI làm theo.
+  - Agent giống như nhờ một đồng nghiệp sang phòng khác làm. Người đó không nghe được chúng ta đang bàn gì, nên phải giao việc cho rõ.
+  - Agent vẫn dùng được skill. Ví dụ agent tổng hợp interview có thể dùng skill trích quote.
+  - Một hai buổi interview thì skill là đủ. Khi có vài chục buổi, hoặc tuần nào cũng giao lại đúng việc đó, tạo agent mới đáng.
+  - Giới hạn quyền nghĩa là, ví dụ, agent review chỉ được đọc file chứ không được sửa.
+  - Agent chạy thêm một phiên nên cũng tốn thêm hạn mức sử dụng. Cách chạy cụ thể tuỳ công cụ AI.
+  - Câu hỏi cho lớp: Với một việc bạn làm hằng tuần, bạn sẽ làm skill hay agent, và vì sao?
+- 🎨 Visual hint: COMPARE. Hai card trắng ngang hàng, mỗi card một line-art (bảng checklist; người ngồi bàn riêng gửi tài liệu đi) ở trên chữ; một câu chốt tím ở đáy. Mỗi click hiện một khối.
+
+---
+
 ### DIAGRAM · The project folder
 - Kicker: Ẩn dụ
 - Title: Project folder\n*như một công ty nhỏ*
@@ -816,13 +867,13 @@ last_synced: 2026-11-26
   - Khi mở AI agent trong folder này, agent đọc được cả folder thay vì chỉ một đoạn chúng ta dán vào chat.
   - Cái lợi là chúng ta không phải dán lại ngữ cảnh mỗi lần. Ngữ cảnh nằm sẵn trong folder, và mọi agent dùng chung một bản.
   - Hình dung project folder như một công ty nhỏ: mỗi agent là một nhân viên có vai và kỹ năng riêng, folder là văn phòng chung nơi mọi người đọc và ghi tài liệu
-  - Nhắc lại skill (phần 03): skill là một thư mục dạy agent cách làm một loại việc, tối thiểu có SKILL.md (tên, mô tả, chỉ dẫn); agent chỉ nạp chỉ dẫn khi thấy skill liên quan (theo tài liệu Anthropic; agent skills là chuẩn mở từ 12/2025)
+  - Nhắc lại skill (phần 03): skill là một thư mục dạy agent cách làm một loại việc, tối thiểu có SKILL.md (tên, mô tả, chỉ dẫn); agent chỉ nạp chỉ dẫn khi thấy skill liên quan (theo tài liệu Anthropic)
   - Trong folder thường có bốn nhóm:
     - File hướng dẫn chung như AGENTS.md: ai làm gì, đọc gì trước, qua gate nào
     - Mô tả từng agent và các skill, mỗi thứ là một file markdown
     - Context pack: tài liệu nền của project như research, brief, design system
     - Thư mục learnings/: nơi agent ghi lại điều đã học để lần sau đọc lại
-  - Giới hạn của phép ví von: agent không nhớ gì từ phiên trước, nhân viên này đọc lại hồ sơ mỗi lần bắt đầu, nên mọi thứ cần nhớ phải nằm trong file
+  - Giới hạn của phép ví von: nhân viên này không tự nhớ phiên trước. Một số công cụ có memory riêng, nhưng thứ chúng ta cần giữ chắc thì ghi vào file
   - Câu hỏi cho lớp: Nếu project của chúng ta là một công ty nhỏ, chúng ta muốn có những nhân viên agent nào?
 - 🎨 Visual hint: Bảng sáu hàng ẩn dụ: bên trái là thứ trong công ty, mũi tên, bên phải là thứ trong project folder kèm mô tả một dòng.
 
@@ -834,7 +885,7 @@ last_synced: 2026-11-26
 - On-slide:
   - 01
   - Chọn một việc lặp lại
-  - Ví dụ: tóm tắt user interview
+  - Ví dụ: tổng hợp vài chục buổi user interview
   - 02
   - Giao vai và kết quả cụ thể
   - Vai: trợ lý tổng hợp phỏng vấn
@@ -843,7 +894,7 @@ last_synced: 2026-11-26
   - Ví dụ 3 skill: tóm tắt, trích quote, gắn theme
   - 04
   - Viết thành một file markdown
-  - Một agent, một file .md
+  - Ví dụ: một agent, một file .md
   - 05
   - Chạy thử, ghi kết quả vào .md
   - Đối chiếu quote với transcript gốc
@@ -866,17 +917,19 @@ last_synced: 2026-11-26
   - 3. Chỗ chưa rõ ghi “unknown”
   - # Ghi kết quả
   - work/interview-summary.md
-- Ví dụ: Agent tóm tắt user interview: file interview-summary.md khai báo vai, ba skill (summarize-interview, extract-quotes, tag-themes), đọc transcript đã ẩn danh, ghi kết quả vào work/interview-summary.md. Tên skill và file là tên minh hoạ.
+- Ví dụ: Agent tổng hợp user interview: file interview-summary.md khai báo vai, ba skill (summarize-interview, extract-quotes, tag-themes), đọc transcript đã ẩn danh, ghi kết quả vào work/interview-summary.md. Tên skill và file là tên minh hoạ.
 - Câu hỏi hay gặp: "Cấu trúc file agent có cố định không?" Trả lời: không. Nhiều công cụ dùng phần đầu có tên và mô tả, thân file là chỉ dẫn (ví dụ Claude Code); tên file, chỗ đặt và các trường khác nhau theo công cụ.
 - Speaker notes:
-  - Ví dụ xuyên suốt slide này là một agent tóm tắt user interview. Năm bước:
+  - Ví dụ xuyên suốt slide này là một agent tổng hợp vài chục buổi user interview. Nếu chỉ có một hai buổi thì dùng skill là đủ.
+  - Năm bước:
     - Chọn một việc lặp lại: việc chúng ta đã làm tay và ra kết quả ổn. Slide “Ổn định cách làm trước” nói lý do
     - Giao vai và kết quả cụ thể: ai làm, làm gì, ra gì. Ví dụ vai là trợ lý tổng hợp phỏng vấn, kết quả là bản tóm tắt theo chủ đề kèm quote
     - Liệt kê các skill và tài liệu agent cần: một agent thường dùng nhiều skill, mỗi skill một cách làm. Ví dụ summarize-interview (tóm tắt theo chủ đề), extract-quotes (trích quote nguyên văn), tag-themes (gắn theme). Một skill dùng lại được cho agent khác. Tài liệu là thứ agent đọc (transcript đã ẩn danh)
     - Viết thành một file markdown, mỗi agent một file
     - Chạy thử trên project, để agent ghi kết quả vào file .md, rồi đối chiếu với nguồn và chỉnh file agent
-  - File bên phải là ví dụ một agent. Phần đầu file ghi tên và mô tả: mô tả nói agent làm gì và dùng khi nào. Phần thân ghi vai, skill cần dùng, tài liệu đọc, các bước làm và nơi ghi kết quả. Nhiều công cụ dùng cấu trúc tương tự; ví dụ Claude Code đọc agent từ file markdown có phần đầu name và description, thân file là chỉ dẫn của agent. Tên file, chỗ đặt file và các trường khác nhau theo công cụ, nên kiểm tra tài liệu của công cụ chúng ta dùng. Tên các skill và tên file là tên minh hoạ.
-  - Bước chạy thử là chỗ chúng ta kiểm tra: quote trong bản tóm tắt phải nguyên văn so với transcript. Nối lại slide “Trông đã xong. Có đúng chưa?”.
+  - Không cần viết tay: chúng ta nhờ công cụ AI viết file, rồi đọc lại và chạy thử.
+  - File bên phải là ví dụ một agent. Phần đầu file ghi tên và mô tả: mô tả nói agent làm gì và dùng khi nào. Phần thân ghi vai, skill cần dùng, tài liệu đọc, các bước làm và nơi ghi kết quả. Nhiều công cụ dùng cấu trúc tương tự; ví dụ Claude Code đọc agent từ file markdown có phần đầu name và description, thân file là chỉ dẫn của agent. Định dạng, tên file, chỗ đặt file và các trường khác nhau theo công cụ, có công cụ không dùng markdown, nên kiểm tra tài liệu của công cụ chúng ta dùng. Tên các skill và tên file là tên minh hoạ.
+  - Bước chạy thử là chỗ chúng ta kiểm tra: quote trong bản tóm tắt phải nguyên văn so với transcript.
   - Trong toolkit của khoá, Competitor Analysis là một skill theo cách này; card của nó ghi “Status: draft” vì chưa thử với lớp thật. AGENTS.md không điều phối các agent, nó chỉ là quy tắc chung mà công cụ đọc mỗi lần mở folder; người điều phối vẫn là designer.
   - Câu hỏi cho lớp: Việc nào chúng ta làm lặp lại đủ nhiều để thành agent đầu tiên?
 - 🎨 Visual hint: SPLIT. Trái: năm bước đánh số tím, mỗi bước một ví dụ ngắn; phải: khung file interview-summary.md hiện cùng bước 4.
@@ -892,7 +945,7 @@ last_synced: 2026-11-26
 - Ví dụ: Agent session-logger: lấy transcript buổi mentoring từ Zoom, làm sạch, rút quyết định và lời hứa, soạn nháp playback và dừng trước khi publish.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước dùng một agent tóm tắt user interview làm ví dụ. Đây là một file agent thật của mình: session-logger, agent ghi lại một buổi mentoring sau khi dạy xong. File thật dài hơn ví dụ, nhưng cấu trúc giống nhau.
+  - Slide trước dùng một agent tổng hợp user interview làm ví dụ. Đây là một file agent thật của mình: session-logger, agent ghi lại một buổi mentoring sau khi dạy xong. File thật dài hơn ví dụ, nhưng cấu trúc giống nhau.
     - Name và Description: tên agent, và mô tả agent làm gì, dùng khi nào. Mô tả này còn ghi cả khi nào không dùng (không dùng để viết recap hay tạo trang Notion), nên công cụ biết khi nào gọi agent và khi nào không
     - Tools: Read, Write, Edit, Glob, Grep, Bash để làm việc với file, cộng với các connector: Zoom để tìm bản ghi và lấy transcript, Notion để tìm và đọc trang. Nối lại phần Connector
     - Role: biến transcript thô thành ghi chú sạch và bản nháp playback, và dừng lại trước khi có gì được publish. Nối lại “AI soạn nháp, bạn kiểm tra, bạn quyết định”. Quy trình chi tiết nằm ở một file khác, file agent chỉ trỏ tới, nên giữ được ngắn
@@ -904,12 +957,13 @@ last_synced: 2026-11-26
 ---
 
 ### PROCESS · A process packaged as markdown
+- Slide: `agent-build` (đang ẩn trong deck)
 - Kicker: Use case
 - Title: Quy trình, *gói thành file markdown*
 - On-slide:
   - AGENTS.md
   - Nội quy, thứ tự đọc, qua gate nào
-  - GIAO VIỆC
+  - LUẬT CHUNG
   - AGENT 01
   - Desk research
   - việc: summarize reviews
@@ -925,13 +979,13 @@ last_synced: 2026-11-26
 - Ví dụ: Ba agent Desk research, Tổng hợp, Prototype nhận việc từ AGENTS.md và ghi kết quả vào learnings.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - AGENTS.md là file markdown mà công cụ AI nạp mỗi lần mở folder.
+  - AGENTS.md là file markdown ghi luật chung. Nhiều công cụ AI tự nạp file này khi mở folder, nhưng tuỳ công cụ, nên kiểm tra trước.
   - Trong đó có bản đồ folder, thứ tự đọc và các quy tắc cứng.
-  - Nó chỉ điều hướng chứ không tự chạy gì. Người giao việc thật sự là công cụ AI, hoặc model điều phối.
-  - AGENTS.md là luật, không phải rào chắn kỹ thuật. Rào chắn thật là .gitignore cho _raw-private/ và _personal/.
-  - Đóng gói một agent nghĩa là viết vai và quy trình của nó thành một file markdown, mỗi agent một file markdown.
-  - File đó ghi rõ agent đọc file nào và ghi vào đâu. Skill, tức cách làm một loại việc, mình dạy kỹ ở phần Skills.
-  - Tên agent trên sơ đồ chỉ là ví dụ. Đội đầy đủ có tám agent, mình sẽ xem ở phần workflow thiết kế.
+  - Nó chỉ điều hướng chứ không tự chạy gì. Giao việc là phần của chúng ta và công cụ AI.
+  - AGENTS.md là lời dặn, không phải rào chắn kỹ thuật. .gitignore cho _raw-private/ và _personal/ chỉ ngăn file lên Git, không ngăn AI đọc. Dữ liệu confidential thì để ngoài folder.
+  - Đóng gói một agent nghĩa là viết vai và quy trình của nó vào một file, mỗi agent một file. Ví dụ ở đây dùng markdown; có công cụ dùng định dạng khác.
+  - File đó ghi rõ agent đọc file nào và ghi vào đâu. Skill, tức cách làm một loại việc, chúng ta đã học ở phần Skills.
+  - Tên agent trên sơ đồ chỉ là ví dụ. Đội đầy đủ có tám agent, mình sẽ xem ở sơ đồ đội phía sau.
 - 🎨 Visual hint: Sơ đồ dọc: khối AGENTS.md màu tím ở trên, ba ô agent ở giữa, khối learnings/ hub/ ở dưới, nối bằng mũi tên "giao việc" và "ghi file".
 
 ---
@@ -950,7 +1004,6 @@ last_synced: 2026-11-26
 - Speaker notes:
   - AI thường khuếch đại cách làm hiện tại. Quy trình tốt có thể chạy nhanh hơn, còn quy trình chưa ổn thì tạo ra nhiều kết quả chưa ổn hơn, cũng trong thời gian ngắn hơn.
   - Báo cáo DORA 2025 ghi nhận throughput tăng nhưng độ bất ổn cũng tăng (khảo sát gần 5.000 người làm công nghệ, 2025). Số liệu này từ phát triển phần mềm, còn áp vào design là suy luận của mình.
-  - Ý này không mới. Năm 1990, Michael Hammer đã viết "Don't automate, obliterate" trên Harvard Business Review.
   - Ví dụ: chúng ta chưa có định nghĩa thế nào là thành công của 1 qui trình, rồi nhờ AI tạo mười hướng.
   - Kết quả là mười option cho workflow và không ai chọn được.
   - Nên hãy dành thôi gian suy nghĩ quy trình thiết kế product hay thiết kế design hiện tại của chúng ta như thế nào.
@@ -975,7 +1028,7 @@ last_synced: 2026-11-26
   - Có hai vai mình không giao cho AI: người dùng thật, và người phía Product và Business.
   - Ví dụ ở Delivery App: desk research agent đọc review công khai, interview agent soạn guide, synthesis agent gom theme, framing agent soạn problem statement, prototype agent dựng màn hình onboarding.
   - Nói thật về hiện trạng: toolkit mới có skill cho agent 01 và 03. Sáu agent còn lại mới có template tài liệu, card dựng ở các buổi sau.
-  - Đây là cách tổ chức của chương trình, không phải kiến trúc bắt buộc. Sơ đồ theo cấu trúc trong các nghiên cứu đã công bố (LacAIDes, MAUX), nhưng tên và phạm vi agent là của chương trình. Chưa có nghiên cứu nào đo hiệu quả của đội agent trong công việc design.
+  - Đây là mô hình của khoá để chúng ta học cách chia vai, không phải kiến trúc bắt buộc, cũng chưa phải cách ngành đang làm đại trà. Hiệu quả của đội tám agent này chưa được kiểm chứng.
   - Tám agent cùng đọc và ghi vào một design memory chung. Design memory đó chính là hub, và phần tiếp theo nói hub gồm những gì.
 - 🎨 Visual hint: Một sơ đồ ảnh lớn: tám agent chia bốn pha theo hai hình thoi, design memory ở đáy, mũi tên REVIEW giữa các pha.
 
@@ -1782,7 +1835,7 @@ last_synced: 2026-11-26
   - Hình trên là trước AI: nút thắt nằm ở implementation. Dòng ý tưởng bị siết lại ở đó, nên làm ra sản phẩm tốn thời gian.
   - Hình dưới là sau AI: implementation được nới ra, ý tưởng đi vào nhiều hơn và nhanh hơn. Nhưng verification vẫn là một ống hẹp, nên phần việc chưa kiểm tra dồn lại ở đó.
   - Với designer thì dễ hình dung: AI cho chúng ta mười hướng thiết kế trong vài phút, còn việc chọn hướng nào đúng và kiểm tra nó với người dùng thật vẫn tốn thời gian như trước. Bước kiểm tra là nơi giá trị của designer nằm.
-  - Khung lý thuyết đứng sau hình là Theory of Constraints: hiệu suất của cả hệ thống bị giới hạn bởi điểm nghẽn, và khi gỡ một điểm nghẽn thì nó dịch sang chỗ khác. Đây là lý thuyết nền chung, chưa có nguồn nào đo trực tiếp ở công việc design. Việc áp vào design là suy luận của mình, và [to confirm] nguồn gốc (Goldratt, The Goal, 1984) trước khi dạy.
+  - Chưa có nguồn nào đo trực tiếp điều này ở công việc design, nên áp vào design là suy luận của mình.
   - Nguồn hình: ảnh lưu truyền trên mạng, chưa truy ra tác giả [to confirm]. Xác nhận nguồn trước khi đưa deck lên site công khai.
   - Slide này khoảng một phút rưỡi.
   - Câu hỏi cho lớp: Trong công việc của designer, phần nào đang được AI làm nhanh hơn, và ai đang kiểm tra phần đó?

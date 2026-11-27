@@ -62,8 +62,7 @@ last_synced: 2026-11-17
 ---
 
 ### 03 · MILESTONE · Looked fine, was wrong
-- Kicker: Activity
-- Title: Looked fine,\n*was wrong*
+- Title: Looked fine, was wrong
 - On-slide:
   - Lần gần nhất AI dựng cho bạn một màn hình trông ổn nhưng sai là khi nào?
 - Ví dụ: Không cần.
@@ -78,7 +77,7 @@ last_synced: 2026-11-17
   - Xong phần khởi động. Phần một là The Aim: vì sao dựng từng màn hình lại bị lệch. Các lỗi trên bảng có chung một nguồn, và mình chỉ ra nó ở đó.
 
   > Ai chưa có câu chuyện thì kể điều mình sợ nhất khi AI dựng giao diện.
-- 🎨 Visual hint: Typographic / layout chữ
+- 🎨 Visual hint: Nền tím; line-art trắng hai người đang trò chuyện (một bong bóng có tia sáng, một bong bóng có đường rối) phía trên tiêu đề, một câu căn giữa bên dưới.
 ---
 
 ### 04 · SECTION DIVIDER · The Aim
