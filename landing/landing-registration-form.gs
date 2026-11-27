@@ -11,7 +11,7 @@
  *      và link bảng tính nhận câu trả lời. Dùng "Link gửi cho người đăng ký" làm nút
  *      "Đăng ký giữ chỗ" trên landing page.
  *
- * Các trường là đề xuất (xem learning/landing-content-vi.md, mục 11). Sửa trực tiếp trong form
+ * Các trường là đề xuất (xem landing/landing-content-vi.md, mục 11). Sửa trực tiếp trong form
  * sau khi tạo, hoặc sửa ở dưới rồi chạy lại (mỗi lần chạy tạo một form mới).
  */
 function createRegistrationForm() {
