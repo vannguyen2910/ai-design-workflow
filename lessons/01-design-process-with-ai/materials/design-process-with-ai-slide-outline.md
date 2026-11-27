@@ -2,11 +2,11 @@
 title: "Your Design Process, with AI"
 lesson_file: "design-process-with-ai-lesson.md"
 level: ""
-slide_count: 72
+slide_count: 76
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
-last_synced: 2026-11-26
+last_synced: 2026-11-27
 ---
 
 ## Session metadata
@@ -136,10 +136,10 @@ last_synced: 2026-11-26
 - On-slide: Hãy để nó nói "unknown".
 - On-slide:
   - Khi chưa có đủ thông tin, hãy cho phép AI trả lời “unknown”.
-  - 3–13%
+  - 3 đến 13%
   - URL citation do agent nghiên cứu sâu dẫn không tồn tại
   - Reference Hallucinations in LLMs and Deep Research Agents, 2026
-  - 14–95%
+  - 14 đến 95%
   - citation bịa tuỳ mô hình, đo trên 13 mô hình
   - GhostCite, 2026
 - Ví dụ: AI trích một câu của khách mà trong 20 review không hề có.
@@ -347,16 +347,16 @@ last_synced: 2026-11-26
 - Kicker: Định nghĩa
 - Title: Rules\n*là gì?*
 - On-slide:
-  - What: một file ngắn ghi luật chung của project, AI đọc ở đầu mỗi phiên
+  - What: một file ngắn ghi luật chung của project, AI đọc ở đầu mỗi session
   - Gồm: thứ tự đọc file, folder không được đọc, ghi vào đâu, quy tắc cứng
   - Why: AI không tự nhớ phiên trước, nên luật phải nằm trong file
   - Còn giúp: viết một lần, mọi phiên và mọi agent dùng lại
   - When: khi AI lặp lại cùng một lỗi, hoặc project có quy tắc cứng
   - Không cần khi: dặn một lần cho một việc; viết prompt là đủ
 - Ví dụ: "Không bao giờ sửa file nguồn gốc" và "Quote phải nguyên văn" là hai rule trong AGENTS.md của hub.
-- Câu hỏi hay gặp: "Rules khác prompt thế nào?" Trả lời: prompt chỉ có hiệu lực trong một cuộc chat; rules nằm trong file và được nạp ở đầu mỗi phiên.
+- Câu hỏi hay gặp: "Rules khác prompt thế nào?" Trả lời: prompt chỉ có hiệu lực trong một cuộc chat; rules nằm trong file và được load ở đầu mỗi session.
 - Speaker notes:
-  - Rules là file chỉ dẫn chung của cả project. Tên file tuỳ công cụ: AGENTS.md, CLAUDE.md, Cursor rules. Trong khoá dùng AGENTS.md. Nếu công cụ của bạn đã có file rules riêng, kiểm tra xem nó còn đọc AGENTS.md không. Công cụ AI nạp nó ở đầu mỗi phiên, nên viết ngắn thôi, vì phiên nào cũng phải đọc.
+  - Rules là file chỉ dẫn chung của cả project. Tên file tuỳ công cụ: AGENTS.md, CLAUDE.md, Cursor rules. Trong khoá dùng AGENTS.md. Nếu công cụ của bạn đã có file rules riêng, kiểm tra xem nó còn đọc AGENTS.md không. Công cụ AI load nó ở đầu mỗi session, nên viết ngắn thôi, vì session nào cũng phải đọc.
   - Vì sao cần: mỗi cuộc hội thoại AI mới bắt đầu từ trống. Luật chỉ nằm trong đầu chúng ta hoặc trong một cuộc chat cũ thì AI không biết. Viết thành file thì mọi phiên và mọi agent cùng đọc một bản.
   - Rules là lời dặn, không phải rào chắn kỹ thuật. AGENTS.md có thể dặn AI không đọc một folder, nhưng không ép được. .gitignore cũng chỉ ngăn file lên Git, không ngăn AI đọc. File confidential thì để ngoài folder. Muốn chặn AI đọc thì dùng cài đặt quyền của công cụ, và cài đặt này cũng không chặn được mọi đường.
   - Trong buổi này chúng ta gặp rules ở bốn chỗ:
@@ -396,6 +396,42 @@ last_synced: 2026-11-26
 
 ---
 
+### MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Chúng ta dừng một chút để xem còn nhớ gì từ phần vừa học. Quiz không chấm điểm, chọn sai cũng không sao.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### NUMBERED · Quick check 1
+- Kicker: Quick check
+- Title: Cách nào giúp giảm hallucination *khi hỏi AI về project?*
+- On-slide:
+  - A · Chỉ cho AI dùng tài liệu bạn đưa vào
+  - B · Yêu cầu nguồn cho từng ý
+  - C · Cho phép AI trả lời “unknown”
+  - D · Hỏi lại đến khi AI trả lời chắc chắn hơn
+  - E · Dán càng nhiều tài liệu càng tốt
+  - Hiện sau một click: Đáp án A, B, C. AI bớt bịa khi dựa vào đúng tài liệu, phải chỉ ra nguồn và được phép nói chưa biết.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là A, B, C, hiện sau một click.
+  - A, B và C đều cho chúng ta một chỗ để kiểm tra lại câu trả lời.
+  - D sai vì câu trả lời nghe chắc hơn chưa chắc đúng hơn.
+  - E sai vì tài liệu dài và lộn xộn làm AI dễ bỏ sót chi tiết.
+
+  > Cách nào giúp giảm hallucination khi hỏi AI về project? Câu này có hơn một đáp án đúng, mỗi người gõ các chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
+
 ## 2. Skills và connector
 
 ---
@@ -424,19 +460,19 @@ last_synced: 2026-11-26
   - Rules file
   - Luật chung của project, luôn đúng
   - AGENTS.md, CLAUDE.md, Cursor rules
-  - Nạp ở đầu mỗi phiên
+  - Load ở đầu mỗi session
   - Skill
   - Quy trình cho một loại việc
   - Agent Skills, custom GPT
-  - Chỉ nạp khi việc cần đến
+  - Full nội dung load khi cần
 - Ví dụ: Prompt chỉ có hiệu lực trong một cuộc chat; AGENTS.md là rules file; review-flow là một skill.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Có ba cách đưa chỉ dẫn cho AI, và mọi người hay lẫn: prompt, rules file và skill. Rules vừa học ở phần 02, skill là thứ mới của phần này.
   - Prompt là câu chúng ta gõ trong một cuộc chat. Nó chỉ có hiệu lực trong cuộc chat đó.
-  - Rules file là quy tắc chung của cả project, như AGENTS.md, CLAUDE.md hay Cursor rules. Công cụ nạp nó ở đầu mỗi phiên làm việc, nên viết ngắn thôi, vì phiên nào cũng phải đọc.
-  - Skill là cách làm cho một loại việc. Ban đầu AI chỉ thấy tên và mô tả, phần còn lại chỉ nạp khi việc chúng ta nhờ khớp với skill. Mỗi công cụ gọi tên một kiểu: Agent Skills, hoặc custom GPT kèm chỉ dẫn.
-  - Trước khi có skill, cách phổ biến là nhét mọi thứ vào một prompt hệ thống luôn được nạp. Cách đó chiếm chỗ của chính việc đang làm.
+  - Rules file là quy tắc chung của cả project, như AGENTS.md, CLAUDE.md hay Cursor rules. Công cụ load nó ở đầu mỗi session, nên viết ngắn thôi, vì session nào cũng phải đọc.
+  - Skill là cách làm cho một loại việc. Ban đầu AI chỉ thấy tên và mô tả, phần còn lại chỉ load khi việc chúng ta nhờ khớp với skill. Mỗi công cụ gọi tên một kiểu: Agent Skills, hoặc custom GPT kèm chỉ dẫn.
+  - Trước khi có skill, cách phổ biến là nhét mọi thứ vào một prompt hệ thống luôn được load. Cách đó chiếm chỗ của chính việc đang làm.
 - 🎨 Visual hint: Ba card cạnh nhau, mỗi card có icon, tên (Prompt, Rules file, Skill), mô tả ngắn và tên ví dụ chữ tím.
 
 ---
@@ -453,10 +489,10 @@ last_synced: 2026-11-26
   - Luôn có sẵn, rất ngắn
   - 2
   - Hướng dẫn trong SKILL.md
-  - Nạp khi việc khớp mô tả
+  - Load khi việc khớp mô tả
   - 3
   - Tài liệu đi kèm
-  - Nạp khi hướng dẫn nhắc đến
+  - Load khi hướng dẫn nhắc đến
 - Ví dụ: Skill review-flow gồm SKILL.md, references/, assets/; phần mô tả ghi rõ skill làm gì và dùng khi nào.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
@@ -468,7 +504,7 @@ last_synced: 2026-11-26
   - Vì vậy mô tả quyết định skill có được dùng hay không. Phần giữa hai dòng gạch --- là chỗ AI quét nhanh để biết skill có cần cho việc đang làm không, nên hãy viết rõ skill làm gì và dùng khi nào.
   - Giữ SKILL.md dưới khoảng 500 dòng, phần chi tiết tách sang references.
   - Định dạng này là chuẩn mở (agentskills.io), nên nhiều công cụ khác dùng được.
-- 🎨 Visual hint: Trái: khung code hiển thị cây folder và phần khai báo giữa hai dòng gạch tô tím nhạt; phải: ba hàng đánh số 1 đến 3 giải thích ba mức nạp.
+- 🎨 Visual hint: Trái: khung code hiển thị cây folder và phần khai báo giữa hai dòng gạch tô tím nhạt; phải: ba hàng đánh số 1 đến 3 giải thích ba mức load.
 
 ---
 
@@ -721,7 +757,7 @@ last_synced: 2026-11-26
 - Ví dụ: Bước lặp lại và đầu ra kiểm tra nhanh thì hợp giao cho agent; vấn đề còn mơ hồ hoặc cần người thật thì chưa nên.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Vậy nếu mình muốn tuỳ chỉnh theo workflow thiết kế thì làm thế nào?
+  - Vậy nếu muốn tuỳ chỉnh theo workflow thiết kế, chúng ta nên làm gì?
   - Ba câu hỏi:
     - What: workflow thiết kế mà mỗi bước giao cho một agent, có instruction, input và output riêng, cùng ghi vào một design memory. Chúng ta duyệt trước mỗi lần chuyển phase
     - Why: AI soạn nháp nhanh phần lặp lại, còn chúng ta giữ quyết định. Mỗi bước để lại file và nguồn, nên người khác lần ngược được lập luận. Nối lại nguyên tắc đã học ở buổi 0 (intro): AI soạn nháp, chúng ta kiểm tra rồi quyết định
@@ -858,7 +894,7 @@ last_synced: 2026-11-26
   - AGENTS.md
   - Ai làm gì, đọc gì trước, qua gate nào
   - Kho tài liệu chung
-  - Context pack và learnings/
+  - Folder context và learnings/
   - Mọi agent đọc và ghi vào cùng một chỗ
 - Ví dụ: Delivery App: mỗi agent là một nhân viên có vai và kỹ năng riêng, project folder là văn phòng chung.
 - Câu hỏi hay gặp: None.
@@ -867,11 +903,11 @@ last_synced: 2026-11-26
   - Khi mở AI agent trong folder này, agent đọc được cả folder thay vì chỉ một đoạn chúng ta dán vào chat.
   - Cái lợi là chúng ta không phải dán lại ngữ cảnh mỗi lần. Ngữ cảnh nằm sẵn trong folder, và mọi agent dùng chung một bản.
   - Hình dung project folder như một công ty nhỏ: mỗi agent là một nhân viên có vai và kỹ năng riêng, folder là văn phòng chung nơi mọi người đọc và ghi tài liệu
-  - Nhắc lại skill (phần 03): skill là một thư mục dạy agent cách làm một loại việc, tối thiểu có SKILL.md (tên, mô tả, chỉ dẫn); agent chỉ nạp chỉ dẫn khi thấy skill liên quan (theo tài liệu Anthropic)
+  - Nhắc lại skill (phần 03): skill là một thư mục dạy agent cách làm một loại việc, tối thiểu có SKILL.md (tên, mô tả, chỉ dẫn); agent chỉ load chỉ dẫn khi thấy skill liên quan (theo tài liệu Anthropic)
   - Trong folder thường có bốn nhóm:
     - File hướng dẫn chung như AGENTS.md: ai làm gì, đọc gì trước, qua gate nào
     - Mô tả từng agent và các skill, mỗi thứ là một file markdown
-    - Context pack: tài liệu nền của project như research, brief, design system
+    - Folder context: tài liệu nền của project như research, brief, design system
     - Thư mục learnings/: nơi agent ghi lại điều đã học để lần sau đọc lại
   - Giới hạn của phép ví von: nhân viên này không tự nhớ phiên trước. Một số công cụ có memory riêng, nhưng thứ chúng ta cần giữ chắc thì ghi vào file
   - Câu hỏi cho lớp: Nếu project của chúng ta là một công ty nhỏ, chúng ta muốn có những nhân viên agent nào?
@@ -930,7 +966,7 @@ last_synced: 2026-11-26
   - Không cần viết tay: chúng ta nhờ công cụ AI viết file, rồi đọc lại và chạy thử.
   - File bên phải là ví dụ một agent. Phần đầu file ghi tên và mô tả: mô tả nói agent làm gì và dùng khi nào. Phần thân ghi vai, skill cần dùng, tài liệu đọc, các bước làm và nơi ghi kết quả. Nhiều công cụ dùng cấu trúc tương tự; ví dụ Claude Code đọc agent từ file markdown có phần đầu name và description, thân file là chỉ dẫn của agent. Định dạng, tên file, chỗ đặt file và các trường khác nhau theo công cụ, có công cụ không dùng markdown, nên kiểm tra tài liệu của công cụ chúng ta dùng. Tên các skill và tên file là tên minh hoạ.
   - Bước chạy thử là chỗ chúng ta kiểm tra: quote trong bản tóm tắt phải nguyên văn so với transcript.
-  - Trong toolkit của khoá, Competitor Analysis là một skill theo cách này; card của nó ghi “Status: draft” vì chưa thử với lớp thật. AGENTS.md không điều phối các agent, nó chỉ là quy tắc chung mà công cụ đọc mỗi lần mở folder; người điều phối vẫn là designer.
+  - Trong toolkit của khoá, Competitor Analysis là một skill theo cách này; card của nó ghi trạng thái bản nháp vì chưa thử với lớp thật. AGENTS.md không điều phối các agent, nó chỉ là quy tắc chung mà công cụ đọc mỗi lần mở folder; người điều phối vẫn là designer.
   - Câu hỏi cho lớp: Việc nào chúng ta làm lặp lại đủ nhiều để thành agent đầu tiên?
 - 🎨 Visual hint: SPLIT. Trái: năm bước đánh số tím, mỗi bước một ví dụ ngắn; phải: khung file interview-summary.md hiện cùng bước 4.
 
@@ -979,7 +1015,7 @@ last_synced: 2026-11-26
 - Ví dụ: Ba agent Desk research, Tổng hợp, Prototype nhận việc từ AGENTS.md và ghi kết quả vào learnings.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - AGENTS.md là file markdown ghi luật chung. Nhiều công cụ AI tự nạp file này khi mở folder, nhưng tuỳ công cụ, nên kiểm tra trước.
+  - AGENTS.md là file markdown ghi luật chung. Nhiều công cụ AI tự load file này khi mở folder, nhưng tuỳ công cụ, nên kiểm tra trước.
   - Trong đó có bản đồ folder, thứ tự đọc và các quy tắc cứng.
   - Nó chỉ điều hướng chứ không tự chạy gì. Giao việc là phần của chúng ta và công cụ AI.
   - AGENTS.md là lời dặn, không phải rào chắn kỹ thuật. .gitignore cho _raw-private/ và _personal/ chỉ ngăn file lên Git, không ngăn AI đọc. Dữ liệu confidential thì để ngoài folder.
@@ -1478,7 +1514,7 @@ last_synced: 2026-11-26
   - Mở link bằng cửa sổ ẩn danh
   - github.io/tên-tài-khoản/tên-repo, sau một đến hai phút
 - Ví dụ: Hub của Delivery App: push bản đã ẩn danh, bật Pages, gửi link cho mentor xem.
-- Câu hỏi hay gặp: "Cập nhật hub thì làm lại từ đầu?" Trả lời: không. Nói "Lưu và đăng lên", link giữ nguyên.
+- Câu hỏi hay gặp: "Muốn cập nhật hub, chúng ta có phải làm lại từ đầu không?" Trả lời: không. Nói "Lưu và đăng lên", link giữ nguyên.
 - Speaker notes:
   - Push đưa file lên GitHub, còn publish là cho người khác mở bằng link. Hub là markdown, mà trình duyệt chỉ hiện file .md như chữ thường, nên cần một file index.html. Chúng ta nhờ AI dựng, như ở slide Markdown và HTML.
   - Ba bước:
@@ -1607,6 +1643,44 @@ last_synced: 2026-11-26
 - 🎨 Visual hint: Ba card nền trắng viền đen, mỗi card có minh hoạ line-art (ba ô xếp bậc Cấm hẳn, Được duyệt, Phân quyền; ba dòng có dấu hỏi; ba bước Đọc, Thử, Dùng nối bằng mũi tên), số tím, tiêu đề đậm và một câu mô tả.
 
 ---
+
+### MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Trước phần Q&A, chúng ta ôn thêm một câu. Quiz không chấm điểm.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### NUMBERED · Quick check 2
+- Kicker: Quick check
+- Title: Điều nào đúng về *rules file và skill?*
+- On-slide:
+  - A · AGENTS.md hoặc CLAUDE.md được load ở đầu mỗi session
+  - B · Full nội dung của skill chỉ load khi cần dùng đến
+  - C · Rules file chặn được AI đọc file confidential
+  - D · Rules file càng dài thì AI làm càng đúng
+  - E · Prompt trong một cuộc chat có hiệu lực ở mọi session sau
+  - Hiện sau một click: Đáp án A, B. Rules file chỉ là context, chưa chặn được AI đọc file. Muốn chặn thì dùng permission settings hoặc để file ngoài folder.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là A và B, hiện sau một click.
+  - A đúng với file rules chính của project. Một số công cụ còn có rules gắn theo file hoặc gọi tay, loại này không load từ đầu.
+  - B đúng: lúc mở session, AI mới thấy tên và mô tả của skill, còn nội dung SKILL.md load khi skill được dùng.
+  - C sai vì rules file chỉ là context để AI làm theo. Permission settings chặn được nhiều hơn, dù cũng chưa chặn được mọi đường.
+  - D sai: file rules dài không tốt hơn file ngắn.
+  - E sai: prompt chỉ có hiệu lực trong cuộc chat đó.
+
+  > Điều nào đúng về rules file và skill? Câu này có hơn một đáp án đúng, mỗi người gõ các chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
 
 ### STATEMENT · Questions
 - Kicker: Hỏi đáp
@@ -1743,7 +1817,7 @@ last_synced: 2026-11-26
 ### STATEMENT · Closing thought
 - Kicker: Takeaway
 - Title: Go crazy with AI!
-- On-slide: Đưa input rõ ràng. Yêu cầu nguồn. Kiểm tra. Tự quyết định.
+- On-slide: Cho AI đủ thông tin để làm việc. Kiểm tra xem kết quả đến từ đâu. Đừng vội tin mọi thứ nó trả về.
 - On-slide:
   - Winnie Nguyen
   - Nguyenphuctuongvan@gmail.com
@@ -1898,7 +1972,7 @@ last_synced: 2026-11-26
 - Speaker notes:
   - Năm thuật ngữ còn lại là AI chat tool, AI coding tool, context window, connector và reusable instructions. Chúng nằm trong pre-read và được dạy lại đúng buổi cần, chủ yếu là buổi 7. Agent thì mình giới thiệu ngay ở phần sau.
   - Nối với demo vừa rồi: project mẫu là context. Câu "chỉ dùng project mẫu" là grounding. Còn lời khuyên rất tự tin của bản mơ hồ là ví dụ của hallucination.
-  - AI-assisted và AI-generated mình đã nói ở đầu buổi, qua slide "AI drafts. You verify. You decide."
+  - AI-assisted và AI-generated chúng ta đã nói ở đầu buổi, qua ý AI soạn nháp còn designer kiểm tra và quyết định.
   - Slide này khoảng một phút, hai slide tiếp theo khoảng ba phút rưỡi.
   - Câu hỏi cho lớp: Trong demo, cái nào là thứ designer đưa cho AI, cái nào là điều AI tự thêm vào?
 - 🎨 Visual hint: Lưới 2x2 bốn card nền trắng: Context, Grounding, Hallucination, AI-assisted; mỗi card có icon, tên, một câu định nghĩa và một ví dụ ở đáy.
@@ -2016,7 +2090,7 @@ last_synced: 2026-11-26
 
 ---
 
-### FORMULA · AI drafts. You verify. You decide.
+### FORMULA · AI drafts, you check
 - Status: Không có trong deck hiện tại, giữ ở đây để dùng lại.
 - Kicker: AI-assisted, không phải AI-generated
 - Title: Ai đã quyết định?
@@ -2156,7 +2230,7 @@ last_synced: 2026-11-26
   - Một dòng về connector: nó cho AI đọc thẳng file design hoặc tài liệu của designer (ví dụ trong công cụ design hoặc ghi chú); **trước khi kết nối, biết nó đọc và sửa được những gì**, và áp data rules như khi dán. Dạy kỹ hơn ở buổi 7
   - Dữ liệu gốc cần ẩn danh nằm trong `_raw-private/`: không lên GitHub, và file luật bảo tool không đọc; đó là quy tắc chứ không phải rào chắn, nên file thật sự confidential vẫn để ngoài folder
   - Output của AI có được dùng cho công việc với client hay không, và ai sở hữu nó, tuỳ công ty và quốc gia của designer; hãy ghi lại trong project log chỗ nào đã dùng AI
-  - Designer sẽ viết data rules riêng ở cuối Activity ngay sau phần này; cho đến lúc đó đừng dán tài liệu thật vào AI tool
+  - Designer sẽ viết data rules riêng ở cuối Activity ngay sau phần này; cho đến lúc đó đừng dán tài liệu thật vào công cụ AI
   - Hai phút
 - 🎨 Visual hint: SCHEMATIC. Process track bốn bước, bước ba được tô purple.
 
@@ -2172,11 +2246,11 @@ last_synced: 2026-11-26
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Mười tám phút, đây là activity duy nhất trên lớp; chia bốn bước, đổi kiểu tương tác mỗi vài phút
-  - **Bước 1, ba phút, cá nhân:** mỗi người tự xếp năm đoạn trích hư cấu (slide kế tiếp) vào safe, ask first hoặc never in a public tool; **chưa mở AI tool**
+  - **Bước 1, ba phút, cá nhân:** mỗi người tự xếp năm đoạn trích hư cấu (slide kế tiếp) vào safe, ask first hoặc never in a public tool; **chưa mở công cụ AI**
   - **Bước 2, sáu phút, cặp hoặc cá nhân:** nhờ AI chat tool xếp cùng năm đoạn theo ba nhóm, rồi so với bản tự xếp; ghi số đoạn AI xếp khớp
   - **Cái bẫy:** đoạn D, transcript đã thay tên bằng chữ cái nhưng còn vai trò, tuổi và nơi ở; AI thường xếp "an toàn" vì thấy đã bỏ tên. Để designer tự bắt được; đừng nói trước
   - **Bước 3, bảy phút, cá nhân:** viết ba dòng vào `context/data-rules.md` cho một project cụ thể: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì; chưa biết chính sách công ty thì ghi "cần hỏi" và hỏi trước buổi 2
-  - Ai dùng project mẫu của khoá thì viết cho project mẫu, và viết lại cho project thật sau; chưa dán tài liệu thật vào AI tool
+  - Ai dùng project mẫu của khoá thì viết cho project mẫu, và viết lại cho project thật sau; chưa dán tài liệu thật vào công cụ AI
   - **Bước 4, hai phút, cả lớp:** mỗi người nói một con số "AI xếp đúng X trên 5"
   > Nếu file này lọt ra ngoài, ai sẽ biết?
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn, không có diagram.
@@ -2224,7 +2298,7 @@ last_synced: 2026-11-26
 - Kicker: Generalist cấp senior
 - Title: Chọn vấn đề\n*đáng giải*
 - On-slide:
-  - 01 · Làm gì: cùng product và business chọn vấn đề đáng giải
+  - 01 · Làm gì: cùng Product và Business xác định vấn đề cần giải quyết
   - 02 · Kỹ năng: research, framing, stakeholder management, judgment
   - 03 · Bằng chứng: NN/g 2026, senior và generalist phục hồi nhanh hơn
   - 04 · Trong khoá: buổi 2 đến 5, và hub làm bằng chứng cho lập luận
@@ -2279,9 +2353,9 @@ last_synced: 2026-11-26
 - On-slide:
   - Method: research questions · desk research · competitor analysis · stakeholder meetings · questionnaire · user interviews · observation
   - AI: soạn nháp câu hỏi và guide, rút dữ kiện từ nguồn của designer, tóm tắt session
-  - Designer: câu hỏi, người thật, kiểm tra chéo với ghi chú gốc
+  - Designer: câu hỏi, người thật, đối chiếu với ghi chú gốc
 - Speaker notes:
-  - Phần này chỉ nói stage gồm gì và AI hỗ trợ ở đâu, không đi vào từng method
+  - Phần này chỉ nói stage gồm gì và AI giúp được ở đâu, không đi vào từng method
   - **AI không phải là user, và không thể thay thế user**
   > Khi thiếu thời gian, designer thường bỏ qua phần nào của stage này?
   - Hai phút cho mỗi stage, bằng ba stage còn lại
@@ -2400,7 +2474,7 @@ last_synced: 2026-11-26
 - Sub: Dựng project folder, làm ở nhà.
 - Speaker notes:
   - Slide tham khảo của Practice 1 (khoảng bốn giờ, ước lượng chưa đo), không chiếu trên lớp; sáu bước ở slide kế tiếp
-  - Ai mà công ty cấm AI tool, hoặc project quá nhạy cảm, dùng project mẫu của khoá cho bước năm
+  - Ai mà công ty cấm công cụ AI, hoặc project quá nhạy cảm, dùng project mẫu của khoá cho bước năm
   - **Ai gõ lại tóm tắt project từ trí nhớ: chỉ họ về file**
   - Ai thấy bảng và link hiển thị thô: mở cả folder project trong công cụ đang dùng, không mở từng file lẻ; link giữa các page chỉ hoạt động khi mở cả folder
 - 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, số phút lớn.

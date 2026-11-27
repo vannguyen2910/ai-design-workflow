@@ -15,7 +15,7 @@ next-session: "Discover the Problem"
 ---
 Buổi này đi theo thứ tự phụ thuộc, mỗi phần dùng thứ đã học ở phần trước, và trả lời các câu hỏi: làm việc với AI cần những khái niệm nào, file, folder và rules là gì, skill và connector là gì, agent và đội AI là gì, hub gồm những lớp nào và vì sao một công ty có thể giữ nhiều hub, GitHub dùng để làm gì và publish hub thành live site thế nào, và dữ liệu nào được đưa cho AI.
 
-> **AI-assisted, không phải AI-generated.** AI soạn nháp. Bạn kiểm tra. Bạn quyết định. Lập trường của chương trình: bạn là partner cùng business và product chọn vấn đề đáng giải trước khi build.
+> **AI-assisted, không phải AI-generated.** AI soạn nháp. Bạn kiểm tra. Bạn quyết định. Lập trường của chương trình: bạn là partner cùng business và product xác định vấn đề cần giải quyết trước khi build.
 
 ## Nội dung buổi học
 
@@ -56,7 +56,7 @@ Bạn đã dùng AI hằng tuần nên phần này không đọc định nghĩa 
 | **Hallucination** | Câu trả lời tự tin nhưng bịa: một competitor không tồn tại, một câu quote chưa ai nói | Yêu cầu nguồn cho từng ý; cho phép AI trả lời "unknown" |
 | **AI-assisted so với AI-generated** | AI-generated: AI quyết định. AI-assisted: bạn quyết định, AI soạn nháp và lắp ráp | AI soạn nháp. Bạn kiểm tra. Bạn quyết định |
 
-Bốn thuật ngữ hay gặp khác được dạy đúng chỗ cần chúng: **AI chat tool** (bạn viết, AI trả lời), **AI coding tool** (đọc và ghi file trong project folder, buổi 7), **connector (MCP)**, giống một cái USB cắm giữa tài liệu và AI tool để AI đọc được thứ bạn đang làm (mục 3.5), và **agent** (mục 4).
+Bốn thuật ngữ hay gặp khác được dạy đúng chỗ cần chúng: **AI chat tool** (bạn viết, AI trả lời), **AI coding tool** (đọc và ghi file trong project folder, buổi 7), **connector (MCP)**, giống một cái USB cắm giữa tài liệu và công cụ AI để AI đọc được thứ bạn đang làm (mục 3.5), và **agent** (mục 4).
 
 ### 1.2 Worked example: one task, done twice
 
@@ -132,7 +132,7 @@ Thử ngay: mở `README.md` của workspace template và trả lời ba câu. F
 
 ### 2.3 Rules
 
-**Rules** là một file ngắn ghi luật chung của project, AI đọc ở đầu mỗi phiên. Tên file tuỳ công cụ (`AGENTS.md`, `CLAUDE.md`, Cursor rules); chương trình dùng `AGENTS.md`. Nếu công cụ của bạn đã có file rules riêng, kiểm tra xem nó còn đọc `AGENTS.md` không. Trong file có: thứ tự đọc file, folder không được đọc, ghi vào đâu, và quy tắc cứng.
+**Rules** là một file ngắn ghi luật chung của project, AI đọc ở đầu mỗi session. Tên file tuỳ công cụ (`AGENTS.md`, `CLAUDE.md`, Cursor rules); chương trình dùng `AGENTS.md`. Nếu công cụ của bạn đã có file rules riêng, kiểm tra xem nó còn đọc `AGENTS.md` không. Trong file có: thứ tự đọc file, folder không được đọc, ghi vào đâu, và quy tắc cứng.
 
 **Vì sao cần.** Mỗi cuộc hội thoại AI mới bắt đầu từ trống. Luật chỉ nằm trong đầu bạn hoặc trong một cuộc chat cũ thì AI không biết. Viết thành file thì mọi phiên và mọi agent cùng đọc một bản. Prompt khác rules ở chỗ prompt chỉ có hiệu lực trong một cuộc chat.
 
@@ -165,9 +165,9 @@ Rules là luật chung của project. Mục này thêm hai thứ: **skill** là 
 |---|---|---|---|
 | Là gì | Dặn một lần trong hội thoại | Luật chung của project, luôn đúng | Quy trình cho một loại việc |
 | Ví dụ | Message, custom instructions | `AGENTS.md`, `CLAUDE.md`, Cursor rules | Agent Skills, custom GPT |
-| Khi nào nạp | Có hiệu lực trong hội thoại đó | Nạp ở đầu mỗi phiên | Chỉ nạp khi việc cần đến |
+| Khi nào load | Có hiệu lực trong hội thoại đó | Load ở đầu mỗi session | Full nội dung load khi cần |
 
-Rules file nạp ở đầu mỗi phiên nên viết ngắn. Với skill, ban đầu AI chỉ thấy tên và mô tả; phần còn lại chỉ nạp khi việc bạn nhờ khớp với skill. Trước khi có skill, cách phổ biến là nhét mọi thứ vào một prompt hệ thống luôn được nạp, và cách đó chiếm chỗ của chính việc đang làm.
+Rules file load ở đầu mỗi session nên viết ngắn. Với skill, ban đầu AI chỉ thấy tên và mô tả; phần còn lại chỉ load khi việc bạn nhờ khớp với skill. Trước khi có skill, cách phổ biến là nhét mọi thứ vào một prompt hệ thống luôn được load, và cách đó chiếm chỗ của chính việc đang làm.
 
 ### 3.2 A skill is a folder
 
@@ -284,10 +284,10 @@ Mỗi chức năng sở hữu một loại dữ liệu khác nhau và có ngư�
 Sợi dây nối các hub là ID chung. Ví dụ một chuỗi:
 
 - một mục tiêu business có ID,
-- một opportunity trong hub design trỏ về mục tiêu đó,
-- một decision trỏ về opportunity,
-- một ràng buộc kỹ thuật trong hub technical trỏ về decision,
-- một test trỏ về decision và ràng buộc.
+- một opportunity trong hub design gắn với mục tiêu đó,
+- một decision gắn với opportunity,
+- một ràng buộc kỹ thuật trong hub technical gắn với decision,
+- một test gắn với decision và ràng buộc.
 
 Mỗi mục mang ID và nêu ID của mục nó dựa vào. Nhờ vậy AI đi được từ test ngược về mục tiêu business, qua cả ba hub. Đây là ý của requirements traceability: ID có từ trước khi viết, và có hai chiều kiểm tra (mọi mục tiêu có ít nhất một test, và mọi test truy được về một mục tiêu). Hub của bạn đã dùng ý này ở quy mô nhỏ: source ID như `I01-03` và insight ID như `IN-01`.
 
@@ -325,7 +325,7 @@ GitHub là website lưu folder project của bạn trên mạng, kèm lịch s�
 
 ### 7.2 How a repo works
 
-Bạn chỉ đạo AI coding tool; AI sửa file trong folder project trên máy bạn. Bạn xem thử bằng run localhost; chưa ổn thì bảo AI sửa tiếp, mọi thứ vẫn chỉ nằm trên máy. Chỉ khi ổn bạn mới push lên repo. AI không tự push, nên bạn là cổng kiểm tra duy nhất giữa AI và những người khác. Teammate pull về để dùng, hoặc gửi pull request để review trước khi thay đổi vào bản chính.
+Bạn chỉ đạo AI coding tool; AI sửa file trong folder project trên máy bạn. Bạn xem thử bằng run localhost; chưa ổn thì bảo AI sửa tiếp, mọi thứ vẫn chỉ nằm trên máy. Chỉ khi ổn bạn mới push lên repo. AI không tự push, nên bạn là điểm dừng kiểm tra duy nhất giữa AI và những người khác. Teammate pull về để dùng, hoặc gửi pull request để review trước khi thay đổi vào bản chính.
 
 Khi AI mở một repo, nó đọc ba file đầu tiên: `README.md` (repo là gì, bắt đầu từ đâu), `AGENTS.md` (luật và bản đồ folder cho AI) và `SKILL.md` (cách làm một loại việc). Cả ba đều là markdown, bạn không cần viết tay mà nhờ AI viết rồi đọc lại và chỉnh. Với designer, cần biết: repo là folder của project, commit là một lần chốt, pull request là chỗ review output của AI, và đọc được `README.md` và `AGENTS.md`. Chưa cần: gõ lệnh trong terminal, giải xung đột khi ghép branch, quản lý nhiều branch phức tạp; AI hoặc developer làm giúp.
 
@@ -382,7 +382,7 @@ Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói
 3. **Xoá thông tin định danh trước**, bằng find and replace trên máy cục bộ chứ không nhờ AI làm, vì khi đó dữ liệu đã được gửi đi. Thay tên bằng P1, P2 chưa phải là ẩn danh, vì vai trò, tuổi, nơi ở hay thời điểm vẫn đủ để nhận ra một người. Bạn nên bỏ các chi tiết đó, hoặc nói chung hơn, ví dụ "một PM ở thành phố lớn".
 4. **Giữ file confidential ngoài folder của tool**, vì AI coding tool hoặc agent đọc toàn bộ project folder. `AGENTS.md` có thể dặn tool không đọc một folder, nhưng đó là quy tắc chứ không phải rào chắn kỹ thuật. Cùng nguyên tắc với **connector**: trước khi kết nối, xác định nó đọc và sửa được những gì.
 
-Trước khi dùng agent hoặc skill, bạn cũng nên biết công cụ AI của mình có tự cập nhật không. Nhiều công ty không cho công cụ AI, agent hay skill tự cập nhật, vì phần được nạp vào có thể đổi sau khi đã được duyệt. Nếu công ty bạn như vậy, bạn gọi agent bằng tay và cập nhật bằng tay khi cần: đọc phần thay đổi, thử trên project mẫu, rồi mới dùng cho việc thật. Bạn hỏi IT ba câu: công cụ dùng bản ổn định hay bản mới nhất, có khoá phiên bản không, và skill hay connector lấy từ đâu.
+Trước khi dùng agent hoặc skill, bạn cũng nên biết công cụ AI của mình có tự cập nhật không. Nhiều công ty không cho công cụ AI, agent hay skill tự cập nhật, vì phần được load vào có thể đổi sau khi đã được duyệt. Nếu công ty bạn như vậy, bạn gọi agent bằng tay và cập nhật bằng tay khi cần: đọc phần thay đổi, thử trên project mẫu, rồi mới dùng cho việc thật. Bạn hỏi IT ba câu: công cụ dùng bản ổn định hay bản mới nhất, có khoá phiên bản không, và skill hay connector lấy từ đâu.
 
 Quyền dùng output của AI cho công việc với client và quyền sở hữu tuỳ công ty và quốc gia; nên ghi những chỗ đã dùng AI vào log của project. Output của mục này là ba dòng bằng lời của bạn: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì.
 
@@ -416,7 +416,7 @@ Nhận định "AI mạnh hay yếu" chỉ đúng với một loại task và m�
 
 ## Giới hạn của bài học
 
-- **Thiên lệch của dữ liệu train.** AI tool phản ánh pattern trong dữ liệu train, vốn nghiêng về phương Tây và tiếng Anh. Với người dùng Việt Nam hoặc Đông Nam Á, cần đối chiếu gợi ý với mental model của người dùng, không chỉ xem output có thuyết phục hay không.
+- **Bias của dữ liệu train.** Công cụ AI phản ánh pattern trong dữ liệu train, vốn phần lớn đến từ phương Tây và tiếng Anh. Với người dùng Việt Nam hoặc Đông Nam Á, cần đối chiếu gợi ý với mental model của người dùng, không chỉ xem output có thuyết phục hay không.
 - **Dữ liệu đưa vào có thể bị lưu lại.** Áp dụng data rules ở mỗi lần dùng.
 - **Giới hạn của evidence.** Số liệu về năng lực AI ở Phụ lục đến từ nghiên cứu trên những mô hình tại thời điểm đó và đổi nhanh; evidence về AI như bộ khuếch đại (mục 4) đến từ phát triển phần mềm, áp vào design là suy luận.
 - **Mô hình hub.** Ba lớp và ba quy tắc ở mục 5 dựa trên mô tả của Karpathy và các hướng dẫn thực hành, chưa có nghiên cứu đo hiệu quả của hub trong công việc design. Mô hình nhiều hub ở mục 6 là pattern một số tổ chức đang thử; các nguồn chủ yếu là bài viết của nhà cung cấp công cụ và tài liệu về traceability và data mesh, không phải chuẩn cho design.
