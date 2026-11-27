@@ -1056,7 +1056,7 @@ last_synced: 2026-11-26
 - On-slide:
   - WHAT
   - Một site liên kết chứa mọi output của project
-  - Mỗi page một output, mỗi item một file
+  - Mỗi page một output, mỗi item một mục riêng
   - Mỗi item có ID ngắn để link với nhau
   - WHY
   - Output bước này là input bước sau, hub nối chúng lại
@@ -1071,7 +1071,7 @@ last_synced: 2026-11-26
   - Khi AI tham gia quy trình, quyết định đưa ra nhanh hơn nhưng khó trả lời câu "vì sao chọn hướng này?". Hub giữ câu trả lời đó.
   - Hub là một folder duy nhất ghi lại lý do sau mỗi quyết định, nối với nhu cầu người dùng, giả định đã đặt và kết quả kiểm chứng.
   - Hình dung theo ba câu:
-    - What: một site liên kết chứa mọi output của project. Mỗi page một output, mỗi item một file có ID ngắn (O1, H1, D1, T1, M1)
+    - What: một site liên kết chứa mọi output của project. Mỗi page một output, mỗi item có ID ngắn (O1, H1, D1, T1, M1)
     - Why: output của mỗi bước là input của bước sau. Từ một decision, chúng ta lần ngược ra opportunity, hypothesis, principle, test và metric
     - When: bắt đầu từ ngày đầu tiên onboard với product, thêm trang sau mỗi giai đoạn, hoàn thiện ở buổi 12
   - Hub giải hai vấn đề. Một là AI cho kết quả trông hoàn chỉnh nhưng có thể thiếu căn cứ. Hai là công việc làm cùng AI rải rác trong các chat, nên vài tháng sau chính chúng ta cũng khó dựng lại.
@@ -1090,21 +1090,21 @@ last_synced: 2026-11-26
   - 01
   - Tài liệu gốc: transcript đã ẩn danh, review, tài liệu của team. Lưu nguyên trạng.
   - 02
-  - Những điều đã tổng hợp: source notes, insight, decision, mỗi mục một file. AI soạn nháp, bạn kiểm tra.
+  - Những điều đã tổng hợp: evidence notes, insight, decision, mỗi mục có một ID. AI soạn nháp, bạn kiểm tra.
   - 03
   - Quy tắc làm việc mà AI cần đọc trước: đọc gì, ghi ở đâu, quy tắc nào phải tuân theo. Trong khoá là AGENTS.md.
-  - Hai file giúp tìm đường: index (README.md) cho biết hub có gì, log (project-log.md) ghi mỗi lần đưa nguồn vào hoặc đổi quyết định.
-- Ví dụ: Raw sources là transcript đã ẩn danh và review; Wiki là source notes, insight, decision; Schema là AGENTS.md.
+  - Hai file giúp tìm đường: index (README.md) cho biết hub có gì, log (case-log.md) ghi mỗi lần đưa nguồn vào hoặc đổi quyết định.
+- Ví dụ: Raw sources là transcript đã ẩn danh và review; Wiki là evidence notes, insight, decision; Schema là AGENTS.md.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Andrej Karpathy mô tả ý này vào tháng 4 năm 2026: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi; lý do ông nêu là người ta bỏ wiki vì công bảo trì, còn AI không ngại cập nhật liên kết
+  - Andrej Karpathy mô tả ý này vào tháng 4 năm 2026: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi; lý do ông nêu là người ta bỏ wiki vì công bảo trì, còn AI không ngại cập nhật liên kết. Ông gọi đây là một ý tưởng để thử, và trong mô tả của ông thì AI viết cả wiki. Khoá thêm bước designer kiểm tra trước khi dùng.
   - Raw sources gồm transcript đã ẩn danh, review và tài liệu của team. Đây là tài liệu gốc, được lưu nguyên trạng để có thể đối chiếu khi cần.
-  - Wiki gồm evidence notes, insight, opportunity và decision. Mỗi mục được lưu thành một file Markdown có liên kết với nhau. AI có thể hỗ trợ soạn nháp, nhưng designer cần kiểm tra trước khi sử dụng.
+  - Wiki gồm evidence notes, insight, opportunity và decision. Mỗi mục có một ID, được viết bằng Markdown và liên kết với nhau. Riêng evidence notes thì từ Lesson 2 chúng ta gom theo buổi phỏng vấn, mỗi buổi một file. AI có thể hỗ trợ soạn nháp, nhưng designer cần kiểm tra trước khi sử dụng.
   - Schema là một file ngắn hướng dẫn AI cần đọc gì trước và những quy tắc nào phải tuân theo. Trong khoá học, file này là `AGENTS.md`.
-  - Hai file giúp tìm đường: index (`README.md`) cho biết hub có gì, log (`project-log.md`) ghi mỗi lần đưa nguồn vào hoặc đổi quyết định
+  - Hai file giúp tìm đường: index (`README.md`) cho biết hub có gì, log (`case-log.md`) ghi mỗi lần đưa nguồn vào hoặc đổi quyết định
   - Chỉ vào ba file của project mẫu, một phút
   - Câu hỏi cho lớp: Trong project của chúng ta, thứ nào nên là raw source?
-- 🎨 Visual hint: Ba card đánh số 01 đến 03, card cuối nền tối; mỗi card có tên lớp và mô tả; dòng ghi chú về index và log ở đáy.
+- 🎨 Visual hint: Ba card đánh số 01 đến 03, cả ba card nền trắng; mỗi card có tên lớp và mô tả; dòng ghi chú về index và log ở đáy.
 
 ---
 
@@ -1123,16 +1123,16 @@ last_synced: 2026-11-26
   - Quote phải nguyên văn
   - Quote AI viết lại nghe hay hơn quote thật. Buổi 3 kiểm điều này bằng chương trình.
   - Ba quy tắc nằm trong AGENTS.md. Bạn viết lại bằng lời của mình ở Practice 1.
-- Ví dụ: I01-03 là ghi chú 3 của phỏng vấn 1; quote AI viết lại nghe hay hơn quote thật nên phải nguyên văn.
+- Ví dụ: RET-02 là note số 2 của outcome RET; quote AI viết lại nghe hay hơn quote thật nên phải nguyên văn.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Quy tắc 1: nếu bản tóm tắt sai thì vẫn còn nguồn để đối chiếu; nghiên cứu về dùng AI cho UX research cho thấy researcher ít tin kết quả AI vì không truy được về dữ liệu gốc
-  - Một bình luận dưới bài của Karpathy báo truy vấn chỉ qua wiki kém hơn khi có tài liệu gốc; số tự báo cáo, chưa kiểm chứng, và đó là lý do quy tắc 1 tồn tại
-  - Quy tắc 2: ID `I01-03` là ghi chú 3 của phỏng vấn 1; một insight chỉ ra được nó dựa vào note nào
-  - Quy tắc 3: người thật nói câu dở dang, còn quote AI viết lại nghe tự nhiên hơn nên khó bắt; buổi 3 dạy cách kiểm điều này bằng chương trình
+  - Quy tắc 1: nếu bản tóm tắt sai thì vẫn còn nguồn để đối chiếu. Karpathy cũng đặt nguyên tắc này: AI chỉ đọc raw sources chứ không sửa
+  - Một nghiên cứu phỏng vấn 21 UX researcher, product manager và designer cho thấy phần lớn ít tin AI khi để nó rút insight. Không truy được về dữ liệu gốc là một trong các lý do, bên cạnh kết quả không ổn định, thiếu ý, và quote bịa hoặc gán sai người
+  - Quy tắc 2: mỗi note có một ID, ví dụ `RET-02` là note số 2 của outcome RET. Nhờ vậy một insight chỉ ra được nó dựa vào note nào
+  - Quy tắc 3: người thật nói câu dở dang, còn quote AI viết lại nghe tự nhiên hơn nên khó bắt; buổi 3 dạy cách kiểm điều này bằng chương trình. Trong note, mỗi quote ghi kèm mã transcript và số lượt, ví dụ `(I01, turn 04)`
   - Ba quy tắc nằm trong `AGENTS.md`; designer viết lại bằng lời của mình ở Practice 1, bước 4
   - Câu hỏi cho lớp: Quy tắc nào chúng ta dễ vi phạm nhất khi làm việc gấp?
-- 🎨 Visual hint: Ba card đánh số 01 đến 03, card cuối nền tối; card giữa có dòng mono ví dụ ID I01-03; dòng ghi chú nhỏ ở đáy.
+- 🎨 Visual hint: Ba card đánh số 01 đến 03, cả ba card nền trắng; card giữa có dòng mono ví dụ ID RET-02; dòng ghi chú nhỏ ở đáy.
 
 ---
 
@@ -1203,8 +1203,7 @@ last_synced: 2026-11-26
     - Lần ngược ra user need để thấy decision có lý do
     - Chỉ phần cảnh báo: decision không có user need, hypothesis chưa test, link hỏng
     - Mở một item để thấy mỗi item là một file
-  - Dự phòng nếu demo lỗi: quay lại ba slide ảnh trước đó.
-  - Hub của chúng ta sẽ có cấu trúc này. Hôm nay chúng ta chỉ cần mở hub mẫu ở bài tập về nhà.
+  - Hub của chúng ta sẽ có cấu trúc này. Hôm nay chưa cần dựng hub, Practice 1 bắt đầu từ project folder, README và `AGENTS.md`.
 - 🎨 Visual hint: Nền vàng, biểu tượng phát ở góc trên trái, title Live demo ở giữa, dòng mono nhỏ bên dưới.
 
 ---
@@ -1237,9 +1236,9 @@ last_synced: 2026-11-26
     - Phát hiện chỗ yếu sớm: chỉ ra quyết định thiếu căn cứ trước khi chi tiền xây
     - Giữ tri thức: người thiết kế rời đi thì lý do vẫn ở lại
     - Dùng để báo cáo: trình bày dựa trên bằng chứng
-  - Về rủi ro, hub mặc định riêng tư và có bốn mức chia sẻ.
+  - Về rủi ro, hub mặc định riêng tư, và ai chia sẻ thì chịu trách nhiệm.
   - Hub không làm thiết kế nhanh hơn. Nó làm cho thiết kế có AI đủ đáng tin để một tổ chức dám dựa vào.
-  - Hub là một folder, và folder cần một nơi để tồn tại, lưu lịch sử và chia sẻ. Đó là phần sáu, GitHub; sau đó là Data Safety để biết tài liệu nào được phép đưa vào.
+  - Hub là một folder, và folder cần một nơi để tồn tại, lưu lịch sử và chia sẻ. Đó là phần năm, GitHub; sau đó là Data Safety để biết tài liệu nào được phép đưa vào.
 - 🎨 Visual hint: Lưới năm card giá trị (Kiểm chứng được, Phát hiện chỗ yếu sớm, Giữ tri thức, Dùng để báo cáo, Kiểm soát rủi ro) kèm một sơ đồ decision nhỏ; câu chốt ở đáy.
 
 ---
@@ -1257,12 +1256,13 @@ last_synced: 2026-11-26
   - ràng buộc, kiến trúc
   - ĐỌC VÀ ĐỐI CHIẾU
   - ID CHUNG: BIZ, DES, TEC
-  - Mỗi chức năng giữ hub của mình. AI nối ba hub bằng ID chung. Một số công ty lớn đang thử hướng này; đây là pattern, chưa phải chuẩn.
+  - Mỗi chức năng giữ hub của mình. AI nối ba hub bằng ID chung. Có đội đang bàn hướng này. Chúng ta chưa thấy case công khai nào, nên đừng xem đây là chuẩn.
 - Ví dụ: Business giữ mục tiêu và metric, Technical giữ ràng buộc và kiến trúc, Design giữ insight và decision.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Mỗi chức năng sở hữu một loại dữ liệu và có người chịu trách nhiệm: Business giữ mục tiêu và metric, Technical giữ ràng buộc và kiến trúc, Design giữ insight và decision
-  - Gộp hết vào một hub thì không ai là chủ của từng phần; cùng nguyên tắc với data mesh: mỗi miền tự chủ, chỉ một bộ chuẩn chung rất nhỏ
+  - Gộp hết vào một hub thì không ai là chủ của từng phần
+  - Nói rõ mức chắc chắn: ý này đến từ trao đổi với người làm nghề, và chúng ta chưa tìm được nguồn công khai nào cho thấy một công ty đang chạy nó
   - AI là lớp nối: lấy dữ liệu liên quan và đối chiếu giữa ba hub
   - Phần này là lý thuyết, không có bài tập; hub của designer là một trong ba nhánh
   - Câu hỏi cho lớp: Ở chỗ chúng ta làm, ai đang giữ mục tiêu business và ai giữ ràng buộc kỹ thuật?
@@ -1282,17 +1282,17 @@ last_synced: 2026-11-26
   - Hiện hạn chốt trước khi thanh toán
   - TEC-C1
   - Hạn chốt do cổng thanh toán quy định
-  - Mỗi mục mang ID và nêu ID của mục nó dựa vào. Ba quy tắc: ID không đổi, không dùng lại, mỗi chức năng một tiền tố. Ví dụ trên chỉ để minh hoạ.
-- Ví dụ: Mục tiêu business BIZ-01 nối tới opportunity DES-02, decision DES-03 và ràng buộc kỹ thuật TEC-01.
+  - Mỗi mục mang ID và nêu ID của mục nó dựa vào, ví dụ DES-D3 dựa vào cả DES-O2 và TEC-C1. Ba quy tắc: ID không đổi, không dùng lại, mỗi chức năng một tiền tố. Ví dụ trên chỉ để minh hoạ.
+- Ví dụ: Mục tiêu business BIZ-01 nối tới opportunity DES-O2; decision DES-D3 dựa vào DES-O2 và ràng buộc kỹ thuật TEC-C1.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Mỗi mục mang ID và nêu ID của mục nó dựa vào, nên AI đi được từ test ngược về mục tiêu business qua cả ba hub
+  - Mỗi mục mang ID và nêu ID của mục nó dựa vào. Ở ví dụ này, hạn chốt do cổng thanh toán đặt ra từ trước, nên decision DES-D3 dựa vào cả opportunity DES-O2 lẫn ràng buộc TEC-C1. Nhờ các ID đó, AI đi được từ test ngược về mục tiêu business qua cả ba hub
   - Hub của designer đã dùng ý này ở quy mô nhỏ: note ID như `RET-02`, insight ID như `IN-01`
   - Ba quy tắc cho ID: không đổi, không dùng lại, mỗi chức năng một tiền tố để không trùng; BIZ, DES, TEC chỉ là tiền tố minh hoạ, không phải chuẩn
-  - Các hub cần thêm một bộ field chung rất nhỏ như owner, status, version
+  - Các hub cần thêm vài field chung như owner, status, version
   - Hai rủi ro: hai hub cùng ID nhưng khác cấu trúc thì phép nối sai mà không báo lỗi; và AI nối nhanh nhưng designer vẫn mở cả hai nguồn để kiểm tra
   - Câu hỏi cho lớp: Mục nào trong project của chúng ta nên có ID trước?
-- 🎨 Visual hint: Bốn card nối nhau theo chuỗi (BIZ-01, DES-02, DES-03, TEC-01), card cuối nền tối; mỗi card có ID mono, tên và một câu; ba quy tắc ID ở dòng cuối.
+- 🎨 Visual hint: Bốn card nối nhau theo chuỗi (BIZ-01, DES-O2, DES-D3, TEC-C1), cả bốn card nền trắng; mỗi card có ID mono, tên và một câu; ba quy tắc ID ở dòng cuối.
 
 ---
 
@@ -1454,7 +1454,7 @@ last_synced: 2026-11-26
 - Speaker notes:
   - Phần Knowledge Hub đã nói Hub là gì. Slide này trả lời câu học viên hay hỏi: sao không làm hub trên Notion rồi nối MCP?
   - Notion vẫn dùng tốt để đọc tài liệu, và mình đã nói Notion là một connector. Nhưng với Hub, mình chọn folder trên máy và GitHub vì bốn lý do:
-    - AI làm việc trực tiếp trên file: agent mở folder là đọc và sửa được các file markdown, mỗi item một file. Với Notion, AI chỉ làm được những việc connector cho phép, và phải đi qua kết nối đó mỗi lần
+    - AI làm việc trực tiếp trên file: agent mở folder là đọc và sửa được các file markdown trong đó. Với Notion, AI chỉ làm được những việc connector cho phép, và phải đi qua kết nối đó mỗi lần
     - Lịch sử và quay lại được: Git ghi lại từng thay đổi, AI sửa hỏng thì quay về bản trước và xem được bản nào đổi gì. Notion có lịch sử trang, nhưng khó so từng dòng thay đổi như Git
     - Không phụ thuộc một tool: folder markdown mở được ở nhiều công cụ AI, đổi tool không phải làm lại từ đầu. Hub không bị khoá vào một nền tảng, một gói trả phí hay một connector
     - Dữ liệu nằm trong tay chúng ta: hub mặc định riêng tư, nằm trên máy và trong repo của chúng ta, không đi qua dịch vụ bên thứ ba nếu chúng ta không chọn chia sẻ
@@ -1864,19 +1864,18 @@ last_synced: 2026-11-26
   - Develop
   - Options, flows, prototype
   - Alignment check
-  - Findings
   - Deliver
-  - Handoff và measurement
+  - Findings
   - Project log
-- Ví dụ: Buổi 1 có Overview; Discover thêm Scope, Evidence; Define thêm Problem brief; Develop thêm Options, Alignment check, Findings.
+- Ví dụ: Buổi 1 có Overview; Discover thêm Scope, Evidence; Define thêm Problem brief; Develop thêm Options, Alignment check; Deliver thêm Findings.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
   - Hub không dựng một lần ở cuối. Mỗi giai đoạn thêm các trang của nó:
     - Buổi 1: Overview
-    - Discover (buổi 2 đến 3): Scope, Evidence
-    - Define (buổi 4 đến 5): Problem brief
-    - Develop (buổi 6 đến 10): Options, flows và prototype; Alignment check; Findings
-    - Deliver (buổi 11 đến 12): Handoff và measurement; Project log
+    - Discover (Lesson 2, buổi 3 và 4): Scope, Evidence
+    - Define (Lesson 3, buổi 5 và 6): Problem brief
+    - Develop (Lesson 4 và 5, buổi 7 đến 10): Options, flows và prototype; Alignment check
+    - Deliver (Lesson 6, buổi 11 và 12): Findings. Project log thì ghi suốt khoá, mỗi decision một dòng
   - Đến buổi 12, hub hoàn thiện và đó là output cuối của khoá.
 - 🎨 Visual hint: Hai hình thoi Double Diamond (hình đầu tô tím nhạt) và bốn cột giai đoạn, mỗi cột xếp các ô trang của hub.
 
