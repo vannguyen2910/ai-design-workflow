@@ -127,7 +127,7 @@ last_synced: 2026-11-23
   - Khoảng 2 phút cho slide này
 
   > **Hãy gắn từng opportunity với một bước thật trong flow.**
-- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "opportunity tiềm năng".
+- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "opportunity tiềm năng". Nền đen, chữ trắng.
 
 ---
 
@@ -393,7 +393,7 @@ last_synced: 2026-11-23
   - Khoảng 1 phút cho slide này
 
   > **Thêm nhãn, đừng thêm chi tiết.**
-- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "wireframe".
+- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "wireframe". Nền tím, chữ trắng.
 
 ---
 
@@ -743,7 +743,7 @@ last_synced: 2026-11-23
   - Tám phút cho phần hỏi đáp
   - Câu hay gặp: solution của AI hay hơn thì giữ thế nào, sketch khi không biết vẽ, khi nào cần process map
   - Câu hỏi mở ra một chủ đề mới được ghi vào parking lot và trả lời sau buổi
-- 🎨 Visual hint: SPLIT. Q&A layout cố định: panel trái nền vàng với "Q&A" cỡ lớn; panel phải có kicker và ba card (Nội dung hôm nay, Hướng đi nghề nghiệp của design, Khoá học).
+- 🎨 Visual hint: SPLIT. Q&A layout cố định: panel trái nền tím chữ trắng với "Q&A" cỡ lớn; panel phải có kicker và ba card (Nội dung hôm nay, Hướng đi nghề nghiệp của design, Khoá học).
 
 ---
 

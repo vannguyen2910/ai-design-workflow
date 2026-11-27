@@ -158,7 +158,7 @@ last_synced: 2026-11-17
   - Hệ thống là đầu vào của prototype, không phải đầu ra.
 
   > Trong ba ý này, ý nào khác nhất với cách bạn đang làm?
-- 🎨 Visual hint: Có diagram SVG line-art
+- 🎨 Visual hint: Có diagram SVG line-art. Nền tím, chữ trắng, card trắng.
 ---
 
 ### 07 · NUMBERED · Các product lớn làm thế nào
@@ -555,7 +555,7 @@ last_synced: 2026-11-17
   - Review là bước dài nhất, vì một lượt dựng cả journey cho ra nhiều chỗ cần sửa.
 
   > Trong năm bước, bước nào bạn thường bỏ khi làm vội?
-- 🎨 Visual hint: Typographic / layout chữ
+- 🎨 Visual hint: Typographic / layout chữ. Nền đen, chữ trắng, bốn card trắng.
 ---
 
 ### 21 · DIAGRAM · Fix at the right layer
@@ -803,7 +803,7 @@ last_synced: 2026-11-17
   - Quy tắc bạn viết lại bằng lời của mình mới là quy tắc của bạn.
 
   > Câu hỏi 30 giây: khi thiếu component, rules file nên nói gì? A: tạo cái gần giống nhất. B: dừng và hỏi. Gõ A hoặc B.
-- 🎨 Visual hint: Có diagram SVG line-art
+- 🎨 Visual hint: Có diagram SVG line-art. Nền tím, chữ trắng.
 ---
 
 ### 30 · DIAGRAM · Biến Pattern thành định luật thiết kế
@@ -1007,7 +1007,7 @@ last_synced: 2026-11-17
 
   > Câu hỏi hay gặp:
   - Dùng cách nào trước? cách 2. Cách 3 chỉ cần khi số prototype đủ nhiều để khó tìm.
-- 🎨 Visual hint: SCHEMATIC. Ba cách xếp từ đơn giản đến đầy đủ.
+- 🎨 Visual hint: SCHEMATIC. Ba cách xếp từ đơn giản đến đầy đủ. Nền đen, chữ trắng, card trắng.
 ---
 
 ### 37 · DIAGRAM · Share file HTML
@@ -1119,7 +1119,7 @@ last_synced: 2026-11-17
   - Câu nào chưa có số đo, mình nói thẳng là chưa có.
 
   > Câu hỏi đầu tiên là gì?
-- 🎨 Visual hint: Typographic / layout chữ
+- 🎨 Visual hint: Typographic / layout chữ. Nửa trái nền tím, chữ trắng; nửa phải trắng.
 ---
 
 ### 41 · PRACTICE · Build the prototype

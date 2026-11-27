@@ -122,7 +122,7 @@ last_synced: 2026-11-27
   - Khoảng 2 phút cho slide này
 
   > **Rà soát UX không còn là bước phụ nữa.**
-- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "UX bị bỏ qua".
+- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "UX bị bỏ qua". Nền đen, chữ trắng.
 
 ---
 
@@ -254,7 +254,7 @@ last_synced: 2026-11-27
   > **AI đề xuất điểm, bạn là người chốt.**
 
   > Finding nào ở prototype của bạn có thể là điểm 4?
-- 🎨 Visual hint: SCHEMATIC. Thang năm nấc ngang từ 0 đến 4, nấc 4 tô purple đậm.
+- 🎨 Visual hint: SCHEMATIC. Thang năm nấc ngang từ 0 đến 4, mỗi nấc một card trắng. Nền tím, chữ trắng.
 
 ---
 
@@ -872,7 +872,7 @@ last_synced: 2026-11-27
   > **Chỉ người dùng thật mới cho bạn thấy họ kẹt ở đâu.**
 
   > Bạn đang định hỏi AI điều gì mà chỉ người dùng thật mới trả lời được?
-- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "đóng vai người dùng".
+- 🎨 Visual hint: TYPOGRAPHIC. Statement layout; accent ở "đóng vai người dùng". Nền đen, chữ trắng.
 
 ---
 
@@ -1213,7 +1213,7 @@ last_synced: 2026-11-27
   - Mình sẽ gửi cheat sheet sau buổi học.
   - Mỗi mục là một ô trên trang, nhìn một lần là đọc được.
   - Khoảng 1 phút cho slide này
-- 🎨 Visual hint: SCHEMATIC. Bốn ô 2 nhân 2, mỗi ô một mục của cheat sheet.
+- 🎨 Visual hint: SCHEMATIC. Bốn ô 2 nhân 2, mỗi ô một mục của cheat sheet. Nền đen, chữ trắng, card trắng.
 
 ---
 
@@ -1266,7 +1266,7 @@ last_synced: 2026-11-27
   - Phần hỏi đáp dài sáu phút.
   - Những câu hay gặp: không tìm được người test thì làm gì, AI chấm severity khác mình thì giữ bên nào, và có audit được bản developer build không.
   - Câu hỏi nào mở ra một chủ đề mới thì mình ghi vào parking lot và trả lời sau buổi học.
-- 🎨 Visual hint: SPLIT. Q&A layout cố định: panel trái nền vàng với "Q&A" cỡ lớn; panel phải có kicker và ba card (Nội dung hôm nay, Hướng đi nghề nghiệp của design, Khoá học).
+- 🎨 Visual hint: SPLIT. Q&A layout cố định: panel trái nền tím chữ trắng với "Q&A" cỡ lớn; panel phải có kicker và ba card (Nội dung hôm nay, Hướng đi nghề nghiệp của design, Khoá học).
 
 ---
 

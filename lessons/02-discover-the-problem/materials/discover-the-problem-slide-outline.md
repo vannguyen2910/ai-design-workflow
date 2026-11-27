@@ -368,7 +368,7 @@ last_synced: 2026-11-19
   - Việc đóng gói bộ principles để dùng lại nằm ở slide kế tiếp.
 
   > Trong sáu việc này, việc nào bạn đang tự làm tay mỗi lần?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink. Nền tím, chữ trắng, card trắng.
 
 ---
 
@@ -576,7 +576,7 @@ last_synced: 2026-11-19
   - Vì thế trong chương trình này không ai tập trả lời thay PO hay user. Câu trả lời mô phỏng (simulator) không phải evidence.
 
   > Bỏ phiếu trong chat. A nếu bạn từng dùng câu trả lời AI như thể là thật, B nếu chưa.
-- 🎨 Visual hint: TYPOGRAPHIC. Tiêu đề lớn, một dòng ngắn bên dưới, không thêm gì khác.
+- 🎨 Visual hint: TYPOGRAPHIC. Tiêu đề lớn, một dòng ngắn bên dưới, không thêm gì khác. Nền đen, chữ trắng.
 
 ---
 
@@ -771,7 +771,7 @@ last_synced: 2026-11-19
   - AI soạn research question cho từng giả định hàng đầu. Designer cắt câu dẫn dắt, câu hỏi sở thích, và chốt danh sách.
 
   > Giả định hàng đầu của bạn, viết thành câu hỏi theo công thức này sẽ ra sao?
-- 🎨 Visual hint: TYPOGRAPHIC. Công thức lớn ở giữa, hai chỗ trống đánh dấu bằng ngoặc vuông; ví dụ bên dưới.
+- 🎨 Visual hint: TYPOGRAPHIC. Công thức lớn ở giữa, hai chỗ trống đánh dấu bằng ngoặc vuông; ví dụ bên dưới. Nền tím, chữ trắng, hai card trắng.
 
 ---
 
@@ -894,7 +894,7 @@ last_synced: 2026-11-19
   - Không biết câu nào thì hỏi lead hoặc người phụ trách dữ liệu trước. Đây là thói quen làm việc, không phải tư vấn pháp lý. Chính sách công ty luôn đi trước.
 
   > Trong bốn câu, câu nào bạn chưa biết đáp án ở công ty mình?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink. Nền đen, chữ trắng, card trắng.
 
 ---
 
@@ -1083,7 +1083,7 @@ last_synced: 2026-11-19
   - Chuỗi việc ở nhà là nơi làm. Buổi này chỉ để biết cần làm gì.
 
   > Điều gì bạn muốn hỏi trước khi bắt đầu làm ở nhà?
-- 🎨 Visual hint: TWO CARDS. Nửa vàng với tiêu đề Q&A, và các card chủ đề cần hỏi.
+- 🎨 Visual hint: TWO CARDS. Nửa tím chữ trắng với tiêu đề Q&A, và các card chủ đề cần hỏi.
 
 ---
 
