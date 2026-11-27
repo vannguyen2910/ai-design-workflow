@@ -501,7 +501,7 @@ Deck kết bằng Takeaway. Ba slide đứng sau Takeaway đang ẩn: “Làm th
 - On-slide:
   - UI/UX và product designer mức mid và senior, không cần biết code.
 - Speaker notes:
-  - Trong sáu tuần, mọi bài tập đều chạy trên project thật của bạn. Project mẫu của khoá chỉ là phương án dự phòng
+  - Trong sáu tuần, bài tập chạy trên đề tài chung của khoá. Bạn muốn làm project thật cũng được
   - Chương trình dạy cách vận hành một workflow có AI. Chương trình không dạy mẹo viết prompt, không gắn với một công cụ cụ thể và không dạy thiết kế sản phẩm có AI bên trong
   - Nếu lớp có PO, PM hoặc BA thì mọi người cùng học một workflow, chỉ khác là không cần dựng prototype từ đầu
   - Vì sao cần một workflow sẽ được nói ngay ở phần UI/UX sau slide này
@@ -562,7 +562,7 @@ Deck kết bằng Takeaway. Ba slide đứng sau Takeaway đang ẩn: “Làm th
   - Ground rule của lớp: những gì chia sẻ trong lớp thì ở lại trong lớp
   - Thông tin trong project nên được ẩn danh trước khi chia sẻ
   - Không ai bị bắt buộc trình bày công việc confidential
-  - Project mẫu của khoá luôn sẵn sàng nếu project của bạn quá nhạy cảm
+  - Nếu project thật của bạn quá nhạy cảm, bạn cứ làm trên đề tài chung của khoá
 
   > Bạn có thể ghi câu hỏi vào chat bất cứ lúc nào. Tám phút cuối buổi dành để trả lời, câu nào chưa kịp thì chúng ta sẽ trả lời sau bằng văn bản.
 - 🎨 Visual hint: Nền vàng, số phần rất lớn ở góc trên trái, title ở giữa, dòng mono nhỏ bên dưới.
