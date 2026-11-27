@@ -377,6 +377,21 @@ Một ví dụ thật từ dự án mẫu Travel Buddy: transcript và recording
 
 Vì sao rules đòi giữ timestamp và lời nguyên văn? Năm 2023, NN/g thử các công cụ AI phân tích recording của một usability test đã được nhà nghiên cứu phân tích, rồi so kết quả. Công cụ chỉ đọc transcript chứ không nhìn video; NN/g viết rằng người hay AI đều không phân tích được buổi test chỉ từ transcript. Công cụ cũng không nhận mục tiêu nghiên cứu, nên insight không xếp theo ưu tiên, và trích dẫn thường thiếu session hay timestamp. Trang bài ghi công cụ đã cải thiện từ đó; bài là một mốc thời điểm để hiểu lý do của các rules, không phải đánh giá công cụ hiện tại.
 
+### 4.7 Ví dụ thực tế: tự dựng tool để test nhanh
+
+Một Senior Product Designer ở một ngân hàng cần test nhanh ngay trong văn phòng. Trước đó, mỗi lần test phải set up trên nền tảng của bên thứ ba: tốn thời gian và công sức, thiếu feature cần dùng và khó tuỳ chỉnh theo ý người test.
+
+Designer này dùng AI tự dựng một tool concept testing và A/B testing chạy trên mobile. Tool chưa hoàn chỉnh, nhưng đủ để cầm đến từng bàn và test các use case chung. Cách test nhanh với người gặp được ngay như vậy thường gọi là guerrilla testing. Kỳ vọng là việc validate user và solution sẽ nhanh hơn.
+
+Điều bạn có thể học: khi tool có sẵn làm chậm việc test, bạn có thể dùng AI dựng một tool vừa đủ cho câu hỏi đang cần trả lời.
+
+Giới hạn của ví dụ này:
+
+- Đồng nghiệp giúp bạn thấy sớm lỗi usability, nhưng chưa cho biết user thật có cần sản phẩm hay không.
+- A/B testing với vài người chỉ cho tín hiệu, chưa đủ để kết luận bản nào tốt hơn.
+- Tool chưa ghi lại data. Nếu ghi, bạn cần xin consent, ẩn danh và theo policy công ty.
+- Chưa có số đo cho thấy cách này nhanh hơn bao nhiêu.
+
 ---
 
 ## 5. One report, working with dev, and sharing on the hub
@@ -477,7 +492,7 @@ Lesson này là lesson cuối. Bảng dưới nối từng lesson với business
 
 | Lesson | Đóng góp cho design outcome | Đóng góp cho business outcome |
 |---|---|---|
-| 1 | Làm việc với AI trong một workspace lặp lại được, không đưa dữ liệu nhạy cảm vào AI tool công khai | Giảm rủi ro dữ liệu và tuân thủ, để công ty dùng AI một cách an toàn |
+| 1 | Làm việc với AI trong một workspace có thể dùng lại, không đưa dữ liệu nhạy cảm vào công cụ AI công khai | Giảm rủi ro dữ liệu và tuân thủ, để công ty dùng AI một cách an toàn |
 | 2 | Biết đúng vấn đề đáng giải và có chuẩn chung để đánh giá thiết kế | Thống nhất business question và metric với business trước khi build, tránh build sai vấn đề |
 | 3 | Hiểu người dùng bằng persona, journey map, opportunity có evidence | Quyết định dựa trên evidence thay vì niềm tin của team (ví dụ "giá là lý do chính") |
 | 4 | Chọn được hướng giải pháp có lý do và vẽ rõ flow phía sau màn hình | Chọn hướng trước khi tốn công của developer, thấy sớm việc chạm đến team nào |
@@ -486,7 +501,7 @@ Lesson này là lesson cuối. Bảng dưới nối từng lesson với business
 
 Bảng này nói **đóng góp có thể có**, không phải kết quả đã đo. Một prototype đã test cho tín hiệu về trải nghiệm, nhưng không chứng minh tỷ lệ đặt đơn thứ hai tăng. Điều đó phải đo sau launch, ngoài phạm vi khoá.
 
-Điều bạn làm được bây giờ: cùng product và business chọn vấn đề đáng giải, dùng AI để làm nhanh mà vẫn tự kiểm tra và tự quyết định.
+Điều bạn làm được bây giờ: cùng product và business xác định vấn đề cần giải quyết, dùng AI để làm nhanh mà vẫn tự kiểm tra và tự quyết định.
 
 ---
 

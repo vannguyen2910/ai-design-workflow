@@ -80,8 +80,7 @@ last_synced: 2026-11-19
 ---
 
 ### MILESTONE · Activity
-- Kicker: Activity
-- Title: Vấn đề hay\ngiải pháp?
+- Title: Vấn đề hay giải pháp?
 - On-slide:
   - Sub: Brief gần nhất bạn nhận nêu vấn đề hay nêu giải pháp?
 - Ví dụ: có (xem speaker notes)
@@ -95,7 +94,7 @@ last_synced: 2026-11-19
   - Bảng này được giữ lại để quay về khi gom tài liệu có sẵn.
   - Bài tập buổi 1 gồm case folder và product-and-users. Ai chưa xong thì dùng case mẫu.
   - Bảng hai cột vừa rồi cho thấy brief thường đến dưới dạng thứ cần làm. Giờ mình vào phần một: cho AI những gì team đã biết, trước khi hỏi người thật.
-- 🎨 Visual hint: TYPOGRAPHIC. Nền purple, tiêu đề lớn, một câu hỏi ngắn bên dưới.
+- 🎨 Visual hint: Nền tím; line-art trắng hai người đang trò chuyện (một bong bóng có tia sáng, một bong bóng có đường rối) phía trên tiêu đề, một câu căn giữa bên dưới.
 
 ---
 

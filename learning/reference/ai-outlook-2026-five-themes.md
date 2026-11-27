@@ -19,7 +19,7 @@ Dùng file này làm bằng chứng cho phần "Vì sao quan trọng vào lúc n
 
 > "Design is the differentiator" (câu trích trong recap)
 
-**Gợi ý liên hệ bài học:** khớp với luận điểm của chương trình về việc chuyển trọng tâm sang problem framing và decision-making (Lesson 1, mục về Double Diamond).
+**Gợi ý liên hệ bài học:** khớp với luận điểm của chương trình về việc chuyển trọng tâm sang problem framing và decision-making.
 
 ---
 

@@ -358,7 +358,7 @@ AI không thay designer, nhưng designer có workflow rõ ràng với AI sẽ đ
 
 **Khi đủ 5 bạn:** đóng form Batch 1. Nút "Đăng ký giữ chỗ" đổi thành "Đăng ký Batch 2", dẫn đến biểu mẫu ghi danh cho Batch 2, kèm dòng "Batch 1 đã đủ 5 bạn. Batch 2 dự kiến đầu tháng 3/2027." Script form có hàm `closeBatch1` để đóng form và hiện thông báo này.
 
-**Biểu mẫu:** `learning/landing-registration-form.gs` (script tạo Google Form). Trường: họ tên, email, LinkedIn (bắt buộc, vì liên hệ qua LinkedIn), số điện thoại hoặc Zalo (không bắt buộc), vai trò và công ty, số năm kinh nghiệm, project dự định, biết khóa qua đâu, và **ba ô đồng ý bắt buộc**: đã đọc chính sách, hiểu Batch 1 chưa áp dụng hủy và hoàn học phí, đồng ý ghi hình.
+**Biểu mẫu:** `landing/landing-registration-form.gs` (script tạo Google Form). Trường: họ tên, email, LinkedIn (bắt buộc, vì liên hệ qua LinkedIn), số điện thoại hoặc Zalo (không bắt buộc), vai trò và công ty, số năm kinh nghiệm, project dự định, biết khóa qua đâu, và **ba ô đồng ý bắt buộc**: đã đọc chính sách, hiểu Batch 1 chưa áp dụng hủy và hoàn học phí, đồng ý ghi hình.
 
 **Thông báo sau khi gửi:** "Cảm ơn bạn đã đăng ký. Daphne sẽ liên hệ bạn qua LinkedIn trong 24 giờ làm việc để xác nhận chỗ và hướng dẫn thanh toán."
 

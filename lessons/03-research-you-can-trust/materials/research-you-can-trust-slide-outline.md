@@ -70,7 +70,7 @@ last_synced: 2026-11-16
   - Giữ ghi chú này để dùng lại ở phần synthesis: đối chiếu cách mỗi người đang làm với quy trình kiểm tra hôm nay
 
   > Ai chưa có câu chuyện thì kể điều bạn lo khi dùng AI để synthesis
-- 🎨 Visual hint: TYPOGRAPHIC. Nền vàng, tiêu đề lớn, một câu hỏi ngắn bên dưới.
+- 🎨 Visual hint: Nền tím; line-art trắng hai người đang trò chuyện (một bong bóng có tia sáng, một bong bóng có đường rối) phía trên chữ Ice Breaker, một câu căn giữa bên dưới.
 
 ---
 

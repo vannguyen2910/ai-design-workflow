@@ -2,11 +2,11 @@
 title: "Test with Real Users"
 lesson_file: "test-with-real-users-lesson.md"
 level: ""
-slide_count: 59
+slide_count: 60
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/XnVV5JPT8DdVUhCyCKop2v"
-last_synced: 2026-11-20
+last_synced: 2026-11-27
 ---
 
 ## Session metadata
@@ -19,7 +19,7 @@ last_synced: 2026-11-20
 | Prior session | Buổi 9: AI Prototyping |
 | Next session | Buổi practice, rồi buổi 12: reflection và wrap-up |
 | Running example | project Delivery App hư cấu: audit và test màn "Chọn thời gian giao" và "Huỷ đơn"; business question từ buổi 2 (khách mới không đặt lại sau đơn đầu tiên, 41% đặt đơn thứ hai trong 30 ngày); ví dụ accessibility cần khác bối cảnh thì dùng một màn healthcare hoặc finance hư cấu, ghi rõ là hư cấu |
-| Chia giờ `[to confirm]` | ice breaker 5, mở đầu validate 6, UX Audit 21, accessibility 15, usability test 17, một report, làm việc với dev và hub 8, handoff và cả khoá 9, hỏi đáp 6, close 1. Tổng khoảng 88 phút theo ghi chú từng slide (đã chuyển Uber và Audit Hunt xuống Appendix), chưa tính thời gian thảo luận câu hỏi cho lớp, nên vẫn không còn buffer; chưa chạy thử với lớp |
+| Chia giờ `[to confirm]` | ice breaker 5, mở đầu validate 6, UX Audit 21, accessibility 15, usability test 19, một report, làm việc với dev và hub 8, handoff và cả khoá 9, hỏi đáp 6, close 1. Tổng khoảng 90 phút theo ghi chú từng slide (đã chuyển Uber và Audit Hunt xuống Appendix), chưa tính thời gian thảo luận câu hỏi cho lớp, nên vẫn không còn buffer; chưa chạy thử với lớp |
 | Không có trong buổi | Reflection cá nhân; slide reflection nằm ở buổi 12 |
 
 ---
@@ -65,7 +65,6 @@ last_synced: 2026-11-20
 
 ### MILESTONE · Ice breaker
 - Num: 5
-- Kicker: Mở đầu
 - Title: Ice Breaker
 - Sub: Bạn hãy kể một lần sản phẩm của bạn được vibe code với team nhưng nhận được complaint từ phía user hoặc stakeholder.
 - Ví dụ: Không cần. Mỗi người kể trải nghiệm riêng.
@@ -79,7 +78,7 @@ last_synced: 2026-11-20
   > **Bạn giữ bảng này lại, lát nữa mình quay lại khi nói về chuyện kiểm tra.**
 
   > Bạn hãy kể một lần có sản phẩm được AI dựng giúp, trông đã xong, nhưng người dùng vẫn gặp vấn đề. Vấn đề đó là gì?
-- 🎨 Visual hint: TYPOGRAPHIC. Milestone layout nền purple, một cột trống bên dưới.
+- 🎨 Visual hint: Nền tím; line-art trắng hai người đang trò chuyện (một bong bóng có tia sáng, một bong bóng có đường rối) phía trên chữ Ice Breaker, một câu căn giữa bên dưới.
 
 ---
 
@@ -383,7 +382,7 @@ last_synced: 2026-11-20
   > Cách làm:
 
   - Học viên đặt các màn hình của flow lên FigJam theo đúng thứ tự, ví dụ flow đặt ghế bãi biển
-  - Kết nối Figma vào AI tool bằng MCP, để AI đọc được màn hình thật thay vì ảnh chụp
+  - Kết nối Figma vào công cụ AI bằng MCP, để AI đọc được màn hình thật thay vì ảnh chụp
   - AI chạy đánh giá dựa trên các Design Principles và ghi mỗi finding thành một sticky note gắn cạnh màn hình
   - Khoảng 1 phút cho slide này
 
@@ -958,6 +957,33 @@ last_synced: 2026-11-20
 
   > Bạn sẽ đưa cho AI những gì ngoài transcript?
 - 🎨 Visual hint: TYPOGRAPHIC. Numbered, bốn dòng với số lớn.
+
+---
+
+### NUMBERED · Build your own test tool
+- Kicker: Ví dụ thật · Ngân hàng
+- Title: Tự dựng tool để test nhanh
+- On-slide:
+  - Một Senior Product Designer ở một ngân hàng dùng AI dựng tool test chạy trên mobile.
+  - 01 · Vướng ở đâu: Set up trên nền tảng ngoài tốn công, thiếu feature và khó tuỳ chỉnh.
+  - 02 · Cách làm: Tự dựng tool concept test và A/B test, rồi đến từng bàn để test.
+  - 03 · Giới hạn: Người test là đồng nghiệp, chưa ghi data và chưa đo tốc độ.
+- Ví dụ: có (trường hợp thật do một designer kể lại, đã ẩn tên người và công ty; designer chưa xác nhận lại bản ghi `[to confirm]`)
+- Câu hỏi hay gặp:
+  - Có nên bỏ hẳn nền tảng bên ngoài không? Ví dụ này chưa trả lời được. Tool tự dựng hợp với test nhanh; khi cần tuyển đúng nhóm người dùng hoặc lưu data, bạn cân nhắc lại.
+- Speaker notes:
+
+  > Ví dụ này đến từ một Senior Product Designer ở một ngân hàng. Bạn ấy cần test nhanh ngay trong văn phòng.
+
+  - Trước đó, mỗi lần test phải set up trên nền tảng của bên thứ ba. Việc này tốn thời gian, thiếu feature cần dùng và khó chỉnh theo ý mình.
+  - Bạn ấy dùng AI tự dựng một tool concept testing và A/B testing chạy trên mobile. Tool chưa hoàn chỉnh, nhưng đủ để cầm đến từng bàn và hỏi mọi người. Cách test nhanh với người gặp được ngay như vậy gọi là guerrilla testing, và bạn ấy kỳ vọng nhờ nó mà validate nhanh hơn.
+  - Đồng nghiệp giúp bạn thấy sớm lỗi usability, nhưng chưa cho biết user thật có cần sản phẩm hay không. Tool cũng chưa ghi data, và chưa ai đo xem nhanh hơn bao nhiêu. Khi bắt đầu ghi data, bạn cần xin consent, ẩn danh và theo policy công ty.
+  - Khoảng 2 phút cho slide này
+
+  > **Một tool vừa đủ giúp bạn hỏi sớm hơn, và bạn vẫn cần biết câu trả lời đó đáng tin đến đâu.**
+
+  > Bước test nào của bạn đang chậm vì tool?
+- 🎨 Visual hint: THREE CARDS. Line-art feature card, ba thẻ cùng cấp (Vướng ở đâu, Cách làm, Giới hạn): minh hoạ line-art lớn, số, tiêu đề và mô tả.
 
 ---
 
