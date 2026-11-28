@@ -2,11 +2,11 @@
 title: "AI Prototyping"
 lesson_file: "ai-prototyping-lesson.md"
 level: ""
-slide_count: 41
+slide_count: 45
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/XeNWGZiasHHRgF1Sai5bak"
-last_synced: 2026-11-17
+last_synced: 2026-11-27
 ---
 
 ## Session metadata
@@ -656,7 +656,42 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: Typographic / layout chữ
 ---
 
-### 24 · SECTION DIVIDER · Các lớp kiểm soát
+### 24 · MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Chúng ta dừng một chút để xem còn nhớ gì từ phần vừa học. Quiz không chấm điểm, chọn sai cũng không sao.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### 25 · NUMBERED · Quick check 1
+- Kicker: Quick check
+- Title: Prototype AI dựng bị sai tone màu brand ở mọi màn. *Bạn sửa ở layer nào?*
+- On-slide:
+  - A · Từng màn hình
+  - B · Token
+  - C · Shell
+  - D · Template của màn đang xem
+  - E · Prompt của lần dựng cuối
+  - Hiện sau một click: Đáp án B. Sửa ở layer rộng nhất mà lỗi còn đúng. Màu brand nằm ở token.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là B, hiện sau một click.
+  - Lỗi có ở mọi màn nên layer đúng là token.
+  - A là fix too low: lỗi quay lại ở màn dựng sau.
+  - C và D chỉ bao một phần các màn, còn E không đổi gì trong hệ thống.
+
+  > Prototype AI dựng bị sai tone màu brand ở mọi màn. Bạn sửa ở layer nào? Mỗi người gõ một chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
+### 26 · SECTION DIVIDER · Các lớp kiểm soát
 - Kicker: 04
 - Title: Các lớp kiểm soát
 - On-slide:
@@ -671,7 +706,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: Typographic / layout chữ
 ---
 
-### 25 · NUMBERED · Rules, Skill, Hook
+### 27 · NUMBERED · Rules, Skill, Hook
 - Kicker: Kiểm soát
 - Title: Rules, Skill, *Hook*
 - On-slide:
@@ -700,7 +735,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: Typographic / ba thẻ ngang, thẻ Hook nền tối.
 ---
 
-### 26 · DIAGRAM · Rules là gì?
+### 28 · DIAGRAM · Rules là gì?
 - Kicker: Định nghĩa
 - Title: *Rules* là gì?
 - On-slide:
@@ -726,7 +761,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SPLIT. Trái: tiêu đề và ba dòng; phải: thẻ file AGENTS.md ba dòng.
 ---
 
-### 27 · NUMBERED · System rules
+### 29 · NUMBERED · System rules
 - Kicker: Rules file
 - Title: System *rules*
 - On-slide:
@@ -756,7 +791,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: Typographic / layout chữ
 ---
 
-### 28 · NUMBERED · Working rules
+### 30 · NUMBERED · Working rules
 - Kicker: Rules file
 - Title: Working *rules*
 - On-slide:
@@ -784,7 +819,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: Typographic / layout chữ
 ---
 
-### 29 · STATEMENT · Rules you rewrite are yours
+### 31 · STATEMENT · Rules you rewrite are yours
 - Kicker: Nguyên tắc
 - Title: Rules you\n*rewrite* are yours
 - On-slide:
@@ -806,7 +841,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: Có diagram SVG line-art. Nền tím, chữ trắng.
 ---
 
-### 30 · DIAGRAM · Biến Pattern thành định luật thiết kế
+### 32 · DIAGRAM · Biến Pattern thành định luật thiết kế
 - Kicker: Use case
 - Title: Biến Pattern thành *định luật thiết kế*
 - On-slide:
@@ -847,7 +882,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: TYPOGRAPHIC. Tiêu đề, câu mô tả và một thẻ bốn dòng: Khi, Dùng, Vì, Không dùng cho.
 ---
 
-### 31 · DIAGRAM · Skill là gì?
+### 33 · DIAGRAM · Skill là gì?
 - Kicker: Định nghĩa
 - Title: *Skill* là gì?
 - On-slide:
@@ -873,7 +908,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SPLIT. Trái: tiêu đề và ba dòng; phải: thẻ skill với năm bước.
 ---
 
-### 32 · DIAGRAM · Hook là gì?
+### 34 · DIAGRAM · Hook là gì?
 - Kicker: Nâng cao
 - Title: *Hook* là gì?
 - On-slide:
@@ -903,7 +938,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Trái: tiêu đề và ba dòng; phải: ba thẻ dọc nối bằng mũi tên.
 ---
 
-### 33 · DIAGRAM · Package trong toolkit
+### 35 · DIAGRAM · Package trong toolkit
 - Kicker: Tuỳ chọn
 - Title: Package trong *toolkit*
 - On-slide:
@@ -936,7 +971,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Ba thẻ ngang Rules, Skill, Hook; thẻ Hook nền tối.
 ---
 
-### 34 · SECTION DIVIDER · Share prototype
+### 36 · SECTION DIVIDER · Share prototype
 - Kicker: 05
 - Title: Share *prototype*
 - On-slide:
@@ -950,7 +985,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: TYPOGRAPHIC. Section divider nền vàng, số 05 lớn.
 ---
 
-### 35 · COMPARE · Prototype code khác Figma
+### 37 · COMPARE · Prototype code khác Figma
 - Kicker: Vì sao cần
 - Title: Prototype code *khác Figma*
 - On-slide:
@@ -979,7 +1014,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: TWO CARDS. So sánh Figma và Prototype code.
 ---
 
-### 36 · COMPARE · Ba cách share prototype
+### 38 · COMPARE · Ba cách share prototype
 - Kicker: So sánh
 - Title: Ba cách *share prototype*
 - On-slide:
@@ -1010,7 +1045,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Ba cách xếp từ đơn giản đến đầy đủ. Nền đen, chữ trắng, card trắng.
 ---
 
-### 37 · DIAGRAM · Share file HTML
+### 39 · DIAGRAM · Share file HTML
 - Kicker: Cách 1
 - Title: Share *file HTML*
 - On-slide:
@@ -1038,7 +1073,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Trái: ba dòng; phải: file prototype.html và các bản v1, v2, v3_final.
 ---
 
-### 38 · PROCESS · Live site trên GitHub
+### 40 · PROCESS · Live site trên GitHub
 - Kicker: Cách 2
 - Title: Live site *trên GitHub*
 - On-slide:
@@ -1072,7 +1107,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Bốn bước nối nhau từ Push đến Stakeholder mở link.
 ---
 
-### 39 · DIAGRAM · Prototype hub
+### 41 · DIAGRAM · Prototype hub
 - Kicker: Cách 3
 - Title: Prototype *hub*
 - On-slide:
@@ -1102,7 +1137,41 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: SCHEMATIC. Một thẻ hub liệt kê các prototype.
 ---
 
-### 40 · STATEMENT · Q&A
+### 42 · MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Trước phần Q&A, chúng ta ôn thêm một câu. Quiz không chấm điểm.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### 43 · NUMBERED · Quick check 2
+- Kicker: Quick check
+- Title: Việc nào hợp để *giao cho hook?*
+- On-slide:
+  - A · Bắt mã màu viết tay nằm ngoài token
+  - B · Đánh giá màn hình có dễ dùng không
+  - C · Chọn flow nào dựng trước
+  - D · Quyết định có thêm component mới không
+  - E · Giải thích rationale cho stakeholder
+  - Hiện sau một click: Đáp án A. Hook hợp với lỗi có đúng sai rõ. Chuyện dễ dùng hay không vẫn cần bạn đánh giá.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là A, hiện sau một click.
+  - A kiểm tra được bằng máy mỗi khi AI làm xong một việc.
+  - Bốn việc còn lại cần phán đoán của chúng ta.
+
+  > Việc nào hợp để giao cho hook? Mỗi người gõ một chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
+### 44 · STATEMENT · Q&A
 - Kicker: Bạn muốn hỏi về
 - Title: Q&A
 - On-slide:
@@ -1122,7 +1191,7 @@ last_synced: 2026-11-17
 - 🎨 Visual hint: Typographic / layout chữ. Nửa trái nền tím, chữ trắng; nửa phải trắng.
 ---
 
-### 41 · PRACTICE · Build the prototype
+### 45 · PRACTICE · Build the prototype
 - Kicker: Practice
 - Title: Build the prototype
 - On-slide:

@@ -2,7 +2,7 @@
 title: "Test with Real Users"
 lesson_file: "test-with-real-users-lesson.md"
 level: ""
-slide_count: 60
+slide_count: 64
 duration: "90 min"
 status: draft
 built_deck: "https://claude.ai/artifact/XnVV5JPT8DdVUhCyCKop2v"
@@ -494,6 +494,42 @@ last_synced: 2026-11-27
 - 🎨 Visual hint: SCHEMATIC. Compare hai cột, cột AI yếu có hai con số.
 
 ---
+
+### MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Chúng ta dừng một chút để xem còn nhớ gì từ phần vừa học. Quiz không chấm điểm, chọn sai cũng không sao.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### NUMBERED · Quick check 1
+- Kicker: Quick check
+- Title: AI vừa audit xong một màn hình. *Bạn nên làm gì?*
+- On-slide:
+  - A · Coi các finding là giả thuyết cần kiểm tra
+  - B · Đối chiếu từng finding với màn hình và tiêu chí
+  - C · Bỏ usability test vì AI đã tìm đủ lỗi
+  - D · Đếm cả finding AI báo sai và lỗi AI bỏ sót
+  - E · Gửi thẳng bảng finding cho dev để sửa
+  - Hiện sau một click: Đáp án A, B, D. Kết quả audit của AI là giả thuyết, còn người dùng thật mới xác nhận được.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là A, B, D, hiện sau một click.
+  - A, B và D giúp chúng ta biết nên tin bảng finding đến đâu.
+  - C sai vì AI vẫn bỏ sót vấn đề và không đóng thay người dùng.
+  - E sai vì finding chưa lọc có thể gồm nhiều false positive.
+
+  > AI vừa audit xong một màn hình. Bạn nên làm gì? Câu này có hơn một đáp án đúng, mỗi người gõ các chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
 
 ### SECTION DIVIDER · Accessibility with AI
 - Num: 02
@@ -1250,6 +1286,43 @@ last_synced: 2026-11-27
 
 ---
 
+### MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Trước phần Q&A, chúng ta ôn thêm một câu. Quiz không chấm điểm.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### NUMBERED · Quick check 2
+- Kicker: Quick check
+- Title: Vì sao không để AI đóng vai người dùng *khi test?*
+- On-slide:
+  - A · AI không đọc được prototype
+  - B · Người dùng mô phỏng thiên về câu trả lời dễ nghe
+  - C · Hành vi bị lý tưởng hoá nên che mất chỗ người thật vấp
+  - D · AI không giúp được gì trong usability test
+  - E · Người dùng mô phỏng hay fail task nên làm lệch kết quả
+  - Hiện sau một click: Đáp án B, C. Người dùng mô phỏng thường làm được mọi task, nên che mất chỗ bạn cần thấy.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là B và C, hiện sau một click.
+  - B và C là hai lý do chính.
+  - A sai vì AI đọc được màn hình, vấn đề là nó không cư xử như người thật.
+  - D sai vì AI vẫn giúp được khâu chuẩn bị và gom ghi chú.
+  - E sai vì người dùng mô phỏng thường làm được mọi task.
+
+  > Vì sao không để AI đóng vai người dùng khi test? Câu này có hơn một đáp án đúng, mỗi người gõ các chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
+
 ### Q&A
 - Kicker: Bạn muốn hỏi về
 - Title: Q&A
@@ -1292,7 +1365,7 @@ last_synced: 2026-11-27
 
   - Chi tiết từng bước nằm trong practice sheet.
   - Mọi thứ bạn làm đều là file markdown, để AI đọc lại được ở bước sau.
-  - Thời lượng là một ngày; cách chấm thì chưa chốt.
+  - Thời lượng là một ngày. Ở buổi practice trên lớp, bạn làm tiếp phần chưa xong, chúng ta góp ý vài bản nháp bạn đã gửi, rồi bạn tự kiểm theo checklist.
   - Ba participant là mức tối thiểu, năm participant là mức lý tưởng.
   - Bài tập về nhà dưới 20 phút: liệt kê 3 đến 5 người bạn có thể mời, viết hai câu lọc, ghi một câu hypothesis cần test, và xem project đã có file principle-checks.md và accessibility-rules.md chưa.
 

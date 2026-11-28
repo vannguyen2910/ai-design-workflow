@@ -1,6 +1,6 @@
 # Blind synthesis: Delivery App (fictional)
 
-Dùng trong Lesson 2, mục "Blind synthesis". Cùng 10 evidence note trong thư mục `evidence/` (RET-01 đến RET-10), hai lần hỏi AI chat tool. Lần 1 không nêu hypothesis. Lần 2 nêu hypothesis của team. Hai lần chạy trong hai phiên riêng, mỗi phiên chỉ có 10 evidence note và một prompt.
+Dùng trong Lesson 3, mục 1.1. Cùng 10 evidence note trong thư mục `evidence/` (RET-01 đến RET-10), hai lần hỏi AI chat tool. Lần 1 không nêu hypothesis. Lần 2 nêu hypothesis của team. Hai lần chạy trong hai phiên riêng, mỗi phiên chỉ có 10 evidence note và một prompt.
 
 Hypothesis của team nằm sẵn trong bộ mẫu: "giá là lý do chính khiến khách rời đi" (IN-07 trong `insight-set.md`). Trong 10 note, ba note nhắc đến giá: RET-10 (P2 nói món quá đắt), RET-09 (P1 thấy phí giao hơi đắt nhưng vẫn đặt tiếp) và RET-08 (P2 nói thời gian chờ làm họ phiền hơn giá).
 
