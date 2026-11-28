@@ -2,6 +2,7 @@ import os
 import pathlib
 import shutil
 import tempfile
+import unicodedata
 import unittest
 
 from check_clean import check_clean
@@ -71,6 +72,39 @@ class CleanCheck(unittest.TestCase):
     def test_name_match_is_whole_word(self):
         self.edit_clean("Can you tell", "Can you tell me about Landing. Can you tell")
         self.assertTrue(all("name" not in p for p in self.run_check(names=["Lan"])["turn 01"].problems))
+
+    def write_pair(self, draft, clean, form="NFC"):
+        for path, text in ((self.draft, draft), (self.clean, clean)):
+            path.write_text(unicodedata.normalize(form, text), encoding="utf-8")
+
+    def test_fail_no_turns_read(self):
+        self.write_pair("note\n[00:00:01] Speaker 1: yes\n", "note\n01 Speaker 1: no\n")
+        self.assertIn("no turns found", self.run_check()["file"].problems)
+
+    def test_fail_wrapped_line(self):
+        self.write_pair("note\n[00:00:01] P1: yes\nand more\n", "note\n01 P1: yes\nsomething else\n")
+        self.assertIn("clean line 3 is not a turn", self.run_check()["file"].problems)
+
+    def test_fail_tone_changed_in_decomposed_files(self):
+        self.write_pair("note\n[00:00:01] P1: má\n", "note\n01 P1: mà\n", form="NFD")
+        self.assertFalse(self.run_check()["turn 01"].ok)
+
+    def test_pass_same_words_in_different_unicode_forms(self):
+        self.write_pair("note\n[00:00:01] P1: má\n", "note\n01 P1: má\n")
+        self.draft.write_text(unicodedata.normalize("NFD", self.draft.read_text(encoding="utf-8")), encoding="utf-8")
+        self.assertTrue(self.run_check()["turn 01"].ok)
+
+    def test_fail_name_in_speaker_label_with_padded_list_entry(self):
+        self.write_pair("note\n[00:00:01] Lan: yes\n", "note\n01 Lan: yes\n")
+        self.assertIn("name Lan still present", self.run_check(names=["Lan "])["turn 01"].problems)
+
+    def test_fail_name_in_note_line(self):
+        self.edit_clean("Participant: P1.", "Participant: Lan.")
+        self.assertIn("name Lan still present", self.run_check(names=["Lan"])["file"].problems)
+
+    def test_filler_with_space_after_comma(self):
+        results = check_clean(self.draft, self.clean, ["um", " uh"])
+        self.assertTrue(all(r.ok for r in results))
 
 
 if __name__ == "__main__":

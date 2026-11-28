@@ -4,18 +4,18 @@ Dùng trong Practice 2, Step 9. Đưa đoạn dưới cho AI coding tool, kèm �
 
 > Tôi có hai file transcript của cùng một buổi phỏng vấn.
 >
-> - File **mốc**: bản đã ẩn danh trên máy, xuất từ công cụ phiên âm. Mỗi lượt nói nằm trên một dòng, dạng `[00:00:12] P1: Um, sure. ...` (thời gian, tên người nói, lời nói). Dòng đầu file là ghi chú, không có thời gian ở đầu, bỏ qua.
-> - File **sạch**: bản đã làm sạch. Mỗi lượt nói nằm trên một dòng, dạng `02 P1: Sure. ...` (số lượt, tên người nói, lời nói). Các dòng không bắt đầu bằng số là ghi chú, bỏ qua.
-> - Danh sách chữ đệm tôi khai báo: `um`, `uh` (và các chữ đệm tiếng Việt tương ứng).
+> - File **mốc**: bản đã ẩn danh trên máy, xuất từ công cụ phiên âm. Mỗi lượt nói nằm trên một dòng, dạng `[00:00:12] P1: Um, sure. ...` (thời gian, tên người nói, lời nói). Dòng đầu file là ghi chú, không có thời gian ở đầu.
+> - File **sạch**: bản đã làm sạch. Mỗi lượt nói nằm trên một dòng, dạng `02 P1: Sure. ...` (số lượt, tên người nói, lời nói). Dòng đầu file là ghi chú. Ở cả hai file, ngoài dòng đầu và dòng trống, dòng nào không đúng dạng thì báo không đạt; không đọc được lượt nào cũng là không đạt.
+> - Danh sách chữ đệm tôi khai báo: `um`, `uh` (và các chữ đệm tiếng Việt tương ứng), mỗi chữ đệm là một chữ.
 > - Tuỳ chọn: một file mỗi dòng một tên người hoặc tên nơi cần chắc chắn đã bị xoá.
 >
 > Viết một script nhỏ và chạy nó. Ghép dòng thứ n của file mốc với lượt thứ n của file sạch, rồi kiểm từng lượt:
 >
 > - số lượt trong file sạch đi từ 1 và tăng dần, không nhảy số;
 > - tên người nói giống nhau ở hai bên;
-> - sau khi bỏ khác biệt về khoảng trắng, dấu câu, chữ hoa chữ thường và kiểu dấu nháy, và bỏ các chữ đệm đã khai báo ở file mốc, dãy chữ của hai bên phải giống hệt nhau. Thêm, bớt hoặc đổi một chữ nào khác đều là không đạt;
+> - sau khi chuẩn hoá Unicode về dạng NFC (để không mất dấu tiếng Việt), bỏ khác biệt về khoảng trắng, dấu câu, chữ hoa chữ thường và kiểu dấu nháy, và bỏ các chữ đệm đã khai báo ở file mốc, dãy chữ của hai bên phải giống hệt nhau. Thêm, bớt hoặc đổi một chữ nào khác đều là không đạt;
 > - lượt nào có ký hiệu `[?]` là không đạt, vì đó là chỗ chờ tôi nghe lại recording;
-> - nếu có file danh sách tên: không tên nào được xuất hiện trong file sạch (so khớp cả từ, không phân biệt chữ hoa chữ thường).
+> - nếu có file danh sách tên: không tên nào được xuất hiện ở bất cứ đâu trong file sạch, kể cả nhãn người nói và dòng ghi chú (bỏ khoảng trắng thừa quanh mỗi tên; so khớp cả từ, không phân biệt chữ hoa chữ thường).
 >
 > Nếu số dòng của hai file khác nhau thì báo một lỗi chung và dừng. In từng lượt là đạt hay không đạt; với mỗi chỗ không đạt, ghi lý do ngắn và chữ đầu tiên bị khác. Không sửa file nào. Việc so khớp do script làm, không nhờ AI đánh giá.
 
