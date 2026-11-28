@@ -51,7 +51,7 @@ Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prom
 | Nhóm 3 | không lập | có một nhóm "chọn quán" (IN-05), ghi là chưa đủ căn cứ |
 | Không vào nhóm nào | IN-04, IN-05, IN-06, IN-07, IN-08 | IN-04, IN-06, IN-07, IN-08 |
 
-**Điều bộ mẫu này cho thấy:** giống Lesson 2, hypothesis đổi thứ AI nói trước (primed mở đầu bằng giá) và đổi cả chỗ đặt IN-05 (nhóm riêng hay bỏ ngoài). Hai nhóm chính không đổi. **Điều nó không cho thấy:** AI đồng ý với hypothesis. Ở cả hai lần AI đều nói dữ liệu không ủng hộ nó.
+**Điều bộ mẫu này cho thấy:** giống kết quả blind synthesis ở mục 1.1, hypothesis đổi thứ AI nói trước (primed mở đầu bằng giá) và đổi cả chỗ đặt IN-05 (nhóm riêng hay bỏ ngoài). Hai nhóm chính không đổi. **Điều nó không cho thấy:** AI đồng ý với hypothesis. Ở cả hai lần AI đều nói dữ liệu không ủng hộ nó.
 
 ## Journey map
 
@@ -101,7 +101,7 @@ Dùng trong Lesson 3, các mục Persona, Journey map và Opportunity. Sáu prom
 - "Nhận hàng, Tệ": RET-01 ủng hộ ("I felt silly"), AI ghi chú đó là cảm xúc ngượng hơn là tệ nặng.
 - Không có note nào đi ngược. AI ghi thêm: giai đoạn 1 và 5 chỉ có một note, giai đoạn 1 chỉ từ một người.
 
-**Kiểm quote bằng chương trình** (script ở practice Step 9): chưa chạy trên kết quả này.
+**Kiểm quote bằng chương trình** (script ở Practice 3, phần Synthesis): chưa chạy trên kết quả này.
 
 **Điều chương trình không bắt được:** quote có thật nhưng AI xếp sai. Lần chạy trước (bộ 24 note) có một nhãn sai kiểu này (một ghi chú về giá bị xếp là "đi ngược" cảm xúc ở bước chọn món). Lần chạy này **không** lặp lại lỗi đó, nên đừng coi đó là lỗi chắc chắn xảy ra; bạn vẫn đọc từng note trước khi tin.
 

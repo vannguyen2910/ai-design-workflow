@@ -8,64 +8,62 @@ draft: true
 lesson_file: "explore-ideas-lesson.md"
 ---
 
-> **Draft 2026-11-04.** Thời lượng từng bước chưa đo với lớp thật `[to confirm]`. Designer bấm giờ từng bước để tự đo.
+> **Draft.** Thời lượng khoảng ba giờ ở nhà `[to confirm]`, chưa đo với lớp thật.
 
-## Goal
+## Bạn sẽ có gì
 
-Từ map có opportunity (Lesson 3) đến **một hướng đã chọn và flow của nó**, mỗi solution dẫn về opportunity, mỗi dòng của flow dẫn về bảng đã kiểm tra.
+- Opportunity map đã có solution
+- Concept sketch cho hai solution, kèm user flow hoặc process map
+- Outcome đã nằm trên hub
 
-Hai phần của practice này đúng theo slide Practice của Lesson 4: **Dựng hướng giải pháp** và **Đóng gói và đưa lên hub**.
+Bạn làm trước ở nhà, gửi bản nháp trước buổi practice, rồi làm tiếp và sửa trên lớp.
 
-## Input
+## Trước khi bắt đầu
 
-- Map từ Lesson 3 (Goal hoặc Problem, Opportunity, insight ID) và problem brief, có design challenge
-- Journey map hoặc user flow hiện tại (friction point)
-- Bộ nguyên tắc từ Lesson 2
+- Mang theo opportunity map và design challenge từ Practice 3.
+- Chỉ đưa AI dữ liệu giả hoặc đã ẩn danh.
+- **Bạn nghĩ trước, AI mở rộng sau.**
 
-Designer chưa có thì dùng Delivery App (`assets/starter-files/course-case/`).
+## Việc cần làm
 
-## Phần 1 · Dựng hướng giải pháp
+Cách làm và công cụ là do bạn chọn.
 
-| # | Việc | Làm với AI | Output | Gate |
-|---|---|---|---|---|
-| 1 | **Hoàn thiện map.** Mở lại activity trên lớp: mỗi nhánh opportunity đã chọn có ít nhất ba solution. Nối mỗi friction point trong flow với một opportunity | AI đề xuất thêm sau khi bạn viết, kèm opportunity ID | `options.md`: map có tầng solution | Mỗi solution dẫn về opportunity; chưa dẫn thì ghi hypothesis |
-| 2 | **Chọn hai solution** để sketch, dựa trên opportunity và nguyên tắc. Ghi lý do và lý do loại các solution còn lại | AI chất vấn lựa chọn, bạn quyết định | Hai solution kèm lý do | Có principle check (có hoặc không) cho từng solution |
-| 3 | **Concept sketch** cho cả hai (paper). Hai concept phải khác nhau về giả định, không phải biến thể | AI đọc cold từng sketch và nói nó hiểu gì | Hai sketch, mỗi cái có key moment, nhãn, ghi chú ý đồ, "This works because..." | Một người chưa nghe giải thích nói đúng concept làm gì |
-| 4 | **Chọn một hướng.** So hai concept với opportunity và nguyên tắc | AI không chọn thay bạn | `direction.md`: hướng đã chọn và lý do gác hướng còn lại | Rationale không có "nếu" hoặc "giả sử" |
-| 5 | **User flow** cho hướng đã chọn: thu thập ghi chú, AI soạn nháp bảng, bạn kiểm tra với sản phẩm thật | AI trả đúng section của mình | `user-flow.md`: bảng AI soạn nháp (không sửa) và bảng đã kiểm tra | Bảng khớp sản phẩm thật |
-| 6 | **Phân tích và fix.** AI tìm friction và đề xuất ít nhất ba cấu trúc khác cho bước tệ nhất; bạn chọn fix | AI phân tích bảng đã kiểm tra | Fix và quyết định | Fix bảo vệ được bằng opportunity |
-| 7 | **Diagram.** AI soạn code từ bảng đã kiểm tra, bạn đối chiếu | AI soạn code diagram | Diagram khớp bảng | Mọi bước có trong cả bảng và diagram |
-| 8 | **Process map (nếu cần).** Chỉ khi friction không giải thích được bằng màn hình: thêm lane, chuyển giao, chờ, mỗi sự kiện back-stage có nguồn | AI đặt bước vào lane, liệt kê câu hỏi cho team | Process map và danh sách câu hỏi | Điều chưa biết ghi unknown, không đoán |
+### 1. Dựng hướng giải pháp
 
-Trên slide, step 2 đến 4 là một point ("Vẽ concept sketch cho 2 solution"), step 5 đến 8 là một point ("Dựng user flow hoặc process map").
+- Thêm solution dưới mỗi opportunity. Solution không dẫn về opportunity thì ghi là hypothesis.
+- Vẽ concept sketch cho hai solution trên giấy. Hai concept nên khác nhau về assumption.
+- Chọn hướng và ghi lý do.
+- Dựng user flow hoặc process map theo solution đã liệt kê. Chỗ chưa biết thì ghi "unknown".
 
-## Phần 2 · Đóng gói và đưa lên hub
+### 2. Đóng gói và đưa lên hub
 
-| # | Việc | Làm với AI | Output | Gate |
-|---|---|---|---|---|
-| 9 | **Package quy trình hay skill (nếu cần thiết).** Quy trình đã chạy hai lần thì viết thành skill | Bạn viết, AI soạn nháp | Skill trong Knowledge Hub | Có ghi rõ phần designer tự làm |
-| 10 | **Add outcome vào Hub.** Đưa `options.md`, `direction.md`, `user-flow.md` (và process map nếu có) vào đúng chỗ trong hub, commit lên Git | Bạn làm | Các file nằm trong hub | Mỗi file mở được từ hub, link không gãy |
+- Đóng gói quy trình hay skill nếu bạn thấy sẽ dùng lại.
+- Đưa các outcome của bạn vào hub và mở thử từng link.
 
-Bấm giờ từng bước và so với cách làm tay để tự trả lời câu "tiết kiệm bao nhiêu thời gian".
+## Ví dụ tham khảo
 
-## Output
+Dùng, đổi hoặc bỏ. Travel Buddy là project mẫu, một phần dữ liệu là mô phỏng.
 
-- `options.md`: map có tầng solution, mỗi solution gắn nhãn người nghĩ hoặc AI đề xuất
-- `direction.md`: hướng đã chọn, hai concept sketch, lý do
-- `user-flow.md`: bảng đã kiểm tra, diagram, và process map nếu cần
-- Skill trong Knowledge Hub (nếu package)
-- Các file trên đã nằm trong hub và commit
-- Đầu vào của Lesson 5 (AI Prototyping): hướng đã chọn và flow
+| Bạn đang cần | Xem |
+|---|---|
+| Opportunity và solution | [Opportunity map](https://vannguyen2910.github.io/ai-design-workflow-template/travel-app/work/opportunity-mapping/opportunity-map.html), [solution pool](https://github.com/vannguyen2910/ai-design-workflow-template/blob/main/travel-app/work/original-docs/07_Solution_Pool.md) |
+| Vẽ concept thành màn hình (bước sau sketch) | [Wireframe](https://vannguyen2910.github.io/ai-design-workflow-template/travel-app/work/wireframes/Travel_Buddy_Wireframe.html) |
+| User flow | [User flow của Travel Buddy](https://github.com/vannguyen2910/ai-design-workflow-template/blob/main/travel-app/work/original-docs/08_E2E_User_Flow.md) |
+| Process map | [Trang process map](https://vannguyen2910.github.io/ai-design-workflow-template/travel-app/work/process-map-diagram/process-map.html), [bài làm mẫu](../../../examples/user-flow-process-map/README.md) |
+| Skill | [Ideation](https://github.com/vannguyen2910/ai-design-workflow-template/blob/main/toolkit/skills/ideation/SKILL.md), [Build process map](https://github.com/vannguyen2910/ai-design-workflow-template/blob/main/toolkit/skills/build-process-map/SKILL.md) |
+| Hub | [Hub của Travel Buddy](https://vannguyen2910.github.io/ai-design-workflow-template/travel-app/) |
 
-## In-class session (100 phút)
+## Tự kiểm trước khi nộp
 
-Làm tiếp phần dang dở nếu còn thời gian, rồi được chấm; cách chấm chưa quyết `[to confirm]`.
+- [ ] Mỗi solution dẫn về opportunity hoặc ghi hypothesis.
+- [ ] Bạn viết solution của mình trước khi hỏi AI.
+- [ ] Concept sketch có đủ cho hai solution.
+- [ ] Người chưa nghe giải thích đọc được sketch.
+- [ ] User flow hoặc process map khớp với solution đã liệt kê.
+- [ ] Outcome nằm trong hub, không rải rác trong chat.
 
-## Self-check
+## Khi bị kẹt
 
-- Mỗi solution truy được về một opportunity và insight ID.
-- Số solution AI đề xuất đã giữ và đã loại được đếm.
-- Sketch đọc được cold.
-- Bảng AI soạn nháp và bảng đã kiểm tra tách riêng; khoảng cách là số lỗi.
-- Process map: mọi lane back-stage có nguồn hoặc ghi unknown.
-- Outcome đã nằm trong hub, không nằm rải rác trong chat hay desktop.
+- **Chưa có opportunity map:** làm thử với [project Delivery App](../../../assets/starter-files/course-case/case-card.md).
+- **Bí ý tưởng:** nhờ AI chỉ ra assumption chung của các solution, rồi đề xuất hướng đi ngược lại.
+- **Không làm hết được:** làm solution và sketch trước.

@@ -460,7 +460,7 @@ Deck kết bằng Takeaway. Ba slide đứng sau Takeaway đang ẩn: “Làm th
   - Winnie Nguyen
   - Nguyenphuctuongvan@gmail.com
 - Speaker notes:
-  - Nhắc cả lớp: làm xong Step 3 của Practice 1 thì gửi cây folder và file product context theo kênh của lớp, để được góp ý sớm.
+  - Nhắc cả lớp: viết xong product context ở Practice 1 thì gửi cây folder và file product context theo kênh của lớp, để được góp ý sớm.
   - Mời đặt câu hỏi.
   - Ai cần giúp dựng project folder thì ở lại.
   - Giờ chúng ta vào Lesson 1, bắt đầu bằng ice breaker sáu phút.

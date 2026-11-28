@@ -179,7 +179,7 @@ Build a **"verify" move into every stage** (trace to source, argue back, test wi
 ### What I could not find
 - Any data on how many Vietnamese designers work in a **PRD-handoff-only** setup.
 - How Vietnamese outsourcing firms or product companies actually restructure design work around AI.
-- Whether local employers now list AI skills in job posts, and which ones.
+- Whether local employers now list AI skills in job posts, and which ones. **Partly answered (2026-11-28):** 12 of 20 LinkedIn posts in Vietnam mention AI, mostly as designing AI features. See `reference/vietnam-design-hiring-ai-2026.md`.
 
 ### Access to the PO and business (Winnie, 2026-10-05)
 Some students truly have **no access** to the PO or the business, and designers rarely see business metrics (the PO owns them). The series is built to work in three access levels (full, limited, none); see Lesson 2 in `plan.md` Part 2. Worth asking in the interviews below how often designers are invited to requirement discussions.
@@ -353,8 +353,9 @@ Dữ liệu riêng cho design gần như không có. Những gì mình tìm đư
 | 98% chuyên gia được khảo sát ở Việt Nam dùng AI trong công việc; 83% kỳ vọng AI tác động tích cực đến cơ hội nghề nghiệp; chỉ 55% tự tin cập nhật được kỹ năng AI. Mối lo hàng đầu: trách nhiệm với quyết định của AI (48%), kỹ năng lỗi thời (45%), mất yếu tố con người (37%) | Bài của Asia News Network [S14]; khảo sát gốc không được nêu tên trong bản tóm tắt mình đọc được | ⚠️ (cần tìm khảo sát gốc trước khi dùng) |
 | Lương năm 2026 ở Việt Nam dự báo tăng, riêng nhóm AI, dữ liệu và chuyển đổi số tăng đến 25% | Tuoi Tre News, trích một khảo sát lương [S15] | 🟡 (không nói về designer) |
 | Báo cáo lương UI/UX (đã có trong series) | TELOS Academy, xem Part 3 ở trên và `assets/SOURCES.md` | ⚠️ (như đã ghi ở đó) |
+| 12 trong 20 tin Product Designer và UI/UX Designer trên LinkedIn (location Vietnam, đọc ngày 2026-11-28) có nhắc AI; phần lớn yêu cầu thiết kế trải nghiệm cho tính năng AI | `reference/vietnam-design-hiring-ai-2026.md` | ✅ cho mẫu 20 tin, không đại diện cho thị trường |
 
-**Khoảng trống.** Chưa có nguồn nào về số lượng designer, tuyển dụng junior hay tác động của AI ở Việt Nam. Kế hoạch kiểm chứng ở Part 3 (phỏng vấn 5 đến 8 designer hoặc hiring manager trong nước) vẫn là cách để lấp khoảng trống này.
+**Khoảng trống.** Chưa có nguồn nào về số lượng designer hay tuyển dụng junior ở Việt Nam. Về AI trong tin tuyển dụng, đã có một mẫu nhỏ ở `reference/vietnam-design-hiring-ai-2026.md`. Kế hoạch kiểm chứng ở Part 3 (phỏng vấn 5 đến 8 designer hoặc hiring manager trong nước) vẫn là cách để lấp khoảng trống này.
 
 ---
 
