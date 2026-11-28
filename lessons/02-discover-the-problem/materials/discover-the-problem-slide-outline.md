@@ -515,6 +515,7 @@ last_synced: 2026-11-27
 ---
 
 ### DIAGRAM · Three tasks before accepting a brief
+- Trạng thái deck: slide này không còn trong deck từ 2026-11-28 (deck đi thẳng từ divider Break the brief sang Four ways to use AI in a chain). Giữ trong outline cho tới khi xác nhận bỏ có chủ ý hay không `[to confirm]`
 - Kicker: Tổng quan
 - Title: Các việc làm trước *khi nhận brief*
 - On-slide:
