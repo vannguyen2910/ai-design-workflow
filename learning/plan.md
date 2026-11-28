@@ -2,6 +2,8 @@
 
 *Cập nhật 2026-10-26: cấu trúc 12 buổi xen kẽ theory và practice, không còn Check point. Bản trước ở git; bản 14 session ở `_archive/plan-2026-10-22-14-session.md`; bản cũ hơn ở `_archive/00-plan-full-2026-10-07.md`.*
 
+*Cập nhật 2026-11-28: trạng thái lesson 1 đến 6 và các hàng tuần 2 đến 4 theo repo hiện tại (lesson, slide outline, practice và deck đều đã có cho cả sáu lesson).*
+
 **Trong file này**
 1. [Focus now](#1-focus-now)
 2. [The course at a glance](#2-the-course-at-a-glance)
@@ -19,10 +21,10 @@ Làm theo thứ tự.
 
 | # | Việc | Trạng thái |
 |---|---|---|
-| 1 | **Lesson 1:** xác nhận số liệu Figma 36/35/29 trong báo cáo đầy đủ trước khi dạy; dựng lại deck | File xong; deck chưa dựng |
-| 2 | **Lesson 2:** lesson và slide outline đã viết lại (2026-10-26); xem lại các ví dụ `bản nháp`; dựng deck | File xong; chờ Winnie xem lại |
-| 3 | **Lesson 3:** sửa lesson và slide (competitor đầy đủ đã chuyển sang lesson 2; thêm persona, journey map, opportunity, insight hub; synthesis rút gọn thành phần ôn) | Đã có desk research và đề xuất cấu trúc 90 phút (`reference/ai-in-insights.md` mục 6, 2026-10-27); chưa sửa lesson |
-| 4 | **Lesson 4, 5, 6** (mỗi lesson gộp hai lesson cũ), theo thứ tự | Chưa bắt đầu |
+| 1 | **Lesson 1:** xác nhận số liệu Figma 36/35/29 trong báo cáo đầy đủ trước khi dạy; dựng lại deck | File xong; deck đã dựng (Artifact Slides) |
+| 2 | **Lesson 2:** lesson, slide outline, practice và deck đã có. Từ 2026-11-24 mục 5 là Ingest data (ẩn danh trên máy, AI làm sạch transcript, kiểm bằng chương trình); evidence note và blind synthesis chuyển sang lesson 3 | Đang soạn; chờ Winnie xem lại; còn lỗi lint cũ trong lesson, outline, practice |
+| 3 | **Lesson 3:** viết evidence note từ transcript sạch, synthesis, persona, journey map, opportunity, insight hub (competitor đầy đủ nằm ở lesson 2); practice ba phần A, B, C | Đang soạn; lesson, outline, practice và deck đã có; chờ Winnie xem lại |
+| 4 | **Lesson 4, 5, 6** (mỗi lesson gộp hai lesson cũ); lesson 4 dài 100 phút và đã bỏ How might we | Đang soạn; lesson, outline, practice và deck đã có; chưa dạy thử |
 | 5 | Hướng dẫn facilitation một trang cho practice P1 đến P5 và buổi wrap-up | Chưa bắt đầu |
 | 6 | Lớp chạy thử: kiểm tra 3,5 đến 4 giờ mỗi tuần; theory lesson 2 (56 phút), lesson 3 và 6 có quá tải không | Sau lớp đầu |
 
@@ -38,9 +40,9 @@ Làm theo thứ tự.
 | Tuần | Theory | Practice | Output |
 |---|---|---|---|
 | 1 | **Your Design Process, with AI**: nghề đang đi đâu, AI trong Double Diamond, data safety | Dựng project folder, data rules, hub | Project folder, hub |
-| 2 | **Discover the Problem**: principles, break the brief, hiểu người dùng | `principles.md` rồi Break the brief theo thứ tự scope, challenge assumptions, research questions, competitor; lên lịch phỏng vấn | `research-questions` (scope và câu hỏi), `assumption`, `competitor-analysis` |
+| 2 | **Discover the Problem**: principles, break the brief, hiểu người dùng | `principles.md` rồi Break the brief theo thứ tự scope, challenge assumptions, research questions, competitor; lên lịch phỏng vấn | `research-questions` (scope và câu hỏi), `assumption`, `competitor-analysis`, transcript sạch của ít nhất hai buổi phỏng vấn |
 | 3 | **Insights You Can Trust**: synthesis, persona, journey map, opportunity (mỗi dòng dẫn về quote có ID) | Bốn bước trên quote peer: `personas.md`, `journey-map.md`, `frame-opportunity.md`, một trang cho lead, entry insight hub | Evidence pack, **problem brief** |
-| 4 | **Explore Ideas**: hypothesis, How might we, sketch giấy rồi AI, chọn hướng | Hypothesis, ý tưởng, chọn hướng bằng principle check | Hướng đã chọn, flow |
+| 4 | **Explore Ideas**: từ opportunity đến solution, concept sketching, user flow và process map, package thành skill | Hypothesis, ý tưởng, chọn hướng bằng principle check | Hướng đã chọn, flow |
 | 5 | **AI Prototyping**: design system, pattern, template, rules file | Build prototype main flow | Prototype sẵn sàng test, có thể là final design |
 | 6 | **Test with Real Users**: UX Audit với bốn bộ tiêu chí markdown (chuyển heuristic từ tuần 2, 2026-11-07; xem `lesson-6-heuristic-evaluation.md`), accessibility cùng AI, metrics, test plan, một audit report và ticket cho dev, trang Findings trên hub | UX Audit rồi test với participant tự tìm trong **một ngày**, rồi buổi 12 **reflection và wrap-up** | Prototype đã test, hub đầy đủ |
 

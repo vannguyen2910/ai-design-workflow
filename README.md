@@ -7,89 +7,92 @@ description: "Chương trình 12 buổi trong 6 tuần cho designer mid và seni
 
 # AI Design Workflow
 
-Chương trình 12 buổi trong 6 tuần dành cho designer mid và senior. Mỗi tuần hai buổi 90 phút: một buổi theory rồi một buổi practice. Tuần 6 kết bằng một ngày test và buổi reflection và wrap-up. Học viên làm một project, một workflow AI dùng lại được, và một Knowledge Hub dựng dần theo từng trang. Không còn Check point. Đọc `learning/plan.md` trước, vì đây là nguồn chuẩn cho cấu trúc.
+Chương trình 12 buổi trong 6 tuần dành cho designer mid và senior. Mỗi tuần hai buổi 90 phút: một buổi theory rồi một buổi practice. Tuần 6 kết bằng một ngày test và buổi reflection và wrap-up. Học viên làm một project, một workflow AI dùng lại được, và một Knowledge Hub dựng dần theo từng trang. Không có Check point.
 
-**Program và lesson cùng nằm trong thư mục này** (từ 2026-10-23, trước đó lesson nằm ở `library/lessons/ai-design-workflow/`):
-- **Program**: kế hoạch, research, method, pitch deck, tài nguyên dùng chung.
-- **Lesson** (`lessons/<slug>/`): `*-lesson.md`, `*-slide-outline.md`, slide, asset của từng lesson. Site vẫn dựng trang lesson như các lesson khác: `_system/scripts/build-home.py` quét thêm `programs/<program>/lessons/`.
+## Bắt đầu nhanh
+
+1. Đọc [`learning/plan.md`](learning/plan.md): nguồn chuẩn cho cấu trúc, lịch và quyết định chính.
+2. Đọc [`CLAUDE.md`](CLAUDE.md): quy tắc viết tiếng Việt, đồng bộ file và Git.
+3. Mở lesson cần làm trong bảng bên dưới. Mỗi lesson có sẵn lesson, slide outline, practice và deck.
+
+## Lessons
+
+Mỗi buổi theory là một lesson. Buổi practice đi liền sau mỗi lesson, không có lesson hay deck riêng. Tên thư mục có tiền tố là số lesson (01 đến 06). Số lesson khác số buổi: lesson 2 là buổi 3 trong dãy 12 buổi.
+
+| Tuần | Lesson | Nội dung | Deck | Trạng thái |
+|---|---|---|---|---|
+| 1 | [`design-process-with-ai`](lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md) | Quy trình thiết kế với AI: khái niệm AI cốt lõi, file, folder và rules, skill, agent, Knowledge Hub, GitHub, data safety | [Slides](https://claude.ai/artifact/Dmc6zgaZrHQYunwHCeCVXa) | 🚧 Đang soạn |
+| 2 | [`discover-the-problem`](lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md) | Design principles, break the brief, hiểu người dùng, ingest data (ẩn danh, AI làm sạch transcript, kiểm bằng chương trình) | [Slides](https://claude.ai/artifact/5imC8V6rhuh6XrztMw32F6) | 🚧 Đang soạn |
+| 3 | [`research-you-can-trust`](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md) | Evidence note có mã, synthesis, persona, journey map, opportunity, insight hub; mỗi dòng dẫn về nguồn | [Slides](https://claude.ai/artifact/4AFDgey1QNAkFuXdiRGvvu) | 🚧 Đang soạn |
+| 4 | [`explore-ideas`](lessons/04-explore-ideas/materials/explore-ideas-lesson.md) | Từ opportunity đến solution, concept sketching, user flow và process map, package thành skill (100 phút) | [Slides](https://claude.ai/artifact/4w6AdUVyfeuq8A3RJeMV18) | 🚧 Đang soạn |
+| 5 | [`ai-prototyping`](lessons/05-ai-prototyping/materials/ai-prototyping-lesson.md) | Design system, pattern, template, rules file, prototype sẵn sàng test | [Slides](https://claude.ai/artifact/XeNWGZiasHHRgF1Sai5bak) | 🚧 Đang soạn |
+| 6 | [`test-with-real-users`](lessons/06-test-with-real-users/materials/test-with-real-users-lesson.md) | UX audit với tiêu chí markdown, accessibility, test plan, SUS, audit report, ticket cho dev, hub | [Slides](https://claude.ai/artifact/XnVV5JPT8DdVUhCyCKop2v) | 🚧 Đang soạn |
+
+Tuần 6 còn một buổi test trong một ngày và buổi 12 reflection và wrap-up, đều không có lesson riêng. Chi tiết từng lesson nằm trong [`learning/lesson-details.md`](learning/lesson-details.md) (còn lesson 4 đến 11 cũ, chưa gộp theo bảng trên).
 
 ## Layout
 
 ```
-programs/ai-design-workflow/                  (thư mục này)
-  README.md                 file này: thứ tự lesson, trạng thái, cách thêm lesson
-  plan.md                kế hoạch một trang: trọng tâm, lịch, quyết định chính (đọc trước)
-  research.md  method.md  quality-and-measurement.md
-  pitch-deck-plan.md                             kế hoạch pitch deck
-  lesson-details.md         learning objective, activity và output của từng lesson (còn lesson cũ, chưa gộp theo 6 lesson)
-  workflow-design-log.md quyết định thiết kế và các sự cố của workspace phía sau khoá, cho giảng viên và pitch
-  voice-sample-vi.md        bản thử giọng tiếng Việt
-  assets/                   starter-files, hub và doc template, diagram, ảnh tham khảo
-    method-cards/           card tham khảo cho từng design method, theo stage
-    templates/workflow-kit/ bộ mẫu workflow (skill, luật cho AI tool, propose first…); không dùng trong lớp
-  examples/                 ví dụ làm sẵn (skill)
-  _archive/                 bản nháp đã thay thế
+README.md  CLAUDE.md  SUMMARY.md  introduction.md
+learning/        kế hoạch, research, method, brief từng lesson, voice sample, workflow-design-log
+lessons/         các lesson (xem bên dưới); hub/ giải thích cách hub hoạt động
+assets/          starter-files, method-cards, templates, diagrams, ảnh, tài liệu tham khảo dùng từ hai lesson trở lên
+examples/        ví dụ làm sẵn (competitor analysis, user flow, user voice synthesis, outcome)
+tests/           script tham chiếu và test cho các phép kiểm tra bằng chương trình
+site/            website Astro dựng từ nội dung lesson
+landing/         trang đăng ký của khoá
+classes/         thông tin từng đợt học (batch-1: about, mentees, playback)
+docs/            spec và plan nội bộ
+_archive/        bản nháp đã thay thế
+.claude/         settings của project (plugin teaching và vietnamese-writing từ winnie-skills)
 
-  lessons/                  (các lesson)
-    README.md               trỏ về file này
-    <lesson-slug>/
-    materials/              <slug>-lesson.md + <slug>-slide-outline.md (source of truth)
-    slides/                 chỉ chứa deck đã build (.html nằm trực tiếp trong slides/, không trong _archive/)
-    assets/                 ảnh chỉ dùng cho lesson này
-    _archive/               bản nháp đã thay thế
+lessons/<NN>-<slug>/
+  materials/     <slug>-lesson.md, <slug>-slide-outline.md, <slug>-practice.md, <slug>-reference.md,
+                 <slug>-overview.mdx (source of truth)
+  assets/        ảnh và file chỉ dùng cho lesson này
+  slides/        deck đã build (chỉ lesson 1; các deck còn lại là Artifact Slides, link ở bảng trên)
+  _archive/      bản nháp đã thay thế
 ```
 
 Quy ước:
-- **File chỉ dùng cho một lesson** để trong `assets/` của lesson. **File dùng cho từ hai lesson trở lên** (starter file, hub template, diagram) để trong `assets/` của program.
-- **Thư mục lesson có tiền tố là số lesson** (01 đến 06), ví dụ `02-discover-the-problem`, để biết thứ tự khi mở thư mục. Số lesson khác số buổi: lesson 2 là buổi 3 trong dãy 12 buổi. Buổi practice không có thư mục lesson hay deck riêng. Slug và URL của site không có số (`discover-the-problem`) vì `build-home.py` bỏ tiền tố; tên file vẫn là `<slug>-lesson.md`, không đánh số.
-- File chính phải là `<slug>-lesson.md`. Lesson và slide outline luôn sync với nhau (xem `CLAUDE.md` ở thư mục gốc).
-- Các đường dẫn tới lesson trong file của program (ví dụ `design-process-with-ai/materials/`) tính từ `programs/ai-design-workflow/lessons/`.
+- **File chỉ dùng cho một lesson** để trong `assets/` của lesson. **File dùng từ hai lesson trở lên** để trong `assets/` của chương trình.
+- File chính phải là `<slug>-lesson.md`. Lesson, slide outline và deck của cùng một buổi luôn khớp nhau: sửa một bên thì sửa hai bên còn lại trong cùng lượt.
+- `SUMMARY.md` quyết định trang nào hiện trên site và theo thứ tự nào. Muốn hiện một trang, chuyển dòng của nó từ khối "Not shown" lên một nhóm `##`.
+- Slug và URL của site không có số (`discover-the-problem`) vì build bỏ tiền tố số.
 
-## Lessons
+## Course case và test
 
-Mỗi buổi theory là một lesson. Buổi practice đi liền sau mỗi lesson, không có lesson hay deck riêng (xem `learning/plan.md`).
+Project mẫu của khoá là **Delivery App** (app giao đồ ăn, hư cấu), nằm ở [`assets/starter-files/course-case/`](assets/starter-files/course-case/README.md): brief, transcript, evidence note, insight, persona, journey map và các instruction kiểm tra. Bộ này là dữ liệu hư cấu, không đại diện cho dữ liệu thật.
 
-| Tuần | Lesson (buổi) | Slug | Nội dung | Trạng thái |
-|---|---|---|---|---|
-| 1 | 1 (buổi 1) | [`design-process-with-ai`](lessons/01-design-process-with-ai/materials/design-process-with-ai-lesson.md) | Your design process, with AI (bốn khái niệm AI cốt lõi, file, folder và rules, skill và connector, agent, Knowledge Hub, GitHub và publish, data safety) | 🚧 Draft |
-| 2 | 2 (buổi 3) | [`discover-the-problem`](lessons/02-discover-the-problem/materials/discover-the-problem-lesson.md) | Discover the problem (Design Principles, break the brief, hiểu người dùng, package thành agent và hub) | 🚧 Draft (viết lại 2026-10-26) |
-| 3 | 3 (buổi 5) | [`research-you-can-trust`](lessons/03-research-you-can-trust/materials/research-you-can-trust-lesson.md) | Insights you can trust (synthesis, persona, journey map, opportunity, mỗi dòng dẫn về quote có ID) | 🚧 Draft (cần sửa theo cấu trúc mới) |
-| 4 | 4 (buổi 7) | [`explore-ideas`](lessons/04-explore-ideas/materials/explore-ideas-lesson.md) | Explore ideas (map kéo dài xuống solution, How might we, concept sketching, user flow và process map, package thành skill) | 🚧 Draft |
-| 5 | 5 (buổi 9) | `ai-prototyping` | AI prototyping (design system, pattern, template, rules file; prototype sẵn sàng test, có thể là final design) | ⬜ Planned |
-| 6 | 6 (buổi 11) | [`test-with-real-users`](lessons/06-test-with-real-users/materials/test-with-real-users-lesson.md) | Test with real users (UX Audit với tiêu chí markdown, accessibility, test plan, SUS, một audit report, ticket cho dev, hub) | 🚧 Draft |
+Các phép kiểm tra bằng chương trình có script tham chiếu và test trong `tests/hub_quote_check/`:
 
-Tuần 6 còn một buổi test trong một ngày và buổi 12 reflection và wrap-up, đều không có lesson riêng. Chi tiết từng lesson nằm trong `learning/lesson-details.md` (còn lesson 4 đến 11 cũ, chưa gộp theo bảng trên). Thư mục chỉ được tạo khi bắt đầu lesson, không tạo trước: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
+```bash
+cd tests/hub_quote_check && python3 -m unittest discover
+```
+
+Các script này chỉ để chứng minh instruction đủ chính xác cho một công cụ AI coding làm theo, không dùng trong lớp.
+
+## Viết tiếng Việt
+
+Mọi chữ tiếng Việt (lesson, slide outline, practice, chữ trên slide và speaker notes) đi qua skill `vi-edit` của plugin `vietnamese-writing@winnie-skills`, rồi chạy lint. Quy trình đầy đủ nằm trong [`CLAUDE.md`](CLAUDE.md). Xưng hô trong deck và speaker notes là "chúng ta" cho cả nhóm và "bạn" khi nói với học viên.
+
+## Deck dạy học
+
+Deck của mỗi lesson là một Artifact Slides (link ở bảng Lessons). Sửa deck thì đọc lại đúng file trước khi lưu, vì deck có thể đang được chỉnh trên trang, và sửa cả outline và lesson cho khớp.
 
 ## Thêm một lesson
 
-1. `mkdir -p programs/ai-design-workflow/lessons/<NN>-<slug>/{materials,slides,assets,_archive}` (NN là số lesson, hai chữ số)
-2. Copy `_system/learning templates/_template-lesson.md` thành `<slug>/materials/<slug>-lesson.md`; copy `_system/learning templates/_template-slide-outline.md` thành `<slug>/materials/<slug>-slide-outline.md`. Đặt `program: ai-design-workflow` và `draft: true` trong front matter.
-3. Cập nhật bảng ở trên và dòng tương ứng trong `library/lessons/README.md`.
-4. Chạy `python3 _system/scripts/build-home.py`.
-
-Lesson 1 thay cho bản nháp "Set up your AI workspace" trước đó. Module ngắn dành cho các program có sẵn nằm ở `library/lessons/00-foundation/ai-workflow-introduction/`; giữ phần dùng chung (thuật ngữ, data safety, folder) đồng bộ với module đó, hoặc coi lesson 1 là nguồn duy nhất.
-
-Bài tập về nhà của mentee không lưu ở đây: `mentees/<tên>/homework/<slug>/`.
+1. Tạo `lessons/<NN>-<slug>/{materials,assets,_archive}` (NN là số lesson, hai chữ số). Chỉ tạo thư mục khi bắt đầu lesson: build site liệt kê mọi thư mục tìm thấy, nên thư mục rỗng sẽ hiện thành lesson trống.
+2. Tạo `<slug>-lesson.md` và `<slug>-slide-outline.md` trong `materials/`, đặt `program: ai-design-workflow` và `draft: true` trong front matter.
+3. Cập nhật bảng Lessons ở trên và `SUMMARY.md`.
+4. Tạo deck Artifact Slides và ghi link vào trường `slides:` trong front matter của lesson.
 
 ## Workspace cho học viên
 
-`workspace/` là một folder độc lập, dùng làm repo mẫu: học viên tải ZIP hoặc bấm Use this template, không cần biết Git. Phần lớn được copy từ `assets/`; riêng hub được viết trực tiếp ở đây (xem bảng).
+Học viên nhận một repo mẫu để làm project, không cần biết Git: tải ZIP hoặc bấm Use this template. Repo này nằm riêng, ngang hàng với repo hiện tại: `~/Developer/ai-design-workflow-class/workspace-template` (GitHub: `vannguyen2910/ai-design-workflow-template`). Đó là nơi duy nhất để sửa template; repo này không giữ bản sao nên không có hai bản lệch nhau.
 
-| Trong `workspace/` | Nguồn trong `assets/` |
-|---|---|
-| `my-project/` (trừ `insights/` và `work/prototype/`) | `starter-files/case-folder-template/` |
-| `my-project/insights/` (và `demo-project/insights/`) | **viết trực tiếp ở `workspace/`, dạng markdown** (README.md, gates.md, trang theo tuần, item theo folder). `templates/hub/` là bản HTML cũ, không còn đồng bộ |
-| `my-project/work/prototype/` | `starter-files/prototype-starter/` |
-| `demo-project/` | **Travel Buddy** (dự án thật của giảng viên, từ `05_Learning/SRH/.../Travel Buddy`), viết trực tiếp ở `workspace/`. Bản Kitchen Crate cũ nằm ở `_archive/demo-case-kitchen-crate/` |
-| `AGENTS.md`, `tools/step-*.md` | `assets/starter-files/case-folder-template/` (bản gốc) và `examples/*/step-cards.md` (nguồn của card, đã chuyển sang tiếng Việt và đổi đường dẫn) |
-| `README.md`, `toolkit/`, README của `my-project/`, `demo-project/` | viết trực tiếp ở `workspace/` (tiếng Việt) |
+Bài tập về nhà của mentee không lưu ở đây.
 
-Đưa lên GitHub: tạo repo riêng chỉ chứa nội dung `workspace/` (copy hoặc `git subtree split`), bật **Settings, Template repository** để học viên có nút Use this template, và để repo Public. Học viên tạo bản Private của họ từ template.
+## Git
 
-**Template nằm ở repo riêng**, ngang hàng với repo này: `~/Developer/ai-design-workflow-class/workspace-template` (GitHub: `vannguyen2910/ai-design-workflow-template`). Đó là nơi duy nhất để sửa template. Repo này không còn giữ bản sao, nên không có hai bản lệch nhau.
-
-Trong `workspace/` còn có `site/` (website Astro + Starlight dựng từ hub) và `.github/workflows/publish-hub.yml` (đăng site lên GitHub Pages, mặc định tắt, bật bằng repo variable `PUBLISH_HUB=true`). `astro-prototype/` là bản thử nghiệm gốc của `site/`; khi sửa một bên, đồng bộ bên kia.
-
-## Trang program trên site
-
-Trang program trên site được dựng từ repo website (`src/pages/training/programs/*.sessions.js`), không phải từ thư mục này. Khoá này chưa có file `*.sessions.js` ở đó, nên chưa có trang program và dòng `programs:` trong front matter của lesson chưa có tác dụng. Khi thêm file đó, thêm `programs: [ai-design-workflow:01]` (và tương tự cho các buổi khác) vào front matter của từng lesson.
+Chỉ commit hoặc push khi được yêu cầu. Push lên `main` kích hoạt deploy site (`.github/workflows/deploy.yml`). Không đưa các file đang sửa dở vào commit nếu chưa quyết định.
