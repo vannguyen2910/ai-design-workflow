@@ -20,7 +20,7 @@ Bạn làm trước ở nhà, gửi bản nháp trước buổi practice, rồi 
 
 - Đọc [project brief](../../../assets/starter-files/practice-project/project-brief.md) và [tài liệu nền](../../../assets/starter-files/practice-project/topic-primer.md).
 - Chuẩn bị tài khoản GitHub, [GitHub Desktop](https://desktop.github.com) và một AI coding tool.
-- **Chỉ dùng dữ liệu giả hoặc đã ẩn danh.** Ẩn danh ngay trên máy, rồi mới đưa cho AI.
+- **Chỉ dùng dữ liệu giả hoặc đã ẩn danh.** Ẩn danh ngay trên máy, rồi mới đưa cho AI. P1, P2 chưa phải là ẩn danh hoàn toàn: bỏ cả vai trò, tuổi và nơi ở nếu chúng đủ để nhận ra người đó.
 
 ## Việc cần làm
 

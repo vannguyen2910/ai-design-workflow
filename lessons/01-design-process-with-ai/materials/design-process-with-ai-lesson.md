@@ -243,27 +243,27 @@ Mục này nói hub là gì và theo quy tắc nào.
 
 ### 5.1 Why a hub
 
-Mỗi cuộc hội thoại AI mới bắt đầu từ trống. Insight từ project này kẹt trong một khung chat, không đi sang bước sau, và khi ai đó hỏi "vì sao quyết định này?" thì lý do nằm rải rác. Andrej Karpathy (04/2026) mô tả một cách khác: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi, nên kiến thức tích luỹ qua từng lần dùng. Lý do ông nêu: người ta bỏ wiki vì công bảo trì lớn hơn lợi ích, còn AI không ngại cập nhật các liên kết. Hub của chương trình dùng cùng ý này.
+Mỗi cuộc hội thoại AI mới bắt đầu từ trống. Insight từ project này kẹt trong một khung chat, không đi sang bước sau, và khi ai đó hỏi "vì sao quyết định này?" thì lý do nằm rải rác. Andrej Karpathy (04/2026) mô tả một cách khác: để AI duy trì một wiki bền vững thay vì tìm lại tài liệu gốc ở mỗi câu hỏi, nên kiến thức tích luỹ qua từng lần dùng. Lý do ông nêu: người ta bỏ wiki vì công bảo trì lớn hơn lợi ích, còn AI không ngại cập nhật các liên kết. Ông gọi đây là một ý tưởng để thử, và trong mô tả của ông thì AI viết toàn bộ wiki. Hub của chương trình dùng cùng ý này, thêm bước bạn kiểm tra trước khi dùng.
 
 ### 5.2 Three layers
 
 | Lớp | Nội dung | Ai ghi |
 |---|---|---|
 | **Raw sources** | Thứ bạn thu được: transcript đã ẩn danh, review, tài liệu của team | Bạn đưa vào. Không ai sửa |
-| **Wiki** | Thứ rút ra: source notes, insight, opportunity, decision, finding, mỗi mục một file Markdown liên kết với nhau | AI soạn nháp, bạn kiểm tra |
+| **Wiki** | Thứ rút ra: evidence notes, insight, opportunity, decision, finding; mỗi mục có một ID, viết bằng Markdown và liên kết với nhau | AI soạn nháp, bạn kiểm tra |
 | **Schema** | Quy ước làm việc: AI đọc gì trước, ghi vào đâu, quy tắc nào cứng. Trong chương trình là `AGENTS.md` | Bạn viết, AI giúp soạn |
 
-Hai file giúp tìm đường trong hub. **Index** cho biết hub có gì và nên đọc gì trước (trong chương trình là `README.md`). **Log** ghi theo thứ tự thời gian mỗi lần đưa nguồn vào hoặc đổi quyết định, mỗi lần một dòng kèm lý do (trong chương trình là `project-log.md`).
+Hai file giúp tìm đường trong hub. **Index** cho biết hub có gì và nên đọc gì trước (trong chương trình là `README.md`). **Log** ghi theo thứ tự thời gian mỗi lần đưa nguồn vào hoặc đổi quyết định, mỗi lần một dòng kèm lý do (trong chương trình là `case-log.md`).
+
+Từ Lesson 2, evidence notes được gom theo buổi phỏng vấn: mỗi buổi một file, mỗi note là một mục trong file.
 
 ### 5.3 Three rules
 
 Ba quy tắc này nằm trong schema và giữ cho hub đáng tin.
 
-1. **Raw sources không bao giờ bị AI sửa.** Nếu bản tóm tắt sai, bạn vẫn có nguồn gốc để đối chiếu. Một nghiên cứu về dùng AI cho UX research cho thấy lý do chính khiến researcher ít tin kết quả AI là không truy được về dữ liệu gốc.
-2. **Mỗi note có một ID.** Có ID thì một insight chỉ ra được nó dựa vào note nào, và bạn tìm lại được nguồn.
+1. **Raw sources không bao giờ bị AI sửa.** Nếu bản tóm tắt sai, bạn vẫn có nguồn gốc để đối chiếu. Karpathy cũng đặt nguyên tắc này: AI chỉ đọc raw sources chứ không sửa. Một nghiên cứu phỏng vấn 21 UX researcher, product manager và designer ([arXiv 2512.15944](https://arxiv.org/abs/2512.15944)) cho thấy phần lớn người tham gia ít tin AI khi để nó rút insight. Không truy được về dữ liệu gốc là một trong các lý do, bên cạnh kết quả không ổn định, thiếu ý, và quote bịa hoặc gán sai người.
+2. **Mỗi note có một ID.** Có ID thì một insight chỉ ra được nó dựa vào note nào, và bạn tìm lại được nguồn. Ví dụ `RET-02` là note số 2 của outcome RET.
 3. **Quote phải nguyên văn.** Quote do AI tóm tắt lại nghe tự nhiên hơn quote thật, vì người thật nói câu dở dang. Buổi 3 dạy cách kiểm điều này bằng chương trình.
-
-Một bình luận dưới bài của Karpathy báo cáo rằng truy vấn chỉ qua wiki kém hơn truy vấn kèm tài liệu gốc (số tự báo cáo, chưa kiểm chứng). Đó là lý do quy tắc 1 tồn tại.
 
 ### 5.4 The schema file
 
@@ -273,11 +273,11 @@ Schema là file ngắn và cụ thể, chính là rules file ở mục 2.3 (tron
 
 ## 6. One hub or many
 
-Một số công ty lớn đang thử một hướng khác với "một hub cho tất cả": mỗi chức năng (business, technical, design) giữ hub riêng, và AI là lớp nối để đối chiếu và lấy dữ liệu liên quan. Mục này là lý thuyết, bạn không làm bài tập. Đây là một pattern các tổ chức đang thử, chưa phải một chuẩn.
+Có đội đang bàn một hướng khác với "một hub cho tất cả": mỗi chức năng (business, technical, design) giữ hub riêng, và AI là lớp nối để đối chiếu và lấy dữ liệu liên quan. Mục này là lý thuyết, bạn không làm bài tập. Chương trình chưa tìm thấy case công khai nào, nên đừng xem đây là một chuẩn.
 
 ### 6.1 Why one hub per function
 
-Mỗi chức năng sở hữu một loại dữ liệu khác nhau và có người chịu trách nhiệm riêng. Business giữ mục tiêu và metric, technical giữ ràng buộc và kiến trúc, design giữ insight và decision. Gộp tất cả vào một hub thì không ai là chủ của từng phần. Cách này giống nguyên tắc của data mesh: mỗi miền tự chủ, và chỉ một bộ chuẩn chung rất nhỏ áp cho mọi miền.
+Mỗi chức năng sở hữu một loại dữ liệu khác nhau và có người chịu trách nhiệm riêng. Business giữ mục tiêu và metric, technical giữ ràng buộc và kiến trúc, design giữ insight và decision. Gộp tất cả vào một hub thì không ai là chủ của từng phần.
 
 ### 6.2 The thread is a shared ID
 
@@ -289,7 +289,7 @@ Sợi dây nối các hub là ID chung. Ví dụ một chuỗi:
 - một ràng buộc kỹ thuật trong hub technical gắn với decision,
 - một test gắn với decision và ràng buộc.
 
-Mỗi mục mang ID và nêu ID của mục nó dựa vào. Nhờ vậy AI đi được từ test ngược về mục tiêu business, qua cả ba hub. Đây là ý của requirements traceability: ID có từ trước khi viết, và có hai chiều kiểm tra (mọi mục tiêu có ít nhất một test, và mọi test truy được về một mục tiêu). Hub của bạn đã dùng ý này ở quy mô nhỏ: source ID như `I01-03` và insight ID như `IN-01`.
+Mỗi mục mang ID và nêu ID của mục nó dựa vào. Nhờ vậy AI đi được từ test ngược về mục tiêu business, qua cả ba hub. Đây là ý của requirements traceability: ID có từ trước khi viết, và có hai chiều kiểm tra (mọi mục tiêu có ít nhất một test, và mọi test truy được về một mục tiêu). Hub của bạn đã dùng ý này ở quy mô nhỏ: note ID như `RET-02` và insight ID như `IN-01`.
 
 ### 6.3 Three rules for shared IDs
 
@@ -297,7 +297,7 @@ Mỗi mục mang ID và nêu ID của mục nó dựa vào. Nhờ vậy AI đi �
 2. **ID không dùng lại.** Xoá một mục thì ID của nó cũng nghỉ.
 3. **Mỗi chức năng một tiền tố**, để hai hub không đặt trùng ID. Ví dụ BIZ, DES, TEC là tiền tố minh hoạ, không phải chuẩn.
 
-Ngoài ID, các hub cần một bộ field chung rất nhỏ, ví dụ owner, status, version, để AI nối được mà không phải dịch qua lại.
+Ngoài ID, các hub cần vài field chung, ví dụ owner, status, version, để AI nối được mà không phải dịch qua lại.
 
 ### 6.4 Two risks
 
@@ -365,7 +365,7 @@ Mục này là hướng dẫn thực tế, **không phải tư vấn pháp lý**
 
 PRD, design chưa phát hành, user research có tên người, file của client và số liệu tài chính thường là thông tin confidential hoặc nằm dưới NDA. Ở Việt Nam, dữ liệu cá nhân được điều chỉnh bởi Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15, có hiệu lực từ 01/01/2026, và Nghị định 356/2025/NĐ-CP quy định chi tiết việc thi hành. Tên, email, số điện thoại và bản ghi của người dùng đều là dữ liệu cá nhân.
 
-Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói consumer thường cho người dùng chọn có cho phép dùng hội thoại để cải thiện model hay không; gói business, enterprise và API thường không dùng dữ liệu khách hàng để train theo mặc định. Cài đặt và điều khoản đổi thường xuyên, nên bạn cần đọc trang data controls của tool đang dùng và không mặc định dữ liệu là private.
+Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Với gói cá nhân, mặc định tuỳ hãng: có công cụ dùng hội thoại để cải thiện model cho tới khi bạn tắt. Gói business, enterprise và API thường không dùng dữ liệu khách hàng để train theo mặc định. Cài đặt và điều khoản đổi thường xuyên, nên bạn cần đọc trang data controls của tool đang dùng và không mặc định dữ liệu là private.
 
 ### 8.2 Three classes of material
 
@@ -373,18 +373,29 @@ Cách tool xử lý dữ liệu đưa vào tuỳ tool và gói sử dụng. Gói
 |---|---|---|
 | **Safe**: thông tin công khai, suy nghĩ riêng, project hư cấu | Trang phí giao công khai của competitor; project mẫu của chương trình | Dùng được với bất kỳ tool nào đã chấp nhận |
 | **Ask first**: nội bộ nhưng không nhạy cảm | Ghi chú quy trình nội bộ; tóm tắt research chưa công bố, không có tên người | Chỉ dùng trong tool mà bạn đã chọn dùng cho việc đó |
-| **Never in a public tool**: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA | Transcript phỏng vấn có tên; danh sách khách hàng; spec chưa phát hành | Không dán. Ẩn danh trước, hoặc để ngoài |
+| **Never in a public tool**: dữ liệu cá nhân, kế hoạch chưa phát hành, tài chính, tài liệu NDA | Transcript phỏng vấn có tên; danh sách khách hàng; spec chưa phát hành | Không dán. Dữ liệu cá nhân phải bỏ hết chi tiết nhận ra người rồi mới dùng; tài liệu confidential xoá tên rồi vẫn để ngoài |
 
 ### 8.3 Four habits before pasting
 
 1. **Kiểm tra chính sách.** Chưa có thì hỏi; còn phân vân thì không dán. Bạn hỏi bộ phận security hoặc IT ba câu: dữ liệu được lưu ở đâu, lưu bao lâu, và có dùng để train model không. Nếu công ty cấm công cụ AI công cộng thì thường đã có một công cụ được duyệt, và bạn hỏi xem đó là công cụ nào. Chưa có thì bạn làm trên project mẫu của chương trình.
 2. **Phân loại tài liệu** theo ba nhóm trên.
 3. **Xoá thông tin định danh trước**, bằng find and replace trên máy cục bộ chứ không nhờ AI làm, vì khi đó dữ liệu đã được gửi đi. Thay tên bằng P1, P2 chưa phải là ẩn danh, vì vai trò, tuổi, nơi ở hay thời điểm vẫn đủ để nhận ra một người. Bạn nên bỏ các chi tiết đó, hoặc nói chung hơn, ví dụ "một PM ở thành phố lớn".
-4. **Giữ file confidential ngoài folder của tool**, vì AI coding tool hoặc agent đọc toàn bộ project folder. `AGENTS.md` có thể dặn tool không đọc một folder, nhưng đó là quy tắc chứ không phải rào chắn kỹ thuật. Cùng nguyên tắc với **connector**: trước khi kết nối, xác định nó đọc và sửa được những gì.
+4. **Giữ file confidential ngoài folder của tool**, vì AI coding tool hoặc agent đọc toàn bộ project folder. `AGENTS.md` có thể dặn tool không đọc một folder, nhưng đó là quy tắc chứ không phải rào chắn kỹ thuật. Cùng nguyên tắc với **connector**: trước khi kết nối, xác định nó đọc và sửa được những gì. Nội dung AI đọc qua connector có thể chứa lệnh cài cắm, nên để quyền chỉ đọc khi được.
 
 Trước khi dùng agent hoặc skill, bạn cũng nên biết công cụ AI của mình có tự cập nhật không. Nhiều công ty không cho công cụ AI, agent hay skill tự cập nhật, vì phần được load vào có thể đổi sau khi đã được duyệt. Nếu công ty bạn như vậy, bạn gọi agent bằng tay và cập nhật bằng tay khi cần: đọc phần thay đổi, thử trên project mẫu, rồi mới dùng cho việc thật. Bạn hỏi IT ba câu: công cụ dùng bản ổn định hay bản mới nhất, có khoá phiên bản không, và skill hay connector lấy từ đâu.
 
 Quyền dùng output của AI cho công việc với client và quyền sở hữu tuỳ công ty và quốc gia; nên ghi những chỗ đã dùng AI vào log của project. Output của mục này là ba dòng bằng lời của bạn: được dán gì, sẽ không dán gì, dùng tool nào cho việc gì.
+
+
+### 8.4 Real user data
+
+Phần này tóm tắt Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15. Đây không phải tư vấn pháp lý, nên bạn hỏi legal trước khi áp dụng.
+
+- **Xin phép theo từng mục đích.** Người tham gia cần đồng ý rõ ràng cho từng mục đích, và im lặng không tính là đồng ý. Form phỏng vấn nên ghi bạn dùng AI để làm gì.
+- **Chuyển dữ liệu ra nước ngoài.** Dùng nền tảng đặt ngoài Việt Nam để xử lý dữ liệu cá nhân thu tại Việt Nam được tính là chuyển dữ liệu xuyên biên giới (Điều 20). Tổ chức phải lập hồ sơ đánh giá tác động trong 60 ngày kể từ lần chuyển đầu tiên, trừ một số ngoại lệ.
+- **Khử nhận dạng.** Dữ liệu đã khử nhận dạng không còn là dữ liệu cá nhân, nhưng khi đó không thể xác định hay giúp xác định ai nữa. Thay tên bằng P1, P2 chưa đạt mức này.
+
+Với một số công cụ, bấm like hoặc dislike có thể gửi cả cuộc hội thoại đi để cải thiện model, kể cả khi bạn đã tắt tuỳ chọn train.
 
 ---
 
@@ -419,7 +430,7 @@ Nhận định "AI mạnh hay yếu" chỉ đúng với một loại task và m�
 - **Bias của dữ liệu train.** Công cụ AI phản ánh pattern trong dữ liệu train, vốn phần lớn đến từ phương Tây và tiếng Anh. Với người dùng Việt Nam hoặc Đông Nam Á, cần đối chiếu gợi ý với mental model của người dùng, không chỉ xem output có thuyết phục hay không.
 - **Dữ liệu đưa vào có thể bị lưu lại.** Áp dụng data rules ở mỗi lần dùng.
 - **Giới hạn của evidence.** Số liệu về năng lực AI ở Phụ lục đến từ nghiên cứu trên những mô hình tại thời điểm đó và đổi nhanh; evidence về AI như bộ khuếch đại (mục 4) đến từ phát triển phần mềm, áp vào design là suy luận.
-- **Mô hình hub.** Ba lớp và ba quy tắc ở mục 5 dựa trên mô tả của Karpathy và các hướng dẫn thực hành, chưa có nghiên cứu đo hiệu quả của hub trong công việc design. Mô hình nhiều hub ở mục 6 là pattern một số tổ chức đang thử; các nguồn chủ yếu là bài viết của nhà cung cấp công cụ và tài liệu về traceability và data mesh, không phải chuẩn cho design.
+- **Mô hình hub.** Ba lớp ở mục 5 dựa trên mô tả của Karpathy và các hướng dẫn thực hành, còn quy tắc về ID và quote là quy ước của chương trình. Chưa có nghiên cứu đo hiệu quả của hub trong công việc design. Mô hình nhiều hub ở mục 6 là một hướng đang được bàn, chương trình chưa tìm thấy case công khai; ý về ID mượn từ tài liệu về requirements traceability, không phải chuẩn cho design.
 - **Đọc và publish file markdown.** Nội dung về README (2.2) và bốn cách đưa markdown lên web (7.4) lấy từ tìm kiếm web, chưa đọc toàn văn từng nguồn. Chưa có số liệu mức độ phổ biến của từng cách trong các công ty.
 - **Giới hạn của chương trình.** Chương trình không dạy thiết kế sản phẩm AI. Cách chia agent ở mục 4 là phương pháp của chương trình, chưa có nguồn đo hiệu quả.
 - **Skill, connector và GitHub.** Nội dung mục 3 và mục 7 dựa trên tài liệu của Anthropic (Agent Skills, MCP) và của GitHub; cách gọi skill và vị trí đặt skill khác nhau theo công cụ, nên kiểm tra tài liệu của công cụ đang dùng. Chưa có nghiên cứu đo hiệu quả của rules file, skill hay hub trong công việc design.
