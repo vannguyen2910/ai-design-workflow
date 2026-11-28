@@ -460,7 +460,7 @@ last_synced: 2026-11-27
   - Cách đóng gói bộ principles để dùng lại nằm ở slide kế tiếp.
 
   > Trong những việc này, việc nào chúng ta đang tự làm tay mỗi lần?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink. Nền tím, chữ trắng, card trắng.
 
 ---
 
@@ -728,7 +728,7 @@ last_synced: 2026-11-27
   - Ở slide kế tiếp, chúng ta xem cách nhờ AI phản biện scope. AI chỉ ra chỗ dễ sai, rồi chúng ta mang câu hỏi đi hỏi stakeholder.
 
   > Bỏ phiếu trong chat. A nếu chúng ta từng dùng câu trả lời của AI như thể là thật, B nếu chưa.
-- 🎨 Visual hint: TYPOGRAPHIC. Tiêu đề lớn, một dòng ngắn bên dưới, không thêm gì khác.
+- 🎨 Visual hint: TYPOGRAPHIC. Tiêu đề lớn, một dòng ngắn bên dưới, không thêm gì khác. Nền đen, chữ trắng.
 
 ---
 
@@ -924,7 +924,7 @@ last_synced: 2026-11-27
   - AI soạn research question cho từng giả định hàng đầu. Designer cắt câu dẫn dắt và câu hỏi sở thích, rồi quyết danh sách.
 
   > Nếu viết giả định hàng đầu của chúng ta thành câu hỏi theo công thức này, câu đó sẽ ra sao?
-- 🎨 Visual hint: SCHEMATIC. Công thức ở trên, hai chỗ trống đánh dấu bằng ngoặc vuông; bên dưới hai card line-art cùng cỡ cho assumption và research question.
+- 🎨 Visual hint: TYPOGRAPHIC. Công thức lớn ở giữa, hai chỗ trống đánh dấu bằng ngoặc vuông; ví dụ bên dưới. Nền tím, chữ trắng, hai card trắng.
 ---
 
 ### DIAGRAM · From assumption to interview guide
@@ -1084,7 +1084,7 @@ last_synced: 2026-11-27
   - Nếu không biết câu trả lời cho câu nào, chúng ta hỏi lead hoặc người phụ trách dữ liệu trước. Đây là thói quen làm việc chứ không phải tư vấn pháp lý, và chính sách công ty luôn đi trước.
 
   > Trong bốn câu này, câu nào chúng ta chưa biết đáp án ở công ty chúng ta?
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink. Nền đen, chữ trắng, card trắng.
 
 ---
 
@@ -1316,7 +1316,7 @@ last_synced: 2026-11-27
   - Chuỗi việc ở nhà mới là nơi bắt tay vào làm, còn buổi này giúp chúng ta biết cần làm gì.
 
   > Trước khi bắt đầu làm ở nhà, chúng ta muốn hỏi điều gì?
-- 🎨 Visual hint: TWO CARDS. Nửa vàng với tiêu đề Q&A, và các card chủ đề cần hỏi.
+- 🎨 Visual hint: TWO CARDS. Nửa tím chữ trắng với tiêu đề Q&A, và các card chủ đề cần hỏi.
 
 ---
 

@@ -490,7 +490,7 @@ last_synced: 2026-11-28
   - Có insight đã kiểm tra rồi, chúng ta dựng persona từ chúng. Phần hai là Persona.
 
   > trong dữ liệu của chúng ta, ai là người nói ít nhất, và AI đã tóm tắt họ thế nào?
-- 🎨 Visual hint: SCHEMATIC. Hai cột; cột trái trơn, cột phải nền ink với chữ trắng.
+- 🎨 Visual hint: SCHEMATIC. Hai card trắng so sánh và một dải kết luận trắng. Nền đen, chữ trắng.
 
 ---
 
@@ -1460,7 +1460,7 @@ last_synced: 2026-11-28
   - Chúng ta chỉ reframe nhánh mạnh nhất; reframe tất cả thì thành hội thảo triết học thay vì một quyết định. Chúng ta dẫn bằng positive exceptions vì nó gắn với evidence và cần dữ liệu theo từng giai đoạn.
   - Một nguồn đủ để sinh ra reframe, nhưng chưa đủ để đặt cược, nên chúng ta ghi số insight bên cạnh reframe để cân nhắc cho trung thực. Reframe cho thấy một nhánh khác, nhưng không được dùng làm đường quay lại cho ý tưởng yêu thích.
   - Tiếp theo là chọn nhánh nào, bằng bốn yếu tố.
-- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink.
+- 🎨 Visual hint: TYPOGRAPHIC. Numbered, các mục đánh số lớn; số in purple, nhãn in ink. Nền tím, chữ trắng, card trắng.
 
 ---
 
@@ -1779,7 +1779,7 @@ last_synced: 2026-11-28
   - Phần hỏi đáp kéo dài năm phút, và cheat sheet ở slide sau được chiếu trong lúc hỏi đáp. Hết năm phút thì câu còn lại để cho buổi practice trên lớp.
 
   > Câu nào trong bốn câu này bạn thấy chưa rõ?
-- 🎨 Visual hint: TWO CARDS. Nửa vàng với tiêu đề Q&A, và bốn câu hỏi hay gặp.
+- 🎨 Visual hint: TWO CARDS. Nửa tím chữ trắng với tiêu đề Q&A, và bốn câu hỏi hay gặp.
 
 ---
 
