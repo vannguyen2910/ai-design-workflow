@@ -2,11 +2,11 @@
 title: "Explore Ideas and Pick a Direction"
 lesson_file: "explore-ideas-lesson.md"
 level: ""
-slide_count: 35
+slide_count: 39
 duration: "100 min"
 status: draft
 built_deck: "https://claude.ai/artifact/4w6AdUVyfeuq8A3RJeMV18"
-last_synced: 2026-11-23
+last_synced: 2026-11-27
 ---
 
 ## Session metadata
@@ -499,6 +499,42 @@ last_synced: 2026-11-23
 
 ---
 
+### MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Chúng ta dừng một chút để xem còn nhớ gì từ phần vừa học. Quiz không chấm điểm, chọn sai cũng không sao.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### NUMBERED · Quick check 1
+- Kicker: Quick check
+- Title: Vì sao nên tự nghĩ ý trước *rồi mới hỏi AI?*
+- On-slide:
+  - A · AI không sinh được solution dùng được
+  - B · Từng ý của AI luôn kém sáng tạo hơn ý của bạn
+  - C · Bạn dễ bám theo ý đầu tiên AI đưa ra
+  - D · Nhóm có AI có thể ra tập ý hẹp hơn
+  - E · Đã nghĩ ý trước thì không cần hỏi AI nữa
+  - Hiện sau một click: Đáp án C, D. Câu trả lời đầu tiên của AI dễ thành ý số một, và cả nhóm dễ nghĩ giống nhau hơn.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là C và D, hiện sau một click.
+  - C và D là hai lý do để chúng ta nghĩ trước.
+  - A và B sai: AI có thể nâng mức sáng tạo của từng ý.
+  - E sai vì sau khi có ý của mình, chúng ta vẫn hỏi AI để mở rộng và phản biện.
+
+  > Vì sao nên tự nghĩ ý trước rồi mới hỏi AI? Câu này có hơn một đáp án đúng, mỗi người gõ các chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
+
 ### SECTION DIVIDER · User flow and process map
 - Num: 03
 - Kicker: Chuyển phần
@@ -727,6 +763,42 @@ last_synced: 2026-11-23
 
 ---
 
+### MILESTONE · Quick check
+- Title: Quick check
+- On-slide: Không có câu phụ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Trước phần Q&A, chúng ta ôn thêm một câu. Quiz không chấm điểm.
+  - Mỗi người gõ đáp án vào chat. Slide này và câu hỏi kế tiếp mất khoảng 2 đến 3 phút.
+- 🎨 Visual hint: TYPOGRAPHIC. Nền tím; line-art trắng hai người đang trò chuyện phía trên tiêu đề.
+
+---
+
+### NUMBERED · Quick check 2
+- Kicker: Quick check
+- Title: AI đề xuất một solution không dẫn về opportunity nào. *Bạn làm gì?*
+- On-slide:
+  - A · Xoá ngay vì AI đã đi lạc
+  - B · Ghi nó là hypothesis
+  - C · Gắn nó vào opportunity gần nghĩa nhất
+  - D · Nhờ AI tìm một insight ID cho nó
+  - E · Đưa vào prototype để xem phản ứng
+  - Hiện sau một click: Đáp án B. Ghi hypothesis để cả team biết solution này chưa có opportunity nào làm căn cứ.
+- Ví dụ: Không cần.
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Đáp án là B, hiện sau một click.
+  - B giữ được ý mà không giả vờ nó đã có evidence.
+  - C và D dễ tạo ra một đường dẫn nghe hợp lý nhưng không có thật.
+  - E tốn công cho một ý chưa rõ giải khó khăn nào.
+
+  > AI đề xuất một solution không dẫn về opportunity nào. Bạn làm gì? Mỗi người gõ một chữ cái vào chat.
+- 🎨 Visual hint: TYPOGRAPHIC. Năm lựa chọn chữ cái tím, ngăn bằng đường kẻ mảnh; khung đáp án ở dưới hiện sau một click.
+
+---
+
+
 ### Q&A
 - Kicker: Bạn muốn hỏi về
 - Title: Q&A
@@ -768,7 +840,7 @@ last_synced: 2026-11-23
   > Ở buổi practice, bạn làm trên project của mình: từ map có solution đến một hướng đã chọn và flow của hướng đó.
 
   - Chi tiết từng bước nằm trong practice sheet
-  - Thời lượng khoảng ba giờ ở nhà `[to confirm]`; cách chấm ở buổi practice trên lớp chưa quyết
+  - Thời lượng khoảng ba giờ ở nhà `[to confirm]`. Ở buổi practice trên lớp, bạn làm tiếp phần chưa xong, chúng ta góp ý vài bản nháp bạn đã gửi, rồi bạn tự kiểm theo checklist.
   - Output là đầu vào của buổi 5: hướng đã chọn và flow
   - Từng bước được bấm giờ để tự đo thời gian
 

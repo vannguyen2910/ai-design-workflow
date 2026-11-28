@@ -1,6 +1,6 @@
 # Instruction: kiểm tra evidence note bằng chương trình
 
-Dùng trong Practice 2, Step 9. Đưa đoạn dưới cho AI coding tool, kèm đường dẫn tới hai folder của bạn: folder evidence note và folder transcript đã ẩn danh.
+Dùng trong Practice 3, phần Synthesis. Đưa đoạn dưới cho AI coding tool, kèm đường dẫn tới hai folder của bạn: folder evidence note và folder transcript đã ẩn danh.
 
 > Tôi có hai folder.
 >
