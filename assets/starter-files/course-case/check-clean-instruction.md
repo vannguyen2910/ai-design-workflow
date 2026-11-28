@@ -1,6 +1,6 @@
 # Instruction: kiểm tra bản transcript đã làm sạch bằng chương trình
 
-Dùng trong Practice 2, Step 9. Đưa đoạn dưới cho AI coding tool, kèm đường dẫn tới hai file: bản mốc (bản đã ẩn danh, trước khi AI làm sạch) và bản sạch (sau khi AI làm sạch). Tuỳ chọn thêm một file danh sách tên.
+Dùng trong Practice 2, phần Ingest data. Đưa đoạn dưới cho AI coding tool, kèm đường dẫn tới hai file: bản mốc (bản đã ẩn danh, trước khi AI làm sạch) và bản sạch (sau khi AI làm sạch). Tuỳ chọn thêm một file danh sách tên.
 
 > Tôi có hai file transcript của cùng một buổi phỏng vấn.
 >

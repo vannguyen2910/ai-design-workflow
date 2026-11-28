@@ -840,7 +840,7 @@ last_synced: 2026-11-27
   > Ở buổi practice, bạn làm trên project của mình: từ map có solution đến một hướng đã chọn và flow của hướng đó.
 
   - Chi tiết từng bước nằm trong practice sheet
-  - Thời lượng khoảng ba giờ ở nhà `[to confirm]`; cách chấm ở buổi practice trên lớp chưa quyết
+  - Thời lượng khoảng ba giờ ở nhà `[to confirm]`. Ở buổi practice trên lớp, bạn làm tiếp phần chưa xong, chúng ta góp ý vài bản nháp bạn đã gửi, rồi bạn tự kiểm theo checklist.
   - Output là đầu vào của buổi 5: hướng đã chọn và flow
   - Từng bước được bấm giờ để tự đo thời gian
 

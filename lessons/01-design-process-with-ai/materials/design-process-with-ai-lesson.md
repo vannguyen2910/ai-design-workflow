@@ -151,7 +151,7 @@ Thử ngay: mở `README.md` của workspace template và trả lời ba câu. F
 
 Rules file ngắn và cụ thể. Chỉ ghi những điều AI không tự suy ra được từ folder: thứ tự đọc, folder nào không đọc, quy tắc cứng (ví dụ ba quy tắc của hub ở mục 5.3). Thêm một dòng khi bạn thấy AI lặp lại cùng một lỗi. Một nghiên cứu arXiv (2026) thấy file ngữ cảnh do người viết chỉ cải thiện khiêm tốn và tăng chi phí xử lý khoảng 20%, nên file dài không tốt hơn file ngắn. Muốn biết file của mình có giúp không, chạy cùng một task có file và không có file rồi so hai kết quả.
 
-Tóm lại ba bước: ghi điều AI không tự suy ra; để AI soạn nháp rồi bạn kiểm tra và viết lại từng rule bằng lời của bạn; thêm dần khi AI lặp lỗi. Bạn làm hai bước đầu ở Practice 1, bước 4.
+Tóm lại ba bước: ghi điều AI không tự suy ra; để AI soạn nháp rồi bạn kiểm tra và viết lại từng rule bằng lời của bạn; thêm dần khi AI lặp lỗi. Bạn làm hai bước đầu ở Practice 1.
 
 ---
 
@@ -342,7 +342,7 @@ Chọn nhánh bằng một câu hỏi: **toàn bộ project có được phép c
 - **Được công khai (GitHub Pages).** Pages miễn phí chỉ chạy với repo Public và công khai mọi file trong repo, nên hãy tạo một repo mới chỉ chứa bản đã làm sạch, không đổi repo Private đang dùng sang Public. Kiểm tra không có dữ liệu mật, thông tin cá nhân của người dùng, `_raw-private/` hay `_personal/`. Rồi: push; trên github.com vào Settings → Pages, chọn Deploy from a branch, `main`, `/(root)`, bấm Save; chờ một đến hai phút và mở link `https://<tên-tài-khoản>.github.io/<tên-repo>/` bằng cửa sổ ẩn danh. Cập nhật về sau: lưu và push lại, link giữ nguyên. Trước khi push, đọc danh sách file AI đưa ra: đây là chỗ cuối cùng để chặn dữ liệu chưa ẩn danh, mật khẩu, khoá API hay file của công ty. AI không tự bật Pages hay chuyển repo sang Public.
 - **Không công khai.** Không bật Pages. Gửi file `index.html` hoặc PDF in từ trình duyệt, hoặc mời một người xem repo (Settings → Collaborators).
 
-Site GitHub Pages có thể công khai dù repository là private; chỉ gói Enterprise Cloud mới cho publish riêng tư. Đây là bước 6 (tuỳ chọn) của Practice 1. Ngoài GitHub Pages còn các cách khác:
+Site GitHub Pages có thể công khai dù repository là private; chỉ gói Enterprise Cloud mới cho publish riêng tư. Đây là phần cuối của Practice 1, và bạn chỉ làm khi folder toàn dữ liệu giả. Ngoài GitHub Pages còn các cách khác:
 
 Trình duyệt không hiển thị markdown đã định dạng: nó hiện file `.md` như chữ thường. Muốn người khác xem hub như một trang web, cần một bước chuyển markdown sang HTML. Bạn không phải viết HTML bằng tay. Có bốn cách:
 

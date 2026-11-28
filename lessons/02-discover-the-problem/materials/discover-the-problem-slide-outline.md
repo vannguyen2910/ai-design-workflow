@@ -539,51 +539,81 @@ last_synced: 2026-11-27
 
 ### DIAGRAM · Four ways to use AI in a chain
 - Kicker: Tổng quan
-- Title: Bốn cách dùng AI,\n*một chuỗi*
+- Title: Các việc làm trước khi nhận brief
 - On-slide:
-  - Brief của business đi qua Cách dùng AI 1, 2, 3, 4 rồi ra research question
-  - Mỗi cách dùng ra một thứ lưu vào hub: câu vấn đề, việc cần xác nhận, assumption kèm quote, evidence kèm ID
-  - Mỗi thứ là đầu vào của cách dùng sau
+  - Brief của business đi qua Brief thành vấn đề, Phản biện scope, Challenge assumption, Kiểm tra evidence, rồi ra research question
+  - Mỗi việc tạo ra một thứ bạn lưu vào hub, và thứ đó là đầu vào của việc sau
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Phần method đã nói về ba việc của Break the brief. Slide này cho thấy bốn cách dùng AI nằm ở đâu trong chuỗi đó.
-  - Chúng ta đọc từ trái sang phải:
-    - Cách dùng AI 1 biến brief thành câu vấn đề.
-    - Cách dùng AI 2 phản biện scope được viết theo vấn đề đó.
-    - Cách dùng AI 3 challenge những giả định mà brief đang ngầm tin.
-    - Cách dùng AI 4 tìm trong hub xem mỗi giả định đã có nguồn hay chưa.
-  - Mỗi cách dùng tạo ra một thứ để chúng ta lưu vào hub, và thứ đó trở thành đầu vào của cách dùng sau. Riêng Cách dùng AI 3 và 4 còn dùng lại phép kiểm tra quote của phần Ingest.
-  - Cuối chuỗi là research question, cũng là đầu vào của phần phỏng vấn.
+  - Trước khi nhận brief, chúng ta kiểm tra nó qua bốn việc, và việc nào cũng có AI hỗ trợ. Thứ tự đi từ điều quan sát được đến điều cần học.
+  - Chúng ta đi theo sơ đồ từ trái sang phải:
+    - Brief thành vấn đề: AI tách brief thành mục tiêu, vấn đề, giải pháp, assumption và ràng buộc, rồi viết lại giải pháp thành câu vấn đề.
+    - Phản biện scope: sau khi có scope nháp, AI chỉ ra những chỗ scope dễ sai, và chúng ta mang câu hỏi đi hỏi người thật.
+    - Challenge assumption: AI liệt kê những điều brief đang tin, kèm quote, để chúng ta xếp theo mức cần kiểm chứng.
+    - Kiểm tra evidence: AI tìm trong hub xem mỗi assumption đã có nguồn ủng hộ hay đi ngược chưa.
+  - Kết quả cuối cùng là research question, tức là biến các assumption ưu tiên thành câu hỏi để hỏi user.
+  - Mỗi việc tạo ra một thứ để lưu vào hub, và thứ đó trở thành đầu vào của việc sau. Vì vậy chúng ta nên làm đúng thứ tự.
+  - Việc nào cũng theo cùng một nhịp: chúng ta nhắc lại method, AI soạn nháp theo method đó, rồi designer kiểm tra từng dòng và quyết định. Tất cả đều bắt đầu từ các file context đã chuẩn bị ở Practice 1. Hôm nay chúng ta demo challenge assumption và research question.
 
-  > Trong bốn cách dùng AI này, cách nào chúng ta đang làm tay nhiều nhất?
-- 🎨 Visual hint: DIAGRAM. Bốn box line-art nối bằng mũi tên ngang, box Cách dùng AI 3 viền tím; brief đi vào từ trên, research question đi ra ở dưới.
+  > Chúng ta đang làm bước nào rồi, dù chưa gọi tên?
+- 🎨 Visual hint: DIAGRAM. Bốn box line-art nối bằng mũi tên ngang, bốn box cùng một kiểu, hiện từng box theo click; brief đi vào từ trên, research question đi ra ở dưới.
+
+---
+
+### NUMBERED · Scope in the brief
+- Kicker: Định nghĩa
+- Title: Scope\n*trong brief*
+- On-slide:
+  - What: Brief là điều business nhờ làm. Scope là phần chúng ta làm rõ từ brief đó. Gồm business question, quyết định, outcome, metric, điều đang tin và agreement status
+  - Why: Thống nhất thế nào là thành công trước khi thiết kế. Brief thường đưa sẵn giải pháp. Scope cho thấy phần nào còn thiếu hoặc chưa ai xác nhận
+  - When: Làm đầu tiên, trước mọi việc khác của Break the brief. Trước khi challenge assumption và viết research question
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Trước khi tách brief, chúng ta cần hiểu scope là gì và nó liên quan gì đến brief.
+  - Brief là điều business nhờ chúng ta làm. Scope là phần chúng ta làm rõ từ brief đó, để mọi người cùng hiểu một việc.
+  - Trên slide có ba cột:
+    - What: scope gồm business question, quyết định mà câu trả lời sẽ phục vụ, outcome, metric, những điều đang tin và agreement status.
+    - Why: chúng ta thống nhất thế nào là thành công trước khi thiết kế. Brief thường đưa sẵn giải pháp, còn scope cho thấy phần nào đang thiếu hoặc chưa ai xác nhận.
+    - When: chúng ta làm scope đầu tiên, trước khi challenge assumption và viết research question.
+  - Ví dụ, brief của app giao đồ ăn ghi “thêm màn hình onboarding bốn bước”. Trong scope, chúng ta ghi mục tiêu là tăng tỷ lệ khách mới đặt đơn thứ hai trong 30 ngày từ 41% lên 50%, với ràng buộc quý này không đổi giá và có sáu tuần. Chưa ai xác nhận thì agreement status là pending.
+
+  > Brief gần nhất chúng ta nhận đã nói rõ thế nào là thành công chưa?
+- 🎨 Visual hint: TYPOGRAPHIC. Ba cột What, Why, When; hình line-art tờ brief được khoanh một phần ở góc phải tiêu đề.
 
 ---
 
 ### COMPARE · Cách dùng AI 1: brief to problem
-- Kicker: Cách dùng AI 1
-- Title: Brief thành\n*vấn đề*
+- Kicker: Việc AI làm
+- Title: Rip the brief
 - On-slide:
-  - Ví dụ từ brief mẫu của Delivery App (dòng 3)
-  - Brief ghi: “Thêm onboarding bốn bước”
-  - AI viết lại thành vấn đề: “Khách mới chưa hiểu app hoạt động thế nào”
-  - Giả định ngầm: khách rời đi vì không hiểu app, chứ không phải vì giá
-  - Bạn đọc từng bản viết lại xem nghĩa có bị đổi không
-- Ví dụ: có (brief mẫu của Delivery App, dòng 3 và dòng 9)
+  - AI xếp mỗi dòng trong brief vào một trong năm loại. Ví dụ từ brief mẫu của Delivery App.
+  - Mục tiêu: “Mục tiêu quý này: tăng tỷ lệ khách mới đặt đơn thứ hai trong 30 ngày từ 41% lên 50%.”
+  - Vấn đề: “Khách mới thường không hiểu cách app hoạt động nên bỏ đi.”
+  - Giải pháp: “Giải pháp đề xuất: thêm màn hình onboarding bốn bước để giới thiệu app cho khách mới.”
+  - Assumption: “Giá là lý do chính khiến họ rời đi.”
+  - Ràng buộc: “Quý này không đổi giá.”
+  - Dòng giải pháp được viết lại thành vấn đề: “Khách mới chưa hiểu app hoạt động thế nào”.
+- Ví dụ: có (brief mẫu của Delivery App)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Như đã nói ở phần method, một brief nhiều khi nghe như đang nêu vấn đề nhưng thật ra lại đưa sẵn giải pháp. Ở slide này, chúng ta nhờ AI tách hai thứ đó ra.
-  - Trước tiên, chúng ta đánh số từng dòng của brief rồi đưa cho AI, để nó chỉ đúng chỗ. Sau đó có bốn việc:
-    - AI xếp mỗi dòng vào một loại: mục tiêu, vấn đề, giải pháp, assumption hoặc ràng buộc.
-    - Với dòng đang nêu giải pháp, AI viết lại thành câu vấn đề và không nhắc đến giải pháp nữa. Ví dụ, “Thêm onboarding bốn bước” trở thành “khách mới chưa hiểu app hoạt động thế nào”.
-    - AI cũng chỉ ra điều mà giải pháp đó đang ngầm tin. Trong ví dụ này là khách rời đi vì không hiểu app, chứ không phải vì giá.
-    - Cuối cùng, chúng ta đọc lại từng câu AI viết xem nghĩa có bị đổi không, rồi mới viết scope dựa trên câu vấn đề.
+  - Như đã nói ở phần method, có một vài brief mà chúng ta nhiều khi nghe như đang nêu vấn đề nhưng thật ra lại đưa sẵn giải pháp.
+  - Và có một vài team hiện nay chúng ta cũng không còn nhận brief hand on nữa, mà họ sẽ cũng define các vấn đề cùng nhau
+  - Ở phần này, chúng ta nhờ AI tách hai thứ đó ra.
+  - Trước tiên, chúng ta đánh số từng dòng của brief rồi đưa cho AI, để nó chỉ đúng chỗ. AI xếp mỗi dòng vào một trong năm loại:
+    - Mục tiêu là điều business muốn đạt, như tăng tỷ lệ khách đặt đơn thứ hai.
+    - Vấn đề là điều đang xảy ra với khách, như việc khách mới không hiểu cách app hoạt động nên bỏ đi.
+    - Giải pháp là cách làm đã được đưa sẵn, như màn hình onboarding bốn bước.
+    - Assumption là điều team đang tin mà chưa có evidence, ví dụ brief cho rằng giá là lý do chính. Câu này cũng đọc được là vấn đề, nên chúng ta xem lại cách AI xếp.
+    - Ràng buộc là giới hạn mà thiết kế phải theo, như việc quý này không đổi giá.
+  - Tiếp theo, với dòng đang nêu giải pháp, AI viết lại thành câu vấn đề và không nhắc đến giải pháp nữa. Ví dụ, “Thêm onboarding bốn bước” trở thành “khách mới chưa hiểu app hoạt động thế nào”. AI cũng chỉ ra điều mà giải pháp đó đang ngầm tin, ở đây là khách rời đi vì không hiểu app, chứ không phải vì giá.
+  - Cuối cùng, chúng ta đọc lại từng câu AI viết xem nghĩa có bị đổi không, rồi mới viết scope dựa trên câu vấn đề.
   - Trên brief mẫu, AI còn làm được thêm ba việc. Nó tách một dòng đang gộp hai ý, chỉ ra hai dòng nói ngược nhau về giá, và nhận ra cả hai giải pháp đều không chạm đến nguyên nhân mà brief nêu, vì giá đang bị khoá.
   - Lưu ý: đây là cách làm của khoá, thử trên một brief mẫu cố ý có mâu thuẫn. Brief thật thường không rõ ràng như vậy.
 
   > Trong brief của chúng ta, dòng nào nghe như vấn đề nhưng thật ra là giải pháp?
-- 🎨 Visual hint: COMPARE. Hai card line-art nền trắng trước và sau với mũi tên ở giữa; card sau viền tím; một card giả định ngầm bên dưới. Hình line-art nhỏ ở góc phải tiêu đề.
+- 🎨 Visual hint: TABLE. Năm hàng, hai cột (Loại, Brief ghi), hiện từng hàng theo click; hình line-art nhỏ ở góc phải tiêu đề.
 
 ---
 
@@ -591,6 +621,7 @@ last_synced: 2026-11-27
 - Kicker: Scope
 - Title: Năm câu hỏi *cho business*
 - On-slide:
+  - Để viết scope, chúng ta hỏi business năm câu.
   - 01 · Outcome: Business muốn đạt kết quả gì?
   - 02 · Success metric: Đo thành công bằng gì?
   - 03 · Baseline: Con số hiện tại là bao nhiêu?
@@ -599,15 +630,18 @@ last_synced: 2026-11-27
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Scope là tờ giấy ghi rõ thế nào là thành công, vì vậy chúng ta làm nó đầu tiên, và mọi việc sau đều dựa vào nó. Ví dụ, business question của app giao đồ ăn là “vì sao khách mới không đặt lại sau đơn đầu tiên, và điều gì giữ họ lại?”.
+  - Để viết được scope, chúng ta cần câu trả lời từ business, và mọi việc sau đều dựa vào bản scope này. Ví dụ, business question của app giao đồ ăn là “vì sao khách mới không đặt lại sau đơn đầu tiên, và điều gì giữ họ lại?”.
   - Câu hỏi có hai tầng:
     - Tầng cao nói về vision và mission, tức là sản phẩm tồn tại để giải quyết việc gì cho người dùng.
     - Tầng low level hơn là những câu gửi cho business, gồm năm câu như trên slide.
-  - Với Outcome, chúng ta hỏi business muốn đạt kết quả gì. Success metric là cách đo thành công. Baseline là con số hiện tại. Constraints là ràng buộc về thời gian, ngân sách và quy định. Còn Timeline và decider cho biết cần khi nào và ai là người quyết.
-  - Designer nêu business question và quyết định mà câu trả lời sẽ phục vụ, AI soạn năm câu, rồi designer sửa và gửi bằng văn bản. Mỗi câu chỉ hỏi một ý, để người bận trả lời được trong vài dòng. Câu đã có trả lời được ghi vào scope là confirmed. Câu chưa có thì ghi assumed, kèm người cần xác nhận.
-  - Chúng ta cũng nên hỏi trung tính: “liệt kê những điều có thể giải thích hiện tượng này” đáng tin hơn “giải thích vì sao giá là nguyên nhân” (nguồn 7).
-
-  > Trong năm câu này, câu nào chúng ta chưa từng hỏi business?
+  - Với Outcome, chúng ta hỏi business muốn đạt kết quả gì.
+  - Success metric là cách đo thành công.
+  - Baseline là con số hiện tại.
+  - Constraints là ràng buộc về thời gian, ngân sách và quy định.
+  - Còn Timeline và decider cho biết cần khi nào và ai là người quyết.
+  - Designer nêu business question và quyết định mà câu trả lời sẽ phục vụ, AI soạn năm câu, rồi designer sửa và gửi bằng văn bản.
+  - Mỗi câu chỉ hỏi một ý, để người bận trả lời được trong vài dòng.
+  - Câu đã có trả lời được ghi vào scope là confirmed. Câu chưa có thì ghi assumed, kèm người cần xác nhận.
 - 🎨 Visual hint: SCHEMATIC. Năm card line-art cùng cấp: hình ở trên, số tím, tên mục, một câu hỏi.
 ---
 
@@ -642,15 +676,38 @@ last_synced: 2026-11-27
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Slide trước nói scope viết được ở cả ba mức access. Đây là một bản scope đã viết, lấy từ case Travel Buddy và đang hiển thị trong hub. Slide sau là chính nội dung này dưới dạng file markdown.
+  - Chúng ta vừa xem năm câu hỏi cho business. Đây là một bản scope đã viết, lấy từ case Travel Buddy và đang hiển thị trong hub. Slide sau là chính nội dung này dưới dạng file markdown.
   - Chúng ta đọc trang theo thứ tự:
     - Business question được viết bằng lời của business, không phải lời của designer.
     - Outcome và success metric, mỗi cái một dòng.
     - Người xác nhận, ngày và trạng thái.
-  - Tình huống này gần với mức no access ở slide trước. Dù vậy, một scope có nhãn assumed vẫn tốt hơn một brief giấu assumption.
+  - Tình huống này gần với mức no access, tức là chưa gặp được PO và business. Dù vậy, một scope có nhãn assumed vẫn tốt hơn một brief giấu assumption.
 
   > Trong trang này, chúng ta sẽ hỏi lại dòng nào đầu tiên?
 - 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
+
+---
+
+### IMAGE · A scope example as a file
+- Kicker: Ví dụ về scope · File markdown
+- Title: Travel Buddy
+- On-slide:
+  - Hình: File scope.md của Travel Buddy: bảng thuộc tính, business question, outcome và success metric, trạng thái assumed
+- Ví dụ: có (xem speaker notes)
+- Câu hỏi hay gặp: None.
+- Speaker notes:
+  - Slide trước là bản scope trong hub. Đây là cùng nội dung đó, nhưng dưới dạng file markdown tên scope.md.
+  - Nếu team có hub thì chúng ta nhập vào hub. Nếu không có, một file markdown trong thư mục dự án làm được đúng việc đó, và AI đọc được trực tiếp. Điều quan trọng là scope có chỗ ghi người xác nhận và trạng thái, còn dùng công cụ nào thì không quan trọng.
+  - Chúng ta đọc file theo thứ tự:
+    - Bảng thuộc tính ở đầu file gồm Type, Title, Stage, Status, Summary và Supports.
+    - Sau đó là một câu hướng dẫn cho người viết.
+    - Business question đi kèm nguồn trích. Ở đây là câu hỏi của đề tài thesis, ghi rõ lấy từ file nào.
+    - Tiếp theo là mục tiêu trong một dòng.
+    - Cuối cùng là outcome và success metric. Metric và baseline ghi “unknown”, người xác nhận ghi “chưa có” và status là “assumed”, vì chưa có số thì không bịa số.
+  - Status ở đầu file cho biết đây là bản nháp vì chưa ai xác nhận. Khi không gặp được PO và business, chúng ta viết thành assumptions và ghi rõ như vậy.
+
+  > Nếu chúng ta chỉ có một file như thế này, ai sẽ là người xác nhận nó?
+- 🎨 Visual hint: IMAGE. Một ảnh gần full bleed, nhãn nhỏ ở góc dưới.
 
 ---
 
@@ -658,11 +715,11 @@ last_synced: 2026-11-27
 - Kicker: Lưu ý khi viết scope
 - Title: Đừng để AI\n*trả lời thay stakeholder.*
 - On-slide:
-  - Bạn nhờ AI soạn câu hỏi và phản biện scope, còn câu trả lời phải đến từ stakeholder, ví dụ PO, BA hay business.
+  - Scope ghi rõ thế nào là thành công và ai xác nhận điều đó. Bạn nhờ AI soạn câu hỏi và phản biện scope, còn câu trả lời phải đến từ stakeholder, ví dụ PO, BA hay business.
 - Ví dụ: có (xem speaker notes)
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Các slide trước nói cách hỏi business. Trước khi nhờ AI phản biện scope, chúng ta có một lưu ý: đừng để AI trả lời thay stakeholder, ví dụ PO, BA hay business.
+  - Các slide trước nói cách hỏi business để viết scope, tức bản ghi thế nào là thành công và ai xác nhận điều đó. Trước khi nhờ AI phản biện scope, chúng ta có một lưu ý: đừng để AI trả lời thay stakeholder, ví dụ PO, BA hay business.
     - AI giúp soạn câu hỏi, soạn nháp ghi chú và gợi ý điều cần hỏi thêm.
     - Còn câu trả lời về mục tiêu, metric và ràng buộc phải đến từ chính họ.
   - Lý do là các nghiên cứu về người trả lời mô phỏng cho thấy họ thiên về những câu trả lời dễ nghe (nguồn 6). Với stakeholder, AI còn bịa ra dữ kiện business và metric nghe rất hợp lý.
@@ -680,7 +737,7 @@ last_synced: 2026-11-27
 - Title: Phản biện\n*scope*
 - On-slide:
   - Ví dụ: AI phản biện bản scope mẫu của Delivery App
-  - 01 · “Khách mới” chưa có định nghĩa
+  - 01 · “New customer” chưa có định nghĩa
   - 02 · Scope còn pending mà đã quyết việc cho sáu tuần
   - 03 · Guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy
   - Mỗi dòng kèm một câu hỏi cho người thật
@@ -690,10 +747,10 @@ last_synced: 2026-11-27
   - Cách dùng AI 1 giúp chúng ta viết scope theo vấn đề. Cách dùng AI 2 thì hỏi ngược lại: scope này có thể sai ở đâu?
   - Chúng ta đưa AI bản scope nháp và nhờ nó đóng vai người phản biện, không phải đóng vai PO. Với mỗi chỗ scope có thể sai, AI nêu ai sẽ phản đối, dấu hiệu sớm, và một câu hỏi để hỏi người thật.
   - Trên scope mẫu, AI chỉ ra ba chỗ:
-    - “Khách mới” chưa có định nghĩa.
+    - “New customer” chưa có định nghĩa.
     - Scope còn pending mà đã quyết khối lượng việc cho sáu tuần.
     - Guardrail huỷ đơn có thể đạt được chỉ bằng cách ẩn nút huỷ.
-  - Đây là danh sách giả thuyết để chúng ta đem đi hỏi, chưa phải sự thật về business. AI không biết “khách mới” ở công ty chúng ta nghĩa là gì. Vì vậy chúng ta chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
+  - Đây là danh sách giả thuyết để chúng ta đem đi hỏi, chưa phải sự thật về business. AI không biết “new customer” ở công ty chúng ta nghĩa là gì. Vì vậy chúng ta chọn hai câu đáng hỏi nhất và ghi vào scope thành việc cần xác nhận.
 
   > Với scope của chúng ta, người phản đối chắc chắn sẽ hỏi câu nào trước?
 - 🎨 Visual hint: NUMBERED. Ba hàng ngang nền trắng viền ink: số tím, chỗ scope dễ sai, câu hỏi cho người thật; ngăn cách bằng đường kẻ. Hình line-art nhỏ ở góc phải tiêu đề.
@@ -739,7 +796,7 @@ last_synced: 2026-11-27
   - Giả định nguy hiểm nhất thường nằm sau câu nói về giải pháp. Ví dụ, “Onboarding sẽ giữ chân khách” đang ngầm nói rằng khách rời đi vì không hiểu app.
   - Chúng ta làm theo bốn bước:
     - Đầu tiên, chúng ta đưa AI brief, PRD hoặc research cũ. Với brief ngắn như bản mẫu, chúng ta đánh số dòng để AI chỉ đúng chỗ. Với tài liệu dài, chúng ta có thể nhờ AI ghi vị trí theo đề mục hoặc số trang.
-    - AI trả về từng assumption, kèm vị trí trong tài liệu và quote chép nguyên văn. Đây là kiểu ghi nguồn chúng ta sẽ dùng lại ở phần Ingest, tức là quote đi kèm vị trí.
+    - AI trả về từng assumption, kèm vị trí trong tài liệu và quote chép nguyên văn. Đây là kiểu ghi nguồn chúng ta sẽ dùng lại ở Lesson 3, tức là quote đi kèm vị trí.
     - Sau đó chúng ta kiểm tra quote bằng cách mở đúng chỗ AI ghi và đối chiếu bằng mắt xem quote có thật nằm trong đó không. Trên brief mẫu có 17 trong 18 dòng đạt. Dòng không đạt trích hai dòng của brief, nhưng quote chỉ nằm ở một dòng.
     - Cuối cùng, chúng ta bỏ các dòng trùng và các dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
   - Phép kiểm tra này chỉ chứng minh quote có thật. Mức quan trọng của từng assumption vẫn do chúng ta quyết.
@@ -816,6 +873,7 @@ last_synced: 2026-11-27
     - Mỗi sticky là một giả định, màu của sticky cho biết mức risk.
   - Trên ma trận này, quan trọng cao mà bằng chứng thấp nằm ở góc trên bên phải, nên đó là chỗ phải kiểm chứng trước. Chúng ta chọn ba giả định hàng đầu ở góc đó để đưa vào research question. Vì một số bản ma trận đảo trục ngang khiến góc này nằm bên trái, chúng ta đọc nhãn trục trước khi đọc vị trí.
   - Designer tự xếp, AI không xếp thay, vì mức quan trọng và bằng chứng phụ thuộc vào bối cảnh AI không có.
+  - Cách xếp này còn dùng được cho những việc ưu tiên khác, chỉ cần đổi trục. Ví dụ, khi muốn biết nên làm gì trước, chúng ta xếp theo impact và effort, còn việc nào bằng chứng yếu thì nên kiểm chứng trước khi làm. Sau vài lần làm tay, chúng ta có thể gói các trục và cách xếp thành một skill: AI tìm bằng chứng, còn chúng ta chấm mức quan trọng, impact và effort.
 
   > Trong case này, chúng ta sẽ đặt giả định nào vào góc cần kiểm chứng trước?
 - 🎨 Visual hint: REAL. Một ảnh, gần full bleed; chữ trong ảnh giữ nguyên tiếng Anh.
@@ -1254,7 +1312,7 @@ last_synced: 2026-11-27
   - Câu hỏi được gom theo hai nhóm trên slide, là Break the brief và phỏng vấn user thật. Với những câu quá riêng, chúng ta hẹn ở buổi practice trên lớp.
   - Nếu lớp im lặng, chúng ta có thể gợi hai câu hay gặp:
     - Không gặp được business thì scope viết thế nào? Chúng ta ghi mọi outcome và metric là assumed, và nêu người cần xác nhận.
-    - Chưa tiếp cận được user thật thì sao? Chúng ta dùng project mẫu app giao đồ ăn.
+    - Chưa tiếp cận được user thật thì sao? Chúng ta dùng project mẫu app giao đồ ăn, và tập phỏng vấn theo cặp ở buổi practice.
   - Chuỗi việc ở nhà mới là nơi bắt tay vào làm, còn buổi này giúp chúng ta biết cần làm gì.
 
   > Trước khi bắt đầu làm ở nhà, chúng ta muốn hỏi điều gì?
@@ -1266,8 +1324,8 @@ last_synced: 2026-11-27
 - Kicker: Practice
 - Title: Understand your users
 - On-slide:
-  - Break the brief: bổ sung context library; thiết lập principles; quyết business question và scope; liệt kê assumptions và research questions, rồi đưa lên hub
-  - Phỏng vấn user thật: chuẩn bị research plan và interview script; facilitate user interview ít nhất 2 người; (nhớ lấy raw transcripts từ user interview)
+  - Break the brief: bổ sung tài liệu vào context library; thiết lập principles; quyết định business question và scope; liệt kê assumptions và research questions
+  - User interview: nhờ AI chuẩn bị research plan và interview script; chưa interview? vào breakout room, 2 bạn phỏng vấn lẫn nhau; còn thời gian thì swap sang bạn khác, phòng khác; (nhớ lấy raw transcripts từ user interview)
   - Ingest data: làm sạch transcript với AI; đóng gói kỹ năng thành skill
 - Ví dụ: Không cần.
 - Câu hỏi hay gặp: None.
@@ -1277,8 +1335,9 @@ last_synced: 2026-11-27
     - Phỏng vấn user thật: chúng ta chuẩn bị research plan và script, phỏng vấn, rồi lấy raw transcript và ẩn danh.
     - Ingest data (Step 9): chúng ta nhờ AI làm sạch transcript đã ẩn danh, chạy chương trình kiểm tra bản sạch, sửa lượt không đạt, và đọc lại để tìm thông tin định danh gián tiếp. Cuối cùng, chúng ta nhờ công cụ AI đóng gói prompt đã chạy đúng thành skill, để dùng cho transcript khác.
   - Phỏng vấn cần hẹn lịch và xin consent, vì vậy chúng ta nên bắt đầu hẹn người ngay hôm nay.
+  - Bạn nào chưa phỏng vấn được thì ở buổi practice, hai bạn vào một breakout room phỏng vấn lẫn nhau; còn thời gian thì swap sang bạn khác. Bạn cùng lớp chưa chắc là user thật, nên bạn ghi rõ đó là buổi tập và coi insight từ đó là assumption.
   - Chúng ta ẩn danh transcript trước khi đưa cho AI, còn dữ liệu gốc ở lại ngoài vùng AI đọc.
-  - Ở buổi practice trên lớp, chúng ta làm tiếp phần chưa xong nếu còn thời gian, rồi chấm. Cách chấm chưa quyết, sẽ báo sau.
+  - Ở buổi practice trên lớp, bạn làm tiếp phần chưa xong, chúng ta góp ý vài bản nháp bạn đã gửi, rồi bạn tự kiểm theo checklist.
   - Phần đi từ transcript sạch đến evidence notes và insight (synthesis) học ở Lesson 3, kể cả viết note, kiểm tra quote và blind synthesis.
 
   > Chúng ta sẽ hẹn phỏng vấn ai, và có hẹn được trong tuần này không?

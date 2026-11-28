@@ -6,7 +6,7 @@ slide_count: 76
 duration: "90 min (buổi 1) + Practice 1 ở nhà"
 status: draft
 built_deck: ""
-last_synced: 2026-11-27
+last_synced: 2026-11-28
 ---
 
 ## Session metadata
@@ -387,7 +387,7 @@ last_synced: 2026-11-27
 - Câu hỏi hay gặp: "File rules càng dài càng tốt?" Trả lời: không. Một nghiên cứu arXiv (2026) thấy file ngữ cảnh do người viết chỉ cải thiện khiêm tốn và tăng chi phí xử lý khoảng 20%.
 - Speaker notes:
   - Rules là file ngắn và cụ thể. Chỉ ghi những điều AI không tự suy ra được từ folder: thứ tự đọc, folder nào không đọc, quy tắc cứng.
-  - Bước 2: nhờ AI soạn bản đầu từ folder của chúng ta, rồi chúng ta kiểm tra. Mỗi rule chúng ta nói được nó bảo vệ điều gì. Đây là việc chúng ta làm ở Practice 1, bước 4.
+  - Bước 2: nhờ AI soạn bản đầu từ folder của chúng ta, rồi chúng ta kiểm tra. Mỗi rule chúng ta nói được nó bảo vệ điều gì. Đây là việc chúng ta làm ở Practice 1.
   - Bước 3: thêm một dòng khi chúng ta thấy AI lặp lại cùng một lỗi. Muốn biết file của mình có giúp không, chạy cùng một task có file và không có file rồi so hai kết quả.
   - Một nghiên cứu arXiv (2026) thấy file ngữ cảnh do người viết chỉ cải thiện khiêm tốn và tăng chi phí xử lý khoảng 20%, nên file dài không tốt hơn file ngắn.
   - Rules chỉ là luật. Nếu có file không được để AI đọc thì để ngoài folder.
@@ -1166,7 +1166,7 @@ last_synced: 2026-11-27
   - Một bình luận dưới bài của Karpathy báo truy vấn chỉ qua wiki kém hơn khi có tài liệu gốc; số tự báo cáo, chưa kiểm chứng, và đó là lý do quy tắc 1 tồn tại
   - Quy tắc 2: ID `I01-03` là ghi chú 3 của phỏng vấn 1; một insight chỉ ra được nó dựa vào note nào
   - Quy tắc 3: người thật nói câu dở dang, còn quote AI viết lại nghe tự nhiên hơn nên khó bắt; buổi 3 dạy cách kiểm điều này bằng chương trình
-  - Ba quy tắc nằm trong `AGENTS.md`; designer viết lại bằng lời của mình ở Practice 1, bước 4
+  - Ba quy tắc nằm trong `AGENTS.md`; designer viết lại bằng lời của mình ở Practice 1
   - Câu hỏi cho lớp: Quy tắc nào chúng ta dễ vi phạm nhất khi làm việc gấp?
 - 🎨 Visual hint: Ba card đánh số 01 đến 03, card cuối nền tối; card giữa có dòng mono ví dụ ID I01-03; dòng ghi chú nhỏ ở đáy.
 
@@ -1523,7 +1523,7 @@ last_synced: 2026-11-27
     - Chờ một đến hai phút, mở link https://tên-tài-khoản.github.io/tên-repo/ bằng cửa sổ ẩn danh để thấy đúng những gì người khác thấy
   - Cập nhật về sau: nói “Lưu và đăng lên”, link giữ nguyên. Muốn gỡ: tắt Pages hoặc xoá repo trong Settings.
   - AI không tự bật GitHub Pages hay chuyển repo sang Public. Hai việc đó chỉ chúng ta làm. Nếu link báo 404: kiểm tra repo là Public, Pages đã chọn main và /(root), rồi chờ hai phút.
-  - Đây là bước 6 của Practice 1, tuỳ chọn.
+  - Đây là phần push lên Git của Practice 1, và chỉ làm khi folder toàn dữ liệu giả.
   - Câu hỏi cho lớp: Hub của chúng ta nên mở cho ai xem: mentor, team, hay chỉ mình chúng ta?
 - 🎨 Visual hint: SPLIT. Trái: ba bước đánh số tím; phải: hai ảnh chụp GitHub Pages (trang cài đặt và trang hiện link), bo góc, không viền.
 
@@ -1697,7 +1697,7 @@ last_synced: 2026-11-27
   - Rồi đến các câu hỏi đã ghi trong chat suốt buổi; chọn câu được nhiều người quan tâm nhất trước
   - Câu nào cần số liệu hoặc cần nghĩ thêm: trả lời ngắn và hẹn trả lời bằng văn bản sau buổi
   - Nếu hỏi đáp kết thúc sớm: để designer hỏi về hướng đi nghề nghiệp, và ai cần giúp cài công cụ AI thì ở lại làm cùng
-  - Tám phút; sau đó là Practice 1 ở nhà và lời kết (sáu phút). Nếu còn thời gian thì nhắc lại bước 1 và 2 của chuỗi Practice 1
+  - Tám phút; sau đó là Practice 1 ở nhà và lời kết (sáu phút). Nếu còn thời gian thì nhắc lại phần dựng project folder của Practice 1
   - Câu hỏi cho lớp: Designer sẽ giải thích lại thuật ngữ nào theo cách khác, hoặc chạy stage nào với AI theo cách khác?
 - 🎨 Visual hint: Nửa trái nền tím chỉ có chữ Q&A trắng; nửa phải ba card dọc có icon: Nội dung hôm nay, Hướng đi nghề nghiệp của design, Khoá học.
 
@@ -1716,14 +1716,14 @@ last_synced: 2026-11-27
   - Push folder lên repository
   - Set repository live với sharable link
   - Share link hub cho mentor
-- Ví dụ: Sáu bước làm ở nhà: tạo repo và project folder, viết data rules, viết product context, để AI soạn README và AGENTS.md, chạy một instruction, tuỳ chọn push lên Git.
+- Ví dụ: Sáu bước làm ở nhà: thiết lập local project folder, viết data rules, viết product context, để AI soạn README và AGENTS.md, chạy một instruction, push lên Git và share link trang live.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Practice 1 là chuỗi sáu bước làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo). Slide này khoảng ba phút rưỡi. Mình chiếu luôn slide tham khảo "Six steps" ở Appendix, vì đây là lần duy nhất chúng ta thấy đủ sáu bước.
-  - Sáu bước nằm ở phần Practice 1 reference sau slide END: tạo repo và project folder, viết data rules, viết product context, để AI soạn README cho folder, chạy một instruction với file đã lưu, và tuỳ chọn push lên Git rồi bật trang live.
-  - Chúng ta nên làm xong trước buổi practice trên lớp, vì các buổi sau làm trên chính folder này. Đầu ra là một folder đã có context. Hai bước Git và trang live không bắt buộc.
+  - Practice 1 có hai phần, làm ở nhà, khoảng bốn giờ (ước lượng, chưa đo). Slide này khoảng ba phút rưỡi.
+  - Sáu bước nằm trong practice sheet: thiết lập local project folder, viết data rules, viết product context, để AI soạn README và AGENTS.md, chạy một instruction với file đã lưu, rồi push lên Git, bật trang live và share link cho mentor.
+  - Chúng ta nên làm xong trước buổi practice trên lớp, vì các buổi sau làm trên chính folder này. Đầu ra là một folder đã có context và một link trang live đã gửi cho mentor. Chỉ push và bật trang live khi folder toàn dữ liệu giả; bạn nào làm project thật và không muốn công khai thì báo mentor.
   - Chưa dán tài liệu thật của project vào công cụ AI trước khi viết data rules. Ai chưa viết xong Activity thì dùng project mẫu để thử.
-  - Ở buổi practice trên lớp, chúng ta làm tiếp phần chưa xong nếu còn thời gian, rồi mình chấm. Cách chấm mình chưa quyết, sẽ báo sau.
+  - Ở buổi practice trên lớp, bạn làm tiếp phần chưa xong, chúng ta góp ý vài bản nháp bạn đã gửi, rồi bạn tự kiểm theo checklist.
   - Đây là folder dự án của chúng ta, không phải bài nộp. Nhắc mọi người tạo tài khoản GitHub và cài GitHub Desktop trước nếu chưa có.
 - 🎨 Visual hint: Hai card cạnh nhau, mỗi card có icon, tiêu đề lớn và các dòng bắt đầu bằng chấm tím: "Dựng project folder" và "Push lên Git và bật trang live".
 
@@ -2287,7 +2287,7 @@ last_synced: 2026-11-27
 - Ví dụ: Không cần. Slide kết thúc.
 - Câu hỏi hay gặp: None.
 - Speaker notes:
-  - Cây folder và file product gửi để nhận feedback sau khi làm xong bước 2 của Practice 1 (product-and-users)
+  - Cây folder và file product gửi để nhận feedback sau khi viết xong product context ở Practice 1 (product-and-users)
   - Ở lại với ai muốn được giúp về project folder
 - 🎨 Visual hint: End layout, cố định. Nền paper-deeper nhạt, kicker, title lớn in nghiêng, chữ ký và hàng liên hệ.
 

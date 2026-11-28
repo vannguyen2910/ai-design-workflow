@@ -1365,7 +1365,7 @@ last_synced: 2026-11-27
 
   - Chi tiết từng bước nằm trong practice sheet.
   - Mọi thứ bạn làm đều là file markdown, để AI đọc lại được ở bước sau.
-  - Thời lượng là một ngày; cách chấm thì chưa chốt.
+  - Thời lượng là một ngày. Ở buổi practice trên lớp, bạn làm tiếp phần chưa xong, chúng ta góp ý vài bản nháp bạn đã gửi, rồi bạn tự kiểm theo checklist.
   - Ba participant là mức tối thiểu, năm participant là mức lý tưởng.
   - Bài tập về nhà dưới 20 phút: liệt kê 3 đến 5 người bạn có thể mời, viết hai câu lọc, ghi một câu hypothesis cần test, và xem project đã có file principle-checks.md và accessibility-rules.md chưa.
 

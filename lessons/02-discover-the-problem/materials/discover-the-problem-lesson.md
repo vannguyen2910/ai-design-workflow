@@ -163,7 +163,7 @@ Break the brief là cách kiểm tra brief trước khi chấp nhận nó, và b
 |---|---|---|---|
 | 1 | Brief thành vấn đề | Phân loại từng dòng brief, viết lại dòng giải pháp thành câu vấn đề, nêu giả định ngầm | Dòng nào bị đổi nghĩa; scope viết theo vấn đề, không theo giải pháp |
 | 2 | Phản biện scope | Đóng vai người phản biện: năm cách scope có thể sai, ai phản đối, câu hỏi cho người thật | Chọn câu hỏi đáng hỏi; agreement status và danh sách việc cần xác nhận |
-| 3 | Challenge assumption từ tài liệu | Trích assumption kèm vị trí trong tài liệu và quote nguyên văn, gồm cả giả định ngầm | Chạy kiểm tra quote; bỏ dòng trùng hoặc chỉ là sự kiện; assumption map |
+| 3 | Challenge assumption từ tài liệu | Trích assumption kèm vị trí trong tài liệu và quote nguyên văn, gồm cả giả định ngầm | So quote ở đúng chỗ AI ghi; bỏ dòng trùng hoặc chỉ là sự kiện; assumption map |
 | 4 | Kiểm tra evidence trong hub | Tìm ghi chú ủng hộ và đi ngược, trả note ID và quote; không có thì "chưa có nguồn" | Đọc từng ghi chú có thật sự ủng hộ không; cột evidence của assumption map |
 
 Ba hoạt động vẫn là ba file: scope, assumption map, research question. Bốn cách dùng nằm bên trong hai hoạt động đầu. Bộ dữ liệu mẫu và kết quả đã lưu của bốn cách dùng nằm ở `break-the-brief-moves.md` trong course case.
@@ -178,15 +178,17 @@ Tên file và cấu trúc thư mục chỉ là gợi ý. Cách tổ chức nào 
 | **Why** | Thống nhất thế nào là thành công trước khi thiết kế |
 | **When** | Đầu tiên, trước mọi việc khác của Break the brief |
 
+Brief là điều business nhờ làm. **Scope** là phần bạn làm rõ từ brief đó: vấn đề cần trả lời, thế nào là thành công, giới hạn nào và ai xác nhận. Brief thường đưa sẵn giải pháp, còn scope cho thấy phần nào đang thiếu.
+
 Tầng gửi business có năm câu: outcome, success metric, baseline, ràng buộc, thời hạn và người quyết định. Bạn viết thêm **quyết định** mà câu trả lời sẽ phục vụ. Câu đã có trả lời ghi vào scope là **confirmed**; câu chưa có ghi **assumed**, kèm người cần xác nhận. **Agreement status** có ba giá trị: agreed, pending, not available.
 
 **AI không đóng vai PO hay user.** Các nghiên cứu về người dùng do AI mô phỏng cho thấy chúng thiên về câu trả lời dễ nghe. Với stakeholder, AI còn bịa dữ kiện business và metric nghe hợp lý. AI chuẩn bị câu hỏi và soạn nháp ghi chú, còn câu trả lời luôn do người thật đưa ra.
 
 **Cách dùng AI 1: Brief thành vấn đề.** Brief thường đến dưới dạng giải pháp ("thêm onboarding bốn bước"). Đưa AI brief, đánh số từng dòng để nó chỉ đúng chỗ, nhờ nó phân loại (mục tiêu, vấn đề, giải pháp, assumption, ràng buộc), rồi viết lại mỗi dòng giải pháp thành một câu vấn đề không nhắc đến giải pháp, kèm điều giải pháp đó đang ngầm giả định. Trên brief mẫu của Delivery App, AI tách được dòng gộp hai ý (B09), chỉ ra B02 và B07 nói ngược nhau về giá, và nhận ra cả hai giải pháp đều không đụng vào nguyên nhân mà brief nêu, vì giá bị khoá. Bạn kiểm tra bản viết lại có đổi nghĩa không, rồi viết scope theo câu vấn đề.
 
-**Cách dùng AI 2: Phản biện scope.** Khi đã có scope nháp, nhờ AI đóng vai người phản biện, không đóng vai PO: nêu năm cách scope này có thể sai, ai sẽ phản đối, dấu hiệu sớm, một câu hỏi cần hỏi người thật, và một cách metric hoặc guardrail có thể bị lách. Trên bản scope mẫu, AI chỉ ra "khách mới" chưa được định nghĩa, scope còn pending mà đã quyết việc cho sáu tuần, và guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy. Đây là danh sách giả thuyết để hỏi người thật. AI không biết "khách mới" của công ty bạn nghĩa là gì, nên bạn chọn câu đáng hỏi, và câu trả lời vẫn do người thật đưa.
+**Cách dùng AI 2: Phản biện scope.** Khi đã có scope nháp, nhờ AI đóng vai người phản biện, không đóng vai PO: nêu năm cách scope này có thể sai, ai sẽ phản đối, dấu hiệu sớm, một câu hỏi cần hỏi người thật, và một cách metric hoặc guardrail có thể bị lách. Trên bản scope mẫu, AI chỉ ra "new customer" chưa được định nghĩa, scope còn pending mà đã quyết việc cho sáu tuần, và guardrail hủy đơn có thể đạt bằng cách ẩn nút hủy. Đây là danh sách giả thuyết để hỏi người thật. AI không biết "new customer" của công ty bạn nghĩa là gì, nên bạn chọn câu đáng hỏi, và câu trả lời vẫn do người thật đưa.
 
-**Hỏi trung tính.** Câu nêu sẵn hypothesis có thể làm AI trả lời theo ý người hỏi, hoặc ít nhất đổi điều AI nói đầu tiên (blind synthesis ở Lesson 3 cho thấy điều này trên dữ liệu mẫu). "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân". Phần blind synthesis ở Lesson 3 sẽ cho thấy rõ hơn.
+**Hỏi trung tính.** Câu nêu sẵn hypothesis có thể làm AI trả lời theo ý người hỏi, hoặc ít nhất đổi điều AI nói đầu tiên (blind synthesis ở Lesson 3 cho thấy điều này trên dữ liệu mẫu). "Liệt kê những điều có thể giải thích hiện tượng này" đáng tin hơn "giải thích vì sao giá là nguyên nhân".
 
 | Access level | Tình huống | Bạn làm gì | Agreement status |
 |---|---|---|---|
@@ -211,13 +213,15 @@ Không có access là vị thế yếu hơn, và quy trình chỉ giảm nhẹ c
 - **Ma trận Importance × Evidence:** góc quan trọng cao, evidence yếu là chỗ phải kiểm chứng trước. Luôn đọc nhãn trục trước khi đọc vị trí, vì một số bản đảo trục. Framework cho phép 3 đến 5 assumption; chương trình chọn 3 vì thời gian.
 - **Cập nhật bản đồ:** chuyển assumption sang Confirmed, Unconfirmed hay Unknown sau khi có insight từ phỏng vấn (làm ở Lesson 3).
 
-**Cách dùng AI 3: Challenge assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, và nhờ nó trả về từng dòng `assumption | vị trí | quote` với quote chép nguyên văn. Brief ngắn như bản mẫu thì bạn đánh số dòng để AI chỉ đúng chỗ; tài liệu dài thì nhờ AI ghi vị trí theo đề mục hoặc số trang. Đánh số từng dòng là cách làm của khoá, không phải cách phổ biến nhất. Kiểu ghi nguồn này giống cách trích dẫn bằng mã và số lượt ở Lesson 3, nên bạn kiểm tra quote được bằng cách mở đúng chỗ AI ghi. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Chương trình chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
+**Cách dùng AI 3: Challenge assumption từ tài liệu.** Giả định nguy hiểm nhất thường không được nói thẳng mà nằm sau một câu về giải pháp ("onboarding sẽ giữ chân khách" ngầm nói rằng khách rời đi vì không hiểu app). Đưa AI brief, PRD, research cũ hay ticket đã ẩn danh, và nhờ nó trả về từng dòng `assumption | vị trí | quote` với quote chép nguyên văn. Brief ngắn như bản mẫu thì bạn đánh số dòng để AI chỉ đúng chỗ; tài liệu dài thì nhờ AI ghi vị trí theo đề mục hoặc số trang. Đánh số từng dòng là cách làm của khoá, không phải cách phổ biến nhất. Kiểu ghi nguồn này giống cách trích dẫn bằng mã và số lượt ở Lesson 3, nên bạn kiểm tra quote được bằng cách mở đúng chỗ AI ghi. Trên brief mẫu, AI trả 18 dòng và 17 dòng đạt; dòng không đạt là một assumption trích hai dòng brief nhưng quote chỉ có ở một dòng. Phép so quote chỉ chứng minh quote có thật. Bạn vẫn phải bỏ dòng trùng và dòng chỉ là sự kiện, rồi xếp phần còn lại lên ma trận.
 
-**Cách dùng AI 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (10 ghi chú research có mã từ hai buổi phỏng vấn, dạng evidence note mà bạn sẽ tự viết ở Lesson 3), assumption về khung giờ có RET-01 và RET-05 ủng hộ, không note nào đi ngược, evidence yếu vì chỉ có hai người; assumption "giá là lý do chính" có RET-10 ủng hộ, RET-08 và RET-09 đi ngược, evidence yếu; assumption "nhắc sau 7 ngày" là "chưa có nguồn". Cả 10 note đến từ hai người nên "yếu" là mức cao nhất bộ này cho được. Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Sau Ingest, chạy lại move này trên evidence note mới để cập nhật bản đồ.
+**Cách dùng AI 4: Kiểm tra evidence trong hub.** Với mỗi assumption, nhờ AI tìm trong ghi chú đang có của hub: ghi chú ủng hộ, ghi chú đi ngược, mỗi ghi chú kèm ID và quote nguyên văn, và ghi đúng cụm "chưa có nguồn" khi không tìm thấy. Trên bộ mẫu (10 ghi chú research có mã từ hai buổi phỏng vấn, dạng evidence note mà bạn sẽ tự viết ở Lesson 3), assumption về khung giờ có RET-01 và RET-05 ủng hộ, không note nào đi ngược, evidence yếu vì chỉ có hai người; assumption "giá là lý do chính" có RET-10 ủng hộ, RET-08 và RET-09 đi ngược, evidence yếu; assumption "nhắc sau 7 ngày" là "chưa có nguồn". Cả 10 note đến từ hai người nên "yếu" là mức cao nhất bộ này cho được. Đây là cột Evidence của ma trận, có số đếm và ID thay cho cảm giác. Hub còn trống thì mọi dòng là "chưa có nguồn", và đó là kết quả đúng: nó cho biết việc phải làm là phỏng vấn. Ở Lesson 3, khi đã viết evidence note, bạn chạy lại move này trên các note mới để cập nhật bản đồ.
 
 Giới hạn: quote có thật chưa chắc đã ủng hộ đúng assumption (AI xếp F01 vào cả hai assumption khác nhau), và ghi chú không đánh dấu khách mới hay khách cũ, nên "nhiều ghi chú" vẫn chưa chắc là đủ. Bạn đọc từng ghi chú trước khi tính.
 
 AI đọc các file context đã chọn và scope rồi liệt kê assumption theo công thức, gắn loại, tìm assumption ẩn và hỏi ngược evidence của từng assumption ("dựa vào file nào? Nếu không có, ghi unknown"). Bạn tự xếp lên ma trận, vì mức quan trọng và evidence phụ thuộc bối cảnh AI không có. Bạn sửa ít nhất hai assumption AI viết cho cụ thể với project. Kết quả là **ba assumption hàng đầu**, input của bước tiếp theo.
+
+Cách xếp này còn dùng được cho những việc ưu tiên khác, chỉ cần đổi trục. Ví dụ, khi muốn biết nên làm gì trước, bạn xếp theo impact và effort, còn việc nào evidence yếu thì nên kiểm chứng trước khi làm. Sau vài lần làm tay, bạn có thể gói các trục và cách xếp thành một skill: AI tìm evidence, còn bạn chấm mức quan trọng, impact và effort.
 
 ### 3.4 Research questions
 
@@ -237,7 +241,7 @@ Ví dụ trong Delivery App: assumption "khách bỏ đơn vì không đổi đ�
 
 ## 4. Understand our users (theory)
 
-Bạn phỏng vấn user thật của project ở nhà, sau buổi này và trước buổi practice trên lớp; input là research question đã quyết ở 3.4. Quy tắc dữ liệu (4.3) áp dụng ngay khi bạn có transcript đầu tiên.
+Bạn phỏng vấn user thật của project sau buổi này, trước buổi practice trên lớp; input là research question đã quyết ở 3.4. Chưa phỏng vấn được thì ở buổi practice, bạn phỏng vấn theo cặp trong breakout room và ghi rõ đó là buổi tập. Quy tắc dữ liệu (4.3) áp dụng ngay khi bạn có transcript đầu tiên.
 
 ### 4.1 Methods: interview và survey
 
@@ -332,7 +336,7 @@ Bạn nhờ AI coding tool viết một script nhỏ và chạy nó. Script ghé
 
 Đây là phép so khớp chuỗi do chương trình làm, không phải một AI khác đánh giá. Lý do: một AI duyệt giúp có thể bỏ qua một chỗ bị đổi theo cùng cách AI đầu tiên đã đổi nó. Đây là suy luận của chương trình, không phải kết quả đo.
 
-Một script tham chiếu viết theo đúng instruction (`tests/hub_quote_check/check_clean.py`, có mười test) đạt trên bản mẫu I01 (16 lượt). Khi cố ý đổi một chữ, bỏ một chữ, đổi người nói, bỏ một lượt, để lại `[?]` hoặc để sót một tên, script báo không đạt đúng lượt đó; khác biệt chỉ ở dấu câu, chữ hoa hoặc khoảng trắng vẫn đạt. Chưa thử với một AI coding tool tự viết script từ instruction `[to confirm]`.
+Một script tham chiếu viết theo đúng instruction (`tests/hub_quote_check/check_clean.py`, có mười bảy test) đạt trên bản mẫu I01 (16 lượt). Khi cố ý đổi một chữ, bỏ một chữ, đổi người nói, bỏ một lượt, để lại `[?]` hoặc để sót một tên, script báo không đạt đúng lượt đó; khác biệt chỉ ở dấu câu, chữ hoa hoặc khoảng trắng vẫn đạt. Chưa thử với một AI coding tool tự viết script từ instruction `[to confirm]`.
 
 **Phép kiểm tra này chứng minh:** AI không đổi, thêm hay bớt chữ nào ngoài các chữ đệm bạn đã khai báo, và không còn tên trong danh sách bạn đưa.
 

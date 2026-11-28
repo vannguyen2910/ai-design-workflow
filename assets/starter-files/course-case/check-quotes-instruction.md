@@ -2,7 +2,7 @@
 
 # Instruction: kiểm tra quote bằng chương trình
 
-Dùng trong Practice 2, Step 9. Đưa đoạn dưới cho AI coding tool, kèm đường dẫn tới hai file của bạn.
+Dùng trong Practice 2, phần Ingest data. Đưa đoạn dưới cho AI coding tool, kèm đường dẫn tới hai file của bạn.
 
 > Tôi có hai file.
 >
